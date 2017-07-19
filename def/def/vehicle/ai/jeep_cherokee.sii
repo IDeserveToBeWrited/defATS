@@ -1,0 +1,33 @@
+traffic_vehicle : traffic.jeep_cher
+{
+	accessories[]: .jeep_cher.chassis
+	accessories[]: .jeep_cher.fwheel
+	accessories[]: .jeep_cher.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 2000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .jeep_cher.chassis
+{
+	data_path: "/def/vehicle/ai/jeep_cherokee/chassis.sii"
+}
+
+vehicle_wheel_accessory: .jeep_cher.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .jeep_cher.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+

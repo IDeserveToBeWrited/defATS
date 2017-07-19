@@ -1,0 +1,64 @@
+traffic_vehicle : traffic.oldsmobile
+{
+	accessories[]: .oldsmobil.chassis
+	accessories[]: .oldsmobil.fwheel
+	accessories[]: .oldsmobil.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	vehicle_mass: 1700
+
+	variant[]: traffic.oldsmobile.cabrio
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .oldsmobil.chassis
+{
+	data_path: "/def/vehicle/ai/oldsmobile/chassis_coupe.sii"
+}
+vehicle_wheel_accessory: .oldsmobil.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_oldm.sii"
+}
+vehicle_wheel_accessory: .oldsmobil.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_oldm.sii"
+}
+
+
+traffic_vehicle : traffic.oldsmobile.cabrio
+{
+	accessories[]: .oldsmobil.cabrio.chassis
+	accessories[]: .oldsmobil.cabrio.fwheel
+	accessories[]: .oldsmobil.cabrio.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	vehicle_mass: 1700
+
+	spawn_condition[]: .traffic.oldsmobile.cabrio.condition.weather
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .oldsmobil.cabrio.chassis
+{
+	data_path: "/def/vehicle/ai/oldsmobile/chassis_cabrio.sii"
+}
+vehicle_wheel_accessory: .oldsmobil.cabrio.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_oldm.sii"
+}
+vehicle_wheel_accessory: .oldsmobil.cabrio.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_oldm.sii"
+}
+traffic_spawn_condition: .traffic.oldsmobile.cabrio.condition.weather
+{
+	# spawn only in nice weater
+	type: weather
+	num_param[]: 0
+}

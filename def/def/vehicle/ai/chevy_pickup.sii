@@ -1,0 +1,33 @@
+traffic_vehicle : traffic.chevy_pickup
+{
+	accessories[]: .chevy_pickup.chassis
+	accessories[]: .chevy_pickup.fwheel
+	accessories[]: .chevy_pickup.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1800
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .chevy_pickup.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_pickup/chassis.sii"
+}
+
+vehicle_wheel_accessory: .chevy_pickup.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_oldc.sii"
+}
+
+vehicle_wheel_accessory: .chevy_pickup.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_oldc.sii"
+}
+

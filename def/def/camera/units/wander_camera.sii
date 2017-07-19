@@ -1,0 +1,25 @@
+wander_camera: camera.wander
+{
+	# Wander mode attributes
+	movement_speed: 25.0f
+	rotation_speed: 1.4f
+	report_delay: 2.0f
+	teleport_delay: 10.0f
+
+	# Every set describes location. All attributes must be present.
+	# - area_center is point when camera starts, then camera walks randomly.
+	#
+	# - area_radius defines allowed distance from center, if camera cross the distance its teleported back to center.
+	#               negative value means that no distance is defined and camera is never teleported back.
+	#
+	# - area_time defines how long (seconds) the camera will walk in given location before moving further.
+	#               negative value means that no time is defined and camera will walk in location forever.
+	#
+	# - area_ingame_time defines in-game time, which camera sets after teleport to area_center. Time format "HH MM"
+
+	# area_names[]: "kristiansand"
+	# area_centers[]: (-4453, 25, -43484)
+	# area_radii[]: 1500.0f
+	# area_times[]: 1800.0f
+	# area_ingame_times []: "00 00"
+}

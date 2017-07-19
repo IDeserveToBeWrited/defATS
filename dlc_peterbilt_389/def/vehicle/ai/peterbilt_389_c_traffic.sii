@@ -1,0 +1,31 @@
+traffic_vehicle : traffic.peterbilt.389.c
+{
+	accessories[]: .peterbilt.389.c.chassis
+	accessories[]: .peterbilt.389.c.fwheel
+	accessories[]: .peterbilt.389.c.rwheel
+	accessories[]: .peterbilt.389.c.rwheel2
+
+	max_speed: 100
+	attachable_trailer[]: ""
+
+	lod_dist[]: 50
+	lod_dist[]: 100
+
+	engine_torque: 2237
+}
+
+
+vehicle_accessory : .peterbilt.389.c.chassis {
+	data_path: "/def/vehicle/ai/truck/peterbilt.389/cabin_exclusive.sii"
+}
+vehicle_wheel_accessory : .peterbilt.389.c.fwheel {
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+vehicle_wheel_accessory : .peterbilt.389.c.rwheel {
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory : .peterbilt.389.c.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+	offset: 2
+}
+

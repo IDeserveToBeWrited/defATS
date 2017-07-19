@@ -1,0 +1,91 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+traffic_lane_data : traffic_lane.road.local
+{
+	speed_class: local_road
+
+	spawn_count_limit_modifier: 0.3
+	spawn_frequency_modifier: 0.2
+}
+
+traffic_lane_data : traffic_lane.road.divided
+{
+	speed_class: divided_road
+
+	spawn_count_limit_modifier: 2.0
+}
+
+traffic_lane_data : traffic_lane.road.divided.low_density
+{
+	speed_class: divided_road
+
+	spawn_frequency_modifier: 0.1
+}
+
+traffic_lane_data : traffic_lane.road.freeway
+{
+	speed_class: freeway
+
+	spawn_count_limit_modifier: 3.0
+}
+
+traffic_lane_data : traffic_lane.road.freeway.low_density
+{
+	speed_class: freeway
+
+	spawn_frequency_modifier: 0.1
+}
+
+traffic_lane_data : traffic_lane.road.local.tram
+{
+	speed_class: local_road
+
+	spawn_count_limit_modifier: 0.3
+	spawn_frequency_modifier: 0.1
+}
+
+traffic_lane_data : traffic_lane.road.divided.tram
+{
+	speed_class: divided_road
+
+	spawn_count_limit_modifier: 2.0
+	spawn_frequency_modifier: 1.5
+}
+
+traffic_lane_data : traffic_lane.rail.tram
+{
+	spawn_frequency_modifier: 0.2
+}
+
+traffic_lane_data : traffic_lane.no_vehicles
+{
+	speed_class: local_road
+
+	spawn_count_limit_modifier: 0.3
+	spawn_frequency_modifier: 0.2
+}
+
+traffic_lane_data : traffic_lane.rail.train
+{
+	spawn_frequency_modifier: 0.05
+}
+
+traffic_lane_data : traffic_lane.rail.train.cargo
+{
+	spawn_frequency_modifier: 0.05
+}
+
+traffic_lane_data : traffic_lane.rail.train.passenger
+{
+	spawn_frequency_modifier: 0.05
+}
+
+}

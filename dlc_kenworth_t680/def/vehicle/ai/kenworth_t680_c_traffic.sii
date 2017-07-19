@@ -1,0 +1,32 @@
+traffic_vehicle : traffic.kenworth.t680.c
+{
+
+	accessories[]: .kenworth.t680.c.cabin
+	accessories[]: .kenworth.t680.c.fwheel
+	accessories[]: .kenworth.t680.c.rwheel
+	accessories[]: .kenworth.t680.c.rwheel2
+
+	max_speed: 100
+	attachable_trailer[]: ""
+
+	lod_dist[]: 70
+	lod_dist[]: 100
+
+	engine_torque: 2237
+}
+
+
+vehicle_accessory : .kenworth.t680.c.cabin {
+	data_path: "/def/vehicle/ai/truck/kenworth.t680/cabin_exclusive.sii"
+}
+vehicle_wheel_accessory : .kenworth.t680.c.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kenworth.t680.c.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kenworth.t680.c.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+

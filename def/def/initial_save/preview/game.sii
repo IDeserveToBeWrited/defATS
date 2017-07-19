@@ -1,0 +1,135 @@
+SiiNunit
+{
+
+economy: .economy
+{
+	new_game: true
+
+	player: .player
+	bank: .bank
+	game_progress: .progress
+	event_queue: .events
+	police_ctrl: .police
+	mail_ctrl: .mailbox
+	delivery_log: .delivery_log
+	experience_points: 100000
+
+#@include "locked_screens.sii"
+
+# Starting time in minutes.
+	
+	game_time: 600
+
+
+}
+
+bank: .bank
+{
+	money_account: 500000
+	app_enabled: false
+}
+
+
+game_progress: .progress
+{
+}
+
+
+economy_event_queue: .events
+{
+}
+
+police_ctrl: .police
+{
+ offence_timer: 6
+ offence_timer[0]: 0
+ offence_timer[1]: 0
+ offence_timer[2]: 0
+ offence_timer[3]: 0
+ offence_timer[4]: 0
+ offence_timer[5]: 0
+ offence_counter: 6
+ offence_counter[0]: 0
+ offence_counter[1]: 0
+ offence_counter[2]: 0
+ offence_counter[3]: 0
+ offence_counter[4]: 0
+ offence_counter[5]: 0
+ offence_valid: 6
+ offence_valid[0]: false
+ offence_valid[1]: false
+ offence_valid[2]: false
+ offence_valid[3]: false
+ offence_valid[4]: false
+ offence_valid[5]: false
+}
+
+
+mail_ctrl: .mailbox
+{
+}
+
+delivery_log: .delivery_log
+{
+}
+
+player: .player
+{
+	trucks[]: start.truck
+	trailers[]: start.trailer
+	assigned_truck: start.truck
+	my_truck: start.truck
+	assigned_trailer: start.trailer
+	assigned_trailer_connected: true
+	
+}
+
+
+# Initial truck definition
+#@include "freightliner_cascadia.sii"
+@include "kenworth_t680.sii"
+#@include "peterbilt_579.sii"
+#@include "kenworth_w900.sii"
+#@include "volvo_vnl.sii"
+
+
+# Initial trailer definition
+trailer: start.trailer 
+
+
+{
+	accessories[]: .car_r.tesla.tchassis
+	accessories[]: .car_r.tesla.trwheel0
+	accessories[]: .car_r.tesla.trwheel1
+	accessories[]: .car_r.tesla.cargo
+
+}
+
+vehicle_accessory: .car_r.tesla.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car/chassis_r.sii"
+}
+
+vehicle_wheel_accessory: .car_r.tesla.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_wheel_accessory: .car_r.tesla.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_small.sii"
+}
+
+vehicle_accessory: .car_r.tesla.cargo
+{
+    	data_path: "/def/vehicle/trailer/car/cargo_tesla.sii"
+}
+
+
+}
+
+
+
+

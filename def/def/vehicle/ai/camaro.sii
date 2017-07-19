@@ -1,0 +1,43 @@
+traffic_vehicle : traffic.camaro
+{
+	accessories[]: .camaro.chassis
+	accessories[]: .camaro.fwheel
+	accessories[]: .camaro.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	
+	
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017) #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003) #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097)#Standard ORANGE
+	color[]: (0.0202, 0.0212, 0.0193) #ford transit black
+	
+	vehicle_mass: 1600
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .camaro.chassis
+{
+	data_path: "/def/vehicle/ai/camaro/chassis.sii"
+}
+
+vehicle_wheel_accessory: .camaro.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_camaro.sii"
+}
+
+vehicle_wheel_accessory: .camaro.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_camaro.sii"
+}
+

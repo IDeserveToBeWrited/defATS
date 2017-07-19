@@ -1,0 +1,155 @@
+traffic_vehicle : traffic.ford_tarus_p
+{
+	accessories[]: .ford_tarus_p.chassis
+	accessories[]: .ford_tarus_p.fwheel
+	accessories[]: .ford_tarus_p.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	
+	vehicle_mass: 1700
+
+	prefer_variant: true
+	variant[]: traffic.ford_tarus_p.las_vegas
+	variant[]: traffic.ford_tarus_p.phoenix
+	variant[]: traffic.ford_tarus_p.reno
+	
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_police.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+
+
+traffic_vehicle : traffic.ford_tarus_p.las_vegas
+{
+	accessories[]: .ford_tarus_p.chassis.lv
+	accessories[]: .ford_tarus_p.fwheel.lv
+	accessories[]: .ford_tarus_p.rwheel.lv
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1700
+
+	spawn_condition[]: .traffic.ford_tarus_p.las_vegas.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.chassis.lv
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_lv.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.fwheel.lv
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.rwheel.lv
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+traffic_spawn_condition: .traffic.ford_tarus_p.las_vegas.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+}
+
+traffic_vehicle : traffic.ford_tarus_p.phoenix
+{
+	accessories[]: .ford_tarus_p.chassis.phoenix
+	accessories[]: .ford_tarus_p.fwheel.phoenix
+	accessories[]: .ford_tarus_p.rwheel.phoenix
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1700
+
+	spawn_condition[]: .traffic.ford_tarus_p.phoenix.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.chassis.phoenix
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_phoenix.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.fwheel.phoenix
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.rwheel.phoenix
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+traffic_spawn_condition: .traffic.ford_tarus_p.phoenix.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+}
+
+
+traffic_vehicle : traffic.ford_tarus_p.reno
+{
+	accessories[]: .ford_tarus_p.chassis.reno
+	accessories[]: .ford_tarus_p.fwheel.reno
+	accessories[]: .ford_tarus_p.rwheel.reno
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1700
+
+	spawn_condition[]: .traffic.ford_tarus_p.reno.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.chassis.reno
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_reno.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.fwheel.reno
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.rwheel.reno
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+traffic_spawn_condition: .traffic.ford_tarus_p.reno.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+}
+
+
+
+
+
+
+
+
+
+
+

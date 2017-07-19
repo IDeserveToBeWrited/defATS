@@ -1,0 +1,33 @@
+traffic_vehicle : traffic.chevy_van
+{
+	accessories[]: .chevy_van.chassis
+	accessories[]: .chevy_van.fwheel
+	accessories[]: .chevy_van.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	
+	vehicle_mass: 2700
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .chevy_van.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_van/chassis.sii"
+}
+
+vehicle_wheel_accessory: .chevy_van.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .chevy_van.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+

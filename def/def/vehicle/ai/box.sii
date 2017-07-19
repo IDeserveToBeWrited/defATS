@@ -1,0 +1,33 @@
+traffic_vehicle : traffic.box
+{
+	accessories[]: .box.chassis
+	accessories[]: .box.fwheel
+	accessories[]: .box.rwheel
+
+	max_speed: 120
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	allow_parked: false
+	vehicle_mass: 6000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .box.chassis
+{
+	data_path: "/def/vehicle/ai/box/chassis_box.sii"
+}
+
+vehicle_wheel_accessory: .box.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .box.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+

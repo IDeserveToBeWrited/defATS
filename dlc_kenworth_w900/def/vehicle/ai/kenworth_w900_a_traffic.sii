@@ -1,0 +1,31 @@
+traffic_vehicle : traffic.kenworth.w900.a
+{
+	accessories[]: .kenworth.w900.a.chassis
+	accessories[]: .kenworth.w900.a.fwheel
+	accessories[]: .kenworth.w900.a.rwheel
+	accessories[]: .kenworth.w900.a.rwheel2
+
+	max_speed: 100
+	attachable_trailer[]: ""
+
+	lod_dist[]: 70
+	lod_dist[]: 100
+
+	engine_torque: 1830
+}
+
+
+vehicle_accessory : .kenworth.w900.a.chassis {
+	data_path: "/def/vehicle/ai/truck/kenworth.w900/cabin_duty.sii"
+}
+vehicle_wheel_accessory : .kenworth.w900.a.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kenworth.w900.a.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kenworth.w900.a.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+

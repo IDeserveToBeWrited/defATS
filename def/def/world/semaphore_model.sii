@@ -1,0 +1,406 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+
+tr_semaphore_model : tr_sem_mdl.single {
+
+	name: "single"
+
+	model_desc: "/model/sign/traffic_light/us_cross_single.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_single.pmc"
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.temporary {
+
+	name: "temporary"
+
+	model_desc: "/model/sign/traffic_light/temporary.pmd"
+	model_coll: "/model/sign/traffic_light/temporary.pmc"
+
+	dynamic: false
+}
+
+
+tr_semaphore_model : tr_sem_mdl.double {
+
+	name: "double"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double.pmc"
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.double_cut {
+
+	name: "double_cut"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_cut.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_cut.pmc"
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.light_cut {
+
+	name: "light_cut"
+
+	model_desc: "/model/sign/traffic_light/us_left_light.pmd"
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.left_turn {
+
+	name: "left_turn"
+
+	model_desc: "/model/sign/traffic_light/us_left_turn.pmd"
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.ab_toll {
+
+	name: "ab_toll"
+
+	model_desc: "/prefab/tollgate/tollgate_universal/toll_anim.pmd"
+	model_coll: "/prefab/tollgate/tollgate_universal/toll_anim.pmc"
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/prefab/tollgate/tollgate_universal/t_small_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/prefab/tollgate/tollgate_universal/t_smal_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.crossing_r {
+
+	name: "ab_right_1"
+
+	model_desc: "/model/mover/train/rr_level1_right.pmd"
+	model_coll: "/model/mover/train/rr_level1_right.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_r_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_r_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.crossing_l {
+
+	name: "ab_left_1"
+
+	model_desc: "/model/mover/train/rr_level1_left.pmd"
+	model_coll: "/model/mover/train/rr_level1_left.pmc"
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_l_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_l_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.crossing2_r {
+
+	name: "ab_right_2"
+
+	model_desc: "/model/mover/train/rr_level2_right.pmd"
+	model_coll: "/model/mover/train/rr_level2_right.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_r_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_r_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.crossing2_l {
+
+	name: "ab_left_2"
+
+	model_desc: "/model/mover/train/rr_level2_left.pmd"
+	model_coll: "/model/mover/train/rr_level2_left.pmc"
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_l_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_l_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.cr1_r_2ln {
+
+	name: "ab_right_1_2ln"
+
+	model_desc: "/model/mover/train/rr_level1_right_2lines.pmd"
+	model_coll: "/model/mover/train/rr_level1_right_2lines.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_r_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_r_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.cr1_l_2ln {
+
+	name: "ab_left_1_2ln"
+
+	model_desc: "/model/mover/train/rr_level1_left_2lines.pmd"
+	model_coll: "/model/mover/train/rr_level1_left_2lines.pmc"
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_l_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_l_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.cr2_r_2ln {
+
+	name: "ab_right_2_2ln"
+
+	model_desc: "/model/mover/train/rr_level2_right_2lines.pmd"
+	model_coll: "/model/mover/train/rr_level2_right_2lines.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_r_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_r_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.cr2_l_2ln {
+
+	name: "ab_left_2_2ln"
+
+	model_desc: "/model/mover/train/rr_level2_left_2lines.pmd"
+	model_coll: "/model/mover/train/rr_level2_left_2lines.pmc"
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/rr_l1_l_dwn.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/rr_l1_l_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.cr1_r_2ln_c {
+
+	name: "ab_left_1"
+
+	model_desc: "/model/mover/train/nm_rr_level1_left.pmd"
+	model_coll: "/model/mover/train/nm_rr_level1_left.pmc"
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/nm_r_l1_l_dw.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/nm_r_l1_l_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.cr2_r_2ln_c {
+
+	name: "ab_left_1"
+
+	model_desc: "/model/mover/train/nm_rr_level2_left.pmd"
+	model_coll: "/model/mover/train/nm_rr_level2_left.pmc"
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/train/nm_r_l1_l_dw.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/train/nm_r_l1_l_up.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.single_mir {
+
+	name: "single_mirror"
+
+	model_desc: "/model/sign/traffic_light/us_cross_single_mirror.pmd"
+  model_coll: "/model/sign/traffic_light/us_cross_single_mirror.pmc"
+
+	dynamic: false
+}
+
+tr_semaphore_model : tr_sem_mdl.left_column {
+
+	name: "left_column"
+
+	model_desc: "/model/sign/traffic_light/us_cross_left_column.pmd"
+  model_coll: "/model/sign/traffic_light/us_cross_left_column.pmc"
+
+	dynamic: false
+}
+
+}

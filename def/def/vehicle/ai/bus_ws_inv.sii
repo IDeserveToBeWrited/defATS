@@ -1,0 +1,34 @@
+traffic_vehicle : traffic.bus_ws_inv
+{
+	accessories[]: .bus_ws_inv.chassis
+	accessories[]: .bus_ws_inv.fwheel
+	accessories[]: .bus_ws_inv.rwheel
+
+	max_speed: 100
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	allow_parked: false
+
+	vehicle_mass: 12000
+	
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .bus_ws_inv.chassis
+{
+	data_path: "/def/vehicle/ai/bus/chassis_wave_inv.sii"
+}
+
+vehicle_wheel_accessory: .bus_ws_inv.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus2.sii"
+}
+
+vehicle_wheel_accessory: .bus_ws_inv.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus2.sii"
+}
+

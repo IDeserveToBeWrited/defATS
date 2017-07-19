@@ -1,0 +1,156 @@
+traffic_vehicle : traffic.police
+{
+	accessories[]: .police.chassis
+	accessories[]: .police.fwheel
+	accessories[]: .police.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	
+	vehicle_mass: 1700
+
+	prefer_variant: true
+	variant[]: traffic.police.las_vegas
+	variant[]: traffic.police.los_angeles
+	variant[]: traffic.police.san_francisc
+	
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .police.chassis
+{
+	data_path: "/def/vehicle/ai/crown/chassis_p.sii"
+}
+vehicle_wheel_accessory: .police.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .police.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+
+
+traffic_vehicle : traffic.police.las_vegas
+{
+	accessories[]: .police.chassis.lv
+	accessories[]: .police.fwheel.lv
+	accessories[]: .police.rwheel.lv
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1700
+
+	spawn_condition[]: .traffic.police.las_vegas.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .police.chassis.lv
+{
+	data_path: "/def/vehicle/ai/crown/chassis_p_lv.sii"
+}
+vehicle_wheel_accessory: .police.fwheel.lv
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .police.rwheel.lv
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+traffic_spawn_condition: .traffic.police.las_vegas.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+}
+
+
+traffic_vehicle : traffic.police.los_angeles
+{
+	accessories[]: .police.chassis.la
+	accessories[]: .police.fwheel.la
+	accessories[]: .police.rwheel.la
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1700
+
+	spawn_condition[]: .traffic.police.los_angeles.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .police.chassis.la
+{
+	data_path: "/def/vehicle/ai/crown/chassis_p_la.sii"
+}
+vehicle_wheel_accessory: .police.fwheel.la
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .police.rwheel.la
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+traffic_spawn_condition: .traffic.police.los_angeles.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+}
+
+
+traffic_vehicle : traffic.police.san_francisc
+{
+	accessories[]: .police.chassis.sf
+	accessories[]: .police.fwheel.sf
+	accessories[]: .police.rwheel.sf
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1700
+
+@include "drivers_police.sui"
+
+	spawn_condition[]: .traffic.police.san_francisc.condition.city
+
+}
+vehicle_accessory: .police.chassis.sf
+{
+	data_path: "/def/vehicle/ai/crown/chassis_p_sf.sii"
+}
+vehicle_wheel_accessory: .police.fwheel.sf
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .police.rwheel.sf
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+traffic_spawn_condition: .traffic.police.san_francisc.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+}
+
+
+
+
+
+
+
+
+
+
+

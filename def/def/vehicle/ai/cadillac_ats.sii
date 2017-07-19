@@ -1,0 +1,34 @@
+traffic_vehicle : traffic.cadillac_ats
+{
+	accessories[]: .cadillac_ats.chassis
+	accessories[]: .cadillac_ats.fwheel
+	accessories[]: .cadillac_ats.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 1700
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .cadillac_ats.chassis
+{
+	data_path: "/def/vehicle/ai/cadillac_ats/chassis.sii"
+}
+
+vehicle_wheel_accessory: .cadillac_ats.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_7.sii"
+}
+
+vehicle_wheel_accessory: .cadillac_ats.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_7.sii"
+}
+

@@ -1,0 +1,33 @@
+traffic_vehicle : traffic.c_deville
+{
+	accessories[]: .c_deville.chassis
+	accessories[]: .c_deville.fwheel
+	accessories[]: .c_deville.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+
+	vehicle_mass: 2200
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .c_deville.chassis
+{
+	data_path: "/def/vehicle/ai/cadillac_deville/chassis.sii"
+}
+
+vehicle_wheel_accessory: .c_deville.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_oldc.sii"
+}
+
+vehicle_wheel_accessory: .c_deville.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_oldc.sii"
+}
+

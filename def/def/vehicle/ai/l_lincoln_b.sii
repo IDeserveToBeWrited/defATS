@@ -1,0 +1,34 @@
+traffic_vehicle : traffic.l_lincoln.b
+{
+	accessories[]: .l_lincoln.b.chassis
+	accessories[]: .l_lincoln.b.fwheel
+	accessories[]: .l_lincoln.b.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	allow_parked: false
+
+	vehicle_mass: 3000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .l_lincoln.b.chassis
+{
+	data_path: "/def/vehicle/ai/limo_lincoln/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .l_lincoln.b.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in.sii"
+}
+
+vehicle_wheel_accessory: .l_lincoln.b.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in.sii"
+}
+

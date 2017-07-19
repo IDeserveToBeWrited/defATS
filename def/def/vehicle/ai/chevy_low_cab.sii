@@ -1,0 +1,41 @@
+traffic_vehicle : traffic.lowcab
+{
+	accessories[]: .lowcab.chassis
+	accessories[]: .lowcab.fwheel
+	accessories[]: .lowcab.rwheel
+
+	max_speed: 120
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	
+	# WHITE/GRAY
+	color[]: (0.9, 0.9, 0.9)
+	color[]: (0.9, 0.9, 0.9)
+	color[]: (0.9, 0.9, 0.9)
+	color[]: (0.7084, 0.7084, 0.7084)
+	color[]: (0.6, 0.6, 0.6)
+
+	vehicle_mass: 8000
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .lowcab.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_low_cab/chassis.sii"
+}
+
+vehicle_wheel_accessory: .lowcab.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_lowcab.sii"
+}
+
+vehicle_wheel_accessory: .lowcab.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_lowcab.sii"
+}
+

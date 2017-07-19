@@ -1,0 +1,31 @@
+traffic_vehicle : traffic.peterbilt.579.a
+{
+	accessories[]: .peterbilt.579.a.chassis
+	accessories[]: .peterbilt.579.a.fwheel
+	accessories[]: .peterbilt.579.a.rwheel
+	accessories[]: .peterbilt.579.a.rwheel2
+
+	max_speed: 100
+	attachable_trailer[]: ""
+
+	lod_dist[]: 70
+	lod_dist[]: 100
+
+	engine_torque: 1830
+}
+
+
+vehicle_accessory : .peterbilt.579.a.chassis {
+	data_path: "/def/vehicle/ai/truck/peterbilt.579/cabin_duty.sii"
+}
+vehicle_wheel_accessory : .peterbilt.579.a.fwheel {
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+vehicle_wheel_accessory : .peterbilt.579.a.rwheel {
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory : .peterbilt.579.a.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+	offset: 2
+}
+

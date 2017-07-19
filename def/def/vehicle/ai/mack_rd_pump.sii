@@ -1,0 +1,42 @@
+traffic_vehicle : traffic.mack_rd.pump
+{
+	accessories[]: .mack_rd.pump.chassis
+	accessories[]: .mack_rd.pump.fwheel
+	accessories[]: .mack_rd.pump.rwheel
+	accessories[]: .mack_rd.pump.rwheel2
+
+	max_speed: 100
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	allow_parked: false
+	
+	vehicle_mass: 25000
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .mack_rd.pump.chassis
+{
+	data_path: "/def/vehicle/ai/mack_rd/pump.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.pump.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.pump.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.pump.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+

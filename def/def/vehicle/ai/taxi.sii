@@ -1,0 +1,32 @@
+traffic_vehicle : traffic.taxi
+{
+	accessories[]: .taxi.chassis
+	accessories[]: .taxi.fwheel
+	accessories[]: .taxi.rwheel
+
+	max_speed: 140
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	vehicle_mass: 1700
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .taxi.chassis
+{
+	data_path: "/def/vehicle/ai/crown/chassis_t.sii"
+}
+
+vehicle_wheel_accessory: .taxi.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_t.sii"
+}
+
+vehicle_wheel_accessory: .taxi.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_t.sii"
+}
+

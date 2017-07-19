@@ -1,0 +1,32 @@
+traffic_vehicle : traffic.tesla
+{
+	accessories[]: .tesla.chassis
+	accessories[]: .tesla.fwheel
+	accessories[]: .tesla.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 70
+	lod_dist[]: 110
+	vehicle_mass: 2000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .tesla.chassis
+{
+	data_path: "/def/vehicle/ai/tesla/chassis.sii"
+}
+
+vehicle_wheel_accessory: .tesla.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in.sii"
+}
+
+vehicle_wheel_accessory: .tesla.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in.sii"
+}
+
