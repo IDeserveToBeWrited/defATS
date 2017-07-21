@@ -90,7 +90,6 @@ DEL %LOCATION%\dlc_peterbilt_389\dlc_peterbilt_389.manifest.sii
 :: dlc_peterbilt_579
 RMDIR "%LOCATION%\dlc_peterbilt_579\automat" /s /q
 RMDIR "%LOCATION%\dlc_peterbilt_579\material" /s /q
-RMDIR "%LOCATION%\dlc_peterbilt_579\sound" /s /q
 RMDIR "%LOCATION%\dlc_peterbilt_579\vehicle" /s /q
 DEL %LOCATION%\dlc_peterbilt_579\dlc_peterbilt_579.manifest.sii
 
