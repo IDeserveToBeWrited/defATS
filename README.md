@@ -3,7 +3,7 @@
 ## **Contains:**
 
 - [Base game](/def/def)
-- [Arizona](/dlc_arizona)
+- [Arizona](/dlc_arizona/def)
 - [Dragon Truck Design Pack](/dlc_dragon/def/vehicle)
 - [Heavy Cargo Pack](/dlc_heavy_cargo/def)
 - [Kenworth T680](/dlc_kenworth_t680/def)
