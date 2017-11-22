@@ -213,6 +213,19 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2 {
 	model[]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.ca_2x2_ow {
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad 2x2 oneway"
+
+	model[]: "single_nl"
+	model[]: "single_nl"
+	model[]: "single_nl"
+	model[]: "single_nl"
+	model[]: ""
+}
+
 tr_semaphore_profile : tr_sem_prof.ca_2x2_left {
 
 	inherited: tr_sem_prof.base_left
@@ -261,6 +274,31 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_left2 {
 	model[13]: "light_cut"
 	model[14]: "light_cut"
 	model[15]: "light_cut"
+}
+
+tr_semaphore_profile : tr_sem_prof.ca_2x2_left3 {
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "crossroad 2x2 protected left (2 sides and separated left arrows)"
+
+	model: 16
+	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "single"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_column"
+	model[9]: "left_turn"
+	model[10]: "left_column"
+	model[11]: "left_turn"
+	model[12]: "light_cut"
+	model[13]: "left_turn"
+	model[14]: "light_cut"
+	model[15]: "left_turn"
 }
 
 tr_semaphore_profile : tr_sem_prof.ca_1x2_lefts {
@@ -387,7 +425,7 @@ tr_semaphore_profile : tr_sem_prof.crossing {
 	# object front <-> crossing (red)
 	# crossing <-> object rear (orange-to-green)
 	#
-	interval[]: (150.0, 550.0, 350.0, 50.0)
+	interval[]: (50.0, 550.0, 350.0, 20.0)
 
 	# Minimum delay after orange-to-green distance before barriers go up
 	cycle[]: 4.0

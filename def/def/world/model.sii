@@ -42,15 +42,15 @@ model_def : model.1056 {
  }
 model_def : model.1061 {
 	model_desc: "/model/vegetation/desert/bush1.pmd"
-	
+	auto_compound: true
 }
 model_def : model.1062 {
 	model_desc: "/model/vegetation/desert/bush2.pmd"
-	
+	auto_compound: true
 }
 model_def : model.1063 {
 	model_desc: "/model/vegetation/desert/bush3.pmd"
-	
+	auto_compound: true
 }
  model_def : model.1064 {
 	 vegetation_model: vegetmodel.tree_2
@@ -490,10 +490,14 @@ model_def : model.2115 {
 
 model_def : model.2117 {
 	model_desc: "/model/props/street/garbage1.pmd"
+	static_lod_name[]: "LOD from 50m"
+	static_lod_path[]: "/model/props/street/garbage1_lod1.pmd"
 	
 }
 model_def : model.2118 {
 	model_desc: "/model/props/street/garbage2.pmd"
+	static_lod_name[]: "LOD from 50m"
+	static_lod_path[]: "/model/props/street/garbage2_lod1.pmd"
 	
 }
 model_def : model.2119 {
@@ -676,10 +680,12 @@ model_def : model.304 {
 model_def : model.758{
 	model_desc: "/model/vegetation/tree_deciduous/single_oak_tree_mid.pmd"
 	distance_type: 2
+	auto_compound: true
 }
 model_def : model.122{
 	model_desc: "/model/vegetation/tree_deciduous/single_oak_tree.pmd"
 	distance_type: 2
+	auto_compound: true
 }
 
 model_def : model.273 {
@@ -714,6 +720,7 @@ model_def : model.2 {
 }
 model_def : model.3 {
 	model_desc: "/model/vegetation/coast/tree_hedge.pmd"
+	auto_compound: true
 	
 }
 model_def : model.4 {
@@ -1264,18 +1271,22 @@ model_def : model.138 {
 }
 model_def : model.139 {
 	model_desc: "/model/vegetation/coast/tree_hedge_white.pmd"
+	auto_compound: true
 	
 }
 model_def : model.140 {
 	model_desc: "/model/vegetation/coast/tree_hedge_red.pmd"
+	auto_compound: true
 	
 }
 model_def : model.141 {
 	model_desc: "/model/vegetation/coast/tree_hedge_purple1.pmd"
+	auto_compound: true
 	
 }
 model_def : model.142 {
 	model_desc: "/model/vegetation/coast/tree_hedge_purple2.pmd"
+	auto_compound: true
 	
 }
 model_def : model.143 {
@@ -1496,9 +1507,11 @@ model_def : model.199 {
 }
 model_def : model.200 {
 	model_desc: "/model/vegetation/hedge/hedge_solitaire_3.pmd"
+	auto_compound: true
 }
 model_def : model.201 {
 	model_desc: "/model/vegetation/hedge/hedge_solitaire_2.pmd"
+	auto_compound: true
 }
 model_def : model.202 {
 	model_desc: "/model/panorama/ca_sf/street_house5.pmd"
@@ -1509,6 +1522,7 @@ model_def : model.202 {
 }
 model_def : model.203 {
 	model_desc: "/model/vegetation/hedge/hedge_solitaire_1.pmd"
+	auto_compound: true
 }
 model_def : model.204 {
 	model_desc: "/model/particles/neon_blink_cirk.pmd"
@@ -2916,22 +2930,22 @@ model_def : model.5092 {
 }
 model_def : model.5093 {
 	model_desc: "/model/props/road/dirt_decal_01.pmd"
-	distance_type: 1
+	distance_type: 0
 	#category: "dirt"
 }
 model_def : model.5094 {
 	model_desc: "/model/props/road/dirt_decal_02.pmd"
-	distance_type: 1
+	distance_type: 0
 	#category: "dirt"
 }
 model_def : model.5095 {
 	model_desc: "/model/props/road/dirt_decal_big_01.pmd"
-	distance_type: 1
+	distance_type: 0
 	#category: "dirt"
 }
 model_def : model.5096 {
 	model_desc: "/model/props/road/dirt_decal_big_02.pmd"
-	distance_type: 1
+	distance_type: 0
 	#category: "dirt"
 }
 
@@ -2955,6 +2969,8 @@ model_def : model.5100 {
 
 model_def : model.5101 {
 	model_desc: "/model/building/logistic/warehouse_selfstorage.pmd"
+	static_lod_name[]: "LOD from 100m"
+	static_lod_path[]: "/model/building/logistic/warehouse_selfstorage_lod1.pmd"
 }
 model_def : model.5102 {
 	model_desc: "/model/props/street/hot_dog_stick.pmd"	
@@ -3761,6 +3777,8 @@ model_def : model.1022 {
 }
 model_def : model.1023 {
 	model_desc: "/model/building/hotel/nm_motel01.pmd"
+	static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/building/hotel/nm_motel01_lod1.pmd"
 }
 
 model_def : model.az_57 {
@@ -3770,10 +3788,13 @@ model_def : model.az_57 {
 model_def : model.nm_1024 {
 	model_desc: "/model/building/logistic/nm_selfstorage2.pmd"	
 	
-	color_variant[]:"Grey-Red | wall: 147,154,154 | roof: 151,158,158 | door_closed: 102,15,15 | door_01: 102,15,15 | door_02: 102,15,15"
-	color_variant[]:"Beige-Green | wall: 179,166,147 | roof: 50,102,81 | door_closed: 35,71,57 | door_01: 35,71,57 | door_02: 35,71,57"
-	color_variant[]:"Beige-Blue | wall: 179,166,147 | roof: 38,70,130 | door_closed: 28,52,97 | door_01: 28,52,97 | door_02: 28,52,97"
-	color_variant[]:"Brown | wall: 255,229,156 | roof: 171,132,97 | door_closed: 171,132,97 | door_01: 171,132,97 | door_02: 171,132,97"
+	static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/building/logistic/nm_selfstorage2_lod1.pmd"
+
+	color_variant[]:"Grey-Red | wall: 147,154,154 | wall2: 142,74,40 | roof: 151,158,158 | door_closed: 102,15,15 | door_01: 102,15,15 | door_02: 102,15,15"
+	color_variant[]:"Beige-Green | wall: 179,166,147 | wall2: 147,154,154 | roof: 50,102,81 | door_closed: 35,71,57 | door_01: 35,71,57 | door_02: 35,71,57"
+	color_variant[]:"Beige-Blue | wall: 179,166,147 | wall2: 142,74,40 | roof: 38,70,130 | door_closed: 28,52,97 | door_01: 28,52,97 | door_02: 28,52,97"
+	color_variant[]:"Brown | wall: 255,229,156 | wall2: 145,86,56 | roof: 171,132,97 | door_closed: 171,132,97 | door_01: 171,132,97 | door_02: 171,132,97"
 
 }
 model_def : model.nm_1025 {
@@ -3816,6 +3837,8 @@ model_def : model.nm_1032 {
 
 model_def : model.nm_50 {
 	model_desc: "/model/building/logistic/nm_selfstorage1.pmd"
+        static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/model/building/logistic/nm_selfstorage1_lod1.pmd"
 	
 	color_variant[]:"Grey-Red | wall: 147,154,154 | rim: 102,15,15 | roof: 151,158,158 | door_closed: 102,15,15 | door_01: 102,15,15 | door_02: 102,15,15"
 	color_variant[]:"Beige-Green | wall: 179,166,147 | rim: 50,102,81 | roof: 179,166,147 | door_closed: 35,71,57 | door_01: 35,71,57 | door_02: 35,71,57"
@@ -3824,7 +3847,9 @@ model_def : model.nm_50 {
 	color_variant[]:"Blue-White | wall: 38,70,130 | rim: 179,179,179 | roof: 38,70,130 | door_closed: 179,179,179 | door_01: 179,179,179 | door_02: 179,179,179"
 }
 model_def : model.nm_51 {
-	model_desc: "/model/building/logistic/nm_selfstorage1a.pmd"	
+	model_desc: "/model/building/logistic/nm_selfstorage1a.pmd"
+        static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/model/building/logistic/nm_selfstorage1a_lod1.pmd"	
 		
 	color_variant[]:"Grey-Red | wall: 147,154,154 | rim: 102,15,15 | roof: 151,158,158 | door_closed: 102,15,15 | door_01: 102,15,15 | door_02: 102,15,15"
 	color_variant[]:"Beige-Green | wall: 179,166,147 | rim: 50,102,81 | roof: 179,166,147 | door_closed: 35,71,57 | door_01: 35,71,57 | door_02: 35,71,57"
@@ -3887,6 +3912,348 @@ model_def : model.5245 {
 model_def : model.5238 {
 	model_desc: "/model/vehicle/parked_cars/plaza5_cars1_always.pmd"
 	
+}
+
+model_def : model.5239 {
+	model_desc: "/model/vehicle/event/crash_cars1_always.pmd"
+	
+}
+
+model_def : model.5240 {
+	model_desc: "/model/vehicle/event/crash2_cars1_always.pmd"
+	
+}
+
+model_def : model.5241 {
+	model_desc: "/model/vehicle/event/event_cars1_always.pmd"
+	
+}
+
+model_def : model.5242 {
+	model_desc: "/model/vehicle/event/event2_cars1_always.pmd"
+	
+}
+
+model_def : model.5345 {
+	model_desc: "/model/vehicle/event/flatbed_always.pmd"
+	
+}
+
+model_def : model.5346 {
+	model_desc: "/model/vehicle/event/audi_a6_always.pmd"
+	
+}
+
+model_def : model.5347 {
+	model_desc: "/model/vehicle/event/cessna.pmd"
+	
+}
+
+model_def : model.5348 {
+	model_desc: "/model/vehicle/event/cessna_c.pmd"
+	
+}
+
+model_def : model.5349 {
+	model_desc: "/model/vehicle/event/police_driver.pmd"
+	
+}
+
+model_def : model.5350 {
+	model_desc: "/model/vehicle/event/tranzit.pmd"
+	
+}
+
+model_def : model.5351 {
+	model_desc: "/model/props/street/electric_hammer.pmd"
+	
+}
+
+model_def : model.5352 {
+	model_desc: "/model/props/street/vibration_desk.pmd"
+}
+
+model_def : model.5353 {
+	model_desc: "/model/props/street/cement_bags.pmd"
+}
+
+model_def : model.5354 {
+	model_desc: "/model/vehicle/event/tranzit_r.pmd"
+	
+}
+
+model_def : model.5355 {
+	model_desc: "/model/vehicle/event/arrow_xt.pmd"	
+}
+
+model_def : model.5356 {
+	model_desc: "/model/props/street/trash.pmd"	
+	
+}
+
+model_def : model.5357 {
+	model_desc: "/model/vehicle/event/tranzit_fox.pmd"
+}
+
+model_def : model.5358 {
+	model_desc: "/model/vehicle/event/mack.pmd"
+}
+
+model_def : model.5360 {
+	model_desc: "/model/vehicle/event/f350_paramedic.pmd"
+}
+
+model_def : model.5361 {
+	model_desc: "/model/vehicle/event/cat_434.pmd"
+}
+
+model_def : model.5362 {
+	model_desc: "/model/vehicle/event/mb1.pmd"
+}
+
+model_def : model.5363 {
+	model_desc: "/model/vehicle/event/mack_garbage.pmd"
+}
+
+model_def : model.5364 {
+	model_desc: "/model/vehicle/event/chevy_low_cab.pmd"
+}
+
+model_def : model.5365 {
+	model_desc: "/model/vehicle/event/mack_dump.pmd"
+}
+
+model_def : model.5366 {
+	model_desc: "/model/vehicle/event/truck.pmd"
+}
+
+model_def : model.5367 {
+	model_desc: "/model/vehicle/event/w250i.pmd"
+}
+
+model_def : model.5368 {
+	model_desc: "/model/vehicle/event/ford_smax_open_all.pmd"
+}
+
+model_def : model.5369 {
+	model_desc: "/model/vehicle/event/ford_smax_open_left.pmd"
+}
+
+model_def : model.5370 {
+	model_desc: "/model/vehicle/event/ford_smax_open_right.pmd"
+}
+
+model_def : model.5371 {
+	model_desc: "/model/props/street/container_empty.pmd"
+}
+
+model_def : model.5372 {
+	model_desc: "/model/vehicle/event/tranzit_open_highway.pmd"
+}
+
+model_def : model.5373 {
+	model_desc: "/model/vehicle/event/tranzit_open_logistic.pmd"
+}
+
+model_def : model.5374 {
+	model_desc: "/model/vehicle/event/ford_taurus_open.pmd"
+}
+
+model_def : model.5375 {
+	model_desc: "/model/vehicle/event/dodge_ram_2500.pmd"
+}
+
+model_def : model.5376 {
+	model_desc: "/model/vehicle/event/reefer.pmd"
+}
+
+model_def : model.5377 {
+	model_desc: "/model/vehicle/event/sport_cars_always.pmd"
+}
+
+model_def : model.5378 {
+	model_desc: "/model/props/street/reefer_cargo1.pmd"
+}
+
+model_def : model.5379 {
+	model_desc: "/model/props/street/reefer_cargo2.pmd"
+}
+
+model_def : model.5380 {
+	model_desc: "/model/vehicle/event/log_trailer.pmd"
+}
+
+model_def : model.5381 {
+	model_desc: "/model/vehicle/event/dumper_trailer.pmd"
+}
+
+model_def : model.5382 {
+	model_desc: "/model/vehicle/event/box_damage_trailer.pmd"
+}
+
+model_def : model.5383 {
+	model_desc: "/model/props/road/patch_decals_groups.pmd"
+	distance_type: 0
+}
+
+model_def : model.5384 {
+	model_desc: "/model/vehicle/event/mack_anim_hookup.pmd"
+}
+
+model_def : model.5385 {
+	model_desc: "/model/vehicle/event/wheel_cover.pmd"
+}
+
+
+
+model_def : model.5391 {
+	model_desc: "/model/vehicle/event/audi_a6_crashed.pmd"
+}
+
+
+model_def : model.5392 {
+	model_desc: "/model/mover/props/street/co_driver_man.pmd"
+  category: "characters"		
+}
+
+model_def : model.5393 {
+	model_desc: "/model/mover/props/street/reporter_woman.pmd"
+  category: "characters"		
+}
+model_def : model.5394 {
+	model_desc: "/model/mover/props/street/reporter2_woman.pmd"
+  category: "characters"		
+}
+
+model_def : model.5395 {
+	model_desc: "/model/mover/props/street/respondent_yes_man.pmd"	
+  category: "characters"	
+}
+
+model_def : model.5396 {
+	model_desc: "/model/mover/props/street/selfie_mobil_man.pmd"	
+  category: "characters"	
+}
+
+model_def : model.5397 {
+	model_desc: "/model/mover/props/street/selfie_mobil_woman.pmd"	
+  category: "characters"	
+}
+
+model_def : model.5398 {
+	model_desc: "/model/mover/props/street/selfie_stick_man.pmd"	
+  category: "characters"	
+}
+
+model_def : model.5399 {
+	model_desc: "/model/mover/props/street/selfie_stick_woman.pmd"	
+  category: "characters"	
+}
+
+model_def : model.5400 {
+	model_desc: "/model/mover/props/street/reporter_man.pmd"
+  category: "characters"		
+}
+model_def : model.5401 {
+	model_desc: "/model/mover/props/street/reporter2_man.pmd"
+  category: "characters"		
+}
+model_def : model.5402 {
+	model_desc: "/model/mover/props/street/respondent_no_man.pmd"	
+  category: "characters"	
+}
+
+model_def : model.5403 {
+	model_desc: "/model/vehicle/event/f150_crashed.pmd"
+}
+
+model_def : model.5404 {
+	model_desc: "/model/mover/props/street/delivery_packing_box.pmd"	
+}
+model_def : model.5405 {
+	model_desc: "/model/mover/props/street/firefighter_on_truck.pmd"	
+}
+model_def : model.5406 {
+	model_desc: "/model/mover/props/street/firefighter_saw.pmd"	
+}
+model_def : model.5407 {
+	model_desc: "/model/mover/props/street/firefighter_stand_tired.pmd"	
+}
+model_def : model.5408 {
+	model_desc: "/model/mover/props/street/firefighter_sweep.pmd"	
+}
+model_def : model.5409 {
+	model_desc: "/model/mover/props/street/garbageman_event.pmd"	
+}
+model_def : model.5410 {
+	model_desc: "/model/mover/props/street/officer_controls_traffic.pmd"	
+}
+model_def : model.5411 {
+	model_desc: "/model/mover/props/street/officer_moto_controls_traffic.pmd"	
+}
+model_def : model.5412 {
+	model_desc: "/model/mover/props/street/reporter_cam.pmd"	
+}
+
+model_def : model.5413 {
+	model_desc: "/model/mover/props/street/worker_navigation.pmd"	
+}
+model_def : model.5414 {
+	model_desc: "/model/mover/props/street/worker_strap.pmd"
+}
+model_def : model.5415 {
+	model_desc: "/model/vegetation/fallen_branch1.pmd"
+	auto_compound: true
+}
+model_def : model.5416 {
+	model_desc: "/model/vegetation/fallen_branch2.pmd"
+	auto_compound: true
+}
+model_def : model.5417 {
+	model_desc: "/model/vegetation/fallen_branch_small1.pmd"
+	auto_compound: true
+}
+model_def : model.5418 {
+	model_desc: "/model/vegetation/fallen_branch_small2.pmd"	
+	auto_compound: true
+}
+
+model_def : model.5419 {
+	model_desc: "/model/props/street/roadwork_light.pmd"	
+}
+
+model_def : model.5420 {
+	model_desc: "/model/vehicle/event/accord_front_crashed.pmd"	
+}
+
+model_def : model.5421 {
+	model_desc: "/model/vehicle/event/accord_rear_crashed.pmd"	
+}
+
+model_def : model.5422 {
+	model_desc: "/model/vehicle/event/cadillac_crs.pmd"	
+}
+
+model_def : model.5423 {
+	model_desc: "/model/mover/props/street/garbageman_event_2.pmd"	
+}
+
+model_def : model.5424 {
+	model_desc: "/model/mover/props/street/worker_navigation_2.pmd"	
+}
+
+model_def : model.5425 {
+	model_desc: "/model/mover/props/street/worker_strap_2.pmd"	
+}
+
+model_def : model.5426 {
+	model_desc: "/model/mover/props/street/officer_controls_traffic_2.pmd"	
+}
+
+
+model_def : model.5427 {
+	model_desc: "/model/props/road/patch_decals.pmd"	
+	distance_type: 0
 }
 
 model_def : model.nm_1033 {
@@ -4119,5 +4486,1050 @@ model_def : model.5566 {
 	
 	
 }
+
+model_def : model.5567 {
+	model_desc: "/model/vehicle/parked_cars/vintage_car.pmd"
+}
+
+model_def : model.5568 {
+	model_desc: "/model/vehicle/parked_cars/parked_car_short.pmd"
+}
+
+model_def : model.5569 { 
+	model_desc: "/model/advert/billboard/billboard_company.pmd"
+}
+
+model_def : model.5570 { 
+	model_desc: "/model/advert/billboard/billboard_company_astand.pmd"
+}
+
+model_def : model.5571 { 
+	model_desc: "/model/advert/billboard/billboard_company_wall.pmd"
+}
+
+model_def : model.5572 { 
+	model_desc: "/model/distribution/liquid/pipes01_pilot_gate.pmd"
+}
+
+model_def : model.5573 { 
+	model_desc: "/model/distribution/liquid/pipes01_gate.pmd"
+}
+
+model_def : model.5574 {
+	model_desc: "/model/distribution/liquid/refinery_piperails_corner_left.pmd"
+}
+
+model_def : model.5575 {
+	model_desc: "/model/distribution/liquid/refinery_piperails_corner_right.pmd"
+}
+
+model_def : model.5576 {
+	model_desc: "/model/distribution/liquid/refinery_piperails_end.pmd"
+}
+
+model_def : model.5577 {
+	model_desc: "/model/distribution/liquid/refinery_piperails_start.pmd"
+}
+
+model_def : model.5386 {
+	model_desc: "/model/props/street/street_dirt_decal.pmd"
+	#color_variant[]:"Default | var_1: 64,62,58 | var_2: 64,62,58 | var_3: 64,62,58 | var_4: 64,62,58 | var_5: 64,62,58 | var_6: 64,62,58"
+	#color_variant[]:"Desert | var_1: 196,185,163 | var_2: 196,185,163 | var_3: 196,185,163 | var_4: 196,185,163 | var_5: 196,185,163 | var_6: 196,185,163"
+	#color_variant[]:"River | var_1: 128,106,75 | var_2: 128,106,75 | var_3: 128,106,75 | var_4: 128,106,75 | var_5: 128,106,75 | var_6: 128,106,75"
+	#color_variant[]:"Green | var_1: 36,48,24 | var_2: 36,48,24 | var_3: 36,48,24 | var_4: 36,48,24 | var_5: 36,48,24 | var_6: 36,48,24"
+	#color_variant[]:"Gravel | var_1: 102,91,77 | var_2: 102,91,77 | var_3: 102,91,77 | var_4: 102,91,77 | var_5: 102,91,77 | var_6: 102,91,77"
+	#color_variant[]:"Soil Red | var_1: 79,56,41 | var_2: 79,56,41 | var_3: 79,56,41 | var_4: 79,56,41 | var_5: 79,56,41 | var_6: 79,56,41"
+	#color_variant[]:"Gravel Red | var_1: 102,65,40 | var_2: 102,65,40 | var_3: 102,65,40 | var_4: 102,65,40 | var_5: 102,65,40 | var_6: 102,65,40"
+	#color_variant[]:"Gravel Sand | var_1: 77,59,41 | var_2: 77,59,41 | var_3: 77,59,41 | var_4: 77,59,41 | var_5: 77,59,41 | var_6: 77,59,41"
+	distance_type: 0
+}
+
+model_def : model.5387 {
+	model_desc: "/model/props/street/street_dirt2_decal.pmd"
+	#color_variant[]:"Default | var_1: 64,62,58 | var_2: 64,62,58 | var_3: 64,62,58 | var_4: 64,62,58 | var_5: 64,62,58 | var_6: 64,62,58 | var_7: 64,62,58"
+	#color_variant[]:"Desert | var_1: 196,185,163 | var_2: 196,185,163 | var_3: 196,185,163 | var_4: 196,185,163 | var_5: 196,185,163 | var_6: 196,185,163 | var_7: 196,185,163"
+	#color_variant[]:"River | var_1: 128,106,75 | var_2: 128,106,75 | var_3: 128,106,75 | var_4: 128,106,75 | var_5: 128,106,75 | var_6: 128,106,75 | var_7: 128,106,75"
+	#color_variant[]:"Green | var_1: 36,48,24 | var_2: 36,48,24 | var_3: 36,48,24 | var_4: 36,48,24 | var_5: 36,48,24 | var_6: 36,48,24 | var_7: 36,48,24"
+	#color_variant[]:"Gravel | var_1: 102,91,77 | var_2: 102,91,77 | var_3: 102,91,77 | var_4: 102,91,77 | var_5: 102,91,77 | var_6: 102,91,77 | var_7: 102,91,77"
+	#color_variant[]:"Soil Red | var_1: 79,56,41 | var_2: 79,56,41 | var_3: 79,56,41 | var_4: 79,56,41 | var_5: 79,56,41 | var_6: 79,56,41 | var_7: 79,56,41"
+	#color_variant[]:"Gravel Red | var_1: 102,65,40 | var_2: 102,65,40 | var_3: 102,65,40 | var_4: 102,65,40 | var_5: 102,65,40 | var_6: 102,65,40 | var_7: 102,65,40"
+	#color_variant[]:"Gravel Sand | var_1: 77,59,41 | var_2: 77,59,41 | var_3: 77,59,41 | var_4: 77,59,41 | var_5: 77,59,41 | var_6: 77,59,41 | var_7: 77,59,41"
+	distance_type: 0
+}
+
+model_def : model.5388 {
+	model_desc: "/model/props/street/street_foot_decal.pmd"
+	distance_type: 0
+}
+
+model_def : model.5389 {
+	model_desc: "/model/props/street/street_oil_decal.pmd"
+	distance_type: 0
+}
+
+model_def : model.5390 {
+	model_desc: "/model/props/street/street_track_decal.pmd"
+	distance_type: 0
+}
+
+model_def : model.5578 {
+	model_desc: "/model/distribution/liquid/refinery_piperails_middle.pmd"
+}
+
+model_def : model.5579 {
+	model_desc: "/model/props/street/street_track_decal_exit.pmd"
+	distance_type: 0
+	color_variant[]:"Gravel | var1: 64,62,58"
+	color_variant[]:"Gravel track | var1: 103,93,80"
+	color_variant[]:"Sand | var1: 166,144,126"
+	color_variant[]:"Dirt | var1: 156,122,98"
+	color_variant[]:"Red | var1: 54,40,33"
+	color_variant[]:"White | var1: 126,128,117"
+	color_variant[]:"Brown | var1: 61,51,36"
+
+}
+
+model_def : model.5580 {
+	model_desc: "/model/advert/neon/neon_blink.pmd"
+}
+
+model_def : model.5581 {
+	model_desc: "/model/advert/neon/neon_blink_circ.pmd"
+}
+
+model_def : model.5582 {
+	model_desc: "/model/advert/neon/neon_blink_moto.pmd"
+}
+
+model_def : model.5583 {
+	model_desc: "/model/advert/neon/neon_blink_stripes.pmd"
+}
+
+model_def : model.5584 {
+	model_desc: "/model/advert/neon/neon_blink_cafe.pmd"
+}
+
+model_def : model.5585 {
+	model_desc: "/model/advert/neon/neon_blink_heart.pmd"
+}
+
+model_def : model.5586 {
+	model_desc: "/model/advert/neon/neon_blink_bar.pmd"
+}
+
+model_def : model.5587 {
+	model_desc: "/model/advert/neon/neon_blink_jazz.pmd"
+}
+
+model_def : model.5588 {
+	model_desc: "/model/advert/neon/neon_blink_hotel.pmd"
+}
+
+model_def : model.5589 {
+	model_desc: "/model/advert/neon/neon_blink_bowling.pmd"
+}
+
+model_def : model.nm_228 {
+	model_desc: "/model/building/country/nm_small_house1.pmd"		
+}
+
+model_def : model.nm_236 {
+	model_desc: "/model/building/country/nm_small_house2.pmd"
+
+}
+
+model_def : model.nm_242 {
+	model_desc: "/model/building/country/nm_small_house3.pmd"
+}
+
+model_def : model.nm_243 {
+	model_desc: "/model/building/country/nm_small_house4.pmd"
+}
+
+model_def : model.nm_475 {
+	model_desc: "/model/props/road/channel_decals.pmd"
+	distance_type: 0	
+}
+
+model_def : model.or_27 {
+	model_desc: "/model/props/street/or_table_bench3.pmd"
+	color_variant[]:"Base | vis1: 128,128,128 | vis2: 128,128,128"
+	color_variant[]:"Green | vis1: 0,27,28 | vis2: 0,2,2"
+}
+
+model_def : model.az_27 {
+	#category: "Arizona"
+	model_desc: "/model/advert/motel_totem1.pmd"
+}
+
+model_def : model.nm_354 {
+	model_desc: "/model/props/road/big_sandy01.pmd"		
+}
+model_def : model.nm_355 {
+	model_desc: "/model/props/road/big_sandy02.pmd"		
+}
+model_def : model.nm_356 {
+	model_desc: "/model/props/road/big_sandy03.pmd"		
+}
+
+model_def : model.5590 {
+	model_desc: "/model/barrier/concrete/barrier_concrete1_block.pmd"		
+}
+
+model_def : model.nm_230 {
+	model_desc: "/model/building/country/nm_pueblo_settlement1.pmd"	
+  
+	static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement1_lod1.pmd"	
+}
+model_def : model.nm_231 {
+	model_desc: "/model/building/country/nm_pueblo_settlement2.pmd"		
+  
+  static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement2_lod1.pmd"	
+}
+model_def : model.nm_232 {
+	model_desc: "/model/building/country/nm_pueblo_settlement3.pmd"		
+
+  static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement3_lod1.pmd"
+}	
+model_def : model.nm_233 {
+	model_desc: "/model/building/country/nm_pueblo_settlement4.pmd"	
+  
+  static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement4_lod1.pmd"	 
+}
+model_def : model.nm_234 {
+	model_desc: "/model/building/country/nm_pueblo_settlement5.pmd"	
+  
+  static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement5_lod1.pmd"	
+}
+
+model_def : model.nm_351 {
+	model_desc: "/model/building/country/nm_pueblo_settlement6_t_shape.pmd"	
+  
+  static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement6_t_shape_lod1.pmd"		
+}
+model_def : model.nm_352 {
+	model_desc: "/model/building/country/nm_pueblo_settlement7_l_shape.pmd"	
+  
+  static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement7_l_shape_lod1.pmd"	
+}
+model_def : model.nm_353 {
+	model_desc: "/model/building/country/nm_pueblo_settlement8_sparse.pmd"	
+  
+  static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/building/country/nm_pueblo_settlement8_sparse_lod1.pmd"	  	
+}
+
+model_def : model.nm_397 {
+	model_desc: "/model/rock/nm_stone1.pmd"
+    
+	color_variant[]:"grey | vis1: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131 | vis4: 125,126,131"
+	color_variant[]:"red | vis1: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98 | vis4: 144,106,98"
+	color_variant[]:"sand | vis1: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122 | vis4: 175,151,122"
+	color_variant[]:"dark | vis1: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67 | vis4: 62,63,67"
+  color_variant[]:"white | vis1: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192 | vis4: 192,192,192"
+  color_variant[]:"red dark | vis1: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57 | vis4: 92,64,57"		
+	auto_compound: true
+}
+
+model_def : model.az_28 {
+	model_desc: "/model/building/shop/shop1_dlc_arizona.pmd"
+}
+
+model_def : model.nm_342 {
+	model_desc: "/model/panorama/nm_teepee_trading_post1.pmd"
+}
+
+model_def : model.nm_343 {
+	model_desc: "/model/panorama/nm_teepee_trading_post2.pmd"
+}
+
+model_def : model.nm_375 {
+	model_desc: "/model/panorama/nm_teepee_trading_post1a.pmd"
+}
+
+model_def : model.nm_376 {
+	model_desc: "/model/panorama/nm_teepee_trading_post1b.pmd"
+}
+
+model_def : model.nm_378 {
+	model_desc: "/model/panorama/nm_teepee_trading_post2a.pmd"
+}
+
+model_def : model.nm_379 {
+	model_desc: "/model/panorama/nm_teepee_trading_post2b.pmd"
+}
+
+model_def : model.nm_385 {
+	model_desc: "/model/panorama/nm_yellowhorse_trading_posta.pmd"
+}
+
+model_def : model.nm_386 {
+	model_desc: "/model/panorama/nm_yellowhorse_trading_postb.pmd"
+}
+
+model_def : model.nm_387 {
+	model_desc: "/model/panorama/nm_yellowhorse_trading_postc.pmd"
+}
+
+model_def : model.nm_347 {
+	model_desc: "/model/panorama/nm_red_rock.pmd"
+}
+
+model_def : model.nm_350 {
+	model_desc: "/model/panorama/nm_lupton_rock.pmd"
+}
+
+model_def : model.5591 {
+	model_desc: "/model/vehicle/parked_cars/harley_police.pmd"
+
+}
+
+model_def : model.nm_333 {
+	model_desc: "/model/props/uni/nm_cargo_props_mix01.pmd"
+	
+	static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/props/uni/nm_cargo_props_mix01_lod1.pmd"
+
+}
+
+model_def : model.nm_334 {
+	model_desc: "/model/props/uni/nm_cargo_props_mix02.pmd"
+
+	static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/props/uni/nm_cargo_props_mix02_lod1.pmd"
+	
+}
+
+model_def : model.nm_335 {
+	model_desc: "/model/props/uni/nm_cargo_props_pallet03.pmd"
+	
+}
+
+model_def : model.nm_336 {
+	model_desc: "/model/props/uni/nm_cargo_props_pallet04.pmd"
+	
+}
+
+model_def : model.nm_49 {
+	model_desc: "/model/building/house/nm_suburb_house_01.pmd"
+	static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/model/building/house/nm_suburb_house_01_lod1.pmd"	
+	
+	color_variant[]:"Biege_light | vis_wall: 194,169,154 | var1_wall: 194,169,154 | var2_wall: 194,169,154 | var3_wall: 194,169,154 | var4_wall: 194,169,154 | var5_wall: 194,169,154 | vis_roof: 92,76,76 | var1_roof: 92,76,76 | var2_roof: 92,76,76 | var3_roof: 92,76,76 | var4_roof: 92,76,76 | var5_roof: 92,76,76"	
+	color_variant[]:"Biege_dark | vis_wall: 102,76,67 | var1_wall: 102,76,67 | var2_wall: 102,76,67 | var3_wall: 102,76,67 | var4_wall: 102,76,67 | var5_wall: 102,76,67 | vis_roof: 112,112,112 | var1_roof: 112,112,112 | var2_roof: 112,112,112 | var3_roof: 112,112,112 | var4_roof: 112,112,112 | var5_roof: 112,112,112"
+	color_variant[]:"Orcher | vis_wall: 142,121,95 | var1_wall: 142,121,95 | var2_wall: 142,121,95 | var3_wall: 142,121,95 | var4_wall: 142,121,95 | var5_wall: 142,121,95 | vis_roof: 43,43,43 | var1_roof: 43,43,43 | var2_roof: 43,43,43 | var3_roof: 43,43,43 | var4_roof: 43,43,43 | var5_roof: 43,43,43"			
+	color_variant[]:"Brown	| vis_wall: 107,98,86 | var1_wall: 107,98,86 | var2_wall: 107,98,86 | var3_wall: 107,98,86 | var4_wall: 107,98,86 | var5_wall: 107,98,86 | vis_roof: 56,56,56 | var1_roof: 56,56,56 | var2_roof: 56,56,56 | var3_roof: 56,56,56 | var4_roof: 56,56,56 | var5_roof: 56,56,56"			
+	
+	}
+	
+model_def : model.nm_88 {
+	model_desc: "/model/building/house/nm_suburb_house_03.pmd"
+	static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/model/building/house/nm_suburb_house_03_lod1.pmd"
+
+	color_variant[]:"White01 | vis_wall: 185,177,157 | alt1_walls: 185,177,157  | l_entr_wall: 185,177,157  | l_gar_wall: 185,177,157  | l_kit_wall: 185,177,157  | s_gar_wall: 185,177,157  | s_kit_wall: 185,177,157  | vis_roof: 68,57,52 | alt1_roof: 68,57,52 | l_entr_roof: 68,57,52  | l_gar_roof: 68,57,52  | l_kit_roof: 68,57,52  | s_gar_roof: 68,57,52  | s_kit_roof: 68,57,52"
+	color_variant[]:"Biege_dark | vis_wall: 130,94,85 | alt1_walls: 130,94,85  | l_entr_wall: 130,94,85  | l_gar_wall: 130,94,85 | l_kit_wall: 130,94,85  | s_gar_wall: 130,94,85  | s_kit_wall: 130,94,85  | vis_roof: 28,25,25 | alt1_roof: 28,25,25  | l_entr_roof: 28,25,25  | l_gar_roof: 31,25,25  | l_kit_roof: 28,25,25  | s_gar_roof: 28,25,25  | s_kit_roof: 28,25,25"
+	color_variant[]:"White02 | vis_wall: 178,174,169 | alt1_walls: 178,174,169  | l_entr_wall: 178,174,169  | l_gar_wall: 178,174,169  | l_kit_wall: 178,174,169  | s_gar_wall: 178,174,169  | s_kit_wall: 178,174,169  | vis_roof: 46,53,46 | alt1_roof: 46,53,46  | l_entr_roof: 46,53,46  | l_gar_roof: 46,53,46  | l_kit_roof: 46,53,46  | s_gar_roof: 46,53,46  | s_kit_roof: 46,53,46"
+ 	color_variant[]:"Biege_light | vis_wall: 155,135,130 | alt1_walls: 155,135,130  | l_entr_wall: 155,135,130  | l_gar_wall: 155,135,130 | l_kit_wall: 155,135,130  | s_gar_wall: 155,135,130  | s_kit_wall: 155,135,130  | vis_roof: 68,57,52 | alt1_roof: 68,57,52 | l_entr_roof: 68,57,52  | l_gar_roof: 68,57,52  | l_kit_roof: 68,57,52  | s_gar_roof: 68,57,52  | s_kit_roof: 68,57,52"
+ 	color_variant[]:"White02 | vis_wall: 223,223,223 | alt1_walls: 223,223,223  | l_entr_wall: 223,223,223  | l_gar_wall: 223,223,223 | l_kit_wall: 223,223,223  | s_gar_wall: 223,223,223  | s_kit_wall: 223,223,223  | vis_roof: 10,10,10 | alt1_roof: 10,10,10 | l_entr_roof: 10,10,10  | l_gar_roof: 10,10,10  | l_kit_roof: 10,10,10  | s_gar_roof: 10,10,10  | s_kit_roof: 10,10,10"
+
+}
+
+model_def : model.nm_91 {
+	model_desc: "/model/building/house/nm_suburb_house_02.pmd"
+	static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/model/building/house/nm_suburb_house_02_lod1.pmd"
+	
+	color_variant[]:"Biege_light | clr_vis: 155,135,130 | clr_top1: 155,135,130 | clr_top2: 155,135,130 | clr_small: 155,135,130 | clr_big: 155,135,130 | clr_balc: 155,135,130 | clr_balc1: 155,135,130 | clr_L1: 155,135,130 | clr_L2: 155,135,130 | clr_R1: 155,135,130 | clr_R2: 155,135,130 | clr_side_L: 155,135,130 | clr_side_R: 155,135,130"	
+	color_variant[]:"Biege_dark | clr_vis: 130,94,85 | clr_top1: 130,94,85  | clr_top2: 130,94,85  | clr_small: 130,94,85  | clr_big: 130,94,85  | clr_balc: 130,94,85  | clr_balc1: 130,94,85  | clr_L1: 130,94,85  | clr_L2: 130,94,85  | clr_R1: 130,94,85  | clr_R2: 130,94,85  | clr_side_L: 130,94,85  | clr_side_R: 130,94,85"
+	color_variant[]:"Orcher | clr_vis: 142,121,95 | clr_top1: 142,121,95   | clr_top2: 142,121,95   | clr_small: 142,121,95   | clr_big: 142,121,95   | clr_balc: 142,121,95   | clr_balc1: 142,121,95   | clr_L1: 142,121,95   | clr_L2: 142,121,95   | clr_R1: 142,121,95   | clr_R2: 142,121,95   | clr_side_L: 142,121,95   | clr_side_R: 142,121,95"
+	color_variant[]:"Desert | clr_vis: 145,106,87 | clr_top1: 145,106,87   | clr_top2: 145,106,87   | clr_small: 145,106,87   | clr_big: 145,106,87   | clr_balc: 145,106,87   | clr_balc1: 145,106,87   | clr_L1: 145,106,87   | clr_L2: 145,106,87   | clr_R1: 145,106,87   | clr_R2: 145,106,87   | clr_side_L: 145,106,87   | clr_side_R: 145,106,87"
+
+}
+	
+model_def : model.nm_329 {
+	model_desc: "/model/building/logistic/nm_logistic_07.pmd"
+	
+	color_variant[]:"Biege | var01_front: 46,46,44 | var01_house: 200,196,171 | var01_roof: 46,46,44"	
+	color_variant[]:"Ocher | var01_front: 189,175,138 | var01_house: 189,175,138 | var01_roof: 128,128,128"   
+	color_variant[]:"Red  | var01_front: 119,61,50 | var01_house: 139,139,137 | var01_roof: 80,74,74"	
+	color_variant[]:"White | var01_front: 211,205,205 | var01_house: 211,205,205 | var01_roof: 125,125,125"	
+
+	
+	static_lod_name[]: "50m"
+	static_lod_path[]:  "/model/building/logistic/nm_logistic_07_lod1.pmd"
+	
+}
+
+model_def : model.or_26 {
+	model_desc: "/model/props/street/or_table_bench1.pmd"
+	
+	color_variant[]:"Base | vis1: 215,207,186"
+	color_variant[]:"Brown | vis1: 84,64,56"
+	color_variant[]:"Green | vis1: 31,120,116"
+}
+
+model_def : model.or_28 {
+	model_desc: "/model/props/street/or_table_bench2.pmd"
+
+}
+
+model_def : model.or_1 { 
+	model_desc: "/model/props/street/or_mailboxes1.pmd"
+	
+	color_variant[]:"Var1 | v1_box1: 19,19,26 | v1_box2: 230,230,230 | v1_box3: 19,19,26 | v2_box1: 102,102,102 | v2_box2: 16,31,31 | v2_box3: 230,230,230 | v2_box4: 19,19,26 | v3_box1: 230,230,230 | v3_box2: 102,102,102 | v3_box3: 19,19,26 | v3_box4: 230,230,230"
+	color_variant[]:"Var2 | v1_box1: 16,31,31 | v1_box2: 19,19,26 | v1_box3: 230,230,230 | v2_box1: 16,31,31 | v2_box2: 102,102,102 | v2_box3: 102,102,102 | v2_box4: 230,230,230 | v3_box1: 102,102,102 | v3_box2: 102,102,102 | v3_box3: 230,230,230 | v3_box4: 102,102,102"
+}
+
+model_def : model.5592 {
+	model_desc: "/model/props/street/shop_trolley.pmd"
+
+}
+
+model_def : model.nm_275 {
+	model_desc: "/model/rock/nm_rock_1.pmd"
+	
+	color_variant[]:"grey | vis1: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131"
+	color_variant[]:"red | vis1: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98"
+	color_variant[]:"sand | vis1: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122"
+	color_variant[]:"dark | vis1: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67"
+  color_variant[]:"white | vis1: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192"
+  color_variant[]:"red dark | vis1: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57"
+}
+
+model_def : model.nm_276 {
+	model_desc: "/model/rock/nm_rock_1_half.pmd"
+	
+	color_variant[]:"grey | vis1: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131"
+	color_variant[]:"red | vis1: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98"
+	color_variant[]:"sand | vis1: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122"
+	color_variant[]:"dark | vis1: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67"
+  color_variant[]:"white | vis1: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192"
+  color_variant[]:"red dark | vis1: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57"
+}
+
+model_def : model.nm_277 {
+	model_desc: "/model/rock/nm_rock_1_half_low.pmd"
+	
+	color_variant[]:"grey | vis1: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131"
+	color_variant[]:"red | vis1: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98"
+	color_variant[]:"sand | vis1: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122"
+	color_variant[]:"dark | vis1: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67"
+  color_variant[]:"white | vis1: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192"
+  color_variant[]:"red dark | vis1: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57"
+}
+
+model_def : model.nm_278 {
+	model_desc: "/model/rock/nm_rock_2_half.pmd"
+	
+	color_variant[]:"grey | vis: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131"
+	color_variant[]:"red | vis: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98"
+	color_variant[]:"sand | vis: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122"
+	color_variant[]:"dark | vis: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67"
+  color_variant[]:"white | vis: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192"
+  color_variant[]:"red dark | vis: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57"
+}
+
+model_def : model.nm_279 {
+	model_desc: "/model/rock/nm_rock_ending_half.pmd"
+	
+	color_variant[]:"grey | vis: 125,126,131 | vis_mirr: 125,126,131"
+	color_variant[]:"red | vis: 144,106,98 | vis_mirr: 144,106,98"
+	color_variant[]:"sand | vis: 175,151,122 | vis_mirr: 175,151,122"
+	color_variant[]:"dark | vis: 62,63,67 | vis_mirr: 62,63,67"
+  color_variant[]:"white | vis: 192,192,192 | vis_mirr: 192,192,192"
+  color_variant[]:"red dark | vis: 92,64,57 | vis_mirr: 92,64,57"
+ 
+}
+
+model_def : model.nm_280 {
+	model_desc: "/model/rock/nm_rock_top.pmd"
+	
+	color_variant[]:"grey | vis1: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131"
+	color_variant[]:"red | vis1: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98"
+	color_variant[]:"sand | vis1: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122"
+	color_variant[]:"dark | vis1: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67"
+  color_variant[]:"white | vis1: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192"
+  color_variant[]:"red dark | vis1: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57"
+}
+
+model_def : model.nm_281 {
+	model_desc: "/model/rock/nm_rock_top_half.pmd"
+	
+	color_variant[]:"grey | vis1: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131"
+	color_variant[]:"red | vis1: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98"
+	color_variant[]:"sand | vis1: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122"
+	color_variant[]:"dark | vis1: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67"
+  color_variant[]:"white | vis1: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192"
+  color_variant[]:"red dark | vis1: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57"
+}
+
+model_def : model.nm_1035 {
+	model_desc: "/model/rock/hills/nm_chupadera_mountain.pmd"
+}
+
+model_def : model.nm_1036 {
+	model_desc: "/model/rock/hills/nm_algodones.pmd"
+}
+
+model_def : model.nm_1037 {
+	model_desc: "/model/rock/hills/nm_glorieta_mesa.pmd"
+}
+
+model_def : model.nm_1038 {
+	model_desc: "/model/rock/hills/nm_timber_mountain.pmd"
+}
+
+model_def : model.nm_1039 {
+	model_desc: "/model/rock/hills/nm_alamogordo.pmd"
+}
+
+model_def : model.nm_1041 {
+	model_desc: "/model/rock/cliffs/nm_road_plain_01.pmd"
+	
+color_variant[]:"grey | vis: 125,126,131 | vis2: 125,126,131 | vis3: 125,126,131"
+color_variant[]:"red | vis: 144,106,98 | vis2: 144,106,98 | vis3: 144,106,98"
+color_variant[]:"sand | vis: 175,151,122 | vis2: 175,151,122 | vis3: 175,151,122"
+color_variant[]:"dark | vis: 62,63,67 | vis2: 62,63,67 | vis3: 62,63,67"
+color_variant[]:"white | vis: 192,192,192 | vis2: 192,192,192 | vis3: 192,192,192"
+color_variant[]:"red dark | vis: 92,64,57 | vis2: 92,64,57 | vis3: 92,64,57"
+}
+
+model_def : model.nm_1042 {
+	model_desc: "/model/rock/hills/nm_cub_west_mountain.pmd"
+}
+
+model_def : model.nm_359 {
+	model_desc: "/model/rock/nm_rock_3.pmd"
+	
+	color_variant[]:"grey | vis: 125,126,131"
+	color_variant[]:"red | vis: 144,106,98"
+	color_variant[]:"sand | vis: 175,151,122"
+	color_variant[]:"dark | vis: 62,63,67"
+  color_variant[]:"light | vis: 192,192,192"
+  color_variant[]:"red dark | vis: 92,64,57"
+
+}
+model_def : model.nm_412 {
+	model_desc: "/model/rock/nm_rock_1_half_mult.pmd"
+
+        static_lod_name[]: "lod from 50m"
+        static_lod_path[]: "/model/rock/nm_rock_1_half_mult_lod1.pmd"
+
+}
+model_def : model.nm_431 {
+	model_desc: "/model/rock/nm_rock_3_mult.pmd"
+}
+
+model_def : model.nm_435 {
+	model_desc: "/model/rock/cliffs/nm_road_cliff_top.pmd"
+}
+model_def : model.nm_436 {
+	model_desc: "/model/rock/nm_rock_1_mult.pmd"
+
+        static_lod_name[]: "lod from 50m"
+        static_lod_path[]: "/model/rock/nm_rock_1_mult_lod1.pmd"
+
+}
+model_def : model.nm_439 {
+	model_desc: "/model/rock/nm_rock_2_half_mult.pmd"
+
+}
+
+model_def : model.nm_449 {
+	model_desc: "/model/rock/cliffs/nm_rock_block_01_mult.pmd"
+
+        static_lod_name[]: "lod from 50m"
+        static_lod_path[]: "/model/rock/cliffs/nm_rock_block_01_mult_lod1.pmd"
+
+}
+model_def : model.nm_470 {
+    model_desc: "/model/rock/cliffs/nm_road_cliff_01.pmd"
+
+   static_lod_name[]: "lod from 50m"
+   static_lod_path[]: "/model/rock/cliffs/nm_road_cliff_01_lod1.pmd"
+
+}
+model_def : model.nm_471 {
+    model_desc: "/model/rock/cliffs/nm_road_cliff_02.pmd"
+    
+    static_lod_name[]: "lod from 50m"
+    static_lod_path[]: "/model/rock/cliffs/nm_road_cliff_02_lod1.pmd"
+
+}
+model_def : model.nm_472 {
+    model_desc: "/model/rock/cliffs/nm_road_cliff_03.pmd"
+
+    static_lod_name[]: "lod from 50m"
+    static_lod_path[]: "/model/rock/cliffs/nm_road_cliff_03_lod1.pmd"
+
+}
+model_def : model.nm_67 {
+	vegetation_model : vegetmodel.juniper1
+	
+}
+model_def : model.nm_68 {
+	vegetation_model : vegetmodel.juniper2
+	
+}
+model_def : model.nm_69 {
+	vegetation_model : vegetmodel.juniper3
+	
+}
+model_def : model.nm_70 {
+	vegetation_model : vegetmodel.juniper4
+	
+}
+model_def : model.nm_71 {
+	vegetation_model : vegetmodel.juniper.young
+	
+}
+model_def : model.nm_72 {
+	vegetation_model : vegetmodel.juniper.dead1
+	
+}
+model_def : model.nm_73 {
+	vegetation_model : vegetmodel.juniper.dead2
+	
+}
+
+model_def : model.nm_83 {
+	vegetation_model : vegetmodel.shrub.dry1
+
+}
+model_def : model.nm_84 {
+	vegetation_model : vegetmodel.shrub.dry2
+
+}
+
+model_def : model.nm_87 {
+	vegetation_model : vegetmodel.shrub.green1
+	
+}
+
+model_def : model.nm_90 {
+	vegetation_model : vegetmodel.shrub.green2
+	
+}
+
+model_def : model.nm_95 {
+	vegetation_model : vegetmodel.shrub.green3
+
+}
+model_def : model.nm_96 {
+	vegetation_model : vegetmodel.shrub.green4
+
+}
+
+model_def : model.nm_345 {
+	vegetation_model : vegetmodel.shrub.dry1_bright
+	
+}
+
+model_def : model.nm_346 {
+	vegetation_model : vegetmodel.shrub.dry2_bright
+
+}
+
+model_def : model.nm_360 {
+	vegetation_model : vegetmodel.vachellia1.nm
+}
+
+model_def : model.nm_366 {
+	vegetation_model : vegetmodel.vachellia2.nm
+}
+
+model_def : model.nm_367 {
+	vegetation_model : vegetmodel.vachellia3.nm
+}
+
+model_def : model.nm_369 {
+	vegetation_model : vegetmodel.vachellia4.nm
+}
+
+model_def : model.nm_402 {
+	vegetation_model : vegetmodel.vachellia5.nm
+}
+
+model_def : model.nm_409 {
+ vegetation_model : vegetmodel.sagebrush1.nm
+}
+
+model_def : model.nm_410 {
+ vegetation_model : vegetmodel.sagebrush2.nm
+}
+
+model_def : model.nm_411 {
+ vegetation_model : vegetmodel.sagebrush3.nm
+}
+
+model_def : model.nm_476 {
+	vegetation_model : vegetmodel.pine.panderosa.1.nm
+}
+
+model_def : model.nm_477 {
+	vegetation_model : vegetmodel.pine.panderosa.2.nm
+}
+
+model_def : model.nm_478 {
+	vegetation_model : vegetmodel.pine.panderosa.3.nm
+}
+
+model_def : model.nm_479 {
+	vegetation_model : vegetmodel.pine.panderosa.4.nm
+}
+
+model_def : model.nm_480 {
+	vegetation_model : vegetmodel.pine.panderosa.dry1.nm
+}
+
+model_def : model.nm_481 {
+	vegetation_model : vegetmodel.pine.panderosa.0.nm
+}
+
+model_def : model.nm_482 {
+	vegetation_model : vegetmodel.pine.panderosa.5.nm
+}
+
+model_def : model.nm_500 {
+    model_desc: "/model/props/street/nm_fruit_stall_parasol.pmd"
+}
+
+model_def : model.nm_501 {
+    model_desc: "/model/props/street/nm_fruit_stall_tent.pmd"
+}
+
+model_def : model.nm_502 {
+    model_desc: "/model/props/street/nm_fruit_stall_wooden.pmd"
+}
+
+model_def : model.nm_503 {
+	model_desc: "/model/props/road/road_damage_decal.pmd"
+	distance_type: 0
+
+	color_variant[]:"light | var9: 255,255,255" 
+	color_variant[]:"dark | var9: 100,100,100"  
+} 
+
+model_def : model.nm_504 {
+	model_desc: "/model/props/road/road_sprayed_text.pmd"
+	distance_type: 0
+
+  color_variant[]:"white | var1: 150, 150, 150 | var2: 150, 150, 150 | var3: 150, 150, 150 | var4: 150, 150, 150"  
+	color_variant[]:"red | var1: 198, 113, 83 | var2: 198, 113, 83 | var3: 198, 113, 83 | var4: 198, 113, 83" 
+	color_variant[]:"green | var1: 127, 198, 83 | var2: 127, 198, 83 | var3: 127, 198, 83 | var4: 127, 198, 83"  
+  color_variant[]:"blue | var1: 83, 155, 198 | var2: 83, 155, 198 | var3: 83, 155, 198 | var4: 83, 155, 198" 
+  color_variant[]:"yellow | var1: 198, 184, 83 | var2 198, 184, 83 | var3: 198, 184, 83 | var4: 198, 184, 83"
+  color_variant[]:"pink | var1: 201, 106, 199 | var2: 201, 106, 199 | var3: 201, 106, 199 | var4: 201, 106, 199"  
+  
+}
+
+model_def : model.cessna_01 {
+  	model_desc: "/vehicle/ai/event/cessna/cessna.pmd"
+	static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/vehicle/ai/event/cessna/lod1.pmd"
+    static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/vehicle/ai/event/cessna/lod2.pmd"
+}
+
+model_def : model.cessna_c_01 {
+	model_desc: "/vehicle/ai/event/cessna/cessna_crashed.pmd"
+	static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/vehicle/ai/event/cessna/cessna_crashed_lod1.pmd"
+    static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/vehicle/ai/event/cessna/cessna_crashed_lod2.pmd"
+}
+
+model_def : model.nm_505 {
+	vegetation_model : vegetmodel.shrub.dry1_dark
+}
+model_def : model.nm_506 {
+	vegetation_model : vegetmodel.shrub.dry2_dark
+}
+
+model_def : model.nm_507 {
+	model_desc: "/model/mover/animal/sprite_cow_eating.pmd"
+}
+
+model_def : model.nm_508 {
+	model_desc: "/model/mover/animal/sprite_horse_eating.pmd"
+}
+model_def : model.nm_509 {
+	vegetation_model : vegetmodel.shrub.rich1
+}
+model_def : model.nm_510 {
+	vegetation_model : vegetmodel.shrub.rich2
+}
+model_def : model.nm_511 {
+	vegetation_model : vegetmodel.shrub.rich3
+}
+model_def : model.nm_512 {
+	vegetation_model : vegetmodel.shrub.rich4
+}
+
+model_def : model.nm_513 {
+	model_desc: "/model/vehicle/parked_cars/fire_truck.pmd"
+}
+
+model_def : model.5593 {
+	model_desc: "/model/props/road/arrow_left_medium.pmd"		
+}
+
+model_def : model.nm_266 {
+	model_desc: "/model/advert/nm_adv_fastfood.pmd"
+}
+model_def : model.nm_466 {
+	model_desc: "/model/panorama/forest_mountain_nm_01.pmd"
+
+}     
+model_def : model.nm_467 {
+	model_desc: "/model/panorama/forest_mountain_nm_02.pmd"
+
+}    
+model_def : model.nm_468 {
+	model_desc: "/model/panorama/forest_mountain_nm_03.pmd"
+
+}   
+model_def : model.nm_469 {
+	model_desc: "/model/panorama/forest_mountain_nm_04.pmd"
+
+}   
+
+model_def : model.nm_344 {
+	model_desc: "/model/panorama/nm_yellowhorse_trading_post.pmd"
+}
+
+model_def : model.or_7_mod {
+	model_desc: "/model/vehicle/parked_cars/school_buses_far1.pmd"
+}
+
+model_def : model.or_8_mod {
+	model_desc: "/model/vehicle/parked_cars/school_buses_far2.pmd"
+}
+
+model_def : model.or_9_mod {
+	model_desc: "/model/vehicle/parked_cars/school_buses_far3.pmd"
+}
+
+model_def : model.nm_97 {
+	model_desc: "/model/building/house/nm_suburb_house_03b.pmd"
+	static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/model/building/house/nm_suburb_house_03b_lod1.pmd"
+}
+
+model_def : model.nm_432 {
+	model_desc: "/model/building/shop/nm_shop08.pmd"
+	color_variant[]:"Base | parapet_: 200,200,200 | color_1: 250,250,250 | color_2: 250,250,250 | v123_walls_: 250,250,250 | v123_rim: 250,250,250 | v4_walls_: 176,148,107 | v4_color1_: 255,255,224 | v5_walls_: 84,56,33"
+	color_variant[]:"Beige | parapet_: 41,20,20 | color_1: 178,158,140 | color_2: 178,158,140 | v123_walls_: 250,250,250 | v123_rim: 178,158,140 | v4_walls_: 255,255,255 | v4_color1_: 209,145,112 | v5_walls_: 255,255,255"
+	color_variant[]:"Red  | parapet_: 140,59,18 | color_1: 165,0,5 | color_2: 128,128,128 | v123_walls_: 250,250,250 | v123_rim: 250,250,250 | v4_walls_: 96,64,38 | v4_color1_: 100,83,66 | v5_walls_: 156,128,87"
+}
+
+ 
+
+model_def : model.nm_392{
+	model_desc: "/model/props/street/worker_pickaxe_shovel.pmd"	
+}
+
+model_def : model.nm_393 {
+	model_desc: "/model/props/street/worker_road_cutter.pmd"	
+}
+
+model_def : model.nm_394 {
+	model_desc: "/model/props/street/worker_agitator.pmd"	
+}
+
+model_def : model.nm_395 {
+	model_desc: "/model/props/street/worker_blower.pmd"	
+}
+model_def : model.nm_215 {
+	model_desc: "/model/props/construction/nm_pile_01.pmd"
+}
+model_def : model.nm_216 {
+	model_desc: "/model/props/construction/nm_pile_02.pmd"
+}
+model_def : model.nm_217 {
+	model_desc: "/model/props/construction/nm_pile_03.pmd"
+}
+model_def : model.nm_218 {
+	model_desc: "/model/props/construction/nm_pile_04.pmd"
+}
+
+model_def : model.nm_434 {
+	model_desc: "/model/water/nm_stone_decal_01.pmd"
+	color_variant[]:"Desert | var_1: 196,185,163 | var_2: 196,185,163 | var_3: 196,185,163 | var_4: 196,185,163 | var_5: 196,185,163 | var_6: 196,185,163 | var_7: 196,185,163"
+	color_variant[]:"River | var_1: 128,106,75 | var_2: 128,106,75 | var_3: 128,106,75 | var_4: 128,106,75 | var_5: 128,106,75 | var_6: 128,106,75 | var_7: 128,106,75"
+	color_variant[]:"Green | var_1: 36,48,24 | var_2: 36,48,24 | var_3: 36,48,24 | var_4: 36,48,24 | var_5: 36,48,24 | var_6: 36,48,24 | var_7: 36,48,24"
+	color_variant[]:"Gravel | var_1: 156,139,117 | var_2: 156,139,117 | var_3: 156,139,117 | var_4: 156,139,117 | var_5: 156,139,117 | var_6: 156,139,117 | var_7: 156,139,117"
+	color_variant[]:"Soil Red | var_1: 110,78,59 | var_2: 110,78,59 | var_3: 110,78,59 | var_4: 110,78,59 | var_5: 110,78,59 | var_6: 110,78,59 | var_7: 110,78,59"
+	color_variant[]:"Gravel Red | var_1: 140,90,57 | var_2: 140,90,57 | var_3: 140,90,57 | var_4: 140,90,57 | var_5: 140,90,57 | var_6: 140,90,57 | var_7: 140,90,57"
+	color_variant[]:"Gravel Sand | var_1: 130,100,69 | var_2: 130,100,69 | var_3: 130,100,69 | var_4: 130,100,69 | var_5: 130,100,69 | var_6: 130,100,69 | var_7: 130,100,69"
+}
+
+model_def : model.or_138 {
+	model_desc: "/model/vegetation/coniferous/conifer_dry_fallen2_or.pmd"
+	auto_compound: true
+}
+
+model_def : model.or_136 {
+	model_desc: "/model/vegetation/coniferous/conifer_dry_fallen1_or.pmd"
+	auto_compound: true
+
+}
+
+model_def : model.or_125 {
+	vegetation_model : vegetmodel.conifer.dry.broken1.or
+}
+
+model_def : model.5600 {
+	model_desc: "/model/props/street/gate_anim.pmd"
+}
+
+model_def : model.5601 {
+	model_desc: "/model/props/street/add_parts_buliding.pmd"
+}
+
+model_def : model.5602 {
+	model_desc: "/model/props/road/route_66.pmd"
+}
+
+model_def : model.5603 {
+	model_desc: "/model/props/street/stairs_01.pmd"
+}
+
+model_def : model.5604 {
+	model_desc: "/model/vehicle/parked_cars/parked_cars_6x4_sprite.pmd"
+}
+
+model_def : model.5605 {
+	model_desc: "/model/vehicle/parked_cars/parked_cars_6x2_sprite.pmd"
+}
+
+model_def : model.5607 {
+	model_desc: "/model/vehicle/parked_cars/parked_car_single1.pmd"
+	
+	static_lod_name[]: "LOD midrange"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single1_lod1.pmd"
+	static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single1_lod2.pmd"
+	
+}
+
+model_def : model.5608 {
+	model_desc: "/model/vehicle/parked_cars/parked_car_single2.pmd"
+	
+	static_lod_name[]: "LOD midrange"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single2_lod1.pmd"
+	static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single2_lod2.pmd"
+	
+}
+
+model_def : model.5609 {
+	model_desc: "/model/vehicle/parked_cars/parked_car_single3.pmd"
+	
+	static_lod_name[]: "LOD midrange"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single3_lod1.pmd"
+	static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single3_lod2.pmd"
+	
+}
+
+model_def : model.5610 {
+	model_desc: "/model/vehicle/parked_cars/parked_car_single4.pmd"
+	
+	static_lod_name[]: "LOD midrange"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single4_lod1.pmd"
+	static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single4_lod2.pmd"
+	
+}
+
+model_def : model.5611 {
+	model_desc: "/model/vehicle/parked_cars/parked_car_single5.pmd"
+	
+	static_lod_name[]: "LOD midrange"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single5_lod1.pmd"
+	static_lod_name[]: "LOD far distance"                             
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single5_lod2.pmd"
+	
+}
+
+model_def : model.5612 {
+	model_desc: "/model/vehicle/parked_cars/parked_car_single6.pmd"
+	
+	static_lod_name[]: "LOD midrange"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single6_lod1.pmd"
+	static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/vehicle/parked_cars/parked_car_single6_lod2.pmd"
+	
+}
+
+model_def : model.5613 {
+	vegetation_model : vegetmodel.vachellia1.far_nm
+  
+}
+model_def : model.5614 {
+	vegetation_model : vegetmodel.vachellia2.far_nm
+  
+}
+model_def : model.5615{
+	vegetation_model : vegetmodel.vachellia3.far_nm
+  
+}
+model_def : model.5616{
+	vegetation_model : vegetmodel.vachellia4.far_nm
+  
+}
+model_def : model.5617 {
+	vegetation_model : vegetmodel.vachellia5.far_nm
+  
+}
+model_def : model.5618 {
+	vegetation_model : vegetmodel.tree.middle1_far
+  
+}
+model_def : model.5619 {
+	vegetation_model : vegetmodel.tree.middle2_far
+  
+}
+model_def : model.5620 {
+	vegetation_model : vegetmodel.tree.middle3_far
+  
+}
+model_def : model.5621 {
+	vegetation_model : vegetmodel.tree.middle4_far
+  
+}
+model_def : model.5622 {
+	vegetation_model : vegetmodel.cypress.slim1_far
+  
+}
+
+model_def : model.bigpinktruck {
+	model_desc: "/model/measure_bigpinktruck.pmd"
+}
+
+model_def : model.rockymntn {
+	model_desc: "/model/measure_rockymountaindouble.pmd"
+}
+
+model_def : model.5623 {
+	model_desc: "/model/vehicle/event/police_driver_city.pmd"
+	
+}
+
+model_def : model.5625 {
+	model_desc: "/model/vehicle/parked_cars/harley_police_event.pmd"
+	static_lod_name[]: "LOD_50m"
+	static_lod_path[]: "/model/vehicle/parked_cars/harley_police_event_lod1.pmd"
+}
+
 
 }

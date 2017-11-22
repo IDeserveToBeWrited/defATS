@@ -53,6 +53,22 @@ sign_model : sign.6 {
 
 	instanced: true
 }
+
+sign_model : sign.6a {
+
+	sign_name: "la_street_lamp3_double lod"
+
+	model_desc: "/model/props/lamp/la_street-lamp3_double_lod.pmd"
+	model_coll: "/model/props/lamp/la_street-lamp3_double_lod.pmc"
+	look_name: default
+	distance_type: 1
+
+	dynamic: false
+	road_model: true
+
+	instanced: true
+}
+
 sign_model : sign.7 {
 
 	sign_name: "la_street_lamp4_park"
@@ -759,6 +775,7 @@ sign_model : sign.205 {
 	dynamic: true
 	mass: 100
 
+	traffic_rule: 	traffic_rule.give_way
 }
 sign_model : sign.206 {
 
@@ -1796,7 +1813,20 @@ sign_model : sign.431 {
 
 }
 
+sign_model : sign.431a {
 
+	sign_name: "la_street_lamp5 lod"
+
+	model_desc: "/model/props/lamp/la_street-lamp5_lod.pmd"
+	model_coll: "/model/props/lamp/la_street-lamp5_lod.pmc"
+	look_name: default
+	distance_type: 1
+
+	dynamic: false
+	road_model: true
+	instanced: true
+
+}
 
 sign_model : sign.432 {
 
@@ -2727,6 +2757,7 @@ sign_model : sign.502 {
 
 	dynamic: true
 	mass: 100
+  editable: true
 
 }
 sign_model : sign.503 {
@@ -2739,6 +2770,7 @@ sign_model : sign.503 {
 
 	dynamic: true
 	mass: 100
+  editable: true
 
 }
 sign_model : sign.504 {
@@ -3448,6 +3480,18 @@ sign_model : sign.559 {
 	mass: 100.0
 }
 
+sign_model : sign.559a {
+
+	model_desc: "/model/sign/navigation/exit_sign_wide.pmd"
+	model_coll: "/model/sign/navigation/exit_sign_wide.pmc"
+	
+	category: "editable area"
+	sign_name: "exit_sign"
+	dynamic: true
+	editable: true
+	mass: 100.0
+}
+
 sign_model : sign.560 {
 
 	model_desc: "/model/sign/navigation/freeway_entrance.pmd"
@@ -3484,8 +3528,6 @@ sign_model : sign.562 {
 	dynamic: true
 	editable: true
 	mass: 100.0
-  
-  traffic_rule: traffic_rule.limit_50
 }
 
 sign_model : sign.563 {
@@ -4735,6 +4777,20 @@ sign_model : sign.657 {
 	instanced: true
 }
 
+sign_model : sign.657a {
+
+	sign_name: "la_street_lamp5 bridge lod"
+
+	model_desc: "/model/props/lamp/la_street-lamp5_bridge_lod.pmd"
+	model_coll: "/model/props/lamp/la_street-lamp5_bridge_lod.pmc"
+	look_name: default
+	distance_type: 1
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
 sign_model : sign.658 {
 
 	sign_name: "No_passing_zone"
@@ -4835,8 +4891,2095 @@ sign_model : sign.664 {
 	editable: true
 	mass: 100.0
 
-}
+	}
+
+sign_model : sign.665 {
+
+	sign_name: "US junction"
+
+	model_desc: "/model/sign/traffic/us_junction.pmd"
+	model_coll: "/model/sign/traffic/us_junction.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 300
+
 
 }
 
+sign_model : sign.666 {
+	model_desc: "/model/sign/traffic/us_roadwork_traffic_fork_inner.pmd"
+	model_coll: "/model/sign/traffic/us_roadwork_traffic_fork_inner.pmc"
+	sign_name: "roadwork traffic fork inner"
+	dynamic: true
+	mass: 100.0
 
+}
+sign_model : sign.667 {
+
+	sign_name: "US not U turn"
+
+	model_desc: "/model/sign/traffic/us_trsign_no_u_turn.pmd"
+	model_coll: "/model/sign/traffic/us_trsign_no_u_turn.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+}
+
+sign_model : sign.668 {
+
+	sign_name: "US speed 60 mph"
+
+	model_desc: "/model/sign/traffic/us_speed_60mph.pmd"
+	model_coll: "/model/sign/traffic/us_speed_60mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_60
+}
+
+sign_model : sign.az_5 {
+
+	#category: "Pillar"
+	sign_name: "az_organic01_flower"
+
+	model_desc: "/model/pillar/az_organic01_flower.pmd"
+	model_coll: "/model/pillar/az_organic01_flower.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+}
+
+sign_model : sign.az_6 {
+
+	#category: "Pillar"
+	sign_name: "az_organic02"
+
+	model_desc: "/model/pillar/az_organic02.pmd"
+	model_coll: "/model/pillar/az_organic02.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+}
+
+sign_model : sign.ev_1 {
+	model_desc: "/model/props/street/shovel.pmd"
+	model_coll: "/model/props/street/shovel.pmc"
+	sign_name: "shovel"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_2 {
+	model_desc: "/model/props/street/pick.pmd"
+	model_coll: "/model/props/street/pick.pmc"
+	sign_name: "pick"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_3 {
+	model_desc: "/model/props/street/big_hammer.pmd"
+	model_coll: "/model/props/street/big_hammer.pmc"
+	sign_name: "big_hammer"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_4 {
+
+	sign_name: "Traffic barrier light both sides sync"
+
+	model_desc: "/model/sign/misc/traffic_barrier_light_sync.pmd"
+	model_coll: "/model/sign/misc/traffic_barrier_light_sync.pmc"
+	look_name: default
+	
+
+	dynamic: true
+	mass: 70
+
+}
+
+sign_model : sign.ev_5 {
+
+	sign_name: "Traffic barrier light2 both sides sync"
+
+	model_desc: "/model/sign/misc/traffic_barrier_light2_sync.pmd"
+	model_coll: "/model/sign/misc/traffic_barrier_light2_sync.pmc"
+	look_name: default
+	
+
+	dynamic: true
+	mass: 70
+
+}
+
+sign_model : sign.ev_6 {
+	model_desc: "/model/props/street/bucket.pmd"
+	model_coll: "/model/props/street/bucket.pmc"
+	sign_name: "bucket"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_7 {
+	model_desc: "/model/props/street/cable_coil.pmd"
+	model_coll: "/model/props/street/cable_coil.pmc"
+	sign_name: "cable_coil"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_8 {
+	model_desc: "/model/props/street/fuel_can.pmd"
+	model_coll: "/model/props/street/fuel_can.pmc"
+	sign_name: "fuel_can"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_9 {
+	model_desc: "/model/props/street/hand_mixer.pmd"
+	model_coll: "/model/props/street/hand_mixer.pmc"	
+	sign_name: "hand_mixer"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_10 {
+	model_desc: "/model/props/street/aggregator.pmd"
+	model_coll: "/model/props/street/aggregator.pmc"
+	sign_name: "aggregator"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_11 {
+	model_desc: "/model/props/street/roadwork_barrier.pmd"
+	model_coll: "/model/props/street/roadwork_barrier.pmc"
+	sign_name: "roadwork barrier"
+	
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.ev_13 {
+	model_desc: "/model/sign/misc/road_barrel_light_sync.pmd"
+	model_coll: "/model/sign/misc/road_barrel_light_sync.pmc"
+	sign_name: "road barrel light sync"
+	
+	dynamic: true
+	mass: 70
+	
+}
+
+sign_model : sign.ev_14 {
+	model_desc: "/model/props/street/electric_hammer.pmd"
+	model_coll: "/model/props/street/electric_hammer.pmc"
+	sign_name: "electric hammer"
+	look_name: Default
+	dynamic: true
+	mass: 70.0
+}
+
+sign_model : sign.dlc_nm_3 {
+	sign_name: "nm_traffic_lamp"
+	
+	model_desc: "/model/props/lamp/nm_traffic_lamp.pmd"
+	model_coll: "/model/props/lamp/nm_traffic_lamp.pmc"
+	dynamic: false
+	road_model: false
+	
+}
+
+sign_model : sign.or_2_mod {
+
+	sign_name: "lamp_parking_small"
+
+	model_desc: "/model/props/lamp/lamp_parking_small.pmd"
+	model_coll: "/model/props/lamp/lamp_parking_small.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 150
+}
+
+sign_model : sign.or_1_mod {
+
+	sign_name: "pallet_jack"
+
+	model_desc: "/model/props/garage/pallet_jack.pmd"
+	model_coll: "/model/props/garage/pallet_jack.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 50
+}
+
+sign_model : sign.669 {
+
+	sign_name: "Fuel Price nm"
+
+	model_desc: "/model/sign/gas/price_nm.pmd"
+	look_name: default
+	#category: "fuel"
+
+	dynamic: false
+	distance_type: 2
+	mass: 100
+}
+
+sign_model : sign.670 {
+
+	sign_name: "Fuel Price big nm"
+
+	model_desc: "/model/sign/gas/price_big_nm.pmd"
+	look_name: default
+	#category: "fuel"
+
+	dynamic: false
+	distance_type: 3
+	mass: 100
+}
+
+sign_model : sign.nm_9 {
+
+	sign_name: "nm_fwy3_multiext_drop_1_over"
+
+	model_desc: "/model/sign/navigation/nm_fwy3_multiext_drop_1_over.pmd"
+	model_coll: "/model/sign/navigation/nm_fwy3_multiext_drop_1_over.pmc"
+	look_name: default
+	
+	category: "editable area"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.nm_16 {
+
+	sign_name: "leg 2-1-2 narrow nm"
+
+	model_desc: "/model/sign/navigation/2-1-2_narrow_nm.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_narrow_nm.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_17 {
+
+	sign_name: "leg 2-1-2 wide nm"
+
+	model_desc: "/model/sign/navigation/2-1-2_wide_nm.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_wide_nm.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_18 {
+
+	sign_name: "leg right narrow nm"
+
+	model_desc: "/model/sign/navigation/fwy_right_narrow_nm.pmd"
+	model_coll: "/model/sign/navigation/fwy_right_narrow_nm.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_19 {
+
+	sign_name: "leg left wide nm"
+
+	model_desc: "/model/sign/navigation/fwy_left_wide_nm.pmd"
+	model_coll: "/model/sign/navigation/fwy_left_wide_nm.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_20 {
+
+	sign_name: "leg left narrow nm"
+
+	model_desc: "/model/sign/navigation/fwy_left_narrow_nm.pmd"
+	model_coll: "/model/sign/navigation/fwy_left_narrow_nm.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_21 {
+
+	sign_name: "leg right wide nm"
+
+	model_desc: "/model/sign/navigation/fwy_right_wide_nm.pmd"
+	model_coll: "/model/sign/navigation/fwy_right_wide_nm.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_22 {
+
+	sign_name: "leg side nm"
+
+	model_desc: "/model/sign/navigation/side_nm.pmd"
+	model_coll: "/model/sign/navigation/side_nm.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.sd_bd_01 {
+
+	sign_name: "us side board 01-2"
+
+	model_desc: "/model/sign/navigation/us_side_board_01-2.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_01-2.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_02 {
+
+	sign_name: "us side board 01-1 wide"
+
+	model_desc: "/model/sign/navigation/us_side_board_01-1_wide.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_01-1_wide.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_03 {
+
+	sign_name: "us side board 02"
+
+	model_desc: "/model/sign/navigation/us_side_board_02.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_02.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_04 {
+
+	sign_name: "us side board 03"
+
+	model_desc: "/model/sign/navigation/us_side_board_03.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_03.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_05 {
+
+	sign_name: "us side board 01-3 multi"
+
+	model_desc: "/model/sign/navigation/us_side_board_01-3_multi.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_01-3_multi.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_06 {
+
+	sign_name: "us side board 05-3"
+
+	model_desc: "/model/sign/navigation/us_side_board_05-3.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_05-3.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_07 {
+
+	sign_name: "us side board 05-2"
+
+	model_desc: "/model/sign/navigation/us_side_board_05-2.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_05-2.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_08 {
+
+	sign_name: "us side board 05-1"
+
+	model_desc: "/model/sign/navigation/us_side_board_05-1.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_05-1.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_09 {
+
+	sign_name: "us side board 06"
+
+	model_desc: "/model/sign/navigation/us_side_board_06.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_06.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_10 {
+
+	sign_name: "us side board 07"
+
+	model_desc: "/model/sign/navigation/us_side_board_07.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_07.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_11 {
+
+	sign_name: "us side board 08"
+
+	model_desc: "/model/sign/navigation/us_side_board_08.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_08.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_12 {
+
+	sign_name: "us side board 09"
+
+	model_desc: "/model/sign/navigation/us_side_board_09.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_09.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_13 {
+
+	sign_name: "us side board 04-1"
+
+	model_desc: "/model/sign/navigation/us_side_board_04-1.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_04-1.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_14 {
+
+	sign_name: "us side board 04-3"
+
+	model_desc: "/model/sign/navigation/us_side_board_04-3.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_04-3.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_15 {
+
+	sign_name: "us side board 04-3 multi"
+
+	model_desc: "/model/sign/navigation/us_side_board_04-3_multi.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_04-3_multi.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_16 {
+
+	sign_name: "us side board 04-2 multi"
+
+	model_desc: "/model/sign/navigation/us_side_board_04-2_multi.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_04-2_multi.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_17 {
+
+	sign_name: "us side board 05 wide"
+
+	model_desc: "/model/sign/navigation/us_side_board_05_wide.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_05_wide.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_18 {
+
+	sign_name: "us warning side board 03"
+
+	model_desc: "/model/sign/navigation/us_warn_side_board_03.pmd"
+	model_coll: "/model/sign/navigation/us_warn_side_board_03.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_19 {
+
+	sign_name: "us warning side board 02"
+
+	model_desc: "/model/sign/navigation/us_warn_side_board_02.pmd"
+	model_coll: "/model/sign/navigation/us_warn_side_board_02.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_20 {
+
+	sign_name: "us warning side board 01"
+
+	model_desc: "/model/sign/navigation/us_warn_side_board_01.pmd"
+	model_coll: "/model/sign/navigation/us_warn_side_board_01.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_21 {
+
+	sign_name: "us service side board 02"
+
+	model_desc: "/model/sign/navigation/us_serv_side_board_02.pmd"
+	model_coll: "/model/sign/navigation/us_serv_side_board_02.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_22 {
+
+	sign_name: "us service side board 03"
+
+	model_desc: "/model/sign/navigation/us_serv_side_board_03.pmd"
+	model_coll: "/model/sign/navigation/us_serv_side_board_03.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_23 {
+
+	sign_name: "us service side board 01-2"
+
+	model_desc: "/model/sign/navigation/us_serv_side_board_01-2.pmd"
+	model_coll: "/model/sign/navigation/us_serv_side_board_01-2.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_24 {
+
+	sign_name: "us service side board 05-2"
+
+	model_desc: "/model/sign/navigation/us_serv_side_board_05-2.pmd"
+	model_coll: "/model/sign/navigation/us_serv_side_board_05-2.pmc"
+	look_name: default
+	
+	stand_class: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.sd_bd_25 {
+
+	sign_name: "us note side board 03"
+
+	model_desc: "/model/sign/navigation/us_note_side_board_03.pmd"
+	model_coll: "/model/sign/navigation/us_note_side_board_03.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.sd_bd_26 {
+
+	sign_name: "us cult side board 03"
+
+	model_desc: "/model/sign/navigation/us_cult_side_board_03.pmd"
+	model_coll: "/model/sign/navigation/us_cult_side_board_03.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.sd_bd_27 {
+
+	sign_name: "us info side board 03"
+
+	model_desc: "/model/sign/navigation/us_info_side_board_03.pmd"
+	model_coll: "/model/sign/navigation/us_info_side_board_03.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.sd_bd_28 {
+
+	sign_name: "us info side board 02"
+
+	model_desc: "/model/sign/navigation/us_info_side_board_02.pmd"
+	model_coll: "/model/sign/navigation/us_info_side_board_02.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.sd_bd_29 {
+
+	sign_name: "us cult side board 02"
+
+	model_desc: "/model/sign/navigation/us_cult_side_board_02.pmd"
+	model_coll: "/model/sign/navigation/us_cult_side_board_02.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.sd_bd_30 {
+
+	sign_name: "us side board 01-1"
+
+	model_desc: "/model/sign/navigation/us_side_board_01-1.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_01-1.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.sd_bd_31 {
+
+	sign_name: "us side board 01-3"
+
+	model_desc: "/model/sign/navigation/us_side_board_01-3.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_01-3.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.sd_bd_32 {
+
+	sign_name: "us side board 01-2 wide"
+
+	model_desc: "/model/sign/navigation/us_side_board_01-2_wide.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_01-2_wide.pmc"
+	look_name: default
+	
+	stand_class: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.ov_bd_01 {
+
+	sign_name: "us overhead board 01-2"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_01-2.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-2.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+
+
+sign_model : sign.ov_bd_02 {
+
+	sign_name: "us overhead board 01-3 multi"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_01-3_multi.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-3_multi.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_03 {
+
+	sign_name: "us overhead board 01 wide"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_01_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_01_wide.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_04 {
+
+	sign_name: "us overhead board exit only 02"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_exonly_02.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_02.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_05 {
+
+	sign_name: "us overhead board exit only 01"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_exonly_01.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_01.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_06 {
+
+	sign_name: "us overhead board exit only 01 wide"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_exonly_01_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_01_wide.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_07 {
+
+	sign_name: "us overhead board exit only 01 wide flash"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_exonly_01_wide_flash.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_01_wide_flash.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_08 {
+
+	sign_name: "us overhead board 2ex2"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_2ex2.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_2ex2.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_09 {
+
+	sign_name: "us overhead board 2eo1"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_2eo1.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_2eo1.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_10 {
+
+	sign_name: "us overhead board 05-2"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_05-2.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_05-2.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_11 {
+
+	sign_name: "us overhead board 05 wide"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_05_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_05_wide.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_12 {
+
+	sign_name: "2-1-2 overhead board 05-2l"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_05-2l.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2l.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_r_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_13 {
+
+	sign_name: "2-1-2 overhead board 05-2 05-2"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_05-2_05-2.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2_05-2.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_r_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+
+sign_model : sign.ov_bd_14 {
+
+	sign_name: "fwy2 overhead board exit only 01 01"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_exonly_01_01.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_exonly_01_01.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_15 {
+
+	sign_name: "fwy2 overhead board 05-2 05wide"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_05-2_05_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_05-2_05_wide.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_16 {
+
+	sign_name: "fwy2 overhead board 01-2 01wide"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_01-2_01_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_01-2_01_wide.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_17 {
+
+	sign_name: "fwy2 overhead board 05-1 01wide"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_05-1_01_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_05-1_01_wide.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_18 {
+
+	sign_name: "fwy2 overhead board 05wide 05wide"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_05_wide_05_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_05_wide_05_wide.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_4
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_19 {
+
+	sign_name: "fwy2 overhead board 05-2 05-2"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_05-2_05-2.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_05-2_05-2.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_20 {
+
+	sign_name: "fwy2 overhead board 12-1"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_12-1.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_12-1.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_21 {
+
+	sign_name: "fwy3 overhead board 14-1 1eo3"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_1eo3.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_1eo3.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_22 {
+
+	sign_name: "fwy3 overhead board 09 01-2 01wide"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_09_01-2_01_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_09_01-2_01_wide.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_23 {
+
+	sign_name: "fwy3 overhead board 09 01-2 04-1"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_09_01-2_04-1.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_09_01-2_04-1.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_24 {
+
+	sign_name: "fwy3 overhead board 14-1 04-1"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_25 {
+
+	sign_name: "fwy3 overhead board 14-1 04-3multi"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-3_multi.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-3_multi.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_26 {
+
+	sign_name: "fwy3 overhead board 14-1 04-2multi"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2_multi.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2_multi.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_27 {
+
+	sign_name: "fwy3 overhead board 14-1 16-1"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_16-1.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_16-1.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_4
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_28 {
+
+	sign_name: "fwy4 overhead board 14-1 13-2"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_14-1_13-2.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_13-2.pmc"
+	look_name: default
+	
+	stand_class: 4fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_29 {
+
+	sign_name: "fwy4 overhead board 14-1 13-1"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_14-1_13-1.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_13-1.pmc"
+	look_name: default
+	
+	stand_class: 4fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_30 {
+
+	sign_name: "fwy4 overhead board 14-1 04-1 01-1"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_14-1_04-1_01-1_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_04-1_01-1_wide.pmc"
+	look_name: default
+	
+	stand_class: 4fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_31 {
+
+	sign_name: "fwy4 overhead board 14-1 04-1 04-1"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_14-1_04-1_04-1.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_04-1_04-1.pmc"
+	look_name: default
+	
+	stand_class: 4fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_32 {
+
+	sign_name: "fwy4 overhead board 14-1 16-1"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_14-1_16-1.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_16-1.pmc"
+	look_name: default
+	
+	stand_class: 4fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_33 {
+
+	sign_name: "2-1-2 overhead board 05-2r"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_05-2r.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2r.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_34 {
+
+	sign_name: "2-1-2 overhead board 05-1 wide"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_05-1_wide.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-1_wide.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_35 {
+
+	sign_name: "2-1-2 overhead board 05-2 wide"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_05-2_wide.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2_wide.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_36 {
+
+	sign_name: "fwy2 overhead board 14-1"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_14-1.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_14-1.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_37 {
+
+	sign_name: "2-1-2 overhead board 04-1 05-2 05-2"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_04-1_05-2_05-2.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_04-1_05-2_05-2.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_38 {
+
+	sign_name: "2-1-2 overhead board 04-1 14-1"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_04-1_14-1.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_04-1_14-1.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_6
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_39 {
+
+	sign_name: "fwy3 overhead board 14-1 04-1"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmc"
+	look_name: default
+	
+	stand_class: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_40 {
+
+	sign_name: "us overhead board 04-2"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_04-2.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_04-2.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_41 {
+
+	sign_name: "us overhead board 04-1"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_04-1.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_04-1.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_42 {
+
+	sign_name: "fwy3 overhead board 14-1 04-01 noplague"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1_non.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1_non.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_43 {
+
+	sign_name: "fwy3 overhead board 14-1 04-02 noplague"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2_non.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2_non.pmc"
+	look_name: default
+	
+	stand_class: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_44 {
+
+	sign_name: "fwy1 overhead board exonly 03"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_exonly_03.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_03.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_45 {
+
+	sign_name: "fwy1 overhead board 01-1"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_01-1.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-1.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_46 {
+
+	sign_name: "fwy1 overhead board 01-3"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_01-3.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-3.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_47 {
+
+	sign_name: "fwy1 overhead board 01-2 wide"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_01-2_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-2_wide.pmc"
+	look_name: default
+	
+	stand_class: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+
+sign_model : sign.sm_bd_01 {
+
+	sign_name: "board sml A1"
+
+	model_desc: "/model/sign/navigation/board_sml_a1.pmd"
+	model_coll: "/model/sign/navigation/board_sml_a1.pmc"
+	look_name: default
+	
+	stand_class: side_sml_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.sm_bd_02 {
+
+	sign_name: "board sml A2"
+
+	model_desc: "/model/sign/navigation/board_sml_a2.pmd"
+	model_coll: "/model/sign/navigation/board_sml_a2.pmc"
+	look_name: default
+	
+	stand_class: side_sml_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.sm_bd_03 {
+
+	sign_name: "board sml A3"
+
+	model_desc: "/model/sign/navigation/board_sml_a3.pmd"
+	model_coll: "/model/sign/navigation/board_sml_a3.pmc"
+	look_name: default
+	
+	stand_class: side_sml_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.sm_bd_04 {
+
+	sign_name: "board sml B1"
+
+	model_desc: "/model/sign/navigation/board_sml_b1.pmd"
+	model_coll: "/model/sign/navigation/board_sml_b1.pmc"
+	look_name: default
+	
+	stand_class: side_sml_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.sm_bd_05 {
+
+	sign_name: "board sml C1"
+
+	model_desc: "/model/sign/navigation/board_sml_c1.pmd"
+	model_coll: "/model/sign/navigation/board_sml_c1.pmc"
+	look_name: default
+	
+	stand_class: side_sml_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.sm_bd_06 {
+
+	sign_name: "board sml C2"
+
+	model_desc: "/model/sign/navigation/board_sml_c2.pmd"
+	model_coll: "/model/sign/navigation/board_sml_c2.pmc"
+	look_name: default
+	
+	stand_class: side_sml_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.sm_bd_07 {
+
+	sign_name: "board sml D"
+
+	model_desc: "/model/sign/navigation/board_sml_d.pmd"
+	model_coll: "/model/sign/navigation/board_sml_d.pmc"
+	look_name: default
+	
+	stand_class: side_sml_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_01 {
+
+	sign_name: "fwy board shield entrance"
+
+	model_desc: "/model/sign/navigation/fwy_shield_entrance.pmd"
+	model_coll: "/model/sign/navigation/fwy_shield_entrance.pmc"
+	look_name: default
+	
+	stand_class: side_rot_1
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_02 {
+
+	sign_name: "fwy board shield arrow"
+
+	model_desc: "/model/sign/navigation/fwy_shield_arrow.pmd"
+	model_coll: "/model/sign/navigation/fwy_shield_arrow.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_03 {
+
+	sign_name: "fwy board shield single"
+
+	model_desc: "/model/sign/navigation/fwy_shield_single.pmd"
+	model_coll: "/model/sign/navigation/fwy_shield_single.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_04 {
+
+	sign_name: "fwy board shield single"
+
+	model_desc: "/model/sign/navigation/fwy_shield_arrow_to.pmd"
+	model_coll: "/model/sign/navigation/fwy_shield_arrow_to.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_05 {
+
+	sign_name: "fwy board shield double arrow"
+
+	model_desc: "/model/sign/navigation/fwy_shield_double_arrow.pmd"
+	model_coll: "/model/sign/navigation/fwy_shield_double_arrow.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_06 {
+
+	sign_name: "hw shield arrow"
+
+	model_desc: "/model/sign/navigation/hw_shield_arrow.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_arrow.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_07 {
+
+	sign_name: "hw shield entrance"
+
+	model_desc: "/model/sign/navigation/hw_shield_entrance.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_entrance.pmc"
+	look_name: default
+	
+	stand_class: side_rot_1
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_08 {
+
+	sign_name: "hw shield single"
+
+	model_desc: "/model/sign/navigation/hw_shield_single.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_single.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_09 {
+
+	sign_name: "hw shield arrow to"
+
+	model_desc: "/model/sign/navigation/hw_shield_arrow_to.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_arrow_to.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_10 {
+
+	sign_name: "hw shield double"
+
+	model_desc: "/model/sign/navigation/hw_shield_double.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_double.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_12 {
+
+	sign_name: "hw shield double arrow"
+
+	model_desc: "/model/sign/navigation/hw_shield_double_arrow.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_double_arrow.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_13 {
+
+	sign_name: "hw shield triple 2arrows"
+
+	model_desc: "/model/sign/navigation/hw_shield_triple_2arrows.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_triple_2arrows.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_14 {
+
+	sign_name: "hw shield triple 3arrows"
+
+	model_desc: "/model/sign/navigation/hw_shield_triple_3arrows.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_triple_3arrows.pmc"
+	look_name: default
+	
+	stand_class: side_tall_1
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_15 {
+
+	sign_name: "hw shield triple 4arrows"
+
+	model_desc: "/model/sign/navigation/hw_shield_triple_4arrows.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_triple_4arrows.pmc"
+	look_name: default
+	
+	stand_class: side_tall_1
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_16 {
+
+	sign_name: "hw shield triple 5arrows"
+
+	model_desc: "/model/sign/navigation/hw_shield_triple_5arrows.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_triple_5arrows.pmc"
+	look_name: default
+	
+	stand_class: side_tall_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_17 {
+
+	sign_name: "bus board shield single"
+
+	model_desc: "/model/sign/navigation/bus_shield_arrow_to.pmd"
+	model_coll: "/model/sign/navigation/bus_shield_arrow_to.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_18 {
+
+	sign_name: "bus board shield arrow"
+
+	model_desc: "/model/sign/navigation/bus_shield_arrow.pmd"
+	model_coll: "/model/sign/navigation/bus_shield_arrow.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_19 {
+
+	sign_name: "bus board shield single"
+
+	model_desc: "/model/sign/navigation/bus_shield_single.pmd"
+	model_coll: "/model/sign/navigation/bus_shield_single.pmc"
+	look_name: default
+	
+	stand_class: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.dlc_nm_29 {
+
+	sign_name: "nm reflection post white"
+
+	model_desc: "/model/sign/nm_ref_post1_white.pmd"
+	model_coll: "/model/sign/nm_ref_post1_white.pmc"
+	look_name: default
+	road_model: true
+	
+	dynamic: true
+	mass: 100
+	instanced: true
+}
+
+sign_model : sign.dlc_nm_30 {
+
+	sign_name: "nm reflection post orange"
+
+	model_desc: "/model/sign/nm_ref_post1_orange.pmd"
+	model_coll: "/model/sign/nm_ref_post1_orange.pmc"
+	look_name: default
+	
+	road_model: true
+	dynamic: true
+	mass: 100
+	instanced: true
+}
+
+sign_model : sign.dlc_nm_23 {
+	sign_name: "nm_sightseeing_sign"
+	
+	model_desc: "/model/props/country/sightseeing_sign.pmd"
+	model_coll: "/model/props/country/sightseeing_sign.pmc"
+	
+	dynamic: false
+	road_model: false	
+	editable: true
+	
+}
+sign_model : sign.671 {
+
+	sign_name: "US speed 55 mph traffic"
+
+	model_desc: "/model/sign/traffic/us_speed_55mph_roadwork_traffic.pmd"
+	model_coll: "/model/sign/traffic/us_speed_55mph_roadwork_traffic.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_55
+}
+
+sign_model : sign.672 {
+	model_desc: "/model/sign/traffic_light/roadwork_light.pmd"
+	model_coll: "/model/sign/traffic_light/roadwork_light.pmc"
+	sign_name: "roadwork light"
+	dynamic: true
+	mass: 75.0
+}
+
+sign_model : sign.673 {
+	model_desc: "/model/sign/traffic/us_junction_arrow.pmd"
+	model_coll: "/model/sign/traffic/us_junction_arrow.pmc"
+	sign_name: "us junction arrow"
+	dynamic: true
+	mass: 75.0
+}
+
+}

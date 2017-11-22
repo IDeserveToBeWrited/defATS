@@ -90,9 +90,9 @@ map_data : .map.data {
 	camera_limits_max[2]: (1000000.0, 1000000.0)
 	camera_limits_max[3]: (1000000.0, 1000000.0)
 	camera_limits_max[4]: (-33000.0, 37000.0)
-	camera_limits_max[5]: (-34500.0, 36000.0)
-	camera_limits_max[6]: (-40000.0, 35000.0)
-	camera_limits_max[7]: (-65000.0, 28000.0)
+	camera_limits_max[5]: (-37000.0, 35000.0)
+	camera_limits_max[6]: (-45000.0, 31000.0)
+	camera_limits_max[7]: (-61000.0, 23000.0)
 
 	map_items_flags[0]: 0x5FFF
 	map_items_flags[1]: 0x5FFF
@@ -108,16 +108,17 @@ map_data : .map.data {
 	ui_map_center:	(-1550.0, -1250.0)	// in editor coordinates
 	ui_map_size:	(5240.0, 5240.0)	// map texture in real km
 
-	ui_map_camera_min: (-91000.0, -17000.0)   //(-91000.0, -17000.0)
-	ui_map_camera_max: (-62000.0, 28000.0)    //(-89000.0, 28000.0)
-	ui_map_camera_start: (-90000.0, 3000.0)   //(-90000.0, 3000.0)
+	ui_map_camera_min: (-91000.0, -17000.0)
+	ui_map_camera_max: (-61000.0, 23000.0)
+	ui_map_camera_start: (-90000.0, 3000.0)
 	
 	ui_map_always_draw_city: true
 	
 	# navigation params
 	navigation_city_penalty: 1.0
 	navigation_slow_road_penalty: 5.0
-	navigation_turn_back_limit: 3000.0
+
+	navigation_maximum_speed: 30.6
 
 }
 

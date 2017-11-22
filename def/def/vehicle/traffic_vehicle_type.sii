@@ -11,9 +11,7 @@ SiiNunit
 
 traffic_vehicle_type : traffic.vehicle_type.car
 {
-	allowed_lane_type[]: "*road*"
-
-	spawn_ratio: 1.0
+	tags[]: "road"
 
 	storage_path: "/def/vehicle/traffic_storage_car.sii"
 }
@@ -22,8 +20,7 @@ traffic_vehicle_type : traffic.vehicle_type.car_city
 {
 	speed_class: car
 
-	spawn_ratio: 0.4
-	spawn_max_count: 9
+	tags[]: "downtown"
 
 	storage_path: "/def/vehicle/traffic_storage_car_city.sii"
 }
@@ -32,8 +29,7 @@ traffic_vehicle_type : traffic.vehicle_type.truck_city
 {
 	speed_class: truck
 
-	spawn_ratio: 0.1
-	spawn_max_count: 2
+	tags[]: "downtown"
 
 	storage_path: "/def/vehicle/traffic_storage_truck_city.sii"
 }
@@ -41,53 +37,48 @@ traffic_vehicle_type : traffic.vehicle_type.police
 {
 	speed_class: car
 
-	allowed_lane_type[]: "*road*"
-
-	spawn_ratio: 0.15
-	spawn_max_count: 2
+	tags[]: "road"
 
 	storage_path: "/def/vehicle/traffic_storage_police.sii"
 }
 
+traffic_vehicle_type : traffic.vehicle_type.police_hp
+{
+	speed_class: car
+
+	tags[]: "road"
+
+	storage_path: "/def/vehicle/traffic_storage_police_hp.sii"
+}
+
 traffic_vehicle_type : traffic.vehicle_type.truck
 {
-	allowed_lane_type[]: "*road*"
-
-	spawn_ratio: 1.0
-	spawn_max_count: 8
+	tags[]: "road"
 
 	storage_path: "/def/vehicle/traffic_storage_truck.sii"
 }
 
 traffic_vehicle_type : traffic.vehicle_type.bus
 {
-	allowed_lane_type[]: "*road*"
-
-	spawn_ratio: 0.1
-	spawn_max_count: 1
+	tags[]: "road"
 
 	storage_path: "/def/vehicle/traffic_storage_bus.sii"
 }
 
 traffic_vehicle_type : traffic.vehicle_type.tram
 {
-	allowed_lane_type[]: "*tram*"
-
-	spawn_ratio: 0.4
-	spawn_max_count: 2
+	tags[]: "rail_tram"
 
 	suspension_coef: 0.0
 	deceleration_limit: 8.0
+	
+	attachable_trailer_type[]: tram_car
 
 	storage_path: "/def/vehicle/traffic_storage_tram.sii"
 }
 
 traffic_vehicle_type : traffic.vehicle_type.slow
 {
-	spawn_ratio: 0.3
-
-	spawn_max_count: 1
-
 	spawn_trailer_count[]: 0
 	spawn_trailer_count[]: 1
 
@@ -98,11 +89,7 @@ traffic_vehicle_type : traffic.vehicle_type.slow
 
 traffic_vehicle_type : traffic.vehicle_type.train_cargo
 {
-	allowed_lane_type[]: "*train.cargo"
-
-	spawn_ratio: 0.2
-
-	spawn_max_count: 2
+	tags[]: "rail_train"
 
 	spawn_trailer_count[]: 5
 	spawn_trailer_count[]: 6
@@ -123,11 +110,7 @@ traffic_vehicle_type : traffic.vehicle_type.train_cargo
 
 traffic_vehicle_type : traffic.vehicle_type.train_pass
 {
-	allowed_lane_type[]: "*train.passenger"
-
-	spawn_ratio: 0.2
-
-	spawn_max_count: 2
+	tags[]: "rail_train"
 
 	spawn_trailer_count[]: 3
 	spawn_trailer_count[]: 4
@@ -140,5 +123,18 @@ traffic_vehicle_type : traffic.vehicle_type.train_pass
 
 	storage_path: "/def/vehicle/traffic_storage_train_pass.sii"
 }
+
+traffic_vehicle_type : traffic.vehicle_type.emergency
+{
+	tags[]: "road"
+
+	storage_path: "/def/vehicle/traffic_storage_emergency.sii"
+}
+
+traffic_vehicle_type : traffic.vehicle_type.event
+{
+	storage_path: "/def/vehicle/traffic_storage_event.sii"
+}
+
 
 }

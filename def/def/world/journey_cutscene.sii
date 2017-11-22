@@ -1,0 +1,688 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+journey_events_cutscene : j_cut.rw_in                      
+{
+    cutscene_tokens[]:		rw_in
+	
+    left_width:             20.0                // [m]
+    right_width:            20.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.roadwork                      
+{
+    cutscene_tokens[]:		rw_small2
+	cutscene_tokens[]:		rw_small
+	
+    left_width:             20.0                // [m]
+    right_width:            20.0               // [m]
+	
+}
+
+
+journey_events_cutscene : j_cut.rw_c                   
+{
+    cutscene_tokens[]:		rw_c
+	cutscene_tokens[]:		rw_c	
+	cutscene_tokens[]:		rw_bar_c_10
+	cutscene_tokens[]:		r_bare_c
+	
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	sequence_mode:			fixed
+}
+
+journey_events_cutscene : j_cut.rw_ctr_bar                   
+{
+    #cutscene_tokens[]:		r_bar_c_dbl
+	cutscene_tokens[]:		r_bare_c_dbl	
+	cutscene_tokens[]:		r_con_c_dbl
+	
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	sequence_mode:			fixed
+}
+
+journey_events_cutscene : j_cut.rw_bar_con_c                   
+{
+    #cutscene_tokens[]:		rw_bar_c_10
+	#cutscene_tokens[]:		r_bare_c
+	cutscene_tokens[]:		cone_ctr
+	
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	
+   sequence_mode:			fixed
+}
+
+
+journey_events_cutscene : j_cut.rw_c_in                   
+{
+    cutscene_tokens[0]:		rw_c_in
+	cutscene_tokens[]:		rw_c_in	
+	cutscene_tokens[2]:		r_br_c_10in
+	cutscene_tokens[]:		r_bare_c_in
+	
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	sequence_mode:			fixed
+}
+
+journey_events_cutscene : j_cut.rw_s                   
+{
+    cutscene_tokens[0]:		rw_s
+	cutscene_tokens[1]:		rw_s
+	cutscene_tokens[2]:		rw_bar_s
+	cutscene_tokens[3]:		r_bare_s
+	
+    left_width:             0.5                // [m]
+    right_width:            14.5               // [m]
+
+}
+
+
+journey_events_cutscene : j_cut.rw_s_in                   
+{
+    cutscene_tokens[]:		rw_s_in	
+	cutscene_tokens[]:		rw_s_in
+	cutscene_tokens[]:		r_br_s_in
+	cutscene_tokens[]:		r_bare_s_in
+
+	
+    left_width:             1.0                // [m]
+    right_width:            23.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.rw_e                   
+{
+    cutscene_tokens[]:		rw_e
+	cutscene_tokens[]:		rw_e
+	cutscene_tokens[]:		rw_bar_e
+	cutscene_tokens[]:		r_bare_e
+	
+    left_width:             12.0                // [m]
+    right_width:            1.0               // [m]
+}
+
+journey_events_cutscene : j_cut.rw_e_in                  
+{
+    cutscene_tokens[]:		rw_e_in
+	cutscene_tokens[]:		rw_e_in
+	cutscene_tokens[]:		r_br_e_in
+	cutscene_tokens[]:		r_bare_e_in
+	
+    left_width:             12.0                // [m]
+    right_width:            1.0               // [m]
+}
+
+journey_events_cutscene : j_cut.cone_start                   
+{
+    cutscene_tokens[0]:		cone_start
+    left_width:             6.5               // [m]
+    right_width:            1.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.con_str_in                   
+{
+    cutscene_tokens[0]:		con_str_in
+    left_width:             6.5               // [m]
+    right_width:            1.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.con_ctr_in                   
+{
+    cutscene_tokens[0]:		con_ctr_in
+    left_width:             6.5                // [m]
+    right_width:            6.5              // [m]
+}
+
+journey_events_cutscene : j_cut.con_end_in                  
+{
+    cutscene_tokens[0]:     con_end_in
+    left_width:             6.5                // [m]
+    right_width:            6.5              // [m]
+}
+
+
+journey_events_cutscene : j_cut.cone_ctr                   
+{
+    cutscene_tokens[0]:     cone_ctr
+    left_width:             6.5                // [m]
+    right_width:            6.5              // [m]
+}
+
+
+
+journey_events_cutscene : j_cut.cone_end                   
+{
+    cutscene_tokens[0]:     cone_end
+    left_width:             8.0                // [m]
+    right_width:            1.0               // [m]
+}
+
+
+journey_events_cutscene : j_cut.sg1                   
+{
+    cutscene_tokens[0]:     sg1
+   
+}
+
+journey_events_cutscene : j_cut.sg_end                   
+{
+    cutscene_tokens[0]:     sg_end
+   
+}
+
+journey_events_cutscene : j_cut.sg_end_in                   
+{
+    cutscene_tokens[0]:     sg_end_in
+   
+}
+
+journey_events_cutscene : j_cut.sg1_55                   
+{
+    cutscene_tokens[0]:     sg1_55
+   
+}
+
+journey_events_cutscene : j_cut.sg1_55_in                   
+{
+    cutscene_tokens[0]:     sg1_55_in
+   
+}
+
+journey_events_cutscene : j_cut.sg1_arrow                   
+{
+    cutscene_tokens[0]:     sg1_arrow
+   
+}
+
+journey_events_cutscene : j_cut.sg1_tra_tab                   
+{
+    cutscene_tokens[]:     sg1_tranzit
+	cutscene_tokens[]:     sg1_table
+}
+
+journey_events_cutscene : j_cut.sg1_tran                   
+{
+    cutscene_tokens[]:     sg1_tranzit
+
+}
+
+journey_events_cutscene : j_cut.sg1_trtb_in                   
+{
+    cutscene_tokens[]:     sg1_tran_in
+	cutscene_tokens[]:     sg1_tabl_in 	
+}
+
+journey_events_cutscene : j_cut.sg1_arrow_in                   
+{
+    cutscene_tokens[0]:     sg1_arrow_in
+   
+}
+
+journey_events_cutscene : j_cut.sg1_in                   
+{
+    cutscene_tokens[0]:     sg1_in
+   
+}
+
+journey_events_cutscene : j_cut.sg2                   
+{
+    cutscene_tokens[0]:     sg2
+   
+}
+
+journey_events_cutscene : j_cut.sg2_l                   
+{
+    cutscene_tokens[0]:     sg2_l
+   
+}
+
+journey_events_cutscene : j_cut.sg2_mir                   
+{
+    cutscene_tokens[0]:     sg2_mir
+   
+}
+
+journey_events_cutscene : j_cut.sg2_in                   
+{
+    cutscene_tokens[0]:     sg2_in
+   
+}
+
+journey_events_cutscene : j_cut.sg3                  
+{
+    cutscene_tokens[0]:     sg3
+}
+
+journey_events_cutscene : j_cut.sg3_in                  
+{
+    cutscene_tokens[0]:     sg3_in
+}
+
+journey_events_cutscene : j_cut.war_tri                  
+{
+    cutscene_tokens[0]:     war_tri
+}
+
+journey_events_cutscene : j_cut.police                    
+{
+    cutscene_tokens[]:		cop_truck
+    cutscene_tokens[]:		cop_car
+	
+	    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.police_sp                    
+{
+	cutscene_tokens[]:		cop_car_sp
+	    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.event                  
+{
+    cutscene_tokens[]:     ev_bus
+    cutscene_tokens[]:     ev_car
+
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.tire                  
+{
+    cutscene_tokens[]:     tire01
+    cutscene_tokens[]:     tire02
+
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.tire2                  
+{
+    cutscene_tokens[]:		tire01_1_1
+    cutscene_tokens[]:		tire02_1_1
+	cutscene_tokens[]:		trash
+	cutscene_tokens[]:		wh_cover
+	
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.road_decals                  
+{
+
+	cutscene_tokens[]:		dec_road
+	cutscene_tokens[]:		dec_road2
+	cutscene_tokens[]:		dec_road9
+	cutscene_tokens[]:		dec_road11
+	cutscene_tokens[]:		dec_road12
+	cutscene_tokens[]:		dec_road13
+	cutscene_tokens[]:		dec_road14
+	cutscene_tokens[]:		dec_road15
+	cutscene_tokens[]:		dec_road16
+
+    
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	
+	sequence_mode: pseudo
+
+}
+
+journey_events_cutscene : j_cut.rd_dec_shl                  
+{
+
+	cutscene_tokens[]:		dec_road11
+	cutscene_tokens[]:		dec_road12
+	cutscene_tokens[]:		dec_road13
+
+    
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	sequence_mode: pseudo
+
+}
+
+journey_events_cutscene : j_cut.road_dec_ctr                  
+{
+
+	cutscene_tokens[]:		dec_road3
+	cutscene_tokens[]:		dec_road4
+	cutscene_tokens[]:		dec_road5
+	cutscene_tokens[]:		dec_road6
+	cutscene_tokens[]:		dec_road7
+	cutscene_tokens[]:		dec_road8
+	cutscene_tokens[]:		dec_road10
+	
+
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	lane_height: 			2.5
+	
+	sequence_mode: pseudo
+}
+
+journey_events_cutscene : j_cut.road_dec_c                  
+{
+
+	cutscene_tokens[]:		dec_road_c
+	cutscene_tokens[]:		dec_road2_c
+	cutscene_tokens[]:		dec_road3_c
+	cutscene_tokens[]:		dec_road4_c
+	cutscene_tokens[]:		dec_road5_c
+	cutscene_tokens[]:		dec_road7_c
+
+    
+     left_width:            5.0                // [m]
+    right_width:            5.0               // [m]
+	
+	sequence_mode: pseudo
+
+}
+
+journey_events_cutscene : j_cut.rd_dec_c_ctr                  
+{
+
+	cutscene_tokens[]:		dec_road6_c
+	cutscene_tokens[]:		dec_road8_c
+
+    
+     left_width:            5.0                // [m]
+    right_width:            5.0               // [m]
+	lane_height:			3.5
+	
+	sequence_mode: pseudo
+}
+
+journey_events_cutscene : j_cut.cessna                  
+{
+    cutscene_tokens[]:     cessna
+    cutscene_tokens[]:     cessna_c
+	cutscene_tokens[]:     cessna_h
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+
+}
+
+journey_events_cutscene : j_cut.roadwork_ra                      
+{
+	cutscene_tokens[]:     roadwork_a
+    cutscene_tokens[]:     roadwork_b
+    cutscene_tokens[]:     roadwork_c
+    cutscene_tokens[]:     roadwork_d
+	cutscene_tokens[]:     roadwork_e
+		
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	sequence_mode:			pseudo
+}
+
+
+journey_events_cutscene : j_cut.roadwork_ra2                      
+{
+
+	cutscene_tokens[]:     roadwork2_a
+    cutscene_tokens[]:     roadwork2_b
+    cutscene_tokens[]:     roadwork2_c
+    cutscene_tokens[]:     roadwork2_d
+    cutscene_tokens[]:     roadwork2_e
+	cutscene_tokens[]:     roadwork2_f
+		
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	sequence_mode:			pseudo
+}
+
+journey_events_cutscene : j_cut.rw_mid                      
+{
+    
+	cutscene_tokens[]:     rw_mid_a
+    cutscene_tokens[]:     rw_mid_b
+    cutscene_tokens[]:     rw_mid_c
+    cutscene_tokens[]:     rw_mid_d
+    cutscene_tokens[]:     rw_mid_e
+	cutscene_tokens[]:     rw_mid_f
+		
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	sequence_mode:			pseudo
+}
+
+journey_events_cutscene : j_cut.crash1            
+{
+    cutscene_tokens[]:     crash1
+	cutscene_tokens[]:     crash2
+	cutscene_tokens[]:     crash3
+	cutscene_tokens[]:     crash4
+	cutscene_tokens[]:     crash5
+	cutscene_tokens[]:     crash6
+	cutscene_tokens[]:     crash7
+	cutscene_tokens[]:     crash8
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+
+}
+
+
+journey_events_cutscene : j_cut.tr_car_cra         
+{
+    cutscene_tokens[]:     tr_car_cra
+	cutscene_tokens[]:		crash9_big
+		  
+    
+    left_width:             26.0                // [m]
+    right_width:            26.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.mill_cutter         
+{
+    cutscene_tokens[]:     mill_cutter
+		  
+    
+    left_width:             47.0                // [m]
+    right_width:            47.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.trailer            
+{
+    cutscene_tokens[]:      trailer
+	cutscene_tokens[]:		tr_cra
+	cutscene_tokens[]:		tr_cr_sa
+	cutscene_tokens[]:		tr_cr_wo
+		  
+    
+    left_width:             23.0                // [m]
+    right_width:            23.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.tripod            
+{
+    cutscene_tokens[]:     tripod
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.channels            
+{
+    cutscene_tokens[]:     channel1
+	cutscene_tokens[]:     channel2
+	cutscene_tokens[]:     channel3
+	cutscene_tokens[]:     channel4
+	cutscene_tokens[]:     channel5
+		
+    
+    left_width:             2.5                // [m]
+    right_width:            2.5               // [m]
+	sequence_mode:	pseudo
+}
+
+journey_events_cutscene : j_cut.channels_rd            
+{
+   
+	cutscene_tokens[]:     channel6
+	cutscene_tokens[]:     channel7
+	cutscene_tokens[]:     channel8
+	cutscene_tokens[]:     channel9
+	cutscene_tokens[]:     channel10	
+    
+    left_width:             2.5                // [m]
+    right_width:            2.5               // [m]
+	lane_height:			1.7
+	sequence_mode:	pseudo
+}
+
+journey_events_cutscene : j_cut.crash_in            
+{
+    cutscene_tokens[]:     crash_ci_in
+	cutscene_tokens[]:     crash_ci_in2
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.city_ev            
+{
+    cutscene_tokens[]:		garbage
+	cutscene_tokens[]:		tv
+	cutscene_tokens[]:		logistic  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.rw_city            
+{
+    cutscene_tokens[]:     rw_city
+	cutscene_tokens[]:     rw_city2
+	  
+    
+    left_width:             23.0                // [m]
+    right_width:            23.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.rw_city_in            
+{
+    cutscene_tokens[]:     rw_city_in
+	cutscene_tokens[]:     rw_city2_in
+	  
+    
+    left_width:             23.0                // [m]
+    right_width:            23.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.tripod_r          
+{
+    cutscene_tokens[]:     tripod_r
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.audi            
+{
+    cutscene_tokens[]:     audi
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.rockslide            
+{
+    cutscene_tokens[]:     rockslide
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.tree            
+{
+    cutscene_tokens[]:     tree
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.cows            
+{
+    cutscene_tokens[]:     cows
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.shop            
+{
+    cutscene_tokens[]:     shop
+	cutscene_tokens[]:     shop2
+	cutscene_tokens[]:     shop3
+	  
+    
+    left_width:             15.0                // [m]
+    right_width:            15.0               // [m]
+	
+}
+
+journey_events_cutscene : j_cut.rw_1_1            
+{
+    cutscene_tokens[]:     rw_1_1_a
+	cutscene_tokens[]:     rw_1_1_b
+	cutscene_tokens[]:     rw_1_1_c
+	  
+    
+    left_width:             5.0                // [m]
+    right_width:            5.0               // [m]
+	
+}
+
+}

@@ -1,12 +1,6 @@
 SiiNunit
 {
-
-# Reference should be made for elevations (-90 to 90) instead of hours.
-# Here was made only mapping from obsolete sun hours to some close elevations.
-
 sun_profile : reference.nice.01 {
- //start_hour: 1
- //end_hour: 1
  low_elevation: -90
  high_elevation: -45
  sun_direction: 0
@@ -50,6 +44,8 @@ sun_profile : reference.nice.01 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -92,16 +88,42 @@ sun_profile : reference.nice.01 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.02 {
- //start_hour: 2
- //end_hour: 2
- low_elevation: -40
+ low_elevation: &c21ffffc
  high_elevation: -30
  sun_direction: 1
  temperature: 1
@@ -144,6 +166,8 @@ sun_profile : reference.nice.02 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -186,16 +210,42 @@ sun_profile : reference.nice.02 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.03 {
- //start_hour: 3
- //end_hour: 3
- low_elevation: -25
+ low_elevation: &c1c7fffe
  high_elevation: -15
  sun_direction: 1
  temperature: 1
@@ -238,6 +288,8 @@ sun_profile : reference.nice.03 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -280,17 +332,43 @@ sun_profile : reference.nice.03 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.04 {
- //start_hour: 4
- //end_hour: 4
- low_elevation: -10
- high_elevation: -5
+ low_elevation: &c11ffffc
+ high_elevation: &c09ffffc
  sun_direction: 1
  temperature: 1
  temperature[0]: 25
@@ -332,6 +410,8 @@ sun_profile : reference.nice.04 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -374,15 +454,41 @@ sun_profile : reference.nice.04 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.05 {
- //start_hour: 5
- //end_hour: 5
  low_elevation: 0
  high_elevation: 0
  sun_direction: 1
@@ -426,6 +532,8 @@ sun_profile : reference.nice.05 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -468,17 +576,43 @@ sun_profile : reference.nice.05 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.06 {
- //start_hour: 6
- //end_hour: 6
- low_elevation: 5
- high_elevation: 10
+ low_elevation: &409ffffc
+ high_elevation: &411ffffc
  sun_direction: 1
  temperature: 1
  temperature[0]: 25
@@ -520,6 +654,8 @@ sun_profile : reference.nice.06 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -562,15 +698,41 @@ sun_profile : reference.nice.06 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.07 {
- //start_hour: 7
- //end_hour: 7
  low_elevation: 15
  high_elevation: 15
  sun_direction: 1
@@ -614,6 +776,8 @@ sun_profile : reference.nice.07 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -656,17 +820,43 @@ sun_profile : reference.nice.07 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.08 {
- //start_hour: 8
- //end_hour: 8
- low_elevation: 20
- high_elevation: 25
+ low_elevation: &419ffffc
+ high_elevation: &41c7fffe
  sun_direction: 1
  temperature: 1
  temperature[0]: 25
@@ -708,6 +898,8 @@ sun_profile : reference.nice.08 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -750,15 +942,41 @@ sun_profile : reference.nice.08 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.09 {
- //start_hour: 9
- //end_hour: 9
  low_elevation: 30
  high_elevation: 30
  sun_direction: 1
@@ -802,6 +1020,8 @@ sun_profile : reference.nice.09 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -844,17 +1064,43 @@ sun_profile : reference.nice.09 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.10 {
- //start_hour: 10
- //end_hour: 10
- low_elevation: 35
- high_elevation: 35
+ low_elevation: &420bffff
+ high_elevation: &420bffff
  sun_direction: 1
  temperature: 1
  temperature[0]: 25
@@ -896,6 +1142,8 @@ sun_profile : reference.nice.10 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -938,17 +1186,43 @@ sun_profile : reference.nice.10 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.11 {
- //start_hour: 11
- //end_hour: 11
- low_elevation: 40
- high_elevation: 40
+ low_elevation: &421ffffc
+ high_elevation: &421ffffc
  sun_direction: 1
  temperature: 1
  temperature[0]: 25
@@ -990,6 +1264,8 @@ sun_profile : reference.nice.11 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1032,15 +1308,41 @@ sun_profile : reference.nice.11 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.12 {
- //start_hour: 12
- //end_hour: 12
  low_elevation: 45
  high_elevation: 45
  sun_direction: 1
@@ -1084,6 +1386,8 @@ sun_profile : reference.nice.12 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1126,16 +1430,42 @@ sun_profile : reference.nice.12 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.13 {
- //start_hour: 13
- //end_hour: 13
- low_elevation: 50
+ low_elevation: &4247fffe
  high_elevation: 90
  sun_direction: 0
  temperature: 1
@@ -1178,6 +1508,8 @@ sun_profile : reference.nice.13 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1220,15 +1552,41 @@ sun_profile : reference.nice.13 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.14 {
- //start_hour: 14
- //end_hour: 14
  low_elevation: 45
  high_elevation: 45
  sun_direction: -1
@@ -1272,6 +1630,8 @@ sun_profile : reference.nice.14 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1314,17 +1674,43 @@ sun_profile : reference.nice.14 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.15 {
- //start_hour: 15
- //end_hour: 15
- low_elevation: 40
- high_elevation: 40
+ low_elevation: &421ffffc
+ high_elevation: &421ffffc
  sun_direction: -1
  temperature: 1
  temperature[0]: 25
@@ -1366,6 +1752,8 @@ sun_profile : reference.nice.15 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1408,17 +1796,43 @@ sun_profile : reference.nice.15 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.16 {
- //start_hour: 16
- //end_hour: 16
- low_elevation: 35
- high_elevation: 35
+ low_elevation: &420bffff
+ high_elevation: &420bffff
  sun_direction: -1
  temperature: 1
  temperature[0]: 25
@@ -1460,6 +1874,8 @@ sun_profile : reference.nice.16 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1502,15 +1918,41 @@ sun_profile : reference.nice.16 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.17 {
- //start_hour: 17
- //end_hour: 17
  low_elevation: 30
  high_elevation: 30
  sun_direction: -1
@@ -1554,6 +1996,8 @@ sun_profile : reference.nice.17 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1596,17 +2040,43 @@ sun_profile : reference.nice.17 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.18 {
- //start_hour: 18
- //end_hour: 18
- low_elevation: 20
- high_elevation: 25
+ low_elevation: &419ffffc
+ high_elevation: &41c7fffe
  sun_direction: -1
  temperature: 1
  temperature[0]: 25
@@ -1648,6 +2118,8 @@ sun_profile : reference.nice.18 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1690,15 +2162,41 @@ sun_profile : reference.nice.18 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.19 {
- //start_hour: 19
- //end_hour: 19
  low_elevation: 15
  high_elevation: 15
  sun_direction: -1
@@ -1742,6 +2240,8 @@ sun_profile : reference.nice.19 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1784,17 +2284,43 @@ sun_profile : reference.nice.19 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.20 {
- //start_hour: 20
- //end_hour: 20
- low_elevation: 5
- high_elevation: 10
+ low_elevation: &409ffffc
+ high_elevation: &411ffffc
  sun_direction: -1
  temperature: 1
  temperature[0]: 25
@@ -1836,6 +2362,8 @@ sun_profile : reference.nice.20 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1878,15 +2406,41 @@ sun_profile : reference.nice.20 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.21 {
- //start_hour: 21
- //end_hour: 21
  low_elevation: 0
  high_elevation: 0
  sun_direction: -1
@@ -1930,6 +2484,8 @@ sun_profile : reference.nice.21 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -1972,17 +2528,43 @@ sun_profile : reference.nice.21 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.22 {
- //start_hour: 22
- //end_hour: 22
- low_elevation: -10
- high_elevation: -5
+ low_elevation: &c11ffffc
+ high_elevation: &c09ffffc
  sun_direction: -1
  temperature: 1
  temperature[0]: 25
@@ -2024,6 +2606,8 @@ sun_profile : reference.nice.22 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -2066,16 +2650,42 @@ sun_profile : reference.nice.22 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.23 {
- //start_hour: 23
- //end_hour: 23
- low_elevation: -25
+ low_elevation: &c1c7fffe
  high_elevation: -15
  sun_direction: -1
  temperature: 1
@@ -2118,6 +2728,8 @@ sun_profile : reference.nice.23 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -2160,16 +2772,42 @@ sun_profile : reference.nice.23 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }
 
 sun_profile : reference.nice.24 {
- //start_hour: 24
- //end_hour: 24
- low_elevation: -40
+ low_elevation: &c21ffffc
  high_elevation: -30
  sun_direction: -1
  temperature: 1
@@ -2212,6 +2850,8 @@ sun_profile : reference.nice.24 {
  fog_color2[0]: (&3d97fd48, &3e10a753, &3e362861)
  fog_vgradient: 1
  fog_vgradient[0]: 0
+ fog_offset: 1
+ fog_offset[0]: 0
  fog_density: 1
  fog_density[0]: &3a902de0
  fog_speed: 1
@@ -2254,8 +2894,36 @@ sun_profile : reference.nice.24 {
  sunshaft_strength[0]: 1
  sunshaft_size: 1
  sunshaft_size[0]: 0
- hdr_parameters: 1
- hdr_parameters[0]: hdr.reference
+ low_intensity_minimum: 1
+ low_intensity_minimum[0]: 0
+ low_intensity_maximum: 1
+ low_intensity_maximum[0]: 0
+ low_intensity_color: 1
+ low_intensity_color[0]: (1, 1, 1)
+ target_gray: 1
+ target_gray[0]: &3e19999a
+ min_scale: 1
+ min_scale[0]: 0
+ max_scale: 1
+ max_scale[0]: 100
+ target_white: 1
+ target_white[0]: &3f000000
+ eye_adaptation_speed: 1
+ eye_adaptation_speed[0]: &3f000000
+ bloom_minimal_color: 1
+ bloom_minimal_color[0]: (&3ecccccd, &3ecccccd, &3ecccccd)
+ bloom_half_intensity_color: 1
+ bloom_half_intensity_color[0]: (1, 1, 1)
+ bloom_resizing_steps: 1
+ bloom_resizing_steps[0]: 3
+ bloom_filter_radius: 1
+ bloom_filter_radius[0]: 6
+ bloom_standard_deviation: 1
+ bloom_standard_deviation[0]: &3f000000
+ scene_multiplier: 1
+ scene_multiplier[0]: (1, 1, 1)
+ bloom_multiplier: 1
+ bloom_multiplier[0]: (1, 1, 1)
  weight: 1
  weight[0]: 1
 }

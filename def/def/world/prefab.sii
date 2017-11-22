@@ -52,11 +52,25 @@ prefab_model : prefab.12 {
 	model_desc: "/prefab/cross/road2_x_road1_t.pmd"
 	prefab_desc: "/prefab/cross/road2_x_road1_t.ppd"
 }
+
+prefab_model : prefab.12a {
+  name:	"x LEGACY ROAD PREFAB - DO NOT USE X"
+	model_desc: "/prefab/cross/road2_x_road1_t.pmd"
+	prefab_desc: "/prefab/cross/road2_x_road1_t_tmpl.ppd"
+}
+
 prefab_model : prefab.7 {
   name:	"x LEGACY ROAD PREFAB - DO NOT USE X"
 	model_desc: "/prefab/cross/road2_x_road2_t.pmd"
 	prefab_desc: "/prefab/cross/road2_x_road2_t_2ai.ppd"
 }
+
+prefab_model : prefab.7a {
+  name:	"x LEGACY ROAD PREFAB - DO NOT USE X"
+	model_desc: "/prefab/cross/road2_x_road2_t.pmd"
+	prefab_desc: "/prefab/cross/road2_x_road2_t_tmpl.ppd"
+}
+
 prefab_model : prefab.4 {
   name:	"x LEGACY ROAD PREFAB - DO NOT USE X"
 	model_desc: "/prefab/cross/road2_x_road2.pmd"
@@ -870,6 +884,8 @@ prefab_model : prefab.d_gen_mkt1 {
 prefab_model : prefab.us_0 {
 	model_desc: "/prefab/fork_temp/us_split_exit_exit_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_tmpl.ppd"
+  
+	corner1[]:  brdg_02
 }
 
 prefab_model : prefab.us_1 {
@@ -883,12 +899,14 @@ prefab_model : prefab.us_5 {
 }
 
 prefab_model : prefab.us_7 {
+  name:	"x LEGACY ROAD PREFAB - DO NOT USE X"
 	model_desc: "/prefab/fork_temp/us_split_0-2_exit_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_split_0-2_exit_tmpl.ppd"
 }
 
 
 prefab_model : prefab.us_9 {
+  name:	"x LEGACY ROAD PREFAB - DO NOT USE X"
 	model_desc: "/prefab/fork_temp/us_split_0-2_exit_mirrored_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_split_0-2_exit_mirrored_tmpl.ppd"
 }
@@ -1056,6 +1074,8 @@ prefab_model : prefab.us_60 {
 }
 
 prefab_model : prefab.us_64 {
+
+  name:"fork_temp/us_fork_freeway_2-2_country_2-2_11m_u-turn"
 	model_desc: "/prefab/fork_temp/us_fork_freeway_2-2_country_2-2_11m_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_fork_freeway_2-2_country_2-2_11m_tmpl.ppd"
 }
@@ -1131,6 +1151,9 @@ prefab_model : prefab.us_77 {
   corner1[]: sh24
 	corner1[]: kb24
   corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dwsh2412
+  corner1[]: dwkb242
 
 }
 
@@ -1144,6 +1167,9 @@ prefab_model : prefab.us_78 {
   corner1[]: sh241
   corner1[]: kb24
   corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dwsh242
+  corner1[]: dwkb242
 }
 
 prefab_model : prefab.us_gas_01 {
@@ -1152,6 +1178,7 @@ prefab_model : prefab.us_gas_01 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 	lod_desc:"/prefab/gas/nm_gas_station2-corner_gp_lod1.pmd"
 	lod_dist: 200
 }
@@ -1166,6 +1193,9 @@ prefab_model : prefab.us_80{
   corner1[]: sh24
 	corner1[]: kb24
   corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dwsh2412
+  corner1[]: dwkb242
 }
 
 
@@ -1177,6 +1207,7 @@ prefab_model : prefab.us_gas_02 {
 	slow_time: true
 	lod_desc:"/prefab/gas/nm_gas_station1_gp_lod1.pmd"
 	lod_dist: 200
+	gps_avoid: true
 }
 
 prefab_model : prefab.us_gas_03 {
@@ -1185,6 +1216,7 @@ prefab_model : prefab.us_gas_03 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 }
 
 prefab_model : prefab.us_82{
@@ -1197,6 +1229,9 @@ prefab_model : prefab.us_82{
   corner1[]: sh24
 	corner1[]: kb24
   corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dwsh2412
+  corner1[]: dwkb242
 }
 
 prefab_model : prefab.us_gas_04 {
@@ -1207,6 +1242,7 @@ prefab_model : prefab.us_gas_04 {
 	slow_time: true
 	lod_desc:"/prefab/gas/nm_gas_station2-corner_chemron_lod1.pmd"
 	lod_dist: 200
+	gps_avoid: true
 }
 
 prefab_model : prefab.us_gas_05 {
@@ -1215,6 +1251,7 @@ prefab_model : prefab.us_gas_05 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 	lod_desc:"/prefab/gas/nm_gas_station2-corner_lod1.pmd"
 	lod_dist: 200
 }
@@ -1227,6 +1264,7 @@ prefab_model : prefab.us_gas_06 {
 	slow_time: true
 	lod_desc:"/prefab/gas/nm_gas_station1_depot_lod1.pmd"
 	lod_dist: 200
+	gps_avoid: true
 	
 }
 
@@ -1236,6 +1274,7 @@ prefab_model : prefab.us_gas_07 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 }
 
 prefab_model : prefab.us_gas_08 {
@@ -1244,6 +1283,7 @@ prefab_model : prefab.us_gas_08 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 }
 
 prefab_model : prefab.us_gas_09 {
@@ -1254,6 +1294,7 @@ prefab_model : prefab.us_gas_09 {
 	slow_time: true
 	lod_desc:"/prefab/gas/nm_gas_station1_chemron_lod1.pmd"
 	lod_dist: 200
+	gps_avoid: true
 	
 }
 
@@ -1263,6 +1304,7 @@ prefab_model : prefab.us_gas_10 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 }
 
 prefab_model : prefab.us_83 {
@@ -1325,6 +1367,7 @@ prefab_model : prefab.us_gas_11 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 }
 
 prefab_model : prefab.us_gas_12 {
@@ -1333,6 +1376,7 @@ prefab_model : prefab.us_gas_12 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 }
 
 
@@ -1412,6 +1456,7 @@ prefab_model : prefab.us_102 {
 
 
 prefab_model : prefab.us_104 {
+  name:	"x LEGACY ROAD PREFAB - DO NOT USE X"
 	model_desc: "/prefab/fork_temp/us_change_2-2_country_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_change_2-2_country_tmpl.ppd"
   
@@ -1441,9 +1486,11 @@ prefab_model : prefab.us_23n {
   corner0[]: shc1
 	corner0[]: kbc1
   corner0[]: swc1
+  corner0[]: swc1p
   corner1[]: shc1
 	corner1[]: kbc1
-  corner1[]: swc1
+  corner1[]: swc1  
+  corner1[]: swc1p
   corner2[]: sh451
 	corner2[]: kb45
   corner2[]: sw45
@@ -1458,9 +1505,11 @@ prefab_model : prefab.us_29n {
   corner0[]: shcr
 	corner0[]: kbc
   corner0[]: swc
+  corner0[]: swc1p1
   corner1[]: shcl
 	corner1[]: kbc
   corner1[]: swc
+  corner1[]: swc1p1
   corner2[]: sh47
 	corner2[]: kb47
   corner2[]: sw47
@@ -1474,16 +1523,21 @@ prefab_model : prefab.us_30n {
   corner0[]: shcr
 	corner0[]: kbc
   corner0[]: swc
+  corner0[]: swc1p1
   corner1[]: shcl
 	corner1[]: kbc         
   corner1[]: swc
+  corner1[]: swc1p1
   corner2[]: shcr
 	corner2[]: kbc
   corner2[]: swc
+  corner2[]: swc1p1
   corner3[]: shcl
 	corner3[]: kbc
   corner3[]: swc
+  corner3[]: swc1p1
 }
+
 
 prefab_model : prefab.us_32n {
   name:"cross_temp/us_cross_2-1-2_city_t_2-1-2_city_corners"
@@ -1509,16 +1563,20 @@ prefab_model : prefab.us_41n {
   
   corner0[]: shc1
 	corner0[]: kbc1
-  corner0[]: swc1 
+  corner0[]: swc1
+  corner0[]: swc1p 
   corner1[]: shc1
 	corner1[]: kbc1
   corner1[]: swc1
+  corner1[]: swc1p
   corner2[]: shc1
 	corner2[]: kbc1
   corner2[]: swc1
+  corner2[]: swc1p 
   corner3[]: shc1
 	corner3[]: kbc1
   corner3[]: swc1
+  corner3[]: swc1p
 }
 
 prefab_model : prefab.us_55n {
@@ -1543,9 +1601,9 @@ prefab_model : prefab.us_55n {
 }
 
 prefab_model : prefab.us_45n {
-  name:"fork_temp/us_switch_3-2_city_2-3_city_30_corners"
-	model_desc: "/prefab/fork_temp/us_switch_3-2_city_2-3_city_30_tmpl.pmd"
-	prefab_desc: "/prefab/fork_temp/us_switch_3-2_city_2-3_city_30_tmpl.ppd"
+  name:"fork_temp/us_switch_2-1-2_city_30_tmpl"
+	model_desc: "/prefab/fork_temp/us_switch_2-1-2_city_30_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_switch_2-1-2_city_30_tmpl.ppd"
   
   corner0[]: sh30
 	corner0[]: kb30
@@ -1616,6 +1674,10 @@ prefab_model : prefab.us_63n {
   corner1[]: sh241
   corner1[]: kb24
   corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dw244
+  corner1[]: dwsh242
+  corner1[]: dwkb242
 }
 
 prefab_model : prefab.us_61n {
@@ -1626,7 +1688,9 @@ prefab_model : prefab.us_61n {
   corner0[]: dw244
   corner1[]: sh24
 	corner1[]: kb24
-  corner1[]: sw24  
+  corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dw244  
 }
 
 
@@ -1666,12 +1730,34 @@ prefab_model : prefab.us_28n {
 	corner1[]: shc4l
 	corner1[]: kbc4l
 	corner1[]: swc4l
+#  corner1[]: sh301
 	
 	corner2[]: sh301
 	corner2[]: kb30
 	corner2[]: sw30
 	
 }
+
+prefab_model : prefab.us_28na {
+	name:"cross_temp/us_cross_1-1_country_t_dock_tmpl_no_right_main"
+	model_desc: "/prefab/cross_temp/us_cross_1-1_country_t_dock_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_1-1_country_t_dock_tmpl_no_right_m.ppd"
+	
+	corner0[]: shc4r
+	corner0[]: kbc4r
+	corner0[]: swc4r
+	
+	corner1[]: shc4l
+	corner1[]: kbc4l
+	corner1[]: swc4l
+	
+	corner2[]: sh301
+	corner2[]: kb30
+	corner2[]: sw30
+	
+}
+
+
 
 prefab_model : prefab.us_50n {
 	name:"cross_temp/us_cross_2-1-2_city_t_dock_corner"
@@ -1711,8 +1797,8 @@ prefab_model : prefab.us_52n {
 }
 
 prefab_model : prefab.us_47n {
-	model_desc: "/prefab/fork_temp/nm_fork_2-1-2_city_2-2_country_tmpl.pmd"
-	prefab_desc: "/prefab/fork_temp/nm_fork_2-1-2_city_2-2_country_tmpl.ppd"
+	model_desc: "/prefab/fork_temp/us_fork_2-1-2_city_2-2_country_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_2-1-2_city_2-2_country_tmpl.ppd"
   
   corner0[]: sh30cvdr
 	corner0[]: kb30cvdr
@@ -1741,6 +1827,9 @@ prefab_model : prefab.us_111 {
 prefab_model : prefab.us_112 {
 	model_desc: "/prefab/fork_temp/us_split_0-2_0-2_mirrored_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_split_0-2_0-2_mirrored_tmpl.ppd"
+  
+  corner1[]:  brdg_01m 
+  
 }
 
 prefab_model : prefab.us_113 {
@@ -1768,6 +1857,38 @@ prefab_model : prefab.us_44n {
   name:"cross_temp/us_cross_2-1-2_city_x_exit_road_corner"
 	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_tmpl.ppd"
+  	
+  corner0[]:   shcre
+  corner0[]:   kbcre
+  corner1[]:   kbc4re
+  corner1[]:   shc4re
+  corner2[]:   kbc4le
+  corner2[]:   shc4le
+  corner3[]:   shcle
+  corner3[]:   kbcle
+}
+
+prefab_model : prefab.us_44nd {
+
+  name:"cross_temp/us_cross_2-1-2_city_x_exit_road_no_left"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_tmpl_no_left.ppd"
+  	
+  corner0[]:   shcre
+  corner0[]:   kbcre
+  corner1[]:   kbc4re
+  corner1[]:   shc4re
+  corner2[]:   kbc4le
+  corner2[]:   shc4le
+  corner3[]:   shcle
+  corner3[]:   kbcle
+}
+
+prefab_model : prefab.us_44n_end {
+
+  name:"cross_temp/us_cross_2-1-2_city_x_exit_road_corner_no_straight"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_tmpl_no_straight.ppd"
   	
   corner0[]:   shcre
   corner0[]:   kbcre
@@ -1903,6 +2024,7 @@ prefab_model : prefab.az77 {
 	use_perlin: true
 	detail_veg_max_distance: 25
 	slow_time: true
+	gps_avoid: true
 }
 
 #prefab_model : prefab.az_oil_gst1 {
@@ -1923,19 +2045,24 @@ prefab_model : prefab.us_131 {
   corner1[]: sh241
   corner1[]: kb24
   corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dw244
+  corner1[]: dwsh242
 }
 
 prefab_model : prefab.us_132 {
-  name:"cross_temp/us_cross_2-1-2_country_i_2m_dock_corners"
+  name:"cross_temp/us_cross_2-1-2_city_i_dock_2m_corners"
 	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_i_2m_dock_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_i_2m_dock_tmpl.ppd"
   
   corner0[]: dw242
-  corner0[]: dwsh242
   corner0[]: dwsh2411
   corner1[]: sh24
   corner1[]: kb24
   corner1[]: sw24
+  corner1[]: dw242
+  corner1[]: dw244
+  corner1[]: dwsh2411
 }
 
 prefab_model : prefab.us_133 {
@@ -2029,6 +2156,23 @@ prefab_model : prefab.us_164 {
   
 }
 
+prefab_model : prefab.us_164a {
+  name:"cross_temp/us_cross_1-1_country_t_1-1_country_no_right_1"
+	model_desc: "/prefab/cross_temp/us_cross_1-1_country_t_1-1_country_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_1-1_country_t_1-1_country_tmpl_no_right_1.ppd"
+  
+  corner0[]: shc1
+	corner0[]: kbc1
+  corner0[]: swc1
+  corner1[]: shc1
+	corner1[]: kbc1
+  corner1[]: swc1
+  corner2[]: sh451
+	corner2[]: kb45
+  corner2[]: sw45
+  
+}
+
 prefab_model : prefab.us_165 {
   name:"cross_temp/us_cross_1-1_country_t_1-1_country_no_right_double"
 	model_desc: "/prefab/cross_temp/us_cross_1-1_country_t_1-1_country_tmpl.pmd"
@@ -2047,7 +2191,7 @@ prefab_model : prefab.us_165 {
 }
 
 prefab_model : prefab.us_167 {
-  name:"cross_temp/us_cross_2-1-2_city_t_1-1_country_no_right_dbl"
+  name:"cross_temp/us_cross_2-1-2_city_t_1-1_country_no_right_main"
 	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_1-1_country_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_1-1_country_tmpl_no_right_m.ppd"
   
@@ -2064,8 +2208,8 @@ prefab_model : prefab.us_167 {
 
 prefab_model : prefab.us_168 {
 
-  name:"cross_temp/us_cross_2-1-2_city_x_exit_road_corner"
-	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_tmpl.pmd"
+  name:"cross_temp/us_cross_2-1-2_city_x_exit_road_left_tmpl"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_left_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_exit_road_left_tmpl_no_right.ppd"
   	
   corner0[]:   shcre
@@ -2083,9 +2227,520 @@ prefab_model : prefab.us_185 {
 	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_left_tmpl.ppd"
 }
 
+prefab_model : prefab.us_185a {
+	model_desc: "/prefab/fork_temp/us_split_exit_exit_left_country_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_left_country_tmpl.ppd"
+}
+
 prefab_model : prefab.us_186 {
 	model_desc: "/prefab/fork_temp/us_split_exit_exit_left_mirrored_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_left_mirrored_tmpl.ppd"
+  
+  corner0[]:  brdg_02lm 
+}
+
+prefab_model : prefab.us_186a {
+	model_desc: "/prefab/fork_temp/us_split_exit_exit_left_country_mirrored_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_left_country_mirrored_tmpl.ppd"
+  
+}
+
+prefab_model : prefab.us_171 {
+	model_desc: "/prefab/fork_temp/us_joint_2-2_country_11m_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_joint_2-2_country_11m_tmpl.ppd"
+}
+
+prefab_model : prefab.us_187 {
+	model_desc: "/prefab/fork_temp/us_joint_3-3_country_4m_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_joint_3-3_country_4m_tmpl.ppd"
+}
+
+prefab_model : prefab.us_188 {
+	model_desc: "/prefab/gas/nm_gas_station_totem_gp.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station_totem_gp.ppd"
+	name: "Totem_gas_gp"
+	use_perlin: false
+}
+
+prefab_model : prefab.us_189 {
+	model_desc: "/prefab/gas/nm_gas_station_totem_chemron.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station_totem_chemron.ppd"
+	name: "Totem_gas_chemron"
+	use_perlin: false
+}
+
+prefab_model : prefab.us_190 {
+	model_desc: "/prefab/gas/nm_gas_station_totem.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station_totem.ppd"
+	name: "Totem_gas"
+	use_perlin: false
+}
+
+prefab_model : prefab.us_182 {
+	model_desc: "/prefab/fork_temp/us_fork_0-1_0-2_country_mirrored_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_0-1_0-2_country_mirrored_tmpl.ppd"
+}
+
+prefab_model : prefab.us_181 {
+	model_desc: "/prefab/fork_temp/us_fork_0-1_0-2_country_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_0-1_0-2_country_tmpl.ppd"
+}
+
+prefab_model : prefab.us_170 {
+  name:"cross_temp/us_cross_0-2_country_x_0-2_country_one_way_tmpl"
+	model_desc: "/prefab/cross_temp/us_cross_0-2_country_x_0-2_country_one_way_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_0-2_country_x_0-2_country_one_way_tmpl.ppd"
+  
+}
+
+prefab_model : prefab.us_170a {
+  name:"cross_temp/us_cross_0-2_country_t_0-2_country_one_way_tmpl"
+	model_desc: "/prefab/cross_temp/us_cross_0-2_country_t_0-2_country_one_way_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_0-2_country_t_0-2_country_one_way_tmpl.ppd"
+  
+}
+
+prefab_model : prefab.us_180 {
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_0-2_country_left_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_x_0-2_country_left_tmpl.ppd"
+  
+  corner0[]:   shcre
+  corner0[]:   kbcre
+  corner1[]:   kbc4re
+  corner1[]:   shc4re
+  corner2[]:   kbc4le
+  corner2[]:   shc4le
+  corner3[]:   shcle
+  corner3[]:   kbcle
+}
+
+prefab_model : prefab.us_183 {
+	model_desc: "/prefab/fork_temp/us_divide_exit_exit_0-2_left_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_exit_exit_0-2_left_tmpl.ppd"
+}
+
+prefab_model : prefab.us_184 {
+	model_desc: "/prefab/fork_temp/us_divide_exit_exit_0-2_left_mirrored_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_exit_exit_0-2_left_mirrored_tmpl.ppd"
+}
+
+prefab_model : prefab.us_169 {
+
+  name:"fork_temp/us_divide_2-1-2_city_exit_road_dbl_y_tmpl"
+	model_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_dbl_y_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_dbl_y_tmpl.ppd"
+  
+  corner0[]: shv1l
+  corner0[]: kbv1l
+  corner1[]: shv1r
+  corner1[]: kbv1r
+  corner2[]: sh212er
+  corner2[]: kb212er
+  corner3[]: sh212el
+  corner3[]: kb212el
+  
+}
+
+prefab_model : prefab.us_162 {
+
+  name: "cross_temp/us_cross_1-1_country_t_in_exit_road_tmpl"
+	model_desc: "/prefab/cross_temp/us_cross_1-1_country_t_in_exit_road_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_1-1_country_t_in_exit_road_tmpl.ppd"
+}
+
+prefab_model : prefab.us_166 {
+	model_desc: "/prefab/fork_temp/us_divide_1-1_country_exit_dbl_y_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_1-1_country_exit_dbl_y_tmpl.ppd"
+
+  corner0[]: sh11er  
+  corner1[]: sh11el 
+  corner2[]: shv
+  corner3[]: shv
+  
+}
+
+prefab_model : prefab.us_150 {
+
+  name:"fork_temp/us_split_0-2_exit_country"
+	model_desc: "/prefab/fork_temp/us_split_0-2_exit_country.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_0-2_exit_country.ppd"
+  
+}
+
+prefab_model : prefab.us_151 {
+
+  name:"fork_temp/us_split_0-2_exit_country_mirrored"
+	model_desc: "/prefab/fork_temp/us_split_0-2_exit_country_mirrored.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_0-2_exit_country_mirrored.ppd"
+  
+}
+
+prefab_model : prefab.us_152 {
+
+  name:"fork_temp/us_split_exit_exit_country"
+	model_desc: "/prefab/fork_temp/us_split_exit_exit_country.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_country.ppd"
+  
+}
+
+prefab_model : prefab.us_153 {
+
+  name:"fork_temp/us_split_exit_exit_country_mirrored"
+	model_desc: "/prefab/fork_temp/us_split_exit_exit_country_mirrored.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_country_mirrored.ppd"
+  
+}
+
+
+
+prefab_model : prefab.us_147 {
+
+  name:"fork_temp/us_divide_2-1-2_city_exit_road_double_x_tmpl"
+	model_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_dbl_x_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_dbl_x_tmpl.ppd"
+
+  corner0[]: sh212er
+  corner0[]: kb212er
+  corner3[]: shv1r
+  corner3[]: kbv1r
+  corner2[]: sh212er
+  corner2[]: kb212er
+  corner1[]: shv1r
+  corner1[]: kbv1r
+  
+}
+
+prefab_model : prefab.us_155 {
+
+  name:"cross_temp/us_cross_2-1-2_city_t_in_exit_road_corner"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_in_exit_road_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_in_exit_road_tmpl.ppd"
+  	
+  corner2[]: shcle
+  corner2[]: kbcle
+  corner1[]: kbc4le
+  corner1[]: shc4le
+  corner0[]: sh44_8
+	corner0[]: kb44_8
+  corner0[]: sw44_8
+}
+
+prefab_model : prefab.us_156 {
+
+  name:"fork_temp/us_divide_2-1-2_city_exit_road_left_mirrored_tmpl"
+	model_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_left_mirrored_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_left_mirrored_tmpl.ppd"
+  
+  corner1[]: sh212el
+  corner1[]: kb212el
+  corner0[]: sh30
+  corner0[]: kb30
+  corner0[]: sw30
+  corner2[]: shv1l
+  corner2[]: kbv1l
+  
+}
+
+prefab_model : prefab.us_157 {
+	model_desc: "/prefab/fork_temp/us_split_exit_exit_1-1_country_right_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_1-1_country_right_tmpl.ppd"
+}
+
+prefab_model : prefab.us_158 {
+	model_desc: "/prefab/fork_temp/us_split_exit_exit_1-1_country_left_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_exit_exit_1-1_country_left_tmpl.ppd"
+}
+
+prefab_model : prefab.us_135 {
+  name:"fork_temp/us_cross_1-1-1_country_1-1_country"
+	model_desc: "/prefab/fork_temp/us_fork_1-2_country_1-1_country_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_1-2_country_1-1_country_tmpl.ppd"
+
+  corner0[]: sh60cvdr
+  corner0[]: sw60cvdr
+  corner0[]: kb60cvdr
+  corner1[]: sh60cvdl
+  corner1[]: sw60cvdl
+  corner1[]: kb60cvdl
+  
+}
+
+prefab_model : prefab.us_136 {
+  name:"fork_temp/us_cross_1-1-1_country_1-1_country_mirrored"
+	model_desc: "/prefab/fork_temp/us_fork_1-2_country_1-1_country_mirrored_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_1-2_country_1-1_country_mirrored_tmpl.ppd"
+
+  corner0[]: sh60cvdl
+  corner0[]: sw60cvdl
+  corner0[]: kb60cvdl
+  corner1[]: sh60cvdr
+  corner1[]: sw60cvdr
+  corner1[]: kb60cvdr
+
+}
+
+prefab_model : prefab.us_138 {
+	model_desc: "/prefab/fork_temp/us_fork_1-1-1_country_1-2_country_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_1-1-1_country_1-2_country_tmpl.ppd"
+
+  corner0[]: sh301
+  corner0[]: kb30
+  corner0[]: sw30    
+  corner1[]: sh301
+  corner1[]: kb30 
+  corner1[]: sw30            
+
+}
+
+prefab_model : prefab.us_139 {
+  name:"cross_temp/us_cross_1-1-1_country_x_1-1_country_corners"
+	model_desc: "/prefab/cross_temp/us_cross_1-2_country_x_1-1_country_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_1-2_country_x_1-1_country_tmpl.ppd"
+  
+  corner0[]: shc1
+	corner0[]: kbc1
+  corner0[]: swc1 
+  corner1[]: shc1
+	corner1[]: kbc1
+  corner1[]: swc1
+  corner2[]: shc1
+	corner2[]: kbc1
+  corner2[]: swc1
+  corner3[]: shc1
+	corner3[]: kbc1
+  corner3[]: swc1
+}
+
+prefab_model : prefab.us_140 {
+  name:"cross_temp/us_cross_1-1-1_country_t_1-1_country_corners"
+	model_desc: "/prefab/cross_temp/us_cross_1-2_country_t_1-1_country_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_1-2_country_t_1-1_country_tmpl.ppd"
+  
+  corner0[]: shc1
+	corner0[]: kbc1
+  corner0[]: swc1 
+  corner1[]: shc1
+	corner1[]: kbc1
+  corner1[]: swc1
+  corner2[]: sh451
+	corner2[]: kb45
+  corner2[]: sw45
+}
+
+prefab_model : prefab.us_141 {
+	model_desc: "/prefab/fork_temp/us_fork_1-1-1_country_1-1_country_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_1-1-1_country_1-1_country_tmpl.ppd"
+  
+  corner0[]: sh60cvdl
+  corner0[]: sw60cvdl
+  corner0[]: kb60cvdl
+  corner1[]: sh60cvdr
+  corner1[]: sw60cvdr
+  corner1[]: kb60cvdr  
+  
+}
+
+prefab_model : prefab.us_143 {
+
+  name:"cross_temp/us_cross_2-1-2_city_t_out_exit_road_left_only_corner"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_out_exit_road_left_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_out_exit_road_left_tmpl.ppd"
+  	
+  corner0[]: kbc4le
+  corner0[]: shc4le
+  corner1[]: kbc4re
+  corner1[]: shc4re
+  corner2[]: sh45
+	corner2[]: kb45
+  corner2[]: sw45
+  
+}
+
+prefab_model : prefab.us_144 {
+
+  name:"cross_temp/us_cross_2-1-2_city_t_out_exit_road_corner"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_out_exit_road_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_out_exit_road_tmpl.ppd"
+  	
+  corner0[]: shcre
+  corner0[]: kbcre
+  corner1[]: kbc4re
+  corner1[]: shc4re
+  corner2[]: sh44_8
+	corner2[]: kb44_8
+  corner2[]: sw44_8
+  
+}
+
+prefab_model : prefab.us_145 {
+
+  name:"fork_temp/us_divide_2-1-2_city_exit_road_left_tmpl"
+	model_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_left_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_left_tmpl.ppd"
+  
+  corner1[]: sh30
+  corner1[]: kb30
+  corner1[]: sw30
+  corner0[]: sh212er
+  corner0[]: kb212er
+  corner2[]: shv1r
+  corner2[]: kbv1r
+  
+}
+
+prefab_model : prefab.us_146 {
+
+  name:"fork_temp/us_divide_2-1-2_city_exit_road_tmpl"
+	model_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_tmpl.ppd"
+  
+  corner0[]: sh212er
+  corner0[]: kb212er
+  corner1[]: sh30
+  corner1[]: kb30
+  corner1[]: sw30
+  corner2[]: shv1r
+  corner2[]: kbv1r
+  
+}
+
+prefab_model : prefab.us_148 {
+
+  name:"fork_temp/us_fork_0-2_0-3_country"
+	model_desc: "/prefab/fork_temp/us_fork_0-2_0-3_country.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_0-2_0-3_country.ppd"
+  
+}
+
+prefab_model : prefab.us_149 {
+
+  name:"fork_temp/us_fork_0-2_0-3_country_mirrored"
+	model_desc: "/prefab/fork_temp/us_fork_0-2_0-3_country_mirrored.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_0-2_0-3_country_mirrored.ppd"
+  
+}
+
+
+prefab_model : prefab.us_172 {
+
+  name:"fork_temp/us_divide_2-1-2_city_exit_road_mirrored_tmpl"
+	model_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_mirrored_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_divide_2-1-2_city_exit_road_mirrored_tmpl.ppd"
+  
+  corner1[]: sh212el
+  corner1[]: kb212el
+  corner0[]: sh30
+  corner0[]: kb30
+  corner0[]: sw30
+  corner2[]: shv1l
+  corner2[]: kbv1l
+  
+}
+
+
+prefab_model : prefab.nm_126 {
+	model_desc: "/prefab/weigh_station/nm_weight_standalone.pmd"
+	prefab_desc: "/prefab/weigh_station/nm_weight_standalone.ppd"
+        use_perlin: false
+
+
+
+}
+
+prefab_model : prefab.us_64a {
+
+  name:"cross_temp/us_cross_2-2_country_11m_t_exit_road_u-turn"
+	model_desc: "/prefab/cross_temp/us_cross_2-2_country_11m_t_walk_road_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-2_country_11m_t_walk_road_tmpl.ppd"
+}
+
+prefab_model : prefab.us_64b {
+
+  name:"cross_temp/us_cross_2-2_country_4m_t_exit_road_u-turn"
+	model_desc: "/prefab/cross_temp/us_cross_2-2_country_4m_t_walk_road_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-2_country_4m_t_walk_road_tmpl.ppd"
+}
+
+prefab_model : prefab.temp_102 {
+	model_desc: "/prefab/weigh_station/lordsburg.pmd"
+	prefab_desc: "/prefab/weigh_station/lordsburg.ppd"
+	use_perlin: false
+	lod_desc:"/prefab/weigh_station/lordsburg_lod1.pmd"
+	lod_dist: 250
+	gps_avoid: true
+}
+
+prefab_model : prefab.nm_120 {
+	model_desc: "/prefab/gas/nm_gas_station1_chemron_truck_stop_big.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_chemron_truck_stop_big.ppd"
+	gps_avoid: true
+}
+prefab_model : prefab.nm_121 {
+	model_desc: "/prefab/gas/nm_gas_station1_gp_truck_stop_big.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_gp_truck_stop_big.ppd"
+	gps_avoid: true
+}
+prefab_model : prefab.nm_122 {
+	name:"nm gas station gp truck stop no spawn"
+	model_desc: "/prefab/gas/nm_gas_station1_gp_truck_stop.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_gp_truck_stop.ppd"
+	gps_avoid: true
+}
+prefab_model : prefab.nm_123 {
+	name:"nm gas station truck stop no spawn"
+	model_desc: "/prefab/gas/nm_gas_station1_chemron_truck_stop.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_chemron_truck_stop.ppd"
+	gps_avoid: true
+}
+
+prefab_model : prefab.us_142 {
+	name:"nm gas station truck stop"
+	model_desc: "/prefab/gas/nm_gas_station1_truck_stop.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_truck_stop_spawn.ppd"
+	gps_avoid: true
+	
+}
+
+prefab_model : prefab.nm_124 {
+	name:"nm gas station chemron truck stop"
+	model_desc: "/prefab/gas/nm_gas_station1_chemron_truck_stop.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_chemron_truck_stop_spawn.ppd"
+	gps_avoid: true
+}
+
+prefab_model : prefab.nm_125 {
+	name:"nm gas station gp truck stop"
+	model_desc: "/prefab/gas/nm_gas_station1_gp_truck_stop.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_gp_truck_stop_spawn.ppd"
+	gps_avoid: true
+}
+
+prefab_model : prefab.us_gas_13 {
+	name:"nm gas station truck stop no spawn"
+	model_desc: "/prefab/gas/nm_gas_station1_truck_stop.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_truck_stop.ppd"
+	gps_avoid: true
+
+}
+
+prefab_model : prefab.us_gas_14 {
+	model_desc: "/prefab/gas/nm_gas_station1_truck_stop_big.pmd"
+	prefab_desc: "/prefab/gas/nm_gas_station1_truck_stop_big.ppd"
+	gps_avoid: true
+
+}
+
+prefab_model : prefab.us_208 {
+	model_desc: "/prefab/fork_temp/us_fork_2-1-2_city_2-2_country_1_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_fork_2-1-2_city_2-2_country_1_tmpl.ppd"
+  
+	corner0[]: sh30cvdr1
+	corner0[]: kb30
+	corner0[]: sw30
+	
+	corner1[]: sh30cvdl1
+	corner1[]: kb30
+	corner1[]: sw30
 }
 
 }       

@@ -25,12 +25,16 @@ ECHO Extracting dlc_kenworth_w900 archive
 %EXTRACTOR% dlc_kenworth_w900.scs %LOCATION%\dlc_kenworth_w900 >NUL
 ECHO Extracting dlc_nevada archive
 %EXTRACTOR% dlc_nevada.scs %LOCATION%\dlc_nevada >NUL
+ECHO Extracting dlc_nm archive
+%EXTRACTOR% dlc_nm.scs %LOCATION%\dlc_nm >NUL
 ECHO Extracting dlc_peterbilt_389 archive
 %EXTRACTOR% dlc_peterbilt_389.scs %LOCATION%\dlc_peterbilt_389 >NUL
 ECHO Extracting dlc_peterbilt_579 archive
 %EXTRACTOR% dlc_peterbilt_579.scs %LOCATION%\dlc_peterbilt_579 >NUL
 ECHO Extracting dlc_rims archive
 %EXTRACTOR% dlc_rims.scs %LOCATION%\dlc_rims >NUL
+ECHO Extracting dlc_sci_st_wheels archive
+%EXTRACTOR% dlc_sci_st_wheels.scs %LOCATION%\dlc_sci_st_wheels >NUL
 ECHO Extracting dlc_steampunk archive
 %EXTRACTOR% dlc_steampunk.scs %LOCATION%\dlc_steampunk >NUL
 
@@ -80,6 +84,14 @@ RMDIR "%LOCATION%\dlc_nevada\model" /s /q
 RMDIR "%LOCATION%\dlc_nevada\prefab" /s /q
 DEL %LOCATION%\dlc_nevada\dlc_nevada.manifest.sii
 
+:: dlc_nm
+RMDIR "%LOCATION%\dlc_nm\automat" /s /q
+RMDIR "%LOCATION%\dlc_nm\map" /s /q
+RMDIR "%LOCATION%\dlc_nm\material" /s /q
+RMDIR "%LOCATION%\dlc_nm\model" /s /q
+RMDIR "%LOCATION%\dlc_nm\prefab" /s /q
+DEL %LOCATION%\dlc_nm\dlc_nm.manifest.sii
+
 :: dlc_peterbilt_389
 RMDIR "%LOCATION%\dlc_peterbilt_389\automat" /s /q
 RMDIR "%LOCATION%\dlc_peterbilt_389\material" /s /q
@@ -98,6 +110,12 @@ RMDIR "%LOCATION%\dlc_rims\automat" /s /q
 RMDIR "%LOCATION%\dlc_rims\material" /s /q
 RMDIR "%LOCATION%\dlc_rims\vehicle" /s /q
 DEL %LOCATION%\dlc_rims\dlc_rims.manifest.sii
+
+:: dlc_sci_st_wheels
+RMDIR "%LOCATION%\dlc_sci_st_wheels\automat" /s /q
+RMDIR "%LOCATION%\dlc_sci_st_wheels\material" /s /q
+RMDIR "%LOCATION%\dlc_sci_st_wheels\vehicle" /s /q
+DEL %LOCATION%\dlc_sci_st_wheels\dlc_sci_st_wheels.manifest.sii
 
 :: dlc_steampunk
 RMDIR "%LOCATION%\dlc_steampunk\material" /s /q

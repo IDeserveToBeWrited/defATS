@@ -1,0 +1,83 @@
+traffic_vehicle : traffic.arrow_xt
+{
+	accessories[]: .arrow_xt.chassis
+	accessories[]: .arrow_xt.fwheel
+	accessories[]: .arrow_xt.rwheel
+
+
+	max_speed: 100
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	
+	engine_torque: 2000
+	
+	vehicle_mass: 15000
+
+
+	
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .arrow_xt.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/chassis.sii"
+}
+
+vehicle_wheel_accessory: .arrow_xt.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+
+vehicle_wheel_accessory: .arrow_xt.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX NEW MEXICO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.arrow_xt.nm
+{
+	accessories[]: .arrow_xt.nm.chassis
+	accessories[]: .arrow_xt.nm.fwheel
+	accessories[]: .arrow_xt.nm.rwheel
+
+
+	max_speed: 100
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	
+		spawn_ratio: 0
+	
+	engine_torque: 2000
+	
+	vehicle_mass: 15000
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .arrow_xt.nm.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/nm.sii"
+}
+
+vehicle_wheel_accessory: .arrow_xt.nm.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+
+vehicle_wheel_accessory: .arrow_xt.nm.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+
+

@@ -14,22 +14,29 @@ road_look : road.template0 {
 	template_right:		"/road_template/ca_nv/ca_1x1_small_border.pmd"
 
 
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.template0
+
+	compatible_edges_right[]: "shldr_1m"
+	compatible_edges_right[]: "shldr_05m"
+	compatible_edges_right[]: "shldr_1m2"
+	compatible_edges_right[]: "sw_kerb"
+	compatible_edges_right[]: "sw_4m_a"
+	compatible_edges_right[]: "sw_4m_c"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
+
+}
+road_template_variant : .tmpl_var.road.template0
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "lines_broken"
+
 	lanes_left[]:	traffic_lane.road.local
 	lanes_right[]:	traffic_lane.road.local
-
-	allow_wrong_way[]:	"no_lines"
-	allow_wrong_way[]:	"lines_broken"
-  
-  compatible_edges_right[]: "shldr_1m"
-  compatible_edges_right[]: "shldr_05m"
-  compatible_edges_right[]: "shldr_1m2"
-  compatible_edges_right[]: "sw_kerb"
-  compatible_edges_right[]: "sw_4m_a"
-  compatible_edges_right[]: "sw_4m_c"
-  
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
-  
 }
 
 road_look : road.template1 {
@@ -37,19 +44,26 @@ road_look : road.template1 {
 	template_right:		"/road_template/ca_nv/ca_1x1_country_full.pmd"
 
 
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.template1
+
+	compatible_edges_right[]: "shldr_1m"
+	compatible_edges_right[]: "shldr_05m"
+	compatible_edges_right[]: "shldr_1m2"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+
+}
+road_template_variant : .tmpl_var.road.template1
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "lines_broken"
+
 	lanes_left[]:	traffic_lane.road.local
 	lanes_right[]:	traffic_lane.road.local
-
-	allow_wrong_way[]:	"no_lines"
-	allow_wrong_way[]:	"lines_broken"
-  
-  compatible_edges_right[]: "shldr_1m"
-  compatible_edges_right[]: "shldr_05m"
-  compatible_edges_right[]: "shldr_1m2"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-  
 }
 
 road_look : road.template3 {
@@ -59,14 +73,14 @@ road_look : road.template3 {
 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "shldr_1m"
-  compatible_edges_right[]: "shldr_05m"
-  compatible_edges_right[]: "shldr_1m2"
-  compatible_edges_right[]: "sw_kerb_ca"
-  
-  shoulder_space_left:		0.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "shldr_1m"
+	compatible_edges_right[]: "shldr_05m"
+	compatible_edges_right[]: "shldr_1m2"
+	compatible_edges_right[]: "sw_kerb_ca"
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		3.0
 }
 
 
@@ -77,19 +91,19 @@ road_look : road.us_tmpl0 {
 	template_left:		"/road_template/us/us_2_freeway.pmd"
 
 	road_offset: 2.0
-  
+
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway 
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-  
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+
 }
 
 road_look : road.us_tmpl1 {
@@ -103,13 +117,13 @@ road_look : road.us_tmpl1 {
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 road_look : road.us_tmpl3 {
@@ -123,108 +137,82 @@ road_look : road.us_tmpl3 {
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
-
-road_look : road.us_tmpl5 {
-	name: 			"us 2-2 country offset 4m 0 tmpl"
-	template_right:		"/road_template/us/us_2_country_divided.pmd"
-  template_left:		"/road_template/us/us_2_country_divided.pmd"
-  
-  road_offset: 2
-
-	lanes_left[]:	traffic_lane.road.divided
-	lanes_left[]:	traffic_lane.road.divided
-	lanes_right[]:	traffic_lane.road.divided
-	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  compatible_edges_left[]: "sh_1"
-  compatible_edges_left[]: "kb_us"
-  compatible_edges_left[]: "kb_np"
-  compatible_edges_left[]: "kb_redn"  
-  compatible_edges_left[]: "kb_dirt"
-  compatible_edges_left[]: "sw_2m_an"
-  compatible_edges_left[]: "sw_2m_bn"
-  compatible_edges_left[]: "sw_2m_cn"
-  compatible_edges_left[]: "sw_2m_dn"
-  compatible_edges_left[]: "sw_2m_e"
-  compatible_edges_left[]: "sw_4m_an"
-  compatible_edges_left[]: "sw_4m_bn"
-  compatible_edges_left[]: "sw_4m_cn"
-  compatible_edges_left[]: "sw_4m_dn"
-  compatible_edges_left[]: "sw_4m_e"
-  compatible_edges_left[]: "sw_2_2m"
-  
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
-}
-
 
 road_look : road.us_tmpl11 {
-	name: 			"us 0-1 exit road tmpl"
+	name: 			"us 0-1 exit road"
 	template_right:		"/road_template/us/us_exit_road.pmd"
 
 
 	lanes_right[]:	traffic_lane.road.freeway.low_density
-  
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_right:		3.0
 }
 
 road_look : road.us_tmpl12 {
-	name: 			"us 0-2 freeway tmpl"
+	name: 			"us 0-2 freeway"
 	template_right:		"/road_template/us/us_2_freeway_one_way.pmd"
 
+  overlay_schemes[]: "crack_str : 1.0 : _a|2 : _b|2 : _c|2"
+	overlay_schemes[]: "crack_crv : 1.0 : _d|2 : _e|2 : _f|2"
+	overlay_schemes[]: "crack_lgh : 1.0 : _h|2 : _i|2 : _j|2"
+
 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_right:		3.0
 
 }
 
 road_look : road.us_tmpl13 {
-	name: 			"us 0-3 freeway tmpl"
+	name: 			"us 0-3 freeway"
 	template_right:		"/road_template/us/us_3_freeway_one_way.pmd"
 
 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_right:		3.0
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl13
+  template_variants_right[]: .tmpl_var2.road.us_tmpl13
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_right:		3.0
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl13
+{
+	variant_names[]: "truck_lane"
+
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway.truck_lane
+}
+
+road_template_variant : .tmpl_var2.road.us_tmpl13
+{
+	variant_names[]: "brd_brk_ful"
+
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway.full_out
+	lanes_right[]:	traffic_lane.road.freeway.full_in
 }
 
 road_look : road.us_tmpl16 {
-	name: 			"us 3-3 freeway 20m offset tmpl"
+	name: 			"us 3-3 freeway 20m offset"
 	template_right:		"/road_template/us/us_3_freeway.pmd"
 	template_left:		"/road_template/us/us_3_freeway.pmd"
 
@@ -236,17 +224,17 @@ road_look : road.us_tmpl16 {
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 road_look : road.us_tmpl17 {
-	name: 			"us 3-3 freeway 30m offset tmpl"
+	name: 			"us 3-3 freeway 30m offset"
 	template_right:		"/road_template/us/us_3_freeway.pmd"
 	template_left:		"/road_template/us/us_3_freeway.pmd"
 
@@ -258,17 +246,17 @@ road_look : road.us_tmpl17 {
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 road_look : road.us_tmpl14 {
-	name: 			"us 3-3 freeway 4m offset tmpl"
+	name: 			"us 3-3 freeway 4m offset"
 	template_right:		"/road_template/us/us_3_freeway.pmd"
 	template_left:		"/road_template/us/us_3_freeway.pmd"
 
@@ -280,17 +268,17 @@ road_look : road.us_tmpl14 {
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 road_look :road.us_tmpl15 {
-	name: 			"us 3-3 freeway 11m offset tmpl"
+	name: 			"us 3-3 freeway 11m offset"
 	template_right:		"/road_template/us/us_3_freeway.pmd"
 	template_left:		"/road_template/us/us_3_freeway.pmd"
 
@@ -302,116 +290,196 @@ road_look :road.us_tmpl15 {
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 
 road_look : road.us_tmpl18 {
-	name: 			"us 1-1 country 0 tmpl"
+	name: 			"x LEGACY ROAD PREFAB - DO NOT USE X"
 	template_right:		"/road_template/us/us_1-1_country.pmd"
 
 
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl18
+	template_variants_right[]: .tmpl_var.road.us_tmpl18.1
+	template_variants_right[]: .tmpl_var.road.us_tmpl18.2
+
+	compatible_edges_right[]: "sh_1"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
+
+}
+road_template_variant : .tmpl_var.road.us_tmpl18
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "brd_brk"
+
 	lanes_left[]:	traffic_lane.road.local
 	lanes_right[]:	traffic_lane.road.local
+}
+road_template_variant : .tmpl_var.road.us_tmpl18.1
+{
+	variant_names[]: "brd_brk_ful"
 
-	allow_wrong_way[]:	"no_lines"
-	allow_wrong_way[]:	"brd_brk"
-  allow_wrong_way[]:	"brd_brk_ful"
-  allow_wrong_way[]:	"brd_ful_brk"
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+}
+road_template_variant : .tmpl_var.road.us_tmpl18.2
+{
+	variant_names[]: "brd_ful_brk"
 
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
-  
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local
 }
 
 road_look : road.us_tmpl19 {
-	name: 			"us 1-1 country 1 tmpl"
+	name: 			"us 1-1 country 1"
 	template_right:		"/road_template/us/us_1-1_country_1.pmd"
 
 
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl19
+	template_variants_right[]: .tmpl_var.road.us_tmpl19.1
+	template_variants_right[]: .tmpl_var.road.us_tmpl19.2
+
+	compatible_edges_right[]: "sh"
+ 	compatible_edges_right[]: "sh_or"
+ 	compatible_edges_right[]: "sh_or_3"
+  compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl19
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "brd_brk"
+
 	lanes_left[]:	traffic_lane.road.local
 	lanes_right[]:	traffic_lane.road.local
+}
+road_template_variant : .tmpl_var.road.us_tmpl19.1
+{
+	variant_names[]: "brd_brk_ful"
 
-	allow_wrong_way[]:	"no_lines"
-	allow_wrong_way[]:	"brd_brk"
-  allow_wrong_way[]:	"brd_brk_ful"
-  allow_wrong_way[]:	"brd_ful_brk"
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+}
+road_template_variant : .tmpl_var.road.us_tmpl19.2
+{
+	variant_names[]: "brd_ful_brk"
 
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local
 }
 
 road_look : road.us_tmpl20 {
-	name: 			"us walk road tmpl"
+	name: 			"us walk road"
 	template_right:		"/road_template/us/us_walk_road.pmd"
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
 
 	lanes_left[]:	traffic_lane.no_vehicles
 	lanes_right[]:	traffic_lane.no_vehicles
-	
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
 }
 
+road_look : road.us_tmpl20a {
+	name: 			"us walk road 4m offset"
+  
+  road_offset: 1.0
+  
+	template_right:		"/road_template/us/us_walk_road_one_way.pmd"
+  template_left:		"/road_template/us/us_walk_road_one_way.pmd"
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+
+	lanes_left[]:	traffic_lane.no_vehicles
+	lanes_right[]:	traffic_lane.no_vehicles
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
+}
+
+
+
 road_look : road.us_tmpl2 {
-	name: 			"us 2-2 freeway 20m offset tmpl"
+	name: 			"us 2-2 freeway 20m offset"
 	template_right:		"/road_template/us/us_2_freeway.pmd"
 	template_left:		"/road_template/us/us_2_freeway.pmd"
 
@@ -421,627 +489,664 @@ road_look : road.us_tmpl2 {
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
-                                                                                                                     
+																																																										 
 road_look : road.us_tmp20 {
-	name: 			"us 2-1-2 city 0 tmpl"
+	name: 			"us 2-1-2 city 0"
 	template_right:		"/road_template/us/us_2-1-2_city.pmd"
-  
+
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  lane_offsets_left[]:	(1.75, 0)
-  lane_offsets_left[]:	(1.25, 0)
+
+	lane_offsets_left[]:	(1.75, 0)
+	lane_offsets_left[]:	(1.25, 0)
 	lane_offsets_right[]: (1.75, 0)
-  lane_offsets_right[]: (1.25, 0)
-  
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
-  
+	lane_offsets_right[]: (1.25, 0)
+
+	compatible_edges_right[]: "sh_1"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
+
 }
 
 road_look : road.us_tmp21 {
-	name: 			"us 2-2 country 0 tmpl"
+	name: 			"x LEGACY ROAD PREFAB - DO NOT USE X"
 	template_right:		"/road_template/us/us_2-2_country.pmd"
-  
 
-	lanes_left[]:	traffic_lane.road.divided
-	lanes_left[]:	traffic_lane.road.divided
-	lanes_right[]:	traffic_lane.road.divided
-	lanes_right[]:	traffic_lane.road.divided  
-  
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
-}
-
-road_look : road.us_tmp22 {
-	name: 			"us 2-2 country offset 11m 0 tmpl"
-	template_right:		"/road_template/us/us_2_country_divided.pmd"
-  template_left:		"/road_template/us/us_2_country_divided.pmd"
-  
-  road_offset: 5.5
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  compatible_edges_left[]: "sh_1"
-  compatible_edges_left[]: "kb_us"
-  compatible_edges_left[]: "kb_np"
-  compatible_edges_left[]: "kb_redn"  
-  compatible_edges_left[]: "kb_dirt"
-  compatible_edges_left[]: "sw_2m_an"
-  compatible_edges_left[]: "sw_2m_bn"
-  compatible_edges_left[]: "sw_2m_cn"
-  compatible_edges_left[]: "sw_2m_dn"
-  compatible_edges_left[]: "sw_2m_e"
-  compatible_edges_left[]: "sw_4m_an"
-  compatible_edges_left[]: "sw_4m_bn"
-  compatible_edges_left[]: "sw_4m_cn"
-  compatible_edges_left[]: "sw_4m_dn"
-  compatible_edges_left[]: "sw_4m_e"
-  compatible_edges_left[]: "sw_2_2m"
 
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
+	compatible_edges_right[]: "sh_1"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
 }
 
 road_look : road.us_tmpl23 {
-	name: 			"us 2-1-2 city ai1 0 tmpl"
+	name: 			"us 2-1-2 city ai1 0"
 	template_right:		"/road_template/us/us_3-2_city.pmd"
-  
+
 
 	lanes_left[]:	traffic_lane.road.divided.low_density
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
-	lanes_right[]:	traffic_lane.road.divided   
-  lanes_right[]:	traffic_lane.road.divided   
-  
-  lane_offsets_left[]:	(-0.25, 0)
-  lane_offsets_left[]:	(-0.75, 0)
-  lane_offsets_left[]:	(-1.25, 0)
+	lanes_right[]:	traffic_lane.road.divided	 
+	lanes_right[]:	traffic_lane.road.divided	 
+
+	lane_offsets_left[]:	(-0.25, 0)
+	lane_offsets_left[]:	(-0.75, 0)
+	lane_offsets_left[]:	(-1.25, 0)
 	lane_offsets_right[]: (-0.25, 0)
-  lane_offsets_right[]: (-0.75, 0)
-  
+	lane_offsets_right[]: (-0.75, 0)
 
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
 
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
+	compatible_edges_right[]: "sh_1"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
 }
 
 road_look : road.us_tmpl24 {
-	name: 			"us 2-1-2 city ai2 0 tmpl"
+	name: 			"us 2-1-2 city ai2 0"
 	template_right:		"/road_template/us/us_2-3_city.pmd"
-  
+
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided.low_density
-	lanes_right[]:	traffic_lane.road.divided   
-  lanes_right[]:	traffic_lane.road.divided   
-  
+	lanes_right[]:	traffic_lane.road.divided	 
+	lanes_right[]:	traffic_lane.road.divided	 
+
 	lane_offsets_left[]: (-0.25, 0)
-  lane_offsets_left[]: (-0.75, 0)
-  lane_offsets_right[]:	(-0.25, 0)
-  lane_offsets_right[]:	(-0.75, 0)
-  lane_offsets_right[]:	(-1.25, 0)
-  
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
+	lane_offsets_left[]: (-0.75, 0)
+	lane_offsets_right[]:	(-0.25, 0)
+	lane_offsets_right[]:	(-0.75, 0)
+	lane_offsets_right[]:	(-1.25, 0)
+
+	compatible_edges_right[]: "sh_1"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
 }
 
 road_look : road.us_tmpl25 {
-	name: 			"us 2-2 city divided 0 tmpl"
+	name: 			"us 2-2 city divided 0"
 	template_right:		"/road_template/us/us_2_city_divided.pmd"
-  template_left:		"/road_template/us/us_2_city_divided.pmd"
-  
-  road_offset: 1.5
+	template_left:		"/road_template/us/us_2_city_divided.pmd"
+
+	road_offset: 1.5
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  lane_offsets_left[]: (0.25, 0)
-  lane_offsets_left[]: (-0.25, 0)
-  lane_offsets_right[]:	(0.25, 0)
-  lane_offsets_right[]:	(-0.25, 0)
-  
 
-  compatible_edges_right[]: "sh_1"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  compatible_edges_left[]: "sh_1"
-  compatible_edges_left[]: "kb_us"
-  compatible_edges_left[]: "kb_np"
-  compatible_edges_left[]: "kb_redn"  
-  compatible_edges_left[]: "kb_dirt"
-  compatible_edges_left[]: "sw_2m_an"
-  compatible_edges_left[]: "sw_2m_bn"
-  compatible_edges_left[]: "sw_2m_cn"
-  compatible_edges_left[]: "sw_2m_dn"
-  compatible_edges_left[]: "sw_2m_e"
-  compatible_edges_left[]: "sw_4m_an"
-  compatible_edges_left[]: "sw_4m_bn"
-  compatible_edges_left[]: "sw_4m_cn"
-  compatible_edges_left[]: "sw_4m_dn"
-  compatible_edges_left[]: "sw_4m_e"
-  compatible_edges_left[]: "sw_2_2m"
+	lane_offsets_left[]: (0.25, 0)
+	lane_offsets_left[]: (-0.25, 0)
+	lane_offsets_right[]:	(0.25, 0)
+	lane_offsets_right[]:	(-0.25, 0)
+
+
+	compatible_edges_right[]: "sh_1"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	compatible_edges_left[]: "sh_1"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
  
-  shoulder_space_left:		0.0
-  shoulder_space_right:		0.0
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
+}
+
+road_look : road.us_tmpl25a {
+	name: 			"us 0-2 city"
+	template_right:		"/road_template/us/us_2_city.pmd"
+
+	lanes_right[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided
+
+	lane_offsets_right[]:	(0.25, 0)
+	lane_offsets_right[]:	(-0.25, 0)
+
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "sh_a"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
+ 
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
 }
 
 road_look : road.us_tmpl26 {
-	name: 			"us 1-1 country 3 tmpl"
+	name: 			"us 1-1 country 3"
 	template_right:		"/road_template/us/us_1-1_country_3.pmd"
 
 
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl26
+	template_variants_right[]: .tmpl_var.road.us_tmpl26.1
+	template_variants_right[]: .tmpl_var.road.us_tmpl26.2
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl26
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "brd_brk"
+
 	lanes_left[]:	traffic_lane.road.local
 	lanes_right[]:	traffic_lane.road.local
+}
+road_template_variant : .tmpl_var.road.us_tmpl26.1
+{
+	variant_names[]: "brd_ful_brk"
 
-	allow_wrong_way[]:	"no_lines"
-	allow_wrong_way[]:	"brd_brk"
-  allow_wrong_way[]:	"brd_brk_ful"
-  allow_wrong_way[]:	"brd_ful_brk"
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local
+}
+road_template_variant : .tmpl_var.road.us_tmpl26.2
+{
+	variant_names[]: "brd_brk_ful"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local.no_overtake
 }
 
 road_look : road.us_tmpl27 {
-	name: 			"us 2-2 country offset 11m 3 tmpl"
+	name: 			"us 2-2 country offset 11m 3"
 	template_right:		"/road_template/us/us_2_country_divided_3.pmd"
-  template_left:		"/road_template/us/us_2_country_divided_3.pmd"
-  
-  road_offset: 5.5
+	template_left:		"/road_template/us/us_2_country_divided_3.pmd"
+
+	road_offset: 5.5
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  compatible_edges_left[]: "sh"
-  compatible_edges_left[]: "kb_us"
-  compatible_edges_left[]: "kb_np"
-  compatible_edges_left[]: "kb_redn"  
-  compatible_edges_left[]: "kb_dirt"
-  compatible_edges_left[]: "sw_2m_an"
-  compatible_edges_left[]: "sw_2m_bn"
-  compatible_edges_left[]: "sw_2m_cn"
-  compatible_edges_left[]: "sw_2m_dn"
-  compatible_edges_left[]: "sw_2m_e"
-  compatible_edges_left[]: "sw_4m_an"
-  compatible_edges_left[]: "sw_4m_bn"
-  compatible_edges_left[]: "sw_4m_cn"
-  compatible_edges_left[]: "sw_4m_dn"
-  compatible_edges_left[]: "sw_4m_e"
-  compatible_edges_left[]: "sw_2_2m"
 
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 
 road_look : road.us_tmpl29 {
-	name: 			"us 2-2 country 3 tmpl"
+	name: 			"us 2-2 country 3"
 	template_right:		"/road_template/us/us_2-2_country_3.pmd"
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-}  
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+}
 
 road_look : road.us_tmpl30 {
-	name: 			"us 2-2 country 1 tmpl"
+	name: 			"us 2-2 country 1"
 	template_right:		"/road_template/us/us_2-2_country_1.pmd"
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmpl31 {
-	name: 			"us 2-1-2 city ai2 1 tmpl"
+	name: 			"us 2-1-2 city ai2 1 shoulder"
 	template_right:		"/road_template/us/us_2-3_city_1.pmd"
-  
+
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided.low_density
-	lanes_right[]:	traffic_lane.road.divided   
-  lanes_right[]:	traffic_lane.road.divided   
-  
+	lanes_right[]:	traffic_lane.road.divided	 
+	lanes_right[]:	traffic_lane.road.divided	 
+
 	lane_offsets_left[]: (-0.25, 0)
-  lane_offsets_left[]: (-0.75, 0)
-  lane_offsets_right[]:	(-0.25, 0)
-  lane_offsets_right[]:	(-0.75, 0)
-  lane_offsets_right[]:	(-1.25, 0)  
-  
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+	lane_offsets_left[]: (-0.75, 0)
+	lane_offsets_right[]:	(-0.25, 0)
+	lane_offsets_right[]:	(-0.75, 0)
+	lane_offsets_right[]:	(-1.25, 0)
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmpl32 {
-	name: 			"us 2-1-2 city ai1 1 tmpl"
+	name: 			"us 2-1-2 city ai1 1 shoulder"
 	template_right:		"/road_template/us/us_3-2_city_1.pmd"
-  
+
 
 	lanes_left[]:	traffic_lane.road.divided.low_density
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
-	lanes_right[]:	traffic_lane.road.divided   
-  lanes_right[]:	traffic_lane.road.divided   
-  
-  lane_offsets_left[]:	(-0.25, 0)
-  lane_offsets_left[]:	(-0.75, 0)
-  lane_offsets_left[]:	(-1.25, 0)
-	lane_offsets_right[]: (-0.25, 0)
-  lane_offsets_right[]: (-0.75, 0)
-  
-  compatible_edges_right[]: "sh"
+	lanes_right[]:	traffic_lane.road.divided	 
+	lanes_right[]:	traffic_lane.road.divided	 
 
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+	lane_offsets_left[]:	(-0.25, 0)
+	lane_offsets_left[]:	(-0.75, 0)
+	lane_offsets_left[]:	(-1.25, 0)
+	lane_offsets_right[]: (-0.25, 0)
+	lane_offsets_right[]: (-0.75, 0)
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmpl33 {
-	name: 			"us 2-1-2 city 1 tmpl"
+	name: 			"us 2-1-2 city 1 shoulder"
 	template_right:		"/road_template/us/us_2-1-2_city_1.pmd"
-  
+
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  lane_offsets_left[]:	(1.75, 0)
-  lane_offsets_left[]:	(1.25, 0)
+
+	lane_offsets_left[]:	(1.75, 0)
+	lane_offsets_left[]:	(1.25, 0)
 	lane_offsets_right[]: (1.75, 0)
-  lane_offsets_right[]: (1.25, 0)
-  
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+	lane_offsets_right[]: (1.25, 0)
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmpl34 {
-	name: 			"us 2-1-2 city 3 tmpl"
+	name: 			"us 2-1-2 city 3"
 	template_right:		"/road_template/us/us_2-1-2_city_3.pmd"
-  
+
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  lane_offsets_left[]:	(1.75, 0)
-  lane_offsets_left[]:	(1.25, 0)
+
+	lane_offsets_left[]:	(1.75, 0)
+	lane_offsets_left[]:	(1.25, 0)
 	lane_offsets_right[]: (1.75, 0)
-  lane_offsets_right[]: (1.25, 0)
-  
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+	lane_offsets_right[]: (1.25, 0)
+
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 road_look : road.us_tmpl28 {
-	name: 			"us 2-2 country offset 4m 3 tmpl"
+	name: 			"us 2-2 country offset 4m 3"
 	template_right:		"/road_template/us/us_2_country_divided_3.pmd"
-  template_left:		"/road_template/us/us_2_country_divided_3.pmd"
-  
-  road_offset: 2
+	template_left:		"/road_template/us/us_2_country_divided_3.pmd"
+
+	road_offset: 2
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  compatible_edges_right[]: "sw_2m_an"
-  compatible_edges_right[]: "sw_2m_bn"
-  compatible_edges_right[]: "sw_2m_cn"
-  compatible_edges_right[]: "sw_2m_dn"
-  compatible_edges_right[]: "sw_2m_e"
-  compatible_edges_right[]: "sw_4m_an"
-  compatible_edges_right[]: "sw_4m_bn"
-  compatible_edges_right[]: "sw_4m_cn"
-  compatible_edges_right[]: "sw_4m_dn"
-  compatible_edges_right[]: "sw_4m_e"
-  compatible_edges_right[]: "sw_2_2m"
-  
-  compatible_edges_left[]: "sh"
-  compatible_edges_left[]: "kb_us"
-  compatible_edges_left[]: "kb_np"
-  compatible_edges_left[]: "kb_redn"  
-  compatible_edges_left[]: "kb_dirt"
-  compatible_edges_left[]: "sw_2m_an"
-  compatible_edges_left[]: "sw_2m_bn"
-  compatible_edges_left[]: "sw_2m_cn"
-  compatible_edges_left[]: "sw_2m_dn"
-  compatible_edges_left[]: "sw_2m_e"
-  compatible_edges_left[]: "sw_4m_an"
-  compatible_edges_left[]: "sw_4m_bn"
-  compatible_edges_left[]: "sw_4m_cn"
-  compatible_edges_left[]: "sw_4m_dn"
-  compatible_edges_left[]: "sw_4m_e"
-  compatible_edges_left[]: "sw_2_2m"
 
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 road_look : road.us_tmpl35 {
-	name: 			"us 2-2 city divided 1 tmpl"
+	name: 			"us 2-2 city divided 1 shoulder"
 	template_right:		"/road_template/us/us_2_city_divided_1.pmd"
-  template_left:		"/road_template/us/us_2_city_divided_1.pmd"
-  
-  road_offset: 1.5
+	template_left:		"/road_template/us/us_2_city_divided_1.pmd"
+
+	road_offset: 1.5
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
+
 lane_offsets_left[]: (0.25, 0)
-  lane_offsets_left[]: (-0.25, 0)
-  lane_offsets_right[]:	(0.25, 0)
-  lane_offsets_right[]:	(-0.25, 0)
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
+	lane_offsets_left[]: (-0.25, 0)
+	lane_offsets_right[]:	(0.25, 0)
+	lane_offsets_right[]:	(-0.25, 0)
 
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0 
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0 
 }
 
 road_look : road.us_tmpl36 {
-	name: 			"us 2-2 country offset 4m 1 tmpl"
+	name: 			"us 2-2 country offset 4m 1"
 	template_right:		"/road_template/us/us_2_country_divided_1.pmd"
-  template_left:		"/road_template/us/us_2_country_divided_1.pmd"
-  
-  road_offset: 2
+	template_left:		"/road_template/us/us_2_country_divided_1.pmd"
+
+	road_offset: 2
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
 
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmpl37 {
-	name: 			"us 2-2 country offset 11m 1 tmpl"
+	name: 			"us 2-2 country offset 11m 1"
 	template_right:		"/road_template/us/us_2_country_divided_1.pmd"
-  template_left:		"/road_template/us/us_2_country_divided_1.pmd"
-  
-  road_offset: 5.5
+	template_left:		"/road_template/us/us_2_country_divided_1.pmd"
+
+	road_offset: 5.5
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
 }
 
 road_look : road.ca_tmpl38 {
 	name: 			"ca 3-3 gg bridge tmpl"
 	template_right:		"/road_template/ca_nv/ca_3_gg_bridge.pmd"
 	template_left:		"/road_template/ca_nv/ca_3_gg_bridge.pmd"
-	
+
 	lane_offsets_left[]: (-0.25, 0)
 	lane_offsets_left[]: (-0.75, 0)
 	lane_offsets_left[]: (-1.25, 0)
 	lane_offsets_right[]:	(-0.25, 0)
 	lane_offsets_right[]:	(-0.75, 0)
 	lane_offsets_right[]:	(-1.25, 0)
-	
+
 
 	lanes_left[]:	traffic_lane.road.divided
 	lanes_left[]:	traffic_lane.road.divided
@@ -1049,17 +1154,17 @@ road_look : road.ca_tmpl38 {
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
-	
+
 	compatible_edges_right[]: "sh"
 
-	
+
 	compatible_edges_left[]: "sh"
 
 }
 
 
 road_look : road.rl_tmpl1 {
-	name: 			"rail tmpl (cargo)"
+	name: 			"rail (cargo)"
 	template_right:		"/road_template/rail.pmd"
 
 
@@ -1070,7 +1175,7 @@ road_look : road.rl_tmpl1 {
 }
 
 road_look : road.rl_tmpl2 {
-	name: 			"rail double tmpl (cargo)"
+	name: 			"rail double (cargo)"
 	template_right:		"/road_template/rail.pmd"
 	template_left:		"/road_template/rail.pmd"
 
@@ -1087,7 +1192,7 @@ road_look : road.rl_tmpl2 {
 }
 
 road_look : road.rl_tmpl1_ps {
-	name: 			"rail tmpl (passenger)"
+	name: 			"rail (passenger)"
 	template_right:		"/road_template/rail.pmd"
 
 
@@ -1098,7 +1203,7 @@ road_look : road.rl_tmpl1_ps {
 }
 
 road_look : road.rl_tmpl2_ps {
-	name: 			"rail double tmpl (passenger)"
+	name: 			"rail double (passenger)"
 	template_right:		"/road_template/rail.pmd"
 	template_left:		"/road_template/rail.pmd"
 
@@ -1115,18 +1220,18 @@ road_look : road.rl_tmpl2_ps {
 }
 
 #road_look : road.nm_tmpl01 {
-#	name: 			"us 0-2 country 3 roadwork tmpl"
+#	name: 			"us 0-2 country 3 roadwork"
 #	template_right:		"/road_template/us/us_2_country_one_way_3_roadwork.pmd"
 #
 #	lanes_right[]:	traffic_lane.road.divided
 #	lanes_right[]:	traffic_lane.no_vehicles
 #	compatible_edges_right[]: "sh"
 #	compatible_edges_left[]: "sh"
-#    shoulder_space_right:		3.0
+#		shoulder_space_right:		3.0
 #}
 
 road_look : road.nm_tmpl02 {
-	name: 			"us 0-2 country 3 tmpl"
+	name: 			"us 0-2 country 3"
 	template_right:		"/road_template/us/us_2_country_one_way_3.pmd"
 
 	lanes_right[]:	traffic_lane.road.divided
@@ -1135,21 +1240,36 @@ road_look : road.nm_tmpl02 {
 
 
 	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
 
 
 	compatible_edges_left[]: "sh"
-  
-  shoulder_space_right:		3.0
+
+	shoulder_space_right:		3.0
 
 }
 
 road_look : road.nm_tmpl03{
-	name: 			"us 0-4 freeway tmpl"
+	name: 			"us 0-4 freeway"
 	template_right:		"/road_template/us/us_4_freeway_one_way.pmd"
 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-    lanes_right[]:	traffic_lane.road.freeway
+		lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 
 
@@ -1158,18 +1278,18 @@ road_look : road.nm_tmpl03{
 
 
 	compatible_edges_left[]: "sh"
-  
-  shoulder_space_right:		3.0
+
+	shoulder_space_right:		3.0
 
 }
 
 road_look : road.nm_tmpl04 {
-	name: 			"us 4-4 freeway 4m offset tmpl"
+	name: 			"us 4-4 freeway 4m offset"
 	template_right:		"/road_template/us/us_4_freeway.pmd"
 	template_left:		"/road_template/us/us_4_freeway.pmd"
 
 	road_offset: 2.0
-  
+
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
@@ -1178,24 +1298,24 @@ road_look : road.nm_tmpl04 {
 	lanes_right[]:	traffic_lane.road.freeway 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway 
-  
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-  
+
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+
 }
 
 road_look : road.nm_tmpl05 {
-	name: 			"us 4-4 freeway 11m offset tmpl"
+	name: 			"us 4-4 freeway 11m offset"
 	template_right:		"/road_template/us/us_4_freeway.pmd"
 	template_left:		"/road_template/us/us_4_freeway.pmd"
 
 	road_offset: 5.5
-  
+
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
@@ -1204,24 +1324,24 @@ road_look : road.nm_tmpl05 {
 	lanes_right[]:	traffic_lane.road.freeway 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway 
-  
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-  
+
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+
 }
 
 road_look : road.nm_tmpl06 {
-	name: 			"us 4-4 freeway 20m offset tmpl"
+	name: 			"us 4-4 freeway 20m offset"
 	template_right:		"/road_template/us/us_4_freeway.pmd"
 	template_left:		"/road_template/us/us_4_freeway.pmd"
 
 	road_offset: 10
-  
+
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
@@ -1230,24 +1350,24 @@ road_look : road.nm_tmpl06 {
 	lanes_right[]:	traffic_lane.road.freeway 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway 
-  
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-  
+
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+
 }
 
 road_look : road.nm_tmpl07 {
-	name: 			"us 4-4 freeway 30m offset tmpl"
+	name: 			"us 4-4 freeway 30m offset"
 	template_right:		"/road_template/us/us_4_freeway.pmd"
 	template_left:		"/road_template/us/us_4_freeway.pmd"
 
 	road_offset: 15
-  
+
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
@@ -1256,128 +1376,222 @@ road_look : road.nm_tmpl07 {
 	lanes_right[]:	traffic_lane.road.freeway 
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway 
-  
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-  
+
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+
 }
 
 road_look : road.nm_tmpl08 {
-	name: 			"us 0-1 reststop road tmpl"
+	name: 			"us 0-1 reststop road"
 	template_right:		"/road_template/us/us_reststop_road.pmd"
 
 
 	lanes_right[]:	traffic_lane.road.local
-  
-  compatible_edges_right[]: "sh_r"
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_right:		1.0
+
+	compatible_edges_right[]: "sh_r"
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmpl13a {
-	name: 			"us 0-4 freeway no ai 1line tmpl"
+	name: 			"us 0-4 freeway no ai 1line"
 	template_right:		"/road_template/us/us_4_freeway_one_way.pmd"
 
-
-
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
-  lanes_right[]:	traffic_lane.road.freeway
-  lanes_right[]:	traffic_lane.no_vehicles
-  
-  compatible_edges_right[]: "sh"
-  
-  shoulder_space_right:		3.0
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.no_vehicles
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_right:		3.0
 }
 
 road_look : road.us_tmpl38 {
-	name: 			"us 1-2 country 1 tmpl"
+	name: 			"us 1-1-1 country ai1 1"
 	template_right:		"/road_template/us/us_1-2_country_1.pmd"
 
 
 	lanes_left[]:	traffic_lane.road.local
-  lanes_left[]:	traffic_lane.road.local
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl38
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl38
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "brk_brk_ful"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_left[]:	traffic_lane.road.local
 	lanes_right[]:	traffic_lane.road.local
-
-
-allow_wrong_way[]:	"no_lines"
-allow_wrong_way[]:	"brk_brk_ful"
-  
-  compatible_edges_right[]: "sh"
-
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmp39 {
-	name: 			"us 2-2 freeway tmpl"
+	name: 			"us 2-2 freeway"
 	template_right:		"/road_template/us/us_2_freeway.pmd"
 	template_left:		"/road_template/us/us_2_freeway.pmd"
 
 	road_offset: 1.0
-  
+
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_left[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway
 	lanes_right[]:	traffic_lane.road.freeway 
-  
-  compatible_edges_right[]: "sh"
-  
-  compatible_edges_left[]: "sh"
-  
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
-  
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+
 }
 
 road_look : road.us_tmpl40 {
-	name: 			"us 1-1-1 country 1 tmpl"
+	name: 			"us 1-1-1 country 1"
 	template_right:		"/road_template/us/us_1-1-1_country_1.pmd"
 
 
-	lanes_left[]:	traffic_lane.road.local
-	lanes_right[]:	traffic_lane.road.local
-  
-  lane_offsets_left[]:	(2.25, 0)
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl40
+
+	lane_offsets_left[]:	(2.25, 0)
 	lane_offsets_right[]: (2.25, 0)
 
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
 
-	 allow_wrong_way[]:	"no_lines"
-	 allow_wrong_way[]:	"cty_brk"
-  
-  compatible_edges_right[]: "sh"
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl40
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "cty_brk"
 
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
 }
 
 road_look : road.us_tmpl41 {
-	name: 			"us 2-1 country 1 tmpl"
+	name: 			"us 1-1-1 country ai2 1"
 	template_right:		"/road_template/us/us_2-1_country_1.pmd"
 
-  lanes_left[]:	traffic_lane.road.local
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
 	lanes_right[]:	traffic_lane.road.local
-  lanes_right[]:	traffic_lane.road.local
 
+	template_variants_right[]: .tmpl_var.road.us_tmpl41
 
-	 allow_wrong_way[]:	"no_lines"
-   allow_wrong_way[]:	"brk_ful_brk"
-  
-  compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
 
-  shoulder_space_left:		1.0
-  shoulder_space_right:		1.0
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl41
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "brk_ful_brk"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
 }
 
 road_look : road.us_tmpl42 {
-	name: 			"us 0-2 country 1 tmpl"
+	name: 			"us 0-2 country 1"
 	template_right:		"/road_template/us/us_2_country_one_way_1.pmd"
+
+	lanes_right[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided 
+
+
+
+	compatible_edges_right[]: "sh"
+  compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_right:		1.0
+
+}
+
+road_look : road.us_tmpl42a {
+	name: 			"us 0-2 country"
+	template_right:		"/road_template/us/us_2_country_one_way.pmd"
 
 	lanes_right[]:	traffic_lane.road.divided
 	lanes_right[]:	traffic_lane.road.divided
@@ -1385,63 +1599,316 @@ road_look : road.us_tmpl42 {
 
 
 	compatible_edges_right[]: "sh"
-  
-  shoulder_space_right:		1.0
+
+	shoulder_space_right:		1.0
 
 }
 
 road_look : road.us_tmpl43 {
-	name: 			"us 0-1 exit road narrow tmpl"
+	name: 			"us 0-1 exit road narrow"
 	template_right:		"/road_template/us/us_exit_road_narrow.pmd"
 
 
 	lanes_right[]:	traffic_lane.road.local
-  
-  compatible_edges_right[]: "sh"
-  compatible_edges_right[]: "sh_r"
-  compatible_edges_right[]: "kb_us"
-  compatible_edges_right[]: "kb_np"
-  compatible_edges_right[]: "kb_redn"  
-  compatible_edges_right[]: "kb_dirt"
-  
-  shoulder_space_right:		1.0
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_r"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+
+	shoulder_space_right:		1.0
 }
 
 road_look : road.us_tmpl44 {
-	name: 			"us 2-1 country 3 tmpl"
+	name: 			"us 1-1-1 country ai1 3"
 	template_right:		"/road_template/us/us_2-1_country_3.pmd"
 
-  lanes_left[]:	traffic_lane.road.local
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
 	lanes_right[]:	traffic_lane.road.local
-  lanes_right[]:	traffic_lane.road.local
 
+	template_variants_right[]: .tmpl_var.road.us_tmpl44
 
-	 allow_wrong_way[]:	"no_lines"
-   allow_wrong_way[]:	"brk_ful_brk"
-  
-  compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh"
 
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl44
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "brk_ful_brk"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
 }
 
 road_look : road.us_tmpl45 {
-	name: 			"us 1-2 country 3 tmpl"
+	name: 			"us 1-1_1 country ai2 3"
 	template_right:		"/road_template/us/us_1-2_country_3.pmd"
 
 
 	lanes_left[]:	traffic_lane.road.local
-  lanes_left[]:	traffic_lane.road.local
-	lanes_right[]:	traffic_lane.road.local
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
 
-
-allow_wrong_way[]:	"no_lines"
-allow_wrong_way[]:	"brk_brk_ful"
+	template_variants_right[]: .tmpl_var.road.us_tmpl45
   
-  compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh" 
 
-  shoulder_space_left:		3.0
-  shoulder_space_right:		3.0
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl45
+{
+	variant_names[]: "no_lines"
+	variant_names[]: "brk_ful_brk"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
+}
+
+
+road_look : road.us_tmpl19l {
+	name: 			"us 1-1 country 1 lowpoly 15"
+	template_right:		"/road_template/us/us_1-1_country_1_low15.pmd"
+  
+	lanes_right[]:	traffic_lane.no_vehicles
+  lanes_left[]:	traffic_lane.no_vehicles
+  
+  compatible_edges_right[]: "sh_l15"
+  compatible_edges_right[]: "sw_2m_bl"
+  compatible_edges_right[]: "sw_4m_bl"
+
+	shoulder_space_left:		1.0
+	shoulder_space_right:		1.0
+}
+
+road_look : road.us_tmpl43l {
+	name: 			"us 0-1 exit road narrow lowpoly 15"
+	template_right:		"/road_template/us/us_exit_road_narrow_low15.pmd"
+
+
+	lanes_right[]:	traffic_lane.no_vehicles
+
+	compatible_edges_right[]: "sh_l15"
+  
+
+	shoulder_space_right:		1.0
+}
+
+road_look : road.us_tmpl20l {
+	name: 			"us walk road lowpoly 15"
+	template_right:		"/road_template/us/us_walk_road_low15.pmd"
+
+	compatible_edges_right[]: "sh_l15"
+  compatible_edges_right[]: "sw_2m_bl"
+  compatible_edges_right[]: "sw_4m_bl"
+
+
+	lanes_left[]:	traffic_lane.no_vehicles
+	lanes_right[]:	traffic_lane.no_vehicles
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
+}
+
+road_look : road.us_tmpl12l {
+	name: 			"us 0-2 freeway lowpoly 15"
+	template_right:		"/road_template/us/us_2_freeway_one_way_low15.pmd"
+
+
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway
+
+	compatible_edges_right[]: "sh_l15"
+
+	shoulder_space_right:		3.0
+
+}
+
+road_look : road.nm_tmpl02l {
+	name: 			"us 0-2 country 3 lowpoly 15"
+	template_right:		"/road_template/us/us_2_country_one_way_3_low15.pmd"
+
+	lanes_right[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided
+
+
+
+	compatible_edges_right[]: "sh_l15"
+
+
+	compatible_edges_left[]: "sh_l15"
+
+	shoulder_space_right:		3.0
+
+}  
+
+
+road_look : road.us_tmpl46 {
+	name: 			"us 1-1 country park"
+	template_right:		"/road_template/us/us_1-1_country_park.pmd"
+
+
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl46
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_left:		0.0
+	shoulder_space_right:		0.0
+}
+road_template_variant : .tmpl_var.road.us_tmpl46
+{
+	variant_names[]:	"no_lines"
+	variant_names[]:	"brd_brk"
+	variant_names[]:	"brd_brk_ful"
+	variant_names[]:	"brd_ful_brk"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
+}
+
+road_look : road.us_tmpl47 {
+	name: 			"us 0-3 country"
+	template_right:		"/road_template/us/us_3_country_one_way_3.pmd"
+
+
+	lanes_right[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh"
+
+
+	shoulder_space_right:		3.0
+
+}
+
+road_look : road.us_tmpl49 {
+	name: 			"us 1-1 country park left"
+	template_right:		"/road_template/us/us_1-1_country_park_left.pmd"
+
+
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl49
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_right:		0.0
+
+}
+road_template_variant : .tmpl_var.road.us_tmpl49
+{
+	variant_names[]:	"no_lines"
+	variant_names[]:	"brd_brk"
+	variant_names[]:	"brd_brk_ful"
+	variant_names[]:	"brd_ful_brk"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
+}
+
+road_look : road.us_tmpl50 {
+	name: 			"us 1-1 country park right"
+	template_right:		"/road_template/us/us_1-1_country_park_right.pmd"
+
+
+	lanes_left[]:	traffic_lane.road.local.no_overtake
+	lanes_right[]:	traffic_lane.road.local.no_overtake
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl50
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+
+	shoulder_space_right:		0.0
+
+}
+road_template_variant : .tmpl_var.road.us_tmpl50
+{
+	variant_names[]:	"no_lines"
+	variant_names[]:	"brd_brk"
+	variant_names[]:	"brd_brk_ful"
+	variant_names[]:	"brd_ful_brk"
+
+	lanes_left[]:	traffic_lane.road.local
+	lanes_right[]:	traffic_lane.road.local
+}
+
+road_look : road.us_tmpl51 {
+	name: 			"us 3-3 country 4m offset"
+	template_right:		"/road_template/us/us_3_country_3.pmd"
+	template_left:		"/road_template/us/us_3_country_3.pmd"
+
+	road_offset: 2.0
+
+	lanes_left[]:	traffic_lane.road.divided
+	lanes_left[]:	traffic_lane.road.divided
+	lanes_left[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided
+	lanes_right[]:	traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh"
+
+	compatible_edges_left[]: "sh"
+
+	shoulder_space_left:		3.0
+	shoulder_space_right:		3.0
 }
 
 

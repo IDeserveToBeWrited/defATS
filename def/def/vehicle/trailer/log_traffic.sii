@@ -24,4 +24,35 @@ vehicle_wheel_accessory: .traffic.log.trwheel1
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+traffic_trailer : traffic.trailer.log_cargo 
+{
+	accessories[]: .traffic.log_cargo.tchassis
+	accessories[]: .traffic.log_cargo.trwheel0
+	accessories[]: .traffic.log_cargo.trwheel1
+	accessories[]: .traffic.log_cargo.wood.cargo
+
+	cargo_mass: 16000
+}
+
+vehicle_accessory: .traffic.log_cargo.tchassis
+{
+	data_path: "/def/vehicle/trailer/log/chassis.sii"
+}
+
+vehicle_wheel_accessory: .traffic.log_cargo.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.log_cargo.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.log_cargo.wood.cargo
+{
+    	data_path: "/def/vehicle/trailer/log/cargo_wood.sii"
+}
