@@ -397,6 +397,7 @@ sign_model : sign.119 {
 	model_coll: "/model/sign/traffic/us_curve_chevron_left1.pmc"
 	look_name: default
 	road_model: true
+	instanced: true
 
 	dynamic: true
 	mass: 100
@@ -410,6 +411,7 @@ sign_model : sign.120 {
 	model_coll: "/model/sign/traffic/us_curve_chevron_right1.pmc"
 	look_name: default
 	road_model: true
+	instanced: true
 
 	dynamic: true
 	mass: 100
@@ -4663,7 +4665,7 @@ sign_model : sign.dlc_nm_101 {
 	
 	model_desc: "/model/props/lamp/nm_supermarket_lamp_single.pmd"
 	model_coll: "/model/props/lamp/nm_supermarket_lamp_single.pmc"
-	dynamic: true
+	dynamic: false
 	road_model: true
 	mass: 70.0
 }
@@ -5155,6 +5157,18 @@ sign_model : sign.670 {
 	mass: 100
 }
 
+sign_model : sign.689 {
+
+	sign_name: "Yosemite park ahead editable"
+
+	model_desc: "/model/panorama/ca_yosemite_park_sign2.pmd"
+	model_coll: "/model/panorama/ca_yosemite_park_sign2.pmc"
+	look_name: default
+	category: "editable area"
+	editable: true
+	dynamic: false
+}
+
 sign_model : sign.nm_9 {
 
 	sign_name: "nm_fwy3_multiext_drop_1_over"
@@ -5261,7 +5275,7 @@ sign_model : sign.sd_bd_01 {
 	model_coll: "/model/sign/navigation/us_side_board_01-2.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5277,7 +5291,7 @@ sign_model : sign.sd_bd_02 {
 	model_coll: "/model/sign/navigation/us_side_board_01-1_wide.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5293,7 +5307,7 @@ sign_model : sign.sd_bd_03 {
 	model_coll: "/model/sign/navigation/us_side_board_02.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5309,7 +5323,7 @@ sign_model : sign.sd_bd_04 {
 	model_coll: "/model/sign/navigation/us_side_board_03.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5325,7 +5339,7 @@ sign_model : sign.sd_bd_05 {
 	model_coll: "/model/sign/navigation/us_side_board_01-3_multi.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5341,7 +5355,7 @@ sign_model : sign.sd_bd_06 {
 	model_coll: "/model/sign/navigation/us_side_board_05-3.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5357,7 +5371,7 @@ sign_model : sign.sd_bd_07 {
 	model_coll: "/model/sign/navigation/us_side_board_05-2.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5373,7 +5387,7 @@ sign_model : sign.sd_bd_08 {
 	model_coll: "/model/sign/navigation/us_side_board_05-1.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5389,7 +5403,7 @@ sign_model : sign.sd_bd_09 {
 	model_coll: "/model/sign/navigation/us_side_board_06.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5405,7 +5419,7 @@ sign_model : sign.sd_bd_10 {
 	model_coll: "/model/sign/navigation/us_side_board_07.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5421,7 +5435,7 @@ sign_model : sign.sd_bd_11 {
 	model_coll: "/model/sign/navigation/us_side_board_08.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5437,7 +5451,7 @@ sign_model : sign.sd_bd_12 {
 	model_coll: "/model/sign/navigation/us_side_board_09.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5453,7 +5467,7 @@ sign_model : sign.sd_bd_13 {
 	model_coll: "/model/sign/navigation/us_side_board_04-1.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5469,7 +5483,7 @@ sign_model : sign.sd_bd_14 {
 	model_coll: "/model/sign/navigation/us_side_board_04-3.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5485,7 +5499,7 @@ sign_model : sign.sd_bd_15 {
 	model_coll: "/model/sign/navigation/us_side_board_04-3_multi.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5501,7 +5515,7 @@ sign_model : sign.sd_bd_16 {
 	model_coll: "/model/sign/navigation/us_side_board_04-2_multi.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5517,7 +5531,7 @@ sign_model : sign.sd_bd_17 {
 	model_coll: "/model/sign/navigation/us_side_board_05_wide.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5533,7 +5547,7 @@ sign_model : sign.sd_bd_18 {
 	model_coll: "/model/sign/navigation/us_warn_side_board_03.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5549,7 +5563,7 @@ sign_model : sign.sd_bd_19 {
 	model_coll: "/model/sign/navigation/us_warn_side_board_02.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5565,7 +5579,7 @@ sign_model : sign.sd_bd_20 {
 	model_coll: "/model/sign/navigation/us_warn_side_board_01.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5581,7 +5595,7 @@ sign_model : sign.sd_bd_21 {
 	model_coll: "/model/sign/navigation/us_serv_side_board_02.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5597,7 +5611,7 @@ sign_model : sign.sd_bd_22 {
 	model_coll: "/model/sign/navigation/us_serv_side_board_03.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5613,7 +5627,7 @@ sign_model : sign.sd_bd_23 {
 	model_coll: "/model/sign/navigation/us_serv_side_board_01-2.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5629,7 +5643,7 @@ sign_model : sign.sd_bd_24 {
 	model_coll: "/model/sign/navigation/us_serv_side_board_05-2.pmc"
 	look_name: default
 	
-	stand_class: side_1
+	stand_classes[]: side_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5645,7 +5659,7 @@ sign_model : sign.sd_bd_25 {
 	model_coll: "/model/sign/navigation/us_note_side_board_03.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5660,7 +5674,7 @@ sign_model : sign.sd_bd_26 {
 	model_coll: "/model/sign/navigation/us_cult_side_board_03.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5675,7 +5689,7 @@ sign_model : sign.sd_bd_27 {
 	model_coll: "/model/sign/navigation/us_info_side_board_03.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5690,7 +5704,7 @@ sign_model : sign.sd_bd_28 {
 	model_coll: "/model/sign/navigation/us_info_side_board_02.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5705,7 +5719,7 @@ sign_model : sign.sd_bd_29 {
 	model_coll: "/model/sign/navigation/us_cult_side_board_02.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5720,7 +5734,7 @@ sign_model : sign.sd_bd_30 {
 	model_coll: "/model/sign/navigation/us_side_board_01-1.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5735,7 +5749,7 @@ sign_model : sign.sd_bd_31 {
 	model_coll: "/model/sign/navigation/us_side_board_01-3.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5750,7 +5764,7 @@ sign_model : sign.sd_bd_32 {
 	model_coll: "/model/sign/navigation/us_side_board_01-2_wide.pmc"
 	look_name: default
 	
-	stand_class: side_med_1
+	stand_classes[]: side_med_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5765,7 +5779,7 @@ sign_model : sign.ov_bd_01 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-2.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5783,7 +5797,7 @@ sign_model : sign.ov_bd_02 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-3_multi.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5799,7 +5813,7 @@ sign_model : sign.ov_bd_03 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_01_wide.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5815,7 +5829,7 @@ sign_model : sign.ov_bd_04 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_02.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5831,7 +5845,7 @@ sign_model : sign.ov_bd_05 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_01.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5847,7 +5861,7 @@ sign_model : sign.ov_bd_06 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_01_wide.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5863,7 +5877,7 @@ sign_model : sign.ov_bd_07 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_01_wide_flash.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5879,7 +5893,7 @@ sign_model : sign.ov_bd_08 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_2ex2.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_1
+	stand_classes[]: 2fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5895,7 +5909,7 @@ sign_model : sign.ov_bd_09 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_2eo1.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_1
+	stand_classes[]: 2fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5911,7 +5925,7 @@ sign_model : sign.ov_bd_10 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_05-2.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5927,7 +5941,7 @@ sign_model : sign.ov_bd_11 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_05_wide.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -5943,7 +5957,7 @@ sign_model : sign.ov_bd_12 {
 	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2l.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_r_1
+	stand_classes[]: 2fwy_r_1
 	
 	category: "editable board"
 	dynamic: false
@@ -5959,7 +5973,7 @@ sign_model : sign.ov_bd_13 {
 	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2_05-2.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_r_2
+	stand_classes[]: 2fwy_r_2
 	
 	category: "editable board"
 	dynamic: false
@@ -5976,7 +5990,7 @@ sign_model : sign.ov_bd_14 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_exonly_01_01.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_2
+	stand_classes[]: 2fwy_2
 	
 	category: "editable board"
 	dynamic: false
@@ -5992,7 +6006,7 @@ sign_model : sign.ov_bd_15 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_05-2_05_wide.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_3
+	stand_classes[]: 2fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6008,7 +6022,7 @@ sign_model : sign.ov_bd_16 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_01-2_01_wide.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_3
+	stand_classes[]: 2fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6024,7 +6038,7 @@ sign_model : sign.ov_bd_17 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_05-1_01_wide.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_3
+	stand_classes[]: 2fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6040,7 +6054,7 @@ sign_model : sign.ov_bd_18 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_05_wide_05_wide.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_4
+	stand_classes[]: 2fwy_4
 	
 	category: "editable board"
 	dynamic: false
@@ -6056,7 +6070,7 @@ sign_model : sign.ov_bd_19 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_05-2_05-2.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_2
+	stand_classes[]: 2fwy_2
 	
 	category: "editable board"
 	dynamic: false
@@ -6072,7 +6086,7 @@ sign_model : sign.ov_bd_20 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_12-1.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_2
+	stand_classes[]: 2fwy_2
 	
 	category: "editable board"
 	dynamic: false
@@ -6088,7 +6102,7 @@ sign_model : sign.ov_bd_21 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_1eo3.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_3
+	stand_classes[]: 3fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6104,7 +6118,7 @@ sign_model : sign.ov_bd_22 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_09_01-2_01_wide.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_1
+	stand_classes[]: 3fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -6120,7 +6134,7 @@ sign_model : sign.ov_bd_23 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_09_01-2_04-1.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_2
+	stand_classes[]: 3fwy_2
 	
 	category: "editable board"
 	dynamic: false
@@ -6136,7 +6150,7 @@ sign_model : sign.ov_bd_24 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_3
+	stand_classes[]: 3fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6152,7 +6166,7 @@ sign_model : sign.ov_bd_25 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-3_multi.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_3
+	stand_classes[]: 3fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6168,7 +6182,7 @@ sign_model : sign.ov_bd_26 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2_multi.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_3
+	stand_classes[]: 3fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6184,7 +6198,7 @@ sign_model : sign.ov_bd_27 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_16-1.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_4
+	stand_classes[]: 3fwy_4
 	
 	category: "editable board"
 	dynamic: false
@@ -6200,7 +6214,7 @@ sign_model : sign.ov_bd_28 {
 	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_13-2.pmc"
 	look_name: default
 	
-	stand_class: 4fwy_1
+	stand_classes[]: 4fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -6216,7 +6230,7 @@ sign_model : sign.ov_bd_29 {
 	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_13-1.pmc"
 	look_name: default
 	
-	stand_class: 4fwy_1
+	stand_classes[]: 4fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -6232,7 +6246,7 @@ sign_model : sign.ov_bd_30 {
 	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_04-1_01-1_wide.pmc"
 	look_name: default
 	
-	stand_class: 4fwy_2
+	stand_classes[]: 4fwy_2
 	
 	category: "editable board"
 	dynamic: false
@@ -6248,7 +6262,7 @@ sign_model : sign.ov_bd_31 {
 	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_04-1_04-1.pmc"
 	look_name: default
 	
-	stand_class: 4fwy_1
+	stand_classes[]: 4fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -6264,7 +6278,7 @@ sign_model : sign.ov_bd_32 {
 	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_16-1.pmc"
 	look_name: default
 	
-	stand_class: 4fwy_3
+	stand_classes[]: 4fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6280,7 +6294,7 @@ sign_model : sign.ov_bd_33 {
 	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2r.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_r
+	stand_classes[]: 2fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6296,7 +6310,7 @@ sign_model : sign.ov_bd_34 {
 	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-1_wide.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_r
+	stand_classes[]: 2fwy_r_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6312,7 +6326,7 @@ sign_model : sign.ov_bd_35 {
 	model_coll: "/model/sign/navigation/2-1-2_ovh_board_05-2_wide.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6328,7 +6342,7 @@ sign_model : sign.ov_bd_36 {
 	model_coll: "/model/sign/navigation/fwy2_ovh_board_14-1.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_1
+	stand_classes[]: 2fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -6344,7 +6358,7 @@ sign_model : sign.ov_bd_37 {
 	model_coll: "/model/sign/navigation/2-1-2_ovh_board_04-1_05-2_05-2.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_5
+	stand_classes[]: 2fwy_5
 	
 	category: "editable board"
 	dynamic: false
@@ -6360,7 +6374,7 @@ sign_model : sign.ov_bd_38 {
 	model_coll: "/model/sign/navigation/2-1-2_ovh_board_04-1_14-1.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_6
+	stand_classes[]: 2fwy_6
 	
 	category: "editable board"
 	dynamic: false
@@ -6376,7 +6390,7 @@ sign_model : sign.ov_bd_39 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmc"
 	look_name: default
 	
-	stand_class: 2fwy_1
+	stand_classes[]: 2fwy_1
 	
 	category: "editable board"
 	dynamic: false
@@ -6392,7 +6406,7 @@ sign_model : sign.ov_bd_40 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_04-2.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6408,7 +6422,7 @@ sign_model : sign.ov_bd_41 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_04-1.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6424,7 +6438,7 @@ sign_model : sign.ov_bd_42 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1_non.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_3
+	stand_classes[]: 3fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6440,7 +6454,7 @@ sign_model : sign.ov_bd_43 {
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2_non.pmc"
 	look_name: default
 	
-	stand_class: 3fwy_3
+	stand_classes[]: 3fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6456,7 +6470,7 @@ sign_model : sign.ov_bd_44 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_exonly_03.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6472,7 +6486,7 @@ sign_model : sign.ov_bd_45 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-1.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6488,7 +6502,7 @@ sign_model : sign.ov_bd_46 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-3.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6504,7 +6518,7 @@ sign_model : sign.ov_bd_47 {
 	model_coll: "/model/sign/navigation/fwy1_ovh_board_01-2_wide.pmc"
 	look_name: default
 	
-	stand_class: fwy_r
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -6512,6 +6526,375 @@ sign_model : sign.ov_bd_47 {
 
 }
 
+sign_model : sign.ov_bd_48 {
+
+	sign_name: "fwy3 overhead board 05-1 01-2 04-1"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_05-1_01-2_04-1.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_05-1_01-2_04-1.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_49 {
+
+	sign_name: "fwy3 overhead board 05-1 01-2 01-wide"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_05-1_01-2_01_wide.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_05-1_01-2_01_wide.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_50 {
+
+	sign_name: "fwy4 overhead board 14-1 14-1"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_14-1_14-1.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_14-1_14-1.pmc"
+	look_name: default
+	
+	stand_classes[]:  4fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+
+sign_model : sign.ov_bd_51 {
+
+	sign_name: "fwy3 overhead apl big1 left"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_apl_big1_left.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_apl_big1_left.pmc"
+	look_name: default
+	
+	stand_classes[]:  3fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_52 {
+
+	sign_name: "fwy4 overhead board 17-1 14-1"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_17-1_14-1.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_17-1_14-1.pmc"
+	look_name: default
+	
+	stand_classes[]:  4fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_53 {
+
+	sign_name: "fwy4 overhead board 17-1 14-1"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_board_17-2_14-1.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_board_17-2_14-1.pmc"
+	look_name: default
+	
+	stand_classes[]:  4fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_54 {
+
+	sign_name: "fwy3 overhead 2pt1 1minex1 oh"
+
+	model_desc: "/model/sign/navigation/fwy3_2pt1_1minex1_oh.pmd"
+	model_coll: "/model/sign/navigation/fwy3_2pt1_1minex1_oh.pmc"
+	look_name: default
+	
+	stand_classes[]:  3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_55 {
+
+	sign_name: "fwy2 1ex1 1eo1 1minex1 overhead"
+
+	model_desc: "/model/sign/navigation/fwy2_1ex1_1eo1_1minex1_oh.pmd"
+	model_coll: "/model/sign/navigation/fwy2_1ex1_1eo1_1minex1_oh.pmc"
+	look_name: default
+	
+	stand_classes[]:  2fwy_7
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_56 {
+
+	sign_name: "fwy2 1ex1 1eo1 1minex2 overhead"
+
+	model_desc: "/model/sign/navigation/fwy2_1ex1_1eo1_1minex2_oh.pmd"
+	model_coll: "/model/sign/navigation/fwy2_1ex1_1eo1_1minex2_oh.pmc"
+	look_name: default
+	
+	stand_classes[]:  2fwy_7
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+
+sign_model : sign.ov_bd_58 {
+
+	sign_name: "2-1-2 ovh board 01-2"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_01-2.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_01-2.pmc"
+	look_name: default
+	
+	stand_classes[]:  2fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_59 {
+
+	sign_name: "board 01-2 left"
+
+	model_desc: "/model/sign/navigation/board_01-2_left.pmd"
+	model_coll: "/model/sign/navigation/board_01-2_left.pmc"
+	look_name: default
+	
+	stand_classes[]:  1fwy_l_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_60 {
+
+	sign_name: "board 01-2 wide left"
+
+	model_desc: "/model/sign/navigation/board_01-1_wide_left.pmd"
+	model_coll: "/model/sign/navigation/board_01-1_wide_left.pmc"
+	look_name: default
+	
+	stand_classes[]:  1fwy_l_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_61 {
+
+	sign_name: "fwy3 overhead apl big2 left"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_apl_big2_left.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_apl_big2_left.pmc"
+	look_name: default
+	
+	stand_classes[]:  3fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_62 {
+
+	sign_name: "fwy3 overhead apl big1 right"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_apl_big1_right.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_apl_big1_right.pmc"
+	look_name: default
+	
+	stand_classes[]:  3fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_63 {
+
+	sign_name: "fwy3 overhead apl big2 right"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_apl_big2_right.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_apl_big2_right.pmc"
+	look_name: default
+	
+	stand_classes[]:  3fwy_5
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_64 {
+
+	sign_name: "2-1-2 ovh board 01-2 01-2"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_01-2_01-2.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_01-2_01-2.pmc"
+	look_name: default
+	
+	stand_classes[]:  2fwy_r_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_65 {
+
+	sign_name: "fwy4 overhead apl big1 left"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_apl_big1_left.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_apl_big1_left.pmc"
+	look_name: default
+	
+	stand_classes[]:  4fwy_4
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_66 {
+
+	sign_name: "fwy4 overhead apl big2 left"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_apl_big2_left.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_apl_big2_left.pmc"
+	look_name: default
+	
+	stand_classes[]:  4fwy_4
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_67 {
+
+	sign_name: "fwy4 overhead apl big1 right"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_apl_big1_right.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_apl_big1_right.pmc"
+	look_name: default
+	
+	stand_classes[]:  4fwy_4
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_68 {
+
+	sign_name: "fwy4 overhead apl big2 right"
+
+	model_desc: "/model/sign/navigation/fwy4_ovh_apl_big2_right.pmd"
+	model_coll: "/model/sign/navigation/fwy4_ovh_apl_big2_right.pmc"
+	look_name: default
+	
+	stand_classes[]:  4fwy_4
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_69 {
+
+	sign_name: "fwy2 overhead inf min 01 inf min 01"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_inf_min_01_inf_min_01.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_inf_min_01_inf_min_01.pmc"
+	look_name: default
+	
+	stand_classes[]:  2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_70 {
+
+	sign_name: "fwy3 overhead board 05-1 13b-1"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_05-1_13b-1.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_05-1_13b-1.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_6
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_71 {
+
+	sign_name: "fwy3 overhead board 05-1 13b-2"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_05-1_13b-2.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_05-1_13b-2.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_6
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
 
 sign_model : sign.sm_bd_01 {
 
@@ -6521,7 +6904,7 @@ sign_model : sign.sm_bd_01 {
 	model_coll: "/model/sign/navigation/board_sml_a1.pmc"
 	look_name: default
 	
-	stand_class: side_sml_2
+	stand_classes[]: side_sml_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6537,7 +6920,7 @@ sign_model : sign.sm_bd_02 {
 	model_coll: "/model/sign/navigation/board_sml_a2.pmc"
 	look_name: default
 	
-	stand_class: side_sml_2
+	stand_classes[]: side_sml_4
 	
 	category: "editable board"
 	dynamic: true
@@ -6553,7 +6936,7 @@ sign_model : sign.sm_bd_03 {
 	model_coll: "/model/sign/navigation/board_sml_a3.pmc"
 	look_name: default
 	
-	stand_class: side_sml_2
+	stand_classes[]: side_sml_5
 	
 	category: "editable board"
 	dynamic: true
@@ -6569,7 +6952,7 @@ sign_model : sign.sm_bd_04 {
 	model_coll: "/model/sign/navigation/board_sml_b1.pmc"
 	look_name: default
 	
-	stand_class: side_sml_2
+	stand_classes[]: side_sml_4
 	
 	category: "editable board"
 	dynamic: true
@@ -6585,7 +6968,7 @@ sign_model : sign.sm_bd_05 {
 	model_coll: "/model/sign/navigation/board_sml_c1.pmc"
 	look_name: default
 	
-	stand_class: side_sml_2
+	stand_classes[]: side_sml_5
 	
 	category: "editable board"
 	dynamic: true
@@ -6601,7 +6984,7 @@ sign_model : sign.sm_bd_06 {
 	model_coll: "/model/sign/navigation/board_sml_c2.pmc"
 	look_name: default
 	
-	stand_class: side_sml_2
+	stand_classes[]: side_sml_3
 	
 	category: "editable board"
 	dynamic: true
@@ -6617,7 +7000,7 @@ sign_model : sign.sm_bd_07 {
 	model_coll: "/model/sign/navigation/board_sml_d.pmc"
 	look_name: default
 	
-	stand_class: side_sml_1
+	stand_classes[]: side_sml_1
 	
 	category: "editable board"
 	dynamic: false
@@ -6633,7 +7016,7 @@ sign_model : sign.rot_bd_01 {
 	model_coll: "/model/sign/navigation/fwy_shield_entrance.pmc"
 	look_name: default
 	
-	stand_class: side_rot_1
+	stand_classes[]: side_rot_1
 	
 	category: "editable board"
 	dynamic: true
@@ -6649,7 +7032,7 @@ sign_model : sign.rot_bd_02 {
 	model_coll: "/model/sign/navigation/fwy_shield_arrow.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6665,7 +7048,7 @@ sign_model : sign.rot_bd_03 {
 	model_coll: "/model/sign/navigation/fwy_shield_single.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6675,13 +7058,13 @@ sign_model : sign.rot_bd_03 {
 
 sign_model : sign.rot_bd_04 {
 
-	sign_name: "fwy board shield single"
+	sign_name: "fwy board shield single_to"
 
 	model_desc: "/model/sign/navigation/fwy_shield_arrow_to.pmd"
 	model_coll: "/model/sign/navigation/fwy_shield_arrow_to.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6697,7 +7080,7 @@ sign_model : sign.rot_bd_05 {
 	model_coll: "/model/sign/navigation/fwy_shield_double_arrow.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6713,7 +7096,7 @@ sign_model : sign.rot_bd_06 {
 	model_coll: "/model/sign/navigation/hw_shield_arrow.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6729,7 +7112,7 @@ sign_model : sign.rot_bd_07 {
 	model_coll: "/model/sign/navigation/hw_shield_entrance.pmc"
 	look_name: default
 	
-	stand_class: side_rot_1
+	stand_classes[]: side_rot_1
 	
 	category: "editable board"
 	dynamic: true
@@ -6745,7 +7128,7 @@ sign_model : sign.rot_bd_08 {
 	model_coll: "/model/sign/navigation/hw_shield_single.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6761,7 +7144,7 @@ sign_model : sign.rot_bd_09 {
 	model_coll: "/model/sign/navigation/hw_shield_arrow_to.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6777,7 +7160,7 @@ sign_model : sign.rot_bd_10 {
 	model_coll: "/model/sign/navigation/hw_shield_double.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6793,7 +7176,7 @@ sign_model : sign.rot_bd_12 {
 	model_coll: "/model/sign/navigation/hw_shield_double_arrow.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6809,7 +7192,7 @@ sign_model : sign.rot_bd_13 {
 	model_coll: "/model/sign/navigation/hw_shield_triple_2arrows.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6825,7 +7208,7 @@ sign_model : sign.rot_bd_14 {
 	model_coll: "/model/sign/navigation/hw_shield_triple_3arrows.pmc"
 	look_name: default
 	
-	stand_class: side_tall_1
+	stand_classes[]: side_tall_1
 	
 	category: "editable board"
 	dynamic: true
@@ -6841,7 +7224,7 @@ sign_model : sign.rot_bd_15 {
 	model_coll: "/model/sign/navigation/hw_shield_triple_4arrows.pmc"
 	look_name: default
 	
-	stand_class: side_tall_1
+	stand_classes[]: side_tall_1
 	
 	category: "editable board"
 	dynamic: true
@@ -6857,7 +7240,7 @@ sign_model : sign.rot_bd_16 {
 	model_coll: "/model/sign/navigation/hw_shield_triple_5arrows.pmc"
 	look_name: default
 	
-	stand_class: side_tall_2
+	stand_classes[]: side_tall_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6873,7 +7256,7 @@ sign_model : sign.rot_bd_17 {
 	model_coll: "/model/sign/navigation/bus_shield_arrow_to.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6889,7 +7272,7 @@ sign_model : sign.rot_bd_18 {
 	model_coll: "/model/sign/navigation/bus_shield_arrow.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
 	
 	category: "editable board"
 	dynamic: true
@@ -6905,7 +7288,23 @@ sign_model : sign.rot_bd_19 {
 	model_coll: "/model/sign/navigation/bus_shield_single.pmc"
 	look_name: default
 	
-	stand_class: side_rot_2
+	stand_classes[]: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.rot_bd_20 {
+
+	sign_name: "bus board shield arrow nodir"
+
+	model_desc: "/model/sign/navigation/hw_shield_arrow_nodir.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_arrow_nodir.pmc"
+	look_name: default
+	
+	stand_classes[]: side_rot_3
 	
 	category: "editable board"
 	dynamic: true
@@ -6981,5 +7380,252 @@ sign_model : sign.673 {
 	dynamic: true
 	mass: 75.0
 }
+
+sign_model : sign.674 {
+
+	sign_name: "US right line close"
+
+	model_desc: "/model/sign/traffic/us_roadwork_right_line_close.pmd"
+	model_coll: "/model/sign/traffic/us_roadwork_right_line_close.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+
+sign_model : sign.675 {
+
+	sign_name: "US left line close"
+
+	model_desc: "/model/sign/traffic/us_roadwork_left_line_close.pmd"
+	model_coll: "/model/sign/traffic/us_roadwork_left_line_close.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+
+sign_model : sign.676 {
+
+	sign_name: "US entering roadway added lane (Right)"
+
+	model_desc: "/model/sign/traffic/us_entering_roadway_01.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_01.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.677 {
+
+	sign_name: "US entering roadway merge lane (Right)"
+
+	model_desc: "/model/sign/traffic/us_entering_roadway_merge.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_merge.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.678 {
+
+	sign_name: "US truck rollover"
+
+	model_desc: "/model/sign/traffic/us_truck_rollover.pmd"
+	model_coll: "/model/sign/traffic/us_truck_rollover.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.679 {
+
+	sign_name: "US Blank square"
+
+	model_desc: "/model/sign/traffic/us_height_clearance.pmd"
+	model_coll: "/model/sign/traffic/us_height_clearance.pmc"
+	look_name: default
+	
+	distance_type: 2
+	category: "editable area"
+	dynamic: true
+	editable: true
+	mass: 100.0	
+
+}
+
+sign_model : sign.680 {
+
+	sign_name: "US Blank rectangle"
+
+	model_desc: "/model/sign/traffic/us_blank_rectangle.pmd"
+	model_coll: "/model/sign/traffic/us_blank_rectangle.pmc"
+	look_name: default
+	
+	distance_type: 2
+	category: "editable area"
+	dynamic: true
+	editable: true
+	mass: 100.0	
+
+}
+
+sign_model : sign.681 {
+
+	sign_name: "US Stop blank white rectangle"
+
+	model_desc: "/model/sign/traffic/us_stop_02.pmd"
+	model_coll: "/model/sign/traffic/us_stop_02.pmc"
+	look_name: default
+	
+	distance_type: 2
+	category: "editable area"
+	dynamic: true
+	editable: true
+	mass: 100.0	
+
+}
+
+sign_model : sign.682 {
+
+	sign_name: "US Stop blank orange rectangle"
+
+	model_desc: "/model/sign/traffic/us_stop_03.pmd"
+	model_coll: "/model/sign/traffic/us_stop_03.pmc"
+	look_name: default
+	
+	distance_type: 2
+	category: "editable area"
+	dynamic: true
+	editable: true
+	mass: 100.0	
+
+}
+sign_model : sign.683 {
+
+	sign_name: "or_portland1"
+	model_desc: "/model/props/lamp/or_portland1.pmd"
+	model_coll: "/model/props/lamp/or_portland1.pmc"
+	look_name: Default
+	road_model: true
+}
+
+sign_model : sign.684 {
+
+	sign_name: "or_portland1 lod"
+	model_desc: "/model/props/lamp/or_portland1_lod.pmd"
+	model_coll: "/model/props/lamp/or_portland1_lod.pmc"
+	look_name: Default
+	road_model: true
+}
+sign_model : sign.685 {
+	sign_name: "or junction lamp1"
+	model_desc: "/model/props/lamp/or_junction_lamp1.pmd"
+	model_coll: "/model/props/lamp/or_junction_lamp1.pmc"
+	look_name: Default
+	road_model: true
+}
+
+sign_model : sign.686 {
+	sign_name: "omni_neutral_50m"
+	model_desc: "/model/props/lamp/omni_neutral_50m.pmd"
+	model_coll: "/model/props/lamp/omni_neutral_50m.pmc"
+	look_name: Default
+	road_model: true
+}
+sign_model : sign.687 {
+
+	sign_name: "US blank white rectangle"
+
+	model_desc: "/model/sign/traffic/us_blank_rectangle_white.pmd"
+	model_coll: "/model/sign/traffic/us_blank_rectangle_white.pmc"
+	look_name: default
+	
+	distance_type: 2
+	category: "editable area"
+	dynamic: true
+	editable: true
+	mass: 100.0	
+
+}
+
+
+
+sign_model : sign.dlc_or_1 {
+	sign_name: "or_portland_lamp"
+	
+	model_desc: "/model/props/lamp/or_portland_lamp.pmd"
+	model_coll: "/model/props/lamp/or_portland_lamp.pmc"
+	dynamic: true
+	road_model: true
+	mass: 500.0
+}
+
+sign_model : sign.dlc_or_2 {
+
+	sign_name: "or reflection post white"
+
+	model_desc: "/model/sign/or_ref_post1_white.pmd"
+	model_coll: "/model/sign/or_ref_post1_white.pmc"
+	look_name: default
+	
+	road_model: true
+	dynamic: true
+	mass: 100
+	instanced: true
+}
+
+sign_model : sign.dlc_or_3 {
+
+	sign_name: "or reflection post orange"
+
+	model_desc: "/model/sign/or_ref_post1_orange.pmd"
+	model_coll: "/model/sign/or_ref_post1_orange.pmc"
+	look_name: default
+	
+	road_model: true
+	dynamic: true
+	mass: 100
+	instanced: true
+}
+
+sign_model : sign.688 {
+
+	sign_name: "2-1-2 wide empty stand"
+
+	model_desc: "/model/sign/navigation/2-1-2_wide_empty.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_wide_empty.pmc"
+	
+	dynamic: false
+	mass: 300.0
+}
+
+sign_model : sign.dlc_nm_1 {
+	sign_name: "nm_lamp1"
+	
+	model_desc: "/model/props/lamp/nm_lamp1.pmd"
+	model_coll: "/model/props/lamp/nm_lamp1.pmc"
+	dynamic: false
+	road_model: true
+	mass: 500.0
+	
+}
+
+sign_model : sign.dlc_or_8 {
+	model_desc: "/model/props/lamp/or_portland_lamp_wall.pmd"
+	model_coll: "/model/props/lamp/or_portland_lamp_wall.pmc"
+	sign_name: "or portland lamp wall"
+	road_model: true
+	instanced: true
+	dynamic: false
+	mass: 75.0
+
+}
+
 
 }

@@ -14,10 +14,12 @@ traffic_vehicle : traffic.crown_p
 	
 	prefer_variant: true
 	variant[]: traffic.crown_sfpd
+	variant[]: traffic.crown_ppb
 	variant[]: traffic.crown_lvmpd
 	variant[]: traffic.crown_lapd
 	variant[]: traffic.crown_renopd
 	variant[]: traffic.crown_phxpd
+	
 	
 @include "drivers_police.sui"
 	
@@ -38,6 +40,53 @@ vehicle_wheel_accessory: .crown_p.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Portland Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.crown_ppb
+{
+	accessories[]: .crown_ppb.chassis
+	accessories[]: .crown_ppb.fwheel
+	accessories[]: .crown_ppb.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+    
+	spawn_condition[]: .traffic.crown_ppb.portland.condition.city
+
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_ppb.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/ppb.sii"
+}
+
+vehicle_wheel_accessory: .crown_ppb.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_ppb.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.crown_ppb.portland.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "portland"
 }
 
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant San Francisco Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -269,3 +318,4 @@ traffic_spawn_condition: .traffic.crown_lapd.los_angeles.condition.city
 	type: city
     str_param[]: "los_angeles"
 }
+

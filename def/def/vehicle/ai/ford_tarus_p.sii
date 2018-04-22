@@ -15,6 +15,7 @@ traffic_vehicle : traffic.ford_tarus_p
 	variant[]: traffic.ford_tarus_p.las_vegas
 	variant[]: traffic.ford_tarus_p.phoenix
 	variant[]: traffic.ford_tarus_p.reno
+	variant[]: traffic.ford_tarus_p.portland
 	
 @include "drivers_police.sui"
 
@@ -141,6 +142,46 @@ traffic_spawn_condition: .traffic.ford_tarus_p.reno.condition.city
 {
 	# spawn only near city with name equal to traffic vehicle name suffix
 	type: city
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Portland Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.ford_tarus_p.portland
+{
+	accessories[]: .ford_tarus_p.chassis.portland
+	accessories[]: .ford_tarus_p.fwheel.portland
+	accessories[]: .ford_tarus_p.rwheel.portland
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 1700
+
+    spawn_condition[]: .traffic.ford_tarus_p.portland.condition.city
+    
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.chassis.portland
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_portland.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.fwheel.portland
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.rwheel.portland
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.ford_tarus_p.portland.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "portland"
 }
 
 

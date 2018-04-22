@@ -350,37 +350,6 @@ journey_events_road_event : j_re.rw_ra2_fr
     
 }
 
-journey_events_road_event : j_re.rw_ra2_cr
-{
-
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
-	signs_cutscenes_outer[]:            j_cut.sg1
-    signs_cutscenes_outer[]:            j_cut.sg2
-    signs_cutscenes_outer[]:            j_cut.sg3
-	signs_cutscenes_outer[]:            j_cut.sg_end
-	signs_distances_outer[]:            20.0
-    signs_distances_outer[]:            50.0
-    signs_distances_outer[]:            150.0
-    signs_distances_outer[]:            200.0
-	signs_distances_outer[]:            -30.0	
-
-	signs_cutscenes_inner[]:            j_cut.sg1_in
-    signs_cutscenes_inner[]:            j_cut.sg2_l
-    signs_cutscenes_inner[]:            j_cut.sg3_in
-	signs_cutscenes_inner[]:            j_cut.sg_end_in
-    signs_distances_inner[]:            50.0
-    signs_distances_inner[]:            150.0
-    signs_distances_inner[]:            200.0
-	signs_distances_inner[]:            -30.0
-	
-	parent: j_re.roadwork_ra2
-	allowed_lane_types[]: divided
-	name: "Roadwork random 2 (6 parts) country"
-    
-}
-
-
-
 journey_events_road_event : j_re.rw_mid
 {
     start_cutscene:          j_cut.rw_s_in
@@ -474,6 +443,39 @@ journey_events_road_event : j_re.rw_mid_cr
 	name: "Roadwork middle road (6 parts) country"
     
 }
+
+journey_events_road_event : j_re.rw_ra2_cr
+{
+
+	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1
+    signs_cutscenes_outer[]:            j_cut.sg2
+    signs_cutscenes_outer[]:            j_cut.sg3
+	signs_cutscenes_outer[]:            j_cut.sg_end
+	signs_distances_outer[]:            20.0
+    signs_distances_outer[]:            50.0
+    signs_distances_outer[]:            150.0
+    signs_distances_outer[]:            200.0
+	signs_distances_outer[]:            -30.0	
+
+	signs_cutscenes_inner[]:            j_cut.sg1_in
+    signs_cutscenes_inner[]:            j_cut.sg2_l
+    signs_cutscenes_inner[]:            j_cut.sg3_in
+	signs_cutscenes_inner[]:            j_cut.sg_end_in
+    signs_distances_inner[]:            50.0
+    signs_distances_inner[]:            150.0
+    signs_distances_inner[]:            200.0
+	signs_distances_inner[]:            -30.0
+	
+	parent: j_re.roadwork_ra2
+	allowed_lane_types[]: divided
+	name: "Roadwork random 2 (6 parts) country"
+    
+}
+
+
+
+
 
 
 
@@ -1073,12 +1075,36 @@ journey_events_road_event : j_re.crash_in
     traffic_block:true	
     excluded_lane_types[]: freeway
 	slow_down_passing:true
-	min_time_constraint: 480
-	max_time_constraint: 1080
 	area_tag: urban_area
 	inner_lane_allowed: true
 	weight: 6.0	
 	name:	"Crash city inner (2 variants)"
+	
+	tunnel_forbidden:true
+	bridge_forbidden:true
+}
+
+journey_events_road_event : j_re.crash_ci
+{
+	
+
+    layer_cutscenes[]:            j_cut.crash_ci
+    
+   
+    layer_min_curve[]:              0.0            // [degree]
+   
+    layer_max_curve[]:              5.0        // [degree]p
+    
+    max_length:                    31.0        // [m]
+    min_length:                    31.0        // [m]
+	min_shoulder_space: 0.0                    // [m]
+    traffic_block:true	
+    excluded_lane_types[]: freeway
+	slow_down_passing:true
+	area_tag: urban_area
+	outer_lane_allowed: true
+	weight: 6.0	
+	name:	"Crash city (2 variants)"
 	
 	tunnel_forbidden:true
 	bridge_forbidden:true

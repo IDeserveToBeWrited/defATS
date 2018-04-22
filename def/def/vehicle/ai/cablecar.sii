@@ -18,6 +18,8 @@ traffic_vehicle : traffic.cablecar
 	lod_dist[]: 53
 	lod_dist[]: 70
 	allow_parked: false
+	
+	spawn_condition[]: .traffic.cablecar.san_francisc.condition.city
 
 	displacement_limit: 0.0
 }
@@ -39,3 +41,9 @@ vehicle_wheel_accessory: .cablecar.rwheel
 	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
 }
 
+traffic_spawn_condition: .traffic.cablecar.san_francisc.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "san_francisc"
+}

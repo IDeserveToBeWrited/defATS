@@ -64,6 +64,12 @@ SiiNunit
 #					str_params[0]: tollgate type
 #					num_params[0]: toll amount in [EUR]
 #
+# "park_toll"		- entry tollage to national park, immediately withdraws money from player's account to pay a toll or display warning in case of illegal trailer
+#					num_params[0]: money in [EUR] to withdraw
+#
+# "park_check"		- check if player has illegal trailer or not, if yes offense generated immediately
+#
+#
 # Target Commands:
 #
 # "play_anim"		- plays an animation
@@ -84,7 +90,7 @@ SiiNunit
 #					num_params[1]: lock [0 - false, 1 - true]
 #
 #
-# "weigh"			- generates a request to stop for weighing
+# "weigh"		- generates a request to stop for weighing
 #					num_params[0]: request probability in range 0.0 .. 1.0
 #
 # "achievement"		- unlock a trigger achievement
@@ -327,6 +333,23 @@ trigger_action : trig_action.weight_check
 
 	command: "weight_check"
 }
+
+trigger_action : trig_action.park_toll
+{
+	name: "National park entry toll"
+
+	command: "park_toll"
+	
+	num_params[]: 20
+}
+
+trigger_action : trig_action.park_check
+{
+	name: "National park trailer check"
+
+	command: "park_check"
+}
+
 
 trigger_action : trig_action.achievement
 {
