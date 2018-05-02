@@ -79,5 +79,45 @@ vehicle_wheel_accessory: .arrow_xt.nm.rwheel
 	data_path: "/def/vehicle/r_wheel/chrome.sii"
 }
 
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX california XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
+traffic_vehicle : traffic.arrow_xt.ca
+{
+	accessories[]: .arrow_xt.ca.chassis
+	accessories[]: .arrow_xt.ca.fwheel
+	accessories[]: .arrow_xt.ca.rwheel
+
+
+	max_speed: 100
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	
+		spawn_ratio: 0
+	
+	engine_torque: 2000
+	
+	vehicle_mass: 15000
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .arrow_xt.ca.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/ca.sii"
+}
+
+vehicle_wheel_accessory: .arrow_xt.ca.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+
+vehicle_wheel_accessory: .arrow_xt.ca.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
 
