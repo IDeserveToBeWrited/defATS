@@ -236,6 +236,18 @@ traffic_rule_data : traffic_rule.limit_110
 	num_params[]: 110
 }
 
+traffic_rule_data : traffic_rule.no_trailer
+{
+	name: "No trailer area"
+	rule: "actor_access"
+	num_params[]: 0 	# 0 - disallow, 1 - allow
+	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
+	num_params[]: 0 	# no change to vehicle access
+	num_params[]: 1 	# set trailer access
+	str_params[]: "road"
+}
+
+
 traffic_rule_data : traffic_rule.no_trucks
 {
 	name: "No trucks area"
@@ -302,12 +314,14 @@ traffic_rule_data : traffic_rule.bus_only
 
 traffic_rule_data : traffic_rule.car_only
 {
-	name: "Cars only"
+	name: "Cars only (no trailers)"
 	rule: "actor_access"
 	num_params[]: 1 # 0 - disallow, 1 - allow
 	num_params[]: 1 # 0 - inclusive, 1 - exclusive
 	str_params[]: "car"
 	str_params[]: "car_city"
+
+	additional_rules[]: traffic_rule.no_trailer
 }
 
 traffic_rule_data : traffic_rule.car_truck_on
@@ -320,6 +334,8 @@ traffic_rule_data : traffic_rule.car_truck_on
 	str_params[]: "car_city"
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "escort_front"
+	str_params[]: "escort_back"
 }
 
 traffic_rule_data : traffic_rule.urban_area
@@ -475,6 +491,18 @@ traffic_rule_data : traffic_rule.allow_slow
 	rule: "actor_access"
 	num_params[]: 1 # 0 - disallow, 1 - allow
 	num_params[]: 0 # 0 - inclusive, 1 - exclusive
+	str_params[]: "slow"
+	str_params[]: "simple"
+
+	additional_rules[]: traffic_rule.s_slow
+}
+
+traffic_rule_data : traffic_rule.slow_only
+{
+	name: "Only slow vehicles"
+	rule: "actor_access"
+	num_params[]: 1 # 0 - disallow, 1 - allow
+	num_params[]: 1 # 0 - inclusive, 1 - exclusive
 	str_params[]: "slow"
 
 	additional_rules[]: traffic_rule.s_slow

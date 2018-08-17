@@ -284,4 +284,80 @@ road_edge : road_edge.sw_4m_dw {
 	variant_15: sw_4m_15m
 }
 
+
+
+road_edge : road_edge.sh_fn {
+	name: 		"forest_shoulder_narrow"
+	model:		"/road_template/or/or_forest_shoulder_narrow.pmd"
+	variant_5: sh_a_5m
+	variant_15: sh_a_15m
+}
+
+road_edge : road_edge.sh_45m {
+	name: 		"shoulder_45m"
+	model:		"/road_template/us/us_shoulder_45m.pmd"
+  
+	variant_5: sh_a_5m
+	variant_15: sh_a_15m
+}
+
+road_edge : road_edge.sh_n {
+	name: 		"shoulder"
+	model:		"/road_template/us/us_shoulder_narrow.pmd"
+	variant_5: sh_b_5m
+	variant_15: sh_b_15m
+}
+
+#### driveways #####
+
+road_edge : road_edge.dw2_con {
+	name: 		"driveway_concrete_2m"
+	model:		"/road_template/us/concrete_driveway.pmd"
+  look: concrete
+  
+	variant_5: dw2_5m
+	variant_15: dw2_15m
+}
+
+road_edge : road_edge.dw4_con {
+	name: 		"driveway_concrete_4m"
+	model:		"/road_template/us/concrete_driveway.pmd"
+  look: concrete
+  
+	variant_5: dw4_5m
+	variant_15: dw4_15m
+}
+
+road_edge : road_edge.dw2_kb {
+	name: 		"driveway_kerb_2m"
+	model:		"/road_template/us/kerb_2m_driveway.pmd"
+  
+	variant_5: dw2_kb_5m
+	variant_15: dw2_kb_15m
+}
+
+road_edge : road_edge.dw4_kb {
+	name: 		"driveway_kerb_4m"
+	model:		"/road_template/us/kerb_4m_driveway.pmd"
+  
+	variant_5: dw4_kb_5m
+	variant_15: dw4_kb_15m
+}
+
+road_edge : road_edge.dw4_kb_sw {
+	name: 		"driveway_kerb_sidewalk_4m"
+	model:		"/road_template/us/kerb_4m_driveway.pmd"
+  
+	variant_5: dw4_kbs_5m
+	variant_15: dw4_kbs_15m
+}
+
+
+road_edge : road_edge.dw_sh {
+	name: 		"driveway_shoulder"
+	model:		"/road_template/us/shoulder_driveway.pmd"
+	variant_5: sh_a_5m
+	variant_15: sh_a_15m
+}
+
 }

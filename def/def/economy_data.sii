@@ -4,6 +4,9 @@ economy_data : economy.data.storage
 {
 	truck_refund: 		0.35	# 35% of original price
 
+	# Base revenue per km in game native currency.
+	revenue_per_km_base: 15
+
 	price_small_garage: 180000
 	price_garage_upgrade: 100000
 
@@ -12,9 +15,6 @@ economy_data : economy.data.storage
 	garage_prod_plan_large: 300000
 
 	fuel_discount_in_garage: 0.15	# 15%
-
-	truck_brands[]: "kenworth"
-	truck_brands[]: "peterbilt"
 	
 	truck_count_for_online:	3	# number of owned trucks to unlock buying online feature
 	
@@ -56,7 +56,8 @@ economy_data : economy.data.storage
 	driver_max_cargo_damage: 6.0		# in %, decrease with skill
 	driver_maintenance_cost: (0.9, 1.5) 	# maintenance + insurance, range in $/km
 	minimal_driver_salary:	350	# fixed part of driver's pay
-	driver_revenue_per_km: 10	# in $
+	driver_revenue_coef_per_km: 0.67		# Revenue coefficient used during quick job and drivers jobs.
+	driver_cargo_market_revenue_coef_per_km: 0.8 # Revenue coefficient used during cargo market jobs for drivers.
 
 	driver_hire_cost: 1500		# $
 
@@ -82,7 +83,8 @@ economy_data : economy.data.storage
 
 
 	fixed_revenue: 600	# in $
-	revenue_per_km: 15	# in $/km (good real truck driver wage in USA is 65 cents/mile)
+	revenue_coef_per_km: 0.9 # Revenue coefficient per km used during freight market jobs.
+	cargo_market_revenue_coef_per_km: 1.0 # Revenue coefficient per km used during cargo market jobs.
 
 	max_eco_consumption_drop[0]: (0.1, 0.1)	# consumption decreased by 40% (or 60% if driving with trailer) 
 	
@@ -206,8 +208,20 @@ economy_data : economy.data.storage
 	currency_sign2[]: "$"
 	currency_sign3[]: ""
 
+	currency_code[]: "CAD"
+	currency_ratio[]: 1.3
+	currency_sign1[]: ""
+	currency_sign2[]: "$"
+	currency_sign3[]: ""
+
+	currency_code[]: "MXN"
+	currency_ratio[]: 18.69
+	currency_sign1[]: ""
+	currency_sign2[]: "$"
+	currency_sign3[]: ""
+
 	currency_code[]: "EUR"
-	currency_ratio[]: 0.75
+	currency_ratio[]: 0.856
 	currency_sign1[]: ""
 	currency_sign2[]: "€"
 	currency_sign3[]: ""

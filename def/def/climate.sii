@@ -28,6 +28,25 @@ climate_profile : climate.reference {
 }
 
 climate_profile : climate.default {
+	bad_weather_factor: 0.07
+	wetting_factor: 0.4
+	drying_factor: 0.01
+
+	// Globe coordinates (in degrees) are based on map position:
+	// latitude = map_origin[0] + map_z * map_factor[0]
+	// longitude = map_origin[1] + map_x * map_factor[1]
+	//
+	// If advanced map projection is used (eg lambert) projection is applied on coordinates accordingly.
+
+	map_projection: lambert_conic
+	standard_paralel_1: 33
+	standard_paralel_2: 45
+
+	map_origin: (39, -96)
+	map_factor: (-1.7706234e-4, 1.76689948e-4)
+}
+
+climate_profile : climate.arid {
 	bad_weather_factor: 0.035
 	wetting_factor: 0.4
 	drying_factor: 0.01
@@ -41,10 +60,6 @@ climate_profile : climate.default {
 	map_projection: lambert_conic
 	standard_paralel_1: 33
 	standard_paralel_2: 45
-#	latitude_a: 39
-#	latitude_b: -1.7706233953689187875829189419331e-4
-#	longitude_a: -96
-#	longitude_b: 1.7668994801627758073991492290882e-4
 
 	map_origin: (39, -96)
 	map_factor: (-1.7706234e-4, 1.76689948e-4)
@@ -64,10 +79,6 @@ climate_profile : climate.desert {
 	map_projection: lambert_conic
 	standard_paralel_1: 33
 	standard_paralel_2: 45
-#	latitude_a: 39
-#	latitude_b: -1.7706233953689187875829189419331e-4
-#	longitude_a: -96
-#	longitude_b: 1.7668994801627758073991492290882e-4
 
 	map_origin: (39, -96)
 	map_factor: (-1.7706234e-4, 1.76689948e-4)

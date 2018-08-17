@@ -38,12 +38,36 @@ tr_semaphore_model : tr_sem_mdl.double {
 	model_coll: "/model/sign/traffic_light/us_cross_double.pmc"
 }
 
+tr_semaphore_model : tr_sem_mdl.double_sh {
+
+	name: "double_short"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.dbl_sh_nl {
+
+	name: "double_short_no_lamp"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_no_lamp.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_no_lamp.pmc"
+}
+
 tr_semaphore_model : tr_sem_mdl.double_cut {
 
 	name: "double_cut"
 
 	model_desc: "/model/sign/traffic_light/us_cross_double_cut.pmd"
 	model_coll: "/model/sign/traffic_light/us_cross_double_cut.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.dbl_cut_nl {
+
+	name: "double_cut_no_lamp"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_cut_no_lamp.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_cut_no_lamp.pmc"
 }
 
 tr_semaphore_model : tr_sem_mdl.light_cut {
@@ -395,6 +419,71 @@ tr_semaphore_model : tr_sem_mdl.single_left {
 
 	model_desc: "/model/sign/traffic_light/us_left_single_only.pmd"
 	model_coll: "/model/sign/traffic_light/us_left_single_only.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.single_pnd {
+
+	name: "single_pendant"
+
+	model_desc: "/model/sign/traffic_light/us_light_center_pendent.pmd"
+	model_coll: "/model/sign/traffic_light/us_light_center_pendent.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.or_bridge_lv {
+
+	name: "or_bridge_gate"
+
+	model_desc: "/model/mover/bridge/or_bridge_traffic_gate.pmd"
+	model_coll: "/model/mover/bridge/or_bridge_traffic_gate.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/bridge/or_bridge_gate_down_anim.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/or_bridge_gate_up_anim.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+}
+
+tr_semaphore_model : tr_sem_mdl.or_draw_br {
+
+	name: "or_draw_bridge"
+
+	model_desc: "/model/mover/bridge/or_draw_bridge_lift.pmd"
+	model_coll: "/model/mover/bridge/or_draw_bridge_lift.pmc"
+	
+	draw_distance: 550
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: true
+
+	# red
+	state_anim[1]: "/model/mover/bridge/or_drawbridge_up_anim.pma"
+	state_collision[1]: false
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/or_drawbridge_down_anim.pma"
+	state_collision[2]: false
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: true
+	
 }
 
 }

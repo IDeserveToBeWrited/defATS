@@ -7,6 +7,8 @@ traffic_trailer : traffic.trailer.log
 	cargo_mass: 16000
 	
 	spawn_ratio: 0.0
+
+	variant[]: .traffic.trailer.log_cargo 
 }
 
 vehicle_accessory: .traffic.log.tchassis
@@ -28,7 +30,7 @@ vehicle_wheel_accessory: .traffic.log.trwheel1
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-traffic_trailer : traffic.trailer.log_cargo 
+traffic_trailer : .traffic.trailer.log_cargo 
 {
 	accessories[]: .traffic.log_cargo.tchassis
 	accessories[]: .traffic.log_cargo.trwheel0

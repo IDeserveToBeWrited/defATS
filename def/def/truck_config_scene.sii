@@ -7,19 +7,24 @@ ui_truck_scene_config : _nameless.config {
 	light_diffuse: (1.2, 1.2, 1.2)
 	light_specular: (2, 2, 2)
 
-	camera_position: (0.5, 3.1, -17)
-	camera_aim: ( 0, 2.4, -0.5 )
-	camera_elevation_limit : (-0.3, 0.0)
 
-	mouse_rot_sens : 0.1
-	camera_zoom_sens : 0.01
-	camera_zoom_min_coef : 0.55
-	camera_zoom_max_coef : 0.8
-	camera_fov: 37
+	camera_aim: ( 0.0, 2.6, -0.7 )
+	camera_elevation_limit: (-0.35, 0.0)
 
-	camera_default_azimuth: -2.5
-	camera_default_elevation: -0.05
-	camera_default_zoom: 0.8
+	camera_relative_bounds: (7.5, 7.5, 7.5)
+	camera_aim_y_bounds: (-8.0, 10.0)
+
+	mouse_rot_sens : 0.2
+	camera_zoom_sens : 0.2
+	camera_zoom_min_coef : 0.6
+	camera_zoom_max_coef : 1.1
+	camera_fov: 50
+
+	camera_default_azimuth: -2.4
+	camera_default_elevation: -0.098
+	camera_default_zoom: 1
+
+
 
 	truck_position: (0.0, 0.0, 0.0)
 
@@ -211,6 +216,41 @@ ui_truck_scene_config : _nameless.config {
 	pin_dir[]: (-1, 0, 0)
 	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
+	
+	pin_group[]: markers
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.2, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: flag_r_l
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (-1, 0, 1)
+	pin_dir_uk[]: (-1, 0, 1)
+	double_sided[]: false
+
+	pin_group[]: flag_r_r
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (1, 0, 1)
+	pin_dir_uk[]: (1, 0, 1)
+	double_sided[]: false
+
+	pin_group[]: flag_f_l
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (-1, 0, -1)
+	pin_dir_uk[]: (-1, 0, -1)
+	double_sided[]: false
+
+	pin_group[]: flag_f_r
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (1, 0, -1)
+	pin_dir_uk[]: (1, 0, -1)
+	double_sided[]: false
 
 	exterior_only[]: flag_f_l
 	exterior_only[]: flag_f_r

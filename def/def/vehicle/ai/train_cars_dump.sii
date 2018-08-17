@@ -1,0 +1,48 @@
+
+#
+#	CARGO DUMP
+#
+
+traffic_trailer : train_car.cargo_d.dump
+{
+	accessories[]: .cargo_d.dump.tchassis
+	accessories[]: .cargo_d.dump.trwheel0
+	accessories[]: .cargo_d.dump.trwheel1
+	accessories[]: .cargo_d.dump.trwheel2
+	accessories[]: .cargo_d.dump.trwheel3
+
+	attachable_trailer[]: "train_car.cargo_d.*"
+	displacement_limit: 0.0
+    
+	lod_dist[]: 53
+	lod_dist[]: 70
+}
+
+vehicle_accessory: .cargo_d.dump.tchassis
+{
+    	data_path: "/def/vehicle/ai/train_cars/chassis_dump.sii"
+}
+
+vehicle_wheel_accessory: .cargo_d.dump.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo_d.dump.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo_d.dump.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo_d.dump.trwheel3
+{
+	offset: 6
+    	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}

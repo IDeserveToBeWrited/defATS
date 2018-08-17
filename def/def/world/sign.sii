@@ -1,5 +1,19 @@
 SiiNunit
 {
+
+sign_model : sign.1 {
+
+	#category: "Pillar"
+	sign_name: "ca_t_shaped"
+
+	model_desc: "/model/pillar/ca_t_shaped.pmd"
+	model_coll: "/model/pillar/ca_t_shaped.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+}
+
 sign_model : sign.2 {
 
 	#category: "Pillar"
@@ -706,6 +720,21 @@ sign_model : sign.146 {
 	mass: 100
 
 }
+
+sign_model : sign.148 {
+
+	sign_name: "US Stop Ways"
+
+	model_desc: "/model/sign/traffic/us_stop_04.pmd"
+	model_coll: "/model/sign/traffic/us_stop_04.pmc"
+	look_name: default
+	category: "editable area"
+	stand_classes[]: side_sml_7
+	editable: true
+	dynamic: true
+	mass: 100
+}
+
 sign_model : sign.200 {
 
 	sign_name: "US reflection post white 1"
@@ -2186,10 +2215,10 @@ sign_model : sign.456 {
 }
 sign_model : sign.457 {
 
-	sign_name: "heys_03"
+	sign_name: "hays_03"
 
-	model_desc: "/model/props/farm/heys_03.pmd"
-	model_coll: "/model/props/farm/heys_03.pmc"
+	model_desc: "/model/props/farm/hays_03.pmd"
+	model_coll: "/model/props/farm/hays_03.pmc"
 	look_name: default
 	
 	#category: "farm props"
@@ -2200,10 +2229,10 @@ sign_model : sign.457 {
 
 sign_model : sign.458 {
 
-	sign_name: "heys_02"
+	sign_name: "hays_02"
 
-	model_desc: "/model/props/farm/heys_02.pmd"
-	model_coll: "/model/props/farm/heys_02.pmc"
+	model_desc: "/model/props/farm/hays_02.pmd"
+	model_coll: "/model/props/farm/hays_02.pmc"
 	look_name: default
 	
 	#category: "farm props"
@@ -2214,10 +2243,10 @@ sign_model : sign.458 {
 
 sign_model : sign.459 {
 
-	sign_name: "heys_01"
+	sign_name: "hays_01"
 
-	model_desc: "/model/props/farm/heys_01.pmd"
-	model_coll: "/model/props/farm/heys_01.pmc"
+	model_desc: "/model/props/farm/hays_01.pmd"
+	model_coll: "/model/props/farm/hays_01.pmc"
 	look_name: default
 	
 	#category: "farm props"
@@ -3508,7 +3537,7 @@ sign_model : sign.560 {
 
 sign_model : sign.561 {
 
-	sign_name: "US cross merge"
+	sign_name: "US cross merge (Right)"
 
 	model_desc: "/model/sign/traffic/us_cross_merge1.pmd"
 	model_coll: "/model/sign/traffic/us_cross_merge1.pmc"
@@ -4120,6 +4149,7 @@ sign_model : sign.611 {
 	look_name: default
 	variant_name: chopper1
 	
+	
 	dynamic: true
 	mass: 100
 }
@@ -4472,7 +4502,7 @@ sign_model : sign.638 {
 
 sign_model : sign.639 {
 
-	sign_name: "US Cross Side 1"
+	sign_name: "US Cross Side (Right)"
 
 	model_desc: "/model/sign/traffic/us_cross_side1.pmd"
 	model_coll: "/model/sign/traffic/us_cross_side1.pmc"
@@ -5168,6 +5198,7 @@ sign_model : sign.689 {
 	dynamic: false
 }
 
+
 sign_model : sign.nm_9 {
 
 	sign_name: "nm_fwy3_multiext_drop_1_over"
@@ -5769,6 +5800,20 @@ sign_model : sign.sd_bd_32 {
 	dynamic: false
 	editable: true
 }
+sign_model : sign.sd_bd_33 {
+
+	sign_name: "us note side board 02"
+
+	model_desc: "/model/sign/navigation/us_note_side_board_02.pmd"
+	model_coll: "/model/sign/navigation/us_note_side_board_02.pmc"
+	look_name: default
+	
+	stand_classes[]: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
 
 sign_model : sign.ov_bd_01 {
 
@@ -5886,10 +5931,10 @@ sign_model : sign.ov_bd_07 {
 
 sign_model : sign.ov_bd_08 {
 
-	sign_name: "us overhead board 2ex2"
+	sign_name: "us overhead board 2ex1"
 
-	model_desc: "/model/sign/navigation/fwy2_ovh_board_2ex2.pmd"
-	model_coll: "/model/sign/navigation/fwy2_ovh_board_2ex2.pmc"
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_2ex1.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_2ex1.pmc"
 	look_name: default
 	
 	stand_classes[]: 2fwy_1
@@ -6383,13 +6428,13 @@ sign_model : sign.ov_bd_38 {
 
 sign_model : sign.ov_bd_39 {
 
-	sign_name: "fwy3 overhead board 14-1 04-1"
+	sign_name: "fwy3 overhead board 14-1 04-2"
 
-	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmd"
-	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-1.pmc"
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_14-1_04-2.pmc"
 	look_name: default
 	
-	stand_classes[]: 2fwy_1
+	stand_classes[]: 3fwy_3
 	
 	category: "editable board"
 	dynamic: false
@@ -6895,6 +6940,97 @@ sign_model : sign.ov_bd_71 {
 
 }
 
+sign_model : sign.ov_bd_72 {
+
+	sign_name: "fwy2 overhead board 1ex1 1eo1"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_1ex1_1eo1.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_1ex1_1eo1.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_73 {
+
+	sign_name: "fwy2 overhead board 1ex2 1eo2"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_1ex2_1eo2.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_1ex2_1eo2.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_74 {
+
+	sign_name: "fwy2 overhead board 2ex2"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_2ex2.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_2ex2.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_75 {
+
+	sign_name: "fwy1 overhead board ent 01-1"
+
+	model_desc: "/model/sign/navigation/fwy1_ovh_board_ent_01-1.pmd"
+	model_coll: "/model/sign/navigation/fwy1_ovh_board_ent_01-1.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_76 {
+
+	sign_name: "2-1-2 overhead board 04-1 14-1 min"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_04-1_14-1min.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_04-1_14-1min.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_6
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+sign_model : sign.ov_bd_77 {
+
+	sign_name: "2-1-2 overhead board 04-1"
+
+	model_desc: "/model/sign/navigation/2-1-2_ovh_board_04-1.pmd"
+	model_coll: "/model/sign/navigation/2-1-2_ovh_board_04-1.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_8
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+
 sign_model : sign.sm_bd_01 {
 
 	sign_name: "board sml A1"
@@ -7310,6 +7446,22 @@ sign_model : sign.rot_bd_20 {
 	editable: true
 
 }
+sign_model : sign.rot_bd_21 {
+
+	sign_name: "hw shield to"
+
+	model_desc: "/model/sign/navigation/hw_shield_to.pmd"
+	model_coll: "/model/sign/navigation/hw_shield_to.pmc"
+	look_name: default
+	
+	stand_classes[]: side_rot_2
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+
 
 sign_model : sign.dlc_nm_29 {
 
@@ -7512,6 +7664,7 @@ sign_model : sign.683 {
 	model_coll: "/model/props/lamp/or_portland1.pmc"
 	look_name: Default
 	road_model: true
+	instanced: true
 }
 
 sign_model : sign.684 {
@@ -7521,7 +7674,9 @@ sign_model : sign.684 {
 	model_coll: "/model/props/lamp/or_portland1_lod.pmc"
 	look_name: Default
 	road_model: true
+	instanced: true
 }
+
 sign_model : sign.685 {
 	sign_name: "or junction lamp1"
 	model_desc: "/model/props/lamp/or_junction_lamp1.pmd"
@@ -7537,6 +7692,7 @@ sign_model : sign.686 {
 	look_name: Default
 	road_model: true
 }
+
 sign_model : sign.687 {
 
 	sign_name: "US blank white rectangle"
@@ -7625,6 +7781,758 @@ sign_model : sign.dlc_or_8 {
 	mass: 75.0
 
 }
+sign_model : sign.690 {
+
+	sign_name: "Tsunami Hazard Zone"
+
+	model_desc: "/model/sign/traffic/us_tsunami_hazard_zone.pmd"
+	model_coll: "/model/sign/traffic/us_tsunami_hazard_zone.pmc"
+	look_name: default
+	road_model: true
+	dynamic: true
+	mass: 100
+
+}
+
+sign_model : sign.693 {
+
+	sign_name: "us twisty road with speed"
+
+	model_desc: "/model/sign/traffic/us_twistyroad_speed.pmd"
+	model_coll: "/model/sign/traffic/us_twistyroad_speed.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	dynamic: true
+	editable: true
+
+}
+sign_model : sign.694 {
+
+	sign_name: "us truck rollover with speed"
+
+	model_desc: "/model/sign/traffic/us_truck_rollover_speed.pmd"
+	model_coll: "/model/sign/traffic/us_truck_rollover_speed.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.695 {
+
+	sign_name: "us sharp turn with speed (left)"
+
+	model_desc: "/model/sign/traffic/us_sharp_left_turn_speed.pmd"
+	model_coll: "/model/sign/traffic/us_sharp_left_turn_speed.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	dynamic: true
+	editable: true
+
+}
+
+sign_model : sign.696 {
+
+	sign_name: "us sharp turn with speed (right)"
+
+	model_desc: "/model/sign/traffic/us_sharp_right_turn_speed.pmd"
+	model_coll: "/model/sign/traffic/us_sharp_right_turn_speed.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	dynamic: true
+	editable: true
+
+}
+sign_model : sign.697 {
+
+	sign_name: "us blank rectangle blue"
+
+	model_desc: "/model/sign/traffic/us_blank_rectangle_blue.pmd"
+	model_coll: "/model/sign/traffic/us_blank_rectangle_blue.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	dynamic: true
+	editable: true
+
+}
+sign_model : sign.698 {
+
+	sign_name: "us no parking 2"
+
+	model_desc: "/model/sign/traffic/us_noparking2.pmd"
+	model_coll: "/model/sign/traffic/us_noparking2.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.699 {
+
+	sign_name: "us slippery road"
+
+	model_desc: "/model/sign/traffic/us_slippery_road.pmd"
+	model_coll: "/model/sign/traffic/us_slippery_road.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.700 {
+
+	sign_name: "us blank green"
+
+	model_desc: "/model/sign/navigation/us_blank_green.pmd"
+	model_coll: "/model/sign/navigation/us_blank_green.pmc"
+	look_name: default
+	editable: true
+	dynamic: true
+	mass: 100
+}
+sign_model : sign.701 {
+
+	sign_name: "us blank white"
+
+	model_desc: "/model/sign/navigation/us_blank_white.pmd"
+	model_coll: "/model/sign/navigation/us_blank_white.pmc"
+	look_name: default
+	editable: true
+	dynamic: true
+	mass: 100
+}
 
 
+sign_model : sign.dlc_or_6 {
+	model_desc: "/model/props/street/or_hydrant1.pmd"
+	model_coll: "/model/props/street/or_hydrant1.pmc"
+	sign_name: "or hydrant1"
+	dynamic: false
+	mass: 75.0
+
+}
+sign_model : sign.702 {
+
+	sign_name: "us curve left with speed"
+
+	model_desc: "/model/sign/traffic/us_curve_left_speed1.pmd"
+	model_coll: "/model/sign/traffic/us_curve_left_speed1.pmc"
+	look_name: default
+	editable: true
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.703 {
+
+	sign_name: "us curve right with speed"
+
+	model_desc: "/model/sign/traffic/us_curve_right_speed1.pmd"
+	model_coll: "/model/sign/traffic/us_curve_right_speed1.pmc"
+	look_name: default
+	editable: true
+	dynamic: true
+	mass: 100
+
+}
+
+sign_model : sign.705 {
+
+	sign_name: "US entering roadway added lane (Left)"
+
+	model_desc: "/model/sign/traffic/us_entering_roadway_02.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_02.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.706 {
+
+	sign_name: "US entering roadway merge lane (Left)"
+
+	model_desc: "/model/sign/traffic/us_entering_roadway_merge_left.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_merge_left.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.707 {
+
+	sign_name: "US cross merge (Left)"
+
+	model_desc: "/model/sign/traffic/us_cross_merge2.pmd"
+	model_coll: "/model/sign/traffic/us_cross_merge2.pmc"
+	look_name: default
+
+	dynamic: true
+
+	mass: 100
+}
+sign_model : sign.708 {
+
+	sign_name: "US Cross Side (Left)"
+
+	model_desc: "/model/sign/traffic/us_cross_side2.pmd"
+	model_coll: "/model/sign/traffic/us_cross_side2.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+}
+
+sign_model : sign.709 {
+
+	sign_name: "Deepgrove left"
+
+	model_desc: "/model/sign/company_logos/deep_grove/arrow_left.pmd"
+	model_coll: "/model/sign/company_logos/deep_grove/arrow_left.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+
+}
+
+sign_model : sign.710 {
+
+	sign_name: "Deepgrove Right"
+
+	model_desc: "/model/sign/company_logos/deep_grove/arrow_right.pmd"
+	model_coll: "/model/sign/company_logos/deep_grove/arrow_right.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+}
+sign_model : sign.711 {
+
+	sign_name: "Deepgrove Straight"
+
+	model_desc: "/model/sign/company_logos/deep_grove/arrow_straight.pmd"
+	model_coll: "/model/sign/company_logos/deep_grove/arrow_straight.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+}
+sign_model : sign.712 {
+
+	sign_name: "Us Stop One Way"
+
+	model_desc: "/model/sign/traffic/us_stop_one_way.pmd"
+	model_coll: "/model/sign/traffic/us_stop_one_way.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+	traffic_rule: traffic_rule.stop
+
+}
+sign_model : sign.713 {
+
+	sign_name: "US truck speed limit 65 mph"
+
+	model_desc: "/model/sign/traffic/us_speed_70mph_65mph.pmd"
+	model_coll: "/model/sign/traffic/us_speed_70mph_65mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_65
+}
+sign_model : sign.714 {
+
+	sign_name: "US truck speed limit 60 mph"
+
+	model_desc: "/model/sign/traffic/us_speed_65mph_60mph.pmd"
+	model_coll: "/model/sign/traffic/us_speed_65mph_60mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_60
+}
+sign_model : sign.715 {
+
+	sign_name: "US Elk Crossing 01"
+
+	model_desc: "/model/sign/traffic/us_elk_crossing_01.pmd"
+	model_coll: "/model/sign/traffic/us_elk_crossing_01.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+}
+
+sign_model : sign.716 {
+
+	sign_name: "Fuel Price or"
+
+	model_desc: "/model/sign/gas/price_or.pmd"
+	look_name: default
+	#category: "fuel"
+
+	dynamic: false
+	distance_type: 2
+	mass: 100
+}
+sign_model : sign.717 {
+
+	sign_name: "us reverse curve left with speed"
+
+	model_desc: "/model/sign/traffic/us_reverse_curve_left.pmd"
+	model_coll: "/model/sign/traffic/us_reverse_curve_left.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	editable: true
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.718 {
+
+	sign_name: "us reverse curve right with speed"
+
+	model_desc: "/model/sign/traffic/us_reverse_curve_right.pmd"
+	model_coll: "/model/sign/traffic/us_reverse_curve_right.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	editable: true
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.719 {
+
+	sign_name: "us Do Not Enter"
+
+	model_desc: "/model/sign/traffic/us_donotenter_01.pmd"
+	model_coll: "/model/sign/traffic/us_donotenter_01.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+
+
+# signs for Oregon
+
+sign_model : sign.dlc_or_4 {
+	sign_name: "or_basketball_hoop"
+
+	model_desc: "/model/props/street/or_basketball_hoop.pmd"
+	model_coll: "/model/props/street/or_basketball_hoop.pmc"
+	look_name: Default
+	dynamic: true
+	mass: 120.0
+}
+sign_model : sign.dlc_or_5 {
+	model_desc: "/model/props/street/or_trashbin1.pmd"
+	model_coll: "/model/props/street/or_trashbin1.pmc"
+	sign_name: "or trashbin1"
+	dynamic: true
+	mass: 75.0
+
+}
+
+sign_model : sign.dlc_or_7 {
+	model_desc: "/model/props/lamp/or_portland_lamp_bridge.pmd"
+	model_coll: "/model/props/lamp/or_portland_lamp_bridge.pmc"
+	sign_name: "or portland lamp bridge"
+	road_model: true
+	instanced: true
+	dynamic: false
+	mass: 75.0
+
+}
+
+sign_model : sign.dlc_or_9 {
+
+	sign_name: "id reflection post orange"
+
+	model_desc: "/model/sign/id_ref_post1_orange.pmd"
+	model_coll: "/model/sign/id_ref_post1_orange.pmc"
+	look_name: default
+	
+	road_model: true
+	dynamic: true
+	mass: 100
+	instanced: true
+}
+
+sign_model : sign.dlc_or_10 {
+
+	sign_name: "id reflection post white"
+
+	model_desc: "/model/sign/id_ref_post1_white.pmd"
+	model_coll: "/model/sign/id_ref_post1_white.pmc"
+	look_name: default
+	
+	road_model: true
+	dynamic: true
+	mass: 100
+	instanced: true
+}
+
+sign_model : sign.dlc_or_14 {
+	model_desc: "/model/sign/company_logos/portland_cargo_center/entrance_sign.pmd"
+	model_coll: "/model/sign/company_logos/portland_cargo_center/entrance_sign.pmc"
+  
+ 	dynamic: false
+  sign_name: "portland_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_15 {
+	model_desc: "/model/sign/company_logos/portland_cargo_center/building_sign.pmd"
+  model_coll: "/model/sign/company_logos/portland_cargo_center/building_sign.pmc"
+	
+  dynamic: false
+  sign_name: "portland_building"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_16 {
+	model_desc: "/model/sign/company_logos/portland_cargo_center/universal.pmd"
+  model_coll: "/model/sign/company_logos/portland_cargo_center/universal.pmc"
+	
+  dynamic: false
+  sign_name: "portland_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_17 {
+	model_desc: "/model/sign/company_logos/steeler/building_sign_01.pmd"
+  model_coll: "/model/sign/company_logos/steeler/building_sign_01.pmc"
+	
+  dynamic: false
+  sign_name: "steeler_building01"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_18 {
+	model_desc: "/model/sign/company_logos/steeler/building_sign_02.pmd"
+  model_coll: "/model/sign/company_logos/steeler/building_sign_02.pmc"
+	
+  dynamic: false
+  sign_name: "steeler_building02"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_19 {
+	model_desc: "/model/sign/company_logos/steeler/entrance_sign.pmd"
+  model_coll: "/model/sign/company_logos/steeler/entrance_sign.pmc"
+	
+  dynamic: false
+  sign_name: "steeler_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_20 {
+	model_desc: "/model/sign/company_logos/steeler/entrance_sign_02.pmd"
+  model_coll: "/model/sign/company_logos/steeler/entrance_sign_02.pmc"
+	
+  dynamic: false
+  sign_name: "steeler_entrance02"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_21 {
+	model_desc: "/model/sign/company_logos/steeler/universal.pmd"
+  model_coll: "/model/sign/company_logos/steeler/universal.pmc"
+	
+  dynamic: false
+  sign_name: "steeler_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_22 {
+	model_desc: "/model/sign/company_logos/olthon_homes/building_sign_01.pmd"
+  model_coll: "/model/sign/company_logos/olthon_homes/building_sign_01.pmc"
+	
+  dynamic: false
+  sign_name: "olthon_building01"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_23 {
+	model_desc: "/model/sign/company_logos/olthon_homes/building_sign_02.pmd"
+  model_coll: "/model/sign/company_logos/olthon_homes/building_sign_02.pmc"
+	
+  dynamic: false
+  sign_name: "olthon_building_02"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_24 {
+	model_desc: "/model/sign/company_logos/olthon_homes/entrance_sign.pmd"
+  model_coll: "/model/sign/company_logos/olthon_homes/entrance_sign.pmc"
+	
+  dynamic: false
+  sign_name: "olthon_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_25 {
+	model_desc: "/model/sign/company_logos/olthon_homes/universal.pmd"
+  model_coll: "/model/sign/company_logos/olthon_homes/universal.pmc"
+	
+  dynamic: false
+  sign_name: "olthon_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_26 {
+	model_desc: "/model/sign/company_logos/heartfur/building_sign_01.pmd"
+  model_coll: "/model/sign/company_logos/heartfur/building_sign_01.pmc"
+	
+  dynamic: false
+  sign_name: "heartfur_building01"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_27 {
+	model_desc: "/model/sign/company_logos/heartfur/building_sign_02.pmd"
+  model_coll: "/model/sign/company_logos/heartfur/building_sign_02.pmc"
+	
+  dynamic: false
+  sign_name: "heartfur_building02"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_28 {
+	model_desc: "/model/sign/company_logos/heartfur/entrance_sign.pmd"
+  model_coll: "/model/sign/company_logos/heartfur/entrance_sign.pmc"
+	
+  dynamic: false
+  sign_name: "heartfur_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_29 {
+	model_desc: "/model/sign/company_logos/heartfur/universal.pmd"
+  model_coll: "/model/sign/company_logos/heartfur/universal.pmc"
+	
+  dynamic: false
+  sign_name: "heartfur_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_30 {
+	model_desc: "/model/sign/company_logos/haddock_shipyard/universal.pmd"
+  model_coll: "/model/sign/company_logos/haddock_shipyard/universal.pmc"
+	
+  dynamic: false
+  sign_name: "haddock_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_31 {
+	model_desc: "/model/sign/company_logos/haddock_shipyard/building_sign.pmd"
+  model_coll: "/model/sign/company_logos/haddock_shipyard/building_sign.pmc"
+	
+  dynamic: false
+  sign_name: "haddock_building"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_32 {
+	model_desc: "/model/sign/company_logos/haddock_shipyard/entrance_sign.pmd"
+  model_coll: "/model/sign/company_logos/haddock_shipyard/entrance_sign.pmc"
+	
+  dynamic: false
+  sign_name: "haddock_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_33 {
+	model_desc: "/model/sign/company_logos/deep_grove/entrance_sign_01.pmd"
+  model_coll: "/model/sign/company_logos/deep_grove/entrance_sign_01.pmc"
+	
+  dynamic: false
+  sign_name: "deepgrove_entrance01"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_34 {
+	model_desc: "/model/sign/company_logos/deep_grove/entrance_sign_02.pmd"
+  model_coll: "/model/sign/company_logos/deep_grove/entrance_sign_02.pmc"
+	
+  dynamic: false
+  sign_name: "deepgrove_entrance02"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_35 {
+	model_desc: "/model/sign/company_logos/deep_grove/universal.pmd"
+  model_coll: "/model/sign/company_logos/deep_grove/universal.pmc"
+	
+  dynamic: false
+  sign_name: "deepgrove_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_36 {
+	model_desc: "/model/sign/company_logos/deep_grove/building_sign.pmd"
+  model_coll: "/model/sign/company_logos/deep_grove/building_sign.pmc"
+	
+  dynamic: false
+  sign_name: "deepgrove_building"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_37 {
+	model_desc: "/model/sign/company_logos/page_and_price/building_sign.pmd"
+  model_coll: "/model/sign/company_logos/page_and_price/building_sign.pmc"
+	
+  dynamic: false
+  sign_name: "page_building"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_38 {
+	model_desc: "/model/sign/company_logos/page_and_price/entrance_sign.pmd"
+  model_coll: "/model/sign/company_logos/page_and_price/entrance_sign.pmc"
+	
+  dynamic: false
+  sign_name: "page_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_39 {
+	model_desc: "/model/sign/company_logos/page_and_price/universal.pmd"
+  model_coll: "/model/sign/company_logos/page_and_price/universal.pmc"
+	
+  dynamic: false
+  sign_name: "page_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_40 {
+	model_desc: "/model/sign/company_logos/avalanche_steel/universal.pmd"
+  model_coll: "/model/sign/company_logos/avalanche_steel/universal.pmc"
+	
+  dynamic: false
+  sign_name: "steel_universal"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_41 {
+	model_desc: "/model/sign/company_logos/avalanche_steel/building_sign_01.pmd"
+  model_coll: "/model/sign/company_logos/avalanche_steel/building_sign_01.pmc"
+	
+  dynamic: false
+  sign_name: "steel_building01"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_42 {
+	model_desc: "/model/sign/company_logos/avalanche_steel/entrance_sign.pmd"
+  model_coll: "/model/sign/company_logos/avalanche_steel/entrance_sign.pmc"
+	
+  dynamic: false
+  sign_name: "steel_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_43 {
+	model_desc: "/model/sign/company_logos/avalanche_steel/building_sign_03.pmd"
+  model_coll: "/model/sign/company_logos/avalanche_steel/building_sign_03.pmc"
+	
+  dynamic: false
+  sign_name: "steel_building03"
+	look_name: Default
+}
+
+sign_model : sign.dlc_nm_1l {
+	sign_name: "nm_lamp1_lod"
+	
+	model_desc: "/model/props/lamp/nm_lamp1_lod.pmd"
+	model_coll: "/model/props/lamp/nm_lamp1_lod.pmc"
+	dynamic: true
+	road_model: true
+	instanced: true
+	mass: 500.0
+	
+}
+
+sign_model : sign.nm_3 {
+
+	sign_name: "logo global mills universal"
+
+	model_desc: "/model/sign/company_logos/global_mills/universal.pmd"
+	model_coll: "/model/sign/company_logos/global_mills/universal.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_6 {
+
+	sign_name: "logo global mills building sign"
+
+	model_desc: "/model/sign/company_logos/global_mills/building_sign.pmd"
+	model_coll: "/model/sign/company_logos/global_mills/building_sign.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.nm_7 {
+
+	sign_name: "logo global mills entrance sign"
+
+	model_desc: "/model/sign/company_logos/global_mills/entrance_sign.pmd"
+	model_coll: "/model/sign/company_logos/global_mills/entrance_sign.pmc"
+	look_name: default
+	
+	dynamic: false
+
+}
+
+sign_model : sign.dlc_nm_4 {
+	sign_name: "nm_lamp2"
+	
+	model_desc: "/model/props/lamp/nm_lamp2.pmd"
+	model_coll: "/model/props/lamp/nm_lamp2.pmc"
+	dynamic: false
+	road_model: false
+}
+sign_model : sign.dlc_or_44 {
+	model_desc: "/model/sign/company_logos/homestore/entrance_sign.pmd"
+  model_coll: "/model/sign/company_logos/homestore/entrance_sign.pmc"
+	
+  dynamic: false
+  sign_name: "homestore_entrance"
+	look_name: Default
+}
+
+sign_model : sign.dlc_or_45 {
+	model_desc: "/model/sign/company_logos/homestore/universal.pmd"
+  model_coll: "/model/sign/company_logos/homestore/universal.pmc"
+	
+  dynamic: false
+  sign_name: "homestore_universal"
+	look_name: Default
+}
+sign_model : sign.147 {
+
+	sign_name: "us_forest_rail_road_crossing"
+
+	model_desc: "/model/sign/traffic/us_forest_rail_road_crossing.pmd"
+	model_coll: "/model/sign/traffic/us_forest_rail_road_crossing.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 200
+
+}
 }

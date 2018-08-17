@@ -1,0 +1,171 @@
+#Hull variant
+
+traffic_vehicle : traffic.f350_hd
+{
+	accessories[]: .f350_hd.chassis
+	accessories[]: .f350_hd.fwheel
+	accessories[]: .f350_hd.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+	color[]: (0.0202, 0.0212, 0.0193) #ford transit black
+	
+	vehicle_mass: 2000
+	
+	variant[]: traffic.f350_hd_c
+	variant[]: traffic.f350_hd_t1
+	variant[]: traffic.f350_hd_t2
+	
+	spawn_ratio: 0.2
+	
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .f350_hd.chassis
+{
+	data_path: "/def/vehicle/ai/f350_heavy_duty/chassis_h.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+#compressor
+
+traffic_vehicle : traffic.f350_hd_c
+{
+	accessories[]: .f350_hd_c.chassis
+	accessories[]: .f350_hd_c.fwheel
+	accessories[]: .f350_hd_c.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+	color[]: (0.0202, 0.0212, 0.0193) #ford transit black
+	
+	vehicle_mass: 2000
+	
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .f350_hd_c.chassis
+{
+	data_path: "/def/vehicle/ai/f350_heavy_duty/chassis_c.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_c.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_c.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+#tow 1
+
+traffic_vehicle : traffic.f350_hd_t1
+{
+	accessories[]: .f350_hd_t1.chassis
+	accessories[]: .f350_hd_t1.fwheel
+	accessories[]: .f350_hd_t1.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	vehicle_mass: 2000
+	
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .f350_hd_t1.chassis
+{
+	data_path: "/def/vehicle/ai/f350_heavy_duty/chassis_t1.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_t1.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_t1.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+#tow 1
+
+traffic_vehicle : traffic.f350_hd_t2
+{
+	accessories[]: .f350_hd_t2.chassis
+	accessories[]: .f350_hd_t2.fwheel
+	accessories[]: .f350_hd_t2.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	vehicle_mass: 2000
+	
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .f350_hd_t2.chassis
+{
+	data_path: "/def/vehicle/ai/f350_heavy_duty/chassis_t2.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_t2.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_t2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}

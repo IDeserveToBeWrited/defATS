@@ -46,7 +46,7 @@ journey_events_road_event : j_re.roadwork
 journey_events_road_event : j_re.roadwork_fr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1_55
     signs_cutscenes_outer[]:            j_cut.sg2
     signs_cutscenes_outer[]:            j_cut.sg3
@@ -77,7 +77,7 @@ journey_events_road_event : j_re.roadwork_fr
 journey_events_road_event : j_re.roadwork_cr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1
     signs_cutscenes_outer[]:            j_cut.sg2
     signs_cutscenes_outer[]:            j_cut.sg3
@@ -140,13 +140,15 @@ journey_events_road_event : j_re.mill_cutter
 journey_events_road_event : j_re.mill_cut_fr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1_55
+	signs_cutscenes_outer[]:            j_cut.sg1_table
     signs_cutscenes_outer[]:            j_cut.sg2
     signs_cutscenes_outer[]:            j_cut.sg3
 	signs_cutscenes_outer[]:            j_cut.sg_end
 	signs_distances_outer[]:            50.0
     signs_distances_outer[]:            150.0
+    signs_distances_outer[]:            200.0
     signs_distances_outer[]:            300.0
     signs_distances_outer[]:            500.0
 	signs_distances_outer[]:            -30.0
@@ -171,14 +173,16 @@ journey_events_road_event : j_re.mill_cut_fr
 journey_events_road_event : j_re.mill_cut_cr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1
     signs_cutscenes_outer[]:            j_cut.sg2
+	signs_cutscenes_outer[]:            j_cut.sg1_table
     signs_cutscenes_outer[]:            j_cut.sg3
 	signs_cutscenes_outer[]:            j_cut.sg_end
 	signs_distances_outer[]:            20.0
     signs_distances_outer[]:            50.0
     signs_distances_outer[]:            150.0
+    signs_distances_outer[]:            175.0
     signs_distances_outer[]:            200.0
 	signs_distances_outer[]:            -30.0
 
@@ -233,13 +237,15 @@ journey_events_road_event : j_re.roadwork_ra
 journey_events_road_event : j_re.rw_ra_fr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1_55
+	signs_cutscenes_outer[]:            j_cut.sg1_table
     signs_cutscenes_outer[]:            j_cut.sg2
     signs_cutscenes_outer[]:            j_cut.sg3	
 	signs_cutscenes_outer[]:            j_cut.sg_end
 	signs_distances_outer[]:            50.0
     signs_distances_outer[]:            150.0
+    signs_distances_outer[]:            200.0
     signs_distances_outer[]:            300.0
     signs_distances_outer[]:            500.0
 	signs_distances_outer[]:            -30.0
@@ -264,7 +270,7 @@ journey_events_road_event : j_re.rw_ra_fr
 journey_events_road_event : j_re.rw_ra_cr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1
     signs_cutscenes_outer[]:            j_cut.sg2
     signs_cutscenes_outer[]:            j_cut.sg3
@@ -323,13 +329,15 @@ journey_events_road_event : j_re.roadwork_ra2
 journey_events_road_event : j_re.rw_ra2_fr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1_55
+	signs_cutscenes_outer[]:            j_cut.sg1_table
     signs_cutscenes_outer[]:            j_cut.sg2
     signs_cutscenes_outer[]:            j_cut.sg3
 	signs_cutscenes_outer[]:            j_cut.sg_end	
 	signs_distances_outer[]:            50.0
     signs_distances_outer[]:            150.0
+    signs_distances_outer[]:            200.0
     signs_distances_outer[]:            300.0
     signs_distances_outer[]:            500.0
 	signs_distances_outer[]:            -30.0
@@ -447,7 +455,7 @@ journey_events_road_event : j_re.rw_mid_cr
 journey_events_road_event : j_re.rw_ra2_cr
 {
 
-	signs_cutscenes_outer[]:            j_cut.sg1_tra_tab
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
 	signs_cutscenes_outer[]:            j_cut.sg1
     signs_cutscenes_outer[]:            j_cut.sg2
     signs_cutscenes_outer[]:            j_cut.sg3
@@ -1479,5 +1487,441 @@ journey_events_road_event : j_re.audi
 	
 	
 }
+
+journey_events_road_event : j_re.acc_cou_b
+{
+
+    start_cutscene: j_cut.acc_cou_s
+    end_cutscene: j_cut.acc_cou_e
+    layer_cutscenes[]: j_cut.acc_cou_ma
+    layer_cutscenes[]: j_cut.acc_cou_mb
+
+    max_length: 80.0      // [m]
+    min_length: 80.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	centerline_displacement: true
+	
+    max_shoulder_space: 1.0
+	allowed_lanes_count[]: 1
+
+	weight: 3.0
+	
+	name: "accident 1-1 big"
+}
+
+journey_events_road_event : j_re.acc_ext_b
+{
+
+    start_cutscene: j_cut.acc_ext_s
+    end_cutscene: j_cut.acc_ext_e
+    layer_cutscenes[]: j_cut.acc_ext_ma
+    layer_cutscenes[]: j_cut.acc_ext_mb
+    layer_cutscenes[]: j_cut.acc_ext_mc
+
+    max_length: 90.0      // [m]
+    min_length: 90.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	centerline_displacement: true
+	
+    min_shoulder_space: 1.5
+	allowed_lanes_count[]: 1
+
+	weight: 3.0
+	
+	name: "accident 1-1E big"
+}
+
+journey_events_road_event : j_re.acc_ext2_b
+{
+
+    start_cutscene: j_cut.acc_ext_s
+    end_cutscene: j_cut.acc_ext2_e
+    layer_cutscenes[]: j_cut.acc_ext2_ma
+    layer_cutscenes[]: j_cut.acc_ext2_mb
+
+    max_length: 100.0      // [m]
+    min_length: 100.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	centerline_displacement: true
+	
+    min_shoulder_space: 1.5
+	allowed_lanes_count[]: 1
+
+	weight: 3.0
+	
+	name: "accident 1-1E big2"
+}
+
+journey_events_road_event : j_re.acc_hw_b
+{
+	signs_cutscenes_outer[]:            j_cut.sg1_tran
+	signs_distances_outer[]:            100.0
+
+    start_cutscene: j_cut.acc_hw_s
+    end_cutscene: j_cut.acc_hw_e
+    layer_cutscenes[]: j_cut.acc_hw_ma
+    layer_cutscenes[]: j_cut.acc_hw_mb
+    layer_cutscenes[]: j_cut.acc_hw_mc
+
+    max_length: 105.0      // [m]
+    min_length: 105.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 5.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: true
+	
+    min_shoulder_space: 1.5
+
+	weight: 10.0
+	
+	name: "accident freeway big"
+}
+
+journey_events_road_event : j_re.acc_cou_s
+{
+
+    layer_cutscenes[]: j_cut.acc_cou_ss
+
+    max_length: 35.0      // [m]
+    min_length: 35.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 10.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	centerline_displacement: true
+	
+//    max_shoulder_space: 1.0
+	allowed_lanes_count[]: 1
+
+	weight: 1
+	
+	name: "accident 1-1 small"
+}
+
+journey_events_road_event : j_re.acc_ext_s
+{
+
+    layer_cutscenes[]: j_cut.acc_ext_ss
+
+    max_length: 35.0      // [m]
+    min_length: 35.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 10.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	
+    min_shoulder_space: 1.5
+
+	weight: 1
+	
+	name: "accident 1-1E small"
+}
+
+journey_events_road_event : j_re.pol_cou
+{
+
+    layer_cutscenes[]: j_cut.pol_cou
+
+    max_length: 35.0      // [m]
+    min_length: 35.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 10.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	centerline_displacement: true
+	
+    max_shoulder_space: 1.0
+	allowed_lanes_count[]: 1
+
+	weight: 2
+	
+	name: "police 1-1"
+}
+
+journey_events_road_event : j_re.pol_ext
+{
+
+    layer_cutscenes[]: j_cut.pol_ext
+
+    max_length: 35.0      // [m]
+    min_length: 35.0      // [m]
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 10.0        // [degree]
+    
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	
+    min_shoulder_space: 1.5
+
+
+	weight: 2
+	
+	name: "police 1-1E"
+}
+
+
+journey_events_road_event : j_re.rw_cou
+{
+	signs_cutscenes_outer[]: j_cut.rws_cou
+	signs_cutscenes_outer[]: j_cut.rwes_cou
+    signs_distances_outer[]: 70
+    signs_distances_outer[]: -30
+	
+    layer_cutscenes[]: j_cut.rw_count
+    layer_cutscenes[]: j_cut.rw_count_m
+	
+	start_cutscene: j_cut.rw_count_s
+	end_cutscene: j_cut.rw_count_e
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 3.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 3.0        // [degree]
+    
+    max_length: 80.0      // [m]
+    min_length: 15.0      // [m]
+  
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	centerline_displacement: true
+	
+	allowed_lanes_count[]: 1
+    max_shoulder_space: 1.0
+
+	weight: 3.0
+	
+	
+	name: "Roadwork 1-1"
+}
+
+journey_events_road_event : j_re.rw_ext
+{
+	signs_cutscenes_outer[]: j_cut.rws_cou
+	signs_cutscenes_outer[]: j_cut.rwes_cou
+    signs_distances_outer[]: 100
+    signs_distances_outer[]: -50
+	
+    layer_cutscenes[]: j_cut.rw_ext
+    layer_cutscenes[]: j_cut.rw_ext_m
+	
+	start_cutscene: j_cut.rw_ext_s
+	end_cutscene: j_cut.rw_ext_e
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 3.0        // [degree]
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 3.0        // [degree]
+    
+    max_length: 80.0      // [m]
+    min_length: 15.0      // [m]
+  
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: false
+	tunnel_forbidden: true
+	traffic_block: false
+	centerline_displacement: true
+	
+	allowed_lanes_count[]: 1
+    min_shoulder_space: 1.5
+
+	weight: 3.0
+	
+	
+	name: "Roadwork 1-1E"
+}
+
+
+journey_events_road_event : j_re.rw_in2
+{
+    start_cutscene:          j_cut.rw_s_in
+    end_cutscene:            j_cut.rw_e_in
+    
+    layer_cutscenes[]:            j_cut.rw_c_in
+    layer_cutscenes[]:            j_cut.rw_in2
+	
+    
+    layer_min_curve[]:            0.0            // [degree]
+    layer_min_curve[]:            0.0            // [degree]
+   
+
+    layer_max_curve[]:            5.0        // [degree]
+    layer_max_curve[]:            5.0        // [degree]
+   
+
+    
+    max_length:                    160.0        // [m]
+    min_length:                    60.0        // [m]
+	min_shoulder_space: 3.0            // [m]
+    traffic_block:true	
+	tunnel_forbidden:true
+	min_duration: 2880
+	inner_lane_allowed: true
+	weight: 11.0
+
+	excluded_road_looks[]:	us_tmpl29
+	excluded_road_looks[]:	us_tmpl41
+	excluded_road_looks[]:	us_tmpl44
+	excluded_road_looks[]:	us_tmpl38
+	excluded_road_looks[]:	us_tmpl45
+	excluded_road_looks[]:	us_tmpl30l
+	excluded_road_looks[]:	us_tmp21
+	excluded_road_looks[]:	us_tmpl23
+	excluded_road_looks[]:	us_tmpl32
+	excluded_road_looks[]:	ca_tmpl38
+	excluded_road_looks[]:	look36
+	excluded_road_looks[]:	look36f
+	
+	remove_map_sign: true
+	
+	bridge_forbidden:true
+}
+
+journey_events_road_event : j_re.rw_in2_fr
+{
+
+	signs_cutscenes_outer[]:            j_cut.sg1_55
+    signs_cutscenes_outer[]:            j_cut.sg2_mir
+    signs_cutscenes_outer[]:            j_cut.sg3
+	signs_cutscenes_outer[]:            j_cut.sg_end
+    signs_distances_outer[]:            150.0
+    signs_distances_outer[]:            300.0
+    signs_distances_outer[]:            500.0
+	signs_distances_outer[]:            -30.0
+	
+	signs_cutscenes_inner[]:            j_cut.sg1_55_in
+    signs_cutscenes_inner[]:            j_cut.sg2_in
+    signs_cutscenes_inner[]:            j_cut.sg3_in
+	signs_cutscenes_inner[]:            j_cut.sg_end_in
+    signs_distances_inner[]:            150.0
+    signs_distances_inner[]:            300.0
+    signs_distances_inner[]:            500.0
+	signs_distances_inner[]:            -30.0
+	
+	allowed_lane_types[]: freeway
+	name: "Roadwork inner road2 (6 parts) freeway"
+	
+	parent: j_re.rw_in2
+    
+}
+
+
+
+journey_events_road_event : j_re.rw_in2_cr
+{
+
+	signs_cutscenes_outer[]:            j_cut.sg1
+    signs_cutscenes_outer[]:            j_cut.sg2_mir
+    signs_cutscenes_outer[]:            j_cut.sg3
+	signs_cutscenes_outer[]:            j_cut.sg_end
+    signs_distances_outer[]:            50.0
+    signs_distances_outer[]:            150.0
+    signs_distances_outer[]:            200.0
+	signs_distances_outer[]:            -30.0
+	
+	signs_cutscenes_inner[]:            j_cut.sg1_in
+    signs_cutscenes_inner[]:            j_cut.sg2_in
+    signs_cutscenes_inner[]:            j_cut.sg3_in
+	signs_cutscenes_inner[]:            j_cut.sg_end_in
+    signs_distances_inner[]:            50.0
+    signs_distances_inner[]:            150.0
+    signs_distances_inner[]:            200.0
+	signs_distances_inner[]:            -30.0
+	
+	parent: j_re.rw_in2
+	excluded_lane_types[]: freeway
+	name: "Roadwork inner road2 (6 parts) country"
+    
+}
+
+journey_events_road_event : j_re.rw_g
+{
+	
+    layer_cutscenes[]: j_cut.rw_g
+	
+    
+    layer_min_curve[]: 0.0        // [degree]
+    layer_max_curve[]: 10.0        // [degree]
+
+    
+    max_length: 25.0      // [m]
+    min_length: 25.0      // [m]
+  
+	outer_lane_allowed:	true
+	slow_down_passing: true
+	bridge_forbidden: true
+	tunnel_forbidden: true
+	traffic_block: true
+	area_tag: urban_area
+	excluded_lane_types[]: freeway
+	
+	weight: 3.0
+
+	name: "Roadwork geyser"
+}
+
 
 }

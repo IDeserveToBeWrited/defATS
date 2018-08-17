@@ -551,5 +551,42 @@ mover_model : mover.photoc {
 	model_desc: "/model/mover/machine/photo_camera.pmd"
 	model_anim: "/model/mover/machine/photo_camera.pma"
 }
+mover_model : mover.geyser {
+	mover_name: "geyser"
+	model_desc: "/model/particles/geyser2.pmd"
+}
+mover_model : mover.lighthouse {
+	mover_name: "lighthouse spotlight"
+	model_desc: "/model/mover/lighthouse_lights.pmd"
+	model_anim: "/model/mover/lighthouse_move.pma"
+}
+
+mover_model : mover.or_2 {
+	mover_name: "lateral_irrigation1_3x"
+	model_desc: "/model/mover/machine/or_lateral_irrigation1_3x.pmd"
+}
+
+mover_model : mover.or_3 {
+	mover_name: "lateral_irrigation1_5x"
+	model_desc: "/model/mover/machine/or_lateral_irrigation1_5x.pmd"
+}
+
+mover_model : mover.deer_herd1 {
+	model_desc: "/model/mover/animal/deer_run_jump_herd.pmd" 
+	mover_name: "deer_herd"
+	model_anim: "/model/mover/animal/deer_run_herd.pma"
+	probability:					0.5
+}
+mover_model : mover.deer_eating {
+	model_desc: "/model/mover/animal/deer_eating.pmd"
+	mover_name: "deer_eating"
+	model_anim: "/model/mover/animal/deer_eating.pma"
+	lod_dist[0]: 20.0
+	lod_dist[1]: 40.0
+	lod_dist[2]: 70.0
+	lods[0]: "/model/mover/animal/deer_eating_lod1.pmd"
+	lods[1]: "/model/mover/animal/deer_eating_lod2.pmd"
+	lods[2]: "/model/mover/animal/deer_eating_lod3.pmd"
+}
 
 }

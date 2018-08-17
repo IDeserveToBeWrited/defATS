@@ -130,16 +130,22 @@ traffic_vehicle_type : traffic.vehicle_type.emergency
 {
 	tags[]: "road"
 
+	license_plate_type: car
+
 	storage_path: "/def/vehicle/traffic_storage_emergency.sii"
 }
 
 traffic_vehicle_type : traffic.vehicle_type.event
 {
+	license_plate_type: car
+	
 	storage_path: "/def/vehicle/traffic_storage_event.sii"
 }
 
 traffic_vehicle_type : traffic.vehicle_type.parked
 {
+	license_plate_type: car
+	
 	storage_path: "/def/vehicle/traffic_storage_parked.sii"
 }
 
@@ -153,6 +159,8 @@ traffic_vehicle_type : traffic.vehicle_type.escort_front
 	speed_class: car
 	
 	deceleration_limit: 6.0
+
+	cache_size: 0
 }
 
 traffic_vehicle_type : traffic.vehicle_type.escort_back
@@ -165,6 +173,8 @@ traffic_vehicle_type : traffic.vehicle_type.escort_back
 	speed_class: car
 	
 	deceleration_limit: 6.0
+
+	cache_size: 0
 }
 
 
