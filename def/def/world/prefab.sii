@@ -1707,6 +1707,35 @@ prefab_model : prefab.us_41n {
   semaphore_profile[]: 1x1_center_w
 }
 
+prefab_model : prefab.us_41t {
+  name: "us_cross_1-1_country_x_1-1_country_left_truck"
+	model_desc: "/prefab/cross_temp/us_cross_1-1_country_x_1-1_country_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_1-1_country_x_1-1_country_tmpl_truck_left.ppd"
+  
+  lod_desc: "/prefab/cross_temp/us_cross_1-1_country_x_1-1_country_tmpl_lod1.pmd"
+	lod_dist: 170
+  
+  corner0[]: shc1
+	corner0[]: kbc1
+  corner0[]: swc1
+  corner0[]: swc1p 
+  corner1[]: shc1
+	corner1[]: kbc1
+  corner1[]: swc1
+  corner1[]: swc1p
+  corner2[]: shc1
+	corner2[]: kbc1
+  corner2[]: swc1
+  corner2[]: swc1p 
+  corner3[]: shc1
+	corner3[]: kbc1
+  corner3[]: swc1
+  corner3[]: swc1p
+  
+  semaphore_profile[]: 1x1_park 
+  semaphore_profile[]: 1x1_center_w
+}
+
 
 prefab_model : prefab.us_55n {
   name:"us_cross_2-1-2_city_x_2-1-2_city"
@@ -3270,7 +3299,8 @@ prefab_model : prefab.d_az_mine {
 	model_desc: "/prefab/depots/az_mine/az_mine.pmd"
 	prefab_desc: "/prefab/depots/az_mine/az_mine.ppd"
 	use_perlin: false
-	
+	lod_desc: "/prefab/depots/az_mine/az_mine_lod1.pmd"
+	lod_dist: 50
 
 
 }       
@@ -5453,4 +5483,21 @@ prefab_model : prefab.us_351 {
 	prefab_desc: "/prefab/gas/gas_station_totem_hearts.ppd"
 
 }
+prefab_model : prefab.d_wd_hrv {
+	model_desc: "/prefab/depots/timber_harvest/timber_harvest.pmd"
+	prefab_desc: "/prefab/depots/timber_harvest/timber_harvest.ppd"
+	lod_desc: "/prefab/depots/timber_harvest/timber_harvest_lod1.pmd"
+	lod_dist: 51
+}
+
+prefab_model : prefab.d_hs_whs {
+
+  name:"home improvement warehouse"
+	model_desc: "/prefab/depots/home_improvement/or_home_improvement_warehouse.pmd"
+	prefab_desc: "/prefab/depots/home_improvement/or_home_improvement_warehouse.ppd"
+	
+	lod_desc:"/prefab/depots/home_improvement/or_home_improvement_warehouse_lod1.pmd"
+	lod_dist: 88
+}
+
 }  
