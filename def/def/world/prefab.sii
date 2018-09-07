@@ -2364,9 +2364,14 @@ prefab_model : prefab.us_159 {
 	prefab_desc: "/prefab/fork_temp/us_divide_1-1_country_exit_tmpl.ppd"
 
   corner0[]: sh11er
-  corner1[]: br_11exr  
+  corner0[]: sw11er
+  corner0[]: kb11er
   corner1[]: sh301  
+  corner1[]: sw301
+  corner1[]: kb301
   corner2[]: shv
+  corner2[]: kbv
+  corner2[]: swv
   
 }
 
@@ -2375,9 +2380,15 @@ prefab_model : prefab.us_160 {
 	model_desc: "/prefab/fork_temp/us_divide_1-1_country_exit_mirrored_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_divide_1-1_country_exit_mirrored_tmpl.ppd"
   
-  corner0[]: sh301
   corner1[]: sh11el
+  corner1[]: sw11el
+  corner1[]: kb11el
+  corner0[]: sh301  
+  corner0[]: sw301
+  corner0[]: kb301
   corner2[]: shv
+  corner2[]: kbv
+  corner2[]: swv
   
 }
 
@@ -2665,10 +2676,19 @@ prefab_model : prefab.us_166 {
 	model_desc: "/prefab/fork_temp/us_divide_1-1_country_exit_dbl_y_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_divide_1-1_country_exit_dbl_y_tmpl.ppd"
 
-  corner0[]: sh11er  
+  corner0[]: sh11er
+  corner0[]: sw11er
+  corner0[]: kb11er  
   corner1[]: sh11el 
+  corner1[]: sw11el
+  corner1[]: kb11el
   corner2[]: shv
+  corner2[]: kbv
+  corner2[]: swv
   corner3[]: shv
+  corner3[]: kbv
+  corner3[]: swv
+
   
 }
 
@@ -3826,9 +3846,11 @@ prefab_model : prefab.us_200 {
   corner0[]: sw30
   corner0[]: kb30
   corner1[]: sh11el
-  corner1[]: kb11el  
+  corner1[]: kb11el
+  corner1[]: sw11el  
   corner2[]: shv
   corner2[]: kbv
+  corner2[]: swv
 
 }
 
@@ -5427,12 +5449,7 @@ prefab_model : prefab.d_met_scr {
 	lod_dist: 57
 }
 
-prefab_model : prefab.wa_shoping {
-	model_desc: "/prefab/depots/shoppingmall/wa_shoppingmall_small.pmd"
-	prefab_desc: "/prefab/depots/shoppingmall/wa_shoppingmall_small.ppd"
-	name: "wa shoppingmall small"
-	use_perlin:	false
-}
+
 prefab_model : prefab.us_320 {
   name: "us_crossing_angled_0-2_country_xrail_1_mirrored"
 	model_desc: "/prefab/cross_temp/us_crossing_angled_0-2_country_xrail_1_mirrored_tmpl.pmd"
@@ -5453,14 +5470,14 @@ prefab_model : prefab.us_333 {
 	prefab_desc: "/prefab/fork_temp/us_divide_2-2_country_exit_tmpl.ppd"
 
   corner0[]: sh11er
-  corner1[]: sh301  
-  corner2[]: shv
   corner0[]: sw11er
-  corner0[]: kb11exr
+  corner0[]: kb11er
+  corner1[]: sh301  
   corner1[]: sw301
   corner1[]: kb301
-  corner2[]: kbv3
-  corner2[]: swv3
+  corner2[]: shv
+  corner2[]: kbv
+  corner2[]: swv
 }
 prefab_model : prefab.us_334 {
  name:"us_divide_2-2_country_exit_mirrored"
@@ -5471,11 +5488,11 @@ prefab_model : prefab.us_334 {
   corner1[]: sh11el
   corner2[]: shv
   corner1[]: sw11el
-  corner1[]: kb11exl
+  corner1[]: kb11el
   corner0[]: sw301
   corner0[]: kb301
-  corner2[]: kbv3
-  corner2[]: swv3
+  corner2[]: kbv
+  corner2[]: swv
 }
 prefab_model : prefab.us_351 {
 	name:"Hearts Gas Station Totem"
@@ -5488,6 +5505,13 @@ prefab_model : prefab.d_wd_hrv {
 	prefab_desc: "/prefab/depots/timber_harvest/timber_harvest.ppd"
 	lod_desc: "/prefab/depots/timber_harvest/timber_harvest_lod1.pmd"
 	lod_dist: 51
+}
+
+prefab_model : prefab.d_oil_gst2 {
+	name:"wa_fuel_storage1"
+	model_desc: "/prefab/depots/fuel_storage/wa_fuel_storage1.pmd"
+	prefab_desc: "/prefab/depots/fuel_storage/wa_fuel_storage1.ppd"
+
 }
 
 prefab_model : prefab.d_hs_whs {

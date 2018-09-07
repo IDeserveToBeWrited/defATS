@@ -260,7 +260,7 @@ building_model : bld_model.1034 {
 	model_desc: "/model/distribution/electricity/pole_wooden_h_single01.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_h_single01_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.1035 {
@@ -269,7 +269,7 @@ building_model : bld_model.1035 {
 	model_desc: "/model/distribution/electricity/pole_wooden_h_single02.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_h_single02_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.1036 {
@@ -278,7 +278,7 @@ building_model : bld_model.1036 {
 	model_desc: "/model/distribution/electricity/pole_wooden_m_single01.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_m_single01_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.1037 {
@@ -287,7 +287,7 @@ building_model : bld_model.1037 {
 	model_desc: "/model/distribution/electricity/pole_wooden_s_single01.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_s_single01_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.1038 {
@@ -296,7 +296,7 @@ building_model : bld_model.1038 {
 	model_desc: "/model/distribution/electricity/pole_wooden_s_single02.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_s_single02_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.1039 {
@@ -1027,9 +1027,16 @@ building_model : bld_model.1145 {
 
 building_model : bld_model.1146 {
 	single_part: true
-	model_desc: "/model/vegetation/hedge/hedge_coniferous_01.pmd"
-	width: 6
-  look_name: default
+	vegetation_model[]: vegetmodel.juniper5
+	vegetation_model[]: vegetmodel.juniper6
+	vegetation_model[]: vegetmodel.juniper.small1
+	vegetation_model[]: vegetmodel.juniper.small2
+	
+	width: 5
+  rand_rot: 25
+	min_scale: 0.95
+	max_scale: 1.05
+	
 }
 
 building_model : bld_model.1147 {
@@ -1074,10 +1081,10 @@ building_model : bld_model.1151 {
 
 building_model : bld_model.1152 {
 	single_part: true
-	vegetation_model[]: vegetmodel.bush3_inst
-	vegetation_model[]: vegetmodel.bush3_inst
-	vegetation_model[]: vegetmodel.bush2_inst
-	vegetation_model[]: vegetmodel.bush3_inst
+	vegetation_model[]: vegetmodel.bush3
+	vegetation_model[]: vegetmodel.bush3
+	vegetation_model[]: vegetmodel.bush2
+	vegetation_model[]: vegetmodel.bush3
 
 	width: 5
   rand_rot: 360
@@ -1523,7 +1530,7 @@ building_model : bld_model.nm_118 {
 	model_desc: "/model/distribution/electricity/pole_wooden_h_single01_90.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_h_single01_90_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.nm_119 {
@@ -1532,7 +1539,7 @@ building_model : bld_model.nm_119 {
 	model_desc: "/model/distribution/electricity/pole_wooden_h_single03_lamp_90.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_h_single03_lamp_90_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.nm_120 {
@@ -1541,7 +1548,7 @@ building_model : bld_model.nm_120 {
 	model_desc: "/model/distribution/electricity/pole_wooden_m_single01_90.pmd"
 	look_name: default
 	lod_desc: "/model/distribution/electricity/pole_wooden_m_single01_90_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.nm_121 {
@@ -1714,7 +1721,7 @@ building_model : bld_model.or_1 {
 	railing_model: true
 	model_desc: "/model/distribution/electricity/or_pole_wooden_junction01.pmd"
 	lod_desc: "/model/distribution/electricity/or_pole_wooden_junction01_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 }
 
 building_model : bld_model.nm_61 {
@@ -1800,12 +1807,12 @@ building_model : bld_model.nm_48 {
 
 building_model : bld_model.nm_49 {
 	single_part: true
-	vegetation_model[]: vegetmodel.hedge.coniferous.bright1a.nm
-	vegetation_model[]: vegetmodel.hedge.coniferous.bright1b.nm
-	vegetation_model[]: vegetmodel.hedge.coniferous.bright1c.nm
-	vegetation_model[]: vegetmodel.hedge.coniferous.bright1d.nm
+	vegetation_model[]: vegetmodel.juniper_dry1
+	vegetation_model[]: vegetmodel.juniper_dry2
+	vegetation_model[]: vegetmodel.juniper.small_dry1
+	vegetation_model[]: vegetmodel.juniper.small_dry2
 
-	width: 4
+	width: 5
   rand_rot: 25
 	min_scale: 0.95
 	max_scale: 1.05
@@ -2159,7 +2166,7 @@ building_model : bld_model.scheme1224 {
 	railing_model: true
 	model_desc: "/model/distribution/electricity/pole_wooden_h_single04.pmd"
 	lod_desc: "/model/distribution/electricity/pole_wooden_h_single04_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 50
 	
 }
 building_model : bld_model.or_31 {
@@ -3140,17 +3147,17 @@ building_model : bld_model.wa_11 {
 	follow_curve_dir: true
 }
 building_model : bld_model.wa_15 {
-	model_desc: "/model/barrier/concrete/us_jersey_barrier1_building.pmd"
+	model_desc: "/model/barrier/concrete/us_jersey_barrier1_high_building.pmd"
 	railing_model: true
 	follow_curve_dir: true
-  lod_desc: "/model/barrier/concrete/us_jersey_barrier1_building_lod1.pmd"
+  lod_desc: "/model/barrier/concrete/us_jersey_barrier1_high_building_lod1.pmd"
 	lod_dist: 100 
 }
 building_model : bld_model.wa_16 {
-	model_desc: "/model/barrier/concrete/us_jersey_barrier2_building.pmd"
+	model_desc: "/model/barrier/concrete/us_jersey_barrier2_high_building.pmd"
 	railing_model: true
 	follow_curve_dir: true
-  lod_desc: "/model/barrier/concrete/us_jersey_barrier2_building_lod1.pmd"
+  lod_desc: "/model/barrier/concrete/us_jersey_barrier2_high_building_lod1.pmd"
 	lod_dist: 100
 }
 building_model : bld_model.wa_19 {
@@ -3239,5 +3246,42 @@ building_model : bld_model.or_27 {
 	railing_model: true
 	model_desc: "/model/props/construction/or_concrete_decal.pmd"
 }
+building_model : bld_model.or_141 {
+	follow_curve_dir: true
+	railing_model: true
+	model_desc: "/model/barrier/concrete/us_jersey_barrier1_small_building.pmd"
+  
+  lod_desc: "/model/barrier/concrete/us_jersey_barrier1_small_building_lod1.pmd"
+	lod_dist: 100 
+}
+building_model : bld_model.or_142 {
+	follow_curve_dir: true
+	railing_model: true
+	model_desc: "/model/barrier/concrete/us_jersey_barrier2_small_building.pmd"
+  
+  lod_desc: "/model/barrier/concrete/us_jersey_barrier2_small_building_lod1.pmd"
+	lod_dist: 100 
+}
 
+building_model : bld_model.or_64 {
+	follow_curve_dir: true
+	railing_model: true
+	model_desc: "/model/railing/or_grass_stripe5m_round.pmd"
+}
+
+building_model : bld_model.dlc_fr_214 {
+	railing_model: true
+	follow_curve_dir: true
+	model_desc: "/model/wall/hedge_coniferous_tall.pmd"
+}
+building_model : bld_model.dlc_fr_215 {
+	railing_model: true
+	follow_curve_dir: true
+	model_desc: "/model/wall/hedge_coniferous_pedestal.pmd"
+}
+building_model : bld_model.dlc_fr_216 {
+	railing_model: true
+	follow_curve_dir: true
+	model_desc: "/model/wall/hedge_coniferous_tall_pedestal.pmd"
+}
 }

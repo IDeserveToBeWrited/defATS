@@ -157,6 +157,8 @@ traffic_lane_data : traffic_lane.road.divided.tram
 
 traffic_lane_data : traffic_lane.rail.tram
 {
+	speed_class: rail_tram
+
 	traffic_rules[]: traffic_rule.rail_tram
 	traffic_rules[]: traffic_rule.s_tram
 }
@@ -168,6 +170,8 @@ traffic_lane_data : traffic_lane.no_vehicles
 
 traffic_lane_data : traffic_lane.rail.train
 {
+	speed_class: rail_train
+
 	traffic_rules[]: traffic_rule.rail_train
 	traffic_rules[]: traffic_rule.s_train_c
 	traffic_rules[]: traffic_rule.s_train_p
@@ -175,12 +179,16 @@ traffic_lane_data : traffic_lane.rail.train
 
 traffic_lane_data : traffic_lane.rail.train.cargo
 {
+	speed_class: rail_train
+
 	traffic_rules[]: traffic_rule.rail_train
 	traffic_rules[]: traffic_rule.s_train_c
 }
 
 traffic_lane_data : traffic_lane.rail.train.passenger
 {
+	speed_class: rail_train
+
 	traffic_rules[]: traffic_rule.rail_train
 	traffic_rules[]: traffic_rule.s_train_p
 }

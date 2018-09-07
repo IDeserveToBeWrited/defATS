@@ -3,21 +3,10 @@ SiiNunit
 accessory_chassis_data : .chassis
 {
 	detail_model: "/vehicle/trailer/scs_flatbed/curtain/dolly.pmd"
-	
 	model: "/vehicle/trailer/scs_flatbed/curtain/dolly_lod_0.pmd"
 	lods[]: "/vehicle/trailer/scs_flatbed/curtain/dolly_lod_1.pmd"
 	lods[]: "/vehicle/trailer/scs_flatbed/curtain/dolly_lod_2.pmd"
 	collision: "/vehicle/trailer/scs_flatbed/curtain/dolly.pmc"
-
-
-	residual_travel[]: 0.12
-
-	
-	liftable_axle[]: false
-
-
-	trailer_mass: 1200.0
-
 	variant: default
 	look: default
 
@@ -27,6 +16,10 @@ accessory_chassis_data : .chassis
 	extended_shadow_fadeout_length: 0
 
 	ui_shadow: "/vehicle/trailer/scs_flatbed/curtain/shadow_dolly.pmd"
-}
-}
 
+	trailer_mass: 1270.1	# 2800 lbs
+	weight_distribution: trailer
+
+	residual_travel[]: 0.12
+}
+}
