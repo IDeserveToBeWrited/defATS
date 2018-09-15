@@ -508,6 +508,14 @@ traffic_rule_data : traffic_rule.slow_only
 	additional_rules[]: traffic_rule.s_slow
 }
 
+traffic_rule_data : traffic_rule.train_stop_v
+{
+	name: "Train very short stop"
+
+	rule: "stop"
+	num_params[]: 4.0
+}
+
 traffic_rule_data : traffic_rule.train_stop_s
 {
 	name: "Train stop short"

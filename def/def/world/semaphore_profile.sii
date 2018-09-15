@@ -512,6 +512,22 @@ tr_semaphore_profile : tr_sem_prof.crossing_o {
 	id_offset: 20
 }
 
+tr_semaphore_profile : tr_sem_prof.cross_tram {
+	
+	name: "road crossing - tram"
+
+	inherited: tr_sem_prof.crossing
+
+	# Distances in [m]:
+	#
+	# crossing <-> object rear (green)
+	# object front <-> crossing (orange-to-red)
+	# object front <-> crossing (red)
+	# crossing <-> object rear (orange-to-green)
+	#
+	interval[]: (15.0, 100.0, 80.0, 10.0)
+}
+
 tr_semaphore_profile : tr_sem_prof.train {
 
 	name: "train stop"
