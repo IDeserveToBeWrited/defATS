@@ -7775,6 +7775,7 @@ sign_model : sign.685 {
 	model_desc: "/model/props/lamp/or_junction_lamp1.pmd"
 	model_coll: "/model/props/lamp/or_junction_lamp1.pmc"
 	look_name: Default
+	dynamic: false
 	road_model: true
 }
 
@@ -7879,7 +7880,7 @@ sign_model : sign.690 {
 
 	model_desc: "/model/sign/traffic/us_tsunami_hazard_zone.pmd"
 	model_coll: "/model/sign/traffic/us_tsunami_hazard_zone.pmc"
-	look_name: defaul
+	look_name: default
 	dynamic: true
 	mass: 100
 
@@ -8346,6 +8347,19 @@ sign_model : sign.731 {
 	dynamic: true
 	mass: 100
 
+}
+sign_model : sign.732 {
+
+	sign_name: "US truck speed limit 55 mph"
+
+	model_desc: "/model/sign/traffic/us_speed_60mph_55mph.pmd"
+	model_coll: "/model/sign/traffic/us_speed_60mph_55mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_55
 }
 
 
