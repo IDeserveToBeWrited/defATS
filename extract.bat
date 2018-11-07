@@ -27,6 +27,8 @@ ECHO Extracting dlc_nevada archive
 %EXTRACTOR% dlc_nevada.scs %LOCATION%\dlc_nevada >NUL
 ECHO Extracting dlc_nm archive
 %EXTRACTOR% dlc_nm.scs %LOCATION%\dlc_nm >NUL
+ECHO Extracting dlc_oversize archive
+%EXTRACTOR% dlc_oversize.scs %LOCATION%\dlc_oversize >NUL
 ECHO Extracting dlc_peterbilt_389 archive
 %EXTRACTOR% dlc_peterbilt_389.scs %LOCATION%\dlc_peterbilt_389 >NUL
 ECHO Extracting dlc_peterbilt_579 archive
@@ -37,6 +39,8 @@ ECHO Extracting dlc_sci_st_wheels archive
 %EXTRACTOR% dlc_sci_st_wheels.scs %LOCATION%\dlc_sci_st_wheels >NUL
 ECHO Extracting dlc_steampunk archive
 %EXTRACTOR% dlc_steampunk.scs %LOCATION%\dlc_steampunk >NUL
+ECHO Extracting dlc_volvo_vnl archive
+%EXTRACTOR% dlc_volvo_vnl.scs %LOCATION%\dlc_volvo_vnl >NUL
 
 ECHO.
 ECHO.
@@ -92,6 +96,14 @@ RMDIR "%LOCATION%\dlc_nm\model" /s /q
 RMDIR "%LOCATION%\dlc_nm\prefab" /s /q
 DEL %LOCATION%\dlc_nm\dlc_nm.manifest.sii
 
+:: dlc_oversize
+RMDIR "%LOCATION%\dlc_oversize\automat" /s /q
+RMDIR "%LOCATION%\dlc_oversize\map" /s /q
+RMDIR "%LOCATION%\dlc_oversize\model" /s /q
+RMDIR "%LOCATION%\dlc_oversize\unit" /s /q
+RMDIR "%LOCATION%\dlc_oversize\vehicle" /s /q
+DEL %LOCATION%\dlc_oversize\dlc_oversize.manifest.sii
+
 :: dlc_peterbilt_389
 RMDIR "%LOCATION%\dlc_peterbilt_389\automat" /s /q
 RMDIR "%LOCATION%\dlc_peterbilt_389\material" /s /q
@@ -121,6 +133,13 @@ DEL %LOCATION%\dlc_sci_st_wheels\dlc_sci_st_wheels.manifest.sii
 RMDIR "%LOCATION%\dlc_steampunk\material" /s /q
 RMDIR "%LOCATION%\dlc_steampunk\vehicle" /s /q
 DEL %LOCATION%\dlc_steampunk\dlc_steampunk.manifest.sii
+
+:: dlc_volvo_vnl
+RMDIR "%LOCATION%\dlc_volvo_vnl\automat" /s /q
+RMDIR "%LOCATION%\dlc_volvo_vnl\material" /s /q
+RMDIR "%LOCATION%\dlc_volvo_vnl\sound" /s /q
+RMDIR "%LOCATION%\dlc_volvo_vnl\vehicle" /s /q
+DEL %LOCATION%\dlc_volvo_vnl\dlc_volvo_vnl.manifest.sii
 
 ECHO Cleaned up
 

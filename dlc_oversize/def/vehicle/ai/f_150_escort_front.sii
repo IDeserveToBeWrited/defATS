@@ -1,0 +1,37 @@
+traffic_vehicle : traffic.f_150_e_e.front
+{
+	accessories[]: .f_150_e.front.chassis
+	accessories[]: .f_150_e.front.fwheel
+	accessories[]: .f_150_e.front.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 3000
+
+
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .f_150_e.front.chassis
+{
+	data_path: "/def/vehicle/ai/f_150/chassis_e.sii"
+}
+
+vehicle_wheel_accessory: .f_150_e.front.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_20in_o_3.sii"
+}
+
+vehicle_wheel_accessory: .f_150_e.front.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o_3.sii"
+}
+
