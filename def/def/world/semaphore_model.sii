@@ -45,6 +45,15 @@ tr_semaphore_model : tr_sem_mdl.temporary {
 	model_coll: "/model/sign/traffic_light/temporary.pmc"
 }
 
+tr_semaphore_model : tr_sem_mdl.check {
+
+	name: "check"
+
+	model_desc: "/model/sign/traffic_light/check_semaphore.pmd"
+	model_coll: "/model/sign/traffic_light/check_semaphore.pmc"
+}
+
+
 
 tr_semaphore_model : tr_sem_mdl.double {
 
@@ -525,5 +534,11 @@ tr_semaphore_model : tr_sem_mdl.or_draw_br {
 	state_collision[3]: true
 	
 }
+tr_semaphore_model : tr_sem_mdl.dbl_sh_o_m {
 
+	name: "double_short_one_mirror"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_one_mirror.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_one_mirror.pmc"
+}
 }

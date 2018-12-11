@@ -369,6 +369,23 @@ tr_semaphore_profile : tr_sem_prof.temporary {
 	cycle[1]: 25.0
 }
 
+tr_semaphore_profile : tr_sem_prof.check {
+
+	name: "check traffic light"
+
+	model[]: "check"
+
+	type: 2
+	type[0]: traffic_light_blockable
+	type[1]: traffic_light_blockable
+
+	interval[]: (10.0, 0.0, 15.0, 0.0)
+
+	cycle: 2
+	cycle[0]: 0.0
+	cycle[1]: 25.0
+}
+
 tr_semaphore_profile : tr_sem_prof.ab_toll {
 
 	name: "tollgate"
@@ -663,7 +680,7 @@ tr_semaphore_profile : tr_sem_prof.1t1 {
 	model[]: "single"
 	model[]: "column"
 	model[]: "single"
-	model[]: "single_nl_o"
+	model[]: "single_nl"
 	model[]: ""
 
 }
@@ -737,10 +754,10 @@ tr_semaphore_profile : tr_sem_prof.2t2 {
 
 	name: "us 2t2"
 
-	model[]: "double_sh_o"
-	model[]: "single_nl_o"
 	model[]: "double_sh"
-	model[]: "dbl_sh_nl_o"
+	model[]: "single_nl"
+	model[]: "double_sh"
+	model[]: "dbl_sh_nl"
 	model[]: ""
 }
 
@@ -750,10 +767,10 @@ tr_semaphore_profile : tr_sem_prof.111t111 {
 
 	name: "us 111t111"
 
-	model[]: "double_sh_o"
-	model[]: "single_nl_o"
+	model[]: "double_sh"
+	model[]: "single_nl"
 	model[]: "single"
-	model[]: "dbl_sh_nl_o"
+	model[]: "dbl_sh_nl"
 	model[]: ""
 }
 
@@ -803,8 +820,8 @@ tr_semaphore_profile : tr_sem_prof.2t1 {
 	name: "us 2t1"
 
 	model[]: "column"
-	model[]: "double_sh_o"
-	model[]: "single_nl_o"
+	model[]: "double_sh"
+	model[]: "single_nl"
 	model[]: "double_sh"
 	model[]: ""
 }    
@@ -860,9 +877,9 @@ tr_semaphore_profile : tr_sem_prof.212t111 {
 
 	name: "us 2-1-2 t 1-1-1"
 
-	model[]: "dbl_sh_nl_o"
-	model[]: "dbl_cut_o"
-	model[]: "single_nl_o"
+	model[]: "dbl_sh_nl"
+	model[]: "double_cut"
+	model[]: "single_nl"
 	model[]: "double_sh"
 	model[4]: ""
 	model[5]: ""
@@ -910,7 +927,7 @@ tr_semaphore_profile : tr_sem_prof.212t212 {
 
 	model[]: "dbl_sh_nl"
 	model[]: "dbl_cut_o"
-	model[]: "dbl_sh_nl_o"
+	model[]: "dbl_sh_nl"
 	model[]: "double_sh"
 	model[4]: ""
 	model[5]: ""

@@ -171,6 +171,10 @@ road_look : road.us_tmpl11 {
 	lanes_right[]:	traffic_lane.road.freeway.low_density
 
 	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
 
 	shoulder_space_right:		3.0
 }
@@ -1095,6 +1099,14 @@ road_look : road.us_tmpl29 {
 	compatible_edges_right[]: "sw_4m_dn"
 	compatible_edges_right[]: "sw_4m_e"
 	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dw_sh"
 
 	shoulder_space_left:		3.0
 	shoulder_space_right:		3.0
@@ -1187,6 +1199,8 @@ road_look : road.us_tmpl30 {
 	compatible_edges_right[]: "sw_4m_dn"
 	compatible_edges_right[]: "sw_4m_e"
 	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
 	compatible_edges_right[]: "dw_sw_disp"
   compatible_edges_right[]: "dw2_con"
   compatible_edges_right[]: "dw4_con"
@@ -1720,6 +1734,20 @@ road_template_variant : .tmpl_var.road.nm_tmpl02
 road_look : road.nm_tmpl03{
 	name: 			"us 0-4 freeway"
 	template_right:		"/road_template/us/us_4_freeway_one_way.pmd"
+	
+  overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
+  overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
+  overlay_schemes[]: "small_crc : 1.0 : _l0|7 : _l1|7 : _l2|7 : _l3|7 : _l4|7"
+  overlay_schemes[]: "ladder_str : 1.0 : _c0|4 : _c1|4 : _c2|5 : _c3|7 : _c4|7 : _c5|7 : _c6|2 : _c7|4 : _c8|4 : _c9|5"
+  overlay_schemes[]: "ladder_crv : 1.0 : _d0|4 : _d1|4 : _d2|5 : _d3|7 : _d4|7 : _d5|7 : _d6|2 : _d7|4 : _d8|4 : _d9|5"
+  overlay_schemes[]: "shoulder : 1.0 : _e0|4 : _e1|4 : _e2|5"
+  overlay_schemes[]: "center : 1.0 : _f0|5 : _f1|5 : _f2|5"
+  overlay_schemes[]: "center_brk : 1.0 : _h0|4 : _h1|4 : _h2|5 : _h3|7 : _h4|7 :  _h5|7 : _h6|2"  
+  overlay_schemes[]: "grille_crc : 1.0 : _m0|7 : _m1|7 : _m2|7 : _m3|7 : _m4|7"
+  overlay_schemes[]: "grille_or : 1.0 : _g0|4"
+  overlay_schemes[]: "lines : 1.0 : _i0|4 : _i1|4 : _i2|5"
+  overlay_schemes[]: "stripes : 1.0 : _j0|4 : _j1|4 : _j2|5 : _j3|5" 
+  overlay_schemes[]: "stripes_lin : 1.0 : _k0|4 : _k1|4 : _k2|5 : _k3|7 : _k4|7"
 
 	template_variants_right[]: .tmpl_var.road.nm_tmpl03.1
 	template_variants_right[]: .tmpl_var.road.nm_tmpl03.2
@@ -3096,5 +3124,34 @@ road_look : road.us_tmpl53a {
 
 	shoulder_space_left:		0.0
 	shoulder_space_right:		0.0
+}
+road_look : road.us_tmpl54a {
+	name: 			"us 0-5 freeway"
+	template_right:		"/road_template/us/us_5_freeway_one_way.pmd"
+
+  overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
+  overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
+  overlay_schemes[]: "small_crc : 1.0 : _l0|7 : _l1|7 : _l2|7 : _l3|7 : _l4|7"
+  overlay_schemes[]: "ladder_str : 1.0 : _c0|4 : _c1|4 : _c2|5 : _c3|7 : _c4|7 : _c5|7 : _c6|2 : _c7|4 : _c8|4 : _c9|5"
+  overlay_schemes[]: "ladder_crv : 1.0 : _d0|4 : _d1|4 : _d2|5 : _d3|7 : _d4|7 : _d5|7 : _d6|2 : _d7|4 : _d8|4 : _d9|5"
+  overlay_schemes[]: "shoulder : 1.0 : _e0|4 : _e1|4 : _e2|5"
+  overlay_schemes[]: "center : 1.0 : _f0|5 : _f1|5 : _f2|5"
+  overlay_schemes[]: "center_brk : 1.0 : _h0|4 : _h1|4 : _h2|5 : _h3|7 : _h4|7 :  _h5|7 : _h6|2"  
+  overlay_schemes[]: "grille_crc : 1.0 : _m0|7 : _m1|7 : _m2|7 : _m3|7 : _m4|7"
+  overlay_schemes[]: "grille_or : 1.0 : _g0|4"
+  overlay_schemes[]: "lines : 1.0 : _i0|4 : _i1|4 : _i2|5"
+  overlay_schemes[]: "stripes : 1.0 : _j0|4 : _j1|4 : _j2|5 : _j3|5" 
+  overlay_schemes[]: "stripes_lin : 1.0 : _k0|4 : _k1|4 : _k2|5 : _k3|7 : _k4|7"
+
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway
+	lanes_right[]:	traffic_lane.road.freeway
+
+
+	compatible_edges_right[]: "sh"
+
+	shoulder_space_right:		3.0
 }
 }

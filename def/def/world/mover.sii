@@ -35,6 +35,11 @@ mover_model : mover.towingshipd {
 	mover_name: "Towing ship D"
 	model_desc: "/model/mover/boat/towing_ship_d.pmd"
 }
+mover_model : mover.boat_proba {
+	mover_name: "Towing ship random presence"
+	model_desc: "/model/mover/boat/towing_ship.pmd"
+	probability: 0.2
+}
 mover_model : mover.barge {
 	mover_name: "barge cargo ship hanover express"
 	model_desc: "/model/mover/boat/barge.pmd"
@@ -622,14 +627,18 @@ mover_model : mover.yacht02 {
 mover_model : mover.yacht03 {
 	mover_name: "yachts moving 01"
 	model_desc: "/model/mover/yachts_moving_01.pmd"
+	model_anim: "/model/mover/ships_anim.pma"
+	
 }
 mover_model : mover.yacht04 {
 	mover_name: "yachts moving 02"
 	model_desc: "/model/mover/yachts_moving_02.pmd"
+	model_anim: "/model/mover/ships_anim_new.pma"
 }
 mover_model : mover.yacht05 {
 	mover_name: "yachts moving 03"
 	model_desc: "/model/mover/yachts_moving_03.pmd"
+	model_anim: "/model/mover/ships_anim_for_03.pma"
 }
 mover_model : mover.srvcmn_broom {
 	mover_name: "srvcmn_broom"
@@ -660,6 +669,24 @@ mover_model : mover.work_spong {
 	mover_name: "work_spong"
 	model_desc: "/model/mover/characters/new_generation/models/characters_with_props/worker_with_sponge_prefab.pmd"
 	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/sponge_prop_anim.pma"
+}
+
+mover_model : mover.detour1 {
+	mover_name: "air_ambulance"
+	model_desc: "/model/vehicle/event/air_ambulance.pmd"
+	model_anim: "/model/vehicle/event/air_ambulance.pma"
+	sound_path[]: "/sound/mover/heli_middle.ogg"
+	sound_max_dist: 100
+}
+mover_model : mover.b737_800 {
+	mover_name: "Boeing 737-800"
+	model_desc: "/model/mover/aircraft/b737_800/b737_800.pmd"
+}
+mover_model : mover.adv_food1 {
+	mover_name: "adv fastfood1 anim"
+	model_desc: "/model/mover/props/adverts/or_adv_fastfood1_anim.pmd"
+	model_anim: "/model/mover/props/adverts/or_adv_fastfood1_anim.pma"
+	model_coll: "/model/mover/props/adverts/or_adv_fastfood1_anim.pmc"
 }
 
 }

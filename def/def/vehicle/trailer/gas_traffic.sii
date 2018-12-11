@@ -3,10 +3,11 @@ traffic_trailer : traffic.trailer.gas
 	accessories[]: .traffic.gas.tchassis
 	accessories[]: .traffic.gas.trwheel0
 	accessories[]: .traffic.gas.trwheel1
+	accessories[]: .traffic.gas.paintjob
 
 	cargo_mass: 14288
 
-	variant[]: .traffic.trailer.gas.gallon
+	company_paint_job: true
 }
 vehicle_accessory: .traffic.gas.tchassis
 {
@@ -22,32 +23,7 @@ vehicle_wheel_accessory: .traffic.gas.trwheel1
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-
-
-traffic_trailer : .traffic.trailer.gas.gallon
+vehicle_paint_job_accessory: .traffic.gas.paintjob
 {
-	accessories[]: .traffic.gas.tchassis.gallon
-	accessories[]: .traffic.gas.trwheel0.gallon
-	accessories[]: .traffic.gas.trwheel1.gallon
-	accessories[]: .traffic.gas.paintjob.gallon
-
-	cargo_mass: 14288
-}
-vehicle_accessory: .traffic.gas.tchassis.gallon
-{
-	data_path: "/def/vehicle/trailer/gas/chassis.sii"
-}
-vehicle_wheel_accessory: .traffic.gas.trwheel0.gallon
-{
-	offset: 0
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_wheel_accessory: .traffic.gas.trwheel1.gallon
-{
-	offset: 2
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_paint_job_accessory: .traffic.gas.paintjob.gallon
-{
-    	data_path: "/def/vehicle/trailer/gas/company_paint_job/gallon.sii"
+	data_path: "/def/vehicle/trailer/gas/company_paint_job/default.sii"
 }

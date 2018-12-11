@@ -3,10 +3,11 @@ traffic_trailer : traffic.trailer.chemical
 	accessories[]: .traffic.chemical.tchassis
 	accessories[]: .traffic.chemical.trwheel0
 	accessories[]: .traffic.chemical.trwheel1
+	accessories[]: .traffic.chemical.paintjob
 
 	cargo_mass: 14288
 
-	variant[]: .traffic.trailer.chemical.chemso
+	company_paint_job: true
 }
 vehicle_accessory: .traffic.chemical.tchassis
 {
@@ -22,32 +23,7 @@ vehicle_wheel_accessory: .traffic.chemical.trwheel1
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-
-
-traffic_trailer : .traffic.trailer.chemical.chemso
+vehicle_paint_job_accessory: .traffic.chemical.paintjob
 {
-	accessories[]: .traffic.chemical.tchassis.chemso
-	accessories[]: .traffic.chemical.trwheel0.chemso
-	accessories[]: .traffic.chemical.trwheel1.chemso
-	accessories[]: .traffic.chemical.paintjob.chemso
-
-	cargo_mass: 14288
-}
-vehicle_accessory: .traffic.chemical.tchassis.chemso
-{
-	data_path: "/def/vehicle/trailer/chemical/chassis.sii"
-}
-vehicle_wheel_accessory: .traffic.chemical.trwheel0.chemso
-{
-	offset: 0
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_wheel_accessory: .traffic.chemical.trwheel1.chemso
-{
-	offset: 2
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_paint_job_accessory: .traffic.chemical.paintjob.chemso
-{
-    	data_path: "/def/vehicle/trailer/chemical/company_paint_job/chemso.sii"
+    	data_path: "/def/vehicle/trailer/chemical/company_paint_job/default.sii"
 }

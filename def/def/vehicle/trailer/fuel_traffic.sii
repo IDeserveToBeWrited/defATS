@@ -3,11 +3,11 @@ traffic_trailer : traffic.trailer.fuel
 	accessories[]: .traffic.fuel.tchassis
 	accessories[]: .traffic.fuel.trwheel0
 	accessories[]: .traffic.fuel.trwheel1
+	accessories[]: .traffic.fuel.paintjob
 
 	cargo_mass: 15649
 
-	variant[]: .traffic.trailer.fuel.chemso
-	variant[]: .traffic.trailer.fuel.gallon
+	company_paint_job: true
 }
 vehicle_accessory: .traffic.fuel.tchassis
 {
@@ -23,63 +23,7 @@ vehicle_wheel_accessory: .traffic.fuel.trwheel1
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-
-
-
-traffic_trailer : .traffic.trailer.fuel.chemso
+vehicle_paint_job_accessory: .traffic.fuel.paintjob
 {
-	accessories[]: .traffic.fuel.tchassis.chemso
-	accessories[]: .traffic.fuel.trwheel0.chemso
-	accessories[]: .traffic.fuel.trwheel1.chemso
-	accessories[]: .traffic.fuel.paintjob.chemso
-
-	cargo_mass: 15649
-}
-vehicle_accessory: .traffic.fuel.tchassis.chemso
-{
-	data_path: "/def/vehicle/trailer/fuel/chassis.sii"
-}
-vehicle_wheel_accessory: .traffic.fuel.trwheel0.chemso
-{
-	offset: 0
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_wheel_accessory: .traffic.fuel.trwheel1.chemso
-{
-	offset: 2
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_paint_job_accessory: .traffic.fuel.paintjob.chemso
-{
-    	data_path: "/def/vehicle/trailer/fuel/company_paint_job/chemso.sii"
-}
-
-
-
-traffic_trailer : .traffic.trailer.fuel.gallon
-{
-	accessories[]: .traffic.fuel.tchassis.gallon
-	accessories[]: .traffic.fuel.trwheel0.gallon
-	accessories[]: .traffic.fuel.trwheel1.gallon
-	accessories[]: .traffic.fuel.paintjob.gallon
-
-	cargo_mass: 15649
-}
-vehicle_accessory: .traffic.fuel.tchassis.gallon
-{
-	data_path: "/def/vehicle/trailer/fuel/chassis.sii"
-}
-vehicle_wheel_accessory: .traffic.fuel.trwheel0.gallon
-{
-	offset: 0
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_wheel_accessory: .traffic.fuel.trwheel1.gallon
-{
-	offset: 2
-	data_path: "/def/vehicle/t_wheel/single.sii"
-}
-vehicle_paint_job_accessory: .traffic.fuel.paintjob.gallon
-{
-    	data_path: "/def/vehicle/trailer/fuel/company_paint_job/gallon.sii"
+    	data_path: "/def/vehicle/trailer/fuel/company_paint_job/default.sii"
 }

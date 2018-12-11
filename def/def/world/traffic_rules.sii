@@ -328,8 +328,12 @@ traffic_rule_data : traffic_rule.car_truck_on
 {
 	name: "Cars and trucks only"
 	rule: "actor_access"
-	num_params[]: 1 # 0 - disallow, 1 - allow
-	num_params[]: 1 # 0 - inclusive, 1 - exclusive
+
+	num_params[]: 1		# 0 - disallow, 1 - allow
+	num_params[]: 1		# 0 - inclusive, 1 - exclusive
+	num_params[]: 1 	# set vehicle access
+	num_params[]: 0 	# no change to trailer access
+
 	str_params[]: "car"
 	str_params[]: "car_city"
 	str_params[]: "truck"
@@ -510,7 +514,7 @@ traffic_rule_data : traffic_rule.slow_only
 
 traffic_rule_data : traffic_rule.train_stop_v
 {
-	name: "Train very short stop"
+	name: "Train stop very short"
 
 	rule: "stop"
 	num_params[]: 4.0
