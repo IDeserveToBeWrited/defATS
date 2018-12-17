@@ -1,0 +1,692 @@
+SiiNunit
+{
+
+mover_model : mover.balloon {
+	mover_name: "Balloon"
+	model_desc: "/model/mover/aircraft/balloon.pmd"
+}
+mover_model : mover.waterpump {
+	mover_name: "waterpump"
+	model_desc: "/model/mover/machine/waterpump.pmd"
+	model_anim: "/model/mover/machine/waterp_r.pma"
+}
+mover_model : mover.eagles {
+	mover_name: "eagles"
+	model_desc: "/model/mover/animal/eagles.pmd"
+	model_anim: "/model/mover/animal/eagles.pma"
+}
+mover_model : mover.eagles2 {
+	mover_name: "eagles2"
+	model_desc: "/model/mover/animal/eagles2.pmd"
+	model_anim: "/model/mover/animal/eagles2.pma"
+}
+
+mover_model : mover.wind_pp {
+	mover_name: "Wind Powerplant"
+	model_desc: "/model/mover/machine/wind_powerplant.pmd"
+	model_anim: "/model/mover/machine/wind_pp.pma"
+	sound_path[]: "/sound/mover/wind_powerplant.ogg"
+}
+mover_model : mover.towingship {
+	mover_name: "Towing ship"
+	model_desc: "/model/mover/boat/towing_ship.pmd"
+}
+mover_model : mover.towingshipd {
+	mover_name: "Towing ship D"
+	model_desc: "/model/mover/boat/towing_ship_d.pmd"
+}
+mover_model : mover.boat_proba {
+	mover_name: "Towing ship random presence"
+	model_desc: "/model/mover/boat/towing_ship.pmd"
+	probability: 0.2
+}
+mover_model : mover.barge {
+	mover_name: "barge cargo ship hanover express"
+	model_desc: "/model/mover/boat/barge.pmd"
+}
+mover_model : mover.towed_barge {
+	mover_name: "barge cargo ship towed"
+	model_desc: "/model/mover/boat/towed_barge.pmd"
+}
+mover_model : mover.ind_train {
+	mover_name: "industrial train"
+	model_desc: "/model/mover/train/industrial_train.pmd"
+	sound_path[]: "/sound/mover/train1.ogg"
+	sound_path[]: "/sound/mover/train2.ogg"
+	sound_min_dist: 20
+	sound_max_dist: 200
+	tags[]: "rail_train"
+}
+mover_model : mover.ind_train02 {
+	mover_name: "industrial train02"
+	model_desc: "/model/mover/train/industrial_train_02.pmd"
+	sound_path[]: "/sound/mover/train1.ogg"
+	sound_path[]: "/sound/mover/train2.ogg"
+	sound_min_dist: 20
+	sound_max_dist: 200
+	tags[]: "rail_train"
+}
+mover_model : mover.ind_train03 {
+	mover_name: "industrial train03"
+	model_desc: "/model/mover/train/industrial_train_03.pmd"
+	sound_path[]: "/sound/mover/train1.ogg"
+	sound_path[]: "/sound/mover/train2.ogg"
+	sound_min_dist: 20
+	sound_max_dist: 200
+	tags[]: "rail_train"
+}
+mover_model : mover.ind_train04 {
+	mover_name: "industrial train04"
+	model_desc: "/model/mover/train/industrial_train_04.pmd"
+	sound_path[]: "/sound/mover/train1.ogg"
+	sound_path[]: "/sound/mover/train2.ogg"
+	sound_min_dist: 20
+	sound_max_dist: 200
+	tags[]: "rail_train"
+}
+mover_model : mover.wind_pp_at {
+	mover_name: "Wind Powerplant_at"
+	model_desc: "/model/mover/machine/wind_powerplant_at.pmd"
+	model_anim: "/model/mover/machine/wind_pp_at.pma"
+	sound_path[]: "/sound/mover/wind_powerplant.ogg"
+}
+mover_model : mover.wind_pp_at_2 {
+	mover_name: "Wind Powerplant_at_2"
+	model_desc: "/model/mover/machine/wind_powerplant_at_2.pmd"
+	model_anim: "/model/mover/machine/wind_pp_at_2.pma"
+	sound_path[]: "/sound/mover/wind_powerplant.ogg"
+}
+
+mover_model : mover.large_ship {
+	mover_name: "large ship"
+	model_desc: "/model/mover/boat/large_ship.pmd"
+}
+mover_model : mover.boeing747 {
+	mover_name: "Boeing 747 rolling"
+	model_desc: "/model/mover/aircraft/b747/b747_anim.pmd" 
+	sound_path[]: "/sound/mover/boeing_rolling_loop.ogg"
+}
+mover_model : mover.b747_l_take {
+	mover_name: "Boeing 747 takeoff"
+	model_desc: "/model/mover/aircraft/b747/b747_anim.pmd" 
+	model_anim: "/model/mover/aircraft/b747/b747_takeoff.pma"
+	sound_path[]: "/sound/mover/boeing_loop_1.ogg"
+}
+mover_model : mover.b747_l_land {
+	mover_name: "Boeing 747 landing"
+	model_desc: "/model/mover/aircraft/b747/b747_anim.pmd" 
+	model_anim: "/model/mover/aircraft/b747/b747_landing.pma"
+}
+mover_model : mover.boeing737 {
+	mover_name: "Boeing 737 rolling"
+	model_desc: "/model/mover/aircraft/b737/b737_anim.pmd"
+  	sound_path[]: "/sound/mover/boeing_rolling_loop.ogg" 
+}
+mover_model : mover.b737_l_take {
+	mover_name: "Boeing 737 takeoff"
+	model_desc: "/model/mover/aircraft/b737/b737_anim.pmd" 
+	model_anim: "/model/mover/aircraft/b737/b737_takeoff.pma"
+	sound_path[]: "/sound/mover/boeing_loop_1.ogg"
+}
+mover_model : mover.b737_l_land {
+	mover_name: "Boeing 737 landing"
+	model_desc: "/model/mover/aircraft/b737/b737_anim.pmd" 
+	model_anim: "/model/mover/aircraft/b737/b737_landing.pma"
+}
+mover_model : mover.b737_lod {
+	mover_name: "Boeing 737 LOD flying"
+	model_desc: "/model/mover/aircraft/b737/b737_lod.pmd" 
+	model_anim: "/model/mover/aircraft/b737/b737_lod.pma"
+}
+mover_model : mover.b747_lod {
+	mover_name: "Boeing 747 LOD flying"
+	model_desc: "/model/mover/aircraft/b747/b747_lod.pmd" 
+	model_anim: "/model/mover/aircraft/b747/b747_lod.pma"
+}
+mover_model : mover.logger {
+	mover_name: "logger"
+	model_desc: "/model/vehicle/log_grabber.pmd"
+	model_anim: "/model/vehicle/log_grabber.pma"
+	model_coll: "/model/vehicle/log_grabber.pmc"	
+}
+mover_model : mover.waves {
+	mover_name: "waves"
+	model_desc: "/model/water/waves.pmd"
+	model_anim: "/model/water/wave.pma"	
+}
+
+mover_model : mover.waves2 {
+	mover_name: "waves fast"
+	model_desc: "/model/water/waves.pmd"
+	model_anim: "/model/water/wave2.pma"	
+}
+
+mover_model : mover.wavesgroup {
+	mover_name: "waves group"
+	model_desc: "/model/water/waves2.pmd"
+	model_anim: "/model/water/wave_group.pma"	
+}
+
+mover_model : mover.wavesgroup2 {
+	mover_name: "waves group fast"
+	model_desc: "/model/water/waves2.pmd"
+	model_anim: "/model/water/wave_group2.pma"	
+}
+mover_model : mover.bell {
+	mover_name: "bell"
+	model_desc: "/model/mover/aircraft/bell.pmd"
+	model_anim: "/model/mover/aircraft/bell.pma"
+	sound_path[]: "/sound/mover/heli_middle.ogg"
+	sound_max_dist: 100
+}
+mover_model : mover.yachts {
+	mover_name: "yachts"
+	model_desc: "/model/panorama/ca_sf/yachts.pmd"
+}
+
+mover_model : mover.spot {
+	mover_name: "spot lights"
+	model_desc: "/model/mover/la_spot_lights.pmd"
+	model_anim: "/model/mover/la_spot_move.pma"
+}
+
+mover_model : mover.spot2 {
+	mover_name: "spot bat light"
+	model_desc: "/model/mover/la_spot_bat.pmd"
+	model_anim: "/model/mover/la_spot_bat.pma"
+}
+mover_model : mover.cloud1 {
+	mover_name: "cloud1"
+	model_desc: "/model/mover/cloud1.pmd"
+
+}
+mover_model : mover.cloud2 {
+	mover_name: "cloud2"
+	model_desc: "/model/mover/cloud2.pmd"
+
+}
+mover_model : mover.para1 {
+	mover_name: "para1"
+	model_desc: "/model/mover/aircraft/para1.pmd"
+}
+mover_model : mover.para2 {
+	mover_name: "para2"
+	model_desc: "/model/mover/aircraft/para2.pmd"
+}
+mover_model : mover.para3 {
+	mover_name: "para3"
+	model_desc: "/model/mover/aircraft/para3.pmd"
+}
+mover_model : mover.para4 {
+	mover_name: "para4"
+	model_desc: "/model/mover/aircraft/para4.pmd"
+}
+mover_model : mover.weed {
+	mover_name: "weed"
+	model_desc: "/model/mover/tumbleweed.pmd"
+	model_anim: "/model/mover/tumble.pma"
+}
+mover_model : mover.weed_g {
+	mover_name: "weed_g"
+	model_desc: "/model/mover/tumbleweed_gang.pmd"
+	model_anim: "/model/mover/tumble_gang.pma"
+}
+mover_model : mover.tower_crane {
+	mover_name: "tower crane"
+	model_desc: "/model/mover/machine/tower_crane.pmd"
+	model_anim: "/model/mover/machine/tower_crane.pma"
+}
+mover_model : mover.f_star{
+	mover_name: "f_star"
+	model_desc: "/model/skybox/f_star.pmd"
+}
+mover_model : mover.c_o{
+	mover_name: "c_o"
+	model_desc: "/model/particles/co.pmd"
+}
+mover_model : mover.c_o2{
+	mover_name: "c_o2"
+	model_desc: "/model/particles/co2.pmd"
+}
+mover_model : mover.cr_dust{
+	mover_name: "cr_dust"
+	model_desc: "/model/mover/aircraft/crop_duster/b_stearman.pmd"
+	sound_path[]: "/sound/mover/bi_plane_01.ogg"
+	sound_max_dist: 400
+}
+mover_model : mover.cr_dust2{
+	mover_name: "cr_dust2"
+	model_desc: "/model/mover/aircraft/crop_duster/a_stearman.pmd"
+	sound_path[]: "/sound/mover/bi_plane_01.ogg"
+	sound_max_dist: 400
+}
+mover_model : mover.cr_dust3{
+	mover_name: "cr_dust3"
+	model_desc: "/model/mover/aircraft/crop_duster/c_stearman.pmd"
+	sound_path[]: "/sound/mover/bi_plane_01.ogg"
+	sound_max_dist: 400
+}
+
+mover_model : mover.horses {
+	mover_name: "horses"
+	model_desc: "/model/mover/animal/horses.pmd"
+	model_anim: "/model/mover/animal/horse_idle.pma"
+}
+mover_model : mover.f22 {
+	mover_name: "F22 Flying"
+	model_desc: "/model/mover/aircraft/f22/f22.pmd"
+}
+mover_model : mover.flag1 {
+	mover_name: "flag_us"
+	model_anim: "/model/mover/flag.pma"
+	model_desc: "/model/mover/flag1.pmd"
+}
+mover_model : mover.spl_g {
+	mover_name: "splash_g"
+	model_desc: "/model/particles/splash_g.pmd"
+}
+mover_model : mover.monorail {
+	mover_name: "monorail"
+	model_desc: "/model/mover/train/monorail.pmd"
+}
+mover_model : mover.airship_r {
+	mover_name: "airshp_r"
+	model_desc: "/model/vehicle/aircraft/airship_red.pmd"
+}
+mover_model : mover.cable_sf {
+	mover_name: "cable_sf"
+	model_desc: "/model/panorama/ca_sf/cablecar.pmd"
+}
+mover_model : mover.rplane_r{
+	mover_name: "rplane_r"
+	model_desc: "/model/mover/aircraft/racing/extra300.pmd"
+	model_anim: "/model/mover/aircraft/racing/extra300.pma"
+	sound_path[]: "/sound/mover/bi_plane_02.ogg"
+	sound_max_dist: 400
+}
+mover_model : mover.pylon{
+	mover_name: "pylon"
+	model_desc: "/model/mover/pylon.pmd"
+	model_anim: "/model/mover/pylon.pma"
+} 
+mover_model : mover.napa_train {
+  mover_name: "napa_train"
+	model_desc: "/model/mover/train/napa_train.pmd"
+  sound_path[]: "/sound/mover/train1.ogg"
+	sound_path[]: "/sound/mover/train2.ogg"
+	sound_min_dist: 20
+	sound_max_dist: 200
+	tags[]: "rail_train"
+
+}
+mover_model : mover.la_move_p {
+	mover_name: "people_shift"
+	model_desc: "/model/panorama/ca_la/la_move_people.pmd"
+	model_anim: "/model/panorama/ca_la/shift.pma"	
+}
+mover_model : mover.la_move_p1 {
+	model_desc: "/model/props/street/start_gate.pmd"
+	model_anim: "/model/props/street/start_gate.pma"
+
+  
+}
+mover_model : mover.la_move_p2 {
+	model_desc: "/model/props/street/airdancer.pmd"
+  model_anim: "/model/props/street/airdancer01.pma"
+
+   	
+}
+mover_model : mover.la_move_p3 {
+	model_desc: "/model/props/street/info_tube.pmd"
+	model_anim: "/model/props/street/info_tube.pma"
+}
+mover_model : mover.oilpump2 {
+	mover_name: "oilpump2"
+	model_desc: "/model/mover/machine/oil_pump2.pmd"
+	model_anim: "/model/mover/machine/oil_pump2.pma"
+	
+	lods[0]: "/model/mover/machine/oil_pump2_lod1.pmd"
+	lod_dist[0]: 100
+}
+
+mover_model : mover.tripodman01 {
+	mover_name: "tripodman_01"
+	model_desc: "/model/mover/characters/models/workers/m_worker_caucasian_01.pmd"
+	model_anim: "/model/mover/characters/animations/man/work/tripodman_1.pma"
+
+	lods[0]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod1.pmd"
+	lods[1]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod2.pmd"
+	lods[2]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod3.pmd"
+	lods[3]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod4.pmd"
+	lods[4]: ""
+
+	lod_dist[0]: 10
+	lod_dist[1]: 20
+	lod_dist[2]: 40
+	lod_dist[3]: 100
+	lod_dist[4]: 200
+}
+
+mover_model : mover.tripodman02 {
+	mover_name: "tripodman_02"
+	model_desc: "/model/mover/characters/models/workers/m_worker_old_01.pmd"
+	model_anim: "/model/mover/characters/animations/man/work/tripodman_2.pma"
+
+	lods[0]: "/model/mover/characters/models/workers/m_worker_old_01_lod1.pmd"
+	lods[1]: "/model/mover/characters/models/workers/m_worker_old_01_lod2.pmd"
+	lods[2]: "/model/mover/characters/models/workers/m_worker_old_01_lod3.pmd"
+	lods[3]: "/model/mover/characters/models/workers/m_worker_old_01_lod4.pmd"
+	lods[4]: ""
+
+	lod_dist[0]: 10
+	lod_dist[1]: 20
+	lod_dist[2]: 40
+	lod_dist[3]: 100
+	lod_dist[4]: 200
+}
+
+mover_model : mover.raking1 {
+	mover_name: "raking_01"
+	model_desc: "/model/mover/characters/models/workers/m_old_raking.pmd"
+	
+	model_anim: "/model/mover/characters/animations/man/work/raking_01.pma"
+
+	lods[0]: "/model/mover/characters/models/workers/m_old_raking_lod1.pmd"
+	lods[1]: "/model/mover/characters/models/workers/m_old_raking_lod2.pmd"
+	lods[2]: "/model/mover/characters/models/workers/m_old_raking_lod3.pmd"
+	lods[3]: "/model/mover/characters/models/workers/m_old_raking_lod4.pmd"
+	lods[4]: ""
+
+	lod_dist[0]: 10
+	lod_dist[1]: 20
+	lod_dist[2]: 40
+	lod_dist[3]: 100
+	lod_dist[4]: 200
+}
+
+mover_model : mover.mixerman {
+	mover_name: "mixerman"
+	model_desc: "/model/mover/characters/models/workers/m_worker_caucasian_01.pmd"
+	
+	model_anim: "/model/mover/characters/animations/man/work/mixerman.pma"
+
+	lods[0]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod1.pmd"
+	lods[1]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod2.pmd"
+	lods[2]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod3.pmd"
+	lods[3]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod4.pmd"
+	lods[4]: ""
+
+	lod_dist[0]: 10
+	lod_dist[1]: 20
+	lod_dist[2]: 40
+	lod_dist[3]: 100
+	lod_dist[4]: 200
+}
+
+
+mover_model : mover.mixer {
+	mover_name: "mixer"
+	model_desc: "/model/mover/machine/mixer.pmd"
+	model_anim: "/model/mover/machine/mixer.pma"
+}
+
+mover_model : mover.mack_anim {
+	mover_name: "mack anim"
+	model_desc: "/model/vehicle/event/mack_anim.pmd"
+	model_anim: "/model/vehicle/event/mack_anim.pma"
+}
+
+mover_model : mover.camera {
+	mover_name: "camera"
+	model_desc: "/model/mover/machine/camera.pmd"
+	model_anim: "/model/mover/machine/camera.pma"
+}
+mover_model : mover.flsrep {
+	mover_name: "files_reporter"
+	model_desc: "/model/mover/machine/files_reporter.pmd"
+	model_anim: "/model/mover/machine/files_reporter.pma"
+}
+mover_model : mover.mrptma {
+	mover_name: "microphone_reporter_man"
+	model_desc: "/model/mover/machine/microphone_reporter_man.pmd"
+	model_anim: "/model/mover/machine/microphone_reporter_man.pma"
+}
+mover_model : mover.mrptma2 {
+	mover_name: "microphone_reporter2_man"
+	model_desc: "/model/mover/machine/microphone_reporter2_man.pmd"
+	model_anim: "/model/mover/machine/microphone_reporter2_man.pma"
+}
+mover_model : mover.sflsck {
+	mover_name: "selfie_stick_m"
+	model_desc: "/model/mover/machine/selfie_stick_m.pmd"
+	model_anim: "/model/mover/machine/selfie_stick_m.pma"
+}
+mover_model : mover.mobil {
+	mover_name: "mobil_m"
+	model_desc: "/model/mover/machine/mobil_m.pmd"
+	model_anim: "/model/mover/machine/mobil_m.pma"
+}
+mover_model : mover.flwrep {
+	mover_name: "files_w_reporter"
+	model_desc: "/model/mover/machine/files_w_reporter.pmd"
+	model_anim: "/model/mover/machine/files_w_reporter.pma"
+}
+mover_model : mover.mrwtma {
+	mover_name: "microphone_reporter_woman"
+	model_desc: "/model/mover/machine/microphone_reporter_woman.pmd"
+	model_anim: "/model/mover/machine/microphone_reporter_woman.pma"
+}
+mover_model : mover.mrwtma2 {
+	mover_name: "microphone_reporter2_woman"
+	model_desc: "/model/mover/machine/microphone_reporter2_woman.pmd"
+	model_anim: "/model/mover/machine/microphone_reporter2_woman.pma"
+}
+mover_model : mover.sflscw {
+	mover_name: "selfie_stick_w"
+	model_desc: "/model/mover/machine/selfie_stick_w.pmd"
+	model_anim: "/model/mover/machine/selfie_stick_w.pma"
+}
+mover_model : mover.mobilw {
+	mover_name: "mobil_w"
+	model_desc: "/model/mover/machine/mobil_w.pmd"
+	model_anim: "/model/mover/machine/mobil_w.pma"
+}
+mover_model : mover.sawfir {
+	mover_name: "saw_firefighter"
+	model_desc: "/model/mover/machine/saw_firefighter.pmd"
+	model_anim: "/model/mover/machine/saw_firefighter.pma"
+}
+
+mover_model : mover.sp_horserun {
+	mover_name: "sprite horse run"
+	model_desc: "/model/mover/animal/sprite_horse_run.pmd"
+}
+
+mover_model : mover.adv_burger {
+	mover_name: "adv burger2 anim"
+	model_desc: "/model/mover/props/adverts/ca_adv_burger2_anim.pmd"
+	model_anim: "/model/mover/props/adverts/ca_adv_burger2_anim.pma"
+	model_coll: "/model/mover/props/adverts/ca_adv_burger2_anim.pmc"
+}
+
+mover_model : mover.adv_donut {
+	mover_name: "adv donut1 anim"
+	model_desc: "/model/mover/props/adverts/ca_adv_donut1_anim.pmd"
+	model_anim: "/model/mover/props/adverts/ca_adv_donut1_anim.pma"
+	model_coll: "/model/mover/props/adverts/ca_adv_donut1_anim.pmc"
+}
+
+mover_model : mover.adv_m {
+	mover_name: "adv m anim"
+	model_desc: "/model/mover/props/adverts/ca_adv_m_anim.pmd"
+	model_anim: "/model/mover/props/adverts/ca_adv_m_anim.pma"
+	model_coll: "/model/mover/props/adverts/ca_adv_m_anim.pmc"
+}
+
+mover_model : mover.road_cutter {
+	mover_name: "road_cutter"
+	model_desc: "/model/mover/characters/new_generation/models/props/road_cutter.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/road_cutter_prop_anim.pma"
+}
+
+mover_model : mover.agitator {
+	mover_name: "agitator"
+	model_desc: "/model/mover/characters/new_generation/models/props/agitator.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/agitator_prop_anim.pma"
+}
+
+mover_model : mover.pckshv {
+	mover_name: "pickaxe_shovel"
+	model_desc: "/model/mover/machine/pickaxe_shovel.pmd"
+	model_anim: "/model/mover/machine/pickaxe_shovel.pma"
+}
+
+mover_model : mover.blower {
+	mover_name: "blower"
+	model_desc: "/model/mover/characters/new_generation/models/props/blower.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/blower_prop_anim.pma"
+}
+mover_model : mover.broom {
+	mover_name: "broom"
+	model_desc: "/model/mover/characters/new_generation/models/props/broom.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/broom_prop_anim.pma"
+}
+mover_model : mover.notes {
+	mover_name: "notes"
+	model_desc: "/model/mover/characters/new_generation/models/props/notes.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/notes_prop_anim.pma"
+}
+mover_model : mover.sponge {
+	mover_name: "sponge"
+	model_desc: "/model/mover/characters/new_generation/models/props/sponge.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/sponge_prop_anim.pma"
+}
+
+
+mover_model : mover.us_flag {
+	model_desc: "/model/mover/props/street/flag_us_small.pmd"
+	mover_name: "us flag small anim"
+	model_anim: "/model/mover/props/street/flag_us_small.pma"
+}
+mover_model : mover.photoc {
+	mover_name: "photo_camera"
+	model_desc: "/model/mover/machine/photo_camera.pmd"
+	model_anim: "/model/mover/machine/photo_camera.pma"
+}
+mover_model : mover.geyser {
+	mover_name: "geyser"
+	model_desc: "/model/particles/geyser2.pmd"
+}
+mover_model : mover.lighthouse {
+	mover_name: "lighthouse spotlight"
+	model_desc: "/model/mover/lighthouse_lights.pmd"
+	model_anim: "/model/mover/lighthouse_move.pma"
+}
+
+mover_model : mover.or_2 {
+	mover_name: "lateral_irrigation1_3x"
+	model_desc: "/model/mover/machine/or_lateral_irrigation1_3x.pmd"
+}
+
+mover_model : mover.or_3 {
+	mover_name: "lateral_irrigation1_5x"
+	model_desc: "/model/mover/machine/or_lateral_irrigation1_5x.pmd"
+}
+
+mover_model : mover.deer_herd1 {
+	model_desc: "/model/mover/animal/deer_run_jump_herd.pmd" 
+	mover_name: "deer_herd"
+	model_anim: "/model/mover/animal/deer_run_herd.pma"
+	probability:					0.5
+}
+mover_model : mover.deer_eating {
+	model_desc: "/model/mover/animal/deer_eating.pmd"
+	mover_name: "deer_eating"
+	model_anim: "/model/mover/animal/deer_eating.pma"
+	lod_dist[0]: 20.0
+	lod_dist[1]: 40.0
+	lod_dist[2]: 70.0
+	lods[0]: "/model/mover/animal/deer_eating_lod1.pmd"
+	lods[1]: "/model/mover/animal/deer_eating_lod2.pmd"
+	lods[2]: "/model/mover/animal/deer_eating_lod3.pmd"
+}
+
+
+mover_model : mover.yacht_motor1 {
+	mover_name: "motor yacht sailing 1"
+	model_desc: "/model/mover/boat/motor_yacht_sailing_01.pmd"
+}
+mover_model : mover.yacht01 {
+	mover_name: "yacht sailing 01"
+	model_desc: "/model/mover/yacht_sailing_01.pmd"
+}
+mover_model : mover.yacht02 {
+	mover_name: "yacht sailing close"
+	model_desc: "/model/mover/yacht_sailing_close.pmd"
+}
+mover_model : mover.yacht03 {
+	mover_name: "yachts moving 01"
+	model_desc: "/model/mover/yachts_moving_01.pmd"
+	model_anim: "/model/mover/ships_anim.pma"
+	
+}
+mover_model : mover.yacht04 {
+	mover_name: "yachts moving 02"
+	model_desc: "/model/mover/yachts_moving_02.pmd"
+	model_anim: "/model/mover/ships_anim_new.pma"
+}
+mover_model : mover.yacht05 {
+	mover_name: "yachts moving 03"
+	model_desc: "/model/mover/yachts_moving_03.pmd"
+	model_anim: "/model/mover/ships_anim_for_03.pma"
+}
+mover_model : mover.srvcmn_broom {
+	mover_name: "srvcmn_broom"
+	model_desc: "/model/mover/characters/new_generation/models/characters_with_props/serviceman_with_broom_prefab.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/broom_prop_anim.pma"
+}
+mover_model : mover.work_broom {
+	mover_name: "work_broom"
+	model_desc: "/model/mover/characters/new_generation/models/characters_with_props/worker_with_broom_prefab.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/broom_prop_anim.pma"
+}
+mover_model : mover.srvcmn_noter {
+	mover_name: "srvcmn_noter"
+	model_desc: "/model/mover/characters/new_generation/models/characters_with_props/serviceman_with_noter_prefab.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/notes_prop_anim.pma"
+}
+mover_model : mover.work_noter {
+	mover_name: "work_noter"
+	model_desc: "/model/mover/characters/new_generation/models/characters_with_props/worker_with_noter_prefab.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/notes_prop_anim.pma"
+}
+mover_model : mover.srvcmn_spong {
+	mover_name: "srvcmn_spong"
+	model_desc: "/model/mover/characters/new_generation/models/characters_with_props/serviceman_with_sponge_prefab.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/sponge_prop_anim.pma"
+}
+mover_model : mover.work_spong {
+	mover_name: "work_spong"
+	model_desc: "/model/mover/characters/new_generation/models/characters_with_props/worker_with_sponge_prefab.pmd"
+	model_anim: "/model/mover/characters/new_generation/animations/prop_animations/sponge_prop_anim.pma"
+}
+
+mover_model : mover.detour1 {
+	mover_name: "air_ambulance"
+	model_desc: "/model/vehicle/event/air_ambulance.pmd"
+	model_anim: "/model/vehicle/event/air_ambulance.pma"
+	sound_path[]: "/sound/mover/heli_middle.ogg"
+	sound_max_dist: 100
+}
+mover_model : mover.b737_800 {
+	mover_name: "Boeing 737-800"
+	model_desc: "/model/mover/aircraft/b737_800/b737_800.pmd"
+}
+mover_model : mover.adv_food1 {
+	mover_name: "adv fastfood1 anim"
+	model_desc: "/model/mover/props/adverts/or_adv_fastfood1_anim.pmd"
+	model_anim: "/model/mover/props/adverts/or_adv_fastfood1_anim.pma"
+	model_coll: "/model/mover/props/adverts/or_adv_fastfood1_anim.pmc"
+}
+
+}

@@ -1,0 +1,79 @@
+SiiNunit
+{
+sign_template : _nameless.0000.0000.029F.AC70 {
+ template_name: speed_radar_led_30
+ model_name: 519
+ traffic_rule: null
+ items: 2
+ items[0]: _nameless.0000.0000.02A1.6A90
+ items[1]: _nameless.0000.0000.02A1.83C0
+ dynamic_attributes: 2
+ dynamic_attributes[0]: _nameless.0000.0000.0310.AF80
+ dynamic_attributes[1]: _nameless.0000.0000.0310.C480
+}
+
+sign_template_text : _nameless.0000.0000.02A1.6A90 {
+ text: 00
+ font_face: "/font/sign/dot_matrix.font"
+ font_size: &3ed1eb85
+ text_halign: center
+ text_valign: center
+ font_color: 255
+ font_opacity: 1
+ line_spacing: &3e4ccccd
+ id: 737804288
+ area_name: ml1
+ area_idx: nil
+ coords_l: 0
+ coords_r: &3f000000
+ coords_t: &3ecccccd
+ coords_b: 0
+ z_order: 1
+}
+
+sign_template_text : _nameless.0000.0000.02A1.83C0 {
+ text: "SLOW DOWN"
+ font_face: "/font/sign/dot_matrix.font"
+ font_size: &3e428f5c
+ text_halign: center
+ text_valign: center
+ font_color: 255
+ font_opacity: 1
+ line_spacing: &3e4ccccd
+ id: 1793458175
+ area_name: ml1
+ area_idx: nil
+ coords_l: 0
+ coords_r: &3f000000
+ coords_t: &3ecc9640
+ coords_b: &33000000
+ z_order: 2
+}
+
+sign_radar_attribute : _nameless.0000.0000.0310.AF80 {
+ max_distance: 100
+ detection_angle: 45
+ min_speed: 0
+ max_speed: 30
+ unit: mph
+ inactive_text: ""
+ min_speed_text: ""
+ max_speed_text: ""
+ item_id: 737804288
+ attr_name: text
+}
+
+sign_radar_attribute : _nameless.0000.0000.0310.C480 {
+ max_distance: 100
+ detection_angle: 45
+ min_speed: 31
+ max_speed: 31
+ unit: mph
+ inactive_text: ""
+ min_speed_text: ""
+ max_speed_text: "SLOW DOWN"
+ item_id: 1793458175
+ attr_name: text
+}
+
+}

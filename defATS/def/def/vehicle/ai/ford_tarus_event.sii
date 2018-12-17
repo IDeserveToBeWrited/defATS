@@ -1,0 +1,67 @@
+traffic_vehicle : traffic.ford_tarus_p.open_door
+{
+	accessories[]: .ford_tarus_p.open_door.chassis
+	accessories[]: .ford_tarus_p.open_door.fwheel
+	accessories[]: .ford_tarus_p.open_door.rwheel
+
+	max_speed: 1
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	vehicle_mass: 1700
+	
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.open_door.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_open_door.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.open_door.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.open_door.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX NEW MEXICO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+traffic_vehicle : traffic.ford_tarus_p.open_door_nm
+{
+	accessories[]: .ford_tarus_p.open_door_nm.chassis
+	accessories[]: .ford_tarus_p.open_door_nm.fwheel
+	accessories[]: .ford_tarus_p.open_door_nm.rwheel
+
+	max_speed: 1
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	vehicle_mass: 1700
+		spawn_ratio: 0.0
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.open_door_nm.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_open_door_nm.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.open_door_nm.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.open_door_nm.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+
+
+
+
+

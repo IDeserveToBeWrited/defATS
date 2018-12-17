@@ -1,0 +1,29 @@
+traffic_trailer : traffic.trailer.fuel 
+{
+	accessories[]: .traffic.fuel.tchassis
+	accessories[]: .traffic.fuel.trwheel0
+	accessories[]: .traffic.fuel.trwheel1
+	accessories[]: .traffic.fuel.paintjob
+
+	cargo_mass: 15649
+
+	company_paint_job: true
+}
+vehicle_accessory: .traffic.fuel.tchassis
+{
+	data_path: "/def/vehicle/trailer/fuel/chassis.sii"
+}
+vehicle_wheel_accessory: .traffic.fuel.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_wheel_accessory: .traffic.fuel.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .traffic.fuel.paintjob
+{
+    	data_path: "/def/vehicle/trailer/fuel/company_paint_job/default.sii"
+}

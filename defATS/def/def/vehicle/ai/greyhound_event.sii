@@ -1,0 +1,43 @@
+traffic_vehicle : traffic.greyhound_ev
+{
+	accessories[]: .greyhound_ev.chassis
+	accessories[]: .greyhound_ev.fwheel
+	accessories[]: .greyhound_ev.rwheel
+	accessories[]: .greyhound_ev.rwheel2
+
+	max_speed: 100
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	
+	vehicle_mass: 25000
+	engine_torque: 2000
+
+
+
+}
+
+vehicle_accessory: .greyhound_ev.chassis
+{
+	data_path: "/def/vehicle/ai/greyhound/chassis_ev.sii"
+}
+
+vehicle_wheel_accessory: .greyhound_ev.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .greyhound_ev.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}
+
+vehicle_wheel_accessory: .greyhound_ev.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+

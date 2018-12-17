@@ -1,0 +1,70 @@
+traffic_trailer : traffic.trailer.scs_ref_45 # rear
+{
+
+	accessories[]: .scs_ref_45.chassis
+	accessories[]: .scs_ref_45.rwheel
+	accessories[]: .scs_ref_45.rwheel2
+	accessories[]: .scs_ref_45.paint_job
+
+	spawn_ratio: 2
+
+	company_paint_job: true
+
+	variant[]: .traffic.trailer.scs_ref_45.front # front
+}
+
+vehicle_accessory: .scs_ref_45.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ref_45_r.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref_45.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref_45.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ref_45.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .traffic.trailer.scs_ref_45.front
+{
+	accessories[]: .scs_ref_45.front.chassis
+	accessories[]: .scs_ref_45.front.rwheel
+	accessories[]: .scs_ref_45.front.rwheel2
+	accessories[]: .scs_ref_45.front.paint_job
+
+	company_paint_job: true
+}
+
+vehicle_accessory: .scs_ref_45.front.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ref_45_f.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref_45.front.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref_45.front.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ref_45.front.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

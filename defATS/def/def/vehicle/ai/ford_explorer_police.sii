@@ -1,0 +1,229 @@
+traffic_vehicle : traffic.f_expl_d_m
+{
+	accessories[]: .f_expl_d_m.chassis
+	accessories[]: .f_expl_d_m.fwheel
+	accessories[]: .f_expl_d_m.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2250
+    
+    variant[]: traffic.f_expl_aqpd
+    variant[]: traffic.f_expl_aqpd1
+    variant[]: traffic.f_expl_aqpd2
+    variant[]: traffic.f_expl_ppd
+	
+	spawn_ratio: 0.0
+	
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .f_expl_d_m.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/default_h_patrol.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_d_m.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_d_m.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"	
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Albuquerque Municipal Police ( look w117 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_aqpd
+{
+	accessories[]: .f_expl_aqpd.chassis
+	accessories[]: .f_expl_aqpd.fwheel
+	accessories[]: .f_expl_aqpd.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2250
+	
+
+	spawn_condition[]: .traffic.f_expl_aqpd.albu.condition.city	
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .f_expl_aqpd.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/aqpd.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_aqpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_aqpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"	
+}
+
+traffic_spawn_condition: .traffic.f_expl_aqpd.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "albuquerque"
+}
+	
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Albuquerque Municipal Police ( look w53 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_aqpd1
+{
+	accessories[]: .f_expl_aqpd1.chassis
+	accessories[]: .f_expl_aqpd1.fwheel
+	accessories[]: .f_expl_aqpd1.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2250
+
+	spawn_condition[]: .traffic.f_expl_aqpd1.albu.condition.city	
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .f_expl_aqpd1.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/aqpd1.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_aqpd1.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_aqpd1.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"	
+}
+
+traffic_spawn_condition: .traffic.f_expl_aqpd1.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "albuquerque"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Albuquerque Municipal Police ( look w27 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_aqpd2
+{
+	accessories[]: .f_expl_aqpd2.chassis
+	accessories[]: .f_expl_aqpd2.fwheel
+	accessories[]: .f_expl_aqpd2.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2250
+    
+	spawn_condition[]: .traffic.f_expl_aqpd2.albu.condition.city	
+	
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .f_expl_aqpd2.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/aqpd2.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_aqpd2.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_aqpd2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"	
+}
+
+traffic_spawn_condition: .traffic.f_expl_aqpd2.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "albuquerque"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Portland Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_ppd
+{
+	accessories[]: .f_expl_ppd.chassis
+	accessories[]: .f_expl_ppd.fwheel
+	accessories[]: .f_expl_ppd.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2250
+    
+	spawn_condition[]: .traffic.f_expl_ppd.portland.condition.city
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .f_expl_ppd.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ppd.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_ppd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_ppd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"	
+}
+
+traffic_spawn_condition: .traffic.f_expl_ppd.portland.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "portland"
+}

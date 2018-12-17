@@ -1,0 +1,79 @@
+traffic_vehicle : traffic.lincoln_ev
+{
+	accessories[]: .lincoln_ev.chassis
+	accessories[]: .lincoln_ev.fwheel
+	accessories[]: .lincoln_ev.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+color[]: (0.0176, 0.0176, 0.0176)
+color[]: (0.584, 0.5906, 0.5972)
+color[]: (0.6514, 0.5647, 0.3231)
+color[]: (0.2195, 0.2158, 0.1746)
+color[]: (0.0343, 0.0703, 0.1274)
+color[]: (0.1119, 0.0512, 0.0212)
+color[]: (0.3762, 0.0051, 0.0069)
+
+	vehicle_mass: 2000
+}
+vehicle_accessory: .lincoln_ev.chassis
+{
+	data_path: "/def/vehicle/ai/lincoln_mkt/chassis_ev.sii"
+}
+
+vehicle_wheel_accessory: .lincoln_ev.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_3.sii"
+}
+
+vehicle_wheel_accessory: .lincoln_ev.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_3.sii"
+}
+
+#xxxx CRASH xxxxx
+
+traffic_vehicle : traffic.lincoln_cr
+{
+	accessories[]: .lincoln_ev.crash.chassis
+	accessories[]: .lincoln_ev.crash.fwheel
+	accessories[]: .lincoln_ev.crash.rwheel
+
+	max_speed: 160
+
+color[]: (0.0176, 0.0176, 0.0176)
+color[]: (0.584, 0.5906, 0.5972)
+color[]: (0.6514, 0.5647, 0.3231)
+color[]: (0.2195, 0.2158, 0.1746)
+color[]: (0.0343, 0.0703, 0.1274)
+color[]: (0.1119, 0.0512, 0.0212)
+color[]: (0.3762, 0.0051, 0.0069)
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2000
+}
+vehicle_accessory: .lincoln_ev.crash.chassis
+{
+	data_path: "/def/vehicle/ai/lincoln_mkt/chassis_crash.sii"
+}
+
+vehicle_wheel_accessory: .lincoln_ev.crash.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_3.sii"
+}
+
+vehicle_wheel_accessory: .lincoln_ev.crash.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_3.sii"
+}

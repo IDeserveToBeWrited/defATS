@@ -1,0 +1,58 @@
+traffic_vehicle : traffic.emd_sd40_d
+{
+	accessories[]: .emd_sd40_d.chassis
+	accessories[]: .emd_sd40_d.fwheel
+	accessories[]: .emd_sd40_d.rwheel
+	accessories[]: .emd_sd40_d.rwheel2
+	accessories[]: .emd_sd40_d.rwheel3
+
+	max_speed: 72
+	
+	sound_move[]: "/sound/mover/diesel_train_1.ogg"
+	sound_move[]: "/sound/mover/diesel_train_2.ogg"
+	sound_horn[]: "/sound/mover/train_horn_short_1.ogg"
+
+	vehicle_mass: 190000
+	gearbox[]: (0, 1)
+	gearbox[]: (10, 0.9)
+	gear_ratio: 10
+	engine_torque: 35000
+
+	attachable_trailer[]: "train_car.cargo_d.*"
+
+	displacement_limit: 0.0
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+}
+
+vehicle_accessory: .emd_sd40_d.chassis
+{
+	data_path: "/def/vehicle/ai/emd_sd40/chassis.sii"
+}
+
+vehicle_wheel_accessory: .emd_sd40_d.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .emd_sd40_d.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .emd_sd40_d.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .emd_sd40_d.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}

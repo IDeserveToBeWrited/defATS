@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_chassis_data : short2.peterbilt.389.chassis
+{
+	name: "Short 6x4 200@@gal@@"
+	price: 23550
+	unlock: 8
+	info[]: "6x4"
+	info[]: "100/100 @@gal@@"
+	icon: "peterbilt_389/frame_a"
+
+	model: "/vehicle/truck/peterbilt_389/truck.pmd"
+	collision: "/vehicle/truck/peterbilt_389/truck.pmc"
+	residual_travel[]: 0.10
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+	tank_size: 758
+	air_tank_pressure: 8.5
+	variant: chas_a
+	look: default
+	extended_shadow_texture: "/vehicle/truck/peterbilt_389/shadow_a.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/peterbilt_389/ui_shadow_a.pmd"
+	powered_axle[0]: false	# front axle
+	powered_axle[1]: true	# rear axle
+	powered_axle[2]: true	# rear axle
+	kerb_weight[0]: 4645	# 10220lb
+	kerb_weight[1]: 1805	# 3970lb
+	kerb_weight[2]: 1805	# 3970lb
+
+	defaults[]: "/def/vehicle/truck/peterbilt.389/cabin/duty.sii"
+	defaults[]: "/def/vehicle/truck/peterbilt.389/accessory/bumper/shape01.sii"
+	defaults[]: "/def/vehicle/truck/peterbilt.389/accessory/sideskirt/shape01a.sii"
+	defaults[]: "/def/vehicle/truck/peterbilt.389/accessory/exhaust/shape01.sii"
+	defaults[]: "/def/vehicle/truck/peterbilt.389/accessory/mudflaps/shape01.sii"
+	defaults[]: "/def/vehicle/truck/peterbilt.389/accessory/trlr_cables/stock.sii"
+
+	conflict_with[]: "standard.peterbilt.389.cabin"
+	conflict_with[]: "exclusive.peterbilt.389.cabin"
+}
+}

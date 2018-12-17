@@ -1,0 +1,41 @@
+traffic_vehicle : traffic.peterbilt.579.a
+{
+	accessories[]: .peterbilt.579.a.chassis
+	accessories[]: .peterbilt.579.a.fwheel
+	accessories[]: .peterbilt.579.a.rwheel
+	accessories[]: .peterbilt.579.a.rwheel2
+	accessories[]: .peterbilt.579.a.trlr_cables
+
+	max_speed: 110
+	attachable_trailer[]: ""
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	color[]: (0.6, 0.6, 0.6) #white
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.01, 0.175, 0.04) #green
+	color[]: (0.030, 0.050, 0.22) #blue
+	
+	engine_torque: 1830
+}
+
+
+vehicle_accessory : .peterbilt.579.a.chassis {
+	data_path: "/def/vehicle/ai/truck/peterbilt.579/cabin_duty.sii"
+}
+vehicle_wheel_accessory : .peterbilt.579.a.fwheel {
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+vehicle_wheel_accessory : .peterbilt.579.a.rwheel {
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory : .peterbilt.579.a.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .peterbilt.579.a.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/peterbilt.579/accessory/trlr_cables/stock.sii"
+}
+

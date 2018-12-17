@@ -1,0 +1,43 @@
+traffic_vehicle : traffic.crown_v
+{
+	accessories[]: .crown_v.chassis
+	accessories[]: .crown_v.fwheel
+	accessories[]: .crown_v.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	color[]: (0.0685, 0.1248, 0.1812) #BLUE
+	color[]: (0.3662, 0.3277, 0.2788) #silver
+    color[]: (0.6, 0.6, 0.6)          #GRAY
+	color[]: (0.0284, 0.0467, 0.0723) #Darck BLUE
+	color[]: (0.1195, 0.0006, 0.0129) #PURPLE
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+		
+	
+	vehicle_mass: 1850
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .crown_v.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/chassis.sii"
+}
+
+vehicle_wheel_accessory: .crown_v.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_t.sii"
+}
+
+vehicle_wheel_accessory: .crown_v.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_t.sii"
+}

@@ -1,0 +1,35 @@
+traffic_vehicle : traffic.pv_posted
+{
+	accessories[]: .pv_posted.chassis
+	accessories[]: .pv_posted.fwheel
+	accessories[]: .pv_posted.rwheel
+
+	max_speed: 120
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	vehicle_mass: 3500
+
+	spawn_ratio: 0.20
+
+@include "drivers_van.sui"
+}
+
+vehicle_accessory: .pv_posted.chassis
+{
+	data_path: "/def/vehicle/ai/package_van/chassis_posted.sii"
+}
+
+vehicle_wheel_accessory: .pv_posted.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_cargo.sii"
+}
+
+vehicle_wheel_accessory: .pv_posted.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_cargo.sii"
+}
+

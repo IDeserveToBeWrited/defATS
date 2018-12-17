@@ -1,0 +1,338 @@
+
+ # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx generic xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+traffic_vehicle : traffic.f350_ge
+{
+	accessories[]: .f350_ge.chassis
+	accessories[]: .f350_ge.fwheel
+	accessories[]: .f350_ge.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	
+	
+	vehicle_mass: 2700
+
+	color[]: (1, 1, 1) #white
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_ge.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_generic.sii"
+}
+
+vehicle_wheel_accessory: .f350_ge.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_ge.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+ # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx california xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+traffic_vehicle : traffic.f350_ca
+{
+	accessories[]: .f350_ca.chassis
+	accessories[]: .f350_ca.fwheel
+	accessories[]: .f350_ca.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2700
+	
+	spawn_ratio: 0
+
+	color[]: (1, 1, 1) #white
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_ca.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_ca.sii"
+}
+
+vehicle_wheel_accessory: .f350_ca.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_ca.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+  # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx las vegas xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_vehicle : traffic.f350_lv
+{
+	accessories[]: .f350_lv.chassis
+	accessories[]: .f350_lv.fwheel
+	accessories[]: .f350_lv.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2700
+
+	color[]: (1, 1, 1) #white
+
+	spawn_condition[]: .traffic.f350_lv.condition.city
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_lv.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_lv.sii"
+}
+
+vehicle_wheel_accessory: .f350_lv.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_lv.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+traffic_spawn_condition: .traffic.f350_lv.condition.city
+{
+	type: city
+	str_param[]: "las_vegas"
+}
+  # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx new mexico xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_vehicle : traffic.f350_nm
+{
+	accessories[]: .f350_nm.chassis
+	accessories[]: .f350_nm.fwheel
+	accessories[]: .f350_nm.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2700
+
+	spawn_ratio: 0
+	
+	color[]: (1, 1, 1) #white
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_nm.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_nm.sii"
+}
+
+vehicle_wheel_accessory: .f350_nm.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_nm.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+	# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx generic las vegas xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  
+traffic_vehicle : traffic.f350_g_lv
+{
+	accessories[]: .f350_g_lv.chassis
+	accessories[]: .f350_g_lv.fwheel
+	accessories[]: .f350_g_lv.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2700
+
+	spawn_ratio: 0
+	
+	prefer_variant: true
+	variant[]: traffic.f350_lv
+	
+	color[]: (1, 1, 1) #white
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_g_lv.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_lv_g.sii"
+}
+
+vehicle_wheel_accessory: .f350_g_lv.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_g_lv.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+  # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx arizona xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  
+traffic_vehicle : traffic.f350_ar
+{
+	accessories[]: .f350_ar.chassis
+	accessories[]: .f350_ar.fwheel
+	accessories[]: .f350_ar.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2700
+
+	spawn_ratio: 0
+	
+	color[]: (1, 1, 1) #white
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_ar.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_ar.sii"
+}
+
+vehicle_wheel_accessory: .f350_ar.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_ar.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+  # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx generic_3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#  top white, bottom red
+  
+traffic_vehicle : traffic.f350_g3
+{
+	accessories[]: .f350_g3.chassis
+	accessories[]: .f350_g3.fwheel
+	accessories[]: .f350_g3.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2700
+
+	spawn_ratio: 0
+	
+	color[]: (1, 1, 1) #white
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_g3.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_g3.sii"
+}
+
+vehicle_wheel_accessory: .f350_g3.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_g3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx generic_o xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  
+traffic_vehicle : traffic.f350_o
+{
+	accessories[]: .f350_o.chassis
+	accessories[]: .f350_o.fwheel
+	accessories[]: .f350_o.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 2700
+
+	spawn_ratio: 0
+	
+	color[]: (1, 1, 1) #white
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .f350_o.chassis
+{
+	data_path: "/def/vehicle/ai/f350/chassis_o.sii"
+}
+
+vehicle_wheel_accessory: .f350_o.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_o.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}

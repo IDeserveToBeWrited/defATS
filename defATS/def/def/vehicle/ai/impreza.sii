@@ -1,0 +1,42 @@
+traffic_vehicle : traffic.impreza
+{
+	accessories[]: .impreza.chassis
+	accessories[]: .impreza.fwheel
+	accessories[]: .impreza.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.0343, 0.0343, 0.0343) #ford transit black
+	
+	vehicle_mass: 1600
+	
+	
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .impreza.chassis
+{
+	data_path: "/def/vehicle/ai/impreza/chassis.sii"
+}
+
+vehicle_wheel_accessory: .impreza.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_camaro.sii"
+}
+
+vehicle_wheel_accessory: .impreza.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_camaro.sii"
+}
+

@@ -1,0 +1,321 @@
+traffic_vehicle : traffic.crown_p
+{
+	accessories[]: .crown_p.chassis
+	accessories[]: .crown_p.fwheel
+	accessories[]: .crown_p.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+	
+	prefer_variant: true
+	variant[]: traffic.crown_sfpd
+	variant[]: traffic.crown_ppb
+	variant[]: traffic.crown_lvmpd
+	variant[]: traffic.crown_lapd
+	variant[]: traffic.crown_renopd
+	variant[]: traffic.crown_phxpd
+	
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_p.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/chassis_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_p.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Portland Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.crown_ppb
+{
+	accessories[]: .crown_ppb.chassis
+	accessories[]: .crown_ppb.fwheel
+	accessories[]: .crown_ppb.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+    
+	spawn_condition[]: .traffic.crown_ppb.portland.condition.city
+
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_ppb.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/ppb.sii"
+}
+
+vehicle_wheel_accessory: .crown_ppb.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_ppb.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.crown_ppb.portland.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "portland"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant San Francisco Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.crown_sfpd
+{
+	accessories[]: .crown_sfpd.chassis
+	accessories[]: .crown_sfpd.fwheel
+	accessories[]: .crown_sfpd.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+
+	spawn_condition[]: .traffic.crown_sfpd.san_francisc.condition.city
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_sfpd.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/sfpd.sii"
+}
+
+vehicle_wheel_accessory: .crown_sfpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_sfpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.crown_sfpd.san_francisc.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "san_francisc"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Reno Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.crown_renopd
+{
+	accessories[]: .crown_renopd.chassis
+	accessories[]: .crown_renopd.fwheel
+	accessories[]: .crown_renopd.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+
+	spawn_condition[]: .traffic.crown_renopd.reno.condition.city
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_renopd.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/reno_pd.sii"
+}
+
+vehicle_wheel_accessory: .crown_renopd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_renopd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.crown_renopd.reno.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "reno"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Phoenix Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.crown_phxpd
+{
+	accessories[]: .crown_phxpd.chassis
+	accessories[]: .crown_phxpd.fwheel
+	accessories[]: .crown_phxpd.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+
+	spawn_condition[]: .traffic.crown_phxpd.phoenix.condition.city
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_phxpd.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/phxpd.sii"
+}
+
+vehicle_wheel_accessory: .crown_phxpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_phxpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.crown_phxpd.phoenix.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "phoenix"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Las Vegas Metropolitan Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.crown_lvmpd
+{
+	accessories[]: .crown_lvmpd.chassis
+	accessories[]: .crown_lvmpd.fwheel
+	accessories[]: .crown_lvmpd.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+
+	spawn_condition[]: .traffic.crown_lvmpd.las_vegas.condition.city
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_lvmpd.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/lvmpd.sii"
+}
+
+vehicle_wheel_accessory: .crown_lvmpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_lvmpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.crown_lvmpd.las_vegas.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "las_vegas"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Los Angeles Police Department XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.crown_lapd
+{
+	accessories[]: .crown_lapd.chassis
+	accessories[]: .crown_lapd.fwheel
+	accessories[]: .crown_lapd.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+
+	spawn_condition[]: .traffic.crown_lapd.los_angeles.condition.city
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .crown_lapd.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/lapd.sii"
+}
+
+vehicle_wheel_accessory: .crown_lapd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .crown_lapd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.crown_lapd.los_angeles.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "los_angeles"
+}
+

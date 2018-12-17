@@ -1,0 +1,43 @@
+traffic_vehicle : traffic.c_escalade
+{
+	accessories[]: .c_escalade.chassis
+	accessories[]: .c_escalade.fwheel
+	accessories[]: .c_escalade.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 2800
+
+
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.0382, 0.0318, 0.0273) #brown
+	color[]: (0.0544, 0.0886, 0.1274) #blue
+	color[]: (0.5394, 0.5711, 0.5906) #silver
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.2831, 0.0012, 0.0065) #red
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.8713, 0.8631, 0.8227) #white
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .c_escalade.chassis
+{
+	data_path: "/def/vehicle/ai/cadillac_escalade/chassis.sii"
+}
+
+vehicle_wheel_accessory: .c_escalade.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .c_escalade.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+
