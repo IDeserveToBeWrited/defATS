@@ -1,0 +1,37 @@
+SiiNunit
+{
+accessory_trailer_body_data : log_40_4.scs.log.body
+{
+	name: "@@bs_log_4@@"
+	price: 15000
+	unlock: 12
+	icon: "body/scs_log/log_4"
+
+	# 45' x 102" x 13'6"
+	# Internal: 44'6" x 99" x 110"
+	# https://freightmonster.com/equipment/flatbed-trailer/
+	# http://www.freightmatchers.com/assets/files/General%20Dry%20Van%20Trailer%20Specifications.pdf
+
+	size: (2.5146, 2.5146, 12.192)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 12.192)	# width, height, length (size of the body + chassis)
+
+	volume: 77.1		# 2723 cft
+	body_type: log
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for flatbed trailer is in chassis, bodies have only deltas to flatbed body mass.
+	# Thus flatbed has like 0 while curtain 1000
+	# Smaller body variants are smaller (count as x0.9, x0.85 or x0.5)
+
+	mass: 848.3	# 1870 lb
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/upgrade/body/scs_log/log_4.pmd"
+	collision: "/vehicle/trailer_owned/upgrade/body/scs_log/log_4.pmc"
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.log/accessory/markers/simple.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.log/accessory/r_bumper/simple.sii"
+}
+}

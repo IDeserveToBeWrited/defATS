@@ -376,12 +376,12 @@ tr_semaphore_model : tr_sem_mdl.cr2_l_2ln {
 	state_collision[3]: false
 }
 
-tr_semaphore_model : tr_sem_mdl.cr1_r_2ln_c {
+tr_semaphore_model : tr_sem_mdl.rail_level_c {
 
-	name: "ab_left_1"
+	name: "nm_rr_level1_left"
 
-	model_desc: "/model/mover/train/nm_rr_level1_left.pmd"
-	model_coll: "/model/mover/train/nm_rr_level1_left.pmc"
+	model_desc: "/model/mover/train/nm_rr_level_left.pmd"
+	model_coll: "/model/mover/train/nm_rr_level_left.pmc"
 	
 	state_anim: 4
 	state_collision: 4
@@ -391,11 +391,11 @@ tr_semaphore_model : tr_sem_mdl.cr1_r_2ln_c {
 	state_collision[0]: false
 
 	# red
-	state_anim[1]: "/model/mover/train/nm_r_l_dw.pma"
+	state_anim[1]: "/model/mover/train/nm_l_c_dw.pma"
 	state_collision[1]: true
 
 	# orange_to_green
-	state_anim[2]: "/model/mover/train/nm_r_l_up.pma"
+	state_anim[2]: "/model/mover/train/nm_l_c_up.pma"
 	state_collision[2]: true
 
 	# green
@@ -403,31 +403,22 @@ tr_semaphore_model : tr_sem_mdl.cr1_r_2ln_c {
 	state_collision[3]: false
 }
 
-tr_semaphore_model : tr_sem_mdl.cr2_r_2ln_c {
+tr_semaphore_model : tr_sem_mdl.rl_light1_c {
 
-	name: "ab_left_1"
+	name: "nm_rr_lights1_left"
 
-	model_desc: "/model/mover/train/nm_rr_level2_left.pmd"
-	model_coll: "/model/mover/train/nm_rr_level2_left.pmc"
-	
-	state_anim: 4
-	state_collision: 4
+	model_desc: "/model/sign/train/nm_rr_lights1_left.pmd"
+	model_coll: "/model/sign/train/nm_rr_lights1_left.pmc"
 
-	# orange_to_red
-	state_anim[0]: ""
-	state_collision[0]: false
+}
 
-	# red
-	state_anim[1]: "/model/mover/train/nm_r_l1_l_dw.pma"
-	state_collision[1]: true
+tr_semaphore_model : tr_sem_mdl.rl_light2_c {
 
-	# orange_to_green
-	state_anim[2]: "/model/mover/train/nm_r_l1_l_up.pma"
-	state_collision[2]: true
+	name: "nm_rr_lights2_left"
 
-	# green
-	state_anim[3]: ""
-	state_collision[3]: false
+	model_desc: "/model/sign/train/nm_rr_lights2_left.pmd"
+	model_coll: "/model/sign/train/nm_rr_lights2_left.pmc"
+
 }
 
 tr_semaphore_model : tr_sem_mdl.single_mir {
@@ -541,4 +532,137 @@ tr_semaphore_model : tr_sem_mdl.dbl_sh_o_m {
 	model_desc: "/model/sign/traffic_light/us_cross_double_short_one_mirror.pmd"
 	model_coll: "/model/sign/traffic_light/us_cross_double_short_one_mirror.pmc"
 }
+
+
+################
+###California###
+################
+
+
+tr_semaphore_model : tr_sem_mdl.double.ca {
+
+	name: "double"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.double_cut.ca {
+
+	name: "double_cut"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_cut_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_cut_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.dbl_cut_nl.ca {
+
+	name: "double_cut_no_lamp"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_cut_no_lamp_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_cut_no_lamp_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.double_sh.ca {
+
+	name: "double_short"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.dbl_sh_nl.ca {
+
+	name: "double_short_no_lamp"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_no_lamp_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_no_lamp_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.single.ca {
+
+	name: "single"
+
+	model_desc: "/model/sign/traffic_light/us_cross_single_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_single_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.single_nl.ca {
+
+	name: "single_no_lamp"
+
+	model_desc: "/model/sign/traffic_light/us_cross_single_no_lamp_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_single_no_lamp_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.light_cut.ca {
+
+	name: "light_cut"
+
+	model_desc: "/model/sign/traffic_light/us_left_light_ca.pmd"
+}
+
+tr_semaphore_model : tr_sem_mdl.left_turn.ca {
+
+	name: "left_turn"
+
+	model_desc: "/model/sign/traffic_light/us_left_turn_ca.pmd"
+}
+
+tr_semaphore_model : tr_sem_mdl.single_mir.ca {
+
+	name: "single_mirror"
+
+	model_desc: "/model/sign/traffic_light/us_cross_single_mirror_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_single_mirror_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.dbl_sh_o_m.ca {
+
+	name: "double_short_one_mirror"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_one_mirror_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_one_mirror_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.single_left.ca {
+
+	name: "left_light_only"
+
+	model_desc: "/model/sign/traffic_light/us_left_single_only_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_left_single_only_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.single_light.ca {
+
+	name: "single_light_only"
+
+	model_desc: "/model/sign/traffic_light/us_light_single_only_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_light_single_only_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.column.ca {
+
+	name: "column"
+
+	model_desc: "/model/sign/traffic_light/us_cross_column_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_column_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.left_column.ca {
+
+	name: "left_column"
+
+	model_desc: "/model/sign/traffic_light/us_cross_left_column_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_left_column_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.left_side.ca {
+
+	name: "left_side"
+
+	model_desc: "/model/sign/traffic_light/us_left_turn_side_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_left_turn_side_ca.pmc"
+}
+
 }

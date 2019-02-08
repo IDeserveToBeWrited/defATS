@@ -1,0 +1,62 @@
+traffic_trailer : traffic.trailer.log 
+{
+	accessories[]: .traffic.log.chassis
+	accessories[]: .traffic.log.rwheel
+	accessories[]: .traffic.log.rwheel2
+
+	cargo_mass: 16000
+
+	spawn_ratio: 0.0
+
+	variant[]: .traffic.trailer.log_cargo 
+}
+
+vehicle_accessory: .traffic.log.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_log/ch_black.sii"
+}
+
+vehicle_wheel_accessory: .traffic.log.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.log.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .traffic.trailer.log_cargo 
+{
+	accessories[]: .traffic.log_cargo.chassis
+	accessories[]: .traffic.log_cargo.rwheel
+	accessories[]: .traffic.log_cargo.rwheel2
+	accessories[]: .traffic.log_cargo.wood
+
+	cargo_mass: 16000
+}
+
+vehicle_accessory: .traffic.log_cargo.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_log/ch_red.sii"
+}
+
+vehicle_wheel_accessory: .traffic.log_cargo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.log_cargo.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.log_cargo.wood
+{
+	data_path: "/def/vehicle/trailer_cargo/scs_log/logs_long.sii"
+}

@@ -3503,9 +3503,9 @@ sign_model : sign.559 {
 
 	model_desc: "/model/sign/navigation/exit_sign.pmd"
 	model_coll: "/model/sign/navigation/exit_sign.pmc"
-	
 	category: "editable area"
-	sign_name: "exit_sign"
+	sign_name: "exit sign"
+	stand_classes[]: side_sml_9
 	dynamic: true
 	editable: true
 	mass: 100.0
@@ -3517,7 +3517,8 @@ sign_model : sign.559a {
 	model_coll: "/model/sign/navigation/exit_sign_wide.pmc"
 	
 	category: "editable area"
-	sign_name: "exit_sign"
+	sign_name: "exit sign"
+	stand_classes[]: side_sml_9
 	dynamic: true
 	editable: true
 	mass: 100.0
@@ -7220,6 +7221,29 @@ sign_model : sign.sm_bd_12 {
 	editable: true
 
 }
+sign_model : sign.sm_bd_13 {
+
+	model_desc: "/model/sign/navigation/exit_sign_speed.pmd"
+	model_coll: "/model/sign/navigation/exit_sign_speed.pmc"
+	category: "editable board"
+	sign_name: "exit sign with speed"
+	stand_classes[]: side_sml_9
+	dynamic: true
+	editable: true
+	mass: 100.0
+}
+sign_model : sign.sm_bd_14 {
+
+	model_desc: "/model/sign/navigation/exit_sign_wide_speed.pmd"
+	model_coll: "/model/sign/navigation/exit_sign_wide_speed.pmc"
+	category: "editable board"
+	sign_name: "exit sign with speed"
+	stand_classes[]: side_sml_9w
+	dynamic: true
+	editable: true
+	mass: 100.0
+}
+
 
 sign_model : sign.rot_bd_01 {
 
@@ -8302,7 +8326,7 @@ sign_model : sign.728 {
 }
 sign_model : sign.729 {
 
-	sign_name: "us one way arrows right"
+	sign_name: "us one way roundabout arrows right"
 
 	model_desc: "/model/sign/traffic/us_one_way_arrows_right.pmd"
 	model_coll: "/model/sign/traffic/us_one_way_arrows_right.pmc"
@@ -8313,7 +8337,7 @@ sign_model : sign.729 {
 }
 sign_model : sign.730 {
 
-	sign_name: "us one way arrows left"
+	sign_name: "us one way roundabout arrows left"
 
 	model_desc: "/model/sign/traffic/us_one_way_arrows_left.pmd"
 	model_coll: "/model/sign/traffic/us_one_way_arrows_left.pmc"
@@ -9037,5 +9061,117 @@ sign_model : sign.dlc_or_95 {
         road_model: false
         instanced: false
 
+}
+sign_model : sign.735 {
+
+	sign_name: "rail_export_navigation_right"
+
+	model_desc: "/model/sign/company_logos/rail_export/rail_export_navigation_right.pmd"
+	model_coll: "/model/sign/company_logos/rail_export/rail_export_navigation_right.pmc"
+	look_name: default
+
+	dynamic: true
+        road_model: false
+        instanced: false
+	mass: 200
+}
+sign_model : sign.736 {
+
+	sign_name: "rail_export_navigation_left"
+
+	model_desc: "/model/sign/company_logos/rail_export/rail_export_navigation_left.pmd"
+	model_coll: "/model/sign/company_logos/rail_export/rail_export_navigation_left.pmc"
+	look_name: default
+
+	dynamic: true
+        road_model: false
+        instanced: false
+	mass: 200
+
+}
+sign_model : sign.737 {
+
+	sign_name: "rail_export_navigation_up"
+
+	model_desc: "/model/sign/company_logos/rail_export/rail_export_navigation_up.pmd"
+	model_coll: "/model/sign/company_logos/rail_export/rail_export_navigation_up.pmc"
+	look_name: default
+
+	dynamic: true
+        road_model: false
+        instanced: false
+	mass: 200
+
+}
+sign_model : sign.738 {
+
+	sign_name: "us_blank_rectangle_big"
+
+	model_desc: "/model/sign/traffic/us_blank_rectangle_big.pmd"
+	model_coll: "/model/sign/traffic/us_blank_rectangle_big.pmc"
+	look_name: default
+
+	dynamic: true
+	stand_classes[]: side_sml_8
+    road_model: false
+    instanced: false
+	editable: true
+	category: "editable board"
+	mass: 100
+
+}
+
+sign_model : sign.739 {
+
+	#category: "Pillar"
+	sign_name: "us_bridge_pillar_simple_cubic"
+
+	model_desc: "/model/pillar/us_bridge_pillar_simple_cubic.pmd"
+	model_coll: "/model/pillar/us_bridge_pillar_simple_cubic.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+}
+
+sign_model : sign.740 {
+
+	#category: "Pillar"
+	sign_name: "us_bridge_pillar_simple_cyrcle"
+
+	model_desc: "/model/pillar/us_bridge_pillar_simple_cyrcle.pmd"
+	model_coll: "/model/pillar/us_bridge_pillar_simple_cyrcle.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+}
+sign_model : sign.ov_bd_78 {
+
+	sign_name: "fvy3 overhead board special"
+
+	model_desc: "/model/sign/navigation/fwy3_ovh_board_special.pmd"
+	model_coll: "/model/sign/navigation/fwy3_ovh_board_special.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_1
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+
+}
+sign_model : sign.dlc_or_46 {
+
+	sign_name: "US Oregon speed limit 55 mph"
+
+	model_desc: "/model/sign/us_or_speed_55mph.pmd"
+	model_coll: "/model/sign/us_or_speed_55mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_55
 }
 }

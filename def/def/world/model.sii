@@ -377,7 +377,11 @@ model_def : model.2084 {
 	
 }
 model_def : model.2085 {
-	model_desc: "/model/building/country/silo1.pmd"
+	model_desc: "/model/building/country/silo1.pmd" 
+	
+	lod_desc: "/model/building/country/silo1_lod1.pmd"
+	lod_dist: 100
+
 	
 }
 
@@ -1573,6 +1577,7 @@ model_def : model.208 {
 	lod_dist: 65
 	static_lod_name[]: "100m"
 	static_lod_path[]:  "/model/panorama/ca_sf/street_house4_lod1.pmd"
+  
 }
 model_def : model.209 {
 	model_desc: "/model/panorama/ca_sf/street_house3.pmd"
@@ -1679,6 +1684,9 @@ model_def : model.233{
 	model_desc: "/model/building/logistic/warehouse05.pmd"
 	static_lod_name[]: "LOD from 100m"	
 	static_lod_path[]: "/model/building/logistic/warehouse05_lod1.pmd"
+	
+	lod_desc: "/model/building/logistic/warehouse05_lod1.pmd"
+	lod_dist: 100
 	
 }
 model_def : model.234{
@@ -2701,12 +2709,15 @@ model_def : model.5025 {
 	model_desc: "/model/building/country/house4.pmd"
 
 	
-	lod_desc: "/model/building/country/house4_lod1.pmd"
-	lod_dist: 100
+	lod_desc: "/model/building/country/house4_lod2.pmd"
+	lod_dist: 100        
 	
-static_lod_name[]: "100m"
+static_lod_name[]: "50m"
 	static_lod_path[]:  "/model/building/country/house4_lod1.pmd"		
-	
+
+static_lod_name[]: "100m"
+	static_lod_path[]:  "/model/building/country/house4_lod2.pmd"		
+		
 }
 
 
@@ -3576,10 +3587,10 @@ model_def : model.az_56 {
 	model_desc: "/model/rock/hills/az_hill_03.pmd"
 }
 model_def : model.5227 {
-	 vegetation_model: vegetmodel.appletree1
+	 vegetation_model: vegetmodel.fruittree1
 }
 model_def : model.5228 {
-	 vegetation_model: vegetmodel.appletree2
+	 vegetation_model: vegetmodel.fruittree2
 }
 model_def : model.5230 {
 	 vegetation_model : vegetmodel.shrub1
@@ -5484,15 +5495,24 @@ model_def : model.nm_395 {
 }
 model_def : model.nm_215 {
 	model_desc: "/model/props/construction/nm_pile_01.pmd"
+  lod_desc: "/model/props/construction/nm_pile_01_lod1.pmd"   
+	lod_dist: 50
+  
 }
 model_def : model.nm_216 {
 	model_desc: "/model/props/construction/nm_pile_02.pmd"
+  lod_desc: "/model/props/construction/nm_pile_02_lod1.pmd"   
+	lod_dist: 50
 }
 model_def : model.nm_217 {
 	model_desc: "/model/props/construction/nm_pile_03.pmd"
+  lod_desc: "/model/props/construction/nm_pile_03_lod1.pmd"   
+	lod_dist: 50
 }
 model_def : model.nm_218 {
 	model_desc: "/model/props/construction/nm_pile_04.pmd"
+  lod_desc: "/model/props/construction/nm_pile_04_lod1.pmd"   
+	lod_dist: 50
 }
 
 model_def : model.nm_434 {
@@ -5504,9 +5524,9 @@ model_def : model.nm_434 {
 	color_variant[]:"Soil Red | var_1: 110,78,59 | var_2: 110,78,59 | var_3: 110,78,59 | var_4: 110,78,59 | var_5: 110,78,59 | var_6: 110,78,59 | var_7: 110,78,59"
 	color_variant[]:"Gravel Red | var_1: 140,90,57 | var_2: 140,90,57 | var_3: 140,90,57 | var_4: 140,90,57 | var_5: 140,90,57 | var_6: 140,90,57 | var_7: 140,90,57"
 	color_variant[]:"Gravel Sand | var_1: 130,100,69 | var_2: 130,100,69 | var_3: 130,100,69 | var_4: 130,100,69 | var_5: 130,100,69 | var_6: 130,100,69 | var_7: 130,100,69"
-	color_variant[]:"Mud | var_1: 124,118,98 | var_2: 124,118,98 | var_3: 124,118,98 | var_4: 124,118,98 | var_5: 124,118,98 | var_6: 124,118,98 | var_7: 124,118,98"
+	color_variant[]:"Mud Light | var_1: 124,118,98 | var_2: 124,118,98 | var_3: 124,118,98 | var_4: 124,118,98 | var_5: 124,118,98 | var_6: 124,118,98 | var_7: 124,118,98"
 	color_variant[]:"Mud Brown | var_1: 88,76,61 | var_2: 88,76,61 | var_3: 88,76,61 | var_4: 88,76,61 | var_5: 88,76,61 | var_6: 88,76,61 | var_7: 88,76,61"
-	color_variant[]:"Mud Dark | var_1: 45,44,39 | var_2: 45,44,39 | var_3: 45,44,39 | var_4: 45,44,39 | var_5: 45,44,39 | var_6: 45,44,39 | var_7: 45,44,39"
+	color_variant[]:"Mud  | var_1: 45,44,39 | var_2: 45,44,39 | var_3: 45,44,39 | var_4: 45,44,39 | var_5: 45,44,39 | var_6: 45,44,39 | var_7: 45,44,39"
 }
 
 model_def : model.or_138 {
@@ -5769,6 +5789,8 @@ model_def : model.or_137 {
 
 model_def : model.or_5_mod {
 	model_desc: "/model/railing/bridge/us_bridge_pillar_01.pmd"
+	
+	auto_compound: true
 } 
 
 model_def : model.or_260 {
@@ -6342,6 +6364,8 @@ model_def : model.or_562 {
 	color_variant[]:"wa_dark | vis_6: 90,84,82 | vis_cub: 90,84,82 | vis_cyl: 118,110,106"
 	color_variant[]: "az_sand: | vis_6: 137, 126, 106 | vis_cub: 137, 126, 106 | vis_cyl: 137, 126, 106" 
 	
+	auto_compound: true
+	
 }
 model_def : model.5670 {
 	model_desc: "/model/props/street/garbage7.pmd"
@@ -6436,6 +6460,10 @@ model_def : model.or_504 {
 	color_variant[]:"blue | vis_declr: 49,82,144 | vis_clr: 49,82,144"
 	color_variant[]:"red | vis_declr: 84,9,9 | vis_clr: 84,9,9"
 	color_variant[]:"green | vis_declr: 52,84,9 | vis_clr: 52,84,9"
+	
+	lod_desc: "/model/props/street/or_cleaner1_lod1.pmd"
+	lod_dist: 50
+	
 }
 model_def : model.or_124 {
 	vegetation_model : vegetmodel.conifer.dry2.or
@@ -7357,6 +7385,10 @@ model_def : model.or_434 {
 	model_desc: "/model/administration/or_admin5.pmd"
 	static_lod_name[]: "lod 100m"
 	static_lod_path[]: "/model/administration/or_admin5_lod1.pmd"
+  static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/administration/or_admin5_lod2.pmd"
+  lod_desc: "/model/administration/or_admin5_lod2.pmd"
+	lod_dist: 200
 	color_variant[]:"white/green | base_cl1: 84,95,78 | base_cr1: 84,95,78 | vis_c1: 84,95,78 | vis_cl1: 84,95,78 | vis_cr1: 84,95,78   | base_cb2: 247,243,235 | base_cl2: 247,243,235 | base_cr2: 247,243,235 | vis_c2: 247,243,235 | vis_cb2: 247,243,235 | vis_cl2: 247,243,235 | vis_cr2: 247,243,235   | vis_c3: 119,124,143 | vis_cl3: 119,124,143 | vis_cr3: 119,124,143"
 	color_variant[]:"yellow/white | base_cl1: 255,255,255 | base_cr1: 255,255,255 | vis_c1: 255,255,255 | vis_cl1: 255,255,255 | vis_cr1: 255,255,255   | base_cb2: 243,232,197 | base_cl2: 243,232,197 | base_cr2: 243,232,197 | vis_c2: 243,232,197 | vis_cb2: 243,232,197 | vis_cl2: 243,232,197 | vis_cr2: 243,232,197   | vis_c3: 47,69,56 | vis_cl3: 47,69,56 | vis_cr3: 47,69,56"
 	color_variant[]:"red/white | base_cl1: 255,255,255 | base_cr1: 255,255,255 | vis_c1: 255,255,255 | vis_cl1: 255,255,255 | vis_cr1: 255,255,255   | base_cb2: 155,55,50 | base_cl2: 155,55,50 | base_cr2: 155,55,50 | vis_c2: 155,55,50 | vis_cb2: 155,55,50 | vis_cl2: 155,55,50 | vis_cr2: 155,55,50   | vis_c3: 78,74,68 | vis_cl3: 78,74,68 | vis_cr3: 78,74,68"
@@ -7431,9 +7463,9 @@ model_def : model.or_449 {
 model_def : model.or_450 {
 	model_desc: "/model/props/construction/or_const_mixer_01.pmd"
 	static_lod_name[]: "50m"
-	static_lod_path[]: "/model/props/construction/or_const_mixer_lod1.pmd"
+	static_lod_path[]: "/model/props/construction/or_const_mixer_01_lod1.pmd"
 	
-	lod_desc: "/model/props/construction/or_const_mixer_lod1.pmd"
+	lod_desc: "/model/props/construction/or_const_mixer_01_lod1.pmd"
 	lod_dist: 50
 }
 model_def : model.or_451 {
@@ -9481,6 +9513,13 @@ model_def : model.or_301 {
 }
 model_def : model.or_302 {
 	model_desc: "/model/props/construction/or_wood_stockpile3.pmd"
+	static_lod_name[]: "lod 80m"
+	static_lod_path[]: "/model/props/construction/or_wood_stockpile3_lod1.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/props/construction/or_wood_stockpile3_lod2.pmd"
+	
+	lod_desc: "/model/props/construction/or_wood_stockpile3_lod1.pmd"
+	lod_dist: 100
 }
 model_def : model.or_352 {
 	model_desc: "/model/props/country/or_chip_pile_04.pmd"
@@ -9864,5 +9903,122 @@ model_def : model.1259 {
 
 model_def : model.1260 {
 	vegetation_model: vegetmodel.bush_big.far2
+}
+model_def : model.1261 {
+	model_desc: "/model/rock/or_rock_group.pmd"
+}
+model_def : model.1262 {
+	model_desc: "/model/rock/wa_mud_pile.pmd"
+}
+model_def : model.1263 {
+	model_desc: "/model/rock/cliffs2/roadcliff_1_mult.pmd"
+}
+model_def : model.1264 {
+	model_desc: "/model/rock/cliffs2/roadcliff_2_mult.pmd"
+}
+model_def : model.1265 {
+	model_desc: "/model/rock/cliffs2/roadcliff_3_low_left_mult.pmd"
+}
+model_def : model.1266 {
+	model_desc: "/model/rock/cliffs2/roadcliff_3_low_mult.pmd"
+}
+model_def : model.1267 {
+	model_desc: "/model/rock/cliffs2/roadcliff_3_low_right_mult.pmd"
+}
+model_def : model.1268 {
+	model_desc: "/model/rock/cliffs2/roadcliff_4_mult.pmd"
+}
+model_def : model.1269 {
+	model_desc: "/model/rock/cliffs2/roadcliff_5_mult.pmd"
+}
+model_def : model.1270 {
+	model_desc: "/model/rock/cliffs2/roadcliff_6_mult.pmd"
+}
+model_def : model.1271 {
+	model_desc: "/model/rock/cliffs2/roadcliff_7_mult.pmd"
+}
+model_def : model.1272 {
+	model_desc: "/model/rock/cliffs2/roadcliff_8_mult.pmd"
+}
+model_def : model.1273 {
+	model_desc: "/model/rock/cliffs2/roadcliff_9_mult.pmd"
+}
+model_def : model.1274 {
+	model_desc: "/model/rock/cliffs2/roadcliff_10_mult.pmd"
+}
+model_def : model.1275 {
+	model_desc: "/model/rock/cliffs2/roadcliff_11_mult.pmd"
+}
+model_def : model.1276 {
+	model_desc: "/model/rock/cliffs2/roadcliff_13_left_mult.pmd"
+}
+model_def : model.1277 {
+	model_desc: "/model/rock/cliffs2/roadcliff_13_mult.pmd"
+}
+model_def : model.1278 {
+	model_desc: "/model/rock/cliffs2/roadcliff_13_right_mult.pmd"
+}
+model_def : model.1279 {
+	model_desc: "/model/rock/cliffs2/roadcliff_14_mult.pmd"
+}
+
+model_def : model.nm_220 {
+	model_desc: "/model/props/nm_cemetery2.pmd"
+}
+model_def : model.nm_358 {
+	model_desc: "/model/panorama/nm_carrizozo/nm_roys.pmd"
+}
+
+model_def : model.nm_429 {
+	model_desc: "/model/advert/nm_club_cafe1.pmd"
+}
+
+model_def : model.nm_430 {
+	model_desc: "/model/advert/nm_club_cafe2.pmd"
+}
+model_def : model.1280 {
+	model_desc: "/prefab/depots/live_stock_farm/live_stock_barn1.pmd"
+
+	color_variant[]:"Grey | vis_wall_clr: 128,128,128 | vis_roof_clr: 128,128,128"
+	color_variant[]:"Red | vis_wall_clr: 125,23,21 | vis_roof_clr: 250,250,250"
+	color_variant[]:"Red Invert | vis_wall_clr: 250,250,250 | vis_roof_clr: 154,44,41"
+	color_variant[]:"Green | vis_wall_clr: 193,174,128 | vis_roof_clr: 59,100,66"
+	color_variant[]:"Blue | vis_wall_clr: 128,128,128 | vis_roof_clr: 46,77,142"
+	
+	lod_desc: "/prefab/depots/live_stock_farm/live_stock_barn1_lod1.pmd"
+	lod_dist: 100
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/prefab/depots/live_stock_farm/live_stock_barn1_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/prefab/depots/live_stock_farm/live_stock_barn1_lod2.pmd"
+}
+model_def : model.wa_258 {
+ 	model_desc: "/model/barrier/metal/wa_fence_gate_rusty.pmd"
+}
+
+model_def : model.or_1254 {
+	model_desc: "/model/props/farm/or_haystack2.pmd"
+	static_lod_name[]: "lod from 30m"
+	static_lod_path[]: "/model/props/farm/or_haystack2_lod1.pmd"
+	lod_desc: "/model/props/farm/or_haystack2_lod1.pmd"
+	lod_dist: 35
+}
+model_def : model.1281 {
+	 vegetation_model: vegetmodel.apple.tree1
+}	 
+model_def : model.1282 {
+	 vegetation_model: vegetmodel.apple.tree2
+}
+model_def : model.or_670 {
+	model_desc: "/prefab/depots/scrapyard/or_flat_cars_1_det.pmd"
+
+}
+
+model_def : model.or_671 {
+	model_desc: "/prefab/depots/scrapyard/or_flat_cars_2_det.pmd"
+}
+model_def : model.or_672 {
+	model_desc: "/prefab/depots/scrapyard/or_flat_cars_3_det.pmd"
 }
 }
