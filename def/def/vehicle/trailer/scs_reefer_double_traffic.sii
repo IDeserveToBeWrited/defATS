@@ -1,0 +1,77 @@
+traffic_trailer : traffic.trailer.scs_ref2
+{
+	trailer_definition: trailer_def.scs.box.double_p.reefer
+
+	accessories[]: .scs_ref2.chassis
+	accessories[]: .scs_ref2.rwheel
+	accessories[]: .scs_ref2.paint_job
+	
+	company_paint_job: true
+	
+	slave_trailer: .scs_ref2.dolly
+}
+
+vehicle_accessory: .scs_ref2.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ref_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ref2.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .scs_ref2.dolly
+{
+	accessories[]: .scs_ref2.dolly.chassis
+	accessories[]: .scs_ref2.dolly.rwheel
+
+	slave_trailer: .scs_ref2.second
+}
+
+vehicle_accessory: .scs_ref2.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dolly_c.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref2.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .scs_ref2.second
+{
+	accessories[]: .scs_ref2.second.chassis
+	accessories[]: .scs_ref2.second.rwheel
+	accessories[]: .scs_ref2.second.paint_job
+	
+	company_paint_job: true
+
+}
+
+vehicle_accessory: .scs_ref2.second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ref_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .scs_ref2.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_ref2.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

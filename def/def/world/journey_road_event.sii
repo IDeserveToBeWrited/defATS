@@ -11,10 +11,7 @@ SiiNunit
 journey_events_road_event : j_re.super_parent
 {
 	excluded_lane_types[]: rail
-
-	excluded_road_looks[]:	or_tmpl01
-	excluded_road_looks[]:	or_tmpl02
-	excluded_road_looks[]:	or_tmpl05
+	excluded_lane_types[]: tram
 }
 
 ##############################
@@ -92,7 +89,8 @@ journey_events_road_event : j_re.acc_cou_s
 	traffic_block: false
 	centerline_displacement: true
 	
-//    max_shoulder_space: 1.0
+	min_shoulder_space: 0.0 
+	max_shoulder_space: 2.5
 	allowed_lanes_count[]: 1
 
 	weight: 1
@@ -119,7 +117,7 @@ journey_events_road_event : j_re.acc_ext_s
 	tunnel_forbidden: true
 	traffic_block: false
 	
-    min_shoulder_space: 1.5
+    min_shoulder_space: 3.0
 
 	weight: 1
 	
@@ -176,7 +174,8 @@ journey_events_road_event : j_re.acc_cou_b
 	traffic_block: false
 	centerline_displacement: true
 	
-    max_shoulder_space: 1.0
+	min_shoulder_space: 1.0 
+    max_shoulder_space: 2.5
 	allowed_lanes_count[]: 1
 
 	weight: 3.0
@@ -212,7 +211,7 @@ journey_events_road_event : j_re.acc_ext_b
 	traffic_block: false
 	centerline_displacement: true
 	
-    min_shoulder_space: 1.5
+    min_shoulder_space: 3.0
 	allowed_lanes_count[]: 1
 
 	weight: 3.0
@@ -245,7 +244,7 @@ journey_events_road_event : j_re.acc_ext2_b
 	traffic_block: false
 	centerline_displacement: true
 	
-    min_shoulder_space: 1.5
+    min_shoulder_space: 3.0
 	allowed_lanes_count[]: 1
 
 	weight: 3.0
@@ -346,7 +345,7 @@ journey_events_road_event : j_re.acc_hw_b
 	tunnel_forbidden: true
 	traffic_block: true
 	
-    min_shoulder_space: 1.5
+    min_shoulder_space: 3.0
 
 	weight: 10.0
 	
@@ -1083,7 +1082,7 @@ journey_events_road_event : j_re.rw_1_1
 	traffic_block:false
 	slow_down_passing:false
 	min_shoulder_space: 1.0
-	max_shoulder_space: 1.0
+	max_shoulder_space: 2.5
 	bridge_forbidden: true
 	tunnel_forbidden: true
 	name:	"Roadwork 1-1 (3)"
@@ -1220,7 +1219,8 @@ journey_events_road_event : j_re.pol_cou
 	traffic_block: false
 	centerline_displacement: true
 	
-    max_shoulder_space: 1.0
+	min_shoulder_space: 1.0
+    max_shoulder_space: 2.5
 	allowed_lanes_count[]: 1
 
 	weight: 2
@@ -1247,7 +1247,7 @@ journey_events_road_event : j_re.pol_ext
 	tunnel_forbidden: true
 	traffic_block: false
 	
-    min_shoulder_space: 1.5
+    min_shoulder_space: 3.0
 
 
 	weight: 2
@@ -1731,7 +1731,8 @@ journey_events_road_event : j_re.rw_cou
 	centerline_displacement: true
 	
 	allowed_lanes_count[]: 1
-    max_shoulder_space: 1.0
+	min_shoulder_space: 1.0
+    max_shoulder_space: 2.5
 
 	weight: 3.0
 	
@@ -1770,7 +1771,7 @@ journey_events_road_event : j_re.rw_ext
 	centerline_displacement: true
 	
 	allowed_lanes_count[]: 1
-    min_shoulder_space: 1.5
+    min_shoulder_space: 3.0
 
 	weight: 3.0
 	
@@ -1911,4 +1912,174 @@ journey_events_road_event : j_re.rw_g
 	name: "Roadwork geyser"
 	parents[]: j_re.super_parent
 }
+
+
+
+
+
+journey_events_road_event : j_re.rw_1_tl
+{
+    signs_distances_outer[]:            120.0
+    signs_distances_outer[]:            100.0
+    signs_distances_outer[]:            70.0
+    signs_distances_outer[]:            20.0
+    signs_distances_outer[]:            -70.0
+	
+    signs_distances_outer[]:            -120.0
+    signs_distances_outer[]:            -100.0
+    signs_distances_outer[]:            -70.0
+    signs_distances_outer[]:            -30.0
+    signs_distances_outer[]:            70.0
+
+	remove_map_sign: true
+	bridge_forbidden: true
+	tunnel_forbidden: true
+	slow_down_passing: true
+}
+
+journey_events_road_event : j_re.rw_1_tlw
+{
+	parents[]: j_re.rw_1_tl
+
+    signs_cutscenes_outer[]:            j_cut.sg31_w
+	signs_cutscenes_outer[]:            j_cut.sg_lc1_w
+	signs_cutscenes_outer[]:            j_cut.sg_tl1_w
+	signs_cutscenes_outer[]:            j_cut.sg_sh1_w
+	signs_cutscenes_outer[]:            j_cut.sg_end1_w
+	
+	signs_cutscenes_outer[]:            j_cut.sg31_wb
+	signs_cutscenes_outer[]:            j_cut.sg_lc1_wb
+	signs_cutscenes_outer[]:            j_cut.sg_tl1_wb
+	signs_cutscenes_outer[]:            j_cut.sg_sh1_wb
+	signs_cutscenes_outer[]:            j_cut.sg_end1_wb
+	
+    start_cutscene:          j_cut.rw1_sw
+    end_cutscene:            j_cut.rw1_ew
+	
+    layer_cutscenes[]:            j_cut.rw1_c
+    layer_cutscenes[]:            j_cut.rw_1_tlw
+    
+	min_shoulder_space: 3.0                    // [m]
+	
+    layer_min_curve[]:            0.0        // [degree]
+    layer_min_curve[]:            0.0        // [degree]
+    layer_max_curve[]:            5.0        // [degree]
+    layer_max_curve[]:            5.0        // [degree]
+}
+
+journey_events_road_event : j_re.rw_1_tln
+{
+	parents[]: j_re.rw_1_tl
+
+    signs_cutscenes_outer[]:            j_cut.sg31_n
+	signs_cutscenes_outer[]:            j_cut.sg_lc1_n
+	signs_cutscenes_outer[]:            j_cut.sg_tl1_n
+	signs_cutscenes_outer[]:            j_cut.sg_sh1_n
+	signs_cutscenes_outer[]:            j_cut.sg_end1_n
+	
+	signs_cutscenes_outer[]:            j_cut.sg31_nb
+	signs_cutscenes_outer[]:            j_cut.sg_lc1_nb
+	signs_cutscenes_outer[]:            j_cut.sg_tl1_nb
+	signs_cutscenes_outer[]:            j_cut.sg_sh1_nb
+	signs_cutscenes_outer[]:            j_cut.sg_end1_nb
+
+    start_cutscene:          j_cut.rw1_s
+    end_cutscene:            j_cut.rw1_e
+
+	layer_cutscenes[]:			  j_cut.rw1_c
+	layer_cutscenes[]:			  j_cut.rw_1_tln
+	
+	min_shoulder_space: 0.0                    // [m]
+	max_shoulder_space: 2.5                    // [m]    
+   
+    layer_min_curve[]:              0.0        // [degree]
+    layer_min_curve[]:              0.0        // [degree]
+	layer_max_curve[]:              5.0        // [degree]
+	layer_max_curve[]:              5.0        // [degree]	
+}
+
+journey_events_road_event : j_re.rw_1_tlw80
+{
+	parents[]: j_re.rw_1_tlw
+
+    max_length:                    81.0      // [m]
+    min_length:                    79.0      // [m]
+	
+	weight: 5.0
+
+    semaphore_profile_1x1: event_80_w
+	name: "Roadwork 1-1 trafic lights wide 80m"
+}
+
+journey_events_road_event : j_re.rw_1_tln80
+{    
+	parents[]: j_re.rw_1_tln
+	
+    max_length:                    81.0        // [m]
+    min_length:                    79.0        // [m]
+	
+	weight: 5.0
+
+    semaphore_profile_1x1: event_80_n
+	name: "Roadwork 1-1 trafic lights narrow 80m"	
+}
+
+journey_events_road_event : j_re.rw2_1_tln80
+{    
+	parents[]: j_re.rw_1_tln
+	
+    max_length:                    81.0        // [m]
+    min_length:                    79.0        // [m]
+	
+	weight: 5.0
+	
+	layer_cutscenes[]:			  j_cut.rw1_c
+	layer_cutscenes[]:			  j_cut.rw_1_tl8
+
+    semaphore_profile_1x1: event_80_n
+	name: "Roadwork2 1-1 trafic lights narrow 80m"	
+}
+
+journey_events_road_event : j_re.rw2_1_tlw80
+{    
+	parents[]: j_re.rw_1_tlw
+	
+    max_length:                    81.0        // [m]
+    min_length:                    79.0        // [m]
+	
+	weight: 5.0
+	
+	layer_cutscenes[]:			  j_cut.rw1_c
+	layer_cutscenes[]:			  j_cut.rw_1_tl8
+
+    semaphore_profile_1x1: event_80_n
+	name: "Roadwork2 1-1 trafic lights wide 80m"	
+}
+
+journey_events_road_event : j_re.rw_1_tlw120
+{
+	parents[]: j_re.rw_1_tlw
+
+    max_length:                    121.0      // [m]
+    min_length:                    119.0      // [m]
+	
+	weight: 10.0
+
+    semaphore_profile_1x1: event_120_w
+	name: "Roadwork 1-1 trafic lights wide 120m"
+}
+
+journey_events_road_event : j_re.rw_1_tln120
+{    
+	parents[]: j_re.rw_1_tln
+	
+    max_length:                    121.0        // [m]
+    min_length:                    119.0        // [m]
+	
+	weight: 10.0
+
+    semaphore_profile_1x1: event_120_n
+	name: "Roadwork 1-1 trafic lights narrow 120m"	
+}
+
 }

@@ -653,10 +653,6 @@ model_def : model.2155 {
 	model_desc: "/model/panorama/ca_la/la_shop_fu.pmd"
 }
 
-
-model_def : model.715 {
-	model_desc: "/model/vehicle/crane/calais_crane_1.pmd" 
-}
 model_def : model.154 {
 	model_desc: "/model/molo/concrete.pmd"
 	
@@ -1104,7 +1100,7 @@ model_def : model.95 {
 	static_lod_path[]:  "/model/vehicle/parked_cars/plaza2_lod2.pmd"
 	
 	lod_desc: "/model/vehicle/parked_cars/plaza2_lod2.pmd"
-	lod_dist: 50
+	lod_dist: 250
 	
 }
 model_def : model.96 {
@@ -1174,11 +1170,11 @@ model_def : model.312 {
 
 model_def : model.104{
 	category: "Vehicles"
-	model_desc: "/model/vehicle/construction/cat_th514.pmd"
+	model_desc: "/model/vehicle/construction/telehandler.pmd"
 	static_lod_name[]: "LOD from 50m"
-	static_lod_path[]: "/model/vehicle/construction/cat_th514_lod1.pmd"
+	static_lod_path[]: "/model/vehicle/construction/telehandler_lod1.pmd"
 	static_lod_name[]: "LOD from 100m"
-	static_lod_path[]: "/model/vehicle/construction/cat_th514_lod2.pmd"
+	static_lod_path[]: "/model/vehicle/construction/telehandler_lod2.pmd"
 	
 }
 model_def : model.105 {
@@ -1755,24 +1751,24 @@ model_def : model.247 {
 }
 model_def : model.248 {
 	category: "Vehicles"
-	model_desc: "/model/vehicle/farming/john_deere_8110_plow.pmd"
+	model_desc: "/model/vehicle/farming/tractor_plow.pmd"
 	static_lod_name[]: "LOD from 50m"
-	static_lod_path[]: "/model/vehicle/farming/john_deere_8110_plow_lod1.pmd"
+	static_lod_path[]: "/model/vehicle/farming/tractor_plow_lod1.pmd"
 	static_lod_name[]: "LOD from 100m"
-	static_lod_path[]: "/model/vehicle/farming/john_deere_8110_plow_lod2.pmd"	
+	static_lod_path[]: "/model/vehicle/farming/tractor_plow_lod2.pmd"	
 }
 
 model_def : model.249 {
-	model_desc: "/model/vehicle/farming/john_deere_8110_lod2.pmd"
+	model_desc: "/model/vehicle/farming/tractor_lod2.pmd"
 	
 }
 model_def : model.250 {
 	category: "Vehicles"
-	model_desc: "/model/vehicle/farming/john_deere_8110.pmd"
+	model_desc: "/model/vehicle/farming/tractor.pmd"
 	static_lod_name[]: "LOD from 50m"
-	static_lod_path[]: "/model/vehicle/farming/john_deere_8110_lod1.pmd"
+	static_lod_path[]: "/model/vehicle/farming/tractor_lod1.pmd"
 	static_lod_name[]: "LOD from 100m"
-	static_lod_path[]: "/model/vehicle/farming/john_deere_8110_lod2.pmd"
+	static_lod_path[]: "/model/vehicle/farming/tractor_lod2.pmd"
 	
 } 
 model_def : model.251 {
@@ -1897,7 +1893,7 @@ model_def : model.282 {
 model_def : model.283 {
 	model_desc: "/model/panorama/ca_sf/street_house2a.pmd"
 	lod_desc: "/model/panorama/ca_sf/street_house2a_lod1.pmd"
-	lod_dist: 64
+	lod_dist: 100
 	static_lod_name[]: "100m"
 	static_lod_path[]:  "/model/panorama/ca_sf/street_house2a_lod1.pmd"
 
@@ -2066,11 +2062,11 @@ model_def : model.297 {
 
 model_def : model.298 {
 	category: "Vehicles"
-	model_desc: "/model/vehicle/construction/cat_422.pmd"
+	model_desc: "/model/vehicle/construction/digger500.pmd"
 	static_lod_name[]: "LOD from 50m"
-	static_lod_path[]: "/model/vehicle/construction/cat_422_lod1.pmd"
+	static_lod_path[]: "/model/vehicle/construction/digger500_lod1.pmd"
 	static_lod_name[]: "LOD from 100m"
-	static_lod_path[]: "/model/vehicle/construction/cat_422_lod2.pmd"	
+	static_lod_path[]: "/model/vehicle/construction/digger500_lod2.pmd"	
 }
 
 model_def : model.305 {
@@ -2147,7 +2143,11 @@ model_def : model.321 {
 }
 
 model_def : model.331 {
-	model_desc: "/model/props/street/baloons1.pmd"		
+	model_desc: "/model/props/street/baloons1.pmd"	
+    static_lod_name[]: "LOD from 30m"
+	static_lod_path[]: "/model/props/street/baloons1_lod1.pmd"
+	lod_desc: "/model/props/street/baloons1_lod1.pmd"
+	lod_dist: 30
 }
 
 model_def : model.332 {
@@ -2346,7 +2346,7 @@ model_def : model.4023 {
 
 }
 model_def : model.4024 {
-	model_desc: "/model/props/farm/greenhouse01.pmd"
+	model_desc: "/model/props/farm/greenhouse1_20m.pmd"
 }
 model_def : model.4025 {
 	model_desc: "/model/distribution/liquid/water_reservoir01.pmd"
@@ -4192,6 +4192,11 @@ model_def : model.5382 {
 	model_desc: "/model/vehicle/event/box_damage_trailer.pmd"
 }
 
+model_def : model.5382f {
+	model_desc: "/model/vehicle/event/boxf_damage_trailer.pmd"
+//	model_desc: "/vehicle/ai/event/trailer/boxf.pmd"
+}
+
 model_def : model.5383 {
 	model_desc: "/model/props/road/patch_decals_groups.pmd"
 	distance_type: 0
@@ -5003,9 +5008,10 @@ model_def : model.nm_329 {
 	color_variant[]:"Red  | var01_front: 119,61,50 | var01_house: 139,139,137 | var01_roof: 80,74,74 | var_gar_clr: 80,74,74 | var_ent_clr: 80,74,74"	
 	color_variant[]:"White | var01_front: 211,205,205 | var01_house: 211,205,205 | var01_roof: 125,125,125 | var_gar_clr: 125,125,125 | var_ent_clr: 125,125,125"	
 
-	
-	static_lod_name[]: "50m"
-	static_lod_path[]:  "/model/building/logistic/nm_logistic_07_lod1.pmd"
+	static_lod_name[]: "200m"
+	static_lod_path[]:  "/model/building/logistic/nm_logistic_07_lod2.pmd"
+	lod_desc: "/model/building/logistic/nm_logistic_07_lod1.pmd"
+	lod_dist: 100
 	
 }
 
@@ -5790,7 +5796,7 @@ model_def : model.or_137 {
 model_def : model.or_5_mod {
 	model_desc: "/model/railing/bridge/us_bridge_pillar_01.pmd"
 	
-	auto_compound: true
+	auto_compound: false
 } 
 
 model_def : model.or_260 {
@@ -5984,7 +5990,7 @@ model_def : model.or_224 {
 	static_lod_path[]: "/model/building/shop/or_shop2_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop2_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 	
 
 }
@@ -6258,6 +6264,7 @@ model_def : model.or_305_mod {
 }	
 model_def : model.546 {
 	model_desc: "/model/props/road/bumpers.pmd"
+	name: "roadblock3"
 
 }
 model_def : model.or_376 {
@@ -6364,7 +6371,7 @@ model_def : model.or_562 {
 	color_variant[]:"wa_dark | vis_6: 90,84,82 | vis_cub: 90,84,82 | vis_cyl: 118,110,106"
 	color_variant[]: "az_sand: | vis_6: 137, 126, 106 | vis_cub: 137, 126, 106 | vis_cyl: 137, 126, 106" 
 	
-	auto_compound: true
+	auto_compound: false
 	
 }
 model_def : model.5670 {
@@ -6535,11 +6542,11 @@ model_def : model.nm_268 {
 model_def : model.1043 {
 	model_desc: "/model/vehicle/construction/mutt_578d/mutt_578d.pmd"
 	static_lod_name[]: "50m"
-	static_lod_path[]:  "/model/vehicle/construction/mutt_578d/mutt_578d_lod1.pmd"
+	static_lod_path[]:  "/model/vehicle/construction/mutt_578d/mutt_578d.pmd"
 	static_lod_name[]: "100m"
-	static_lod_path[]:  "/model/vehicle/construction/mutt_578d/mutt_578d_lod2.pmd"
+	static_lod_path[]:  "/model/vehicle/construction/mutt_578d/mutt_578d.pmd"
 	static_lod_name[]: "200m"
-	static_lod_path[]:  "/model/vehicle/construction/mutt_578d/mutt_578d_lod3.pmd"
+	static_lod_path[]:  "/model/vehicle/construction/mutt_578d/mutt_578d.pmd"
 }
 
 model_def : model.nm_292 {
@@ -6601,7 +6608,7 @@ model_def : model.or_61 {
 	static_lod_path[]: "/model/building/house/or_house1_lod1.pmd"	
 	
 	lod_desc: "/model/building/house/or_house1_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_99 {
@@ -6611,7 +6618,7 @@ model_def : model.or_99 {
 	static_lod_path[]: "/model/building/house/or_house4_lod1.pmd"
 	
 	lod_desc: "/model/building/house/or_house4_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 	color_variant[]:"Brown | vis_col: 61,61,59 | vis_rcol: 18,15,13 | v1_col: 61,61,59 | v1_rcol: 18,15,13 | v2_col: 61,61,59 | v2_rcol: 18,15,13 | v3_col: 61,61,59 | v3_rcol: 18,15,13 | v_roof_col: 61,61,59 | v_roof_rcol: 18,15,13 | v_side_col: 61,61,59 | v_side_rcol: 18,15,13 "
 	color_variant[]:"Green | vis_col: 189,194,186 | vis_rcol: 33,48,36 | v1_col: 189,194,186 | v1_rcol: 33,48,36 | v2_col: 189,194,186 | v2_rcol: 33,48,36 | v3_col: 189,194,186 | v3_rcol: 33,48,36 | v_roof_col: 189,194,186 | v_roof_rcol: 33,48,36 | v_side_col: 189,194,186 | v_side_rcol: 33,48,36 "
@@ -6706,7 +6713,7 @@ model_def : model.1047 {
 	static_lod_path[]: "/model/building/shop/gas_shop_chemron_01_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_chemron_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1048 {
 	model_desc: "/model/building/shop/gas_shop_country_01.pmd"
@@ -6716,7 +6723,7 @@ model_def : model.1048 {
 	static_lod_path[]: "/model/building/shop/gas_shop_country_01_lod2.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_country_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1049 {
 	model_desc: "/model/building/shop/truckstop_gp_02.pmd"
@@ -6725,7 +6732,7 @@ model_def : model.1049 {
 	static_lod_path[]: "/model/building/shop/truckstop_gp_02_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/truckstop_gp_02_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 }
 model_def : model.1076 {
@@ -6735,7 +6742,7 @@ model_def : model.1076 {
 	static_lod_path[]: "/model/building/shop/truckstop_gp_01_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/truckstop_gp_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1077 {
 	model_desc: "/model/building/shop/gas_shop_depot_01.pmd"
@@ -6748,7 +6755,7 @@ model_def : model.1077 {
 	static_lod_path[]: "/model/building/shop/gas_shop_depot_01_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_depot_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1078 {
 	model_desc: "/model/building/shop/gas_shop_gp_01.pmd"
@@ -6757,7 +6764,7 @@ model_def : model.1078 {
         color_variant[]:"brown | vis1_c1: 89,50,24"
 		
 	lod_desc: "/model/building/shop/gas_shop_gp_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 	static_lod_name[]: "LOD - 100m"
 	static_lod_path[]: "/model/building/shop/gas_shop_gp_01_lod1.pmd"
@@ -6768,7 +6775,7 @@ model_def : model.1079 {
 	static_lod_path[]: "/model/building/shop/gas_shop_chemron_02_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_chemron_02_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.1080 {
@@ -6778,7 +6785,7 @@ model_def : model.1080 {
 	static_lod_path[]: "/model/building/shop/gas_shop_chemron_04_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_chemron_04_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1081 {
 	model_desc: "/model/building/shop/gas_shop_hgw1a_01.pmd"
@@ -6791,7 +6798,7 @@ model_def : model.1081 {
 	static_lod_path[]: "/model/building/shop/gas_shop_hgw1a_01_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_hgw1a_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1082 {
 	model_desc: "/model/building/shop/gas_shop_chemron_03.pmd"
@@ -6799,7 +6806,7 @@ model_def : model.1082 {
 	static_lod_path[]: "/model/building/shop/gas_shop_chemron_03_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_chemron_03_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1083 {
 	model_desc: "/model/building/shop/gas_shop_corner_01.pmd"
@@ -6812,13 +6819,13 @@ model_def : model.1083 {
 	static_lod_path[]: "/model/building/shop/gas_shop_corner_01_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/gas_shop_corner_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.1084 {
 	model_desc: "/model/building/shop/car_wash_gp_01.pmd"
 	
 	lod_desc: "/model/building/shop/car_wash_gp_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 	
 	static_lod_name[]: "LOD - 100m"
 	static_lod_path[]: "/model/building/shop/car_wash_gp_01_lod1.pmd"
@@ -7157,9 +7164,6 @@ model_def : model.or_343 {
 
 model_def : model.or_356 {
 	model_desc: "/model/props/road/or_railroad_buffer.pmd"
-}
-model_def : model.or_357 {
-	model_desc: "/model/props/road/or_railroad_buffer_dual.pmd"
 }
 model_def : model.or_358 {
 	model_desc: "/model/props/country/or_branch_pile_big.pmd"
@@ -7872,10 +7876,22 @@ model_def : model.or_641 {
         color_variant[]:"brown | vis_c1: 48,43,24 | vis_c2: 132,135,93 | vis_c3: 96,107,76"
         color_variant[]:"blue | vis_c1: 92,82,41 | vis_c2: 82,133,166 | vis_c3: 168,150,75"
 	color_variant[]:"default | vis_c1: 128,128,128 | vis_c2: 128,128,128 | vis_c3: 128,128,128"
+
+ 	lod_desc: "/model/building/logistic/or_warehouse1_lod1.pmd"
+	lod_dist: 100
+
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/logistic/or_warehouse1_lod1.pmd"
 }
 
 model_def : model.or_642 {
 	model_desc: "/model/building/logistic/or_warehouse2.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/logistic/or_warehouse2_lod1.pmd"
+
+	lod_desc: "/model/building/logistic/or_warehouse2_lod1.pmd"
+	lod_dist: 100.0	
+
 
         color_variant[]:"blue | vis_c1: 127,127,127 | vis_c2: 23,59,110 | vis_c3: 127,127,127 | vis_c4: 127,127,127"
         color_variant[]:"white | vis_c1: 23,59,110 | vis_c2: 127,127,127 | vis_c3: 23,59,110 | vis_c4: 23,59,110"
@@ -7889,12 +7905,22 @@ model_def : model.or_643 {
         color_variant[]:"Beige | vis_c1: 179,161,127 | vis_c2: 89,55,38 | vis_c3: 184,145,133 | _add_pillars: 89,55,38 | vis2_c1: 179,161,127 | vis2_c2: 89,55,38 | vis2_c3: 184,145,133"
 	color_variant[]:"YellowSky | vis_c1: 189,165,87 | vis_c2: 50,71,101 | vis_c3: 50,71,101 | _add_pillars: 50,71,101 | vis2_c1: 189,165,87  | vis2_c2: 50,71,101| vis2_c3: 50,71,101"
 	color_variant[]:"BlueLight | vis_c1: 50,71,101 | vis_c2: 180,180,180 | vis_c3: 180,180,180 | _add_pillars: 180,180,180 | vis2_c1: 50,71,101 | vis2_c2: 180,180,180 | vis2_c3: 180,180,180"
+
+	lod_desc: "/model/building/logistic/or_warehouse3_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/logistic/or_warehouse3_lod1.pmd"
 }
 
 model_def : model.or_644 {
 	model_desc: "/model/building/logistic/or_warehouse4.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/logistic/or_warehouse4_lod1.pmd"
 
-    color_variant[]:"green/light | vis1_c1: 112,164,115 | vis1_c2: 255,255,255 | vis1_c3: 255,255,255 | vis1_c4: 112,164,115 | vis2_c1: 112,164,115 | vis2_c2: 255,255,255 | _add_roof: 255,255,255 "
+	lod_desc: "/model/building/logistic/or_warehouse4_lod1.pmd"
+	lod_dist: 100.0	
+
+    	color_variant[]:"green/light | vis1_c1: 112,164,115 | vis1_c2: 255,255,255 | vis1_c3: 255,255,255 | vis1_c4: 112,164,115 | vis2_c1: 112,164,115 | vis2_c2: 255,255,255 | _add_roof: 255,255,255 "
  	color_variant[]:"sky/grey | vis1_c1: 61,101,122 | vis1_c2: 100,100,100 | vis1_c3: 255,180,119 | vis1_c4: 61,101,122 | vis2_c1: 61,101,122 | vis2_c2: 100,100,100 | _add_roof: 100,100,100 "
 	color_variant[]:"biege/red | vis1_c1: 157,145,115 | vis1_c2: 88,39,36 | vis1_c3: 157,145,115  | vis1_c4: 157,145,115 | vis2_c1: 157,145,115 | vis2_c2: 88,39,36 | _add_roof: 88,39,36 "
 	color_variant[]:"grey/white| vis1_c1: 255,255,255 | vis1_c2: 100,100,100 | vis1_c3: 100,100,100  | vis1_c4: 255,255,255 | vis2_c1: 255,255,255 | vis2_c2: 100,100,100 | _add_roof: 100,100,100 "
@@ -8662,13 +8688,11 @@ model_def : model.wa_133{
 	color_variant[]:"red | base_wall1: 62,26,26 | var1_wall1: 62,26,26 | var2_wall1: 62,26,26 | var3_wall1: 62,26,26 | base_wall2: 116,116,116 | var1_wall2: 116,116,116 | var2_wall2: 116,116,116 | var3_wall2: 116,116,116 | var3_wall3: 38,32,32 | base_strip: 51,48,47 | var1_strip: 51,48,47 | var2_strip: 51,48,47 | var3_strip: 51,48,47 | base_roof: 24,26,30 | var2_roof: 24,26,30 | var3_roof: 24,26,30"
 
 
-	
-	
-//
-//	static_lod_name[]: "LOD - 100m"
-//	static_lod_path[]: "/model/building/shop/wa_shop2_lod1.pmd"
-//	static_lod_name[]: "LOD - 200m"
-//	static_lod_path[]: "/model/building/shop/wa_shop2_lod2.pmd"
+	lod_desc: "/model/building/flat/wa_apartment1_lod1.pmd"
+	lod_dist: 100
+
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/flat/wa_apartment1_lod1.pmd"
 
 }
 model_def : model.wa_67{
@@ -8737,7 +8761,7 @@ model_def : model.or_60 {
 	model_desc: "/model/building/shop/or_cardealer1.pmd"
 	
 	color_variant[]:"Grey | wall_back: 134,141,143 | wall_front: 134,141,143 | wall_fill: 134,141,143"	
-	color_variant[]:"W_B | wall_back: 10,10,10 | wall_front: 240,240,240 | wall_fill: 240,240,240"	
+	color_variant[]:"W_B | wall_back: 10,10,10 | wall_front: 190,190,190 | wall_fill: 190,190,190"	
 	color_variant[]:"B_W | wall_back: 181,181,172 | wall_front: 15,19,26 | wall_fill: 15,19,26"	
 }
 model_def : model.or_68 {
@@ -8757,7 +8781,7 @@ static_lod_name[]: "LOD 100m"
 	static_lod_path[]: "/model/building/house/or_house2_lod1.pmd"
 	
 	lod_desc: "/model/building/house/or_house2_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 }
 
@@ -8798,7 +8822,7 @@ model_def : model.or_86 {
 	static_lod_path[]: "/model/building/house/or_house3_lod1.pmd"
 	
 	lod_desc: "/model/building/house/or_house3_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_94 {
@@ -8865,7 +8889,7 @@ model_def : model.or_114 {
 	static_lod_path[]: "/model/building/house/or_house6_lod1.pmd"
 	
 	lod_desc: "/model/building/house/or_house6_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_143 {
 	model_desc: "/model/building/administration/or_admin2_b.pmd"
@@ -8899,7 +8923,7 @@ model_def : model.or_159 {
 	static_lod_path[]: "/model/building/shop/or_shop_corner1_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop_corner1_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_160 {
@@ -8913,7 +8937,7 @@ model_def : model.or_160 {
 	static_lod_path[]: "/model/building/shop/or_shop_corner_wide1_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop_corner_wide1_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_170 {
 	model_desc: "/model/building/country/or_ponton_hause_01.pmd"	
@@ -8930,7 +8954,7 @@ model_def : model.or_173 {
         static_lod_path[]: "/model/building/shop/or_shop_storey1_lod1.pmd"
 		
 		lod_desc: "/model/building/shop/or_shop_storey1_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_191 {
 	model_desc: "/model/building/house/or_wooden_house_01.pmd"
@@ -8981,7 +9005,7 @@ model_def : model.or_206 {
 	color_variant[]:"LightBrown | base_col: 110,105,77 | base_c2: 110,105,77 | base_top: 5,43,89 | base_winf: 245,245,245 | bricks_top: 5,43,89 | roof1_col: 110,105,77 | roof1_top: 5,43,89 | _roof2: 5,43,89 | _roof3: 5,28,59 | _roof4: 5,28,59 | bricks_winf: 245,245,245"
 
 	lod_desc: "/model/building/shop/or_shop1_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 	static_lod_name[]: "lod 50m"
 	static_lod_path[]: "/model/building/shop/or_shop1_lod1.pmd"
 	static_lod_name[]: "lod 100m"
@@ -9000,7 +9024,7 @@ model_def : model.or_207 {
 	static_lod_path[]: "/model/building/shop/or_shop3_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop3_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_212 {
 	model_desc: "/model/building/shop/or_stripmall_08.pmd"
@@ -9009,7 +9033,7 @@ model_def : model.or_212 {
 	static_lod_path[]: "/model/building/shop/or_stripmall_08_lod1.pmd"
 	
 		lod_desc: "/model/building/shop/or_stripmall_08_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 	color_variant[]:"Biege | var01_eav: 46,46,44 | var01_wall: 200,196,171 | var01_rantl: 46,46,44 | var02_rantl: 46,46,44 | _pillars1: 170,171,176 | _pillars2: 170,171,176 | plates: 170,171,176 | doors: 46,46,44"	
 	color_variant[]:"Ocher | var01_eav: 189,175,138 | var01_wall: 189,175,138 | var01_rantl: 128,128,128 | var02_rantl: 128,128,128 | _pillars1: 189,175,138 | _pillars2: 189,175,138  | plates: 46,46,44 | doors: 46,46,44" 
@@ -9030,7 +9054,7 @@ model_def : model.or_213 {
         static_lod_path[]: "/model/building/shop/or_shop_storey4_lod1.pmd"
 		
 		lod_desc: "/model/building/shop/or_shop_storey4_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 }
 
@@ -9044,7 +9068,7 @@ model_def : model.or_214 {
         static_lod_path[]: "/model/building/shop/or_shop_storey2_lod1.pmd"
 		
 		lod_desc: "/model/building/shop/or_shop_storey2_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_218 {
 	model_desc: "/model/building/shop/or_stripmall_08_small.pmd"
@@ -9053,7 +9077,7 @@ model_def : model.or_218 {
 	static_lod_path[]: "/model/building/shop/or_stripmall_08_small_lod1.pmd"
 	
 		lod_desc: "/model/building/shop/or_stripmall_08_small_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 	color_variant[]:"Biege | var01_eav: 46,46,44 | var01_wall: 200,196,171 | var01_rantl: 46,46,44 | var02_rantl: 46,46,44 | var03_rantl: 46,46,44 | _pillars1: 170,171,176 | _pillars2: 170,171,176 | plates: 170,171,176 | doors: 46,46,44"	
 	color_variant[]:"Ocher | var01_eav: 189,175,138 | var01_wall: 189,175,138 | var01_rantl: 128,128,128 | var02_rantl: 128,128,128 | var03_rantl: 128,128,128 | _pillars1: 189,175,138 | _pillars2: 189,175,138  | plates: 46,46,44 | doors: 46,46,44" 
@@ -9076,7 +9100,7 @@ model_def : model.or_219 {
 	static_lod_path[]: "/model/building/shop/or_shop_storey6b_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop_storey6b_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 }
 
@@ -9091,7 +9115,7 @@ model_def : model.or_220 {
 	static_lod_path[]: "/model/building/shop/or_stripmall_01_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_stripmall_01_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 }
 model_def : model.or_222 {
@@ -9104,7 +9128,7 @@ model_def : model.or_222 {
 	static_lod_path[]: "/model/building/shop/or_shop_storey3_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop_storey3_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_225 {
@@ -9119,7 +9143,7 @@ model_def : model.or_225 {
 
 	
 	lod_desc: "/model/building/shop/or_shop_storey6a_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_226 {
@@ -9134,7 +9158,7 @@ model_def : model.or_226 {
 	
 	
 	lod_desc: "/model/building/shop/or_shop_storey5_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_228 {
 	model_desc: "/model/building/shop/or_shop5.pmd"
@@ -9150,7 +9174,7 @@ model_def : model.or_228 {
 	static_lod_path[]: "/model/building/shop/or_shop5_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop5_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_231 {
@@ -9163,7 +9187,7 @@ model_def : model.or_231 {
         static_lod_path[]: "/model/building/shop/or_shop_storey2b_lod1.pmd"	
 		
 		lod_desc: "/model/building/shop/or_shop_storey2b_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 	
 }
 model_def : model.or_236 {
@@ -9177,7 +9201,7 @@ model_def : model.or_236 {
 	static_lod_path[]: "/model/building/shop/or_shop_corner4_lod1.pmd"	
 	
 		lod_desc: "/model/building/shop/or_shop_corner4_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_237 {
@@ -9191,7 +9215,7 @@ model_def : model.or_237 {
 	
 		
 		lod_desc: "/model/building/shop/or_shop_corner3_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_238 {
@@ -9211,7 +9235,7 @@ model_def : model.or_250 {
 	static_lod_path[]: "/model/building/shop/or_shop_corner2_lod1.pmd"
 	
 			lod_desc: "/model/building/shop/or_shop_corner2_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_307 {
@@ -9322,7 +9346,7 @@ model_def : model.or_361 {
 	static_lod_path[]: "/model/building/shop/or_shop6_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop6_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 
 }
 model_def : model.or_368 {
@@ -9338,7 +9362,7 @@ model_def : model.or_368 {
 	static_lod_path[]: "/model/building/shop/or_shop7_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop7_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_390 {
 	model_desc: "/model/building/hotel/or_motel_big4.pmd"
@@ -9359,7 +9383,7 @@ model_def : model.or_429 {
 	static_lod_path[]: "/model/building/shop/or_shop_corner4_lr_lod1.pmd"	
 	
 			lod_desc: "/model/building/shop/or_shop_corner4_lr_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_471 {
 	model_desc: "/model/building/shop/or_shop_corner_wide1_lr.pmd"
@@ -9372,7 +9396,7 @@ model_def : model.or_471 {
 	static_lod_path[]: "/model/building/shop/or_shop_corner_wide1_lr_lod1.pmd"
 	
 				lod_desc: "/model/building/shop/or_shop_corner_wide1_lr_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_472 {
 	model_desc: "/model/building/shop/or_shop_corner2_lr.pmd"
@@ -9385,7 +9409,7 @@ model_def : model.or_472 {
 	static_lod_path[]: "/model/building/shop/or_shop_corner2_lr_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop_corner2_lr_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_478 {
 	model_desc: "/model/building/house/or_house5.pmd"
@@ -9401,19 +9425,19 @@ model_def : model.or_478 {
 	static_lod_path[]: "/model/building/house/or_house5_lod2.pmd"
 	
 	lod_desc: "/model/building/house/or_house5_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_482 {
 	model_desc: "/model/building/shop/or_shop_corner3_lr.pmd"
-        color_variant[]:"White/White | vis_c1: 127,127,127 | vis_c2: 127,127,127 | vis_W_c1: 127,127,127"
-	color_variant[]:"Yellow/White | vis_c1: 127,127,127 | vis_c2: 127,104,49 | vis_W_c1: 127,127,127"
-	color_variant[]:"Red/Red | vis_c1: 61,36,36 | vis_c2: 61,36,36 | vis_W_c1: 61,36,36"
+    color_variant[]:"White/White | vis_c1: 127,127,127 | vis_c2: 127,127,127 | vis_W_c1: 127,127,127 | vis_WW_c1: 127,127,127"
+	color_variant[]:"Yellow/White | vis_c1: 127,127,127 | vis_c2: 127,104,49 | vis_W_c1: 127,127,127 | vis_WW_c1: 127,127,127"
+	color_variant[]:"Red/Red | vis_c1: 61,36,36 | vis_c2: 61,36,36 | vis_W_c1: 61,36,36 | vis_WW_c1: 61,36,36"
 
 	static_lod_name[]: "lod 100m"
 	static_lod_path[]: "/model/building/shop/or_shop_corner3_lr_lod1.pmd"
 	
 	lod_desc: "/model/building/shop/or_shop_corner3_lr_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 
 model_def : model.or_483 {
@@ -9427,7 +9451,7 @@ model_def : model.or_483 {
 	
 		
 	lod_desc: "/model/building/shop/or_shop_corner1_lr_lod1.pmd"
-	lod_dist: 75
+	lod_dist: 100
 }
 model_def : model.or_557 {
 	model_desc: "/model/building/shop/or_shop8.pmd"
@@ -9692,6 +9716,7 @@ model_def : model.1119 {
 }	
 model_def : model.1120 {
 	model_desc: "/model/props/road/bumpers02.pmd"
+	name: "roadblock4"
 
 }
 model_def : model.1121 {
@@ -10010,10 +10035,25 @@ model_def : model.1281 {
 model_def : model.1282 {
 	 vegetation_model: vegetmodel.apple.tree2
 }
+
+model_def : model.5428 {
+	model_desc: "/model/props/farm/greenhouse1_10m.pmd"
+}
 model_def : model.or_670 {
 	model_desc: "/prefab/depots/scrapyard/or_flat_cars_1_det.pmd"
 
 }
+
+model_def : model.5429 {
+	model_desc: "/model/props/farm/greenhouse2_20m.pmd"
+}
+model_def : model.5430 {
+	model_desc: "/model/props/farm/greenhouse2_10m.pmd"
+}
+model_def : model.5431 {
+	model_desc: "/model/props/farm/greenhouse3_20m.pmd"
+}
+
 
 model_def : model.or_671 {
 	model_desc: "/prefab/depots/scrapyard/or_flat_cars_2_det.pmd"
@@ -10021,4 +10061,2128 @@ model_def : model.or_671 {
 model_def : model.or_672 {
 	model_desc: "/prefab/depots/scrapyard/or_flat_cars_3_det.pmd"
 }
+model_def : model.5432 {
+	model_desc: "/model/props/farm/greenhouse3_10m.pmd"
 }
+model_def : model.5433 {
+	model_desc: "/model/panorama/truck_stop/hearts_ways_sign.pmd"
+
+}
+model_def : model.5434 {
+	model_desc: "/model/panorama/truck_stop/hearts_trucks_enter_sign.pmd"
+}
+model_def : model.5435 {
+	model_desc: "/model/props/uni/wooden_pallete_01.pmd"
+}
+model_def : model.5436 {
+	model_desc: "/model/props/uni/wooden_pallete_close_03.pmd"
+}
+model_def : model.5437 {
+	model_desc: "/model/props/uni/wooden_pallete_close_01.pmd"
+}
+model_def : model.5438 {
+	model_desc: "/model/props/uni/wooden_pallete_close_02.pmd"
+}
+model_def : model.5439 {
+	model_desc: "/model/props/uni/wooden_pallete_close_04.pmd"
+}
+model_def : model.5440 {
+	model_desc: "/model/props/uni/wooden_pallete_close_05.pmd"
+}
+model_def : model.5441 {
+	model_desc: "/model/props/uni/wooden_pallete_02.pmd"
+}
+model_def : model.5442 {
+	model_desc: "/model/props/uni/wooden_pallete_03.pmd"
+}
+model_def : model.5443 {
+	model_desc: "/model/props/uni/wooden_pallete_04.pmd"
+	
+}
+
+model_def : model.5444 {
+	model_desc: "/model/vehicle/parked_trailers/chip_van.pmd"
+
+}
+model_def : model.5445 {
+	model_desc: "/model/props/street/gate/anim_gate_05.pmd"
+}
+model_def : model.5446 {
+	model_desc: "/model/props/street/wa_gate_1.pmd"
+
+}
+model_def : model.5448 {
+	model_desc: "/model/props/farm/field_signs_logos.pmd"
+
+}
+model_def : model.5449 {
+	model_desc: "/model/vehicle/parked_cars/f_150.pmd"
+}
+model_def : model.or_704 {
+	model_desc: "/model/building/hotel/or_motel_big1_entrance_door.pmd"
+	
+	color_variant[]:"Red | wall: 179,129,71 | roof: 172,126,103 | v_stripe: 92,66,35 | v_stripes: 179,129,71"
+	color_variant[]:"Green | wall: 181,139,100 | roof: 40,64,48 | v_stripe: 82,38,43 | v_stripes: 181,139,100"
+	color_variant[]:"Gray | wall: 150,150,150 | roof: 43,76,128 | v_stripe: 100,100,100 | v_stripes: 150,150,150"
+}
+model_def : model.5450 {
+	model_desc: "/model/vehicle/ship/boat_rack_01.pmd"
+}
+model_def : model.5451 {
+	model_desc: "/model/vehicle/ship/houseboat_01.pmd"
+}
+model_def : model.5452 {
+	model_desc: "/model/vehicle/ship/houseboat_02.pmd"
+}
+model_def : model.5453 {
+	model_desc: "/model/vehicle/ship/motor_yacht_anchored_01.pmd"
+}
+model_def : model.5454 {
+	model_desc: "/model/vehicle/ship/motorboat_01.pmd"
+    static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/vehicle/ship/motorboat_01_lod.pmd"
+    
+}
+model_def : model.5455 {
+	model_desc: "/model/vehicle/ship/parked_motorboat_01.pmd"
+    static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/vehicle/ship/parked_motorboat_01_lod.pmd"
+}
+model_def : model.5456 {
+	model_desc: "/model/vehicle/ship/parked_yacht_01.pmd"
+}
+model_def : model.5457 {
+	model_desc: "/model/vehicle/ship/yacht_01.pmd"
+    static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/vehicle/ship/yacht_01_lod.pmd"
+    
+}
+
+model_def : model.5458 {
+	model_desc: "/model/vehicle/construction/mutt_578d/mutt_578d_pink.pmd"
+}
+model_def : model.or_25 {
+	model_desc: "/model/panorama/or_lakeview/or_show_house.pmd"
+}
+
+model_def : model.or_29 {
+	model_desc: "/model/panorama/or_astoria/or_astoria_theatre.pmd"
+	
+	lod_desc: "/model/panorama/or_astoria/or_astoria_theatre_lod1.pmd"
+	lod_dist: 141
+	
+}
+
+
+
+
+
+model_def : model.or_35 {
+	model_desc: "/model/panorama/or_astoria/or_astoria_building1.pmd"
+}
+
+
+
+model_def : model.or_39 {
+	model_desc: "/model/panorama/or_astoria/or_astoria_church.pmd"
+}
+model_def : model.or_47 {
+	model_desc: "/model/panorama/or_astoria/or_astoria_office_building.pmd"
+
+	lod_desc: "/model/panorama/or_astoria/or_astoria_office_building_lod1.pmd"
+	lod_dist: 146
+	
+}
+
+model_def : model.or_70 {
+	model_desc: "/model/panorama/or_astoria/or_astoria_welcome_sign.pmd"
+}
+
+model_def : model.or_71 {
+	model_desc: "/model/panorama/or_astoria/or_whispering_giant.pmd"
+}
+
+model_def : model.or_93 {
+	model_desc: "/model/panorama/truck_stop/or_baker_truck_corral_gate.pmd"
+}
+
+
+model_def : model.or_95 {
+	model_desc: "/model/rock/or_rock_creek.pmd"
+}
+
+model_def : model.or_96 {
+	model_desc: "/model/panorama/or_portland/or_rose_quarter.pmd"
+}
+
+model_def : model.or_102 {
+	model_desc: "/model/panorama/or_astoria/or_maritime_museum.pmd"
+}
+
+
+
+model_def : model.or_129 {
+	model_desc: "/model/panorama/or_astoria/or_astoria_memorial.pmd"
+}
+
+model_def : model.or_144 {
+	model_desc: "/model/panorama/or_dales/or_dalles_dam1.pmd"
+}
+model_def : model.or_150{
+	model_desc: "/model/railing/bridge/or_portland_bridge_2_pier.pmd"
+}
+
+model_def : model.or_152{
+	model_desc: "/model/panorama/or_portland/or_museum_boat.pmd"
+}
+
+model_def : model.or_157 {
+	model_desc: "/model/railing/bridge/or_portland_bridge_pier.pmd"	
+}
+
+model_def : model.or_161 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama1.pmd"
+}
+
+model_def : model.or_163 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama3.pmd"
+	distance_scale: 75
+	distance_min: 650
+	distance_max: 1600
+}
+
+model_def : model.or_164 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama4.pmd"
+}
+
+model_def : model.or_165 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama5.pmd"
+}
+
+model_def : model.or_166 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama6.pmd"
+}
+
+model_def : model.or_181 {
+	model_desc: "/model/panorama/or_burns/or_flat_horse.pmd"
+
+}
+model_def : model.or_185 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama3a.pmd"
+}
+
+model_def : model.or_186 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama5a.pmd"
+	distance_scale: 75
+	distance_min: 650
+	distance_max: 1600
+
+}
+
+model_def : model.or_204 {
+	model_desc: "/model/panorama/or_astoria/or_maritime_buoy.pmd"	
+}
+
+model_def : model.or_205 {
+	model_desc: "/model/building/shop/or_shop4.pmd"	
+	color_variant[]:"Gray | vis_c1: 232,211,174 | vis_c2: 227,222,190 | _add_part: 1,71,156 | _marque1: 1,71,156 | _add_part: 211,10,17"
+	color_variant[]:"Cream | vis_c1: 168,154,127 | vis_c2: 148,160,138 | _add_part: 141,9,9 | _marque1: 176,176,164 | _add_part: 8,40,250"
+	color_variant[]:"Brown | vis_c1: 191,164,114 | vis_c2: 214,203,139 | _add_part: 255,255,255 | _marque1: 238,209,178 | _add_part: 211,10,17"	
+	
+	static_lod_name[]: "lod 50m"
+	static_lod_path[]: "/model/building/shop/or_shop4_lod1.pmd"
+	
+	lod_desc: "/model/building/shop/or_shop4_lod1.pmd"
+	lod_dist: 100
+
+}
+
+model_def : model.or_227 {
+	model_desc: "/model/panorama/or_portland/or_portland_tram_station.pmd"
+
+}
+
+
+model_def: model.or_234 {
+	model_desc: "/model/panorama/or_pendleton/or_mckennon_tower.pmd"
+}
+model_def: model.or_235 {
+	model_desc: "/prefab/depots/shipyard/or_dry_dock.pmd"
+}
+
+
+
+model_def : model.or_240 {
+	model_desc: "/model/panorama/or_portland/or_portland_ped_bridge.pmd"
+}
+model_def: model.or_242 {
+	model_desc: "/prefab/depots/shipyard/or_ship_yard_crane.pmd"
+
+	lod_desc: "/prefab/depots/shipyard/or_ship_yard_crane_lod1.pmd"
+	lod_dist: 200
+	static_lod_name[]: "lod 50m"
+	static_lod_path[]: "/prefab/depots/shipyard/or_ship_yard_crane_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/prefab/depots/shipyard/or_ship_yard_crane_lod2.pmd"
+
+	
+}
+model_def: model.or_249 {
+	model_desc: "/model/panorama/or_pendleton/or_correctional_inst.pmd"
+
+}
+
+model_def : model.or_251 {
+	model_desc: "/prefab/depots/scrapyard/or_flat_cars_01.pmd"
+}
+model_def : model.or_252 {
+	model_desc: "/prefab/depots/scrapyard/or_flat_cars_02.pmd"
+}
+model_def : model.or_253 {
+	model_desc: "/prefab/depots/scrapyard/or_flat_cars_03.pmd"
+}
+model_def : model.or_254 {
+	model_desc: "/prefab/depots/scrapyard/or_scrap_metal_pile_01.pmd"
+}
+model_def : model.or_265 {
+	model_desc: "/prefab/depots/paper_mill/or_wood_chip_pile.pmd"
+}
+model_def : model.or_289 {
+	model_desc: "/prefab/depots/paper_mill/or_bleaching_tower.pmd"
+	lod_desc: "/prefab/depots/paper_mill/or_bleaching_tower_lod1.pmd"
+	lod_dist: 77
+	static_lod_name[]: "lod 150m"
+	static_lod_path[]: "/prefab/depots/paper_mill/or_bleaching_tower_lod1.pmd"
+	static_lod_name[]: "lod 250m"
+	static_lod_path[]: "/prefab/depots/paper_mill/or_bleaching_tower_lod2.pmd"
+}
+model_def : model.or_367 {
+	model_desc: "/model/panorama/or_portland/or_convention_centre.pmd"
+}
+
+model_def : model.or_406 {
+	model_desc: "/model/panorama/or_welcome_to_oregon.pmd"
+}
+model_def : model.or_414 {
+	model_desc: "/model/panorama/or_ontario/or_ont_high_school_stadium.pmd"
+}
+model_def : model.or_422 {
+	model_desc: "/model/railing/bridge/or_portland_bridge_support.pmd"
+}
+model_def : model.or_436 {
+	model_desc: "/model/panorama/truck_stop/or_gloves1.pmd"
+	lod_desc: "/model/panorama/truck_stop/or_gloves1_lod1.pmd"
+	lod_dist: 36
+}
+model_def : model.or_453 {
+	model_desc: "/model/bridge/bridge_split_0-2_0-2_sym_portland.pmd"
+}  
+
+model_def : model.or_454 {
+	model_desc: "/model/bridge/bridge_split_0-2_0-2_sym_mirror_portland.pmd"
+} 
+
+model_def : model.or_455 {
+	model_desc: "/model/bridge/bridge_split_exit_exit_portland.pmd"
+} 
+
+model_def : model.or_456 {
+	model_desc: "/model/bridge/bridge_split_exit_exit_left_mirror_portland.pmd"
+}
+
+
+model_def : model.or_475 {
+	model_desc: "/prefab/depots/paper_mill/or_paper_mill_admin.pmd"
+
+}
+
+
+model_def : model.or_525 {
+	model_desc: "/prefab/depots/shipyard/or_shipyard_crane_bumper.pmd"
+}
+model_def : model.or_554 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama8.pmd"
+
+}
+model_def : model.or_555 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama8a.pmd"
+
+}
+model_def : model.or_556 {
+	model_desc: "/model/panorama/or_portland/or_portland_panorama8b.pmd"
+
+}
+
+model_def : model.or_561 {
+	model_desc: "/model/panorama/or_portland/or_admin_houses_1.pmd"
+
+}
+
+model_def : model.or_581 {
+	model_desc: "/model/panorama/or_portland/or_admin_houses_2.pmd"
+
+}
+
+
+model_def : model.or_624 {
+	model_desc: "/model/panorama/or_portland/or_steel_bridge_pillar.pmd"
+}
+model_def : model.or_632 {
+	model_desc: "/model/vehicle/ship/or_pilot_boat/pilot_boat.pmd"
+}
+model_def : model.or_646 {
+	model_desc: "/model/panorama/or_portland/or_porlander.pmd"
+}
+model_def : model.or_653 {
+	model_desc: "/model/panorama/truck_stop/or_jubitz/or_jubitz_building.pmd"
+}
+model_def : model.or_654 {
+	model_desc: "/model/panorama/or_toothrock_tunnel.pmd"
+}
+
+model_def : model.or_667 {
+	model_desc: "/model/panorama/truck_stop/or_jubitz/or_jubitz_signboards.pmd"
+}
+model_def : model.or_674 {
+	model_desc: "/model/panorama/or_portland/or_fremont_bridge_half.pmd"
+	
+	lod_desc: "/model/panorama/or_portland/or_fremont_bridge_half_lod1.pmd"
+	lod_dist: 141
+}
+model_def : model.or_680 {
+	model_desc: "/model/panorama/truck_stop/or_jubitz/or_jubitz_totem.pmd"
+}
+model_def : model.or_682 {
+	model_desc: "/model/panorama/or_pendleton/or_correctional_institute_sign.pmd"
+
+}
+
+
+
+model_def : model.or_688 {
+	model_desc: "/model/panorama/or_portland/or_portland_airport.pmd"
+	
+	distance_scale: 75
+	distance_min: 650
+	distance_max: 1600
+
+}
+
+model_def : model.ut_100 {
+	model_desc: "/model/vehicle/parked_cars/parked_truck_and_trailers.pmd"
+	static_lod_name[]: "lod-60m"
+	static_lod_path[]: "/model/vehicle/parked_cars/parked_truck_and_trailers_lod1.pmd"
+  static_lod_name[]: "lod-100m"
+	static_lod_path[]: "/model/vehicle/parked_cars/parked_truck_and_trailers_lod2.pmd"
+	lod_desc: "/model/vehicle/parked_cars/parked_truck_and_trailers_lod1.pmd"
+	lod_dist: 60.0
+}
+model_def : model.ut_70 {
+	model_desc: "/model/building/house/ut_suburb_house_01.pmd"
+	
+	color_variant[]:"Grey | roof1: 145,120,112 | roof2: 145,120,112 | roof3: 145,120,112 | roof4: 145,120,112 | roof_g: 145,120,112 | roof_s: 145,120,112 | roof_win: 145,120,112 | w_wall1: 128,128,128 | w_wall3: 128,128,128 | w_wall_g: 128,128,128 | w_wall_s: 128,128,128 | b_wall1: 128,128,128 | b_wall3: 128,128,128 | b_wall_g: 128,128,128 | b_wall_s: 128,128,128 | _marquee: 145,120,112"
+	color_variant[]:"Green | roof1: 104,103,114 | roof2: 104,103,114 | roof3: 104,103,114 | roof4: 104,103,114 | roof_g: 104,103,114 | roof_s: 104,103,114 | roof_win: 104,103,114 | w_wall1: 160,183,166 | w_wall3: 160,183,166 | w_wall_g: 160,183,166 | w_wall_s: 160,183,166 | b_wall1: 160,183,166 | b_wall3: 160,183,166 | b_wall_g: 160,183,166 | b_wall_s: 160,183,166 | _marquee: 104,103,114"
+	color_variant[]:"Red | roof1: 255,255,255 | roof2: 255,255,255 | roof3: 255,255,255 | roof4: 255,255,255 | roof_g: 255,255,255 | roof_s: 255,255,255 | roof_win: 255,255,255 | w_wall1: 156,89,86 | w_wall3: 156,89,86 | w_wall_g: 156,89,86 | w_wall_s: 156,89,86 | b_wall1: 156,89,86 | b_wall3: 156,89,86 | b_wall_g: 156,89,86 | b_wall_s: 156,89,86 | _marquee: 255,255,255"
+	color_variant[]:"Brown | roof1: 43,36,27 | roof2: 43,36,27 | roof3: 43,36,27 | roof4: 43,36,27 | roof_g: 43,36,27 | roof_s: 43,36,27 | roof_win: 43,36,27 | w_wall1: 140,117,67 | w_wall3: 140,117,67 | w_wall_g: 140,117,67 | w_wall_s: 140,117,67 | b_wall1: 140,117,67 | b_wall3: 140,117,67 | b_wall_g: 140,117,67 | b_wall_s: 140,117,67 | _marquee: 43,36,27"
+}
+
+model_def : model.ut_89 {
+	model_desc: "/model/rock/ut_rock_chunky_1.pmd"
+}
+model_def : model.ut_126 {
+	model_desc: "/model/rock/ut_rock_sediment_1.pmd"
+	
+	static_lod_name[]: "lod from 150m"
+    static_lod_path[]: "/model/rock/ut_rock_sediment_1_lod1.pmd"
+	
+	lod_desc: "/model/rock/ut_rock_sediment_1_lod1.pmd"
+	lod_dist: 150
+	
+
+}
+model_def : model.ut_142 {
+	model_desc: "/model/rock/ut_rock_large_1.pmd"
+}
+model_def : model.ut_154 {
+	model_desc: "/model/rock/ut_rock_large_2.pmd"
+}
+model_def : model.ut_155 {
+	model_desc: "/model/building/house/ut_house1.pmd"
+
+color_variant[]:"basic | vis00c1: 127,127,127 | vis00h01c1: 127,127,127 | vis00h02c1: 127,127,127 | vis01c1: 127,127,127 | vis02c1: 127,127,127 | vis00c2: 127,127,127 | vis00h01c2: 127,127,127 | vis00h02c2: 127,127,127 | vis01c2: 127,127,127 | vis02c2: 127,127,127"
+color_variant[]:"pale_blue | vis00c1: 87,203,255 | vis00h01c1: 87,203,255 | vis00h02c1: 87,203,255 | vis01c1: 87,203,255 | vis02c1: 87,203,255 | vis00c2: 196,255,244 | vis00h01c2: 196,255,244 | vis00h02c2: 196,255,244 | vis01c2: 196,255,244 | vis02c2: 196,255,244"
+color_variant[]:"pale_yellow | vis00c1: 168,255,224 | vis00h01c1: 168,255,224 | vis00h02c1: 168,255,224 | vis01c1: 168,255,224 | vis02c1: 168,255,224 | vis00c2: 196,194,139 | vis00h01c2: 196,194,139 | vis00h02c2: 196,194,139 | vis01c2: 196,194,139 | vis02c2: 196,194,139"
+color_variant[]:"pale_violet | vis00c1: 135,204,255 | vis00h01c1: 135,204,255 | vis00h02c1: 135,204,255 | vis01c1: 135,204,255 | vis02c1: 135,204,255 | vis00c2: 66,62,50 | vis00h01c2: 66,62,50 | vis00h02c2: 66,62,50 | vis01c2: 66,62,50 | vis02c2: 66,62,50"
+
+}
+model_def : model.ut_157 {
+	model_desc: "/model/rock/ut_rock_jagged_2.pmd"
+}
+model_def : model.ut_170 {
+	model_desc: "/model/panorama/ut_bluff/ut_bluff_fort_entrance.pmd"
+}
+model_def : model.ut_1 {
+	model_desc: "/model/panorama/countryside/ut_sacramento_pass/ut_sacramento_pass_sign.pmd"
+
+}
+
+model_def : model.ut_5 {
+	model_desc: "/model/panorama/countryside/ut_sacramento_pass/ut_sacramento_pass_sign2.pmd"
+}
+
+model_def : model.ut_79 {
+	model_desc: "/model/panorama/truckstop/ut_border_inn/ut_border_inn_home.pmd"	
+}
+model_def : model.ut_107 {
+	model_desc: "/model/panorama/truckstop/ut_border_inn/ut_border_inn_building.pmd"
+}
+model_def : model.ut_134 {
+	model_desc: "/model/panorama/ut_bluff/ut_bluff_fort_cart.pmd"	
+}	
+model_def : model.ut_141{
+	model_desc: "/model/panorama/ut_bluff/ut_cottonwood.pmd"
+
+}
+model_def : model.ut_150 {
+	model_desc: "/model/panorama/ut_bluff/ut_bluff_fort_building.pmd"	
+}
+model_def : model.ut_164 {
+	model_desc: "/model/panorama/countryside/ut_sacramento_pass/ut_sacramento_pass_sign3.pmd"
+}
+model_def : model.ut_184 {
+	model_desc: "/model/panorama/countryside/ut_sacramento_pass/ut_sacramento_pass_cabin.pmd"	
+}
+model_def : model.5555 {
+	model_desc: "/model/vehicle/crawler/crawler.pmd"
+	static_lod_name[]: "LOD midrange"
+	static_lod_path[]:  "/model/vehicle/crawler/crawler_lod1.pmd"
+	static_lod_name[]: "LOD far distance"
+	static_lod_path[]:  "/model/vehicle/crawler/crawler_lod2.pmd"
+	
+	lod_desc: "/model/vehicle/crawler/crawler_lod2.pmd"
+	lod_dist: 130
+}
+model_def : model.ut_205 {
+	model_desc: "/model/panorama/ut_us163/ut_bend_steel_bridge.pmd"
+}
+model_def : model.ut_213 {
+        model_desc: "/model/panorama/ut_bluff/ut_bluff_welcome_sign.pmd"
+
+}
+model_def : model.wa_6 {
+	model_desc: "/model/building/country/wa_country_barn_01.pmd"
+  	color_variant[]:"Red/White | wall: 191,43,51 | roof: 181,181,181"
+  color_variant[]:"Red/Grey | wall: 191,43,51 | roof: 71,71,71"
+	color_variant[]:"Green/Grey | wall: 37,59,39 | roof: 71,71,71"
+  color_variant[]:"Green/White | wall: 37,59,39 | roof: 181,181,181"
+	color_variant[]:"Brown/Grey | wall: 46,36,38 | roof: 71,71,71"
+  color_variant[]:"Brown/White | wall: 46,36,38 | roof: 181,181,181"
+    color_variant[]:"greenblue | wall: 100,158,149 | roof: 36,46,42"
+	 color_variant[]:"green/gray | wall: 201,212,207 | roof: 30,46,37"
+  
+  static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/country/wa_country_barn_01_lod1.pmd"
+	
+	lod_desc: "/model/building/country/wa_country_barn_01_lod1.pmd"
+	lod_dist: 100.0
+}
+
+model_def : model.wa_14 {
+	model_desc: "/model/props/road/wa_drainage_1.pmd"
+
+}
+model_def : model.wa_16 {
+	model_desc: "/model/barrier/wood/wa_barrier_wooden_1.pmd"
+
+}
+model_def : model.wa_28 {
+	model_desc: "/model/building/logistic/wa_warehouse6.pmd"
+  color_variant[]:"default | wall: 226,226,226 | wall_pris: 226,226,226 | stripes: 232,232,232 | stripes_fr: 232,232,232 | stripes_pr: 232,232,232 | roof: 190,190,190 | roof_front: 190,190,190 | roof_pris: 190,190,190 | roof_shltr: 190,190,190"
+  color_variant[]:"W/R/W | wall: 226,226,226 | wall_pris: 226,226,226 | stripes: 171,36,36 | stripes_fr: 171,36,36 | stripes_pr: 171,36,36 | roof: 190,190,190 | roof_front: 190,190,190 | roof_pris: 190,190,190 | roof_shltr: 190,190,190 | doors: 171,36,36"
+  color_variant[]:"W/B/G | wall: 226,226,226 | wall_pris: 226,226,226 | stripes: 27,67,133 | stripes_fr: 27,67,133 | stripes_pr: 27,67,133 | roof: 110,110,110 | roof_front: 110,110,110 | roof_pris: 110,110,110 | roof_shltr: 110,110,110 | doors: 27,67,133"
+  color_variant[]:"Ocher/B/G | wall: 189,175,138 | wall_pris: 189,175,138 | stripes: 27,67,133 | stripes_fr: 27,67,133 | stripes_pr: 27,67,133 | roof: 110,110,110 | roof_front: 110,110,110 | roof_pris: 110,110,110 | roof_shltr: 110,110,110 | doors: 27,67,133"
+  color_variant[]:"Blue/R/W | wall: 19,46,79 | wall_pris: 19,46,79 | stripes: 171,36,36 | stripes_fr: 171,36,36 | stripes_pr: 171,36,36 | roof: 190,190,190 | roof_front: 190,190,190 | roof_pris: 190,190,190 | roof_shltr: 190,190,190 | doors: 171,36,36"
+  color_variant[]:"Red/W/W | wall: 79,18,18 | wall_pris: 79,18,18 | stripes: 232,232,232 | stripes_fr: 232,232,232 | stripes_pr: 232,232,232 | roof: 190,190,190 | roof_front: 190,190,190 | roof_pris: 190,190,190 | roof_shltr: 190,190,190"
+  
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/logistic/wa_warehouse6_lod1.pmd"
+
+}
+model_def : model.wa_40 {
+	model_desc: "/model/building/shop/wa_stripmall1.pmd"
+
+        color_variant[]:"white | vis_c1: 255,255,255 | vis_c2: 102,22,22 | _pediment1: 102,22,22 | _pediment2: 102,22,22 | _pediment3: 102,22,22 | roof_c1: 102,22,22 | marquez_c1: 102,22,22"
+		color_variant[]:"gray | vis_c1: 96,97,97 | vis_c2: 255,255,255 | _pediment1: 255,255,255 | _pediment2: 255,255,255 | _pediment3: 255,255,255 | roof_c1: 255,255,255 | marquez_c1: 255,255,255"
+		color_variant[]:"red | vis_c1: 114,57,54 | vis_c2: 37,66,103 | _pediment1: 37,66,103 | _pediment2: 37,66,103 | _pediment3: 37,66,103 | roof_c1: 37,66,103 | marquez_c1: 37,66,103"
+        color_variant[]:"yellow | vis_c1: 224,180,78 | vis_c2: 135,84,57 | _pediment1: 135,84,57 | _pediment2: 135,84,57 | _pediment3: 135,84,57 | roof_c1: 135,84,57 | marquez_c1: 135,84,57"
+
+	lod_desc: "/model/building/shop/wa_stripmall1_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_stripmall1_lod1.pmd"
+
+}
+model_def : model.wa_47 {
+	model_desc: "/model/props/street/wa_table_bench1.pmd"
+  color_variant[]:"default | wood: 215,215,215 | roof: 158,195,255"
+  color_variant[]:"brown | wood: 38,32,25 | roof: 64,62,59"
+  color_variant[]:"grey | wood: 54,54,54 | roof: 109,136,194"
+  color_variant[]:"green | wood: 27,36,23 | roof: 46,71,50"
+}
+model_def : model.wa_51 {
+	model_desc: "/model/building/shop/wa_shop1.pmd"
+	
+	color_variant[]:"original | vis_c1: 199,159,60 | vis_c1a: 199,159,60 | vis_c2: 228,228,228 | vis_c3: 128,128,128 | door: 40,77,115"	
+	color_variant[]:"yellow | vis_c1: 145,82,36 | vis_c1a: 145,82,36 | vis_c2: 156,114,65 | vis_c3: 23,23,23 | door: 49,82,115"
+	color_variant[]:"blue | vis_c1: 104,112,125 | vis_c1a: 104,112,125 | vis_c2: 39,76,115| vis_c3: 118,123,130 | door: 140,60,60"
+	color_variant[]:"red | vis_c1: 140,60,60 |vis_c1a: 140,60,60 | vis_c2: 228,228,228 | vis_c3: 25,25,25 | door: 140,60,60"
+	
+
+}
+model_def : model.wa_53 {
+	model_desc: "/model/building/administration/wa_admin8.pmd"
+	
+	color_variant[]:"Orig | vis1_c1: 163,142,125 | vis1_c2: 194,148,99 "
+	color_variant[]:"Gray | vis1_c1: 220,220,220 | vis1_c2: 220,220,220 "
+	color_variant[]:"Light/blue | vis1_c1: 87,122,130 | vis1_c2: 166,199,207 "
+	color_variant[]:"Gray/white | vis1_c1: 220,220,220 | vis1_c2: 110,110,110 "
+	color_variant[]:"Redcross | vis1_c1: 143,63,63 | vis1_c2: 255,255,255 "
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin8_lod1.pmd"
+
+	lod_desc: "/model/building/administration/wa_admin8_lod1.pmd"
+	lod_dist: 100.0	
+	
+}
+
+model_def : model.wa_58 {
+	model_desc: "/model/building/house/wa_house1.pmd"
+	color_variant[]:"green-blue-brown | nika1_clr1: 110,59,31 | nika1_clr2: 33,36,56 | nika2_clr1: 110,59,31 | 	nika2_clr2: 33,36,56 | roof_clr: 15,38,54 | roofad_clr: 15,38,54 | roofsm_clr: 15,38,54 | roofbg_clr: 15,38,54 | 	vik_roof_clr: 15,38,54 | vik_wal_clr1: 110,59,31 | vik_wal_clr2: 33,36,56 | vis_clr1: 110,59,31 | vis_clr2: 33,36,56"
+	color_variant[]:"red-brown-beige | nika1_clr1: 90,55,20 | nika1_clr2: 200,180,140 | nika2_clr1: 90,55,20 | nika2_clr2: 200,180,140 | roof_clr: 110,48,48 | roofad_clr: 110,48,48 | roofsm_clr: 110,48,48 | roofbg_clr: 110,48,48 | vik_roof_clr: 110,48,48 | vik_wal_clr1: 90,55,20 | vik_wal_clr2: 200,180,140 | vis_clr1: 90,55,20 | vis_clr2: 200,180,140"
+	color_variant[]:"white-green-gray | nika1_clr1: 200,200,200 | nika1_clr2: 80,105,80 | nika2_clr1: 200,200,200 | nika2_clr2: 80,105,80 | roof_clr: 70,68,60 | roofad_clr: 70,68,60 | roofsm_clr: 70,68,60 | roofbg_clr: 70,68,60 | vik_roof_clr: 70,68,60 | vik_wal_clr1: 200,200,200 | vik_wal_clr2: 80,105,80 | vis_clr1: 200,200,200 | vis_clr2: 80,105,80"
+
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/house/wa_house1_lod1.pmd"
+	
+		lod_desc: "/model/building/house/wa_house1_lod1.pmd"
+	lod_dist: 75
+	
+
+}
+model_def : model.wa_59 {
+	model_desc: "/model/building/house/wa_house1_garage.pmd"
+	color_variant[]:"green-blue-brown | wall1_clr: 33,36,56 | wall2_clr: 110,59,31 | roof_clr: 15,38,54 | balk_clr: 110,59,31"
+	color_variant[]:"red-brown-beige | wall1_clr: 200,180,140 | wall2_clr: 90,55,20 | roof_clr: 110,48,48 | balk_clr: 90,55,20"
+	color_variant[]:"white-green-gray | wall1_clr: 80,105,80 | wall2_clr: 200,200,200 | roof_clr: 70,68,60 | balk_clr: 200,200,200"
+
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/house/wa_house1_garage_lod1.pmd"
+	static_lod_name[]: "LOD - 200m"
+	static_lod_path[]: "/model/building/house/wa_house1_garage_lod2.pmd"
+	
+	lod_desc: "/model/building/house/wa_house1_garage_lod1.pmd"
+	lod_dist: 75
+
+}
+model_def : model.wa_66{
+	model_desc: "/model/building/logistic/wa_train_warehouse.pmd"
+
+	color_variant[]:"original | vis_c1: 228,203,163 | vis_winRc: 228,203,163 | vis_winLc: 228,203,163 | vis_doorRc: 228,203,163 | vis_doorLc: 228,203,163 | vis_lemR: 228,203,163 | vis_lemL: 228,203,163"	
+	color_variant[]:"gray | vis_c1: 220,220,220 | vis_winRc: 220,220,220 | vis_winLc: 220,220,220 | vis_doorRc: 220,220,220 | vis_doorLc: 220,220,220 | vis_lemR: 220,220,220 | vis_lemL: 220,220,220"
+	color_variant[]:"blue | vis_c1: 82,184,255 | vis_winRc: 82,184,255 | vis_winLc: 82,184,255 | vis_doorRc: 82,184,255 | vis_doorLc: 82,184,255 | vis_lemR: 82,184,255 | vis_lemL: 82,184,255"
+
+}
+model_def : model.wa_74{
+	model_desc: "/model/building/special/wa_guard_post.pmd"
+
+	color_variant[]:"blue | vis_c1: 24,50,139"	
+	color_variant[]:"red | vis_c1: 107,19,19"
+	color_variant[]:"gray | vis_c1: 70,70,70"
+	color_variant[]:"ochre | vis_c1: 192,166,135"
+}
+model_def : model.wa_79{
+	model_desc: "/model/building/shop/wa_stripmall3.pmd"
+
+        color_variant[]:"orig | vis_c1: 233,198,186 | vis_c2: 81,62,45 | vis_c3: 255,213,159 | vis_c4: 255,255,255 | vis_c5: 255,255,255 | _roof_1: 233,198,186 | _roof_2: 233,198,186 | _roof_3: 233,198,186"
+	color_variant[]:"darkbrown | vis_c1: 97,89,79 | vis_c2: 66,15,15 | vis_c3: 255,213,159 | vis_c4: 143,106,60 | vis_c5: 128,128,128 | _roof_1: 97,89,79 | _roof_2: 97,89,79 | _roof_3: 97,89,79"
+	color_variant[]:"red | vis_c1: 174,97,86 | vis_c2: 47,51,65 | vis_c3: 255,213,159 | vis_c4: 63,58,53 | vis_c5: 73,97,129 | _roof_1: 174,97,86 | _roof_2: 174,97,86 | _roof_3: 174,97,86"
+	
+        lod_desc: "/model/building/shop/wa_stripmall3_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_stripmall3_lod1.pmd"
+ 
+}
+model_def : model.wa_78{
+	model_desc: "/model/building/shop/wa_shop3.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_shop3_lod1.pmd"
+ 	color_variant[]:"white | vis_plaster: 218,213,211 | winframe_clr: 10,8,6"
+	color_variant[]:"yellow | vis_plaster: 191,162,115 | winframe_clr: 149,149,149"
+	color_variant[]:"brown | vis_plaster: 128,102,86 | winframe_clr: 25,38,60"
+	color_variant[]:"blue | vis_plaster: 21,33,63 | winframe_clr: 149,149,149"
+	lod_desc: "/model/building/shop/wa_shop3_lod1.pmd"
+	lod_dist: 100
+}
+	
+model_def : model.wa_82{
+	model_desc: "/model/building/shop/wa_shop2.pmd"
+	color_variant[]:"gray | base_c1: 128,128,128 | side_l_p_c1: 128,128,128 | side_l_w_c1: 128,128,128 | roof_w_c1: 128,128,128 | base_c2: 128,28,28 | roof_w_c2: 128,28,28 | f_roof_2_c2: 128,28,28 | side_l_p_c2: 128,28,28 | side_l_w_c2: 128,28,28 | roof_p_c3: 82,67,54 | roof_w_c3: 82,67,54 | f_roof_2_c3: 82,67,54 | f_roof_1_c4: 190,190,190 | f_roof_3_c4: 190,190,190"
+	color_variant[]:"white | base_c1: 256,256,256 | side_l_p_c1: 256,256,256 | side_l_w_c1: 256,256,256 | roof_w_c1: 256,256,256 | base_c2: 256,256,256 | roof_w_c2: 256,256,256 | f_roof_2_c2: 256,256,256 | side_l_p_c2: 256,256,256 | side_l_w_c2: 256,256,256 | roof_p_c3: 17,20,17 | roof_w_c3: 17,20,17 | f_roof_2_c3: 17,20,17 | f_roof_1_c4: 255,255,255 | f_roof_3_c4: 255,255,255"
+	color_variant[]:"green | base_c1: 110,156,100 | side_l_p_c1: 110,156,100 | side_l_w_c1: 110,156,100 | roof_w_c1: 110,156,100 | base_c2: 43,30,21 | roof_w_c2: 43,30,21 | f_roof_2_c2: 43,30,21 | side_l_p_c2: 43,30,21 | side_l_w_c2: 43,30,21 | roof_p_c3: 10,9,8 | roof_w_c3: 10,9,8 | f_roof_2_c3: 10,9,8 | f_roof_1_c4: 60,60,60 | f_roof_3_c4: 60,60,60"
+	color_variant[]:"brown | base_c1: 122,106,83 | side_l_p_c1: 122,106,83 | side_l_w_c1: 122,106,83 | roof_w_c1: 122,106,83 | base_c2: 41,51,47 | roof_w_c2: 41,51,47 | f_roof_2_c2: 41,51,47 | side_l_p_c2: 41,51,47 | side_l_w_c2: 41,51,47 | roof_p_c3: 20,19,17 | roof_w_c3: 20,19,17 | f_roof_2_c3: 20,19,17 | f_roof_1_c4: 100,100,100 | f_roof_3_c4: 100,100,100"
+	color_variant[]:"beige | base_c1: 255,227,181 | side_l_p_c1: 255,227,181 | side_l_w_c1: 255,227,181 | roof_w_c1: 255,227,181 | base_c2: 126,181,110 | roof_w_c2: 126,181,110 | f_roof_2_c2: 126,181,110 | side_l_p_c2: 126,181,110 | side_l_w_c2: 126,181,110 | roof_p_c3: 20,19,17 | roof_w_c3: 20,19,17 | f_roof_2_c3: 20,19,17 | f_roof_1_c4: 190,190,190 | f_roof_3_c4: 190,190,190"
+
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/shop/wa_shop2_lod1.pmd"
+	static_lod_name[]: "LOD - 200m"
+	static_lod_path[]: "/model/building/shop/wa_shop2_lod2.pmd"
+}
+	
+model_def : model.wa_97 {
+	model_desc: "/model/building/administration/wa_admin10.pmd"
+
+        color_variant[]:"white | vis1_c1: 255,255,255 | vis1_c2: 255,255,255 | vis1_c3: 255,255,255 | vis1_c4: 255,255,255 | vis2_c1: 255,255,255 | vis2_c2: 255,255,255 | vis2_c3: 255,255,255 | vis3_c1: 255,255,255 | vis3_c2: 255,255,255 | vis3_c3: 255,255,255"
+        color_variant[]:"gray | vis1_c1: 255,255,255 | vis1_c2: 255,255,255 | vis1_c3: 56,56,56  | vis_plast_c4: 56,56,56  |  vis2_c1: 255,255,255 | vis2_c2: 255,255,255 | vis2_c3: 56,56,56 | vis3_c1: 255,255,255 | vis3_c2: 255,255,255 | vis3_c3: 56,56,56"
+        color_variant[]:"beige | vis1_c1: 74,47,43 | vis1_c2: 155,144,117 | vis1_c3: 155,144,117 | vis1_c4: 74,47,43 | vis2_c1: 74,47,43 | vis2_c2: 155,144,117 | vis2_c3: 155,144,117 | vis3_c1: 74,47,43 | vis3_c2: 155,144,117 | vis3_c3: 155,144,117"
+        color_variant[]:"orange | vis1_c1: 171,112,65 | vis1_c2: 171,112,65 | vis1_c3: 90,90,90 | vis1_c4: 90,90,90 | vis2_c1: 171,112,65 | vis2_c2: 171,112,65  | vis2_c3: 90,90,90 | vis3_c1: 171,112,65 | vis3_c2: 171,112,65 | vis3_c3: 90,90,90"
+        color_variant[]:"blue | vis1_c1: 41,57,81 | vis1_c2: 41,57,81 | vis1_c3: 255,236,206 | vis1_c4: 255,236,206 | vis2_c1: 41,57,81 | vis2_c2: 41,57,81 | vis2_c3: 255,236,206 | vis3_c1: 41,57,81 | vis3_c2: 41,57,81 | vis3_c3: 255,236,206"
+
+}
+model_def : model.wa_127{
+	model_desc: "/model/building/administration/wa_admin13.pmd"
+
+	color_variant[]:"white/sand | vis_clr: 219,215,210 | rsimple_clr: 219,215,210 | right_clr: 219,215,210 | lsimple_clr: 219,215,210 | left_clr: 219,215,210 | vis2: 161,146,127 | left2: 161,146,127 | lsimple2: 161,146,127 | right2: 161,146,127 | rsimple2: 161,146,127"
+        color_variant[]:"white/dark | vis_clr: 219,215,210 | rsimple_clr: 219,215,210 | right_clr: 219,215,210 | lsimple_clr: 219,215,210 | left_clr: 219,215,210 | vis2: 30,30,30 | left2: 30,30,30 | lsimple2: 30,30,30 | right2: 30,30,30 | rsimple2: 30,30,30"
+        color_variant[]:"red/dark | vis_clr: 80,30,30 | rsimple_clr: 80,30,30 | right_clr: 80,30,30 | lsimple_clr: 80,30,30 | left_clr: 80,30,30 | vis2: 30,30,30 | left2: 30,30,30 | lsimple2: 30,30,30 | right2: 30,30,30 | rsimple2: 30,30,30"
+ 	color_variant[]:"red/sand | vis_clr: 80,30,30 | rsimple_clr: 80,30,30 | right_clr: 80,30,30 | lsimple_clr: 80,30,30 | left_clr: 80,30,30 | vis2: 181,166,147 | left2: 181,166,147 | lsimple2: 181,166,147 | right2: 181,166,147 | rsimple2: 181,166,147"
+	color_variant[]:"sand/dark | vis_clr: 161,146,127 | rsimple_clr: 161,146,127 | right_clr: 161,146,127 | lsimple_clr: 161,146,127 | left_clr: 161,146,127 | vis2: 30,30,30 | left2: 30,30,30 | lsimple2: 30,30,30 | right2: 30,30,30 | rsimple2: 30,30,30"
+	
+	lod_desc: "/model/building/administration/wa_admin13_lod1.pmd"
+	lod_dist: 100
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin13_lod1.pmd"
+
+
+}
+model_def : model.wa_150 {
+	model_desc: "/prefab/depots/marine/wa_crane_pier.pmd"
+}
+
+model_def : model.wa_175{
+ 	model_desc: "/model/building/administration/wa_admin9.pmd"
+	color_variant[]:"Yellow | vis_brickclr: 171,133,89 | l_brick_clr: 171,133,89 | r_brick_clr: 171,133,89 | vis_frameclr: 135,135,135 | l_frameclr: 135,135,135 | ls_frameclr: 135,135,135 | r_frameclr: 135,135,135 | rs_frameclr: 135,135,135 | vis_marblclr: 250,250,250 | l_marblclr: 250,250,250 | r_marblclr: 250,250,250 | vis_clr: 171,153,133 | left_clr: 171,153,133 | ls_clr: 171,153,133 | right_clr: 171,153,133 | rs_clr: 171,153,133"
+	color_variant[]:"White | vis_brickclr: 250,250,250 | l_brick_clr: 250,250,250 | r_brick_clr: 250,250,250 | vis_frameclr: 5,5,5 | l_frameclr: 5,5,5 | ls_frameclr: 5,5,5 | r_frameclr: 5,5,5 | rs_frameclr: 5,5,5 | vis_marblclr: 20,20,20 | l_marblclr: 20,20,20 | r_marblclr: 20,20,20 | vis_clr: 100,100,100 | left_clr: 100,100,100 | ls_clr: 100,100,100 | right_clr: 100,100,100 | rs_clr: 100,100,100"
+	color_variant[]:"Red | vis_brickclr: 116,44,35 | l_brick_clr: 116,44,35 | r_brick_clr: 116,44,35 | vis_frameclr: 135,135,135 | l_frameclr: 135,135,135 | ls_frameclr: 135,135,135 | r_frameclr: 135,135,135 | rs_frameclr: 135,135,135 | vis_marblclr: 20,20,20 | l_marblclr: 20,20,20 | r_marblclr: 20,20,20 | vis_clr: 250,250,250 | left_clr: 250,250,250 | ls_clr: 250,250,250 | right_clr: 250,250,250 | rs_clr: 250,250,250"
+
+	lod_desc: "/model/building/administration/wa_admin9_lod1.pmd"
+	lod_dist: 100
+	
+	static_lod_name[]: "lod1"
+	static_lod_path[]: "/model/building/administration/wa_admin9_lod1.pmd"
+	
+}
+model_def : model.wa_179 {
+ 	model_desc: "/model/building/house/wa_house3.pmd"
+	color_variant[]:"brown-white | wall_CLR: 210,210,210 | wall_CLR_C: 210,210,210 | wall_CLR_C1: 210,210,210 | wall_CLR_C2: 210,210,210 | wall_CLR_L: 210,210,210 | wall_CLR_R: 210,210,210 | roof_CLR: 255,255,255 | roof_CLR_C1: 255,255,255 | roof_CLR_C2: 255,255,255 | roof_CLR_L: 255,255,255 | roof_CLR_R: 255,255,255 | roof_st_CLR: 255,255,255"
+	color_variant[]:"black-green | wall_CLR: 65,106,112 | wall_CLR_C: 65,106,112 | wall_CLR_C1: 65,106,112 | wall_CLR_C2: 65,106,112 | wall_CLR_L: 65,106,112 | wall_CLR_R: 65,106,112 | roof_CLR: 53,56,61 | roof_CLR_C1: 53,56,61 | roof_CLR_C2: 53,56,61 | roof_CLR_L: 53,56,61 | roof_CLR_R: 53,56,61 | roof_st_CLR: 53,56,61"
+	color_variant[]:"red-yellow | wall_CLR: 251,218,166 | wall_CLR_C: 251,218,166 | wall_CLR_C1: 251,218,166 | wall_CLR_C2: 251,218,166 | wall_CLR_L: 251,218,166 | wall_CLR_R: 251,232,166 | roof_CLR: 214,168,158 | roof_CLR_C1: 214,168,158 | roof_CLR_C2: 214,168,158 | roof_CLR_L: 214,168,158 | roof_CLR_R: 214,168,158 | roof_st_CLR: 214,168,158"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/house/wa_house3_lod1.pmd"
+	
+	lod_desc: "/model/building/house/wa_house3_lod1.pmd"
+	lod_dist: 75
+
+}
+model_def : model.wa_188 {
+ 	model_desc: "/model/building/shop/wa_stripmall2.pmd"
+	lod_desc: "/model/building/shop/wa_stripmall2_lod1.pmd"
+	lod_dist: 100
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_stripmall2_lod1.pmd"
+}
+
+model_def : model.wa_197 {
+ 	model_desc: "/model/building/shop/wa_shop8.pmd"
+	color_variant[]:"brown-white | wall: 255,255,255 | wall_v1: 255,255,255 | wall_v2: 255,255,255 | wall_v3: 255,255,255 | wall_v3b: 255,255,255 | roof: 49,50,65 | roof_v2: 49,50,65 | roof_v3: 49,50,65 | roof_v3b: 49,50,65 | bricks: 127,127,127 | bricks_fr: 127,127,127 | stripes: 36,35,40 | stripes_v1: 36,35,40 | stripes_v2: 36,35,40 | stripes_v3: 36,35,40 | stripes_v3b: 36,35,40"
+	color_variant[]:"brown-yellow | wall: 237,215,150 | wall_v1: 237,215,150 | wall_v2: 237,215,150 | wall_v3: 237,215,150 | wall_v3b: 237,215,150 | roof: 255,255,255 | roof_v2: 255,255,255 | roof_v3: 255,255,255 | roof_v3b: 255,255,255 | bricks: 255,255,255 | bricks_fr: 255,255,255 | stripes: 95,95,95 | stripes_v1: 95,95,95 | stripes_v2: 95,95,95 | stripes_v3: 95,95,95 | stripes_v3b: 95,95,95"
+	color_variant[]:"blue-brown | wall: 91,79,67 | wall_v1: 91,79,67 | wall_v2: 91,79,67 | wall_v3: 91,79,67 | wall_v3b: 91,79,67 | roof: 53,100,170 | roof_v2: 53,100,170 | roof_v3: 53,100,170 | roof_v3b: 53,100,170 | bricks: 64,69,75 | bricks_fr: 64,69,75 | stripes: 19,36,62 | stripes_v1: 19,36,62 | stripes_v2: 19,36,62 | stripes_v3: 19,36,62 | stripes_v3b: 19,36,62"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_shop8_lod1.pmd"
+	
+	lod_desc: "/model/building/shop/wa_shop8_lod1.pmd"
+	lod_dist: 75.0	
+}
+model_def : model.wa_183 {
+ 	model_desc: "/model/building/shop/wa_shop7.pmd"	
+	color_variant[]:"default-white | _marque1: 255,255,255 | shltrroof1: 255,255,255 | shltrroof4: 255,255,255 | roof_01: 255,255,255 | roof_04: 255,255,255 | wall_clr: 255,255,255"
+	color_variant[]:"blue | _marque1: 16,32,74 | shltrroof1: 16,32,74 | shltrroof4: 16,32,74 | roof_01: 16,32,74 | roof_04: 16,32,74 | wall_clr: 14,31,74"
+	color_variant[]:"bright-blue | _marque1: 26,63,99 | shltrroof1: 26,63,99 | shltrroof4: 26,63,99 | roof_01: 26,63,99 | roof_04: 26,63,99 | wall_clr: 26,63,99"
+	color_variant[]:"red | _marque1: 115,34,41 | shltrroof1: 115,34,41 | shltrroof4: 115,34,41 | roof_01: 115,34,41 | roof_04: 115,34,41 | wall_clr: 115,33,40"
+	color_variant[]:"green | _marque1: 39,74,54 | shltrroof1: 39,74,54 | shltrroof4: 39,74,54 | roof_01: 39,74,54 | roof_04: 39,74,54 | wall_clr: 29,74,48"
+	color_variant[]:"beige | _marque1: 209,195,163 | shltrroof1: 209,195,163 | shltrroof4: 209,195,163 | roof_01: 209,195,163 | roof_04: 209,195,163 | wall_clr: 209,195,163"
+	color_variant[]:"blue-white | _marque1: 26,63,99 | shltrroof1: 26,63,99 | shltrroof4: 26,63,99 | roof_01: 26,63,99 | roof_04: 26,63,99 | wall_clr: 255,255,255 | main_wclr: 255,255,255 | shelter_clr: 255,255,255"
+	color_variant[]:"red_yellow | _marque1: 115,34,41 | shltrroof1: 115,34,41 | shltrroof4: 115,34,41 | roof_01: 115,34,41 | roof_04: 115,34,41 | wall_clr: 115,33,40 | main_wclr: 175,124,60 | shelter_clr: 175,124,60"
+	color_variant[]:"green_yellow | _marque1: 29,74,48 | shltrroof1: 29,74,48 | shltrroof4: 29,74,48 | roof_01: 29,74,48 | roof_04: 29,74,48 | wall_clr: 29,74,48 | main_wclr: 175,124,60 | shelter_clr: 175,124,60 "
+	color_variant[]:"gray_white| _marque1: 102,102,102 | shltrroof1: 102,102,102 | shltrroof4: 102,102,102 | roof_01: 102,102,102 | roof_04: 102,102,102 | wall_clr: 255,255,255 | main_wclr: 102,102,102 | shelter_clr: 102,102,102"
+	color_variant[]:"green_white | _marque1: 60,89,61 | shltrroof1: 60,89,61 | shltrroof4: 60,89,61 | roof_01: 60,89,61 | roof_04: 60,89,61 | wall_clr: 255,255,255 | main_wclr: 60,89,61 | shelter_clr: 60,89,61"
+	color_variant[]:"green_red | _marque1: 115,34,41 | shltrroof1: 115,34,41 | shltrroof4: 115,34,41 | roof_01: 115,34,41 | roof_04: 115,34,41 | wall_clr: 115,33,40 | main_wclr: 61,77,61 | shelter_clr: 61,77,61"
+	color_variant[]:"red_white | _marque1: 115,34,41 | shltrroof1: 115,34,41 | shltrroof4: 115,34,41 | roof_01: 115,34,41 | roof_04: 115,34,41 | wall_clr: 255,255,255 | main_wclr: 46,10,15 | shelter_clr: 46,10,15"
+	color_variant[]:"coffee | _marque1: 111,94,88 | shltrroof1: 111,94,88 | shltrroof4: 111,94,88 | roof_01: 111,94,88 | roof_04: 111,94,88 | wall_clr: 71,60,56 | main_wclr: 43,35,25 | shelter_clr: 43,35,25"
+        
+        lod_desc: "/model/building/shop/wa_shop7_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_shop7_lod1.pmd"
+        
+}
+model_def : model.wa_198 {
+	model_desc: "/model/building/shop/wa_shop6.pmd"
+	
+		color_variant[]:"orcher  | vis_clr :212,177,125 |   lt_clr :212,177,125 |  rt_clr :212,177,125 |  fr_pil_clr :212,177,125 |  colvile_clr :212,177,125 |  lt_pil_clr :212,177,125 |  rt_pil_clr :212,177,125 |  _markizy_l:242,85,82 |  _markizy_r: 242,85,82 |  _markizy_f: 242,85,82 "
+		color_variant[]:"white  | vis_clr :220,211,192 |   lt_clr :220,211,192 |  rt_clr :220,211,192 |  fr_pil_clr :220,211,192 |  colvile_clr :220,211,192 |  lt_pil_clr :220,211,192 |  rt_pil_clr :220,211,192 |  _markizy_l:40,46,73 |  _markizy_r: 40,46,73 |  _markizy_f: 40,46,73 "
+		color_variant[]:"brown  | vis_clr :135,84,57|   lt_clr :135,84,57 |  rt_clr :135,84,57  |  fr_pil_clr :135,84,57 |  colvile_clr :135,84,57 |  lt_pil_clr : 135,84,57 |  rt_pil_clr :135,84,57 |  _markizy_l: 35,56,40 |  _markizy_r: 35,56,40 |  _markizy_f: 35,56,40 "
+		color_variant[]:"grey | vis_clr :96,97,97 |   lt_clr :96,97,97 |  rt_clr :96,97,97 |  fr_pil_clr :96,97,97 |  colvile_clr :96,97,97 |  lt_pil_clr :96,97,97 |  rt_pil_clr :96,97,97 |  _markizy_l:40,46,73 |  _markizy_r: 40,46,73 |  _markizy_f: 40,46,73 "
+		
+		
+		static_lod_name[]: "lod 100m"
+		static_lod_path[]: "/model/building/shop/wa_shop6_lod1.pmd"
+
+		lod_desc: "/model/building/shop/wa_shop6_lod1.pmd"
+		lod_dist: 100.0	
+
+}
+model_def : model.wa_225 {
+	model_desc: "/model/building/shop/wa_shop4.pmd"	
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_shop4_lod1.pmd"
+	
+	lod_desc: "/model/building/shop/wa_shop4_lod1.pmd"
+	lod_dist: 75.0	
+	color_variant[]:"red/ocher | roof_met_F: 119,30,30 | roof_met_L: 119,30,30 | roof_met_R: 119,30,30 | wa_met: 138,114,92 | wa_met_B_1: 138,114,92 | wa_met_B_2: 138,114,92  | wa_met_L_1: 138,114,92 | wa_met_L_2: 138,114,92"
+	color_variant[]:"blue/gray | roof_met_F: 26,37,56 | roof_met_L: 26,37,56 | roof_met_R: 26,37,56 | wa_met: 95,91,89 | wa_met_B_1: 95,91,89 | wa_met_B_2: 95,91,89  | wa_met_L_1: 95,91,89 | wa_met_L_2: 95,91,89"
+	color_variant[]:"gray/white | roof_met_F: 56,56,56 | roof_met_L: 56,56,56 | roof_met_R: 56,56,56 | wa_met: 205,198,192 | wa_met_B_1: 205,198,192 | wa_met_B_2: 205,198,192  | wa_met_L_1: 205,198,192 | wa_met_L_2: 205,198,192"
+}
+
+model_def : model.wa_235 {
+ 	model_desc: "/model/props/farm/wa_fruit_box_pile_01.pmd"
+	lod_desc: "/model/props/farm/wa_fruit_box_pile_01_lod1.pmd"
+	lod_dist: 100.0	
+}
+model_def : model.wa_236 {
+ 	model_desc: "/model/props/farm/wa_calf_hutch.pmd"
+	
+	color_variant[]:"default | railing: 255,255,255 | railing_var1: 255,255,255 | railing_var2: 255,255,255 | railing_var3: 255,255,255"
+	color_variant[]:"bright blue | railing: 47,94,150 | railing_var1: 47,94,150 | railing_var2: 47,94,150 | railing_var3: 47,94,150"
+	color_variant[]:"dark blue | railing: 4,11,41 | railing_var1: 4,11,41 | railing_var2: 4,11,41 | railing_var3: 4,11,41"
+	color_variant[]:"green | railing: 0,33,15 | railing_var1: 0,33,15 | railing_var2: 0,33,15 | railing_var3: 0,33,15"
+	color_variant[]:"red | railing: 54,7,7 | railing_var1: 54,7,7 | railing_var2: 54,7,7 | railing_var3: 54,7,7"
+	color_variant[]:"brown | railing: 33,9,3 | railing_var1: 33,9,3 | railing_var2: 33,9,3 | railing_var3: 33,9,3"
+	color_variant[]:"gray | railing: 84,84,84 | railing_var1: 84,84,84 | railing_var2: 84,84,84 | railing_var3: 84,84,84"
+	color_variant[]:"black | railing: 0,0,0 | railing_var1: 0,0,0 | railing_var2: 0,0,0 | railing_var3: 0,0,0"
+	
+	lod_desc: "/model/props/farm/wa_calf_hutch_lod1.pmd"
+	lod_dist: 50.0	
+
+}
+model_def : model.wa_249 {
+ 	model_desc: "/model/barrier/metal/wa_fence_gate.pmd"
+	
+}
+model_def : model.wa_250 {
+	model_desc: "/model/building/hotel/wa_motel2.pmd"
+
+        color_variant[]:"gray/red | cl_wall_clr: 130,130,130 | cr_wall_clr: 130,130,130 | le_wall_clr: 130,130,130 | re_wall_clr: 130,130,130 | v_wall_clr: 130,130,130 | v_metal_clr: 100,100,100 | center_roofl: 102,47,33 | center_roofr: 102,47,33 | l_roof_clr: 102,47,33 | r_roof_clr: 102,47,33 | v_roof_clr: 102,47,33"
+	color_variant[]:"orange/green | cl_wall_clr: 102,47,33 | cr_wall_clr: 102,47,33 | le_wall_clr: 102,47,33 | re_wall_clr: 102,47,33 | v_wall_clr: 102,47,33 | v_metal_clr: 60,41,32 | center_roofl: 20,26,19 | center_roofr: 20,26,19 | l_roof_clr: 20,26,19 | r_roof_clr: 20,26,19 | v_roof_clr: 20,26,19"
+	color_variant[]:"brown/orange | cl_wall_clr: 31,23,18 | cr_wall_clr: 31,23,18 | le_wall_clr: 31,23,18 | re_wall_clr: 31,23,18 | v_wall_clr: 31,23,18 | v_metal_clr: 202,92,79 | center_roofl: 95,47,33 | center_roofr: 95,47,33 | l_roof_clr: 95,47,33 | r_roof_clr: 95,47,33 | v_roof_clr: 95,47,33"
+	color_variant[]:"green/grey | cl_wall_clr: 20,26,19 | cr_wall_clr: 20,26,19 | le_wall_clr: 20,26,19 | re_wall_clr: 20,26,19 | v_wall_clr: 20,26,19 | v_metal_clr: 60,41,32 | center_roofl: 130,130,130 | center_roofr: 130,130,130 | l_roof_clr: 130,130,130 | r_roof_clr: 130,130,130 | v_roof_clr: 130,130,130"
+
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/hotel/wa_motel2_lod1.pmd"
+        lod_desc: "/model/building/hotel/wa_motel2_lod1.pmd"
+	lod_dist: 100
+
+}
+model_def : model.wa_252 {
+	model_desc: "/model/building/hotel/wa_motel2_entrance.pmd"
+
+        color_variant[]:"gray/red | v_wall_clr: 130,130,130 | vis_roof_clr: 102,47,33 | right_roof2: 102,47,33 | left_roof2: 102,47,33 | center_r_clr: 102,47,33 | center_l_clr: 102,47,33"
+	color_variant[]:"orange/green | v_wall_clr: 102,47,33 | vis_roof_clr: 20,26,19 | right_roof2: 20,26,19 | left_roof2: 20,26,19 | center_r_clr: 20,26,19 | center_l_clr: 20,26,19"
+	color_variant[]:"brown/orange | v_wall_clr: 31,23,18 | vis_roof_clr: 95,47,33 | right_roof2: 95,47,33 | left_roof2: 95,47,33 | center_r_clr: 95,47,33 | center_l_clr: 95,47,33"
+	color_variant[]:"green/grey | v_wall_clr: 20,26,19 | vis_roof_clr: 130,130,130 | right_roof2: 130,130,130 | left_roof2: 130,130,130 | center_r_clr: 130,130,130 | center_l_clr: 130,130,130"
+
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/hotel/wa_motel2_entrance_lod1.pmd"
+        lod_desc: "/model/building/hotel/wa_motel2_entrance_lod1.pmd"
+	lod_dist: 100
+
+}
+model_def : model.wa_262 {
+	model_desc: "/model/building/shop/wa_shop_storey1.pmd"
+
+	color_variant[]:"default | _pots_cor: 128,128,128 | _pots_fnt: 128,128,128 | base_b: 128,128,128 | corner_b: 128,128,128 | front_b: 128,128,128 | base_m: 255,163,135 | front_m: 255,163,135 | corner_m: 255,163,135 | front_s: 36,140,107 | corner_s: 36,140,107"
+	color_variant[]:"light | pots_cor: 255,255,255 | pots_fnt: 255,255,255 | base_b: 255,255,255 | corner_b: 255,255,255 | front_b: 255,255,255 | base_m: 255,163,135 | front_m: 255,163,135 | corner_m: 255,163,135 | front_s: 255,255,220 | corner_s: 255,255,220"
+	color_variant[]:"red | _pots_cor: 245,207,207 | _pots_fnt: 245,207,207 | base_b: 245,207,207 | corner_b: 245,207,207 | front_b: 245,207,207 | base_m: 210,120,128 | front_m: 210,120,128 | corner_m: 210,120,128 | front_s: 118,34,34 | corner_s: 118,34,34"
+	color_variant[]:"blue | _pots_cor: 255,240,196 | _pots_fnt: 255,240,196 | base_b: 255,240,196 | corner_b: 255,240,196 | front_b: 255,240,196 | base_m: 115,66,46 | front_m: 115,66,46 | corner_m: 115,66,46 | front_s: 42,70,127 | corner_s: 42,70,127"
+	color_variant[]:"gray | _pots_cor: 85,138,150 | _pots_fnt: 85,138,150 | base_b: 85,138,150 | corner_b: 85,138,150 | front_b: 85,138,150 | base_m: 85,138,150 | front_m: 85,138,150 | corner_m: 85,138,150 | front_s: 54,40,38 | corner_s: 54,40,38"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_shop_storey1_lod1.pmd"
+	
+	lod_desc: "/model/building/shop/wa_shop_storey1_lod1.pmd"
+	lod_dist: 100
+}
+
+model_def : model.wa_264 {
+ 	model_desc: "/model/props/farm/wa_cattle_shelter.pmd"
+  color_variant[]:"default | vis_side_a: 133,133,133 | vis_base_a: 133,133,133 | vis_base1a: 133,133,133 | vis_base2a: 133,133,133 | vis_roof: 230,230,230"
+  color_variant[]:"white | vis_side_a: 230,230,230 | vis_base_a: 230,230,230 | vis_base1a: 230,230,230 | vis_base2a: 230,230,230 | vis_roof: 68,103,150"
+  color_variant[]:"red | vis_side_a: 168,88,82 | vis_base_a: 168,88,82 | vis_base1a: 168,88,82 | vis_base2a: 168,88,82 | vis_roof: 230,230,230"
+  color_variant[]:"black | vis_side_a: 45,45,45 | vis_base_a: 45,45,45 | vis_base1a: 45,45,45 | vis_base2a: 45,45,45 | vis_roof: 230,230,230"
+  color_variant[]:"brown | vis_side_a: 89,69,48 | vis_base_a: 89,69,48 | vis_base1a: 89,69,48 | vis_base2a: 89,69,48 | vis_roof: 107,122,103"
+}
+model_def : model.wa_304{
+	vegetation_model: vegetmodel.lichen_tree.2	
+}	
+model_def : model.wa_305{
+	vegetation_model: vegetmodel.lichen_tree.3
+}
+model_def : model.wa_306{
+	vegetation_model: vegetmodel.lichen_tree.4	
+}
+model_def : model.wa_308 {
+	model_desc: "/model/props/farm/decal_hay.pmd"
+}
+model_def : model.wa_318 {
+	model_desc: "/model/props/farm/wa_hay_pile_big.pmd"
+   static_lod_name[]: "lod 50m"
+	static_lod_path[]: "/model/props/farm/wa_hay_pile_big_lod1.pmd"
+  static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/props/farm/wa_hay_pile_big_lod2.pmd"
+	
+	lod_desc: "/model/props/farm/wa_hay_pile_big_lod1.pmd"
+	lod_dist: 50
+}
+model_def : model.wa_319 {
+	model_desc: "/model/props/farm/wa_hay_pile_medium.pmd"
+   static_lod_name[]: "lod 50m"
+	static_lod_path[]: "/model/props/farm/wa_hay_pile_medium_lod1.pmd"
+  static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/props/farm/wa_hay_pile_medium_lod2.pmd"
+	
+	lod_desc: "/model/props/farm/wa_hay_pile_medium_lod1.pmd"
+	lod_dist: 50
+}
+model_def : model.wa_320 {
+	model_desc: "/model/props/farm/wa_hay_pile_small.pmd"
+   static_lod_name[]: "lod 50m"
+	static_lod_path[]: "/model/props/farm/wa_hay_pile_small_lod1.pmd"
+    static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/props/farm/wa_hay_pile_small_lod2.pmd"
+	
+	lod_desc: "/model/props/farm/wa_hay_pile_small_lod1.pmd"
+	lod_dist: 50
+}
+model_def : model.wa_341 {
+	model_desc: "/model/building/farm/wa_farm_warehouse1.pmd"
+  		
+	color_variant[]:"red | color1: 133,54,54 | color2: 23,26,31"
+ 	color_variant[]:"brown | color1: 156,125,112 | color2: 8,8,10"
+  	color_variant[]:"green | color1: 61,92,61 | color2: 23,26,31"
+  	color_variant[]:"blue | color1: 40,110,210 | color2: 8,8,10"
+  	color_variant[]:"grey | color1: 100,100,100 | color2: 8,8,10"
+
+	lod_desc: "/model/building/farm/wa_farm_warehouse1_lod1.pmd"
+	lod_dist: 100
+
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_warehouse1_lod1.pmd"
+
+}
+model_def : model.wa_354 {
+	model_desc: "/model/building/farm/wa_farm_warehouse2.pmd"
+  color_variant[]:"green1 | color1: 28,41,28 | color2: 28,41,28 | color3: 28,41,28"
+  color_variant[]:"green2 | color1: 28,41,28 | color2: 90,90,90 | color3: 255,255,255"
+  color_variant[]:"red | color1: 69,28,28 | color2: 90,90,90 | color3: 255,255,255"
+  color_variant[]:"brown | color1: 66,56,51 | color2: 90,90,90 | color3: 255,255,255"
+  color_variant[]:"blue | color1: 10,30,70 | color2: 90,90,90 | color3: 255,255,255"
+  color_variant[]:"grey | color1: 100,100,100 | color2: 60,60,60 | color3: 255,255,255"
+
+	lod_desc: "/model/building/farm/wa_farm_warehouse2_lod1.pmd"
+	lod_dist: 100
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_warehouse2_lod1.pmd"
+
+
+}
+model_def : model.wa_355 {
+	model_desc: "/model/building/farm/wa_farm_barn4.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_barn4_lod1.pmd"
+
+	lod_desc: "/model/building/farm/wa_farm_barn4_lod1.pmd"
+	lod_dist: 100.0	
+
+  color_variant[]:"brown | vis_color: 66,54,46 | roof_color: 255,255,255 | opn_color: 66,54,46 | cls_color: 66,54,46"
+  color_variant[]:"red | vis_color: 133,54,54 | roof_color: 100,100,100 | opn_color: 133,54,54 | cls_color: 133,54,54"
+  color_variant[]:"green | vis_color: 61,92,61 | roof_color: 200,200,200 | opn_color: 61,92,61 | cls_color: 61,92,61"
+  color_variant[]:"blue | vis_color: 41,74,125 | roof_color: 120,120,120 | opn_color: 41,74,125 | cls_color: 41,74,125"
+  color_variant[]:"grey | vis_color: 135,135,135 | roof_color: 255,255,255 | opn_color: 135,135,135 | cls_color: 135,135,135"
+}
+model_def : model.wa_356 {
+	model_desc: "/model/building/farm/distribution/liquid/wa_flamable_tanks.pmd"
+  color_variant[]:"grey | color1: 125,125,125"
+  color_variant[]:"white | color1: 204,207,196"
+  color_variant[]:"blue | color1: 10,30,70"
+  color_variant[]:"green | color1: 23,48,23"
+  color_variant[]:"red | color1: 64,10,10"
+}  
+  model_def : model.wa_357{
+	model_desc: "/model/vegetation/trees/lichen_tree_5.pmd"
+#	static_lod_name[]: "lod 100m"
+#	static_lod_path[]: "/model/vegetation/trees/lichen_tree_5_lod1.pmd"
+}
+model_def : model.wa_358{
+	model_desc: "/model/vegetation/wa_forest_undergrowth_model_1.pmd"
+}
+model_def : model.wa_360 {
+	model_desc: "/model/building/farm/distribution/liquid/wa_tanks1.pmd"
+  color_variant[]:"white | color1: 204,207,196 | color2: 148,107,28"
+  color_variant[]:"grey | color1: 60,60,60 | color2: 133,30,30"
+  color_variant[]:"blue | color1: 10,30,70 | color2: 80,80,80"
+  color_variant[]:"green | color1: 23,48,23 | color2: 148,107,28"
+  color_variant[]:"red | color1: 64,10,10 | color2: 20,20,20"
+}
+model_def : model.wa_368{
+	vegetation_model: vegetmodel.birch1.wa
+}
+model_def : model.wa_369{
+	vegetation_model: vegetmodel.birch2.wa
+}
+model_def : model.wa_370{
+	vegetation_model: vegetmodel.birch3.wa
+}
+model_def : model.wa_371{
+	vegetation_model: vegetmodel.birch4.wa
+}
+model_def : model.wa_372{
+	vegetation_model: vegetmodel.birch5.wa
+}
+model_def : model.wa_373{
+	model_desc: "/model/vegetation/leaved/birch_tree_broken1_wa.pmd"
+}
+model_def : model.wa_374{
+	model_desc: "/model/vegetation/leaved/birch_tree_broken2_wa.pmd"
+}
+model_def : model.wa_375{
+	model_desc: "/model/vegetation/leaved/birch_tree_broken3_wa.pmd"
+}
+model_def : model.wa_376{
+	model_desc: "/model/vegetation/leaved/birch_tree_broken4_wa.pmd"
+}
+model_def : model.wa_377{
+	model_desc: "/model/vegetation/leaved/birch_tree_broken5_wa.pmd"
+}
+model_def : model.wa_378{
+	model_desc: "/model/vegetation/leaved/birch_tree_broken6_wa.pmd"
+
+}
+model_def : model.wa_380{
+	model_desc: "/vehicle/ai/tractor/mixer.pmd"
+    lod_desc: "/vehicle/ai/tractor/mixer_lod2.pmd"
+	lod_dist: 100.0
+}
+model_def : model.wa_381{
+	model_desc: "/vehicle/ai/tractor/loading_wagon.pmd"
+    lod_desc: "/vehicle/ai/tractor/loading_wagon_lod2.pmd"
+	lod_dist: 100.0
+}
+model_def : model.wa_382{
+	model_desc: "/vehicle/ai/trailers/livestock.pmd"
+    lod_desc: "/vehicle/ai/trailers/livestock_lod2.pmd"
+	lod_dist: 100.0
+}
+
+model_def : model.wa_385{
+	vegetation_model: vegetmodel.weeping.willow1.wa
+}
+model_def : model.wa_386{
+	vegetation_model: vegetmodel.weeping.willow2.wa
+}
+model_def : model.wa_387{
+	model_desc: "/model/vegetation/wa_forest_undergrowth_model_turn.pmd"
+}
+
+model_def : model.wa_214 {
+	model_desc: "/model/building/shop/wa_shop9.pmd"
+
+        color_variant[]:"red | vis_c1: 120,80,62 | vis_base_c1: 120,80,62 | vis_wind_c1: 120,80,62 | rim_base_c1: 120,80,62 | rim_land_c1: 120,80,62"
+		color_variant[]:"brown | vis_c1: 102,58,27 | vis_base_c1: 102,58,27| vis_wind_c1: 102,58,27 | rim_base_c1: 102,58,27 | rim_land_c1: 102,58,27"
+        color_variant[]:"orange | vis_c1: 158,80,32 | vis_base_c1: 158,80,32 | vis_wind_c1: 158,80,32 | rim_base_c1: 158,80,32 | rim_land_c1: 158,80,32"
+		color_variant[]:"white | vis_c1: 255,255,255 | vis_base_c1: 255,255,255| vis_wind_c1: 255,255,255 | rim_base_c1: 255,255,255 | rim_land_c1: 255,255,255"
+        color_variant[]:"gray | vis_c1: 94,94,94, | vis_base_c1: 94,94,94 | vis_wind_c1: 94,94,94 | rim_base_c1: 94,94,94 | rim_land_c1: 94,94,94"
+}
+model_def : model.wa_391{
+	model_desc: "/model/vegetation/wa_cattails_big_1.pmd"
+}
+model_def : model.wa_392{
+	model_desc: "/model/vegetation/wa_cattails_big_2.pmd"	
+}
+model_def : model.wa_393{
+	model_desc: "/model/vegetation/wa_cattails_small_1.pmd"
+}
+model_def : model.wa_394{
+	model_desc: "/model/vegetation/wa_cattails_small_2.pmd"
+}
+model_def : model.wa_417{
+	vegetation_model: vegetmodel.weeping.willow1.far.wa
+}
+model_def : model.wa_418{
+	vegetation_model: vegetmodel.weeping.willow2.far.wa
+
+}
+model_def : model.wa_439{
+	model_desc: "/model/vegetation/bushes/city_flowerbed_round1.pmd"
+}
+model_def : model.wa_441{
+	model_desc: "/model/vegetation/bushes/city_flowerbed_wood1.pmd"
+	
+}
+model_def : model.wa_448{
+	model_desc: "/model/rock/hills/wa_mountain4.pmd"
+}
+
+model_def : model.wa_457{
+	model_desc: "/model/water/foam_stream.pmd"
+}
+model_def : model.wa_24 {
+	model_desc: "/model/panorama/truck_stop/wa_yakima/wa_yakima_totem.pmd"
+
+}
+
+model_def : model.wa_80{
+	model_desc: "/model/panorama/wa_yakima/wa_bells_fargo.pmd"
+}
+model_def : model.wa_98{
+	model_desc: "/model/panorama/wa_yakima/wa_miners.pmd"
+}
+ model_def : model.wa_186 {
+	model_desc: "/model/panorama/wa_yakima/wa_yakima_welcome1.pmd"
+}
+model_def : model.wa_200 {
+	model_desc: "/model/panorama/wa_yakima/wa_larson.pmd"
+}
+model_def : model.wa_220 {
+	model_desc: "/model/panorama/wa_seattle/wa_seattle_downtown_05.pmd"
+}
+model_def : model.wa_242 {
+	model_desc: "/model/panorama/wa_yakima/wa_larson_statue.pmd"
+}
+model_def : model.wa_255 {
+	model_desc: "/model/panorama/wa_yakima/wa_baptist_church.pmd"
+	
+	lod_desc:"/model/panorama/wa_yakima/wa_baptist_church_lod1.pmd"
+	lod_dist: 180
+}
+model_def : model.wa_269 {
+	model_desc: "/model/panorama/wa_yakima/wa_st_michaels_church.pmd"
+}
+model_def : model.wa_271 {
+	model_desc: "/model/panorama/wa_yakima/wa_st_michaels_church_totem.pmd"
+}
+model_def : model.wa_273 {
+	model_desc: "/model/panorama/wa_yakima/wa_yakima_windmill.pmd"
+}
+model_def : model.wa_283 {
+	model_desc: "/model/panorama/wa_yakima/wa_moss_building.pmd"
+}
+model_def : model.wa_293 {
+	model_desc: "/model/panorama/wa_yakima/wa_yakima_maison.pmd"
+	
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/panorama/wa_yakima/wa_yakima_maison_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/panorama/wa_yakima/wa_yakima_maison_lod2.pmd"
+
+	lod_desc: "/model/panorama/wa_yakima/wa_yakima_maison_lod1.pmd"
+	lod_dist: 100.0				
+}	
+model_def : model.wa_294 {
+	model_desc: "/model/panorama/wa_yakima/wa_yakima_garden_inn.pmd"
+}	
+model_def : model.wa_295 {
+	model_desc: "/model/panorama/wa_yakima/wa_yakima_garage.pmd"
+}	
+model_def : model.wa_316 {
+	model_desc: "/model/props/street/wa_bollard1.pmd"
+
+}
+model_def : model.wa_322 {
+	model_desc: "/model/panorama/wa_us_101/wa_fort_park_columbia.pmd"
+
+}
+model_def : model.wa_324 {
+	model_desc: "/model/panorama/wa_yakima/wa_yakima_statue.pmd"
+}	
+model_def : model.wa_336 {
+	model_desc: "/model/panorama/wa_vancouver/wa_vancouver_bridge1.pmd"
+
+	lod_desc:"/model/panorama/wa_vancouver/wa_vancouver_bridge1_lod1.pmd"
+	lod_dist: 150
+}
+model_def : model.wa_337 {
+	model_desc: "/model/panorama/wa_vancouver/wa_vancouver_bridge2.pmd"
+
+	lod_desc:"/model/panorama/wa_vancouver/wa_vancouver_bridge2_lod1.pmd"
+	lod_dist: 150
+}
+model_def : model.wa_338 {
+	model_desc: "/model/panorama/wa_vancouver/wa_vancouver_bridge_pillar.pmd"
+
+	lod_desc:"/model/panorama/wa_vancouver/wa_vancouver_bridge_pillar_lod1.pmd"
+	lod_dist: 100
+}
+model_def : model.wa_390 {
+	model_desc: "/model/rock/wa_st_helens.pmd"
+}
+model_def : model.wa_398 {
+	model_desc: "/model/panorama/wa_yakima/wa_yakima_sculpture.pmd"	
+}	
+model_def : model.wa_414 {
+	model_desc: "/model/panorama/wa_yakima/wa_green_pear_totem.pmd"
+}
+model_def : model.wa_424 {
+	model_desc: "/model/panorama/wa_i82/wa_barrage1.pmd"
+}
+model_def : model.wa_425 {
+	model_desc: "/model/panorama/wa_i82/wa_barrage2.pmd"	
+}
+model_def : model.wa_452{
+	model_desc: "/model/panorama/wa_umatilla/wa_umatilla_bridge.pmd"
+}
+model_def : model.wa_228{
+	model_desc: "/model/advert/wa_gas_totem_chemron.pmd"
+
+}
+model_def : model.nm_314 {
+	model_desc: "/model/building/farm/nm_glasshouse_01.pmd"
+	
+	static_lod_name[]: "75"
+	static_lod_path[]:  "/model/building/farm/nm_glasshouse_01_lod1.pmd"
+	
+}
+
+model_def : model.nm_142 {
+	model_desc: "/model/building/administration/nm_admin1.pmd"
+	static_lod_name[]: "lod from 50m"
+	static_lod_path[]: "/model/building/administration/nm_admin1_lod1.pmd"
+}
+
+model_def : model.5595{
+	model_desc: "/model/vehicle/farming/farm_trailer.pmd"
+
+	color_variant[]:"Green | color_part: 50,100,40"
+	color_variant[]:"Red | color_part: 180,25,20"
+	color_variant[]:"Blue | color_part: 30,50,100"
+	color_variant[]:"Yellow | color_part: 230,150,0"
+	color_variant[]:"Gray | color_part: 100,100,100"	
+	color_variant[]:"Brown | color_part: 100,50,30"
+}
+
+model_def : model.az_58{
+	model_desc: "/model/panorama/az_i89/az_poe_page.pmd"
+}
+
+model_def : model.az_59{
+	model_desc: "/model/panorama/az_forest/az_forest.pmd"
+}
+
+model_def : model.5681{
+	model_desc: "/model/props/garage/mutt_578d_props1.pmd"
+  
+  lod_desc:"/model/props/garage/mutt_578d_props1_lod1.pmd"
+	lod_dist: 50
+  
+  static_lod_name[]: "lod-50m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props1_lod1.pmd"
+
+  static_lod_name[]: "lod-100m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props1_lod2.pmd"
+}
+model_def : model.5682{
+	model_desc: "/model/props/garage/mutt_578d_props2.pmd"
+  
+  lod_desc:"/model/props/garage/mutt_578d_props2_lod1.pmd"
+	lod_dist: 50
+  
+  static_lod_name[]: "lod-50m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props2_lod1.pmd"
+
+  static_lod_name[]: "lod-100m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props2_lod2.pmd"
+}
+model_def : model.5683{
+	model_desc: "/model/props/garage/mutt_578d_props3.pmd"
+  
+  lod_desc:"/model/props/garage/mutt_578d_props3_lod1.pmd"
+	lod_dist: 50
+  
+  static_lod_name[]: "lod-50m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props3_lod1.pmd"
+
+  static_lod_name[]: "lod-100m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props3_lod2.pmd"
+}
+model_def : model.5684{
+	model_desc: "/model/props/garage/mutt_578d_props4.pmd"
+  
+  lod_desc:"/model/props/garage/mutt_578d_props4_lod1.pmd"
+	lod_dist: 50
+  
+  static_lod_name[]: "lod-50m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props4_lod1.pmd"
+
+  static_lod_name[]: "lod-100m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props4_lod2.pmd"
+}
+model_def : model.5685{
+	model_desc: "/model/props/garage/mutt_578d_props5.pmd"
+  
+  lod_desc:"/model/props/garage/mutt_578d_props5_lod1.pmd"
+	lod_dist: 50
+  
+  static_lod_name[]: "lod-50m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props5_lod1.pmd"
+
+  static_lod_name[]: "lod-100m"
+	static_lod_path[]: "/model/props/garage/mutt_578d_props5_lod2.pmd"
+}
+model_def : model.nm_444 {
+	model_desc: "/model/props/street/nm_tree_grate_round.pmd"
+}
+model_def : model.nm_446 {
+	model_desc: "/model/props/street/nm_treepot_round_long.pmd"
+}
+model_def : model.ut_218{
+	model_desc: "/model/panorama/ut_us163/ut_concrete_ramp.pmd"							
+}
+model_def : model.ut_223 {
+    model_desc: "/model/panorama/ut_bluff/ut_bluff_cafe_totem.pmd"	
+}
+model_def : model.wa_484 {
+	model_desc: "/model/props/container/container_big_open_red.pmd"
+
+}
+model_def : model.wa_491 {
+	model_desc: "/model/props/container/container_big_open_green.pmd"
+
+}
+model_def : model.wa_492 {
+	model_desc: "/model/props/container/container_big_open_blue.pmd"
+
+}
+model_def : model.wa_487 {
+	model_desc: "/model/props/machinery/machinery_props5.pmd"
+	
+	color_variant[]:"base | base_color: 255,255,255" 
+	color_variant[]:"red | base_color: 255,128,128" 
+	color_variant[]:"green | base_color: 205,255,156" 
+	color_variant[]:"blue | base_color: 128,234,255"
+
+
+	
+	lod_desc: "/model/props/machinery/machinery_props5_lod1.pmd"
+	lod_dist: 50
+	
+	static_lod_name[]: "middle - 50m"
+	static_lod_path[]: "/model/props/machinery/machinery_props5_lod1.pmd"
+
+	static_lod_name[]: "far - 100m"
+	static_lod_path[]: "/model/props/machinery/machinery_props5_lod2.pmd"
+ 
+}
+model_def : model.wa_488 {
+	model_desc: "/model/props/machinery/machinery_props8.pmd"
+	
+	lod_desc: "/model/props/machinery/machinery_props8_lod1.pmd"
+	lod_dist: 50
+	
+	static_lod_name[]: "middle - 50m"
+	static_lod_path[]: "/model/props/machinery/machinery_props8_lod1.pmd"
+
+	static_lod_name[]: "far - 100m"
+	static_lod_path[]: "/model/props/machinery/machinery_props8_lod2.pmd"
+ 
+}
+model_def : model.wa_489 {
+	model_desc: "/model/props/machinery/machinery_props6.pmd"
+	
+	lod_desc: "/model/props/machinery/machinery_props6_lod1.pmd"
+	lod_dist: 50
+	
+	static_lod_name[]: "middle - 50m"
+	static_lod_path[]: "/model/props/machinery/machinery_props6_lod1.pmd"
+ 
+}
+model_def : model.wa_493 {
+	model_desc: "/model/barrier/gate/wa_gate1.pmd"
+
+}
+model_def : model.wa_494 {
+	model_desc: "/model/barrier/gate/wa_gate2.pmd"
+
+}
+model_def : model.wa_495 {
+	model_desc: "/model/barrier/gate/wa_gate3.pmd"
+
+}
+model_def : model.wa_496 {
+	model_desc: "/model/vehicle/trailer/gooseneck_ch_20.pmd"
+	lod_desc: "/model/vehicle/trailer/gooseneck_ch_20_lod1.pmd"
+	lod_dist: 50.0
+}
+model_def : model.wa_497 {
+	model_desc: "/model/vehicle/trailer/gooseneck_ch_40.pmd"
+	lod_desc: "/model/vehicle/trailer/gooseneck_ch_40_lod1.pmd"
+	lod_dist: 50.0
+}
+model_def : model.wa_498 {
+	model_desc: "/model/building/house/ut_house_2.pmd"
+
+color_variant[]:"yellow | v0_c1: 190,176,148 | v1_c1: 190,176,148 | v2_c1: 190,176,148"
+color_variant[]:"red | v0_c1: 130,46,29 | v1_c1: 130,46,29 | v2_c1: 130,46,29"
+color_variant[]:"bleu | v0_c2: 23,25,41 | v1_c2: 23,25,41  | v2_c2: 23,25,41"
+color_variant[]:"yellow_blue | v0_c2: 23,25,41 | v1_c2: 23,25,41  | v2_c2: 23,25,41 | v0_c1: 190,176,148 | v1_c1: 190,176,148 | v2_c1: 190,176,148"
+}
+
+model_def : model.wa_500 {
+	model_desc: "/model/props/machinery/machinery_props1.pmd"
+	
+	color_variant[]:"base | defaultpart: 56,50,43 | var1_color1: 56,50,43 | var2_color1: 56,50,43 | var3_color1: 56,50,43 | var4_color1: 56,50,43 | var5_color1: 56,50,43 | var6_color1: 56,50,43" 
+	color_variant[]:"blue | defaultpart: 40,43,56 | var1_color1: 40,43,56 | var2_color1: 40,43,56 | var3_color1: 40,43,56 | var4_color1: 40,43,56 | var5_color1: 40,43,56 | var6_color1: 40,43,56" 
+	color_variant[]:"green | defaultpart: 50,64,40 | var1_color1: 50,64,40 | var2_color1: 50,64,40 | var3_color1: 50,64,40 | var4_color1: 50,64,40 | var5_color1: 50,64,40 | var6_color1: 50,64,40" 
+	color_variant[]:"red | defaultpart: 84,52,40 | var1_color1: 84,52,40 | var2_color1: 84,52,40 | var3_color1: 84,52,40 | var4_color1: 84,52,40 | var5_color1: 84,52,40 | var6_color1: 84,52,40" 
+
+		
+	lod_desc: "/model/props/machinery/machinery_props1_lod1.pmd"
+	lod_dist: 25
+	
+	static_lod_name[]: "25m"
+	static_lod_path[]: "/model/props/machinery/machinery_props1_lod1.pmd"
+	static_lod_name[]: "50m"
+	static_lod_path[]: "/model/props/machinery/machinery_props1_lod2.pmd"
+}
+model_def : model.wa_501 {
+	model_desc: "/model/props/uni/wooden_boxes_01.pmd"
+}
+model_def : model.nm_283 {
+	model_desc: "/model/building/flat/nm_flats1.pmd"
+	static_lod_name[]: "lod from 100m"
+	static_lod_path[]: "/model/building/flat/nm_flats1_lod1.pmd"
+
+}
+
+model_def : model.nm_315 {
+	model_desc: "/model/building/farm/nm_glasshouse_02.pmd"
+	
+	static_lod_name[]: "75m"
+	static_lod_path[]:  "/model/building/farm/nm_glasshouse_02_lod1.pmd"
+	
+}
+
+model_def : model.or_67 {
+	model_desc: "/model/props/country/nm_the_ranch.pmd"
+}
+
+model_def : model.wa_2 {
+	model_desc: "/model/building/administration/wa_admin5.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin5_lod1.pmd"
+	color_variant[]:"red/brown | wall1: 137,121,105 | wall1b: 137,121,105 | wall2: 38,23,22 | wall2b: 38,23,22 | wall2c: 38,23,22 | windows: 5,5,5 |ledge: 38,23,22"
+  	color_variant[]:"brown/ocher | wall1: 219,202,169 | wall1b: 112,101,86 | wall2: 97,87,74 | wall2b: 238,239,230 | wall2c: 97,87,74 | windows: 117,118,124 | ledge: 50,39,36"
+  	color_variant[]:"blue/white | wall1: 238,239,230 | wall1b: 238,239,230 | wall2: 238,239,230 | wall2b: 63,72,84 | wall2c: 63,72,84 | windows: 117,118,124 | ledge: 42,48,56"
+	color_variant[]:"red/black | wall1: 37,38,40 | wall1b: 37,38,40 | wall2: 37,38,40 | wall2b: 105,51,47 | wall2c: 105,51,47 | windows: 117,118,124 | ledge: 91,44,41"
+}
+model_def : model.wa_3 {
+	model_desc: "/model/building/administration/wa_admin4.pmd"
+
+	color_variant[]:"Gray | vis_c1: 186,186,186 | vis_c2: 186,186,186 | vis_c3: 186,186,186 | vis_c4: 186,186,186 | vis_c5: 99,76,52"
+  	color_variant[]:"Ochre/Blue | vis_c1: 86,122,145 | vis_c2: 106,64,26 | vis_c3: 106,64,26 | vis_c4: 106,64,26 | vis_c5: 106,64,26"
+  	color_variant[]:"Brown/Yellow | vis_c1: 255,228,158 | vis_c2: 181,132,63 | vis_c3: 122,86,34 | vis_c4: 66,43,10 | vis_c5: 30,69,34"
+
+ 	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin4_lod1.pmd"
+
+	lod_desc: "/model/building/administration/wa_admin4_lod1.pmd"
+	lod_dist: 100.0
+
+}
+model_def : model.wa_4 {
+	model_desc: "/model/building/administration/wa_admin1.pmd"
+
+        color_variant[]:"Original | c_base: 120,120,120 | c_frames_b: 100,100,100 | c_metal_b: 127,127,127 | c_ent_fr1: 85,85,85 | c_ent_fr2: 166,166,166 | c_ent_wall1: 97,105,101 | c_ent_wall2: 115,117,116"
+        color_variant[]:"Grey | c_base: 94,158,184 | c_frames_b: 9,9,9 | c_metal_b: 12,12,12 | c_ent_fr1: 4,4,4 | c_ent_fr2: 14,14,14 | c_ent_wall1: 12,12,12 | c_ent_wall2: 12,12,12"
+        color_variant[]:"Brown | c_base: 54,54,54 | c_frames_b: 100,100,100 | c_metal_b: 53,88,112 | c_ent_fr1: 85,85,85 | c_ent_fr2: 186,186,186 | c_ent_wall1: 30,65,89 | c_ent_wall2: 53,88,112"
+
+        static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin1_lod1.pmd"
+
+	lod_desc: "/model/building/administration/wa_admin1_lod1.pmd"
+	lod_dist: 100.0
+
+
+}
+model_def : model.wa_5 {
+	model_desc: "/model/building/special/wa_weigh_station1.pmd"
+}
+model_def : model.wa_8 {
+	model_desc: "/model/building/administration/wa_admin2.pmd"
+	
+	color_variant[]:"white | vis_c1: 255,255,255 | vis_c2: 255,255,255 | vis_c3: 255,255,255 | vis_c4: 255,255,255 | vis_c5: 255,255,255"	
+        color_variant[]:"gray | vis_c1: 127,127,127 | vis_c2: 16,31,22 | vis_c3: 127,127,127| vis_c4: 127,127,127 | vis_c5: 127,127,127"
+        color_variant[]:"brown | vis_c1: 69,39,39 | vis_c2: 69,39,39 | vis_c3: 127,127,127| vis_c4: 127,127,127 | vis_c5: 69,39,39"
+        color_variant[]:"yellow/green | vis_c1: 92,82,41 | vis_c2: 18,48,53 | vis_c3: 127,127,127 | vis_c4: 92,82,41 | vis_c5: 92,82,41"
+
+        lod_desc: "/model/building/administration/wa_admin2_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin2_lod1.pmd"
+
+}
+model_def : model.wa_9 {
+	model_desc: "/model/building/logistic/wa_warehouse2.pmd"
+	
+	color_variant[]:"color1 | wall: 128,128,128 | wall_f: 128,128,128 | wall_s: 128,128,128 | roof: 217,217,217 | roof_f: 217,217,217 | roof_s: 217,217,217 | _roof: 217,217,217 | _roof_front: 217,217,217"
+	color_variant[]:"color2 | wall: 217,217,217 | wall_f: 217,217,217 | wall_s: 217,217,217 | roof: 87,137,157 | roof_f: 87,137,157 | roof_s: 87,137,157 | _roof: 87,137,157 | _roof_front: 87,137,157"
+	color_variant[]:"color3 | wall: 217,217,217 | wall_f: 217,217,217 | wall_s: 217,217,217 | roof: 163,55,41 | roof_f: 163,55,41 | roof_s: 163,55,41 | _roof: 163,55,41 | _roof_front: 163,55,41"
+	color_variant[]:"color4 | wall: 128,128,92 | wall_f: 128,128,92 | wall_s: 128,128,92 | roof: 127,94,62 | roof_f: 127,94,62 | roof_s: 127,94,62 | _roof: 127,94,62 | _roof_front: 127,94,62"
+	color_variant[]:"color5 | wall: 53,74,74 | wall_f: 53,74,74 | wall_s: 53,74,74 | roof: 217,217,217 | roof_f: 217,217,217 | roof_s: 217,217,217 | _roof: 217,217,217 | _roof_front: 217,217,217"
+        
+	lod_desc: "/model/building/logistic/wa_warehouse2_lod1.pmd"
+	lod_dist: 100
+       
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/logistic/wa_warehouse2_lod1.pmd"
+
+}
+model_def : model.wa_10 {
+	model_desc: "/model/building/administration/wa_admin6.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin6_lod1.pmd"
+	color_variant[]:"red/brown | wall1: 38,23,22 | wall2: 137,121,105 | wall3: 137,121,105 | windows: 25,25,25 |ledge: 38,23,22" 
+  	color_variant[]:"brown/ocher | wall1: 97,87,74 | wall2: 219,202,169 | wall3: 219,202,169 | windows: 117,118,124 | ledge: 50,39,36" 
+  	color_variant[]:"blue/white | wall1: 63,72,84 | wall2: 238,239,230 | wall3: 238,239,230 | windows: 117,118,124 | ledge: 42,48,56"
+	color_variant[]:"red/black | wall1: 105,51,47 | wall2: 37,38,40 | wall3: 105,51,47 | windows: 117,118,124 | ledge: 91,44,41"
+}
+model_def : model.wa_11 {
+	model_desc: "/model/building/administration/wa_admin7.pmd"
+
+        color_variant[]:"original | c_1: 172,172,192 | c_2: 172,172,192 | c_3: 172,172,192 | c_4: 172,172,192 | c_entry: 172,172,192 | c_tower: 172,172,192" 
+  	color_variant[]:"red/orange | c_1: 132,54,51 | c_2: 128,69,28 | c_3: 128,100,73 | c_4: 128,123,100 | c_entry: 132,54,51 | c_tower: 128,69,28" 
+  	color_variant[]:"green/yellow | c_1: 42,77,80 | c_2: 38,38,38 | c_3: 127,88,46 | c_4: 127,88,46 | c_entry: 42,77,80 | c_tower: 38,38,38"
+	color_variant[]:"grey | c_1: 30,30,30 | c_2: 90,90,90 | c_3: 90,90,90 | c_4: 90,90,90 | c_entry: 30,30,30 | c_tower: 90,90,90"
+
+        static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin7_lod1.pmd"
+
+	lod_desc: "/model/building/administration/wa_admin7_lod1.pmd"
+	lod_dist: 100.0
+
+}
+model_def : model.wa_12 {
+	model_desc: "/model/tunnel/wa_seattle_tunnel1_entrance.pmd"
+	
+}
+model_def : model.wa_13 {
+	model_desc: "/model/building/administration/wa_admin3.pmd"
+
+	color_variant[]:"White | vis_c1: 255,255,255 | vis_c2: 255,255,255 | vis_c3: 255,255,255 | vis_c4: 255,255,255 | vis_c5: 255,255,255"	
+	color_variant[]:"Gray | vis_c1: 90,91,86 | vis_c2: 90,91,86 | vis_c3: 240,240,240 | vis_c4: 94,18,16 | vis_c5: 240,240,240"
+        color_variant[]:"Blue/Yellow | vis_c1: 28,64,74 | vis_c2: 97,91,38 | vis_c3: 97,91,38 | vis_c4: 50,58,84 | vis_c5: 127,127,127"
+  	color_variant[]:"Brown/Blue | vis_c1: 84,76,50 | vis_c2: 84,76,50 | vis_c3: 17,49,65 | vis_c4: 94,43,8 | vis_c5: 127,127,127"	
+	
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin3_lod1.pmd"
+
+	lod_desc: "/model/building/administration/wa_admin3_lod1.pmd"
+	lod_dist: 100.0
+
+}
+model_def : model.wa_17 {
+	model_desc: "/model/building/country/wa_barn1.pmd"
+	
+	color_variant[]:"green | vis_c1: 47,55,48 | vis_c2: 40,40,40 | vis_c3: 90,90,90"
+	color_variant[]:"brown | vis_c1: 35,29,28 | vis_c2: 90,90,90 | vis_c3: 23,19,19"
+	color_variant[]:"white | vis_c1: 90,90,90 | vis_c2: 90,90,90 | vis_c3: 90,90,90"
+	
+}
+
+
+model_def : model.wa_34 {
+	model_desc: "/model/building/logistic/wa_warehouse7.pmd"
+
+	color_variant[]:"Orig  | vis1_c1: 245,225,184 | vis1_c2: 161,207,176"
+	color_variant[]:"Grey_full  | vis1_c1: 150,150,150 | vis1_c2: 150,150,150"
+	color_variant[]:"White  | vis1_c1: 230,230,230 | vis1_c2: 230,230,230"
+	color_variant[]:"Choco  | vis1_c1: 125,113,99 | vis1_c2: 237,235,173"
+	color_variant[]:"Blue | vis1_c1: 91,111,140 | vis1_c2: 250,250,250"
+	color_variant[]:"Brown | vis1_c1: 167,154,138| vis1_c2: 199,194,145"
+	color_variant[]:"Brown_full | vis1_c1: 167,154,138| vis1_c2: 194,174,163"
+	
+	lod_desc: "/model/building/logistic/wa_warehouse7_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/logistic/wa_warehouse7_lod1.pmd"
+
+}
+model_def : model.wa_42 {
+	model_desc: "/model/building/hotel/wa_motel1.pmd"
+
+	color_variant[]:"Orange | vis1_c1: 91,46,28 | vis_left: 91,46,28 | vis_right: 91,46,28 | vis1_c2: 173,155,132 | vis_Lc1: 91,46,28 | vis_Lc2: 173,155,132 | vis_Rc1: 91,46,28 | vis_Rc2: 173,155,132 | roof: 9,10,9  | roof_R: 9,10,9  | roof_L: 9,10,9 "
+	color_variant[]:"Ochre | vis1_c1: 192,166,135 | vis_left: 192,166,135 | vis_right: 192,166,135 | vis1_c2: 96,79,54 | vis_Lc1: 192,166,135 | vis_Lc2: 96,79,54 | vis_Rc1: 192,166,135 | vis_Rc2: 96,79,54 | roof: 42,39,24  | roof_R: 42,39,24  | roof_L: 42,39,24"
+	color_variant[]:"Gray/gray | vis1_c1: 114,114,114 | vis_left: 114,114,114 | vis_right: 114,114,114 | vis1_c2: 161,161,161 | vis_Lc1: 114,114,114 | vis_Lc2: 161,161,161 | vis_Rc1: 114,114,114 | vis_Rc2: 161,161,161 | roof: 29,8,7 | roof_R: 29,8,7 | roof_L: 29,8,7"
+	color_variant[]:"LightGreen | vis1_c1: 83,99,75 | vis_left: 83,99,75 | vis_right: 83,99,75 | vis1_c2: 105,123,100 | vis_Lc1: 83,99,75 | vis_Lc2: 105,123,100 | vis_Rc1: 83,99,75 | vis_Rc2: 105,123,100 | roof: 9,10,9 | roof_R: 9,10,9   | roof_L: 9,10,9 "
+
+	lod_desc: "/model/building/hotel/wa_motel1_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/hotel/wa_motel1_lod1.pmd"
+
+}
+model_def : model.wa_43 {
+	model_desc: "/model/building/hotel/wa_motel1_entrance.pmd"
+	color_variant[]:"Orange | vis1_c1: 91,46,28 | vis1_c2: 173,155,132"
+	color_variant[]:"Ochre | vis1_c1: 192,166,135 | vis1_c2: 96,79,54"
+	color_variant[]:"Gray/gray | vis1_c1: 114,114,114 | vis1_c2: 161,161,161"
+	color_variant[]:"LightGreen | vis1_c1: 83,99,75 | vis1_c2: 105,123,100"
+}
+model_def : model.wa_44 {
+	model_desc: "/model/building/hotel/wa_motel1_b.pmd"
+
+	color_variant[]:"Orange | vis1_c1: 91,46,28 | fill: 91,46,28 | vis1_c2: 173,155,132 | vis2_c1: 91,46,28 | vis2_c2: 173,155,132 | roof: 9,10,9"
+	color_variant[]:"Ochre | vis1_c1: 192,166,135 | fill: 192,166,135 | vis1_c2: 96,79,54 | vis2_c1: 192,166,135 | vis2_c2: 96,79,54 | roof: 42,39,24"
+	color_variant[]:"Gray/gray | vis1_c1: 114,114,114 | fill: 114,114,114 | vis1_c2: 161,161,161 | vis2_c1: 114,114,114 | vis2_c2: 161,161,161 | roof: 29,8,7"
+	color_variant[]:"LightGreen | vis1_c1: 83,99,75 | fill: 83,99,75 | vis1_c2: 105,123,100 | vis2_c1: 83,99,75 | vis2_c2: 105,123,100 | roof: 9,10,9"
+}
+model_def : model.wa_45 {
+	model_desc: "/model/building/hotel/wa_motel1_corner.pmd"
+	
+	color_variant[]:"Orange | vis1_c1: 91,46,28 |  vis1_c2: 173,155,132 | vis_Lc1: 91,46,28 | vis_Lc2: 173,155,132 | vis_Rc1: 91,46,28 | vis_Rc2: 173,155,132 | roof: 9,10,9 | roof_R: 9,10,9 | roof_L: 9,10,9"
+	color_variant[]:"Ochre | vis1_c1: 192,166,135 | vis1_c2: 96,79,54 | vis_Lc1: 192,166,135 | vis_Lc2: 96,79,54 | vis_Rc1: 192,166,135 | vis_Rc2: 96,79,54 | roof: 42,39,24 | roof_R: 42,39,24 | roof_L: 42,39,24"
+	color_variant[]:"Gray/gray | vis1_c1: 114,114,114 | vis1_c2: 161,161,161 | vis_Lc1: 114,114,114 | vis_Lc2: 161,161,161 | vis_Rc1: 114,114,114 | vis_Rc2: 161,161,161 | roof: 29,8,7 | roof_R: 29,8,7 | roof_L: 29,8,7"
+	color_variant[]:"LightGreen | vis1_c1: 83,99,75 | vis1_c2: 105,123,100 | vis_Lc1: 83,99,75 | vis_Lc2: 105,123,100 | vis_Rc1: 83,99,75 | vis_Rc2: 105,123,100 | roof: 9,10,9 | roof_R: 9,10,9 | roof_L: 9,10,9"
+	
+	lod_desc: "/model/building/hotel/wa_motel1_corner_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/hotel/wa_motel1_corner_lod1.pmd"
+	
+}
+model_def : model.wa_72{
+	model_desc: "/model/building/special/wa_airport_radar_small.pmd"
+
+}
+model_def : model.wa_83 {
+	model_desc: "/model/building/administration/wa_admin12.pmd"
+	color_variant[]:"original | vis_c: 132,116,112 | roofFront_c: 132,116,112 | roofBack_c: 132,116,112"
+	color_variant[]:"red | vis_c: 150,91,76 | roofFront_c: 150,91,76 | roofBack_c: 150,91,76"
+	color_variant[]:"brown | vis_c: 60,52,40 | roofFront_c: 60,52,40 | roofBack_c: 60,52,40"
+
+        lod_desc: "/model/building/administration/wa_admin12_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/administration/wa_admin12_lod1.pmd"
+
+}
+model_def : model.wa_93{
+	model_desc: "/model/bridge/wa_walk_bridge_1_part.pmd"
+
+}
+model_def : model.wa_120 {
+	model_desc: "/model/props/lamp/wa_lamp_2_double_model.pmd"
+	static_lod_name[]: "lod1"
+	static_lod_path[]: "/model/props/lamp/wa_lamp_2_double_model_lod01.pmd"
+}
+model_def : model.wa_121 {
+	model_desc: "/model/props/lamp/wa_lamp_4_model.pmd"
+	static_lod_name[]: "lod1"
+	static_lod_path[]: "/model/props/lamp/wa_lamp_4_model_lod01.pmd"
+
+}
+
+model_def : model.wa_154 {
+	model_desc: "/prefab/depots/marine/wa_ship1.pmd"
+
+	color_variant[]:"blue_stripe | yacht_body: 250,250,250 | yacht_stripe: 5,37,112"
+	color_variant[]:"red_stripe | yacht_body: 250,250,250| yacht_stripe: 66,6,6"
+	color_variant[]:"white | yacht_body: 250,250,250| yacht_stripe: 250,250,250"
+	color_variant[]:"blue | yacht_body: 5,37,112 | yacht_stripe: 250,250,250"
+	
+	lod_desc: "/prefab/depots/marine/wa_ship1_lod2.pmd"
+	lod_dist: 90
+
+	static_lod_name[]: "LOD - 80m"
+	static_lod_path[]: "/prefab/depots/marine/wa_ship1_lod1.pmd"
+	static_lod_name[]: "LOD - 150m"
+	static_lod_path[]: "/prefab/depots/marine/wa_ship1_lod2.pmd"
+
+}
+
+model_def : model.wa_161 {
+	model_desc: "/model/building/industrial/wa_industry_pipes_01.pmd"
+	static_lod_name[]: "LOD - 100m"
+	static_lod_path[]: "/model/building/industrial/wa_industry_pipes_01_lod1.pmd"
+	static_lod_name[]: "LOD - 200m"
+	static_lod_path[]: "/model/building/industrial/wa_industry_pipes_01_lod2.pmd"
+
+}
+model_def : model.wa_163 {
+	model_desc: "/prefab/depots/marine/wa_ship2.pmd"
+
+	color_variant[]:"blue_stripe | boat_body: 250,250,250 | boat_stripe: 5,37,112"
+	color_variant[]:"red_stripe | boat_body: 250,250,250| boat_stripe: 66,6,6"
+	color_variant[]:"white | boat_body: 250,250,250| boat_stripe: 250,250,250"
+	color_variant[]:"blue | boat_body: 5,37,112 | boat_stripe: 250,250,250"
+
+	lod_desc: "/prefab/depots/marine/wa_ship2_lod2.pmd"
+	lod_dist: 90
+
+	static_lod_name[]: "LOD - 80m"
+	static_lod_path[]: "/prefab/depots/marine/wa_ship2_lod1.pmd"
+	static_lod_name[]: "LOD - 150m"
+	static_lod_path[]: "/prefab/depots/marine/wa_ship2_lod2.pmd"
+
+}
+model_def : model.wa_164 {
+	model_desc: "/prefab/depots/marine/wa_ship3.pmd"
+
+	
+	color_variant[]:"blue_stripe | ship_body: 250,250,250 | ship_stripe: 5,37,112"
+	color_variant[]:"red_stripe | ship_body: 250,250,250| ship_stripe: 66,6,6"
+	color_variant[]:"white | ship_body: 250,250,250| ship_stripe: 250,250,250"
+	color_variant[]:"blue | ship_body: 5,37,112 | ship_stripe: 250,250,250"
+
+	lod_desc: "/prefab/depots/marine/wa_ship3_lod2.pmd"
+	lod_dist: 90
+
+	static_lod_name[]: "LOD - 80m"
+	static_lod_path[]: "/prefab/depots/marine/wa_ship3_lod1.pmd"
+	static_lod_name[]: "LOD - 150m"
+	static_lod_path[]: "/prefab/depots/marine/wa_ship3_lod2.pmd"
+}
+model_def : model.wa_166 {
+	model_desc: "/model/props/street/wa_bus_stop1.pmd"
+}
+model_def : model.wa_170 {
+	model_desc: "/model/tunnel/wa_tunnel_exit_road1_entrance.pmd"
+}
+model_def : model.wa_174 {
+	model_desc: "/model/bridge/wa_train_bridge1_pillar.pmd"
+}
+model_def : model.wa_182 {
+ 	model_desc: "/model/props/road/wa_roundabout_center.pmd"
+}
+model_def : model.wa_231{
+	model_desc: "/model/building/shop/wa_shop5.pmd"
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/shop/wa_shop5_lod1.pmd"
+
+	lod_desc: "/model/building/shop/wa_shop5_lod1.pmd"
+	lod_dist: 100.0	
+        color_variant[]:"brown | var1_cl: 37,33,27 | var2_cl: 37,33,27 | var3_cl: 37,33,27 | var4_cl: 41,36,30"
+		color_variant[]:"blue | var1_cl: 39,52,74 | var2_cl: 39,52,74 | var3_cl: 39,52,74 | var4_cl: 64,82,114"
+		color_variant[]:"red | var1_cl: 67,28,26 | var2_cl: 67,28,26 | var3_cl: 67,28,26 | var4_cl: 80,34,31"
+        color_variant[]:"green | var1_cl: 20,33,19 | var2_cl: 20,33,19 | var3_cl: 20,33,19 | var4_cl: 49,82,48"
+		color_variant[]:"white | var1_cl: 220,220,220 | var2_cl: 220,220,220 | var3_cl: 220,220,220 | var4_cl: 49,82,48"
+	
+}
+model_def : model.wa_300 {
+	model_desc: "/model/vehicle/trailer/trailer_dryvan.pmd"
+}
+model_def : model.wa_301 {
+	model_desc: "/prefab/depots/paper_mill/wa_cone_tower.pmd"
+	static_lod_name[]: "lod 180m"
+	static_lod_path[]: "/prefab/depots/paper_mill/wa_cone_tower_lod1.pmd"
+	
+	lod_desc: "/prefab/depots/paper_mill/wa_cone_tower_lod1.pmd"
+	lod_dist: 180
+}
+model_def : model.wa_302{
+	vegetation_model: vegetmodel.lichen_tree.1
+}
+model_def : model.wa_303 {
+	model_desc: "/model/railing/bridge/wa_bridge_forest_abutment_01.pmd"
+}
+model_def : model.wa_329 {
+	model_desc: "/model/pillar/ut_trail_bridge_metal_15m.pmd"
+
+}
+model_def : model.wa_339 {
+	model_desc: "/model/pillar/ut_trail_bridge_metal_5m.pmd"
+}
+model_def : model.wa_342 {
+	model_desc: "/model/building/farm/wa_dairy1.pmd"
+  color_variant[]:"red | color1: 69,28,28 | color2: 23,26,31"
+  color_variant[]:"brown | color1: 66,56,51 | color2: 8,8,10"
+  color_variant[]:"green | color1: 28,41,28 | color2: 23,26,31"
+  color_variant[]:"blue | color1: 10,30,70 | color2: 8,8,10"
+  color_variant[]:"grey | color1: 125,125,125 | color2: 23,26,31"
+
+  lod_desc: "/model/building/farm/wa_dairy1_lod1.pmd"
+	lod_dist: 100
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_dairy1_lod1.pmd"
+
+}
+model_def : model.wa_359 {
+	model_desc: "/model/building/farm/wa_farm_warehouse3.pmd"
+  color_variant[]:"green | color1: 115,105,89 | color2: 23,36,31"
+  color_variant[]:"blue | color1: 125,125,125 | color2: 36,61,102"
+  color_variant[]:"red | color1: 69,28,28 | color2: 50,50,50"
+  color_variant[]:"grey | color1: 125,125,125 | color2: 77,77,77"
+	
+	lod_desc: "/model/building/farm/wa_farm_warehouse3_lod1.pmd"
+	lod_dist: 100
+       
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_warehouse3_lod1.pmd"
+
+}
+model_def : model.wa_361{
+	model_desc: "/model/rock/hills/wa_mid_hill1.pmd"
+}
+
+model_def : model.wa_362{
+	model_desc: "/model/rock/hills/wa_mid_hill2.pmd"
+}
+
+model_def : model.wa_363{
+	model_desc: "/model/rock/hills/wa_mid_hill3.pmd"
+}
+model_def : model.wa_383 {
+	model_desc: "/model/vehicle/tractor.pmd"
+	distance_type: 3
+}
+model_def : model.wa_384 {
+	model_desc: "/model/vehicle/tractor_far.pmd"
+	distance_type: 3
+}
+model_def : model.wa_399{
+	model_desc: "/model/rock/hills/wa_mountain1.pmd"
+}
+model_def : model.wa_400{
+	model_desc: "/model/rock/hills/wa_mountain2.pmd"
+}
+model_def : model.wa_401{
+	model_desc: "/model/rock/hills/wa_mountain3.pmd"
+}
+model_def : model.wa_402{
+	model_desc: "/model/rock/wa_river_rock.pmd"
+	
+	color_variant[]:"grey | rock1: 125,126,131 | rock2: 125,126,131 | rock3: 125,126,131 | rock4: 125,126,131 | rock5: 125,126,131 | rock6: 125,126,131 | rock7: 125,126,131 | rock8: 125,126,131 | rock9: 125,126,131"
+	color_variant[]:"red | rock1: 144,106,98 | rock2: 144,106,98 | rock3: 144,106,98 | rock4: 144,106,98 | rock5: 144,106,98 | rock6: 144,106,98 | rock7: 144,106,98 | rock8: 144,106,98 | rock9: 144,106,98"
+	color_variant[]:"sand | rock1: 175,151,122 | rock2: 175,151,122 | rock3: 175,151,122 | rock4: 175,151,122 | rock5: 175,151,122 | rock6: 175,151,122 | rock7: 175,151,122 | rock8: 175,151,122 | rock9: 175,151,122"
+	color_variant[]:"dark | rock1: 62,63,67 | rock2: 62,63,67 | rock3: 62,63,67 | rock4: 62,63,67 | rock5: 62,63,67 | rock6: 62,63,67 | rock7: 62,63,67 | rock8: 62,63,67 | rock9: 62,63,67"
+	color_variant[]:"white | rock1: 192,192,192 | rock2: 192,192,192 | rock3: 192,192,192 | rock4: 192,192,192 | rock5: 192,192,192 | rock6: 192,192,192 | rock7: 192,192,192 | rock8: 192,192,192 | rock9: 192,192,192"
+	color_variant[]:"red dark | rock1: 92,64,57 | rock2: 92,64,57 | rock3: 92,64,57 | rock4: 92,64,57 | rock5: 92,64,57 | rock6: 92,64,57 | rock7: 92,64,57 | rock8: 92,64,57 | rock9: 92,64,57"
+	color_variant[]:"brown light | rock1: 127,120,115 | rock2: 127,120,115 | rock3: 127,120,115 | rock4: 127,120,115 | rock5: 127,120,115 | rock6: 127,120,115 | rock7: 127,120,115 | rock8: 127,120,115 | rock9: 127,120,115"
+	color_variant[]:"beige | rock1: 102,86,67 | rock2: 102,86,67 | rock3: 102,86,67 | rock4: 102,86,67 | rock5: 102,86,67 | rock6: 102,86,67 | rock7: 102,86,67 | rock8: 102,86,67 | rock9: 102,86,67"
+	color_variant[]:"brown | rock1: 71,55,45 | rock2: 71,55,45 | rock3: 71,55,45 | rock4: 71,55,45 | rock5: 71,55,45 | rock6: 71,55,45 | rock7: 71,55,45 | rock8: 71,55,45 | rock9: 71,55,45"	
+
+}
+model_def : model.wa_415{
+	model_desc: "/model/vehicle/ship/tugboat2.pmd"
+}
+model_def : model.wa_430{
+	vegetation_model: vegetmodel.wa.beech.tall1
+
+}
+model_def : model.wa_431{
+	vegetation_model: vegetmodel.wa.beech.tall2
+
+}
+model_def : model.wa_432{
+	vegetation_model: vegetmodel.wa.beech_tall1.far
+
+}
+model_def : model.wa_433{
+	vegetation_model: vegetmodel.wa.beech_tall2.far 
+
+}
+model_def : model.wa_434{
+	vegetation_model: vegetmodel.wa.beech_tall.double1
+
+}
+model_def : model.wa_435{
+	vegetation_model: vegetmodel.wa.beech_tall.double1.far
+
+}
+model_def : model.wa_436{
+	vegetation_model: vegetmodel.wa.beech_tall.triple1
+
+}
+model_def : model.wa_437{
+	vegetation_model: vegetmodel.wa.beech_tall.triple1.far
+}
+model_def : model.wa_438{
+	model_desc: "/model/vegetation/bushes/city_flower_hanged.pmd"
+}
+model_def : model.wa_440{
+	model_desc: "/model/vegetation/bushes/city_flowerbed_round3.pmd"
+}
+model_def : model.wa_442 {
+	model_desc: "/model/bridge/wa_train_bridge2_pillar.pmd"
+}
+model_def : model.wa_445 {
+	model_desc: "/model/vehicle/parked_cars/pickup_car_dealer_4x1.pmd"
+	
+	lod_desc: "/model/vehicle/parked_cars/pickup_car_dealer_4x1_lod1.pmd"
+	lod_dist: 30.0
+
+	static_lod_name[]: "LOD1 - 30m"
+	static_lod_path[]: "/model/vehicle/parked_cars/pickup_car_dealer_4x1_lod1.pmd"
+}
+model_def : model.wa_458{
+	model_desc: "/model/building/farm/wa_farm_silo1.pmd"
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_silo1_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_farm_silo1_lod2.pmd"
+
+	lod_desc: "/model/building/farm/wa_farm_silo1_lod1.pmd"
+	lod_dist: 100
+
+	color_variant[]:"grey | c_wall: 127,127,127 | c_roof: 180,180,180"	
+	color_variant[]:"red | c_wall: 74,21,21 | c_roof: 71,69,68" 
+	color_variant[]:"brown | c_wall: 98,91,75 | c_roof: 180,180,180"
+	color_variant[]:"green | c_wall: 84,104,77 | c_roof: 82,75,69"
+
+}
+model_def : model.wa_459{
+	model_desc: "/model/building/farm/wa_farm_silo2.pmd"
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_silo2_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_farm_silo2_lod2.pmd"
+
+	lod_desc: "/model/building/farm/wa_farm_silo2_lod1.pmd"
+	lod_dist: 100
+
+	color_variant[]:"blue | c_wall: 4,6,15"
+	color_variant[]:"red | c_wall: 43,14,14"	
+	color_variant[]:"grey | c_wall: 127,127,127" 
+	color_variant[]:"brown | c_wall: 60,54,46"
+
+}
+model_def : model.wa_460{
+	model_desc: "/model/building/farm/wa_farm_silo3.pmd"
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_silo3_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_farm_silo3_lod2.pmd"
+
+	lod_desc: "/model/building/farm/wa_farm_silo3_lod1.pmd"
+	lod_dist: 100
+
+	color_variant[]:"grey | c_wall: 127,127,127 | c_roof: 43,45,47"	
+	color_variant[]:"red | c_wall: 104,38,38 | c_roof: 19,18,18" 
+	color_variant[]:"brown | c_wall: 87,72,66 | c_roof: 43,45,47"
+	color_variant[]:"green | c_wall: 84,104,77 | c_roof: 94,94,94"
+
+}
+model_def : model.wa_461{
+	model_desc: "/model/building/farm/wa_farm_silo4.pmd"
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_silo4_lod1.pmd"
+	
+	lod_desc: "/model/building/farm/wa_farm_silo4_lod1.pmd"
+	lod_dist: 100
+
+	color_variant[]:"grey | c_wall: 127,127,127" 
+	color_variant[]:"white | c_wall: 250,250,250"
+	color_variant[]:"brown | c_wall: 72,70,62"
+	color_variant[]:"green | c_wall: 71,83,60"
+
+}
+model_def : model.wa_462{
+	model_desc: "/model/building/farm/wa_cowhouse2.pmd"
+	color_variant[]:"red | c_wall: 74,21,21 | c_roof: 43,40,39" 
+	color_variant[]:"brown | c_wall: 46,37,32 | c_roof: 138,125,120"
+	color_variant[]:"green | c_wall: 46,69,46 | c_roof: 74,68,67"
+	color_variant[]:"blue | c_wall: 27,55,97 | c_roof: 120,120,120"
+	color_variant[]:"grey | c_wall: 107,107,107 | c_roof: 138,125,120"
+	
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_cowhouse2_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_cowhouse2_lod2.pmd"
+	
+	lod_desc: "/model/building/farm/wa_cowhouse2_lod1.pmd"
+	lod_dist: 100
+}
+model_def : model.wa_463{
+	model_desc: "/model/building/farm/wa_farm_manure1.pmd"
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_manure1_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_farm_manure1_lod2.pmd"
+
+}
+model_def : model.wa_464 {
+	model_desc: "/model/building/farm/wa_farm_farmhouse1.pmd"
+	color_variant[]:"brown | wall: 66,54,46 | roof: 69,77,82"
+	color_variant[]:"red | wall: 133,54,54 | roof: 23,23,20"
+	color_variant[]:"green | wall: 61,92,61 | roof: 41,38,31"
+	color_variant[]:"blue | wall: 41,74,125 | roof: 28,23,20"
+	color_variant[]:"grey | wall: 135,135,135 | roof: 18,20,23"
+
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_farmhouse1_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_farm_farmhouse1_lod2.pmd"
+	
+	lod_desc: "/model/building/farm/wa_farm_farmhouse1_lod1.pmd"
+	lod_dist: 100
+
+}
+model_def : model.wa_465 {
+	model_desc: "/model/building/farm/wa_farm_barn5.pmd"
+	color_variant[]:"red | c_wall: 74,21,21 | c_roof: 71,69,68" 
+	color_variant[]:"brown | c_wall: 66,54,46 | c_roof: 255,255,255"
+	color_variant[]:"green | c_wall: 61,92,61 | c_roof: 138,125,120"
+	color_variant[]:"blue | c_wall: 41,74,125 | c_roof: 71,69,68"
+	color_variant[]:"grey | c_wall: 135,135,135 | c_roof: 255,255,255"
+	
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_farm_barn5_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_farm_barn5_lod2.pmd"
+	
+	lod_desc: "/model/building/farm/wa_farm_barn5_lod1.pmd"
+	lod_dist: 100
+
+}
+model_def : model.wa_466 {
+	model_desc: "/model/building/farm/wa_dairy_barn.pmd"
+
+	color_variant[]:"red | c_wall: 74,21,21 | c_roof: 71,69,68" 
+	color_variant[]:"brown | c_wall: 66,54,46 | c_roof: 255,255,255"
+	color_variant[]:"green | c_wall: 61,92,61 | c_roof: 138,125,120"
+	color_variant[]:"blue | c_wall: 41,74,125 | c_roof: 71,69,68"
+	color_variant[]:"grey | c_wall: 135,135,135 | c_roof: 255,255,255"
+	
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/farm/wa_dairy_barn_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/farm/wa_dairy_barn_lod2.pmd"
+	
+	lod_desc: "/model/building/farm/wa_dairy_barn_lod1.pmd"
+	lod_dist: 100
+
+}
+model_def : model.wa_467 {
+	model_desc: "/model/building/farm/wa_temp_grain_storage.pmd"
+}
+model_def : model.wa_468 {
+	model_desc: "/model/props/farm/wa_haystack.pmd"
+	
+	lod_desc: "/model/props/farm/wa_haystack_lod1.pmd"
+	lod_dist: 100
+}
+
+model_def : model.wa_470 {
+	model_desc: "/model/props/uni/cartonbox_pile3.pmd"
+}
+
+model_def : model.wa_471 {
+	model_desc: "/model/props/uni/cartonbox_pile2.pmd"
+}
+
+model_def : model.wa_472 {
+	model_desc: "/model/props/uni/cartonbox_pile1.pmd"
+}
+model_def : model.wa_473 {
+	model_desc: "/model/props/street/darwing_wall_logo_.pmd"
+	color_variant[]:"default | defaultpart: 255,255,255 | backside: 0,0,0" 
+	color_variant[]:"blue | defaultpart: 4,20,102 | backside: 0,0,0"  
+	color_variant[]:"black | defaultpart: 0,0,0 | backside: 255,255,255"
+}
+model_def : model.wa_481 {
+	model_desc: "/model/building/logistic/wa_warehouse9.pmd"
+
+        color_variant[]:"red | cl_vis: 74,21,21"
+	color_variant[]:"brown | cl_vis: 66,54,46"
+	color_variant[]:"green | cl_vis: 61,92,61"
+	color_variant[]:"blue | cl_vis: 41,74,125"
+
+        static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/logistic/wa_warehouse9_lod1.pmd"
+	static_lod_name[]: "lod 200m"
+	static_lod_path[]: "/model/building/logistic/wa_warehouse9_lod2.pmd"
+	
+	lod_desc: "/model/building/logistic/wa_warehouse9_lod1.pmd"
+	lod_dist: 100
+	
+}
+model_def : model.wa_482 {
+	model_desc: "/model/building/country/wa_country_shed1.pmd"
+
+        color_variant[]:"red/grey | wall_cl: 74,21,21 | roof_cl: 71,69,68" 
+	color_variant[]:"brown/red | wall_cl: 66,54,46 | roof_cl: 255,255,255"
+	color_variant[]:"light brown/green | wall_cl: 132,108,92 | roof_cl: 123,155,123"
+	color_variant[]:"grey | wall_cl: 135,135,135 | roof_cl: 255,255,255"
+	
+	static_lod_name[]: "lod 100m"
+	static_lod_path[]: "/model/building/country/wa_country_shed1_lod1.pmd"
+	
+	lod_desc: "/model/building/country/wa_country_shed1_lod1.pmd"
+	lod_dist: 100
+ 
+}
+
+model_def : model.wa_499 {
+	model_desc: "/model/panorama/wa_st_helen_visitor_center.pmd"
+}
+model_def : model.wa_502 {
+	model_desc: "/model/props/uni/racks_uni_01.pmd"
+	
+	lod_desc: "/model/props/uni/racks_uni_01_lod1.pmd"
+	lod_dist: 50.0	
+	
+		
+	static_lod_name[]: "middle - 50"
+	static_lod_path[]: "/model/props/uni/racks_uni_01_lod1.pmd"
+	static_lod_name[]: "far - 100"
+	static_lod_path[]: "/model/props/uni/racks_uni_01_lod2.pmd"
+	
+	color_variant[]:"base | base_color: 140,140,140" 
+	color_variant[]:"red | base_color: 163,73,73" 
+	color_variant[]:"green | base_color: 110,145,73" 
+	color_variant[]:"blue | base_color: 68,128,150"
+}
+model_def : model.wa_503 {
+	model_desc: "/model/props/machinery/machinery_props7.pmd"
+	
+	lod_desc: "/model/props/machinery/machinery_props7_lod1.pmd"
+	lod_dist: 50
+	
+	static_lod_name[]: "middle - 50m"
+	static_lod_path[]: "/model/props/machinery/machinery_props7_lod1.pmd"
+
+	static_lod_name[]: "far - 100m"
+	static_lod_path[]: "/model/props/machinery/machinery_props7_lod2.pmd"
+ 
+}
+model_def : model.wa_504 {
+	model_desc: "/model/sign/misc/us_weigh_station_transponder_01.pmd"
+ 
+}
+}
+
+
+

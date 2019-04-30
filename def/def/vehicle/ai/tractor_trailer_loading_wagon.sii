@@ -1,0 +1,31 @@
+traffic_trailer : trailer.tractor.l_wagon
+{
+	
+	accessories[]: .tractor.l_wagon.chassis
+    accessories[]: .tractor.l_wagon.rwheel0
+    accessories[]: .tractor.l_wagon.rwheel1
+    accessories[]: .tractor.l_wagon.rwheel2
+
+	cargo_mass: 8000
+}
+
+vehicle_accessory: .tractor.l_wagon.chassis
+{
+    	data_path: "/def/vehicle/ai/tractor_trailer/chassis_loading_wagon.sii"
+}
+
+vehicle_wheel_accessory: .tractor.l_wagon.rwheel0
+{
+	offset: 0
+    data_path: "/def/vehicle/ai_wheel/tractor_trailer.sii"
+}
+vehicle_wheel_accessory: .tractor.l_wagon.rwheel1
+{
+	offset: 2
+    data_path: "/def/vehicle/ai_wheel/tractor_trailer.sii"
+}
+vehicle_wheel_accessory: .tractor.l_wagon.rwheel2
+{
+	offset: 4
+    data_path: "/def/vehicle/ai_wheel/tractor_trailer.sii"
+}

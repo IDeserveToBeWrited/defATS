@@ -1,0 +1,42 @@
+traffic_vehicle : traffic.kenworth.w900.a_double
+{
+	accessories[]: .kenworth.w900.a.chassis
+	accessories[]: .kenworth.w900.a.fwheel
+	accessories[]: .kenworth.w900.a.rwheel
+	accessories[]: .kenworth.w900.a.rwheel2
+	accessories[]: .kenworth.w900.a.trlr_cables
+
+	max_speed: 110
+	trailer_chains[]: "double"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	engine_torque: 1830
+	
+		color[]: (0.009721, 0.046665, 0.174647)
+		color[]: (0.180000, 0.003000, 0.003000)
+		color[]: (0.600000, 0.600000, 0.600000)
+		color[]: (0.003347, 0.003347, 0.003347)
+		color[]: (0.057805, 0.004025, 0.004025)
+		color[]: (0.258183, 0.258183, 0.258183)
+		color[]: (0.527115, 0.266356, 0.038204)
+}
+
+
+vehicle_accessory : .kenworth.w900.a.chassis {
+	data_path: "/def/vehicle/ai/truck/kenworth.w900/cabin_duty.sii"
+}
+vehicle_wheel_accessory : .kenworth.w900.a.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kenworth.w900.a.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kenworth.w900.a.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .kenworth.w900.a.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/kenworth.w900/accessory/trlr_cables/stock.sii"
+}

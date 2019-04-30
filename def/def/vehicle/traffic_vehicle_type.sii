@@ -13,8 +13,6 @@ traffic_vehicle_type : traffic.vehicle_type.car
 {
 	tags[]: "road"
 
-	attachable_trailer_type[]: simple
-
 	storage_path: "/def/vehicle/traffic_storage_car.sii"
 }
 
@@ -60,6 +58,13 @@ traffic_vehicle_type : traffic.vehicle_type.truck
 	storage_path: "/def/vehicle/traffic_storage_truck.sii"
 }
 
+traffic_vehicle_type : traffic.vehicle_type.truck_double
+{
+	tags[]: "road"
+
+	storage_path: "/def/vehicle/traffic_storage_truck_double.sii"
+}
+
 traffic_vehicle_type : traffic.vehicle_type.bus
 {
 	tags[]: "road"
@@ -75,19 +80,12 @@ traffic_vehicle_type : traffic.vehicle_type.tram
 
 	suspension_coef: 0.0
 	deceleration_limit: 8.0
-	
-	attachable_trailer_type[]: tram_car
 
 	storage_path: "/def/vehicle/traffic_storage_tram.sii"
 }
 
 traffic_vehicle_type : traffic.vehicle_type.slow
 {
-	spawn_trailer_count[]: 0
-	spawn_trailer_count[]: 1
-
-	attachable_trailer_type[]: simple
-
 	storage_path: "/def/vehicle/traffic_storage_slow.sii"
 }
 
@@ -97,19 +95,8 @@ traffic_vehicle_type : traffic.vehicle_type.train_cargo
 
 	speed_class: train
 
-	spawn_trailer_count[]: 5
-	spawn_trailer_count[]: 6
-	spawn_trailer_count[]: 7
-	spawn_trailer_count[]: 8
-	spawn_trailer_count[]: 9
-	spawn_trailer_count[]: 10
-	spawn_trailer_count[]: 11
-	spawn_trailer_count[]: 12
-
 	suspension_coef: 0.0
 	deceleration_limit: 3.0
-
-	attachable_trailer_type[]: train_car
 
 	storage_path: "/def/vehicle/traffic_storage_train_cargo.sii"
 }
@@ -120,14 +107,8 @@ traffic_vehicle_type : traffic.vehicle_type.train_pass
 
 	speed_class: train
 
-	spawn_trailer_count[]: 3
-	spawn_trailer_count[]: 4
-	spawn_trailer_count[]: 5
-
 	suspension_coef: 0.0
 	deceleration_limit: 3.0
-
-	attachable_trailer_type[]: train_car
 
 	storage_path: "/def/vehicle/traffic_storage_train_pass.sii"
 }

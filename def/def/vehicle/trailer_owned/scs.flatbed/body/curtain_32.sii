@@ -1,0 +1,41 @@
+SiiNunit
+{
+accessory_trailer_body_data : curtain_32.scs.flatbed.body
+{
+	name: "@@bs_curtain@@"
+	price: 12000
+	unlock: 12
+	icon: "body/scs_flatbed/curtain"
+
+	# 21' x 102" x 13'6"
+	# Internal: 31'6" x 99" x 110"
+	# https://freightmonster.com/equipment/flatbed-trailer/
+	# http://www.freightmatchers.com/assets/files/General%20Dry%20Van%20Trailer%20Specifications.pdf
+
+	size: (2.5146, 2.794, 9.6012)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 9.7536)	# width, height, length (size of the body + chassis)
+
+	volume: 65.66		# 2319 cft
+	body_type: curtainside
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for flatbed trailer is in chassis, bodies have only deltas to flatbed body mass.
+	# Thus flatbed has like 0 while curtain 1000
+	# Shorter body variants have smaller delta (count as x0.9, x0.85, x0.55, x0.5)
+
+	mass: 621.5	# 1320 lb
+
+	# visual data
+
+	#detail_model: "/vehicle/trailer_owned/upgrade/body/scs_flatbed/curtain_32.pmd"
+	model: "/vehicle/trailer_owned/upgrade/body/scs_flatbed/curtain_32.pmd"
+	# lods[]: ""
+	collision: "/vehicle/trailer_owned/upgrade/body/scs_flatbed/curtain_32.pmc"
+	# variant: 
+	# look
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/curtain_28.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/curtain.sii"
+}
+}

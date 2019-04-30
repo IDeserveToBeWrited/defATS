@@ -19,6 +19,7 @@ base_color_effect : .default.base {
 color_context : context.ui {
  layers[]: .layer.ui.base
  layers[]: .layer.ui.bindings
+ layers[]: .layer.ui.actions
 }
 
 color_layer : .layer.ui.base {
@@ -58,6 +59,16 @@ bindings_color_effect : .ui.bindings {
  mixes[]: "gar_man" # keyboard.g
 }
 
+color_layer : .layer.ui.actions {
+ effects[]: .ui.jobdone
+}
+
+job_done_effect : .ui.jobdone {
+ animation_duration: 1.2
+ wave_height: 0.6
+ repeats: 20
+}
+
 ########## GAME ##########
 
 color_context : context.game {
@@ -92,21 +103,16 @@ bindings_color_effect : .game.bindings.basic {
  mixes[]: "back" # keyboard.esc
  mixes[]: "skip" # keyboard.esc
  mixes[]: "pause" # keyboard.pause
- mixes[]: "lookleft" # keyboard.numslash
- mixes[]: "lookright" # keyboard.nummultiply
- #mixes[]: "activate" # keyboard.enter
  mixes[]: "menu" # keyboard.esc
  mixes[]: "engine" # keyboard.e
- #mixes[]: "attach" # keyboard.t
  mixes[]: "horn" # keyboard.h
  mixes[]: "lighthorn" # keyboard.j
  mixes[]: "engbraketog"
  mixes[]: "engbrakeup"
  mixes[]: "engbrakedwn"
- mixes[]: "trailerbrake"
  mixes[]: "parkingbrake" # keyboard.space
  mixes[]: "light" # keyboard.l
- mixes[]: "4wayflasher" # keyboard.f
+ mixes[]: "flasher4way" # keyboard.f
  mixes[]: "showmirrors" # keyboard.f2
  mixes[]: "showhud" # keyboard.f3
  mixes[]: "navmap" # keyboard.m
@@ -115,7 +121,6 @@ bindings_color_effect : .game.bindings.basic {
  mixes[]: "radioprev" # keyboard.pgup
  mixes[]: "radioup"
  mixes[]: "radiodown"
- #mixes[]: "quickpark" # keyboard.q # FIXME:?
  mixes[]: "transemi"
  mixes[]: "adjuster" # keyboard.f4
  mixes[]: "advpage0" # keyboard.f5
@@ -131,6 +136,8 @@ bindings_color_effect : .game.bindings.basic {
 bindings_color_effect : .game.bindings.cameras {
  color: (0.4, 0.12, 0)
 
+ mixes[]: "lookleft" # keyboard.numslash
+ mixes[]: "lookright" # keyboard.nummultiply
  mixes[]: "cam1" # keyboard.key1
  mixes[]: "cam2" # keyboard.key2
  mixes[]: "cam3" # keyboard.key3
@@ -165,9 +172,10 @@ bindings_color_effect : .game.bindings.movement {
 }
 
 bindings_color_effect : .game.bindings.interior {
- color: (1.0, 0.85, 0)
+ color: (0.4, 0.12, 0)
  active_scope: interior
 
+ mixes[]: "camzoom"
  mixes[]: "camfwd" # keyboard.num8
  mixes[]: "camback" # keyboard.num5
  mixes[]: "camleft" # keyboard.num4
@@ -203,18 +211,12 @@ bindings_color_effect : .game.bindings.electrics {
  mixes[]: "hblight" # keyboard.k
  mixes[]: "lblinker" # keyboard.lbracket
  mixes[]: "rblinker" # keyboard.rbracket
- mixes[]: "wippers" # keyboard.p
+ mixes[]: "wipers" # keyboard.p
  mixes[]: "display" # keyboard.i
  mixes[]: "retarderup" # keyboard.semicolon
  mixes[]: "retarderdown" # keyboard.apostrophe
- mixes[]: "cruiectrl" # keyboard.c
- mixes[]: "cruiectrlinc"
- mixes[]: "cruiectrldec"
- mixes[]: "cruiectrlres"
  mixes[]: "motorbrake" # keyboard.b
  mixes[]: "beacon" # keyboard.o
- mixes[]: "liftaxle" # keyboard.u
- mixes[]: "liftaxlet"
  mixes[]: "diflock" # keyboard.v
  mixes[]: "airhorn" # keyboard.n
 }
@@ -230,13 +232,17 @@ toggles_color_effect : .game.toggles {
  parking_brake_color: (1, 0, 0)
  wipers_slow_color: (0, 0.18, 1)
  wipers_fast_color: (0, 0.5, 1)
+ wipers_fastest_color: (0, 0.9, 1)
  beacon_color: (1, 0.42, 0)
  parking_light_color: (0, 0.5, 0)
  low_beam_color: (0, 1, 0)
  high_beam_color: (0, 0, 1)
- cruise_control_color: (0, 0.5, 1)
- lift_axle_color: (0, 0.5, 1)
- lift_axle_trailer_color: (0, 0.5, 1)
+ cruise_ctrl_passive_color: (1.0, 0.85, 0)
+ cruise_ctrl_active_color: (0, 0.5, 1)
+ lift_axle_passive_color: (1.0, 0.85, 0)
+ lift_axle_active_color: (0, 0.5, 1)
+ lift_axle_trailer_passive_color: (1.0, 0.85, 0)
+ lift_axle_trailer_active_color: (0, 0.5, 1)
  differential_lock_color: (0, 0.5, 1)
  active_camera_color: (1, 0.66, 0)
  adviser_page_color: (0.76, 0, 1)
@@ -245,6 +251,8 @@ toggles_color_effect : .game.toggles {
  coupling_active_color: (1, 0, 0)
  activation_color: (0, 1, 0)
  retarder_color: (0, 0.5, 1)
+ trailer_brake_passive_color: (1.0, 0.85, 0)
+ trailer_brake_active_color: (0, 0.5, 1)
 }
 
 color_layer : .layer.game.gauges {
@@ -259,35 +267,39 @@ speed_color_effect : .game.gauge.speed {
 color_layer : .layer.game.actions {
  effects[]: .effect.game.hurry_up
  effects[]: .effect.game.fine
- effects[]: .effect.game.damage.low
- effects[]: .effect.game.damage.high
+ effects[]: .effect.game.damage
+ effects[]: .effect.game.pumping
 }
 
 hurry_up_effect : .effect.game.hurry_up {
+ animation_duration: 2.0
  color1: (0.1, 0.1, 0.1)
  color2: (0.0, 0.0, 0.0)
- duration: 0.5
 }
 
 police_color_effect : .effect.game.fine {
- duration: 0.25
- frames: 9
+ animation_duration: 0.4
+ repeats: 9
  keys_color1: (0, 0, 1)
  keys_color2: (1, 0, 0)
  base_color1: (1, 0, 0)
  base_color2: (0, 0, 1)
+ fade_out_duration: 0.5
 }
 
-damage_color_effect : .effect.game.damage.low {
+damage_color_effect : .effect.game.damage {
  threshold: 0.01
- duration: 0.5
- color: (1.0, 0.15, 0)
+ animation_duration: 0.6
+ main_color: (1.0, 0.0, 0)
+ fade_color: (0.45, 0.45, 0)
+ fade_out_duration: 0.5
 }
 
-damage_color_effect : .effect.game.damage.high {
- threshold: 0.15
- duration: 1.2
- color: (1.0, 0, 0)
+gas_pumping_effect : .effect.game.pumping {
+ animation_duration: 1.2
+ pumping_color: (1.0, 1.0, 1.0)
+ full_color: (0, 1.0, 0)
+ fade_out_duration: 0.5
 }
 
 ########## TUTORIAL (GAME) ##########
@@ -457,13 +469,17 @@ toggles_color_effect : .tutorial.toggles {
  parking_brake_color: (1, 0, 0)
  wipers_slow_color: (0, 0.18, 1)
  wipers_fast_color: (0, 0.5, 1)
+ wipers_fastest_color: (0, 0.9, 1)
  beacon_color: (1, 0.42, 0)
  parking_light_color: (0, 0, 1)
  low_beam_color: (0, 1, 0)
  high_beam_color: (0, 0, 1)
- cruise_control_color: (0, 0.5, 1)
- lift_axle_color: (0, 0.5, 1)
- lift_axle_trailer_color: (0, 0.5, 1)
+ cruise_ctrl_passive_color: (1.0, 0.85, 0)
+ cruise_ctrl_active_color: (0, 0.5, 1)
+ lift_axle_passive_color: (1.0, 0.85, 0)
+ lift_axle_active_color: (0, 0.5, 1)
+ lift_axle_trailer_passive_color: (1.0, 0.85, 0)
+ lift_axle_trailer_active_color: (0, 0.5, 1)
  differential_lock_color: (0, 0.5, 1)
  #active_camera_color: (0, 0, 1)
  #adviser_page_color: (0, 0, 1)
@@ -472,6 +488,8 @@ toggles_color_effect : .tutorial.toggles {
  coupling_active_color: (1, 0, 0)
  activation_color: (0, 1, 0)
  retarder_color: (0, 0.5, 1)
+ trailer_brake_passive_color: (1.0, 0.85, 0)
+ trailer_brake_active_color: (0, 0.5, 1)
 }
 
 ########## TUTORIAL (UI) ##########

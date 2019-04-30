@@ -236,6 +236,86 @@ vehicle_wheel_accessory: .f_expl_or_hp.rwheel
 	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
 }
 
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Utah Highway Patrol XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_ut_hp
+{
+	accessories[]: .f_expl_ut_hp.chassis
+	accessories[]: .f_expl_ut_hp.fwheel
+	accessories[]: .f_expl_ut_hp.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2250
+	
+	spawn_ratio: 0.0
+	
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .f_expl_ut_hp.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ut_h_patrol.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_ut_hp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_ut_hp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Washington Highway Patrol XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_wa_hp
+{
+	accessories[]: .f_expl_wa_hp.chassis
+	accessories[]: .f_expl_wa_hp.fwheel
+	accessories[]: .f_expl_wa_hp.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2250
+	
+	spawn_ratio: 0.0
+	
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .f_expl_wa_hp.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/wa_h_patrol.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_wa_hp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_wa_hp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Border Patrol XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_vehicle : traffic.f_expl_bp
