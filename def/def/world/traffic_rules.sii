@@ -179,6 +179,21 @@ traffic_rule_data : traffic_rule.limit_55_t
 	rule: "speed_limit"
 	num_params[]: 55
 	str_params[]: "truck"
+	str_params[]: "truck_city"
+}
+
+traffic_rule_data : traffic_rule.limit_60_55
+{
+	name: "Speed limit 60 (55 for trucks)"
+
+	rule: "speed_limit"
+	num_params[]: 60
+	num_params[]: 1		# 0 - include vehicle types (default), 1 - exclude vehicle types
+	str_params[]: "truck"
+	str_params[]: "truck_city"
+
+
+	additional_rules[]: traffic_rule.limit_55_t
 }
 
 traffic_rule_data : traffic_rule.limit_60
@@ -189,12 +204,27 @@ traffic_rule_data : traffic_rule.limit_60
 	num_params[]: 60
 }
 
-traffic_rule_data : traffic_rule.limit_60_55
+traffic_rule_data : traffic_rule.limit_60_t
 {
-	name: "Speed limit 60 (55 for trucks)"
+	name: "Speed limit 60 (trucks only)"
 
-	additional_rules[]: traffic_rule.limit_60
-	additional_rules[]: traffic_rule.limit_55_t
+	rule: "speed_limit"
+	num_params[]: 60
+	str_params[]: "truck"
+	str_params[]: "truck_city"
+}
+
+traffic_rule_data : traffic_rule.limit_65_60
+{
+	name: "Speed limit 65 (60 for trucks)"
+
+	rule: "speed_limit"
+	num_params[]: 65
+	num_params[]: 1		# 0 - include vehicle types (default), 1 - exclude vehicle types
+	str_params[]: "truck"
+	str_params[]: "truck_city"
+
+	additional_rules[]: traffic_rule.limit_60_t
 }
 
 traffic_rule_data : traffic_rule.limit_65
@@ -205,15 +235,26 @@ traffic_rule_data : traffic_rule.limit_65
 	num_params[]: 65
 }
 
-traffic_rule_data : traffic_rule.limit_65_60
+traffic_rule_data : traffic_rule.limit_65_t
 {
-	name: "Speed limit 65 (60 for trucks)"
+	name: "Speed limit 65 (trucks only)"
 
 	rule: "speed_limit"
-	num_params[]: 60
+	num_params[]: 65
 	str_params[]: "truck"
+}
 
-	additional_rules[]: traffic_rule.limit_65
+traffic_rule_data : traffic_rule.limit_70_65
+{
+	name: "Speed limit 70 (65 for trucks)"
+
+	rule: "speed_limit"
+	num_params[]: 70
+	num_params[]: 1		# 0 - include vehicle types (default), 1 - exclude vehicle types
+	str_params[]: "truck"
+	str_params[]: "truck_city"
+
+	additional_rules[]: traffic_rule.limit_65_t
 }
 
 traffic_rule_data : traffic_rule.limit_70
@@ -224,16 +265,6 @@ traffic_rule_data : traffic_rule.limit_70
 	num_params[]: 70
 }
 
-traffic_rule_data : traffic_rule.limit_70_65
-{
-	name: "Speed limit 70 (65 for trucks)"
-
-	rule: "speed_limit"
-	num_params[]: 65
-	str_params[]: "truck"
-
-	additional_rules[]: traffic_rule.limit_70
-}
 
 traffic_rule_data : traffic_rule.limit_75
 {
