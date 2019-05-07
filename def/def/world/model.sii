@@ -11248,6 +11248,9 @@ model_def : model.wa_273 {
 }
 model_def : model.wa_283 {
 	model_desc: "/model/panorama/wa_yakima/wa_moss_building.pmd"
+
+	dynamic_lod_desc[]:"/model/panorama/wa_yakima/wa_moss_building_lod1.pmd"
+	dynamic_lod_dist[]: 150
 }
 model_def : model.wa_293 {
 	model_desc: "/model/panorama/wa_yakima/wa_yakima_maison.pmd"
@@ -11311,10 +11314,7 @@ model_def : model.wa_425 {
 	model_desc: "/model/panorama/wa_i82/wa_barrage2.pmd"	
 }
 model_def : model.wa_452{
-	model_desc: "/model/panorama/wa_umatilla/wa_umatilla_bridge.pmd"
-	
-	static_lod_name[]: "lod from 100m"
-	static_lod_path[]: "/model/panorama/wa_umatilla/wa_umatilla_bridge_lod1.pmd"	
+	model_desc: "/model/panorama/wa_umatilla/wa_umatilla_bridge.pmd"	
 	
 	dynamic_lod_desc[]: "/model/panorama/wa_umatilla/wa_umatilla_bridge_lod1.pmd"
 	dynamic_lod_dist[]: 100
@@ -11509,10 +11509,11 @@ model_def : model.wa_497 {
 model_def : model.wa_498 {
 	model_desc: "/model/building/house/ut_house_2.pmd"
 
-color_variant[]:"yellow | v0_c1: 190,176,148 | v1_c1: 190,176,148 | v2_c1: 190,176,148"
-color_variant[]:"red | v0_c1: 130,46,29 | v1_c1: 130,46,29 | v2_c1: 130,46,29"
-color_variant[]:"bleu | v0_c2: 23,25,41 | v1_c2: 23,25,41  | v2_c2: 23,25,41"
-color_variant[]:"yellow_blue | v0_c2: 23,25,41 | v1_c2: 23,25,41  | v2_c2: 23,25,41 | v0_c1: 190,176,148 | v1_c1: 190,176,148 | v2_c1: 190,176,148"
+color_variant[]:"yellow | v0_c1: 255,210,97 | v1_c1: 255,210,97 | v2_c1: 255,210,97 | v0_c2: 127,127,127 | v1_c2: 127,127,127  | v2_c2: 127,127,127 "
+color_variant[]:"red | v0_c1: 130,46,29 | v1_c1: 130,46,29 | v2_c1: 130,46,29 | v0_c2: 80,80,80 | v1_c2: 80,80,80  | v2_c2: 80,80,80 "
+color_variant[]:"green | v0_c1: 59,115,69 | v1_c1: 59,115,69 | v2_c1: 59,115,69 | v0_c2: 148,97,82 | v1_c2: 148,97,82  | v2_c2: 148,97,82 "
+color_variant[]:"grey | v0_c1: 127,127,127 | v1_c1: 127,127,127 | v2_c1: 127,127,127 | v0_c2: 127,127,127 | v1_c2: 127,127,127  | v2_c2: 127,127,127 "
+color_variant[]:"blue | v0_c2: 127,127,127 | v1_c2: 127,127,127 | v2_c2: 127,127,127 | v0_c1: 80,111,158 | v1_c1: 80,111,158 | v2_c1: 80,111,158 "
 }
 
 model_def : model.wa_500 {
@@ -12334,6 +12335,120 @@ model_def : model.nm_488c {
 	
 }
 
+model_def : model.ut_263 {
+    model_desc: "/model/panorama/ut_visitors_center_glen.pmd"
+}
+model_def : model.wa_505 {
+	model_desc: "/model/vegetation/wa_fallen_tree.pmd"	
+}
+model_def : model.wa_230 {
+	model_desc: "/model/panorama/wa_kennewick/wa_chimney_kennewick.pmd"
+}
+model_def : model.wa_325 {
+	model_desc: "/model/bridge/wa_bridge_pillar_wide.pmd"
+}
+model_def : model.wa_326 {
+	model_desc: "/model/panorama/wa_olympia/wa_olympia_streetlamp.pmd"
+}
+model_def : model.ut_64 {
+	model_desc: "/model/props/construction/ut_metal_prop01.pmd"
+  dynamic_lod_desc[]: "/model/props/construction/ut_metal_prop01_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
+model_def : model.ut_65 {
+	model_desc: "/model/props/construction/ut_metal_prop02.pmd"
+  dynamic_lod_desc[]: "/model/props/construction/ut_metal_prop02_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
+model_def : model.ut_149 {
+	model_desc: "/prefab/depots/construction/ut_construction_admin1a.pmd"
+}
+model_def : model.ut_162 {
+	model_desc: "/model/rock/ut_rock_solitaire_1.pmd"
+}
+model_def : model.ut_135 {
+	model_desc: "/model/props/farm/ut_metal_flower_stand.pmd"
+	dynamic_lod_desc[]: "/model/props/farm/ut_metal_flower_stand_lod1.pmd"
+	dynamic_lod_dist[]: 50	
+}
+model_def : model.ut_136 {
+	model_desc: "/model/props/farm/ut_flower_palette.pmd"
+}
+model_def : model.ut_66 {
+	model_desc: "/model/props/construction/ut_metal_prop03.pmd"
+}
+model_def : model.ut_67 {
+	model_desc: "/model/props/construction/ut_metal_prop04.pmd"
+
+}
+model_def : model.ut_112 {
+	model_desc: "/model/rock/ut_rock_jagged_1.pmd"
+
+}
+model_def : model.ut_127 {
+	model_desc: "/model/building/logistic/ut_warehouse1.pmd"
+
+color_variant[]:"redgray | vis1_a: 120,51,58| vis1_b: 80,80,80 | vis1_wall_m: 120,51,58 | vis2_a: 120,51,58 | vis2_b: 80,80,80 | vis2_wall_m: 120,51,58"
+color_variant[]:"greenbiege | vis1_a: 54,92,53 | vis1_b: 201,174,126 | vis1_wall_m: 54,92,53 | vis2_a: 54,92,53 | vis2_b: 201,174,126 | vis2_wall_m: 54,92,53"
+color_variant[]:"biegered | vis1_a: 201,174,126 | vis1_b: 65,25,22 | vis1_wall_m: 201,174,126 | vis2_a: 201,174,126 | vis2_b: 65,25,22 | vis2_wall_m: 201,174,126"
+color_variant[]:"bluewhite | vis1_a: 161,194,194 | vis1_b: 255,255,255 | vis1_wall_m: 161,194,194   | vis2_a: 161,194,194   | vis2_b: 255,255,255 | vis2_wall_m: 161,194,194"
+
+}
+model_def : model.ut_133 {
+	model_desc: "/model/building/logistic/ut_metal_warehouse_construction.pmd"
+	static_lod_name[]: "lod-75m"
+	static_lod_path[]: "/model/building/logistic/ut_metal_warehouse_construction_lod1.pmd"
+	
+	dynamic_lod_desc[]: "/model/building/logistic/ut_metal_warehouse_construction_lod1.pmd"
+	dynamic_lod_dist[]: 75
+
+}
+model_def : model.ut_159 {
+	model_desc: "/model/rock/ut_rock_jagged_3.pmd"
+}
+model_def : model.ut_163 {
+	model_desc: "/model/rock/ut_rock_solitaire_2.pmd"
+}
+model_def : model.ut_165 {
+	model_desc: "/model/building/logistic/ut_warehouse4.pmd"
+
+color_variant[]:"basic_brown | v0_c1: 53,43,30 | v0_c2: 53,43,30 | v0_c3: 53,43,30 | v0_c4: 149,134,112"
+color_variant[]:"green_grey | v0_c1: 58,57,56 | v0_c2: 14,17,15 | v0_c3: 26,30,19 | v0_c4: 116,149,97"
+color_variant[]:"grey | v0_c1: 19,23,27 | v0_c2: 35,40,36 | v0_c3: 56,57,63 | v0_c4: 149,149,149"
+color_variant[]:"blue_orange | v0_c1: 33,49,69 | v0_c2: 16,20,41 | v0_c3: 33,49,69 | v0_c4: 140,84,53"
+color_variant[]:"red_grey | v0_c1: 59,63,68 | v0_c2: 15,17,16 | v0_c3: 48,11,14 | v0_c4: 44,49,57"
+color_variant[]:"white | v0_c1: 158,158,158 | v0_c2: 158,158,158 | v0_c3: 158,158,158 | v0_c4: 158,158,158"
+}
+model_def : model.ut_24 {
+	model_desc: "/model/building/shop/ut_shop_corner1.pmd"
+	
+		color_variant[]:"Default | base_brick: 160,160,160 | full_brick: 160,160,160 | pill_brick: 160,160,160| wall_brick: 160,160,160 | windows: 10,10,10 | win_full: 10,10,10 | win_base: 10,10,10 | lowroofbrick: 160,160,160 | roofhigbrick: 160,160,160"
+		color_variant[]:"Orange | base_brick: 165,109,87 | full_brick: 165,109,87 | pill_brick: 165,109,87| wall_brick: 165,109,87 | windows: 77,77,77 | win_full: 77,77,77 | win_base: 77,77,77 | lowroofbrick: 165,109,87 | roofhigbrick: 165,109,87 "
+		color_variant[]:"Grey | base_brick: 99,127,127 | full_brick: 99,127,127 | pill_brick: 99,127,127| wall_brick: 99,127,127 | windows: 10,10,10 | win_full: 10,10,10 | win_base: 10,10,10 | lowroofbrick: 99,127,127 | roofhigbrick: 99,127,127"
+        color_variant[]:"Brown | base_brick: 46,36,29 | full_brick: 46,36,29 | pill_brick: 46,36,29| wall_brick: 46,36,29 | windows: 77,77,77 | win_full: 77,77,77 | win_base: 77,77,77 | lowroofbrick: 46,36,29 | roofhigbrick: 46,36,29"
+	
+	static_lod_path[]:  "/model/building/shop/ut_shop_corner1_lod1.pmd"
+	static_lod_name[]: "LOD far distance"
+	
+	dynamic_lod_desc[]: "/model/building/shop/ut_shop_corner1_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+model_def : model.ut_148 {
+	model_desc: "/model/panorama/ut_beaver/ut_fort_wilden_cart2.pmd"	
+
+}
+model_def : model.ut_234 {
+    model_desc: "/model/panorama/ut_us89/ut_recreation_area_sign.pmd"
+}	
+model_def : model.wa_507 {
+	model_desc: "/model/props/country/or_branch_pile_smallest.pmd"
+}	
+model_def : model.wa_508 {
+	model_desc: "/model/props/country/or_log_single.pmd"
+	
+	dynamic_lod_desc[]: "/model/props/country/or_log_single_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
 }
 
 
