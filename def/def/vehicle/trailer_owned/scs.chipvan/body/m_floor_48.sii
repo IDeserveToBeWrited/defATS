@@ -1,0 +1,40 @@
+SiiNunit
+{
+accessory_trailer_body_data : m_floor_48.scs.chipvan.body
+{
+	name: "@@bs_chipvan_mfloor@@"
+	price: 40000
+	unlock: 11
+	icon: "body/scs_chip_van/m_floor"
+
+	# 48' x 102" x 13'6"
+	# Internal: 47'6" x 99" x 110"
+	# http://www.freightmatchers.com/assets/files/General%20Dry%20Van%20Trailer%20Specifications.pdf
+
+	size: (2.5146, 2.794, 14.478)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 14.6304)	# width, height, length (size of the body + chassis)
+
+	volume: 101.36		# 3579.6 cft
+	body_type: chipvan
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for chipvan trailer is in chassis, bodies have only deltas to default van mass.
+	# Thus van has like 0, mfloor 200, bellyvan 1000
+	# Shorter body variants are smaller (count as x0.9, x0.85, x0.5)
+
+	mass: 181.5	# 400 lb
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/upgrade/body/scs_chipvan/m_floor.pmd"
+	collision: "/vehicle/trailer_owned/upgrade/body/scs_chipvan/m_floor.pmc"
+	variant: default
+	# look
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.chipvan/accessory/markers/mf_48.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.chipvan/accessory/f_body/paint.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.chipvan/accessory/rear_body/simple.sii"
+
+}
+}

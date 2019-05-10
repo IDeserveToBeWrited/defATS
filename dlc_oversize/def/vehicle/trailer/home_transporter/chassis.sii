@@ -4,14 +4,6 @@ accessory_chassis_data : home_trans.trailer.chassis
 {
 	model: "/vehicle/trailer/home_transporter/trailer.pmd"
 	collision: "/vehicle/trailer/home_transporter/trailer.pmc"
-
-	residual_travel[]: 0.12 	# 1st axle
-	residual_travel[]: 0.12 	# 2nd axle
-	residual_travel[]: 0.12 	# 3nd axle
-	residual_travel[]: 0.12 	# 4nd axle
-
-	trailer_mass: 4000.0	#9000lb
-
 	variant: default
 	look: default
 
@@ -21,6 +13,17 @@ accessory_chassis_data : home_trans.trailer.chassis
 	extended_shadow_fadeout_length: 0
 
 	ui_shadow: "/vehicle/trailer/home_transporter/ui_shadow.pmd"
-}
-}
 
+	trailer_mass: 4000.0	#9000lb
+
+	cog_cargo_mass_min: 0.0
+	cog_cargo_mass_max: 15000.0
+	cog_cargo_offset_min: (0.0, 0.0, 0.0)
+	cog_cargo_offset_max: (0.0, 1.0, 0.0)
+
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
+}
+}

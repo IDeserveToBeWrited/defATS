@@ -13,13 +13,16 @@ traffic_vehicle : traffic.charger.generic
 	
 	
 	vehicle_mass: 2200
-
+	
+	prefer_variant: true
 	variant[]: traffic.charger.generic2
 	variant[]: traffic.charger.generic3
 	variant[]: traffic.charger.aqpd
 	variant[]: traffic.charger.aqpd2
 	variant[]: traffic.charger.aqpd3
-    
+    variant[]: traffic.charger.sgpd
+	variant[]: traffic.charger.prpd
+	
 @include "drivers_police.sui"
 	
 }
@@ -248,3 +251,140 @@ traffic_spawn_condition: .traffic.chrgr_aqpd3.albu.condition.city
 	type: city
     str_param[]: "albuquerque"
 }
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Seattle PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.stpd
+{
+	accessories[]: .charger.stpd.chassis
+	accessories[]: .charger.stpd.fwheel
+	accessories[]: .charger.stpd.rwheel
+
+	max_speed: 225
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2200
+    
+    spawn_condition[]: .traffic.chrgr_stpd.albu.condition.city
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .charger.stpd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_stpd.sii"
+}
+
+vehicle_wheel_accessory: .charger.stpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.stpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_stpd.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "seattle"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Provo PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.prpd
+{
+	accessories[]: .charger.prpd.chassis
+	accessories[]: .charger.prpd.fwheel
+	accessories[]: .charger.prpd.rwheel
+
+	max_speed: 225
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2200
+    
+    spawn_condition[]: .traffic.chrgr_prpd.provo.condition.city
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .charger.prpd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_prpd.sii"
+}
+
+vehicle_wheel_accessory: .charger.prpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.prpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_prpd.provo.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "provo"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  St. George PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.sgpd
+{
+	accessories[]: .charger.sgpd.chassis
+	accessories[]: .charger.sgpd.fwheel
+	accessories[]: .charger.sgpd.rwheel
+
+	max_speed: 225
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 2200
+    
+    spawn_condition[]: .traffic.chrgr_sgpd.george.condition.city
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .charger.sgpd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_sgpd.sii"
+}
+
+vehicle_wheel_accessory: .charger.sgpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.sgpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_sgpd.george.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "st_george"
+}
+

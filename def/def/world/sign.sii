@@ -3247,18 +3247,7 @@ sign_model : sign.537 {
 
 }
 
-sign_model : sign.538 {
 
-	sign_name: "Crash_Barrier"
-
-	model_desc: "/model/props/road/crash_barrier.pmd"
-	model_coll: "/model/props/road/crash_barrier.pmc"
-	look_name: default
-	
-	#category: "street props"
-	dynamic: false
-	mass: 100
-}
 sign_model : sign.539 {
 
 	sign_name: "az_phoenix_lamp_double"
@@ -4749,6 +4738,8 @@ sign_model : sign.653 {
 
 	dynamic: true
 	mass: 100
+
+	traffic_rule: traffic_rule.limit_55_t
 }
 
 sign_model : sign.654 {
@@ -7563,6 +7554,22 @@ sign_model : sign.rot_bd_21 {
 	editable: true
 
 }
+sign_model : sign.rot_bd_22 {
+
+	sign_name: "us hw shield only"
+
+	model_desc: "/model/sign/navigation/us_hw_shield_only.pmd"
+	model_coll: "/model/sign/navigation/us_hw_shield_only.pmc"
+	look_name: default
+	
+	stand_classes[]: side_rot_3
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
+	mass:100
+
+}
 
 
 sign_model : sign.dlc_nm_29 {
@@ -8020,7 +8027,7 @@ sign_model : sign.702 {
 	look_name: default
 	editable: true
 	dynamic: true
-	mass: 100
+	mass: 50
 
 }
 sign_model : sign.703 {
@@ -8144,7 +8151,7 @@ sign_model : sign.713 {
 	dynamic: true
 	mass: 100
 
-	traffic_rule: traffic_rule.limit_65
+	traffic_rule: traffic_rule.limit_70_65
 }
 sign_model : sign.714 {
 
@@ -8157,7 +8164,7 @@ sign_model : sign.714 {
 	dynamic: true
 	mass: 100
 
-	traffic_rule: traffic_rule.limit_60
+	traffic_rule: traffic_rule.limit_65_60
 }
 sign_model : sign.715 {
 
@@ -8274,7 +8281,7 @@ sign_model : sign.724 {
 	model_coll: "/model/sign/traffic/us_advisory_reverse_curve_right.pmc"
 	look_name: default
 	dynamic: true
-	mass: 100
+	mass: 1
 
 }
 sign_model : sign.725 {
@@ -8368,7 +8375,7 @@ sign_model : sign.732 {
 	dynamic: true
 	mass: 100
 
-	traffic_rule: traffic_rule.limit_55
+	traffic_rule: traffic_rule.limit_60_55
 }
 sign_model : sign.733 {
 
@@ -9124,12 +9131,13 @@ sign_model : sign.738 {
 sign_model : sign.739 {
 
 	#category: "Pillar"
-	sign_name: "us_bridge_pillar_simple_cubic"
+	sign_name: "wa_bridge_pillar_simple_cubic"
 
 	model_desc: "/model/pillar/us_bridge_pillar_simple_cubic.pmd"
 	model_coll: "/model/pillar/us_bridge_pillar_simple_cubic.pmc"
 	look_name: default
 
+	instanced: true
 	dynamic: false
 	road_model: true
 }
@@ -9137,12 +9145,27 @@ sign_model : sign.739 {
 sign_model : sign.740 {
 
 	#category: "Pillar"
-	sign_name: "us_bridge_pillar_simple_cyrcle"
+	sign_name: "wa_bridge_pillar_simple_cyrcle"
 
 	model_desc: "/model/pillar/us_bridge_pillar_simple_cyrcle.pmd"
 	model_coll: "/model/pillar/us_bridge_pillar_simple_cyrcle.pmc"
 	look_name: default
 
+	instanced: true
+	dynamic: false
+	road_model: true
+}
+
+sign_model : sign.740a {
+
+	#category: "Pillar"
+	sign_name: "wa_bridge_pillar_simple_cyrcle"
+
+	model_desc: "/model/pillar/us_bridge_pillar_simple_6sided.pmd"
+	model_coll: "/model/pillar/us_bridge_pillar_simple_6sided.pmc"
+	look_name: default
+
+	instanced: true
 	dynamic: false
 	road_model: true
 }
@@ -9153,14 +9176,162 @@ sign_model : sign.ov_bd_78 {
 	model_desc: "/model/sign/navigation/fwy3_ovh_board_special.pmd"
 	model_coll: "/model/sign/navigation/fwy3_ovh_board_special.pmc"
 	look_name: default
-	
-	stand_classes[]: 3fwy_1
-	
+	stand_classes[]: 3fwy_7	
 	category: "editable board"
-	dynamic: true
+	dynamic: false
 	editable: true
 
 }
+sign_model : sign.ov_bd_79 {
+
+	sign_name: "fvy3 fw3 dynamic board3 oh"
+
+	model_desc: "/model/sign/navigation/us_fw3_dynamic_board3_oh.pmd"
+	model_coll: "/model/sign/navigation/us_fw3_dynamic_board3_oh.pmc"
+	look_name: default	
+	stand_classes[]: 3fwy_7
+	category: "editable board"
+	editable: true
+	dynamic: false
+
+
+}
+sign_model : sign.ov_bd_80 {
+
+	sign_name: "fvy2 dynamic board3 oh"
+
+	model_desc: "/model/sign/navigation/us_fw2_dynamic_board3_oh.pmd"
+	model_coll: "/model/sign/navigation/us_fw2_dynamic_board3_oh.pmc"
+	look_name: default	
+	stand_classes[]: 2fwy_9
+	dynamic: false
+	category: "editable board"
+	editable: true
+
+}
+sign_model : sign.ov_bd_81 {
+
+	sign_name: "fvy4 dynamic board3 oh"
+
+	model_desc: "/model/sign/navigation/us_fw4_dynamic_board3_oh.pmd"
+	model_coll: "/model/sign/navigation/us_fw4_dynamic_board3_oh.pmc"
+	look_name: default	
+	stand_classes[]: 4fwy_6
+	dynamic: false
+	category: "editable board"
+	editable: true
+
+}
+sign_model : sign.ov_bd_82 {
+
+	sign_name: "fwy dynamic speed limit sd"
+	model_desc: "/model/sign/navigation/us_fw_dynamic_speed_limit_sd.pmd"
+	model_coll: "/model/sign/navigation/us_fw_dynamic_speed_limit_sd.pmc"
+	look_name: default	
+	category: "editable board"
+	editable: true
+	dynamic: false
+
+}
+sign_model : sign.ov_bd_83 {
+
+	sign_name: "fwy2 dynamic speed limit oh"
+	model_desc: "/model/sign/navigation/us_fw2_dynamic_speed_limit_oh.pmd"
+	model_coll: "/model/sign/navigation/us_fw2_dynamic_speed_limit_oh.pmc"
+	look_name: default	
+	category: "editable board"
+	stand_classes[]: 2fwy_10
+	editable: true
+	dynamic: false
+
+}
+sign_model : sign.ov_bd_84 {
+
+	sign_name: "fwy3 dynamic speed limit oh"
+	model_desc: "/model/sign/navigation/us_fw3_dynamic_speed_limit_oh.pmd"
+	model_coll: "/model/sign/navigation/us_fw3_dynamic_speed_limit_oh.pmc"
+	look_name: default	
+	category: "editable board"
+	stand_classes[]: 3fwy_8
+	editable: true
+	dynamic: false
+
+}
+
+sign_model : sign.ov_bd_85 {
+
+	sign_name: "fwy4 dynamic speed limit oh"
+	model_desc: "/model/sign/navigation/us_fw4_dynamic_speed_limit_oh.pmd"
+	model_coll: "/model/sign/navigation/us_fw4_dynamic_speed_limit_oh.pmc"
+	look_name: default	
+	category: "editable board"
+	stand_classes[]: 4fwy_7
+	editable: true
+	dynamic: false
+
+}
+sign_model : sign.ov_bd_86 {
+
+	sign_name: "us fwy2 overhead board exit only 01left 05-2"
+
+	model_desc: "/model/sign/navigation/us_fwy2_ovh_board_exonly_01left_05-2.pmd"
+	model_coll: "/model/sign/navigation/us_fwy2_ovh_board_exonly_01left_05-2.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_87 {
+
+	sign_name: "us fwy2 overhead board 05-2 exit only 01"
+
+	model_desc: "/model/sign/navigation/us_fwy2_ovh_board_05-2_exonly_01.pmd"
+	model_coll: "/model/sign/navigation/us_fwy2_ovh_board_05-2_exonly_01.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.ov_bd_88 {
+
+	sign_name: "us fwy3 overhead board exit only 01left 05-3 exit only 01"
+
+	model_desc: "/model/sign/navigation/us_fwy3_ovh_board_exonly_01left_05-3_exonly_01.pmd"
+	model_coll: "/model/sign/navigation/us_fwy3_ovh_board_exonly_01left_05-3_exonly_01.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_9
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_89 {
+
+	sign_name: "fwy2 overhead board 1ex2 1eo3"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_1ex2_1eo3.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_1ex2_1eo3.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
 sign_model : sign.dlc_or_46 {
 
 	sign_name: "US Oregon speed limit 55 mph"
@@ -9174,4 +9345,1246 @@ sign_model : sign.dlc_or_46 {
 
 	traffic_rule: traffic_rule.limit_55
 }
+sign_model : sign.741 {
+
+	sign_name: "us pet area"
+
+	model_desc: "/model/sign/traffic/us_pet_area.pmd"
+	model_coll: "/model/sign/traffic/us_pet_area.pmc"
+	look_name: default	
+	dynamic: true
+	mass: 100
+	road_model: false
 }
+sign_model : sign.742 {
+
+	sign_name: "us turn right advisory"
+
+	model_desc: "/model/sign/traffic/us_turn_right_advisory.pmd"
+	model_coll: "/model/sign/traffic/us_turn_right_advisory.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	dynamic: true
+	editable: true
+}
+sign_model : sign.743 {
+
+	sign_name: "us turn left advisory"
+
+	model_desc: "/model/sign/traffic/us_turn_left_advisory.pmd"
+	model_coll: "/model/sign/traffic/us_turn_left_advisory.pmc"
+	look_name: default
+	stand_classes[]: side_sml_6
+	mass: 100
+	dynamic: true
+	editable: true
+}
+sign_model : sign.744 {
+
+	sign_name: "us object marker both sides"
+
+	model_desc: "/model/sign/traffic/us_object_marker_both_sides.pmd"
+	model_coll: "/model/sign/traffic/us_object_marker_both_sides.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.745 {
+
+	sign_name: "US roadwork traffic light 1"
+
+	model_desc: "/model/sign/traffic/us_roadwork_tr_light1.pmd"
+	model_coll: "/model/sign/traffic/us_roadwork_tr_light1.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+
+sign_model : sign.746 {
+
+	sign_name: "US roadwork stop here"
+
+	model_desc: "/model/sign/traffic/us_roadwork_stop_here.pmd"
+	model_coll: "/model/sign/traffic/us_roadwork_stop_here.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.747 {
+
+	sign_name: "us curve left with advisory 2"
+
+	model_desc: "/model/sign/traffic/us_curve_left_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_curve_left_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.748 {
+
+	sign_name: "us curve right with advisory 2"
+
+	model_desc: "/model/sign/traffic/us_curve_right_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_curve_right_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.749 {
+
+	sign_name: "us turn right with advisory 2"
+
+	model_desc: "/model/sign/traffic/us_turn_right_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_turn_right_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.750 {
+
+	sign_name: "us turn left with advisory 2"
+
+	model_desc: "/model/sign/traffic/us_turn_left_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_turn_left_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.751 {
+
+	sign_name: "us reverse curve right advisory 2"
+
+	model_desc: "/model/sign/traffic/us_reverse_curve_right_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_reverse_curve_right_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.752 {
+
+	sign_name: "us reverse curve left advisory 2"
+
+	model_desc: "/model/sign/traffic/us_reverse_curve_left_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_reverse_curve_left_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.753 {
+
+	sign_name: "us sharp right turn advisory 2"
+
+	model_desc: "/model/sign/traffic/us_sharp_right_turn_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_sharp_right_turn_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.754 {
+
+	sign_name: "us sharp left turn advisory 2"
+
+	model_desc: "/model/sign/traffic/us_sharp_left_turn_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_sharp_left_turn_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.755 {
+
+	sign_name: "us twistyroad advisory2"
+
+	model_desc: "/model/sign/traffic/us_twistyroad_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_twistyroad_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.756 {
+
+	sign_name: "us truck rollover advisory2"
+
+	model_desc: "/model/sign/traffic/us_truck_rollover_advisory2.pmd"
+	model_coll: "/model/sign/traffic/us_truck_rollover_advisory2.pmc"
+	look_name: default
+	stand_classes[]: side_sml_10
+	editable: true
+	dynamic: true
+	mass: 50
+
+}
+sign_model : sign.757 {
+
+	sign_name: "us object marker double sides"
+
+	model_desc: "/model/sign/traffic/us_object_marker_double_sides.pmd"
+	model_coll: "/model/sign/traffic/us_object_marker_double_sides.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.758 {
+
+	sign_name: "us speed limit 35 ahead1"
+
+	model_desc: "/model/sign/traffic/us_speed_limit_35_ahead1.pmd"
+	model_coll: "/model/sign/traffic/us_speed_limit_35_ahead1.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.759 {
+
+	sign_name: "us speed limit 50 ahead1"
+
+	model_desc: "/model/sign/traffic/us_speed_limit_50_ahead1.pmd"
+	model_coll: "/model/sign/traffic/us_speed_limit_50_ahead1.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.760 {
+
+	sign_name: "us rail crossing3"
+
+	model_desc: "/model/sign/traffic/us_rail_crossing3.pmd"
+	model_coll: "/model/sign/traffic/us_rail_crossing3.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.761 {
+
+	sign_name: "global_mill_left"
+
+	model_desc: "/model/sign/company_logos/global_mills/global_mill_left.pmd"
+	model_coll: "/model/sign/company_logos/global_mills/global_mill_left.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.762 {
+
+	sign_name: "global_mill_right"
+
+	model_desc: "/model/sign/company_logos/global_mills/global_mill_right.pmd"
+	model_coll: "/model/sign/company_logos/global_mills/global_mill_right.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.763 {
+
+	sign_name: "global_mill_up"
+
+	model_desc: "/model/sign/company_logos/global_mills/global_mill_up.pmd"
+	model_coll: "/model/sign/company_logos/global_mills/global_mill_up.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.764 {
+
+	sign_name: "us roundabout"
+
+	model_desc: "/model/sign/traffic/us_roundabout.pmd"
+	model_coll: "/model/sign/traffic/us_roundabout.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.765 {
+
+	sign_name: "US curve left48"
+
+	model_desc: "/model/sign/traffic/us_curve_left48.pmd"
+	model_coll: "/model/sign/traffic/us_curve_left48.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 120
+
+}
+sign_model : sign.766 {
+
+	sign_name: "US curve right48"
+
+	model_desc: "/model/sign/traffic/us_curve_right48.pmd"
+	model_coll: "/model/sign/traffic/us_curve_right48.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 120
+
+}
+sign_model : sign.767 {
+
+	sign_name: "US curve chevron left48"
+
+	model_desc: "/model/sign/traffic/us_curve_chevron_left48.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_left48.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 120
+
+}
+sign_model : sign.768 {
+
+	sign_name: "US curve chevron right48"
+
+	model_desc: "/model/sign/traffic/us_curve_chevron_right48.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_right48.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 120
+
+}
+
+sign_model : sign.769 {
+
+	sign_name: "us truck crossing"
+
+	model_desc: "/model/sign/traffic/us_truck_crossing.pmd"
+	model_coll: "/model/sign/traffic/us_truck_crossing.pmc"
+	look_name: default
+	dynamic: true
+	editable: false
+	mass: 100.0
+	
+}
+sign_model : sign.790 {
+
+	sign_name: "bushnell_farms_wall"
+
+	model_desc: "/model/sign/company_logos/bushnell_farm/bushnell_farms_wall_plane.pmd"
+	look_name: default
+
+	dynamic: false
+}
+sign_model : sign.791 {
+
+	sign_name: "darwing_wall_logo"
+
+	model_desc: "/model/sign/company_logos/darwing/darwing_wall_logo.pmd"
+	look_name: default
+
+	dynamic: false
+}
+sign_model : sign.792 {
+
+	sign_name: "logo_darwing_universal"
+
+	model_desc: "/model/sign/company_logos/darwing/logo_darwing_universal.pmd"
+	model_coll: "/model/sign/company_logos/darwing/logo_darwing_universal.pmc"
+	look_name: default
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.793 {
+
+	sign_name: "logo_darwing_side"
+
+	model_desc: "/model/sign/company_logos/darwing/logo_darwing_right.pmd"
+	model_coll: "/model/sign/company_logos/darwing/logo_darwing_right.pmc"
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.794 {
+
+	sign_name: "logo_darwing_left_right"
+
+	model_desc: "/model/sign/company_logos/darwing/logo_darwing_left.pmd"
+	model_coll: "/model/sign/company_logos/darwing/logo_darwing_left.pmc"
+	look_name: default
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.795 {
+
+	sign_name: "logo_darwing_up"
+
+	model_desc: "/model/sign/company_logos/darwing/logo_darwing_up.pmd"
+	model_coll: "/model/sign/company_logos/darwing/logo_darwing_up.pmc"
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.796 {
+
+	sign_name: "logo_fish_tail_universal"
+
+	model_desc: "/model/sign/company_logos/fish_tail/logo_fish_tail_universal.pmd"
+	model_coll: "/model/sign/company_logos/fish_tail/logo_fish_tail_universal.pmc"
+
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.797 {
+
+	sign_name: "logo_fish_tail_totem"
+
+	model_desc: "/model/sign/company_logos/fish_tail/logo_fish_tail_totem.pmd"
+	model_coll: "/model/sign/company_logos/fish_tail/logo_fish_tail_totem.pmc"
+	
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.798 {
+
+	sign_name: "logo_fish_tail_totem2"
+
+	model_desc: "/model/sign/company_logos/fish_tail/logo_fish_tail_totem2.pmd"
+	model_coll: "/model/sign/company_logos/fish_tail/logo_fish_tail_totem2.pmc"
+
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.799 {
+
+	sign_name: "fish_tail_food_finest_universal"
+
+	model_desc: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_universal.pmd"
+	model_coll: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_universal.pmc"
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.800 {
+
+	sign_name: "fish_tail_food_finest_logo"
+
+	model_desc: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_logo.pmd"
+	model_coll: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_logo.pmc"
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.801 {
+
+	sign_name: "fish_tail_food_finest_totem"
+
+	model_desc: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_totem.pmd"
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.802 {
+
+	sign_name: "logo_sea_horizon_universal"
+
+	model_desc: "/model/sign/company_logos/sea_horizon/logo_sea_horizon_universal.pmd"
+	model_coll: "/model/sign/company_logos/sea_horizon/logo_sea_horizon_universal.pmc"
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+
+}
+sign_model : sign.804 {
+
+	sign_name: "logo_sea_horizon_left_right"
+
+	model_desc: "/model/sign/company_logos/sea_horizon/logo_sea_horizon_left_right.pmd"
+	model_coll: "/model/sign/company_logos/sea_horizon/logo_sea_horizon_left_right.pmc"
+	
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.805 {
+
+	sign_name: "logo_sea_horizon_wall1"
+
+	model_desc: "/model/sign/company_logos/sea_horizon/logo_sea_horizon_wall1.pmd"
+
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.806 {
+
+	sign_name: "logo_sea_horizon_totem"
+
+	model_desc: "/model/sign/company_logos/sea_horizon/logo_sea_horizon_totem.pmd"
+	model_coll: "/model/sign/company_logos/sea_horizon/logo_sea_horizon_totem.pmc"
+
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.dlc_or_47 {
+
+	sign_name: "US Oregon speed limit 45 mph"
+
+	model_desc: "/model/sign/us_or_speed_45mph.pmd"
+	model_coll: "/model/sign/us_or_speed_45mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_45
+}
+sign_model : sign.dlc_or_48 {
+
+	sign_name: "US Oregon speed limit 35 mph"
+
+	model_desc: "/model/sign/us_or_speed_35mph.pmd"
+	model_coll: "/model/sign/us_or_speed_35mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_35
+}
+  sign_model : sign.ut_2 {
+	model_desc: "/model/sign/ut_ref_post1_white.pmd"
+	model_coll: "/model/sign/ut_ref_post1_white.pmc"
+	
+  sign_name: "ut reflection post1 white"
+	
+  look_name: Default
+  road_model: true
+  instanced: true
+  dynamic: true
+  mass: 50
+  }
+sign_model : sign.wa_3 {
+	model_desc: "/model/props/lamp/wa_lamp_1.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_1.pmc"
+	
+  sign_name: "wa_lamp_1"
+	
+  look_name: Default
+	road_model: true
+  instanced: true
+  dynamic: false
+}
+sign_model : sign.wa_4 {
+	model_desc: "/model/props/lamp/wa_lamp_1_double.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_1_double.pmc"
+	
+  sign_name: "wa_lamp_1_double"
+	
+  look_name: Default
+	road_model: true
+  instanced: true
+  dynamic: false
+}
+sign_model : sign.wa_5 {
+	model_desc: "/model/props/lamp/wa_lamp_2.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2.pmc"
+	
+  sign_name: "wa_lamp_2"
+	
+  look_name: Default
+	road_model: true
+  instanced: true
+  dynamic: false
+}
+sign_model : sign.wa_6 {
+	model_desc: "/model/props/lamp/wa_lamp_2_double.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2_double.pmc"
+	
+  sign_name: "wa_lamp_2_double"
+	
+  look_name: Default
+	road_model: true
+  instanced: true
+  dynamic: false
+}
+sign_model : sign.wa_8 {
+	model_desc: "/model/props/lamp/wa_lamp_4.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_4.pmc"
+	
+  sign_name: "wa_lamp_4"
+	
+  look_name: Default
+	road_model: true
+  instanced: true
+  dynamic: false
+}
+sign_model : sign.wa_13 {
+	model_desc: "/model/props/street/wa_container_green1.pmd"
+	model_coll: "/model/props/street/wa_container_green1.pmc"
+	
+  sign_name: "wa_container_green1"
+	
+  look_name: Default
+	dynamic: true
+	mass: 100
+	instanced: true
+
+}
+sign_model : sign.wa_ov_bd_07 {
+
+	sign_name: "wa fwy1 overhead board 04-2"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_04-2.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_04-2.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_08 {
+
+	sign_name: "wa fwy1 overhead board exit only 02"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_exonly_02.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_exonly_02.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_09 {
+
+	sign_name: "wa fwy1 overhead board exit only 03"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_exonly_03.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_exonly_03.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_12 {
+
+	sign_name: "wa fwy1 overhead board exit only 01"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_exonly_01.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_exonly_01.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_12 {
+	model_desc: "/model/props/lamp/wa_yakima_lamp.pmd"
+	model_coll: "/model/props/lamp/wa_yakima_lamp.pmc"
+	sign_name: "wa_yakima_lamp"
+	look_name: Default
+	editable: false
+	dynamic: false
+	road_model: true
+}
+sign_model : sign.wa_12a {
+
+	sign_name: "wa_yakima_lamp_lod"
+
+	model_desc: "/model/props/lamp/wa_yakima_lamp_lod.pmd"
+	model_coll: "/model/props/lamp/wa_yakima_lamp_lod.pmc"
+	distance_type: 1
+  look_name: Default
+	dynamic: false
+	road_model: true
+
+	instanced: true
+}
+sign_model : sign.807 {
+
+	#category: "Pillar"
+	sign_name: "us_bridge_pillar_01_fw2"
+
+	model_desc: "/model/pillar/us_bridge_pillar_01_fw2.pmd"
+	model_coll: "/model/pillar/us_bridge_pillar_01_fw2.pmc"
+	look_name: default
+
+	instanced: true
+	dynamic: false
+	road_model: true
+
+}
+
+sign_model : sign.808 {
+
+	#category: "Pillar"
+	sign_name: "us_bridge_pillar_01_fw2"
+
+	model_desc: "/model/pillar/us_bridge_pillar_01_fw3.pmd"
+	model_coll: "/model/pillar/us_bridge_pillar_01_fw3.pmc"
+	look_name: default
+
+	instanced: true
+	dynamic: false
+	road_model: true
+}
+sign_model : sign.wa_a13 {
+	model_desc: "/model/sign/company_logos/port_of_seattle/logo_port_seattle_universal.pmd"
+	model_coll: "/model/sign/company_logos/port_of_seattle/logo_port_seattle_universal.pmc"
+
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.wa_a14 {
+	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_universal.pmd"
+	model_coll: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_universal.pmc"
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.wa_a15 {
+	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_plane.pmd"
+}
+sign_model : sign.wa_a16 {
+	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_side.pmd"
+	model_coll: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_side.pmc"
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.wa_a17 {
+	model_desc: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_side.pmd"
+	model_coll: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_side.pmc"
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.wa_a18 {
+	model_desc: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_up.pmd"
+	model_coll: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_up.pmc"
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.wa_a19 {
+	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_up.pmd"
+	model_coll: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_up.pmc"
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.wa_a20 {
+	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_plane_small.pmd"
+}
+
+sign_model : sign.wa_a21 {
+
+	sign_name: "Fuel Price wa"
+
+	model_desc: "/model/sign/gas/price_wa.pmd"
+	look_name: default
+	#category: "fuel"
+
+	dynamic: false
+	distance_type: 2
+	mass: 100
+
+}
+
+sign_model : sign.wa_a22 {
+
+	sign_name: "Fuel Price ut"
+
+	model_desc: "/model/sign/gas/price_ut.pmd"
+	look_name: default
+	#category: "fuel"
+
+	dynamic: false
+	distance_type: 2
+	mass: 100
+
+}
+sign_model : sign.wa_14 {
+	sign_name: "wa_sightseeing_sign"
+	
+	model_desc: "/model/props/country/wa_sightseeing_sign.pmd"
+	model_coll: "/model/props/country/wa_sightseeing_sign.pmc"
+	
+	dynamic: false
+	road_model: false	
+	editable: true
+
+}
+sign_model : sign.wa_a23 {
+	sign_name: "wa_drake_sign"
+
+	model_desc: "/model/sign/company_logos/drake_cars/drake_building.pmd"
+	model_coll: "/model/sign/company_logos/drake_cars/drake_building.pmc"
+
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.wa_a24 {
+	sign_name: "wa_drake_entrance"
+
+	model_desc: "/model/sign/company_logos/drake_cars/drake_entrance.pmd"
+	model_coll: "/model/sign/company_logos/drake_cars/drake_entrance.pmc"
+
+	dynamic: false
+	editable: false
+	mass: 100.0
+}
+
+# WA
+
+sign_model : sign.wa_7 {
+	model_desc: "/model/props/lamp/wa_lamp_3.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_3.pmc"
+	
+  sign_name: "wa_lamp_3"
+	
+  look_name: Default
+	road_model: true
+  instanced: true
+  dynamic: false
+}
+sign_model : sign.wa_9 {
+	model_desc: "/model/props/lamp/wa_lamp_5.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_5.pmc"
+	
+  sign_name: "wa_lamp_5"
+	
+  look_name: Default
+	road_model: true
+  instanced: true
+  dynamic: false
+}
+sign_model : sign.wa_ov_bd_01 {
+
+	sign_name: "wa fwy1 overhead board 01-1"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_01-1.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_01-1.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_02 {
+
+	sign_name: "wa fwy1 overhead board 01-2"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_01-2.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_01-2.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	stand_classes[]: 1fwy_l_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_03 {
+
+	sign_name: "wa fwy1 overhead board 01 wide"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_01_wide.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_01_wide.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r 
+
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_04 {
+
+	sign_name: "wa fwy1 overhead board 01-2 wide"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_01-2_wide.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_01-2_wide.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r 
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_05 {
+
+	sign_name: "wa fwy1 overhead board 01-3"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_01-3.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_01-3.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_06 {
+
+	sign_name: "wa fwy1 overhead board 04-1"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_04-1.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_04-1.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_10 {
+
+	sign_name: "wa fwy2 overhead board 1ex1 1eo1"
+
+	model_desc: "/model/sign/navigation/wa_fwy2_ovh_board_1ex1_1eo1.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy2_ovh_board_1ex1_1eo1.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_11 {
+
+	sign_name: "wa fwy2 overhead board 1ex2 1eo2"
+
+	model_desc: "/model/sign/navigation/wa_fwy2_ovh_board_1ex2_1eo2.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy2_ovh_board_1ex2_1eo2.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_13 {
+
+	sign_name: "wa fwy3 overhead board 14-1 04-1"
+
+	model_desc: "/model/sign/navigation/wa_fwy3_ovh_board_14-1_04-1.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy3_ovh_board_14-1_04-1.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.wa_ov_bd_14 {
+
+	sign_name: "wa fwy3 overhead board 05-1 13b-2"
+
+	model_desc: "/model/sign/navigation/wa_fwy3_ovh_board_05-1_13b-2.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy3_ovh_board_05-1_13b-2.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_6
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_15 {
+
+	sign_name: "wa fwy3 overhead board 05-1 13b-1"
+
+	model_desc: "/model/sign/navigation/wa_fwy3_ovh_board_05-1_13b-1.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy3_ovh_board_05-1_13b-1.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_6
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_16 {
+
+	sign_name: "wa fwy2 overhead board 01-2 01-2"
+
+	model_desc: "/model/sign/navigation/wa_fwy2_ovh_board_01-2_01-2.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy2_ovh_board_01-2_01-2.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.wa_ov_bd_17 {
+
+	sign_name: "wa fwy4 overhead board 14-1 04-1 04-1"
+
+	model_desc: "/model/sign/navigation/wa_fwy4_ovh_board_14-1_04-1_04-1.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy4_ovh_board_14-1_04-1_04-1.pmc"
+	look_name: default
+	
+	stand_classes[]: 4fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_18 {
+
+	sign_name: "wa fwy3 overhead board 14-1 04-2multi"
+
+	model_desc: "/model/sign/navigation/wa_fwy3_ovh_board_14-1_04-2_multi.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy3_ovh_board_14-1_04-2_multi.pmc"
+	look_name: default
+	
+	stand_classes[]: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+
+sign_model : sign.wa_sd_bd_01 {
+
+	sign_name: "wa side board 01-2 wide"
+
+	model_desc: "/model/sign/navigation/wa_side_board_01-2_wide.pmd"
+	model_coll: "/model/sign/navigation/wa_side_board_01-2_wide.pmc"
+	look_name: default
+	
+	stand_classes[]: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+sign_model : sign.wa_sd_bd_02 {
+
+	sign_name: "wa side board 01-1"
+
+	model_desc: "/model/sign/navigation/wa_side_board_01-1.pmd"
+	model_coll: "/model/sign/navigation/wa_side_board_01-1.pmc"
+	look_name: default
+	
+	stand_classes[]: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_sd_bd_03 {
+
+	sign_name: "wa side board 01-2"
+
+	model_desc: "/model/sign/navigation/wa_side_board_01-2.pmd"
+	model_coll: "/model/sign/navigation/wa_side_board_01-2.pmc"
+	look_name: default
+	
+	stand_classes[]: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_sd_bd_04 {
+
+	sign_name: "wa side board 01-3"
+
+	model_desc: "/model/sign/navigation/wa_side_board_01-3.pmd"
+	model_coll: "/model/sign/navigation/wa_side_board_01-3.pmc"
+	look_name: default
+	
+	stand_classes[]: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+}
+sign_model : sign.wa_sd_bd_05 {
+
+	sign_name: "wa side board 01-1 wide"
+
+	model_desc: "/model/sign/navigation/wa_side_board_01-1_wide.pmd"
+	model_coll: "/model/sign/navigation/wa_side_board_01-1_wide.pmc"
+	look_name: default
+	
+	stand_classes[]: side_med_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.dlc_or_11 {
+
+	sign_name: "or lakeview lamp"
+
+	model_desc: "/model/sign/or_lakeview_lamp.pmd"
+	model_coll: "/model/sign/or_lakeview_lamp.pmc"
+	look_name: default
+	
+	road_model: true
+	dynamic: false
+	mass: 100
+	instanced: true
+}
+
+sign_model : sign.dlc_or_12 {
+
+	sign_name: "or lakeview lamp banner"
+
+	model_desc: "/model/sign/or_lakeview_lamp_banner.pmd"
+	model_coll: "/model/sign/or_lakeview_lamp_banner.pmc"
+	look_name: default
+	
+	road_model: true
+	dynamic: false
+	mass: 100
+	instanced: true
+}
+
+  sign_model : sign.ut_3 {
+	model_desc: "/model/sign/ut_ref_post2_white.pmd"
+	model_coll: "/model/sign/ut_ref_post2_white.pmc"
+	
+  sign_name: "ut reflection post2 white"
+	
+  look_name: Default
+  road_model: true
+  instanced: true
+  dynamic: true
+  mass: 50
+  }
+  
+sign_model : sign.ut_6 {
+	model_desc: "/model/props/lamp/ut_provo_lamp2.pmd"
+	model_coll: "/model/props/lamp/ut_provo_lamp2.pmc"
+	sign_name: "ut provo lamp2"
+	look_name: Default
+	editable: false
+	dynamic: false
+}
+sign_model : sign.809 {
+
+	sign_name: "bitumen arrow right"
+
+	model_desc: "/model/sign/company_logos/bitumen/arrow_right.pmd"
+	model_coll: "/model/sign/company_logos/bitumen/arrow_right.pmc"
+	
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.810 {
+
+	sign_name: "bitumen arrow left"
+
+	model_desc: "/model/sign/company_logos/bitumen/arrow_left.pmd"
+	model_coll: "/model/sign/company_logos/bitumen/arrow_left.pmc"
+	
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+sign_model : sign.811 {
+
+	sign_name: "bitumen arrow straight"
+
+	model_desc: "/model/sign/company_logos/bitumen/arrow_straight.pmd"
+	model_coll: "/model/sign/company_logos/bitumen/arrow_straight.pmc"
+	
+	dynamic: true
+	editable: false
+	mass: 100.0
+}
+}
+

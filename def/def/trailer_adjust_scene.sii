@@ -1,0 +1,263 @@
+SiiNunit
+{
+ui_truck_scene_config : _nameless.config {
+
+	light_direction: (0, -7, 5)
+	light_ambient: (0.3, 0.3, 0.3)
+	light_diffuse: (1.2, 1.2, 1.2)
+	light_specular: (2, 2, 2)
+
+
+	camera_aim: ( 0.0, 2.6, -1.849 )
+	camera_elevation_limit: (-0.35, 0.0)
+
+	camera_relative_bounds: (7.5, 7.5, 7.5)
+	camera_aim_y_bounds: (-8.0, 10.0)
+
+	mouse_rot_sens : 0.2
+	camera_zoom_sens : 0.2
+	camera_fov: 50
+
+	camera_default_azimuth: -2.589
+	camera_default_elevation: -0.038
+	camera_default_zoom: 1
+
+
+
+	truck_position: (0.0, 0.0, 0.0)
+
+	fog_color: (0.70, 0.82, 0.93)
+	fog_density: 0.0005
+
+	scene_model_path: "/model/ui/background_dome_trailers.pmd"
+	scene_model_look: "color1"
+	scene_model_variant: "c_cabin"
+
+	vehicle_reflection: "/model/ui/dome_cubemap.tobj"
+
+	floor_reflection: true
+
+	pin_group[]: sideskirt
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.9, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: exhaust
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (-1, 0, 1)
+	double_sided[]: true
+	
+	pin_group[]: filters
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.9, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: sideflares
+	pin_look[]: custom_acc
+	pin_offset[]: (-1, 0, -0.5)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: lghfender
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.8, 0, 0)
+	pin_dir[]: (0, 0, -1)
+	double_sided[]: true
+
+	pin_group[]: mudflaps
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.9, 0, 0)
+	pin_dir[]: (0, 0, 1)
+	double_sided[]: true
+
+	pin_group[]: mirror
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.9, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: cabdefl
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0.1, 0)
+	pin_dir[]: (-1, 1, 0)
+	double_sided[]: true
+
+	pin_group[]: cabflares
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0.075, -0.3)
+	pin_dir[]: (0, 0, -1)
+	double_sided[]: true
+
+	pin_group[]: horns
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0.1, -0.05)
+	pin_dir[]: (0, 0, -1)
+	double_sided[]: true
+
+	pin_group[]: s_mirror
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (1, 0, 0)
+	double_sided[]: false
+
+	pin_group[]: fl_mirror
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (-1, 0, -1)
+	double_sided[]: false
+
+	pin_group[]: fr_mirror
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (1, 0, -1)
+	double_sided[]: false
+	
+	pin_group[]: mudguard
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.9, 0, 0)
+	pin_dir[]: (-1, 1, 1)
+	double_sided[]: true
+
+	pin_group[]: doorhndl
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.0, 0.0, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: f_tire
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.1, 0.4, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: r_tire
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.3, 0.4, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: f_rim
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.1, 0.0, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: r_rim
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.3, 0.0, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+   	pin_group[]: f_disc
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.1, 0.25, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: r_disc
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.3, 0.25, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: f_hub
+	pin_look[]: acc_hub
+	pin_offset[]: (-0.1, 0.00, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: r_hub
+	pin_look[]: acc_hub
+	pin_offset[]: (-0.12, 0.0, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: f_cover
+	pin_look[]: acc_cover
+	pin_offset[]: (-0.18, 0.0, 0.15)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: r_cover
+	pin_look[]: acc_cover
+	pin_offset[]: (-0.25, 0.0, 0.15)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: f_nuts
+	pin_look[]: acc_nuts
+	pin_offset[]: (-0.18, 0.0, -0.15)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: r_nuts
+	pin_look[]: acc_nuts
+	pin_offset[]: (-0.05, 0.0, -0.15)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+	
+	pin_group[]: markers
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.2, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	pin_dir_uk[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: flag_r_l
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (-1, 0, 1)
+	pin_dir_uk[]: (-1, 0, 1)
+	double_sided[]: false
+
+	pin_group[]: flag_r_r
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (1, 0, 1)
+	pin_dir_uk[]: (1, 0, 1)
+	double_sided[]: false
+
+	pin_group[]: flag_f_l
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (-1, 0, -1)
+	pin_dir_uk[]: (-1, 0, -1)
+	double_sided[]: false
+
+	pin_group[]: flag_f_r
+	pin_look[]: custom_acc
+	pin_offset[]: (0, 0, 0)
+	pin_dir[]: (1, 0, -1)
+	pin_dir_uk[]: (1, 0, -1)
+	double_sided[]: false
+
+	exterior_only[]: flag_f_l
+	exterior_only[]: flag_f_r
+	exterior_only[]: f_grill
+	exterior_only[]: grill
+	
+	interior_only[]: cup_holder_0
+	interior_only[]: cup_holder_1
+	interior_only[]: set_dashbrd
+	interior_only[]: set_lglass
+	interior_only[]: toybig
+	interior_only[]: toyhang
+	interior_only[]: toyseat
+	interior_only[]: toystand
+}
+}

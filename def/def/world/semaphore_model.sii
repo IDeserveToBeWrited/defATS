@@ -429,6 +429,14 @@ tr_semaphore_model : tr_sem_mdl.single_mir {
 	model_coll: "/model/sign/traffic_light/us_cross_single_mirror.pmc"
 }
 
+tr_semaphore_model : tr_sem_mdl.singl_mir_np {
+
+	name: "single_mirror_no_pole"
+
+	model_desc: "/model/sign/traffic_light/us_cross_single_mirror_no_pole.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_single_mirror_no_pole.pmc"
+}
+
 tr_semaphore_model : tr_sem_mdl.left_column {
 
 	name: "left_column"
@@ -532,8 +540,27 @@ tr_semaphore_model : tr_sem_mdl.dbl_sh_o_m {
 	model_desc: "/model/sign/traffic_light/us_cross_double_short_one_mirror.pmd"
 	model_coll: "/model/sign/traffic_light/us_cross_double_short_one_mirror.pmc"
 }
+tr_semaphore_model : tr_sem_mdl.dbl_sh_cut {
 
+	name: "double_short_cut"
 
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_cut.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_cut.pmc"
+}
+tr_semaphore_model : tr_sem_mdl.left_short {
+
+	name: "double_short_no_lamp"
+
+	model_desc: "/model/sign/traffic_light/us_left_turn_short.pmd"
+	model_coll: "/model/sign/traffic_light/us_left_turn_short.pmc"
+}
+tr_semaphore_model : tr_sem_mdl.dbl_sh_nl_c {
+
+	name: "double_short_no_lamp_cut"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_no_lamp_cut.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_no_lamp_cut.pmc"
+}
 ################
 ###California###
 ################
@@ -617,6 +644,14 @@ tr_semaphore_model : tr_sem_mdl.single_mir.ca {
 	model_coll: "/model/sign/traffic_light/us_cross_single_mirror_ca.pmc"
 }
 
+tr_semaphore_model : tr_sem_mdl.singl_mir_np.ca {
+
+	name: "single_mirror_no_pole"
+
+	model_desc: "/model/sign/traffic_light/us_cross_single_mirror_no_pole_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_single_mirror_no_pole_ca.pmc"
+}
+
 tr_semaphore_model : tr_sem_mdl.dbl_sh_o_m.ca {
 
 	name: "double_short_one_mirror"
@@ -664,5 +699,367 @@ tr_semaphore_model : tr_sem_mdl.left_side.ca {
 	model_desc: "/model/sign/traffic_light/us_left_turn_side_ca.pmd"
 	model_coll: "/model/sign/traffic_light/us_left_turn_side_ca.pmc"
 }
+
+tr_semaphore_model : tr_sem_mdl.dbl_sh_cut.ca {
+
+	name: "double_short_cut"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_cut_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_cut_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.left_short.ca {
+
+	name: "double_short_no_lamp"
+
+	model_desc: "/model/sign/traffic_light/us_left_turn_short_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_left_turn_short_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.dbl_sh_nl_c.ca {
+
+	name: "double_short_no_lamp_cut"
+
+	model_desc: "/model/sign/traffic_light/us_cross_double_short_no_lamp_cut_ca.pmd"
+	model_coll: "/model/sign/traffic_light/us_cross_double_short_no_lamp_cut_ca.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.event_01 {
+
+	name: "event portable"
+
+	model_desc: "/model/sign/traffic_light/us_event_portable.pmd"
+	model_coll: "/model/sign/traffic_light/us_event_portable.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.event_02 {
+
+	name: "event portable mirrored"
+
+	model_desc: "/model/sign/traffic_light/us_event_portable_mirrored.pmd"
+	model_coll: "/model/sign/traffic_light/us_event_portable_mirrored.pmc"
+}
+
+tr_semaphore_model : tr_sem_mdl.wa_bridge_lv {
+
+	name: "wa_bridge_gate"
+
+	model_desc: "/model/mover/bridge/wa_bridge_gate.pmd"
+	model_coll: "/model/mover/bridge/wa_bridge_gate.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_bridge_gate_down_anim.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_bridge_gate_up_anim.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+}
+
+tr_semaphore_model : tr_sem_mdl.wa_swing_br {
+
+	name: "wa_swing_bridge"
+
+	model_desc: "/model/mover/bridge/wa_steam_slough_bridge_middle.pmd"
+
+	draw_distance: 1500
+	
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: true
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_steam_slough_turn_anim.pma"
+	state_collision[1]: false
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_steam_slough_back_anim.pma"
+	state_collision[2]: false
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: true
+}
+
+tr_semaphore_model : tr_sem_mdl.bridge_top {
+
+	name: "bridge_light"
+
+	model_desc: "/model/sign/traffic_light/us_light_bridge.pmd"
+}
+
+tr_semaphore_model : tr_sem_mdl.bridge_pol {
+
+	name: "bridge_pole"
+
+	model_desc: "/model/sign/traffic_light/us_light_bridge_pole.pmd"
+	model_coll: "/model/sign/traffic_light/us_light_bridge_pole.pmc"
+
+}
+
+tr_semaphore_model : tr_sem_mdl.wa_rail_br {
+
+	name: "wa_rail_bridge"
+
+	model_desc: "/model/mover/bridge/wa_railroad_swing_bridge_middle.pmd"
+	
+	draw_distance: 1500
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_rail_swing_turn_anim.pma"
+	state_collision[1]: false
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_rail_swing_back_anim.pma"
+	state_collision[2]: false
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+}
+
+tr_semaphore_model : tr_sem_mdl.wa_brdg2_lv {
+
+	name: "wa_bridge_gate_2"
+
+	model_desc: "/model/mover/bridge/wa_bridge_gate_2.pmd"
+	model_coll: "/model/mover/bridge/wa_bridge_gate_2.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_bridge_gate_2_down_anim.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_bridge_gate_2_up_anim.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+}
+tr_semaphore_model : tr_sem_mdl.brdg_pol2 {
+
+	name: "bridge_pole_2"
+
+	model_desc: "/model/sign/traffic_light/us_light_bridge_pole2.pmd"
+	model_coll: "/model/sign/traffic_light/us_light_bridge_pole2.pmc"
+
+}
+tr_semaphore_model : tr_sem_mdl.brdg_pol2r {
+
+	name: "bridge_pole_2 reversed"
+
+	model_desc: "/model/sign/traffic_light/us_light_bridge_pole2_r.pmd"
+	model_coll: "/model/sign/traffic_light/us_light_bridge_pole2_r.pmc"
+
+}
+tr_semaphore_model : tr_sem_mdl.wa_cheh_br {
+
+	name: "wa_chehalis_bridge"
+
+	model_desc: "/model/mover/bridge/wa_chehalis_bridge_middle.pmd"
+	
+	draw_distance: 1500
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: true
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_chehalis_up_anim.pma"
+	state_collision[1]: false
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_chehalis_down_anim.pma"
+	state_collision[2]: false
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: true
+}
+tr_semaphore_model : tr_sem_mdl.wa_brdg3_lv {
+
+	name: "wa_bridge_gate_3"
+
+	model_desc: "/model/mover/bridge/wa_bridge_gate_3.pmd"
+	model_coll: "/model/mover/bridge/wa_bridge_gate_3.pmc"
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_bridge_gate_3_down_anim.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_bridge_gate_3_up_anim.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+}
+
+tr_semaphore_model : tr_sem_mdl.bridge_top2 {
+
+	name: "bridge_light2"
+
+	model_desc: "/model/sign/traffic_light/us_light_bridge2.pmd"
+}
+
+tr_semaphore_model : tr_sem_mdl.wa_hoq1_br {
+
+	name: "wa_hoquiam1_bridge"
+
+	model_desc: "/model/mover/bridge/wa_hoquiam_bridge_1_middle.pmd"
+	
+	draw_distance: 1500
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: true
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_hoq1_up_anim.pma"
+	state_collision[1]: false
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_hoq1_down_anim.pma"
+	state_collision[2]: false
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: true
+}
+tr_semaphore_model : tr_sem_mdl.wa_hoq2_br {
+
+	name: "wa_hoquiam2_bridge"
+
+	model_desc: "/model/mover/bridge/wa_hoquiam_bridge_2_middle.pmd"
+	
+	draw_distance: 1500
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: true
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_hoq2_up_anim.pma"
+	state_collision[1]: false
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_hoq2_down_anim.pma"
+	state_collision[2]: false
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: true
+}
+
+tr_semaphore_model : tr_sem_mdl.wa_brdg4_lv {
+
+	name: "wa_bridge_gate_3"
+
+	model_desc: "/model/mover/bridge/wa_bridge_gate_4.pmd"
+	model_coll: "/model/mover/bridge/wa_bridge_gate_4.pmc"
+	
+	draw_distance: 500
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: false
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_bridge_gate_4_down_anim.pma"
+	state_collision[1]: true
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_bridge_gate_4_up_anim.pma"
+	state_collision[2]: true
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: false
+}
+
+tr_semaphore_model : tr_sem_mdl.bridge_top3 {
+
+	name: "bridge_light3"
+
+	model_desc: "/model/sign/traffic_light/us_light_bridge3.pmd"
+}
+
+tr_semaphore_model : tr_sem_mdl.wa_van_br {
+
+	name: "wa_vancouver_bridge"
+
+	model_desc: "/model/mover/bridge/wa_vancouver_bridge_middle.pmd"
+	
+	draw_distance: 1500
+
+	state_anim: 4
+	state_collision: 4
+
+	# orange_to_red
+	state_anim[0]: ""
+	state_collision[0]: true
+
+	# red
+	state_anim[1]: "/model/mover/bridge/wa_van_up_anim.pma"
+	state_collision[1]: false
+
+	# orange_to_green
+	state_anim[2]: "/model/mover/bridge/wa_van_down_anim.pma"
+	state_collision[2]: false
+
+	# green
+	state_anim[3]: ""
+	state_collision[3]: true
+}
+
 
 }

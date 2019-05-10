@@ -1,0 +1,36 @@
+traffic_vehicle : traffic.sweeper
+{
+	accessories[]: .sweeper.chassis
+	accessories[]: .sweeper.fwheel
+	accessories[]: .sweeper.rwheel
+	
+
+
+	max_speed: 15
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	
+	engine_torque: 2000
+	vehicle_mass: 15000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .sweeper.chassis
+{
+	data_path: "/def/vehicle/ai/sweeper/chassis.sii"
+}
+
+vehicle_wheel_accessory: .sweeper.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .sweeper.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}

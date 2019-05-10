@@ -7,6 +7,8 @@ accessory_chassis_data : .chassis
 	lods[]: "/vehicle/trailer/scs_log/lod_1.pmd"
 	lods[]: "/vehicle/trailer/scs_log/lod_2.pmd"
 	collision: "/vehicle/trailer/scs_log/trailer.pmc"
+	variant: default
+	look: red
 
 	trailer_brace_model: "/vehicle/trailer/scs_log/trailer_brace.pmd"
 	trailer_brace_anim: "/vehicle/trailer/scs_log/trailer_brace.pma"
@@ -14,21 +16,20 @@ accessory_chassis_data : .chassis
 	trailer_brace_up_sound: "/sound/truck/trailer_brace_up.ogg"
 	trailer_brace_down_sound: "/sound/truck/trailer_brace_down.ogg"
 
-	residual_travel[]: 0.12
-	residual_travel[]: 0.12
-
-
-	trailer_mass: 5700.0	# 12600lb
-
-	variant: default
-	look: red
-
 	extended_shadow_texture: "/vehicle/trailer_owned/scs_log/shadow_ch_40_r.tobj"
 	extended_shadow_intensity: 1.45
 	extended_shadow_fadeout_start: 10
 	extended_shadow_fadeout_length: 0
 
 	ui_shadow: "/vehicle/trailer_owned/scs_log/shadow_ch_40_r.pmd"
+
+	trailer_mass: 5633.7	# 12420 lbs
+
+	cog_cargo_mass_min: 0.0
+	cog_cargo_mass_max: 18000.0
+
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
 }
 }
 
