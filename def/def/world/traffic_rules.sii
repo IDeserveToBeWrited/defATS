@@ -180,6 +180,7 @@ traffic_rule_data : traffic_rule.limit_55_t
 	num_params[]: 55
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "truck_double"
 }
 
 traffic_rule_data : traffic_rule.limit_60_55
@@ -191,6 +192,7 @@ traffic_rule_data : traffic_rule.limit_60_55
 	num_params[]: 1		# 0 - include vehicle types (default), 1 - exclude vehicle types
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "truck_double"
 
 
 	additional_rules[]: traffic_rule.limit_55_t
@@ -212,6 +214,7 @@ traffic_rule_data : traffic_rule.limit_60_t
 	num_params[]: 60
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "truck_double"
 }
 
 traffic_rule_data : traffic_rule.limit_65_60
@@ -223,6 +226,7 @@ traffic_rule_data : traffic_rule.limit_65_60
 	num_params[]: 1		# 0 - include vehicle types (default), 1 - exclude vehicle types
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "truck_double"
 
 	additional_rules[]: traffic_rule.limit_60_t
 }
@@ -242,6 +246,22 @@ traffic_rule_data : traffic_rule.limit_65_t
 	rule: "speed_limit"
 	num_params[]: 65
 	str_params[]: "truck"
+	str_params[]: "truck_city"
+	str_params[]: "truck_double"
+}
+
+traffic_rule_data : traffic_rule.limit_70_60
+{
+	name: "Speed limit 70 (60 for trucks)"
+
+	rule: "speed_limit"
+	num_params[]: 70
+	num_params[]: 1		# 0 - include vehicle types (default), 1 - exclude vehicle types
+	str_params[]: "truck"
+	str_params[]: "truck_city"
+	str_params[]: "truck_double"
+
+	additional_rules[]: traffic_rule.limit_60_t
 }
 
 traffic_rule_data : traffic_rule.limit_70_65
@@ -253,6 +273,7 @@ traffic_rule_data : traffic_rule.limit_70_65
 	num_params[]: 1		# 0 - include vehicle types (default), 1 - exclude vehicle types
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "truck_double"
 
 	additional_rules[]: traffic_rule.limit_65_t
 }
@@ -325,6 +346,8 @@ traffic_rule_data : traffic_rule.no_trucks
 	num_params[]: 0 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
 	str_params[]: "truck"
+	str_params[]: "truck_city"
+	str_params[]: "truck_double"
 }
 
 traffic_rule_data : traffic_rule.trucks_only
@@ -337,6 +360,22 @@ traffic_rule_data : traffic_rule.trucks_only
 	num_params[]: 0 	# no change to trailer access
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "truck_double"
+}
+
+traffic_rule_data : traffic_rule.tr_es_only
+{
+	name: "Allow trucks and escorts only"
+	rule: "actor_access"
+	num_params[]: 1 	# 0 - disallow, 1 - allow
+	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
+	num_params[]: 1 	# set vehicle access
+	num_params[]: 0 	# no change to trailer access
+	str_params[]: "truck"
+	str_params[]: "truck_city"
+	str_params[]: "truck_double"
+	str_params[]: "escort_front"
+	str_params[]: "escort_back"
 }
 
 traffic_rule_data : traffic_rule.road
@@ -408,6 +447,7 @@ traffic_rule_data : traffic_rule.car_truck_on
 	str_params[]: "car_city"
 	str_params[]: "truck"
 	str_params[]: "truck_city"
+	str_params[]: "truck_double"
 	str_params[]: "escort_front"
 	str_params[]: "escort_back"
 }

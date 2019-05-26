@@ -831,8 +831,8 @@ curve_model : curve.58 {
   name:"wa_farm_fence1"
 	model_desc: "/model/building/farm/wa_farm_fence1.pmd"
 	variation[]: "var1_random | part1:1 | part2:1 | part3:1 "
-	variation[]: "var2_random |  part1:2 | part3:2 | part5:1"
-	variation[]: "var_damage |  part1:5 | part2:5 | part3:5| part4:1| part5:2 | part6:1"
+	variation[]: "var2_random |  part1:2 | part3:2 | part5:1 | part7:1 "
+	variation[]: "var_damage | part2:1 | part4:1| part5:1 | part6:1 | part7:1 "
 	
 	start_part[]: "start1"
 	end_part[]: "end1"
@@ -981,13 +981,24 @@ curve_model : curve.67 {
 curve_model : curve.68 {
   name:"wa_barrier_logs"
 	model_desc: "/model/barrier/wood/wa_barrier_logs.pmd"
+
 	variation[]: "default | center1:5 | center2:5 | center3:5 | center4:1"
+
+	dynamic_lod_desc[]: "/model/barrier/wood/wa_barrier_logs_lod1.pmd"
+    dynamic_lod_dist[]: 30
+	dynamic_lod_desc[]: "/model/barrier/wood/wa_barrier_logs_lod2.pmd"
+    dynamic_lod_dist[]: 80
 	
 }
 curve_model : curve.69 {
   name:"wa_barrier_logs2"
 	model_desc: "/model/barrier/wood/wa_barrier_logs2.pmd"
 	variation[]: "default | center1:5 | center2:5 | center3:5 | center4:1"
+
+	dynamic_lod_desc[]: "/model/barrier/wood/wa_barrier_logs2_lod1.pmd"
+    dynamic_lod_dist[]: 30
+	dynamic_lod_desc[]: "/model/barrier/wood/wa_barrier_logs2_lod2.pmd"
+    dynamic_lod_dist[]: 80
 	
 }
 curve_model : curve.70 {
@@ -1022,7 +1033,55 @@ curve_model : curve.72 {
   name:"light_decal"
 	model_desc: "/model/props/street/light_decal.pmd"
 	variation[]: "default | center1:1"
-
 	
+}
+
+curve_model : curve.73 {
+  name:"bank_side"
+	model_desc: "/model/railing/curve_item/bank_side_curve.pmd"
+	variation[]: "default | c1:1 | c2:1 | c3:1 | c4:1"
+	start_part[]: "s1"
+	end_part[]: "e1"
+
+	variation[]: "pipe | pipe_c1:1 | pipe_c2:1 | pipe_c3:1 | pipe_c4:1"
+	start_part[]: "s1_pipe"
+	end_part[]: "e1_pipe"
+
+	dynamic_lod_desc[]: "/model/railing/curve_item/bank_side_curve_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	smooth_surface: true
+}
+
+curve_model : curve.74 {
+  name:"wa_wall_freeway_curve"
+	model_desc: "/model/barrier/concrete/wa_wall_freeway_curve.pmd"
+	variation[]: "default | center1:1 | center2:1 | center3:1 | center4:1 | center5:1 | center6:1"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	smooth_surface: true
+}
+
+curve_model : curve.75 {
+  name:"parking_motel_curve"
+	model_desc: "/model/props/road/parking_motel_curve.pmd"
+	
+	variation[]: "white | center2:1"
+	start_part[]: "start2"
+	end_part[]: "end2"
+
+	variation[]: "blue_white | center1:1"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	
+	variation[]: "yellow_white | center3:1"
+	start_part[]: "start3"
+	end_part[]: "end3"
+
+	variation[]: "yellow | center4:1"
+	start_part[]: "start4"
+	end_part[]: "end4"
+
 }
 }

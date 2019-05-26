@@ -5,6 +5,7 @@ traffic_trailer : traffic.trailer.scs_flat_2
 	accessories[]: .scs_flat_2.chassis
 	accessories[]: .scs_flat_2.rwheel
 	accessories[]: .scs_flat_2.cargo
+	accessories[]: .scs_flat_2.trlr_cables
 
 	slave_trailer: .scs_flat_2.dolly
 }
@@ -23,6 +24,11 @@ vehicle_accessory: .scs_flat_2.cargo
 {
 	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/hay_28.sii"
 }
+
+vehicle_addon_accessory: .scs_flat_2.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/trlr_cables_trailer_traffic.sii"
+}
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
@@ -30,6 +36,7 @@ traffic_trailer : .scs_flat_2.dolly
 {
 	accessories[]: .scs_flat_2.dolly.chassis
 	accessories[]: .scs_flat_2.dolly.rwheel
+	accessories[]: .scs_flat_2.dolly.trlr_cables
 
 	slave_trailer: .scs_flat_2.second
 }
@@ -45,6 +52,10 @@ vehicle_wheel_accessory: .scs_flat_2.dolly.rwheel
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
+vehicle_addon_accessory: .scs_flat_2.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/trlr_cables_dolly_traffic.sii"
+}
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX trailer 28 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 

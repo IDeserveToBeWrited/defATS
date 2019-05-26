@@ -5142,7 +5142,7 @@ prefab_model : prefab.us_277 {
 } 
 
 prefab_model : prefab.us_277a {
-  name:"us_cross_1-1_country_t_0-2_country_in"
+  name:"us_cross_1-1-1_country_t_0-2_country_in"
 	model_desc: "/prefab/cross_temp/us_cross_1-1-1_country_t_0-2_country_in_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_1-1-1_country_t_0-2_country_in_tmpl.ppd"
 
@@ -6053,13 +6053,10 @@ prefab_model : prefab.us_379 {
 	prefab_desc: "/prefab/cross_temp/or_cross_1-1_country_x_forest_tmpl.ppd"
 
 corner0[]: shcr4l
-corner0[]: shcr4lor
 corner1[]: shcr4r
-corner1[]: shcr4ror
 corner2[]: shcr4l
-corner2[]: shcr4lor
 corner3[]: shcr4r
-corner3[]: shcr4ror
+
 
 }
 
@@ -6759,14 +6756,18 @@ prefab_model : prefab.us_380 {
 prefab_model : prefab.wa_sea_dtua {
 	model_desc: "/prefab/tunnel/wa_seattle_double_tunnel1a.pmd"
 	prefab_desc: "/prefab/tunnel/wa_seattle_double_tunnel1a.ppd"
-	use_perlin:	false
+	
+	dynamic_lod_desc[]:"/prefab/tunnel/wa_seattle_double_tunnel1a_lod1.pmd"
+	dynamic_lod_dist[]: 250
 
 }
 
 prefab_model : prefab.wa_sea_dtub {
 	model_desc: "/prefab/tunnel/wa_seattle_double_tunnel1b.pmd"
 	prefab_desc: "/prefab/tunnel/wa_seattle_double_tunnel1b.ppd"
-	use_perlin:	false
+	
+	dynamic_lod_desc[]:"/prefab/tunnel/wa_seattle_double_tunnel1b_lod1.pmd"
+	dynamic_lod_dist[]: 250
 
 }
 

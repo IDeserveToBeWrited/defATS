@@ -1137,9 +1137,9 @@ model_def : model.98 {
 }
 
 model_def : model.99 {
-	model_desc: "/model/vehicle/train/wagon_chem.pmd"
+	model_desc: "/model/vehicle/train/wagon_grain.pmd"
 	static_lod_name[]: "LOD from 50m"
-	static_lod_path[]: "/vehicle/ai/train_cars/wagon_chem_lod2.pmd"
+	static_lod_path[]: "/vehicle/ai/train_cars/wagon_grain_lod2.pmd"
 }
 
 model_def : model.100 {
@@ -6039,7 +6039,7 @@ model_def : model.or_224 {
 model_def: model.or_229 {
 	model_desc: "/prefab/depots/manufactured_homes/or_pref_home_half.pmd"
 	
-	color_variant[]:"White | vpis_def_wall: 148,140,126  | vis_1_wall: 148,140,126  | vis_2_wall:  148,140,126  | vis_3_wall:  255,255,255 | vis_4_wall:  148,140,126  | vis_def_roof:  51,29,28  | vis_1_roof : 148,148,143  | vis_2_roof : 255,255,255 | vis_3_roof : 115,117,117  | vis_4_roof: 112,112,112"
+	color_variant[]:"White | vis_def_wall: 148,140,126  | vis_1_wall: 148,140,126  | vis_2_wall:  148,140,126  | vis_3_wall:  255,255,255 | vis_4_wall:  148,140,126  | vis_def_roof:  51,29,28  | vis_1_roof : 148,148,143  | vis_2_roof : 255,255,255 | vis_3_roof : 115,117,117  | vis_4_roof: 112,112,112"
 	color_variant[]:"Brown | vis_def_wall: 104,79,61  | vis_1_wall: 140,115,119  | vis_2_wall:  161,141,128  | vis_3_wall:   145,112,82  | vis_4_wall: 104,79,61  | vis_def_roof: 67,52,64  | vis_1_roof : 89,89,97  | vis_2_roof : 122,255,255 | vis_3_roof : 64,70,64  | vis_4_roof: 69,79,100"
 	color_variant[]:"Blue | vis_def_wall: 51,84,112  | vis_1_wall: 87,135,255  | vis_2_wall:  69, 148,255  | vis_3_wall:  102,120,153  | vis_4_wall:  66,106,162  |   vis_def_roof: 24,26,36  | vis_1_roof : 112,71,55  | vis_2_roof : 108,184,148  | vis_3_roof :107,64,63  | vis_4_roof: 47,47,54"
 	color_variant[]:"Green | vis_def_wall:  56,94,66  | vis_1_wall: 82,174,220 | vis_2_wall: 66,148,137  | vis_3_wall: 92,133,107  | vis_4_wall: 58,121,98  |  vis_def_roof:  75,56,58  | vis_1_roof : 144,90,70  | vis_2_roof :52,142,170  | vis_3_roof : 53,46,45 | vis_4_roof: 42,35,31"
@@ -6494,6 +6494,10 @@ model_def : model.or_435 {
 }
 model_def : model.or_511 {
 	model_desc: "/model/building/industrial/or_container_house1.pmd"
+	color_variant[]:"blue | wall: 149,164,164 | frame: 22,50,103"
+	color_variant[]:"brown | wall: 224,220,203 | frame: 111,95,87"
+	color_variant[]:"red | wall: 212,222,222 | frame: 137,45,42"
+	color_variant[]:"grey | wall: 126,127,130 | frame: 56,57,59"
 }
 model_def : model.or_534 {
 	model_desc: "/model/vegetation/coniferous/fir_tall1_cutdwn_or.pmd"
@@ -10005,9 +10009,17 @@ model_def : model.1268 {
 }
 model_def : model.1269 {
 	model_desc: "/model/rock/cliffs2/roadcliff_5_mult.pmd"
+  
+#  dynamic_lod_desc[]: "/model/rock/cliffs2/roadcliff_5_mult_lod1.pmd"
+#  dynamic_lod_dist[]: 150
+ 
 }
 model_def : model.1270 {
 	model_desc: "/model/rock/cliffs2/roadcliff_6_mult.pmd"
+  
+#  dynamic_lod_desc[]: "/model/rock/cliffs2/roadcliff_6_mult_lod1.pmd"
+#  dynamic_lod_dist[]: 175
+
 }
 model_def : model.1271 {
 	model_desc: "/model/rock/cliffs2/roadcliff_7_mult.pmd"
@@ -10035,6 +10047,9 @@ model_def : model.1278 {
 }
 model_def : model.1279 {
 	model_desc: "/model/rock/cliffs2/roadcliff_14_mult.pmd"
+    
+#  dynamic_lod_desc[]: "/model/rock/cliffs2/roadcliff_14_mult_lod1.pmd"
+#  dynamic_lod_dist[]: 175
 }
 
 model_def : model.nm_220 {
@@ -11224,6 +11239,11 @@ model_def : model.wa_98{
 }
 model_def : model.wa_200 {
 	model_desc: "/model/panorama/wa_yakima/wa_larson.pmd"
+
+        dynamic_lod_desc[]:"/model/panorama/wa_yakima/wa_larson_lod1.pmd"
+	dynamic_lod_dist[]: 100
+        dynamic_lod_desc[]:"/model/panorama/wa_yakima/wa_larson_lod2.pmd"
+	dynamic_lod_dist[]: 200
 }
 model_def : model.wa_220 {
 	model_desc: "/model/panorama/wa_seattle/wa_seattle_downtown_05.pmd"
@@ -11313,13 +11333,7 @@ model_def : model.wa_424 {
 model_def : model.wa_425 {
 	model_desc: "/model/panorama/wa_i82/wa_barrage2.pmd"	
 }
-model_def : model.wa_452{
-	model_desc: "/model/panorama/wa_umatilla/wa_umatilla_bridge.pmd"	
-	
-	dynamic_lod_desc[]: "/model/panorama/wa_umatilla/wa_umatilla_bridge_lod1.pmd"
-	dynamic_lod_dist[]: 100
 
-}
 model_def : model.wa_228{
 	model_desc: "/model/advert/wa_gas_totem_chemron.pmd"
 
@@ -11498,13 +11512,13 @@ model_def : model.wa_495 {
 
 }
 model_def : model.wa_496 {
-	model_desc: "/model/vehicle/trailer/gooseneck_ch_20.pmd"
-	dynamic_lod_desc[]: "/model/vehicle/trailer/gooseneck_ch_20_lod1.pmd"
+	model_desc: "/model/vehicle/trailer/gooseneck_ch_20_lod1.pmd"
+	dynamic_lod_desc[]: "/model/vehicle/trailer/gooseneck_ch_20_lod2.pmd"
 	dynamic_lod_dist[]: 50.0
 }
 model_def : model.wa_497 {
-	model_desc: "/model/vehicle/trailer/gooseneck_ch_40.pmd"
-	dynamic_lod_desc[]: "/model/vehicle/trailer/gooseneck_ch_40_lod1.pmd"
+	model_desc: "/model/vehicle/trailer/gooseneck_ch_40_lod1.pmd"
+	dynamic_lod_desc[]: "/model/vehicle/trailer/gooseneck_ch_40_lod2.pmd"
 	dynamic_lod_dist[]: 50.0
 }
 model_def : model.wa_498 {
@@ -11515,6 +11529,8 @@ color_variant[]:"red | v0_c1: 130,46,29 | v1_c1: 130,46,29 | v2_c1: 130,46,29 | 
 color_variant[]:"green | v0_c1: 59,115,69 | v1_c1: 59,115,69 | v2_c1: 59,115,69 | v0_c2: 148,97,82 | v1_c2: 148,97,82  | v2_c2: 148,97,82 "
 color_variant[]:"grey | v0_c1: 127,127,127 | v1_c1: 127,127,127 | v2_c1: 127,127,127 | v0_c2: 127,127,127 | v1_c2: 127,127,127  | v2_c2: 127,127,127 "
 color_variant[]:"blue | v0_c2: 127,127,127 | v1_c2: 127,127,127 | v2_c2: 127,127,127 | v0_c1: 80,111,158 | v1_c1: 80,111,158 | v2_c1: 80,111,158 "
+color_variant[]:"white | v0_c2: 248,248,248 | v1_c2: 248,248,248 | v2_c2: 248,248,248 | v0_c1: 248,248,248 | v1_c1: 248,248,248 | v2_c1: 248,248,248 "
+
 }
 
 model_def : model.wa_500 {
@@ -12183,6 +12199,11 @@ model_def : model.wa_481 {
 	color_variant[]:"blue | cl_vis: 41,74,125"
         color_variant[]:"grey | cl_vis: 200,200,200"
 
+        static_lod_name[]: "lod 150m"
+	static_lod_path[]: "/model/building/logistic/wa_warehouse9_lod1.pmd"
+	static_lod_name[]: "lod 300m"
+	static_lod_path[]: "/model/building/logistic/wa_warehouse9_lod2.pmd"
+
         dynamic_lod_desc[]: "/model/building/logistic/wa_warehouse9_lod1.pmd"
 	dynamic_lod_dist[]: 150	
         dynamic_lod_desc[]: "/model/building/logistic/wa_warehouse9_lod2.pmd"
@@ -12192,10 +12213,10 @@ model_def : model.wa_481 {
 model_def : model.wa_482 {
 	model_desc: "/model/building/country/wa_country_shed1.pmd"
 
+        color_variant[]:"grey | wall_cl: 135,135,135 | roof_cl: 255,255,255"
         color_variant[]:"red/grey | wall_cl: 129,60,60 | roof_cl: 71,69,68" 
 	color_variant[]:"brown/red | wall_cl: 73,56,45 | roof_cl: 129,60,60"
 	color_variant[]:"light brown/green | wall_cl: 132,108,92 | roof_cl: 79,100,79"
-	color_variant[]:"grey | wall_cl: 135,135,135 | roof_cl: 255,255,255"
 	
 	static_lod_name[]: "lod 100m"
 	static_lod_path[]: "/model/building/country/wa_country_shed1_lod1.pmd"
@@ -12452,27 +12473,101 @@ model_def : model.wa_508 {
 }	
 model_def : model.wa_511 {
 	model_desc: "/model/vegetation/trees/wa_dry_stump_1.pmd"
+	
+	dynamic_lod_desc[]:"/model/vegetation/trees/wa_dry_stump_1_lod1.pmd"
+	dynamic_lod_dist[]: 150
 }	
 model_def : model.wa_512 {
 	model_desc: "/model/vegetation/trees/wa_dry_stump_2.pmd"
+	
+	dynamic_lod_desc[]:"/model/vegetation/trees/wa_dry_stump_2_lod1.pmd"
+	dynamic_lod_dist[]: 150
 }	
 model_def : model.wa_513 {
 	model_desc: "/model/vegetation/trees/wa_dry_fallen_log1.pmd"
+		
+	dynamic_lod_desc[]:"/model/vegetation/trees/wa_dry_fallen_log1_lod1.pmd"
+	dynamic_lod_dist[]: 100
 }	
 model_def : model.wa_514 {
 	model_desc: "/model/vegetation/trees/wa_dry_fallen_log2.pmd"
+	
+	dynamic_lod_desc[]:"/model/vegetation/trees/wa_dry_fallen_log2_lod1.pmd"
+	dynamic_lod_dist[]: 100
 }	
 model_def : model.wa_515 {
 	model_desc: "/model/vegetation/trees/wa_dry_fallen_log3.pmd"
+	
+	dynamic_lod_desc[]:"/model/vegetation/trees/wa_dry_fallen_log3_lod1.pmd"
+	dynamic_lod_dist[]: 100
 }	
 model_def : model.wa_516 {
 	model_desc: "/model/vegetation/coniferous/conifer_dry_fallen4_wa.pmd"
-
 }
 model_def : model.ut_90 {
 	model_desc: "/model/rock/ut_rock_chunky_2.pmd"
 }
+
+model_def : model.or_111 {
+	model_desc: "/model/panorama/or_burns/or_burns_highschool.pmd"
+}
+model_def : model.ut_258 {
+	model_desc: "/model/rock/hills/ut_hill_eroded1.pmd"
 }
 
+model_def : model.nv_268{
+	#category: "Nevada"
+	model_desc: "/model/reno/train_station.pmd"
+}
 
+model_def : model.az_30 {
+	#category: "Arizona"
+	model_desc: "/model/panorama/holbrook/dino1.pmd"
+}
+model_def : model.5686 {
+	model_desc: "/model/sign/navigation/nv_border_sign_small.pmd"
+}
+model_def : model.5687 {
+	model_desc: "/model/sign/navigation/nv_border_sign_big.pmd"
+}
+
+model_def : model.ut_252 {
+    model_desc: "/model/panorama/ut_bluff/ut_bluff_cafe.pmd"	
+
+}
+
+model_def : model.wa_518 {
+	model_desc: "/model/sign/navigation/welcome_wa.pmd"
+}
+
+model_def : model.ut_276 {
+	model_desc: "/model/panorama/ut_us89/ut_lake_powell_estate_sign.pmd"
+}
+model_def : model.5688 {
+	model_desc: "/model/mover/boat/towing_ship2.pmd"
+  
+  dynamic_lod_desc[]: "/model/mover/boat/towing_ship2_lod1.pmd"
+  dynamic_lod_dist[]: 100
+	dynamic_lod_desc[]: "/model/mover/boat/towing_ship2_lod2.pmd"
+  dynamic_lod_dist[]: 300
+}
+model_def : model.or_6323 {
+	model_desc: "/prefab/depots/scrapyard/or_scrap_metal_pile_03.pmd"
+  
+   dynamic_lod_desc[]: "/prefab/depots/scrapyard/or_scrap_metal_pile_03_lod1.pmd"
+   dynamic_lod_dist[]: 150
+}
+model_def : model.or_6324 {
+	model_desc: "/prefab/depots/scrapyard/or_scrap_metal_pile_04.pmd"
+
+   dynamic_lod_desc[]: "/prefab/depots/scrapyard/or_scrap_metal_pile_04_lod1.pmd"
+   dynamic_lod_dist[]: 150
+}
+model_def : model.or_6325 {
+	model_desc: "/prefab/depots/scrapyard/or_scrap_metal_pile_05.pmd"
+
+   dynamic_lod_desc[]: "/prefab/depots/scrapyard/or_scrap_metal_pile_05_lod1.pmd"
+   dynamic_lod_dist[]: 150
+}
+}
 

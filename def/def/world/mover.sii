@@ -21,6 +21,10 @@ mover_model : mover.towingship {
 	mover_name: "Towing ship"
 	model_desc: "/model/mover/boat/towing_ship.pmd"
 }
+mover_model : mover.towingshipn {
+	mover_name: "Towing ship no antena"
+	model_desc: "/model/mover/boat/towing_ship_no_antena.pmd"
+}
 mover_model : mover.towingshipd {
 	mover_name: "Towing ship D"
 	model_desc: "/model/mover/boat/towing_ship_d.pmd"
@@ -28,7 +32,6 @@ mover_model : mover.towingshipd {
 mover_model : mover.boat_proba {
 	mover_name: "Towing ship random presence"
 	model_desc: "/model/mover/boat/towing_ship.pmd"
-	probability: 0.2
 }
 mover_model : mover.barge {
 	mover_name: "barge cargo ship hanover express"
@@ -558,7 +561,6 @@ mover_model : mover.deer_herd1 {
 	model_desc: "/model/mover/animal/deer_run_jump_herd.pmd" 
 	mover_name: "deer_herd"
 	model_anim: "/model/mover/animal/deer_run_herd.pma"
-	probability:					0.5
 }
 mover_model : mover.deer_eating {
 	model_desc: "/model/mover/animal/deer_eating.pmd"
@@ -655,6 +657,17 @@ mover_model : mover.crn_port_1 {
 	mover_name: "Port Crane 1"
 	model_desc: "/model/mover/machine/crane_port_01.pmd"
 	model_coll: "/model/mover/machine/crane_port_01.pmc"
+}
+mover_model : mover.towingship2 {
+	mover_name: "towing ship 2"
+	model_desc: "/model/mover/boat/towing_ship2.pmd"
+	
+  lods[0]: "/model/mover/boat/towing_ship2_lod1.pmd"
+  lods[1]: "/model/mover/boat/towing_ship2_lod2.pmd"
+  
+  lod_dist[0]: 100
+  lod_dist[1]: 300
+   
 }	
 
 #WA

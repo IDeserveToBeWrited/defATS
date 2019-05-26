@@ -5,6 +5,7 @@ traffic_trailer : traffic.trailer.scs_ref2
 	accessories[]: .scs_ref2.chassis
 	accessories[]: .scs_ref2.rwheel
 	accessories[]: .scs_ref2.paint_job
+	accessories[]: .scs_ref2.trlr_cables
 	
 	company_paint_job: true
 	
@@ -27,12 +28,17 @@ vehicle_paint_job_accessory: .scs_ref2.paint_job
 	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
 }
 
+vehicle_addon_accessory: .scs_ref2.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer_traffic.sii"
+}
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_trailer : .scs_ref2.dolly
 {
 	accessories[]: .scs_ref2.dolly.chassis
 	accessories[]: .scs_ref2.dolly.rwheel
+	accessories[]: .scs_ref2.dolly.trlr_cables
 
 	slave_trailer: .scs_ref2.second
 }
@@ -46,6 +52,11 @@ vehicle_wheel_accessory: .scs_ref2.dolly.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .scs_ref2.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly_traffic.sii"
 }
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

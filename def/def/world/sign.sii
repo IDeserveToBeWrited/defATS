@@ -7022,7 +7022,6 @@ sign_model : sign.ov_bd_77 {
 
 }
 
-
 sign_model : sign.sm_bd_01 {
 
 	sign_name: "board sml A1"
@@ -9159,7 +9158,7 @@ sign_model : sign.740 {
 sign_model : sign.740a {
 
 	#category: "Pillar"
-	sign_name: "wa_bridge_pillar_simple_cyrcle"
+	sign_name: "wa_bridge_pillar_simple_6sided"
 
 	model_desc: "/model/pillar/us_bridge_pillar_simple_6sided.pmd"
 	model_coll: "/model/pillar/us_bridge_pillar_simple_6sided.pmc"
@@ -9325,6 +9324,36 @@ sign_model : sign.ov_bd_89 {
 	look_name: default
 	
 	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_90 {
+
+	sign_name: "wa fwy2 overhead board 2eo1"
+
+	model_desc: "/model/sign/navigation/wa_fwy2_ovh_board_2eo1.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy2_ovh_board_2eo1.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.ov_bd_91 {
+
+	sign_name: "wa fw2 1pt1 1ex1 oh"
+
+	model_desc: "/model/sign/navigation/wa_fw2_1pt1_1ex1_oh.pmd"
+	model_coll: "/model/sign/navigation/wa_fw2_1pt1_1ex1_oh.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_2
 	
 	category: "editable board"
 	dynamic: false
@@ -10084,6 +10113,7 @@ sign_model : sign.808 {
 	road_model: true
 }
 sign_model : sign.wa_a13 {
+	sign_name: "logo_port_seattle_universal"
 	model_desc: "/model/sign/company_logos/port_of_seattle/logo_port_seattle_universal.pmd"
 	model_coll: "/model/sign/company_logos/port_of_seattle/logo_port_seattle_universal.pmc"
 
@@ -10092,6 +10122,7 @@ sign_model : sign.wa_a13 {
 	mass: 100.0
 }
 sign_model : sign.wa_a14 {
+	sign_name: "logo_port_tacoma_universal"
 	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_universal.pmd"
 	model_coll: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_universal.pmc"
 	dynamic: true
@@ -10099,9 +10130,11 @@ sign_model : sign.wa_a14 {
 	mass: 100.0
 }
 sign_model : sign.wa_a15 {
+	sign_name: "logo_port_tacoma_plane"
 	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_plane.pmd"
 }
 sign_model : sign.wa_a16 {
+	sign_name: "logo_port_tacoma_side"
 	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_side.pmd"
 	model_coll: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_side.pmc"
 	dynamic: false
@@ -10109,6 +10142,7 @@ sign_model : sign.wa_a16 {
 	mass: 100.0
 }
 sign_model : sign.wa_a17 {
+	sign_name: "sign_port_seattle_side"
 	model_desc: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_side.pmd"
 	model_coll: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_side.pmc"
 	dynamic: false
@@ -10116,6 +10150,7 @@ sign_model : sign.wa_a17 {
 	mass: 100.0
 }
 sign_model : sign.wa_a18 {
+	sign_name: "sign_port_seattle_up"
 	model_desc: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_up.pmd"
 	model_coll: "/model/sign/company_logos/port_of_seattle/sign_port_seattle_up.pmc"
 	dynamic: false
@@ -10123,6 +10158,8 @@ sign_model : sign.wa_a18 {
 	mass: 100.0
 }
 sign_model : sign.wa_a19 {
+
+	sign_name: "logo_port_tacoma_up"
 	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_up.pmd"
 	model_coll: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_up.pmc"
 	dynamic: true
@@ -10130,6 +10167,7 @@ sign_model : sign.wa_a19 {
 	mass: 100.0
 }
 sign_model : sign.wa_a20 {
+	sign_name: "logo_port_tacoma_plane_small"
 	model_desc: "/model/sign/company_logos/port_of_tacoma/logo_port_tacoma_plane_small.pmd"
 }
 
@@ -10586,5 +10624,31 @@ sign_model : sign.811 {
 	editable: false
 	mass: 100.0
 }
+sign_model : sign.ut_1 {
+	model_desc: "/model/sign/ut_ref_post1_orange.pmd"
+	model_coll: "/model/sign/ut_ref_post1_orange.pmc"
+	
+  sign_name: "ut reflection post1 orange"
+	
+  look_name: Default
+  road_model: true
+  instanced: true
+  dynamic: true
+  mass: 50
+}
+sign_model : sign.812 {
+
+	sign_name: "US truck speed limit 60 mph"
+
+	model_desc: "/model/sign/traffic/us_speed_70mph_60mph.pmd"
+	model_coll: "/model/sign/traffic/us_speed_70mph_60mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_70_60
+}
+
 }
 
