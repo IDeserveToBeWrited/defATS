@@ -1122,7 +1122,7 @@ sign_model : sign.230 {
 	look_name: default
 
 	dynamic: true
-	mass: 100
+	mass: 5000
 	instanced: true
 
 
@@ -5806,6 +5806,21 @@ sign_model : sign.sd_bd_33 {
 	dynamic: false
 	editable: true
 }
+sign_model : sign.sd_bd_34 {
+
+	sign_name: "us side board 05-4"
+
+	model_desc: "/model/sign/navigation/us_side_board_05-4.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_05-4.pmc"
+	look_name: default
+	
+	stand_classes[]: side_1
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
 
 sign_model : sign.ov_bd_01 {
 
@@ -7567,6 +7582,21 @@ sign_model : sign.rot_bd_22 {
 	dynamic: true
 	editable: true
 	mass:100
+
+}
+sign_model : sign.rot_bd_23 {
+
+	sign_name: "fwy board shield entrance 1"
+
+	model_desc: "/model/sign/navigation/fwy_shield_entrance1.pmd"
+	model_coll: "/model/sign/navigation/fwy_shield_entrance1.pmc"
+	look_name: default
+	
+	stand_classes[]: side_rot_1
+	
+	category: "editable board"
+	dynamic: true
+	editable: true
 
 }
 
@@ -9360,6 +9390,21 @@ sign_model : sign.ov_bd_91 {
 	editable: true
 
 }
+sign_model : sign.ov_bd_92 {
+
+	sign_name: "us fwy2 overhead board 01-1 04-1"
+
+	model_desc: "/model/sign/navigation/fwy2_ovh_board_01-1_04-1.pmd"
+	model_coll: "/model/sign/navigation/fwy2_ovh_board_01-1_04-1.pmc"
+	look_name: default
+	
+	stand_classes[]: 2fwy_2
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
 
 sign_model : sign.dlc_or_46 {
 
@@ -10294,6 +10339,7 @@ sign_model : sign.wa_ov_bd_03 {
 	look_name: default
 	
 	stand_classes[]: fwy_r 
+	stand_classes[]: 1fwy_l_2
 
 	
 	category: "editable board"
@@ -10462,6 +10508,21 @@ sign_model : sign.wa_ov_bd_18 {
 	look_name: default
 	
 	stand_classes[]: 3fwy_3
+	
+	category: "editable board"
+	dynamic: false
+	editable: true
+
+}
+sign_model : sign.wa_ov_bd_19 {
+
+	sign_name: "wa fwy1 overhead board 04-1 no plague"
+
+	model_desc: "/model/sign/navigation/wa_fwy1_ovh_board_04-1_noplague.pmd"
+	model_coll: "/model/sign/navigation/wa_fwy1_ovh_board_04-1_noplague.pmc"
+	look_name: default
+	
+	stand_classes[]: fwy_r
 	
 	category: "editable board"
 	dynamic: false
@@ -10649,6 +10710,132 @@ sign_model : sign.812 {
 
 	traffic_rule: traffic_rule.limit_70_60
 }
+sign_model : sign.813 {
 
+	sign_name: "us speed limit 30 ahead1"
+
+	model_desc: "/model/sign/traffic/us_speed_limit_30_ahead1.pmd"
+	model_coll: "/model/sign/traffic/us_speed_limit_30_ahead1.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.814 {
+
+	sign_name: "us speed limit 40 ahead1"
+
+	model_desc: "/model/sign/traffic/us_speed_limit_40_ahead1.pmd"
+	model_coll: "/model/sign/traffic/us_speed_limit_40_ahead1.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.815 {
+
+	sign_name: "us speed limit 45 ahead1"
+
+	model_desc: "/model/sign/traffic/us_speed_limit_45_ahead1.pmd"
+	model_coll: "/model/sign/traffic/us_speed_limit_45_ahead1.pmc"
+	look_name: default
+	dynamic: true
+	mass: 100
+
+}
+sign_model : sign.816 {
+
+	sign_name: "US Oregon speed limit 20 mph"
+
+	model_desc: "/model/sign/traffic/us_or_speed_20mph.pmd"
+	model_coll: "/model/sign/traffic/us_or_speed_20mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_20
+}
+sign_model : sign.817 {
+
+	sign_name: "US Oregon speed limit 30 mph"
+
+	model_desc: "/model/sign/traffic/us_or_speed_30mph.pmd"
+	model_coll: "/model/sign/traffic/us_or_speed_30mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_30
+}
+sign_model : sign.818 {
+
+	sign_name: "US Oregon speed limit 40 mph"
+
+	model_desc: "/model/sign/traffic/us_or_speed_40mph.pmd"
+	model_coll: "/model/sign/traffic/us_or_speed_40mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_40
+}
+sign_model : sign.819 {
+
+	sign_name: "US Oregon speed limit 50 mph"
+
+	model_desc: "/model/sign/traffic/us_or_speed_50mph.pmd"
+	model_coll: "/model/sign/traffic/us_or_speed_50mph.pmc"
+	look_name: default
+
+	dynamic: true
+	mass: 100
+
+	traffic_rule: traffic_rule.limit_50
+}
+
+sign_model : sign.820 {
+
+	sign_name: "la_street_lamp0 lod"
+
+	model_desc: "/model/props/lamp/la_street-lamp0_lod.pmd"
+	model_coll: "/model/props/lamp/la_street-lamp0_lod.pmc"
+	look_name: default
+	distance_type: 1
+
+	dynamic: false
+	road_model: true
+	instanced: true
+
+}
+sign_model : sign.821 {
+
+	sign_name: "la_street_lamp1 lod"
+
+	model_desc: "/model/props/lamp/la_street-lamp1_lod.pmd"
+	model_coll: "/model/props/lamp/la_street-lamp1_lod.pmc"
+	look_name: default
+	distance_type: 1
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.822 {
+
+	sign_name: "port lamp lod"
+
+	model_desc: "/model/props/lamp/port_lamp_lod.pmd"
+	look_name: default
+	distance_type: 3
+	#category: "lamps"
+
+	dynamic: false
+	instanced: true
+
+}
 }
 

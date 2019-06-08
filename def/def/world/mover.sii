@@ -18,19 +18,20 @@ mover_model : mover.wind_pp {
 	sound_path[]: "/sound/mover/wind_powerplant.ogg"
 }
 mover_model : mover.towingship {
-	mover_name: "Towing ship"
+	mover_name: "Towing ship far"
 	model_desc: "/model/mover/boat/towing_ship.pmd"
+	tags[]: "bridge_boat"
 }
 mover_model : mover.towingshipn {
-	mover_name: "Towing ship no antena"
+	mover_name: "Towing ship far no antena"
 	model_desc: "/model/mover/boat/towing_ship_no_antena.pmd"
 }
 mover_model : mover.towingshipd {
-	mover_name: "Towing ship D"
+	mover_name: "Towing ship Duck"
 	model_desc: "/model/mover/boat/towing_ship_d.pmd"
 }
 mover_model : mover.boat_proba {
-	mover_name: "Towing ship random presence"
+	mover_name: "Towing ship far random presence"
 	model_desc: "/model/mover/boat/towing_ship.pmd"
 }
 mover_model : mover.barge {
@@ -668,12 +669,32 @@ mover_model : mover.towingship2 {
   lod_dist[0]: 100
   lod_dist[1]: 300
    
-}	
+}
+mover_model : mover.lower {
+	mover_name: "towing ship 2 lower"
+	model_desc: "/model/mover/boat/towing_ship2_lower.pmd"
+	
+  lods[0]: "/model/mover/boat/towing_ship2_lower_lod1.pmd"
+  lods[1]: "/model/mover/boat/towing_ship2_lower_lod2.pmd"
+  
+  lod_dist[0]: 100
+  lod_dist[1]: 300
+   
+}		
 
-#WA
-mover_model : mover.tugboat2 {
-	mover_name: "tugboat2"
-	model_desc: "/model/vehicle/ship/tugboat2.pmd"
+mover_model : mover.ut_pumpjack {
+	mover_name: "pump_jack"
+	model_desc: "/model/mover/machine/pump_jack.pmd"
+	
+	model_anim: "/model/mover/machine/pump_jack.pma"
+	
+	lods[0]: "/model/mover/machine/pump_jack_lod1.pmd"
+	lods[1]: "/model/mover/machine/pump_jack_lod2.pmd"
+	lods[2]: "/model/mover/machine/pump_jack_lod3.pmd"
+
+	lod_dist[0]: 30
+	lod_dist[1]: 90
+	lod_dist[2]: 150
 }
 
 }

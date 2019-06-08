@@ -5810,6 +5810,8 @@ prefab_model : prefab.d_min_plnt {
 	prefab_desc: "/prefab/depots/cement_works/cement_works.ppd"
 	dynamic_lod_desc[]:"/prefab/depots/cement_works/cement_works_lod1.pmd"
 	dynamic_lod_dist[]: 128
+	dynamic_lod_desc[]:"/prefab/depots/cement_works/cement_works_lod2.pmd"
+	dynamic_lod_dist[]: 300
 	allowed_trailer_length: 20
 }
 
@@ -6312,7 +6314,7 @@ prefab_model : prefab.us_387 {
 }
 
 prefab_model : prefab.us_400 {
-  name:"us_cross_2-1-2_city_t_1-1-1_country"
+  name:"us_cross_1-1-1_country_t_2-1-2_city_tmpl"
 	model_desc: "/prefab/cross_temp/us_cross_1-1-1_country_t_2-1-2_city_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_1-1-1_country_t_2-1-2_city_tmpl.ppd"
   
@@ -6718,6 +6720,52 @@ prefab_model : prefab.us_371 {
 	
 }
 
+prefab_model : prefab.us_403 {
+  name:"us_cross_2-1-2_city_t_1-1_exit"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_1-1_exit_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_city_t_1-1_exit_tmpl.ppd"
+
+  dynamic_lod_desc[]: "/prefab/cross_temp/us_cross_2-1-2_city_t_1-1_exit_tmpl_lod1.pmd"
+	dynamic_lod_dist[]: 173
+  
+  corner0[]: shc1l
+  corner0[]: kbc1
+  corner0[]: swc1
+  corner1[]: sh50
+  corner1[]: kb50
+  corner1[]: sw50
+  corner2[]: shc1r
+  corner2[]: kbc1
+  corner2[]: swc1
+  corner3[]: sh489
+
+}
+
+prefab_model : prefab.us_404 {
+  name: "us_change_1-1-1_country_ai2_tmpl"
+	model_desc: "/prefab/fork_temp/us_change_1-1-1_country_ai2_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_change_1-1-1_country_ai2_tmpl.ppd"
+  
+ 
+  corner0[]: sh51
+  corner0[]: sw5
+  corner0[]: kb5
+  corner0[]: kbe5l1 
+  corner0[]: swe5l1
+  corner0[]: sh13l1
+  corner0[]: kb13l
+  corner0[]: sw13l
+  corner1[]: sh51
+  corner1[]: sw5
+  corner1[]: kb5
+  corner1[]: kbe5r1
+  corner1[]: swe5r1
+  corner1[]: sh13l1
+  corner1[]: kb13r
+  corner1[]: sw13r
+
+}
+
 prefab_model : prefab.d_con_svc1 {
 	name: "heavy_machinery_service"
 	model_desc: "/prefab/depots/heavy_machinery_service/wa_heavy_machinery_service.pmd"
@@ -6807,5 +6855,7 @@ prefab_model : prefab.nm_119 {
 	prefab_desc: "/prefab/cross_temp/us_cross_angled_2-1-2_city_x_2-1-2_city_tmpl.ppd"
 
 }
+
+
 
 }  

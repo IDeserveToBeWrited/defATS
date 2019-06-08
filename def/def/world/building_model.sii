@@ -49,7 +49,9 @@ building_model : bld_model.42 {
 building_model : bld_model.54 {
 	railing_model: true
 	follow_curve_dir: true
-	model_desc: "/model/railing/railroad/rail.pmd"
+	model_desc: "/model/railing/railroad/rail.pmd"	
+	lod_desc: "/model/railing/railroad/rail_lod1.pmd"
+	lod_dist: 100	
 }
 
 building_model : bld_model.77 {
@@ -2212,7 +2214,7 @@ building_model : bld_model.or_71 {
 	use_perlin: true
 	model_desc: "/model/barrier/concrete/or_roadblock_yellow.pmd"
 	lod_desc: "/model/barrier/concrete/or_roadblock_yellow_lod1.pmd"
-	lod_dist: 100
+	lod_dist: 40
 
 }
 
@@ -2809,10 +2811,16 @@ building_model : bld_model.or_111 {
 building_model : bld_model.or_114 {
 	model_desc: "/model/vehicle/train/wagons_building_lod.pmd"
 	width: 24
+	
+    lod_desc: "/model/vehicle/train/wagons_building_lod_lod2.pmd"
+    lod_dist: 200
 }
 building_model : bld_model.or_115 {
 	model_desc: "/model/vehicle/train/wagons_tank_building_lod.pmd"
 	width: 19.68
+	
+    lod_desc: "/model/vehicle/train/wagons_tank_building_lod_lod2.pmd"
+    lod_dist: 200
 }
 building_model : bld_model.or_116 {
 	model_desc: "/model/vehicle/parked_cars/parked_cars_building_lod.pmd"
@@ -3167,10 +3175,17 @@ building_model : bld_model.wa_16 {
   lod_desc: "/model/barrier/concrete/us_jersey_barrier2_high_building_lod1.pmd"
 	lod_dist: 100
 }
+
 building_model : bld_model.wa_19 {
 	model_desc: "/model/barrier/concrete/wa_wall_concrete_02.pmd"
 	follow_curve_dir: true
 }
+
+building_model : bld_model.wa_19a {
+	model_desc: "/model/barrier/concrete/wa_wall_concrete_02_low.pmd"
+	follow_curve_dir: true
+}
+
 building_model : bld_model.wa_10 {
 	model_desc: "/model/railing/wa_molo3.pmd"
 	railing_model: true

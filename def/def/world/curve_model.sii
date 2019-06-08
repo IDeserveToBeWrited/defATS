@@ -5,6 +5,11 @@ curve_model : curve.1 {
   name:"wa_vancouver_bridge_railing"
 	model_desc: "/model/panorama/wa_vancouver/wa_vancouver_bridge_railing.pmd"
 	variation[]: "default | center1:1"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	
+	dynamic_lod_desc[]: "/model/panorama/wa_vancouver/wa_vancouver_bridge_railing_lod1.pmd"
+	dynamic_lod_dist[]: 25.0
 
 }
 
@@ -496,7 +501,7 @@ curve_model : curve.35 {
 }
 
 curve_model : curve.36 {
-	name:"pole_wooden_power_line"
+	name:"pole_wooden_power_wire"
 	model_desc: "/model/distribution/electricity/pole_wooden_power_line1.pmd"
 	variation[]: "var1| center1:1"
 	variation[]: "var2| center1:1 | center2:1 | center3:1"
@@ -650,6 +655,9 @@ curve_model : curve.46 {
 	start_part[]: "start1 | start1"
 	start_part[]: "start2 | start2"
 	end_part[]: "end1 | end1"
+	
+	dynamic_lod_desc[]: "/model/barrier/concrete/wa_water_purifier_lod1.pmd"
+    dynamic_lod_dist[]: 100
 	
 }
 
@@ -1084,4 +1092,117 @@ curve_model : curve.75 {
 	end_part[]: "end4"
 
 }
+curve_model : curve.76 {
+  name:"wa_wall_concrete_02_curve"
+	model_desc: "/model/barrier/concrete/wa_wall_concrete_02_curve.pmd"
+	
+	variation[]: "default | center1, center2:0.3 | center3:1 | center4:0.3 | center5:1 | center6, center7:0.3 | center8:1 | center9:1"
+	
+	start_part[]: "start"
+	end_part[]: "end"
+}
+
+curve_model :  curve.77 {
+	name:"terrain_decal_4m"
+	model_desc: "/model/vegetation/decal/terrain_decal_4m.pmd"
+	
+	variation[]: "half_line | center1A:1 | center2A:1 | center3A:1"
+	variation[]: "half_wiggly  | center1A:1 | center2A:1 | center3A:1 | center4A:1 | center5A:1 | center6A:1"
+	
+		
+	variation[]: "full_line | center1B:1 | center2B:1 | center3B:1"
+	variation[]: "full_wiggly | center1B:1 | center2B:1 | center3B:1 | center4B:1 | center5B:1 | center6B:1"
+			
+	start_part[]: "startA" 
+ 	start_part[]: "startA" 
+	
+	start_part[]: "startB" 
+ 	start_part[]: "startB" 
+ 	 		
+	end_part[]: "endA"	
+	end_part[]: "endA"	
+	
+	end_part[]: "endB"	
+	end_part[]: "endB"	
+}
+
+curve_model :  curve.78 {
+	name:"terrain_decal_2m"
+	model_desc: "/model/vegetation/decal/terrain_decal_2m.pmd"
+	
+	variation[]: "half_line | center1A:1 | center2A:1 | center3A:1"
+	variation[]: "half_wiggly  | center1A:1 | center2A:1 | center3A:1 | center4A:1 | center5A:1 | center6A:1"
+	
+		
+	variation[]: "full_line | center1B:1 | center2B:1 | center3B:1"
+	variation[]: "full_wiggly | center1B:1 | center2B:1 | center3B:1 | center4B:1 | center5B:1 | center6B:1"
+			
+	start_part[]: "startA" 
+ 	start_part[]: "startA" 
+	
+	start_part[]: "startB" 
+ 	start_part[]: "startB" 
+ 	 		
+	end_part[]: "endA"	
+	end_part[]: "endA"	
+	
+	end_part[]: "endB"	
+	end_part[]: "endB"	
+}
+
+curve_model :  curve.79 {
+	name:"terrain_decal_1m"
+	model_desc: "/model/vegetation/decal/terrain_decal_1m.pmd"
+	
+	variation[]: "half_line | center1A:1 | center2A:1 | center3A:1"
+	variation[]: "half_wiggly  | center1A:1 | center2A:1 | center3A:1 | center4A:1 | center5A:1 | center6A:1"
+	
+		
+	variation[]: "full_line | center1B:1 | center2B:1 | center3B:1"
+	variation[]: "full_wiggly | center1B:1 | center2B:1 | center3B:1 | center4B:1 | center5B:1 | center6B:1"
+			
+	start_part[]: "startA" 
+ 	start_part[]: "startA" 
+	
+	start_part[]: "startB" 
+ 	start_part[]: "startB" 
+ 	 		
+	end_part[]: "endA"	
+	end_part[]: "endA"	
+	
+	end_part[]: "endB"	
+	end_part[]: "endB"	
+	
+}
+curve_model : curve.ut_10 {
+
+  name:"pole_wooden_lamp_wire"
+  
+	model_desc: "/model/distribution/electricity/pole_wooden_lamp_wire.pmd"
+	
+	variation[]: "random | center1:1 | center2:1 | center3:1 | center4:1"
+	start_part[]: "start1 | start2 | start3" 
+	end_part[]: "end1 | end2 | end3"
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+	
+	variation[]: "no_lamp | center1:1"
+	start_part[]: "start2 | start3" 
+	end_part[]: "end2 | end3"
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+	
+	variation[]: "lamp | center2:1 | center3:1 | center4:1"
+	start_part[]: "start1 | start3" 
+	end_part[]: "end1 | end3"
+
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+	
+	dynamic_lod_desc[]:"/model/distribution/electricity/pole_wooden_lamp_wire_lod1.pmd"
+	dynamic_lod_dist[]: 75
+	
+	fixed_step: 90
+}
+
 }
