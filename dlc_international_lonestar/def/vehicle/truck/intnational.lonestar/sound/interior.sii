@@ -1,0 +1,404 @@
+SiiNunit
+{
+accessory_sound_data : std.intnational.lonestar.isound
+{
+	exterior_sound: false
+
+	start: .start
+	stop: .stop
+	start_no_fuel: .startbad
+
+
+	engine[]: .e0
+	engine[]: .e1
+	engine[]: .e2
+	engine[]: .e3
+	engine[]: .e4
+
+	engine_load[]: .el0
+	engine_load[]: .el1
+	engine_load[]: .el2
+	engine_load[]: .el3
+	
+	engine_nofuel[]: .enf0
+	engine_nofuel[]: .enf1
+	engine_nofuel[]: .enf2
+	
+	engine_exhaust[]: .ee0
+	engine_exhaust[]: .ee1
+	engine_exhaust[]: .ee2
+
+ 	engine_brake[]: .eb0
+	engine_brake[]: .eb1
+	engine_brake[]: .eb2
+
+	turbo: .t
+
+	air_gear[0]: .airgear0
+	air_gear[1]: .airgear1
+	air_gear[2]: .airgear2
+
+	air_brake[0]: .airbrake0
+	air_brake[1]: .airbrake1
+
+	horn: .horn
+	air_horn: .air_horn
+	reverse: .reverse
+
+	blinker_on: .blinker_on
+	blinker_off: .blinker_off
+	wipers_up: .wipers_up
+	wipers_down: .wipers_down
+
+@include "/def/vehicle/truck/common_sound_int.sui"
+
+}
+
+sound_data: .start
+{
+	name: "/sound/truck/international_lonestar/int/start.ogg"
+	looped: false
+}
+
+sound_data: .startbad
+{
+	name: "/sound/truck/international_lonestar/int/start_bad.ogg"
+	looped: false
+}
+
+
+sound_data: .stop
+{
+	name: "/sound/truck/international_lonestar/int/stop.ogg"
+	looped: false
+}
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ unloaded sounds
+
+sound_engine_data: .e0
+{
+	name: "/sound/truck/international_lonestar/int/unloaded_1.ogg"
+	looped: true
+
+	pitch_reference: 600
+
+	min_rpm: 200.0
+	max_rpm: 750.0
+	volume: 0.7
+}
+
+sound_engine_data: .e1
+{
+	name: "/sound/truck/international_lonestar/int/unloaded_2.ogg"
+	looped: true
+
+	pitch_reference: 800
+
+	min_rpm: 620.0
+	max_rpm: 1050
+	volume: 0.72
+}
+
+sound_engine_data: .e2
+{
+	name: "/sound/truck/international_lonestar/int/unloaded_4.ogg"
+
+	looped: true
+
+	pitch_reference: 1050
+
+	min_rpm: 900
+	max_rpm: 1300
+	volume: 0.76
+}
+
+sound_engine_data: .e3
+{
+	name: "/sound/truck/international_lonestar/int/unloaded_5.ogg"
+
+	looped: true
+
+	pitch_reference: 1400
+
+	min_rpm: 1100
+	max_rpm: 1850
+	volume: 0.8
+}
+
+sound_engine_data: .e4
+{
+	name: "/sound/truck/international_lonestar/int/unloaded_7.ogg"
+
+	looped: true
+
+	pitch_reference: 1900
+
+	min_rpm: 1580
+	max_rpm: 2800
+	volume: 0.85
+}
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ loaded sounds
+
+sound_engine_data: .el0
+{
+	name: "/sound/truck/international_lonestar/int/loaded_1.ogg"
+
+	looped: true
+
+	pitch_reference: 630
+
+	min_rpm: 200
+	max_rpm: 880
+	volume: 0.7
+}
+
+sound_engine_data: .el1
+{
+	name: "/sound/truck/international_lonestar/int/loaded_r_01.ogg"
+
+	looped: true
+
+	pitch_reference: 950
+
+	min_rpm: 650
+	max_rpm: 1150
+	volume: 0.75
+}
+
+sound_engine_data: .el2
+{
+	name: "/sound/truck/international_lonestar/int/loaded_r_03.ogg"
+
+	looped: true
+
+	pitch_reference: 1340
+
+	min_rpm: 960
+	max_rpm: 1750
+	volume: 0.8
+}
+
+sound_engine_data: .el3
+{
+	name: "/sound/truck/international_lonestar/int/loaded_r_06.ogg"
+
+	looped: true
+
+	pitch_reference: 2400
+
+	min_rpm: 1300
+	max_rpm: 2800.0
+	volume: 0.85
+}
+
+
+
+#  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ exhaust sounds
+
+sound_engine_data: .ee0
+{
+	name: "/sound/truck/international_lonestar/int/exhaust_1.ogg"
+
+	looped: true
+
+	pitch_reference: 600
+
+	min_rpm: 200.0
+	max_rpm: 830.0
+	volume: 0.8
+}
+
+sound_engine_data: .ee1
+{
+	name: "/sound/truck/international_lonestar/int/exhaust_4.ogg"
+
+	looped: true
+
+	pitch_reference: 960
+
+	min_rpm: 640.0
+	max_rpm: 1650.0
+	volume: 0.85
+}
+
+sound_engine_data: .ee2
+{
+	name: "/sound/truck/international_lonestar/int/exhaust_5.ogg"
+
+	looped: true
+
+	pitch_reference: 1580
+
+	min_rpm: 1300
+	max_rpm: 2800
+	volume: 0.9
+}
+
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ nofuel sounds
+
+
+sound_engine_data: .enf0
+{
+	name: "/sound/truck/international_lonestar/int/nofuel_1.ogg"
+
+	looped: true
+	pitch_reference: 640
+	min_rpm: 200
+	max_rpm: 1050
+	volume: 0.7
+}
+
+sound_engine_data: .enf1
+{
+	name: "/sound/truck/international_lonestar/int/nofuel_3.ogg"
+
+	looped: true
+	pitch_reference: 1360
+	min_rpm: 750
+	max_rpm: 1700
+	volume: 0.75
+}
+
+sound_engine_data: .enf2
+{
+	name: "/sound/truck/international_lonestar/int/nofuel_5.ogg"
+
+	looped: true
+	pitch_reference: 1900
+	min_rpm: 1400
+	max_rpm: 2800
+	volume: 0.8
+}
+
+
+
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ engine brake sounds
+
+sound_engine_data: .eb0
+{
+	name: "/sound/truck/international_lonestar/int/engine_brake_0a.ogg"
+	looped: true	
+	is_2d: true
+	pitch_reference: 600
+	min_rpm: 300
+	max_rpm: 1100
+	volume: 0.7
+}
+
+sound_engine_data: .eb1
+{
+	name: "/sound/truck/international_lonestar/int/engine_brake_1a.ogg"
+	looped: true	
+	is_2d: true
+	pitch_reference: 1050
+	min_rpm: 800
+	max_rpm: 1880
+	volume: 0.75
+}
+sound_engine_data: .eb2
+{
+	name: "/sound/truck/international_lonestar/int/engine_brake_2a.ogg"
+	looped: true	
+	is_2d: true
+	pitch_reference: 1800
+	min_rpm: 1400
+	max_rpm: 2800
+	volume: 0.85
+}
+
+
+# turbo a dalsi zvuky +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+sound_data: .t
+{
+	name: "/sound/truck/international_lonestar/int/turbo_lonestar.ogg"
+	looped: true
+	volume: 0.25
+}
+
+sound_data: .airgear0
+{
+	name: "/sound/truck/international_lonestar/int/int_gear_air_1.ogg"
+	volume: 0.6
+}
+sound_data: .airgear1
+{
+	name: "/sound/truck/international_lonestar/int/int_gear_air_2.ogg"
+	volume: 0.6
+}
+sound_data: .airgear2
+{
+	name: "/sound/truck/international_lonestar/int/int_gear_air_3.ogg"
+	volume: 0.6
+}
+
+sound_data: .airbrake0
+{
+	name: "/sound/truck/international_lonestar/int/air_brake1.ogg"
+	looped: false
+}
+sound_data: .airbrake1
+{
+	name: "/sound/truck/international_lonestar/int/air_brake2.ogg"
+	looped: false
+}
+
+sound_data: .horn
+{
+	name: "/sound/truck/international_lonestar/int/el_horn_02.ogg"
+	looped: true
+}
+
+sound_data: .air_horn
+{
+	name: "/sound/truck/international_lonestar/int/air_horn_loop.ogg"
+	looped: true
+}
+
+sound_data: .reverse
+{
+	name: "/sound/truck/international_lonestar/int/reverse.ogg"
+	looped: true
+}
+
+
+sound_data: .blinker_on
+{
+	name: "/sound/truck/international_lonestar/int/blinker_on.ogg"
+	is_2d: true
+	volume: 0.07
+}
+
+sound_data: .blinker_off
+{
+	name: "/sound/truck/international_lonestar/int/blinker_off.ogg"
+	is_2d: true
+	volume: 0.07
+}
+
+sound_data: .wipers_up
+{
+	name: "/sound/truck/international_lonestar/int/wiper_up.ogg"
+	is_2d: true
+	volume: 0.4
+}
+
+sound_data: .wipers_down
+{
+	name: "/sound/truck/international_lonestar/int/wiper_down.ogg"
+	is_2d: true
+	volume: 0.4
+}
+
+@include "/def/vehicle/truck/common_sound_int_data.sui"
+
+}

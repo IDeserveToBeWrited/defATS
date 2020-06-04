@@ -1,0 +1,37 @@
+SiiNunit
+{
+accessory_trailer_body_data : hopper_50.scs.grainhopper.body
+{
+	name: "@@bs_grain_hopper@@"
+	price: 37000
+	unlock: 13
+	icon: "body/scs_grainhopper/hopper"
+
+	# 50' x 102" x 13'6"
+	# Internal: 49'6" x 99" x 110"
+	# http://www.freightmatchers.com/assets/files/General%20Dry%20Van%20Trailer%20Specifications.pdf
+
+	size: (2.5146, 2.794, 15.24)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 15.0879)	# width, height, length (size of the body + chassis)
+
+	volume: 62.22		# 2197 cft
+	body_type: hopper
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for grainhopper trailer is in chassis, bodies have only deltas to grainhopper mass.
+	# Shorter body variants would have smaller delta.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_grainhopper/body/hopper_50.pmd"
+	collision: "/vehicle/trailer_owned/scs_grainhopper/body/hopper_50.pmc"
+	variant: default
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.grainhopper/accessory/markers/box_50.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.grainhopper/accessory/f_body/paint.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.grainhopper/accessory/rear_body/paint_hopper.sii"
+}
+}

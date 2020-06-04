@@ -1,0 +1,35 @@
+SiiNunit
+{
+accessory_trailer_body_data : bulkfeed_45.scs.bulkfeed.body
+{
+	name: "@@bs_bulk_feed@@"
+	price: 30000
+	unlock: 9
+	icon: "body/scs_bulkfeed/feed"
+
+	# 45' x 102" x 12'2"
+	# Internal: 44'6" x 99" x 92"
+	# https://www.truckpaper.com/listings/trailers/for-sale/19114685/2011-walinga
+
+	size: (2.5146, 2.3368, 13.5636)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 3.7084, 13.716)	# width, height, length (size of the body + chassis)
+
+	volume: 53.2		# 1880 cft
+	body_type: bulkfeed
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for bulkfeed trailer is in chassis, bodies have only deltas to bulkfeed mass.
+	# Shorter body variants should have smaller delta.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_bulkfeed/body/body_feedbulk_45.pmd"
+	collision: "/vehicle/trailer_owned/scs_bulkfeed/body/body_feedbulk_45.pmc"
+	variant: default
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.bulkfeed/accessory/markers/marker_45.sii"
+}
+}

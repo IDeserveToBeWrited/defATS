@@ -1,0 +1,44 @@
+traffic_vehicle : traffic.intnational.lonestar.a
+{
+	accessories[]: .intnational.lonestar.a.chassis
+	accessories[]: .intnational.lonestar.a.fwheel
+	accessories[]: .intnational.lonestar.a.rwheel
+	accessories[]: .intnational.lonestar.a.rwheel2
+//  accessories[]: .intnational.lonestar.a.trlr_cables
+
+	max_speed: 110
+	trailer_chains[]: "semi_trailer"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	engine_torque: 2102
+
+	color[]: (0.009721, 0.046665, 0.174647)
+	color[]: (0.180000, 0.003000, 0.003000)
+	color[]: (0.600000, 0.600000, 0.600000)
+	color[]: (0.003347, 0.003347, 0.003347)
+	color[]: (0.057805, 0.004025, 0.004025)
+	color[]: (0.258183, 0.258183, 0.258183)
+	color[]: (0.527115, 0.266356, 0.038204)
+
+	spawn_ratio: 0.0
+}
+
+
+vehicle_accessory : .intnational.lonestar.a.chassis {
+	data_path: "/def/vehicle/ai/truck/intnational.lonestar/cabin_duty.sii"
+}
+vehicle_wheel_accessory : .intnational.lonestar.a.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .intnational.lonestar.a.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .intnational.lonestar.a.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+// vehicle_addon_accessory : .intnational.lonestar.a.trlr_cables {
+//	data_path: "/def/vehicle/ai/truck/intnational.lonestar/accessory/trlr_cables/stock.sii"
+// }

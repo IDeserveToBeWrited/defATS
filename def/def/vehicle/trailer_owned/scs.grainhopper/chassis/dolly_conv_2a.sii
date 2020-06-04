@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_chassis_data : dolly_conv2a.scs.grainhopper.chassis
+{
+	name: "@@tr_conv_dolly_2@@"
+	price: 3000
+	unlock: 19
+	icon: "chassis/scs_box/dolly_conv_2a"
+
+	model: "/vehicle/trailer_owned/scs_grainhopper/chassis/dolly2.pmd"
+	collision: "/vehicle/trailer_owned/scs_grainhopper/chassis/dolly2.pmc"
+	variant: default
+	look: default
+
+
+	extended_shadow_texture: "/vehicle/trailer_owned/scs_grainhopper/shadow_dolly_2.tobj"
+	extended_shadow_intensity: 1.45
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+
+	ui_shadow: "/vehicle/trailer_owned/scs_grainhopper/chassis/ui_shadow_dolly_double.pmd"
+
+	trailer_mass: 2267.96	# 5000 lbs
+	weight_distribution: trailer
+
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.grainhopper/paint_job/color.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.grainhopper/accessory/r_mudflap/simple_dolly.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.grainhopper/accessory/r_bumper/simple_dolly.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.grainhopper/accessory/trlr_cables/dolly.sii"
+}
+}

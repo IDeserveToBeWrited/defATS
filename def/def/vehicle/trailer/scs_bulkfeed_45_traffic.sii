@@ -1,0 +1,34 @@
+traffic_trailer : traffic.trailer.scs_blkfd45
+{
+	accessories[]: .traffic.trailer.scs_fedblk45.chassis
+	accessories[]: .traffic.trailer.scs_fedblk45.rwheel
+	accessories[]: .traffic.trailer.scs_fedblk45.rwheel2
+	accessories[]: .traffic.trailer.scs_fedblk45.paintjob
+
+	cargo_mass: 16000
+
+	spawn_ratio: 0.0
+
+	company_paint_job: true
+}
+
+vehicle_accessory: .traffic.trailer.scs_fedblk45.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_bulkfeed/ch_45.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_fedblk45.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_fedblk45.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .traffic.trailer.scs_fedblk45.paintjob
+{
+	data_path: "/def/vehicle/trailer/scs_bulkfeed/company_paint_job/default.sii"
+}
