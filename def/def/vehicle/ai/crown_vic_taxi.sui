@@ -1,0 +1,39 @@
+traffic_vehicle : traffic.crown_t
+{
+	accessories[]: .crown_t.chassis
+	accessories[]: .crown_t.fwheel
+	accessories[]: .crown_t.rwheel
+
+	max_speed: 300
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	spawn_ratio: 2
+
+	vehicle_mass: 1850
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .crown_t.chassis
+{
+	data_path: "/def/vehicle/ai/crown_victoria/taxi.sii"
+}
+
+vehicle_wheel_accessory: .crown_t.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_t.sii"
+}
+
+vehicle_wheel_accessory: .crown_t.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_t.sii"
+}

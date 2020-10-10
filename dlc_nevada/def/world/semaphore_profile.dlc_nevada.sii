@@ -6,16 +6,17 @@ SiiNunit
 # some string which is unlikely to conflict with other mod.
 
 
-tr_semaphore_profile : tr_sem_prof.212t111.nv {
+tr_semaphore_profile : tr_sem_prof.212t111.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2-1-2 t 1-1-1"
 
-	model[]: "dbl_sh_nl"
-	model[]: "double_cut"
-	model[]: "single_nl"
-	model[]: "double_sh"
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_cut"
+	model[2]: "single_nl"
+	model[3]: "double_sh"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -24,16 +25,17 @@ tr_semaphore_profile : tr_sem_prof.212t111.nv {
 	model[9]: "left_turn"
 	model[10]: "left_turn"
 	model[11]: "left_turn"
-	model[12]: ""
+	model[12]: "double_cut"
 	model[13]: "light_cut"
-	model[14]: ""
+	model[14]: "light_cut"
 	model[15]: "light_cut"
 	model[16]: "left_side"
 	model[17]: ""
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.212xexl.nv {
+tr_semaphore_profile : tr_sem_prof.212xexl.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -59,18 +61,19 @@ tr_semaphore_profile : tr_sem_prof.212xexl.nv {
 	model[16]: ""
 	model[17]: ""
 	model[18]: "left_column"
-} 
+}
 
-tr_semaphore_profile : tr_sem_prof.212x111.nv {
+tr_semaphore_profile : tr_sem_prof.212x111.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2-1-2 x 1-1-1"
 
-	model[]: "single"
-	model[]: "double_cut"
-	model[]: "double_sh"
-	model[]: "double_cut"
+	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "double_sh"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -88,16 +91,17 @@ tr_semaphore_profile : tr_sem_prof.212x111.nv {
 	model[18]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.212x212.nv {
+tr_semaphore_profile : tr_sem_prof.212x212.nv
+{
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 2-1-2"
 
-	model[]: "double_cut"
-	model[]: "double_cut"
-	model[]: "double_cut"
-	model[]: "double_cut"
+	model[0]: "double_cut"
+	model[1]: "double_cut"
+	model[2]: "double_cut"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -114,7 +118,118 @@ tr_semaphore_profile : tr_sem_prof.212x212.nv {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.2t2.nv {
+tr_semaphore_profile : tr_sem_prof.313x313.nv
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 3-1-3 x 3-1-3"
+
+	model[0]: "triple_cut"
+	model[1]: "triple_cut"
+	model[2]: "triple_cut"
+	model[3]: "triple_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "triple_turn"
+	model[9]: "triple_turn"
+	model[10]: "triple_turn"
+	model[11]: "triple_turn"
+	model[12]: ""
+	model[13]: "triple_cut"
+	model[14]: "triple_cut"
+	model[15]: "triple_cut"
+	model[16]: "left_side"
+	model[17]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.313t313.nv
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 3-1-3 t 3-1-3"
+
+	model[0]: "triple_cut"
+	model[1]: "triple_cut"
+	model[2]: "triple"
+	model[3]: "triple"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "triple_turn"
+	model[9]: "triple_turn"
+	model[10]: "triple_turn"
+	model[11]: "triple_turn"
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side"
+	model[17]: "left_side"
+	model[18]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.313x212.nv
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 3-1-3 x 2-1-2"
+
+	model[0]: "double_cut"
+	model[1]: "triple_cut"
+	model[2]: "double"
+	model[3]: "triple"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "triple_turn"
+	model[10]: "left_turn"
+	model[11]: "triple_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: "left_side"
+	model[17]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.313t111.nv
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 3-1-3 t 1-1-1"
+
+	model[0]: "double_sh"
+	model[1]: "triple_cut"
+	model[2]: "double_cut"
+	model[3]: "triple"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "triple_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "light_cut"
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side"
+	model[17]: "left_side"
+	model[18]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -138,10 +253,11 @@ tr_semaphore_profile : tr_sem_prof.2t2.nv {
 	model[15]: ""
 	model[16]: "left_column"
 	model[17]: "left_side"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1.nv {
+tr_semaphore_profile : tr_sem_prof.2x1.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -167,16 +283,17 @@ tr_semaphore_profile : tr_sem_prof.2x1.nv {
 	model[17]: "column"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_oneway.nv {
+tr_semaphore_profile : tr_sem_prof.2x1_oneway.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
 	name: "us 2x1 oneway"
 
-	model[]: "double_sh"
-	model[]: "double_sh"
-	model[]: "single"
-	model[]: "double_sh"
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "double_sh"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -195,16 +312,17 @@ tr_semaphore_profile : tr_sem_prof.2x1_oneway.nv {
 	model[19]: "left_short"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_oway_trn.nv {
+tr_semaphore_profile : tr_sem_prof.2x1_oway_trn.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2x1 oneway"
 
-	model[]: "double_sh"
-	model[]: "double_sh"
-	model[]: "single"
-	model[]: "dbl_sh_cut"
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "dbl_sh_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -222,7 +340,8 @@ tr_semaphore_profile : tr_sem_prof.2x1_oway_trn.nv {
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x2.nv {
+tr_semaphore_profile : tr_sem_prof.2x2.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -248,7 +367,8 @@ tr_semaphore_profile : tr_sem_prof.2x2.nv {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.111t111.nv {
+tr_semaphore_profile : tr_sem_prof.111t111.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -272,16 +392,17 @@ tr_semaphore_profile : tr_sem_prof.111t111.nv {
 	model[15]: ""
 	model[16]: "left_column"
 	model[17]: "left_side"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left.nv {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "crossroad 1x2 protected left"
 
-	model: 16
+	model: 19
 	model[0]: "single"
 	model[1]: "double_cut"
 	model[2]: "single"
@@ -303,7 +424,8 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left.nv {
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2.nv {
+tr_semaphore_profile : tr_sem_prof.ca_1x2.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -327,12 +449,13 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2.nv {
 	model[15]: ""
 	model[16]: ""
 	model[17]: "left_side"
-	
+
 }
 
 
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_b.nv {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_b.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -358,13 +481,14 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_b.nv {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left4.nv {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left4.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "crossroad 1x2 protected left"
 
-	model: 16
+	model: 19
 	model[0]: "single"
 	model[1]: "double_cut"
 	model[2]: "single"
@@ -386,16 +510,17 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left4.nv {
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.212x111_turn.nv {
+tr_semaphore_profile : tr_sem_prof.212x111_turn.nv
+{
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 1-1-1"
 
-	model[]: "single"
-	model[]: "double_cut"
-	model[]: "dbl_sh_cut"
-	model[]: "double_cut"
+	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -413,7 +538,36 @@ tr_semaphore_profile : tr_sem_prof.212x111_turn.nv {
 	model[18]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x2_turn.nv {
+tr_semaphore_profile : tr_sem_prof.212x111_tur2.nv
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt"
+
+	model[0]: "single"
+	model[1]: "single"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: "left_side"
+	model[17]: "left_side"
+	model[18]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_turn.nv
+{
 
 	inherited: tr_sem_prof.base_left2
 
@@ -437,10 +591,11 @@ tr_semaphore_profile : tr_sem_prof.2x2_turn.nv {
 	model[15]: ""
 	model[16]: "left_side"
 	model[17]: "left_side"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.111t111_turn.nv {
+tr_semaphore_profile : tr_sem_prof.111t111_turn.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -466,10 +621,11 @@ tr_semaphore_profile : tr_sem_prof.111t111_turn.nv {
 	model[17]: "left_side"
 	model[18]: ""
 	model[19]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2t2_turn.nv {
+tr_semaphore_profile : tr_sem_prof.2t2_turn.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -494,10 +650,11 @@ tr_semaphore_profile : tr_sem_prof.2t2_turn.nv {
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t.nv {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t.nv
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -525,7 +682,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t.nv {
 	model[19]: "left_short"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_turn.nv {
+tr_semaphore_profile : tr_sem_prof.2x1_turn.nv
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -551,7 +709,7 @@ tr_semaphore_profile : tr_sem_prof.2x1_turn.nv {
 	model[17]: ""
 	model[18]: ""
 	model[19]: ""
-	
+
 }
 
 }

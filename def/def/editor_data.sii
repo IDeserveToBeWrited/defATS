@@ -2,8 +2,8 @@ SiiNunit
 {
 editor_data : .edit_data {
 
-	autosave_interval: 15 #minutes
-	autosave_notify_interval: 10 #seconds
+	autosave_interval: 10 #minutes
+	autosave_notify_interval: 6 #seconds
 
 	startpos_model: "/model/measure_truck_and_trailer.pmd"
 	startpos_rotate_speed: 2.0
@@ -17,7 +17,6 @@ editor_data : .edit_data {
 	
 	traffic_use_mph: true
 
-	sub_mode_types[]: 15 #animated_model_item"
 	sub_mode_types[]: 39 #bezier patch"
 	sub_mode_types[]: 2  #buildings_item"
 	sub_mode_types[]: 23 #camera_point_item"
@@ -40,6 +39,7 @@ editor_data : .edit_data {
 	sub_mode_types[]: 38 #traffic_area_item"
 	sub_mode_types[]: 41 #trajectory
 	sub_mode_types[]: 34 #trigger_item"
+	sub_mode_types[]: 45 #camera_path_item"
 
 
 	map_import_offset: (-43402, 0, -28089)
@@ -59,32 +59,13 @@ editor_data : .edit_data {
 	bcg_offset_x[]: -1250
 	bcg_offset_y[]: -4050
 
-	bcg_map_name[]: "/map/junctions.mbd"
-	bcg_material[]: "/material/editor/junctions.mat"
-	bcg_size_x[]: 20000
-	bcg_size_y[]: 20800
-	bcg_offset_x[]: 0
-	bcg_offset_y[]: 0
-    
-   	bcg_map_name[]: "/map/texas.mbd"
-	bcg_material[]: "/material/editor/usa.mat"
-	bcg_size_x[]: 270000
-	bcg_size_y[]: 208800
-	bcg_offset_x[]: -1250
-	bcg_offset_y[]: -4050
+# For INTERNAL members: Please for added custom map use "/mod_internal/base/def/editor_data_custom.sii".
+# This one below going to be overriden.
 
-   	bcg_map_name[]: "/map/tests/wa_us12_ondra.mbd"
-	bcg_material[]: "/material/editor/usa.mat"
-	bcg_size_x[]: 270000
-	bcg_size_y[]: 208800
-	bcg_offset_x[]: -1250
-	bcg_offset_y[]: -4050
-    
-    bcg_map_name[]: "/map/idaho.mbd"
-	bcg_material[]: "/material/editor/usa.mat"
-	bcg_size_x[]: 270000
-	bcg_size_y[]: 208800
-	bcg_offset_x[]: -1250
-	bcg_offset_y[]: -4050
+# For MODERS: Custom maps should be added to file below.
+@include "editor_data_custom.sui"
+
+
+}                         
 }
-}
+

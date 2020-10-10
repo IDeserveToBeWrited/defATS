@@ -1,0 +1,367 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+license_plate_data : .lp.car
+{
+	type: car
+
+	# "Scenic IDAHO, FAMOUS POTATOES" default background
+
+	templates[]:"52 000000"
+	templates[]:"54 00000"
+	templates[]:"54 10000"
+	templates[]:"54 11000"
+	templates[]:"54 01000"
+	templates[]:"54 00001"
+	templates[]:"54 00011"
+	templates[]:"53 0000"
+	templates[]:"53 1000"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+
+	def1[]:"A"
+	def1[]:"B"
+	def1[]:"C"
+	def1[]:"D"
+	def1[]:"E"
+	def1[]:"F"
+	def1[]:"G"
+	def1[]:"H"
+	def1[]:"I"
+	def1[]:"J"
+	def1[]:"K"
+	def1[]:"L"
+	def1[]:"M"
+	def1[]:"N"
+	def1[]:"P"
+	def1[]:"Q"
+	def1[]:"R"
+	def1[]:"S"
+	def1[]:"T"
+	def1[]:"U"
+	def1[]:"V"
+	def1[]:"X"
+	def1[]:"Y"
+	def1[]:"Z"
+
+	# County Codes
+
+	def2[]:"E"		# Elmore (Mountain Home)
+	def2[]:"I"		# Idaho (Grangeville)
+	def2[]:"K"		# Kootenai (Coeur d'Alene)
+	def2[]:"N"		# Nez Perce (Lewiston)
+	def2[]:"S"		# Shoshone (Wallace)
+	def2[]:"V"		# Valley (Cascade)
+	def2[]:"W"		# Wallace (Weiser)
+
+	def3[]:"10B"		# Butte (Arco)
+
+	def4[]:"1A"		# Ada (Boise)
+	def4[]:"2A"		# Adams (Council)
+	def4[]:"1B"		# Bannock (Pocatello)
+	def4[]:"2B"		# Bear Lake (Paris)
+	def4[]:"3B"		# Benewah (St. Maries)
+	def4[]:"4B"		# Bingham (Blackfoot)
+	def4[]:"5B"		# Blaine (Hailey)
+	def4[]:"6B"		# Boise (Idaho City)
+	def4[]:"7B"		# Bonner (Sandpoint)
+	def4[]:"8B"		# Bonneville (Idaho Falls)
+	def4[]:"9B"		# Boundary (Bonners Ferry)
+	def4[]:"1C"		# Camas (Fairfield)
+	def4[]:"2C"		# Canyon (Caldwell)
+	def4[]:"3C"		# Caribou (Soda Springs)
+	def4[]:"4C"		# Cassia (Burley)
+	def4[]:"5C"		# Clark (Dubois)
+	def4[]:"6C"		# Clearwater (Orofino)
+	def4[]:"7C"		# Custer (Challis)
+	def4[]:"1F"		# Franklin (Preston)
+	def4[]:"2F"		# Fremont (St. Anthony)
+	def4[]:"1G"		# Gem (Emmett)
+	def4[]:"2G"		# Gooding (Gooding)
+	def4[]:"1J"		# Jefferson (Rigby)
+	def4[]:"2J"		# Jerome (Jerome)
+	def4[]:"1L"		# Latah (Moscow)
+	def4[]:"2L"		# Lemhi (Salmon)
+	def4[]:"3L"		# Lewis (Nez Perce)
+	def4[]:"4L"		# Lincoln (Shoshone)
+	def4[]:"1M"		# Madison (Rexburg)
+	def4[]:"2M"		# Minidoka (Rupert)
+	def4[]:"1O"		# Oneida (Malad City)
+	def4[]:"2O"		# Owyhee (Murphy)
+	def4[]:"1P"		# Payette (Payette)
+	def4[]:"2P"		# Power	(American Falls)
+	def4[]:"1T"		# Teton (Driggs)
+	def4[]:"2T"		# Twin Falls (Twin Falls)
+
+	def5[]:"<color value=FF000000>"
+}
+
+license_plate_data : .lp.truck
+{
+	type: truck
+
+	# Apportioned tractor plate
+	# P/R/P {A}A 1234
+
+	background_front: truck_front
+	background_rear: truck_rear
+
+	templates[]:"5 A1 2000"
+	templates[]:"5 A1 200"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+
+	def1[]:"A"
+	def1[]:"B"
+	def1[]:"C"
+	def1[]:"D"
+	def1[]:"E"
+	def1[]:"F"
+	def1[]:"G"
+	def1[]:"H"
+	def1[]:"J"
+	def1[]:"K"
+
+	def2[]:"1"
+	def2[]:"2"
+	def2[]:"3"
+	def2[]:"4"
+	def2[]:"5"
+	def2[]:"6"
+	def2[]:"7"
+	def2[]:"8"
+	def2[]:"9"
+
+	def5[]:"<color value=FF000000>"
+}
+
+license_plate_data : .lp.trailer
+{
+	type: trailer
+
+	# Idaho North American Permanent Trailer plate (commercial trailers)
+
+	background_rear: trailer
+
+	templates[]:"5  0000T1"
+	templates[]:"5  T10000"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+
+	def1[]:"A"
+	def1[]:"B"
+	def1[]:"C"
+	def1[]:"D"
+	def1[]:"E"
+	def1[]:"F"
+	def1[]:"G"
+	def1[]:"H"
+	def1[]:"I"
+	def1[]:"J"
+	def1[]:"K"
+	def1[]:"L"
+	def1[]:"M"
+	def1[]:"N"
+	def1[]:"P"
+	def1[]:"R"
+	def1[]:"S"
+	def1[]:"T"
+	def1[]:"V"
+	def1[]:"W"
+	def1[]:"X"
+	def1[]:"Y"
+	def1[]:"Z"
+
+	def5[]:"<color value=FF000000>" 
+}
+
+license_plate_data : .lp.truck_city
+{
+	type: truck_city
+
+	# Commercial plate
+	# {K}A 1234
+
+	templates[]:"5 K1 2000"
+	templates[]:"5 K1 200"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+
+	def1[]:"B"
+	def1[]:"C"
+	def1[]:"D"
+	def1[]:"E"
+	def1[]:"F"
+	def1[]:"G"
+	def1[]:"H"
+	def1[]:"J"
+	def1[]:"K"
+	def1[]:"L"
+	def1[]:"M"
+	def1[]:"N"
+	def1[]:"P"
+	def1[]:"R"
+	def1[]:"S"
+	def1[]:"T"
+	def1[]:"U"
+	def1[]:"V"
+	def1[]:"W"
+	def1[]:"X"
+	def1[]:"Y"
+	def1[]:"Z"
+
+	def2[]:"1"
+	def2[]:"2"
+	def2[]:"3"
+	def2[]:"4"
+	def2[]:"5"
+	def2[]:"6"
+	def2[]:"7"
+	def2[]:"8"
+	def2[]:"9"
+
+	def5[]:"<color value=FF000000>"
+}
+
+license_plate_data : .lp.police
+{
+	type: police
+
+	# Idaho State Police
+	# ISP 123
+
+	templates[]:"5ISP 200"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+
+	def2[]:"1"
+	def2[]:"2"
+	def2[]:"3"
+	def2[]:"4"
+	def2[]:"5"
+	def2[]:"6"
+	def2[]:"7"
+	def2[]:"8"
+	def2[]:"9"
+
+	def5[]:"<color value=FF000000>"
+}
+
+license_plate_data : .lp.fire
+{
+	type: fire
+
+	# Firefighter-reserved plate
+	# {F} 1234
+
+	templates[]:"5F 2000"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+
+	def2[]:"1"
+	def2[]:"2"
+	def2[]:"3"
+	def2[]:"4"
+	def2[]:"5"
+	def2[]:"6"
+	def2[]:"7"
+	def2[]:"8"
+	def2[]:"9"
+
+	def5[]:"<color value=FF000000>"
+}
+
+license_plate_data : .lp.medical
+{
+	type: medical
+
+	# Medical-reserved plate
+	# {C} 1234
+
+	templates[]:"5C 2000"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+
+	def2[]:"1"
+	def2[]:"2"
+	def2[]:"3"
+	def2[]:"4"
+	def2[]:"5"
+	def2[]:"6"
+	def2[]:"7"
+	def2[]:"8"
+	def2[]:"9"
+
+	def5[]:"<color value=FF000000>"
+}
+}

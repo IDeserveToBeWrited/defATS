@@ -1,0 +1,57 @@
+traffic_vehicle : traffic.f_150_h
+{
+	accessories[]: .f_150_h.chassis
+	accessories[]: .f_150_h.fwheel
+	accessories[]: .f_150_h.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	allow_parked: false
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: heavy_duty
+
+	trailer_chains[]: "trailer.ai_car.camper"
+	trailer_chains[]: "trailer.ai_car.util_buggy"
+	trailer_chains[]: "trailer.ai_car.util_boat"
+
+	spawn_ratio: 0.1
+
+	vehicle_mass: 3000
+
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.0382, 0.0318, 0.0273) #brown
+	color[]: (0.0544, 0.0886, 0.1274) #blue
+	color[]: (0.5394, 0.5711, 0.5906) #silver
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.2831, 0.0012, 0.0065) #red
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.8713, 0.8631, 0.8227) #white
+
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .f_150_h.chassis
+{
+	data_path: "/def/vehicle/ai/f_150/chassis_hook.sii"
+}
+
+vehicle_wheel_accessory: .f_150_h.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o_3.sii"
+}
+
+vehicle_wheel_accessory: .f_150_h.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o_3.sii"
+}
+

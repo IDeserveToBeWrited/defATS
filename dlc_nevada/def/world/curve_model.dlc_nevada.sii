@@ -1,0 +1,57 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+curve_model : curve.nv_02001
+{
+	model_desc: "/model/panorama/nv_las_vegas/nv_las_vegas_bridge_curve.pmd"
+	name: "nv las vegas bridge curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.nv_1e001
+{
+	model_desc: "/model/lv/nv_lv_wall1.pmd"
+	name: "nv lv wall1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "center | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.nv_1a001
+{
+	model_desc: "/model/lv/nv_lv_wall2.pmd"
+	name: "nv lv wall2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1,center2,center3,center4,center5,center6 : 1.0"
+	start_part[0]: "center6"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+
+}

@@ -1,0 +1,45 @@
+traffic_vehicle : traffic.ws_plant_car
+{
+	accessories[]: .ws_plant_car.chassis
+	accessories[]: .ws_plant_car.fwheel
+	accessories[]: .ws_plant_car.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	vehicle_mass: 3000
+
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.0382, 0.0318, 0.0273) #brown
+	color[]: (0.0544, 0.0886, 0.1274) #blue
+	color[]: (0.5394, 0.5711, 0.5906) #silver
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.2831, 0.0012, 0.0065) #red
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.8713, 0.8631, 0.8227) #white
+
+
+	prefer_variant: true
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .ws_plant_car.chassis
+{
+	data_path: "/def/vehicle/ai/f_150/chassis.sii"
+}
+
+vehicle_wheel_accessory: .ws_plant_car.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_20in_o_3.sii"
+}
+
+vehicle_wheel_accessory: .ws_plant_car.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o_3.sii"
+}

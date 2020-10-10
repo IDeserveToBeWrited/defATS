@@ -1,0 +1,378 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX GENERIC XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.arrow_xt
+{
+	accessories[]: .arrow_xt.chassis
+	accessories[]: .arrow_xt.fwheel
+	accessories[]: .arrow_xt.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/generic1.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX GENERIC 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.arrow_xt.generic2
+{
+	accessories[]: .arrow_xt.generic2.chassis
+	accessories[]: .arrow_xt.generic2.fwheel
+	accessories[]: .arrow_xt.generic2.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.generic2.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/generic2.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.generic2.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.generic2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX NEW MEXICO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.arrow_xt.nm
+{
+	accessories[]: .arrow_xt.nm.chassis
+	accessories[]: .arrow_xt.nm.fwheel
+	accessories[]: .arrow_xt.nm.rwheel
+
+	max_speed: 100
+
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_ratio: 0
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.nm.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/nm.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.nm.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.nm.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX california XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.ca
+{
+	accessories[]: .arrow_xt.ca.chassis
+	accessories[]: .arrow_xt.ca.fwheel
+	accessories[]: .arrow_xt.ca.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_ratio: 0
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.ca.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/ca.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.ca.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.ca.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Idaho - Generic XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.id
+{
+	accessories[]: .arrow_xt.id.chassis
+	accessories[]: .arrow_xt.id.fwheel
+	accessories[]: .arrow_xt.id.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_ratio: 0
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.id.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/id.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+traffic_vehicle : traffic.arrow_xt.city
+{
+	accessories[]: .arrow_xt.city.chassis
+	accessories[]: .arrow_xt.city.fwheel
+	accessories[]: .arrow_xt.city.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	prefer_variant: true
+	variant[]: traffic.arrow_xt.id_cda
+	variant[]: traffic.arrow_xt.id_boi
+	variant[]: traffic.arrow_xt.id_idf
+	variant[]: traffic.arrow_xt.nv_lvg
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.city.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/generic1.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.city.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.city.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Idaho - Cour d Alene XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.id_cda
+{
+	accessories[]: .arrow_xt.id_cda.chassis
+	accessories[]: .arrow_xt.id_cda.fwheel
+	accessories[]: .arrow_xt.id_cda.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_condition[]: .arrow_xt.id_cda.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.id_cda.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/id_cda.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id_cda.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id_cda.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+traffic_spawn_condition: .arrow_xt.id_cda.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "coeur_dalene"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Idaho - Boise XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.id_boi
+{
+	accessories[]: .arrow_xt.id_boi.chassis
+	accessories[]: .arrow_xt.id_boi.fwheel
+	accessories[]: .arrow_xt.id_boi.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_condition[]: .arrow_xt.id_boi.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.id_boi.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/id_boi.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id_boi.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id_boi.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+traffic_spawn_condition: .arrow_xt.id_boi.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "boise"
+}
+
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Idaho - Idaho falls XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.id_idf
+{
+	accessories[]: .arrow_xt.id_idf.chassis
+	accessories[]: .arrow_xt.id_idf.fwheel
+	accessories[]: .arrow_xt.id_idf.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_condition[]: .arrow_xt.id_idf.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.id_idf.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/id_idf.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id_idf.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.id_idf.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+traffic_spawn_condition: .arrow_xt.id_idf.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "idaho_falls"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Nevada - Las Vegas XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.nv_lvg
+{
+	accessories[]: .arrow_xt.nv_lvg.chassis
+	accessories[]: .arrow_xt.nv_lvg.fwheel
+	accessories[]: .arrow_xt.nv_lvg.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_condition[]: .arrow_xt.nv_lvg.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.nv_lvg.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/nv_lvg.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.nv_lvg.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.nv_lvg.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+traffic_spawn_condition: .arrow_xt.nv_lvg.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "las_vegas"
+}

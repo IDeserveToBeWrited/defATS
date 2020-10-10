@@ -1,0 +1,48 @@
+traffic_vehicle : traffic.f_explorer
+{
+	accessories[]: .f_explorer.chassis
+	accessories[]: .f_explorer.fwheel
+	accessories[]: .f_explorer.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	color[]: (0.0685, 0.1248, 0.1812) #BLUE
+	color[]: (0.0284, 0.0467, 0.0723) #Darck BLUE
+	color[]: (0.1195, 0.0006, 0.0129) #PURPLE
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE - white
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+	color[]: (0.0202, 0.0212, 0.0193) #ford transit black
+	
+	vehicle_mass: 2250
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .f_explorer.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/chassis.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o_2.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o_2.sii"
+}
+

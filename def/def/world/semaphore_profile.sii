@@ -5,7 +5,9 @@ SiiNunit
 # base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
 # some string which is unlikely to conflict with other mod.
 
-tr_semaphore_profile : tr_sem_prof.common_base {
+
+tr_semaphore_profile : tr_sem_prof.common_base
+{
 
 	model[]: ""
 
@@ -25,7 +27,7 @@ tr_semaphore_profile : tr_sem_prof.common_base {
 
 	interval[]: (15.0, 2.0, 21.0, 0.0)
 
-	cycle: 16
+	cycle: 20
 	cycle[0]: 0.0
 	cycle[1]: 19.0
 	cycle[2]: 0.0
@@ -48,11 +50,13 @@ tr_semaphore_profile : tr_sem_prof.common_base {
 	cycle[19]: 19.0
 }
 
-tr_semaphore_profile : tr_sem_prof.base_left {
+
+tr_semaphore_profile : tr_sem_prof.base_left
+{
 
 	inherited: tr_sem_prof.common_base
 
-	interval: 13
+	interval: 19
 	interval[0]: (14.0, 4.0, 32.0, 0.0)
 	interval[1]: (14.0, 4.0, 32.0, 0.0)
 	interval[2]: (14.0, 4.0, 32.0, 0.0)
@@ -73,7 +77,7 @@ tr_semaphore_profile : tr_sem_prof.base_left {
 	interval[17]: (14.0, 4.0, 32.0, 0.0)
 	interval[18]: (7.0, 3.0, 40.0, 0.0)
 
-	cycle: 18
+	cycle: 19
 	cycle[0]: 0.0
 	cycle[1]: 20.0
 	cycle[2]: 0.0
@@ -96,11 +100,12 @@ tr_semaphore_profile : tr_sem_prof.base_left {
 
 }
 
-tr_semaphore_profile : tr_sem_prof.base_left2 {
+tr_semaphore_profile : tr_sem_prof.base_left2
+{
 
 	inherited: tr_sem_prof.common_base
 
-	interval: 13
+	interval: 18
 	interval[0]: (14.0, 4.0, 42.0, 0.0)
 	interval[1]: (14.0, 4.0, 42.0, 0.0)
 	interval[2]: (14.0, 4.0, 42.0, 0.0)
@@ -119,8 +124,9 @@ tr_semaphore_profile : tr_sem_prof.base_left2 {
 	interval[15]: (14.0, 4.0, 42.0, 0.0)
 	interval[16]: (7.0, 3.0, 50.0, 0.0)
 	interval[17]: (7.0, 3.0, 50.0, 0.0)
+	interval[18]: (14.0, 4.0, 42.0, 0.0)
 
-	cycle: 16
+	cycle: 18
 	cycle[0]: 0.0
 	cycle[1]: 30.0
 	cycle[2]: 0.0
@@ -139,9 +145,11 @@ tr_semaphore_profile : tr_sem_prof.base_left2 {
 	cycle[15]: 30.0
 	cycle[16]: 11.0
 	cycle[17]: 41.0
+	cycle[18]: 41.0
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x1 {
+tr_semaphore_profile : tr_sem_prof.ca_1x1
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -165,11 +173,12 @@ tr_semaphore_profile : tr_sem_prof.ca_1x1 {
 	model[15]: ""
 	model[16]: "double_sh"
 	model[17]: "double_sh"
-	
+
 }
 
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2 {
+tr_semaphore_profile : tr_sem_prof.ca_1x2
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -179,16 +188,17 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2 {
 	model[1]: "double_sh"
 	model[2]: "single"
 	model[3]: "double"
-	model[]: ""
+	model[4]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "crossroad 1x2 protected left"
 
-	model: 16
+	model: 19
 	model[0]: "single"
 	model[1]: "double_cut"
 	model[2]: "single"
@@ -210,7 +220,8 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left {
 	model[18]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left2 {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left2
+{
 
 	inherited: tr_sem_prof.base_left2
 
@@ -235,7 +246,8 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left2 {
 	model[15]: "light_cut"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2 {
+tr_semaphore_profile : tr_sem_prof.ca_2x2
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -261,7 +273,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2 {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_a {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_a
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -289,7 +302,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_a {
 	model[19]: "left_turn"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -317,7 +331,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t {
 	model[19]: "left_short"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_b {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_b
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -344,7 +359,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_b {
 }
 
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_ow {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_ow
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -357,7 +373,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_ow {
 	model[]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_left {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_left
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -382,7 +399,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_left {
 	model[15]: "light_cut"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_left2 {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_left2
+{
 
 	inherited: tr_sem_prof.base_left2
 
@@ -407,7 +425,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_left2 {
 	model[15]: "light_cut"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_left3 {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_left3
+{
 
 	inherited: tr_sem_prof.base_left2
 
@@ -432,13 +451,14 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_left3 {
 	model[15]: "left_turn"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_lefts {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_lefts
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "crossroad 1x2 protected left santa fe"
 
-	model: 16
+	model: 18
 	model[0]: "single"
 	model[1]: "double_cut"
 	model[2]: "single_mir"
@@ -459,7 +479,8 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_lefts {
 	model[17]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left3 {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left3
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -484,13 +505,14 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left3 {
 	model[15]: "light_cut"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left4 {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left4
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "crossroad 1x2 protected left"
 
-	model: 16
+	model: 19
 	model[0]: "single"
 	model[1]: "double_cut"
 	model[2]: "single"
@@ -512,7 +534,8 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left4 {
 	model[18]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.temporary {
+tr_semaphore_profile : tr_sem_prof.temporary
+{
 
 	name: "roadwork traffic light"
 
@@ -529,7 +552,8 @@ tr_semaphore_profile : tr_sem_prof.temporary {
 	cycle[1]: 25.0
 }
 
-tr_semaphore_profile : tr_sem_prof.check {
+tr_semaphore_profile : tr_sem_prof.check
+{
 
 	name: "check traffic light"
 
@@ -546,7 +570,8 @@ tr_semaphore_profile : tr_sem_prof.check {
 	cycle[1]: 25.0
 }
 
-tr_semaphore_profile : tr_sem_prof.ab_toll {
+tr_semaphore_profile : tr_sem_prof.ab_toll
+{
 
 	name: "tollgate"
 
@@ -558,7 +583,8 @@ tr_semaphore_profile : tr_sem_prof.ab_toll {
 	cycle[]: 0.0
 }
 
-tr_semaphore_profile : tr_sem_prof.gas {
+tr_semaphore_profile : tr_sem_prof.gas
+{
 
 	name: "gas station - short interval (small vehicles)"
 
@@ -569,7 +595,8 @@ tr_semaphore_profile : tr_sem_prof.gas {
 	type[]: barrier_gas
 }
 
-tr_semaphore_profile : tr_sem_prof.gas_long {
+tr_semaphore_profile : tr_sem_prof.gas_long
+{
 
 	name: "gas station - long interval (large vehicles)"
 
@@ -580,7 +607,8 @@ tr_semaphore_profile : tr_sem_prof.gas_long {
 	type[]: barrier_gas
 }
 
-tr_semaphore_profile : tr_sem_prof.weight {
+tr_semaphore_profile : tr_sem_prof.weight
+{
 
 	name: "weight station"
 
@@ -592,7 +620,8 @@ tr_semaphore_profile : tr_sem_prof.weight {
 	cycle[]: 0.0
 }
 
-tr_semaphore_profile : tr_sem_prof.crossing {
+tr_semaphore_profile : tr_sem_prof.crossing
+{
 
 	name: "road crossing - country"
 
@@ -611,7 +640,7 @@ tr_semaphore_profile : tr_sem_prof.crossing {
 	type[]: barrier_distance
 	type[]: model_only
 
-	id_map: 9
+	id_map: 11
 	id_map[0]: 0
 	id_map[1]: 0
 	id_map[2]: 0
@@ -642,12 +671,13 @@ tr_semaphore_profile : tr_sem_prof.crossing {
 	# 2-road x 2-rail
 	model[7]: "cr2_r_2ln"
 	model[8]: "cr2_l_2ln"
-	
+
 	model[9]: ""
 	model[10]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.crossing_c {
+tr_semaphore_profile : tr_sem_prof.crossing_c
+{
 
 	name: "road crossing - city"
 
@@ -667,20 +697,21 @@ tr_semaphore_profile : tr_sem_prof.crossing_c {
 	model[5]: "rail_level_c"
 	model[6]: ""
 
-	# 2-road 
+	# 2-road
 	model[7]: "rail_level_c"
 	model[8]: ""
 
 	# 1-rail lights
 	model[9]: "rl_light1_c"
 
-	
+
 	# 2-rail lights
 	model[10]: "rl_light2_c"
 }
 
-tr_semaphore_profile : tr_sem_prof.crossing_co {
-	
+tr_semaphore_profile : tr_sem_prof.crossing_co
+{
+
 	name: "road crossing - city (offset)"
 
 	inherited: tr_sem_prof.crossing_c
@@ -690,8 +721,9 @@ tr_semaphore_profile : tr_sem_prof.crossing_co {
 	id_offset: 20
 }
 
-tr_semaphore_profile : tr_sem_prof.crossing_o {
-	
+tr_semaphore_profile : tr_sem_prof.crossing_o
+{
+
 	name: "road crossing - country (offset)"
 
 	inherited: tr_sem_prof.crossing
@@ -701,8 +733,9 @@ tr_semaphore_profile : tr_sem_prof.crossing_o {
 	id_offset: 20
 }
 
-tr_semaphore_profile : tr_sem_prof.cross_tram {
-	
+tr_semaphore_profile : tr_sem_prof.cross_tram
+{
+
 	name: "road crossing - tram"
 
 	inherited: tr_sem_prof.crossing
@@ -717,7 +750,8 @@ tr_semaphore_profile : tr_sem_prof.cross_tram {
 	interval[]: (15.0, 100.0, 80.0, 10.0)
 }
 
-tr_semaphore_profile : tr_sem_prof.train {
+tr_semaphore_profile : tr_sem_prof.train
+{
 
 	name: "train stop"
 
@@ -732,17 +766,18 @@ tr_semaphore_profile : tr_sem_prof.train {
 
 
 
-tr_semaphore_profile : tr_sem_prof.or_draw_br {
+tr_semaphore_profile : tr_sem_prof.or_draw_br
+{
 
 	name: "or_draw_bridge"
 
-	
+
 	interval[0]: (150.0, 165.0, 160.0, 10.0)     # Mover speed: 3.0
 	interval[1]: (150.0, 190.0, 175.0, 150.0)    # Mover speed: 3.0
 
 	type[0]: barrier_distance
 	type[1]: barrier_distance
-	type[]: model_only
+	type[2]: model_only
 
 	id_map: 7
 	id_map[0]: 0
@@ -758,25 +793,41 @@ tr_semaphore_profile : tr_sem_prof.or_draw_br {
 
 	model[0]: ""
 	model[1]: ""
-	
+
 
 	model[2]: "or_draw_br"
- 
+
 	model[3]: "or_bridge_lv"
-	
+
 	model[4]: "or_bridge_lv"
 
 	model[5]: "single_light"
-	
+
 	model[6]: "single_light"
 
-	
+
 
 }
 
 ############## NEW overwrite profiles ##############
 
-tr_semaphore_profile : tr_sem_prof.1x1 {
+
+tr_semaphore_profile : tr_sem_prof.column_only
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us column only"
+
+	model[]: "column"
+	model[]: "column"
+	model[]: "column"
+	model[]: "column"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.1x1
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -791,7 +842,8 @@ tr_semaphore_profile : tr_sem_prof.1x1 {
 }
 
 
-tr_semaphore_profile : tr_sem_prof.1x1_park {
+tr_semaphore_profile : tr_sem_prof.1x1_park
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -802,14 +854,15 @@ tr_semaphore_profile : tr_sem_prof.1x1_park {
 	model[]: "single"
 	model[]: "single"
 	model[]: ""
-  
-  model_offset[]: (1, 0, 0)
-  model_offset[]: (1, 0, 0)
-  model_offset[]: (1, 0, 0)
-  model_offset[]: (1, 0, 0)
+
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
 }
 
-tr_semaphore_profile : tr_sem_prof.1x1_center_w {
+tr_semaphore_profile : tr_sem_prof.1x1_center_w
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -820,15 +873,16 @@ tr_semaphore_profile : tr_sem_prof.1x1_center_w {
 	model[]: "single_pnd"
 	model[]: "single_pnd"
 	model[]: ""
-  
-  model_offset[]: (4, 0, 3)
-  model_offset[]: (4, 0, 3)
-  model_offset[]: (4, 0, 3)
-  model_offset[]: (4, 0, 3)
-  
+
+	model_offset[]: (4, 0, 3)
+	model_offset[]: (4, 0, 3)
+	model_offset[]: (4, 0, 3)
+	model_offset[]: (4, 0, 3)
+
 }
 
-tr_semaphore_profile : tr_sem_prof.1x1_nl {
+tr_semaphore_profile : tr_sem_prof.1x1_nl
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -840,10 +894,11 @@ tr_semaphore_profile : tr_sem_prof.1x1_nl {
 	model[]: "single_nl"
 	model[]: ""
 
-  
+
 }
 
-tr_semaphore_profile : tr_sem_prof.1t1 {
+tr_semaphore_profile : tr_sem_prof.1t1
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -857,7 +912,8 @@ tr_semaphore_profile : tr_sem_prof.1t1 {
 
 }
 
-tr_semaphore_profile : tr_sem_prof.1t1_park {
+tr_semaphore_profile : tr_sem_prof.1t1_park
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -868,14 +924,15 @@ tr_semaphore_profile : tr_sem_prof.1t1_park {
 	model[]: "single"
 	model[]: "single_nl"
 	model[]: ""
-  
-  model_offset[]: (0, 0, 0)
-  model_offset[]: (0, 0, 0)
-  model_offset[]: (1, 0, 0)
-  model_offset[]: (0, 0, 0)
+
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (0, 0, 0)
 }
 
-tr_semaphore_profile : tr_sem_prof.1t1_nl {
+tr_semaphore_profile : tr_sem_prof.1t1_nl
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -884,17 +941,18 @@ tr_semaphore_profile : tr_sem_prof.1t1_nl {
 	model[]: "single_nl"
 	model[]: "single_nl"
 	model[]: "single_nl"
-	model[]: "single_nl"  
+	model[]: "single_nl"
 	model[]: ""
-  
-  model_offset[]: (0, 0, 0)
-  model_offset[]: (0, 0, 0)
-  model_offset[]: (0, 0, 0)
-  model_offset[]: (4, 0, 0)
+
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (4, 0, 0)
 
 }
 
-tr_semaphore_profile : tr_sem_prof.2x2 {
+tr_semaphore_profile : tr_sem_prof.2x2
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -906,10 +964,11 @@ tr_semaphore_profile : tr_sem_prof.2x2 {
 	model[3]: "double_sh"
 	model[4]: ""
 
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2x2_turn {
+tr_semaphore_profile : tr_sem_prof.2x2_turn
+{
 
 	inherited: tr_sem_prof.base_left2
 
@@ -933,10 +992,11 @@ tr_semaphore_profile : tr_sem_prof.2x2_turn {
 	model[15]: ""
 	model[16]: ""
 	model[17]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2x2_nl {
+tr_semaphore_profile : tr_sem_prof.2x2_nl
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -949,7 +1009,8 @@ tr_semaphore_profile : tr_sem_prof.2x2_nl {
 	model[]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2t2 {
+tr_semaphore_profile : tr_sem_prof.2t2
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -968,7 +1029,8 @@ tr_semaphore_profile : tr_sem_prof.2t2 {
 	model[10]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2t2_turn {
+tr_semaphore_profile : tr_sem_prof.2t2_turn
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -993,10 +1055,11 @@ tr_semaphore_profile : tr_sem_prof.2t2_turn {
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.111t111 {
+tr_semaphore_profile : tr_sem_prof.111t111
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1007,10 +1070,11 @@ tr_semaphore_profile : tr_sem_prof.111t111 {
 	model[2]: "single"
 	model[3]: "dbl_sh_nl"
 	model[4]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.111t111_turn {
+tr_semaphore_profile : tr_sem_prof.111t111_turn
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1036,10 +1100,41 @@ tr_semaphore_profile : tr_sem_prof.111t111_turn {
 	model[17]: ""
 	model[18]: ""
 	model[19]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2t2_nl {
+tr_semaphore_profile : tr_sem_prof.111x111
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 111x111"
+
+	model[0]: "double_cut"
+	model[1]: "double_cut"
+	model[2]: "single"
+	model[3]: "single"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "light_cut"
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_nl
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1052,7 +1147,8 @@ tr_semaphore_profile : tr_sem_prof.2t2_nl {
 	model[]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1 {
+tr_semaphore_profile : tr_sem_prof.2x1
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1065,7 +1161,8 @@ tr_semaphore_profile : tr_sem_prof.2x1 {
 	model[]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_turn {
+tr_semaphore_profile : tr_sem_prof.2x1_turn
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1091,10 +1188,11 @@ tr_semaphore_profile : tr_sem_prof.2x1_turn {
 	model[17]: ""
 	model[18]: ""
 	model[19]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_oneway {
+tr_semaphore_profile : tr_sem_prof.2x1_oneway
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1107,16 +1205,17 @@ tr_semaphore_profile : tr_sem_prof.2x1_oneway {
 	model[]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_oway_trn {
+tr_semaphore_profile : tr_sem_prof.2x1_oway_trn
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2x1 oneway"
 
-	model[]: "double_sh"
-	model[]: "double_sh"
-	model[]: "single"
-	model[]: "dbl_sh_cut"
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "dbl_sh_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1134,7 +1233,8 @@ tr_semaphore_profile : tr_sem_prof.2x1_oway_trn {
 	model[18]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_nl {
+tr_semaphore_profile : tr_sem_prof.2x1_nl
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1147,7 +1247,8 @@ tr_semaphore_profile : tr_sem_prof.2x1_nl {
 	model[]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2t1 {
+tr_semaphore_profile : tr_sem_prof.2t1
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1170,9 +1271,10 @@ tr_semaphore_profile : tr_sem_prof.2t1 {
 	model[14]: ""
 	model[15]: ""
 	model[16]: "singl_mir_np"
-}    
+}
 
-tr_semaphore_profile : tr_sem_prof.2t1_nl {
+tr_semaphore_profile : tr_sem_prof.2t1_nl
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1183,16 +1285,17 @@ tr_semaphore_profile : tr_sem_prof.2t1_nl {
 	model[]: "dbl_sh_nl"
 	model[]: "dbl_sh_nl"
 	model[]: ""
-  
-  model_offset[]: (4, 0, 0)
-  model_offset[]: (0, 0, 0)
-  model_offset[]: (0, 0, 0)
-  model_offset[]: (0, 0, 0)
+
+	model_offset[]: (4, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
 
 }
 
 
-tr_semaphore_profile : tr_sem_prof.212x111 {
+tr_semaphore_profile : tr_sem_prof.212x111
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1219,16 +1322,17 @@ tr_semaphore_profile : tr_sem_prof.212x111 {
 	model[18]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.212x111_turn {
+tr_semaphore_profile : tr_sem_prof.212x111_turn
+{
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 1-1-1"
 
-	model[]: "single"
-	model[]: "double_cut"
-	model[]: "dbl_sh_cut"
-	model[]: "double_cut"
+	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1246,21 +1350,22 @@ tr_semaphore_profile : tr_sem_prof.212x111_turn {
 	model[18]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.212t111 {
+tr_semaphore_profile : tr_sem_prof.212x111_tur2
+{
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left2
 
-	name: "us 2-1-2 t 1-1-1"
+	name: "us 2-1-2 x 1-1-1 alt"
 
-	model[]: "dbl_sh_nl"
-	model[]: "double_cut"
-	model[]: "single_nl"
-	model[]: "double_sh"
+	model[0]: "single"
+	model[1]: "single"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
 	model[7]: ""
-	model[8]: "left_turn"
+	model[8]: "left_short"
 	model[9]: "left_turn"
 	model[10]: "left_turn"
 	model[11]: "left_turn"
@@ -1273,16 +1378,128 @@ tr_semaphore_profile : tr_sem_prof.212t111 {
 	model[18]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.212x212 {
+tr_semaphore_profile : tr_sem_prof.212t111
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t 1-1-1"
+
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_cut"
+	model[2]: "single_nl"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "double_cut"
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111ow
+{
+
+	name: "us 2-1-2 t 1-1-1 one way"
+	
+	type: 12
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light_virtual
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light
+	type[9]: traffic_light
+	type[10]: traffic_light
+	type[11]: traffic_light
+
+	interval[0]: (15.0, 2.0, 14.0, 0.0)
+	interval[1]: (31.0, 0.0, 0.0, 0.0)
+	interval[2]: (15.0, 2.0, 14.0, 0.0)
+	interval[3]: (15.0, 2.0, 14.0, 0.0)
+	interval[4]: (15.0, 2.0, 14.0, 0.0)
+	interval[5]: (15.0, 2.0, 14.0, 0.0)
+	interval[6]: (15.0, 2.0, 14.0, 0.0)
+	interval[7]: (15.0, 2.0, 14.0, 0.0)
+	interval[8]: (8.0, 2.0, 21.0, 0.0)
+	interval[9]: (8.0, 2.0, 21.0, 0.0)
+
+	cycle: 20
+	cycle[0]: 0.0
+	cycle[1]: 19.0
+	cycle[2]: 0.0
+	cycle[3]: 19.0
+	cycle[4]: 0.0
+	cycle[5]: 19.0
+	cycle[6]: 0.0
+	cycle[7]: 19.0
+	cycle[8]: 0.0
+	cycle[9]: 19.0
+	
+
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_cut"
+	model[2]: "single_nl"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212
+{
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 2-1-2"
 
-	model[]: "double_cut"
-	model[]: "double_cut"
-	model[]: "double_cut"
-	model[]: "double_cut"
+	model[0]: "double_cut"
+	model[1]: "double_cut"
+	model[2]: "double_cut"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t212
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t 2-1-2"
+
+	model[0]: "dbl_sh_nl"
+	model[1]: "dbl_cut"
+	model[2]: "dbl_sh_nl"
+	model[3]: "double_sh"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1295,20 +1512,46 @@ tr_semaphore_profile : tr_sem_prof.212x212 {
 	model[13]: "light_cut"
 	model[14]: ""
 	model[15]: "light_cut"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212o
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2 over"
+
+	model[0]: "single_light"
+	model[1]: "single_light"
+	model[2]: "single_light"
+	model[3]: "single_light"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_left"
+	model[9]: "single_left"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
 	model[16]: ""
 	model[17]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.212t212 {
+tr_semaphore_profile : tr_sem_prof.212t212o
+{
 
 	inherited: tr_sem_prof.base_left
 
-	name: "us 2-1-2 t 2-1-2"
+	name: "us 2-1-2 t 2-1-2 over"
 
-	model[]: "dbl_sh_nl"
-	model[]: "dbl_cut"
-	model[]: "dbl_sh_nl"
-	model[]: "double_sh"
+	model[0]: "single_light"
+	model[1]: "single_light"
+	model[2]: "single_light"
+	model[3]: "single_light"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1318,12 +1561,12 @@ tr_semaphore_profile : tr_sem_prof.212t212 {
 	model[10]: "left_turn"
 	model[11]: "left_turn"
 	model[12]: ""
-	model[13]: "light_cut"   
+	model[13]: "light_cut"
 	model[14]: ""
 	model[15]: "light_cut"
 }
-
-tr_semaphore_profile : tr_sem_prof.212xexl {
+tr_semaphore_profile : tr_sem_prof.212xexl
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1349,9 +1592,10 @@ tr_semaphore_profile : tr_sem_prof.212xexl {
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
-}  
+}
 
-tr_semaphore_profile : tr_sem_prof.212texl {
+tr_semaphore_profile : tr_sem_prof.212texl
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1374,11 +1618,12 @@ tr_semaphore_profile : tr_sem_prof.212texl {
 	model[13]: "light_cut"
 	model[14]: ""
 	model[15]: "light_cut"
-}  
+}
 
 
 
-tr_semaphore_profile : tr_sem_prof.212_x_ex {
+tr_semaphore_profile : tr_sem_prof.212_x_ex
+{
 
 	inherited: tr_sem_prof.base_left2
 
@@ -1397,28 +1642,189 @@ tr_semaphore_profile : tr_sem_prof.212_x_ex {
 	model[9]: "single_left"
 }
 
-tr_semaphore_profile : tr_sem_prof.testicular {
+
+tr_semaphore_profile : tr_sem_prof.212x212x2
+{
+
+	model: 15
+	model[0]: "double_sh"
+	model[1]: "dbl_sh_o_mnp"
+	model[2]: "double_cut"
+	model[3]: "double_sh"
+	model[4]: "double_cut"
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: "double_sh"
+	model[11]: ""
+	model[12]: "left_turn"
+	model[13]: "left_turn"
+	model[14]: "left_turn"
+
+	type: 15
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light_virtual
+	type[9]: traffic_light_virtual
+	type[10]: traffic_light
+	type[11]: traffic_light
+	type[12]: traffic_light
+	type[13]: traffic_light
+	type[14]: traffic_light
+
+
+	interval: 15
+	interval[0]: (15.0, 2.0, 60, 0.0)
+	interval[1]: (15.0, 2.0, 60, 0.0)
+	interval[2]: (15.0, 2.0, 60, 0.0)
+	interval[3]: (15.0, 2.0, 60, 0.0)
+	interval[4]: (15.0, 2.0, 60, 0.0)
+	interval[5]: (15.0, 2.0, 60, 0.0)
+	interval[6]: (15.0, 2.0, 60, 0.0)
+	interval[7]: (15.0, 2.0, 60, 0.0)
+	interval[8]: (15.0, 2.0, 60, 0.0)
+	interval[9]: (15.0, 2.0, 60, 0.0)
+	interval[10]: (36.0, 2.0, 39, 0.0)
+	interval[11]: (15.0, 2.0, 60, 0.0)
+	interval[12]: (15.0, 2.0, 60, 0.0)
+	interval[13]: (15.0, 2.0, 60, 0.0)
+	interval[14]: (15.0, 2.0, 60, 0.0)
+
+	cycle: 15
+	cycle[0]: 0.0
+	cycle[1]: 57.0
+	cycle[2]: 19.0
+	cycle[3]: 0.0
+	cycle[4]: 19.0
+	cycle[5]: 0.0
+	cycle[6]: 19.0
+	cycle[7]: 57.0
+	cycle[8]: 0.0
+	cycle[9]: 57.0
+	cycle[10]: 0.0
+	cycle[11]: 19.0
+	cycle[12]: 38.0
+	cycle[13]: 0.0
+	cycle[14]: 38.0
+
+}
+
+tr_semaphore_profile : tr_sem_prof.313x313
+{
 
 	inherited: tr_sem_prof.base_left2
 
-	name: "testicularitida"
+	name: "us 3-1-3 x 3-1-3"
 
-	model: 15
-	model[0]: "double"
-	model[1]: "double_cut"
-	model[2]: "dbl_cut_nl"
-	model[3]: "double_sh"
-	model[4]: "dbl_sh_nl"
-	model[5]: "single"
-	model[6]: "single_nl"
-	model[7]: "light_cut"
+	model[0]: "triple_cut"
+	model[1]: "triple_cut"
+	model[2]: "triple_cut"
+	model[3]: "triple_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "triple_turn"
+	model[9]: "triple_turn"
+	model[10]: "triple_turn"
+	model[11]: "triple_turn"
+	model[12]: ""
+	model[13]: "triple_cut"
+	model[14]: "triple_cut"
+	model[15]: "triple_cut"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.313t313
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 3-1-3 t 3-1-3"
+
+	model[0]: "triple_cut"
+	model[1]: "triple_cut"
+	model[2]: "triple"
+	model[3]: "triple"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "triple_turn"
+	model[9]: "triple_turn"
+	model[10]: "triple_turn"
+	model[11]: "triple_turn"
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.313x212
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 3-1-3 x 2-1-2"
+
+	model[0]: "double_cut"
+	model[1]: "triple_cut"
+	model[2]: "double"
+	model[3]: "triple"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
 	model[8]: "left_turn"
-	model[9]: "single_mir"
-	model[10]: "single_left"
-	model[11]: "single_light"
-	model[12]: "column"
-	model[13]: "left_column"
-	model[14]: "dbl_sh_o_m"
+	model[9]: "triple_turn"
+	model[10]: "left_turn"
+	model[11]: "triple_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.313t111
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 3-1-3 t 1-1-1"
+
+	model[0]: "double_sh"
+	model[1]: "triple_cut"
+	model[2]: "double_cut"
+	model[3]: "triple_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "triple_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "light_cut"
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
 }
 
 
@@ -1426,16 +1832,17 @@ tr_semaphore_profile : tr_sem_prof.testicular {
 ###California###
 ################
 
-tr_semaphore_profile : tr_sem_prof.212t111.ca {
+tr_semaphore_profile : tr_sem_prof.212t111.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2-1-2 t 1-1-1"
 
-	model[]: "dbl_sh_nl"
-	model[]: "double_cut"
-	model[]: "single_nl"
-	model[]: "double_sh"
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_cut"
+	model[2]: "single_nl"
+	model[3]: "double_sh"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1444,16 +1851,17 @@ tr_semaphore_profile : tr_sem_prof.212t111.ca {
 	model[9]: "left_turn"
 	model[10]: "left_turn"
 	model[11]: "left_turn"
-	model[12]: ""
+	model[12]: "double_cut"
 	model[13]: "light_cut"
-	model[14]: ""
+	model[14]: "light_cut"
 	model[15]: "light_cut"
 	model[16]: "left_side"
 	model[17]: ""
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.212xexl.ca {
+tr_semaphore_profile : tr_sem_prof.212xexl.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1479,18 +1887,19 @@ tr_semaphore_profile : tr_sem_prof.212xexl.ca {
 	model[16]: ""
 	model[17]: ""
 	model[18]: "left_column"
-} 
+}
 
-tr_semaphore_profile : tr_sem_prof.212x111.ca {
+tr_semaphore_profile : tr_sem_prof.212x111.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2-1-2 x 1-1-1"
 
-	model[]: "single"
-	model[]: "double_cut"
-	model[]: "double_sh"
-	model[]: "double_cut"
+	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "double_sh"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1508,16 +1917,17 @@ tr_semaphore_profile : tr_sem_prof.212x111.ca {
 	model[18]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.212x212.ca {
+tr_semaphore_profile : tr_sem_prof.212x212.ca
+{
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 2-1-2"
 
-	model[]: "double_cut"
-	model[]: "double_cut"
-	model[]: "double_cut"
-	model[]: "double_cut"
+	model[0]: "double_cut"
+	model[1]: "double_cut"
+	model[2]: "double_cut"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1534,7 +1944,8 @@ tr_semaphore_profile : tr_sem_prof.212x212.ca {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.2t2.ca {
+tr_semaphore_profile : tr_sem_prof.2t2.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1558,10 +1969,11 @@ tr_semaphore_profile : tr_sem_prof.2t2.ca {
 	model[15]: ""
 	model[16]: "left_column"
 	model[17]: "left_side"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1.ca {
+tr_semaphore_profile : tr_sem_prof.2x1.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1587,16 +1999,17 @@ tr_semaphore_profile : tr_sem_prof.2x1.ca {
 	model[17]: "column"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_oneway.ca {
+tr_semaphore_profile : tr_sem_prof.2x1_oneway.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2x1 oneway"
 
-	model[]: "double_sh"
-	model[]: "double_sh"
-	model[]: "single"
-	model[]: "double_sh"
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "double_sh"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1607,16 +2020,17 @@ tr_semaphore_profile : tr_sem_prof.2x1_oneway.ca {
 	model[11]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_oway_trn.ca {
+tr_semaphore_profile : tr_sem_prof.2x1_oway_trn.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2x1 oneway"
 
-	model[]: "double_sh"
-	model[]: "double_sh"
-	model[]: "single"
-	model[]: "dbl_sh_cut"
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "dbl_sh_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1634,7 +2048,8 @@ tr_semaphore_profile : tr_sem_prof.2x1_oway_trn.ca {
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x2.ca {
+tr_semaphore_profile : tr_sem_prof.2x2.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1660,7 +2075,8 @@ tr_semaphore_profile : tr_sem_prof.2x2.ca {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.111t111.ca {
+tr_semaphore_profile : tr_sem_prof.111t111.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1684,16 +2100,17 @@ tr_semaphore_profile : tr_sem_prof.111t111.ca {
 	model[15]: ""
 	model[16]: "left_column"
 	model[17]: "left_side"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left.ca {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "crossroad 1x2 protected left"
 
-	model: 16
+	model: 19
 	model[0]: "single"
 	model[1]: "double_cut"
 	model[2]: "single"
@@ -1715,7 +2132,8 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left.ca {
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2.ca {
+tr_semaphore_profile : tr_sem_prof.ca_1x2.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1739,10 +2157,11 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2.ca {
 	model[15]: ""
 	model[16]: ""
 	model[17]: "left_side"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_a.ca {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_a.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1768,7 +2187,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_a.ca {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t.ca {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1796,7 +2216,8 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_a_t.ca {
 	model[19]: "left_short"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_2x2_b.ca {
+tr_semaphore_profile : tr_sem_prof.ca_2x2_b.ca
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -1822,13 +2243,14 @@ tr_semaphore_profile : tr_sem_prof.ca_2x2_b.ca {
 	model[17]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.ca_1x2_left4.ca {
+tr_semaphore_profile : tr_sem_prof.ca_1x2_left4.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
 	name: "crossroad 1x2 protected left"
 
-	model: 16
+	model: 19
 	model[0]: "single"
 	model[1]: "double_cut"
 	model[2]: "single"
@@ -1850,7 +2272,8 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_left4.ca {
 	model[18]: "left_column"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_turn.ca {
+tr_semaphore_profile : tr_sem_prof.2x1_turn.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1876,19 +2299,20 @@ tr_semaphore_profile : tr_sem_prof.2x1_turn.ca {
 	model[17]: ""
 	model[18]: ""
 	model[19]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.212x111_turn.ca {
+tr_semaphore_profile : tr_sem_prof.212x111_turn.ca
+{
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 1-1-1"
 
-	model[]: "single"
-	model[]: "double_cut"
-	model[]: "dbl_sh_cut"
-	model[]: "double_cut"
+	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_cut"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1906,7 +2330,36 @@ tr_semaphore_profile : tr_sem_prof.212x111_turn.ca {
 	model[18]: "left_side"
 }
 
-tr_semaphore_profile : tr_sem_prof.2x2_turn.ca {
+tr_semaphore_profile : tr_sem_prof.212x111_tur2.ca
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt"
+
+	model[0]: "single"
+	model[1]: "single"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: "left_side"
+	model[17]: "left_side"
+	model[18]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_turn.ca
+{
 
 	inherited: tr_sem_prof.base_left2
 
@@ -1930,10 +2383,11 @@ tr_semaphore_profile : tr_sem_prof.2x2_turn.ca {
 	model[15]: ""
 	model[16]: "left_side"
 	model[17]: "left_side"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.111t111_turn.ca {
+tr_semaphore_profile : tr_sem_prof.111t111_turn.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1959,10 +2413,11 @@ tr_semaphore_profile : tr_sem_prof.111t111_turn.ca {
 	model[17]: "left_side"
 	model[18]: ""
 	model[19]: ""
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.2t2_turn.ca {
+tr_semaphore_profile : tr_sem_prof.2t2_turn.ca
+{
 
 	inherited: tr_sem_prof.base_left
 
@@ -1987,19 +2442,20 @@ tr_semaphore_profile : tr_sem_prof.2t2_turn.ca {
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
-	
+
 }
 
 ### EVENT ###
 
-tr_semaphore_profile : tr_sem_prof.event_40_w {
+tr_semaphore_profile : tr_sem_prof.event_40_w
+{
 
 	name: "traffic light event 80 wide"
 
 	model[]: "event_01"
 	model[]: "event_01"
 
-	model_offset[]: (0.0, 0.0, 0.0)
+	model_offset[]: (1.0, 0.0, 0.0)
 	model_offset[]: (8.5, 0.0, 0.0)
 
 	interval[]: (25.0, 2.0, 53.0, 0.0)
@@ -2008,12 +2464,16 @@ tr_semaphore_profile : tr_sem_prof.event_40_w {
 	cycle[]: 40.0
 }
 
-tr_semaphore_profile : tr_sem_prof.event_80_n {
+tr_semaphore_profile : tr_sem_prof.event_80_n
+{
 
 	name: "traffic light event 80 narrow"
 
 	model[]: "event_01"
 	model[]: "event_02"
+
+	model_offset[]: (1.0, 0.0, 0.0)
+	model_offset[]: (-1.0, 0.0, 0.0)
 
 	interval[]: (25.0, 2.0, 63.0, 0.0)
 
@@ -2021,14 +2481,15 @@ tr_semaphore_profile : tr_sem_prof.event_80_n {
 	cycle[]: 45.0
 }
 
-tr_semaphore_profile : tr_sem_prof.event_80_w {
+tr_semaphore_profile : tr_sem_prof.event_80_w
+{
 
 	name: "traffic light event 80 wide"
 
 	model[]: "event_01"
 	model[]: "event_01"
 
-	model_offset[]: (0.0, 0.0, 0.0)
+	model_offset[]: (1.0, 0.0, 0.0)
 	model_offset[]: (8.5, 0.0, 0.0)
 
 	interval[]: (25.0, 2.0, 63.0, 0.0)
@@ -2037,12 +2498,16 @@ tr_semaphore_profile : tr_sem_prof.event_80_w {
 	cycle[]: 45.0
 }
 
-tr_semaphore_profile : tr_sem_prof.event_120_n {
+tr_semaphore_profile : tr_sem_prof.event_120_n
+{
 
 	name: "traffic light event 80 narrow"
 
 	model[]: "event_01"
 	model[]: "event_02"
+
+	model_offset[]: (1.0, 0.0, 0.0)
+	model_offset[]: (-1.0, 0.0, 0.0)
 
 	interval[]: (25.0, 2.0, 73.0, 0.0)
 
@@ -2050,14 +2515,15 @@ tr_semaphore_profile : tr_sem_prof.event_120_n {
 	cycle[]: 50.0
 }
 
-tr_semaphore_profile : tr_sem_prof.event_120_w {
+tr_semaphore_profile : tr_sem_prof.event_120_w
+{
 
 	name: "traffic light event 80 wide"
 
 	model[]: "event_01"
 	model[]: "event_01"
 
-	model_offset[]: (0.0, 0.0, 0.0)
+	model_offset[]: (1.0, 0.0, 0.0)
 	model_offset[]: (8.5, 0.0, 0.0)
 
 	interval[]: (25.0, 2.0, 73.0, 0.0)
@@ -2066,10 +2532,11 @@ tr_semaphore_profile : tr_sem_prof.event_120_w {
 	cycle[]: 50.0
 }
 
-tr_semaphore_profile : tr_sem_prof.event_empty {
+tr_semaphore_profile : tr_sem_prof.event_empty
+{
 
 	name: "event empty"
-	
+
 	model[]: "event_01"
 	model[]: "event_01"
 
@@ -2085,11 +2552,12 @@ tr_semaphore_profile : tr_sem_prof.event_empty {
 ### EVENT END ###
 
 #WA
-tr_semaphore_profile : tr_sem_prof.wa_swing_br {
+tr_semaphore_profile : tr_sem_prof.wa_swing_br
+{
 
 	name: "wa_swing_bridge"
 
-	
+
 	interval[0]: (150.0, 305.0, 290.0, 70)     # Mover speed: 4.0
 	interval[1]: (245.0, 330.0, 310.0, 230.0)    # Mover speed: 4.0
 
@@ -2098,41 +2566,45 @@ tr_semaphore_profile : tr_sem_prof.wa_swing_br {
 
 	type[0]: barrier_distance
 	type[1]: barrier_distance
-	type[]: model_only
+	type[2]: model_only
 
-	id_map: 6
+	id_map: 7
 	id_map[0]: 0
 	id_map[1]: 1
 	id_map[2]: 0
 	id_map[3]: 1
 	id_map[4]: 1
 	id_map[5]: 1
+	id_map[6]: 1
 
 
-	model: 6
+	model: 7
 
 	model[0]: ""
 	model[1]: ""
-	
+
 
 	model[2]: "wa_swing_br"
- 
+
 	model[3]: "wa_bridge_lv"
-	
+
 	model[4]: "bridge_top"
 
 	model[5]: "bridge_pol"
-	
 
-	
+	model[6]: "bridge_polr"
+
+
+
 
 }
 
-tr_semaphore_profile : tr_sem_prof.wa_rail_br {
+tr_semaphore_profile : tr_sem_prof.wa_rail_br
+{
 
 	name: "wa_rail_bridge"
 
-	
+
 	interval[0]: (150.0, 205.0, 190.0, 70)     # Mover speed: 4.0
 	interval[1]: (210.0, 230.0, 210.0, 200.0)    # Mover speed: 4.0
 
@@ -2141,7 +2613,7 @@ tr_semaphore_profile : tr_sem_prof.wa_rail_br {
 
 	type[0]: barrier_distance
 	type[1]: barrier_distance
-	type[]: model_only
+	type[2]: model_only
 
 	id_map: 3
 	id_map[0]: 0
@@ -2153,15 +2625,16 @@ tr_semaphore_profile : tr_sem_prof.wa_rail_br {
 
 	model[0]: ""
 	model[1]: ""
-	
+
 
 	model[2]: "wa_rail_br"
- 
+
 
 }
 
 
-tr_semaphore_profile : tr_sem_prof.22oneway {
+tr_semaphore_profile : tr_sem_prof.22oneway
+{
 
 	inherited: tr_sem_prof.common_base
 
@@ -2174,11 +2647,12 @@ tr_semaphore_profile : tr_sem_prof.22oneway {
 	model[]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.wa_cheh_br {
+tr_semaphore_profile : tr_sem_prof.wa_cheh_br
+{
 
 	name: "wa_chehalis_bridge"
 
-	
+
 	interval[0]: (100.0, 265.0, 250.0, 40)     # Mover speed: 4.0
 	interval[1]: (295.0, 280.0, 270.0, 285.0)    # Mover speed: 4.0
 
@@ -2187,7 +2661,7 @@ tr_semaphore_profile : tr_sem_prof.wa_cheh_br {
 
 	type[0]: barrier_distance
 	type[1]: barrier_distance
-	type[]: model_only
+	type[2]: model_only
 
 	id_map: 6
 	id_map[0]: 0
@@ -2202,22 +2676,23 @@ tr_semaphore_profile : tr_sem_prof.wa_cheh_br {
 
 	model[0]: ""
 	model[1]: ""
-	
+
 
 	model[2]: "wa_cheh_br"
- 
+
 	model[3]: "wa_brdg2_lv"
-	
+
 	model[4]: "brdg_pol2"
 
 	model[5]: "brdg_pol2r"
-	
+
 }
-tr_semaphore_profile : tr_sem_prof.wa_hoq1_br {
+tr_semaphore_profile : tr_sem_prof.wa_hoq1_br
+{
 
 	name: "wa_hoquiam1_bridge"
 
-	
+
 	interval[0]: (70.0, 155.0, 145.0, 30)     # Mover speed: 4.0
 	interval[1]: (200.0, 170.0, 160.0, 190.0)    # Mover speed: 4.0
 
@@ -2226,7 +2701,7 @@ tr_semaphore_profile : tr_sem_prof.wa_hoq1_br {
 
 	type[0]: barrier_distance
 	type[1]: barrier_distance
-	type[]: model_only
+	type[2]: model_only
 
 	id_map: 5
 	id_map[0]: 0
@@ -2240,20 +2715,21 @@ tr_semaphore_profile : tr_sem_prof.wa_hoq1_br {
 
 	model[0]: ""
 	model[1]: ""
-	
+
 
 	model[2]: "wa_hoq1_br"
- 
+
 	model[3]: "wa_brdg3_lv"
-	
+
 	model[4]: "bridge_top2"
-	
+
 }
-tr_semaphore_profile : tr_sem_prof.wa_hoq2_br {
+tr_semaphore_profile : tr_sem_prof.wa_hoq2_br
+{
 
 	name: "wa_hoquiam1_bridge"
 
-	
+
 	interval[0]: (100.0, 235.0, 220.0, 40)     # Mover speed: 4.0
 	interval[1]: (300.0, 260.0, 240.0, 290.0)    # Mover speed: 4.0
 
@@ -2262,7 +2738,7 @@ tr_semaphore_profile : tr_sem_prof.wa_hoq2_br {
 
 	type[0]: barrier_distance
 	type[1]: barrier_distance
-	type[]: model_only
+	type[2]: model_only
 
 	id_map: 6
 	id_map[0]: 0
@@ -2277,23 +2753,24 @@ tr_semaphore_profile : tr_sem_prof.wa_hoq2_br {
 
 	model[0]: ""
 	model[1]: ""
-	
+
 
 	model[2]: "wa_hoq2_br"
- 
+
 	model[3]: "wa_brdg2_lv"
-	
+
 	model[4]: "brdg_pol2"
 
 	model[5]: "brdg_pol2r"
-	
+
 }
 
-tr_semaphore_profile : tr_sem_prof.wa_van_br {
+tr_semaphore_profile : tr_sem_prof.wa_van_br
+{
 
 	name: "wa_vancouver_bridge"
 
-	
+
 	interval[0]: (70.0, 155.0, 145.0, 30)     # Mover speed: 4.0
 	interval[1]: (205.0, 170.0, 160.0, 195.0)    # Mover speed: 4.0
 
@@ -2302,7 +2779,7 @@ tr_semaphore_profile : tr_sem_prof.wa_van_br {
 
 	type[0]: barrier_distance
 	type[1]: barrier_distance
-	type[]: model_only
+	type[2]: model_only
 
 	id_map: 5
 	id_map[0]: 0
@@ -2316,14 +2793,1859 @@ tr_semaphore_profile : tr_sem_prof.wa_van_br {
 
 	model[0]: ""
 	model[1]: ""
-	
+
 
 	model[2]: "wa_van_br"
- 
+
 	model[3]: "wa_brdg4_lv"
-	
+
 	model[4]: "bridge_top3"
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212_y
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 212y212"
+
+	model[]: "single_light"
+	model[]: "double_sh"
+	model[]: "single_light"
+	model[]: "double_sh"
+	model[]: ""
+}
+
+
+tr_semaphore_profile : tr_sem_prof.313t313_14
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t 2-1-2 _14m"
+
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "double_sh"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_left"
+	model[9]: "single_left"
+	model[10]: "single_left"
+	model[11]: "single_left"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+############## Alternative model semaphores ##############
+
+
+
+
+
+
+
+tr_semaphore_profile : tr_sem_prof.1x1_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us_1x1_v1"
+
+	model[]: "single_1"
+	model[]: "single_1"
+	model[]: "single_1"
+	model[]: "single_1"
+	model[]: ""
+
+}
+
+
+tr_semaphore_profile : tr_sem_prof.1x1_park_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 1x1 parking_v1"
+
+	model[]: "single_1"
+	model[]: "single_1"
+	model[]: "single_1"
+	model[]: "single_1"
+	model[]: ""
+
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+}
+
+
+tr_semaphore_profile : tr_sem_prof.1x1_nl_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 1x1 no lamp_v1"
+
+	model[]: "single_nl_1"
+	model[]: "single_nl_1"
+	model[]: "single_nl_1"
+	model[]: "single_nl_1"
+	model[]: ""
+
+
+}
+
+tr_semaphore_profile : tr_sem_prof.1t1_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us_1t1_v1"
+
+	model[]: "single_1"
+	model[]: "single_mir_1"
+	model[]: "single_1"
+	model[]: "single_nl_1"
+	model[]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.1t1_park_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 1t1 parking_v1"
+
+	model[]: "single_1"
+	model[]: "column"
+	model[]: "single_1"
+	model[]: "single_nl_1"
+	model[]: ""
+
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (0, 0, 0)
+}
+
+tr_semaphore_profile : tr_sem_prof.1t1_nl_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us_1t1_no_lamp_v1"
+
+	model[]: "single_nl_1"
+	model[]: "single_nl_1"
+	model[]: "single_nl_1"
+	model[]: "single_nl_1"
+	model[]: ""
+
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (4, 0, 0)
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x2_v1"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_turn_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2x2_v1"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "dbl_sh_cut_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_short_1"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_nl_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x2 no lamp_v1"
+
+	model[]: "dbl_sh_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2_v1"
+
+	model[0]: "double_sh_1"
+	model[1]: "single_nl_1"
+	model[2]: "double_sh_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_1"
+	model[9]: ""
+	model[10]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_turn_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2t2 turn_v1"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "single_nl_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_1"
+	model[9]: "left_short_1"
+	model[10]: "column"
+	model[11]: ""
+	model[12]: ""
+	model[13]: "left_side_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.111t111_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 111t111_v1"
+
+	model[0]: "double_sh_1"
+	model[1]: "single_nl_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.111t111_t_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 111t111_v1"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "single_nl_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_short_1"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+
+tr_semaphore_profile : tr_sem_prof.111x111_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 111x111_v1"
+
+	model[0]: "double_cut_1"
+	model[1]: "double_cut_1"
+	model[2]: "single_1"
+	model[3]: "single_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "light_cut_1"
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_nl_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2 no lamp_v1"
+
+	model[]: "dbl_sh_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: "single_nl_1"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1_v1"
+
+	model[]: "single_1"
+	model[]: "double_sh_1"
+	model[]: "single_1"
+	model[]: "double_sh_1"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_turn_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2x1 turn_v1"
+
+	model[0]: "single_1"
+	model[1]: "dbl_sh_cut_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: "left_short_1"
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_oway_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1 oneway_v1"
+
+	model[]: "double_sh_1"
+	model[]: "single_1"
+	model[]: "single_1"
+	model[]: "double_sh_1"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_ow_t_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2x1 oneway_v1"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_short_1"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "single_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_nl_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1 no lamp_v1"
+
+	model[]: "single_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: "single_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2t1_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1_v1"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "single_nl_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "sin_mir_np_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.2t1_nl_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1 no lamp_v1"
+
+	model[]: "single_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: "dbl_sh_nl_1"
+	model[]: ""
+
+	model_offset[]: (4, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+
+}
+
+
+tr_semaphore_profile : tr_sem_prof.212x111_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1-1_v1"
+
+	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_t_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1_v1"
+
+	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111t2_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt_v1"
+
+	model[0]: "single_1"
+	model[1]: "single_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t 1-1-1_v1"
+
+	model[0]: "dbl_sh_nl_1"
+	model[1]: "double_cut_1"
+	model[2]: "single_nl_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: "double_cut_1"
+	model[13]: "light_cut_1"
+	model[14]: "light_cut_1"
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111ow_v1
+{
+
+	name: "us 2-1-2 t 1-1-1 one way_v1"
 	
+	type: 12
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light_virtual
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light
+	type[9]: traffic_light
+	type[10]: traffic_light
+	type[11]: traffic_light
+
+	interval[0]: (15.0, 2.0, 14.0, 0.0)
+	interval[1]: (31.0, 0.0, 0.0, 0.0)
+	interval[2]: (15.0, 2.0, 14.0, 0.0)
+	interval[3]: (15.0, 2.0, 14.0, 0.0)
+	interval[4]: (15.0, 2.0, 14.0, 0.0)
+	interval[5]: (15.0, 2.0, 14.0, 0.0)
+	interval[6]: (15.0, 2.0, 14.0, 0.0)
+	interval[7]: (15.0, 2.0, 14.0, 0.0)
+	interval[8]: (8.0, 2.0, 21.0, 0.0)
+	interval[9]: (8.0, 2.0, 21.0, 0.0)
+
+	cycle: 20
+	cycle[0]: 0.0
+	cycle[1]: 19.0
+	cycle[2]: 0.0
+	cycle[3]: 19.0
+	cycle[4]: 0.0
+	cycle[5]: 19.0
+	cycle[6]: 0.0
+	cycle[7]: 19.0
+	cycle[8]: 0.0
+	cycle[9]: 19.0
+	
+
+	model[0]: "dbl_sh_nl_1"
+	model[1]: "double_cut_1"
+	model[2]: "single_nl_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2_v1"
+
+	model[0]: "double_cut_1"
+	model[1]: "double_cut_1"
+	model[2]: "double_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: "light_cut_1"
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t212_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t 2-1-2_v1"
+
+	model[0]: "dbl_sh_nl_1"
+	model[1]: "dbl_cut_1"
+	model[2]: "dbl_sh_nl_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+}
+
+
+tr_semaphore_profile : tr_sem_prof.212xexl_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x exit left_v1"
+
+
+	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "column"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212texl_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t exit left_v1"
+
+
+	model[0]: "double_1"
+	model[1]: "double_sh_1"
+	model[2]: "single_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.ca_2x2_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad 2x2_v1"
+
+	model[0]: "double_1"
+	model[1]: "double_1"
+	model[2]: "double_1"
+	model[3]: "double_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: "light_side_1"
+	model[15]: "light_side_1"
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212o_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2 over"
+
+	model[0]: "sin_light_1"
+	model[1]: "sin_light_1"
+	model[2]: "sin_light_1"
+	model[3]: "sin_light_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "sin_left_1"
+	model[9]: "sin_left_1"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: "light_cut_1"
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212_x_ex_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "crossroad 2-1-2_x_exit"
+
+	model: 10
+	model[0]: "sin_left_1"
+	model[1]: "sin_light_1"
+	model[2]: "l_column_1"
+	model[3]: "column_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "sin_left_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212x2_v1
+{
+
+	model: 15
+	model[0]: "double_sh_1"
+	model[1]: "dbl_sh_o_mnp"
+	model[2]: "double_cut_1"
+	model[3]: "double_sh_1"
+	model[4]: "double_cut_1"
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: "double_sh_1"
+	model[11]: ""
+	model[12]: "left_turn_1"
+	model[13]: "left_turn_1"
+	model[14]: "left_turn_1"
+
+	type: 15
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light_virtual
+	type[9]: traffic_light_virtual
+	type[10]: traffic_light
+	type[11]: traffic_light
+	type[12]: traffic_light
+	type[13]: traffic_light
+	type[14]: traffic_light
+
+
+	interval: 15
+	interval[0]: (15.0, 2.0, 60, 0.0)
+	interval[1]: (15.0, 2.0, 60, 0.0)
+	interval[2]: (15.0, 2.0, 60, 0.0)
+	interval[3]: (15.0, 2.0, 60, 0.0)
+	interval[4]: (15.0, 2.0, 60, 0.0)
+	interval[5]: (15.0, 2.0, 60, 0.0)
+	interval[6]: (15.0, 2.0, 60, 0.0)
+	interval[7]: (15.0, 2.0, 60, 0.0)
+	interval[8]: (15.0, 2.0, 60, 0.0)
+	interval[9]: (15.0, 2.0, 60, 0.0)
+	interval[10]: (36.0, 2.0, 39, 0.0)
+	interval[11]: (15.0, 2.0, 60, 0.0)
+	interval[12]: (15.0, 2.0, 60, 0.0)
+	interval[13]: (15.0, 2.0, 60, 0.0)
+	interval[14]: (15.0, 2.0, 60, 0.0)
+
+	cycle: 15
+	cycle[0]: 0.0
+	cycle[1]: 57.0
+	cycle[2]: 19.0
+	cycle[3]: 0.0
+	cycle[4]: 19.0
+	cycle[5]: 0.0
+	cycle[6]: 19.0
+	cycle[7]: 57.0
+	cycle[8]: 0.0
+	cycle[9]: 57.0
+	cycle[10]: 0.0
+	cycle[11]: 19.0
+	cycle[12]: 38.0
+	cycle[13]: 0.0
+	cycle[14]: 38.0
+
+}
+
+tr_semaphore_profile : tr_sem_prof.1x1_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us_2x1_v2"
+
+	model[]: "single_2"
+	model[]: "single_2"
+	model[]: "single_2"
+	model[]: "single_2"
+	model[]: ""
+
+}
+
+
+tr_semaphore_profile : tr_sem_prof.1x1_park_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 1x1 parking_v2"
+
+	model[]: "single_2"
+	model[]: "single_2"
+	model[]: "single_2"
+	model[]: "single_2"
+	model[]: ""
+
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (1, 0, 0)
+}
+
+
+tr_semaphore_profile : tr_sem_prof.1x1_nl_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 1x1 no lamp_v2"
+
+	model[]: "single_nl_2"
+	model[]: "single_nl_2"
+	model[]: "single_nl_2"
+	model[]: "single_nl_2"
+	model[]: ""
+
+
+}
+
+tr_semaphore_profile : tr_sem_prof.1t1_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us_2t1_v2"
+
+	model[]: "single_2"
+	model[]: "single_mir_2"
+	model[]: "single_2"
+	model[]: "single_nl_2"
+	model[]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.1t1_park_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 1t1 parking_v2"
+
+	model[]: "single_2"
+	model[]: "column"
+	model[]: "single_2"
+	model[]: "single_nl_2"
+	model[]: ""
+
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (1, 0, 0)
+	model_offset[]: (0, 0, 0)
+}
+
+tr_semaphore_profile : tr_sem_prof.1t1_nl_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us_2t1_no_lamp_v2"
+
+	model[]: "single_nl_2"
+	model[]: "single_nl_2"
+	model[]: "single_nl_2"
+	model[]: "single_nl_2"
+	model[]: ""
+
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (4, 0, 0)
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x2_v2"
+
+	model[0]: "double_sh_2"
+	model[1]: "double_sh_2"
+	model[2]: "double_sh_2"
+	model[3]: "double_sh_2"
+	model[4]: ""
+
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_turn_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2x2_v2"
+
+	model[0]: "dbl_sh_cut_2"
+	model[1]: "dbl_sh_cut_2"
+	model[2]: "dbl_sh_cut_2"
+	model[3]: "dbl_sh_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_2"
+	model[9]: "left_short_2"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_nl_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x2 no lamp_v2"
+
+	model[]: "dbl_sh_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2_v2"
+
+	model[0]: "double_sh_2"
+	model[1]: "single_nl_2"
+	model[2]: "double_sh_2"
+	model[3]: "dbl_sh_nl_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_2"
+	model[9]: ""
+	model[10]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_turn_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2t2 turn_v2"
+
+	model[0]: "dbl_sh_cut_2"
+	model[1]: "single_nl_2"
+	model[2]: "single_2"
+	model[3]: "dbl_sh_nl_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_2"
+	model[9]: "left_short_2"
+	model[10]: "column"
+	model[11]: ""
+	model[12]: ""
+	model[13]: "left_side_2"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.111t111_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 111t111_v2"
+
+	model[0]: "double_sh_2"
+	model[1]: "single_nl_2"
+	model[2]: "single_2"
+	model[3]: "dbl_sh_nl_2"
+	model[4]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.111t111_t_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 111t111_v2"
+
+	model[0]: "dbl_sh_cut_2"
+	model[1]: "single_nl_2"
+	model[2]: "single_2"
+	model[3]: "dbl_sh_nl_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_short_2"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.111x111_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 111x111_v2"
+
+	model[0]: "double_cut_2"
+	model[1]: "double_cut_2"
+	model[2]: "single_2"
+	model[3]: "single_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "light_cut_2"
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_nl_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2 no lamp_v2"
+
+	model[]: "dbl_sh_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: "single_nl_2"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1_v2"
+
+	model[]: "single_2"
+	model[]: "double_sh_2"
+	model[]: "single_2"
+	model[]: "double_sh_2"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_turn_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2x1 turn_v2"
+
+	model[0]: "single_2"
+	model[1]: "dbl_sh_cut_2"
+	model[2]: "single_2"
+	model[3]: "dbl_sh_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: "left_short_2"
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_oway_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1 oneway_v2"
+
+	model[]: "double_sh_2"
+	model[]: "single_2"
+	model[]: "single_2"
+	model[]: "double_sh_2"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_ow_t_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2x1 oneway_v2"
+
+	model[0]: "double_sh_2"
+	model[1]: "double_sh_2"
+	model[2]: "single_2"
+	model[3]: "dbl_sh_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_short_2"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "single_2"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_nl_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1 no lamp_v2"
+
+	model[]: "single_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: "single_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2t1_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1_v2"
+
+	model[0]: "double_sh_2"
+	model[1]: "double_sh_2"
+	model[2]: "single_nl_2"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "sin_mir_np_2"
+}
+
+tr_semaphore_profile : tr_sem_prof.2t1_nl_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1 no lamp_v2"
+
+	model[]: "single_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: "dbl_sh_nl_2"
+	model[]: ""
+
+	model_offset[]: (4, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+
+}
+
+
+tr_semaphore_profile : tr_sem_prof.212x111_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1-1_v2"
+
+	model[0]: "single_2"
+	model[1]: "double_cut_2"
+	model[2]: "double_sh_2"
+	model[3]: "double_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_t_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1_v2"
+
+	model[0]: "single_2"
+	model[1]: "double_cut_2"
+	model[2]: "dbl_sh_cut_2"
+	model[3]: "double_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111t2_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt_v2"
+
+	model[0]: "single_2"
+	model[1]: "single_2"
+	model[2]: "dbl_sh_cut_2"
+	model[3]: "double_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t 1-1-1_v2"
+
+	model[0]: "dbl_sh_nl_2"
+	model[1]: "double_cut_2"
+	model[2]: "single_nl_2"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: "double_cut_2"
+	model[13]: "light_cut_2"
+	model[14]: "light_cut_2"
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111ow_v2
+{
+
+	name: "us 2-1-2 t 1-1-1 one way_v2"
+	
+	type: 12
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light_virtual
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light
+	type[9]: traffic_light
+	type[10]: traffic_light
+	type[11]: traffic_light
+
+	interval[0]: (15.0, 2.0, 14.0, 0.0)
+	interval[1]: (31.0, 0.0, 0.0, 0.0)
+	interval[2]: (15.0, 2.0, 14.0, 0.0)
+	interval[3]: (15.0, 2.0, 14.0, 0.0)
+	interval[4]: (15.0, 2.0, 14.0, 0.0)
+	interval[5]: (15.0, 2.0, 14.0, 0.0)
+	interval[6]: (15.0, 2.0, 14.0, 0.0)
+	interval[7]: (15.0, 2.0, 14.0, 0.0)
+	interval[8]: (8.0, 2.0, 21.0, 0.0)
+	interval[9]: (8.0, 2.0, 21.0, 0.0)
+
+	cycle: 20
+	cycle[0]: 0.0
+	cycle[1]: 19.0
+	cycle[2]: 0.0
+	cycle[3]: 19.0
+	cycle[4]: 0.0
+	cycle[5]: 19.0
+	cycle[6]: 0.0
+	cycle[7]: 19.0
+	cycle[8]: 0.0
+	cycle[9]: 19.0
+	
+
+	model[0]: "dbl_sh_nl_2"
+	model[1]: "double_cut_2"
+	model[2]: "single_nl_2"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2_v2"
+
+	model[0]: "double_cut_2"
+	model[1]: "double_cut_2"
+	model[2]: "double_cut_2"
+	model[3]: "double_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: "light_cut_2"
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t212_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t 2-1-2_v2"
+
+	model[0]: "dbl_sh_nl_2"
+	model[1]: "dbl_cut_2"
+	model[2]: "dbl_sh_nl_2"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+}
+
+
+tr_semaphore_profile : tr_sem_prof.212xexl_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x exit left_v2"
+
+
+	model[0]: "single_2"
+	model[1]: "double_cut_2"
+	model[2]: "column"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212texl_v2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 t exit left_v2"
+
+
+	model[0]: "double_2"
+	model[1]: "double_sh_2"
+	model[2]: "single_2"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+}
+
+tr_semaphore_profile : tr_sem_prof.ca_2x2_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad 2x2_v2"
+
+	model[0]: "double_2"
+	model[1]: "double_2"
+	model[2]: "double_2"
+	model[3]: "double_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: "light_side_2"
+	model[15]: "light_side_2"
+	model[16]: "left_side_2"
+	model[17]: "left_side_2"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212o_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2 over"
+
+	model[0]: "sin_light_2"
+	model[1]: "sin_light_2"
+	model[2]: "sin_light_2"
+	model[3]: "sin_light_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "sin_left_2"
+	model[9]: "sin_left_2"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: "light_cut_2"
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212_x_ex_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "crossroad 2-1-2_x_exit"
+
+	model: 10
+	model[0]: "sin_left_2"
+	model[1]: "sin_light_2"
+	model[2]: "l_column_2"
+	model[3]: "column_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "sin_left_2"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212x2_v2
+{
+
+	model: 15
+	model[0]: "double_sh_2"
+	model[1]: "dbl_sh_o_mnp"
+	model[2]: "double_cut_2"
+	model[3]: "double_sh_2"
+	model[4]: "double_cut_2"
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: "double_sh_2"
+	model[11]: ""
+	model[12]: "left_turn_2"
+	model[13]: "left_turn_2"
+	model[14]: "left_turn_2"
+
+	type: 15
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light_virtual
+	type[9]: traffic_light_virtual
+	type[10]: traffic_light
+	type[11]: traffic_light
+	type[12]: traffic_light
+	type[13]: traffic_light
+	type[14]: traffic_light
+
+
+	interval: 15
+	interval[0]: (15.0, 2.0, 60, 0.0)
+	interval[1]: (15.0, 2.0, 60, 0.0)
+	interval[2]: (15.0, 2.0, 60, 0.0)
+	interval[3]: (15.0, 2.0, 60, 0.0)
+	interval[4]: (15.0, 2.0, 60, 0.0)
+	interval[5]: (15.0, 2.0, 60, 0.0)
+	interval[6]: (15.0, 2.0, 60, 0.0)
+	interval[7]: (15.0, 2.0, 60, 0.0)
+	interval[8]: (15.0, 2.0, 60, 0.0)
+	interval[9]: (15.0, 2.0, 60, 0.0)
+	interval[10]: (36.0, 2.0, 39, 0.0)
+	interval[11]: (15.0, 2.0, 60, 0.0)
+	interval[12]: (15.0, 2.0, 60, 0.0)
+	interval[13]: (15.0, 2.0, 60, 0.0)
+	interval[14]: (15.0, 2.0, 60, 0.0)
+
+	cycle: 15
+	cycle[0]: 0.0
+	cycle[1]: 57.0
+	cycle[2]: 19.0
+	cycle[3]: 0.0
+	cycle[4]: 19.0
+	cycle[5]: 0.0
+	cycle[6]: 19.0
+	cycle[7]: 57.0
+	cycle[8]: 0.0
+	cycle[9]: 57.0
+	cycle[10]: 0.0
+	cycle[11]: 19.0
+	cycle[12]: 38.0
+	cycle[13]: 0.0
+	cycle[14]: 38.0
+
+}
+
+tr_semaphore_profile : tr_sem_prof.id_lew_br
+{
+
+	name: "id_lewiston_bridge"
+
+
+	interval[0]: (130.0, 125.0, 105.0, 30)     # Mover speed: 4.0
+	interval[1]: (120.0, 150.0, 130.0, 110.0)    # Mover speed: 4.0
+
+	# Minimum delay after orange-to-green distance before barriers go up
+	cycle[]: 1.0
+
+	type[0]: barrier_distance
+	type[1]: barrier_distance
+	type[2]: model_only
+
+	id_map: 5
+	id_map[0]: 0
+	id_map[1]: 1
+	id_map[2]: 0
+	id_map[3]: 1
+	id_map[4]: 1
+
+	model: 5
+
+	model[0]: ""
+	model[1]: ""
+
+
+	model[2]: "id_lew_br"
+
+	model[3]: "id_brdg_lv"
+
+	model[4]: "bridge_top3"
+
+
 }
 
 }

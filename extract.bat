@@ -1,8 +1,8 @@
-@ECHO OFF
+@echo off
 
 :: Location for extraction
-SET LOCATION=X:\defATS
-MKDIR %LOCATION%
+SET LOCATION=C:\Users\doode\Documents\defATS
+if not exist %LOCATION% MKDIR %LOCATION%
 :: Location to SCS Extractor
 SET EXTRACTOR="C:\Program Files (x86)\Steam\steamapps\common\Euro Truck Simulator 2\scs_extractor.exe"
 :: Get the SCS Game Archive Extractor here: http://download.eurotrucksimulator2.com/scs_extractor.zip
@@ -11,140 +11,11 @@ SET EXTRACTOR="C:\Program Files (x86)\Steam\steamapps\common\Euro Truck Simulato
 SET ZIP="C:\Program Files\7-Zip\7z.exe"
 
 :: Extract archives
-ECHO Extracting def archive
-%EXTRACTOR% def.scs %LOCATION%\def >NUL
-ECHO Extracting dlc_arizona archive
-%EXTRACTOR% dlc_arizona.scs %LOCATION%\dlc_arizona >NUL
-ECHO Extracting dlc_dragon archive
-%EXTRACTOR% dlc_dragon.scs %LOCATION%\dlc_dragon >NUL
-ECHO Extracting dlc_heavy_cargo archive
-%EXTRACTOR% dlc_heavy_cargo.scs %LOCATION%\dlc_heavy_cargo >NUL
-ECHO Extracting dlc_kenworth_t680 archive
-%EXTRACTOR% dlc_kenworth_t680.scs %LOCATION%\dlc_kenworth_t680 >NUL
-ECHO Extracting dlc_kenworth_w900 archive
-%EXTRACTOR% dlc_kenworth_w900.scs %LOCATION%\dlc_kenworth_w900 >NUL
-ECHO Extracting dlc_nevada archive
-%EXTRACTOR% dlc_nevada.scs %LOCATION%\dlc_nevada >NUL
-ECHO Extracting dlc_nm archive
-%EXTRACTOR% dlc_nm.scs %LOCATION%\dlc_nm >NUL
-ECHO Extracting dlc_oversize archive
-%EXTRACTOR% dlc_oversize.scs %LOCATION%\dlc_oversize >NUL
-ECHO Extracting dlc_peterbilt_389 archive
-%EXTRACTOR% dlc_peterbilt_389.scs %LOCATION%\dlc_peterbilt_389 >NUL
-ECHO Extracting dlc_peterbilt_579 archive
-%EXTRACTOR% dlc_peterbilt_579.scs %LOCATION%\dlc_peterbilt_579 >NUL
-ECHO Extracting dlc_rims archive
-%EXTRACTOR% dlc_rims.scs %LOCATION%\dlc_rims >NUL
-ECHO Extracting dlc_sci_st_wheels archive
-%EXTRACTOR% dlc_sci_st_wheels.scs %LOCATION%\dlc_sci_st_wheels >NUL
-ECHO Extracting dlc_steampunk archive
-%EXTRACTOR% dlc_steampunk.scs %LOCATION%\dlc_steampunk >NUL
-ECHO Extracting dlc_volvo_vnl archive
-%EXTRACTOR% dlc_volvo_vnl.scs %LOCATION%\dlc_volvo_vnl >NUL
-
-ECHO.
-ECHO.
+REM                                                 (               (                          (                      (                        (                        )))))                                          
+for %%a in (*.scs) DO (IF NOT %%a == base.scs IF NOT %%a == base_cfg.scs IF NOT %%a == core.scs IF NOT %%a == effect.scs IF NOT %%a == locale.scs echo Unpacking %%~na & %EXTRACTOR% %%a %LOCATION%\%%~na >NUL )
 
 :: Delete all non-def directories
-ECHO Starting cleanup
-:: dlc_arizona
-RMDIR "%LOCATION%\dlc_arizona\automat" /s /q
-RMDIR "%LOCATION%\dlc_arizona\map" /s /q
-RMDIR "%LOCATION%\dlc_arizona\material" /s /q
-RMDIR "%LOCATION%\dlc_arizona\model" /s /q
-RMDIR "%LOCATION%\dlc_arizona\prefab" /s /q
-DEL %LOCATION%\dlc_arizona\dlc_arizona.manifest.sii
-
-:: dlc_dragon
-RMDIR "%LOCATION%\dlc_dragon\automat" /s /q
-RMDIR "%LOCATION%\dlc_dragon\material" /s /q
-RMDIR "%LOCATION%\dlc_dragon\vehicle" /s /q
-DEL %LOCATION%\dlc_dragon\dlc_dragon.manifest.sii
-
-:: dlc_heavy_cargo
-RMDIR "%LOCATION%\dlc_heavy_cargo\automat" /s /q
-RMDIR "%LOCATION%\dlc_heavy_cargo\material" /s /q
-RMDIR "%LOCATION%\dlc_heavy_cargo\vehicle" /s /q
-DEL %LOCATION%\dlc_heavy_cargo\dlc_heavy_cargo.manifest.sii
-
-:: dlc_kenworth_t680
-RMDIR "%LOCATION%\dlc_kenworth_t680\automat" /s /q
-RMDIR "%LOCATION%\dlc_kenworth_t680\material" /s /q
-RMDIR "%LOCATION%\dlc_kenworth_t680\vehicle" /s /q
-DEL %LOCATION%\dlc_kenworth_t680\dlc_kenworth_t680.manifest.sii
-
-:: dlc_kenworth_w900
-RMDIR "%LOCATION%\dlc_kenworth_w900\automat" /s /q
-RMDIR "%LOCATION%\dlc_kenworth_w900\material" /s /q
-RMDIR "%LOCATION%\dlc_kenworth_w900\sound" /s /q
-RMDIR "%LOCATION%\dlc_kenworth_w900\vehicle" /s /q
-DEL %LOCATION%\dlc_kenworth_w900\dlc_kenworth_w900.manifest.sii
-
-:: dlc_nevada
-RMDIR "%LOCATION%\dlc_nevada\automat" /s /q
-RMDIR "%LOCATION%\dlc_nevada\map" /s /q
-RMDIR "%LOCATION%\dlc_nevada\material" /s /q
-RMDIR "%LOCATION%\dlc_nevada\model" /s /q
-RMDIR "%LOCATION%\dlc_nevada\prefab" /s /q
-DEL %LOCATION%\dlc_nevada\dlc_nevada.manifest.sii
-
-:: dlc_nm
-RMDIR "%LOCATION%\dlc_nm\automat" /s /q
-RMDIR "%LOCATION%\dlc_nm\map" /s /q
-RMDIR "%LOCATION%\dlc_nm\material" /s /q
-RMDIR "%LOCATION%\dlc_nm\model" /s /q
-RMDIR "%LOCATION%\dlc_nm\prefab" /s /q
-DEL %LOCATION%\dlc_nm\dlc_nm.manifest.sii
-
-:: dlc_oversize
-RMDIR "%LOCATION%\dlc_oversize\automat" /s /q
-RMDIR "%LOCATION%\dlc_oversize\map" /s /q
-RMDIR "%LOCATION%\dlc_oversize\model" /s /q
-RMDIR "%LOCATION%\dlc_oversize\unit" /s /q
-RMDIR "%LOCATION%\dlc_oversize\vehicle" /s /q
-DEL %LOCATION%\dlc_oversize\dlc_oversize.manifest.sii
-
-:: dlc_peterbilt_389
-RMDIR "%LOCATION%\dlc_peterbilt_389\automat" /s /q
-RMDIR "%LOCATION%\dlc_peterbilt_389\material" /s /q
-RMDIR "%LOCATION%\dlc_peterbilt_389\sound" /s /q
-RMDIR "%LOCATION%\dlc_peterbilt_389\vehicle" /s /q
-DEL %LOCATION%\dlc_peterbilt_389\dlc_peterbilt_389.manifest.sii
-
-:: dlc_peterbilt_579
-RMDIR "%LOCATION%\dlc_peterbilt_579\automat" /s /q
-RMDIR "%LOCATION%\dlc_peterbilt_579\material" /s /q
-RMDIR "%LOCATION%\dlc_peterbilt_579\vehicle" /s /q
-DEL %LOCATION%\dlc_peterbilt_579\dlc_peterbilt_579.manifest.sii
-
-:: dlc_rims
-RMDIR "%LOCATION%\dlc_rims\automat" /s /q
-RMDIR "%LOCATION%\dlc_rims\material" /s /q
-RMDIR "%LOCATION%\dlc_rims\vehicle" /s /q
-DEL %LOCATION%\dlc_rims\dlc_rims.manifest.sii
-
-:: dlc_sci_st_wheels
-RMDIR "%LOCATION%\dlc_sci_st_wheels\automat" /s /q
-RMDIR "%LOCATION%\dlc_sci_st_wheels\material" /s /q
-RMDIR "%LOCATION%\dlc_sci_st_wheels\vehicle" /s /q
-DEL %LOCATION%\dlc_sci_st_wheels\dlc_sci_st_wheels.manifest.sii
-
-:: dlc_steampunk
-RMDIR "%LOCATION%\dlc_steampunk\material" /s /q
-RMDIR "%LOCATION%\dlc_steampunk\vehicle" /s /q
-DEL %LOCATION%\dlc_steampunk\dlc_steampunk.manifest.sii
-
-:: dlc_volvo_vnl
-RMDIR "%LOCATION%\dlc_volvo_vnl\automat" /s /q
-RMDIR "%LOCATION%\dlc_volvo_vnl\material" /s /q
-RMDIR "%LOCATION%\dlc_volvo_vnl\sound" /s /q
-RMDIR "%LOCATION%\dlc_volvo_vnl\vehicle" /s /q
-DEL %LOCATION%\dlc_volvo_vnl\dlc_volvo_vnl.manifest.sii
-
-ECHO Cleaned up
-
-ECHO.
-ECHO.
+for /D %%b in (%LOCATION%\*) do (echo Clean-up %%~nb & (for /D %%c in (%%b\*) do (IF NOT %%~nc == def RMDIR "%%c" /s /q)) & DEL %%b\%%~nb.manifest.sii)
 
 ECHO Zipping archive
 %ZIP% a -mx=9 %LOCATION%\def %LOCATION%\*

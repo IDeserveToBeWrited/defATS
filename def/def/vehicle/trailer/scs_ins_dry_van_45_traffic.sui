@@ -1,0 +1,77 @@
+traffic_trailer : traffic.trailer.scs_box_45 # insulated rear
+{
+
+	accessories[]: .scs_box_45.chassis
+	accessories[]: .scs_box_45.rwheel
+	accessories[]: .scs_box_45.rwheel2
+	accessories[]: .scs_box_45.paint_job
+
+	cargo_mass: 16000
+
+	spawn_ratio: 2
+
+	company_paint_job: true
+
+	variant[]: .traffic.trailer.scs_box_45.dry.front # dryvan front
+}
+
+vehicle_accessory: .scs_box_45.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ins_45_r.sii"
+}
+
+vehicle_wheel_accessory: .scs_box_45.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_box_45.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_box_45.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+
+# dyryvan
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .traffic.trailer.scs_box_45.dry.front
+{
+
+	accessories[]: .scs_box_45.dry.front.chassis
+	accessories[]: .scs_box_45.dry.front.rwheel
+	accessories[]: .scs_box_45.dry.front.rwheel2
+	accessories[]: .scs_box_45.dry.front.paint_job
+
+	company_paint_job: true
+}
+
+vehicle_accessory: .scs_box_45.dry.front.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_45_f.sii"
+}
+
+vehicle_wheel_accessory: .scs_box_45.dry.front.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_box_45.dry.front.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_box_45.dry.front.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+

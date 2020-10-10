@@ -5,21 +5,11 @@ accessory_chassis_data : fuel.trailer.chassis
 	model: "/vehicle/trailer/fuel/trailer.pmd"
 	lods[]: "/vehicle/trailer/fuel/lod_01.pmd"
 	collision: "/vehicle/trailer/fuel/trailer.pmc"
+	variant: fuel
+	look: default
 
 	trailer_brace_model: "/vehicle/trailer/fuel/trailer_brace.pmd"
 	trailer_brace_anim: "/vehicle/trailer/fuel/trailer_brace.pma"
-
-	trailer_brace_up_sound: "/sound/truck/trailer_brace_up.ogg"
-	trailer_brace_down_sound: "/sound/truck/trailer_brace_down.ogg"
-
-	residual_travel[]: 0.12 	# 1st axle
-	residual_travel[]: 0.12 	# 2nd axle
-
-
-	trailer_mass: 6100.0	#13500lb
-
-	variant: fuel
-	look: default
 
 	extended_shadow_texture: "/vehicle/trailer/fuel/shadow.tobj"
 	extended_shadow_intensity: 1.45
@@ -27,6 +17,10 @@ accessory_chassis_data : fuel.trailer.chassis
 	extended_shadow_fadeout_length: 0
 
 	ui_shadow: "/vehicle/trailer/fuel/ui_shadow.pmd"
-}
-}
 
+	trailer_mass: 6100.0	#13500lb
+
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
+}
+}

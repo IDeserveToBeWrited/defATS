@@ -6,20 +6,14 @@ accessory_chassis_data : lowboy_r.trailer.chassis
 	lods[]: "/vehicle/trailer/lowboy/lod_01.pmd"
 	collision: "/vehicle/trailer/lowboy/trailer.pmc"
 
+	variant: lowboy
+	look: red
+
 	trailer_brace_model: "/vehicle/trailer/lowboy/trailer_brace.pmd"
 	trailer_brace_anim: "/vehicle/trailer/lowboy/trailer_brace.pma"
 
-	trailer_brace_up_sound: "/sound/truck/trailer_brace_hydro_up.ogg"
-	trailer_brace_down_sound: "/sound/truck/trailer_brace_hydro_down.ogg"
-
-	residual_travel[]: 0.12 	# 1st axle
-	residual_travel[]: 0.12 	# 2nd axle
-
-
-	trailer_mass: 5900.0	#12900lb
-
-	variant: lowboy
-	look: red
+	trailer_brace_up_sound: "/sound/trailer/default/trailer_brace_hydro_up.soundref"
+	trailer_brace_down_sound: "/sound/trailer/default/trailer_brace_hydro_down.soundref"
 
 	extended_shadow_texture: "/vehicle/trailer/lowboy/shadow.tobj"
 	extended_shadow_intensity: 1.45
@@ -27,6 +21,10 @@ accessory_chassis_data : lowboy_r.trailer.chassis
 	extended_shadow_fadeout_length: 0
 
 	ui_shadow: "/vehicle/trailer/lowboy/ui_shadow.pmd"
-}
-}
 
+	trailer_mass: 5900.0	#12900lb
+
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
+}
+}

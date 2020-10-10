@@ -1,0 +1,39 @@
+traffic_vehicle : traffic.box
+{
+	accessories[]: .box.chassis
+	accessories[]: .box.fwheel
+	accessories[]: .box.rwheel
+
+	max_speed: 120
+
+	sound_move[]: "/sound/traffic/car_diesel_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	allow_parked: false
+	vehicle_mass: 6000
+
+	engine_power: 270
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .box.chassis
+{
+	data_path: "/def/vehicle/ai/box/chassis_box.sii"
+}
+
+vehicle_wheel_accessory: .box.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .box.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+

@@ -1,0 +1,48 @@
+traffic_vehicle : traffic.sd660_loco
+{
+	accessories[]: .sd660_loco.chassis
+	accessories[]: .sd660_loco.fwheel
+	accessories[]: .sd660_loco.rwheel
+
+	max_speed: 30
+	vehicle_mass: 12000
+	engine_power: 500
+
+	trailer_chains[]: "tram_car.sd660_car1 | tram_car.sd660_car2"
+
+	sound_move[]: "/sound/ai/cable_car_1.ogg"
+	sound_move[]: "/sound/ai/cable_car_2.ogg"
+	sound_horn[]: "/sound/ai/cable_car_bell.ogg"
+
+	displacement_limit: 0.0
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	lod_dist[]: 200
+
+	spawn_condition[]: .traffic.sd660_loco.condition.city
+}
+
+vehicle_accessory: .sd660_loco.chassis
+{
+	data_path: "/def/vehicle/ai/tram_sd660/chassis_01.sii"
+}
+
+vehicle_wheel_accessory: .sd660_loco.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .sd660_loco.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.sd660_loco.condition.city
+{
+	# spawn only near city with specified name
+	type: city
+	str_param[]: "portland"
+}

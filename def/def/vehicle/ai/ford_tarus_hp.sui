@@ -1,0 +1,80 @@
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX generic Highway Patrol new mexico XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.ford_tarus.hp_nm
+{
+	accessories[]: .ford_tarus.hp_nm.chassis
+	accessories[]: .ford_tarus.hp_nm.fwheel
+	accessories[]: .ford_tarus.hp_nm.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_move[]: "/sound/traffic/car_normal_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 1700
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus.hp_nm.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_hp_nm.sii"
+}
+vehicle_wheel_accessory: .ford_tarus.hp_nm.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus.hp_nm.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX generic Highway Patrol Arizona XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.ford_tarus.hp_az
+{
+	accessories[]: .ford_tarus.hp_az.chassis
+	accessories[]: .ford_tarus.hp_az.fwheel
+	accessories[]: .ford_tarus.hp_az.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_move[]: "/sound/traffic/car_normal_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 1700
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus.hp_az.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/chassis_hp_az.sii"
+}
+vehicle_wheel_accessory: .ford_tarus.hp_az.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus.hp_az.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}

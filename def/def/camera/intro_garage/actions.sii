@@ -9,9 +9,9 @@ cutscene_action : _nameless.cutscene_act.1
 {
 	cutscene_time: 0.5
 
-	command: "play_music"
+	command: "music"
 
-	str_params[]: "/sound/music/cutscene.ogg"
+	str_params[]: "/sound/music/cutscene.soundref"
 	num_params[]: 0.5
 	num_params[]: 1.0
 }
@@ -20,7 +20,7 @@ cutscene_action : _nameless.cutscene_act.2
 {
 	cutscene_time: 0.0
 
-	command: "create_win"
+	command: "ui_create"
 
 	str_params[]: "msg"
 	str_params[]: "/ui/cutscene_msg.sii"
@@ -30,18 +30,18 @@ cutscene_action : _nameless.cutscene_act.3
 {
 	cutscene_time: 0.5
 
-	command: "set_win_text"
+	command: "ui_text"
 
 	num_params[0]: 100
 	str_params[]: "msg"
-	str_params[]: "$ 0 $ @@intro_garage_1@@  $ 5 $ @@intro_garage_2@@  $ 6 $ @@intro_garage_3@@  $ 7 $ @@intro_garage_4@@  $ 9 $ @@intro_garage_5@@"
+	str_params[]: "| 0 | @@intro_garage_1@@  | 5 | @@intro_garage_2@@  | 6 | @@intro_garage_3@@  | 7 | @@intro_garage_4@@  | 9 | @@intro_garage_5@@"
 }
 
 cutscene_action : _nameless.cutscene_act.4
 {
 	cutscene_time: 2.0
 
-	command: "show_win"
+	command: "ui_show"
 
 	str_params[]: "msg"
 }

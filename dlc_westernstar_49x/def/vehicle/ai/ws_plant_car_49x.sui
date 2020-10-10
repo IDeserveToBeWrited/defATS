@@ -1,0 +1,40 @@
+traffic_vehicle : traffic.ws_plant_car.49x
+{
+	accessories[]: .ws_plant_car.49x.chassis
+	accessories[]: .ws_plant_car.49x.fwheel
+	accessories[]: .ws_plant_car.49x.rwheel
+	accessories[]: .ws_plant_car.49x.rwheel2
+	accessories[]: .ws_plant_car.49x.trlr_cables
+
+	max_speed: 128	
+
+	vehicle_mass: 9200
+	engine_power: 373
+
+	lod_dist[]: 55
+	lod_dist[]: 90
+
+	color[]: (0.337164, 0.002428, 0.002428)
+
+
+	base: traffic.ws_plant_car
+	
+	spawn_ratio: 1
+}
+
+vehicle_accessory : .ws_plant_car.49x.chassis {
+	data_path: "/def/vehicle/ai/truck/westernstar.49x/dcb.sii"
+}
+vehicle_wheel_accessory : .ws_plant_car.49x.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .ws_plant_car.49x.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .ws_plant_car.49x.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .ws_plant_car.49x.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/westernstar.49x/accessory/trlr_cables/stock.sii"
+}

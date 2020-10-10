@@ -1,0 +1,111 @@
+traffic_vehicle : traffic.railrunner.nm
+{
+	accessories[]: .railrunner.nm.chassis
+	accessories[]: .railrunner.nm.fwheel
+	accessories[]: .railrunner.nm.rwheel
+	accessories[]: .railrunner.nm.rwheel2
+	accessories[]: .railrunner.nm.rwheel3
+
+	max_speed: 72
+	vehicle_mass: 134000
+	engine_power: 2700
+
+	sound_move[]: "/sound/traffic/train_diesel.soundref"
+	sound_horn[]: "/sound/traffic/train_horn_2.soundref"
+
+	tags[]: passenger
+
+	trailer_chains[]: "train_car.railrunnr.nm 2-4"
+
+	displacement_limit: 0.0
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	spawn_ratio: 0.0
+}
+
+vehicle_accessory: .railrunner.nm.chassis
+{
+	data_path: "/def/vehicle/ai/train_railrunner/chassis.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.nm.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/locomotive_front.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.nm.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/locomotive_rear.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.nm.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/locomotive_rear.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.nm.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/locomotive_rear.sii"
+}
+
+
+traffic_vehicle : traffic.railrunner.ut
+{
+	accessories[]: .railrunner.ut.chassis
+	accessories[]: .railrunner.ut.fwheel
+	accessories[]: .railrunner.ut.rwheel
+	accessories[]: .railrunner.ut.rwheel2
+	accessories[]: .railrunner.ut.rwheel3
+
+	max_speed: 72
+
+	sound_move[]: "/sound/traffic/train_diesel.soundref"
+	sound_horn[]: "/sound/traffic/train_horn_2.soundref"
+
+	vehicle_mass: 134000
+	engine_power: 2700
+
+	trailer_chains[]: "train_car.railrunnr.ut 2-4"
+
+	displacement_limit: 0.0
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	spawn_ratio: 0.0
+}
+
+vehicle_accessory: .railrunner.ut.chassis
+{
+	data_path: "/def/vehicle/ai/train_railrunner/chassis_ut.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.ut.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/locomotive_front.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.ut.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/locomotive_rear.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.ut.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/locomotive_rear.sii"
+}
+
+vehicle_wheel_accessory: .railrunner.ut.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/locomotive_rear.sii"
+}

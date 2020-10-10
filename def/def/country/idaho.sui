@@ -1,0 +1,33 @@
+
+country_data : country.data.idaho
+{
+	country_id: 13
+
+	name: "Idaho"
+	name_localized: "@@idaho@@"
+	country_code: "ID"
+
+	pos: (-76000, 0, -41000)
+
+	fuel_price: 0.61525671	# $2.329/gallonUS = $0.61525671/litre
+
+	lights_mandatory: false
+	imperial_units: true
+	driving_tired_offence: true
+
+	time_zone: -360		# -6 hours in minutes
+	time_zone_name: "@@tz_mdt@@"
+
+	# northern part has PDT, -7
+
+	secondary_time_zone_area[]: (-82000.0, -70000.0, -64000.0, -43822.1)
+	secondary_time_zone[]: -420
+	secondary_time_zone_name[]: "@@tz_pdt@@"
+
+	mass_limit_per_axle_count[]: 18143.7	# 40000 lb	# 2-axle vehicle
+	mass_limit_per_axle_count[]: 27215.6	# 60000 lb
+	mass_limit_per_axle_count[]: 36287.4	# 80000 lb
+	mass_limit_per_axle_count[]: 45359.3	# 100000 lb
+	mass_limit_per_axle_count[]: 47854.0	# 105500 lb
+}
+

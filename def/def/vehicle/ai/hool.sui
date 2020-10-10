@@ -1,0 +1,38 @@
+traffic_vehicle : traffic.hool
+{
+	accessories[]: .hool.chassis
+	accessories[]: .hool.fwheel
+	accessories[]: .hool.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_ratio: 0.10
+
+	engine_power: 270
+
+	vehicle_mass: 6000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .hool.chassis
+{
+	data_path: "/def/vehicle/ai/box/chassis_hool.sii"
+}
+
+vehicle_wheel_accessory: .hool.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hool.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+

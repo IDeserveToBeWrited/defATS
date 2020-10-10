@@ -1,0 +1,538 @@
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Generic Police ( look 1 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.generic
+{
+	accessories[]: .charger.generic.chassis
+	accessories[]: .charger.generic.fwheel
+	accessories[]: .charger.generic.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+	
+	spawn_ratio: 0.0
+
+	vehicle_mass: 2200
+
+	prefer_variant: true
+	variant[]: traffic.charger.aqpd
+	variant[]: traffic.charger.aqpd2
+	variant[]: traffic.charger.aqpd3
+    variant[]: traffic.charger.sgpd
+	variant[]: traffic.charger.prpd
+	variant[]: traffic.charger.boisepd
+	
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.generic.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_generic1.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_vehicle : traffic.charger.generic1
+{
+	accessories[]: .charger.generic1.chassis
+	accessories[]: .charger.generic1.fwheel
+	accessories[]: .charger.generic1.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	spawn_ratio: 0.1
+	
+	variant[]: traffic.charger.generic2
+	variant[]: traffic.charger.generic3
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.generic1.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_generic1.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic1.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic1.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Generic Police ( look 2 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.generic2
+{
+	
+
+	accessories[]: .charger.generic2.chassis
+	accessories[]: .charger.generic2.fwheel
+	accessories[]: .charger.generic2.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+	
+	
+
+	vehicle_mass: 2200
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.generic2.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_generic2.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic2.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Generic Police ( look 3 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.generic3
+{
+
+	accessories[]: .charger.generic3.chassis
+	accessories[]: .charger.generic3.fwheel
+	accessories[]: .charger.generic3.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.generic3.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_generic3.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic3.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.generic3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Albuquerque PD ( look 1 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.aqpd
+{
+	accessories[]: .charger.aqpd.chassis
+	accessories[]: .charger.aqpd.fwheel
+	accessories[]: .charger.aqpd.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.chrgr_aqpd1.albu.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.aqpd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_aqpd.sii"
+}
+
+vehicle_wheel_accessory: .charger.aqpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.aqpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_aqpd1.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "albuquerque"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Albuquerque PD ( look 2 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.aqpd2
+{
+	accessories[]: .charger.aqpd2.chassis
+	accessories[]: .charger.aqpd2.fwheel
+	accessories[]: .charger.aqpd2.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.chrgr_aqpd2.albu.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.aqpd2.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_aqpd2.sii"
+}
+
+vehicle_wheel_accessory: .charger.aqpd2.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.aqpd2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_aqpd2.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "albuquerque"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Albuquerque PD ( look 3 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.aqpd3
+{
+	accessories[]: .charger.aqpd3.chassis
+	accessories[]: .charger.aqpd3.fwheel
+	accessories[]: .charger.aqpd3.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.chrgr_aqpd3.albu.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.aqpd3.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_aqpd3.sii"
+}
+
+vehicle_wheel_accessory: .charger.aqpd3.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.aqpd3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_aqpd3.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "albuquerque"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Seattle PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.stpd
+{
+	accessories[]: .charger.stpd.chassis
+	accessories[]: .charger.stpd.fwheel
+	accessories[]: .charger.stpd.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.chrgr_stpd.albu.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.stpd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_stpd.sii"
+}
+
+vehicle_wheel_accessory: .charger.stpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.stpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_stpd.albu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "seattle"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Provo PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.prpd
+{
+	accessories[]: .charger.prpd.chassis
+	accessories[]: .charger.prpd.fwheel
+	accessories[]: .charger.prpd.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.chrgr_prpd.provo.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.prpd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_prpd.sii"
+}
+
+vehicle_wheel_accessory: .charger.prpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.prpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_prpd.provo.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "provo"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  St. George PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.sgpd
+{
+	accessories[]: .charger.sgpd.chassis
+	accessories[]: .charger.sgpd.fwheel
+	accessories[]: .charger.sgpd.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.chrgr_sgpd.george.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.sgpd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_sgpd.sii"
+}
+
+vehicle_wheel_accessory: .charger.sgpd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.sgpd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_sgpd.george.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "st_george"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Idaho Boise PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.boisepd
+{
+	accessories[]: .charger.boisepd.chassis
+	accessories[]: .charger.boisepd.fwheel
+	accessories[]: .charger.boisepd.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.chrgr_boise.boise.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.boisepd.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_boisepd.sii"
+}
+
+vehicle_wheel_accessory: .charger.boisepd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.boisepd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_boise.boise.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "boise"
+}

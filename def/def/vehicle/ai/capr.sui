@@ -1,0 +1,44 @@
+traffic_vehicle : traffic.capr
+{
+	accessories[]: .capr.chassis
+	accessories[]: .capr.fwheel
+	accessories[]: .capr.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 1700
+
+	color[]: (0.0685, 0.1248, 0.1812) #BLUE
+	color[]: (0.3662, 0.3277, 0.2788) #silver
+    color[]: (0.6, 0.6, 0.6)          #GRAY
+	color[]: (0.0284, 0.0467, 0.0723) #Darck BLUE
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .capr.chassis
+{
+	data_path: "/def/vehicle/ai/capr/chassis.sii"
+}
+
+vehicle_wheel_accessory: .capr.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in.sii"
+}
+
+vehicle_wheel_accessory: .capr.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in.sii"
+}

@@ -1,0 +1,32 @@
+traffic_trailer : traffic.trailer.dump_b.cargo_cover
+{
+	accessories[]: .traffic.dump_b.cover.tchassis
+	accessories[]: .traffic.dump_b.cover.trwheel0
+	accessories[]: .traffic.dump_b.cover.trwheel1
+	accessories[]: .traffic.dump_b.cover.cargo
+
+	cargo_mass: 17690
+}
+
+vehicle_accessory: .traffic.dump_b.cover.tchassis
+{
+	data_path: "/def/vehicle/trailer/dump/chassis_b.sii"
+}
+
+vehicle_wheel_accessory: .traffic.dump_b.cover.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.dump_b.cover.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .traffic.dump_b.cover.cargo
+{
+	data_path: "/def/vehicle/trailer/dump/cargo_cover.sii"
+}
+

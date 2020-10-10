@@ -1,0 +1,152 @@
+traffic_vehicle : traffic.mack_rd.dump
+{
+	accessories[]: .mack_rd.dump.chassis
+	accessories[]: .mack_rd.dump.fwheel
+	accessories[]: .mack_rd.dump.rwheel
+	accessories[]: .mack_rd.dump.rwheel2
+
+	max_speed: 100
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+	
+	vehicle_mass: 25000
+	
+	engine_power: 330
+
+	spawn_ratio: 0.5
+
+	color[]: (0.2541, 0.0212, 0.0091) #red
+	color[]: (0.2581, 0.2622, 0.2158) #light brown
+	color[]: (0.3419, 0.3515, 0.3662) #white
+	color[]: (0.3419, 0.3515, 0.3662) #white
+	color[]: (0.0109, 0.0761, 0.2541) #blue
+	color[]: (0.9822, 0.552, 0.0168) # yellow
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .mack_rd.dump.chassis
+{
+	data_path: "/def/vehicle/ai/mack_rd/dump.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.dump.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.dump.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.dump.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX MIX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.mack_rd.mix
+{
+	accessories[]: .mack_rd.mix.chassis
+	accessories[]: .mack_rd.mix.fwheel
+	accessories[]: .mack_rd.mix.rwheel
+	accessories[]: .mack_rd.mix.rwheel2
+
+	max_speed: 100
+
+	spawn_ratio: 0.5
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 25000
+	engine_power: 330
+
+	color[]: (0.9, 0.9, 0.9) #white
+	color[]: (0.8, 0.8, 0.8) #white
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .mack_rd.mix.chassis
+{
+	data_path: "/def/vehicle/ai/mack_rd/mix.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.mix.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.mix.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.mix.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX PUMP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.mack_rd.pump
+{
+	accessories[]: .mack_rd.pump.chassis
+	accessories[]: .mack_rd.pump.fwheel
+	accessories[]: .mack_rd.pump.rwheel
+	accessories[]: .mack_rd.pump.rwheel2
+
+	max_speed: 100
+	engine_power: 330
+
+	spawn_ratio: 0.1
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 25000
+
+	color[]: (0.9, 0.9, 0.9) #white
+	color[]: (0.8, 0.8, 0.8) #white
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .mack_rd.pump.chassis
+{
+	data_path: "/def/vehicle/ai/mack_rd/pump.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.pump.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.pump.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.pump.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+

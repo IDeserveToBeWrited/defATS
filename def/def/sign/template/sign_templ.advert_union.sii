@@ -1,43 +1,29 @@
 SiiNunit
 {
-sign_template : _nameless.0298.F590 {
+sign_template : _nameless.523.cac0 {
  template_name: advert_union
  model_name: dlc_nv_1
+ stand_model_name: ""
  traffic_rule: null
+ boards: 0
  items: 2
- items[0]: _nameless.0297.D480
- items[1]: _nameless.02B0.06F0
- dynamic_attributes: 0
+ items[0]: _nameless.523.bf80
+ items[1]: _nameless.523.d3c0
+ dynamic_attributes: 2
+ dynamic_attributes[0]: _nameless.bab0.5d00
+ dynamic_attributes[1]: _nameless.deef.a780
 }
 
-sign_template_text : _nameless.0297.D480 {
- text: "Hey! Let's add some text here! :)"
+sign_template_text : _nameless.523.bf80 {
+ text: "LAS VEGAS NEVER SLEEPS"
  font_face: "/font/sign/dot_matrix.font"
- font_size: &3e99999a
+ font_size: &3ecccccd
  text_halign: center
  text_valign: center
  font_color: 255
  font_opacity: 1
  line_spacing: &3e4ccccd
- id: 1028915200
- area_name: ml1
- area_idx: nil
- coords_l: 0
- coords_r: &401f5822
- coords_t: &3fbf79b5
- coords_b: &3c27de80
- z_order: 1
-}
-
-sign_template_text : _nameless.02B0.06F0 {
- text: "All your base are belong to us!"
- font_face: "/font/sign/dot_matrix.font"
- font_size: &3e99999a
- text_halign: center
- text_valign: center
- font_color: 255
- font_opacity: 1
- line_spacing: &3e4ccccd
+ letter_spacing: 0
  id: 1328545792
  area_name: ml2
  area_idx: nil
@@ -46,6 +32,49 @@ sign_template_text : _nameless.02B0.06F0 {
  coords_t: &3fbf09cc
  coords_b: &3b5fd33d
  z_order: 1
+ tag: ""
+}
+
+sign_template_text : _nameless.523.d3c0 {
+ text: "Hey! Let's add some text here! :)"
+ font_face: "/font/sign/dot_matrix.font"
+ font_size: &3eb33333
+ text_halign: center
+ text_valign: center
+ font_color: 255
+ font_opacity: 1
+ line_spacing: &3e4ccccd
+ letter_spacing: 0
+ id: 1028915200
+ area_name: ml1
+ area_idx: nil
+ coords_l: 0
+ coords_r: &401f5822
+ coords_t: &3fbf79b5
+ coords_b: &3c27de80
+ z_order: 2
+ tag: ""
+}
+
+sign_text_list_attribute : _nameless.bab0.5d00 {
+ texts: 3
+ texts[0]: "WELCOME TO"
+ texts[1]: FABULOUS
+ texts[2]: "LAS VEGAS"
+ change_time: 1
+ item_id: 1328545792
+ attr_name: text
+}
+
+sign_text_list_attribute : _nameless.deef.a780 {
+ texts: 4
+ texts[0]: "TONIGHT SHANIA TWAIN"
+ texts[1]: "TOMORROW PATRIX AND THE BAND"
+ texts[2]: "Sunday CLOSED"
+ texts[3]: "What happens in Vegas stays in Vegas!"
+ change_time: 3
+ item_id: 1028915200
+ attr_name: text
 }
 
 }

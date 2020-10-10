@@ -5,19 +5,14 @@ accessory_chassis_data : bottom_dumpl.trailer.chassis
 	detail_model: "/vehicle/trailer/bottom_dump/trailer_28_double_dm.pmd"
 	model: "/vehicle/trailer/bottom_dump/trailer_28_double.pmd"
 	collision: "/vehicle/trailer/bottom_dump/trailer_28_double.pmc"
+	variant: default
+	look: default
 
 	#trailer_brace_model: "/vehicle/trailer/bottom_dump/trailer_brace.pmd"
 	#trailer_brace_anim: "/vehicle/trailer/bottom_dump/trailer_brace.pma"
 
-	#trailer_brace_up_sound: "/sound/truck/trailer_brace_hydro_up.ogg"
-	#trailer_brace_down_sound: "/sound/truck/trailer_brace_hydro_down.ogg"
-
-	residual_travel[]: 0.12 	# 1st axle
-
-	trailer_mass: 4600.0	#10200lb
-
-	variant: default
-	look: default
+	#trailer_brace_up_sound: "/sound/trailer/default/trailer_brace_hydro_up.soundref"
+	#trailer_brace_down_sound: "/sound/trailer/default/trailer_brace_hydro_down.soundref"
 
 	extended_shadow_texture: "/vehicle/trailer/bottom_dump/shadow_28.tobj"
 	extended_shadow_intensity: 1.45
@@ -25,6 +20,9 @@ accessory_chassis_data : bottom_dumpl.trailer.chassis
 	extended_shadow_fadeout_length: 0
 
 	ui_shadow: "/vehicle/trailer/bottom_dump/shadow_28.pmd"
-}
-}
 
+	trailer_mass: 4600.0	#10200lb
+
+	residual_travel[]: 0.12
+}
+}

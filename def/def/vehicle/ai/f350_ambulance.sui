@@ -1,0 +1,274 @@
+traffic_vehicle : traffic.f350_amb.city
+{
+	accessories[]: .f350_amb.chassis
+	accessories[]: .f350_amb.fwheel
+	accessories[]: .f350_amb.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	prefer_variant: true 
+	variant[]: traffic.f350_amb.id_cda
+	variant[]: traffic.f350_amb.id_boi
+	variant[]: traffic.f350_amb.id_idf
+	variant[]: traffic.f350_amb.nv_lve
+	
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+		
+	spawn_ratio: 0
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/id.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+
+
+
+########################### Idaho Generic ##################################
+
+traffic_vehicle : traffic.f350_amb.id
+{
+	accessories[]: .f350_amb.id.chassis
+	accessories[]: .f350_amb.id.fwheel
+	accessories[]: .f350_amb.id.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+		
+	spawn_ratio: 0
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.id.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/id.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+
+########################### Idaho - Cour´d Allene ##################################
+
+traffic_vehicle : traffic.f350_amb.id_cda
+{
+	accessories[]: .f350_amb.id_cda.chassis
+	accessories[]: .f350_amb.id_cda.fwheel
+	accessories[]: .f350_amb.id_cda.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+		
+	spawn_condition[]: .f350_amb.id_cda.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.id_cda.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/id_cda.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id_cda.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id_cda.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+traffic_spawn_condition: .f350_amb.id_cda.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "coeur_dalene"
+}
+
+########################### Idaho - Boise ##################################
+
+traffic_vehicle : traffic.f350_amb.id_boi
+{
+	accessories[]: .f350_amb.id_boi.chassis
+	accessories[]: .f350_amb.id_boi.fwheel
+	accessories[]: .f350_amb.id_boi.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+		
+	spawn_condition[]: .f350_amb.id_boi.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.id_boi.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/id_boi.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id_boi.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id_boi.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.id_boi.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "boise"
+}
+
+########################### Idaho - Idaho Falls ##################################
+
+traffic_vehicle : traffic.f350_amb.id_idf
+{
+	accessories[]: .f350_amb.id_idf.chassis
+	accessories[]: .f350_amb.id_idf.fwheel
+	accessories[]: .f350_amb.id_idf.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+		
+	spawn_condition[]: .f350_amb.id_idf.condition.city
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.id_idf.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/id_idf.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id_idf.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.id_idf.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.id_idf.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "idaho_falls"
+}
+
+########################### Nevada - Las Vegas ##################################
+
+traffic_vehicle : traffic.f350_amb.nv_lve
+{
+	accessories[]: .f350_amb.nv_lve.chassis
+	accessories[]: .f350_amb.nv_lve.fwheel
+	accessories[]: .f350_amb.nv_lve.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+		
+	spawn_condition[]: .f350_amb.nv_lve.condition.city
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.nv_lve.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/nv_lve.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.nv_lve.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.nv_lve.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.nv_lve.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "las_vegas"
+}

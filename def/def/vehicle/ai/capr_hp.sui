@@ -1,0 +1,47 @@
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Washington Patrol XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.capr_wa_hp
+{
+	accessories[]: .capr_wa_hp.chassis
+	accessories[]: .capr_wa_hp.fwheel
+	accessories[]: .capr_wa_hp.rwheel
+
+	max_speed: 300
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 1850
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .capr_wa_hp.chassis
+{
+	data_path: "/def/vehicle/ai/capr/chassis_wa_hp.sii"
+}
+
+vehicle_wheel_accessory: .capr_wa_hp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+
+vehicle_wheel_accessory: .capr_wa_hp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+
+

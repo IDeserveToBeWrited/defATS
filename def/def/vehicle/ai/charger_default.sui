@@ -1,0 +1,97 @@
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Default Variant - RT  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger
+{
+	accessories[]: .charger.chassis
+	accessories[]: .charger.fwheel
+	accessories[]: .charger.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	color[]: (0.3325, 0.3663, 0.3864) #GRAY
+	color[]: (0.0685, 0.1248, 0.1812) #BLUE
+	color[]: (0.3662, 0.3277, 0.2788) #silver
+	color[]: (0.6, 0.6, 0.6)          #GRAY
+	color[]: (0.0284, 0.0467, 0.0723) #Darck BLUE
+	color[]: (0.1195, 0.0006, 0.0129) #PURPLE
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+	
+	
+	vehicle_mass: 1980
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .charger.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis.sii"
+}
+
+vehicle_wheel_accessory: .charger.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Sport Variant-SRT  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger_srt1
+{
+	accessories[]: .charger_srt1.chassis
+	accessories[]: .charger_srt1.fwheel
+	accessories[]: .charger_srt1.rwheel
+
+	max_speed: 280
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	color[]: (0.9909, 0.5522, 0.017)    # YELLOW
+	color[]: (0.3185, 0, 0.0006)        # RED
+	color[]: (0.3662, 0.3277, 0.2788)   # silver
+	
+	
+	vehicle_mass: 1980
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .charger_srt1.chassis
+{
+	data_path: "/def/vehicle/ai/charger/chassis_srt.sii"
+}
+
+vehicle_wheel_accessory: .charger_srt1.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger_srt1.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+

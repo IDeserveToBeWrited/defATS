@@ -12,9 +12,16 @@ license_plate_data : .lp.car
 {
 	type: car
 
-	templates[]:"041 322"
+	# old [the silver state] - 123-ABC or 12A-345, 001-MAA - 48H-999 (2001 - mid 2017)
+	# new [home means nevada] - 123-A45, 001-A00 - 363-J96 (1.11.2016 - 28.6.2019)
+	# we use new one only
 
-        def0[]:"0"
+	#templates[]:"000-322"
+	#templates[]:"402-000"
+
+	templates[]:"000-100"
+
+	def0[]:"0"
 	def0[]:"1"
 	def0[]:"2"
 	def0[]:"3"
@@ -25,15 +32,15 @@ license_plate_data : .lp.car
 	def0[]:"8"
 	def0[]:"9"
 
-	def1[]:"1"
-	def1[]:"2"
-	def1[]:"3"
-	def1[]:"4"
-	def1[]:"5"
-	def1[]:"6"
-	def1[]:"7"
-	def1[]:"8"
-	def1[]:"9"
+	def1[]:"A"
+	def1[]:"B"
+	def1[]:"C"
+	def1[]:"D"
+	def1[]:"E"
+	def1[]:"F"
+	def1[]:"G"
+	def1[]:"H"
+	def1[]:"J"
 
 	def2[]:"A"
 	def2[]:"B"
@@ -57,15 +64,21 @@ license_plate_data : .lp.car
 	def2[]:"V"
 	def2[]:"X"
 	def2[]:"Y"
-        def2[]:"Z"
+	def2[]:"Z"
 
+	def2[]:"M"
+	def2[]:"N"
+	def2[]:"P"
+	def2[]:"Q"
+	def2[]:"R"
+	def2[]:"S"
 	def3[]:"T"
 	def3[]:"U"
 	def3[]:"V"
 	def3[]:"X"
 	def3[]:"Y"
 
-        def4[]:"0"
+	def4[]:"0"
 	def4[]:"1"
 	def4[]:"2"
 	def4[]:"3"
@@ -76,7 +89,13 @@ license_plate_data : .lp.truck
 {
 	type: truck
 
-	templates[]:"02000 1"
+	# apportioned: format 12345 A
+	# white with blue letters, APPORTIONED
+
+	background_front: truck_front
+	background_rear: truck_rear
+
+	templates[]:"100000 A"
 
 	def0[]:"0"
 	def0[]:"1"
@@ -89,20 +108,19 @@ license_plate_data : .lp.truck
 	def0[]:"8"
 	def0[]:"9"
 
-	def1[]:"P"
-
-	def2[]:"5"
-	def2[]:"6"
-	def2[]:"7"
-	def2[]:"8"
-	def2[]:"9"
+	def1[]:"<color value=FF6D2208>"
 }
 
 license_plate_data : .lp.trailer
 {
 	type: trailer
 
-	templates[]:"02000 1"
+	# format 12345, permanent trailer registration
+	# white with blue letters & PT
+
+	background_rear: trailer
+
+	templates[]:"100000"
 
 	def0[]:"0"
 	def0[]:"1"
@@ -115,32 +133,46 @@ license_plate_data : .lp.trailer
 	def0[]:"8"
 	def0[]:"9"
 
-	def1[]:"E"
-	def1[]:"F"
-	def1[]:"G"
-	def1[]:"H"
-	def1[]:"J"
-	def1[]:"K"
-	def1[]:"L"
-	def1[]:"M"
-	def1[]:"S"
-	def1[]:"U"
-	def1[]:"V"
-	def1[]:"W"
-
-	def2[]:"5"
-	def2[]:"6"
-	def2[]:"7"
-	def2[]:"8"
-	def2[]:"9"
+	def1[]:"<color value=FF6D2208>"
 }
 
+license_plate_data : .lp.truck_city
+{
+	type: truck_city
+
+	# format 12345 P (motor carrier)
+	# white background with blue letters
+
+	background_front: truck_city_front
+	background_rear: truck_city_rear
+
+	templates[]:"100000 P"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
+	
+	def1[]:"<color value=FF6D2208>"
+}
 
 license_plate_data : .lp.bus
 {
 	type: bus
 
-	templates[]:"20000 1"
+	# format 12345 P (motor carrier) or 12345 A (apportioned)
+	# white background with blue letters (APPORTIONED if A)
+
+	background_front: truck_city_front
+	background_rear: truck_city_rear
+
+	templates[]:"320000 P"
 
 	def0[]:"0"
 	def0[]:"1"
@@ -161,5 +193,31 @@ license_plate_data : .lp.bus
 	def2[]:"3"
 	def2[]:"4"
 	def2[]:"5"
+
+	def3[]:"<color value=FF6D2208>"
+}
+
+license_plate_data : .lp.police
+{
+	type: police
+
+	# format 12345 extempt
+	# regular background (old, see cars) with EX
+
+	background_front: police_front
+	background_rear: police_rear
+
+	templates[]:"00000"
+
+	def0[]:"0"
+	def0[]:"1"
+	def0[]:"2"
+	def0[]:"3"
+	def0[]:"4"
+	def0[]:"5"
+	def0[]:"6"
+	def0[]:"7"
+	def0[]:"8"
+	def0[]:"9"
 }
 }

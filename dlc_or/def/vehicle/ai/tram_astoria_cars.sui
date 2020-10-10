@@ -1,0 +1,28 @@
+traffic_trailer : train_car.astoria_car1
+{
+	accessories[]: .astoria_car1.chassis
+	accessories[]: .astoria_car1.rwheel
+	accessories[]: .astoria_car1.rwheel1
+
+	vehicle_mass: 12000
+
+	displacement_limit: 0.0
+}
+
+vehicle_accessory: .astoria_car1.chassis
+{
+	data_path: "/def/vehicle/ai/tram_astoria/chassis_02.sii"
+}
+
+vehicle_wheel_accessory: .astoria_car1.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .astoria_car1.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+

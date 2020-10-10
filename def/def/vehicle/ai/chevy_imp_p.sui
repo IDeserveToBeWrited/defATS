@@ -1,0 +1,101 @@
+traffic_vehicle : traffic.chevy_imp_p
+{
+	accessories[]: .chevyimp_p.chassis
+	accessories[]: .chevyimp_p.fwheel
+	accessories[]: .chevyimp_p.rwheel
+
+	max_speed: 300
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	vehicle_mass: 1850
+
+	tags[]: urban
+
+	#	prefer_variant: true
+	variant[]: traffic.chevyimp_psl
+
+
+	spawn_ratio: 0.0
+
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .chevyimp_p.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_imp/chassis_p.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_p.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Salt Lake City XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.chevyimp_psl
+{
+	accessories[]: .chevyimp_psl.chassis
+	accessories[]: .chevyimp_psl.fwheel
+	accessories[]: .chevyimp_psl.rwheel
+
+	max_speed: 300
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	vehicle_mass: 1850
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.chevyimp_psl.saltlake.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .chevyimp_psl.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_imp/chassis_p_utsl.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_psl.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_psl.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in.sii"
+}
+
+traffic_spawn_condition: .traffic.chevyimp_psl.saltlake.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+  str_param[]: "salt_lake"
+}

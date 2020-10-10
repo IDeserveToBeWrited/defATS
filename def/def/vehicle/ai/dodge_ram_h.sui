@@ -1,0 +1,50 @@
+traffic_vehicle : traffic.dodge.ram_h
+{
+	accessories[]: .dodge.ram_h.chassis
+	accessories[]: .dodge.ram_h.fwheel
+	accessories[]: .dodge.ram_h.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	allow_parked: false
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	trailer_chains[]: "trailer.ai_car.hauler"
+	trailer_chains[]: "trailer.ai_car.livestock"
+
+	spawn_ratio: 0.1
+
+	vehicle_mass: 1700
+	
+	color[]: (0.9, 0.9, 0.9)
+	color[]: (0.2383, 0.198, 0.1412)
+	color[]: (0.2961, 0.0212, 0.0129)
+	color[]: (0.0202, 0.0512, 0.1412)
+	color[]: (0.107, 0.107, 0.107)
+	color[]: (0.15, 0.15, 0.15)
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .dodge.ram_h.chassis
+{
+	data_path: "/def/vehicle/ai/dodge_ram_2500/chassis_hook.sii"
+}
+
+vehicle_wheel_accessory: .dodge.ram_h.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_o.sii"
+}
+
+vehicle_wheel_accessory: .dodge.ram_h.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_o.sii"
+}

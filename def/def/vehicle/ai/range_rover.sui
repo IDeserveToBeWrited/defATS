@@ -1,0 +1,44 @@
+traffic_vehicle : traffic.range_rover
+{
+	accessories[]: .range_rover.chassis
+	accessories[]: .range_rover.fwheel
+	accessories[]: .range_rover.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	vehicle_mass: 2500
+
+
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.0382, 0.0318, 0.0273) #brown
+	color[]: (0, 0.0263, 0.1347) #blue
+	color[]: (0.5394, 0.5711, 0.5906) #silver
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.1596, 0.0093, 0.0197) #red
+	color[]: (0.8713, 0.8631, 0.8227) #white
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .range_rover.chassis
+{
+	data_path: "/def/vehicle/ai/range_rover/chassis.sii"
+}
+
+vehicle_wheel_accessory: .range_rover.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o_2.sii"
+}
+
+vehicle_wheel_accessory: .range_rover.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o_2.sii"
+}
