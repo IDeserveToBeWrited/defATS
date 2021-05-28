@@ -1,0 +1,165 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+curve_model : curve.co_15001
+{
+	model_desc: "/model/panorama/co_colorado_springs/co_col_springs_wall.pmd"
+	name: "co col springs wall"
+	variation[]: "Default | center1,center2,center3,center4,center5,center6,center3,center2,center4,center6,center1,center4,center5,center6 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+}
+
+curve_model : curve.co_15003
+{
+	model_desc: "/model/panorama/co_denver/co_denver_wall.pmd"
+	name: "co denver wall"
+	variation[]: "Default | center1,center2,center3,center2 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	high_tess: 0
+}
+
+curve_model : curve.co_06001
+{
+	model_desc: "/model/panorama/co_pueblo/co_pueblo_levee_canal1.pmd"
+	name: "co pueblo levee canal1"
+
+	variation: 9
+	variation[0]: "var1 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0 | center15 : 1.0 | center16 : 1.0 | center17 : 1.0 | center18 : 1.0 | center19 : 1.0 | center20 : 1.0 | center21 : 1.0 | center22 : 1.0 | center23 : 1.0 | center24 : 1.0"
+	variation[1]: "panorama1 | var1 : 1.0"
+	variation[2]: "panorama3 | center2,center3,center4,center5,center6 : 1.0"
+	variation[3]: "panorama4 | center7,center8,center9,center10 : 1.0"
+	variation[4]: "panorama5 | center30,center31,center32,center33,center34,center35 : 1.0"
+	variation[5]: "var2 | center25 : 1.0 | center26 : 1.0 | center27 : 1.0 | center28 : 1.0 | center29 : 1.0"
+	variation[6]: "var4 | center36 : 1.0 | center37 : 1.0 | center38 : 1.0 | center39 : 1.0 | center40 : 1.0 | center41 : 1.0 | center42 : 1.0"
+	variation[7]: "panorama2 | center11,center12,center13,center14,center15,center16,center17,center18 : 1.0"
+	variation[8]: "panorama6 | center44 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.co_06002
+{
+	model_desc: "/model/panorama/co_pueblo/co_pueblo_wall.pmd"
+	name: "co pueblo wall"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "default | center1,center2,center3,center4,center5,center6 : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+	variation[1]: "var2 | center9 : 2.0 | center7,center8,center10 : 1.0"
+	start_part[1]: "start"
+	end_part[1]: "end"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+
+curve_model : curve.co_1c001
+{
+	model_desc: "/model/panorama/co_i70/co_eisenhower_tunnel_lights.pmd"
+	name: "co eisenhower tunnel lights"
+
+	variation: 1
+	variation[0]: "center |  : 1.0"
+
+	start_part: 1
+	start_part[0]: "start"
+
+	end_part: 1
+	end_part[0]: "end"
+
+	high_tess: 0
+
+}
+
+curve_model : curve.co_0l002
+{
+	model_desc: "/model/panorama/co_fort_collins/co_fort_collins_bridge.pmd"
+	name: "co fort collins bridge"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1,center2 : 0.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/panorama/co_fort_collins/co_fort_collins_bridge_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.co_1t004
+{
+	model_desc: "/model/panorama/co_ouray/co_ouray_lamp.pmd"
+	name: "co ouray lamp"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "center1 | center2 | center3 | center4"
+	end_part[0]: "center1 | center2 | center3 | center4"
+	fixed_inner_start[0]: "ins"
+	fixed_inner_end[0]: "ine"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/panorama/co_ouray/co_ouray_lamp_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+	dynamic_lod_desc[1]: "/model/panorama/co_ouray/co_ouray_lamp_lod2.pmd"
+	dynamic_lod_dist[1]: 150
+
+	fixed_step: 40.0
+}
+
+curve_model : curve.co_0c001
+{
+	model_desc: "/model/panorama/co_denver/co_denver_wall2.pmd"
+	name: "co denver wall2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.co_18001
+{
+	model_desc: "/model/road/co_steamboat_springs_crosswalk2.pmd"
+	name: "co steamboat springs crosswalk2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+}
+
+}

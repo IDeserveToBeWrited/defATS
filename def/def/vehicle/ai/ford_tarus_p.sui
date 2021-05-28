@@ -1,10 +1,10 @@
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Generic Police ( look 27 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-traffic_vehicle : traffic.ford_tarus_p
+traffic_vehicle : traffic.ford_tarus_p.city
 {
-	accessories[]: .ford_tarus_p.chassis
-	accessories[]: .ford_tarus_p.fwheel
-	accessories[]: .ford_tarus_p.rwheel
+	accessories[]: .ford_tarus_p.city.chassis
+	accessories[]: .ford_tarus_p.city.fwheel
+	accessories[]: .ford_tarus_p.city.rwheel
 
 	max_speed: 160
 
@@ -14,8 +14,8 @@ traffic_vehicle : traffic.ford_tarus_p
 
 	lod_dist[]: 53
 	lod_dist[]: 70
-	
-	
+
+
 
 	vehicle_mass: 1700
 
@@ -32,15 +32,15 @@ traffic_vehicle : traffic.ford_tarus_p
 @include "drivers_police.sui"
 
 }
-vehicle_accessory: .ford_tarus_p.chassis
+vehicle_accessory: .ford_tarus_p.city.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_police_27.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/police_27.sii"
 }
-vehicle_wheel_accessory: .ford_tarus_p.fwheel
+vehicle_wheel_accessory: .ford_tarus_p.city.fwheel
 {
 	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
 }
-vehicle_wheel_accessory: .ford_tarus_p.rwheel
+vehicle_wheel_accessory: .ford_tarus_p.city.rwheel
 {
 	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
 }
@@ -61,8 +61,8 @@ traffic_vehicle : traffic.ford_tarus_p.generic
 
 	lod_dist[]: 53
 	lod_dist[]: 70
-	
-	
+
+
 
 	vehicle_mass: 1700
 
@@ -70,14 +70,14 @@ traffic_vehicle : traffic.ford_tarus_p.generic
 
 	variant[]: traffic.ford_tarus_p.p45
 	variant[]: traffic.ford_tarus_p.p96
-	
+
 
 @include "drivers_police.sui"
 
 }
 vehicle_accessory: .ford_tarus_p.g.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_police_27.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/police_27.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.g.fwheel
 {
@@ -107,7 +107,7 @@ traffic_vehicle : traffic.ford_tarus_p.p45
 	lod_dist[]: 70
 
 	vehicle_mass: 1700
-	
+
 	tags[]: urban
 
 @include "drivers_police.sui"
@@ -115,7 +115,7 @@ traffic_vehicle : traffic.ford_tarus_p.p45
 }
 vehicle_accessory: .ford_tarus_p.p45.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_police_45.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/police_45.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.p45.fwheel
 {
@@ -153,7 +153,7 @@ traffic_vehicle : traffic.ford_tarus_p.p96
 }
 vehicle_accessory: .ford_tarus_p.p96.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_police_96.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/police_96.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.p96.fwheel
 {
@@ -195,7 +195,7 @@ traffic_vehicle : traffic.ford_tarus_p.las_vegas
 }
 vehicle_accessory: .ford_tarus_p.chassis.lv
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_lv.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/nv_vegas_pd.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.fwheel.lv
 {
@@ -211,6 +211,7 @@ traffic_spawn_condition: .traffic.ford_tarus_p.las_vegas.condition.city
 	type: city
 	str_param[]: "vegas"
 }
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Phoenix XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_vehicle : traffic.ford_tarus_p.phoenix
 {
@@ -238,7 +239,7 @@ traffic_vehicle : traffic.ford_tarus_p.phoenix
 }
 vehicle_accessory: .ford_tarus_p.phoenix.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_phoenix.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/ar_phx_pd.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.phoenix.fwheel
 {
@@ -255,6 +256,7 @@ traffic_spawn_condition: .traffic.ford_tarus_p.phoenix.condition.city
 	str_param[]: "phoenix"
 }
 
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Reno XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_vehicle : traffic.ford_tarus_p.reno
 {
@@ -282,7 +284,7 @@ traffic_vehicle : traffic.ford_tarus_p.reno
 }
 vehicle_accessory: .ford_tarus_p.reno.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_reno.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/nv_reno_pd.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.reno.fwheel
 {
@@ -327,7 +329,7 @@ traffic_vehicle : traffic.ford_tarus_p.portland
 }
 vehicle_accessory: .ford_tarus_p.portland.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_portland.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/or_port_pd.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.portland.fwheel
 {
@@ -373,7 +375,7 @@ traffic_vehicle : traffic.ford_tarus_p.idcdal
 }
 vehicle_accessory: .ford_tarus_p.idcdal.chassis
 {
-	data_path: "/def/vehicle/ai/ford_taurus/chassis_idcdal.sii"
+	data_path: "/def/vehicle/ai/ford_taurus/id_cda_pd.sii"
 }
 vehicle_wheel_accessory: .ford_tarus_p.idcdal.fwheel
 {

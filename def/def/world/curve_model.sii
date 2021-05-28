@@ -60,7 +60,7 @@ curve_model : curve.3
 
 curve_model : curve.4
 {
-	name: "wa_stencil_keepclear_area1m"
+	name: "XXX_DO_NOT_USE_XXX_wa_stencil_keepclear_area1m"
 	model_desc: "/model/props/road/wa_stencil_keepclear_area1m.pmd"
 
 	variation[]: "default | c1_white : 2.0 | c2_white : 1.0 | c3_white : 1.0"
@@ -78,7 +78,7 @@ curve_model : curve.4
 
 curve_model : curve.5
 {
-	name: "wa_stencil_keepclear_area2m"
+	name: "XXX_DO_NOT_USE_XXX_wa_stencil_keepclear_area2m"
 	model_desc: "/model/props/road/wa_stencil_keepclear_area2m.pmd"
 
 	variation[]: "default | cen1_white : 1.0 | cen2_white : 1.0 | cen3_white : 2.0"
@@ -97,7 +97,7 @@ curve_model : curve.5
 
 curve_model : curve.6
 {
-	name: "wa_stencil_keepclear_area5m"
+	name: "XXX_DO_NOT_USE_XXX_wa_stencil_keepclear_area5m"
 	model_desc: "/model/props/road/wa_stencil_keepclear_area5m.pmd"
 
 	variation[]: "white | cen1_white : 1.0 | cen2_white : 1.0 | cen3_white : 2.0"
@@ -153,56 +153,69 @@ curve_model : curve.8
 
 curve_model : curve.9
 {
-	name: "wa_bollard_barrier3"
 	model_desc: "/model/props/barrier/wa_bollard_barrier3.pmd"
-	variation[]: "1m | center1 : 1.0"
-	variation[]: "3m | center3m : 1.0"
-	variation[]: "5m | center5m : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-	end_part[]: "end3m"
-	end_part[]: "end5m"
-	dynamic_lod_desc[]: "/model/props/barrier/wa_bollard_barrier3_lod1.pmd"
-	dynamic_lod_dist[]: 40.0
+	name: "wa_bollard_barrier3"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "1m | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "3m | center3m : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end3m"
+	variation[2]: "5m | center5m : 1.0"
+	start_part[2]: "start1"
+	end_part[2]: "end5m"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/props/barrier/wa_bollard_barrier3_lod1.pmd"
+	dynamic_lod_dist[0]: 40
+
+	smooth_surface: true
 }
 
 curve_model : curve.10
 {
-	name: "us crash barrier generic"
 	model_desc: "/model/barrier/metal/wa_crash_barrier_generic.pmd"
-	variation[]: "lowpoly | center1 : 2.0 | center2 : 5.0"
-	start_part[]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st"
-	end_part[]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st"
+	name: "us crash barrier generic"
 
-	variation[]: "highwpoly | center3 : 2.0 | center4 : 5.0"
-	start_part[]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st"
-	end_part[]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st"
+	variation: 6
+	start_part: 6
+	end_part: 6
+	variation[0]: "lowpoly | center1 : 2.0 | center2 : 5.0"
+	start_part[0]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st | s7_mount"
+	end_part[0]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st | e7_mount"
+	variation[1]: "highwpoly | center3 : 2.0 | center4 : 5.0"
+	start_part[1]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st | s7_mount"
+	end_part[1]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st | e7_mount"
+	variation[2]: "superfine | center5 : 2.0 | center6 : 5.0"
+	start_part[2]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st | s7_mount"
+	end_part[2]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st | e7_mount"
+	variation[3]: "refl_low | center7 : 2.0 | center8 : 5.0"
+	start_part[3]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st | s7_mount"
+	end_part[3]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st | e7_mount"
+	variation[4]: "refl_high | center9,center10,center10 : 2.0"
+	start_part[4]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st | s7_mount"
+	end_part[4]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st | e7_mount"
+	variation[5]: "refl_super | center11,center12,center12,center12,center12,center12 : 2.0"
+	start_part[5]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st | s7_mount"
+	end_part[5]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st | e7_mount"
 
-	variation[]: "superfine | center5 : 2.0 | center6 : 5.0"
-	start_part[]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st"
-	end_part[]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st"
+	high_tess: 0
 
-
-	variation[]: "refl_low | center7 : 2.0 | center8 : 5.0"
-	start_part[]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st"
-	end_part[]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st"
-
-	variation[]: "refl_high | center9,center10,center10 : 2.0"
-	start_part[]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st"
-	end_part[]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st"
-
-	variation[]: "refl_super | center11,center12,center12,center12,center12,center12 : 2.0"
-	start_part[]: "s1_wide | s2_narrow | s3_bend | s4_flat | s5_ground | s6_bend_st"
-	end_part[]: "e1_wide | e2_narrow | e3_bend | e4_flat | e5_ground | e6_bend_st"
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/metal/wa_crash_barrier_generic_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+	dynamic_lod_desc[1]: "/model/barrier/metal/wa_crash_barrier_generic_lod2.pmd"
+	dynamic_lod_dist[1]: 200
 
 	smooth_surface: true
-
-	dynamic_lod_desc[]: "/model/barrier/metal/wa_crash_barrier_generic_lod1.pmd"
-	dynamic_lod_dist[]: 80
-
-	dynamic_lod_desc[]: "/model/barrier/metal/wa_crash_barrier_generic_lod2.pmd"
-	dynamic_lod_dist[]: 200
-
 }
 
 curve_model : curve.11
@@ -385,9 +398,17 @@ curve_model : curve.21
 
 curve_model : curve.22
 {
-	name: "wa_seattle_tunnel1_fwy0-3_curve"
 	model_desc: "/model/tunnel/wa_seattle_tunnel1_fwy0-3_curve.pmd"
-	variation[]: "var1 | center1,center4,center3 : 1.0"
+	name: "wa_seattle_tunnel1_fwy0-3_curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1,center4,center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
 }
 
 curve_model : curve.23
@@ -428,22 +449,6 @@ curve_model : curve.25
 	end_part[]: "end3"
 	end_part[]: "end4"
 	end_part[]: "end5"
-}
-
-curve_model : curve.26
-{
-	name: "ut_wall_stone_low"
-	model_desc: "/model/barrier/stone/ut_wall_stone_low.pmd"
-	variation[]: "var1 | center16,center1,center2,center3,center4,center5,center6,center7,center8,center9 : 1.0"
-	variation[]: "var2 | center10,center11,center12,center13,center14,center15 : 1.0"
-	dynamic_lod_desc[]: "/model/barrier/stone/ut_wall_stone_low_lod1.pmd"
-	dynamic_lod_dist[]: 35.0
-
-	start_part[]: "start1 | start2 | start3"
-	start_part[]: "start1 | start2 | start3"
-
-	end_part[]: "end1 | end2 | end3"
-	end_part[]: "end1 | end2 | end3"
 }
 
 curve_model : curve.27
@@ -815,32 +820,74 @@ curve_model : curve.48
 }
 curve_model : curve.49
 {
-	name: "wa_stencil_keepclear"
-	model_desc: "/model/props/road/wa_stencil_keepclear.pmd"
+	model_desc: "/model/props/road/wa_stencil_keepclear_used.pmd"
+	name: "wa_stencil_keepclear_used"
 
-	variation[]: "white_1m | c1_white : 1.0 | c2_white : 1.0 | c3_white : 1.0"
-	start_part[]: "s1_white1m"
-	end_part[]: "e1_white1m"
+	variation: 15
+	start_part: 15
+	end_part: 15
+	variation[0]: "white_1m | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1 | start2 | start3 | start4"
+	end_part[0]: "end1 | end2 | end3 | end4"
+	variation[1]: "yellow_1m | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: "start5 | start6 | start7 | start8"
+	end_part[1]: "end5 | end6 | end7 | end8"
+	variation[2]: "red_1m | center7 : 1.0 | center8 : 1.0 | center9 : 1.0"
+	start_part[2]: "start9 | start10 | start11 | start12"
+	end_part[2]: "end9 | end10 | end11 | end12"
+	variation[3]: "white_2m | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[3]: "start13 | start14 | start15 | start16"
+	end_part[3]: "end13 | end14 | end15 | end16"
+	variation[4]: "yellow_2m | center13 : 1.0 | center14 : 1.0 | center15 : 1.0"
+	start_part[4]: "start17 | start18 | start19 | start20"
+	end_part[4]: "end17 | end18 | end19 | end20"
+	variation[5]: "red_2m | center16 : 1.0 | center17 : 1.0 | center18 : 1.0"
+	start_part[5]: "start21 | start22 | start23 | start24"
+	end_part[5]: "end21 | end22 | end23 | end24"
+	variation[6]: "white_5m | center19 : 0.3 | center20 : 1.0 | center21 : 0.5"
+	start_part[6]: "start25 | start26 | start27 | start28"
+	end_part[6]: "end25 | end26 | end27 | end28"
+	variation[7]: "yellow_5m | center22 : 0.3 | center23 : 1.0 | center24 : 0.5"
+	start_part[7]: "start29 | start30 | start31 | start32"
+	end_part[7]: "end29 | end30 | end31 | end32"
+	variation[8]: "red_5m | center25 : 0.3 | center26 : 1.0 | center27 : 0.5"
+	start_part[8]: "start33 | start34 | start35 | start36"
+	end_part[8]: "end33 | end34 | end35 | end36"
+	variation[9]: "white_10m | center28 : 1.0"
+	start_part[9]: "start37 | start38 | start39"
+	end_part[9]: "end37 | end38 | end39"
+	variation[10]: "white_15m | center29 : 1.0"
+	start_part[10]: "start40 | start41 | start42"
+	end_part[10]: "end40 | end41 | end42"
+	variation[11]: "yellow_10m | center30 : 1.0"
+	start_part[11]: "start43 | start44 | start45"
+	end_part[11]: "end43 | end44 | end45"
+	variation[12]: "yellow_15m | center31 : 1.0"
+	start_part[12]: "start46 | start47 | start48"
+	end_part[12]: "end46 | end47 | end48"
+	variation[13]: "red_10m | center32 : 1.0"
+	start_part[13]: "start49 | start50 | start51"
+	end_part[13]: "end49 | end50 | end51"
+	variation[14]: "red_15m | center33 : 1.0"
+	start_part[14]: "start52 | start53 | start54"
+	end_part[14]: "end52 | end53 | end54"
 
-	variation[]: "yellow_1m | c4_yellow : 1.0 | c5_yellow : 1.0 | c6_yellow : 1.0"
-	start_part[]: "s2_yellow1m"
-	end_part[]: "e2_yellow1m"
-
-	variation[]: "white_2m | c7_white : 1.0 | c8_white : 1.0 | c9_white : 1.0"
-	start_part[]: "s3_white2m"
-	end_part[]: "e3_white2m"
-
-	variation[]: "yellow_2m | c10_yellow : 1.0 | c11_yellow : 1.0 | c12_yellow : 1.0"
-	start_part[]: "s4_yellow2m"
-	end_part[]: "e4_yellow2m"
-
-	variation[]: "white_5m | c13_white : 1.0 | c14_white : 1.0 | c15_white : 1.0"
-	start_part[]: "s5_white5m"
-	end_part[]: "e5_white5m"
-
-	variation[]: "yellow_5m | c16_yellow : 1.0 | c17_yellow : 1.0 | c18_yellow : 1.0"
-	start_part[]: "s6_yellow5m"
-	end_part[]: "e6_yellow5m"
+	high_tess: 15
+	high_tess[0]: "white_1m"
+	high_tess[1]: "yellow_1m"
+	high_tess[2]: "red_1m"
+	high_tess[3]: "white_2m"
+	high_tess[4]: "yellow_2m"
+	high_tess[5]: "red_2m"
+	high_tess[6]: "white_5m"
+	high_tess[7]: "yellow_5m"
+	high_tess[8]: "red_5m"
+	high_tess[9]: "white_10m"
+	high_tess[10]: "white_15m"
+	high_tess[11]: "yellow_10m"
+	high_tess[12]: "yellow_15m"
+	high_tess[13]: "red_10m"
+	high_tess[14]: "red_15m"
 }
 
 curve_model : curve.50
@@ -1372,6 +1419,14 @@ curve_model : curve.75
 	start_part[]: "start4"
 	end_part[]: "end4"
 
+	variation[]: "kerb_white | center5 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+
+	variation[]: "kerb_yellow | center6 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+
 }
 curve_model : curve.76
 {
@@ -1409,6 +1464,7 @@ curve_model : curve.77
 	end_part[4]: "endc"
 
 	high_tess: 0
+
 }
 
 curve_model : curve.78
@@ -1642,35 +1698,37 @@ curve_model : curve.85
 }
 curve_model : curve.86
 {
-	name: "us_grass_stripe_curve"
 	model_desc: "/model/props/street/us_grass_stripe_curve.pmd"
+	name: "us_grass_stripe_curve"
 
-	variation[]: "1m_lowpoly | center3 : 1.0"
-	start_part[]: "start10 | start11"
-	end_part[]: "end10 | end11"
+	variation: 6
+	start_part: 6
+	end_part: 6
+	variation[0]: "1m_lowpoly | center3 : 1.0"
+	start_part[0]: "start10 | start11"
+	end_part[0]: "end10 | end11"
+	variation[1]: "1m_hipoly | center33 : 1.0"
+	start_part[1]: "start10 | start11"
+	end_part[1]: "end10 | end11"
+	variation[2]: "2m_lowpoly | center2 : 1.0"
+	start_part[2]: "start7 | start8 | start9"
+	end_part[2]: "end7 | end8 | end9"
+	variation[3]: "2m_hipoly | center22 : 1.0"
+	start_part[3]: "start7 | start8 | start9"
+	end_part[3]: "end7 | end8 | end9"
+	variation[4]: "5m_lowpoly | center1 : 1.0"
+	start_part[4]: "start1 | start2 | start3 | start4 | start5 | start6"
+	end_part[4]: "end1 | end2 | end3 | end4 | end5 | end6"
+	variation[5]: "5m_hipoly | center11 : 1.0"
+	start_part[5]: "start1 | start2 | start3 | start4 | start5 | start6"
+	end_part[5]: "end1 | end2 | end3 | end4 | end5 | end6"
 
-	variation[]: "1m_hipoly | center33 : 1.0"
-	start_part[]: "start10 | start11"
-	end_part[]: "end10 | end11"
-
-	variation[]: "2m_lowpoly | center2 : 1.0"
-	start_part[]: "start7 | start8 | start9"
-	end_part[]: "end7 | end8 | end9"
-
-	variation[]: "2m_hipoly | center22 : 1.0"
-	start_part[]: "start7 | start8 | start9"
-	end_part[]: "end7 | end8 | end9"
-
-	variation[]: "5m_lowpoly | center1 : 1.0"
-	start_part[]: "start1 | start2 | start3 | start4 | start5 | start6"
-	end_part[]: "end1 | end2 | end3 | end4 | end5 | end6"
-
-	variation[]: "5m_hipoly | center11 : 1.0"
-	start_part[]: "start1 | start2 | start3 | start4 | start5 | start6"
-	end_part[]: "end1 | end2 | end3 | end4 | end5 | end6"
+	high_tess: 3
+	high_tess[0]: "1m_hipoly"
+	high_tess[1]: "2m_hipoly"
+	high_tess[2]: "5m_hipoly"
 
 	smooth_surface: true
-
 }
 curve_model : curve.87
 {
@@ -1760,22 +1818,22 @@ curve_model : curve.92
 
 curve_model : curve.93
 {
-
-	name: "us_fence_wooden1"
 	model_desc: "/model/barrier/wood/us_fence_wooden1_curve.pmd"
-	variation[]: "default | center1 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
+	name: "us_fence_wooden1"
 
-	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden1_curve_lod1.pmd"
-	dynamic_lod_dist[]: 30
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
 
-	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden1_curve_lod2.pmd"
-	dynamic_lod_dist[]: 100
+	high_tess: 0
 
-	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden1_curve_lod3.pmd"
-	dynamic_lod_dist[]: 200
-
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/wood/us_fence_wooden1_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 130
 }
 
 curve_model : curve.94
@@ -1826,22 +1884,24 @@ curve_model : curve.95
 
 curve_model : curve.96
 {
-
-	name: "us_fence_wooden3"
 	model_desc: "/model/barrier/wood/us_fence_wooden3_curve.pmd"
-	variation[]: "default | center1 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
+	name: "us_fence_wooden3"
 
-	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden3_curve_lod1.pmd"
-	dynamic_lod_dist[]: 50
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
 
-	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden3_curve_lod2.pmd"
-	dynamic_lod_dist[]: 100
+	high_tess: 0
 
-	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden3_curve_lod3.pmd"
-	dynamic_lod_dist[]: 200
-
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/wood/us_fence_wooden3_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/barrier/wood/us_fence_wooden3_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 120
 }
 curve_model : curve.97
 {
@@ -1851,23 +1911,6 @@ curve_model : curve.97
 	variation[]: "default | center1 : 2.0 | center2 : 2.0 | center3 : 2.0 | center4 : 2.0 | center5 : 1.0"
 	start_part[]: "start1 | start2"
 	end_part[]: "end1 | end2"
-
-}
-curve_model : curve.98
-{
-
-	name: "wall_concrete1_curve"
-	model_desc: "/model/barrier/concrete/wall_concrete1_curve.pmd"
-
-	variation[]: "lowpoly | center7 : 2.0 | center8 : 1.0 | center9 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-
-	variation[]: "xHipoly | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-
-	smooth_surface: true
 
 }
 curve_model : curve.99
@@ -1925,13 +1968,22 @@ curve_model : curve.103
 }
 curve_model : curve.104
 {
-
-	name: "or_roadblock_yellow_curve"
 	model_desc: "/model/barrier/concrete/or_roadblock_yellow_curve.pmd"
-	variation[]: "clean | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 0.0 | center7 : 0.0 | center8 : 0.0 | center9 : 0.0 | center10 : 0.0"
-	variation[]: "damaged | center1 : 0.0 | center2 : 0.0 | center3 : 0.0 | center4 : 0.0 | center5 : 0.0 | center6 : 2.0 | center7 : 2.0 | center8 : 2.0 | center9 : 2.0 | center10 : 1.0"
-	variation[]: "mixed | center1 : 0.0 | center2 : 2.0 | center3 : 2.0 | center4 : 2.0 | center5 : 0.0 | center6 : 2.0 | center7 : 2.0 | center8 : 1.0 | center9 : 2.0 | center10 : 0.0"
+	name: "or_roadblock_yellow_curve"
 
+	variation: 3
+	variation[0]: "clean | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 0.0 | center7 : 0.0 | center8 : 0.0 | center9 : 0.0 | center10 : 0.0"
+	variation[1]: "damaged | center1 : 0.0 | center2 : 0.0 | center3 : 0.0 | center4 : 0.0 | center5 : 0.0 | center6 : 2.0 | center7 : 2.0 | center8 : 2.0 | center9 : 2.0 | center10 : 1.0"
+	variation[2]: "mixed | center1 : 0.0 | center2 : 2.0 | center3 : 2.0 | center4 : 2.0 | center5 : 0.0 | center6 : 2.0 | center7 : 2.0 | center8 : 1.0 | center9 : 2.0 | center10 : 0.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/concrete/or_roadblock_yellow_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/barrier/concrete/or_roadblock_yellow_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 150
 }
 curve_model : curve.106
 {
@@ -1962,97 +2014,6 @@ curve_model : curve.107
 	dynamic_lod_desc[]: "/model/rock/ut_rock_bedrock_lod1.pmd"
 	dynamic_lod_dist[]: 150
 }
-curve_model : curve.ut_17
-{
-
-	name: "pole_wooden_single_wires"
-
-	model_desc: "/model/distribution/electricity/pole_wooden_single_wires.pmd"
-
-	variation[]: "default | center1 : 1.0"
-	start_part[]: "start1 | start2"
-	end_part[]: "end1 | end2"
-	fixed_inner_start[]: "ins"
-	fixed_inner_end[]: "ine"
-
-	variation[]: "random | center1 : 10.0 | center2 : 10.0 | center3 : 10.0 | center4 : 1.0"
-	start_part[]: "start1 | start2"
-	end_part[]: "end1 | end2"
-	fixed_inner_start[]: "ins"
-	fixed_inner_end[]: "ine"
-
-	dynamic_lod_desc[]: "/model/distribution/electricity/pole_wooden_single_wires_lod1.pmd"
-	dynamic_lod_dist[]: 100
-
-	fixed_step: 40
-}
-
-curve_model : curve.ut_18
-{
-
-	name: "pole_wooden_single_wires2"
-
-	model_desc: "/model/distribution/electricity/pole_wooden_single_wires2.pmd"
-
-	variation[]: "default | center1 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-	fixed_inner_start[]: "ins"
-	fixed_inner_end[]: "ine"
-
-	variation[]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-	fixed_inner_start[]: "ins"
-	fixed_inner_end[]: "ine"
-
-	dynamic_lod_desc[]: "/model/distribution/electricity/pole_wooden_single_wires2_lod1.pmd"
-	dynamic_lod_dist[]: 100
-
-	fixed_step: 40
-}
-
-curve_model : curve.ut_19
-{
-	model_desc: "/model/distribution/electricity/pole_wooden_wire.pmd"
-	name: "pole_wooden_wire"
-
-	variation: 4
-	start_part: 4
-	end_part: 4
-	fixed_inner_start: 4
-	fixed_inner_end: 4
-	variation[0]: "default | center1 : 1.0"
-	start_part[0]: "start1 | start2 | start3"
-	end_part[0]: "end1 | end2 | end3"
-	fixed_inner_start[0]: "ins"
-	fixed_inner_end[0]: "ine"
-	variation[1]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
-	start_part[1]: "start1 | start2 | start3"
-	end_part[1]: "end1 | end2 | end3"
-	fixed_inner_start[1]: "ins"
-	fixed_inner_end[1]: "ine"
-	variation[2]: "default_nb | center1 : 1.0"
-	start_part[2]: "start1 | start2 | start3"
-	end_part[2]: "end1 | end2 | end3"
-	fixed_inner_start[2]: "ins2"
-	fixed_inner_end[2]: "ine2"
-	variation[3]: "random_nb | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
-	start_part[3]: "start1 | start2 | start3"
-	end_part[3]: "end1 | end2 | end3"
-	fixed_inner_start[3]: "ins2"
-	fixed_inner_end[3]: "ine2"
-
-	high_tess: 0
-
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/model/distribution/electricity/pole_wooden_wire_lod1.pmd"
-	dynamic_lod_dist[0]: 100
-
-	fixed_step: 75.0
-}
-
 curve_model : curve.ut_21
 {
 
@@ -2679,34 +2640,52 @@ curve_model : curve.ut_6
 }
 curve_model : curve.ut_7
 {
-
-	name: "ut_metal_fence2"
 	model_desc: "/model/barrier/metal/ut_metal_fence2.pmd"
-	variation[]: "balanced | center1 : 4.0 | center9 : 4.0 | center10 : 4.0 | center2,center3,center4,center5,center6 : 5.0 | center7,center8 : 5.0 | center11,center12,center13 : 5.0 | center14,center15 : 5.0 | center16,center17,center18 : 5.0"
-	variation[]: "rare | center1 : 6.0 | center9 : 4.0 | center10 : 4.0 | center2,center3,center4,center5,center6 : 0.0 | center7,center8 : 4.0 | center11,center12,center13 : 0.0 | center14,center15 : 0.0 | center16,center17,center18 : 0.0"
-	variation[]: "dense | center1 : 0.0 | center9 : 0.0 | center10 : 0.0 | center2,center3,center4,center5,center6 : 7.0 | center7,center8 : 2.0 | center11,center12,center13 : 6.0 | center14,center15 : 6.0 | center16,center17,center18 : 6.0"
-	start_part[]: "start"
-	end_part[]: "end1 | end2 | end3 | end4 | end5 | end6 | end7"
+	name: "ut_metal_fence2"
 
-	dynamic_lod_desc[]: "/model/barrier/metal/ut_metal_fence2_lod1.pmd"
-	dynamic_lod_dist[]: 60
-	dynamic_lod_desc[]: "/model/barrier/metal/ut_metal_fence2_lod2.pmd"
-	dynamic_lod_dist[]: 150
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "balanced | center1 : 4.0 | center9 : 4.0 | center10 : 4.0 | center2,center3,center4,center5,center6 : 5.0 | center7,center8 : 5.0 | center11,center12,center13 : 5.0 | center14,center15 : 5.0 | center16,center17,center18 : 5.0"
+	start_part[0]: "start"
+	end_part[0]: "end1 | end2 | end3 | end4 | end5 | end6 | end7"
+	variation[1]: "rare | center1 : 6.0 | center9 : 4.0 | center10 : 4.0 | center2,center3,center4,center5,center6 : 0.0 | center7,center8 : 4.0 | center11,center12,center13 : 0.0 | center14,center15 : 0.0 | center16,center17,center18 : 0.0"
+	start_part[1]: "start"
+	end_part[1]: "end1 | end2 | end3 | end4 | end5 | end6 | end7"
+	variation[2]: "dense | center1 : 0.0 | center9 : 0.0 | center10 : 0.0 | center2,center3,center4,center5,center6 : 7.0 | center7,center8 : 2.0 | center11,center12,center13 : 6.0 | center14,center15 : 6.0 | center16,center17,center18 : 6.0"
+	start_part[2]: "start"
+	end_part[2]: "end1 | end2 | end3 | end4 | end5 | end6 | end7"
 
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/metal/ut_metal_fence2_lod1.pmd"
+	dynamic_lod_dist[0]: 60
+	dynamic_lod_desc[1]: "/model/barrier/metal/ut_metal_fence2_lod2.pmd"
+	dynamic_lod_dist[1]: 150
 }
 curve_model : curve.ut_8
 {
-
-	name: "ut_oil_pipe"
 	model_desc: "/model/distribution/liquid/ut_oil_pipe.pmd"
-	variation[]: "pipe | center : 1.0"
-	variation[]: "pipe_L | leg : 1.0"
-	start_part[]: "start_D | start_F | start_L | start_R | start_Con"
-	end_part[]: "end_D | end_F | end_L | end_R | end_Con"
+	name: "ut_oil_pipe"
 
-	dynamic_lod_desc[]: "/model/distribution/liquid/ut_oil_pipe_lod1.pmd"
-	dynamic_lod_dist[]: 30
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "pipe | center : 1.0"
+	start_part[0]: "start_d | start_f | start_l | start_r | start_con"
+	end_part[0]: "end_d | end_f | end_l | end_r | end_con"
+	variation[1]: "pipe_L | leg : 1.0"
+	start_part[1]: "start_d | start_f | start_l | start_r | start_con"
+	end_part[1]: "end_d | end_f | end_l | end_r | end_con"
 
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/distribution/liquid/ut_oil_pipe_lod1.pmd"
+	dynamic_lod_dist[0]: 30
 }
 curve_model : curve.ut_9
 {
@@ -2787,24 +2766,6 @@ curve_model : curve.ut_14
 	dynamic_lod_desc[]: "/model/distribution/liquid/ut_oil_hoses1_lod2.pmd"
 	dynamic_lod_dist[]: 100
 
-}
-curve_model : curve.ut_15
-{
-
-	name: "el_pole_wooden_double_wire"
-
-	model_desc: "/model/distribution/electricity/el_pole_wooden_double_wire.pmd"
-
-	variation[]: "default | center1 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-	fixed_inner_start[]: "ins"
-	fixed_inner_end[]: "ine"
-
-	dynamic_lod_desc[]: "/model/distribution/electricity/el_pole_wooden_double_wire_lod1.pmd"
-	dynamic_lod_dist[]: 100
-
-	fixed_step: 50
 }
 curve_model : curve.ut_16
 {
@@ -2903,23 +2864,29 @@ curve_model : curve.ut_29
 }
 curve_model : curve.ut_30
 {
-	name: "ut_fence_metal1"
 	model_desc: "/model/barrier/metal/ut_fence_metal1.pmd"
+	name: "ut_fence_metal1"
 
-	variation[]: "default | center1 : 1.0"
-	start_part[]: "start1 | start2"
-	end_part[]: "end1 | end2"
+	color_variant: 7
+	color_variant[0]: "green: 83,127,98"
+	color_variant[1]: "blue: 112,151,175"
+	color_variant[2]: "brown: 138,112,102"
+	color_variant[3]: "yellow: 255,239,105"
+	color_variant[4]: "red: 185,86,81"
+	color_variant[5]: "white: 255,255,255"
+	color_variant[6]: "grey: 141,141,141"
 
-	variation[]: "broken | center1 : 1.0 | center1,center2,center1 : 0.5 | center1,center3,center1 : 0.3 | center1,center4,center1 : 0.5 | center1,center5,center1 : 0.5"
-	start_part[]: "start1 | start2"
-	end_part[]: "end1 | end2"
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+	variation[1]: "broken | center1 : 1.0 | center1,center2,center1 : 0.5 | center1,center3,center1 : 0.3 | center1,center4,center1 : 0.5 | center1,center5,center1 : 0.5"
+	start_part[1]: "start1 | start2"
+	end_part[1]: "end1 | end2"
 
-	color_variant[]: "green: 83,127,98"
-	color_variant[]: "blue: 112,151,175"
-	color_variant[]: "brown: 138,112,102"
-	color_variant[]: "yellow: 255,239,105"
-	color_variant[]: "red: 185,86,81"
-
+	high_tess: 0
 }
 curve_model : curve.ut_31
 {
@@ -3102,12 +3069,12 @@ curve_model : curve.1x006
 	variation[]: "half_wiggly | center1A : 1.0 | center2A : 1.0 | center3A : 1.0 | center4A : 1.0 | center5A : 1.0 | center6A : 1.0"
 	variation[]: "full_wiggly | center1B : 1.0 | center2B : 1.0 | center3B : 1.0 | center4B : 1.0 | center5B : 1.0 | center6B : 1.0"
 
-	start_part[]: "startA"
-	start_part[]: "startB"
+	start_part[]: "starta"
+	start_part[]: "startb"
 
 
-	end_part[]: "endA"
-	end_part[]: "endB"
+	end_part[]: "enda"
+	end_part[]: "endb"
 }
 
 curve_model : curve.1x007
@@ -3206,10 +3173,18 @@ curve_model : curve.2k003
 	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
 	start_part[0]: "start1 | start2"
 	end_part[0]: "end1 | end2"
-
 	variation[1]: "yellow | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0"
 	start_part[1]: "start3 | start4"
 	end_part[1]: "end3 | end4"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/concrete/barrier_concrete3_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/barrier/concrete/barrier_concrete3_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 150
 }
 
 curve_model : curve.2k004
@@ -3304,23 +3279,25 @@ curve_model : curve.0600c
 	start_part: 6
 	end_part: 6
 	variation[0]: "default | center : 1.0"
-	start_part[0]: "start"
-	end_part[0]: "end"
+	start_part[0]: ""
+	end_part[0]: ""
 	variation[1]: "3flare_b | center2 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2"
+	start_part[1]: ""
+	end_part[1]: ""
 	variation[2]: "5flare_n | center3 : 1.0"
-	start_part[2]: "start3"
-	end_part[2]: "end3"
+	start_part[2]: ""
+	end_part[2]: ""
 	variation[3]: "2dynamic_y | center4 : 1.0"
-	start_part[3]: "start4"
-	end_part[3]: "end4"
+	start_part[3]: ""
+	end_part[3]: ""
 	variation[4]: "4dynamic_b | center5 : 1.0"
-	start_part[4]: "start5"
-	end_part[4]: "end5"
+	start_part[4]: ""
+	end_part[4]: ""
 	variation[5]: "6dynamic_n | center6 : 1.0"
-	start_part[5]: "start6"
-	end_part[5]: "end6"
+	start_part[5]: ""
+	end_part[5]: ""
+
+	high_tess: 0
 
 	fixed_step: 20.0
 }
@@ -3386,23 +3363,25 @@ curve_model : curve.0600h
 	start_part: 6
 	end_part: 6
 	variation[0]: "default | center : 1.0"
-	start_part[0]: "start"
-	end_part[0]: "end"
+	start_part[0]: ""
+	end_part[0]: ""
 	variation[1]: "3flare_b | center2 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2"
+	start_part[1]: ""
+	end_part[1]: ""
 	variation[2]: "5flare_y | center3 : 1.0"
-	start_part[2]: "start3"
-	end_part[2]: "end3"
+	start_part[2]: ""
+	end_part[2]: ""
 	variation[3]: "2dynamic_n | center4 : 1.0"
-	start_part[3]: "start4"
-	end_part[3]: "end4"
+	start_part[3]: ""
+	end_part[3]: ""
 	variation[4]: "4dynamic_b | center5 : 1.0"
-	start_part[4]: "start5"
-	end_part[4]: "end5"
+	start_part[4]: ""
+	end_part[4]: ""
 	variation[5]: "6dynamic_y | center6 : 1.0"
-	start_part[5]: "start6"
-	end_part[5]: "end6"
+	start_part[5]: ""
+	end_part[5]: ""
+
+	high_tess: 0
 
 	fixed_step: 50.0
 }
@@ -3441,23 +3420,25 @@ curve_model : curve.0600l
 	start_part: 6
 	end_part: 6
 	variation[0]: "default | center : 1.0"
-	start_part[0]: "start"
-	end_part[0]: "end"
+	start_part[0]: ""
+	end_part[0]: ""
 	variation[1]: "3flare_b | center2 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2"
+	start_part[1]: ""
+	end_part[1]: ""
 	variation[2]: "5flare_y | center3 : 1.0"
-	start_part[2]: "start3"
-	end_part[2]: "end3"
+	start_part[2]: ""
+	end_part[2]: ""
 	variation[3]: "2dynamic_n | center4 : 1.0"
-	start_part[3]: "start4"
-	end_part[3]: "end4"
+	start_part[3]: ""
+	end_part[3]: ""
 	variation[4]: "4dynamic_b | center5 : 1.0"
-	start_part[4]: "start5"
-	end_part[4]: "end5"
+	start_part[4]: ""
+	end_part[4]: ""
 	variation[5]: "6dynamic_y | center6 : 1.0"
-	start_part[5]: "start6"
-	end_part[5]: "end6"
+	start_part[5]: ""
+	end_part[5]: ""
+
+	high_tess: 0
 
 	fixed_step: 50.0
 }
@@ -3471,23 +3452,25 @@ curve_model : curve.0600m
 	start_part: 6
 	end_part: 6
 	variation[0]: "default | center : 1.0"
-	start_part[0]: "start"
-	end_part[0]: "end"
+	start_part[0]: ""
+	end_part[0]: ""
 	variation[1]: "3flare_b | center2 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2"
+	start_part[1]: ""
+	end_part[1]: ""
 	variation[2]: "5flare_y | center3 : 1.0"
-	start_part[2]: "start3"
-	end_part[2]: "end3"
+	start_part[2]: ""
+	end_part[2]: ""
 	variation[3]: "2dynamic_n | center4 : 1.0"
-	start_part[3]: "start4"
-	end_part[3]: "end4"
+	start_part[3]: ""
+	end_part[3]: ""
 	variation[4]: "4dynamic_b | center5 : 1.0"
-	start_part[4]: "start5"
-	end_part[4]: "end5"
+	start_part[4]: ""
+	end_part[4]: ""
 	variation[5]: "6dynamic_y | center6 : 1.0"
-	start_part[5]: "start6"
-	end_part[5]: "end6"
+	start_part[5]: ""
+	end_part[5]: ""
+
+	high_tess: 0
 
 	fixed_step: 50.0
 }
@@ -3501,23 +3484,25 @@ curve_model : curve.0600n
 	start_part: 6
 	end_part: 6
 	variation[0]: "default | center : 1.0"
-	start_part[0]: "start"
-	end_part[0]: "end"
+	start_part[0]: ""
+	end_part[0]: ""
 	variation[1]: "3flare_b | center2 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2"
+	start_part[1]: ""
+	end_part[1]: ""
 	variation[2]: "5flare_y | center3 : 1.0"
-	start_part[2]: "start3"
-	end_part[2]: "end3"
+	start_part[2]: ""
+	end_part[2]: ""
 	variation[3]: "2dynamic_n | center4 : 1.0"
-	start_part[3]: "start4"
-	end_part[3]: "end4"
+	start_part[3]: ""
+	end_part[3]: ""
 	variation[4]: "4dynamic_b | center5 : 1.0"
-	start_part[4]: "start5"
-	end_part[4]: "end5"
+	start_part[4]: ""
+	end_part[4]: ""
 	variation[5]: "6dynamic_y | center6 : 1.0"
-	start_part[5]: "start6"
-	end_part[5]: "end6"
+	start_part[5]: ""
+	end_part[5]: ""
+
+	high_tess: 0
 
 	fixed_step: 50.0
 }
@@ -3592,6 +3577,9 @@ curve_model : curve.2o001
 	variation[5]: "full_40 | ful_w_40_1 : 1.0 | ful_w_40_2 : 1.0"
 	variation[6]: "full_y_10 | ful_y_10_1 : 1.0 | ful_y_10_2 : 1.0 | ful_y_10_3 : 1.0 | ful_y_10_4 : 1.0"
 	variation[7]: "full_y_40 | ful_y_40_1 : 1.0 | ful_y_40_2 : 1.0"
+	variation[8]: "dot_2ft | dot_1 : 1.0 | dot_2 : 1.0"
+	variation[9]: "dot_3ft | dot_3 : 1.0 | dot_4 : 1.0"
+
 
 	color_variant[]: "Default: 255,255,255"
 	color_variant[]: "red: 210,120,130"
@@ -3706,7 +3694,7 @@ curve_model : curve.2o006
 	dynamic_lod_desc: 1
 	dynamic_lod_dist: 1
 	dynamic_lod_desc[0]: "/model/barrier/concrete/barrier_concrete_11_bridge_side_lod1.pmd"
-	dynamic_lod_dist[0]: 50
+	dynamic_lod_dist[0]: 80
 }
 
 curve_model : curve.2o007
@@ -3890,19 +3878,6 @@ curve_model : curve.2o00f
 	end_part[1]: "end2"
 }
 
-curve_model : curve.2o00g
-{
-	model_desc: "/model/barrier/concrete/or_concrete_wall_01_curve.pmd"
-	name: "or concrete wall 01 curve"
-
-	variation[]: "default | cent0 : 1.0 | cent1 : 1.0 | cent2 : 1.0 | cent3 : 1.0"
-	start_part[]: "start0"
-	end_part[]: "end0"
-
-	smooth_surface: true
-
-}
-
 curve_model : curve.2o00h
 {
 	model_desc: "/model/props/road/or_anti_glare_panels_curve.pmd"
@@ -3914,25 +3889,77 @@ curve_model : curve.2o00h
 	high_tess: 0
 }
 
+curve_model : curve.2o00i
+{
+	model_desc: "/model/bridge/co_curve_bridge_01.pmd"
+	name: "co curve bridge 01"
+
+	color_variant: 5
+	color_variant[0]: "or_light: 255,255,255"
+	color_variant[1]: "wa_dark: 160,155,154"
+	color_variant[2]: "az_sand: 194,187,173"
+	color_variant[3]: "nm light pink: 230,195,185"
+	color_variant[4]: "nm dark pink: 200,170,155"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "default | cent1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var_length | cent1,cent2 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+	variation[2]: "var_length_m | cent2,cent1 : 1.0"
+	start_part[2]: "start1"
+	end_part[2]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/bridge/co_curve_bridge_01_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/bridge/co_curve_bridge_01_lod2.pmd"
+	dynamic_lod_dist[1]: 200
+
+	smooth_surface: true
+}
+
+curve_model : curve.2o00j
+{
+	model_desc: "/model/barrier/concrete/co_barrier_concrete_bridge_06_side_01_curve.pmd"
+	name: "co barrier concrete bridge 06 side 01 curve"
+
+	variation[]: "default | center5m : 1.0"
+	start_part[]: "start5m"
+	end_part[]: "end5m"
+}
+
 curve_model : curve.05001
 {
-	model_desc: "/model/props/street/or_garden2.pmd"
+	model_desc: "/model/props/street/or_garden2_crv.pmd"
 	name: "or garden2"
 
-	variation: 1
-	start_part: 1
-	end_part: 1
-	variation[0]: "var1 | center : 1.0 | center2 : 1.0 | center3 : 1.0"
-	start_part[0]: "start"
-	end_part[0]: "end"
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: ""
+	end_part[1]: ""
+
+	high_tess: 0
 
 	dynamic_lod_desc: 3
 	dynamic_lod_dist: 3
-	dynamic_lod_desc[0]: "/model/props/street/or_garden2_lod1.pmd"
+	dynamic_lod_desc[0]: "/model/props/street/or_garden2_crv_lod1.pmd"
 	dynamic_lod_dist[0]: 50
-	dynamic_lod_desc[1]: "/model/props/street/or_garden2_lod2.pmd"
+	dynamic_lod_desc[1]: "/model/props/street/or_garden2_crv_lod2.pmd"
 	dynamic_lod_dist[1]: 100
-	dynamic_lod_desc[2]: "/model/props/street/or_garden2_lod3.pmd"
+	dynamic_lod_desc[2]: "/model/props/street/or_garden2_crv_lod3.pmd"
 	dynamic_lod_dist[2]: 200
 }
 
@@ -3960,23 +3987,28 @@ curve_model : curve.05002
 
 curve_model : curve.05003
 {
-	model_desc: "/model/props/street/or_garden1.pmd"
+	model_desc: "/model/props/street/or_garden1_crv.pmd"
 	name: "or garden1"
 
-	variation: 1
-	start_part: 1
-	end_part: 1
-	variation[0]: "var1 | center : 1.0 | center2 : 1.0 | center3 : 1.0"
-	start_part[0]: "start"
-	end_part[0]: "end"
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: ""
+	end_part[1]: ""
+
+	high_tess: 0
 
 	dynamic_lod_desc: 3
 	dynamic_lod_dist: 3
-	dynamic_lod_desc[0]: "/model/props/street/or_garden1_lod1.pmd"
+	dynamic_lod_desc[0]: "/model/props/street/or_garden1_crv_lod1.pmd"
 	dynamic_lod_dist[0]: 50
-	dynamic_lod_desc[1]: "/model/props/street/or_garden1_lod2.pmd"
+	dynamic_lod_desc[1]: "/model/props/street/or_garden1_crv_lod2.pmd"
 	dynamic_lod_dist[1]: 100
-	dynamic_lod_desc[2]: "/model/props/street/or_garden1_lod3.pmd"
+	dynamic_lod_desc[2]: "/model/props/street/or_garden1_crv_lod3.pmd"
 	dynamic_lod_dist[2]: 200
 }
 
@@ -4275,14 +4307,22 @@ curve_model : curve.ut_23
 
 curve_model : curve.ut_24
 {
-
-	name: "ut_vernal_street_lights"
 	model_desc: "/model/props/lamp/ut_vernal_lamp1.pmd"
+	name: "ut_vernal_street_lights"
 
-	variation[]: "light_row1 | lamp_1 : 3.0 | lamp_2 : 3.0 | lamp_3 : 4.0 | lamp_4 : 3.0 | lamp_5 : 2.0 | lamp_6 : 2.0 | lamp_7 : 1.0"
+	variation: 1
+	variation[0]: "light_row1 | lamp_1 : 3.0 | lamp_2 : 3.0 | lamp_3 : 4.0 | lamp_4 : 3.0 | lamp_5 : 2.0 | lamp_6 : 2.0 | lamp_7 : 1.0"
 
-	fixed_step: 20
+	high_tess: 0
 
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/props/lamp/ut_vernal_lamp1_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/props/lamp/ut_vernal_lamp1_lod2.pmd"
+	dynamic_lod_dist[1]: 150
+
+	fixed_step: 20.0
 }
 
 curve_model : curve.1g001
@@ -4416,6 +4456,34 @@ curve_model : curve.id_0l001
 	high_tess: 0
 }
 
+curve_model : curve.0l004
+{
+	model_desc: "/model/barrier/wood/co_bridge_fence_wood.pmd"
+	name: "co bridge fence wood"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "var1 | center1,center2,center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center1,center2,center3 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "var3 | center1,center2,center3 : 1.0"
+	start_part[2]: "start3"
+	end_part[2]: "end3"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/wood/co_bridge_fence_wood_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/barrier/wood/co_bridge_fence_wood_lod2.pmd"
+	dynamic_lod_dist[1]: 100
+}
+
 curve_model : curve.id_1c001
 {
 	model_desc: "/model/panorama/id_sandpoint/id_sandpoint_wall.pmd"
@@ -4471,49 +4539,6 @@ curve_model : curve.1c007
 	smooth_surface: true
 }
 
-curve_model : curve.1c008
-{
-	model_desc: "/model/barrier/concrete/ca_wall_concrete1.pmd"
-	name: "ca wall concrete1"
-
-	color_variant: 7
-	color_variant[0]: "or_light: 255,255,255"
-	color_variant[1]: "wa_dark: 160,155,154"
-	color_variant[2]: "blue: 160,200,226"
-	color_variant[3]: "az_sand: 194,187,173"
-	color_variant[4]: "nm light pink: 230,195,185"
-	color_variant[5]: "nm dark pink: 200,170,155"
-	color_variant[6]: "yellow: 255,225,191"
-
-	variation: 1
-	start_part: 1
-	end_part: 1
-	variation[0]: "default | center1 : 5.0 | center2 : 5.0 | center3 : 5.0 | center4 : 5.0 | center5,center6 : 1.0"
-	start_part[0]: "start1 | start2"
-	end_part[0]: "end1 | end2"
-
-	high_tess: 0
-
-	smooth_surface: true
-}
-
-curve_model : curve.1c009
-{
-	model_desc: "/model/barrier/brick/ca_wall_bricks2.pmd"
-	name: "ca wall bricks2"
-
-	variation: 1
-	start_part: 1
-	end_part: 1
-	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
-	start_part[0]: "start1 | start2"
-	end_part[0]: "end1 | end2"
-
-	high_tess: 0
-
-	smooth_surface: true
-}
-
 curve_model : curve.1c00a
 {
 	model_desc: "/model/barrier/stone/ca_wall_stone1.pmd"
@@ -4548,9 +4573,9 @@ curve_model : curve.co_0s001
 	dynamic_lod_desc: 2
 	dynamic_lod_dist: 2
 	dynamic_lod_desc[0]: "/model/barrier/stone/co_wall_stone1_lod1.pmd"
-	dynamic_lod_dist[0]: 90
+	dynamic_lod_dist[0]: 70
 	dynamic_lod_desc[1]: "/model/barrier/stone/co_wall_stone1_lod2.pmd"
-	dynamic_lod_dist[1]: 180
+	dynamic_lod_dist[1]: 150
 
 	smooth_surface: true
 }
@@ -4884,6 +4909,380 @@ curve_model : curve.0600y
 	smooth_surface: true
 }
 
+curve_model : curve.0600z
+{
+	model_desc: "/model/barrier/concrete/co_concrete_wall1.pmd"
+	name: "co concrete wall1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+
+curve_model : curve.06010
+{
+	model_desc: "/model/barrier/metal/or_metal_barrier1_curve.pmd"
+	name: "or metal barrier1 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 0.0 | center6 : 0.0 | center7 : 0.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/metal/or_metal_barrier1_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.06011
+{
+	model_desc: "/model/building/industrial/pipes_02_curve.pmd"
+	name: "pipes 02 curve"
+
+	variation: 17
+	start_part: 17
+	end_part: 17
+	variation[0]: "mixed_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.25 | center8 : 0.5"
+	start_part[0]: "start1 | start2 | start3 | start4 | start5"
+	end_part[0]: "end1 | end2 | end3 | end4 | end5"
+	variation[1]: "horiz_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center8 : 0.5"
+	start_part[1]: "start1 | start2 | start3 | start4 | start5"
+	end_part[1]: "end1 | end2 | end3 | end4 | end5"
+	variation[2]: "vertic_knots | center1 : 1.0 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.25 | center8 : 0.5"
+	start_part[2]: "start1 | start2 | start3 | start4 | start5"
+	end_part[2]: "end1 | end2 | end3 | end4 | end5"
+	variation[3]: "no_knots | center1 : 1.0 | center8 : 0.5"
+	start_part[3]: "start1 | start2 | start3 | start4 | start5"
+	end_part[3]: "end1 | end2 | end3 | end4 | end5"
+	variation[4]: "elevated_a | center20 : 1.0"
+	start_part[4]: "start20"
+	end_part[4]: "end20"
+	variation[5]: "elevated_b | center30 : 1.0"
+	start_part[5]: "start30"
+	end_part[5]: "end30"
+	variation[6]: "elevated_c | center40 : 1.0"
+	start_part[6]: "start40"
+	end_part[6]: "end40"
+	variation[7]: "bot_to_top_a | start20 : 1.0"
+	start_part[7]: ""
+	end_part[7]: ""
+	variation[8]: "bot_to_top_b | start30 : 1.0"
+	start_part[8]: ""
+	end_part[8]: ""
+	variation[9]: "bot_to_top_c | start40 : 1.0"
+	start_part[9]: ""
+	end_part[9]: ""
+	variation[10]: "top_to_bot_a | end20 : 1.0"
+	start_part[10]: ""
+	end_part[10]: ""
+	variation[11]: "top_to_bot_b | end30 : 1.0"
+	start_part[11]: ""
+	end_part[11]: ""
+	variation[12]: "top_to_bot_c | end40 : 1.0"
+	start_part[12]: ""
+	end_part[12]: ""
+	variation[13]: "top_a | center20 : 1.0"
+	start_part[13]: ""
+	end_part[13]: ""
+	variation[14]: "top_b | center30 : 1.0"
+	start_part[14]: ""
+	end_part[14]: ""
+	variation[15]: "top_c | center40 : 1.0"
+	start_part[15]: ""
+	end_part[15]: ""
+	variation[16]: "elevated_a2 | center20,center21 : 1.0"
+	start_part[16]: "start20"
+	end_part[16]: "end20"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/pipes_02_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+
+}
+
+curve_model : curve.06012
+{
+	model_desc: "/model/building/industrial/pipes_03_curve.pmd"
+	name: "pipes 03 curve"
+
+	variation: 17
+	start_part: 17
+	end_part: 17
+	variation[0]: "mixed_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.5"
+	start_part[0]: "start1 | start2 | start3 | start4 | start5"
+	end_part[0]: "end1 | end2 | end3 | end4 | end5"
+	variation[1]: "horiz_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center7 : 0.5"
+	start_part[1]: "start1 | start2 | start3 | start4 | start5"
+	end_part[1]: "end1 | end2 | end3 | end4 | end5"
+	variation[2]: "verti_knots | center1 : 1.0 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.5"
+	start_part[2]: "start1 | start2 | start3 | start4 | start5"
+	end_part[2]: "end1 | end2 | end3 | end4 | end5"
+	variation[3]: "no_knots | center1 : 1.0 | center7 : 0.5"
+	start_part[3]: "start1 | start2 | start3 | start4 | start5"
+	end_part[3]: "end1 | end2 | end3 | end4 | end5"
+	variation[4]: "elevated_a | center20 : 1.0"
+	start_part[4]: "start20"
+	end_part[4]: "end20"
+	variation[5]: "elevated_b | center30 : 1.0 | center31 : 0.5"
+	start_part[5]: "start30"
+	end_part[5]: "end30"
+	variation[6]: "elevated_c | center40 : 1.0"
+	start_part[6]: "start40"
+	end_part[6]: "end40"
+	variation[7]: "bot_to_top_a | start20 : 1.0"
+	start_part[7]: ""
+	end_part[7]: ""
+	variation[8]: "bot_to_top_b | start30 : 1.0"
+	start_part[8]: ""
+	end_part[8]: ""
+	variation[9]: "bot_to_top_c | start40 : 1.0"
+	start_part[9]: ""
+	end_part[9]: ""
+	variation[10]: "top_to_bot_a | end20 : 1.0"
+	start_part[10]: ""
+	end_part[10]: ""
+	variation[11]: "top_to_bot_b | end30 : 1.0"
+	start_part[11]: ""
+	end_part[11]: ""
+	variation[12]: "top_to_bot_c | end40 : 1.0"
+	start_part[12]: ""
+	end_part[12]: ""
+	variation[13]: "top_a | center20 : 1.0"
+	start_part[13]: ""
+	end_part[13]: ""
+	variation[14]: "top_b | center30 : 0.5 | center31 : 1.0"
+	start_part[14]: ""
+	end_part[14]: ""
+	variation[15]: "top_c | center40 : 1.0"
+	start_part[15]: ""
+	end_part[15]: ""
+	variation[16]: "elevated_a2 | center20,center20,center21 : 1.0"
+	start_part[16]: "start20"
+	end_part[16]: "end20"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/pipes_03_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+}
+
+curve_model : curve.06013
+{
+	model_desc: "/model/building/industrial/pipes_04_curve.pmd"
+	name: "pipes 04 curve"
+
+	variation: 17
+	start_part: 17
+	end_part: 17
+	variation[0]: "mixed_knots | center1 : 1.0 | center2 : 0.2 | center3 : 0.2 | center4 : 0.2 | center5 : 0.2 | center6 : 0.2 | center7 : 0.2 | center8 : 0.2 | center9 : 0.5"
+	start_part[0]: "start1 | start2 | start3 | start4 | start5"
+	end_part[0]: "end1 | end2 | end3 | end4 | end5"
+	variation[1]: "horiz_knots | center1 : 1.0 | center2 : 0.2 | center3 : 0.2 | center4 : 0.2 | center5 : 0.2 | center9 : 0.5"
+	start_part[1]: "start1 | start2 | start3 | start4 | start5"
+	end_part[1]: "end1 | end2 | end3 | end4 | end5"
+	variation[2]: "vertic_knots | center1 : 1.0 | center6 : 0.2 | center7 : 0.2 | center8 : 0.2 | center9 : 0.5"
+	start_part[2]: "start1 | start2 | start3 | start4 | start5"
+	end_part[2]: "end1 | end2 | end3 | end4 | end5"
+	variation[3]: "no_knots | center1 : 1.0 | center9 : 0.5"
+	start_part[3]: "start1 | start2 | start3 | start4 | start5"
+	end_part[3]: "end1 | end2 | end3 | end4 | end5"
+	variation[4]: "elevated_a | center20 : 1.0"
+	start_part[4]: "start20"
+	end_part[4]: "end20"
+	variation[5]: "elevated_b | center30 : 1.0 | center31 : 0.5"
+	start_part[5]: "start30"
+	end_part[5]: "end30"
+	variation[6]: "elevated_c | center40 : 1.0"
+	start_part[6]: "start40"
+	end_part[6]: "end40"
+	variation[7]: "bot_to_top_a | start20 : 1.0"
+	start_part[7]: ""
+	end_part[7]: ""
+	variation[8]: "top_a | center20 : 1.0 | center21 : 0.5"
+	start_part[8]: ""
+	end_part[8]: ""
+	variation[9]: "top_to_bot_a | end20 : 1.0"
+	start_part[9]: ""
+	end_part[9]: ""
+	variation[10]: "bot_to_top_b | start30 : 1.0"
+	start_part[10]: ""
+	end_part[10]: ""
+	variation[11]: "top_b | center30 : 1.0 | center31 : 0.5"
+	start_part[11]: ""
+	end_part[11]: ""
+	variation[12]: "top_to_bot_b | end30 : 1.0"
+	start_part[12]: ""
+	end_part[12]: ""
+	variation[13]: "bot_to_top_c | start40 : 1.0"
+	start_part[13]: ""
+	end_part[13]: ""
+	variation[14]: "top_c | center40 : 1.0"
+	start_part[14]: ""
+	end_part[14]: ""
+	variation[15]: "top_to_bot_c | end40 : 1.0"
+	start_part[15]: ""
+	end_part[15]: ""
+	variation[16]: "elevated_a2 | center20,center21 : 1.0"
+	start_part[16]: "start20"
+	end_part[16]: "end20"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/pipes_04_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+}
+
+curve_model : curve.06014
+{
+	model_desc: "/model/building/special/staircase_01_curve.pmd"
+	name: "staircase 01 curve"
+
+	variation: 13
+	start_part: 13
+	end_part: 13
+	variation[0]: "stairs_1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end14"
+	variation[1]: "plat_1 | center2,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3,center3 : 1.0"
+	start_part[1]: ""
+	end_part[1]: "end1 | end4"
+	variation[2]: "angle_check | center4 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: ""
+	variation[3]: "floor_1 | center5,center6,center6,center6,center6,center6,center6,center6,center6,center6,center6,center6,center6,center6,center6,center6,center6 : 1.0"
+	start_part[3]: ""
+	end_part[3]: "end2 | end11"
+	variation[4]: "stairs_2 | center7 : 1.0"
+	start_part[4]: "start3"
+	end_part[4]: "end15"
+	variation[5]: "plat_2 | center10,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9 : 1.0"
+	start_part[5]: ""
+	end_part[5]: "end3 | end9 | end10"
+	variation[6]: "plat_3 | center8,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9,center9 : 1.0"
+	start_part[6]: ""
+	end_part[6]: "end3 | end9 | end10"
+	variation[7]: "floor_2 | center21,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18 : 1.0"
+	start_part[7]: ""
+	end_part[7]: "end8 | end12"
+	variation[8]: "floor_3 | center22,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18 : 1.0"
+	start_part[8]: ""
+	end_part[8]: "end8 | end12"
+	variation[9]: "floor_4 | center17,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18,center18 : 1.0"
+	start_part[9]: ""
+	end_part[9]: "end8 | end12"
+	variation[10]: "floor_5 | center11,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12 : 1.0"
+	start_part[10]: ""
+	end_part[10]: "end5 | end13"
+	variation[11]: "floor_6 | center13,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12,center12 : 1.0"
+	start_part[11]: ""
+	end_part[11]: "end5 | end13"
+	variation[12]: "floor_7 | center16,center15,center15,center15,center15,center15,center15,center15,center15,center15,center15,center15,center15,center15,center15,center15,center15 : 1.0"
+	start_part[12]: ""
+	end_part[12]: "end5 | end13"
+
+	overlay: 6
+	overlay[0]: "center1 | ovr1 : 1.0"
+	overlay[1]: "start1 | ovr1 : 1.0"
+	overlay[2]: "center4 | ovr2 : 1.0"
+	overlay[3]: "start2 | ovr2 : 1.0"
+	overlay[4]: "center7 | ovr1 : 1.0"
+	overlay[5]: "start3 | ovr1 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.06015
+{
+	model_desc: "/model/building/industrial/pipes_05_curve.pmd"
+	name: "pipes 05 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/pipes_05_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.06016
+{
+	model_desc: "/model/building/industrial/pipes_06_curve.pmd"
+	name: "pipes 06 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/pipes_06_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.06017
+{
+	model_desc: "/model/distribution/industry_pipes_02_curve.pmd"
+	name: "industry pipes 02 curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "no_stair | center4 : 1.0 | center5 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "stairs | center4,center1,center2,center2,center2,center3,center5,center4,center5 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.06018
+{
+	model_desc: "/model/distribution/industry_pipes_03_curve.pmd"
+	name: "industry pipes 03 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 0.75 | center3 : 0.75 | center4 : 0.6 | center5 : 0.75 | center6 : 0.5 | center7 : 0.5 | center8 : 1.0 | center9 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+}
+
 curve_model : curve.id_1f001
 {
 	model_desc: "/model/rock/id_rock_basalt_16m_curve.pmd"
@@ -4922,13 +5321,17 @@ curve_model : curve.id_1f002
 	variation[2]: "bas_to_ero | vsa_in,v2ca,v2cj,v2ci,v2cb,v2ce : 1.0"
 	variation[3]: "ero_to_bas | vea_in,vca,vcj,vci,vcb,vce : 1.0"
 
-	start_part: 2
+	start_part: 4
 	start_part[0]: "vsa"
 	start_part[1]: "v2sa"
+	start_part[2]: "v2sa"
+	start_part[3]: "vsa"
 
-	end_part: 2
+	end_part: 4
 	end_part[0]: "vea"
 	end_part[1]: "v2ea"
+	end_part[2]: "v2ea"
+	end_part[3]: "vea"
 
 	dynamic_lod_desc: 2
 	dynamic_lod_dist: 2
@@ -5027,8 +5430,8 @@ curve_model : curve.id_0t002
 	start_part[0]: "start1"
 	end_part[0]: "end1"
 
-	overlay[]: "center1 | ovr2 : 1.0, ovr3 : 1.0"
-	overlay[]: "start1| ovr1 : 1.0"
+	overlay[]: "center1 | ovr2 : 1.0"
+	overlay[]: "start1 | ovr1 : 1.0"
 
 	high_tess: 0
 
@@ -5115,12 +5518,12 @@ curve_model : curve.id_0s001
 	variation: 2
 	start_part: 2
 	end_part: 2
-	variation[0]: "default | Center1 : 1.0 | Center2 : 1.0"
-	start_part[0]: "Start1"
-	end_part[0]: "End1"
-	variation[1]: "old | Center3 : 100.0 | Center4 : 100.0 | Center3,Center5,Center4 : 40.0 | Center4,Center6,Center3 : 40.0 | Center3,Center7,Center4 : 20.0"
-	start_part[1]: "Start2"
-	end_part[1]: "End2"
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "old | center3 : 100.0 | center4 : 100.0 | center3,center5,center4 : 40.0 | center4,center6,center3 : 40.0 | center3,center7,center4 : 20.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
 
 	high_tess: 0
 }
@@ -5171,5 +5574,2037 @@ curve_model : curve.id_2u2c
 }
 
 
+
+curve_model : curve.co_15002
+{
+	model_desc: "/model/tunnel/co_avalanche_tunnel.pmd"
+	name: "co avalanche tunnel"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "Default | center1,center2,center3,center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	smooth_surface: true
+	dynamic_lod_desc[]: "/model/tunnel/co_avalanche_tunnel_lod1.pmd"
+	dynamic_lod_dist[]: 200
+}
+curve_model : curve.co_15004
+{
+	model_desc: "/model/barrier/concrete/co_concrete_wall2.pmd"
+	name: "co concrete wall2"
+	variation[]: "Default | w1center1,w1center2 : 1.0"
+	variation[]: "Deco | w2center1,w2center2 : 1.0"
+	start_part[0]: "wstart"
+	end_part[0]: "wend"
+	smooth_surface: true
+	high_tess: 0
+}
+curve_model : curve.co_15005
+{
+	model_desc: "/model/water/co_weir_curve.pmd"
+	name: "co weir curve"
+	variation[]: "Default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	smooth_surface: true
+	high_tess: 0
+}
+curve_model : curve.co_1k001
+{
+	model_desc: "/model/props/machinery/co_factory_crane1.pmd"
+	name: "co factory crane1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start | start1"
+	end_part[0]: "end"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/props/machinery/co_factory_crane1_lod1.pmd"
+	dynamic_lod_dist[0]: 90
+	dynamic_lod_desc[1]: "/model/props/machinery/co_factory_crane1_lod2.pmd"
+	dynamic_lod_dist[1]: 150
+}
+curve_model : curve.co_1k002
+{
+	model_desc: "/model/props/machinery/co_factory_crane1_metal_props.pmd"
+	name: "co factory crane1 metal props"
+
+	variation: 4
+	variation[0]: "var1 | center1,center2,center3,center4,center5,center6 : 1.0"
+	variation[1]: "var2 | center7,center8,center9,center10 : 1.0"
+	variation[2]: "var3 | center11,center12,center13,center14 : 1.0"
+	variation[3]: "var4 | center15,center16,center17,center18,center19 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/props/machinery/co_factory_crane1_metal_props_lod1.pmd"
+	dynamic_lod_dist[0]: 90
+	dynamic_lod_desc[1]: "/model/props/machinery/co_factory_crane1_metal_props_lod2.pmd"
+	dynamic_lod_dist[1]: 180
+}
+curve_model : curve.co_1a001
+{
+	model_desc: "/model/barrier/brick/co_wall_brick2.pmd"
+	name: "co wall brick2"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	variation[1]: "var2 | center2 : 1.0"
+	start_part[1]: "start3 | start4"
+	end_part[1]: "end3 | end4"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+curve_model : curve.co_1c002
+{
+	model_desc: "/model/barrier/metal/co_fence_metal1.pmd"
+	name: "co fence metal1"
+
+	color_variant: 7
+	color_variant[0]: "yellow: 246,218,151"
+	color_variant[1]: "white: 255,255,255"
+	color_variant[2]: "grey: 192,217,211"
+	color_variant[3]: "green: 157,168,134"
+	color_variant[4]: "red: 232,117,116"
+	color_variant[5]: "black: 50,50,50"
+	color_variant[6]: "blue: 125,158,255"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 4.0 | center2 : 4.0 | center3 : 3.0 | center4 : 1.0 | center5 : 4.0 | center6 : 1.0 | center7 : 1.0 | center8 : 2.0 | center9 : 2.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/metal/co_fence_metal1_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/barrier/metal/co_fence_metal1_lod2.pmd"
+	dynamic_lod_dist[1]: 100
+
+	smooth_surface: true
+}
+curve_model : curve.co_1c003
+{
+	model_desc: "/model/tunnel/co_us160_tunnel.pmd"
+	name: "co us160 tunnel"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+}
+curve_model : curve.co_1c004
+{
+	model_desc: "/model/tunnel/co_i70_tunnel2.pmd"
+	name: "co i70 tunnel2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+curve_model : curve.co_1c005
+{
+	model_desc: "/model/tunnel/co_i70_tunnel2a.pmd"
+	name: "co i70 tunnel2a"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1 | start2 | start3"
+	end_part[0]: "end1 | end2 | end3"
+
+	high_tess: 0
+}
+curve_model : curve.co_1c006
+{
+	model_desc: "/model/barrier/concrete/co_wall_retaining_concrete1.pmd"
+	name: "co wall retaining concrete1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center1,center2 : 5.0 | center3,center4 : 5.0 | center5,center6 : 5.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+curve_model : curve.co_2o001
+{
+	model_desc: "/model/barrier/concrete/co_concrete_wall3.pmd"
+	name: "co concrete wall3"
+
+	variation[]: "Default | center1,center2,center1,center2,center1,center2,center1,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	variation[]: "dark | center_d1 : 1.0"
+	start_part[]: "start_d1"
+	end_part[]: "end_d1"
+
+	variation[]: "terrain | center_t1,center_t2,center_t1,center_t2,center_t1,center_t2,center_t1,center_t3 : 1.0"
+	start_part[]: "start_t1"
+	end_part[]: "end_t1"
+
+	smooth_surface: true
+	high_tess: 0
+}
+
+curve_model : curve.2o00k
+{
+	model_desc: "/model/props/road/us_rail_crossing.pmd"
+	name: "us rail crossing"
+
+	variation[]: "Default | center0 : 1.0"
+	start_part[]: "start0"
+	end_part[]: "end0"
+
+	smooth_surface: true
+	high_tess: 0
+}
+
+curve_model : curve.2o00l
+{
+	model_desc: "/model/props/road/rumble_strip.pmd"
+	name: "rumble strip"
+
+	variation[]: "Default | center1 : 1.0"
+
+	smooth_surface: true
+	high_tess: 0
+}
+
+curve_model : curve.co_1m001
+{
+	model_desc: "/model/props/machinery/co_metal_sheets_conveyor.pmd"
+	name: "co metal sheets conveyor"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/props/machinery/co_metal_sheets_conveyor_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/props/machinery/co_metal_sheets_conveyor_lod2.pmd"
+	dynamic_lod_dist[1]: 150
+}
+curve_model : curve.co_1m002
+{
+	model_desc: "/model/building/industrial/co_mine_conveyor.pmd"
+	name: "co mine conveyor"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "default | vca : 1.0"
+	start_part[0]: "vsa | vsb"
+	end_part[0]: "vea | veb"
+	variation[1]: "var1 | vcb : 1.0"
+	start_part[1]: "vsa | vsb"
+	end_part[1]: "vea | veb"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/co_mine_conveyor_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+curve_model : curve.co_1t001
+{
+	model_desc: "/model/barrier/metal/co_fence_metal2.pmd"
+	name: "co fence metal2"
+
+	color_variant: 2
+	color_variant[0]: "gray: 255,255,255"
+	color_variant[1]: "brown: 189,171,174"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 4.0 | center4 : 4.0 | center2,center3 : 2.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/metal/co_fence_metal2_lod1.pmd"
+	dynamic_lod_dist[0]: 80
+	dynamic_lod_desc[1]: "/model/barrier/metal/co_fence_metal2_lod2.pmd"
+	dynamic_lod_dist[1]: 180
+}
+curve_model : curve.co_1t002
+{
+	model_desc: "/model/barrier/metal/co_fence_metal3.pmd"
+	name: "co fence metal3"
+
+	color_variant: 2
+	color_variant[0]: "gray: 255,255,255"
+	color_variant[1]: "brown: 189,171,174"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 10.0 | center2 : 3.0 | center3 : 3.0 | center4 : 8.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/metal/co_fence_metal3_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+	dynamic_lod_desc[1]: "/model/barrier/metal/co_fence_metal3_lod2.pmd"
+	dynamic_lod_dist[1]: 150
+}
+curve_model : curve.co_1t003
+{
+	model_desc: "/model/bridge/co_ped_bridge2.pmd"
+	name: "co ped bridge2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 5.0 | center2 : 3.0 | center3 : 3.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/bridge/co_ped_bridge2_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+}
+curve_model : curve.co_1j001
+{
+	model_desc: "/model/bridge/co_ped_bridge1.pmd"
+	name: "co ped bridge1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/bridge/co_ped_bridge1_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+	dynamic_lod_desc[1]: "/model/bridge/co_ped_bridge1_lod2.pmd"
+	dynamic_lod_dist[1]: 200
+}
+curve_model : curve.co_0l003
+{
+	model_desc: "/model/props/farm/co_irrigation1.pmd"
+	name: "co irrigation1"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center3,center2,center4,center1,center5,center2 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center3,center2,center4,center1,center5,center2 : 1.0"
+	start_part[1]: "center2"
+	end_part[1]: "end1"
+
+	high_tess: 0
+}
+curve_model : curve.co_0s002
+{
+	model_desc: "/model/building/country/co_ski_lift1.pmd"
+	name: "co ski lift1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "center1 | start1"
+	end_part[0]: "center1 | end1"
+	fixed_inner_start[0]: "ins"
+	fixed_inner_end[0]: "ine"
+
+	high_tess: 0
+
+	fixed_step: 100.0
+}
+curve_model : curve.co_0s003
+{
+	model_desc: "/model/building/country/co_ski_lift1_seats.pmd"
+	name: "co ski lift1 seats"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1,center2 : 1.0"
+	start_part[0]: "center2"
+	end_part[0]: "center1 | center2"
+
+	high_tess: 0
+
+	fixed_step: 15.0
+}
+curve_model : curve.co_0s004
+{
+	model_desc: "/model/distribution/electricity/co_railroad_poles.pmd"
+	name: "co railroad poles"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 0.5 | center3 : 0.5 | center4 : 0.5 | center5 : 0.5"
+	start_part[0]: "center1 | center2 | center3 | center4 | center5"
+	end_part[0]: "center1 | center2 | center3 | center4 | center5"
+	fixed_inner_start[0]: "start1"
+	fixed_inner_end[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/distribution/electricity/co_railroad_poles_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/distribution/electricity/co_railroad_poles_lod2.pmd"
+	dynamic_lod_dist[1]: 200
+
+	fixed_step: 40.0
+}
+
+curve_model : curve.0s008
+{
+	model_desc: "/model/props/street/us_pillar_barrier.pmd"
+	name: "us pillar barrier"
+
+	color_variant: 6
+	color_variant[0]: "white: 241,241,241"
+	color_variant[1]: "yellow: 224,201,123"
+	color_variant[2]: "blue: 127,176,224"
+	color_variant[3]: "red: 236,112,112"
+	color_variant[4]: "black: 96,96,104"
+	color_variant[5]: "gray: 155,155,155"
+
+	variation: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "default | center1 : 0.2 | center2 : 0.2 | center3 : 0.2 | center4 : 0.2 | center5 : 0.2"
+	fixed_inner_start[0]: "center7"
+	fixed_inner_end[0]: "center6"
+
+	high_tess: 0
+
+	fixed_step: 1.0
+}
+
+curve_model : curve.co_25001
+{
+	model_desc: "/model/barrier/brick/co_wall_retaining_brick1.pmd"
+	name: "co wall retaining brick1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 7.0 | center2 : 7.0 | center3 : 3.0 | center4 : 3.0 | center5,center6 : 1.0 | center7,center8 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+}
+curve_model : curve.co_1n001
+{
+	model_desc: "/model/rock/co_rock_sediment_16m_curve.pmd"
+	name: "co rock sediment 16m curve"
+
+	variation: 6
+	start_part: 6
+	end_part: 6
+	variation[0]: "default | center5,center3,center1,center7 : 1.0 | center3,center7,center5,center1 : 1.0 | center7,center1,center3,center5 : 1.0 | center1,center5,center7,center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "top | center6,center4,center2,center8 : 1.0 | center4,center8,center6,center2 : 1.0 | center8,center2,center4,center6 : 1.0 | center2,center6,center8,center4 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "jagged | center13,center11,center9,center15 : 1.0 | center11,center15,center13,center9 : 1.0 | center15,center9,center13,center11 : 1.0 | center9,center15,center11,center13 : 1.0"
+	start_part[2]: "start1"
+	end_part[2]: "end1"
+	variation[3]: "jagged_top | center14,center12,center10,center16 : 1.0 | center12,center16,center14,center10 : 1.0 | center16,center10,center14,center12 : 1.0 | center10,center16,center12,center14 : 1.0"
+	start_part[3]: "start2"
+	end_part[3]: "end2"
+	variation[4]: "smooth | center19,center22,center17,center24 : 1.0 | center22,center19,center24,center17 : 1.0 | center17,center24,center22,center19 : 1.0"
+	start_part[4]: "start1"
+	end_part[4]: "end1"
+	variation[5]: "smooth_top | center20,center21,center18,center23 : 1.0 | center21,center20,center23,center18 : 1.0 | center18,center23,center21,center20 : 1.0"
+	start_part[5]: "start2"
+	end_part[5]: "end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/rock/co_rock_sediment_16m_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 60
+	dynamic_lod_desc[1]: "/model/rock/co_rock_sediment_16m_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 120
+
+	smooth_surface: true
+}
+curve_model : curve.co_1n002
+{
+	model_desc: "/model/rock/co_rock_sediment_32m_curve.pmd"
+	name: "co rock sediment 32m curve"
+
+	variation: 6
+	start_part: 6
+	end_part: 6
+	variation[0]: "default | center5,center3,center1,center7 : 1.0 | center3,center7,center5,center1 : 1.0 | center7,center1,center3,center5 : 1.0 | center1,center5,center7,center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "top | center6,center4,center2,center8 : 1.0 | center4,center8,center6,center2 : 1.0 | center8,center2,center4,center6 : 1.0 | center2,center6,center8,center4 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "jagged | center13,center11,center9,center15 : 1.0 | center11,center15,center13,center9 : 1.0 | center15,center9,center13,center11 : 1.0 | center9,center15,center11,center13 : 1.0"
+	start_part[2]: "start1"
+	end_part[2]: "end1"
+	variation[3]: "jagged_top | center14,center12,center10,center16 : 1.0 | center12,center16,center14,center10 : 1.0 | center16,center10,center14,center12 : 1.0 | center10,center16,center12,center14 : 1.0"
+	start_part[3]: "start2"
+	end_part[3]: "end2"
+	variation[4]: "smooth | center19,center22,center17,center24 : 1.0 | center22,center19,center24,center17 : 1.0 | center17,center24,center22,center19 : 1.0"
+	start_part[4]: "start1"
+	end_part[4]: "end1"
+	variation[5]: "smooth_top | center20,center21,center18,center23 : 1.0 | center21,center20,center23,center18 : 1.0 | center18,center23,center21,center20 : 1.0"
+	start_part[5]: "start2"
+	end_part[5]: "end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/rock/co_rock_sediment_32m_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 60
+	dynamic_lod_desc[1]: "/model/rock/co_rock_sediment_32m_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 120
+
+	smooth_surface: true
+}
+curve_model : curve.co_1n003
+{
+	model_desc: "/model/barrier/stone/co_wall_rocky_mountain.pmd"
+	name: "co wall rocky mountain"
+
+	variation: 1
+	variation[0]: "default | center1,center2,center3,center4 : 1.0 | center3,center4,center1,center2 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/stone/co_wall_rocky_mountain_lod1.pmd"
+	dynamic_lod_dist[0]: 30
+}
+curve_model : curve.co_1n004
+{
+	model_desc: "/model/rock/co_rock_rough1a.pmd"
+	name: "co rock rough1a"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "8m | v0ca,v0cb,v0cc : 1.0 | v0cb,v0cc,v0ca : 1.0 | v0cc,v0ca,v0cb : 1.0"
+	start_part[0]: "v0sa"
+	end_part[0]: "v0ea"
+	variation[1]: "16m | v2ca,v2cb,v2cc : 1.0 | v2cb,v2cc,v2ca : 1.0 | v2cc,v2ca,v2cb : 1.0"
+	start_part[1]: "v2sa"
+	end_part[1]: "v2ea"
+	variation[2]: "16m_top | v3ca,v3cb,v3cc : 1.0 | v3cb,v3ca,v3cc : 1.0 | v3cc,v3cb,v3ca : 1.0"
+	start_part[2]: "v3sa"
+	end_part[2]: "v3ea"
+	variation[3]: "8m_top | v1ca,v1cb,v1cc : 1.0 | v1cb,v1cc,v1ca : 1.0 | v1cc,v1ca,v1cb : 1.0"
+	start_part[3]: "v1sa"
+	end_part[3]: "v1ea"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/rock/co_rock_rough1a_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+	dynamic_lod_desc[1]: "/model/rock/co_rock_rough1a_lod2.pmd"
+	dynamic_lod_dist[1]: 180
+
+	smooth_surface: true
+}
+curve_model : curve.co_1n005
+{
+	model_desc: "/model/rock/co_rock_rough1b.pmd"
+	name: "co rock rough1b"
+
+	variation: 8
+	start_part: 8
+	end_part: 8
+	variation[0]: "ter_16 | v1cc,v1cd,v1ce,v1cf,v1cg,v1ch,v1ci,v1cj : 1.0"
+	start_part[0]: "v1sa"
+	end_part[0]: "v1ea"
+	variation[1]: "ter_8 | v2ca,v2cb,v2cc,v2cd : 1.0"
+	start_part[1]: "v2sa"
+	end_part[1]: "v2ea"
+	variation[2]: "ter_16_to_8 | v1ca,v2ca,v2cb,v2cc,v2cd,v2ca,v2cb,v2cc,v2cd : 1.0"
+	start_part[2]: "v1sa"
+	end_part[2]: "v2ea"
+	variation[3]: "ter_8_to_16 | v1cb,v1cc,v1cd,v1ce,v1cf,v1cg,v1ch,v1ci,v1cj : 1.0"
+	start_part[3]: "v2sa"
+	end_part[3]: "v1ea"
+	variation[4]: "top_16 | v3cc,v3cd,v3ce,v3cf,v3cg,v3ch,v3ci,v3cj : 1.0"
+	start_part[4]: "v3sa"
+	end_part[4]: "v3ea"
+	variation[5]: "top_8 | v4ca,v4cb,v4cc,v4cd : 1.0"
+	start_part[5]: "v4sa"
+	end_part[5]: "v4ea"
+	variation[6]: "top_16_to_8 | v3ca,v4ca,v4cb,v4cc,v4cd,v4ca,v4cb,v4cc,v4cd : 1.0"
+	start_part[6]: "v3sa"
+	end_part[6]: "v4ea"
+	variation[7]: "top_8_to_16 | v3cb,v3cc,v3cd,v3ce,v3cf,v3cg,v3ch,v3ci,v3cj : 1.0"
+	start_part[7]: "v4sa"
+	end_part[7]: "v3ea"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/rock/co_rock_rough1b_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+	dynamic_lod_desc[1]: "/model/rock/co_rock_rough1b_lod2.pmd"
+	dynamic_lod_dist[1]: 200
+
+	smooth_surface: true
+}
+curve_model : curve.co_1n006
+{
+	model_desc: "/model/rock/co_rock_rough1c.pmd"
+	name: "co rock rough1c"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "ter_8m | vca,vcb,vcc,vcd,vce,vch,vcg,vcf : 1.0 | vcc,vcb,vca,vcd,vcf,vce,vch,vcg : 1.0 | vcb,vcd,vcc,vca,vcg,vcf,vce,vch : 1.0 | vci1,vci2,vch,vcg,vcb,vcc,vce,vca,vcf,vcd : 1.0 | vcj1,vcj2,vcf,vce,vcc,vca,vcg,vcb,vcd,vch : 1.0 | vca,vcg,vcb,vcd,vch,vci1,vci2,vcf,vce,vcc : 1.0 | vca,vcf,vcd,vcj1,vcj2,vch,vcg,vcb,vcc,vce : 1.0 | vce,vcc,vca,vcg,vci1,vci2,ca,vcf,vcd,vcj1,vcj2 : 1.0"
+	start_part[0]: "vsa"
+	end_part[0]: "vea"
+	variation[1]: "top_8m | v2ca,v2cb,v2cc,v2cd,v2ce,v2ch,v2cg,v2cf : 1.0 | v2cc,v2cb,v2ca,v2cd,v2cf,v2ce,v2ch,v2cg : 1.0 | v2cb,v2cd,v2cc,v2ca,v2cg,v2cf,v2ce,v2ch : 1.0 | v2ci1,v2ci2,v2ch,v2cg,v2cb,v2cc,v2ce,v2ca,v2cf,v2cd : 1.0 | v2cj1,v2cj2,v2cf,v2ce,v2cc,v2ca,v2cg,v2cb,v2cd,v2ch : 1.0 | v2ca,v2cg,v2cb,v2cd,v2ch,v2ci1,v2ci2,v2cf,v2ce,v2cc : 1.0 | v2ca,v2cf,v2cd,v2cj1,v2cj2,v2ch,v2cg,v2cb,v2cc,v2ce : 1.0 | v2ce,v2cc,v2ca,v2cg,v2ci1,v2ci2,v2ca,v2cf,v2cd,v2cj1,v2cj2 : 1.0"
+	start_part[1]: "v2sa"
+	end_part[1]: "v2ea"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/rock/co_rock_rough1c_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+	dynamic_lod_desc[1]: "/model/rock/co_rock_rough1c_lod2.pmd"
+	dynamic_lod_dist[1]: 180
+}
+curve_model : curve.co_0p001
+{
+	model_desc: "/model/railing/railroad/co_railway_lines.pmd"
+	name: "co railway lines"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "center1"
+	end_part[0]: "center1"
+	fixed_inner_start[0]: "ins"
+	fixed_inner_end[0]: "ine"
+
+	high_tess: 0
+
+	fixed_step: 50.0
+}
+curve_model : curve.co_1x001
+{
+	model_desc: "/model/rock/co_layered_lake_bank_1.pmd"
+	name: "co layered lake bank"
+
+	variation: 2
+	variation[0]: "1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	variation[1]: "2 | center1,center2,center3,center4,center5,center6 : 1.0"
+
+	high_tess: 2
+	high_tess[0]: "1"
+	high_tess[1]: "2"
+}
+curve_model : curve.wy_0l001
+{
+	model_desc: "/model/panorama/wy_us191/wy_fg_dam_wall.pmd"
+	name: "wy fg dam wall"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1,center2 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "var1"
+}
+
+curve_model : curve.wy_0l002
+{
+	model_desc: "/model/panorama/wy_us191/wy_fg_dam_wall_low.pmd"
+	name: "wy fg dam wall low"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1,center2 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "var1"
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_0s001
+{
+	model_desc: "/model/panorama/wy_us191/wy_fg_dam_barrier.pmd"
+	name: "wy fg dam barrier"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1,center2,center3,center4,center5,center6 : 1.0 | center1,center8,center3,center4,center11,center12 : 1.0 | center7,center2,center9,center4,center11,center6 : 1.0 | center7,center8,center3,center4,center11,center6 : 1.0 | center1,center8,center9,center4,center5,center12 : 1.0"
+	start_part[0]: "start3 | start4 | start1 | start2"
+	end_part[0]: "end1 | end2 | end3"
+	variation[1]: "var2 | center1,center2,center3,center4,center5 : 1.0 | center1,center8,center3,center4,center11 : 1.0 | center7,center2,center9,center4,center11 : 1.0 | center7,center8,center3,center4,center11 : 1.0 | center1,center8,center9,center4,center5 : 1.0"
+	start_part[1]: "start1 | start2"
+	end_part[1]: "end1 | end2 | end3"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/panorama/wy_us191/wy_fg_dam_barrier_lod1.pmd"
+	dynamic_lod_dist[0]: 150
+}
+
+curve_model : curve.wy_0s002
+{
+	model_desc: "/model/panorama/wy_us191/wy_fg_dam_crane_tracks.pmd"
+	name: "wy fg dam crane tracks"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1,center2,center3,center4,center5 : 1.0 | center1,center2,center3,center4,center10 : 1.0 | center1,center2,center3,center9,center5 : 1.0 | center1,center2,center8,center4,center5 : 0.0 | center1,center7,center3,center4,center5 : 0.0 | center6,center2,center3,center4,center5 : 0.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_0s003
+{
+	model_desc: "/model/panorama/wy_us191/wy_fg_dam_barrier_fence.pmd"
+	name: "wy fg dam barrier fence"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1,center2,center3,center4,center5,center6 : 1.0 | center1,center8,center3,center4,center11,center12 : 1.0 | center7,center2,center9,center4,center11,center6 : 1.0 | center7,center8,center3,center4,center11,center6 : 1.0 | center1,center8,center9,center4,center5,center12 : 1.0"
+	start_part[0]: "start1 | start2 | start3 | start4 | start5"
+	end_part[0]: "end1 | end2 | end3"
+	variation[1]: "var2 | center1,center2,center3,center4,center5 : 1.0 | center1,center8,center3,center4,center11 : 1.0 | center7,center2,center9,center4,center11 : 1.0 | center7,center8,center3,center4,center11 : 1.0 | center1,center8,center9,center4,center5 : 1.0"
+	start_part[1]: "start1 | start2 | start5"
+	end_part[1]: "end1 | end2 | end3"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_0s004
+{
+	model_desc: "/model/panorama/wy_us191/wy_fg_dam_barrier_fence2.pmd"
+	name: "wy fg dam barrier fence2"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1,center2,center3 : 1.0 | center1,center2,center6 : 1.0 | center1,center5,center6 : 1.0 | center1,center5,center3 : 1.0 | center4,center2,center3 : 1.0 | center4,center2,center6 : 1.0 | center4,center5,center6 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+	variation[1]: "var2 | center7,center8,center9 : 1.0 | center7,center8,center12 : 1.0 | center7,center11,center12 : 1.0 | center7,center11,center9 : 1.0 | cente10,center8,center9 : 1.0 | cente10,center8,center12 : 1.0 | cente10,center11,center12 : 0.0"
+	start_part[1]: "start4 | start5"
+	end_part[1]: "end3 | end4"
+
+	high_tess: 0
+}
+
+curve_model : curve.0s009
+{
+	model_desc: "/model/props/road/wa_stencil_keepclear.pmd"
+	name: "wa stencil keepclear"
+
+	variation: 15
+	start_part: 15
+	end_part: 15
+	variation[0]: "white_1m | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1 | start2 | start3 | start4"
+	end_part[0]: "end1 | end2 | end3 | end4"
+	variation[1]: "yellow_1m | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: "start5 | start6 | start7 | start8"
+	end_part[1]: "end5 | end6 | end7 | end8"
+	variation[2]: "red_1m | center7 : 1.0 | center8 : 1.0 | center9 : 1.0"
+	start_part[2]: "start9 | start10 | start11 | start12"
+	end_part[2]: "end9 | end10 | end11 | end12"
+	variation[3]: "white_2m | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[3]: "start13 | start14 | start15 | start16"
+	end_part[3]: "end13 | end14 | end15 | end16"
+	variation[4]: "yellow_2m | center13 : 1.0 | center14 : 1.0 | center15 : 1.0"
+	start_part[4]: "start17 | start18 | start19 | start20"
+	end_part[4]: "end17 | end18 | end19 | end20"
+	variation[5]: "red_2m | center16 : 1.0 | center17 : 1.0 | center18 : 1.0"
+	start_part[5]: "start21 | start22 | start23 | start24"
+	end_part[5]: "end21 | end22 | end23 | end24"
+	variation[6]: "white_5m | center19 : 1.0 | center20 : 1.0 | center21 : 1.0"
+	start_part[6]: "start25 | start26 | start27 | start28"
+	end_part[6]: "end25 | end26 | end27 | end28"
+	variation[7]: "yellow_5m | center22 : 1.0 | center23 : 1.0 | center24 : 1.0"
+	start_part[7]: "start29 | start30 | start31 | start32"
+	end_part[7]: "end29 | end30 | end31 | end32"
+	variation[8]: "red_5m | center25 : 1.0 | center26 : 1.0 | center27 : 1.0"
+	start_part[8]: "start33 | start34 | start35 | start36"
+	end_part[8]: "end33 | end34 | end35 | end36"
+	variation[9]: "white_10m | center28 : 1.0"
+	start_part[9]: "start37 | start38 | start39"
+	end_part[9]: "end37 | end38 | end39"
+	variation[10]: "white_15m | center29 : 1.0"
+	start_part[10]: "start40 | start41 | start42"
+	end_part[10]: "end40 | end41 | end42"
+	variation[11]: "yellow_10m | center30 : 1.0"
+	start_part[11]: "start43 | start44 | start45"
+	end_part[11]: "end43 | end44 | end45"
+	variation[12]: "yellow_15m | center31 : 1.0"
+	start_part[12]: "start46 | start47 | start48"
+	end_part[12]: "end46 | end47 | end48"
+	variation[13]: "red_10m | center32 : 1.0"
+	start_part[13]: "start49 | start50 | start51"
+	end_part[13]: "end49 | end50 | end51"
+	variation[14]: "red_15m | center33 : 1.0"
+	start_part[14]: "start52 | start53 | start54"
+	end_part[14]: "end52 | end53 | end54"
+
+	high_tess: 15
+	high_tess[0]: "white_1m"
+	high_tess[1]: "yellow_1m"
+	high_tess[2]: "red_1m"
+	high_tess[3]: "white_2m"
+	high_tess[4]: "yellow_2m"
+	high_tess[5]: "red_2m"
+	high_tess[6]: "white_5m"
+	high_tess[7]: "yellow_5m"
+	high_tess[8]: "red_5m"
+	high_tess[9]: "white_10m"
+	high_tess[10]: "white_15m"
+	high_tess[11]: "yellow_10m"
+	high_tess[12]: "yellow_15m"
+	high_tess[13]: "red_10m"
+	high_tess[14]: "red_15m"
+}
+
+curve_model : curve.wy_1e002
+{
+	model_desc: "/model/panorama/wy_casper/wy_casper_wall_2.pmd"
+	name: "wy casper wall 2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.mats_0j001
+{
+	model_desc: "/model/railing/bridge/us_bridge_support_generic_crv.pmd"
+	name: "us bridge support generic crv"
+
+	color_variant: 5
+	color_variant[0]: "or_light: 255,255,255"
+	color_variant[1]: "wa_dark: 197,191,188"
+	color_variant[2]: "az_sand: 253,237,215"
+	color_variant[3]: "nm_light_pink: 255,223,216"
+	color_variant[4]: "nm_dark_pink: 245,214,203"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "default | center : 0.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+	variation[1]: "round | center : 0.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+	variation[2]: "extra | center1 : 0.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+	variation[3]: "round2 | center : 0.0"
+	start_part[3]: "start3"
+	end_part[3]: "end3"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_2k001
+{
+	model_desc: "/model/barrier/metal/wy_crash_barrier.pmd"
+	name: "wy crash barrier"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "lowpoly | center1 : 3.0 | center2 : 2.0"
+	start_part[0]: "s_st_wt | s_st_or | s_refl_wt | s_refl_or | s_ground | s_flat"
+	end_part[0]: "e_st_wt | e_st_or | e_refl_wt | e_refl_or | e_ground | e_flat"
+	variation[1]: "highpoly | center3,center4,center5 : 1.0"
+	start_part[1]: "s_st_wt | s_st_or | s_refl_wt | s_refl_or | s_ground | s_flat"
+	end_part[1]: "e_st_wt | e_st_or | e_refl_wt | e_refl_or | e_ground | e_flat"
+	variation[2]: "superfine | center6,center7,center8 : 1.0"
+	start_part[2]: "s_st_wt | s_st_or | s_refl_wt | s_refl_or | s_ground | s_flat"
+	end_part[2]: "e_st_wt | e_st_or | e_refl_wt | e_refl_or | e_ground | e_flat"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/barrier/metal/wy_crash_barrier_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/barrier/metal/wy_crash_barrier_lod2.pmd"
+	dynamic_lod_dist[1]: 150
+
+	smooth_surface: true
+}
+
+curve_model : curve.ut_1
+{
+
+	name: "ut_wall_provo"
+	model_desc: "/model/panorama/ut_provo/ut_wall_provo_curve.pmd"
+
+	variation[]: "default | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	variation[]: "high | center2 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+}
+
+curve_model : curve.114
+{
+	name: "wagon grain"
+	model_desc: "/model/vehicle/train/wagon_grain_curve.pmd"
+	variation[]: "default | center1 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+
+	dynamic_lod_desc[]: "/model/vehicle/train/wagon_grain_curve_lod1.pmd"
+	dynamic_lod_dist[]: 50.0
+
+	dynamic_lod_desc[]: "/model/vehicle/train/wagon_grain_curve_lod2.pmd"
+	dynamic_lod_dist[]: 100.0
+
+}
+
+curve_model : curve.wy_1n003
+{
+	model_desc: "/model/rock/wy_roadcliffrock_curve_1c_short.pmd"
+	name: "wy roadcliffrock curve 1c short"
+
+	variation: 17
+	start_part: 17
+	end_part: 17
+	variation[0]: "even_16m | _v0ca,_v0cb,_v0cc : 1.0 | _v0cb,_v0cc,_v0ca : 1.0 | _v0cc,_v0ca,_v0cb : 1.0"
+	start_part[0]: "_v0sa"
+	end_part[0]: "_v0ea"
+	variation[1]: "even_16m_2 | _v1ca,_v1cb,_v1cc : 1.0 | _v1cb,_v1cc,_v1ca : 1.0 | _v1cc,_v1ca,_v1cb : 1.0"
+	start_part[1]: "_v0sa"
+	end_part[1]: "_v0ea"
+	variation[2]: "uneven_16m | _v2ca : 1.0 | _v2cb : 1.0"
+	start_part[2]: "_v0sa"
+	end_part[2]: "_v0ea"
+	variation[3]: "even_8m | _v3ca,_v3cb,_v3cc : 1.0 | _v3cb,_v3cc,_v3ca : 1.0 | _v3cc,_v3ca,_v3cb : 1.0"
+	start_part[3]: "_v3sa"
+	end_part[3]: "_v3ea"
+	variation[4]: "uneven_8m | _v4ca,_v4cb,_v4cc : 1.0 | _v4cb,_v4cc,_v4ca : 1.0 | _v4cc,_v4ca,_v4cb : 1.0"
+	start_part[4]: "_v4sa"
+	end_part[4]: "_v4ea"
+	variation[5]: "even_32m | _v5ca,_v5cb,_v5cc : 1.0 | _v5cb,_v5cc,_v5ca : 1.0 | _v5cc,_v5ca,_v5cb : 1.0"
+	start_part[5]: "_v5sa"
+	end_part[5]: "_v5ea"
+	variation[6]: "16_to_32 | _v6ca,_v5ca,_v5cb,_v5cc,_v5cb,_v5ca,_v5cc : 1.0"
+	start_part[6]: "_v0sa"
+	end_part[6]: "_v5ea"
+	variation[7]: "32_to_16 | _v7ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[7]: "_v5sa"
+	end_part[7]: "_v5ea"
+	variation[8]: "8_to_16_top | _v10ca,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[8]: "_v8sa"
+	end_part[8]: "_v9ea"
+	variation[9]: "16_to_8_top | _v10cb,_v8ca,_v8cb,_v8cc,_v8cb,_v8ca,_v8cc : 1.0"
+	start_part[9]: "_v9sa"
+	end_part[9]: "_v8ea"
+	variation[10]: "8_to_16 | _v11ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[10]: "_v3sa"
+	end_part[10]: "_v0ea"
+	variation[11]: "16_to_8 | _v11cb,_v3ca,_v3cb,_v3cc,_v3cb,_v3ca,_v3cc : 1.0"
+	start_part[11]: "_v0sa"
+	end_part[11]: "_v3ea"
+	variation[12]: "16_to_32_top | _v12ca,_v13ca,_v13cb,_v13cc,_v13cb,_v13ca,_v13cc : 1.0"
+	start_part[12]: "_v9sa"
+	end_part[12]: "_v13ea"
+	variation[13]: "32_to_16_top | _v12cb,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[13]: "_v13sa"
+	end_part[13]: "_v9ea"
+	variation[14]: "even_32m_top | _v13ca,_v13cb,_v13cc : 1.0"
+	start_part[14]: "_v13sa"
+	end_part[14]: "_v13ea"
+	variation[15]: "even_8m_top | _v8ca,_v8cb,_v8cc : 1.0"
+	start_part[15]: "_v8sa"
+	end_part[15]: "_v8ea"
+	variation[16]: "even_16m_top | _v9ca,_v9cb,_v9cc : 1.0"
+	start_part[16]: "_v9sa"
+	end_part[16]: "_v9ea"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1n004
+{
+	model_desc: "/model/rock/wy_roadcliffrock_curve_1b_slope_short.pmd"
+	name: "wy roadcliffrock curve 1b slope short"
+
+	variation: 17
+	start_part: 17
+	end_part: 17
+	variation[0]: "even_16m | _v0ca,_v0cb,_v0cc : 1.0 | _v0cb,_v0cc,_v0ca : 1.0 | _v0cc,_v0ca,_v0cb : 1.0"
+	start_part[0]: "_v0sa"
+	end_part[0]: "_v0ea"
+	variation[1]: "even_16m_2 | _v1ca,_v1cb,_v1cc : 1.0 | _v1cb,_v1cc,_v1ca : 1.0 | _v1cc,_v1ca,_v1cb : 1.0"
+	start_part[1]: "_v0sa"
+	end_part[1]: "_v0ea"
+	variation[2]: "uneven_16m | _v2ca : 1.0 | _v2cb : 1.0"
+	start_part[2]: "_v0sa"
+	end_part[2]: "_v0ea"
+	variation[3]: "even_8m | _v3ca,_v3cb,_v3cc : 1.0 | _v3cb,_v3cc,_v3ca : 1.0 | _v3cc,_v3ca,_v3cb : 1.0"
+	start_part[3]: "_v3sa"
+	end_part[3]: "_v3ea"
+	variation[4]: "uneven_8m | _v4ca,_v4cb,_v4cc : 1.0 | _v4cb,_v4cc,_v4ca : 1.0 | _v4cc,_v4ca,_v4cb : 1.0"
+	start_part[4]: "_v4sa"
+	end_part[4]: "_v4ea"
+	variation[5]: "even_32m | _v5ca,_v5cb,_v5cc : 1.0 | _v5cb,_v5cc,_v5ca : 1.0 | _v5cc,_v5ca,_v5cb : 1.0"
+	start_part[5]: "_v5sa"
+	end_part[5]: "_v5ea"
+	variation[6]: "16_to_32 | _v6ca,_v5ca,_v5cb,_v5cc,_v5cb,_v5ca,_v5cc : 1.0"
+	start_part[6]: "_v0sa"
+	end_part[6]: "_v5ea"
+	variation[7]: "32_to_16 | _v7ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[7]: "_v5sa"
+	end_part[7]: "_v5ea"
+	variation[8]: "8_to_16_top | _v10ca,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[8]: "_v8sa"
+	end_part[8]: "_v9ea"
+	variation[9]: "16_to_8_top | _v10cb,_v8ca,_v8cb,_v8cc,_v8cb,_v8ca,_v8cc : 1.0"
+	start_part[9]: "_v9sa"
+	end_part[9]: "_v8ea"
+	variation[10]: "8_to_16 | _v11ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[10]: "_v3sa"
+	end_part[10]: "_v0ea"
+	variation[11]: "16_to_8 | _v11cb,_v3ca,_v3cb,_v3cc,_v3cb,_v3ca,_v3cc : 1.0"
+	start_part[11]: "_v0sa"
+	end_part[11]: "_v3ea"
+	variation[12]: "16_to_32_top | _v12ca,_v13ca,_v13cb,_v13cc,_v13cb,_v13ca,_v13cc : 1.0"
+	start_part[12]: "_v9sa"
+	end_part[12]: "_v13ea"
+	variation[13]: "32_to_16_top | _v12cb,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[13]: "_v13sa"
+	end_part[13]: "_v9ea"
+	variation[14]: "even_32m_top | _v13ca,_v13cb,_v13cc : 1.0"
+	start_part[14]: "_v13sa"
+	end_part[14]: "_v13ea"
+	variation[15]: "even_8m_top | _v8ca,_v8cb,_v8cc : 1.0"
+	start_part[15]: "_v8sa"
+	end_part[15]: "_v8ea"
+	variation[16]: "even_16m_top | _v9ca,_v9cb,_v9cc : 1.0"
+	start_part[16]: "_v9sa"
+	end_part[16]: "_v9ea"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1n005
+{
+	model_desc: "/model/rock/wy_roadcliffrock_curve_1d_slope_short.pmd"
+	name: "wy roadcliffrock curve 1d slope short"
+
+	variation: 17
+	start_part: 17
+	end_part: 17
+	variation[0]: "even_16m | _v0ca,_v0cb,_v0cc : 1.0 | _v0cb,_v0cc,_v0ca : 1.0 | _v0cc,_v0ca,_v0cb : 1.0"
+	start_part[0]: "_v0sa"
+	end_part[0]: "_v0ea"
+	variation[1]: "even_16m_2 | _v1ca,_v1cb,_v1cc : 1.0 | _v1cb,_v1cc,_v1ca : 1.0 | _v1cc,_v1ca,_v1cb : 1.0"
+	start_part[1]: "_v0sa"
+	end_part[1]: "_v0ea"
+	variation[2]: "uneven_16m | _v2ca : 1.0 | _v2cb : 1.0"
+	start_part[2]: "_v0sa"
+	end_part[2]: "_v0ea"
+	variation[3]: "even_8m | _v3ca,_v3cb,_v3cc : 1.0 | _v3cb,_v3cc,_v3ca : 1.0 | _v3cc,_v3ca,_v3cb : 1.0"
+	start_part[3]: "_v3sa"
+	end_part[3]: "_v3ea"
+	variation[4]: "uneven_8m | _v4ca,_v4cb,_v4cc : 1.0 | _v4cb,_v4cc,_v4ca : 1.0 | _v4cc,_v4ca,_v4cb : 1.0"
+	start_part[4]: "_v4sa"
+	end_part[4]: "_v4ea"
+	variation[5]: "even_32m | _v5ca,_v5cb,_v5cc : 1.0 | _v5cb,_v5cc,_v5ca : 1.0 | _v5cc,_v5ca,_v5cb : 1.0"
+	start_part[5]: "_v5sa"
+	end_part[5]: "_v5ea"
+	variation[6]: "16_to_32 | _v6ca,_v5ca,_v5cb,_v5cc,_v5cb,_v5ca,_v5cc : 1.0"
+	start_part[6]: "_v0sa"
+	end_part[6]: "_v5ea"
+	variation[7]: "32_to_16 | _v7ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[7]: "_v5sa"
+	end_part[7]: "_v5ea"
+	variation[8]: "8_to_16_top | _v10ca,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[8]: "_v8sa"
+	end_part[8]: "_v9ea"
+	variation[9]: "16_to_8_top | _v10cb,_v8ca,_v8cb,_v8cc,_v8cb,_v8ca,_v8cc : 1.0"
+	start_part[9]: "_v9sa"
+	end_part[9]: "_v8ea"
+	variation[10]: "8_to_16 | _v11ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[10]: "_v3sa"
+	end_part[10]: "_v0ea"
+	variation[11]: "16_to_8 | _v11cb,_v3ca,_v3cb,_v3cc,_v3cb,_v3ca,_v3cc : 1.0"
+	start_part[11]: "_v0sa"
+	end_part[11]: "_v3ea"
+	variation[12]: "16_to_32_top | _v12ca,_v13ca,_v13cb,_v13cc,_v13cb,_v13ca,_v13cc : 1.0"
+	start_part[12]: "_v9sa"
+	end_part[12]: "_v13ea"
+	variation[13]: "32_to_16_top | _v12cb,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[13]: "_v13sa"
+	end_part[13]: "_v9ea"
+	variation[14]: "even_32m_top | _v13ca,_v13cb,_v13cc : 1.0"
+	start_part[14]: "_v13sa"
+	end_part[14]: "_v13ea"
+	variation[15]: "even_8m_top | _v8ca,_v8cb,_v8cc : 1.0"
+	start_part[15]: "_v8sa"
+	end_part[15]: "_v8ea"
+	variation[16]: "even_16m_top | _v9ca,_v9cb,_v9cc : 1.0"
+	start_part[16]: "_v9sa"
+	end_part[16]: "_v9ea"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+
+curve_model : curve._local_1w001
+{
+	model_desc: "/model/vegetation/crops/vineyard2.pmd"
+	name: "vineyard2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve._local_1w002
+{
+	model_desc: "/model/vegetation/crops/vineyard2_big.pmd"
+	name: "vineyard2 big"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve._local_1w003
+{
+	model_desc: "/model/vegetation/crops/vineyard2_far.pmd"
+	name: "vineyard2 far"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve._local_1w004
+{
+	model_desc: "/model/vegetation/crops/vineyard2_big_far.pmd"
+	name: "vineyard2 big far"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+curve_model : curve.06019
+{
+	model_desc: "/model/props/street/roof_test.pmd"
+	name: "XXdo not use curve test1XX"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: ""
+	variation[1]: "default1 | center2 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: ""
+	variation[2]: "flipped1 | center3 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: ""
+	variation[3]: "flipped2 | center4 : 1.0"
+	start_part[3]: "start2"
+	end_part[3]: ""
+
+	overlay: 4
+	overlay[0]: "center1 | ovr2 : 1.0"
+	overlay[1]: "center2 | ovr3 : 1.0"
+	overlay[2]: "center3 | ovr4 : 1.0"
+	overlay[3]: "center4 | ovr5 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601a
+{
+	model_desc: "/model/props/street/roof_test_2.pmd"
+	name: "XXdo not use curve test2XX"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "def | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "def2 | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "def3 | center3 : 1.0 | center4 : 1.0"
+	start_part[2]: "start3"
+	end_part[2]: "end3"
+
+	overlay: 1
+	overlay[0]: "center4 | ovr1 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601b
+{
+	model_desc: "/model/props/street/roof_test_3.pmd"
+	name: "XXdo not use curve test3XX"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "def | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	overlay: 2
+	overlay[0]: "center1 | ovr1 : 1.0"
+	overlay[1]: "start1 | ovr1 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601c
+{
+	model_desc: "/model/building/industrial/chemical_plant_far_plane_curve.pmd"
+	name: "chemical plant far plane curve"
+
+	variation: 2
+	variation[0]: "plant | center1 : 1.0"
+	variation[1]: "industry | center2 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601e
+{
+	model_desc: "/model/barrier/ut_delineator_post_curve.pmd"
+	name: "ut delineator post curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: ""
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/ut_delineator_post_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.0601f
+{
+	model_desc: "/model/barrier/us_reflective_post_flat_variants_curve.pmd"
+	name: "us reflective post flat variants curve"
+
+	variation: 5
+	start_part: 5
+	end_part: 5
+	variation[0]: "yellow | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: ""
+	end_part[0]: "end1"
+	variation[1]: "green | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: ""
+	end_part[1]: "end2"
+	variation[2]: "white_double | center7 : 1.0 | center8 : 1.0 | center9 : 1.0"
+	start_part[2]: ""
+	end_part[2]: "end3"
+	variation[3]: "white | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[3]: ""
+	end_part[3]: "end4"
+	variation[4]: "white_orange | center13 : 1.0 | center14 : 1.0 | center15 : 1.0"
+	start_part[4]: ""
+	end_part[4]: "end5"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/us_reflective_post_flat_variants_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.0601g
+{
+	model_desc: "/model/barrier/us_reflective_posts_round_variants_curve.pmd"
+	name: "us reflective posts round variants curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "white | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: ""
+	end_part[0]: "end1"
+	variation[1]: "yellow | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: ""
+	end_part[1]: "end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/us_reflective_posts_round_variants_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.tx_15001
+{
+	model_desc: "/model/building/logistic/tx_warehouse_curve_mid.pmd"
+	name: "tx warehouse curve mid"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "variant1 | center1,center2 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/building/logistic/tx_warehouse_curve_mid_lod1.pmd"
+	dynamic_lod_dist[0]: 150
+	dynamic_lod_desc[1]: "/model/building/logistic/tx_warehouse_curve_mid_lod2.pmd"
+	dynamic_lod_dist[1]: 300
+}
+
+curve_model : curve.tx_15002
+{
+	model_desc: "/model/building/logistic/tx_warehouse2_curve_mid.pmd"
+	name: "tx warehouse2 curve mid"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "variant1 | center1,center2 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/building/logistic/tx_warehouse2_curve_mid_lod1.pmd"
+	dynamic_lod_dist[0]: 150
+	dynamic_lod_desc[1]: "/model/building/logistic/tx_warehouse2_curve_mid_lod2.pmd"
+	dynamic_lod_dist[1]: 300
+}
+curve_model : curve.1u001
+{
+	name: "ivy hanged curve1"
+	model_desc: "/model/vegetation/bushes/ivy_hanged.pmd"
+	variation[]: "basic | Default1,Default2,Default3,Default4,Default2,Default3,Default1,Default4 : 1.0"
+
+	start_part[]: ""
+	end_part[]: ""
+
+	dynamic_lod_desc[]: "/model/vegetation/bushes/ivy_hanged_lod1.pmd"
+	dynamic_lod_dist[]: 250
+}
+
+curve_model : curve.1u002
+{
+	name: "ivy hanged curve1 far"
+	model_desc: "/model/vegetation/bushes/ivy_hanged_far.pmd"
+	variation[]: "basic | Default1,Default2,Default3,Default4,Default2,Default3,Default1,Default4 : 1.0"
+
+	start_part[]: ""
+	end_part[]: ""
+}
+
+curve_model : curve.2g001
+{
+	model_desc: "/model/building/industrial/pipes_07_curve.pmd"
+	name: "pipes 07 curve"
+
+	variation: 18
+	start_part: 18
+	end_part: 18
+	variation[0]: "mixed_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.25 | center8 : 0.5"
+	start_part[0]: "start1 | start2 | start3 | start4 | start5"
+	end_part[0]: "end1 | end2 | end3 | end4 | end5"
+	variation[1]: "horiz_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center8 : 0.5"
+	start_part[1]: "start1 | start2 | start3 | start4 | start5"
+	end_part[1]: "end1 | end2 | end3 | end4 | end5"
+	variation[2]: "vertic_knots | center1 : 1.0 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.25 | center8 : 0.5"
+	start_part[2]: "start1 | start2 | start3 | start4 | start5"
+	end_part[2]: "end1 | end2 | end3 | end4 | end5"
+	variation[3]: "no_knots | center1 : 1.0 | center8 : 0.5"
+	start_part[3]: "start1 | start2 | start3 | start4 | start5"
+	end_part[3]: "end1 | end2 | end3 | end4 | end5"
+	variation[4]: "elevated_a | center20 : 1.0"
+	start_part[4]: "start20 | start21"
+	end_part[4]: "end20 | end21"
+	variation[5]: "elevated_b | center30 : 1.0"
+	start_part[5]: "start30"
+	end_part[5]: "end30"
+	variation[6]: "elevated_c | center40 : 1.0"
+	start_part[6]: "start40"
+	end_part[6]: "end40"
+	variation[7]: "bot_to_top_a | start20 : 1.0"
+	start_part[7]: ""
+	end_part[7]: ""
+	variation[8]: "bot_to_top_b | start30 : 1.0"
+	start_part[8]: ""
+	end_part[8]: ""
+	variation[9]: "bot_to_top_c | start40 : 1.0"
+	start_part[9]: ""
+	end_part[9]: ""
+	variation[10]: "top_to_bot_a | end20 : 1.0"
+	start_part[10]: ""
+	end_part[10]: ""
+	variation[11]: "top_to_bot_b | end30 : 1.0"
+	start_part[11]: ""
+	end_part[11]: ""
+	variation[12]: "top_to_bot_c | end40 : 1.0"
+	start_part[12]: ""
+	end_part[12]: ""
+	variation[13]: "top_a | center20 : 1.0"
+	start_part[13]: ""
+	end_part[13]: ""
+	variation[14]: "top_b | center30 : 1.0"
+	start_part[14]: ""
+	end_part[14]: ""
+	variation[15]: "top_c | center40 : 1.0"
+	start_part[15]: ""
+	end_part[15]: ""
+	variation[16]: "elevated_a2 | center20,center21 : 1.0"
+	start_part[16]: "start20"
+	end_part[16]: "end20"
+	variation[17]: "no_knotssupp | center9 : 1.0 | center9 : 0.5"
+	start_part[17]: "start1 | start2 | start3 | start4 | start5"
+	end_part[17]: "end1 | end2 | end3 | end4 | end5"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/pipes_07_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+}
+
+curve_model : curve.2g002
+{
+	model_desc: "/model/building/industrial/pipes_08_curve.pmd"
+	name: "pipes 08 curve"
+
+	variation: 17
+	start_part: 17
+	end_part: 17
+	variation[0]: "mixed_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.25 | center8 : 0.5"
+	start_part[0]: "start1 | start2 | start3 | start4 | start5"
+	end_part[0]: "end1 | end2 | end3 | end4 | end5"
+	variation[1]: "horiz_knots | center1 : 1.0 | center2 : 0.25 | center3 : 0.25 | center8 : 0.5"
+	start_part[1]: "start1 | start2 | start3 | start4 | start5"
+	end_part[1]: "end1 | end2 | end3 | end4 | end5"
+	variation[2]: "vertic_knots | center1 : 1.0 | center4 : 0.25 | center5 : 0.25 | center6 : 0.25 | center7 : 0.25 | center8 : 0.5"
+	start_part[2]: "start1 | start2 | start3 | start4 | start5"
+	end_part[2]: "end1 | end2 | end3 | end4 | end5"
+	variation[3]: "no_knots | center1 : 1.0 | center8 : 0.5"
+	start_part[3]: "start1 | start2 | start3 | start4 | start5"
+	end_part[3]: "end1 | end2 | end3 | end4 | end5"
+	variation[4]: "elevated_b | center30 : 1.0"
+	start_part[4]: "start30"
+	end_part[4]: "end30"
+	variation[5]: "elevated_c | center40 : 1.0"
+	start_part[5]: "start40"
+	end_part[5]: "end40"
+	variation[6]: "bot_to_top_a | start20 : 1.0"
+	start_part[6]: ""
+	end_part[6]: ""
+	variation[7]: "bot_to_top_b | start30 : 1.0"
+	start_part[7]: ""
+	end_part[7]: ""
+	variation[8]: "bot_to_top_c | start40 : 1.0"
+	start_part[8]: ""
+	end_part[8]: ""
+	variation[9]: "top_to_bot_a | end20 : 1.0"
+	start_part[9]: ""
+	end_part[9]: ""
+	variation[10]: "top_to_bot_b | end30 : 1.0"
+	start_part[10]: ""
+	end_part[10]: ""
+	variation[11]: "top_to_bot_c | end40 : 1.0"
+	start_part[11]: ""
+	end_part[11]: ""
+	variation[12]: "top_a | center20 : 1.0"
+	start_part[12]: ""
+	end_part[12]: ""
+	variation[13]: "top_b | center30 : 1.0"
+	start_part[13]: "end6"
+	end_part[13]: "end6"
+	variation[14]: "top_c | center40 : 1.0"
+	start_part[14]: ""
+	end_part[14]: ""
+	variation[15]: "elevated_a2 | center20,center21 : 1.0"
+	start_part[15]: "start20"
+	end_part[15]: "end20"
+	variation[16]: "no_knotssupp | center9 : 1.0 | center9 : 0.5"
+	start_part[16]: "start1 | start2 | start3 | start4 | start5"
+	end_part[16]: "end1 | end2 | end3 | end4 | end5"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/pipes_08_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+}
+
+curve_model : curve.wy_1c004
+{
+	model_desc: "/model/props/farm/wy_livestock_box_14x14.pmd"
+	name: "wy livestock box 14x14"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "var1 | center1 : 2.0 | center2 : 2.0 | center3 : 4.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center4 : 2.0 | center5 : 2.0 | center6 : 4.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "var3 | center6 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+
+
+	high_tess: 0
+
+}
+
+curve_model : curve.wy_0s009
+{
+	model_desc: "/model/barrier/wood/wy_wood_pillars2.pmd"
+	name: "wy wood pillars2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 0.4 | center4 : 1.0 | center5 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_27002
+{
+	model_desc: "/model/barrier/wood/wy_snow_fence_1.pmd"
+	name: "wy snow fence 1"
+
+	variation: 4
+	variation[0]: "small | center2 : 1.0"
+	variation[1]: "large | center1 : 1.0"
+	variation[2]: "small_slope | center4 : 1.0 | center41 : 1.0 | center42 : 1.0"
+	variation[3]: "large_slope | center3 : 1.0 | center31 : 1.0 | center32 : 1.0"
+
+	overlay: 2
+	overlay[0]: "center2 | ovr2 : 1.0 | ovr21 : 1.0 | ovr22 : 1.0"
+	overlay[1]: "center1 | ovr1 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/wood/wy_snow_fence_1_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.wy_27004
+{
+	model_desc: "/model/barrier/concrete/wy_concrete_wall.pmd"
+	name: "wy concrete wall"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "large4m | center1 : 1.0"
+	start_part[0]: "start1 | start2 | start3 | start4"
+	end_part[0]: "end1 | end2 | end3 | end4"
+	variation[1]: "large2m | center2 : 1.0"
+	start_part[1]: "start1 | start2 | start3 | start4"
+	end_part[1]: "end1 | end2 | end3 | end4"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_1n002
+{
+	model_desc: "/model/rock/wy_roadcliffrock_curve_1a_short.pmd"
+	name: "wy roadcliffrock curve 1a short"
+
+	variation: 18
+	start_part: 18
+	end_part: 18
+	variation[0]: "even_16m | _v0ca,_v0cb,_v0cc : 1.0 | _v0cb,_v0cc,_v0ca : 1.0 | _v0cc,_v0ca,_v0cb : 1.0"
+	start_part[0]: "_v0sa"
+	end_part[0]: "_v0ea"
+	variation[1]: "even_16m_2 | _v1ca,_v1cb,_v1cc : 1.0 | _v1cb,_v1cc,_v1ca : 1.0 | _v1cc,_v1ca,_v1cb : 1.0"
+	start_part[1]: "_v0sa"
+	end_part[1]: "_v0ea"
+	variation[2]: "uneven_16m | _v2ca : 1.0 | _v2cb : 1.0"
+	start_part[2]: "_v0sa"
+	end_part[2]: "_v0ea"
+	variation[3]: "even_8m | _v3ca,_v3cb,_v3cc : 1.0 | _v3cb,_v3cc,_v3ca : 1.0 | _v3cc,_v3ca,_v3cb : 1.0"
+	start_part[3]: "_v3sa"
+	end_part[3]: "_v3ea"
+	variation[4]: "uneven_8m | _v4ca,_v4cb,_v4cc : 1.0 | _v4cb,_v4cc,_v4ca : 1.0 | _v4cc,_v4ca,_v4cb : 1.0"
+	start_part[4]: "_v4sa"
+	end_part[4]: "_v4ea"
+	variation[5]: "even_32m | _v5ca,_v5cb,_v5cc : 1.0 | _v5cb,_v5cc,_v5ca : 1.0 | _v5cc,_v5ca,_v5cb : 1.0"
+	start_part[5]: "_v5sa"
+	end_part[5]: "_v5ea"
+	variation[6]: "16_to_32 | _v6ca,_v5ca,_v5cb,_v5cc,_v5cb,_v5ca,_v5cc : 1.0"
+	start_part[6]: "_v0sa"
+	end_part[6]: "_v5ea"
+	variation[7]: "32_to_16 | _v7ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[7]: "_v5sa"
+	end_part[7]: "_v5ea"
+	variation[8]: "8_to_16_top | _v10ca,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[8]: "_v8sa"
+	end_part[8]: "_v9ea"
+	variation[9]: "16_to_8_top | _v10cb,_v8ca,_v8cb,_v8cc,_v8cb,_v8ca,_v8cc : 1.0"
+	start_part[9]: "_v9sa"
+	end_part[9]: "_v8ea"
+	variation[10]: "8_to_16 | _v11ca,_v0ca,_v0cb,_v0cc,_v0cb,_v0ca,_v0cc : 1.0"
+	start_part[10]: "_v3sa"
+	end_part[10]: "_v0ea"
+	variation[11]: "16_to_8 | _v11cb,_v3ca,_v3cb,_v3cc,_v3cb,_v3ca,_v3cc : 1.0"
+	start_part[11]: "_v0sa"
+	end_part[11]: "_v3ea"
+	variation[12]: "16_to_32_top | _v12ca,_v13ca,_v13cb,_v13cc,_v13cb,_v13ca,_v13cc : 1.0"
+	start_part[12]: "_v9sa"
+	end_part[12]: "_v13ea"
+	variation[13]: "32_to_16_top | _v12cb,_v9ca,_v9cb,_v9cc,_v9cb,_v9ca,_v9cc : 1.0"
+	start_part[13]: "_v13sa"
+	end_part[13]: "_v9ea"
+	variation[14]: "even_32m_top | _v13ca,_v13cb,_v13cc : 1.0"
+	start_part[14]: "_v13sa"
+	end_part[14]: "_v13ea"
+	variation[15]: "even_8m_top | _v8ca,_v8cb,_v8cc : 1.0"
+	start_part[15]: "_v8sa"
+	end_part[15]: "_v8ea"
+	variation[16]: "even_16m_top | _v9ca,_v9cb,_v9cc : 1.0"
+	start_part[16]: "_v9sa"
+	end_part[16]: "_v9ea"
+	variation[17]: "32m_tunnel | _v14ca : 1.0"
+	start_part[17]: ""
+	end_part[17]: ""
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1n006
+{
+	model_desc: "/model/rock/wy_rock_red_sediment_curve_16m.pmd"
+	name: "wy rock red sediment curve 16m"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "16m | center2,center4,center6,center8 : 1.0 | center4,center6,center8,center2 : 1.0"
+	start_part[0]: "start2"
+	end_part[0]: "end2"
+	variation[1]: "16m_top | center1,center3,center5,center7 : 1.0 | center3,center1,center7,center5 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+	variation[2]: "16_to_8 | center10 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+	variation[3]: "16_to_8_top | center9 : 1.0"
+	start_part[3]: "start1"
+	end_part[3]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_red_sediment_curve_16m_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_0s006
+{
+	model_desc: "/model/panorama/wy_us191/wy_fg_dam_walkaway.pmd"
+	name: "wy fg dam walkaway"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "variant1 | center1 : 1.0"
+	start_part[0]: "center1 | start1"
+	end_part[0]: "end1 | end2 | end3 | end4"
+	variation[1]: "variant2 | center2 : 1.0"
+	start_part[1]: "center2 | start1"
+	end_part[1]: "end1 | end2 | end3 | end4"
+	variation[2]: "variant3 | center3 : 1.0"
+	start_part[2]: "center3"
+	end_part[2]: "end4"
+
+	high_tess: 0
+}
+
+curve_model : curve.reskin_01001
+{
+	model_desc: "/model/barrier/stone/us_road_wall_mosaic.pmd"
+	name: "us road wall mosaic"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "default"
+
+	smooth_surface: true
+}
+
+curve_model : curve.reskin_0s001
+{
+	model_desc: "/model/props/street/ca_shirt_tent_curve.pmd"
+	name: "ca shirt tent curve"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1 | start2 | start3"
+	end_part[0]: "end1 | end2 | end3"
+	variation[1]: "var2 | center2 : 1.0 | center3 : 1.0 | center1 : 1.0"
+	start_part[1]: "start1 | start2 | start3"
+	end_part[1]: "end1 | end2 | end3"
+	variation[2]: "var3 | center3 : 1.0 | center1 : 1.0 | center2 : 1.0"
+	start_part[2]: "start1 | start2 | start3"
+	end_part[2]: "end1 | end2 | end3"
+
+	high_tess: 0
+}
+
+curve_model : curve.reskin_0s002
+{
+	model_desc: "/model/barrier/ca_wooden_flower_pot.pmd"
+	name: "ca wooden flower pot"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "default | center1,center2,center3,center4 : 1.0 | center2,center1,center3,center4 : 1.0 | center1,center3,center2,center4 : 1.0 | center3,center1,center2,center4 : 1.0 | center3,center2,center1,center4 : 1.0 | center2,center3,center1,center4 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+	fixed_inner_start[0]: "ins1"
+	fixed_inner_end[0]: "ine1"
+
+	high_tess: 0
+
+	fixed_step: 6.0
+}
+
+curve_model : curve.reskin_12001
+{
+	model_desc: "/model/panorama/ca_us101/ca_wooden_store_props_curve.pmd"
+	name: "ca wooden store props curve"
+
+	variation: 1
+	variation[0]: "v1 | center1,center2,center3,center4 : 1.0 | center5,center6,center7 : 1.0"
+
+	overlay: 7
+	overlay[0]: "center1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[1]: "center2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[2]: "center3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[3]: "center4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[4]: "center5 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[5]: "center6 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[6]: "center7 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.reskin_12002
+{
+	model_desc: "/model/barrier/us_sandbags.pmd"
+	name: "us sandbags"
+
+	variation: 1
+	variation[0]: "v1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0"
+
+	overlay: 5
+	overlay[0]: "center1 | ovr1 : 5.0 | ovr2 : 1.0"
+	overlay[1]: "center2 | ovr1 : 5.0 | ovr2 : 1.0"
+	overlay[2]: "center3 | ovr1 : 5.0 | ovr2 : 1.0"
+	overlay[3]: "center4 | ovr1 : 5.0 | ovr1 : 1.0"
+	overlay[4]: "center5 | ovr1 : 5.0 | ovr2 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/us_sandbags_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+}
+
+curve_model : curve.reskin_06001
+{
+	model_desc: "/model/barrier/stone/us_road_wall_mosaic_low.pmd"
+	name: "us road wall mosaic low"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/stone/us_road_wall_mosaic_low_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_27003
+{
+	model_desc: "/model/barrier/wood/wy_snow_fence_2.pmd"
+	name: "wy snow fence 2"
+
+	variation: 2
+	variation[0]: "small | center1 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	variation[1]: "large | center2 : 1.0 | center21 : 1.0 | center22 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/wood/wy_snow_fence_2_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.wy_1n007
+{
+	model_desc: "/model/rock/wy_rock_red_sediment_curve_8m.pmd"
+	name: "XXX DO NOT USE XXX wy rock red sediment curve 8m"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "8m | center2,center4,center6,center8 : 1.0 | center4,center6,center8,center2 : 1.0"
+	start_part[0]: "start2"
+	end_part[0]: "end2"
+	variation[1]: "8m_top | center1,center3,center5,center7 : 1.0 | center3,center1,center7,center5 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+	variation[2]: "8_to_16 | center10 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+	variation[3]: "8_to_16_top | center9 : 1.0"
+	start_part[3]: "start1"
+	end_part[3]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_red_sediment_curve_8m_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+
+	smooth_surface: true
+}
+curve_model : curve.0601h
+{
+	model_desc: "/model/barrier/stone/ca_stone_wall.pmd"
+	name: "ca stone wall"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1 | start3"
+	end_part[0]: "end1 | end3"
+	variation[1]: "var2 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0"
+	start_part[1]: "start2 | start4"
+	end_part[1]: "end2 | end4"
+	variation[2]: "var3 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0"
+	start_part[2]: "start5 | start7"
+	end_part[2]: "end5 | end7"
+	variation[3]: "var4 | center14 : 1.0 | center15 : 1.0 | center16 : 1.0 | center17 : 1.0 | center18 : 1.0"
+	start_part[3]: "start6 | start8"
+	end_part[3]: "end6 | end8"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/stone/ca_stone_wall_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_2o002
+{
+	model_desc: "/model/props/road/wy_sidewalk_wooden.pmd"
+	name: "wy sidewalk wooden"
+
+	variation[0]: "2m | cent_0_2 : 1.0"
+	start_part[0]: "start_0_2 | start_1_2"
+	end_part[0]: "end_0_2 | end_1_2"
+	variation[1]: "4m | cent_0_4 : 1.0"
+	start_part[1]: "start_0_4 | start_1_4"
+	end_part[1]: "end_0_4 | end_1_4"
+
+	high_tess: 0
+}
 
 }

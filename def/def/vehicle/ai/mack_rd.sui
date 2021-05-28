@@ -10,9 +10,9 @@ traffic_vehicle : traffic.mack_rd.dump
 	lod_dist[]: 53
 	lod_dist[]: 70
 	allow_parked: false
-	
+
 	vehicle_mass: 25000
-	
+
 	engine_power: 330
 
 	spawn_ratio: 0.5
@@ -150,3 +150,52 @@ vehicle_wheel_accessory: .mack_rd.pump.rwheel2
 	data_path: "/def/vehicle/r_wheel/steel.sii"
 }
 
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX C CLASS CISTERN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.mack_rd.ccistern
+{
+	accessories[]: .mack_rd.ccistern.chassis
+	accessories[]: .mack_rd.ccistern.fwheel
+	accessories[]: .mack_rd.ccistern.rwheel
+	accessories[]: .mack_rd.ccistern.rwheel2
+
+	max_speed: 100
+	engine_power: 330
+
+	spawn_ratio: 0.01
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 25000
+
+	color[]: (0.9, 0.9, 0.9) #white
+	color[]: (0.8, 0.8, 0.8) #white
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .mack_rd.ccistern.chassis
+{
+	data_path: "/def/vehicle/ai/mack_rd/ccistern.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.ccistern.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.ccistern.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .mack_rd.ccistern.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}

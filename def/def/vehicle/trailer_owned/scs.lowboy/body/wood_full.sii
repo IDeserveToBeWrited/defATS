@@ -1,0 +1,36 @@
+SiiNunit
+{
+accessory_trailer_body_data : wood_full.scs.lowboy.body
+{
+	name: "@@bs_wood_full_lowboy@@"
+	price: 8500
+	unlock: 13
+	icon: "body/scs_lowboy/fullwood"
+
+	# 26' x 102" x 13'6" (cargo height 138")
+	# https://freightmonster.com/freight-shipping-solutions/freight-hauling-equipment-trailers/lowboy-trailer/
+	# https://freightmonster.com/freight-shipping-solutions/freight-hauling-equipment-trailers/removable-gooseneck-trailer-rgn/
+
+	size: (2.5908, 3.5052, 7.9248)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 7.9248)	# width, height, length (size of the body + chassis?)
+
+	volume: 72.0		# 2540 cft
+	body_type: lowboy
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for lowboy trailer is in chassis, bodies have only deltas to lowboy mass.
+	# Shorter body variants would have smaller delta.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_lowboy/body/wood_full.pmd"
+	variant: default
+
+	empty_cargo_model: "/def/vehicle/trailer_cargo/scs_lowboy/empty_cargo.sii"
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.lowboy/accessory/markers/simple.sii"
+}
+}

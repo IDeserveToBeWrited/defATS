@@ -13,8 +13,11 @@ traffic_vehicle : traffic.tractor
 
 	tags[]: slow
 
+	trailer_chains[]: "trailer.tractor 0-1"
 	trailer_chains[]: "trailer.tractor.l_wagon 0-1"
 	#trailer_chains[]: "trailer.tractor.mixer 0-1"
+
+	variant[]: .traffic.tractor_g
 
 @include "drivers_generic.sui"
 }
@@ -29,6 +32,43 @@ vehicle_wheel_accessory: .tractor.fwheel
 	data_path: "/def/vehicle/ai_wheel/tractor_front.sii"
 }
 vehicle_wheel_accessory: .tractor.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/tractor_rear.sii"
+}
+
+traffic_vehicle : .traffic.tractor_g
+{
+	accessories[]: .tractorg.chassis
+	accessories[]: .tractorg.fwheel
+	accessories[]: .tractorg.rwheel
+
+	max_speed: 30
+	vehicle_mass: 15000
+	engine_power: 200
+
+	lod_dist[]: 60
+	lod_dist[]: 110
+
+	tags[]: slow
+
+	trailer_chains[]: "trailer.tractor 0-1"
+	trailer_chains[]: "trailer.tractor.l_wagon 0-1"
+	#trailer_chains[]: "trailer.tractor.mixer 0-1"
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .tractorg.chassis
+{
+	data_path: "/def/vehicle/ai/tractor/chassis_gray.sii"
+}
+vehicle_wheel_accessory: .tractorg.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/tractor_front.sii"
+}
+vehicle_wheel_accessory: .tractorg.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/tractor_rear.sii"

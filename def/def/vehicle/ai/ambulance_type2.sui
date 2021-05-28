@@ -1,0 +1,40 @@
+traffic_vehicle : traffic.amb2.co
+{
+	accessories[]: .amb2_co.chassis
+	accessories[]: .amb2_co.fwheel
+	accessories[]: .amb2_co.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_diesel_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	engine_power: 114
+
+	vehicle_mass: 2800
+
+	spawn_ratio: 0
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .amb2_co.chassis
+{
+	data_path: "/def/vehicle/ai/ambulance_type2/chassis_co.sii"
+}
+
+vehicle_wheel_accessory: .amb2_co.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_5.sii"
+}
+
+vehicle_wheel_accessory: .amb2_co.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_5.sii"
+}

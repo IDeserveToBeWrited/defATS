@@ -1,0 +1,28 @@
+traffic_trailer : train_car.trndenver_c
+{
+	accessories[]: .trndenver_c.chassis
+	accessories[]: .trndenver_c.rwheel
+	accessories[]: .trndenver_c.rwheel1
+	
+
+	displacement_limit: 0.0
+
+	sound_move: "/sound/traffic/train_car_pas.soundref"
+}
+
+vehicle_accessory: .trndenver_c.chassis
+{
+	data_path: "/def/vehicle/ai/train_denver/chassis_c.sii"
+}
+
+vehicle_wheel_accessory: .trndenver_c.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trndenver_c.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}

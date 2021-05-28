@@ -3,9 +3,10 @@ SiiNunit
 accessory_cabin_data : standard.volvo.vnl.cabin
 {
 	name: "730"
-	price: 32590
+	price: 27590
 	unlock: 10
 	icon: "volvo_vnl/cab02"
+
 	model: "/vehicle/truck/volvo_vnl/truck.pmd"
 	collision: "/vehicle/truck/volvo_vnl/truck.pmc"
 	variant: cab_b
@@ -19,17 +20,20 @@ accessory_cabin_data : standard.volvo.vnl.cabin
 	wiper_anim: "/vehicle/truck/volvo_vnl/wipers.pma"
 	suspension: false
 
-	sound_horn: "/sound/truck/volvo_vnl.bank#horn/volvo"
-	sound_air_horn: "/sound/truck/air_horn/air_horn_01.soundref"
-
-	defaults[]: "/def/vehicle/truck/volvo.vnl/chassis/long.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl/chassis/long_6x2.sii"
 	defaults[]: "/def/vehicle/truck/volvo.vnl/interior/cab_bs.sii"
-	defaults[]: "/def/vehicle/truck/volvo.vnl/accessory/mirror/shape02.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl/accessory/mirror/shape03.sii"
 	defaults[]: "/def/vehicle/truck/volvo.vnl/accessory/grill/shape02.sii"
 	defaults[]: "/def/vehicle/truck/volvo.vnl/paint_job/color2.sii"
 	defaults[]: "/def/vehicle/truck/volvo.vnl/accessory/s_deflector/shape04.sii"
 
 	conflict_with[]: "short.volvo.vnl.chassis"
+	conflict_with[]: "short_4x2.volvo.vnl.chassis"
+	conflict_with[]: "short_8x4.volvo.vnl.chassis"
 	conflict_with[]: "short2.volvo.vnl.chassis"
+	conflict_with[]: "short2_4x2.volvo.vnl.chassis"
+	conflict_with[]: "short2_8x4.volvo.vnl.chassis"
+
+@include "sound.sui"
 }
 }

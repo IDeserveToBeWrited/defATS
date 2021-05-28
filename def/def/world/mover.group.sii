@@ -62,6 +62,14 @@ mover_model_group : mover.cow_we_all
 	anim_tags[]: cow
 	anim_tags[]: eating
 }
+#################################### COWS_HERD_ANIM
+mover_model_group : mover.cows_herd
+{
+	mover_name: "anim cows herd"
+	desc_tags[]: cows_herd
+	anim_tags[]: cows_herd
+}
+
 
 ### HORSE ###
 
@@ -72,6 +80,14 @@ mover_model_group : mover.horse_all
 	anim_tags[]: horse
 }
 
+mover_model_group : mover.horse_rod
+{
+	mover_name: "rodeo horse"
+	desc_tags[]: horse
+    desc_tags[]: rodeo
+	anim_tags[]: horse
+    anim_tags[]: rodeo
+}
 
 ### EAGLES ###
 
@@ -80,6 +96,24 @@ mover_model_group : mover.eagles_all
 	mover_name: "eagles all"
 	desc_tags[]: eagles
 	anim_tags[]: eagles
+}
+
+### DOG ###
+
+mover_model_group : mover.dog_walk
+{
+	mover_name: "shepherd walking"
+	desc_tags[]: shepherd
+	anim_tags[]: shepherd
+	anim_tags[]: walk
+}
+
+mover_model_group : mover.dog_sit
+{
+	mover_name: "shepherd sitting"
+	desc_tags[]: shepherd
+	anim_tags[]: shepherd
+	anim_tags[]: sit
 }
 
 
@@ -136,7 +170,7 @@ mover_model_group : mover.casu_wom_sit
 }
 
 
-### IDLE, CASUAL MAN WOMAN ###
+### IDLE, CASUAL MAN WOMAN newCASUALman ###
 
 mover_model_group : mover.casu_man_idl
 {
@@ -156,7 +190,60 @@ mover_model_group : mover.casu_wom_idl
 	anim_tags[]: idle
 	pedestrian: true
 }
-
+mover_model_group : mover.n_ca_man_idl
+{
+	mover_name: "new idle man casual all"
+	desc_tags[]: man
+	desc_tags[]: n_casual
+	anim_tags[]: man
+	anim_tags[]: idle
+	pedestrian: true
+}
+mover_model_group : mover.n_ca_man_wlk
+{
+	mover_name: "new walk man casual all"
+	desc_tags[]: man
+	desc_tags[]: n_casual
+	anim_tags[]: man
+	anim_tags[]: ngn_walk
+	pedestrian: true
+}
+mover_model_group : mover.n_fa_man_idl
+{
+	mover_name: "new idle farmer all"
+	desc_tags[]: man
+	desc_tags[]: farmer
+	anim_tags[]: man
+	anim_tags[]: idle
+	pedestrian: true
+}
+mover_model_group : mover.n_fa_man_wlk
+{
+	mover_name: "new walk farmer all"
+	desc_tags[]: man
+	desc_tags[]: farmer
+	anim_tags[]: man
+	anim_tags[]: ngn_walk
+	pedestrian: true
+}
+mover_model_group : mover.n_cw_man_idl
+{
+	mover_name: "new idle cowboy all"
+	desc_tags[]: man
+	desc_tags[]: cowboy
+	anim_tags[]: man
+	anim_tags[]: idle
+	pedestrian: true
+}
+mover_model_group : mover.n_cw_man_wlk
+{
+	mover_name: "new walk cowboy all"
+	desc_tags[]: man
+	desc_tags[]: cowboy
+	anim_tags[]: man
+	anim_tags[]: ngn_walk
+	pedestrian: true
+}
 
 ### IDLE, SERVICE WORKER SECURITY ###
 
@@ -166,7 +253,7 @@ mover_model_group : mover.serv_idle
 	desc_tags[]: man
 	desc_tags[]: n_service
 	anim_tags[]: man
-	anim_tags[]: n_idle
+	anim_tags[]: idle
 	pedestrian: true
 }
 mover_model_group : mover.work_idle
@@ -175,7 +262,7 @@ mover_model_group : mover.work_idle
 	desc_tags[]: man
 	desc_tags[]: n_worker
 	anim_tags[]: man
-	anim_tags[]: n_idle
+	anim_tags[]: idle
 	pedestrian: true
 }
 mover_model_group : mover.secu_idle
@@ -210,7 +297,7 @@ mover_model_group : mover.serv_cross_h
 	desc_tags[]: man
 	desc_tags[]: n_service
 	anim_tags[]: man
-	anim_tags[]: n_cross_hand
+	anim_tags[]: cross_hand
 	pedestrian: true
 }
 mover_model_group : mover.work_cross_h
@@ -219,7 +306,7 @@ mover_model_group : mover.work_cross_h
 	desc_tags[]: man
 	desc_tags[]: n_worker
 	anim_tags[]: man
-	anim_tags[]: n_cross_hand
+	anim_tags[]: cross_hand
 	pedestrian: true
 }
 mover_model_group : mover.secu_cross_h
@@ -233,7 +320,7 @@ mover_model_group : mover.secu_cross_h
 }
 
 
-### LEANING, SERVICE WORKER SECURITY ###
+### LEANING, SERVICE WORKER SECURITY newCASUALman ###
 
 mover_model_group : mover.serv_lean
 {
@@ -241,7 +328,7 @@ mover_model_group : mover.serv_lean
 	desc_tags[]: man
 	desc_tags[]: n_service
 	anim_tags[]: man
-	anim_tags[]: n_leaning
+	anim_tags[]: leaning
 	pedestrian: true
 }
 mover_model_group : mover.work_lean
@@ -250,7 +337,7 @@ mover_model_group : mover.work_lean
 	desc_tags[]: man
 	desc_tags[]: n_worker
 	anim_tags[]: man
-	anim_tags[]: n_leaning
+	anim_tags[]: leaning
 	pedestrian: true
 }
 mover_model_group : mover.secu_lean
@@ -262,7 +349,33 @@ mover_model_group : mover.secu_lean
 	anim_tags[]: leaning
 	pedestrian: true
 }
-
+mover_model_group : mover.n_ca_man_len
+{
+	mover_name: "new leaning man casual all"
+	desc_tags[]: man
+	desc_tags[]: n_casual
+	anim_tags[]: man
+	anim_tags[]: leaning
+	pedestrian: true
+}
+mover_model_group : mover.n_fa_man_len
+{
+	mover_name: "new leaning farmer all"
+	desc_tags[]: man
+	desc_tags[]: farmer
+	anim_tags[]: man
+	anim_tags[]: leaning
+	pedestrian: true
+}
+mover_model_group : mover.n_cw_man_len
+{
+	mover_name: "new leaning cowboy all"
+	desc_tags[]: man
+	desc_tags[]: cowboy
+	anim_tags[]: man
+	anim_tags[]: leaning
+	pedestrian: true
+}
 
 ### SITTING, SERVICE WORKER SECURITY ###
 
@@ -272,18 +385,78 @@ mover_model_group : mover.serv_sitt
 	desc_tags[]: man
 	desc_tags[]: n_service
 	anim_tags[]: man
-	anim_tags[]: n_sitting
+	anim_tags[]: sitting
 	pedestrian: true
 }
+############
+mover_model_group : mover.serv_sit_n1
+{
+	mover_name: "service sitting all 1"
+	desc_tags[]: man
+	desc_tags[]: service_v3
+	anim_tags[]: man
+	anim_tags[]: sitting_n1
+	pedestrian: true
+}
+mover_model_group : mover.serv_sit_n2
+{
+	mover_name: "service sitting all 2"
+	desc_tags[]: man
+	desc_tags[]: service_v3
+	anim_tags[]: man
+	anim_tags[]: sitting_n2
+	pedestrian: true
+}
+mover_model_group : mover.serv_sit_n3
+{
+	mover_name: "service sitting all 3"
+	desc_tags[]: man
+	desc_tags[]: service_v3
+	anim_tags[]: man
+	anim_tags[]: sitting_n3
+	pedestrian: true
+}
+mover_model_group : mover.serv_sit_n4
+{
+	mover_name: "service sitting all 4"
+	desc_tags[]: man
+	desc_tags[]: service_v3
+	anim_tags[]: man
+	anim_tags[]: sitting_n4
+	pedestrian: true
+}
+############
+mover_model_group : mover.servidle_v3
+{
+	mover_name: "service idle all new"
+	desc_tags[]: man
+	desc_tags[]: service_v3
+	anim_tags[]: man
+	anim_tags[]: n_idle
+	pedestrian: true
+}
+mover_model_group : mover.servlean_v3
+{
+	mover_name: "service leaning all new"
+	desc_tags[]: man
+	desc_tags[]: service_v3
+	anim_tags[]: man
+	anim_tags[]: n_leaning
+	pedestrian: true
+}
+############
 mover_model_group : mover.work_sitt
 {
 	mover_name: "worker sitting all"
 	desc_tags[]: man
 	desc_tags[]: n_worker
 	anim_tags[]: man
-	anim_tags[]: n_sitting
+	anim_tags[]: sitting
 	pedestrian: true
 }
+############
+
+############
 mover_model_group : mover.secu_sitt
 {
 	mover_name: "security sitting all"
@@ -293,9 +466,21 @@ mover_model_group : mover.secu_sitt
 	anim_tags[]: sitting
 	pedestrian: true
 }
+############
 
-
+############
 ### SWEEPER, SERVICE WORKER SECURITY ###
+
+mover_model_group : mover.srv_sw_all_1
+{
+	mover_name: "service sweeper all 1"
+	desc_tags[]: man
+	desc_tags[]: service_v3
+	anim_tags[]: man
+	anim_tags[]: sweeper_1
+	pedestrian: true
+}
+
 
 mover_model_group : mover.srv_sw_all
 {
@@ -303,7 +488,7 @@ mover_model_group : mover.srv_sw_all
 	desc_tags[]: man
 	desc_tags[]: n_service
 	anim_tags[]: man
-	anim_tags[]: n_sweeper
+	anim_tags[]: sweeper
 	pedestrian: true
 }
 mover_model_group : mover.work_sw_all
@@ -312,7 +497,7 @@ mover_model_group : mover.work_sw_all
 	desc_tags[]: man
 	desc_tags[]: n_worker
 	anim_tags[]: man
-	anim_tags[]: n_sweeper
+	anim_tags[]: sweeper
 	pedestrian: true
 }
 mover_model_group : mover.secu_sw_all
@@ -326,7 +511,7 @@ mover_model_group : mover.secu_sw_all
 }
 
 
-### NOTER, SERVICE WORKER SECURITY ###
+### NOTER, SERVICE WORKER SECURITY newCASUALman ###
 
 mover_model_group : mover.srv_no_all
 {
@@ -334,7 +519,7 @@ mover_model_group : mover.srv_no_all
 	desc_tags[]: man
 	desc_tags[]: n_service
 	anim_tags[]: man
-	anim_tags[]: n_noter
+	anim_tags[]: noter
 	pedestrian: true
 }
 mover_model_group : mover.work_no_all
@@ -343,7 +528,7 @@ mover_model_group : mover.work_no_all
 	desc_tags[]: man
 	desc_tags[]: n_worker
 	anim_tags[]: man
-	anim_tags[]: n_noter
+	anim_tags[]: noter
 	pedestrian: true
 }
 mover_model_group : mover.secu_no_all
@@ -355,7 +540,33 @@ mover_model_group : mover.secu_no_all
 	anim_tags[]: noter
 	pedestrian: true
 }
-
+mover_model_group : mover.n_ca_man_not
+{
+	mover_name: "new noter man casual all"
+	desc_tags[]: man
+	desc_tags[]: n_casual
+	anim_tags[]: man
+	anim_tags[]: noter
+	pedestrian: true
+}
+mover_model_group : mover.n_fa_man_not
+{
+	mover_name: "new noter farmer all"
+	desc_tags[]: man
+	desc_tags[]: farmer
+	anim_tags[]: man
+	anim_tags[]: noter
+	pedestrian: true
+}
+mover_model_group : mover.n_cw_man_not
+{
+	mover_name: "new noter cowboy all"
+	desc_tags[]: man
+	desc_tags[]: cowboy
+	anim_tags[]: man
+	anim_tags[]: noter
+	pedestrian: true
+}
 
 ### WASHER, SERVICE WORKER ###
 
@@ -770,7 +981,7 @@ mover_model_group : mover.idle_ff_all
 }
 
 
-### ANGRY, FIREFIGHTER
+### ANGRY, FIREFIGHTER newCASUALman
 
 mover_model_group : mover.angr_ff_all
 {
@@ -781,7 +992,63 @@ mover_model_group : mover.angr_ff_all
 	anim_tags[]: angry
 	pedestrian: true
 }
+mover_model_group : mover.n_ca_man_ang
+{
+	mover_name: "new angry man casual all"
+	desc_tags[]: man
+	desc_tags[]: n_casual
+	anim_tags[]: man
+	anim_tags[]: angry
+	pedestrian: true
+}
+mover_model_group : mover.n_fa_man_ang
+{
+	mover_name: "new angry farmer all"
+	desc_tags[]: man
+	desc_tags[]: farmer
+	anim_tags[]: man
+	anim_tags[]: angry
+	pedestrian: true
+}
+mover_model_group : mover.n_cw_man_ang
+{
+	mover_name: "new angry cowboy all"
+	desc_tags[]: man
+	desc_tags[]: cowboy
+	anim_tags[]: man
+	anim_tags[]: angry
+	pedestrian: true
+}
 
+mover_model_group : mover.n_cw_man_rod
+{
+	mover_name: "rodeo cowboy"
+	desc_tags[]: cowboy
+	desc_tags[]: rodeo
+	anim_tags[]: man
+	anim_tags[]: rodeo
+    pedestrian: true
+}
+
+mover_model_group : mover.n_cw_man_tro
+{
+	mover_name: "trot cowboy"
+	desc_tags[]: cowboy
+	desc_tags[]: trot
+	anim_tags[]: man
+	anim_tags[]: trot
+    pedestrian: true
+}
+
+mover_model_group : mover.n_cw_man_gal
+{
+	mover_name: "gallop cowboy"
+	desc_tags[]: cowboy
+	desc_tags[]: gallop
+	anim_tags[]: man
+	anim_tags[]: gallop
+    pedestrian: true
+}
 
 ### LEANING, FIREFIGHTER
 
@@ -807,6 +1074,55 @@ mover_model_group : mover.saw_ff_all
 	anim_tags[]: saw
 	pedestrian: true
 }
+
+### AGRICULTURE INSPECTION OFFICER ###
+
+mover_model_group : mover.ag_ins_idl
+{
+	mover_name: "idle agriculture inspection officer all"
+	desc_tags[]: man
+	desc_tags[]: officer
+	anim_tags[]: man
+	anim_tags[]: idle
+	pedestrian: true
+}
+mover_model_group : mover.ag_ins_wlk
+{
+	mover_name: "walk agriculture inspection officer all"
+	desc_tags[]: man
+	desc_tags[]: officer
+	anim_tags[]: man
+	anim_tags[]: ngn_walk
+	pedestrian: true
+}
+mover_model_group : mover.ag_ins_len
+{
+	mover_name: "leaning agriculture inspection officer all"
+	desc_tags[]: man
+	desc_tags[]: officer
+	anim_tags[]: man
+	anim_tags[]: leaning
+	pedestrian: true
+}
+mover_model_group : mover.ag_ins_not
+{
+	mover_name: "noter agriculture inspection officer all"
+	desc_tags[]: man
+	desc_tags[]: officer
+	anim_tags[]: man
+	anim_tags[]: noter
+	pedestrian: true
+}
+mover_model_group : mover.ag_ins_ang
+{
+	mover_name: "angry agriculture inspection officer all"
+	desc_tags[]: man
+	desc_tags[]: officer
+	anim_tags[]: man
+	anim_tags[]: angry
+	pedestrian: true
+}
+
 
 
 ### MACK ACTION ###
@@ -859,4 +1175,10 @@ mover_model_group : mover.ac_willy
 # in the beginning of the def
 # before adding any units.
 
+mover_model_group : mover.cofibr
+{
+	mover_name: "action cofibreak"
+	desc_tags[]: cofibr
+	anim_tags[]: cofibr
+}
 }

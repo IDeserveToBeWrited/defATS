@@ -2,15 +2,15 @@ SiiNunit
 {
 accessory_chassis_data : 6x4s_75.westernstar.49x.chassis
 {
-	name: "Short 6x4 150@@gal@@"
+	name: "Short 6x4 SFA 150@@gal@@"
 	price: 21300
 	unlock: 3
-	info[]: "6x4"
+	info[]: "6x4 SFA"
 	info[]: "75/75 @@gal@@"
-	icon: "truck/westernstar_49x/chassis/s_6x4_75"
+	icon: "truck/westernstar_49x/chassis/icon_6x4_75day"
 
-	model: "/vehicle/truck/westernstar_49x/chassis/chs_6x4s.pmd"
-	collision: "/vehicle/truck/westernstar_49x/chassis/chs_6x4s.pmc"
+	model: "/vehicle/truck/westernstar_49x/chassis/chs_6x4s_jost.pmd"
+	collision: "/vehicle/truck/westernstar_49x/chassis/chs_6x4s_jost.pmc"
 	variant: default
 	look: default
 
@@ -38,9 +38,17 @@ accessory_chassis_data : 6x4s_75.westernstar.49x.chassis
 
 	defaults[]: "/def/vehicle/truck/westernstar.49x/cabin/day.sii"
 	defaults[]: "/def/vehicle/truck/westernstar.49x/accessory/bumper/stock.sii"
-	defaults[]: "/def/vehicle/truck/westernstar.49x/accessory/exhaust/stock.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.49x/accessory/f_mudflap/stock.sii"
 	defaults[]: "/def/vehicle/truck/westernstar.49x/accessory/mudflaps/stock.sii"
 	defaults[]: "/def/vehicle/truck/westernstar.49x/accessory/sideskirt/short_75_alu.sii"
 	defaults[]: "/def/vehicle/truck/westernstar.49x/accessory/trlr_cables/stock.sii"
+
+	conflict_with[]: "s48.westernstar.49x.cabin"
+	conflict_with[]: "s48sb.westernstar.49x.cabin"
+	conflict_with[]: "s72.westernstar.49x.cabin"
+	conflict_with[]: "s72sb.westernstar.49x.cabin"
+	conflict_with[]: "daysb.westernstar.49x.cabin"
+
+@include "sound.sui"
 }
 }

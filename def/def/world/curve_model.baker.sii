@@ -1,0 +1,223 @@
+SiiNunit
+{
+
+
+curve_model : curve.26
+{
+	name: "ut_wall_stone_low"
+	model_desc: "/model/barrier/stone/ut_wall_stone_low.pmd"
+	variation[]: "var1 | center16,center1,center2,center3,center4,center5,center6,center7,center8,center9 : 1.0"
+	variation[]: "var2 | center10,center11,center12,center13,center14,center15 : 1.0"
+	dynamic_lod_desc[]: "/model/barrier/stone/ut_wall_stone_low_lod1.pmd"
+	dynamic_lod_dist[]: 35.0
+
+	start_part[]: "start1 | start2 | start3"
+	start_part[]: "start1 | start2 | start3"
+
+	end_part[]: "end1 | end2 | end3"
+	end_part[]: "end1 | end2 | end3"
+}
+
+curve_model : curve.98
+{
+	model_desc: "/model/barrier/concrete/wall_concrete1_curve.pmd"
+	name: "wall_concrete1_curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "lowpoly | center7 : 2.0 | center8 : 1.0 | center9 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "Hipoly | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/concrete/wall_concrete1_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+
+	smooth_surface: true
+}
+curve_model : curve.ut_17
+{
+
+	name: "pole_wooden_single_wires"
+
+	model_desc: "/model/distribution/electricity/pole_wooden_single_wires.pmd"
+
+	variation[]: "default | center1 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+
+	variation[]: "random | center1 : 10.0 | center2 : 10.0 | center3 : 10.0 | center4 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+
+#	dynamic_lod_desc[]: "/model/distribution/electricity/pole_wooden_single_wires_lod1.pmd"
+#	dynamic_lod_dist[]: 100
+
+	fixed_step: 40
+}
+
+curve_model : curve.ut_18
+{
+
+	name: "pole_wooden_single_wires2"
+
+	model_desc: "/model/distribution/electricity/pole_wooden_single_wires2.pmd"
+
+	variation[]: "default | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+
+	variation[]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+
+#	dynamic_lod_desc[]: "/model/distribution/electricity/pole_wooden_single_wires2_lod1.pmd"
+#	dynamic_lod_dist[]: 100
+
+	fixed_step: 40
+}
+
+curve_model : curve.ut_19
+{
+	model_desc: "/model/distribution/electricity/pole_wooden_wire.pmd"
+	name: "pole_wooden_wire"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	fixed_inner_start: 4
+	fixed_inner_end: 4
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1 | start2 | start3"
+	end_part[0]: "end1 | end2 | end3"
+	fixed_inner_start[0]: "ins"
+	fixed_inner_end[0]: "ine"
+	variation[1]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[1]: "start1 | start2 | start3"
+	end_part[1]: "end1 | end2 | end3"
+	fixed_inner_start[1]: "ins"
+	fixed_inner_end[1]: "ine"
+	variation[2]: "default_nb | center1 : 1.0"
+	start_part[2]: "start1 | start2 | start3"
+	end_part[2]: "end1 | end2 | end3"
+	fixed_inner_start[2]: "ins2"
+	fixed_inner_end[2]: "ine2"
+	variation[3]: "random_nb | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[3]: "start1 | start2 | start3"
+	end_part[3]: "end1 | end2 | end3"
+	fixed_inner_start[3]: "ins2"
+	fixed_inner_end[3]: "ine2"
+
+	high_tess: 0
+
+#	dynamic_lod_desc: 1
+#	dynamic_lod_dist: 1
+#	dynamic_lod_desc[0]: "/model/distribution/electricity/pole_wooden_wire_lod1.pmd"
+#	dynamic_lod_dist[0]: 100
+
+	fixed_step: 75.0
+}
+
+curve_model : curve.ut_15
+{
+
+	name: "el_pole_wooden_double_wire"
+
+	model_desc: "/model/distribution/electricity/el_pole_wooden_double_wire.pmd"
+
+	variation[]: "default | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	fixed_inner_start[]: "ins"
+	fixed_inner_end[]: "ine"
+
+#	dynamic_lod_desc[]: "/model/distribution/electricity/el_pole_wooden_double_wire_lod1.pmd"
+#	dynamic_lod_dist[]: 100
+
+	fixed_step: 50
+}
+curve_model : curve.2o00g
+{
+	model_desc: "/model/barrier/concrete/or_concrete_wall_01_curve.pmd"
+	name: "or concrete wall 01 curve"
+
+	variation[]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/barrier/concrete/or_concrete_wall_01_curve_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	smooth_surface: true
+
+}
+
+curve_model : curve.1c008
+{
+	model_desc: "/model/barrier/concrete/ca_wall_concrete1.pmd"
+	name: "ca wall concrete1"
+
+	color_variant: 7
+	color_variant[0]: "or_light: 255,255,255"
+	color_variant[1]: "wa_dark: 160,155,154"
+	color_variant[2]: "blue: 160,200,226"
+	color_variant[3]: "az_sand: 194,187,173"
+	color_variant[4]: "nm light pink: 230,195,185"
+	color_variant[5]: "nm dark pink: 200,170,155"
+	color_variant[6]: "yellow: 255,225,191"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 5.0 | center2 : 5.0 | center3 : 5.0 | center4 : 5.0 | center5,center6 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/concrete/ca_wall_concrete1_lod1.pmd"
+	dynamic_lod_dist[0]: 60
+
+	smooth_surface: true
+}
+
+curve_model : curve.1c009
+{
+	model_desc: "/model/barrier/brick/ca_wall_bricks2.pmd"
+	name: "ca wall bricks2"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/brick/ca_wall_bricks2_lod1.pmd"
+	dynamic_lod_dist[0]: 60
+
+	smooth_surface: true
+}
+
+}

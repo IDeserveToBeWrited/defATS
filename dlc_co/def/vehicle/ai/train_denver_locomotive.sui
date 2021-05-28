@@ -1,0 +1,53 @@
+traffic_vehicle : traffic.trndenver_l
+{
+	accessories[]: .trndenver_l.chassis
+	accessories[]: .trndenver_l.fwheel
+	accessories[]: .trndenver_l.rwheel
+
+
+
+	max_speed: 150
+	vehicle_mass: 121000
+	engine_power: 3170
+
+	tags[]: passenger
+
+	trailer_chains[]: "train_car.trndenver_c 1"
+
+	displacement_limit: 0.0
+
+	sound_move[]: "/sound/traffic/train_electric_1.soundref"
+	sound_gears: 1
+
+	displacement_limit: 0.0
+
+	lod_dist[]: 70
+	lod_dist[]: 130
+	lod_dist[]: 200
+	
+	spawn_condition[]: .traffic.trndenver_l.condition.city
+}
+
+vehicle_accessory: .trndenver_l.chassis
+{
+	data_path: "/def/vehicle/ai/train_denver/chassis_l.sii"
+}
+
+vehicle_wheel_accessory: .trndenver_l.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trndenver_l.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.trndenver_l.condition.city
+{
+	# spawn only near city with specified name
+	type: city
+	str_param[]: "denver"
+}

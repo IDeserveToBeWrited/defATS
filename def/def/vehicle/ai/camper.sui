@@ -1,17 +1,49 @@
-traffic_trailer : trailer.ai_car.camper
+traffic_vehicle : traffic.camper
 {
-	accessories[]: .ai_car.camper.chassis
-	accessories[]: .ai_car.camper.rwheel0
+	accessories[]: .camper.chassis
+	accessories[]: .camper.fwheel
+	accessories[]: .camper.rwheel
 
-	cargo_mass: 0
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 2700
+
+	spawn_ratio: 0.1
+
+	tags[]: van
+
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.0382, 0.0318, 0.0273) #brown
+	#color[]: (0.0544, 0.0886, 0.1274) #blue
+	color[]: (0.5394, 0.5711, 0.5906) #silver
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.5394, 0.5711, 0.5906) #silver
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.2831, 0.0012, 0.0065) #red
+
+@include "drivers_generic.sui"
 }
 
-vehicle_accessory: .ai_car.camper.chassis
+vehicle_accessory: .camper.chassis
 {
-    	data_path: "/def/vehicle/ai/camper/chassis.sii"
+	data_path: "/def/vehicle/ai/camper/chassis.sii"
 }
-vehicle_wheel_accessory: .ai_car.camper.rwheel0
+
+vehicle_wheel_accessory: .camper.fwheel
 {
 	offset: 0
-    data_path: "/def/vehicle/ai_wheel/trailer.sii"
+	data_path: "/def/vehicle/ai_wheel/front_trailer.sii"
 }
+
+vehicle_wheel_accessory: .camper.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/trailer.sii"
+}
+

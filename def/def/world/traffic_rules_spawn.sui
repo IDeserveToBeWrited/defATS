@@ -109,7 +109,7 @@ traffic_rule_data : traffic_rule.s_car_c_u
 
 	num_params[]: 17.0	# 17:00
 	num_params[]: 0.08	# frequency
-	num_params[]: 3	# count limit
+	num_params[]: 3		# count limit
 
 	num_params[]: 0.0	# 00:00
 	num_params[]: 0.1	# frequency
@@ -117,9 +117,78 @@ traffic_rule_data : traffic_rule.s_car_c_u
 }
 
 
+traffic_rule_data : traffic_rule.s_trl_u
+{
+	# name: "Spawn density light trucks urban"
+
+	rule: "density"
+
+	str_params[]: "truck_light"
+
+	num_params[]: 6.0	# 6:00
+	num_params[]: 0.08	# frequency
+	num_params[]: 4		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.08	# frequency
+	num_params[]: 4		# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.08	# frequency
+	num_params[]: 2		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_trl_r
+{
+	# name: "Spawn density light trucks rural"
+
+	rule: "density"
+
+	str_params[]: "truck_light"
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.03	# frequency
+	num_params[]: 1		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_trm_u
+{
+	# name: "Spawn density medium trucks urban"
+
+	rule: "density"
+
+	str_params[]: "truck_medium"
+
+	num_params[]: 6.0	# 6:00
+	num_params[]: 0.05	# frequency
+	num_params[]: 3		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.05	# frequency
+	num_params[]: 3		# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.03	# frequency
+	num_params[]: 1		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_trm_r
+{
+	# name: "Spawn density medium trucks rural"
+
+	rule: "density"
+
+	str_params[]: "truck_medium"
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.03	# frequency
+	num_params[]: 1		# count limit
+}
+
+
 traffic_rule_data : traffic_rule.s_truck_l
 {
-	# name: "Spawn density semi-truck low"
+	# name: "Spawn density truck low"
 
 	rule: "density"
 
@@ -140,7 +209,7 @@ traffic_rule_data : traffic_rule.s_truck_l
 
 traffic_rule_data : traffic_rule.s_truck_d_l
 {
-	# name: "Spawn density semi-truck double "
+	# name: "Spawn density truck-long "
 
 	rule: "density"
 
@@ -161,7 +230,7 @@ traffic_rule_data : traffic_rule.s_truck_d_l
 
 traffic_rule_data : traffic_rule.s_truck_h
 {
-	# name: "Spawn density semi-truck high"
+	# name: "Spawn density truck high"
 
 	rule: "density"
 
@@ -182,7 +251,7 @@ traffic_rule_data : traffic_rule.s_truck_h
 
 traffic_rule_data : traffic_rule.s_truck_u
 {
-	# name: "Spawn density semi-truck urban"
+	# name: "Spawn density truck urban"
 
 	rule: "density"
 
@@ -332,6 +401,7 @@ traffic_rule_data : traffic_rule.s_train_c
 	num_params[]: 1		# count limit
 }
 
+
 traffic_rule_data : traffic_rule.s_train_c2
 {
 	name: "[spawn] Spawn density - cargo train (plane)"
@@ -340,6 +410,20 @@ traffic_rule_data : traffic_rule.s_train_c2
 
 	str_params[]: "train cargo"
 	str_params[]: "train_car.trplane_car 1 | train_car.trplane_care 1 | train_car.trplane_car 1 | train_car.trplane_care 1 | train_car.trplane_car 1 | train_car.trplane_care 1"
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.015	# frequency
+	num_params[]: 1		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_train_c3
+{
+	name: "[spawn] Spawn density - cargo train (windturb - co)"
+
+	rule: "density"
+
+	str_params[]: "train cargo"
+	str_params[]: "train_car.tube 6-10"
 
 	num_params[]: 0.0	# 00:00
 	num_params[]: 0.015	# frequency
@@ -401,7 +485,20 @@ traffic_rule_data : traffic_rule.s_train_p
 
 	num_params[]: 0.0	# 00:00
 	num_params[]: 0.015	# frequency
-	num_params[]: 2		# count limit
+	num_params[]: 1		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_train_w
+{
+	# name: "Spawn density train wire (passenger only)"
+
+	rule: "density"
+
+	str_params[]: "train_wire"
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.015	# frequency
+	num_params[]: 1		# count limit
 }
 
 traffic_rule_data : traffic_rule.s_slow

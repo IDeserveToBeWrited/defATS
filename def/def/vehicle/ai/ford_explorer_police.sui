@@ -19,12 +19,14 @@ traffic_vehicle : traffic.f_expl_d_m
 	
 	prefer_variant: true
     variant[]: traffic.f_expl_aqpd
-    variant[]: traffic.f_expl_aqpd1
-    variant[]: traffic.f_expl_aqpd2
-    variant[]: traffic.f_expl_ppd
+   	variant[]: traffic.f_expl_ppd
 	variant[]: traffic.f_expl_wa_ol
 	variant[]: traffic.f_expl_wa_se
 	variant[]: traffic.f_expl_id_pd
+	variant[]: traffic.f_expl_co_pb
+	variant[]: traffic.f_expl_co_dn
+	variant[]: traffic.f_expl_nv_vg
+	variant[]: traffic.f_expl_wy_ch
 
 
 @include "drivers_police.sui"
@@ -49,7 +51,7 @@ vehicle_wheel_accessory: .f_expl_d_m.rwheel
 }
 
 
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Albuquerque Municipal Police ( look w117 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX NEW MEXICO - Albuquerque Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_vehicle : traffic.f_expl_aqpd
 {
@@ -78,7 +80,7 @@ traffic_vehicle : traffic.f_expl_aqpd
 
 vehicle_accessory: .f_expl_aqpd.chassis
 {
-	data_path: "/def/vehicle/ai/ford_explorer/aqpd.sii"
+	data_path: "/def/vehicle/ai/ford_explorer/nm_albuq_pd.sii"
 }
 
 vehicle_wheel_accessory: .f_expl_aqpd.fwheel
@@ -94,109 +96,6 @@ vehicle_wheel_accessory: .f_expl_aqpd.rwheel
 }
 
 traffic_spawn_condition: .traffic.f_expl_aqpd.albu.condition.city
-{
-	# spawn only near city with name equal to traffic vehicle name suffix
-	type: city
-    str_param[]: "albuquerque"
-}
-
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Albuquerque Municipal Police ( look w53 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-traffic_vehicle : traffic.f_expl_aqpd1
-{
-	accessories[]: .f_expl_aqpd1.chassis
-	accessories[]: .f_expl_aqpd1.fwheel
-	accessories[]: .f_expl_aqpd1.rwheel
-
-	max_speed: 160
-
-	sound_move[]: "/sound/traffic/car_v8_1.soundref"
-	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
-
-
-	vehicle_mass: 2250
-
-	tags[]: urban
-
-	spawn_condition[]: .traffic.f_expl_aqpd1.albu.condition.city
-
-@include "drivers_police.sui"
-
-}
-
-vehicle_accessory: .f_expl_aqpd1.chassis
-{
-	data_path: "/def/vehicle/ai/ford_explorer/aqpd1.sii"
-}
-
-vehicle_wheel_accessory: .f_expl_aqpd1.fwheel
-{
-	offset: 0
-	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
-}
-
-vehicle_wheel_accessory: .f_expl_aqpd1.rwheel
-{
-	offset: 0
-	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
-}
-
-traffic_spawn_condition: .traffic.f_expl_aqpd1.albu.condition.city
-{
-	# spawn only near city with name equal to traffic vehicle name suffix
-	type: city
-    str_param[]: "albuquerque"
-}
-
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Albuquerque Municipal Police ( look w27 ) XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-traffic_vehicle : traffic.f_expl_aqpd2
-{
-	accessories[]: .f_expl_aqpd2.chassis
-	accessories[]: .f_expl_aqpd2.fwheel
-	accessories[]: .f_expl_aqpd2.rwheel
-
-	max_speed: 160
-
-	sound_move[]: "/sound/traffic/car_v8_1.soundref"
-	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
-
-
-	vehicle_mass: 2250
-
-	tags[]: urban
-
-	spawn_condition[]: .traffic.f_expl_aqpd2.albu.condition.city
-
-
-@include "drivers_police.sui"
-
-}
-
-vehicle_accessory: .f_expl_aqpd2.chassis
-{
-	data_path: "/def/vehicle/ai/ford_explorer/aqpd2.sii"
-}
-
-vehicle_wheel_accessory: .f_expl_aqpd2.fwheel
-{
-	offset: 0
-	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
-}
-
-vehicle_wheel_accessory: .f_expl_aqpd2.rwheel
-{
-	offset: 0
-	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
-}
-
-traffic_spawn_condition: .traffic.f_expl_aqpd2.albu.condition.city
 {
 	# spawn only near city with name equal to traffic vehicle name suffix
 	type: city
@@ -233,7 +132,7 @@ traffic_vehicle : traffic.f_expl_ppd
 
 vehicle_accessory: .f_expl_ppd.chassis
 {
-	data_path: "/def/vehicle/ai/ford_explorer/ppd.sii"
+	data_path: "/def/vehicle/ai/ford_explorer/or_port_pd.sii"
 }
 
 vehicle_wheel_accessory: .f_expl_ppd.fwheel
@@ -256,7 +155,7 @@ traffic_spawn_condition: .traffic.f_expl_ppd.portland.condition.city
 }
 
 
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Olympia Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Washigton - Olympia Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_vehicle : traffic.f_expl_wa_ol
 {
@@ -285,7 +184,7 @@ traffic_vehicle : traffic.f_expl_wa_ol
 
 vehicle_accessory: .f_expl_wa_ol.chassis
 {
-	data_path: "/def/vehicle/ai/ford_explorer/wa_o_patrol.sii"
+	data_path: "/def/vehicle/ai/ford_explorer/wa_olymp_pd.sii"
 }
 
 vehicle_wheel_accessory: .f_expl_wa_ol.fwheel
@@ -307,7 +206,7 @@ traffic_spawn_condition: .traffic.f_expl_wa_ol.olympia.condition.city
     str_param[]: "olympia"
 }
 
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Seattle Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Washigton - Seattle Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_vehicle : traffic.f_expl_wa_se
 {
@@ -337,7 +236,7 @@ traffic_vehicle : traffic.f_expl_wa_se
 
 vehicle_accessory: .f_expl_wa_se.chassis
 {
-	data_path: "/def/vehicle/ai/ford_explorer/wa_s_patrol.sii"
+	data_path: "/def/vehicle/ai/ford_explorer/wa_seat_pd.sii"
 }
 
 vehicle_wheel_accessory: .f_expl_wa_se.fwheel
@@ -361,7 +260,7 @@ traffic_spawn_condition: .traffic.f_expl_wa_se.seattle.condition.city
 
 
 
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Idaho Falls Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Idaho - Idaho Falls Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_vehicle : traffic.f_expl_id_pd
 {
@@ -391,7 +290,7 @@ traffic_vehicle : traffic.f_expl_id_pd
 
 vehicle_accessory: .f_expl_id_pd.chassis
 {
-	data_path: "/def/vehicle/ai/ford_explorer/id_pd.sii"
+	data_path: "/def/vehicle/ai/ford_explorer/id_falls_pd.sii"
 }
 
 vehicle_wheel_accessory: .f_expl_id_pd.fwheel
@@ -411,4 +310,266 @@ traffic_spawn_condition: .traffic.f_expl_id_pd.idfalls.condition.city
 	# spawn only near city with name equal to traffic vehicle name suffix
 	type: city
     str_param[]: "idaho_falls"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Colorado - Pueblo Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_co_pb
+{
+	accessories[]: .f_expl_co_pb.chassis
+	accessories[]: .f_expl_co_pb.fwheel
+	accessories[]: .f_expl_co_pb.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_expl_co_pb.pueblo.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_expl_co_pb.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/co_pue_pd.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_co_pb.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_co_pb.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_expl_co_pb.pueblo.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "pueblo"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Colorado - Denver Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_co_dn
+{
+	accessories[]: .f_expl_co_dn.chassis
+	accessories[]: .f_expl_co_dn.fwheel
+	accessories[]: .f_expl_co_dn.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_expl_co_dn.denver.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_expl_co_dn.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/co_den_pd.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_co_dn.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_co_dn.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_expl_co_dn.denver.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "denver"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Nevada - Vegas Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_nv_vg
+{
+	accessories[]: .f_expl_nv_vg.chassis
+	accessories[]: .f_expl_nv_vg.fwheel
+	accessories[]: .f_expl_nv_vg.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_expl_nv_vg.vegas.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_expl_nv_vg.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/nv_vegas_pd.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_nv_vg.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_nv_vg.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_expl_nv_vg.vegas.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "las_vegas"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Wyoming - Cheyenne Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_wy_ch
+{
+	accessories[]: .f_expl_wy_ch.chassis
+	accessories[]: .f_expl_wy_ch.fwheel
+	accessories[]: .f_expl_wy_ch.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_expl_wy_ch.cheyenne.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_expl_wy_ch.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/wy_ch.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_wy_ch.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_wy_ch.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_expl_wy_ch.cheyenne.condition.city
+{
+	
+	type: city
+    str_param[]: "cheyenne"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Wyoming - Casper Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_expl_wy_ca
+{
+	accessories[]: .f_expl_wy_ca.chassis
+	accessories[]: .f_expl_wy_ca.fwheel
+	accessories[]: .f_expl_wy_ca.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_expl_wy_ca.casper.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_expl_wy_ca.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/wy_ca.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_wy_ca.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_expl_wy_ca.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_expl_wy_ca.casper.condition.city
+{
+
+	type: city
+    	str_param[]: "casper"
 }

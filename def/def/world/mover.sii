@@ -181,6 +181,12 @@ mover_model : mover.waves
 	model_anim: "/model/water/wave.pma"
 }
 
+mover_model : mover.waves_small
+{
+	mover_name: "waves small"
+	model_desc: "/model/water/waves_small.pmd"
+}
+
 mover_model : mover.waves2
 {
 	mover_name: "waves fast"
@@ -281,7 +287,7 @@ mover_model : mover.tower_crane
 mover_model : mover.f_star
 {
 	mover_name: "f_star"
-	model_desc: "/model/skybox/f_star.pmd"
+	model_desc: "/model/mover/f_star.pmd"
 }
 mover_model : mover.c_o
 {
@@ -482,11 +488,11 @@ mover_model : mover.raking1
 	lods[3]: "/model/mover/characters/models/workers/m_old_raking_lod4.pmd"
 	lods[4]: ""
 
-	lod_dist[0]: 10
-	lod_dist[1]: 20
-	lod_dist[2]: 40
-	lod_dist[3]: 100
-	lod_dist[4]: 200
+	lod_dist[0]: 26
+	lod_dist[1]: 42
+	lod_dist[2]: 69
+	lod_dist[3]: 153
+	lod_dist[4]: 248
 }
 
 mover_model : mover.mixerman
@@ -659,20 +665,20 @@ mover_model : mover.yacht03
 {
 	mover_name: "yachts moving 01"
 	model_desc: "/model/mover/yachts_moving_01.pmd"
-	model_anim: "/model/mover/ships_anim.pma"
+	model_anim: "/model/mover/yachts_moving_01.pma"
 
 }
 mover_model : mover.yacht04
 {
 	mover_name: "yachts moving 02"
 	model_desc: "/model/mover/yachts_moving_02.pmd"
-	model_anim: "/model/mover/ships_anim_new.pma"
+	model_anim: "/model/mover/yachts_moving_02.pma"
 }
 mover_model : mover.yacht05
 {
 	mover_name: "yachts moving 03"
 	model_desc: "/model/mover/yachts_moving_03.pmd"
-	model_anim: "/model/mover/ships_anim_for_03.pma"
+	model_anim: "/model/mover/yachts_moving_03.pma"
 }
 
 
@@ -825,4 +831,90 @@ mover_model : mover.harvest_pot
 	sound_path[]: "/sound/world/sound.bank#sound/tractor_id"
 }
 
+mover_model : mover.co_flag
+{
+	mover_name: "co_flag"
+	model_anim: "/model/mover/co_flag.pma"
+	model_desc: "/model/mover/co_flag.pmd"
+	model_coll: "/model/mover/co_flag.pmc"
+}
+
+mover_model : mover.skilift
+{
+	mover_name: "co ski lift cabin"
+	model_desc: "/model/props/country/co_ski_lift_cabin.pmd"
+
+	lods[0]: "/model/props/country/co_ski_lift_cabin_lod1.pmd"
+	lod_dist[0]: 20
+}
+
+mover_model : mover.pidgeon
+{
+	mover_name: "pidgeon_fly_sprite"
+	model_desc: "/model/mover/animal/pidgeon_fly_sprite.pmd"
+}
+
+mover_model : mover.sprinkler
+{
+	mover_name: "sprinkler"
+	model_desc: "/model/particles/sprinkler.pmd"
+}
+mover_model : mover.cessna_toff
+{
+	mover_name: "cessna takeoff"
+	model_desc: "/model/mover/aircraft/cessna_anim.pmd"
+	model_anim: "/model/mover/aircraft/cesna_takeoff.pma"
+#	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
+#	sound_max_dist: 100
+
+	lods[0]: "/model/mover/aircraft/cessna_anim_lod1.pmd"
+	lods[1]: "/model/mover/aircraft/cessna_anim_lod2.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 100
+}
+mover_model : mover.cessna_land
+{
+	mover_name: "cessna landing"
+	model_desc: "/model/mover/aircraft/cessna_anim.pmd"
+	model_anim: "/model/mover/aircraft/cesna_landing.pma"
+#	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
+#	sound_max_dist: 100
+
+	lods[0]: "/model/mover/aircraft/cessna_anim_lod1.pmd"
+	lods[1]: "/model/mover/aircraft/cessna_anim_lod2.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 100
+}
+mover_model : mover.cessna_fly
+{
+	mover_name: "cessna flying"
+	model_desc: "/model/mover/aircraft/cessna_anim.pmd"
+	model_anim: "/model/mover/aircraft/cesna_flying.pma"
+#	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
+#	sound_max_dist: 100
+
+	lods[0]: "/model/mover/aircraft/cessna_anim_lod1.pmd"
+	lods[1]: "/model/mover/aircraft/cessna_anim_lod2.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 100
+}
+mover_model : mover.wy_flag
+{
+	mover_name: "Wy Flag"
+	model_desc: "/model/mover/wy_flag.pmd"
+	model_anim: "/model/mover/wy_flag.pma"
+}
+mover_model : mover.airplane_far
+{
+	mover_name: "Far airplane"
+	model_desc: "/model/mover/aircraft/airplane_flying_far.pmd"
+}
+mover_model : mover.ducks_fly
+{
+	mover_name: "Flying ducks"
+	model_desc: "/model/mover/animal/flying_ducks.pmd"
+}
 }

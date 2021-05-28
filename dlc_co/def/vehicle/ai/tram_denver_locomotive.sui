@@ -1,0 +1,53 @@
+traffic_vehicle : traffic.trmdenver_l
+{
+	accessories[]: .trmdenver_l.chassis
+	accessories[]: .trmdenver_l.fwheel
+	accessories[]: .trmdenver_l.rwheel
+
+
+
+	vehicle_mass: 14000	# 20t whole tram + cca 80ppl
+	engine_power: 580 # 4x145 kW
+	max_speed: 80
+
+
+	trailer_chains[]: "train_car.trmdenver_c 1"
+
+	displacement_limit: 0.0
+
+	sound_move[]: "/sound/traffic/train_electric_1.soundref"
+	sound_gears: 1
+
+	lod_dist[]: 70
+	lod_dist[]: 130
+	lod_dist[]: 200
+
+
+	spawn_condition[]: .traffic.trmdenver_l.condition.city
+
+}
+
+vehicle_accessory: .trmdenver_l.chassis
+{
+	data_path: "/def/vehicle/ai/tram_denver/chassis_l.sii"
+}
+
+vehicle_wheel_accessory: .trmdenver_l.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trmdenver_l.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+
+traffic_spawn_condition: .traffic.trmdenver_l.condition.city
+{
+	# spawn only near city with specified name
+	type: city
+	str_param[]: "denver"
+}

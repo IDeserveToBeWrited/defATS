@@ -62,6 +62,12 @@ ui_truck_scene_config : _nameless.config {
 	pin_offset[]: (-1, 0, -0.5)
 	pin_dir[]: (-1, 0, 0)
 	double_sided[]: true
+
+	pin_group[]: f_closeout
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.2, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
 	
 	pin_group[]: f_fender
 	pin_look[]: custom_acc
@@ -83,7 +89,7 @@ ui_truck_scene_config : _nameless.config {
 
 	pin_group[]: mirror
 	pin_look[]: custom_acc
-	pin_offset[]: (-0.9, 0, 0)
+	pin_offset[]: (-1.0, 0, 0)
 	pin_dir[]: (-1, 0, 0)
 	double_sided[]: true
 
@@ -135,123 +141,112 @@ ui_truck_scene_config : _nameless.config {
 	pin_dir[]: (-1, 0, 0)
 	double_sided[]: true
 
+	pin_group[]: doorstep
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.0, 0.0, 0.0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+
 	pin_group[]: f_tire
 	pin_look[]: custom_acc
 	pin_offset[]: (-0.1, 0.4, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: r_tire
 	pin_look[]: custom_acc
 	pin_offset[]: (-0.3, 0.4, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: f_rim
 	pin_look[]: custom_acc
 	pin_offset[]: (-0.1, 0.0, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: r_rim
 	pin_look[]: custom_acc
 	pin_offset[]: (-0.3, 0.0, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: f_disc
 	pin_look[]: custom_acc
 	pin_offset[]: (-0.1, 0.25, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: r_disc
 	pin_look[]: custom_acc
 	pin_offset[]: (-0.3, 0.25, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: f_hub
 	pin_look[]: acc_hub
 	pin_offset[]: (-0.1, 0.00, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: r_hub
 	pin_look[]: acc_hub
 	pin_offset[]: (-0.12, 0.0, 0.0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: f_cover
 	pin_look[]: acc_cover
 	pin_offset[]: (-0.18, 0.0, 0.15)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: r_cover
 	pin_look[]: acc_cover
 	pin_offset[]: (-0.25, 0.0, 0.15)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: f_nuts
 	pin_look[]: acc_nuts
 	pin_offset[]: (-0.18, 0.0, -0.15)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: r_nuts
 	pin_look[]: acc_nuts
 	pin_offset[]: (-0.05, 0.0, -0.15)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: markers
 	pin_look[]: custom_acc
 	pin_offset[]: (-1.2, 0, 0)
 	pin_dir[]: (-1, 0, 0)
-	pin_dir_uk[]: (-1, 0, 0)
 	double_sided[]: true
 
 	pin_group[]: flag_r_l
 	pin_look[]: custom_acc
 	pin_offset[]: (0, 0, 0)
 	pin_dir[]: (-1, 0, 1)
-	pin_dir_uk[]: (-1, 0, 1)
 	double_sided[]: false
 
 	pin_group[]: flag_r_r
 	pin_look[]: custom_acc
 	pin_offset[]: (0, 0, 0)
 	pin_dir[]: (1, 0, 1)
-	pin_dir_uk[]: (1, 0, 1)
 	double_sided[]: false
 
 	pin_group[]: flag_f_l
 	pin_look[]: custom_acc
 	pin_offset[]: (0, 0, 0)
 	pin_dir[]: (-1, 0, -1)
-	pin_dir_uk[]: (-1, 0, -1)
 	double_sided[]: false
 
 	pin_group[]: flag_f_r
 	pin_look[]: custom_acc
 	pin_offset[]: (0, 0, 0)
 	pin_dir[]: (1, 0, -1)
-	pin_dir_uk[]: (1, 0, -1)
 	double_sided[]: false
 
 	pin_group[]: s_deflector
@@ -301,19 +296,53 @@ ui_truck_scene_config : _nameless.config {
 	pin_offset[]: (-1.1, 0, 0)
 	pin_dir[]: (-1, 0, 0)
 	double_sided[]: true
+	
+	pin_group[]: r_fender
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.2, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+	
+	pin_group[]: f_mudflap
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.2, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
+
+	pin_group[]: b_mudflap
+	pin_look[]: custom_acc
+	pin_offset[]: (-1.0, 0, 0)
+	pin_dir[]: (-1, 0, -1)
+	double_sided[]: true
+
+	pin_group[]: beacon
+	pin_look[]: custom_acc
+	pin_offset[]: (-0.9, 0, 0)
+	pin_dir[]: (-1, 0, 0)
+	double_sided[]: true
 
 	exterior_only[]: flag_f_l
 	exterior_only[]: flag_f_r
 	exterior_only[]: f_grill
 	exterior_only[]: grill
 
+	interior_only[]: bckpanel
 	interior_only[]: cup_holder_0
 	interior_only[]: cup_holder_1
+	interior_only[]: l_pillow
+	interior_only[]: set_cabinet
+	interior_only[]: set_cuphold
 	interior_only[]: set_dashbrd
 	interior_only[]: set_lglass
+	interior_only[]: toyac
+	interior_only[]: toyback
 	interior_only[]: toybig
+	interior_only[]: toybed
+	interior_only[]: toydash
 	interior_only[]: toyhang
 	interior_only[]: toyseat
+	interior_only[]: toysofa
 	interior_only[]: toystand
+	interior_only[]: toytable
 }
 }

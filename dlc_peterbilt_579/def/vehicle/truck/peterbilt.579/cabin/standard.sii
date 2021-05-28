@@ -3,7 +3,7 @@ SiiNunit
 accessory_cabin_data : standard.peterbilt.579.cabin
 {
 	name: "Stand Up Sleeper"
-	price: 32590
+	price: 27590
 	unlock: 10
 	icon: "peterbilt_579/cab_std"
 
@@ -20,9 +20,6 @@ accessory_cabin_data : standard.peterbilt.579.cabin
 	wiper_anim: "/vehicle/truck/peterbilt_579/wipers.pma"
 	suspension: false
 
-	sound_horn: "/sound/truck/horn/horn_01.soundref"
-	sound_air_horn: "/sound/truck/air_horn/air_horn_04.soundref"
-
 	defaults[]: "/def/vehicle/truck/peterbilt.579/chassis/long_6x2.sii"
 	defaults[]: "/def/vehicle/truck/peterbilt.579/interior/standard.sii"
 	defaults[]: "/def/vehicle/truck/peterbilt.579/paint_job/color2.sii"
@@ -30,8 +27,12 @@ accessory_cabin_data : standard.peterbilt.579.cabin
 	conflict_with[]: "short.peterbilt.579.chassis"
 	conflict_with[]: "short_6x2.peterbilt.579.chassis"
 	conflict_with[]: "short_6x2_m.peterbilt.579.chassis"
+	conflict_with[]: "short_4x2.peterbilt.579.chassis"
 	conflict_with[]: "short2.peterbilt.579.chassis"
 	conflict_with[]: "short2_6x2.peterbilt.579.chassis"
 	conflict_with[]: "short2_6x2_m.peterbilt.579.chassis"
+	conflict_with[]: "short2_4x2.peterbilt.579.chassis"
+
+@include "sound.sui"
 }
 }

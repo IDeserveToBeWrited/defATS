@@ -14,6 +14,7 @@ traffic_lane_data : traffic_lane.road.local.no_overtake
 
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_l
+	traffic_rules[]: traffic_rule.s_trl_r
 	traffic_rules[]: traffic_rule.s_truck_l
 	traffic_rules[]: traffic_rule.s_bus_l
 	traffic_rules[]: traffic_rule.s_police
@@ -25,6 +26,7 @@ traffic_lane_data : traffic_lane.road.local
 
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_l
+	traffic_rules[]: traffic_rule.s_trl_r
 	traffic_rules[]: traffic_rule.s_truck_l
 	traffic_rules[]: traffic_rule.s_bus_l
 	traffic_rules[]: traffic_rule.s_police
@@ -35,8 +37,12 @@ traffic_lane_data : traffic_lane.road.divided
 {
 	speed_class: divided_road
 
+	rank: 150
+
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_h
+	traffic_rules[]: traffic_rule.s_trl_r
+	traffic_rules[]: traffic_rule.s_trm_r
 	traffic_rules[]: traffic_rule.s_truck_h
 	traffic_rules[]: traffic_rule.s_bus_h
 	traffic_rules[]: traffic_rule.s_police
@@ -45,6 +51,8 @@ traffic_lane_data : traffic_lane.road.divided
 traffic_lane_data : traffic_lane.road.divided.full_in
 {
 	speed_class: divided_road
+
+	rank: 130
 
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_h
@@ -59,6 +67,8 @@ traffic_lane_data : traffic_lane.road.divided.full_out
 {
 	speed_class: divided_road
 
+	rank: 130
+
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_h
 	traffic_rules[]: traffic_rule.s_truck_h
@@ -72,6 +82,8 @@ traffic_lane_data : traffic_lane.road.divided.low_density
 {
 	speed_class: divided_road
 
+	rank: 110
+
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_l
 }
@@ -80,17 +92,35 @@ traffic_lane_data : traffic_lane.road.freeway
 {
 	speed_class: freeway
 
+	rank: 250
+
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_h
+	traffic_rules[]: traffic_rule.s_trl_r
+	traffic_rules[]: traffic_rule.s_trm_r
 	traffic_rules[]: traffic_rule.s_truck_h
 	traffic_rules[]: traffic_rule.s_bus_h
 	traffic_rules[]: traffic_rule.s_police
 	traffic_rules[]: traffic_rule.s_truck_d_l
 }
 
+traffic_lane_data : traffic_lane.road.freeway.no_trucks
+{
+	speed_class: freeway
+
+	rank: 230
+
+	traffic_rules[]: traffic_rule.road
+	traffic_rules[]: traffic_rule.no_trucks
+	traffic_rules[]: traffic_rule.s_car_h
+	traffic_rules[]: traffic_rule.s_police
+}
+
 traffic_lane_data : traffic_lane.road.freeway.truck_lane
 {
 	speed_class: freeway
+
+	rank: 230
 
 	traffic_rules[]: traffic_rule.s_truck_h
 	traffic_rules[]: traffic_rule.trucks_only
@@ -99,6 +129,8 @@ traffic_lane_data : traffic_lane.road.freeway.truck_lane
 traffic_lane_data : traffic_lane.road.freeway.full_in
 {
 	speed_class: freeway
+
+	rank: 230
 
 	traffic_rules[]: traffic_rule.road
 
@@ -114,6 +146,8 @@ traffic_lane_data : traffic_lane.road.freeway.full_out
 {
 	speed_class: freeway
 
+	rank: 230
+
 	traffic_rules[]: traffic_rule.road
 
 	traffic_rules[]: traffic_rule.s_car_h
@@ -127,6 +161,8 @@ traffic_lane_data : traffic_lane.road.freeway.full_out
 traffic_lane_data : traffic_lane.road.freeway.low_density
 {
 	speed_class: freeway
+
+	rank: 210
 
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_l
@@ -148,6 +184,8 @@ traffic_lane_data : traffic_lane.road.divided.tram
 {
 	speed_class: divided_road
 
+	rank: 130
+
 	traffic_rules[]: traffic_rule.road_tram
 	traffic_rules[]: traffic_rule.s_car_h
 	traffic_rules[]: traffic_rule.s_truck_h
@@ -167,6 +205,17 @@ traffic_lane_data : traffic_lane.rail.tram
 traffic_lane_data : traffic_lane.no_vehicles
 {
 	speed_class: local_road
+
+	traffic_rules[]: traffic_rule.private_area
+}
+
+traffic_lane_data : traffic_lane.road.village
+{
+	speed_class: local_road
+
+	traffic_rules[]: traffic_rule.road
+	traffic_rules[]: traffic_rule.s_car_l
+	traffic_rules[]: traffic_rule.private_area
 }
 
 traffic_lane_data : traffic_lane.rail.train
@@ -200,6 +249,14 @@ traffic_lane_data : traffic_lane.rail.train.passenger
 
 	traffic_rules[]: traffic_rule.rail_train
 	traffic_rules[]: traffic_rule.s_train_p
+}
+
+traffic_lane_data : traffic_lane.rail.train_wire.passenger
+{
+	speed_class: rail_train
+
+	traffic_rules[]: traffic_rule.rail_train_w
+	traffic_rules[]: traffic_rule.s_train_w
 }
 
 traffic_lane_data : traffic_lane.road.forest

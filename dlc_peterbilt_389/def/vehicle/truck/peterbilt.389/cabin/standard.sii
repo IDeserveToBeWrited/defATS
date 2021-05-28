@@ -3,7 +3,7 @@ SiiNunit
 accessory_cabin_data : standard.peterbilt.389.cabin
 {
 	name: "Low Roof Sleeper"
-	price: 32590
+	price: 27590
 	unlock: 10
 	icon: "peterbilt_389/cabin_b"
 
@@ -20,9 +20,6 @@ accessory_cabin_data : standard.peterbilt.389.cabin
 	wiper_anim: "/vehicle/truck/peterbilt_389/wipers.pma"
 	suspension: false
 
-	sound_horn: "/sound/truck/horn/horn_02.soundref"
-	sound_air_horn: "/sound/truck/air_horn/air_horn_05.soundref"
-
 	defaults[]: "/def/vehicle/truck/peterbilt.389/chassis/long_6x2.sii"
 	defaults[]: "/def/vehicle/truck/peterbilt.389/interior/mid_std.sii"
 	defaults[]: "/def/vehicle/truck/peterbilt.389/accessory/mirror/shape02.sii"
@@ -33,9 +30,12 @@ accessory_cabin_data : standard.peterbilt.389.cabin
 	conflict_with[]: "short.peterbilt.389.chassis"
 	conflict_with[]: "short_6x2.peterbilt.389.chassis"
 	conflict_with[]: "short_6x2_m.peterbilt.389.chassis"
+	conflict_with[]: "short_8x4.peterbilt.389.chassis"
 	conflict_with[]: "short2.peterbilt.389.chassis"
 	conflict_with[]: "short2_6x2.peterbilt.389.chassis"
 	conflict_with[]: "short2_6x2_m.peterbilt.389.chassis"
+	conflict_with[]: "short2_8x6.peterbilt.389.chassis"
 
+@include "sound.sui"
 }
 }

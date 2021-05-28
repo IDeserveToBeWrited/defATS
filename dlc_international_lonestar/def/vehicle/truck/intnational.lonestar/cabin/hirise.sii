@@ -3,7 +3,7 @@ SiiNunit
 accessory_cabin_data : hirise.intnational.lonestar.cabin
 {
 	name: "High Rise Sleeper"
-	price: 32590
+	price: 27590
 	unlock: 10
 	icon: "international_lonestar/hirise"
 
@@ -19,9 +19,6 @@ accessory_cabin_data : hirise.intnational.lonestar.cabin
 	windows_model: "/vehicle/truck/intnational_lonestar/cabin/win_open.pmd"
 	left_window_anim: "/vehicle/truck/intnational_lonestar/cabin/win_open_l.pma"
 	right_window_anim: "/vehicle/truck/intnational_lonestar/cabin/win_open_r.pma"
-
-	sound_horn: "/sound/truck/international_lonestar.bank#horn/lonestar"
-	sound_air_horn: "/sound/truck/air_horn/air_horn_08.soundref"
 
 	defaults[]: "/def/vehicle/truck/intnational.lonestar/chassis/6x2_mid_120.sii"
 	defaults[]: "/def/vehicle/truck/intnational.lonestar/interior/hi_std.sii"
@@ -43,5 +40,12 @@ accessory_cabin_data : hirise.intnational.lonestar.cabin
 	conflict_with[]: "6x4s_100.intnational.lonestar.chassis"
 	conflict_with[]: "6x4l_120.intnational.lonestar.chassis"
 	conflict_with[]: "6x4l_140.intnational.lonestar.chassis"
+
+	conflict_with[]: "8x4s_70.intnational.lonestar.chassis"
+	conflict_with[]: "8x4s_100.intnational.lonestar.chassis"
+	conflict_with[]: "8x4l_120.intnational.lonestar.chassis"
+	conflict_with[]: "8x4l_140.intnational.lonestar.chassis"
+
+@include "sound.sui"
 }
 }
