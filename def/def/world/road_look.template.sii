@@ -1721,6 +1721,198 @@ road_look : road.us_tmpl321
 
 }
 
+road_look : road.us_tmpl421
+{
+	name: "us 4-2 country 1"
+	template_right: "/road_template/us/us_4-2_country_1.pmd"
+
+
+	lanes_left[]: traffic_lane.road.divided.low_density
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	
+	template_variants_right[]: .tmpl_var.road.us_tmpl421
+	template_variants_right[]: .tmpl_var.road.us_tmpl421.1
+	template_variants_right[]: .tmpl_var.road.us_tmpl421.2
+
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "sh_3"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw_sw_di_fl"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+
+	shoulder_space_left: 1.0
+	shoulder_space_right: 1.0
+
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl421
+{
+	variant_names[]: "ful_1l_1r"
+
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided.full_in
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl421.1
+{
+	variant_names[]: "ful_2l"
+
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl421.2
+{
+	variant_names[]: "ful_2l_2r"
+
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_in
+	lanes_left[]: traffic_lane.road.divided.full_in
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+}
+
+road_look : road.us_tmpl241
+{
+	name: "us 2-4 country 1"
+	template_right: "/road_template/us/us_2-4_country_1.pmd"
+
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.low_density
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	
+	template_variants_right[]: .tmpl_var.road.us_tmpl241
+	template_variants_right[]: .tmpl_var.road.us_tmpl241.1
+	template_variants_right[]: .tmpl_var.road.us_tmpl241.2
+
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "sh_3"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw_sw_di_fl"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+
+	shoulder_space_left: 1.0
+	shoulder_space_right: 1.0
+
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl241
+{
+	variant_names[]: "ful_1l_1r"
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.full_in
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl241.1
+{
+	variant_names[]: "ful_2l"
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl241.2
+{
+	variant_names[]: "ful_2l_2r"
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_in
+	lanes_right[]: traffic_lane.road.divided.full_in
+}
+
 road_look : road.us_tmpl231
 {
 	name: "us 2-1-2 country 1 ai2"
