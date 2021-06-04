@@ -458,9 +458,9 @@ traffic_rule_data : traffic_rule.rail_train_w
 	additional_rules[]: traffic_rule.private_area
 }
 
-traffic_rule_data : traffic_rule.train_cross
+traffic_rule_data : traffic_rule.rail_cross
 {
-	# name: [prefab] Train crossing
+	# name: [prefab] Rail crossing
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
@@ -469,6 +469,7 @@ traffic_rule_data : traffic_rule.train_cross
 	num_params[]: 0 	# disable player access
 	str_params[]: "train"
 	str_params[]: "train_wire"
+	str_params[]: "tram"
 
 	additional_rules[]: traffic_rule.lights_on
 	additional_rules[]: traffic_rule.private_area

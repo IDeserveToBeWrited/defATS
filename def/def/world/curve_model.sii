@@ -1020,12 +1020,10 @@ curve_model : curve.58
 
 	high_tess: 0
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
 	dynamic_lod_desc[0]: "/model/building/farm/wa_farm_fence1_lod1.pmd"
-	dynamic_lod_dist[0]: 100
-	dynamic_lod_desc[1]: "/model/building/farm/wa_farm_fence1_lod2.pmd"
-	dynamic_lod_dist[1]: 200
+	dynamic_lod_dist[0]: 120
 }
 
 curve_model : curve.59
@@ -6286,6 +6284,62 @@ curve_model : curve.co_1x001
 	high_tess[0]: "1"
 	high_tess[1]: "2"
 }
+
+curve_model : curve.1x008
+{
+	model_desc: "/model/rock/vineyard_terraces.pmd"
+	name: "vineyard terraces"
+
+	variation: 10
+	start_part: 10
+	end_part: 10
+	variation[0]: "step_1 | center10 : 1.0 | center20 : 1.0 | center30 : 1.0"
+	start_part[0]: "start10"
+	end_part[0]: "end10"
+	variation[1]: "step_2 | center3 : 1.0"
+	start_part[1]: "start20"
+	end_part[1]: "end20"
+	variation[2]: "step_3 | center4 : 1.0"
+	start_part[2]: "start30"
+	end_part[2]: "end30"
+	variation[3]: "smooth_step | center5 : 1.0"
+	start_part[3]: "start40"
+	end_part[3]: "end40"
+	variation[4]: "smooth | center6 : 1.0"
+	start_part[4]: "start50"
+	end_part[4]: "end50"
+	variation[5]: "step_1_x | center11 : 1.0 | center12 : 1.0 | center13 : 1.0"
+	start_part[5]: "start11"
+	end_part[5]: "end11"
+	variation[6]: "step_2_x | center31 : 1.0"
+	start_part[6]: "start21"
+	end_part[6]: "end21"
+	variation[7]: "step_3_x | center41 : 1.0"
+	start_part[7]: "start31"
+	end_part[7]: "end31"
+	variation[8]: "smth_step_x | center51 : 1.0"
+	start_part[8]: "start41"
+	end_part[8]: "end41"
+	variation[9]: "smooth_x | center61 : 1.0"
+	start_part[9]: "start51"
+	end_part[9]: "end51"
+
+	high_tess: 10
+	high_tess[0]: "step_1"
+	high_tess[1]: "step_2"
+	high_tess[2]: "step_3"
+	high_tess[3]: "smooth_step"
+	high_tess[4]: "smooth"
+	high_tess[5]: "step_1_x"
+	high_tess[6]: "step_2_x"
+	high_tess[7]: "step_3_x"
+	high_tess[8]: "smth_step_x"
+	high_tess[9]: "smooth_x"
+
+	smooth_surface: true
+}
+
+
 curve_model : curve.wy_0l001
 {
 	model_desc: "/model/panorama/wy_us191/wy_fg_dam_wall.pmd"
@@ -7534,7 +7588,7 @@ curve_model : curve.wy_27003
 curve_model : curve.wy_1n007
 {
 	model_desc: "/model/rock/wy_rock_red_sediment_curve_8m.pmd"
-	name: "XXX DO NOT USE XXX wy rock red sediment curve 8m"
+	name: "wy rock red sediment curve 8m"
 
 	variation: 4
 	start_part: 4
