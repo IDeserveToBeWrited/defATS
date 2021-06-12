@@ -1,0 +1,89 @@
+traffic_vehicle : traffic.chevy_imp_o
+{
+	accessories[]: .chevyimp_o.chassis
+	accessories[]: .chevyimp_o.fwheel
+	accessories[]: .chevyimp_o.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	
+	vehicle_mass: 1850
+	
+	#	prefer_variant: true
+	variant[]: traffic.chevyimp_osl
+	
+	spawn_ratio: 0.0
+	
+
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .chevyimp_o.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_imp/ut_pd.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_o.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_o.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX variant Salt Lake City XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.chevyimp_osl
+{
+	accessories[]: .chevyimp_osl.chassis
+	accessories[]: .chevyimp_osl.fwheel
+	accessories[]: .chevyimp_osl.rwheel
+
+	max_speed: 300
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	
+	spawn_ratio: 0.0
+	
+	vehicle_mass: 1850
+    
+	spawn_condition[]: .traffic.chevyimp_osl.saltlake.condition.city
+
+	
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .chevyimp_osl.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_imp/ut_salt_pd.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_osl.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in.sii"
+}
+
+vehicle_wheel_accessory: .chevyimp_osl.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in.sii"
+}
+
+traffic_spawn_condition: .traffic.chevyimp_osl.saltlake.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+  str_param[]: "salt_lake"
+}

@@ -1,0 +1,474 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+model_def : model.wy_1t00c
+{
+	model_desc: "/model/building/industrial/wy_mine_conveyor_leg.pmd"
+	name: "wy mine conveyor leg"
+}
+
+model_def : model.wy_1a003
+{
+	model_desc: "/model/building/industrial/wy_mine_coal_silo.pmd"
+	name: "wy mine coal silo"
+}
+
+model_def : model.wy_1p00d
+{
+	model_desc: "/model/rock/wy_rock_generic_01.pmd"
+	name: "DO NOT USE wy rock generic 01"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_generic_01_lod1.pmd"
+	dynamic_lod_dist[0]: 90
+}
+
+model_def : model.wy_1p00e
+{
+	model_desc: "/model/rock/wy_rock_big_sediment_medium2.pmd"
+	name: "wy rock big sediment medium2"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_big_sediment_medium2_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+}
+
+model_def : model.wy_1n00e
+{
+	model_desc: "/model/rock/wy_roadcliffrock_curve_1a_short_ending.pmd"
+	name: "wy roadcliffrock curve 1a short ending"
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/rock/wy_roadcliffrock_curve_1a_short_ending_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+	dynamic_lod_desc[1]: "/model/rock/wy_roadcliffrock_curve_1a_short_ending_lod2.pmd"
+	dynamic_lod_dist[1]: 180
+}
+
+model_def : model.wy_1n00f
+{
+	model_desc: "/model/building/shop/wy_steakhouse1.pmd"
+	name: "wy steakhouse1"
+
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/shop/wy_steakhouse1_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/shop/wy_steakhouse1_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+model_def : model.wy_1n00m
+{
+	model_desc: "/model/rock/wy_rock_big_sediment_big.pmd"
+	name: "wy rock big sediment big"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_big_sediment_big_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+}
+
+model_def : model.wy_1n00n
+{
+	model_desc: "/model/rock/wy_rock_big_sediment_small.pmd"
+	name: "wy rock big sediment small"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_big_sediment_small_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+}
+
+model_def : model.wy_0s00h
+{
+	model_desc: "/model/building/shop/wy_shop2.pmd"
+	name: "wy shop2"
+
+	color_variant: 8
+	color_variant[0]: "Default | *_c1 : 150,104,73 | *_c2 : 95,83,65"
+	color_variant[1]: "Light | *_c1 : 234,180,144 | *_c2 : 240,213,179"
+	color_variant[2]: "Beige | *_c1 : 250,240,216 | *_c2 : 130,110,69"
+	color_variant[3]: "White | *_c1 : 235,235,235 | *_c2 : 165,165,165"
+	color_variant[4]: "white/blue | *_c1 : 255,255,255 | *_c2 : 116,135,179"
+	color_variant[5]: "white/green | *_c1 : 255,255,255 | *_c2 : 122,168,122"
+	color_variant[6]: "white/red | *_c1 : 255,255,255 | *_c2 : 222,113,115"
+	color_variant[7]: "red/white | *_c1 : 222,113,117 | *_c2 : 255,255,255"
+}
+
+model_def : model.wy_1l005
+{
+	model_desc: "/model/building/administration/wy_admin1.pmd"
+	name: "wy admin1"
+
+	color_variant: 4
+	color_variant[0]: "default | *_c1 : 180,101,84"
+	color_variant[1]: "orange | *_c1 : 204,146,104"
+	color_variant[2]: "cream | *_c1 : 243,232,214"
+	color_variant[3]: "red | *_c1 : 217,107,96"
+}
+
+model_def : model.wy_1g006
+{
+	model_desc: "/model/building/administration/wy_admin2.pmd"
+	name: "wy admin2"
+
+	color_variant: 4
+	color_variant[0]: "default | *_c1 : 232,144,123 | *_c2 : 243,232,214 | *_c3 : 105,141,208"
+	color_variant[1]: "orange/white | *_c1 : 235,161,124 | *_c2 : 255,255,255 | *_c3 : 159,97,97"
+	color_variant[2]: "cream/beige | *_c1 : 243,232,214 | *_c2 : 237,225,196 | *_c3 : 135,116,111"
+	color_variant[3]: "red/green | *_c1 : 226,124,113 | *_c2 : 130,140,115 | *_c3 : 113,135,112"
+}
+
+model_def : model.wy_27004
+{
+	model_desc: "/model/props/street/wy_concrete_wall_circular_1.pmd"
+	name: "wy concrete wall circular 1"
+
+	color_variant: 4
+	color_variant[0]: "gray | *_c1 : 160,160,160"
+	color_variant[1]: "red | *_c1 : 160,97,79"
+	color_variant[2]: "biege | *_c1 : 176,149,128"
+	color_variant[3]: "brown | *_c1 : 134,94,80"
+}
+
+model_def : model.wy_27005
+{
+	model_desc: "/model/props/street/wy_concrete_wall_circular_2.pmd"
+	name: "wy concrete wall circular 2"
+
+	color_variant: 4
+	color_variant[0]: "gray | *_c1 : 160,160,160"
+	color_variant[1]: "red | *_c1 : 160,97,79"
+	color_variant[2]: "biege | *_c1 : 176,149,128"
+	color_variant[3]: "brown | *_c1 : 134,94,80"
+
+}
+
+model_def : model.wy_27006
+{
+	model_desc: "/model/props/street/wy_concrete_wall_circular_3.pmd"
+	name: "wy concrete wall circular 3"
+
+	color_variant: 4
+	color_variant[0]: "gray | *_c1 : 160,160,160"
+	color_variant[1]: "red | *_c1 : 160,97,79"
+	color_variant[2]: "biege | *_c1 : 176,149,128"
+	color_variant[3]: "brown | *_c1 : 134,94,80"
+
+}
+
+model_def : model.wy_27007
+{
+	model_desc: "/model/props/street/wy_concrete_wall_circular_4.pmd"
+	name: "wy concrete wall circular 4"
+
+	color_variant: 4
+	color_variant[0]: "gray | *_c1 : 160,160,160"
+	color_variant[1]: "red | *_c1 : 160,97,79"
+	color_variant[2]: "biege | *_c1 : 176,149,128"
+	color_variant[3]: "brown | *_c1 : 134,94,80"
+
+}
+
+model_def : model.wy_1x001
+{
+	model_desc: "/model/rock/wy_rock_devils_tower.pmd"
+	name: "wy rock devils tower"
+}
+
+model_def : model.wy_1x002
+{
+	model_desc: "/model/rock/wy_independence_rock.pmd"
+	name: "wy independence rock"
+}
+
+model_def : model.wy_1x003
+{
+	model_desc: "/model/rock/wy_rock_sublette_peak_1.pmd"
+	name: "wy rock sublette peak 1"
+}
+
+model_def : model.wy_1x004
+{
+	model_desc: "/model/rock/wy_rock_sublette_peak_2.pmd"
+	name: "wy rock sublette peak 2"
+}
+
+model_def : model.wy_18004
+{
+	model_desc: "/model/building/bank/wy_bank1_sign.pmd"
+	name: "wy bank1 sign"
+}
+
+model_def : model.wy_18005
+{
+	model_desc: "/model/building/bank/wy_bank1_logo.pmd"
+	name: "wy bank1 logo"
+
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/bank/wy_bank1_logo_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/bank/wy_bank1_logo_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+model_def : model.wy_18006
+{
+	model_desc: "/model/building/bank/wy_bank1_totem_regional.pmd"
+	name: "wy bank1 totem regional"
+}
+
+model_def : model.wy_18007
+{
+	model_desc: "/model/building/bank/wy_bank1_totem_atsbank.pmd"
+	name: "wy bank1 totem atsbank"
+
+	color_variant: 3
+	color_variant[0]: "white | *_c1 : 255,255,255"
+	color_variant[1]: "blue | *_c1 : 46,172,255"
+	color_variant[2]: "dark blue | *_c1 : 21,55,103"
+}
+
+model_def : model.wy_18008
+{
+	model_desc: "/model/building/bank/wy_bank1_logo_building_atsbank.pmd"
+	name: "wy bank1 logo building atsbank"
+
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/bank/wy_bank1_logo_building_atsbank_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/bank/wy_bank1_logo_building_atsbank_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+model_def : model.wy_18009
+{
+	model_desc: "/model/building/bank/wy_bank1_logo_building_regional.pmd"
+	name: "wy bank1 logo building regional"
+
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/bank/wy_bank1_logo_building_regional_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/bank/wy_bank1_logo_building_regional_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+model_def : model.wy_1800a
+{
+	model_desc: "/model/building/bank/wy_bank1_logo_building_group.pmd"
+	name: "wy bank1 logo building group"
+
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/bank/wy_bank1_logo_building_group_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/bank/wy_bank1_logo_building_group_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+model_def : model.wy_1800b
+{
+	model_desc: "/model/building/bank/wy_bank1_totem_group.pmd"
+	name: "wy bank1 totem group"
+}
+
+model_def : model.wy_1800c
+{
+	model_desc: "/model/building/bank/wy_bank1_sign_group.pmd"
+	name: "wy bank1 sign group"
+}
+
+model_def : model.wy_1800d
+{
+	model_desc: "/model/building/bank/wy_bank1_sign_regional.pmd"
+	name: "wy bank1 sign regional"
+}
+
+model_def : model.wy_1800f
+{
+	model_desc: "/model/building/bank/wy_bank1_navigation_sign_atsbank.pmd"
+	name: "wy bank1 navigation sign atsbank"
+}
+
+model_def : model.wy_1800g
+{
+	model_desc: "/model/building/bank/wy_bank1_panel_sign_atsbank.pmd"
+	name: "wy bank1 panel sign atsbank"
+}
+
+model_def : model.wy_1800h
+{
+	model_desc: "/model/building/bank/wy_bank1_panel_sign_regional.pmd"
+	name: "wy bank1 panel sign regional"
+}
+
+model_def : model.wy_1800i
+{
+	model_desc: "/model/building/bank/wy_bank1_panel_sign_group.pmd"
+	name: "wy bank1 panel sign group"
+}
+
+model_def : model.wy_1800j
+{
+	model_desc: "/model/building/bank/wy_bank1_navigation_sign_regional.pmd"
+	name: "wy bank1 navigation sign regional"
+}
+
+model_def : model.wy_1800k
+{
+	model_desc: "/model/building/bank/wy_bank1_navigation_sign_group.pmd"
+	name: "wy bank1 navigation sign group"
+}
+
+model_def : model.wy_1800l
+{
+	model_desc: "/model/building/bank/wy_bank1_driveby.pmd"
+	name: "wy bank1 atm driveby"
+}
+
+model_def : model.wy_1800m
+{
+	model_desc: "/model/building/bank/wy_bank1_atm.pmd"
+	name: "wy bank1 atm"
+}
+
+model_def : model.wy_02000
+{
+	model_desc: "/model/props/machinery/wy_dragline_excavator.pmd"
+	name: "wy dragline excavator"
+}
+
+model_def : model.wy_01008
+{
+	model_desc: "/model/props/road/wy_truckers_chapel.pmd"
+	name: "wy truckers chapel"
+}
+
+model_def : model.wy_0q017
+{
+	model_desc: "/model/panorama/wy_us220/wy_independence_sign.pmd"
+	name: "wy independence sign"
+}
+
+model_def : model.wy_1504a
+{
+	model_desc: "/model/building/industrial/wy_chemical_processing_unit1.pmd"
+	name: "wy chemical processing unit1"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/wy_chemical_processing_unit1_lod1.pmd"
+	dynamic_lod_dist[0]: 300
+}
+
+model_def : model.wy_1504b
+{
+	model_desc: "/model/building/industrial/wy_chemical_processing_unit2.pmd"
+	name: "wy chemical processing unit2"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/wy_chemical_processing_unit2_lod1.pmd"
+	dynamic_lod_dist[0]: 300
+}
+
+model_def : model.wy_1504c
+{
+	model_desc: "/model/building/industrial/wy_chemical_processing_tanks.pmd"
+	name: "wy chemical processing tanks"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/wy_chemical_processing_tanks_lod1.pmd"
+	dynamic_lod_dist[0]: 300
+}
+
+model_def : model.wy_1504d
+{
+	model_desc: "/model/building/industrial/wy_chemical_processing_chimneys.pmd"
+	name: "wy chemical processing chimneys"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/wy_chemical_processing_chimneys_lod1.pmd"
+	dynamic_lod_dist[0]: 300
+}
+
+model_def : model.wy_1504e
+{
+	model_desc: "/model/building/industrial/wy_chemical_processing_pipe1.pmd"
+	name: "wy chemical processing pipe1"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/wy_chemical_processing_pipe1_lod1.pmd"
+	dynamic_lod_dist[0]: 300
+}
+
+model_def : model.wy_1504f
+{
+	model_desc: "/model/building/industrial/wy_chemical_processing_pipe2.pmd"
+	name: "wy chemical processing pipe2"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/wy_chemical_processing_pipe2_lod1.pmd"
+	dynamic_lod_dist[0]: 300
+}
+
+model_def : model.wy_08001
+{
+	model_desc: "/model/vehicle/trailer/caravan/caravan.pmd"
+	name: "caravan"
+
+	static_lod_path: 2
+	static_lod_name: 2
+	static_lod_path[0]: "/model/vehicle/trailer/caravan/caravan_lod01.pmd"
+	static_lod_name[0]: "LOD from 50m"
+	static_lod_path[1]: "/model/vehicle/trailer/caravan/caravan_lod02.pmd"
+	static_lod_name[1]: "LOD from 100m"
+}
+
+model_def : model.wy_08002
+{
+	model_desc: "/model/vehicle/parked_cars/f150_5thwheel/parked_car_f_150_5thwheel.pmd"
+	name: "parked car f 150 5thwheel"
+
+	static_lod_path: 2
+	static_lod_name: 2
+	static_lod_path[0]: "/model/vehicle/parked_cars/f150_5thwheel/parked_car_f_150_5thwheel_lod1.pmd"
+	static_lod_name[0]: "LOD from 50m"
+	static_lod_path[1]: "/model/vehicle/parked_cars/f150_5thwheel/parked_car_f_150_5thwheel_lod2.pmd"
+	static_lod_name[1]: "LOD from 100m"
+}
+
+}
