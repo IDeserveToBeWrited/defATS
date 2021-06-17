@@ -646,6 +646,52 @@ tr_semaphore_profile : tr_sem_prof.agri_check
 	cycle[]: 0.0
 }
 
+tr_semaphore_profile : tr_sem_prof.agri_check_l
+{
+
+	name: "agri check station"
+
+	model[0]: ""
+	model[1]: ""
+	model[2]: "column_p"
+	model[3]: ""
+
+	type[0]: barrier_manual
+	
+	id_map: 4
+	id_map[0]: 1
+	id_map[1]: 1
+	id_map[2]: 1
+	id_map[3]: 1
+
+	interval[0]: (1.0, 0.0, 1.0, 3.0)
+
+	cycle[0]: 0.0
+}
+
+tr_semaphore_profile : tr_sem_prof.agri_check_r
+{
+
+	name: "agri check station"
+
+	model[0]: ""
+	model[1]: ""
+	model[2]: ""
+	model[3]: "column_p"
+
+	type[0]: barrier_manual
+	
+	id_map: 4
+	id_map[0]: 1
+	id_map[1]: 1
+	id_map[2]: 1
+	id_map[3]: 1
+
+	interval[0]: (1.0, 0.0, 1.0, 3.0)
+	
+	cycle[0]: 0.0
+}
+
 tr_semaphore_profile : tr_sem_prof.crossing
 {
 

@@ -4605,8 +4605,8 @@ prefab_model : prefab.us_201
 	corner1[]: sh501
 	corner1[]: kb50
 	corner1[]: sw50
-	corner1[]: kbcc1
-	corner1[]: swcc1
+	corner1[]: kbc50
+	corner1[]: swc50
 	corner2[]: shc1
 	corner2[]: kbc1
 	corner2[]: swc1
@@ -4863,9 +4863,9 @@ prefab_model : prefab.us_329
 	name: "us_fork_0-2_0-3_mirrored_left"
 	model_desc: "/prefab/fork_temp/us_fork_0-2_0-3_mirrored_left_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_fork_0-2_0-3_mirrored_left_tmpl.ppd"
-	
+
 	corner0[]: "br_f0203ml"
-	
+
 }
 prefab_model : prefab.us_330
 {
@@ -4878,6 +4878,9 @@ prefab_model : prefab.us_331
 	name: "us_fork_0-3_0-4_freeway_left"
 	model_desc: "/prefab/fork_temp/us_fork_0-3_0-4_left_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_fork_0-3_0-4_left_tmpl.ppd"
+	
+	corner1[]: br_f0304l
+	
 }
 prefab_model : prefab.us_332
 {
@@ -8935,6 +8938,8 @@ prefab_model : prefab.us_371
 	name: "us_divide_0-3_0-2_freeway"
 	model_desc: "/prefab/fork_temp/us_divide_0-3_0-2_freeway_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_divide_0-3_0-2_freeway_tmpl.ppd"
+
+	corner1[]: br_d0302fw
 
 }
 
@@ -17639,6 +17644,7 @@ prefab_model : prefab.2o06s
 	corner0[]: "sh120crnrr2f"
 
 	corner1[]: "sh100"
+	corner1[]: "brs12fes100"
 
 	corner2[]: "sh100crvdr2f"
 
@@ -17913,6 +17919,9 @@ prefab_model : prefab.2o074
 	corner1[]: kb15
 	corner1[]: sw15
 
+	semaphore_profile[]: agri_check_l
+	semaphore_profile[]: agri_check_r
+
 }
 
 prefab_model : prefab.2o075
@@ -17928,6 +17937,9 @@ prefab_model : prefab.2o075
 	corner1[]: sh151
 	corner1[]: kb15
 	corner1[]: sw15
+
+	semaphore_profile[]: agri_check_l
+	semaphore_profile[]: agri_check_r
 
 }
 
@@ -17945,6 +17957,9 @@ prefab_model : prefab.2o076
 	corner1[]: kb15
 	corner1[]: sw15
 
+	semaphore_profile[]: agri_check_l
+	semaphore_profile[]: agri_check_r
+
 }
 
 prefab_model : prefab.2o077
@@ -17961,6 +17976,9 @@ prefab_model : prefab.2o077
 	corner1[]: kb15
 	corner1[]: sw15
 
+	semaphore_profile[]: agri_check_l
+	semaphore_profile[]: agri_check_r
+
 }
 
 prefab_model : prefab.2o078
@@ -17976,6 +17994,9 @@ prefab_model : prefab.2o078
 	corner1[]: sh151
 	corner1[]: kb15
 	corner1[]: sw15
+
+	semaphore_profile[]: agri_check_l
+	semaphore_profile[]: agri_check_r
 
 }
 
@@ -18883,7 +18904,7 @@ prefab_model : prefab.2o08h
 	model_desc: "/prefab/cross_temp/us_cross_0-2_country_x_1-1-1_1-1_country_mirror_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_0-2_country_x_1-1-1_1-1_country_mirror_tmpl.ppd"
 	category: ""
-	
+
 	corner0[]: shc1
 	corner0[]: kbc1
 	corner0[]: swc1
@@ -18911,6 +18932,115 @@ prefab_model : prefab.2o08h
 	corner3[]: shcccm
 	corner3[]: kbcccm
 	corner3[]: swcccm
+
+}
+
+prefab_model : prefab.2o08i
+{
+	name: "DO NOT USE us cross 2-1-2 country x 2-1-2 country x rail 1 tmpl"
+	model_desc: "/prefab/cross_temp/us_cross_2-1-2_country_x_2-1-2_country_x_rail_1_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_2-1-2_country_x_2-1-2_country_x_rail_1_tmpl.ppd"
+	category: ""
+
+
+	corner0[]: "shc1"
+	corner0[]: "kbc1"
+	corner0[]: "swc1"
+	corner0[]: "swc1b"
+	corner0[]: "swc1i"
+	corner0[]: kbcc1
+	corner0[]: swcc1
+
+	corner1[]: "shcccxrl"
+
+	corner2[]: "shcccxrr"
+
+	corner3[]: "shc1"
+	corner3[]: "kbc1"
+	corner3[]: "swc1"
+	corner3[]: "swc1b"
+	corner3[]: "swc1i"
+	corner3[]: kbcc1
+	corner3[]: swcc1
+
+	corner4[]: "shcccxrl"
+
+	corner5[]: "shcccxrr"
+
+}
+
+prefab_model : prefab.2o08j
+{
+	name: "DO NOT USE us cross angled 2-1-2 country x 2-1-2 country x rail 1 compact tmpl"
+	model_desc: "/prefab/cross_temp/us_cross_angled_2-1-2_country_x_2-1-2_country_x_rail_1_compact_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_angled_2-1-2_country_x_2-1-2_country_x_rail_1_compact_tmpl.ppd"
+	category: ""
+
+	corner0[]: sh379
+	corner0[]: kb310
+	corner0[]: sw310
+
+	corner1[]: shcaccrcl
+
+	corner2[]: shcaccrcr
+
+	corner3[]: sh379
+	corner3[]: kb310
+	corner3[]: sw310
+
+	corner4[]: shcaccrcl
+
+	corner5[]: shcaccrcr
+
+}
+
+prefab_model : prefab.2o08k
+{
+	name: "DO NOT USE us cross 0-2 country x 0-2 country one way new no right"
+	model_desc: "/prefab/cross_temp/us_cross_0-2_country_x_0-2_country_one_way_new_no_right.pmd"
+	prefab_desc: "/prefab/cross_temp/us_cross_0-2_country_x_0-2_country_one_way_new_no_right.ppd"
+	category: ""
+
+	corner0[]: swl119
+	corner0[]: kbl119
+	corner0[]: shcl119
+	corner2[]: swr119
+	corner2[]: kbr119
+	corner2[]: shc2
+	corner1[]: swl119
+	corner1[]: kbl119
+	corner1[]: shcl119
+	corner3[]: swl119
+	corner3[]: kbl119
+	corner3[]: shcl119
+
+	semaphore_profile[]: 2x2_v1
+	semaphore_profile[]: 2x2_v2
+
+}
+
+prefab_model : prefab.2o08l
+{
+	name: "DO NOT USE us roundabout 1-1 country x 1-1 country tmpl"
+	model_desc: "/prefab/cross_temp/us_roundabout_1-1_country_x_1-1_country_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_roundabout_1-1_country_x_1-1_country_tmpl.ppd"
+	category: ""
+	
+	corner0[]: shrb11
+	corner0[]: kbrb11
+	corner0[]: swrb11
+	
+	corner1[]: shrb11
+	corner1[]: kbrb11
+	corner1[]: swrb11
+	
+	corner2[]: shrb11
+	corner2[]: kbrb11
+	corner2[]: swrb11
+	
+	corner3[]: shrb11
+	corner3[]: kbrb11
+	corner3[]: swrb11
 	
 }
 
@@ -19629,6 +19759,27 @@ prefab_model : prefab.d_food_plnt4
 	dynamic_lod_dist[0]: 150
 
 	use_perlin: false
+}
+
+prefab_model : prefab.wy_04003
+{
+	name: "XXX DO NOT USE XXX"
+	model_desc: "/prefab/depots/train_station/wy_rail_supply_depot.pmd"
+	prefab_desc: "/prefab/depots/train_station/wy_rail_supply_depot.ppd"
+	category: ""
+}
+
+prefab_model : prefab.d_rail_str
+{
+	name: "wy rail supply depot"
+	model_desc: "/prefab/depots/train_station/wy_rail_supply_depot.pmd"
+	prefab_desc: "/prefab/depots/train_station/wy_rail_supply_depot.ppd"
+	category: ""
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/prefab/depots/train_station/wy_rail_supply_depot_lod1.pmd"
+	dynamic_lod_dist[0]: 100
 }
 
 }

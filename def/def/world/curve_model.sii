@@ -3176,6 +3176,12 @@ curve_model : curve.2k003
 	end_part[1]: "end3 | end4"
 
 	high_tess: 0
+	color_variant[]: "or_light: 255,255,255"
+    color_variant[]: "wa_dark: 160,155,154"
+    color_variant[]: "az_sand: 194,187,173"
+    color_variant[]: "nm light pink: 230,195,185"
+    color_variant[]: "nm dark pink: 200,170,155"
+	color_variant[]: "tx_sand: 255, 245, 236"
 
 	dynamic_lod_desc: 2
 	dynamic_lod_dist: 2
@@ -6540,12 +6546,13 @@ curve_model : curve.mats_0j001
 	model_desc: "/model/railing/bridge/us_bridge_support_generic_crv.pmd"
 	name: "us bridge support generic crv"
 
-	color_variant: 5
+	color_variant: 6
 	color_variant[0]: "or_light: 255,255,255"
 	color_variant[1]: "wa_dark: 197,191,188"
 	color_variant[2]: "az_sand: 253,237,215"
 	color_variant[3]: "nm_light_pink: 255,223,216"
 	color_variant[4]: "nm_dark_pink: 245,214,203"
+	color_variant[5]: "tx_sand: 255, 245, 236"
 
 	variation: 4
 	start_part: 4
@@ -7407,6 +7414,14 @@ curve_model : curve.reskin_0s001
 	start_part[2]: "start1 | start2 | start3"
 	end_part[2]: "end1 | end2 | end3"
 
+	overlay: 6
+	overlay[0]: "center1 | ovr1 : 1.0"
+	overlay[1]: "center2 | ovr1 : 1.0"
+	overlay[2]: "center3 | ovr1 : 1.0"
+	overlay[3]: "start1 | ovr1 : 1.0"
+	overlay[4]: "start2 | ovr1 : 1.0"
+	overlay[5]: "start3 | ovr1 : 1.0"
+
 	high_tess: 0
 }
 
@@ -7601,6 +7616,511 @@ curve_model : curve.0601j
 {
 	model_desc: "/model/railing/bridge/az_2-1-2_bridge_curve.pmd"
 	name: "az 2-1-2 bridge curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601k
+{
+	model_desc: "/model/barrier/stone/barrier_pebblestone_01_curve.pmd"
+	name: "barrier pebblestone 01 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: ""
+	end_part[0]: ""
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/stone/barrier_pebblestone_01_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+}
+
+curve_model : curve.0601l
+{
+	model_desc: "/model/barrier/road/ca_barrier_yellow1_curve.pmd"
+	name: "ca barrier yellow1 curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601m
+{
+	model_desc: "/model/railing/canal_dry_curve.pmd"
+	name: "canal dry curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601n
+{
+	model_desc: "/model/symbol/dead_end_curve.pmd"
+	name: "dead end curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601o
+{
+	model_desc: "/model/symbol/direction_blocker_curve.pmd"
+	name: "direction blocker curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601p
+{
+	model_desc: "/model/props/street/metal_barrier_curve.pmd"
+	name: "metal barrier curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/props/street/metal_barrier_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.0601q
+{
+	model_desc: "/model/bridge/nm_foot_bridge2_curve.pmd"
+	name: "nm foot bridge2 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601r
+{
+	model_desc: "/model/bridge/nv_skytrain_curve.pmd"
+	name: "nv skytrain curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: ""
+	end_part[0]: ""
+
+	high_tess: 0
+}
+
+curve_model : curve.0601s
+{
+	model_desc: "/model/panorama/or_portland/or_admin_houses_2d_curve.pmd"
+	name: "or admin houses 2d curve"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "var1 | center1 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0"
+	start_part[0]: ""
+	end_part[0]: ""
+	variation[1]: "var2 | center2 : 1.0 | center21 : 1.0 | center22 : 1.0 | center23 : 1.0"
+	start_part[1]: ""
+	end_part[1]: ""
+	variation[2]: "var3 | center3 : 1.0 | center31 : 1.0 | center32 : 1.0 | center33 : 1.0"
+	start_part[2]: ""
+	end_part[2]: ""
+
+	high_tess: 0
+}
+
+curve_model : curve.0601t
+{
+	model_desc: "/model/barrier/wood/or_barrier_snow1_curve.pmd"
+	name: "or barrier snow1 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: ""
+	end_part[0]: ""
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/barrier/wood/or_barrier_snow1_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.0601u
+{
+	model_desc: "/model/panorama/or_portland/or_admin_houses_3d_curve.pmd"
+	name: "or admin houses 3d curve"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "var1 | center1 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0"
+	start_part[0]: ""
+	end_part[0]: ""
+	variation[1]: "var2 | center2 : 1.0 | center21 : 1.0 | center22 : 1.0 | center23 : 1.0"
+	start_part[1]: ""
+	end_part[1]: ""
+	variation[2]: "var3 | center3 : 1.0 | center31 : 1.0 | center32 : 1.0 | center33 : 1.0"
+	start_part[2]: ""
+	end_part[2]: ""
+
+	high_tess: 0
+}
+
+curve_model : curve.0601v
+{
+	model_desc: "/model/distribution/or_distribution_irigation1.pmd"
+	name: "or distribution irigation1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/distribution/or_distribution_irigation1_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.0601w
+{
+	model_desc: "/model/props/country/or_graveyard2_curve.pmd"
+	name: "or graveyard2 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: ""
+	end_part[0]: ""
+	fixed_inner_start[0]: "ins"
+	fixed_inner_end[0]: "ine"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/props/country/or_graveyard2_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.0601x
+{
+	model_desc: "/model/railing/railroad/or_portland_tram_curve.pmd"
+	name: "or portland tram curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/railing/railroad/or_portland_tram_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+}
+
+curve_model : curve.0601y
+{
+	model_desc: "/model/panorama/or_portland/or_skytrain_line_curve.pmd"
+	name: "or skytrain line curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.0601z
+{
+	model_desc: "/model/tunnel/railway_underpass_2x_curve.pmd"
+	name: "railway underpass 2x curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.06020
+{
+	model_desc: "/model/barrier/wood/stamp_wooden_curve.pmd"
+	name: "stamp wooden curve"
+
+	variation: 2
+	fixed_inner_start: 2
+	fixed_inner_end: 2
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	fixed_inner_start[0]: "ins"
+	fixed_inner_end[0]: "ine"
+	variation[1]: "var2 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0"
+	fixed_inner_start[1]: "ins1"
+	fixed_inner_end[1]: "ine1"
+
+	high_tess: 0
+
+	fixed_step: &3fc00000
+}
+
+curve_model : curve.06021
+{
+	model_desc: "/model/bridge/ut_trail_bridge_metal_curve.pmd"
+	name: "ut trail bridge metal curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.06022
+{
+	model_desc: "/model/bridge/wa_pedestrian_bridge_wooden_curve.pmd"
+	name: "wa pedestrian bridge wooden curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.06023
+{
+	model_desc: "/model/railing/tunnel/wa_tunnel_lights1_curve.pmd"
+	name: "wa tunnel lights1 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.06024
+{
+	model_desc: "/model/wall/invisible_wall_curve.pmd"
+	name: "invisible wall curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+	variation[1]: "var2_low | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.06025
+{
+	model_desc: "/model/vegetation/wa_tomato_field_bump_curve.pmd"
+	name: "wa tomato field bump curve"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2_narrow | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.06026
+{
+	model_desc: "/model/wall/treewalls2_curve.pmd"
+	name: "treewalls2 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.06027
+{
+	model_desc: "/model/vegetation/tree_walls/tree_wall_spruces1_curve.pmd"
+	name: "tree wall spruces1 curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.06028
+{
+	model_desc: "/model/vegetation/tree_walls/tree_wall_birches1_wa_curve.pmd"
+	name: "tree wall birches1 wa curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.06029
+{
+	model_desc: "/model/wall/bushwall_curve.pmd"
+	name: "bushwall curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+}
+
+curve_model : curve.0602a
+{
+	model_desc: "/model/vegetation/hedge/hedge_low_01_curve.pmd"
+	name: "hedge low 01 curve"
+
+	variation: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.0602b
+{
+	model_desc: "/model/vegetation/poly_vegetation/lettuces_curve.pmd"
+	name: "lettuces curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center : 1.0"
+	start_part[0]: "start"
+	end_part[0]: "end"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/vegetation/poly_vegetation/lettuces_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.0602c
+{
+	model_desc: "/model/background/nm_suburb_houses_curve.pmd"
+	name: "nm suburb houses curve"
 
 	variation: 2
 	start_part: 2

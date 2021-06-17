@@ -3699,11 +3699,17 @@ model_def : model.5019
 model_def : model.5021
 {
 	model_desc: "/model/building/country/house1.pmd"
-	static_lod_name[]: "100m"
-	static_lod_path[]: "/model/building/country/house1_lod1.pmd"
+	name: "house1"
 
-	dynamic_lod_desc[]: "/model/building/country/house1_lod1.pmd"
-	dynamic_lod_dist[]: 200
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/country/house1_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/country/house1_lod1.pmd"
+	dynamic_lod_dist[0]: 100
 }
 model_def : model.5022
 {
@@ -7960,6 +7966,7 @@ model_def : model.or_2_mod
 	color_variant[]: "az_sand: | default1 : 194,187,173 | exit : 194,187,173 | fw3 : 194,187,173 | fw4 : 194,187,173 | c212 : 194,187,173 | c11 : 194,187,173 | c_111 : 194,187,173 | vis_212 : 194,187,173 | vis_313 : 194,187,173"
 	color_variant[]: "nm light pink: | default1 : 230,195,185 | exit : 230,195,185 | fw3 : 230,195,185 | fw4 : 230,195,185 | c212 : 230,195,185 | c11 : 230,195,185 | c_111 : 230,195,185 | vis_212 : 230,195,185 | vis_313 : 230,195,185"
 	color_variant[]: "nm dark pink: | default1 : 200,170,155 | exit : 200,170,155 | fw3 : 200,170,155 | fw4 : 200,170,155 | c212 : 200,170,155 | c11 : 200,170,155 | c_111 : 200,170,155 | vis_212 : 200,170,155 | vis_313 : 200,170,155"
+	color_variant[]: "tx_sand | default1 : 255,245,236 | exit : 255,245,236 | fw3 : 255,245,236 | fw4 : 255,245,236 | c212 : 255,245,236 | c11 : 255,245,236 | c_111 : 255,245,236 | vis_212 : 255,245,236 | vis_313 : 255,245,236"
 
 }
 
@@ -7992,6 +7999,8 @@ model_def : model.or_5_mod
 	color_variant[]: "az_sand | width_2 : 194,187,173 | width_3 : 194,187,173 | width_1 : 194,187,173 | fw03 : 194,187,173 | vis_212 : 194,187,173 | vis_313 : 194,187,173"
 	color_variant[]: "nm light pink | width_2 : 230,195,185 | width_3 : 230,195,185 | width_1 : 230,195,185 | fw03 : 230,195,185 | vis_212 : 230,195,185 | vis_313 : 230,195,185"
 	color_variant[]: "nm dark pink | width_2 : 200,170,155 | width_3 : 200,170,155 | width_1 : 200,170,155 | fw03 : 200,170,155 | vis_212 : 200,170,155 | vis_313 : 200,170,155"
+	color_variant[]: "tx_sand | width_2 : 255,245,236 | width_3 : 255,245,236 | width_1 : 255,245,236 | fw03 : 255,245,236 | vis_212 : 255,245,236 | vis_313 : 255,245,236"
+
 
 	auto_compound: false
 }
@@ -8105,6 +8114,7 @@ model_def : model.or_341_mod
 	color_variant[]: "az_sand | fw02 : 194,187,173 | exit_road : 194,187,173 | fw_03 : 194,187,173 | fw_04 : 194,187,173 | c_11 : 194,187,173 | c_212 : 194,187,173 | c_111 : 194,187,173 | vis_212 : 194,187,173 | vis_313 : 194,187,173"
 	color_variant[]: "nm light pink | fw02 : 230,195,185 | exit_road : 230,195,185 | fw_03 : 230,195,185 | fw_04 : 230,195,185 | c_11 : 230,195,185 | c_212 : 230,195,185 | c_111 : 230,195,185 | vis_212 : 230,195,185 | vis_313 : 230,195,185"
 	color_variant[]: "nm dark pink | fw02 : 200,170,155 | exit_road : 200,170,155 | fw_03 : 200,170,155 | fw_04 : 200,170,155 | c_11 : 200,170,155 | c_212 : 200,170,155 | c_111 : 200,170,155 | vis_212 : 200,170,155 | vis_313 : 200,170,255"
+	color_variant[]: "tx_sand | fw02 : 255,245,236 | exit_road : 255,245,236 | fw_03 : 255,245,236 | fw_04 : 255,245,236 | c_11 : 255,245,236 | c_212 : 255,245,236 | c_111 : 255,245,236 | vis_212 : 255,245,236 | vis_313 : 200,170,255"
 }
 
 model_def : model.or_375
@@ -8698,6 +8708,7 @@ model_def : model.or_562
 	color_variant[]: "az_sand: | vis_6 : 194,187,173 | vis_cub : 194,187,173 | vis_cyl : 194,187,173"
 	color_variant[]: "nm light pink: | vis_6 : 230,195,185 | vis_cub : 230,195,185 | vis_cyl : 230,195,185"
 	color_variant[]: "nm dark pink: | vis_6 : 200,170,155 | vis_cub : 200,170,155 | vis_cyl : 200,170,155"
+	color_variant[]: "tx_sand | vis_6 : 255,245,236 | vis_cub : 255,245,236 | vis_cyl : 255,245,236"
 
 	auto_compound: false
 
@@ -8778,6 +8789,7 @@ model_def : model.or_293
 	color_variant[]: "az_sand | fwy22 : 194,187,173 | ex : 194,187,173 | fwy02 : 194,187,173 | fwy03 : 194,187,173 | vis_212 : 194,187,173 | vis_313 : 194,187,173"
 	color_variant[]: "nm light pink | fwy22 : 230,195,185 | ex : 230,195,185 | fwy02 : 230,195,185 | fwy03 : 230,195,185 | vis_212 : 230,195,185 | vis_313 : 230,195,185"
 	color_variant[]: "nm dark pink | fwy22 : 200,170,155 | ex : 200,170,155 | fwy02 : 200,170,155 | fwy03 : 200,170,155 | vis_212 : 200,170,155 | vis_313 : 200,170,155"
+	color_variant[]: "tx_sand | fwy22 : 255,245,236 | ex : 255,245,236 | fwy02 : 255,245,236 | fwy03 : 255,245,236 | vis_212 : 255,245,236 | vis_313 : 255,245,236"
 
 }
 
@@ -9029,6 +9041,7 @@ model_def : model.or_4_mod
 	color_variant[]: "az_sand | fw02 : 194,187,173 | er : 194,187,173 | c_11 : 194,187,173"
 	color_variant[]: "nm light pink | fw02 : 230,195,185 | er : 230,195,185 | c_11 : 230,195,185"
 	color_variant[]: "nm dark pink | fw02 : 200,170,155 | er : 200,170,155 | c_11 : 200,170,155"
+	color_variant[]: "tx_sand | fw02 : 255,245,236 | er : 255,245,236 | c_11 : 255,245,236"
 
 }
 
@@ -9041,6 +9054,7 @@ model_def : model.or_1_mod
 	color_variant[]: "az_sand | default1 : 194,187,173 | double : 194,187,173 | exit_road : 194,187,173 | fw_03 : 194,187,173 | fw_04 : 194,187,173 | c_11 : 194,187,173 | c_212 : 194,187,173 | c_111 : 194,187,173 | c_021 : 194,187,173 | vis_212 : 194,187,173 | vis_313 : 194,187,173"
 	color_variant[]: "nm light pink | default1 : 230,195,185 | double : 230,195,185 | exit_road : 230,195,185 | fw_03 : 230,195,185 | fw_04 : 230,195,185 | c_11 : 230,195,185 | c_212 : 230,195,185 | c_111 : 230,195,185 | c_021 : 230,195,185 | vis_212 : 230,195,185 | vis_313 : 230,195,185"
 	color_variant[]: "nm dark pink | default1 : 200,170,155 | double : 200,170,155 | exit_road : 200,170,155 | fw_03 : 200,170,155 | fw_04 : 200,170,155 | c_11 : 200,170,155 | c_212 : 200,170,155 | c_111 : 200,170,155 | c_021 : 200,170,155 | vis_212 : 200,170,155 | vis_313 : 200,170,155"
+	color_variant[]: "tx_sand | default1 : 255,245,236 | double : 255,245,236 | exit_road : 255,245,236 | fw_03 : 255,245,236 | fw_04 : 255,245,236 | c_11 : 255,245,236 | c_212 : 255,245,236 | c_111 : 255,245,236 | c_021 : 255,245,236 | vis_212 : 255,245,236 | vis_313 : 255,245,236"
 
 }
 
@@ -9055,6 +9069,7 @@ model_def : model.or_3_mod
 	color_variant[]: "az_sand | c_11 : 194,187,173 | c_111 : 194,187,173 | c_212 : 194,187,173 | default1 : 194,187,173 | exit_01 : 194,187,173 | fw_03 : 194,187,173 | fw_04 : 194,187,173 | vis_213 : 194,187,173 | vis_313 : 194,187,173"
 	color_variant[]: "nm light pink | c_11 : 230,195,185 | c_111 : 230,195,185 | c_212 : 230,195,185 | default1 : 230,195,185 | exit_01 : 230,195,185 | fw_03 : 230,195,185 | fw_04 : 230,195,185 | vis_213 : 230,195,185 | vis_313 : 230,195,185"
 	color_variant[]: "nm dark pink | c_11 : 200,170,155 | c_111 : 200,170,155 | c_212 : 200,170,155 | default1 : 200,170,155 | exit_01 : 200,170,155 | fw_03 : 200,170,155 | fw_04 : 200,170,155 | vis_213 : 200,170,155 | vis_313 : 200,170,155"
+	color_variant[]: "tx_sand | c_11 : 255,245,236 | c_111 : 255,245,236 | c_212 : 255,245,236 | default1 : 255,245,236 | exit_01 : 255,245,236 | fw_03 : 255,245,236 | fw_04 : 255,245,236 | vis_213 : 255,245,236 | vis_313 : 255,245,236"
 
 }
 
@@ -9067,12 +9082,20 @@ model_def : model.or_294
 	color_variant[]: "az_sand | fwy22 : 194,187,173 | ex : 194,187,173 | fwy02 : 194,187,173 | fwy03 : 194,187,173"
 	color_variant[]: "nm light pink | fwy22 : 230,195,185 | ex : 230,195,185 | fwy02 : 230,195,185 | fwy03 : 230,195,185"
 	color_variant[]: "nm dark pink | fwy22 : 200,170,155 | ex : 200,170,155 | fwy02 : 200,170,155 | fwy03 : 200,170,155"
+	color_variant[]: "tx_sand | fwy22 : 255,245,236 | ex : 255,245,236 | fwy02 : 255,245,236 | fwy03 : 255,245,236"
 
 }
 
 model_def : model.or_371
 {
 	model_desc: "/model/railing/bridge/us_bridge_pillar_04_exit.pmd"
+
+	color_variant[]: "or_light | vis : 255,255,255"
+	color_variant[]: "wa_dark | vis : 160,155,154"
+	color_variant[]: "az_sand | vis : 194,187,173"
+	color_variant[]: "nm light pink | vis : 230,195,185"
+	color_variant[]: "nm dark pink | vis : 200,170,155"
+	color_variant[]: "tx_sand | vis : 255,245,236"
 }
 
 model_def : model.1046
@@ -18012,6 +18035,7 @@ model_def : model.2k001
 	color_variant[]: "az_sand | fw02 : 194,187,173 | fw_04 : 194,187,173 | exit : 194,187,173 | fw03 : 194,187,173"
 	color_variant[]: "nm light pink | fw02 : 230,195,185 | fw_04 : 230,195,185 | exit : 230,195,185 | fw03 : 230,195,185"
 	color_variant[]: "nm dark pink | fw02 : 200,170,155 | fw_04 : 200,170,155 | exit : 200,170,155 | fw03 : 200,170,155"
+	color_variant[]: "tx_sand | fw02 : 255,245,236 | fw_04 : 255,245,236 | exit : 255,245,236 | fw03 : 255,245,236"
 
 }
 
@@ -24597,16 +24621,31 @@ model_def : model.co_1x001
 {
 	model_desc: "/model/rock/co_rock_formation_vertical_1.pmd"
 	name: "co rock formation vertical 1"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/co_rock_formation_vertical_1_lod1.pmd"
+	dynamic_lod_dist[0]: 125
 }
 model_def : model.co_1x002
 {
 	model_desc: "/model/rock/co_rock_formation_vertical_2.pmd"
 	name: "co rock formation vertical 2"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/co_rock_formation_vertical_2_lod1.pmd"
+	dynamic_lod_dist[0]: 125
 }
 model_def : model.co_1x003
 {
 	model_desc: "/model/rock/co_rock_formation_vertical_3.pmd"
 	name: "co rock formation vertical 3"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/co_rock_formation_vertical_3_lod1.pmd"
+	dynamic_lod_dist[0]: 125
 }
 model_def : model.co_1x004
 {
@@ -27658,6 +27697,21 @@ model_def : model.05002
 {
 	model_desc: "/model/advert/billboard/wy_billboard_livestock_auction.pmd"
 	name: "wy billboard livestock auction"
+
+	dynamic_lod_desc[]: "/model/advert/billboard/wy_billboard_livestock_auction_lod1.pmd"
+	dynamic_lod_dist[]: 75
+}
+
+model_def : model.05003
+{
+	model_desc: "/model/advert/wy_prime_rib_totem.pmd"
+	name: "wy prime rib totem"
+}
+
+model_def : model.05004
+{
+	model_desc: "/model/advert/wy_annies_totem.pmd"
+	name: "wy annies totem"
 }
 
 }

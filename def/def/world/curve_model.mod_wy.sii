@@ -234,4 +234,34 @@ curve_model : curve.wy_1p003
 	smooth_surface: true
 }
 
+curve_model : curve.wy_23001
+{
+	model_desc: "/model/vehicle/train/wagon_coal_curve_.pmd"
+	name: "wagon coal curve "
+	
+	variation: 2
+	start_part: 2
+	end_part: 2
+	
+	variation[0]: "yellow_empty | ye_1 : 1.0"
+	variation[1]: "yellow_full | yf_1 : 1.0"
+	start_part[0]: "start"
+	start_part[1]: "start"
+	end_part[0]: "end"
+	end_part[1]: "end"
+
+	high_tess: 0
+}
+curve_model : curve.wy_1x001
+{
+	model_desc: "/model/rock/wy_rock_formation_vertical.pmd"
+	name: "wy rock formation vertical"
+
+	variation: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+
+	high_tess: 1
+	high_tess[0]: "var1"
+}
+
 }
