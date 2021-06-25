@@ -410,3 +410,140 @@ traffic_spawn_condition: .f350_amb.co_pdqw.condition.city
 	type: city
     str_param[]: "pueblo"
 }
+
+########################################## WYOMING #####################################
+
+traffic_vehicle : traffic.f350_amb.wy
+{
+	accessories[]: .f350_amb.wy.chassis
+	accessories[]: .f350_amb.wy.fwheel
+	accessories[]: .f350_amb.wy.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	prefer_variant: true
+	variant[]: traffic.f350_amb.wy_pdqw
+	variant[]: traffic.f350_amb.wy_ca
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	spawn_ratio: 0
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.wy.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/wy.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.wy.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.wy.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+
+########################### WY - Cheyenne - PDQW ##################################
+
+traffic_vehicle : traffic.f350_amb.wy_pdqw
+{
+	accessories[]: .f350_amb.wy_pdqw.chassis
+	accessories[]: .f350_amb.wy_pdqw.fwheel
+	accessories[]: .f350_amb.wy_pdqw.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	spawn_condition[]: .f350_amb.wy_pdqw.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.wy_pdqw.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/wy_pdqw.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.wy_pdqw.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.wy_pdqw.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.wy_pdqw.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "cheyenne"
+}
+
+########################### WY - Cheyenne - PDQW ##################################
+
+traffic_vehicle : traffic.f350_amb.wy_ca
+{
+	accessories[]: .f350_amb.wy_ca.chassis
+	accessories[]: .f350_amb.wy_ca.fwheel
+	accessories[]: .f350_amb.wy_ca.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+
+	spawn_condition[]: .f350_amb.wy_ca.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.wy_ca.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/wy_ca.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.wy_ca.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.wy_ca.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.wy_ca.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "casper"
+}

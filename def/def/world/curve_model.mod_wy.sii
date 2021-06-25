@@ -234,21 +234,52 @@ curve_model : curve.wy_1p003
 	smooth_surface: true
 }
 
+curve_model : curve.wy_1p005
+{
+	model_desc: "/model/rock/wy_hells_half_acre_curve_01_far.pmd"
+	name: "wy hells half acre curve 01 far"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 0.0 | center3 : 0.0 | center5 : 0.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
 curve_model : curve.wy_23001
 {
 	model_desc: "/model/vehicle/train/wagon_coal_curve_.pmd"
 	name: "wagon coal curve "
-	
-	variation: 2
-	start_part: 2
-	end_part: 2
-	
-	variation[0]: "yellow_empty | ye_1 : 1.0"
-	variation[1]: "yellow_full | yf_1 : 1.0"
+
+	variation: 5
+	start_part: 5
+	end_part: 5
+
+	variation[0]: "yellow_empty | ye_1,ye_2,ye_3 : 1.0 | ye_2,ye_3,ye_1 : 1.0 | ye_3,ye_1,ye_2 : 1.0"
+	variation[1]: "yellow_full | yf_1,yf_2,yf_3 : 1.0 | yf_2,yf_3,yf_1 : 1.0 | yf_3,yf_1,yf_2 : 1.0"
+	variation[2]: "blue_empty | be_1,be_2 : 1.0"
+	variation[3]: "blue_full | bf_1,bf_2 : 1.0"
+	variation[4]: "green_full | gf_1,gf_2 : 1.0"
 	start_part[0]: "start"
 	start_part[1]: "start"
+	start_part[2]: "start"
+	start_part[3]: "start"
+	start_part[4]: "start"
 	end_part[0]: "end"
 	end_part[1]: "end"
+	end_part[2]: "end"
+	end_part[3]: "end"
+	end_part[4]: "end"
+	
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/vehicle/train/wagon_coal_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/vehicle/train/wagon_coal_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 70
 
 	high_tess: 0
 }

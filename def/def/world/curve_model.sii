@@ -2166,8 +2166,15 @@ curve_model : curve.ut_33
 	name: "ut_hill_eroded_curve1"
 	model_desc: "/model/rock/hills/ut_hill_eroded2.pmd"
 
-	variation[]: "var1 | p1,p2 : 1.0"
-	variation[]: "var2 | p2,p1 : 1.0"
+	variation[]: "var1 | center1,center2 : 1.0"
+	variation[]: "var2 | center2,center1 : 1.0"
+    
+    dynamic_lod_desc: 2
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/hills/ut_hill_eroded2_lod1.pmd"
+	dynamic_lod_dist[0]: 150
+    dynamic_lod_desc[1]: "/model/rock/hills/ut_hill_eroded2_lod2.pmd"
+	dynamic_lod_dist[1]: 300
 
 	smooth_surface: true
 }
@@ -3018,16 +3025,16 @@ curve_model : curve.ut_06004
 }
 curve_model : curve.1x004
 {
-	model_desc: "/model/water/river_curve2.pmd"
-	name: "river curve2"
+	model_desc: "/model/water/river.pmd"
+	name: "river"
 
-	variation: 6
-	variation[0]: "line | line1a,line1b : 1.0 | line2a,line2b : 1.0"
-	variation[1]: "sandy_right | sandy_r4,sandy_r3,sandy_r2,sandy_r1 : 1.0"
-	variation[2]: "sandy_left | sandy_l4,sandy_l3,sandy_l2,sandy_l1 : 1.0"
-	variation[3]: "line_nograss | line1a_nogr,line1b_nogr : 1.0 | line2a_nogr,line2b_nogr : 1.0"
-	variation[4]: "snd_r_nogras | sand_r4_nogr,sand_r3_nogr,sand_r2_nogr,sand_r1_nogr : 1.0"
-	variation[5]: "snd_l_nogras | sand_l4_nogr,sand_l3_nogr,sand_l2_nogr,sand_l1_nogr : 1.0"
+    variation: 6
+	variation[0]: "line | center1,center2 : 1.0 | center3,center4 : 1.0"
+	variation[1]: "sandy_right | center5,center6,center7,center8 : 1.0"
+	variation[2]: "sandy_left | center9,center10,center11,center12 : 1.0"
+	variation[3]: "line_nograss | center13,center14 : 1.0 | center15,center16 : 1.0"
+	variation[4]: "snd_r_nogras | center17,center18,center19,center20 : 1.0"
+	variation[5]: "snd_l_nogras | center21,center22,center23,center24 : 1.0"
 
 	high_tess[]: line
 	high_tess[]: sandy_right
@@ -3039,16 +3046,16 @@ curve_model : curve.1x004
 
 curve_model : curve.1x005
 {
-	model_desc: "/model/water/river_curve2_narrow.pmd"
-	name: "river curve2 narrow"
+	model_desc: "/model/water/river_narrow.pmd"
+	name: "river narrow"
 
-	variation: 6
-	variation[0]: "line | line1a,line1b : 1.0 | line2a,line2b : 1.0"
-	variation[1]: "sandy_right | sandy_r4,sandy_r3,sandy_r2,sandy_r1 : 1.0"
-	variation[2]: "sandy_left | sandy_l4,sandy_l3,sandy_l2,sandy_l1 : 1.0"
-	variation[3]: "line_nograss | line1a_nogr,line1b_nogr : 1.0 | line2a_nogr,line2b_nogr : 1.0"
-	variation[4]: "snd_r_nogras | sand_r4_nogr,sand_r3_nogr,sand_r2_nogr,sand_r1_nogr : 1.0"
-	variation[5]: "snd_l_nogras | sand_l4_nogr,sand_l3_nogr,sand_l2_nogr,sand_l1_nogr : 1.0"
+    variation: 6
+	variation[0]: "line | center1,center2 : 1.0 | center3,center4 : 1.0"
+	variation[1]: "sandy_right | center5,center6,center7,center8 : 1.0"
+	variation[2]: "sandy_left | center9,center10,center11,center12 : 1.0"
+	variation[3]: "line_nograss | center13,center14 : 1.0 | center15,center16 : 1.0"
+	variation[4]: "snd_r_nogras | center17,center18,center19,center20 : 1.0"
+	variation[5]: "snd_l_nogras | center21,center22,center23,center24 : 1.0"
 
 	high_tess[]: line
 	high_tess[]: sandy_right
@@ -3082,10 +3089,10 @@ curve_model : curve.1x007
 
 	variation: 4
 
-	variation[0]: "narrow | sandy_l4,sandy_l3,sandy_l2,sandy_l1 : 1.0"
-	variation[1]: "nrw_nogras | sand_l4_nogr,sand_l3_nogr,sand_l2_nogr,sand_l1_nogr : 1.0"
-	variation[2]: "sand | sandy_r4,sandy_r3,sandy_r2,sandy_r1 : 1.0"
-	variation[3]: "sand_nogras | sand_r4_nogr,sand_r3_nogr,sand_r2_nogr,sand_r1_nogr : 1.0"
+	variation[0]: "narrow | center9,center10,center11,center12 : 1.0"
+	variation[1]: "nrw_nogras | center21,center22,center23,center24 : 1.0"
+	variation[2]: "sand | center5,center6,center7,center8 : 1.0"
+	variation[3]: "sand_nogras | center17,center18,center19,center20 : 1.0"
 
 
 	high_tess[]: narrow
@@ -7451,10 +7458,15 @@ curve_model : curve.reskin_12001
 	model_desc: "/model/panorama/ca_us101/ca_wooden_store_props_curve.pmd"
 	name: "ca wooden store props curve"
 
-	variation: 1
+	variation: 2
 	variation[0]: "v1 | center1,center2,center3,center4 : 1.0 | center5,center6,center7 : 1.0"
+	variation[1]: "v2 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0"
 
-	overlay: 7
+	start_part: 0
+
+	end_part: 0
+
+	overlay: 14
 	overlay[0]: "center1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
 	overlay[1]: "center2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
 	overlay[2]: "center3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
@@ -7462,8 +7474,22 @@ curve_model : curve.reskin_12001
 	overlay[4]: "center5 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
 	overlay[5]: "center6 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
 	overlay[6]: "center7 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[7]: "center8 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[8]: "center9 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[9]: "center10 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[10]: "center11 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[11]: "center12 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[12]: "center13 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[13]: "center14 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
 
 	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/panorama/ca_us101/ca_wooden_store_props_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 80
+	dynamic_lod_desc[1]: "/model/panorama/ca_us101/ca_wooden_store_props_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 150
 }
 
 curve_model : curve.reskin_12002
@@ -8146,6 +8172,127 @@ curve_model : curve.wy_2o002
 	variation[1]: "4m | cent_0_4 : 1.0"
 	start_part[1]: "start_0_4 | start_1_4"
 	end_part[1]: "end_0_4 | end_1_4"
+
+	high_tess: 0
+}
+curve_model : curve.tx_15003
+{
+	model_desc: "/model/tx_dirt_road.pmd"
+	name: "tx dirt road"
+
+	variation: 2
+	variation[0]: "dirt | center1,center2,center3 : 1.0"
+	variation[1]: "gravel | center4,center5,center6 : 1.0"
+
+	start_part: 2
+	start_part[0]: "start1"
+	start_part[1]: "start2"
+
+	end_part: 2
+	end_part[0]: "end1"
+	end_part[1]: "end2"
+
+	high_tess: 2
+	high_tess[0]: "dirt"
+	high_tess[1]: "gravel"
+
+	smooth_surface: true
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/tx_dirt_road_lod1.pmd"
+	dynamic_lod_dist[0]: 250
+}
+
+curve_model : curve.tx_15004
+{
+	model_desc: "/model/tx_mud_road.pmd"
+	name: "tx mud road"
+
+	variation: 1
+	variation[0]: "default1 | center1,center2,center3,center4,center5 : 1.0"
+
+	start_part: 1
+	start_part[0]: "start1"
+
+	end_part: 1
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "default1"
+
+	smooth_surface: true
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/tx_mud_road_lod1.pmd"
+	dynamic_lod_dist[0]: 250
+}
+
+curve_model : curve.tx_15005
+{
+	model_desc: "/model/tx_grass_road.pmd"
+	name: "tx grass road"
+
+	variation: 1
+	variation[0]: "default1 | center1,center2,center3 : 1.0"
+
+	start_part: 1
+	start_part[0]: "start1"
+
+	end_part: 1
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "default1"
+
+	smooth_surface: true
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/tx_grass_road_lod1.pmd"
+	dynamic_lod_dist[0]: 250
+}
+
+curve_model : curve.1u003
+{
+	model_desc: "/model/vegetation/bushes/wall_creeper_bottom_curve.pmd"
+	name: "wall creeper bottom curve"
+	variation[]: "1m | center1 : 1.0"
+	variation[]: "2m | center2 : 1.0"
+	variation[]: "3m | center3 : 1.0"
+	variation[]: "lines | center4 : 1.0"
+	high_tess: 0
+
+	dynamic_lod_desc[0]: "/model/vegetation/bushes/wall_creeper_bottom_curve_lod.pmd"
+	dynamic_lod_dist[0]: 400
+
+}
+curve_model : curve.1u004
+{
+	model_desc: "/model/vegetation/bushes/wall_creeper_top_curve.pmd"
+	name: "wall creeper top curve"
+	variation[]: "1m | center3 : 1.0"
+	variation[]: "2m | center2 : 1.0"
+	variation[]: "3m | center1 : 1.0"
+	variation[]: "lines | center4 : 1.0"
+	high_tess: 0
+
+	dynamic_lod_desc[0]: "/model/vegetation/bushes/wall_creeper_top_curve_lod.pmd"
+	dynamic_lod_dist[0]: 400
+}
+
+curve_model : curve.tx_2b001
+{
+	model_desc: "/model/panorama/rest_stop/tx_bell_county/tx_bell_county_wood_barrier.pmd"
+	name: "tx bell county wood barrier"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "variant1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
 
 	high_tess: 0
 }

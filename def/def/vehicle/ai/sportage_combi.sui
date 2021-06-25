@@ -1,0 +1,43 @@
+traffic_vehicle : traffic.sport_combi
+{
+	accessories[]: .sport_combi.chassis
+	accessories[]: .sport_combi.fwheel
+	accessories[]: .sport_combi.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	color[]: (0.0685, 0.1248, 0.1812) #BLUE
+	color[]: (0.3662, 0.3277, 0.2788) #silver
+	color[]: (0.6, 0.6, 0.6)          #GRAY
+	color[]: (0.0284, 0.0467, 0.0723) #Darck BLUE
+	color[]: (0.1195, 0.0006, 0.0129) #PURPLE
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+	color[]: (0.0202, 0.0212, 0.0193) #black
+
+	vehicle_mass: 1700
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .sport_combi.chassis
+{
+	data_path: "/def/vehicle/ai/sportage_combi/chassis.sii"
+}
+
+vehicle_wheel_accessory: .sport_combi.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_o_1.sii"
+}
+
+vehicle_wheel_accessory: .sport_combi.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_o_1.sii"
+}

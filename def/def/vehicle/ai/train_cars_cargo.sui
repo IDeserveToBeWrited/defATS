@@ -737,3 +737,48 @@ vehicle_wheel_accessory: .wood_e.trwheel3
 	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
 }
 
+
+traffic_trailer : train_car.cargo.coal
+{
+	accessories[]: .coal.tchassis
+	accessories[]: .coal.trwheel0
+	accessories[]: .coal.trwheel1
+	accessories[]: .coal.trwheel2
+	accessories[]: .coal.trwheel3
+
+	displacement_limit: 0.0
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+	
+	lod_dist[]: 53
+	lod_dist[]: 70
+}
+
+vehicle_accessory: .coal.tchassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_coal.sii"
+}
+
+vehicle_wheel_accessory: .coal.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .coal.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .coal.trwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .coal.trwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}

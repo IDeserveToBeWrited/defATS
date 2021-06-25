@@ -102,7 +102,9 @@ road_look : road.us_tmpl0
 	lanes_right[]: traffic_lane.road.freeway
 
 	template_variants_right[]: .tmpl_var.right.road.us_tmpl0
+	template_variants_right[]: .tmpl_var.right.road.us_tmpl0b
 	template_variants_left[]: .tmpl_var.left.road.us_tmpl0
+	template_variants_left[]: .tmpl_var.left.road.us_tmpl0b
 
 	compatible_edges_right[]: "sh"
 	compatible_edges_right[]: "sh_fw"
@@ -140,12 +142,28 @@ road_template_variant : .tmpl_var.right.road.us_tmpl0
 	lanes_right[]: traffic_lane.road.freeway
 }
 
+road_template_variant : .tmpl_var.right.road.us_tmpl0b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+}
+
 road_template_variant : .tmpl_var.left.road.us_tmpl0
 {
 	variant_names[]: "no_trucks_in"
 
 	lanes_left[]: traffic_lane.road.freeway.no_trucks
 	lanes_left[]: traffic_lane.road.freeway
+}
+
+road_template_variant : .tmpl_var.left.road.us_tmpl0b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_left[]: traffic_lane.road.freeway.full_out
+	lanes_left[]: traffic_lane.road.freeway.full_in
 }
 
 road_look : road.us_tmpl1
@@ -162,7 +180,9 @@ road_look : road.us_tmpl1
 	lanes_right[]: traffic_lane.road.freeway
 
 	template_variants_right[]: .tmpl_var.right.road.us_tmpl1
+	template_variants_right[]: .tmpl_var.right.road.us_tmpl1b
 	template_variants_left[]: .tmpl_var.left.road.us_tmpl1
+	template_variants_left[]: .tmpl_var.left.road.us_tmpl1b
 
 	compatible_edges_right[]: "sh"
 	compatible_edges_right[]: "sh_hw"
@@ -182,12 +202,28 @@ road_template_variant : .tmpl_var.right.road.us_tmpl1
 	lanes_right[]: traffic_lane.road.freeway
 }
 
+road_template_variant : .tmpl_var.right.road.us_tmpl1b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+}
+
 road_template_variant : .tmpl_var.left.road.us_tmpl1
 {
 	variant_names[]: "no_trucks_in"
 
 	lanes_left[]: traffic_lane.road.freeway.no_trucks
 	lanes_left[]: traffic_lane.road.freeway
+}
+
+road_template_variant : .tmpl_var.left.road.us_tmpl1b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_left[]: traffic_lane.road.freeway.full_out
+	lanes_left[]: traffic_lane.road.freeway.full_in
 }
 
 road_look : road.us_tmpl3
@@ -204,7 +240,9 @@ road_look : road.us_tmpl3
 	lanes_right[]: traffic_lane.road.freeway
 
 	template_variants_right[]: .tmpl_var.right.road.us_tmpl3
+	template_variants_right[]: .tmpl_var.right.road.us_tmpl3b
 	template_variants_left[]: .tmpl_var.left.road.us_tmpl3
+	template_variants_left[]: .tmpl_var.left.road.us_tmpl3b
 
 	compatible_edges_right[]: "sh"
 
@@ -222,12 +260,28 @@ road_template_variant : .tmpl_var.right.road.us_tmpl3
 	lanes_right[]: traffic_lane.road.freeway
 }
 
+road_template_variant : .tmpl_var.right.road.us_tmpl3b
+{
+	variant_names[]: "no_trucks_in"
+
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+}
+
 road_template_variant : .tmpl_var.left.road.us_tmpl3
 {
 	variant_names[]: "no_trucks_in"
 
 	lanes_left[]: traffic_lane.road.freeway.no_trucks
 	lanes_left[]: traffic_lane.road.freeway
+}
+
+road_template_variant : .tmpl_var.left.road.us_tmpl3b
+{
+	variant_names[]: "no_trucks_in"
+
+	lanes_left[]: traffic_lane.road.freeway.full_out
+	lanes_left[]: traffic_lane.road.freeway.full_in
 }
 
 road_look : road.us_tmpl11
@@ -855,7 +909,9 @@ road_look : road.us_tmpl2
 	lanes_right[]: traffic_lane.road.freeway
 
 	template_variants_right[]: .tmpl_var.right.road.us_tmpl2
+	template_variants_right[]: .tmpl_var.right.road.us_tmpl2b
 	template_variants_left[]: .tmpl_var.left.road.us_tmpl2
+	template_variants_left[]: .tmpl_var.left.road.us_tmpl2b
 
 	compatible_edges_right[]: "sh"
 
@@ -873,12 +929,28 @@ road_template_variant : .tmpl_var.right.road.us_tmpl2
 	lanes_right[]: traffic_lane.road.freeway
 }
 
+road_template_variant : .tmpl_var.right.road.us_tmpl2b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+}
+
 road_template_variant : .tmpl_var.left.road.us_tmpl2
 {
 	variant_names[]: "no_trucks_in"
 
 	lanes_left[]: traffic_lane.road.freeway.no_trucks
 	lanes_left[]: traffic_lane.road.freeway
+}
+
+road_template_variant : .tmpl_var.left.road.us_tmpl2b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_left[]: traffic_lane.road.freeway.full_out
+	lanes_left[]: traffic_lane.road.freeway.full_in
 }
 
 road_look : road.us_tmp20
@@ -3713,7 +3785,9 @@ road_look : road.us_tmp39
 	lanes_right[]: traffic_lane.road.freeway
 
 	template_variants_right[]: .tmpl_var.right.road.us_tmp39
+	template_variants_right[]: .tmpl_var.right.road.us_tmp39b
 	template_variants_left[]: .tmpl_var.left.road.us_tmp39
+	template_variants_left[]: .tmpl_var.left.road.us_tmp39b
 
 	compatible_edges_right[]: "sh"
 
@@ -3732,12 +3806,28 @@ road_template_variant : .tmpl_var.right.road.us_tmp39
 	lanes_right[]: traffic_lane.road.freeway
 }
 
+road_template_variant : .tmpl_var.right.road.us_tmp39b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+}
+
 road_template_variant : .tmpl_var.left.road.us_tmp39
 {
 	variant_names[]: "no_trucks_in"
 
 	lanes_left[]: traffic_lane.road.freeway.no_trucks
 	lanes_left[]: traffic_lane.road.freeway
+}
+
+road_template_variant : .tmpl_var.left.road.us_tmp39b
+{
+	variant_names[]: "brd_ful"
+
+	lanes_left[]: traffic_lane.road.freeway.full_out
+	lanes_left[]: traffic_lane.road.freeway.full_in
 }
 
 road_look : road.us_tmpl40

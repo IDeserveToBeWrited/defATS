@@ -458,6 +458,11 @@ traffic_rule_data : traffic_rule.rail_train_w
 	additional_rules[]: traffic_rule.private_area
 }
 
+traffic_rule_data : traffic_rule.horn_on
+{
+	rule: "horn"
+}
+
 traffic_rule_data : traffic_rule.rail_cross
 {
 	# name: [prefab] Rail crossing
@@ -473,6 +478,7 @@ traffic_rule_data : traffic_rule.rail_cross
 
 	additional_rules[]: traffic_rule.lights_on
 	additional_rules[]: traffic_rule.private_area
+	additional_rules[]: traffic_rule.horn_on
 }
 
 traffic_rule_data : traffic_rule.rail_tram
