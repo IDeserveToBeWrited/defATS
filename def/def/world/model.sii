@@ -5436,7 +5436,7 @@ model_def : model.nm_999
 	dynamic_lod_desc[]: "/model/building/country/nm_barn_1_lod1.pmd"
 	dynamic_lod_dist[]: 50
 	dynamic_lod_desc[]: "/model/building/country/nm_barn_1_lod2.pmd"
-	dynamic_lod_dist[]: 150
+	dynamic_lod_dist[]: 200
 }
 
 model_def : model.nm_1000
@@ -17814,18 +17814,17 @@ model_def : model.ut_412
 model_def : model.ut_429
 {
 	model_desc: "/model/building/industrial/ut_mine_building1.pmd"
+	name: "ut mine building1"
 
-	static_lod_name[]: "LOD - 100m"
-	static_lod_path[]: "/model/building/industrial/ut_mine_building1_lod1.pmd"
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/industrial/ut_mine_building1_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
 
-	static_lod_name[]: "LOD - 250m"
-	static_lod_path[]: "/model/building/industrial/ut_mine_building1_lod2.pmd"
-
-	dynamic_lod_desc[]: "/model/building/industrial/ut_mine_building1_lod1.pmd"
-	dynamic_lod_dist[]: 100
-
-	dynamic_lod_desc[]: "/model/building/industrial/ut_mine_building1_lod2.pmd"
-	dynamic_lod_dist[]: 250
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/industrial/ut_mine_building1_lod1.pmd"
+	dynamic_lod_dist[0]: 100
 }
 model_def : model.ut_431
 {
@@ -21700,16 +21699,19 @@ model_def : model.id_1c00c
 	name: "id motel 01"
 
 	color_variant: 3
-	color_variant[0]: "white | v0_c1 : 234,234,228 | v0_c2 : 222,222,216 | v0_c3 : 222,235,241 | v1_c1 : 234,234,228 | v1_c2 : 222,222,216 | v2_c3 : 222,235,241 | v3_c1 : 234,234,228 | v3_c3 : 222,235,241 | v4_c1 : 234,234,228 | v4_c2 : 222,222,216 | v4_c3 : 222,235,241 | v5_c1 : 234,234,228 | v5_c3 : 222,235,241"
-	color_variant[1]: "sand | v0_c1 : 219,206,175 | v0_c2 : 200,188,160 | v0_c3 : 158,183,196 | v1_c1 : 219,206,175 | v1_c2 : 200,188,160 | v2_c3 : 158,183,196 | v3_c1 : 219,206,175 | v3_c3 : 158,183,196 | v4_c1 : 219,206,175 | v4_c2 : 200,188,160 | v4_c3 : 158,183,196 | v5_c1 : 219,206,175 | v5_c3 : 158,183,196"
-	color_variant[2]: "brown | v0_c1 : 202,185,168 | v0_c2 : 168,153,140 | v0_c3 : 172,188,196 | v1_c1 : 202,184,168 | v1_c2 : 168,153,140 | v2_c3 : 172,188,196 | v3_c1 : 202,184,168 | v3_c3 : 172,188,196 | v4_c1 : 202,184,168 | v4_c2 : 168,153,140 | v4_c3 : 172,188,196 | v5_c1 : 202,184,168 | v5_c3 : 172,188,196"
+	color_variant[0]: "white | *_c1 : 222,222,216 | *_c2 : 222,235,241 | *_c3 : 234,234,228 | *_c4 : 234,234,228"
+	color_variant[1]: "sand | *_c1 : 200,188,160 | *_c2 : 158,183,196 | *_c3 : 219,206,175 | *_c4 : 219,206,175"
+	color_variant[2]: "brown | *_c1 : 168,153,140 | *_c2 : 172,188,196 | *_c3 : 202,184,168 | *_c4 : 202,185,168"
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
+	static_lod_path: 1
+	static_lod_name: 1
+	static_lod_path[0]: "/model/building/hotel/id_motel_01_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
 	dynamic_lod_desc[0]: "/model/building/hotel/id_motel_01_lod1.pmd"
-	dynamic_lod_dist[0]: 80
-	dynamic_lod_desc[1]: "/model/building/hotel/id_motel_01_lod2.pmd"
-	dynamic_lod_dist[1]: 160
+	dynamic_lod_dist[0]: 100
 }
 
 model_def : model.id_1c00d
@@ -27924,6 +27926,15 @@ model_def : model.05006
 {
 	model_desc: "/model/advert/wy_steakhouse1_totem.pmd"
 	name: "wy steakhouse1 totem"
+}
+
+model_def : model.05003
+{
+	model_desc: "/model/props/street/art/bear_statue.pmd"
+	name: "bear statue"
+
+	dynamic_lod_desc[]: "/model/props/street/art/bear_statue_lod1.pmd"
+	dynamic_lod_dist[]: 50
 }
 
 }

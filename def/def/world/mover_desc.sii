@@ -684,8 +684,73 @@ mover_desc : mover_desc.servman_v3
 	group_tags[]: cauca
 	group_tags[]: service_v3
 }
+#####################################################################################
+#####definition for worker with big container as props - bug :mantis: QA-133154 #####
+#####################################################################################
+
+mover_desc : mover_desc.nk_servman
+{
+	model_desc: "/model/mover/characters/new_generation/new/models/man/serviceman/ngn_serviceman_lod0.pmd"
+
+	variants[]: cenda
+	variants[]: nemiro
+	variants[]: diego
+	variants[]: filip
+	variants[]: hynek
+	variants[]: johnny
+
+	lods[0]: "/model/mover/characters/new_generation/new/models/man/serviceman/ngn_serviceman_lod1.pmd"
+	lods[1]: "/model/mover/characters/new_generation/new/models/man/serviceman/ngn_serviceman_lod2.pmd"
+	lods[2]: "/model/mover/characters/new_generation/new/models/man/serviceman/ngn_serviceman_lod3.pmd"
+	lods[3]: ""
+
+	lod_distances[0]: 18
+	lod_distances[1]: 49
+	lod_distances[2]: 128
+	lod_distances[3]: 360
+
+	group_tags[]: human
+	group_tags[]: man
+	group_tags[]: cauca
+	group_tags[]: nk_service
+}
+
+
 
 ### WORKER MAN ###
+
+
+#####################################################################################
+#####definition for worker with big container as props - bug :mantis: QA-133154 #####
+#####################################################################################
+mover_desc : mover_desc.nk_worker
+{
+	model_desc: "/model/mover/characters/new_generation/new/models/man/worker_vest/ngn_worker_vest_lod0.pmd"
+
+	lods[0]: "/model/mover/characters/new_generation/new/models/man/worker_vest/ngn_worker_vest_lod1.pmd"
+	lods[1]: "/model/mover/characters/new_generation/new/models/man/worker_vest/ngn_worker_vest_lod2.pmd"
+	lods[2]: "/model/mover/characters/new_generation/new/models/man/worker_vest/ngn_worker_vest_lod3.pmd"
+
+	variants[]: cenda
+	variants[]: nemiro
+	variants[]: diego
+	variants[]: filip
+	variants[]: hynek
+	variants[]: johnny
+
+	lod_distances[0]: 18
+	lod_distances[1]: 49
+	lod_distances[2]: 128
+	lod_distances[3]: 360
+
+
+	group_tags[]: human
+	group_tags[]: man
+	group_tags[]: cauca
+	group_tags[]: nk_worker
+}
+#####################################################################################
+
 
 mover_desc : mover_desc.n_worker_1
 {

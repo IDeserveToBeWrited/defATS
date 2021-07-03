@@ -2209,32 +2209,44 @@ sign_model : sign.445
 
 sign_model : sign.446
 {
-
 	sign_name: "road barrel"
-
 	model_desc: "/model/sign/road_barrel.pmd"
 	model_coll: "/model/sign/road_barrel.pmc"
-	look_name: default
+	look_name: "default"
+	category: ""
 
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/sign/road_barrel_lod1.pmd"
+	dynamic_lod_dist[0]: 5
 	#category: "street props"
+	dynamic_lod_desc[1]: "/model/sign/road_barrel_lod2.pmd"
+	dynamic_lod_dist[1]: 20
+
 	dynamic: true
-	mass: 100
-	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
 }
 
 sign_model : sign.447
 {
-
 	sign_name: "road barrel light"
-
 	model_desc: "/model/sign/road_barrel_light.pmd"
 	model_coll: "/model/sign/road_barrel_light.pmc"
-	look_name: default
+	look_name: "default"
+	category: ""
 
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/sign/road_barrel_light_lod1.pmd"
+	dynamic_lod_dist[0]: 5
 	#category: "street props"
-	dynamic: true
-	mass: 100
+	dynamic_lod_desc[1]: "/model/sign/road_barrel_light_lod2.pmd"
+	dynamic_lod_dist[1]: 20
 
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
 }
 
 sign_model : sign.448
@@ -5455,13 +5467,22 @@ sign_model : sign.ev_11
 
 sign_model : sign.ev_13
 {
+	sign_name: "road barrel light sync"
 	model_desc: "/model/sign/misc/road_barrel_light_sync.pmd"
 	model_coll: "/model/sign/misc/road_barrel_light_sync.pmc"
-	sign_name: "road barrel light sync"
+	look_name: "default"
+	category: ""
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/sign/misc/road_barrel_light_sync_lod1.pmd"
+	dynamic_lod_dist[0]: 5
+	dynamic_lod_desc[1]: "/model/sign/misc/road_barrel_light_sync_lod2.pmd"
+	dynamic_lod_dist[1]: 20
 
 	dynamic: true
-	mass: 70
-
+	drop_sun_shadows: 1
+	mass: 70.0
 }
 
 sign_model : sign.ev_14
@@ -16150,6 +16171,13 @@ sign_model : sign.2k044
 	model_coll: "/model/sign/road_barrel_with_chevron.pmc"
 	look_name: "default"
 	category: ""
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/sign/road_barrel_with_chevron_lod1.pmd"
+	dynamic_lod_dist[0]: 5
+	dynamic_lod_desc[1]: "/model/sign/road_barrel_with_chevron_lod2.pmd"
+	dynamic_lod_dist[1]: 20
 
 	dynamic: true
 	drop_sun_shadows: 1
