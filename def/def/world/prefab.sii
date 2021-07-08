@@ -1237,7 +1237,7 @@ prefab_model : prefab.us_40
 	name: "us_cross_2-2_country_x_exit_road"
 	model_desc: "/prefab/cross_temp/us_cross_2-2_country_x_exit_road_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_cross_2-2_country_x_exit_road_tmpl.ppd"
-	
+
 	corner0[]: shccre
 	corner0[]: kbccre
 	corner0[]: swccre
@@ -7647,9 +7647,21 @@ prefab_model : prefab.us_309
 	name: "us_split_2-2_country_1-1_country_exit"
 	model_desc: "/prefab/fork_temp/us_split_2-2_country_1-1_country_exit_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_split_2-2_country_1-1_country_exit_tmpl.ppd"
-
-	corner1[]: sh22el
+	
 	corner0[]: sh22er
+	corner0[]: kb22er
+	corner0[]: sw22er
+	
+	corner1[]: sh22el
+	corner1[]: kb22el
+	corner1[]: sw22el
+	
+	corner2[]: sh22ecrnr2r
+	corner2[]: kb22ecrnr2r
+	
+	corner3[]: sh22ecrnr2l
+	corner3[]: kb22ecrnr2l
+
 
 }
 
@@ -7960,7 +7972,7 @@ prefab_model : prefab.d_food_mkt2
 	dynamic_lod_desc: 1
 	dynamic_lod_dist: 1
 	dynamic_lod_desc[0]: "/prefab/depots/supermarket2/supermarket2_lod1.pmd"
-	dynamic_lod_dist[0]: 130
+	dynamic_lod_dist[0]: 150
 
 	use_perlin: false
 }
@@ -8028,6 +8040,8 @@ prefab_model : prefab.us_321
 	name: "us_crossing_angled_1-1_country_xrail_1_mirrored"
 	model_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_xrail_1_mirrored_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_xrail_1_mirrored_tmpl.ppd"
+	
+	semaphore_profile[]: crossing_c
 
 	traffic_rules_input[0]: ""
 	traffic_rules_input[1]: ""
@@ -10137,18 +10151,22 @@ prefab_model : prefab.2k002
 	corner0[]: shc4r
 	corner0[]: kbc4r
 	corner0[]: swc4r
+	corner0[]: swcc4r
 
 	corner1[]: shc4l
 	corner1[]: kbc4l
 	corner1[]: swc4l
+	corner1[]: swcc4l
 
 	corner2[]: shc4r
 	corner2[]: kbc4r
 	corner2[]: swc4r
+	corner2[]: swcc4r
 
 	corner3[]: shc4l
 	corner3[]: kbc4l
 	corner3[]: swc4l
+	corner3[]: swcc4l
 }
 
 prefab_model : prefab.2k003
@@ -12384,25 +12402,56 @@ prefab_model : prefab.2k02c
 	prefab_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_1_xrail_2_tmpl.ppd"
 	category: ""
 
-	corner0[]: sh357
-	corner0[]: kb357
-	corner0[]: sw357
+	corner0[]: shca11cx2
+	corner0[]: kbca11cx2
+	corner0[]: swca11cx2
 	corner0[]: shca11cxch
+	corner0[]: kbca11cxch
+	corner0[]: swca11cxch
 
 	corner1[]: shca11cx2r
 	corner1[]: kbca11cx2r
 	corner1[]: swca11cx2r
 	corner1[]: shca11cxrch
+	corner1[]: kbca11cxrch
+	corner1[]: swca11cxrch
 
-	corner2[]: sh357
-	corner2[]: kb357
-	corner2[]: sw357
+	corner2[]: shca11cx2
+	corner2[]: kbca11cx2
+	corner2[]: swca11cx2
 	corner2[]: shca11cxch
+	corner2[]: kbca11cxch
+	corner2[]: swca11cxch
 
 	corner3[]: shca11cx2r
 	corner3[]: kbca11cx2r
 	corner3[]: swca11cx2r
 	corner3[]: shca11cxrch
+	corner3[]: kbca11cxrch
+	corner3[]: swca11cxrch
+
+	semaphore_profile[]: crossing
+
+	traffic_rules_input[0]: ""
+	traffic_rules_input[1]: "rail_cross"
+	traffic_rules_input[2]: ""
+	traffic_rules_input[3]: "rail_cross"
+}
+
+prefab_model : prefab.2k02d
+{
+	name: "DO NOT USE us crossing angled 1-1 country 1 xrail 2 mirror tmpl"
+	model_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_1_xrail_2_mirror_tmpl.pmd"
+	prefab_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_1_xrail_2_mirror_tmpl.ppd"
+	category: ""
+
+	corner1[]: sh359
+	corner1[]: kb359
+	corner1[]: sw359
+
+	corner3[]: sh359
+	corner3[]: kb359
+	corner3[]: sw359
 
 	semaphore_profile[]: crossing
 
@@ -19558,11 +19607,17 @@ prefab_model : prefab.d_con_site3
 
 prefab_model : prefab.d_wd_pln1
 {
+	name: "or furniture factory"
 	model_desc: "/prefab/depots/furniture_factory/or_furniture_factory.pmd"
 	prefab_desc: "/prefab/depots/furniture_factory/or_furniture_factory.ppd"
+	category: ""
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/prefab/depots/furniture_factory/or_furniture_factory_lod1.pmd"
+	dynamic_lod_dist[0]: 130
+
 	use_perlin: false
-	dynamic_lod_desc[]: "/prefab/depots/furniture_factory/or_furniture_factory_lod1.pmd"
-	dynamic_lod_dist[]: 73
 	allowed_trailer_length: 20
 }
 

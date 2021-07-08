@@ -12558,24 +12558,26 @@ model_def : model.or_503
 model_def : model.1107
 {
 	model_desc: "/prefab/depots/live_stock_farm/live_stock_barn.pmd"
+	name: "live stock barn"
 
-	color_variant[]: "Grey | vis_wall_clr : 188,188,188 | vis_roof_clr : 188,188,188"
-	color_variant[]: "Red | vis_wall_clr : 186,85,81 | vis_roof_clr : 253,253,253"
-	color_variant[]: "Red Invert | vis_wall_clr : 253,253,253 | vis_roof_clr : 204,115,112"
-	color_variant[]: "Green | vis_wall_clr : 226,215,188 | vis_roof_clr : 132,168,139"
-	color_variant[]: "Blue | vis_wall_clr : 188,188,188 | vis_roof_clr : 118,149,197"
+	color_variant: 5
+	color_variant[0]: "Grey | *_c1 : 188,188,188 | *_c2 : 188,188,188"
+	color_variant[1]: "Red | *_c1 : 253,253,253 | *_c2 : 186,85,81"
+	color_variant[2]: "Red Invert | *_c1 : 204,115,112 | *_c2 : 253,253,253"
+	color_variant[3]: "Green | *_c1 : 132,168,139 | *_c2 : 226,215,188"
+	color_variant[4]: "Blue | *_c1 : 118,149,197 | *_c2 : 188,188,188"
 
-	dynamic_lod_desc[]: "/prefab/depots/live_stock_farm/live_stock_barn_lod1.pmd"
-	dynamic_lod_dist[]: 100
-	dynamic_lod_desc[]: "/prefab/depots/live_stock_farm/live_stock_barn_lod2.pmd"
-	dynamic_lod_dist[]: 150
+	static_lod_path: 2
+	static_lod_name: 2
+	static_lod_path[0]: "/prefab/depots/live_stock_farm/live_stock_barn_lod1.pmd"
+	static_lod_name[0]: "LOD from 100m"
+	static_lod_path[1]: "/prefab/depots/live_stock_farm/live_stock_barn_lod1.pmd"
+	static_lod_name[1]: "LOD from 200m"
 
-	static_lod_name[]: "lod 100m"
-	static_lod_path[]: "/prefab/depots/live_stock_farm/live_stock_barn_lod1.pmd"
-	static_lod_name[]: "lod 200m"
-	static_lod_path[]: "/prefab/depots/live_stock_farm/live_stock_barn_lod2.pmd"
-
-
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/prefab/depots/live_stock_farm/live_stock_barn_lod1.pmd"
+	dynamic_lod_dist[0]: 100
 }
 model_def : model.1108
 {
@@ -27935,6 +27937,76 @@ model_def : model.05003
 
 	dynamic_lod_desc[]: "/model/props/street/art/bear_statue_lod1.pmd"
 	dynamic_lod_dist[]: 50
+}
+
+model_def : model.tx_1e005
+{
+	model_desc: "/model/props/street/tx_farm_gates_tall_1.pmd"
+	name: "tx farm gates tall 1"
+
+	color_variant: 5
+	color_variant[0]: "brown | *_c1 : 135,107,87"
+	color_variant[1]: "white | *_c1 : 255,255,255"
+	color_variant[2]: "reddish | *_c1 : 210,122,119"
+	color_variant[3]: "green | *_c1 : 122,178,129"
+	color_variant[4]: "dark | *_c1 : 110,110,110"
+}
+
+model_def : model.tx_1e006
+{
+	model_desc: "/model/props/street/tx_farm_gates_tall_2.pmd"
+	name: "tx farm gates tall 2"
+
+	color_variant: 5
+	color_variant[0]: "brown | *_c1 : 135,107,87"
+	color_variant[1]: "white | *_c1 : 255,255,255"
+	color_variant[2]: "reddish | *_c1 : 210,122,119"
+	color_variant[3]: "green | *_c1 : 122,178,129"
+	color_variant[4]: "dark | *_c1 : 110,110,110"
+}
+
+model_def : model.tx_1e007
+{
+	model_desc: "/model/props/street/tx_farm_gates_tall_3.pmd"
+	name: "tx farm gates tall 3"
+
+	color_variant: 5
+	color_variant[0]: "brown | *_c1 : 135,107,87"
+	color_variant[1]: "white | *_c1 : 255,255,255"
+	color_variant[2]: "reddish | *_c1 : 210,122,119"
+	color_variant[3]: "green | *_c1 : 122,178,129"
+	color_variant[4]: "dark | *_c1 : 110,110,110"
+}
+
+model_def : model.tx_1e008
+{
+	model_desc: "/model/props/street/tx_farm_gates_tall_4.pmd"
+	name: "tx farm gates tall 4"
+
+	color_variant: 5
+	color_variant[0]: "brown | *_c1 : 135,107,87"
+	color_variant[1]: "white | *_c1 : 255,255,255"
+	color_variant[2]: "reddish | *_c1 : 210,122,119"
+	color_variant[3]: "green | *_c1 : 122,178,129"
+	color_variant[4]: "dark | *_c1 : 110,110,110"
+}
+
+model_def : model.wy_1t00p
+{
+	model_desc: "/model/panorama/rest_stop/wy_bear_lake/wy_bear_lake_shelter.pmd"
+	name: "wy bear lake shelter"
+}
+
+model_def : model.wy_1t00q
+{
+	model_desc: "/model/panorama/rest_stop/wy_bear_lake/wy_bear_lake_bin.pmd"
+	name: "wy bear lake bin"
+}
+
+model_def : model.wy_0c01b
+{
+	model_desc: "/model/panorama/wy_evanston/wy_evanston_bear_paw_trail.pmd"
+	name: "wy evanston bear paw trail"
 }
 
 }
