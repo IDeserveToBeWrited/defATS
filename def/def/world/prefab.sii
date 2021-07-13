@@ -3149,14 +3149,17 @@ prefab_model : prefab.us_154
 	corner0[]: sh426
 	corner0[]: kb426
 	corner0[]: sw426
+	corner0[]: swc426
 
 	corner1[]: shccoerr
 	corner1[]: kbccoerr
 	corner1[]: swccoerr
+	corner1[]: swcccoerr
 
 	corner2[]: shccoerl
 	corner2[]: kbccoerl
 	corner2[]: swccoerl
+	corner2[]: swcccoerl
 
 }
 
@@ -7647,18 +7650,18 @@ prefab_model : prefab.us_309
 	name: "us_split_2-2_country_1-1_country_exit"
 	model_desc: "/prefab/fork_temp/us_split_2-2_country_1-1_country_exit_tmpl.pmd"
 	prefab_desc: "/prefab/fork_temp/us_split_2-2_country_1-1_country_exit_tmpl.ppd"
-	
+
 	corner0[]: sh22er
 	corner0[]: kb22er
 	corner0[]: sw22er
-	
+
 	corner1[]: sh22el
 	corner1[]: kb22el
 	corner1[]: sw22el
-	
+
 	corner2[]: sh22ecrnr2r
 	corner2[]: kb22ecrnr2r
-	
+
 	corner3[]: sh22ecrnr2l
 	corner3[]: kb22ecrnr2l
 
@@ -8040,7 +8043,7 @@ prefab_model : prefab.us_321
 	name: "us_crossing_angled_1-1_country_xrail_1_mirrored"
 	model_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_xrail_1_mirrored_tmpl.pmd"
 	prefab_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_xrail_1_mirrored_tmpl.ppd"
-	
+
 	semaphore_profile[]: crossing_c
 
 	traffic_rules_input[0]: ""
@@ -12445,13 +12448,34 @@ prefab_model : prefab.2k02d
 	prefab_desc: "/prefab/cross_temp/us_crossing_angled_1-1_country_1_xrail_2_mirror_tmpl.ppd"
 	category: ""
 
-	corner1[]: sh359
-	corner1[]: kb359
-	corner1[]: sw359
+	corner0[]: shca11cx2rm
+	corner0[]: kbca11cx2rm
+	corner0[]: swca11cx2rm
+	corner0[]: shca11cxrchm
+	corner0[]: kbca11cxrchm
+	corner0[]: swca11cxrchm
 
-	corner3[]: sh359
-	corner3[]: kb359
-	corner3[]: sw359
+	corner1[]: shca11cx2m
+	corner1[]: kbca11cx2m
+	corner1[]: swca11cx2m
+	corner1[]: shca11cxchm
+	corner1[]: kbca11cxchm
+	corner1[]: swca11cxchm
+
+	corner2[]: shca11cx2rm
+	corner2[]: kbca11cx2rm
+	corner2[]: swca11cx2rm
+	corner2[]: shca11cxrchm
+	corner2[]: kbca11cxrchm
+	corner2[]: swca11cxrchm
+
+	corner3[]: shca11cx2m
+	corner3[]: kbca11cx2m
+	corner3[]: swca11cx2m
+	corner3[]: shca11cxchm
+	corner3[]: kbca11cxchm
+	corner3[]: swca11cxchm
+
 
 	semaphore_profile[]: crossing
 
@@ -14737,18 +14761,22 @@ prefab_model : prefab.2o02x
 	corner0[]: shc4r
 	corner0[]: kbc4r
 	corner0[]: swc4r
+	corner0[]: swcc4r
 
 	corner1[]: shc4l
 	corner1[]: kbc4l
 	corner1[]: swc4l
+	corner1[]: swcc4l
 
 	corner2[]: shc4r
 	corner2[]: kbc4r
 	corner2[]: swc4r
+	corner2[]: swcc4r
 
 	corner3[]: shc4l
 	corner3[]: kbc4l
 	corner3[]: swc4l
+	corner3[]: swcc4l
 
 }
 
@@ -15286,6 +15314,7 @@ prefab_model : prefab.2o03k
 	corner0[]: shdeemr
 	corner0[]: kbdeemr
 	corner0[]: swdeemr
+	corner0[]: kbdeecrvchm
 
 	corner1[]: shdeemstr
 	corner1[]: kbdeemstr
@@ -15293,6 +15322,7 @@ prefab_model : prefab.2o03k
 
 	corner2[]: shdeemcrnr
 	corner2[]: kbdeemcrnr
+	corner2[]: kbdeecrnchm
 
 }
 
@@ -19268,6 +19298,36 @@ prefab_model : prefab.2o08m
 	corner2[]: swccctc
 }
 
+prefab_model : prefab.2o08n
+{
+	name: "us split 0-2 country exit straight 100 left tmpl"
+	model_desc: "/prefab/fork_temp/us_split_0-2_country_exit_straight_100_left_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_0-2_country_exit_straight_100_left_tmpl.ppd"
+	category: ""
+
+	corner0[]: sh100l
+
+	corner1[]: sh120rnr2lm2
+
+	corner2[]: sh100cvdr2ml
+
+}
+
+prefab_model : prefab.2o08o
+{
+	name: "us split 0-2 country exit straight 100 left mirrored tmpl"
+	model_desc: "/prefab/fork_temp/us_split_0-2_country_exit_straight_100_left_mirrored_tmpl.pmd"
+	prefab_desc: "/prefab/fork_temp/us_split_0-2_country_exit_straight_100_left_mirrored_tmpl.ppd"
+	category: ""
+	
+	corner0[]: sh100l
+	
+	corner1[]: sh100cvdr2l
+	
+	corner2[]: sh120rnr2l2
+	
+}
+
 prefab_model : prefab.0400j
 {
 	name: "us gas hearts car 4rows roof"
@@ -19991,14 +20051,6 @@ prefab_model : prefab.d_food_plnt4
 	use_perlin: false
 }
 
-prefab_model : prefab.wy_04003
-{
-	name: "XXX DO NOT USE XXX"
-	model_desc: "/prefab/depots/train_station/wy_rail_supply_depot.pmd"
-	prefab_desc: "/prefab/depots/train_station/wy_rail_supply_depot.ppd"
-	category: ""
-}
-
 prefab_model : prefab.d_rail_str
 {
 	name: "wy rail supply depot"
@@ -20041,6 +20093,36 @@ prefab_model : prefab.tx_0400g
 	model_desc: "/prefab/depots/querry/tx_querry.pmd"
 	prefab_desc: "/prefab/depots/querry/tx_querry.ppd"
 	category: ""
+}
+
+prefab_model : prefab.d_epw_sit
+{
+	name: "co wind tower site"
+	model_desc: "/prefab/depots/wind_energy_power/co_wind_tower_site.pmd"
+	prefab_desc: "/prefab/depots/wind_energy_power/co_wind_tower_site.ppd"
+	category: ""
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/prefab/depots/wind_energy_power/co_wind_tower_site_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+
+	use_perlin: false
+}
+
+prefab_model : prefab.d_met_wrk1
+{
+	name: "co storage tank factory"
+	model_desc: "/prefab/depots/storage_tank_factory/co_storage_tank_factory.pmd"
+	prefab_desc: "/prefab/depots/storage_tank_factory/co_storage_tank_factory.ppd"
+	category: ""
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/prefab/depots/storage_tank_factory/co_storage_tank_factory_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+
+	use_perlin: false
 }
 
 }

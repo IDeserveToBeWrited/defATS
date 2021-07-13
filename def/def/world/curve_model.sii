@@ -8310,4 +8310,292 @@ curve_model : curve.tx_2b001
 	high_tess: 0
 }
 
+
+curve_model : curve.wy_06001
+{
+	model_desc: "/model/building/shop/gas_roof1_curve.pmd"
+	name: "gas roof1 curve"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var1 | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "var2 | center3 : 1.0"
+	start_part[2]: "start3"
+	end_part[2]: "end3"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_1c001
+{
+	model_desc: "/model/props/farm/wy_livestock_box_7x14.pmd"
+	name: "wy livestock box 7x14"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "var1 | center1 : 2.0 | center2 : 2.0 | center3 : 4.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center4 : 2.0 | center5 : 2.0 | center6 : 4.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "var3 | center6 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+
+	high_tess: 0
+
+}
+
+curve_model : curve.wy_1c003
+{
+	model_desc: "/model/props/farm/wy_livestock_catwalk.pmd"
+	name: "wy livestock catwalk"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1 | start3 | start4 | start5"
+	end_part[0]: "end1 | end3 | end4 | end5"
+	variation[1]: "var2 | center2 : 1.0"
+	start_part[1]: "start2 | start3 | start4 | start5"
+	end_part[1]: "end2 | end3 | end4 | end5"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_1t001
+{
+	model_desc: "/model/building/industrial/wy_mine_conveyor.pmd"
+	name: "wy mine conveyor"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_0s007
+{
+	model_desc: "/model/props/road/wy_walk_line.pmd"
+	name: "wy walk line"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "10m | center1 : 1.0"
+	start_part[0]: "start1 | start2 | start3"
+	end_part[0]: "end1 | end2 | end3"
+	variation[1]: "5m | center2 : 1.0"
+	start_part[1]: "start4 | start5 | start6"
+	end_part[1]: "end4 | end5 | end6"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_0s008
+{
+	model_desc: "/model/barrier/wood/wy_wood_pillars1.pmd"
+	name: "wy wood pillars1"
+
+	variation: 1
+	fixed_inner_start: 1
+	fixed_inner_end: 1
+	variation[0]: "default | center1 : 0.3 | center2 : 0.9 | center3 : 0.9 | center4 : 0.3 | center5 : 0.9 | center6 : 0.9 | center7 : 0.3"
+	fixed_inner_start[0]: "center7"
+	fixed_inner_end[0]: "center8"
+
+	high_tess: 0
+
+	fixed_step: &40600000
+}
+
+curve_model : curve.wy_1n008
+{
+	model_desc: "/model/rock/wy_rock_big_sediment_curve_16m.pmd"
+	name: "wy rock big sediment curve 16m"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "16m | center2,center4,center6 : 1.0"
+	start_part[0]: "start2"
+	end_part[0]: "end2"
+	variation[1]: "16m_top | center1,center3,center5 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+	variation[2]: "16_to_32 | center8 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+	variation[3]: "16_to_32_top | center7 : 1.0"
+	start_part[3]: "start1"
+	end_part[3]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_big_sediment_curve_16m_lod1.pmd"
+	dynamic_lod_dist[0]: 90
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1n009
+{
+	model_desc: "/model/rock/wy_rock_big_sediment_curve_32m.pmd"
+	name: "wy rock big sediment curve 32m"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "32m | center2,center4,center6 : 1.0"
+	start_part[0]: "start2"
+	end_part[0]: "end2"
+	variation[1]: "32m_top | center1,center3,center5 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+	variation[2]: "32_to_16 | center8 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+	variation[3]: "32_to_16_top | center7 : 1.0"
+	start_part[3]: "start1"
+	end_part[3]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/rock/wy_rock_big_sediment_curve_32m_lod1.pmd"
+	dynamic_lod_dist[0]: 180
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1p001
+{
+	model_desc: "/model/rock/wy_rock_sandstone_tunnel.pmd"
+	name: "wy rock sandstone tunnel"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1,center2,center3 : 1.0 | center2,center1,center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "var1"
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1p002
+{
+	model_desc: "/model/rock/wy_rock_sandstone_tunnel1.pmd"
+	name: "wy rock sandstone tunnel1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1,center2,center3 : 1.0 | center2,center3,center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "var1"
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1p003
+{
+	model_desc: "/model/rock/wy_coal_mine_terraces_curve_far.pmd"
+	name: "wy coal mine terraces curve far"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center2 : 1.0 | center4 : 0.25 | center6 : 0.25 | center8 : 0.25"
+	start_part[0]: "start2"
+	end_part[0]: "end2"
+
+	high_tess: 0
+
+	smooth_surface: true
+}
+
+curve_model : curve.wy_1p005
+{
+	model_desc: "/model/rock/wy_hells_half_acre_curve_01_far.pmd"
+	name: "wy hells half acre curve 01 far"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 0.0 | center3 : 0.0 | center5 : 0.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_23001
+{
+	model_desc: "/model/vehicle/train/wagon_coal_curve_.pmd"
+	name: "wagon coal curve "
+
+	variation: 5
+	start_part: 5
+	end_part: 5
+
+	variation[0]: "yellow_empty | ye_1,ye_2,ye_3 : 1.0 | ye_2,ye_3,ye_1 : 1.0 | ye_3,ye_1,ye_2 : 1.0"
+	variation[1]: "yellow_full | yf_1,yf_2,yf_3 : 1.0 | yf_2,yf_3,yf_1 : 1.0 | yf_3,yf_1,yf_2 : 1.0"
+	variation[2]: "blue_empty | be_1,be_2 : 1.0"
+	variation[3]: "blue_full | bf_1,bf_2 : 1.0"
+	variation[4]: "green_full | gf_1,gf_2 : 1.0"
+	start_part[0]: "start"
+	start_part[1]: "start"
+	start_part[2]: "start"
+	start_part[3]: "start"
+	start_part[4]: "start"
+	end_part[0]: "end"
+	end_part[1]: "end"
+	end_part[2]: "end"
+	end_part[3]: "end"
+	end_part[4]: "end"
+	
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/vehicle/train/wagon_coal_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/vehicle/train/wagon_coal_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 70
+
+	high_tess: 0
+}
+curve_model : curve.wy_1x001
+{
+	model_desc: "/model/rock/wy_rock_formation_vertical.pmd"
+	name: "wy rock formation vertical"
+
+	variation: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+
+	high_tess: 1
+	high_tess[0]: "var1"
+}
+
 }
