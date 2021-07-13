@@ -1,0 +1,25 @@
+traffic_trailer : trailer.ai_car.hauler
+{
+	accessories[]: .ai_car.hauler.chassis
+	accessories[]: .ai_car.hauler.rwheel0
+	accessories[]: .ai_car.hauler.rwheel1
+
+	cargo_mass: 0
+}
+
+vehicle_accessory: .ai_car.hauler.chassis
+{
+    	data_path: "/def/vehicle/ai/trailers/hauler/chassis.sii"
+}
+
+vehicle_wheel_accessory: .ai_car.hauler.rwheel0
+{
+	offset: 0
+    data_path: "/def/vehicle/ai_wheel/trailer.sii"
+}
+
+vehicle_wheel_accessory: .ai_car.hauler.rwheel1
+{
+	offset: 2
+    data_path: "/def/vehicle/ai_wheel/trailer.sii"
+}

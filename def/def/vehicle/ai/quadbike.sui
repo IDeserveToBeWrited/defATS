@@ -1,0 +1,43 @@
+traffic_vehicle : traffic.quadbike
+{
+	accessories[]: .quadbike.chassis
+	accessories[]: .quadbike.fwheel
+	accessories[]: .quadbike.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 1700
+
+	color[]: (0.0166, 0.1283, 0.4423) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .quadbike.chassis
+{
+	data_path: "/def/vehicle/ai/quadbike/chassis.sii"
+}
+
+vehicle_wheel_accessory: .quadbike.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_quadbike.sii"
+}
+
+vehicle_wheel_accessory: .quadbike.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_quadbike.sii"
+}
+

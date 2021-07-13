@@ -1,0 +1,41 @@
+traffic_trailer : train_car.tube
+{
+	accessories[]: .tube.chassis
+	accessories[]: .tube.rwheel
+	accessories[]: .tube.rwheel1
+	accessories[]: .tube.rwheel2
+	accessories[]: .tube.rwheel3
+
+	displacement_limit: 0.0
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+}
+
+vehicle_accessory: .tube.chassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_tube.sii"
+}
+
+vehicle_wheel_accessory: .tube.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .tube.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .tube.rwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .tube.rwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}

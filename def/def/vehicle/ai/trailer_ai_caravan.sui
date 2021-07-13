@@ -1,0 +1,23 @@
+traffic_trailer : trailer.ai_car.ai_caravan
+{
+	accessories[]: .ai_car.ai_caravan.chassis
+	accessories[]: .ai_car.ai_caravan.rwheel0
+	accessories[]: .ai_car.ai_caravan.rwheel1
+
+	cargo_mass: 0
+}
+
+vehicle_accessory: .ai_car.ai_caravan.chassis
+{
+    	data_path: "/def/vehicle/ai/trailers/ai_caravan/chassis.sii"
+}
+vehicle_wheel_accessory: .ai_car.ai_caravan.rwheel0
+{
+	offset: 0
+    data_path: "/def/vehicle/ai_wheel/trailer.sii"
+}
+vehicle_wheel_accessory: .ai_car.ai_caravan.rwheel1
+{
+	offset: 2
+    data_path: "/def/vehicle/ai_wheel/trailer.sii"
+}

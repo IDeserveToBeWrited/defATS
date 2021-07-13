@@ -1,0 +1,60 @@
+traffic_trailer : trailer.tractor
+{
+	accessories[]: .tractor.def.rwheel0
+	accessories[]: .tractor.def.chassis
+	
+	variant[]: .trailer.tractor.wheat
+	variant[]: .trailer.tractor.potatoes
+
+	cargo_mass: 8000
+}
+
+vehicle_accessory: .tractor.def.chassis
+{
+    	data_path: "/def/vehicle/ai/trailers/tractor_trailer/chassis.sii"
+}
+
+vehicle_wheel_accessory: .tractor.def.rwheel0
+{
+	offset: 0
+    data_path: "/def/vehicle/ai_wheel/tractor_trailer_b.sii"
+}
+
+traffic_trailer : .trailer.tractor.wheat
+{
+	accessories[]: .tractor.wheat.rwheel0
+	accessories[]: .tractor.wheat.chassis
+
+	cargo_mass: 8000
+}
+
+vehicle_accessory: .tractor.wheat.chassis
+{
+    	data_path: "/def/vehicle/ai/trailers/tractor_trailer/chassis_green.sii"
+}
+
+vehicle_wheel_accessory: .tractor.wheat.rwheel0
+{
+	offset: 0
+    data_path: "/def/vehicle/ai_wheel/tractor_trailer_b.sii"
+}
+
+
+traffic_trailer : .trailer.tractor.potatoes
+{
+	accessories[]: .tractor.potatoes.rwheel0
+	accessories[]: .tractor.potatoes.chassis
+
+	cargo_mass: 8000
+}
+
+vehicle_accessory: .tractor.potatoes.chassis
+{
+    	data_path: "/def/vehicle/ai/trailers/tractor_trailer/chassis_red.sii"
+}
+
+vehicle_wheel_accessory: .tractor.potatoes.rwheel0
+{
+	offset: 0
+    data_path: "/def/vehicle/ai_wheel/tractor_trailer_b.sii"
+}

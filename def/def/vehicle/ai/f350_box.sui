@@ -1,0 +1,41 @@
+traffic_vehicle : traffic.f350_box.usbb
+{
+	accessories[]: .f350_box.chassis
+	accessories[]: .f350_box.fwheel
+	accessories[]: .f350_box.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	vehicle_mass: 2000
+
+	tags[]: heavy_duty
+
+	spawn_ratio: 0.2
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .f350_box.chassis
+{
+	data_path: "/def/vehicle/ai/f350_box/chassis_usbb.sii"
+}
+
+vehicle_wheel_accessory: .f350_box.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_box.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}

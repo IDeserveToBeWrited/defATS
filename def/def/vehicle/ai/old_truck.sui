@@ -1,0 +1,43 @@
+traffic_vehicle : traffic.old_truck
+{
+	accessories[]: .old_truck.chassis
+	accessories[]: .old_truck.fwheel
+	accessories[]: .old_truck.rwheel
+
+	max_speed: 160
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+
+	tags[]: slow
+
+	#color[]: (0.0343, 0.0343, 0.0343) #black
+	#color[]: (0.0382, 0.0318, 0.0273) #brown
+	#color[]: (0, 0.0263, 0.1347) #blue
+	#color[]: (0.5394, 0.5711, 0.5906) #silver
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+	#color[]: (0.1596, 0.0093, 0.0197) #red
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+
+	vehicle_mass: 1900
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .old_truck.chassis
+{
+	data_path: "/def/vehicle/ai/old_truck/chassis.sii"
+}
+
+vehicle_wheel_accessory: .old_truck.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .old_truck.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
