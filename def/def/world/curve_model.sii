@@ -8330,6 +8330,53 @@ curve_model : curve.wy_06001
 	end_part[2]: "end3"
 
 	high_tess: 0
+
+}
+
+curve_model : curve.0602d
+{
+	model_desc: "/model/barrier/metal/metal_barrier_01_curve.pmd"
+	name: "metal barrier 01 curve"
+
+	color_variant: 5
+	color_variant[0]: "default: 255,255,255"
+	color_variant[1]: "red: 224,114,114"
+	color_variant[2]: "green: 155,200,153"
+	color_variant[3]: "yellow: 234,215,87"
+	color_variant[4]: "blue: 160,175,196"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: ""
+	end_part[0]: ""
+
+	high_tess: 0
+
+	fixed_step: &3fe8f5c3
+}
+
+curve_model : curve.0602e
+{
+	model_desc: "/model/barrier/wood/wooden_barrier_irl_curve.pmd"
+	name: "wooden barrier irl curve"
+
+	color_variant: 5
+	color_variant[0]: "default: 255,255,255"
+	color_variant[1]: "gray: 155,168,186"
+	color_variant[2]: "red: 181,138,152"
+	color_variant[3]: "green: 172,204,172"
+	color_variant[4]: "blue: 115,148,190"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
 }
 
 curve_model : curve.wy_1c001
@@ -8576,7 +8623,7 @@ curve_model : curve.wy_23001
 	end_part[2]: "end"
 	end_part[3]: "end"
 	end_part[4]: "end"
-	
+
 	dynamic_lod_desc: 2
 	dynamic_lod_dist: 2
 	dynamic_lod_desc[0]: "/model/vehicle/train/wagon_coal_curve_lod1.pmd"
@@ -8596,6 +8643,46 @@ curve_model : curve.wy_1x001
 
 	high_tess: 1
 	high_tess[0]: "var1"
+}
+
+curve_model : curve.51
+{
+	name: "wa_coulee_dam_wall"
+	model_desc: "/model/panorama/wa_grand_coulee/wa_coulee_dam_wall.pmd"
+	variation[]: "var1 | center1 : 1.0"
+	variation[]: "var2 | center2 : 1.0"
+}
+curve_model : curve.tx_1e002
+{
+	model_desc: "/model/barrier/wood/tx_wood_fence1.pmd"
+	name: "tx wood fence1"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0 | center3 : 1.0 | center5 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2"
+	variation[1]: "var2 | center2 : 1.0 | center4 : 1.0 | center6 : 1.0"
+	start_part[1]: "start3 | start4"
+	end_part[1]: "end3 | end4"
+
+	overlay: 13
+	overlay[0]: "center1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[1]: "center2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[2]: "center3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[3]: "center4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[4]: "center4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[5]: "center5 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[6]: "center6 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[7]: "start2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[8]: "start4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[9]: "end1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[10]: "end2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[11]: "end3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[12]: "end4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+
+	high_tess: 0
 }
 
 }
