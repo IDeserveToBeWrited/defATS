@@ -262,15 +262,16 @@ sign_model : sign.106
 }
 sign_model : sign.107
 {
-
 	sign_name: "US stop 1"
-
 	model_desc: "/model/sign/traffic/us_stop1.pmd"
 	model_coll: "/model/sign/traffic/us_stop1.pmc"
-	look_name: default
+	look_name: "default"
+	variant_name: "default"
+	category: ""
 
 	dynamic: true
-	mass: 100
+	drop_sun_shadows: 1
+	mass: 100.0
 
 	traffic_rule: traffic_rule.stop
 }
@@ -4400,110 +4401,7 @@ sign_model : sign.608
 }
 
 
-sign_model : sign.609
-{
 
-	sign_name: "harley_police"
-
-	model_desc: "/model/vehicle/parked_bikes/physics/harley_police_physics.pmd"
-	model_coll: "/model/vehicle/parked_bikes/physics/harley_police_physics.pmc"
-	look_name: default
-	variant_name: police
-
-
-	dynamic: true
-	mass: 100
-}
-
-sign_model : sign.610
-{
-
-	sign_name: "old_bike01"
-
-	model_desc: "/model/vehicle/parked_bikes/static/old_bike.pmd"
-	model_coll: "/model/vehicle/parked_bikes/static/old_bike.pmc"
-	look_name: default
-	variant_name: old_01
-
-
-	dynamic: true
-	mass: 100
-}
-
-sign_model : sign.611
-{
-
-	sign_name: "chopper1"
-
-	model_desc: "/model/vehicle/parked_bikes/static/chopper.pmd"
-	model_coll: "/model/vehicle/parked_bikes/static/chopper.pmc"
-	look_name: default
-	variant_name: chopper1
-
-
-	dynamic: true
-	mass: 100
-}
-
-sign_model : sign.612
-{
-
-	sign_name: "chopper2"
-
-	model_desc: "/model/vehicle/parked_bikes/static/chopper.pmd"
-	model_coll: "/model/vehicle/parked_bikes/static/chopper.pmc"
-	look_name: default
-	variant_name: chopper2
-
-
-	dynamic: true
-	mass: 100
-}
-
-sign_model : sign.613
-{
-
-	sign_name: "harley_black"
-
-	model_desc: "/model/vehicle/parked_bikes/physics/harley_police_physics.pmd"
-	model_coll: "/model/vehicle/parked_bikes/physics/harley_police_physics.pmc"
-	look_name: default
-	variant_name: gust_b
-
-
-	dynamic: true
-	mass: 100
-}
-
-sign_model : sign.614
-{
-
-	sign_name: "harley_white"
-
-	model_desc: "/model/vehicle/parked_bikes/physics/harley_police_physics.pmd"
-	model_coll: "/model/vehicle/parked_bikes/physics/harley_police_physics.pmc"
-	look_name: default
-	variant_name: gust_w
-
-
-	dynamic: true
-	mass: 100
-}
-
-sign_model : sign.615
-{
-
-	sign_name: "old_bike02"
-
-	model_desc: "/model/vehicle/parked_bikes/static/old_bike.pmd"
-	model_coll: "/model/vehicle/parked_bikes/static/old_bike.pmc"
-	look_name: default
-	variant_name: old_02
-
-
-	dynamic: true
-	mass: 100
-}
 
 sign_model : sign.616
 {
@@ -5690,7 +5588,7 @@ sign_model : sign.sd_bd_01
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5707,7 +5605,7 @@ sign_model : sign.sd_bd_02
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5724,7 +5622,7 @@ sign_model : sign.sd_bd_03
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5741,7 +5639,7 @@ sign_model : sign.sd_bd_04
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5758,7 +5656,7 @@ sign_model : sign.sd_bd_05
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5775,7 +5673,7 @@ sign_model : sign.sd_bd_06
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5792,7 +5690,7 @@ sign_model : sign.sd_bd_07
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5809,7 +5707,7 @@ sign_model : sign.sd_bd_08
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5826,7 +5724,7 @@ sign_model : sign.sd_bd_09
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5843,7 +5741,7 @@ sign_model : sign.sd_bd_10
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5860,7 +5758,7 @@ sign_model : sign.sd_bd_11
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5877,7 +5775,7 @@ sign_model : sign.sd_bd_12
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5894,7 +5792,7 @@ sign_model : sign.sd_bd_13
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5911,7 +5809,7 @@ sign_model : sign.sd_bd_14
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5928,7 +5826,7 @@ sign_model : sign.sd_bd_15
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5945,7 +5843,7 @@ sign_model : sign.sd_bd_16
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5962,7 +5860,7 @@ sign_model : sign.sd_bd_17
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5979,7 +5877,7 @@ sign_model : sign.sd_bd_18
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -5996,7 +5894,7 @@ sign_model : sign.sd_bd_19
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6013,7 +5911,7 @@ sign_model : sign.sd_bd_20
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6030,7 +5928,7 @@ sign_model : sign.sd_bd_21
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6047,7 +5945,7 @@ sign_model : sign.sd_bd_22
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6064,7 +5962,7 @@ sign_model : sign.sd_bd_23
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6081,7 +5979,7 @@ sign_model : sign.sd_bd_24
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6098,7 +5996,7 @@ sign_model : sign.sd_bd_25
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -6114,7 +6012,7 @@ sign_model : sign.sd_bd_26
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -6130,7 +6028,7 @@ sign_model : sign.sd_bd_27
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -6146,7 +6044,7 @@ sign_model : sign.sd_bd_28
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -6162,7 +6060,7 @@ sign_model : sign.sd_bd_29
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -6178,7 +6076,7 @@ sign_model : sign.sd_bd_30
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -6194,7 +6092,7 @@ sign_model : sign.sd_bd_31
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -6210,7 +6108,7 @@ sign_model : sign.sd_bd_32
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 sign_model : sign.sd_bd_33
@@ -6225,7 +6123,7 @@ sign_model : sign.sd_bd_33
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 sign_model : sign.sd_bd_34
@@ -6240,7 +6138,7 @@ sign_model : sign.sd_bd_34
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6257,7 +6155,7 @@ sign_model : sign.sd_bd_35
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -6274,7 +6172,7 @@ sign_model : sign.sd_bd_36
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -9402,17 +9300,20 @@ sign_model : sign.719
 }
 sign_model : sign.720
 {
-
 	sign_name: "us School Zone"
-
 	model_desc: "/model/sign/traffic/us_school_zone.pmd"
 	model_coll: "/model/sign/traffic/us_school_zone.pmc"
-	look_name: default
-	stand_classes[]: side_sml_6
-	editable: true
-	dynamic: true
-	mass: 100
+	look_name: "default"
+	variant_name: "default"
+	category: ""
 
+	stand_classes: 1
+	stand_classes[0]: "side_sml_6"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: 100.0
 }
 sign_model : sign.721
 {
@@ -10507,7 +10408,7 @@ sign_model : sign.ov_bd_83
 
 	stand_classes[0]: "2fwy_2"
 
-	dynamic: true
+	dynamic: false
 	editable: true
 	drop_sun_shadows: 1
 	mass: 100.0
@@ -11480,8 +11381,8 @@ sign_model : sign.ut_2
 }
 sign_model : sign.wa_3
 {
-	model_desc: "/model/props/lamp/wa_lamp_1.pmd"
-	model_coll: "/model/props/lamp/wa_lamp_1.pmc"
+	model_desc: "/model/props/lamp/wa_lamp_1_sign.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_1_sign.pmc"
 
 	sign_name: "wa_lamp_1"
 
@@ -12080,7 +11981,7 @@ sign_model : sign.wa_sd_bd_01
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 sign_model : sign.wa_sd_bd_02
@@ -12095,7 +11996,7 @@ sign_model : sign.wa_sd_bd_02
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -12111,7 +12012,7 @@ sign_model : sign.wa_sd_bd_03
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -12127,7 +12028,7 @@ sign_model : sign.wa_sd_bd_04
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 sign_model : sign.wa_sd_bd_05
@@ -12142,7 +12043,7 @@ sign_model : sign.wa_sd_bd_05
 	stand_classes[]: side_med_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 
 }
@@ -12857,6 +12758,7 @@ sign_model : sign.857
 	model_desc: "/model/sign/traffic/us_pedestrians1_arrow.pmd"
 	model_coll: "/model/sign/traffic/us_pedestrians1_arrow.pmc"
 	look_name: "default"
+	variant_name: "default"
 	category: ""
 
 	stand_classes: 1
@@ -14090,7 +13992,7 @@ sign_model : sign.2k01m
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -14264,7 +14166,7 @@ sign_model : sign.2k01y
 	stand_classes[]: side_1
 
 	category: "editable board"
-	dynamic: false
+	dynamic: true
 	editable: true
 }
 
@@ -14554,7 +14456,7 @@ sign_model : sign.2k02i
 	stand_classes: 1
 	stand_classes[0]: "side_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15382,7 +15284,7 @@ sign_model : sign.2k02m
 	stand_classes[0]: "side_sml_3"
 	stand_classes[1]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15399,7 +15301,7 @@ sign_model : sign.2k02n
 	stand_classes[0]: "side_sml_3"
 	stand_classes[1]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15416,7 +15318,7 @@ sign_model : sign.2k02o
 	stand_classes[0]: "side_sml_3"
 	stand_classes[1]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15433,7 +15335,7 @@ sign_model : sign.2k02p
 	stand_classes[0]: "side_sml_3"
 	stand_classes[1]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15449,7 +15351,7 @@ sign_model : sign.2k02q
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15465,7 +15367,7 @@ sign_model : sign.2k02r
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15481,7 +15383,7 @@ sign_model : sign.2k02s
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15497,7 +15399,7 @@ sign_model : sign.2k02t
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15807,7 +15709,7 @@ sign_model : sign.2k03f
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15823,7 +15725,7 @@ sign_model : sign.2k03g
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15839,7 +15741,7 @@ sign_model : sign.2k03h
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15855,7 +15757,7 @@ sign_model : sign.2k03i
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15871,7 +15773,7 @@ sign_model : sign.2k03j
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15887,7 +15789,7 @@ sign_model : sign.2k03k
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15903,7 +15805,7 @@ sign_model : sign.2k03l
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15919,7 +15821,7 @@ sign_model : sign.2k03m
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15948,6 +15850,7 @@ sign_model : sign.2k03o
 	stand_classes: 1
 	stand_classes[0]: "2fwy_r_1"
 
+	dynamic: false
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -15976,7 +15879,7 @@ sign_model : sign.2k03q
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16061,7 +15964,7 @@ sign_model : sign.2k03v
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16077,7 +15980,7 @@ sign_model : sign.2k03w
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16093,7 +15996,7 @@ sign_model : sign.2k03x
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16111,7 +16014,7 @@ sign_model : sign.2k03y
 	stand_classes[0]: "side_med_1"
 	stand_classes[1]: "side_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16799,7 +16702,8 @@ sign_model : sign.2k04i
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
+	mass: 200.0
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16815,7 +16719,8 @@ sign_model : sign.2k04j
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
+	mass: 200.0
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16831,7 +16736,8 @@ sign_model : sign.2k04k
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
+	mass: 200.0
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16847,7 +16753,8 @@ sign_model : sign.2k04l
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
+	mass: 200.0
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16863,7 +16770,8 @@ sign_model : sign.2k04m
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
+	mass: 200.0
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -16913,7 +16821,7 @@ sign_model : sign.2k04p
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17242,7 +17150,7 @@ sign_model : sign.2k052
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17292,7 +17200,7 @@ sign_model : sign.2k054
 	stand_classes[0]: "side_med_1"
 	stand_classes[1]: "side_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17342,7 +17250,7 @@ sign_model : sign.2k057
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17358,7 +17266,7 @@ sign_model : sign.2k058
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17374,7 +17282,7 @@ sign_model : sign.2k059
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17390,7 +17298,7 @@ sign_model : sign.2k05a
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17406,7 +17314,7 @@ sign_model : sign.2k05b
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17438,7 +17346,8 @@ sign_model : sign.2k05c
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
+	mass: 100
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17454,7 +17363,8 @@ sign_model : sign.2k05d
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
+	mass: 100
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17735,7 +17645,7 @@ sign_model : sign.2k05x
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17905,7 +17815,7 @@ sign_model : sign.2k069
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -17937,7 +17847,7 @@ sign_model : sign.2k06b
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -18134,7 +18044,7 @@ sign_model : sign.2k06o
 	stand_classes: 1
 	stand_classes[0]: "side_med_1"
 
-	dynamic: false
+	dynamic: true
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -18871,6 +18781,959 @@ sign_model : sign.2k07b
 
 	traffic_rule: traffic_rule.give_way
 }
+
+sign_model : sign.2k07c
+{
+	sign_name: "us left lane must exit"
+	model_desc: "/model/sign/traffic/us_left_lane_must_exit.pmd"
+	model_coll: "/model/sign/traffic/us_left_lane_must_exit.pmc"
+	look_name: "default"
+	category: ""
+
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07d
+{
+	sign_name: "us reserved parking"
+	model_desc: "/model/sign/traffic/us_reserved_parking.pmd"
+	model_coll: "/model/sign/traffic/us_reserved_parking.pmc"
+	look_name: "default"
+	category: ""
+
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07e
+{
+	sign_name: "wy reflection post 2 white snow"
+	model_desc: "/model/sign/wy_reflection_post_2_white_snow.pmd"
+	model_coll: "/model/sign/wy_reflection_post_2_white_snow.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07f
+{
+	sign_name: "wy reflection post 2 orange snow"
+	model_desc: "/model/sign/wy_reflection_post_2_orange_snow.pmd"
+	model_coll: "/model/sign/wy_reflection_post_2_orange_snow.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07g
+{
+	sign_name: "wy reflection post 3 orange snow"
+	model_desc: "/model/sign/wy_reflection_post_3_orange_snow.pmd"
+	model_coll: "/model/sign/wy_reflection_post_3_orange_snow.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07h
+{
+	sign_name: "wa reflection post white W"
+	model_desc: "/model/sign/wa_reflection_post_white_w.pmd"
+	model_coll: "/model/sign/wa_reflection_post_white_w.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07i
+{
+	sign_name: "wa reflection post white WW"
+	model_desc: "/model/sign/wa_reflection_post_white_ww.pmd"
+	model_coll: "/model/sign/wa_reflection_post_white_ww.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07j
+{
+	sign_name: "wa reflection post white Y"
+	model_desc: "/model/sign/wa_reflection_post_white_y.pmd"
+	model_coll: "/model/sign/wa_reflection_post_white_y.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07k
+{
+	sign_name: "wa reflection post brown W"
+	model_desc: "/model/sign/wa_reflection_post_brown_w.pmd"
+	model_coll: "/model/sign/wa_reflection_post_brown_w.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07l
+{
+	sign_name: "wa reflection post brown WW"
+	model_desc: "/model/sign/wa_reflection_post_brown_ww.pmd"
+	model_coll: "/model/sign/wa_reflection_post_brown_ww.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07m
+{
+	sign_name: "wa reflection post brown Y"
+	model_desc: "/model/sign/wa_reflection_post_brown_y.pmd"
+	model_coll: "/model/sign/wa_reflection_post_brown_y.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07n
+{
+	sign_name: "us reflection post white W"
+	model_desc: "/model/sign/us_reflection_post_white_w.pmd"
+	model_coll: "/model/sign/us_reflection_post_white_w.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07o
+{
+	sign_name: "us overhead 2-1-2 traffic lane guide"
+	model_desc: "/model/sign/traffic/us_ovh_2-1-2_traffic_lane_guide.pmd"
+	model_coll: "/model/sign/traffic/us_ovh_2-1-2_traffic_lane_guide.pmc"
+	look_name: "default"
+	category: "editable area"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k07p
+{
+	sign_name: "us ovh board yellow 701x274"
+	model_desc: "/model/sign/navigation/us_ovh_board_yellow_701x274.pmd"
+	model_coll: "/model/sign/navigation/us_ovh_board_yellow_701x274.pmc"
+	look_name: "default"
+	category: "editable board"
+
+	stand_classes: 1
+	stand_classes[0]: "2fwy_r_1"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k07q
+{
+	sign_name: "us cross merge 122cm (right)"
+	model_desc: "/model/sign/traffic/us_cross_merge_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_cross_merge_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07r
+{
+	sign_name: "us cross merge 122cm (left)"
+	model_desc: "/model/sign/traffic/us_cross_merge_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_cross_merge_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07s
+{
+	sign_name: "us cross side 122cm (right)"
+	model_desc: "/model/sign/traffic/us_cross_side_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_cross_side_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07t
+{
+	sign_name: "us cross side 122cm (left)"
+	model_desc: "/model/sign/traffic/us_cross_side_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_cross_side_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07u
+{
+	sign_name: "us lane ends 1 122cm (right)"
+	model_desc: "/model/sign/traffic/us_lane_ends_1_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_lane_ends_1_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07v
+{
+	sign_name: "us lane ends 1 122cm (left)"
+	model_desc: "/model/sign/traffic/us_lane_ends_1_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_lane_ends_1_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07w
+{
+	sign_name: "us entering roadway added lane 122cm (right)"
+	model_desc: "/model/sign/traffic/us_entering_roadway_added_lane_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_added_lane_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+
+sign_model : sign.2k07x
+{
+	sign_name: "us entering roadway added lane 122cm (left)"
+	model_desc: "/model/sign/traffic/us_entering_roadway_added_lane_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_added_lane_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07y
+{
+	sign_name: "us divided highway 122cm"
+	model_desc: "/model/sign/traffic/us_divided_highway_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_divided_highway_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k07z
+{
+	sign_name: "us divided highway end 122cm"
+	model_desc: "/model/sign/traffic/us_divided_highway_122cm_end.pmd"
+	model_coll: "/model/sign/traffic/us_divided_highway_122cm_end.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k080
+{
+	sign_name: "us entering roadway merge 122cm (right)"
+	model_desc: "/model/sign/traffic/us_entering_roadway_merge_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_merge_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k081
+{
+	sign_name: "us entering roadway merge 122cm (left)"
+	model_desc: "/model/sign/traffic/us_entering_roadway_merge_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_entering_roadway_merge_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k082
+{
+	sign_name: "us stop ahead 122cm"
+	model_desc: "/model/sign/traffic/us_stop_ahead_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_stop_ahead_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k083
+{
+	sign_name: "us yield ahead 122cm"
+	model_desc: "/model/sign/traffic/us_yield_ahead_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_yield_ahead_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k084
+{
+	sign_name: "us cross traffic light 122cm"
+	model_desc: "/model/sign/traffic/us_cross_traffic_light_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_cross_traffic_light_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k085
+{
+	sign_name: "us cross T 122cm"
+	model_desc: "/model/sign/traffic/us_cross_t_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_cross_t_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k086
+{
+	sign_name: "us cross X 122cm"
+	model_desc: "/model/sign/traffic/us_cross_x_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_cross_x_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k087
+{
+	sign_name: "us cross T 122cm (right)"
+	model_desc: "/model/sign/traffic/us_cross_t_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_cross_t_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k088
+{
+	sign_name: "us cross T 122cm (left)"
+	model_desc: "/model/sign/traffic/us_cross_t_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_cross_t_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k089
+{
+	sign_name: "us truck hill 122cm"
+	model_desc: "/model/sign/traffic/us_truck_hill_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_truck_hill_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08a
+{
+	sign_name: "us two way traffic 122cm"
+	model_desc: "/model/sign/traffic/us_two_way_traffic_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_two_way_traffic_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08b
+{
+	sign_name: "us advisory reverse curve 122cm (right)"
+	model_desc: "/model/sign/traffic/us_advisory_reverse_curve_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_advisory_reverse_curve_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08c
+{
+	sign_name: "us advisory reverse curve 122cm (left)"
+	model_desc: "/model/sign/traffic/us_advisory_reverse_curve_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_advisory_reverse_curve_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08d
+{
+	sign_name: "us turn 122cm (right)"
+	model_desc: "/model/sign/traffic/us_turn_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_turn_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08e
+{
+	sign_name: "us turn 122cm (left)"
+	model_desc: "/model/sign/traffic/us_turn_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_turn_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08f
+{
+	sign_name: "us arrow per lane merge 122cm"
+	model_desc: "/model/sign/traffic/us_arrow_per_lane_merge_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_arrow_per_lane_merge_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08g
+{
+	sign_name: "us slippery road 122cm"
+	model_desc: "/model/sign/traffic/us_slippery_road_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_slippery_road_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08h
+{
+	sign_name: "us reverse turn 122cm (right)"
+	model_desc: "/model/sign/traffic/us_reverse_turn_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_reverse_turn_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08i
+{
+	sign_name: "us reverse turn 122cm (left)"
+	model_desc: "/model/sign/traffic/us_reverse_turn_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_reverse_turn_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08j
+{
+	sign_name: "us curve S 122cm (right)"
+	model_desc: "/model/sign/traffic/us_curve_s_122cm_right.pmd"
+	model_coll: "/model/sign/traffic/us_curve_s_122cm_right.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08k
+{
+	sign_name: "us curve S 122cm (left)"
+	model_desc: "/model/sign/traffic/us_curve_s_122cm_left.pmd"
+	model_coll: "/model/sign/traffic/us_curve_s_122cm_left.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08l
+{
+	sign_name: "us truck rollover 122cm"
+	model_desc: "/model/sign/traffic/us_truck_rollover_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_truck_rollover_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08m
+{
+	sign_name: "us stop one way 122cm"
+	model_desc: "/model/sign/traffic/us_stop_one_way_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_stop_one_way_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel_dbl"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+
+	traffic_rule: traffic_rule.stop
+}
+
+sign_model : sign.2k08n
+{
+	sign_name: "us do not enter 122cm"
+	model_desc: "/model/sign/traffic/us_do_not_enter_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_do_not_enter_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel_dbl"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08o
+{
+	sign_name: "us wrong way 122cm"
+	model_desc: "/model/sign/traffic/us_wrong_way_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_wrong_way_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel_dbl"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08p
+{
+	sign_name: "us wrong way do not enter 122cm"
+	model_desc: "/model/sign/traffic/us_wrong_way_do_not_enter_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_wrong_way_do_not_enter_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel_dbl_91"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08q
+{
+	sign_name: "us stop do not enter one way 122cm"
+	model_desc: "/model/sign/traffic/us_stop_do_not_enter_one_way_122cm.pmd"
+	model_coll: "/model/sign/traffic/us_stop_do_not_enter_one_way_122cm.pmc"
+	look_name: "default"
+	variant_name: "steel"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08r
+{
+	sign_name: "us side board green 137x168"
+	model_desc: "/model/sign/navigation/us_side_board_green_137x168.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_137x168.pmc"
+	look_name: "default"
+	category: "editable board"
+
+	stand_classes: 1
+	stand_classes[0]: "side_med_1"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k08s
+{
+	sign_name: "us side board green 335x122"
+	model_desc: "/model/sign/navigation/us_side_board_green_335x122.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_335x122.pmc"
+	look_name: "default"
+	category: "editable board"
+
+	stand_classes: 1
+	stand_classes[0]: "side_med_1"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k08t
+{
+	sign_name: "us side board green 457x183"
+	model_desc: "/model/sign/us_side_board_green_457x183.pmd"
+	model_coll: "/model/sign/us_side_board_green_457x183.pmc"
+	look_name: "default"
+	category: "editable board"
+
+	stand_classes: 1
+	stand_classes[0]: "side_med_1"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k08u
+{
+	sign_name: "wa lamp 4 double"
+	model_desc: "/model/props/lamp/wa_lamp_4_double.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_4_double.pmc"
+	look_name: "default"
+	category: ""
+
+	road_model: true
+	instanced: true
+	dynamic: false
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k08v
+{
+	sign_name: "warehouse lamp 01 double"
+	model_desc: "/model/props/lamp/warehouse_lamp_01_double.pmd"
+	model_coll: "/model/props/lamp/warehouse_lamp_01_double.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: false
+	road_model: true
+	instanced: true
+
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k08w
+{
+	sign_name: "warehouse lamp 01 10m"
+	model_desc: "/model/props/lamp/warehouse_lamp_01_10m.pmd"
+	model_coll: "/model/props/lamp/warehouse_lamp_01_10m.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: false
+	road_model: true
+	instanced: true
+
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k08x
+{
+	sign_name: "warehouse lamp 01 10m double"
+	model_desc: "/model/props/lamp/warehouse_lamp_01_10m_double.pmd"
+	model_coll: "/model/props/lamp/warehouse_lamp_01_10m_double.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: false
+	road_model: true
+	instanced: true
+
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k08y
+{
+	sign_name: "ca welcome (click it or ticket)"
+	model_desc: "/model/sign/navigation/ca_welcome_click_it_or_ticket.pmd"
+	model_coll: "/model/sign/navigation/ca_welcome_click_it_or_ticket.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k08z
+{
+	sign_name: "wa lamp 2 sm"
+	model_desc: "/model/props/lamp/wa_lamp_2_sm.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2_sm.pmc"
+	look_name: "default"
+	category: ""
+	road_model: true
+	instanced: true
+	dynamic: false
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k090
+{
+	sign_name: "wa lamp 2 double sm"
+	model_desc: "/model/props/lamp/wa_lamp_2_double_sm.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2_double_sm.pmc"
+	look_name: "default"
+	category: ""
+	road_model: true
+	instanced: true
+	dynamic: false
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k091
+{
+	sign_name: "us curve chevron double"
+	model_desc: "/model/sign/traffic/us_curve_chevron_double.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_double.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k092
+{
+	sign_name: "us curve chevron double 48"
+	model_desc: "/model/sign/traffic/us_curve_chevron_double_48.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_double_48.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k093
+{
+	sign_name: "US oneway arrow1 large"
+	model_desc: "/model/sign/traffic/us_oneway_arrow1_large.pmd"
+	model_coll: "/model/sign/traffic/us_oneway_arrow1_large.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k094
+{
+	sign_name: "US oneway arrow1 large left"
+	model_desc: "/model/sign/traffic/us_oneway_arrow1_large_left.pmd"
+	model_coll: "/model/sign/traffic/us_oneway_arrow1_large_left.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k095
+{
+	sign_name: "us one way roundabout 4"
+	model_desc: "/model/sign/traffic/us_one_way_roundabout_4.pmd"
+	model_coll: "/model/sign/traffic/us_one_way_roundabout_4.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k096
+{
+	sign_name: "us combination speed limit 02"
+	model_desc: "/model/sign/traffic/us_combination_speed_limit_02.pmd"
+	model_coll: "/model/sign/traffic/us_combination_speed_limit_02.pmc"
+	look_name: "default"
+	category: "editable board"
+
+	stand_classes: 1
+	stand_classes[0]: "side_med_1"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
 
 sign_model : sign.gas_nm_02
 {

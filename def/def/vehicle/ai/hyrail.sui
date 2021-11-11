@@ -1,0 +1,51 @@
+traffic_vehicle : traffic.hyrail
+{
+	accessories[]: .hyrail.chassis
+	accessories[]: .hyrail.fwheel
+	accessories[]: .hyrail.rwheel
+	accessories[]: .hyrail.rwheel2
+
+	max_speed: 120
+
+	lod_dist[]: 45
+	lod_dist[]: 70
+	lod_dist[]: 100
+
+	tags[]: slow
+
+	#color[]: (0.0343, 0.0343, 0.0343) #black
+	#color[]: (0.0382, 0.0318, 0.0273) #brown
+	#color[]: (0, 0.0263, 0.1347) #blue
+	#color[]: (0.5394, 0.5711, 0.5906) #silver
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+	#color[]: (0.1596, 0.0093, 0.0197) #red
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+
+	vehicle_mass: 11200
+	engine_power: 500
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .hyrail.chassis
+{
+	data_path: "/def/vehicle/ai/towtruck/chassis_hyrail.sii"
+}
+
+vehicle_wheel_accessory: .hyrail.fwheel
+{
+
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .hyrail.rwheel
+{
+
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory: .hyrail.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}

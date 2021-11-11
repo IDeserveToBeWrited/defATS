@@ -2021,6 +2021,20 @@ oversize_offer_data : spec_offer.ovesize_32b {
 		
 }
 
+### FROM Riverton to Jackson (Yellowstone) 1
+oversize_offer_data : spec_offer.ovesize_33 {
+		route : route_data.riv_jac1
+		cargo : cargo.helicopter
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.9, 3.2, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hel
+		cutscenes_intro_night[]: cutscene.ovs_i_heln
+		
+}
+
 
 ###				Cargo Dimensions 
 ###   	helicopter (3.9, 3.2, 16.0), house (5.0, 4.0, 12.5), aircondition (5.0, 3.0, 13.0), pilot_boat (5.1, 5.3, 16.0), silo (4.6, 4.7, 13.8)

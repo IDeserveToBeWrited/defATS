@@ -1,0 +1,45 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2s.intnational.lt.chassis
+{
+	name: "Short 4x2"
+	price: 17200
+	unlock: 0
+	info[]: "4x2"
+	info[]: "70/70 @@gal@@"
+	icon: "international_lt/chs_4x2_s"
+
+	model: "/vehicle/truck/intnational_lt/chassis/chs_4x2_s.pmd"
+	collision: "/vehicle/truck/intnational_lt/chassis/chs_4x2_s.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/intnational_lt/ui_shadow_4x2s.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/intnational_lt/ui_shadow/ui_shadow_4x2s.pmd"
+
+	tank_size: 530
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 4645	# 10220lb
+	kerb_weight[]: 1805	# 3970lb
+
+	defaults[]: "/def/vehicle/truck/intnational.lt/cabin/day.sii"
+	defaults[]: "/def/vehicle/truck/intnational.lt/accessory/sideskirt/short_fender_plast.sii"
+	defaults[]: "/def/vehicle/truck/intnational.lt/accessory/tank/alu_140.sii"
+
+	conflict_with[]: "hirise.intnational.lt.cabin"
+	conflict_with[]: "skyrise.intnational.lt.cabin"
+
+@include "sound.sui"
+}
+}

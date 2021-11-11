@@ -1,0 +1,39 @@
+SiiNunit
+{
+accessory_cabin_data : day.intnational.lt.cabin
+{
+	name: "Day Cab"
+	price: 16600
+	unlock: 0
+	icon: "international_lt/day"
+
+	model: "/vehicle/truck/intnational_lt/cabin/day.pmd"
+	collision: "/vehicle/truck/intnational_lt/cabin/day.pmc"
+	variant: default
+	look: default
+
+	wiper_model: "/vehicle/truck/intnational_lt/cabin/wiper.pmd"
+	wiper_anim: "/vehicle/truck/intnational_lt/cabin/wiper_anim.pma"
+	suspension: false
+
+	windows_model: "/vehicle/truck/intnational_lt/cabin/win_open.pmd"
+	left_window_anim: "/vehicle/truck/intnational_lt/cabin/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/intnational_lt/cabin/win_open_r.pma"
+
+	drl_with_headlights: 1
+
+	defaults[]: "/def/vehicle/truck/intnational.lt/chassis/6x2_short.sii"
+	defaults[]: "/def/vehicle/truck/intnational.lt/interior/day_std.sii"
+
+	conflict_with[]: "6x4m.intnational.lt.chassis"
+	conflict_with[]: "6x4m_140.intnational.lt.chassis"
+	conflict_with[]: "6x4l.intnational.lt.chassis"
+	conflict_with[]: "6x4l_140.intnational.lt.chassis"
+	conflict_with[]: "6x2m.intnational.lt.chassis"
+	conflict_with[]: "6x2m_140.intnational.lt.chassis"
+	conflict_with[]: "6x2l.intnational.lt.chassis"
+	conflict_with[]: "6x2l_140.intnational.lt.chassis"
+
+@include "sound.sui"
+}
+}

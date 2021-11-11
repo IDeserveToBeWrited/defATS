@@ -1,0 +1,33 @@
+SiiNunit
+{
+accessory_trailer_body_data : horiz_28.scs.bottomdumper.body
+{
+	name: "@@bs_bottomdumper_horizontal@@"
+	price: 20000
+	unlock: 7
+	icon: "body/scs_bottomdumper/horizontal_open"
+
+	size: (1.905, 2.2352, 3.81)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 2.794, 8.5344)	# width, height, length (size of the body + chassis)
+
+	volume: 15.29		# 20 cy
+	body_type: dumper
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for livestock trailer is in chassis, bodies have only deltas to straight body mass.
+	# Thus straight has like 0 while belly has 1000
+	# Shorter body variants have smaller delta (count as x0.9, x0.85, x0.5)
+
+	mass: 898.2	# 1980 lb
+
+	# visual data
+
+	#detail_model: "/vehicle/trailer_owned/scs_bottomdumper/body/horizontal_open_28.pmd"
+	model: "/vehicle/trailer_owned/scs_bottomdumper/body/horizontal_open_28.pmd"
+	# lods[]: ""
+	collision: "/vehicle/trailer_owned/scs_bottomdumper/body/horizontal_open_28.pmc"
+	# variant: 
+	# look
+}
+}

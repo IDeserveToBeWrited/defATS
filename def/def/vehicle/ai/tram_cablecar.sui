@@ -1,0 +1,45 @@
+traffic_vehicle : traffic.cablecar
+{
+	accessories[]: .cablecar.chassis
+	accessories[]: .cablecar.fwheel
+	accessories[]: .cablecar.rwheel
+
+	max_speed: 15
+	vehicle_mass: 11000
+	engine_power: 150	#380kW engine whole cable (several vehicles)
+
+	sound_move[]: "/sound/traffic/cablecar_sf.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	spawn_condition[]: .traffic.cablecar.san_francisc.condition.city
+
+	displacement_limit: 0.0
+}
+
+vehicle_accessory: .cablecar.chassis
+{
+	data_path: "/def/vehicle/ai/tram_cablecar/chassis.sii"
+}
+
+vehicle_wheel_accessory: .cablecar.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cablecar.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.cablecar.san_francisc.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+	str_param[]: "san_francisc"
+}

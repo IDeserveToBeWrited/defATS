@@ -1,0 +1,41 @@
+SiiNunit
+{
+accessory_interior_data	: sky_std.intnational.lt.interior
+{
+	name: "Classic"
+	price: 15180
+	unlock: 0
+	icon: "international_lt/int_std"
+
+	model: "/vehicle/truck/intnational_lt/interior/model/skyrise.pmd"
+	animated_model: "/vehicle/truck/intnational_lt/interior/animation/anim.pmd"
+	collision: "/vehicle/truck/intnational_lt/interior/model/skyrise.pmc"
+	look: int_std
+	variant: int_std
+
+	ext_model: "/vehicle/truck/intnational_lt/interior/external/external_skyrise.pmd"
+	ext_variant: default
+	ext_look: int_std
+
+	suitable_for[]: "skyrise.intnational.lt.cabin"
+
+@include "animations.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .intlt.r.pane.front
+	glass_panes[]: .intlt.r.pane.close
+	glass_panes[]: .intlt.r.pane.far
+	glass_panes[]: .intlt.r.pane.back_sky
+
+@include "seat.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_sky.sui"
+@include "sound_effects_units.sui"
+}

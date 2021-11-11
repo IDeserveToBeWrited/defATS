@@ -1,0 +1,31 @@
+SiiNunit
+{
+accessory_trailer_body_data : end_30.scs.dumper.body
+{
+	name: "@@bs_end_dumper@@"
+	price: 25000
+	unlock: 7
+	icon: "trailer_owned/scs_dumper/accessory/body/end_dumper_30"
+
+	size: (2.286, 1.3716, 8.0772)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 2.8448, 9.144)	# width, height, length (size of the body + chassis?)
+
+	volume: 19.88		# 25 cy
+	body_type: dumper
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for lowboy trailer is in chassis, bodies have only deltas to lowboy mass.
+	# Shorter body variants would have smaller delta.
+
+	mass: 200
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_dumper/body/end_dumper_30.pmd"
+	collision: "/vehicle/trailer_owned/scs_dumper/body/end_dumper_30.pmc"
+	variant: default
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.dumper/accessory/rear_body/simple_end.sii"
+}
+}

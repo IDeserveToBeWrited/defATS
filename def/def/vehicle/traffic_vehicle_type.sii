@@ -31,16 +31,6 @@ traffic_vehicle_type : traffic.vehicle_type.car
 	tags[]: car_all
 }
 
-# cars driving inside specific area only (downtown / city_centre in large cities)
-traffic_vehicle_type : traffic.vehicle_type.car_city
-{
-	speed_class: car
-	license_plate_type: car
-
-	tags[]: downtown
-	tags[]: car_all
-}
-
 # cars not spawned automatically - usually stationary (event, parked) cars or cars driving inside custom areas
 traffic_vehicle_type : traffic.vehicle_type.car_custom
 {
@@ -53,13 +43,14 @@ traffic_vehicle_type : traffic.vehicle_type.car_custom
 
 ########### TRUCK #############
 
-# Common 'heavy' trucks (> 11t) for which special rules apply, for example weigh stations, truck lanes, etc.
+# Common semi-trucks (> 11t, always with 1 semi-trailer) for which special rules apply, for example weigh stations, truck lanes, etc.
 traffic_vehicle_type : traffic.vehicle_type.truck
 {
 	speed_class: truck
 	license_plate_type: truck
 
 	tags[]: road
+	tags[]: truck_semi
 	tags[]: truck_all
 }
 
@@ -83,8 +74,8 @@ traffic_vehicle_type : traffic.vehicle_type.truck_medium
 	tags[]: truck_all
 }
 
-# Heavy trucks with excessively long trailer chain (spawning only at 'multi-lane' high-speed roads)
-traffic_vehicle_type : traffic.vehicle_type.truck_long
+# Heavy NON-semi trucks (> 11t) for which special rules apply, for example weigh stations, truck lanes, etc.
+traffic_vehicle_type : traffic.vehicle_type.truck_heavy
 {
 	speed_class: truck
 	license_plate_type: truck
@@ -93,13 +84,13 @@ traffic_vehicle_type : traffic.vehicle_type.truck_long
 	tags[]: truck_all
 }
 
-# trucks driving inside specific area only (downtown / city_centre in large cities)
-traffic_vehicle_type : traffic.vehicle_type.truck_city
+# Heavy trucks with excessively long trailer chain (spawning only at 'multi-lane' high-speed roads)
+traffic_vehicle_type : traffic.vehicle_type.truck_long
 {
 	speed_class: truck
-	license_plate_type: truck_city
+	license_plate_type: truck
 
-	tags[]: downtown
+	tags[]: road
 	tags[]: truck_all
 }
 
@@ -123,16 +114,6 @@ traffic_vehicle_type : traffic.vehicle_type.bus
 	license_plate_type: bus
 
 	tags[]: road
-	tags[]: bus_all
-}
-
-# buses driving inside specific area only (downtown / city_centre in large cities)
-traffic_vehicle_type : traffic.vehicle_type.bus_city
-{
-	speed_class: bus
-	license_plate_type: bus
-
-	tags[]: downtown
 	tags[]: bus_all
 }
 
@@ -246,9 +227,10 @@ traffic_vehicle_type : traffic.vehicle_type.escort_back
 }
 
 # vehicles not fitting in any other type
-traffic_vehicle_type : traffic.vehicle_type.custom
+# serves only as storage for 'uncategorizable' vehicles and no traffic rule should reference it
+traffic_vehicle_type : traffic.vehicle_type.special
 {
-	tags[]: "custom_all"
+	# no tags for 'special' type
 }
 
 }

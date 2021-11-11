@@ -12,9 +12,12 @@ traffic_lane_data : traffic_lane.road.local.no_overtake
 {
 	speed_class: local_road
 
+	rank: 50
+
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_l
 	traffic_rules[]: traffic_rule.s_trl_r
+	traffic_rules[]: traffic_rule.s_trh_r
 	traffic_rules[]: traffic_rule.s_truck_l
 	traffic_rules[]: traffic_rule.s_bus_l
 	traffic_rules[]: traffic_rule.s_police
@@ -24,9 +27,12 @@ traffic_lane_data : traffic_lane.road.local
 {
 	speed_class: local_road
 
+	rank: 50
+
 	traffic_rules[]: traffic_rule.road
 	traffic_rules[]: traffic_rule.s_car_l
 	traffic_rules[]: traffic_rule.s_trl_r
+	traffic_rules[]: traffic_rule.s_trh_r
 	traffic_rules[]: traffic_rule.s_truck_l
 	traffic_rules[]: traffic_rule.s_bus_l
 	traffic_rules[]: traffic_rule.s_police
@@ -43,6 +49,7 @@ traffic_lane_data : traffic_lane.road.divided
 	traffic_rules[]: traffic_rule.s_car_h
 	traffic_rules[]: traffic_rule.s_trl_r
 	traffic_rules[]: traffic_rule.s_trm_r
+	traffic_rules[]: traffic_rule.s_trh_r
 	traffic_rules[]: traffic_rule.s_truck_h
 	traffic_rules[]: traffic_rule.s_bus_h
 	traffic_rules[]: traffic_rule.s_police
@@ -172,6 +179,8 @@ traffic_lane_data : traffic_lane.road.local.tram
 {
 	speed_class: local_road
 
+	rank: 50
+
 	traffic_rules[]: traffic_rule.road_tram
 	traffic_rules[]: traffic_rule.s_car_l
 	traffic_rules[]: traffic_rule.s_truck_l
@@ -204,16 +213,22 @@ traffic_lane_data : traffic_lane.rail.tram
 
 traffic_lane_data : traffic_lane.no_vehicles
 {
+	# Small road with no vehicles allowed by default.
+	# Use traffic area to allow any vehicle access/spawning.
+
 	speed_class: local_road
 
 	traffic_rules[]: traffic_rule.private_area
 }
 
-traffic_lane_data : traffic_lane.road.village
+traffic_lane_data : traffic_lane.side_road
 {
+	# Small road with occasionally spawned cars
+	# Use traffic area to allow access/spawning for other vehicle types.
+
 	speed_class: local_road
 
-	traffic_rules[]: traffic_rule.road
+	traffic_rules[]: traffic_rule.allow_car
 	traffic_rules[]: traffic_rule.s_car_l
 	traffic_rules[]: traffic_rule.private_area
 }
@@ -264,6 +279,22 @@ traffic_lane_data : traffic_lane.road.forest
 	speed_class: local_road
 
 	traffic_rules[]: traffic_rule.road
+	traffic_rules[]: traffic_rule.physics
+}
+
+traffic_lane_data : traffic_lane.road.local.dust
+{
+	speed_class: local_road
+
+	rank: 30
+
+	traffic_rules[]: traffic_rule.road
+	traffic_rules[]: traffic_rule.s_car_l
+	traffic_rules[]: traffic_rule.s_trl_r
+	traffic_rules[]: traffic_rule.s_trh_r
+	traffic_rules[]: traffic_rule.s_truck_l
+	traffic_rules[]: traffic_rule.s_police
+	traffic_rules[]: traffic_rule.overtake_alw	# Allow overtaking (including 'wrong way')
 	traffic_rules[]: traffic_rule.physics
 }
 

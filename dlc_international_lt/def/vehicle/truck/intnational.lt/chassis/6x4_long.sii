@@ -1,0 +1,48 @@
+SiiNunit
+{
+accessory_chassis_data : 6x4l.intnational.lt.chassis
+{
+	name: "Long 6x4"
+	price: 32200
+	unlock: 23
+	info[]: "6x4"
+	info[]: "120/120 @@gal@@"
+	icon: "international_lt/chs_6x4_l"
+
+	model: "/vehicle/truck/intnational_lt/chassis/chs_6x4_l.pmd"
+	collision: "/vehicle/truck/intnational_lt/chassis/chs_6x4_l.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/intnational_lt/ui_shadow_l.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/intnational_lt/ui_shadow/ui_shadow_l.pmd"
+
+	tank_size: 908.5
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: true
+
+	kerb_weight[]: 5202	# 11445lb
+	kerb_weight[]: 2027	# 4460lb
+	kerb_weight[]: 2027	# 4460lb
+
+	defaults[]: "/def/vehicle/truck/intnational.lt/cabin/skyrise.sii"
+	defaults[]: "/def/vehicle/truck/intnational.lt/accessory/sideskirt/long_fender_plast.sii"
+	defaults[]: "/def/vehicle/truck/intnational.lt/accessory/tank/alu_240.sii"
+
+	conflict_with[]: "day.intnational.lt.cabin"
+	conflict_with[]: "hirise.intnational.lt.cabin"
+
+@include "sound.sui"
+}
+}

@@ -429,25 +429,30 @@ model_def : model.wa_265
 model_def : model.wa_266
 {
 	model_desc: "/prefab/depots/wa_port_of_seattle/wa_port_crane1.pmd"
+	name: "wa port crane1"
 
-	dynamic_lod_desc[]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod1.pmd"
-	dynamic_lod_dist[]: 30
+	color_variant: 5
+	color_variant[0]: "yellow | crane : 242,197,146 | ram : 242,197,146 | ram_up : 242,197,146"
+	color_variant[1]: "blue | crane : 129,166,208 | ram : 129,166,208 | ram_up : 129,166,208"
+	color_variant[2]: "red | crane : 172,132,132 | ram : 172,132,132 | ram_up : 172,132,132"
+	color_variant[3]: "white | crane : 219,219,219 | ram : 219,219,219 | ram_up : 219,219,219"
+	color_variant[4]: "black | crane : 50,50,50 | ram : 50,50,50 | ram_up : 50,50,50"
 
-	dynamic_lod_desc[]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod2.pmd"
-	dynamic_lod_dist[]: 150
+	static_lod_path: 2
+	static_lod_name: 2
+	static_lod_path[0]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod1.pmd"
+	static_lod_name[0]: "LOD from 30m"
+	static_lod_path[1]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod2.pmd"
+	static_lod_name[1]: "LOD from 100m"
 
-	dynamic_lod_desc[]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod3.pmd"
-	dynamic_lod_dist[]: 250
-
-	static_lod_name[]: "LOD from 30m"
-	static_lod_path[]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod1.pmd"
-	static_lod_name[]: "LOD from 100m"
-
-	static_lod_path[]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod2.pmd"
-	color_variant[]: "yellow | crane : 242,197,146 | ram : 242,197,146 | ram_up : 242,197,146"
-	color_variant[]: "blue | crane : 129,166,208 | ram : 129,166,208 | ram_up : 129,166,208"
-	color_variant[]: "red | crane : 172,132,132 | ram : 172,132,132 | ram_up : 172,132,132"
-	color_variant[]: "white | crane : 219,219,219 | ram : 219,219,219 | ram_up : 219,219,219"
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
+	dynamic_lod_desc[0]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod1.pmd"
+	dynamic_lod_dist[0]: 30
+	dynamic_lod_desc[1]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod2.pmd"
+	dynamic_lod_dist[1]: 150
+	dynamic_lod_desc[2]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod3.pmd"
+	dynamic_lod_dist[2]: 250
 }
 model_def : model.wa_267
 {
@@ -769,10 +774,6 @@ model_def : model.wa_483
 	dynamic_lod_dist[]: 100
 	dynamic_lod_desc[]: "/model/panorama/wa_dayton/wa_dayton_courthouse_lod2.pmd"
 	dynamic_lod_dist[]: 200
-}
-model_def : model.wa_485
-{
-	model_desc: "/model/panorama/wa_dayton/wa_flat_man_horse.pmd"
 }
 model_def : model.wa_506
 {

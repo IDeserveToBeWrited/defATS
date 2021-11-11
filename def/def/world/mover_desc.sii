@@ -316,7 +316,7 @@ mover_desc : mover_desc.cowboy3_3
     group_tags[]: gallop
 }
 
-### FARMER 
+### FARMER
 
 mover_desc : mover_desc.farmer_1
 {
@@ -704,6 +704,8 @@ mover_desc : mover_desc.nk_servman
 	lods[2]: "/model/mover/characters/new_generation/new/models/man/serviceman/ngn_serviceman_lod3.pmd"
 	lods[3]: ""
 
+	model_coll: "/model/mover/characters/new_generation/new/models/props/container.pmc"
+
 	lod_distances[0]: 18
 	lod_distances[1]: 49
 	lod_distances[2]: 128
@@ -730,6 +732,8 @@ mover_desc : mover_desc.nk_worker
 	lods[0]: "/model/mover/characters/new_generation/new/models/man/worker_vest/ngn_worker_vest_lod1.pmd"
 	lods[1]: "/model/mover/characters/new_generation/new/models/man/worker_vest/ngn_worker_vest_lod2.pmd"
 	lods[2]: "/model/mover/characters/new_generation/new/models/man/worker_vest/ngn_worker_vest_lod3.pmd"
+	
+	model_coll: "/model/mover/characters/new_generation/new/models/props/container.pmc"
 
 	variants[]: cenda
 	variants[]: nemiro
@@ -1023,7 +1027,7 @@ mover_desc : mover_desc.horse.brown_white
 mover_desc : mover_desc.horse.rodeo
 {
 	model_desc: "/model/mover/animal/horse/horse_tail.pmd"
-    
+
    	lods[0]: "/model/mover/animal/horse/horse_tail_lod1.pmd"
 	lods[1]: "/model/mover/animal/horse/horse_tail_lod2.pmd"
 	lods[2]: "/model/mover/animal/horse/horse_tail_lod3.pmd"
@@ -1034,7 +1038,7 @@ mover_desc : mover_desc.horse.rodeo
 	lod_distances[2]: 100
 	lod_distances[3]: 150
 	lod_distances[4]: 200
-    
+
 	group_tags[]: horse
     group_tags[]: rodeo
 }
@@ -2718,7 +2722,24 @@ mover_desc : mover_desc.basket_pl_5
 
 	group_tags[]: basket_pl
 }
+mover_desc : mover_desc.mixermn
+{
+	model_desc: "/model/mover/characters/models/workers/m_worker_caucasian_01.pmd"
 
+	lods[0]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod1.pmd"
+	lods[1]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod2.pmd"
+	lods[2]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod3.pmd"
+	lods[3]: "/model/mover/characters/models/workers/m_worker_caucasian_01_lod4.pmd"
+	lods[4]: ""
+	lod_distances[0]: 10
+	lod_distances[1]: 20
+	lod_distances[2]: 40
+	lod_distances[3]: 100
+	lod_distances[4]: 200
+
+	group_tags[]: worker_old
+	group_tags[]: mixerman
+}
 
 #     _  _____ ____                _
 #    / \|_   _/ ___|    ___  _ __ | |_   _
@@ -2937,7 +2958,7 @@ mover_desc : mover_desc.fire_saw
 	group_tags[]: fire_old
 }
 
-### ### ### Agriculture Inspection officer ### ### ###  
+### ### ### Agriculture Inspection officer ### ### ###
 
 mover_desc : mover_desc.ag_insp_off
 {
@@ -2972,15 +2993,6 @@ mover_desc : mover_desc.ag_insp_off
 	group_tags[]: man
 	group_tags[]: officer
 }
-
-### MACK ACTION ###
-
-mover_desc : mover_desc.ac_mack
-{
-	model_desc: "/model/vehicle/event/mack_anim.pmd"
-	group_tags[]: ac_mack
-}
-
 
 ### DEER ACTION ###
 
@@ -3025,4 +3037,5 @@ mover_desc : mover_desc.cofibr
 	model_desc: "/model/building/shop/fastfood/co_cofibreak_totem_anim.pmd"
 	group_tags[]: cofibr
 }
+
 }

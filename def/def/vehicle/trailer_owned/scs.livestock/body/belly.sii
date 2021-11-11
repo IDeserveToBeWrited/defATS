@@ -1,0 +1,41 @@
+SiiNunit
+{
+accessory_trailer_body_data : belly.scs.livestock.body
+{
+	name: "@@bs_livestock_belly@@"
+	price: 45000
+	unlock: 14
+	icon: "body/scs_livestock/belly"
+
+	# 48' x 102" x 13'6"
+	# Internal: 47'6" x 99" x 110"
+	# http://www.wilsontrailer.com/livestock-trailers/silverstar/
+
+	size: (2.5146, 2.794, 14.478)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 14.6304)	# width, height, length (size of the body + chassis)
+
+	volume: 114.79		# 4053.7 cft
+	body_type: livestock
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for livestock trailer is in chassis, bodies have only deltas to straight body mass.
+	# Thus straight has like 0 while belly has 1000
+	# Shorter body variants have smaller delta (count as x0.9, x0.85, x0.5)
+
+	mass: 898.2	# 1980 lb
+
+	# visual data
+
+	#detail_model: "/vehicle/trailer_owned/scs_livestock/body/belly.pmd"
+	model: "/vehicle/trailer_owned/scs_livestock/body/belly.pmd"
+	# lods[]: ""
+	collision: "/vehicle/trailer_owned/scs_livestock/body/belly.pmc"
+	# variant: 
+	# look
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.livestock/accessory/markers/simple_belly.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.livestock/accessory/r_bumper/simple.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.livestock/accessory/f_body/chrome.sii"
+}
+}

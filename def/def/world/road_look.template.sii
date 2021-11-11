@@ -166,17 +166,74 @@ road_template_variant : .tmpl_var.left.road.us_tmpl0b
 	lanes_left[]: traffic_lane.road.freeway.full_in
 }
 
+road_look : road.us_tmpl0l
+{
+	name: "us 2-2 freeway 3 4m offset lowpoly 15 tmpl"
+	template_right: "/road_template/us/us_2_freeway_low15.pmd"
+	template_left: "/road_template/us/us_2_freeway_low15.pmd"
+
+	road_offset: 2.0
+
+	lanes_left[]: traffic_lane.road.freeway
+	lanes_left[]: traffic_lane.road.freeway
+	lanes_right[]: traffic_lane.road.freeway
+	lanes_right[]: traffic_lane.road.freeway
+
+	template_variants_right[]: .tmpl_var.right.road.us_tmpl0lb
+	template_variants_left[]: .tmpl_var.left.road.us_tmpl0lb
+
+	compatible_edges_right[]: "sh_l15"
+
+	compatible_edges_left[]: "sh_l15"
+
+	shoulder_space_left: 3.5
+	shoulder_space_right: 3.5
+
+	overlay_schemes[]: "crack_new1 : 1.0 : _a|4 : _b|4 : _c|5 : _d|7 : _k|7 : _p|7 : _r|2"
+	overlay_schemes[]: "crack_new2 : 0.9 : _e|6 : _f|6 : _g|8 : _h|8 : _i|8 : _j|3"
+	overlay_schemes[]: "crack_new3 : 1.0 : _l|2 : _m|8 : _n|6 : _o|4"
+	overlay_schemes[]: "crack_new4 : 0.6 : _s|2 : _w|5 : _x|3 : _y|2"
+	overlay_schemes[]: "crack_new5 : 1.0 : _t|5 : _u|5 : _v|6 : _z|3 : _q|3"
+	overlay_schemes[]: "pattern : 1.0 : _a0|4 : _a1|4 : _a2|5 : _a3|7 : _a4|7 : _a5|7 : _a6|2 : _a7|4 : _a8|4 : _a9|5"
+	overlay_schemes[]: "dust : 0.1 : _1|5 : _2|5"
+	overlay_schemes[]: "asph_crv : 1.0 : _b0|7 : _b1|7 : _b2|7"
+	overlay_schemes[]: "ladder_crv : 1.0 : _d0|4 : _d1|4 : _d2|5 : _d3|7 : _d4|7 : _d5|7 : _d6|2 : _d7|4 : _d8|4 : _d9|5"
+	overlay_schemes[]: "small_crc : 1.0 : _l0|7 : _l1|7 : _l2|7 : _l3|7 : _l4|7"
+	overlay_schemes[]: "center : 1.0 : _f0|5 : _f1|5 : _f2|5"
+	overlay_schemes[]: "center_brk : 1.0 : _n0|4 : _n1|4 : _n2|5 : _n3|7 : _n4|7 :  _n5|7 : _n6|2"
+	overlay_schemes[]: "grille_crc : 1.0 : _m0|7 : _m1|7 : _m2|7 : _m3|7 : _m4|7"
+	overlay_schemes[]: "stripes : 1.0 : _j0|4 : _j1|4 : _j2|5 : _j3|5"
+
+}
+
+road_template_variant : .tmpl_var.right.road.us_tmpl0lb
+{
+	variant_names[]: "brd_ful"
+
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+}
+
+
+road_template_variant : .tmpl_var.left.road.us_tmpl0lb
+{
+	variant_names[]: "brd_ful"
+
+	lanes_left[]: traffic_lane.road.freeway.full_out
+	lanes_left[]: traffic_lane.road.freeway.full_in
+}
+
 road_look : road.us_tmpl1
 {
 	name: "us 2-2 freeway 3 11m offset tmpl"
 	template_right: "/road_template/us/us_2_freeway.pmd"
 	template_left: "/road_template/us/us_2_freeway.pmd"
-	
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
 	add_parts_right[]: refl_red_w
-	
+
 	add_parts_left[]: refl_ow_y
 	add_parts_left[]: refl_ow_w
 	add_parts_left[]: refl_red_y
@@ -351,10 +408,12 @@ road_look : road.us_tmpl11
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
 	compatible_edges_right[]: "dw_sh"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 3.5
@@ -425,7 +484,7 @@ road_look : road.us_tmpl12
 	lanes_right[]: traffic_lane.road.freeway
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl12
-	
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -473,7 +532,8 @@ road_look : road.us_tmpl13
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl13
 	template_variants_right[]: .tmpl_var2.road.us_tmpl13
-	
+	template_variants_right[]: .tmpl_var3.road.us_tmpl13
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -498,10 +558,21 @@ road_template_variant : .tmpl_var.road.us_tmpl13
 road_template_variant : .tmpl_var2.road.us_tmpl13
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway.full_out
 	lanes_right[]: traffic_lane.road.freeway.full_in
+}
+
+road_template_variant : .tmpl_var3.road.us_tmpl13
+{
+	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
+
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+	lanes_right[]: traffic_lane.road.freeway
 }
 
 road_look : road.us_tmpl16
@@ -533,6 +604,7 @@ road_look : road.us_tmpl16
 road_template_variant : .tmpl_var.road.us_tmpl16.r
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway.full_out
@@ -542,6 +614,7 @@ road_template_variant : .tmpl_var.road.us_tmpl16.r
 road_template_variant : .tmpl_var.road.us_tmpl16.l
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_left[]: traffic_lane.road.freeway
 	lanes_left[]: traffic_lane.road.freeway.full_out
@@ -577,6 +650,7 @@ road_look : road.us_tmpl17
 road_template_variant : .tmpl_var.road.us_tmpl17.r
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway.full_out
@@ -586,6 +660,7 @@ road_template_variant : .tmpl_var.road.us_tmpl17.r
 road_template_variant : .tmpl_var.road.us_tmpl17.l
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_left[]: traffic_lane.road.freeway
 	lanes_left[]: traffic_lane.road.freeway.full_out
@@ -638,6 +713,7 @@ road_look : road.us_tmpl14
 road_template_variant : .tmpl_var.road.us_tmpl14.r
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway.full_out
@@ -647,6 +723,7 @@ road_template_variant : .tmpl_var.road.us_tmpl14.r
 road_template_variant : .tmpl_var.road.us_tmpl14.l
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_left[]: traffic_lane.road.freeway
 	lanes_left[]: traffic_lane.road.freeway.full_out
@@ -670,7 +747,7 @@ road_look : road.us_tmpl15
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway
-	
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -693,6 +770,7 @@ road_look : road.us_tmpl15
 road_template_variant : .tmpl_var.road.us_tmpl15.r
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway.full_out
@@ -702,6 +780,7 @@ road_template_variant : .tmpl_var.road.us_tmpl15.r
 road_template_variant : .tmpl_var.road.us_tmpl15.l
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "brd_blk_ful"
 
 	lanes_left[]: traffic_lane.road.freeway
 	lanes_left[]: traffic_lane.road.freeway.full_out
@@ -744,6 +823,7 @@ road_look : road.us_tmpl18
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.25
 	shoulder_space_right: 0.25
@@ -798,12 +878,17 @@ road_look : road.us_tmpl19
 	template_variants_right[]: .tmpl_var.road.us_tmpl19
 	template_variants_right[]: .tmpl_var.road.us_tmpl19.1
 	template_variants_right[]: .tmpl_var.road.us_tmpl19.2
-	
+	template_variants_right[]: .tmpl_var.road.us_tmpl19.3
+
 	add_parts_right[]: refl_tw_l
 	add_parts_right[]: refl_tw_r
 	add_parts_right[]: refl_tw_c
 	add_parts_right[]: refl_ow_l
 	add_parts_right[]: refl_ow_r
+	add_parts_right[]: coll_rmb_c
+	add_parts_right[]: coll_rmb
+	add_parts_right[]: rmb_c
+	add_parts_right[]: rmb
 
 	compatible_edges_right[]: "sh"
 	compatible_edges_right[]: "sh_a"
@@ -835,10 +920,12 @@ road_look : road.us_tmpl19
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
 	compatible_edges_right[]: "dw_sh"
+	compatible_edges_right[]: "dw2_tr"
 
 
 	shoulder_space_left: 1.0
@@ -855,6 +942,7 @@ road_template_variant : .tmpl_var.road.us_tmpl19
 road_template_variant : .tmpl_var.road.us_tmpl19.1
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "cty_brk_ful"
 
 	lanes_left[]: traffic_lane.road.local
 	lanes_right[]: traffic_lane.road.local.no_overtake
@@ -862,9 +950,17 @@ road_template_variant : .tmpl_var.road.us_tmpl19.1
 road_template_variant : .tmpl_var.road.us_tmpl19.2
 {
 	variant_names[]: "brd_ful_brk"
+	variant_names[]: "cty_ful_brk"
 
 	lanes_left[]: traffic_lane.road.local.no_overtake
 	lanes_right[]: traffic_lane.road.local
+}
+road_template_variant : .tmpl_var.road.us_tmpl19.3
+{
+	variant_names[]: "dust"
+
+	lanes_left[]: traffic_lane.road.local.dust
+	lanes_right[]: traffic_lane.road.local.dust
 }
 
 road_look : road.us_tmpl20
@@ -898,6 +994,7 @@ road_look : road.us_tmpl20
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -907,6 +1004,7 @@ road_look : road.us_tmpl20
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
 	lanes_left[]: traffic_lane.no_vehicles
@@ -1014,7 +1112,7 @@ road_look : road.us_tmp20
 	lane_offsets_left[]: (1.25, 0)
 	lane_offsets_right[]: (1.75, 0)
 	lane_offsets_right[]: (1.25, 0)
-	
+
 	add_parts_right[]: refl_tw_l
 	add_parts_right[]: refl_tw_r
 	add_parts_right[]: refl_tw_c
@@ -1047,6 +1145,7 @@ road_look : road.us_tmp20
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -1056,6 +1155,7 @@ road_look : road.us_tmp20
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.0
 	shoulder_space_right: 0.0
@@ -1108,6 +1208,7 @@ road_look : road.us_tmp21
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.25
 	shoulder_space_right: 0.25
@@ -1155,6 +1256,7 @@ road_look : road.us_tmpl23
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -1164,6 +1266,7 @@ road_look : road.us_tmpl23
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.0
 	shoulder_space_right: 0.0
@@ -1224,6 +1327,7 @@ road_look : road.us_tmpl24
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -1233,6 +1337,7 @@ road_look : road.us_tmpl24
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.0
 	shoulder_space_right: 0.0
@@ -1293,6 +1398,7 @@ road_look : road.us_tmpl25
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh_1"
 	compatible_edges_left[]: "kb_us"
@@ -1315,6 +1421,7 @@ road_look : road.us_tmpl25
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 0.0
 	shoulder_space_right: 0.0
@@ -1354,6 +1461,7 @@ road_look : road.us_tmpl25a
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "sh_a"
@@ -1377,6 +1485,7 @@ road_look : road.us_tmpl25a
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 0.25
 	shoulder_space_right: 0.0
@@ -1394,7 +1503,8 @@ road_look : road.us_tmpl26
 	template_variants_right[]: .tmpl_var.road.us_tmpl26
 	template_variants_right[]: .tmpl_var.road.us_tmpl26.1
 	template_variants_right[]: .tmpl_var.road.us_tmpl26.2
-	
+	template_variants_right[]: .tmpl_var.road.us_tmpl26.3
+
 	add_parts_right[]: refl_tw_l
 	add_parts_right[]: refl_tw_r
 	add_parts_right[]: refl_tw_c
@@ -1425,6 +1535,7 @@ road_look : road.us_tmpl26
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -1434,6 +1545,7 @@ road_look : road.us_tmpl26
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -1475,6 +1587,13 @@ road_template_variant : .tmpl_var.road.us_tmpl26.2
 	lanes_left[]: traffic_lane.road.local
 	lanes_right[]: traffic_lane.road.local.no_overtake
 }
+road_template_variant : .tmpl_var.road.us_tmpl26.3
+{
+	variant_names[]: "dust"
+
+	lanes_left[]: traffic_lane.road.local.dust
+	lanes_right[]: traffic_lane.road.local.dust
+}
 
 road_look : road.us_tmpl27
 {
@@ -1490,6 +1609,8 @@ road_look : road.us_tmpl27
 	lanes_right[]: traffic_lane.road.divided
 
 	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_hw3"
+	compatible_edges_right[]: "sh_hw2"
 	compatible_edges_right[]: "kb_us"
 	compatible_edges_right[]: "kb_np"
 	compatible_edges_right[]: "kb_redn"
@@ -1510,8 +1631,11 @@ road_look : road.us_tmpl27
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "sh_hw3"
+	compatible_edges_left[]: "sh_hw2"
 	compatible_edges_left[]: "kb_us"
 	compatible_edges_left[]: "kb_np"
 	compatible_edges_left[]: "kb_redn"
@@ -1532,6 +1656,7 @@ road_look : road.us_tmpl27
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -1579,6 +1704,7 @@ road_look : road.us_tmpl29
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -1588,6 +1714,7 @@ road_look : road.us_tmpl29
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -1689,14 +1816,17 @@ road_look : road.us_tmpl30
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dw_sh"
 	compatible_edges_right[]: "dr_2m_an"
 	compatible_edges_right[]: "dr_4m_an"
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -1879,6 +2009,7 @@ road_look : road.us_tmpl321
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -1887,6 +2018,68 @@ road_look : road.us_tmpl321
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
+
+	shoulder_space_left: 1.0
+	shoulder_space_right: 1.0
+
+}
+
+road_look : road.us_tmpl331
+{
+	name: "us 3-3 country 1"
+	template_right: "/road_template/us/us_3-3_country_1.pmd"
+
+
+	lanes_left[]: traffic_lane.road.divided.low_density
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.low_density
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_left[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+	lane_offsets_right[]: (0, 0)
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "sh_3"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw_sw_di_fl"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+	compatible_edges_right[]: "dr_kerb"
+	compatible_edges_right[]: "dr_2m"
+	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -1905,7 +2098,7 @@ road_look : road.us_tmpl421
 	lanes_left[]: traffic_lane.road.divided
 	lanes_right[]: traffic_lane.road.divided
 	lanes_right[]: traffic_lane.road.divided
-	
+
 	template_variants_right[]: .tmpl_var.road.us_tmpl421
 	template_variants_right[]: .tmpl_var.road.us_tmpl421.1
 	template_variants_right[]: .tmpl_var.road.us_tmpl421.2
@@ -1942,6 +2135,7 @@ road_look : road.us_tmpl421
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -1950,6 +2144,7 @@ road_look : road.us_tmpl421
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -2004,7 +2199,7 @@ road_look : road.us_tmpl241
 	lanes_right[]: traffic_lane.road.divided
 	lanes_right[]: traffic_lane.road.divided
 	lanes_right[]: traffic_lane.road.divided
-	
+
 	template_variants_right[]: .tmpl_var.road.us_tmpl241
 	template_variants_right[]: .tmpl_var.road.us_tmpl241.1
 	template_variants_right[]: .tmpl_var.road.us_tmpl241.2
@@ -2041,6 +2236,7 @@ road_look : road.us_tmpl241
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2049,6 +2245,7 @@ road_look : road.us_tmpl241
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -2134,6 +2331,7 @@ road_look : road.us_tmpl231
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2142,6 +2340,7 @@ road_look : road.us_tmpl231
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -2189,6 +2388,7 @@ road_look : road.us_tmpl323
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2197,6 +2397,7 @@ road_look : road.us_tmpl323
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -2245,6 +2446,7 @@ road_look : road.us_tmpl233
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2253,6 +2455,7 @@ road_look : road.us_tmpl233
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -2299,6 +2502,7 @@ road_look : road.us_tmpl431
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2307,6 +2511,7 @@ road_look : road.us_tmpl431
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -2353,6 +2558,7 @@ road_look : road.us_tmpl341
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2361,6 +2567,7 @@ road_look : road.us_tmpl341
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -2447,6 +2654,7 @@ road_look : road.us_tmpla33 {
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2455,6 +2663,7 @@ road_look : road.us_tmpla33 {
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
 
@@ -2512,6 +2721,7 @@ road_look : road.us_tmpla333 {
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2520,6 +2730,7 @@ road_look : road.us_tmpla333 {
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
 
@@ -2580,6 +2791,7 @@ road_look : road.us_tmplb33 {
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2588,6 +2800,7 @@ road_look : road.us_tmplb33 {
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
 
@@ -2635,6 +2848,7 @@ road_look : road.us_tmpl34
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2644,6 +2858,7 @@ road_look : road.us_tmpl34
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 3.0
 	shoulder_space_right: 3.0
@@ -2697,6 +2912,7 @@ road_look : road.us_tmpl28
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -2719,6 +2935,7 @@ road_look : road.us_tmpl28
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -2758,6 +2975,7 @@ road_look : road.us_tmpl285
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -2780,6 +2998,7 @@ road_look : road.us_tmpl285
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -2869,6 +3088,7 @@ road_look : road.us_tmpl365
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2877,6 +3097,7 @@ road_look : road.us_tmpl365
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "sh_a"
@@ -2902,6 +3123,7 @@ road_look : road.us_tmpl365
 	compatible_edges_left[]: "dw2_con"
 	compatible_edges_left[]: "dw4_con"
 	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
 	compatible_edges_left[]: "dw4_kb"
 	compatible_edges_left[]: "dw2_kb_sw"
 	compatible_edges_left[]: "dw4_kb_sw"
@@ -2910,6 +3132,7 @@ road_look : road.us_tmpl365
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -2952,6 +3175,7 @@ road_look : road.us_tmpl366
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -2960,6 +3184,7 @@ road_look : road.us_tmpl366
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "sh_a"
@@ -2985,6 +3210,7 @@ road_look : road.us_tmpl366
 	compatible_edges_left[]: "dw2_con"
 	compatible_edges_left[]: "dw4_con"
 	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
 	compatible_edges_left[]: "dw4_kb"
 	compatible_edges_left[]: "dw2_kb_sw"
 	compatible_edges_left[]: "dw4_kb_sw"
@@ -2993,6 +3219,133 @@ road_look : road.us_tmpl366
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
+
+	shoulder_space_left: 1.25
+	shoulder_space_right: 1.25
+}
+
+road_look : road.us_tmpl366l
+{
+	name: "us 2-2 country offset 9m 1 lowpoly15"
+	template_right: "/road_template/us/us_2_country_divided_1_low15.pmd"
+	template_left: "/road_template/us/us_2_country_divided_1_low15.pmd"
+
+	road_offset: 4.5
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh_l15"
+	compatible_edges_right[]: "kb_l15"
+	compatible_edges_right[]: "kb_dirt_l"
+	compatible_edges_right[]: "kb_redn_l"
+	compatible_edges_right[]: "kb_np_l"
+	compatible_edges_right[]: "sw_2m_bl"
+	compatible_edges_right[]: "sw_4m_bl"
+	compatible_edges_right[]: "sw_2m_bl2"
+	compatible_edges_right[]: "sw_4m_bl2"
+	compatible_edges_right[]: "sw_disp_bl"
+
+	compatible_edges_left[]: "sh_l15"
+	compatible_edges_left[]: "kb_l15"
+	compatible_edges_left[]: "kb_dirt_l"
+	compatible_edges_left[]: "kb_redn_l"
+	compatible_edges_left[]: "kb_np_l"
+	compatible_edges_left[]: "sw_2m_bl"
+	compatible_edges_left[]: "sw_4m_bl"
+	compatible_edges_left[]: "sw_2m_bl2"
+	compatible_edges_left[]: "sw_4m_bl2"
+	compatible_edges_left[]: "sw_disp_bl"
+
+	shoulder_space_left: 1.25
+	shoulder_space_right: 1.25
+}
+
+road_look : road.us_tmpl2293
+{
+	name: "us 2-2 country offset 9m 3"
+	template_right: "/road_template/us/us_2_country_divided_3.pmd"
+	template_left: "/road_template/us/us_2_country_divided_3.pmd"
+
+	road_offset: 4.5
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw_sw_di_fl"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+	compatible_edges_right[]: "dr_kerb"
+	compatible_edges_right[]: "dr_2m"
+	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
+
+	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "sh_a"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
+	compatible_edges_left[]: "sw_2m_dw"
+	compatible_edges_left[]: "sw_4m_dw"
+	compatible_edges_left[]: "dw_sw_disp"
+	compatible_edges_left[]: "dw_sw_di_fl"
+	compatible_edges_left[]: "dw2_con"
+	compatible_edges_left[]: "dw4_con"
+	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
+	compatible_edges_left[]: "dw4_kb"
+	compatible_edges_left[]: "dw2_kb_sw"
+	compatible_edges_left[]: "dw4_kb_sw"
+	compatible_edges_left[]: "dr_2m_an"
+	compatible_edges_left[]: "dr_4m_an"
+	compatible_edges_left[]: "dr_kerb"
+	compatible_edges_left[]: "dr_2m"
+	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -3036,6 +3389,7 @@ road_look : road.us_tmpl3245
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -3044,6 +3398,7 @@ road_look : road.us_tmpl3245
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "sh_a"
@@ -3069,6 +3424,7 @@ road_look : road.us_tmpl3245
 	compatible_edges_left[]: "dw2_con"
 	compatible_edges_left[]: "dw4_con"
 	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
 	compatible_edges_left[]: "dw4_kb"
 	compatible_edges_left[]: "dw2_kb_sw"
 	compatible_edges_left[]: "dw4_kb_sw"
@@ -3077,9 +3433,202 @@ road_look : road.us_tmpl3245
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl3245r
+	template_variants_left[]: .tmpl_var.road.us_tmpl3245l
+	template_variants_left[]: .tmpl_var.road.us_tmpl324l2
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl3245r
+{
+	variant_names[]: "brd_ful_ful"
+	variant_names[]: "ful"
+
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_in
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl3245l
+{
+	variant_names[]: "brd_arr_ful"
+	variant_names[]: "brd_ful_brk"
+
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_in
+	lanes_left[]: traffic_lane.road.divided
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl324l2
+{
+	variant_names[]: "brd_ful_ful"
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_in
+}
+
+road_look : road.us_tmpl3245l
+{
+	name: "us 3-2 country offset 4,5m 1 lowpoly15"
+	template_right: "/road_template/us/us_2_country_divided_1_low15.pmd"
+	template_left: "/road_template/us/us_3_country_divided_1_low15.pmd"
+
+	road_offset: 2.25
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh_l15"
+	compatible_edges_right[]: "kb_l15"
+	compatible_edges_right[]: "kb_dirt_l"
+	compatible_edges_right[]: "kb_redn_l"
+	compatible_edges_right[]: "kb_np_l"
+	compatible_edges_right[]: "sw_2m_bl"
+	compatible_edges_right[]: "sw_4m_bl"
+	compatible_edges_right[]: "sw_2m_bl2"
+	compatible_edges_right[]: "sw_4m_bl2"
+	compatible_edges_right[]: "sw_disp_bl"
+
+	compatible_edges_left[]: "sh_l15"
+	compatible_edges_left[]: "kb_l15"
+	compatible_edges_left[]: "kb_dirt_l"
+	compatible_edges_left[]: "kb_redn_l"
+	compatible_edges_left[]: "kb_np_l"
+	compatible_edges_left[]: "sw_2m_bl"
+	compatible_edges_left[]: "sw_4m_bl"
+	compatible_edges_left[]: "sw_2m_bl2"
+	compatible_edges_left[]: "sw_4m_bl2"
+	compatible_edges_left[]: "sw_disp_bl"
+
+	shoulder_space_left: 1.25
+	shoulder_space_right: 1.25
+}
+
+road_look : road.us_tmpl3243
+{
+	name: "us 3-2 country offset 4,5m 3"
+	template_right: "/road_template/us/us_2_country_divided_3.pmd"
+	template_left: "/road_template/us/us_3_country_divided_3.pmd"
+
+	road_offset: 2.25
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw_sw_di_fl"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+	compatible_edges_right[]: "dr_kerb"
+	compatible_edges_right[]: "dr_2m"
+	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
+
+	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "sh_a"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
+	compatible_edges_left[]: "sw_2m_dw"
+	compatible_edges_left[]: "sw_4m_dw"
+	compatible_edges_left[]: "dw_sw_disp"
+	compatible_edges_left[]: "dw_sw_di_fl"
+	compatible_edges_left[]: "dw2_con"
+	compatible_edges_left[]: "dw4_con"
+	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
+	compatible_edges_left[]: "dw4_kb"
+	compatible_edges_left[]: "dw2_kb_sw"
+	compatible_edges_left[]: "dw4_kb_sw"
+	compatible_edges_left[]: "dr_2m_an"
+	compatible_edges_left[]: "dr_4m_an"
+	compatible_edges_left[]: "dr_kerb"
+	compatible_edges_left[]: "dr_2m"
+	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl3243r
+	template_variants_left[]: .tmpl_var.road.us_tmpl3243l
+	template_variants_left[]: .tmpl_var.road.us_tmp3243l2
+
+	shoulder_space_left: 1.25
+	shoulder_space_right: 1.25
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl3243r
+{
+	variant_names[]: "brd_ful_ful"
+	variant_names[]: "ful"
+
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_in
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl3243l
+{
+	variant_names[]: "brd_arr_ful"
+	variant_names[]: "brd_ful_brk"
+
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_in
+	lanes_left[]: traffic_lane.road.divided
+}
+
+road_template_variant : .tmpl_var.road.us_tmp3243l2
+{
+	variant_names[]: "brd_ful_ful"
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_in
 }
 
 road_look : road.us_tmpl2345
@@ -3120,6 +3669,7 @@ road_look : road.us_tmpl2345
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -3128,6 +3678,7 @@ road_look : road.us_tmpl2345
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "sh_a"
@@ -3153,6 +3704,7 @@ road_look : road.us_tmpl2345
 	compatible_edges_left[]: "dw2_con"
 	compatible_edges_left[]: "dw4_con"
 	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
 	compatible_edges_left[]: "dw4_kb"
 	compatible_edges_left[]: "dw2_kb_sw"
 	compatible_edges_left[]: "dw4_kb_sw"
@@ -3161,9 +3713,203 @@ road_look : road.us_tmpl2345
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl2345r
+	template_variants_right[]: .tmpl_var.road.us_tmpl234r2
+	template_variants_left[]: .tmpl_var.road.us_tmpl2345l
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl2345l
+{
+	variant_names[]: "brd_ful_ful"
+	variant_names[]: "ful"
+
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_in
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl2345r
+{
+	variant_names[]: "brd_arr_ful"
+	variant_names[]: "brd_ful_brk"
+
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_in
+	lanes_right[]: traffic_lane.road.divided
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl234r2
+{
+	variant_names[]: "brd_ful_ful"
+
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_in
+}
+
+road_look : road.us_tmpl2345l
+{
+	name: "us 2-3 country offset 4,5m 1 lowpoly15"
+	template_right: "/road_template/us/us_3_country_divided_1_low15.pmd"
+	template_left: "/road_template/us/us_2_country_divided_1_low15.pmd"
+
+	road_offset: 2.25
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh_l15"
+	compatible_edges_right[]: "kb_l15"
+	compatible_edges_right[]: "kb_dirt_l"
+	compatible_edges_right[]: "kb_redn_l"
+	compatible_edges_right[]: "kb_np_l"
+	compatible_edges_right[]: "sw_2m_bl"
+	compatible_edges_right[]: "sw_4m_bl"
+	compatible_edges_right[]: "sw_2m_bl2"
+	compatible_edges_right[]: "sw_4m_bl2"
+	compatible_edges_right[]: "sw_disp_bl"
+
+	compatible_edges_left[]: "sh_l15"
+	compatible_edges_left[]: "kb_l15"
+	compatible_edges_left[]: "kb_dirt_l"
+	compatible_edges_left[]: "kb_redn_l"
+	compatible_edges_left[]: "kb_np_l"
+	compatible_edges_left[]: "sw_2m_bl"
+	compatible_edges_left[]: "sw_4m_bl"
+	compatible_edges_left[]: "sw_2m_bl2"
+	compatible_edges_left[]: "sw_4m_bl2"
+	compatible_edges_left[]: "sw_disp_bl"
+
+	shoulder_space_left: 1.25
+	shoulder_space_right: 1.25
+}
+
+
+road_look : road.us_tmpl2343
+{
+	name: "us 2-3 country offset 4,5m 3"
+	template_right: "/road_template/us/us_3_country_divided_3.pmd"
+	template_left: "/road_template/us/us_2_country_divided_3.pmd"
+
+	road_offset: 2.25
+
+	lanes_left[]: traffic_lane.road.divided
+	lanes_left[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw_sw_di_fl"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+	compatible_edges_right[]: "dr_kerb"
+	compatible_edges_right[]: "dr_2m"
+	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
+
+	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "sh_a"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
+	compatible_edges_left[]: "sw_2m_dw"
+	compatible_edges_left[]: "sw_4m_dw"
+	compatible_edges_left[]: "dw_sw_disp"
+	compatible_edges_left[]: "dw_sw_di_fl"
+	compatible_edges_left[]: "dw2_con"
+	compatible_edges_left[]: "dw4_con"
+	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
+	compatible_edges_left[]: "dw4_kb"
+	compatible_edges_left[]: "dw2_kb_sw"
+	compatible_edges_left[]: "dw4_kb_sw"
+	compatible_edges_left[]: "dr_2m_an"
+	compatible_edges_left[]: "dr_4m_an"
+	compatible_edges_left[]: "dr_kerb"
+	compatible_edges_left[]: "dr_2m"
+	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
+
+	template_variants_right[]: .tmpl_var.road.us_tmpl2343r
+	template_variants_right[]: .tmpl_var.road.us_tmp2343r2
+	template_variants_left[]: .tmpl_var.road.us_tmpl2343l
+
+	shoulder_space_left: 1.25
+	shoulder_space_right: 1.25
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl2343l
+{
+	variant_names[]: "brd_ful_ful"
+	variant_names[]: "ful"
+
+	lanes_left[]: traffic_lane.road.divided.full_out
+	lanes_left[]: traffic_lane.road.divided.full_in
+}
+
+road_template_variant : .tmpl_var.road.us_tmpl2343r
+{
+	variant_names[]: "brd_arr_ful"
+	variant_names[]: "brd_ful_brk"
+
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_in
+	lanes_right[]: traffic_lane.road.divided
+}
+
+road_template_variant : .tmpl_var.road.us_tmp2343r2
+{
+	variant_names[]: "brd_ful_ful"
+
+	lanes_right[]: traffic_lane.road.divided
+	lanes_right[]: traffic_lane.road.divided.full_out
+	lanes_right[]: traffic_lane.road.divided.full_in
 }
 
 road_look : road.us_tmpl37
@@ -3180,8 +3926,54 @@ road_look : road.us_tmpl37
 	lanes_right[]: traffic_lane.road.divided
 
 	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_hw3"
+	compatible_edges_right[]: "sh_hw2"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+	compatible_edges_right[]: "dr_kerb"
+	compatible_edges_right[]: "dr_2m"
+	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "sh_hw3"
+	compatible_edges_left[]: "sh_hw2"
+	compatible_edges_left[]: "kb_us"
+	compatible_edges_left[]: "kb_np"
+	compatible_edges_left[]: "kb_redn"
+	compatible_edges_left[]: "kb_dirt"
+	compatible_edges_left[]: "sw_2m_an"
+	compatible_edges_left[]: "sw_2m_bn"
+	compatible_edges_left[]: "sw_2m_cn"
+	compatible_edges_left[]: "sw_2m_dn"
+	compatible_edges_left[]: "sw_2m_e"
+	compatible_edges_left[]: "sw_4m_an"
+	compatible_edges_left[]: "sw_4m_bn"
+	compatible_edges_left[]: "sw_4m_cn"
+	compatible_edges_left[]: "sw_4m_dn"
+	compatible_edges_left[]: "sw_4m_e"
+	compatible_edges_left[]: "sw_2_2m"
+	compatible_edges_left[]: "dr_2m_an"
+	compatible_edges_left[]: "dr_4m_an"
+	compatible_edges_left[]: "dr_kerb"
+	compatible_edges_left[]: "dr_2m"
+	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -3257,6 +4049,7 @@ road_look : road.us_tmpl369
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -3265,6 +4058,7 @@ road_look : road.us_tmpl369
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "sh_a"
@@ -3290,6 +4084,7 @@ road_look : road.us_tmpl369
 	compatible_edges_left[]: "dw2_con"
 	compatible_edges_left[]: "dw4_con"
 	compatible_edges_left[]: "dw2_kb"
+	compatible_edges_left[]: "dw2_kb_f"
 	compatible_edges_left[]: "dw4_kb"
 	compatible_edges_left[]: "dw2_kb_sw"
 	compatible_edges_left[]: "dw4_kb_sw"
@@ -3298,6 +4093,7 @@ road_look : road.us_tmpl369
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -3316,6 +4112,7 @@ road_look : road.rl_tmpl1
 	template_variants_right[]: .tmpl_var.road.rl_tmpl1
 
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -3348,7 +4145,9 @@ road_look : road.rl_tmpl2
 	template_variants_right[]: .tmpl_var.road.rl_tmpl2.r
 
 	compatible_edges_left[]: sh_rail
+	compatible_edges_left[]: sh_rail_f
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -3382,6 +4181,7 @@ road_look : road.rl_tmpl1_ps
 	lane_offsets_right[]: (0.0, 0.5)
 
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -3413,7 +4213,9 @@ road_look : road.rl_tmpl2_ps
 	lane_offsets_right[]: (-4.5, 0.5)
 
 	compatible_edges_left[]: sh_rail
+	compatible_edges_left[]: sh_rail_f
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -3446,10 +4248,11 @@ road_look : road.rl_tmpl3
 	lane_offsets_right[]: (0.0, 0.5)
 
 	template_repeat: 2
-	
+
 	template_variants_right[]: .tmpl_var.road.rl_tmpl3
 
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -3476,12 +4279,14 @@ road_look : road.rl_tmpl4
 
 	lane_offsets_left[]: (-4.5, 0.5)
 	lane_offsets_right[]: (-4.5, 0.5)
-	
+
 	template_variants_left[]: .tmpl_var.road.rl_tmpl4.l
 	template_variants_right[]: .tmpl_var.road.rl_tmpl4.r
 
 	compatible_edges_left[]: sh_rail
+	compatible_edges_left[]: sh_rail_f
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	template_repeat: 2
 
@@ -3518,6 +4323,7 @@ road_look : road.rl_tmpl3_ps
 	template_repeat: 2
 
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -3538,7 +4344,8 @@ road_look : road.rl_tmpl4_ps
 	lane_offsets_right[]: (-4.5, 0.5)
 
 	compatible_edges_left[]: sh_rail
-	compatible_edges_right[]: sh_rail
+	compatible_edges_left[]: sh_rail_f
+	compatible_edges_right[]: sh_rail_f
 
 	template_repeat: 2
 
@@ -3594,7 +4401,8 @@ road_look : road.nm_tmpl02
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
-	
+	compatible_edges_right[]: "dw2_tr"
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -3663,9 +4471,10 @@ road_look : road.nm_tmpl03
 
 
 	compatible_edges_right[]: "sh"
-
+	compatible_edges_right[]: "sh_hw"
 
 	compatible_edges_left[]: "sh"
+	compatible_edges_left[]: "sh_hw"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 3.25
@@ -3675,6 +4484,7 @@ road_look : road.nm_tmpl03
 road_template_variant : .tmpl_var.road.nm_tmpl03.1
 {
 	variant_names[]: "brd_brk_ful"
+	variant_names[]: "dot_brk_ful"
 
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway
@@ -3686,6 +4496,7 @@ road_template_variant : .tmpl_var.road.nm_tmpl03.2
 {
 	variant_names[]: "brd_ful_brk"
 	variant_names[]: "brd_ful_no"
+	variant_names[]: "blk_ful_blk"
 
 	lanes_right[]: traffic_lane.road.freeway
 	lanes_right[]: traffic_lane.road.freeway.full_out
@@ -3700,7 +4511,9 @@ road_look : road.nm_tmpl04
 	template_left: "/road_template/us/us_4_freeway.pmd"
 
 	template_variants_right[]: .tmpl_var.road.nm_tmpl04.r
+	template_variants_right[]: .tmpl_var2.road.nm_tmpl04.r
 	template_variants_left[]: .tmpl_var.road.nm_tmpl04.l
+	template_variants_left[]: .tmpl_var2.road.nm_tmpl04.l
 
 	road_offset: 2.0
 
@@ -3733,6 +4546,16 @@ road_template_variant : .tmpl_var.road.nm_tmpl04.r
 	lanes_right[]: traffic_lane.road.freeway.full_in
 }
 
+road_template_variant : .tmpl_var2.road.nm_tmpl04.r
+{
+	variant_names[]: "brk_ful_brk"
+
+	lanes_right[]: traffic_lane.road.freeway
+	lanes_right[]: traffic_lane.road.freeway.full_out
+	lanes_right[]: traffic_lane.road.freeway.full_in
+	lanes_right[]: traffic_lane.road.freeway
+}
+
 road_template_variant : .tmpl_var.road.nm_tmpl04.l
 {
 	variant_names[]: "brd_brk_ful"
@@ -3741,6 +4564,16 @@ road_template_variant : .tmpl_var.road.nm_tmpl04.l
 	lanes_left[]: traffic_lane.road.freeway
 	lanes_left[]: traffic_lane.road.freeway.full_out
 	lanes_left[]: traffic_lane.road.freeway.full_in
+}
+
+road_template_variant : .tmpl_var2.road.nm_tmpl04.l
+{
+	variant_names[]: "brk_ful_brk"
+
+	lanes_left[]: traffic_lane.road.freeway
+	lanes_left[]: traffic_lane.road.freeway.full_out
+	lanes_left[]: traffic_lane.road.freeway.full_in
+	lanes_left[]: traffic_lane.road.freeway
 }
 
 road_look : road.nm_tmpl05
@@ -3934,8 +4767,8 @@ road_look : road.us_tmpl38
 	template_right: "/road_template/us/us_1-2_country_1.pmd"
 
 
-	lanes_left[]: traffic_lane.road.local
 	lanes_left[]: traffic_lane.road.local.no_overtake
+	lanes_left[]: traffic_lane.road.local
 	lanes_right[]: traffic_lane.road.local.no_overtake
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl38
@@ -3964,6 +4797,7 @@ road_look : road.us_tmpl38
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -3973,6 +4807,7 @@ road_look : road.us_tmpl38
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -4084,6 +4919,7 @@ road_look : road.us_tmpl40
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4093,6 +4929,7 @@ road_look : road.us_tmpl40
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -4146,7 +4983,7 @@ road_look : road.us_tmpl41
 	lanes_right[]: traffic_lane.road.local
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl41
-	
+
 	add_parts_right[]: refl_tw_l
 	add_parts_right[]: refl_tw_r
 	add_parts_right[]: refl_tw_c
@@ -4178,6 +5015,7 @@ road_look : road.us_tmpl41
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4187,6 +5025,7 @@ road_look : road.us_tmpl41
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -4210,7 +5049,7 @@ road_look : road.us_tmpl42
 	lanes_right[]: traffic_lane.road.divided
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl42
-	
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -4240,6 +5079,7 @@ road_look : road.us_tmpl42
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4249,6 +5089,7 @@ road_look : road.us_tmpl42
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.5
 	shoulder_space_right: 1.25
@@ -4317,7 +5158,7 @@ road_look : road.us_tmpl43
 	overlay_schemes[]: "stripes : 1.0 : _j0|4 : _j1|4 : _j2|5 : _j3|5"
 
 	lanes_right[]: traffic_lane.road.local
-	
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -4348,6 +5189,7 @@ road_look : road.us_tmpl43
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -4387,6 +5229,7 @@ road_look : road.us_tmpl44
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4395,6 +5238,7 @@ road_look : road.us_tmpl44
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
 	shoulder_space_left: 3.25
@@ -4445,6 +5289,7 @@ road_look : road.us_tmpl45
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4453,6 +5298,7 @@ road_look : road.us_tmpl45
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -4491,6 +5337,28 @@ road_look : road.us_tmpl19l
 	shoulder_space_right: 1.25
 }
 
+road_look : road.us_tmpl26l
+{
+	name: "us 1-1 country 3 lowpoly 15"
+	template_right: "/road_template/us/us_1-1_country_3_low15.pmd"
+
+	lanes_right[]: traffic_lane.road.local
+	lanes_left[]: traffic_lane.road.local
+
+	compatible_edges_right[]: "sh_3l15"
+	compatible_edges_right[]: "kb_l15"
+	compatible_edges_right[]: "kb_dirt_l"
+	compatible_edges_right[]: "kb_redn_l"
+	compatible_edges_right[]: "kb_np_l"
+	compatible_edges_right[]: "sw_2m_bl"
+	compatible_edges_right[]: "sw_4m_bl"
+	compatible_edges_right[]: "sw_2m_bl2"
+	compatible_edges_right[]: "sw_4m_bl2"
+	compatible_edges_right[]: "sw_disp_bl"
+
+	shoulder_space_left: 1.25
+	shoulder_space_right: 1.25
+}
 
 road_look : road.us_tmpl43l
 {
@@ -4501,6 +5369,7 @@ road_look : road.us_tmpl43l
 	lanes_right[]: traffic_lane.road.local
 
 	compatible_edges_right[]: "sh_l15"
+	compatible_edges_right[]: "kb_l15"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 1.0
@@ -4627,6 +5496,7 @@ road_look : road.us_tmpl46
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4636,6 +5506,7 @@ road_look : road.us_tmpl46
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -4687,6 +5558,7 @@ road_look : road.us_tmpl47
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4696,6 +5568,7 @@ road_look : road.us_tmpl47
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.25
 	shoulder_space_right: 3.25
@@ -4757,6 +5630,7 @@ road_look : road.us_tmpl48
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4766,6 +5640,7 @@ road_look : road.us_tmpl48
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.25
 	shoulder_space_right: 1.25
@@ -4854,6 +5729,7 @@ road_look : road.us_tmpl49
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4863,6 +5739,7 @@ road_look : road.us_tmpl49
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -4911,6 +5788,7 @@ road_look : road.us_tmpl50
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -4920,6 +5798,7 @@ road_look : road.us_tmpl50
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -5010,6 +5889,7 @@ road_look : road.us_tmpl52
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
 	shoulder_space_left: 0.5
@@ -5055,6 +5935,7 @@ road_look : road.us_tmpl53
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5064,6 +5945,7 @@ road_look : road.us_tmpl53
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -5128,6 +6010,7 @@ road_look : road.us_tmpl63
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5137,6 +6020,7 @@ road_look : road.us_tmpl63
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.25
 	shoulder_space_right: 1.25
@@ -5189,6 +6073,7 @@ road_look : road.us_tmpl64
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5198,6 +6083,7 @@ road_look : road.us_tmpl64
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.25
 	shoulder_space_right: 1.25
@@ -5226,6 +6112,7 @@ road_look : road.us_tmpl30l
 
 
 	compatible_edges_right[]: "sh_l15"
+	compatible_edges_right[]: "kb_l15"
 	compatible_edges_right[]: "sw_2m_bl"
 	compatible_edges_right[]: "sw_4m_bl"
 	compatible_edges_right[]: "sw_2m_bl2"
@@ -5293,7 +6180,57 @@ road_look : road.or_tmpl01l
 	shoulder_space_right: -1.0
 }
 
+road_look : road.us_tmpl02
+{
+	name: "DO NOT USE us asphalt field road"
+	template_right: "/road_template/us/us_asphalt_field_road.pmd"
 
+
+	lanes_right[]: traffic_lane.no_vehicles
+	lanes_left[]: traffic_lane.no_vehicles
+
+	lane_offsets_right[]: (-0.2, 0)
+	lane_offsets_left[]: (-0.2, 0)
+
+	compatible_edges_right[]: "sh"
+	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "sh_hw4"
+	compatible_edges_right[]: "kb_us"
+	compatible_edges_right[]: "kb_np"
+	compatible_edges_right[]: "kb_redn"
+	compatible_edges_right[]: "kb_dirt"
+	compatible_edges_right[]: "sw_2m_an"
+	compatible_edges_right[]: "sw_2m_bn"
+	compatible_edges_right[]: "sw_2m_cn"
+	compatible_edges_right[]: "sw_2m_dn"
+	compatible_edges_right[]: "sw_2m_e"
+	compatible_edges_right[]: "sw_4m_an"
+	compatible_edges_right[]: "sw_4m_bn"
+	compatible_edges_right[]: "sw_4m_cn"
+	compatible_edges_right[]: "sw_4m_dn"
+	compatible_edges_right[]: "sw_4m_e"
+	compatible_edges_right[]: "sw_2_2m"
+	compatible_edges_right[]: "sw_2m_dw"
+	compatible_edges_right[]: "sw_4m_dw"
+	compatible_edges_right[]: "dw_sw_disp"
+	compatible_edges_right[]: "dw_sw_di_fl"
+	compatible_edges_right[]: "dw2_con"
+	compatible_edges_right[]: "dw4_con"
+	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
+	compatible_edges_right[]: "dw4_kb"
+	compatible_edges_right[]: "dw2_kb_sw"
+	compatible_edges_right[]: "dw4_kb_sw"
+	compatible_edges_right[]: "dr_2m_an"
+	compatible_edges_right[]: "dr_4m_an"
+	compatible_edges_right[]: "dr_kerb"
+	compatible_edges_right[]: "dr_2m"
+	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
+
+	shoulder_space_left: -1.0
+	shoulder_space_right: -1.0
+}
 
 road_look : road.or_tmpl02
 {
@@ -5394,6 +6331,7 @@ road_look : road.or_tmpl06
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5403,9 +6341,10 @@ road_look : road.or_tmpl06
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
-	lanes_right[]: traffic_lane.road.village
+	lanes_right[]: traffic_lane.side_road
 
 
 	shoulder_space_left: -1.0
@@ -5446,6 +6385,7 @@ road_look : road.or_tmpl03
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -5468,6 +6408,7 @@ road_look : road.or_tmpl03
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -5505,6 +6446,7 @@ road_look : road.or_tmpl04
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -5527,6 +6469,7 @@ road_look : road.or_tmpl04
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -5564,6 +6507,7 @@ road_look : road.or_tmpl07
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -5586,6 +6530,7 @@ road_look : road.or_tmpl07
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -5602,6 +6547,7 @@ road_look : road.tram_01_tmpl
 	lane_offsets_right[]: (0.0, 0.5)
 
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -5622,7 +6568,9 @@ road_look : road.tram_11_tmpl
 	lane_offsets_right[]: (-4.5, 0.5)
 
 	compatible_edges_left[]: sh_rail
+	compatible_edges_left[]: sh_rail_f
 	compatible_edges_right[]: sh_rail
+	compatible_edges_right[]: sh_rail_f
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -5666,6 +6614,7 @@ road_look : road.us_tmpl20b
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5675,6 +6624,7 @@ road_look : road.us_tmpl20b
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.0
 	shoulder_space_right: 0.0
@@ -5712,6 +6662,7 @@ road_look : road.us_tmpl52a
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 0.0
 	shoulder_space_right: 1.0
@@ -5753,6 +6704,7 @@ road_look : road.us_tmpl53a
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5762,6 +6714,7 @@ road_look : road.us_tmpl53a
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: -1.0
 	shoulder_space_right: -1.0
@@ -5802,6 +6755,7 @@ road_look : road.us_tmpl44a
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5811,6 +6765,7 @@ road_look : road.us_tmpl44a
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -5861,6 +6816,7 @@ road_look : road.us_tmpl45a
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -5870,6 +6826,7 @@ road_look : road.us_tmpl45a
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.25
 	shoulder_space_right: 1.25
@@ -6163,6 +7120,8 @@ road_look : road.us_tmpl61
 	lanes_right[]: traffic_lane.road.freeway.low_density
 
 	compatible_edges_right[]: "sh_l15"
+	compatible_edges_right[]: "kb_l15"
+
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 3.5
@@ -6373,6 +7332,7 @@ road_look : road.wa_tmpl01
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -6395,6 +7355,7 @@ road_look : road.wa_tmpl01
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 }
 
 road_look : road.us_tmpl68
@@ -6452,6 +7413,7 @@ road_look : road.us_tmpl69
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -6474,6 +7436,7 @@ road_look : road.us_tmpl69
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -6534,6 +7497,7 @@ road_look : road.us_tmpl71
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	compatible_edges_left[]: "sh"
 	compatible_edges_left[]: "kb_us"
@@ -6556,6 +7520,7 @@ road_look : road.us_tmpl71
 	compatible_edges_left[]: "dr_kerb"
 	compatible_edges_left[]: "dr_2m"
 	compatible_edges_left[]: "dr_4m"
+	compatible_edges_left[]: "dw2_tr"
 
 	shoulder_space_left: 3.25
 	shoulder_space_right: 3.25
@@ -6600,6 +7565,7 @@ road_look : road.us_tmpl72
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -6608,6 +7574,7 @@ road_look : road.us_tmpl72
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -6672,6 +7639,7 @@ road_look : road.us_tmpl73
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -6680,6 +7648,7 @@ road_look : road.us_tmpl73
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -6748,6 +7717,7 @@ road_look : road.us_tmpl74
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -6756,6 +7726,7 @@ road_look : road.us_tmpl74
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -6820,6 +7791,7 @@ road_look : road.us_tmpl75
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -6828,6 +7800,7 @@ road_look : road.us_tmpl75
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -6882,7 +7855,7 @@ road_look : road.us_tmpl76
 	lanes_right[]: traffic_lane.road.freeway
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl76
-	
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -6913,6 +7886,7 @@ road_look : road.us_tmpl76
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -6922,6 +7896,7 @@ road_look : road.us_tmpl76
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 3.5
@@ -6961,7 +7936,7 @@ road_look : road.us_tmpl77
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl77
 	template_variants_right[]: .tmpl_var2.road.us_tmpl77
-	
+
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: refl_ow_w
 	add_parts_right[]: refl_red_y
@@ -6991,6 +7966,7 @@ road_look : road.us_tmpl77
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -7000,6 +7976,7 @@ road_look : road.us_tmpl77
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 3.5
@@ -7076,6 +8053,7 @@ road_look : road.nm_tmpl78
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -7085,6 +8063,7 @@ road_look : road.nm_tmpl78
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	shoulder_space_left: 1.0
 	shoulder_space_right: 3.25
@@ -7151,6 +8130,7 @@ road_look : road.us_tmpl79
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -7159,6 +8139,7 @@ road_look : road.us_tmpl79
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -7223,6 +8204,7 @@ road_look : road.us_tmpl80
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -7231,6 +8213,7 @@ road_look : road.us_tmpl80
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -7299,6 +8282,7 @@ road_look : road.us_tmpl81
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -7307,6 +8291,7 @@ road_look : road.us_tmpl81
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"
 	overlay_schemes[]: "asph_str : 1.0 : _b0|7 : _b1|7 : _b2|7 : _b3|7 : _b4|7"
@@ -7371,6 +8356,7 @@ road_look : road.us_tmpl82
 	compatible_edges_right[]: "dw2_con"
 	compatible_edges_right[]: "dw4_con"
 	compatible_edges_right[]: "dw2_kb"
+	compatible_edges_right[]: "dw2_kb_f"
 	compatible_edges_right[]: "dw4_kb"
 	compatible_edges_right[]: "dw2_kb_sw"
 	compatible_edges_right[]: "dw4_kb_sw"
@@ -7379,6 +8365,7 @@ road_look : road.us_tmpl82
 	compatible_edges_right[]: "dr_kerb"
 	compatible_edges_right[]: "dr_2m"
 	compatible_edges_right[]: "dr_4m"
+	compatible_edges_right[]: "dw2_tr"
 
 
 	overlay_schemes[]: "asph_crv : 1.0 : _a0|7 : _a1|7 : _a2|7 : _a3|7 : _a4|7"

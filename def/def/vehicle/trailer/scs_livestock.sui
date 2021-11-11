@@ -1,0 +1,31 @@
+trailer : trailer.scs_livestok
+{
+	trailer_definition: trailer_def.scs.livestock.single_48sp.belly
+
+	accessories[]: .scs_livestok.chassis
+	accessories[]: .scs_livestok.rwheel
+	accessories[]: .scs_livestok.rwheel2
+	accessories[]: .scs_livestok.paint_job
+}
+
+vehicle_accessory: .scs_livestok.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_livestock/belly.sii"
+}
+
+vehicle_wheel_accessory: .scs_livestok.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_livestok.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_livestok.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

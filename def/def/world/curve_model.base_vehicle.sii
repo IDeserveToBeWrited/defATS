@@ -1,0 +1,69 @@
+SiiNunit
+{
+
+curve_model : curve.103
+{
+	name: "parked cars sprites 01"
+	model_desc: "/model/sprites/curve/parked_cars_sprites_01.pmd"
+
+
+	variation[]: "default | center : 1.0 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0 | center15 : 1.0 | center16 : 1.0 | center17 : 1.0 | center18 : 1.0 | center19 : 1.0 | center20 : 1.0 | center21 : 1.0 | center22 : 1.0 | center23 : 1.0 | center24 : 1.0 | center25 : 1.0"
+	start_part[]: "start"
+	end_part[]: "end"
+
+}
+
+curve_model : curve.114
+{
+	name: "wagon grain"
+	model_desc: "/model/train/wagon_grain_curve.pmd"
+	variation[]: "default | center1 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+
+	dynamic_lod_desc[]: "/model/train/wagon_grain_curve_lod1.pmd"
+	dynamic_lod_dist[]: 50.0
+
+	dynamic_lod_desc[]: "/model/train/wagon_grain_curve_lod2.pmd"
+	dynamic_lod_dist[]: 100.0
+
+}
+
+curve_model : curve.wy_23001
+{
+	model_desc: "/model/train/wagon_coal_curve_.pmd"
+	name: "wagon coal curve "
+
+	variation: 5
+	start_part: 5
+	end_part: 5
+
+	variation[0]: "yellow_empty | ye_1,ye_2,ye_3 : 1.0 | ye_2,ye_3,ye_1 : 1.0 | ye_3,ye_1,ye_2 : 1.0"
+	variation[1]: "yellow_full | yf_1,yf_2,yf_3 : 1.0 | yf_2,yf_3,yf_1 : 1.0 | yf_3,yf_1,yf_2 : 1.0"
+	variation[2]: "blue_empty | be_1,be_2 : 1.0"
+	variation[3]: "blue_full | bf_1,bf_2 : 1.0"
+	variation[4]: "green_full | gf_1,gf_2 : 1.0"
+	start_part[0]: "start"
+	start_part[1]: "start"
+	start_part[2]: "start"
+	start_part[3]: "start"
+	start_part[4]: "start"
+	end_part[0]: "end"
+	end_part[1]: "end"
+	end_part[2]: "end"
+	end_part[3]: "end"
+	end_part[4]: "end"
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/train/wagon_coal_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/train/wagon_coal_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 70
+
+	high_tess: 0
+}
+
+
+
+}

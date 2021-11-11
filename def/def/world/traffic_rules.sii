@@ -353,21 +353,10 @@ traffic_rule_data : traffic_rule.limit_110
 	num_params[]: 110
 }
 
-traffic_rule_data : traffic_rule.no_trailer
-{
-	name: "[access] No trailer area (areas with sharp curves)"
-	rule: "actor_access"
-	num_params[]: 0 	# 0 - disallow, 1 - allow
-	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
-	num_params[]: 0 	# no change to vehicle access
-	num_params[]: 1 	# set trailer access
-	str_params[]: "road"
-}
-
-
 traffic_rule_data : traffic_rule.no_trucks
 {
-	name: "[access] No trucks area"
+	# kept for backward compatibility, until it is ensured all occurences have replacement
+	name: "[special] No trucks (backward compatibility only)"
 	rule: "actor_access"
 	num_params[]: 0 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
@@ -376,25 +365,22 @@ traffic_rule_data : traffic_rule.no_trucks
 
 traffic_rule_data : traffic_rule.trucks_only
 {
-	name: "[access] Allow common trucks only"
+	name: "[access-exclusive] Trucks only (common 'heavy' trucks)"
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
-	num_params[]: 1 	# set vehicle access
-	num_params[]: 0 	# no change to trailer access
-	str_params[]: "truck"
+
+	str_params[]: "truck_semi"
+	str_params[]: "truck_heavy"
+	str_params[]: "escort_all" # keep escort vehicles allowed to prevent potentially breaking escort vehicle paths
 }
 
 traffic_rule_data : traffic_rule.tr_es_only
 {
-	name: "[access] Allow common trucks and escorts only"
-	rule: "actor_access"
-	num_params[]: 1 	# 0 - disallow, 1 - allow
-	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
-	num_params[]: 1 	# set vehicle access
-	num_params[]: 0 	# no change to trailer access
-	str_params[]: "truck"
-	str_params[]: "escort_all"
+	name: "[obsolete] Trucks and escorts only"
+
+	str_params[]: "Please replace with '[access] Trucks only (common 'heavy' trucks)'"
+	additional_rules[]: traffic_rule.trucks_only
 }
 
 traffic_rule_data : traffic_rule.road
@@ -405,13 +391,12 @@ traffic_rule_data : traffic_rule.road
 	str_params[]: "road"
 }
 
-traffic_rule_data : traffic_rule.no_road
+traffic_rule_data : traffic_rule.allow_car
 {
-	name: "[access] No road vehicles"
 	rule: "actor_access"
-	num_params[]: 0 	# 0 - disallow, 1 - allow
+	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
-	str_params[]: "road"
+	str_params[]: "car_all"
 }
 
 traffic_rule_data : traffic_rule.road_tram
@@ -494,37 +479,49 @@ traffic_rule_data : traffic_rule.rail_tram
 
 traffic_rule_data : traffic_rule.bus_only
 {
-	name: "[access] Buses only"
+	name: "[access-exclusive] Buses only"
 	rule: "actor_access"
-	num_params[]: 1 # 0 - disallow, 1 - allow
-	num_params[]: 1 # 0 - inclusive, 1 - exclusive
-	str_params[]: "bus_all"
+	num_params[]: 1 	# 0 - disallow, 1 - allow
+	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
+	str_params[]: "bus"
+	str_params[]: "escort_all" # keep escort vehicles allowed to prevent potentially breaking escort vehicle paths
+}
+
+traffic_rule_data : traffic_rule.no_trailers
+{
+	# name: "[access] No trailers"
+	rule: "actor_access"
+	num_params[]: 0 	# 0 - disallow, 1 - allow
+	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
+	num_params[]: 0 	# no change to vehicle access
+	num_params[]: 1 	# set trailer access
+	str_params[]: "road"
 }
 
 traffic_rule_data : traffic_rule.car_only
 {
-	name: "[access] Cars only (no trailers)"
+	name: "[access-exclusive] Cars only (no trailers)"
 	rule: "actor_access"
-	num_params[]: 1 # 0 - disallow, 1 - allow
-	num_params[]: 1 # 0 - inclusive, 1 - exclusive
-	str_params[]: "car_all"
+	num_params[]: 1 	# 0 - disallow, 1 - allow
+	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
+	str_params[]: "car"
+	str_params[]: "escort_all" # keep escort vehicles allowed to prevent potentially breaking escort vehicle paths
 
-	additional_rules[]: traffic_rule.no_trailer
+	additional_rules[]: traffic_rule.no_trailers
+}
+
+traffic_rule_data : traffic_rule.no_trailer
+{
+	name: "[obsolete] No trailer area (areas with sharp curves)"
+
+	str_params[]: "Please remove or replace with more suitable rule"
+	additional_rules[]: traffic_rule.car_only
 }
 
 traffic_rule_data : traffic_rule.car_truck_on
 {
-	# unused/obsolete - should be removed
-	rule: "actor_access"
-
-	num_params[]: 1		# 0 - disallow, 1 - allow
-	num_params[]: 1		# 0 - inclusive, 1 - exclusive
-	num_params[]: 1 	# set vehicle access
-	num_params[]: 0 	# no change to trailer access
-
-	str_params[]: "car_all"
-	str_params[]: "truck_all"
-	str_params[]: "escort_all"
+	name: "[obsolete] Cars and trucks only"
+	str_params[]: "Please remove"
 }
 
 traffic_rule_data : traffic_rule.urban_area
@@ -536,7 +533,7 @@ traffic_rule_data : traffic_rule.urban_area
 
 traffic_rule_data : traffic_rule.village_area
 {
-	name: "[spawn/urban] Village - low traffic density"
+	name: "[urban] Village - low traffic density"
 
 	# No traffic density change
 
@@ -545,50 +542,94 @@ traffic_rule_data : traffic_rule.village_area
 
 traffic_rule_data : traffic_rule.city_area
 {
-	name: "[spawn/urban] City - high traffic density"
+	name: "[urban] City - high traffic density"
 
 	additional_rules[]: traffic_rule.urban_area
 	additional_rules[]: traffic_rule.s_car_u
 	additional_rules[]: traffic_rule.s_trl_u
 	additional_rules[]: traffic_rule.s_trm_u
+	additional_rules[]: traffic_rule.s_trh_u
 	additional_rules[]: traffic_rule.s_truck_u
 	additional_rules[]: traffic_rule.s_bus_l
 	additional_rules[]: traffic_rule.s_police_u
 	additional_rules[]: traffic_rule.s_medical_u
 	additional_rules[]: traffic_rule.s_fire_u
+	additional_rules[]: traffic_rule.s_car_cs_u
+	additional_rules[]: traffic_rule.s_truck_cs_u
 }
 
 traffic_rule_data : traffic_rule.city_xl_area
 {
-	name: "[spawn/urban] Large city - very high traffic density"
+	name: "[urban] Large city - very high traffic density"
 
 	additional_rules[]: traffic_rule.urban_area
 	additional_rules[]: traffic_rule.s_car_uh
 	additional_rules[]: traffic_rule.s_trl_u
 	additional_rules[]: traffic_rule.s_trm_u
+	additional_rules[]: traffic_rule.s_trh_u
 	additional_rules[]: traffic_rule.s_truck_u
 	additional_rules[]: traffic_rule.s_bus_h
 	additional_rules[]: traffic_rule.s_police_u
 	additional_rules[]: traffic_rule.s_medical_u
 	additional_rules[]: traffic_rule.s_fire_u
-}
-
-traffic_rule_data : traffic_rule.downtown
-{
-	name: "[spawn/access] Allow city specific vehicles ('downtown')"
-
-	rule: "actor_access"
-	num_params[]: 1 # 0 - disallow, 1 - allow
-	num_params[]: 0 # 0 - inclusive, 1 - exclusive
-	str_params[]: "downtown"
-
 	additional_rules[]: traffic_rule.s_car_c_u
 	additional_rules[]: traffic_rule.s_truck_c_u
 }
 
+traffic_rule_data : traffic_rule.downtown
+{
+	name: "[access] Urban-specific vehicles area"
+
+	rule: "actor_access"
+	num_params[]: 1 # 0 - disallow, 1 - allow
+	num_params[]: 0 # 0 - inclusive, 1 - exclusive
+	str_params[]: "car_custom"
+	str_params[]: "truck_custom"
+}
+
+traffic_rule_data : traffic_rule.allow_slow
+{
+	name: "[access] Rural-specific vehicles area"
+	rule: "actor_access"
+	num_params[]: 1 # 0 - disallow, 1 - allow
+	num_params[]: 0 # 0 - inclusive, 1 - exclusive
+	str_params[]: "truck_custom"
+
+	# NOTE: Allow only single spawn density with spawn count limit set to 1
+	# until vehicles are able to avoid each other at narrow (field/walk) roads.
+	additional_rules[]: traffic_rule.s_truck_r
+}
+
+traffic_rule_data : traffic_rule.resident
+{
+	name: "[access] Residential area (no heavy/large vehicles)"
+
+	rule: "actor_access"
+	num_params[]: 0 # 0 - disallow, 1 - allow
+	num_params[]: 0 # 0 - inclusive, 1 - exclusive
+	str_params[]: "truck_all"
+	str_params[]: "bus_all"
+	str_params[]: "fire"
+	str_params[]: "medical"
+}
+
+traffic_rule_data : traffic_rule.industry
+{
+	name: "[access] Industrial area (no cars or buses)"
+
+	rule: "actor_access"
+	num_params[]: 0 # 0 - disallow, 1 - allow
+	num_params[]: 0 # 0 - inclusive, 1 - exclusive
+	str_params[]: "car_all"
+	str_params[]: "bus_all"
+	str_params[]: "truck_light"
+	str_params[]: "fire"
+	str_params[]: "medical"
+}
+
 traffic_rule_data : traffic_rule.private_area
 {
-	# name: "[various] Private area - restricted only to certain vehicle types"
+	# name: "[various] Private area - area of interest for certain vehicle types"
 	rule: "property"
 	num_params[]: 15
 }
@@ -671,26 +712,21 @@ traffic_rule_data : traffic_rule.low_pb_str
 	num_params[]: 23
 }
 
-traffic_rule_data : traffic_rule.allow_slow
+traffic_rule_data : traffic_rule.custom_only
 {
-	name: "[access] Allow slow vehicles"
+	name: "[access-exclusive] Custom vehicles only"
 	rule: "actor_access"
 	num_params[]: 1 # 0 - disallow, 1 - allow
-	num_params[]: 0 # 0 - inclusive, 1 - exclusive
-	str_params[]: "truck_custom"
-
-	additional_rules[]: traffic_rule.s_slow
+	num_params[]: 1 # 0 - inclusive, 1 - exclusive
+	str_params[]: "custom_all"
 }
 
 traffic_rule_data : traffic_rule.slow_only
 {
-	name: "[access] Only slow vehicles"
-	rule: "actor_access"
-	num_params[]: 1 # 0 - disallow, 1 - allow
-	num_params[]: 1 # 0 - inclusive, 1 - exclusive
-	str_params[]: "truck_custom"
+	name: "[obsolete] Only slow vehicles"
 
-	additional_rules[]: traffic_rule.s_slow
+	str_params[]: "Please replace with '[access] Custom vehicles only' according to 'exclusive access path' guide."
+	additional_rules[]: traffic_rule.custom_only
 }
 
 traffic_rule_data : traffic_rule.train_stop_v
@@ -755,10 +791,12 @@ traffic_rule_data : traffic_rule.physics
 
 traffic_rule_data : traffic_rule.es_fr_only
 {
-	name: "[access/escort] Front escort vehicles only"
+	name: "[access-escort] Front escort vehicles only"
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
+	num_params[]: 1 	# set vehicle access
+	num_params[]: 0 	# no change to trailer access
 	str_params[]: "escort_front"
 
 	additional_rules[]: traffic_rule.private_area
@@ -766,10 +804,12 @@ traffic_rule_data : traffic_rule.es_fr_only
 
 traffic_rule_data : traffic_rule.es_ba_only
 {
-	name: "[access/escort] Back escort vehicles only"
+	name: "[access-escort] Back escort vehicles only"
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
+	num_params[]: 1 	# set vehicle access
+	num_params[]: 0 	# no change to trailer access
 	str_params[]: "escort_back"
 
 	additional_rules[]: traffic_rule.private_area
@@ -777,10 +817,12 @@ traffic_rule_data : traffic_rule.es_ba_only
 
 traffic_rule_data : traffic_rule.es_only
 {
-	name: "[access/escort] Escort vehicles only"
+	name: "[access-escort] Escort vehicles only"
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
+	num_params[]: 1 	# set vehicle access
+	num_params[]: 0 	# no change to trailer access
 	str_params[]: "escort_all"
 
 	additional_rules[]: traffic_rule.private_area
@@ -910,28 +952,30 @@ traffic_rule_data : traffic_rule.rest_area
 
 traffic_rule_data : traffic_rule.agri_check_t
 {
-	name: "[various] Agricultural check - truck lane"
+	name: "[special] Agricultural check - truck lane"
 
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
 	num_params[]: 1 	# set vehicle access
 	num_params[]: 0 	# no change to trailer access
-	str_params[]: "truck"
+	str_params[]: "truck_semi"
+	str_params[]: "truck_heavy"
 	str_params[]: "truck_medium"
 	str_params[]: "truck_long"
 }
 
 traffic_rule_data : traffic_rule.agri_check_o
 {
-	name: "[various] Agricultural check - no trucks lane"
+	name: "[special] Agricultural check - no trucks lane"
 
 	rule: "actor_access"
 	num_params[]: 0 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
 	num_params[]: 1 	# set vehicle access
 	num_params[]: 0 	# no change to trailer access
-	str_params[]: "truck"
+	str_params[]: "truck_semi"
+	str_params[]: "truck_heavy"
 	str_params[]: "truck_medium"
 	str_params[]: "truck_long"
 }

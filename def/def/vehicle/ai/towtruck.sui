@@ -1,0 +1,57 @@
+traffic_vehicle : traffic.towtruck
+{
+	accessories[]: .towtruck.chassis
+	accessories[]: .towtruck.fwheel
+	accessories[]: .towtruck.rwheel
+	accessories[]: .towtruck.rwheel2
+	accessories[]: .towtruck.rwheel3
+
+	max_speed: 120
+
+	lod_dist[]: 45
+	lod_dist[]: 70
+	lod_dist[]: 100
+
+	tags[]: slow
+
+	#color[]: (0.0343, 0.0343, 0.0343) #black
+	#color[]: (0.0382, 0.0318, 0.0273) #brown
+	#color[]: (0, 0.0263, 0.1347) #blue
+	#color[]: (0.5394, 0.5711, 0.5906) #silver
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+	#color[]: (0.1596, 0.0093, 0.0197) #red
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+	#color[]: (0.8713, 0.8631, 0.8227) #white
+
+	vehicle_mass: 11200
+	engine_power: 500
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .towtruck.chassis
+{
+	data_path: "/def/vehicle/ai/towtruck/chassis_towtruck.sii"
+}
+
+vehicle_wheel_accessory: .towtruck.fwheel
+{
+
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .towtruck.rwheel
+{
+
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory: .towtruck.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory: .towtruck.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}

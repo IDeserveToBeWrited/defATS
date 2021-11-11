@@ -44,22 +44,34 @@ traffic_trailer_type : traffic.trailer_type.train_cargo
 
 ############# TRAILER GROUPS FOR VARIOUS VEHICLE TYPES - EXPLICIT SELECTION ONLY #############
 
-# trailers suitable for cars/vans
+# trailers suitable for cars
 traffic_trailer_type : traffic.trailer_type.car
 {
 	tags[]: "road"
+
+	# ensure needed trailers are automatically allowed with corresponding '*_custom' vehicle type:
+	tags[]: "car_custom"
+	tags[]: "custom_all"
 }
 
 # trailers suitable for buses - typically, rear parts of articulated buses (permanently attached)
 traffic_trailer_type : traffic.trailer_type.bus
 {
 	tags[]: "road"
+
+	# ensure needed trailers are automatically allowed with corresponding '*_custom' vehicle type:
+	tags[]: "bus_custom"
+	tags[]: "custom_all"
 }
 
-# trailers suitable for trucks
+# trailers suitable for trucks (all remaining truck trailers, not belonging to 'truck_semi' and 'truck_long')
 traffic_trailer_type : traffic.trailer_type.truck
 {
 	tags[]: "road"
+
+	# ensure needed trailers are automatically allowed with corresponding '*_custom' vehicle type:
+	tags[]: "truck_custom"
+	tags[]: "custom_all"
 }
 
 # trailers suitable for trams - tram cars - standalone or articulated
@@ -77,12 +89,11 @@ traffic_trailer_type : traffic.trailer_type.train
 	safe_distance: 1000
 }
 
-############# TRAILERS FOR CUSTOM AREAS - EXPLICIT SELECTION ONLY #############
-
 # trailers not fitting in any other type
-traffic_trailer_type : traffic.trailer_type.custom
+# serves only as storage for 'uncategorizable' trailers and no traffic rule should reference it
+traffic_trailer_type : traffic.trailer_type.special
 {
-	tags[]: "custom_all"
+	# no tags for 'special' type
 }
 
 }

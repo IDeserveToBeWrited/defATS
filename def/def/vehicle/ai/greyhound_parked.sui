@@ -32,11 +32,56 @@ vehicle_wheel_accessory: .greyhound_p.fwheel
 vehicle_wheel_accessory: .greyhound_p.rwheel
 {
 	offset: 0
-	data_path: "/def/vehicle/t_wheel/front.sii"
+	data_path: "/def/vehicle/r_wheel/steel.sii"
 }
 
 vehicle_wheel_accessory: .greyhound_p.rwheel2
 {
 	offset: 2
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}
+
+
+
+traffic_vehicle : traffic.greyhound_p.yellowstone
+{
+	accessories[]: .greyhound_p.yellowstone.chassis
+	accessories[]: .greyhound_p.yellowstone.fwheel
+	accessories[]: .greyhound_p.yellowstone.rwheel
+	accessories[]: .greyhound_p.yellowstone.rwheel2
+
+	max_speed: 100
+
+	lod_dist[]: 53
+	lod_dist[]: 70
+	allow_parked: false
+
+	vehicle_mass: 20000
+	engine_power: 200
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .greyhound_p.yellowstone.chassis
+{
+	data_path: "/def/vehicle/ai/greyhound/chassis_p_ys.sii"
+}
+
+vehicle_wheel_accessory: .greyhound_p.yellowstone.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .greyhound_p.yellowstone.rwheel
+{
+	offset: 0
 	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .greyhound_p.yellowstone.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/front.sii"
 }

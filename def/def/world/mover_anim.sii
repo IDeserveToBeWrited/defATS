@@ -807,24 +807,13 @@ mover_anim : mover_anim.man.saw
 	props[]: mover_props.saw.saw
 }
 
-
-### MACK ACTION ###
-
-mover_anim : mover_anim.ac_mack
-{
-	model_anim: "/model/vehicle/event/mack_anim.pma"
-	group_tags[]: ac_mack
-	action: true
-}
-
-
 ### DEER ACTION ###
 
 mover_anim : mover_anim.ac_deer
 {
 	model_anim: "/model/mover/animal/deer_run_herd.pma"
 	group_tags[]: ac_deer
-	action: true
+	anim_type: action
 }
 
 
@@ -867,9 +856,17 @@ mover_anim : mover_anim.ac_willy
 {
 	model_anim: "/model/mover/animal/willy_anim.pma"
 	group_tags[]: ac_willy
-	action: true
+	anim_type: action
 }
+mover_anim : mover_anim.mixer_work
+{
+	model_anim: "/model/mover/characters/animations/man/work/mixerman.pma"
+	group_tags[]: man
+	group_tags[]: worker
+	group_tags[]: mixerman
 
+	props[]: mover_props.mix_pr
+}
 
 #   ____ _               _      _ ___        ___                     _                    _     _ _ _
 #  / ___| |__   ___  ___| | __ ( | ) \      / / |__   ___ _ __ ___  | |_ ___     __ _  __| | __| ( | )
@@ -896,4 +893,5 @@ mover_anim : mover_anim.cofibr
 	model_anim: "/model/building/shop/fastfood/co_cofibreak_totem_anim.pma"
 	group_tags[]: cofibr
 }
+
 }
