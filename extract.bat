@@ -2,7 +2,7 @@
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 :: Location for extraction
-SET LOCATION=%HOME%\Documents\defATS
+SET LOCATION=%userprofile%\Documents\defATS
 
 :: Counters
 SET /A COUNT=0
