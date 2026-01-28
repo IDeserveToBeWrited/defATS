@@ -897,6 +897,233 @@ mover_action : mover_action.machine.crane.port.ship.shift_13
 	type: "effect"
 }
 
+###	LA RIVER FERRY ###
+
+
+mover_action : mover_action.river.wave1sh
+{
+	action_name: "wave1_show"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_wave1_show.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 1"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.wave1hi
+{
+	action_name: "wave1_hide"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_wave1_hide.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 2"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.wave2sh
+{
+	action_name: "wave2_show"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_wave2_show.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 3"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.wave2hi
+{
+	action_name: "wave2_hide"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_wave2_hide.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 4"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.gate1op
+{
+	action_name: "gate1_open"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_gate1_open.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 5"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.gate1cl
+{
+	action_name: "gate1_close"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_gate1_close.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 6"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.gate2cl
+{
+	action_name: "gate2_close"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_gate2_close.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 7"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.gate2op
+{
+	action_name: "gate2_open"
+
+	animations[]: "/model/ship/ferry_river/ferry_01_de_ne_gate2_open.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 8"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.river.moving
+{
+	action_name: "move"
+
+	sounds[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/ferry_1"
+	sound_params[]: "effect_name: 'sound_moving'"
+
+	timer_params[]: "stop_at_end: 'sound_moving'; wait_action: 'move'"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	group_tags[]: bargeferry
+
+	type: "move"
+}
+
+mover_action : mover_action.barge.wave1sh
+{
+	action_name: "wave1_show"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_wave1_show.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 1"
+
+	group_tags[]: float
+	group_tags[]: bargeferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.barge.wave1hi
+{
+	action_name: "wave1_hide"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_wave1_hide.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 2"
+
+	group_tags[]: float
+	group_tags[]: bargeferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.barge.wave2sh
+{
+	action_name: "wave2_show"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_wave2_show.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 3"
+
+	group_tags[]: float
+	group_tags[]: bargeferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.barge.wave2hi
+{
+	action_name: "wave2_hide"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_wave2_hide.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 4"
+
+	group_tags[]: float
+	group_tags[]: riverferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.barge.gate1op
+{
+	action_name: "gate1_open"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_gate1_open.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 5"
+
+	group_tags[]: float
+	group_tags[]: bargeferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.barge.gate1cl
+{
+	action_name: "gate1_close"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_gate1_close.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 6"
+
+	group_tags[]: float
+	group_tags[]: bargeferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.barge.gate2cl
+{
+	action_name: "gate2_close"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_gate2_close.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 7"
+
+	group_tags[]: float
+	group_tags[]: bargeferry
+	
+	type: "effect"
+}
+
+mover_action : mover_action.barge.gate2op
+{
+	action_name: "gate2_open"
+
+	animations[]: "/model/ship/ferry_river/ferry_02_de_ne_gate2_open.pma"
+	animation_params[]: "looped: false; delay: 0; layer: 8"
+
+	group_tags[]: float
+	group_tags[]: bargeferry
+	
+	type: "effect"
+}
+
 
 
 #   ____ _               _      _ ___        ___                     _                    _     _ _ _

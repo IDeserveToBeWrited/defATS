@@ -315,3 +315,107 @@ traffic_spawn_condition: .traffic.bus.city_24.nola.condition.city
 	type: city
     str_param[]: "new_orleans"
 }
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Grand Canyon | Arizona Look XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.bus.city_24.az_can_p
+{
+	#accesories
+	accessories[]: .bus.city_24.az_can_p.chassis
+	accessories[]: .bus.city_24.az_can_p.fwheel
+	accessories[]: .bus.city_24.az_can_p.rwheel
+
+	#attributes
+	max_speed: 100
+	spawn_ratio: 0
+	vehicle_mass: 16000
+	engine_power: 200
+	allow_parked: false 
+
+	#spawn conditions
+	spawn_condition[]: .traffic.bus.city_24.az_can_p.condition.city
+
+	#tags
+	tags[]: bus
+	tags[]: passenger
+
+	#driver
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .bus.city_24.az_can_p.chassis
+{
+	data_path: "/def/vehicle/ai/bus_city_24/chassis_az_can_p.sii"
+}
+
+vehicle_wheel_accessory: .bus.city_24.az_can_p.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus3.sii"
+}
+
+vehicle_wheel_accessory: .bus.city_24.az_can_p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus3.sii"
+}
+
+
+traffic_spawn_condition: .traffic.bus.city_24.az_can_p.condition.city
+{
+	# spawns only in specified city
+	type: city
+    str_param[]: "g_canyon_vlg"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  NO PASSENGERS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.bus.city_24.az_can
+{
+	#accesories
+	accessories[]: .bus.city_24.az_can.chassis
+	accessories[]: .bus.city_24.az_can.fwheel
+	accessories[]: .bus.city_24.az_can.rwheel
+
+	#attributes
+	max_speed: 100
+	spawn_ratio: 0
+	vehicle_mass: 16000
+	engine_power: 200
+
+	#spawn conditions
+	spawn_condition[]: .traffic.bus.city_24.az_can.condition.city
+
+	#tags
+	tags[]: bus
+
+	#driver
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .bus.city_24.az_can.chassis
+{
+	data_path: "/def/vehicle/ai/bus_city_24/chassis_az_can.sii"
+}
+
+vehicle_wheel_accessory: .bus.city_24.az_can.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus3.sii"
+}
+
+vehicle_wheel_accessory: .bus.city_24.az_can.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus3.sii"
+}
+
+
+traffic_spawn_condition: .traffic.bus.city_24.az_can.condition.city
+{
+	# spawns only in specified city
+	type: city
+    str_param[]: "g_canyon_vlg"
+}

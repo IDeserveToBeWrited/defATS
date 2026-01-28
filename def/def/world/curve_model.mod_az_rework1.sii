@@ -1,0 +1,449 @@
+SiiNunit
+{
+curve_model : curve.az_re_2p001
+{
+	model_desc: "/model/building/shop/az_mexican_restaurant_wall.pmd"
+	name: "az mexican restaurant wall"
+
+	variation[]: "wall | center1 : 1.0 | center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | left90"
+
+	dynamic_lod_desc[]: "/model/building/shop/az_mexican_restaurant_wall_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.az_re1_2p001
+{
+	model_desc: "/model/building/shop/az_roof_pillar.pmd"
+	name: "az roof pillar"
+
+	variation[]: "var1 | center1,center11,center12 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "var2 | center2,center21,center22 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2 | left91 | right91"
+
+	dynamic_lod_desc[]: "/model/building/shop/az_roof_pillar_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.az_re_2p002
+{
+	model_desc: "/model/building/shop/az_shop_pilaster.pmd"
+	name: "az shop pilaster"
+
+	variation[]: "pillar | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "nopillar | center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc[]: "/model/building/shop/az_shop_pilaster_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay: 0
+}
+
+
+
+curve_model : curve.az_re_2p000
+{
+	model_desc: "/model/building/shop/az_roof_metal.pmd"
+	name: "az roof metal"
+
+	variation[]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "left90 | right90 | end1"
+
+	dynamic_lod_desc[]: "/model/building/shop/az_roof_metal_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
+
+curve_model : curve.az_re1_2p003
+{
+	model_desc: "/model/building/shop/az_pillar_curve.pmd"
+	name: "az pillar curve"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	fixed_step: 3.0
+
+	no_geometry_stretch: true
+}
+
+curve_model : curve.az_re_0u000
+{
+	model_desc: "/model/barrier/brick/nm_wall_01.pmd"
+
+	variation[]: "pillar | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1 | left901 | right901"
+	end_part[]: "end1 | left903 | right903"
+	variation[]: "no_pillar | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0"
+	start_part[]: "start2 | left902 | right902"
+	end_part[]: "end2 | left904 | right904"
+
+	dynamic_lod_desc[]: "/model/barrier/brick/nm_wall_01_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "center1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "start1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "left901 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "right901 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+}
+
+
+curve_model : curve.az_re_0m001
+{
+	model_desc: "/model/barrier/brick/nm_wall_02.pmd"
+
+	variation[]: "pillar | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1 | left901 | right901"
+	end_part[]: "end1 | left903 | right903"
+	variation[]: "no_pillar | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0"
+	start_part[]: "start2 | left902 | right902"
+	end_part[]: "end2 | right904 | left904"
+
+	dynamic_lod_desc[]: "/model/barrier/brick/nm_wall_02_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "center1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "start1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "left901 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "right901 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+}
+
+
+
+curve_model : curve.az_re_0m002
+{
+	model_desc: "/model/barrier/concrete/nm_pueblo_wall.pmd"
+
+	variation[]: "flat | center1 : 1.0 | center2 : 1.0"
+	start_part[]: "start1 | start2 | left903 | left904 | right903 | right904"
+	end_part[]: "end1 | end2 | left901 | left902 | right901 | right902"
+	variation[]: "uneven | center4 : 1.0 | center5 : 1.0"
+	start_part[]: "start1 | start2 | left903 | left904 | right903 | right904"
+	end_part[]: "end1 | end2 | left901 | left902 | right901 | right902"
+	variation[]: "decor | center7 : 1.0 | center8 : 1.0"
+	start_part[]: "start1 | start2 | left903 | left904 | right903 | right904"
+	end_part[]: "end1 | end2 | left901 | left902 | right901 | right902"
+
+	dynamic_lod_desc[]: "/model/barrier/concrete/nm_pueblo_wall_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.az_re_2d000
+{
+	model_desc: "/model/hill/grand_canyon/grand_canyon_horizon_2d_curve.pmd"
+
+	variation[]: "default | center1 : 1.0 | center2 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+
+	high_tess[]: default
+
+	smooth_surface: true
+}
+
+curve_model : curve.az_re_79000
+{
+	model_desc: "/model/barrier/wood/az_lodge_edging.pmd"
+	name: "az_log_edging"
+
+	variation[]: "Default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	variation[]: "Straight | center1_S : 1.0 | center2_S : 1.0 | center3_S : 1.0 | center4_S : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+
+	dynamic_lod_desc[]: "/model/barrier/wood/az_lodge_edging_lod1.pmd"
+	dynamic_lod_dist[]: 25
+	dynamic_lod_desc[]: "/model/barrier/wood/az_lodge_edging_lod2.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.az_re_1a000
+{
+	model_desc: "/prefab/depots/shoppingmall/az_structure_set_market_back.pmd"
+	name: "az structure set market back"
+
+	variation[]: "6m | center3, center4 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "6m_doors | center1 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "6m_whs | center2 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "7m | center6 : 1.0"
+	start_part[]: "start2 | start4 | start5"
+	end_part[]: "end2 | left90a | right90a"
+	variation[]: "7m_gate | center7 : 1.0"
+	start_part[]: "start2 | start4 | start5"
+	end_part[]: "end2 | left90a | right90a"
+	variation[]: "7m_door | center8 : 1.0"
+	start_part[]: "start2 | start4 | start5"
+	end_part[]: "end2 | left90a | right90a"
+	variation[]: "8m | center11 : 1.0 | center12 : 2.0"
+	start_part[]: "start3 | start6 | start7"
+	end_part[]: "end3 | left90b | right90b"
+	variation[]: "8m_doors | center9 : 1.0"
+	start_part[]: "start3 | start6 | start7"
+	end_part[]: "end3 | left90b | right90b"
+	variation[]: "8m_door | center10 : 1.0"
+	start_part[]: "start3 | start6 | start7"
+	end_part[]: "end3 | left90b | right90b"
+
+	dynamic_lod_desc[]: "/prefab/depots/shoppingmall/az_structure_set_market_back_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.az_re_1a001
+{
+	model_desc: "/prefab/depots/shoppingmall/az_market_wall.pmd"
+	name: "az market wall"
+
+	variation[]: "3m | center11, center12, center13, center14 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | right90a | left90a"
+	variation[]: "2m | center21, center22, center23, center24 : 1.0"
+	start_part[]: start2
+	end_part[]: "end2 | right90b | left90b"
+	variation[]: "1_5m | center31, center32, center33, center34 : 1.0"
+	start_part[]: start3
+	end_part[]: "end3 | right90c | left90c"
+	variation[]: "base | center41, center42, center43, center44 : 1.0"
+	start_part[]: start4
+	end_part[]: "end4 | right90d | left90d"
+
+	dynamic_lod_desc[]: "/prefab/depots/shoppingmall/az_market_wall_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
+
+curve_model : curve.az_re_79002
+{
+	model_desc: "/model/barrier/wood/az_wooden_fence.pmd"
+	name: "az wooden fence"
+
+	variation[]: "Default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: start_1
+	end_part[]: "end_Def | left_90 | right_90"
+	variation[]: "Decorated | center_d_1 : 1.0 | center_d_2 : 1.0 | center_d_3 : 1.0 | center_d_4 : 1.0"
+	start_part[]: start_1
+	end_part[]: "end_Dec | left_90 | right_90"
+	variation[]: "Damaged | center_g_1 : 1.0 | center_g_2 : 1.0 | center_g_3 : 1.0 | center_g_4 : 1.0"
+	start_part[]: start_1
+	end_part[]: "end_Da | left_90Da | right_90Da"
+
+	dynamic_lod_desc[]: "/model/barrier/wood/az_wooden_fence_lod1.pmd"
+	dynamic_lod_dist[]: 40
+	dynamic_lod_desc[]: "/model/barrier/wood/az_wooden_fence_lod2.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.az_re_60000
+{
+	model_desc: "/model/distribution/liquid/az_industrial_pipe.pmd"
+	name: "az industrial pipe"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "0_5m | center1,center2,center3 : 1.0 | center2,center3,center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "1m | center4,center5,center6 : 1.0 | center5,center6,center4 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+	variation[2]: "hi_0_5m | center7,center8,center9 : 1.0 | center8,center9,center7 : 1.0"
+	start_part[2]: "start1"
+	end_part[2]: "end1"
+	variation[3]: "hi_1m | center10,center11,center12 : 1.0 | center11,center12,center10 : 1.0"
+	start_part[3]: "start2"
+	end_part[3]: "end2"
+
+	high_tess: 2
+	high_tess[0]: "hi_0_5m"
+	high_tess[1]: "hi_1m"
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/distribution/liquid/az_industrial_pipe_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.az_re_79003
+{
+	model_desc: "/model/barrier/wood/az_wooden_fence_2.pmd"
+	name: "az wooden fence 2"
+
+	variation[]: "Default | center_21 : 1.0 | center_22 : 1.0 | center_23 : 1.0 | center_24 : 1.0"
+	start_part[]: "start_1"
+	end_part[]: "end_1 | left90 | right90"
+
+	dynamic_lod_desc[]: "/model/barrier/wood/az_wooden_fence_2_lod1.pmd"
+	dynamic_lod_dist[]: 40
+	dynamic_lod_desc[]: "/model/barrier/wood/az_wooden_fence_2_lod2.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.az_re_6l000
+{
+	model_desc: "/model/building/house/nm_suburb_house_curve_mid.pmd"
+
+	variation[]: "side | center1,center2,center3,center4 : 1.0 | center2,center4,center1,center3 : 1.0 | center1,center3,center2,center4 : 1.0 | center2,center1,center4,center3 : 1.0"
+	start_part[]: "ins1"
+	end_part[]: "ins1"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "front | center5,center6,center7,center8 : 1.0 | center6,center8,center5,center7 : 1.0 | center5,center7,center6,center8 : 1.0 | center6,center5,center8,center7 : 1.0"
+	start_part[]: "ins1"
+	end_part[]: "ins1"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "full | center9,center10,center11,center12,center13,center14 : 1.0 | center10,center12,center14,center9,center13,center1,center11 : 1.0 | center13,center12,center9,center11,center10,center14 : 1.0 | center11,center13,center9,center14,center10,center12 : 1.0"
+	start_part[]: "ins1"
+	end_part[]: "ins1"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0"
+	start_part[]: "ins1"
+	end_part[]: "ins1"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	fixed_step: &41a00000
+	no_geometry_stretch: true
+}
+
+curve_model : curve.az_re_79005
+{
+	model_desc: "/model/building/shop/az_structure_set_market_front_wall_shoptown.pmd"
+	name: "az structure set market front wall shoptown"
+
+	variation[]: "pillar_10m | cent_10P : 1.0"
+	start_part[]: "start_10P | start_10W"
+	end_part[]: "left_10P | left_10W | right_10P | right_10W | end_10P | end_10W | left_10PP"
+	variation[]: "wall_10m | cent_10W : 1.0"
+	start_part[]: "start_10P | start_10W"
+	end_part[]: "left_10P | left_10W | right_10P | right_10W | end_10P | end_10W | left_10PP"
+	variation[]: "wall_09m | cent_09W : 1.0"
+	start_part[]: "start_09P | start_09W"
+	end_part[]: "end_09P | end_09W | left_09P | left_09W | right_09W | right_09P | left_09PP"
+	variation[]: "pillar_09m | cent_09P : 1.0"
+	start_part[]: "start_09P | start_09W"
+	end_part[]: "end_09P | end_09W | left_09P | left_09W | right_09W | right_09P | left_09PP"
+	variation[]: "wall_08m | cent_08W : 1.0"
+	start_part[]: "start_08P | start_08W"
+	end_part[]: "end_08P | end_08W | left_08P | left_08W | right_08P | right_08W | left_08PP"
+	variation[]: "pillar_08m | cent_08P : 1.0"
+	start_part[]: "start_08P | start_08W"
+	end_part[]: "end_08P | end_08W | left_08P | left_08W | right_08P | right_08W | left_08PP"
+	variation[]: "banner | cent_ban : 1.0"
+	start_part[]: start_ban
+	end_part[]: end_ban
+	variation[]: "cart_10m | cent_10_C : 1.0"
+	start_part[]: "start_10P | start_10W"
+	end_part[]: "left_10P | left_10W | right_10P | right_10W | end_10P | end_10W | left_10PP"
+	variation[]: "cart_09m | cent_09_C : 1.0"
+	start_part[]: "start_09P | start_09W"
+	end_part[]: "end_09P | end_09W | left_09P | left_09W | right_09W | right_09P | left_09PP"
+	variation[]: "cart_08m | cent_08_C : 1.0"
+	start_part[]: "start_08P | start_08W"
+	end_part[]: "end_08P | end_08W | left_08P | left_08W | right_08P | right_08W | left_08PP"
+
+	dynamic_lod_desc[]: "/model/building/shop/az_structure_set_market_front_wall_shoptown_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.az_re_79006
+{
+	model_desc: "/model/building/shop/az_structure_set_market_front_wall_wallbert.pmd"
+	name: "az structure set market front wall wallbert"
+
+	variation[]: "wall_10m | cent_10W : 1.0"
+	start_part[]: "start_10P | start_10W"
+	end_part[]: "left_10P | left_10W | right_10P | right_10W | end_10P | end_10W | left_10PP"
+	variation[]: "pillar_10m | cent_10P : 1.0"
+	start_part[]: "start_10P | start_10W"
+	end_part[]: "left_10P | left_10W | right_10P | right_10W | end_10P | end_10W | left_10PP"
+	variation[]: "wall_09m | cent_09W : 1.0"
+	start_part[]: "start_09P | start_09W"
+	end_part[]: "end_09P | end_09W | left_9P | left_09W | right_09W | right_09P | left_09PP"
+	variation[]: "pillar_09m | cent_09P : 1.0"
+	start_part[]: "start_09P | start_09W"
+	end_part[]: "end_09P | end_09W | left_09P | left_09W | right_09W | right_09P | left_09PP"
+	variation[]: "wall_08m | cent_08W : 1.0"
+	start_part[]: "start_08P | start_08W"
+	end_part[]: "end_08P | end_08W | left_08P | left_08W | right_08P | right_08W | left_08PP"
+	variation[]: "pillar_08m | cent_08P : 1.0"
+	start_part[]: "start_08P | start_08W"
+	end_part[]: "end_08P | end_08W | left_08P | left_08W | right_08P | right_08W | left_08PP"
+	variation[]: "banner | cent_ban : 1.0"
+	start_part[]: start_ban
+	end_part[]: end_ban
+	variation[]: "cart_10m | cent_10_C : 1.0"
+	start_part[]: "start_10P | start_10W"
+	end_part[]: "left_10P | left_10W | right_10P | right_10W | end_10P | end_10W | left_10PP"
+	variation[]: "cart_09m | cent_09_C : 1.0"
+	start_part[]: "start_09P | start_09W"
+	end_part[]: "end_09P | end_09W | left_09P | left_09W | right_09W | right_09P | left_09PP"
+	variation[]: "cart_08m | cent_08_C : 1.0"
+	start_part[]: "start_08P | start_08W"
+	end_part[]: "end_08P | end_08W | left_08P | left_08W | right_08P | right_08W | left_08PP"
+
+	dynamic_lod_desc[]: "/model/building/shop/az_structure_set_market_front_wall_wallbert_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.az_re_38000
+{
+	model_desc: "/prefab/depots/scrapyard/scrap_pile_decal_curve.pmd"
+
+	variation[]: "var1_big | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "var2_big | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "var3_small | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[]: start3
+	end_part[]: end3
+	variation[]: "var4_small | center13 : 1.0 | center14 : 1.0 | center15 : 1.0 | center16 : 1.0"
+	start_part[]: start4
+	end_part[]: end4
+}
+
+curve_model : curve.az_re_3a000
+{
+	model_desc: "/model/building/shop/az_market_garden_center_fence.pmd"
+
+	variation[]: "default | center1 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "gate | center2 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+
+	dynamic_lod_desc[]: "/model/building/shop/az_market_garden_center_fence_lod1.pmd"
+	dynamic_lod_dist[]: 60
+}
+
+}

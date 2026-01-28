@@ -482,4 +482,44 @@ achievement_academy_book : .aca_stars_co.book
 	book_name: academy.book.book2
 }
 
+# -- Academy module - 3rd book --
+
+# Complete at least 12 scenarios in Double Trailer Handling.
+
+achievement_academy : .achievement.aca_book3
+{
+	gameplay: academy
+	event_name: aca_log_entr
+	initial_check: true
+	condition: .aca_book3.condition
+	target: 12
+
+	achievement_name: aca_book3
+
+	steam_progress_id: "aca_book3-progress"
+	steam_id: aca_book3
+}
+
+achievement_academy_unique_scenarios : .aca_book3.condition
+{
+	condition: .aca_book3.12
+	count: 12
+}
+
+achievement_academy_each : .aca_book3.12
+{
+	list[]: .aca_book3.completed
+	list[]: .aca_book3.book
+}
+
+achievement_academy_scenario_state : .aca_book3.completed
+{
+	result: completed
+}
+
+achievement_academy_book : .aca_book3.book
+{
+	book_name: academy.book.book3
+}
+
 }

@@ -4,6 +4,39 @@
 
 
 ################################################################################
+# Arizona
+
+photo_album_item : album.viewpoints.azgrand
+{
+	name: "@@az_cut_grand@@"
+	dlc_id: ats_arizona
+	objects_uid[]: 0x60518D5CCDC00001
+}
+
+photo_album_item : album.viewpoints.azwinslow
+{
+	name: "@@az_cut_winslow@@"
+	dlc_id: ats_arizona
+	objects_uid[]: 0x6052D5BAE8C00001
+}
+
+photo_album_item : album.viewpoints.azhoover
+{
+	# On the border with Nevada, but only accessible from the Arizona side.
+	name: "@@az_cut_hoover@@"
+	dlc_id: ats_arizona
+	objects_uid[]: 0x6042453927400001
+}
+
+photo_album_group : album.viewpoints.arizona
+{
+	name: "@@algr_arizona@@"
+	items[]: album.viewpoints.azgrand
+	items[]: album.viewpoints.azwinslow
+	items[]: album.viewpoints.azhoover
+}
+
+################################################################################
 # Arkansas
 
 photo_album_item : album.viewpoints.arfayettevil
@@ -873,14 +906,14 @@ photo_album_item : album.viewpoints.nm66w
 {
 	name: "@@nm_cut_66w@@"
 	dlc_id: ats_nwmexico
-	objects_uid[]: 0x3A907C8C6B070001
+	objects_uid[]: 0x60E53F461B1A0000
 }
 
 photo_album_item : album.viewpoints.nmalbuq
 {
 	name: "@@nm_cut_albuq@@"
 	dlc_id: ats_nwmexico
-	objects_uid[]: 0x3A8FC88C73070000
+	objects_uid[]: 0x6061C3338B400001
 }
 
 photo_album_item : album.viewpoints.nmlincoln
@@ -929,7 +962,7 @@ photo_album_item : album.viewpoints.nmwelcome
 {
 	name: "@@nm_cut_welcome@@"
 	dlc_id: ats_nwmexico
-	objects_uid[]: 0x3A95D4A04F870001
+	objects_uid[]: 0x60E5451ECD1A0000
 }
 
 photo_album_group : album.viewpoints.new_mexico
@@ -1501,7 +1534,7 @@ photo_album_item : album.viewpoints.utmonument
 {
 	name: "@@ut_cut_monument@@"
 	dlc_id: ats_utah
-	objects_uid[]: 0x3882007841870000
+	objects_uid[]: 0x595B8E48329A0446
 }
 
 photo_album_item : album.viewpoints.utmoqui

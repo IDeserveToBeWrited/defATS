@@ -9160,6 +9160,7 @@ sign_model : sign.697
 	drop_sun_shadows: 1
 	mass: 300.0
 }
+
 sign_model : sign.698
 {
 	sign_name: "us no parking 2"
@@ -15668,6 +15669,7 @@ sign_model : sign.co_2k001
 	drop_sun_shadows: 1
 	mass: 100.0
 }
+
 sign_model : sign.co_2k002
 {
 	sign_name: "co denver freeway lamp double 18m"
@@ -15675,11 +15677,6 @@ sign_model : sign.co_2k002
 	model_coll: "/model/props/lamp/co_denver_freeway_lamp_double_18m.pmc"
 	look_name: "default"
 	category: ""
-
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/model/props/lamp/co_denver_freeway_lamp_double_18m_lod1.pmd"
-	dynamic_lod_dist[0]: 150
 
 	dynamic: false
 	road_model: true
@@ -17295,16 +17292,14 @@ sign_model : sign.co_03002
 {
 	sign_name: "us phoenix totem big1"
 	model_desc: "/model/panorama/truck_stop/co_pueblo/co_pueblo_hearts_totem_01.pmd"
-#	old_sign_name: "co pueblo hearts totem 01"
 	model_coll: "/model/panorama/truck_stop/co_pueblo/co_pueblo_hearts_totem_01.pmc"
 	look_name: "default"
 	category: ""
 
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/model/panorama/truck_stop/co_pueblo/co_pueblo_hearts_totem_01_lod1.pmd"
-	dynamic_lod_dist[0]: 100
+	dynamic_lod_desc[]: "/model/panorama/truck_stop/co_pueblo/co_pueblo_hearts_totem_01_lod1.pmd"
+	dynamic_lod_dist[]: 100
 
+	dynamic: false
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -33375,7 +33370,7 @@ sign_model : sign.2k0lz
 
 sign_model : sign.2k0m0
 {
-	sign_name: "us side board green 120x240"
+	sign_name: "us side board white 120x240"
 	model_desc: "/model/sign/navigation/us_side_board_white_120x240.pmd"
 	model_coll: "/model/sign/navigation/us_side_board_white_120x240.pmc"
 	look_name: "default"
@@ -36395,6 +36390,7 @@ sign_model : sign.2k0rc
 	model_desc: "/model/sign/traffic/ca_left_turn_only_left_right_right_turn_only_182x115.pmd"
 	model_coll: "/model/sign/traffic/ca_left_turn_only_left_right_right_turn_only_182x115.pmc"
 	look_name: "default"
+	variant_name: default
 	category: ""
 
 	dynamic: true
@@ -36608,8 +36604,8 @@ sign_model : sign.2k0rq
 
 	dynamic: false
 	editable: true
-	boards: true
 	drop_sun_shadows: 1
+	boards: true
 }
 
 sign_model : sign.2k0rr
@@ -40583,12 +40579,12 @@ sign_model : sign.2k0wn
 	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_245x45.pmc"
 	look_name: default
 	variant_name: green
-	category: ""
 
 	stand_classes[]: ovh_street
 
 	dynamic: false
 	editable: true
+	drop_sun_shadows: 1
 }
 
 sign_model : sign.2k0x1
@@ -40598,12 +40594,12 @@ sign_model : sign.2k0x1
 	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_245x45.pmc"
 	look_name: default
 	variant_name: blue
-	category: ""
 
 	stand_classes[]: ovh_street
 
 	dynamic: false
 	editable: true
+	drop_sun_shadows: 1
 }
 
 sign_model : sign.2k0x2
@@ -40613,12 +40609,12 @@ sign_model : sign.2k0x2
 	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_180x45.pmc"
 	look_name: default
 	variant_name: green
-	category: ""
 
 	stand_classes[]: ovh_street
 
 	dynamic: false
 	editable: true
+	drop_sun_shadows: 1
 }
 
 sign_model : sign.2k0x3
@@ -40628,12 +40624,12 @@ sign_model : sign.2k0x3
 	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_180x45.pmc"
 	look_name: default
 	variant_name: blue
-	category: ""
 
 	stand_classes[]: ovh_street
 
 	dynamic: false
 	editable: true
+	drop_sun_shadows: 1
 }
 
 sign_model : sign.2k0x4
@@ -46436,6 +46432,90 @@ sign_model : sign.sd_75005
 	dynamic: true
 	mass: &42480000
 }
+
+sign_model : sign.2k15f
+{
+	sign_name: "nm overhead stand 01 2fwy narrow"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_2fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_2fwy.pmc"
+	variant_name: narrow
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15g
+{
+	sign_name: "nm overhead stand 01 2fwy wide"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_2fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_2fwy.pmc"
+	variant_name: wide
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15h
+{
+	sign_name: "nm overhead stand 01 3fwy narrow"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_3fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_3fwy.pmc"
+	variant_name: narrow
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15i
+{
+	sign_name: "nm overhead stand 01 3fwy wide"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_3fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_3fwy.pmc"
+	variant_name: wide
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15j
+{
+	sign_name: "nm overhead stand 01 4fwy narrow"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_4fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_4fwy.pmc"
+	variant_name: narrow
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15k
+{
+	sign_name: "nm overhead stand 01 4fwy wide"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_4fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_4fwy.pmc"
+	variant_name: wide
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
 sign_model : sign.sd_75006
 {
 	sign_name: "sd mailbox decor"
@@ -46461,6 +46541,1035 @@ sign_model : sign.sd_75007
 
 	dynamic: true
 	mass: &42480000
+}
+
+sign_model : sign.2k15l
+{
+	sign_name: "nm overhead stand 01 5fwy narrow"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_5fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_5fwy.pmc"
+	variant_name: narrow
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15m
+{
+	sign_name: "nm overhead stand 01 5fwy wide"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_5fwy.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_5fwy.pmc"
+	variant_name: wide
+	category: "overhead stand/nm/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15n
+{
+	sign_name: "nm overhead stand 01 custom (26m / 6.5m offset)"
+	model_desc: "/model/sign/navigation/nm_overhead_stand_01_26m_6_5_offset.pmd"
+	model_coll: "/model/sign/navigation/nm_overhead_stand_01_26m_6_5_offset.pmc"
+	variant_name: 26m
+	category: "overhead stand/nm/01/custom"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k15o
+{
+	sign_name: "us overhead board street name illuminated green 245x45cm (single sided  flat)"
+	model_desc: "/model/sign/navigation/us_overhead_board_street_name_illuminated_245x45_single_flat.pmd"
+	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_245x45_single_flat.pmc"
+	look_name: default
+	variant_name: green
+
+	stand_classes[]: ovh_street
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k15p
+{
+	sign_name: "us overhead board street name illuminated blue 245x45cm (single sided  flat)"
+	model_desc: "/model/sign/navigation/us_overhead_board_street_name_illuminated_245x45_single_flat.pmd"
+	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_245x45_single_flat.pmc"
+	look_name: default
+	variant_name: blue
+
+	stand_classes[]: ovh_street
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k15q
+{
+	sign_name: "us overhead board street name illuminated blue 180x45cm (single sided  flat)"
+	model_desc: "/model/sign/navigation/us_overhead_board_street_name_illuminated_180x45_single_flat.pmd"
+	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_180x45_single_flat.pmc"
+	look_name: default
+	variant_name: blue
+
+	stand_classes[]: ovh_street
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k15r
+{
+	sign_name: "us overhead board street name illuminated green 180x45cm (single sided  flat)"
+	model_desc: "/model/sign/navigation/us_overhead_board_street_name_illuminated_180x45_single_flat.pmd"
+	model_coll: "/model/sign/navigation/us_overhead_board_street_name_illuminated_180x45_single_flat.pmc"
+	look_name: default
+	variant_name: green
+
+	stand_classes[]: ovh_street
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k15s
+{
+	sign_name: "us side board green 90x120"
+	model_desc: "/model/sign/navigation/us_side_board_green_90x120.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_90x120.pmc"
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k15t
+{
+	sign_name: "us curve chevron double 2"
+	model_desc: "/model/sign/traffic/us_curve_chevron_double_2.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_double_2.pmc"
+	look_name: default
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k15u
+{
+	sign_name: "us exit gore 3 (green 243x152) (yellow 243x60)"
+	model_desc: "/model/sign/navigation/us_exit_gore_3_green_243x152_yellow_243x60.pmd"
+	model_coll: "/model/sign/navigation/us_exit_gore_3_green_243x152_yellow_243x60.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k15v
+{
+	sign_name: "us blank diamond 122x122 foldable"
+	model_desc: "/model/sign/traffic/us_blank_diamond_122x122_foldable.pmd"
+	model_coll: "/model/sign/traffic/us_blank_diamond_122x122_foldable.pmc"
+	variant_name: open
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k15w
+{
+	sign_name: "us side board 510x300 (green x140 / brown x160) ep"
+	model_desc: "/model/sign/navigation/us_side_board_green_510x140_brown510x160_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_510x140_brown510x160_ep.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k15x
+{
+	sign_name: "us side board 450x330 (green x120 / brown x210) ep"
+	model_desc: "/model/sign/navigation/us_side_board_450x330_green_x120_brown_x210_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_450x330_green_x120_brown_x210_ep.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k15y
+{
+	sign_name: "us side board green 390x270"
+	model_desc: "/model/sign/navigation/us_side_board_green_390x270.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_390x270.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k15z
+{
+	sign_name: "us side board yellow 510x300 flashing beacons"
+	model_desc: "/model/sign/navigation/us_side_board_yellow_510x300_beacons.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_yellow_510x300_beacons.pmc"
+	variant_name: enabled
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k160
+{
+	sign_name: "us side board white 75x120"
+	model_desc: "/model/sign/navigation/us_side_board_white_75x120.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_white_75x120.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k161
+{
+	sign_name: "us side board street name white 240x45 (red black border)"
+	model_desc: "/model/sign/navigation/us_side_board_street_name_white_240x45_red_black_border.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_street_name_white_240x45_red_black_border.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k162
+{
+	sign_name: "us side board 450x240 (green x90 / blue x150) ep"
+	model_desc: "/model/sign/navigation/us_side_board_450x240_green_x90_blue_x150_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_450x240_green_x90_blue_x150_ep.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k163
+{
+	sign_name: "us hwy info 1a"
+	model_desc: "/model/sign/navigation/us_hwy_info_1a.pmd"
+	model_coll: "/model/sign/navigation/us_hwy_info_1a.pmc"
+	variant_name: 213x61
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k164
+{
+	sign_name: "us hwy info 1a sm"
+	model_desc: "/model/sign/navigation/us_hwy_info_1a_sm.pmd"
+	model_coll: "/model/sign/navigation/us_hwy_info_1a_sm.pmc"
+	variant_name: 213x61
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k165
+{
+	sign_name: "us begin left/right traffic"
+	model_desc: "/model/sign/traffic/us_begin_left_right_traffic.pmd"
+	model_coll: "/model/sign/traffic/us_begin_left_right_traffic.pmc"
+	variant_name: begin_left
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k166
+{
+	sign_name: "us side board green 450x480"
+	model_desc: "/model/sign/navigation/us_side_board_green_450x480.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_450x480.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k167
+{
+	sign_name: "us side board green 390x450"
+	model_desc: "/model/sign/navigation/us_side_board_green_390x450.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_390x450.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k168
+{
+	sign_name: "us side board green 450x330 eo"
+	model_desc: "/model/sign/navigation/us_side_board_green_450x330_eo.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_450x330_eo.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k169
+{
+	sign_name: "us side board green 570x180"
+	model_desc: "/model/sign/navigation/us_side_board_green_570x180.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_570x180.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16a
+{
+	sign_name: "us side board green 570x150"
+	model_desc: "/model/sign/navigation/us_side_board_green_570x150.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_570x150.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16b
+{
+	sign_name: "us side board yellow 390x60"
+	model_desc: "/model/sign/navigation/us_side_board_yellow_390x60.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_yellow_390x60.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16c
+{
+	sign_name: "us 1fw 1fw wide 1dir lg"
+	model_desc: "/model/sign/navigation/us_1fw_1fw_wide_1dir_lg.pmd"
+	model_coll: "/model/sign/navigation/us_1fw_1fw_wide_1dir_lg.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+
+sign_model : sign.aca_2m001
+{
+	sign_name: "traffic cone 01 aca"
+	model_desc: "/model2/sign/traffic_cone_01_aca.pmd"
+	model_coll: "/model2/sign/traffic_cone_01_aca.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.4e007
+{
+	sign_name: "barrier parking 01 de"
+	model_desc: "/model2/barrier/barrier_parking_01_de.pmd"
+	model_coll: "/model2/barrier/barrier_parking_01_de.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 1000.0
+}
+
+
+sign_model : sign.aca_2k000
+{
+	model_desc: "/model/sign/aca_caution_traffic_cone_01.pmd"
+	model_coll: "/model/sign/aca_caution_traffic_cone_01.pmc"
+	look_name: default
+	category: ""
+
+	dynamic_lod_desc[]: "/model/sign/aca_caution_traffic_cone_01_lod1.pmd"
+	dynamic_lod_dist[]: 15
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.aca_2k001
+{
+	sign_name: "aca caution driving training"
+	model_desc: "/model/sign/aca_caution_driving_training.pmd"
+	model_coll: "/model/sign/aca_caution_driving_training.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.aca_4e002
+{
+	sign_name: "traffic cone logo 01 aca"
+	model_desc: "/model2/sign/traffic_cone_logo_01_aca.pmd"
+	model_coll: "/model2/sign/traffic_cone_logo_01_aca.pmc"
+	look_name: "default"
+	category: ""
+
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.2k16e
+{
+	sign_name: "us noparking2 45x45"
+	model_desc: "/model/sign/traffic/us_noparking2_45.pmd"
+	model_coll: "/model/sign/traffic/us_noparking2_45.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16f
+{
+	sign_name: "us no turn left/right double sided"
+	model_desc: "/model/sign/traffic/us_no_turn_left_right_double_sided.pmd"
+	model_coll: "/model/sign/traffic/us_no_turn_left_right_double_sided.pmc"
+	look_name: default
+	variant_name: left
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16g
+{
+	sign_name: "us no turn left/right double sided 91x91cm"
+	model_desc: "/model/sign/traffic/us_no_turn_left_right_double_sided_91.pmd"
+	model_coll: "/model/sign/traffic/us_no_turn_left_right_double_sided_91.pmc"
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16h
+{
+	sign_name: "us 1hw 1arrow nodir lg"
+	model_desc: "/model/sign/navigation/us_1hw_1arrow_nodir_lg.pmd"
+	model_coll: "/model/sign/navigation/us_1hw_1arrow_nodir_lg.pmc"
+	look_name: default
+	variant_name: default
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16i
+{
+	sign_name: "us 2fw jct"
+	model_desc: "/model/sign/navigation/us_2fw_jct.pmd"
+	model_coll: "/model/sign/navigation/us_2fw_jct.pmc"
+	look_name: default
+	variant_name: default
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16j
+{
+	sign_name: "us 2fw 2dir"
+	model_desc: "/model/sign/navigation/us_2fw_2dir.pmd"
+	model_coll: "/model/sign/navigation/us_2fw_2dir.pmc"
+	look_name: default
+	variant_name: default
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16o
+{
+	sign_name: "us side board green 330x360"
+	model_desc: "/model/sign/navigation/us_side_board_green_330x360.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_330x360.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16p
+{
+	sign_name: "us side board 122x152 (white x122 /  yellow x30)"
+	model_desc: "/model/sign/navigation/us_side_board_122x152_white_x122_yellow_x30.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_122x152_white_x122_yellow_x30.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16q
+{
+	sign_name: "us 2fw 1arrow toll nodir jct"
+	model_desc: "/model/sign/navigation/us_2fw_1arrow_toll_nodir_jct.pmd"
+	model_coll: "/model/sign/navigation/us_2fw_1arrow_toll_nodir_jct.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16r
+{
+	sign_name: "us 1fw 1arrow toll 1dir"
+	model_desc: "/model/sign/navigation/us_1fw_1arrow_toll_1dir.pmd"
+	model_coll: "/model/sign/navigation/us_1fw_1arrow_toll_1dir.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16s
+{
+	sign_name: "us generic overhead stand 01 1fwy right (non-editable)"
+	model_desc: "/model/sign/navigation/us_generic_overhead_stand_01_1fwy_right.pmd"
+	model_coll: "/model/sign/navigation/us_generic_overhead_stand_01_1fwy_right.pmc"
+	look_name: default
+	variant_name: narrow
+	category: "overhead stand/us/generic/01"
+
+	dynamic: false
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k16t
+{
+	sign_name: "us side board green 450x270"
+	model_desc: "/model/sign/navigation/us_side_board_green_450x270.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_450x270.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16u
+{
+	sign_name: "us side board green 120x60"
+	model_desc: "/model/sign/navigation/us_side_board_green_120x60.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_120x60.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16v
+{
+	sign_name: "us bridge stand short 01"
+	model_desc: "/model/sign/navigation/bridge_stand_01_us_short_sign.pmd"
+	model_coll: "/model/sign/navigation/bridge_stand_01_us_short_sign.pmc"
+	look_name: default
+	variant_name: bridge_01
+	category: "overhead stand/us/bridge"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k16w
+{
+	sign_name: "us bridge stand short 02"
+	model_desc: "/model/sign/navigation/bridge_stand_01_us_short_sign.pmd"
+	model_coll: "/model/sign/navigation/bridge_stand_01_us_short_sign.pmc"
+	look_name: default
+	variant_name: bridge_02
+	category: "overhead stand/us/bridge"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k16x
+{
+	sign_name: "us side board brown 270x270"
+	model_desc: "/model/sign/navigation/us_side_board_brown_270x270.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_brown_270x270.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k16y
+{
+	sign_name: "us truck rollover / mph / speed meter"
+	model_desc: "/model/sign/traffic/us_truck_rollover_mph_speed_meter.pmd"
+	model_coll: "/model/sign/traffic/us_truck_rollover_mph_speed_meter.pmc"
+	variant_name: default
+	category: "editable area"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k16z
+{
+	sign_name: "us side board green 330x270"
+	model_desc: "/model/sign/navigation/us_side_board_green_330x270.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_330x270.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k172
+{
+	sign_name: "co denver freeway lamp double 18m rusted"
+	model_desc: "/model/props/lamp/co_denver_freeway_lamp_double_18m_rust.pmd"
+	model_coll: "/model/props/lamp/co_denver_freeway_lamp_double_18m_rust.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k171
+{
+	sign_name: "co denver freeway lamp single 15m flat rusted"
+	model_desc: "/model/props/lamp/co_denver_freeway_lamp_single_15m_flat_rust.pmd"
+	model_coll: "/model/props/lamp/co_denver_freeway_lamp_single_15m_flat_rust.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k170
+{
+	sign_name: "co denver freeway lamp single 15m rusted"
+	model_desc: "/model/props/lamp/co_denver_freeway_lamp_single_15m_rust.pmd"
+	model_coll: "/model/props/lamp/co_denver_freeway_lamp_single_15m_rust.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k173
+{
+	sign_name: "us side board brown 76x46"
+	model_desc: "/model/sign/navigation/us_side_board_brown_76x46.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_brown_76x46.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k174
+{
+	sign_name: "us blank diamond 91x91 yellow plaque 110x30"
+	model_desc: "/model/sign/traffic/us_blank_diamond_91x91_plaque_110x30.pmd"
+	model_coll: "/model/sign/traffic/us_blank_diamond_91x91_plaque_110x30.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k175
+{
+	sign_name: "us side board brown 122x122"
+	model_desc: "/model/sign/navigation/us_side_board_brown_122x122.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_brown_122x122.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k176
+{
+	sign_name: "us side board green 550x380"
+	model_desc: "/model/sign/navigation/us_side_board_green_550x380.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_550x380.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k177
+{
+	sign_name: "il rest area board brown 150x150"
+	model_desc: "/model/sign/navigation/il_rest_area_board_brown_150x150.pmd"
+	model_coll: "/model/sign/navigation/il_rest_area_board_brown_150x150.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k178
+{
+	sign_name: "il rest area board brown 150x150 double sided"
+	model_desc: "/model/sign/navigation/il_rest_area_board_brown_150x150_double.pmd"
+	model_coll: "/model/sign/navigation/il_rest_area_board_brown_150x150_double.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k179
+{
+	sign_name: "il rest area board brown 150x250"
+	model_desc: "/model/sign/navigation/il_rest_area_board_brown_150x250.pmd"
+	model_coll: "/model/sign/navigation/il_rest_area_board_brown_150x250.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17a
+{
+	sign_name: "us side board brown 150x150"
+	model_desc: "/model/sign/navigation/us_side_board_brown_150x150.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_brown_150x150.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17b
+{
+	sign_name: "us side board green 630x360"
+	model_desc: "/model/sign/navigation/us_side_board_green_630x360.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_630x360.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17c
+{
+	sign_name: "il overhead stand 01 3-3fw (40m)"
+	model_desc: "/model/sign/navigation/il_overhead_stand_01_33fw_40m.pmd"
+	model_coll: "/model/sign/navigation/il_overhead_stand_01_33fw_40m.pmc"
+	look_name: default
+	variant_name: default
+	category: "overhead stand/il/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k17d
+{
+	sign_name: "il overhead stand 01 2-2fw (30.5m)"
+	model_desc: "/model/sign/navigation/il_overhead_stand_01_22fw_30_5m.pmd"
+	model_coll: "/model/sign/navigation/il_overhead_stand_01_22fw_30_5m.pmc"
+	category: "overhead stand/il/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k17e
+{
+	sign_name: "ca overhead stand 01 3-3fwy (40m)"
+	model_desc: "/model/sign/navigation/ca_overhead_stand_01_33fw_40m.pmd"
+	model_coll: "/model/sign/navigation/ca_overhead_stand_01_33fw_40m.pmc"
+	look_name: default
+	variant_name: default
+	category: "overhead stand/ca/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k17f
+{
+	sign_name: "ca overhead stand 01 2-2fwy (30.5m)"
+	model_desc: "/model/sign/navigation/ca_overhead_stand_01_22fw_30_5m.pmd"
+	model_coll: "/model/sign/navigation/ca_overhead_stand_01_22fw_30_5m.pmc"
+	look_name: default
+	variant_name: default
+	category: "overhead stand/ca/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k17h
+{
+	sign_name: "sd welcome sign 450x250"
+	model_desc: "/model/sign/sd_welcome_sign_450x250.pmd"
+	model_coll: "/model/sign/sd_welcome_sign_450x250.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic_lod_desc[]: "/model/sign/sd_welcome_sign_450x250_lod1.pmd"
+	dynamic_lod_dist[]: 30
+
+	dynamic: false
+	drop_sun_shadows: 1
 }
 
 }

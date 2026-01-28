@@ -1,0 +1,78 @@
+SiiNunit
+{
+trailer : academy.trailer.bdouble
+{
+
+	accessories[]: .scs_flat_bd.chassis
+	accessories[]: .scs_flat_bd.rwheel
+	accessories[]: .scs_flat_bd.rwheel1
+	accessories[]: .scs_flat_bd.rwheel2
+	accessories[]: .scs_flat_bd.trlr_cables
+	accessories[]: .scs_flat_bd.da_sign
+
+	slave_trailer: .scs_flat_bd.trailer2
+}
+
+vehicle_accessory: .scs_flat_bd.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed28_bd.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat_bd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_wheel_accessory: .scs_flat_bd.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_wheel_accessory: .scs_flat_bd.rwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_addon_accessory: .scs_flat_bd.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly.sii"
+}
+
+vehicle_addon_accessory: .scs_flat_bd.da_sign
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/da_sign.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+trailer : .scs_flat_bd.trailer2
+{
+	accessories[]: .scs_flat_bd.trailer2.chassis
+	accessories[]: .scs_flat_bd.trailer2.rwheel
+	accessories[]: .scs_flat_bd.trailer2.rwheel1
+	accessories[]: .scs_flat_bd.trailer2.da_sign
+
+}
+
+vehicle_accessory: .scs_flat_bd.trailer2.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed32.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat_bd.trailer2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_wheel_accessory: .scs_flat_bd.trailer2.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .scs_flat_bd.trailer2.da_sign
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/da_sign.sii"
+}
+}

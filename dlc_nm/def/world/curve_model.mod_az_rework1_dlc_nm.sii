@@ -1,0 +1,62 @@
+SiiNunit
+{
+
+curve_model : curve.az_re_6b003
+{
+	model_desc: "/model/panorama/nm_abq/nm_abq_wall_02.pmd"
+
+	variation[]: "var01 | center1, center2, center3, center4, center5, center6, center7, center8, center9, center10, center11, center12 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+
+	dynamic_lod_desc[]: "/model/panorama/nm_abq/nm_abq_wall_02_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.az_re_6b004
+{
+	model_desc: "/model/panorama/nm_abq/nm_abq_wall_01.pmd"
+
+	variation[]: "var01 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+
+	dynamic_lod_desc[]: "/model/panorama/nm_abq/nm_abq_wall_01_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "start1 | ovr1 : 1.0"
+	overlay[]: "end1 | ovr1 : 1.0"
+	overlay[]: "center1 | ovr1 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0"
+	overlay[]: "center3 | ovr1 : 1.0"
+	overlay[]: "center4 | ovr1 : 1.0"
+	overlay[]: "center5 | ovr1 : 1.0"
+	overlay[]: "center6 | ovr1 : 1.0"
+}
+curve_model : curve.az_re_1d002
+{
+	model_desc: "/model/panorama/nm_abq/nm_abq_lamp_curve_01.pmd"
+
+	variation[]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/panorama/nm_abq/nm_abq_lamp_curve_01_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+}
+curve_model : curve.az_re_0o000
+{
+	model_desc: "/model/panorama/nm_abq/nm_abq_wall_curve_01.pmd"
+	name: "nm abq wall curve 01"
+
+	variation[]: "variant1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "end1 | end2 | end3"
+	variation[]: "variant2 | center4 : 1.0 | center5 : 1.0"
+	start_part[]: "start4"
+	end_part[]: "end4"
+
+	dynamic_lod_desc[]: "/model/panorama/nm_abq/nm_abq_wall_curve_01_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+}

@@ -69,13 +69,35 @@ academy_book : academy.book.book2
 	global_preferences: academy.preferences.global
 }
 
-academy_book : academy.book.book3.fake
+academy_book : academy.book.book3
 {
 	title: "@@aca_book_book3_title@@"
 	desc: "@@aca_book_book3_desc@@"
+	intro: "@@aca_book_book3_intro@@"
 	icon: "/material/ui/academy/book/book3/book.mat"
-	inaccessible_text: "@@aca_book_inaccessible@@"
-	inaccessible_title: "@@aca_book_inaccessible_t@@"
-	inaccessible_upper_text: "@@aca_book_inaccessible_u@@"
+
+	intro_scenario: academy.scenario.book3.intro
+
+	chapters[]: academy.chapter.book3.1
+	chapters[]: academy.chapter.book3.2
+	chapters[]: academy.chapter.book3.3
+
+
+	trucks[]: freightliner.academy.cascadia.2019
+	trucks[]: freightliner.academy.cascadia.2024
+	trucks[]: intnational.academy.lonestar
+	trucks[]: intnational.academy.lt
+	trucks[]: kenworth.academy.t680.2022
+	trucks[]: kenworth.academy.w900
+	trucks[]: mack.academy.anthem
+	trucks[]: mack.academy.pinnacle
+	trucks[]: peterbilt.academy.389
+	trucks[]: peterbilt.academy.579
+	trucks[]: volvo.academy.vnl.2018
+	trucks[]: westernstar.academy.49x
+	trucks[]: westernstar.academy.57x
+
+	global_preferences: academy.preferences.global
 }
+
 }

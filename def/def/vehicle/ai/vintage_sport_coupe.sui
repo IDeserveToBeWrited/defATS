@@ -1,0 +1,42 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Arizona Rework - Fire truck XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.vintage.sport.coupe
+{
+	accessories[]: .vintage.sport.coupe.chassis
+	accessories[]: .vintage.sport.coupe.fwheel
+	accessories[]: .vintage.sport.coupe.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/truck_us_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+	
+	spawn_ratio: 0.1
+
+	tags[]: uncommon
+
+	color[]: (0.0296, 0.0685, 0.1912)
+	color[]: (0.5776, 0.3185, 0.0168)
+	color[]: (0.4020, 0.0185, 0.0030)
+
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .vintage.sport.coupe.chassis
+{
+	data_path: "/def/vehicle/ai/vintage_sport_coupe/chassis.sii"
+}
+vehicle_wheel_accessory: .vintage.sport.coupe.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_16in.sii"
+}
+vehicle_wheel_accessory: .vintage.sport.coupe.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_16in.sii"
+}

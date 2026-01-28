@@ -1,0 +1,158 @@
+SiiNunit
+{
+
+curve_model : curve.az_re_01001
+{
+	model_desc: "/model/panorama/az_flagstaff/az_flagstaff_curve.pmd"
+
+	variation[]: "var1 | center1,center2,center3,center4,center5 : 1.0 | center3,center5,center1,center4,center2 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "end1 | end2 | end3"
+
+	dynamic_lod_desc[]: "/model/panorama/az_flagstaff/az_flagstaff_curve_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	smooth_surface: true
+}
+curve_model : curve.az_re_1d001
+{
+	model_desc: "/model/panorama/az_flagstaff/az_flagstaff_junction_bridge_side.pmd"
+
+	variation[]: "exit_road | center1,center2,center3 : 1.0 | center1,center4,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "freeway | center8,center7,center6 : 1.0 | center8,center5,center6 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+
+	dynamic_lod_desc[]: "/model/panorama/az_flagstaff/az_flagstaff_junction_bridge_side_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+curve_model : curve.az_re_1d000
+{
+	model_desc: "/model/panorama/az_flagstaff/az_flagstaff_side_bridge.pmd"
+
+	variation[]: "var1 | center1,center2,center3,center4,center5,center6,center7,center8 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/panorama/az_flagstaff/az_flagstaff_side_bridge_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+curve_model : curve.az_re_0m000
+{
+	model_desc: "/model/panorama/az_flagstaff/az_flagstaff_stone_wall.pmd"
+	name: "az flagstaff stone wall"
+
+	variation[]: "wall | center1,center2,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "barrier | center4,center5,center6 : 1.0"
+	start_part[]: "start2 | start3"
+	end_part[]: "end2 | end3"
+
+	dynamic_lod_desc[]: "/model/panorama/az_flagstaff/az_flagstaff_stone_wall_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+curve_model : curve.az_re_01000
+{
+	model_desc: "/model/panorama/az_flagstaff/az_flagstaff_tunnel.pmd"
+	name: "az flagstaff tunnel"
+
+	variation[]: "default | center1,center2,center3,center4,center2,center3,center5 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/panorama/az_flagstaff/az_flagstaff_tunnel_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+curve_model : curve.az_re_3b000
+{
+	model_desc: "/model/panorama/az_camp_verde/az_camp_verde_wall_01.pmd"
+
+	variation[]: "rnd_center | center1,center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/panorama/az_camp_verde/az_camp_verde_wall_01_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	smooth_surface: true
+}
+curve_model : curve.az_re_6b006
+{
+	model_desc: "/model/panorama/az_grand_canyon/az_grand_canyon_fence_01.pmd"
+
+	variation[]: "start1 | center1 : 1.0 | center2 : 0.5 | center3 : 0.3"
+	start_part[]: "start1 | left90"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/panorama/az_grand_canyon/az_grand_canyon_fence_01_lod1.pmd"
+	dynamic_lod_dist[]: 50
+	overlay[]: "center1 | ovr1 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0"
+	overlay[]: "center3 | ovr1 : 1.0"
+	overlay[]: "left90 | ovr1 : 1.0"
+	overlay[]: "start1 | ovr1 : 1.0"
+}
+
+curve_model : curve.az_re_3b002
+{
+	model_desc: "/model/panorama/az_burro/az_burro_creek_bridges_curve.pmd"
+
+	variation[]: "var1 | center1, center2, center3 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+
+	dynamic_lod_desc[]: "/model/panorama/az_burro/az_burro_creek_bridges_curve_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+curve_model : curve.az_re_6b002
+{
+	model_desc: "/model/panorama/az_lake_havasu/az_lake_havasu_barrier.pmd"
+
+	variation[]: "start1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/panorama/az_lake_havasu/az_lake_havasu_barrier_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+curve_model : curve.az_re_6o000
+{
+	model_desc: "/model/panorama/az_lake_havasu/az_lake_havasu_bridge.pmd"
+	name: "az lake havasu bridge"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/panorama/az_lake_havasu/az_lake_havasu_bridge_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+
+	no_geometry_stretch: true
+}
+curve_model : curve.az_re_6b000
+{
+	model_desc: "/model/panorama/az_winslow/az_winslow_underpass_curve.pmd"
+
+	variation[]: "Default | center3,center1,center2,center4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	dynamic_lod_desc[]: "/model/panorama/az_winslow/az_winslow_underpass_curve_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "center1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[]: "center3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[]: "center4 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[]: "start1 | ovr4 : 1.0"
+}
+}

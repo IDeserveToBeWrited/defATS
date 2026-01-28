@@ -313,6 +313,46 @@ vehicle_wheel_accessory: .pickup.f450_23.amb_la.rwheel
 	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
 }
 
+# XXXXXXXXXXXXXXXXXXX Arizona - Ambulance XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.pickup.f450_23.amb_az
+{
+	accessories[]: .pickup.f450_23.amb_az.chassis
+	accessories[]: .pickup.f450_23.amb_az.fwheel
+	accessories[]: .pickup.f450_23.amb_az.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_az.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_az.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_az.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_az.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
 
 
 

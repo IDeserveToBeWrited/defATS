@@ -1,0 +1,130 @@
+# XXXXXXXXXXXXXXXXXXX FIRE XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.fire
+{
+	accessories[]: .strtruck.fire.chassis
+	accessories[]: .strtruck.fire.fwheel
+	accessories[]: .strtruck.fire.rwheel
+
+	max_speed: 140
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.03
+	tags[]: rural
+
+	variant[]: traffic.strtruck.land
+	variant[]: traffic.strtruck.forest
+
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .strtruck.fire.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_fire/chassis_fire.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fire.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fire.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXX LAND XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.land
+{
+	accessories[]: .strtruck.land.chassis
+	accessories[]: .strtruck.land.fwheel
+	accessories[]: .strtruck.land.rwheel
+
+	max_speed: 140
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0
+
+	tags[]: rural
+	
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .strtruck.land.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_fire/chassis_land.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.land.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.land.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXX FOREST XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.forest
+{
+	accessories[]: .strtruck.forest.chassis
+	accessories[]: .strtruck.forest.fwheel
+	accessories[]: .strtruck.forest.rwheel
+
+	max_speed: 140
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0
+
+	tags[]: rural
+	
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .strtruck.forest.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_fire/chassis_forest.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.forest.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.forest.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+
+
+

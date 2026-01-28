@@ -23,9 +23,9 @@ mover_model : mover.logloadanim
 {
 	# passive log loader animated part
 	mover_name: "log_loader_loading_anim"
-	model_desc: "/vehicle/share/models/log_loader/mover/log_loader_mov.pmd"
-	model_anim: "/vehicle/share/models/log_loader/mover/log_loader_ani.pma"
-	model_coll: "/vehicle/share/models/log_loader/mover/log_loader_mov.pmc"
+	model_desc: "/vehicle/machine/log_loader/mover/log_loader_mov.pmd"
+	model_anim: "/vehicle/machine/log_loader/mover/log_loader_ani.pma"
+	model_coll: "/vehicle/machine/log_loader/mover/log_loader_mov.pmc"
 	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/harvestor_1"
 	sound_max_dist: 200
 }
@@ -96,12 +96,12 @@ mover_model : mover.tractor
 mover_model : mover.mutt_578d
 {
 	mover_name: "mutt_578d"
-	model_desc: "/vehicle/share/models/dumper/assets/dumper.pmd"
+	model_desc: "/vehicle/machine/dumper/static/dumper.pmd"
 
 
-	lods[0]: "/vehicle/share/models/dumper/assets/dumper_lod1.pmd"
-	lods[1]: "/vehicle/share/models/dumper/assets/dumper_lod2.pmd"
-	lods[2]: "/vehicle/share/models/dumper/assets/dumper_lod3.pmd"
+	lods[0]: "/vehicle/machine/dumper/static/dumper_lod1.pmd"
+	lods[1]: "/vehicle/machine/dumper/static/dumper_lod2.pmd"
+	lods[2]: "/vehicle/machine/dumper/static/dumper_lod3.pmd"
 
 	lod_dist[0]: 30
 	lod_dist[1]: 90
@@ -354,6 +354,8 @@ mover_model : mover.crawler
 
 	lod_dist[0]: 80
 	lod_dist[1]: 130
+	
+	sound_path[]: "/sound/world/mover.bank#mover/buggy_offroad"
 }
 
 mover_model : mover.forklift
@@ -392,7 +394,7 @@ mover_model : mover.vhcl_0j002
 mover_model : mover.vhcl_0j003
 {
 	mover_name: "head light"
-	model_desc: "/vehicle/share/models/log_loader/head_light.pmd"
+	model_desc: "/vehicle/machine/log_loader/head_light.pmd"
 }
 
 mover_model : mover.almond_shkr

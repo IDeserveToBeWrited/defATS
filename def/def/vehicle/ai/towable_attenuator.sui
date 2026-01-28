@@ -1,0 +1,57 @@
+
+############### Open ########################
+
+traffic_trailer : trailer.ai_car.t_atten_op
+{
+	accessories[]: .ai_car.t_atten_op.chassis
+	accessories[]: .ai_car.t_atten_op.rwheel
+	
+
+	cargo_mass: 0
+	
+
+	spawn_ratio: 0.1
+}
+
+vehicle_accessory: .ai_car.t_atten_op.chassis
+{
+    	data_path: "/def/vehicle/ai/towable_attenuator/chassis_open.sii"
+}
+vehicle_wheel_accessory: .ai_car.t_atten_op.rwheel
+{
+    offset: 0
+    data_path: "/def/vehicle/ai_wheel/trailer_small.sii"
+}
+
+############### Close ########################
+
+traffic_trailer : trailer.ai_car.t_atten_cl
+{
+	accessories[]: .ai_car.t_atten_cl.chassis
+	accessories[]: .ai_car.t_atten_cl.rwheel
+	
+
+	cargo_mass: 0
+
+	spawn_ratio: 0.1
+}
+
+vehicle_accessory: .ai_car.t_atten_cl.chassis
+{
+    	data_path: "/def/vehicle/ai/towable_attenuator/chassis_close.sii"
+}
+vehicle_wheel_accessory: .ai_car.t_atten_cl.rwheel
+{
+    offset: 0
+    data_path: "/def/vehicle/ai_wheel/trailer_small.sii"
+}
+
+
+
+
+
+
+
+
+
+

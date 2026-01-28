@@ -10,16 +10,6 @@ mover_model_group : mover.log_loader
 	action_tags[]: dynamic
 }
 
-mover_model_group : mover.dc_log
-{
-	mover_name: "log dynamic cargo"
-
-	desc_tags[]: dc_log
-	desc_tags[]: dynamic
-	action_tags[]: dc_log
-	action_tags[]: dynamic
-}
-
 mover_model_group : mover.dc_ll_body
 {
 	mover_name: "(DO NOT USE!) log loader dynamic cargo loader BODY"
@@ -31,16 +21,6 @@ mover_model_group : mover.dc_ll_body
 	action_tags[]: dc_body
 }
 
-mover_model_group : mover.cargo_logs
-{
-	mover_name: "log CARGO"
-
-	desc_tags[]: dc_cargo
-	desc_tags[]: cargo_log
-	
-	action_tags[]: dc_cargo
-	action_tags[]: cargo_log
-}
 
 mover_model_group : mover.dc_m_handlr
 {
@@ -51,6 +31,15 @@ mover_model_group : mover.dc_m_handlr
 	
 	action_tags[]: dc_m_handlr
 	action_tags[]: dc_body
+}
+
+## MATERIAL HANDLER SCRAPYARD
+
+mover_model_group : mover.handlr_scr
+{
+	mover_name: "material handler scrapyard"
+    desc_tags[]: handlr_scrap
+    anim_tags[]: handlr_scrap
 }
 
 

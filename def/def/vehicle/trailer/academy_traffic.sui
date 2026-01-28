@@ -123,3 +123,197 @@ vehicle_paint_job_accessory: .scs_box_53.pjob2.paint_job
 {
 	data_path: "/def/vehicle/trailer/scs_box/special_paint_job/academy2.sii"
 }
+
+
+traffic_trailer : traffic.trailer.academy.scs_double
+{
+	accessories[]: .academy.scs_double.chassis
+	accessories[]: .academy.scs_double.rwheel
+	accessories[]: .academy.scs_double.paint_job
+	accessories[]: .academy.scs_double.trlr_cables
+
+	cargo_mass: 8000
+
+	tags[]: high
+	tags[]: box
+	tags[]: dryvan
+	tags[]: double
+	tags[]: superlong
+	tags[]: academy
+
+	slave_trailer: .academy.scs_double.dolly
+}
+
+vehicle_accessory: .academy.scs_double.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .academy.scs_double.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .academy.scs_double.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+vehicle_addon_accessory: .academy.scs_double.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer_traffic.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .academy.scs_double.dolly
+{
+	accessories[]: .academy.scs_double.dolly.chassis
+	accessories[]: .academy.scs_double.dolly.rwheel
+	accessories[]: .academy.scs_double.dolly.trlr_cables
+
+	cargo_mass: 0
+
+	slave_trailer: .academy.scs_double.second
+}
+
+vehicle_accessory: .academy.scs_double.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dolly_c.sii"
+}
+
+vehicle_wheel_accessory: .academy.scs_double.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .academy.scs_double.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly_traffic.sii"
+}
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .academy.scs_double.second
+{
+	accessories[]: .academy.scs_double.second.chassis
+	accessories[]: .academy.scs_double.second.rwheel
+	accessories[]: .academy.scs_double.second.paint_job
+
+	cargo_mass: 8000
+}
+
+vehicle_accessory: .academy.scs_double.second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .academy.scs_double.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .academy.scs_double.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+traffic_trailer : traffic.trailer.academy.scs_ref2
+{
+	trailer_definition: trailer_def.scs.box.double_p.reefer
+
+	accessories[]: .academy.scs_ref2.chassis
+	accessories[]: .academy.scs_ref2.rwheel
+	accessories[]: .academy.scs_ref2.paint_job
+	accessories[]: .academy.scs_ref2.trlr_cables
+
+	cargo_mass: 8000
+
+	tags[]: high
+	tags[]: box
+	tags[]: reefer
+	tags[]: double
+	tags[]: superlong
+	tags[]: academy
+
+	slave_trailer: .academy.scs_ref2.dolly
+}
+
+vehicle_accessory: .academy.scs_ref2.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ref_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .academy.scs_ref2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .academy.scs_ref2.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .academy.scs_ref2.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer_traffic.sii"
+}
+
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .academy.scs_ref2.dolly
+{
+	accessories[]: .academy.scs_ref2.dolly.chassis
+	accessories[]: .academy.scs_ref2.dolly.rwheel
+	accessories[]: .academy.scs_ref2.dolly.trlr_cables
+
+	cargo_mass: 0
+
+	slave_trailer: .academy.scs_ref2.second
+}
+
+vehicle_accessory: .academy.scs_ref2.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dolly_c.sii"
+}
+
+vehicle_wheel_accessory: .academy.scs_ref2.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .academy.scs_ref2.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_dolly_traffic.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .academy.scs_ref2.second
+{
+	accessories[]: .academy.scs_ref2.second.chassis
+	accessories[]: .academy.scs_ref2.second.rwheel
+	accessories[]: .academy.scs_ref2.second.paint_job
+
+	cargo_mass: 8000
+
+}
+
+vehicle_accessory: .academy.scs_ref2.second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/ref_28_hook.sii"
+}
+
+vehicle_wheel_accessory: .academy.scs_ref2.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .academy.scs_ref2.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}

@@ -375,3 +375,56 @@ vehicle_wheel_accessory: .hd_pickup.crane.rwheel
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
 }
+
+############ TOUR Arizona Rework ##########
+
+traffic_vehicle : traffic.hd_pickup.tour
+{
+	accessories[]: .hd_pickup.tour.chassis
+	accessories[]: .hd_pickup.tour.fwheel
+	accessories[]: .hd_pickup.tour.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	#tags[]: context
+	
+
+	vehicle_mass: 3000
+
+
+	color[]: (0.3325, 0.3663, 0.3864)
+
+
+	
+@include "drivers_generic.sui"
+
+spawn_condition[]: .traffic.tourtruck.condition.city
+	
+}
+
+vehicle_accessory: .hd_pickup.tour.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis_tour.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.tour.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.tour.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+traffic_spawn_condition: .traffic.tourtruck.condition.city
+{
+	#spawn only near city with specified name
+	type: city
+	str_param[]: "g_canyon_vlg"
+}

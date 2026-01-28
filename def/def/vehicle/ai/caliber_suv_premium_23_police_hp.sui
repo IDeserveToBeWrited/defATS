@@ -39,3 +39,45 @@ vehicle_wheel_accessory: .caliber.suv.premium_23.la.rwheel
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
 }
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Arizona - Highway | State Trooper XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.caliber.suv.premium_23.az
+{
+	accessories[]: .caliber.suv.premium_23.az.chassis
+	accessories[]: .caliber.suv.premium_23.az.fwheel
+	accessories[]: .caliber.suv.premium_23.az.rwheel
+
+	max_speed: 240
+	vehicle_mass: 2600
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	
+	tags[]: highway
+	license_plate_type: police_hp
+
+
+	spawn_ratio: 0
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .caliber.suv.premium_23.az.chassis
+{
+	data_path: "/def/vehicle/ai/caliber_suv_premium_23/az.sii"
+}
+
+vehicle_wheel_accessory: .caliber.suv.premium_23.az.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .caliber.suv.premium_23.az.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}

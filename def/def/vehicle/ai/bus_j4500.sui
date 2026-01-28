@@ -13,6 +13,8 @@ traffic_vehicle : traffic.bus_j4500
 	vehicle_mass: 20000
 	engine_power: 305
 
+	color[]: (1, 1, 1) #white
+
 @include "drivers_generic.sui"
 
 }
@@ -39,3 +41,96 @@ vehicle_wheel_accessory: .bus_j4500.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/front.sii"
 }
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Company Farland | Passengers XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.bus_j4500.fd_p
+{
+	accessories[]: .bus_j4500.fd_p.chassis
+	accessories[]: .bus_j4500.fd_p.fwheel
+	accessories[]: .bus_j4500.fd_p.rwheel
+	accessories[]: .bus_j4500.fd_p.rwheel2
+
+	max_speed: 113
+
+	tags[]: bus
+	tags[]: passenger
+
+	vehicle_mass: 20000
+	engine_power: 305
+
+	spawn_ratio: 1
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .bus_j4500.fd_p.chassis
+{
+	data_path: "/def/vehicle/ai/bus_j4500/chassis_fd_p.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.fd_p.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.fd_p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.fd_p.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Company Farland | PARKED XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+traffic_vehicle : traffic.bus_j4500.fd
+{
+	accessories[]: .bus_j4500.fd.chassis
+	accessories[]: .bus_j4500.fd.fwheel
+	accessories[]: .bus_j4500.fd.rwheel
+	accessories[]: .bus_j4500.fd.rwheel2
+
+	max_speed: 113
+
+	tags[]: bus
+
+	vehicle_mass: 20000
+	engine_power: 305
+	spawn_ratio: 0.01
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .bus_j4500.fd.chassis
+{
+	data_path: "/def/vehicle/ai/bus_j4500/chassis_fd.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.fd.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.fd.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.fd.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}
+

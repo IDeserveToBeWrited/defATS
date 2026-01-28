@@ -1420,3 +1420,41 @@ vehicle_wheel_accessory: .arrow_xt.la.rwheel
 	offset: 0
 	data_path: "/def/vehicle/r_wheel/chrome.sii"
 }
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Arizona Rework - Fire truck XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.az
+{
+	accessories[]: .arrow_xt.az.chassis
+	accessories[]: .arrow_xt.az.fwheel
+	accessories[]: .arrow_xt.az.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/truck_us_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+	
+	spawn_ratio: 0
+
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.az.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/az.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.az.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.az.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+

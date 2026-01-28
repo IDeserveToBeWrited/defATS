@@ -796,14 +796,14 @@ curve_model : curve.46
 curve_model : curve.47
 {
 	model_desc: "/model/barrier/metal/wa_fence_with_feed.pmd"
-	name: wa_fence_with_feed
+	name: "wa_fence_with_feed"
 
-	variation[]: "rusty | center1, center2, center3 : 1.0 | center2, center3, center4 : 1.0 | center1, center4, center5 : 1.0 | center1, center5, center4 : 1.0"
-	start_part[]: start1
-	end_part[]: end1
-	variation[]: "gray | center6, center7, center8 : 1.0 | center7, center8, center9 : 1.0 | center6, center9, center10 : 1.0 | center7, center10, center9 : 1.0"
-	start_part[]: start2
-	end_part[]: end2
+	variation[]: "rusty | center1,center2,center3 : 1.0 | center2,center3,center4 : 1.0 | center1,center4,center5 : 1.0 | center1,center5,center4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "gray | center6,center7,center8 : 1.0 | center7,center8,center9 : 1.0 | center6,center9,center10 : 1.0 | center7,center10,center9 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
 
 	dynamic_lod_desc[]: "/model/barrier/metal/wa_fence_with_feed_lod1.pmd"
 	dynamic_lod_dist[]: 100
@@ -2146,25 +2146,21 @@ curve_model : curve.ut_27
 
 curve_model : curve.ut_39
 {
-	name: "kerb curve 4,5m"
 	model_desc: "/model/railing/kerb_curve_wide.pmd"
+	name: "kerb curve 4,5m"
 
 	variation[]: "lowpoly | center1 : 1.0"
-	start_part[]: "start1 | start_tran | start_wide | start_str"
-	end_part[]: "end1 | end_tran | end_wide | end_str"
-
+	start_part[]: "start1 | start_tran | start_wide | start_str | start_nrw"
+	end_part[]: "end1 | end_tran | end_wide | end_str | end_nrw"
 	variation[]: "highpoly | center2 : 1.0"
-	start_part[]: "start1 | start_tran | start_wide | start_str"
-	end_part[]: "end1 | end_tran | end_wide | end_str"
-
+	start_part[]: "start1 | start_tran | start_wide | start_str | start_nrw"
+	end_part[]: "end1 | end_tran | end_wide | end_str | end_nrw"
 	variation[]: "superfine | center3 : 1.0"
-	start_part[]: "start1 | start_tran | start_wide | start_str"
-	end_part[]: "end1 | end_tran | end_wide | end_str"
-
+	start_part[]: "start1 | start_tran | start_wide | start_str | start_nrw"
+	end_part[]: "end1 | end_tran | end_wide | end_str | end_nrw"
 	variation[]: "thin | center4 : 1.0"
 	start_part[]: "start_thin"
 	end_part[]: "end_thin"
-
 }
 
 curve_model : curve.ut_33
@@ -3895,7 +3891,7 @@ curve_model : curve.2o00b
 	model_desc: "/model/props/road/road_overlays_1-1-1.pmd"
 	name: "road overlays 1-1-1"
 
-	variation: 15
+	variation: 16
 
 	variation[0]: "crack_new1 | a : 4.0 | b : 4.0 | c : 5.0 | d : 7.0 | k : 7.0 | p46 : 7.0 | r : 2.0"
 	variation[1]: "crack_new2 | e : 6.0 | f : 6.0 | g : 8.0 | h : 8.0 | i : 8.0 | j : 3.0"
@@ -5106,7 +5102,7 @@ curve_model : curve.0600x
 	name: "us road shoulder decal curve"
 
 	variation[]: "default | center : 1.0"
-	start_part[]: start
+	start_part[]: "start"
 	end_part[]: "end | left90 | right90"
 }
 
@@ -6182,11 +6178,11 @@ curve_model : curve.co_1t003
 	name: "co ped bridge2"
 
 	variation[]: "default | center1 : 5.0 | center2 : 3.0 | center3 : 3.0"
-	start_part[]: start1
-	end_part[]: end1
+	start_part[]: "start1"
+	end_part[]: "end1"
 	variation[]: "half | center4 : 5.0 | center5 : 3.0 | center6 : 3.0"
-	start_part[]: start2
-	end_part[]: end2
+	start_part[]: "start2"
+	end_part[]: "end2"
 
 	dynamic_lod_desc[]: "/model/bridge/co_ped_bridge2_lod1.pmd"
 	dynamic_lod_dist[]: 50
@@ -12121,12 +12117,12 @@ curve_model : curve.0i01i
 	model_desc: "/model/barrier/metal/wa_fence_metal2_curve.pmd"
 	name: "wa fence metal2 curve"
 
-	variation[]: "default | center1, center3, center6 : 1.0 | center1, center6, center3 : 1.0"
-	start_part[]: start1
-	end_part[]: end1
-	variation[]: "rusty | center2, center4, center5 : 1.0 | center2, center5, center4 : 1.0"
-	start_part[]: start2
-	end_part[]: end2
+	variation[]: "default | center1,center3,center6 : 1.0 | center1,center6,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "rusty | center2,center4,center5 : 1.0 | center2,center5,center4 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
 
 	dynamic_lod_desc[]: "/model/barrier/metal/wa_fence_metal2_curve_lod1.pmd"
 	dynamic_lod_dist[]: 80
@@ -13812,17 +13808,17 @@ curve_model : curve.2o00s
 	name: "raised reflector marker"
 
 	variation[]: "yellow | r_ow_y : 1.0"
-	start_part[]: empty
-	end_part[]: empty
+	start_part[]: "empty"
+	end_part[]: "empty"
 	variation[]: "white | r_ow_w : 1.0"
-	start_part[]: empty
-	end_part[]: empty
+	start_part[]: "empty"
+	end_part[]: "empty"
 	variation[]: "yellow_red | r_red_y : 1.0"
-	start_part[]: empty
-	end_part[]: empty
+	start_part[]: "empty"
+	end_part[]: "empty"
 	variation[]: "white_red | r_red_w : 1.0"
-	start_part[]: empty
-	end_part[]: empty
+	start_part[]: "empty"
+	end_part[]: "empty"
 	variation[]: "4x_red_white | r_4x_rw : 1.0"
 	start_part[]: "empty | s_2x_rw"
 	end_part[]: "empty | e_2x_rw"
@@ -15590,7 +15586,7 @@ curve_model : curve.or_5
 
 	variation[]: "1 | veg1 : 1.0 | veg2 : 1.0"
 
-	vegetation[0]: "veg1 : vegetmodel.tree2_orange | 7.0 : 8.0 | -0.5 : 0.5 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[0]: "veg1 : vegetmodel.orange2.ibe | 7.0 : 8.0 | -0.5 : 0.5 | 0.9 : 1.1 | 0.0 : 360.0"
 	vegetation[1]: "veg2 : vegetmodel.tree6_orange | 7.0 : 8.0 | -0.5 : 0.5 | 0.9 : 1.1 | 0.0 : 360.0"
 
 }
@@ -17108,8 +17104,8 @@ curve_model : curve.3l02m
 {
 	name: "sd cottonwood nuttall mix crv"
 
-	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 0.6 | veg6 : 0.6 "
-	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 0.6 | veg12 : 0.6 "
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 0.6 | veg6 : 0.6"
+	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 0.6 | veg12 : 0.6"
 
 	vegetation[]: "veg1 : vegetmodel.nuttall.oak_8 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
 	vegetation[]: "veg2 : vegetmodel.nuttall.oak_4 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
@@ -17130,8 +17126,8 @@ curve_model : curve.3l02n
 {
 	name: "sd black willow salt cedar mix crv"
 
-	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0 "
-	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 1.0 "
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0"
+	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 1.0"
 
 	vegetation[]: "veg1 : vegetmodel.salt_cedar_3 | 4.0 : 6.0 | -0.5 : 0.5 | 1.1 : 1.3 | -359.0 : 359.0"
 	vegetation[]: "veg2 : vegetmodel.salt_cedar_4 | 4.0 : 6.0 | -0.5 : 0.5 | 1.1 : 1.3 | -359.0 : 359.0"
@@ -17152,8 +17148,8 @@ curve_model : curve.3l02o
 {
 	name: "sd birch black willow mix crv"
 
-	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0 "
-	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 1.0 "
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0"
+	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 1.0"
 
 	vegetation[]: "veg1 : vegetmodel.young.tree.sparse.low.01 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
 	vegetation[]: "veg2 : vegetmodel.young.tree.sparse.low.03 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
@@ -17174,8 +17170,8 @@ curve_model : curve.3l02p
 {
 	name: "sd stressed and cottonwood trees mix crv"
 
-	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.3 | veg4 : 1.3 | veg5 : 1.0 | veg6 : 1.0 "
-	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.3 | veg10 : 1.3 | veg11 : 1.0 | veg12 : 1.0 "
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.3 | veg4 : 1.3 | veg5 : 1.0 | veg6 : 1.0"
+	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.3 | veg10 : 1.3 | veg11 : 1.0 | veg12 : 1.0"
 
 	vegetation[]: "veg1 : vegetmodel.stressed.tree.poplar.01 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
 	vegetation[]: "veg2 : vegetmodel.stressed.tree.poplar.02 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
@@ -17196,8 +17192,8 @@ curve_model : curve.3l02q
 {
 	name: "sd black willow cottonwood mix crv"
 
-	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0 "
-	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 1.0 "
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0"
+	variation[]: "2_wide | veg7 : 1.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 1.0"
 
 	vegetation[]: "veg1 : vegetmodel.black.willow.02 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
 	vegetation[]: "veg2 : vegetmodel.black.willow.sparse.03 | 4.0 : 6.0 | -0.5 : 0.5 | 0.9 : 1.1 | -359.0 : 359.0"
@@ -17218,12 +17214,285 @@ curve_model : curve.3l02r
 {
 	name: "or succulents crv"
 
-	variation[]: "1_line | veg1 : 1.0 "
-	variation[]: "2_wide | veg2 : 1.0 "
+	variation[]: "1_line | veg1 : 1.0"
+	variation[]: "2_wide | veg2 : 1.0"
 
 	vegetation[]: "veg1 : vegetmodel.succulent1.or | 1.9 : 2.2 | -0.15 : 0.15 | 0.7 : 1.0 | -359.0 : 359.0"
 
 	vegetation[]: "veg2 : vegetmodel.succulent1.or | 1.9 : 2.2 | -7.5 : 7.5 | 0.7 : 1.0 | -359.0 : 359.0"
+}
+
+curve_model : curve.3l02s
+{
+	name: "bc douglas fir lodgepole pine mix tall crv"
+
+	variation[]: "2_wide | veg1 : 3.0 | veg2 : 2.0 | veg3 : 1.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 2.0"
+	variation[]: "1_line | veg7 : 3.0 | veg8 : 2.0 | veg9 : 1.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 2.0"
+
+	vegetation[]: "veg1 : vegetmodel.pine.lodgepole.tall03.id | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg2 : vegetmodel.pine.lodgepole.double01.id | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg3 : vegetmodel.pine.lodgepole.tall04.id | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg4 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg5 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg6 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+
+	vegetation[]: "veg7 : vegetmodel.pine.lodgepole.tall03.id | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg8 : vegetmodel.pine.lodgepole.double01.id | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg9 : vegetmodel.pine.lodgepole.tall04.id | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg10 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg11 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg12 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+
+}
+
+curve_model : curve.3l02t
+{
+	name: "bc douglas fir ponderosa pine mix tall crv"
+
+	variation[]: "2_wide | veg1 : 2.0 | veg2 : 1.0 | veg3 : 2.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 2.0"
+	variation[]: "1_line | veg7 : 2.0 | veg8 : 1.0 | veg9 : 2.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 2.0"
+
+	vegetation[]: "veg1 : vegetmodel.pine.ponderosa.medium02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg2 : vegetmodel.pine.ponderosa.tall02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg3 : vegetmodel.pine.ponderosa.tall01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg4 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg5 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg6 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+
+	vegetation[]: "veg7 : vegetmodel.pine.ponderosa.medium02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg8 : vegetmodel.pine.ponderosa.tall02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg9 : vegetmodel.pine.ponderosa.tall01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg10 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg11 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg12 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+
+}
+
+curve_model : curve.3l02u
+{
+	name: "bc douglas fir aspen mix medium crv"
+
+	variation[]: "2_wide | veg1 : 2.0 | veg2 : 1.0 | veg3 : 2.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 2.0"
+	variation[]: "1_line | veg7 : 2.0 | veg8 : 1.0 | veg9 : 2.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 2.0"
+
+	vegetation[]: "veg1 : vegetmodel.quaking.aspen3.or | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg2 : vegetmodel.quaking.aspen1.or | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg3 : vegetmodel.quaking.aspen2.or | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg4 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg5 : vegetmodel.douglas.fir.medium02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg6 : vegetmodel.douglas.fir.medium03 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+
+	vegetation[]: "veg7 : vegetmodel.quaking.aspen3.or | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg8 : vegetmodel.quaking.aspen1.or | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg9 : vegetmodel.quaking.aspen2.or | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg10 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg11 : vegetmodel.douglas.fir.medium02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg12 : vegetmodel.douglas.fir.medium03 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+
+}
+
+curve_model : curve.3l02v
+{
+	name: "bc subalpine douglas firs tall crv"
+
+	variation[]: "2_wide | veg1 : 2.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 2.0 | veg5 : 1.0 | veg6 : 1.0"
+	variation[]: "1_line | veg7 : 2.0 | veg8 : 1.0 | veg9 : 1.0 | veg10 : 2.0 | veg11 : 1.0 | veg12 : 1.0"
+
+	vegetation[]: "veg1 : vegetmodel.subalpine.fir.tall04 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg2 : vegetmodel.subalpine.fir.medium02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg3 : vegetmodel.subalpine.fir.tall02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg4 : vegetmodel.subalpine.fir.tall03 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg5 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg6 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+
+	vegetation[]: "veg7 : vegetmodel.subalpine.fir.tall04 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg8 : vegetmodel.subalpine.fir.medium02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg9 : vegetmodel.subalpine.fir.tall02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg10 : vegetmodel.subalpine.fir.tall03 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg11 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg12 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+
+}
+
+curve_model : curve.3l02w
+{
+	name: "bc spruce, subalpine, douglas firs tall crv"
+
+	variation[]: "2_wide | veg1 : 2.0 | veg2 : 3.0 | veg3 : 3.0 | veg4 : 2.0 | veg5 : 1.0 | veg6 : 1.0"
+	variation[]: "1_line | veg7 : 2.0 | veg8 : 3.0 | veg9 : 3.0 | veg10 : 2.0 | veg11 : 1.0 | veg12 : 1.0"
+
+	vegetation[]: "veg1 : vegetmodel.subalpine.fir.tall04 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg2 : vegetmodel.spruce.big1 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg3 : vegetmodel.spruce.big2 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg4 : vegetmodel.subalpine.fir.tall03 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg5 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg6 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+
+	vegetation[]: "veg7 : vegetmodel.subalpine.fir.tall04 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg8 : vegetmodel.spruce.big1 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg9 : vegetmodel.spruce.big2 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg10 : vegetmodel.subalpine.fir.tall03 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg11 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg12 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+
+}
+
+curve_model : curve.3l02x
+{
+	name: "bc subalpine fir norway spruce trees tall crv"
+
+	variation[]: "2_wide | veg1 : 1.0 | veg2 : 1.0 | veg3 : 2.0 | veg4 : 2.0 | veg5 : 2.0 | veg6 : 2.0"
+	variation[]: "1_line | veg7 : 1.0 | veg8 : 1.0 | veg9 : 2.0 | veg10 : 2.0 | veg11 : 2.0 | veg12 : 2.0"
+
+	vegetation[]: "veg1 : vegetmodel.subalpine.fir.tall04 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg2 : vegetmodel.subalpine.fir.medium02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg3 : vegetmodel.subalpine.fir.tall03 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg4 : vegetmodel.norway.spruce.tall.slim.01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg5 : vegetmodel.norway.spruce.tall.slim.02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg6 : vegetmodel.norway.spruce.medium.slim.04 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+
+	vegetation[]: "veg7 : vegetmodel.subalpine.fir.tall04 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg8 : vegetmodel.subalpine.fir.medium02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg9 : vegetmodel.subalpine.fir.tall03 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg10 : vegetmodel.norway.spruce.tall.slim.01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg11 : vegetmodel.norway.spruce.tall.slim.02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg12 : vegetmodel.norway.spruce.medium.slim.04 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+
+}
+
+curve_model : curve.3l02y
+{
+	name: "bc spruce, douglas fir mix tall crv"
+
+	variation[]: "2_wide | veg1 : 3.0 | veg2 : 2.0 | veg3 : 2.0 | veg4 : 1.0 | veg5 : 1.0 | veg6 : 2.0"
+	variation[]: "1_line | veg7 : 3.0 | veg8 : 2.0 | veg9 : 2.0 | veg10 : 1.0 | veg11 : 1.0 | veg12 : 2.0"
+
+	vegetation[]: "veg1 : vegetmodel.spruce.big1 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg2 : vegetmodel.spruce.big2 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg3 : vegetmodel.spruce.big3.or | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg4 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg5 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg6 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -9.5 : 9.5 | 0.9 : 1.1 | -359.0 : 359.0"
+
+	vegetation[]: "veg7 : vegetmodel.spruce.big1 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg8 : vegetmodel.spruce.big2 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg9 : vegetmodel.spruce.big3.or | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg10 : vegetmodel.douglas.fir.medium01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg11 : vegetmodel.douglas.fir.tall02 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+	vegetation[]: "veg12 : vegetmodel.douglas.fir.tall01 | 4.0 : 6.0 | -1.0 : 1.0 | 0.9 : 1.1 | -359.0 : 359.0"
+
+}
+
+curve_model : curve.3l02z
+{
+	name: "spruce trees big crv"
+
+	variation[]: "1_line | veg1 : 1.15 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0"
+	variation[]: "2_wide | veg5 : 1.15 | veg6 : 1.0 | veg7 : 1.0 | veg8 : 1.0"
+
+	vegetation[]: "veg1 : vegetmodel.spruce.big1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg2 : vegetmodel.spruce.big2 | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg3 : vegetmodel.spruce.medium3.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg4 : vegetmodel.spruce.big3.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+
+	vegetation[]: "veg5 : vegetmodel.spruce.big1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg6 : vegetmodel.spruce.big2 | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg7 : vegetmodel.spruce.medium3.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg8 : vegetmodel.spruce.big3.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+}
+
+curve_model : curve.3l030
+{
+	name: "spruce trees big semidry crv"
+
+	variation[]: "1_line | veg1 : 1.15 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0"
+	variation[]: "2_wide | veg5 : 1.15 | veg6 : 1.0 | veg7 : 1.0 | veg8 : 1.0"
+
+	vegetation[]: "veg1 : vegetmodel.spruce.big1.semidry.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg2 : vegetmodel.spruce.big2.semidry.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg3 : vegetmodel.spruce.medium3.semidry.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg4 : vegetmodel.spruce.big3.semidry.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+
+	vegetation[]: "veg5 : vegetmodel.spruce.big1.semidry.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg6 : vegetmodel.spruce.big2.semidry.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg7 : vegetmodel.spruce.medium3.semidry.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg8 : vegetmodel.spruce.big3.semidry.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+}
+
+curve_model : curve.3l031
+{
+	name: "spruce trees medium crv"
+
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 "
+	variation[]: "2_wide | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0 "
+
+	vegetation[]: "veg1 : vegetmodel.spruce.med1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg2 : vegetmodel.spruce.medium2.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg3 : vegetmodel.spruce.small1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+
+	vegetation[]: "veg4 : vegetmodel.spruce.med1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg5 : vegetmodel.spruce.medium2.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg6 : vegetmodel.spruce.small1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+}
+
+curve_model : curve.3l032
+{
+	name: "spruce trees medium semidry crv"
+
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 "
+	variation[]: "2_wide | veg4 : 1.0 | veg5 : 1.0 | veg6 : 1.0 "
+
+	vegetation[]: "veg1 : vegetmodel.spruce.med1.semidry.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg2 : vegetmodel.spruce.medium2.semidry.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg3 : vegetmodel.spruce.small1.semidry.or | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+
+	vegetation[]: "veg4 : vegetmodel.spruce.med1.semidry.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg5 : vegetmodel.spruce.medium2.semidry.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg6 : vegetmodel.spruce.small1.semidry.or | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+}
+
+curve_model : curve.3l033
+{
+	name: "western red cedar trees small crv"
+
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 "
+	variation[]: "2_wide | veg3 : 1.0 | veg4 : 1.0 "
+
+	vegetation[]: "veg1 : vegetmodel.western.red.cedar.small_1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg2 : vegetmodel.western.red.cedar.medium_1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.6 : 0.8 | 0.0 : 360.0"
+
+	vegetation[]: "veg3 : vegetmodel.western.red.cedar.small_1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "veg4 : vegetmodel.western.red.cedar.medium_1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.6 : 0.8 | 0.0 : 360.0"
+}
+
+curve_model : curve.3l034
+{
+	name: "western red cedar trees medium crv"
+
+	variation[]: "1_line | veg1 : 1.0 | veg2 : 1.0 "
+	variation[]: "2_wide | veg3 : 1.0 | veg4 : 1.0 "
+
+	vegetation[]: "veg1 : vegetmodel.western.red.cedar.medium_1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "veg2 : vegetmodel.western.red.cedar.tall_1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.9 : 1.1 | 0.0 : 360.0"
+
+	vegetation[]: "veg3 : vegetmodel.western.red.cedar.medium_1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "veg4 : vegetmodel.western.red.cedar.tall_1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.9 : 1.1 | 0.0 : 360.0"
+}
+
+curve_model : curve.3l035
+{
+	name: "western red cedar trees tall crv"
+
+	variation[]: "1_line | veg1 : 1.15 | veg2 : 1.0 | veg3 : 1.0"
+	variation[]: "2_wide | veg4 : 1.15 | veg5 : 1.0 | veg6 : 1.0"
+
+	vegetation[]: "veg1 : vegetmodel.western.red.cedar.tall_1 | 6.0 : 8.0 | -1.0 : 1.0 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "veg2 : vegetmodel.western.red.cedar.tall_2 | 6.0 : 8.0 | -1.0 : 1.0 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "veg3 : vegetmodel.western.red.cedar.tall_3 | 6.0 : 8.0 | -1.0 : 1.0 | 0.9 : 1.1 | 0.0 : 360.0"
+
+	vegetation[]: "veg4 : vegetmodel.western.red.cedar.tall_1 | 6.0 : 8.0 | -10.0 : 10.0 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "veg5 : vegetmodel.western.red.cedar.tall_2 | 6.0 : 8.0 | -10.0 : 10.0 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "veg6 : vegetmodel.western.red.cedar.tall_3 | 6.0 : 8.0 | -10.0 : 10.0 | 0.9 : 1.1 | 0.0 : 360.0"
 }
 
 curve_model : curve.or_12
@@ -23483,7 +23752,7 @@ curve_model : curve.ia_50001
 	variation[2]: "wall2 | center31,center32 : 1.0"
 	start_part[2]: "start31"
 	end_part[2]: "end31 | left90a"
-	variation[3]: "nodoor1 |center12,center13,center15,center16 : 1.0"
+	variation[3]: "nodoor1 | center12,center13,center15,center16 : 1.0"
 	start_part[3]: "start11"
 	end_part[3]: "end11"
 	variation[4]: "nodoor2 | center32 : 1.0"
@@ -24012,12 +24281,12 @@ curve_model : curve.2k00d
 	color_variant[]: "tx_sand: 255,245,236"
 	color_variant[]: "tx_el_paso: 255,177,155"
 
-	variation[]: "default | part4, part5, part6 : 1.0"
-	start_part[]: start2
-	end_part[]: end2
-	variation[]: "bottomBeam | part1, part2, part3 : 1.0"
-	start_part[]: start1
-	end_part[]: end1
+	variation[]: "default | part4,part5,part6 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "bottomBeam | part1,part2,part3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
 
 	dynamic_lod_desc[]: "/model/railing/bridge/il_bridge_pillar_curve_01_lod1.pmd"
 	dynamic_lod_dist[]: 100
@@ -24047,12 +24316,12 @@ curve_model : curve.ia_54003
 {
 	model_desc: "/prefab/depots/ethanol_factory/ia_concrete_dilatation_decal.pmd"
 
-	variation[]: "var1 | center11, center12 : 1.0"
-	start_part[]: start1
-	end_part[]: end1
-	variation[]: "var2 | center21, center22, center23 : 1.0"
-	start_part[]: start2
-	end_part[]: end2
+	variation[]: "var1 | center11,center12 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "var2 | center21,center22,center23 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
 }
 
 curve_model : curve.mo_1m000
@@ -24060,8 +24329,8 @@ curve_model : curve.mo_1m000
 	model_desc: "/prefab/depots/beverages_plant/mo_structure_set_logistic_01.pmd"
 
 	variation[]: "gate_rf | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
-	start_part[]: start3
-	end_part[]: end3
+	start_part[]: "start3"
+	end_part[]: "end3"
 	variation[]: "gate | center12 : 1.0 | center13 : 1.0 | center14 : 1.0"
 	start_part[]: "start1 | start2"
 	end_part[]: "end1 | left90a | left90b"
@@ -24072,18 +24341,18 @@ curve_model : curve.mo_1m000
 	start_part[]: "start1 | start2"
 	end_part[]: "end1 | left90a | left90b"
 	variation[]: "stairs_rf | center9 : 1.0"
-	start_part[]: start4
+	start_part[]: "start4"
 	end_part[]: "end4 | left90c"
 	variation[]: "stairs1_dr | center10 : 1.0"
-	start_part[]: start1
+	start_part[]: "start1"
 	end_part[]: "end1 | left90a"
 	variation[]: "stairs2_dr | center11 : 1.0"
-	start_part[]: start1
+	start_part[]: "start1"
 	end_part[]: "end1 | left90a"
 	variation[]: "vents1 | center18 : 1.0"
 	start_part[]: "start1 | start2"
 	end_part[]: "end1 | left90a | left90b"
-	variation[]: "vents2 | center19, center20 : 1.0"
+	variation[]: "vents2 | center19,center20 : 1.0"
 	start_part[]: "start1 | start2"
 	end_part[]: "end1 | left90a | left90b"
 
@@ -24214,14 +24483,14 @@ curve_model : curve.il_2p001
 	name: "il highrise lobby 01"
 
 	variation[]: "admin | center1 : 1.0"
-	start_part[]: start1
+	start_part[]: "start1"
 	end_part[]: "left90 | end1"
 	variation[]: "wall | center3 : 1.0"
-	start_part[]: start1
-	end_part[]: left90
+	start_part[]: "start1"
+	end_part[]: "left90"
 	variation[]: "garage | center2 : 1.0"
-	start_part[]: start1
-	end_part[]: left90
+	start_part[]: "start1"
+	end_part[]: "left90"
 
 	dynamic_lod_desc[]: "/model/building/flat/il_highrise_lobby_01_lod1.pmd"
 	dynamic_lod_dist[]: 100
@@ -24238,7 +24507,7 @@ curve_model : curve.il_6m001
 	variation[]: "metal | center1 : 1.0 | center2 : 1.0 | center5 : 1.0"
 	start_part[]: "start1 | start2 | start3 | start4 | start5 | start6 | start7"
 	end_part[]: "end1 | end2 | end3 | end4 | end5 | end6 | end7 | left1 | left2 | left3 | left4 | left5"
-	variation[]: "metal_wood | center5 : 0.2 | center4, center1, center2 : 1.0 | center3, center1, center2 : 1.0"
+	variation[]: "metal_wood | center5 : 0.2 | center4,center1,center2 : 1.0 | center3,center1,center2 : 1.0"
 	start_part[]: "start6 | start7 | start1 | start2 | start3 | start4 | start5"
 	end_part[]: "end6 | end7 | end1 | end2 | end3 | end4 | end5 | left1 | left2 | left3 | left4 | left5"
 	variation[]: "wood | center4 : 1.0 | center3 : 1.0"
@@ -24374,15 +24643,15 @@ curve_model : curve.la_1l001
 {
 	model_desc: "/model/panorama/la_monroe/la_monroe_bridge_02_barrier.pmd"
 
-	variation[]: "var1 | center1, center2, center3 : 1.0 | center1, center3, center2 : 1.0"
-	start_part[]: start1
-	end_part[]: end1
-	variation[]: "var2 | center4, center5, center6 : 1.0 | center4, center6, center5 : 1.0"
-	start_part[]: start2
-	end_part[]: end2
-	variation[]: "var2ht | center7, center8, center9 : 1.0"
-	start_part[]: start3
-	end_part[]: end3
+	variation[]: "var1 | center1,center2,center3 : 1.0 | center1,center3,center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "var2 | center4,center5,center6 : 1.0 | center4,center6,center5 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "var2ht | center7,center8,center9 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3"
 
 	high_tess[]: var2ht
 
@@ -24432,8 +24701,8 @@ curve_model : curve.sd_6b000
 {
 	model_desc: "/model/props/street/ar_stone_wall_small.pmd"
 
-	variation[]: "wall | center1, center2, center3 : 1.0"
-	start_part[]: start1
+	variation[]: "wall | center1,center2,center3 : 1.0"
+	start_part[]: "start1"
 	end_part[]: "right902 | end1 | left90 | left902 | right90"
 
 	dynamic_lod_desc[]: "/model/props/street/ar_stone_wall_small_lod1.pmd"
@@ -24490,4 +24759,446 @@ curve_model : curve.mt_0o001
 
 	high_tess: 0
 }
+
+curve_model : curve.1n000
+{
+	model_desc: "/model/rock/formation_vertical_layered/rock_formation_vertical_layered1_01_16m.pmd"
+
+	variation[]: "Default | center2 : 1.0 | center4 : 1.0 | center6 : 1.0 | center8 : 1.0 | center10 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "Top | center1 : 1.0 | center3 : 1.0 | center5 : 1.0 | center7 : 1.0 | center9 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	smooth_surface: true
 }
+
+curve_model : curve.aca_0f003
+{
+	model_desc: "/model/props/navigation_arrows_01_aca.pmd"
+	name: "navigation arrows 01 aca"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "center1 | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.aca_14001
+{
+	model_desc: "/model/props/aca_spray_road_lines.pmd"
+	name: "spray road lines aca"
+
+	variation[]: "arrow_var1 | arrow_var1 : 1.0 | arrow_var1,arrow_var3,arrow_var4 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "arrow_var2 | arrow_var2_1,arrow_var2_2,arrow_var2_3,arrow_var2_4 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "single | single_c_1,single_c_2,single_c_3 : 1.0"
+	start_part[]: "single_c_4"
+	end_part[]: "single_c_5"
+	variation[]: "double | double_c_1,double_c_2,double_c_3 : 1.0"
+	start_part[]: "double_c_4"
+	end_part[]: "double_c_5"
+	variation[]: "single2 | single_c_6 : 1.0 | single_c_7 : 1.0 | single_c_8 : 1.0 | single_c_9 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+}
+
+curve_model : curve.aca_07001
+{
+	model_desc: "/model/props/navigation_arrows_02_aca.pmd"
+	name: "navigation arrows 02 aca"
+
+	variation: 6
+	start_part: 6
+	end_part: 6
+	variation[0]: "triangels | center1 : 1.0"
+	start_part[0]: "start2"
+	end_part[0]: "end2"
+	variation[1]: "line | center2 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+	variation[2]: "dash | center3 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+	variation[3]: "single_line | center2 : 1.0"
+	start_part[3]: "start2"
+	end_part[3]: "end2"
+	variation[4]: "double_solid | center4 : 1.0"
+	start_part[4]: "start2"
+	end_part[4]: "end2"
+	variation[5]: "double_dash | center5 : 1.0"
+	start_part[5]: "start2"
+	end_part[5]: "end2"
+
+	high_tess: 0
+}
+
+curve_model : curve.aca_2p001
+{
+	model_desc: "/model/building/hotel/aca_motel_curve_old.pmd"
+	name: "aca motel curve old"
+
+	variation: 4
+	start_part: 4
+	end_part: 4
+	variation[0]: "default | center1,center2,center7,center4,center1,center2 : 1.0"
+	start_part[0]: "start1 | start2"
+	end_part[0]: "end1 | end2 | right90"
+	variation[1]: "stair_pat | center1,center2,center3,center4,center1,center2 : 1.0"
+	start_part[1]: "start1 | start2"
+	end_part[1]: "end1 | end2 | right90"
+	variation[2]: "stairin_pat | center1,center2,center5,center1,center2 : 1.0"
+	start_part[2]: "start1 | start2"
+	end_part[2]: "end1 | end2 | right90"
+	variation[3]: "shield_pat | center1,center2,center6,center1,center2 : 1.0"
+	start_part[3]: "start1 | start2"
+	end_part[3]: "end1 | end2 | right90"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/hotel/aca_motel_curve_old_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.aca_4j001
+{
+	model_desc: "/model/props/aca_spray_road_lines.pmd"
+	name: "DO NOT USE aca spray road lines"
+
+	variation[]: "arrow_var1 | arrow_var1 : 1.0 | arrow_var1,arrow_var3,arrow_var4 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "arrow_var2 | arrow_var2_1,arrow_var2_2,arrow_var2_3,arrow_var2_4 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "single | single_c_1,single_c_2,single_c_3 : 1.0"
+	start_part[]: "single_c_4"
+	end_part[]: "single_c_5"
+	variation[]: "double | double_c_1,double_c_2,double_c_3 : 1.0"
+	start_part[]: "double_c_4"
+	end_part[]: "double_c_5"
+	variation[]: "single2 | single_c_6 : 1.0 | single_c_7 : 1.0 | single_c_8 : 1.0 | single_c_9 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+}
+
+curve_model : curve.il_79002
+{
+	model_desc: "/model/landscape/il_settlement_plane_01.pmd"
+	name: "il settlement plane 01"
+
+	variation[]: "01 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "02 | center2_1 : 1.0 | center2_2 : 1.0 | center2_3 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "01_warehouse | center1_wr : 1.0 | center2_wr : 1.0 | center3_wr : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "02_warehouse | center2_3_wr : 1.0 | center2_1_wr : 1.0 | center2_2_wr : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	overlay[]: "center2_3 | tree_wall_03 : 1.0"
+}
+curve_model : curve.il_3y001
+{
+	model_desc: "/model/props/street/il_bike_line_decal.pmd"
+
+	variation[]: "one_way | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "one_way_cros | center4 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "two_way | center2 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "two_way_cros | center3 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "w_one_way | center8 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3"
+	variation[]: "w_oneway_crs | center5 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "w_two_way | center7 : 1.0"
+	start_part[]: "start4"
+	end_part[]: "end4"
+	variation[]: "w_twoway_crs | center6 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+}
+
+curve_model : curve.il_79001
+{
+	model_desc: "/model/landscape/il_far_hills.pmd"
+	name: "il far hills"
+
+	variation[]: "Default | centre_01,centre_02,centre_03,centre_04,centre_05,centre_06 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+}
+
+
+
+curve_model : curve.az_re_3b001
+{
+	model_desc: "/model/panorama/az_us_93/az_us_93_hoover_barrier_curve.pmd"
+
+	variation[]: "side_low | center3, center31, center32 : 1.0 | center3, center32, center31 : 1.0"
+	start_part[]: start3
+	end_part[]: end3
+	variation[]: "side_high | center1, center12, center13 : 1.0 | center1, center13, center12 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "side_up | center5 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "side_down | center6 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "middle_low | center4, center41, center42 : 1.0 | center4, center42, center41 : 1.0"
+	start_part[]: start4
+	end_part[]: end4
+	variation[]: "middle_high | center2, center21, center22 : 1.0 | center2, center22, center21 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "middle_up | center51 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "middle_down | center61 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "bridge | part1, part2, part3, part4 : 1.0"
+	start_part[]: start5
+	end_part[]: end5
+
+	dynamic_lod_desc[]: "/model/panorama/az_us_93/az_us_93_hoover_barrier_curve_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+curve_model : curve.az_re_01002
+{
+	#category: "Arizona"
+	model_desc: "/model/panorama/az_camp_verde/az_camp_verde_fence_01.pmd"
+
+	variation[]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "var2 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+
+	dynamic_lod_desc[]: "/model/panorama/az_camp_verde/az_camp_verde_fence_01_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "start1 | ovr1 : 1.0"
+	overlay[]: "center1 | ovr1 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0"
+	overlay[]: "center3 | ovr1 : 1.0"
+	overlay[]: "start2 | ovr2 : 1.0"
+	overlay[]: "center4 | ovr2 : 1.0"
+	overlay[]: "center5 | ovr2 : 1.0"
+	overlay[]: "center6 | ovr2 : 1.0"
+}
+curve_model : curve.sd_4j000
+{
+	model_desc: "/model/props/street/sd_metal_fence.pmd"
+	name: "sd metal fence"
+
+	variation[]: "pillar | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left1 | right1"
+
+	dynamic_lod_desc[]: "/model/props/street/sd_metal_fence_lod1.pmd"
+	dynamic_lod_dist[]: 50
+	overlay[]: "center1 | over1 : 1.0 | over2 : 1.0 | over3 : 1.0"
+	overlay[]: "center2 | over1 : 1.0 | over2 : 1.0 | over3 : 1.0"
+	overlay[]: "center3 | over1 : 1.0 | over2 : 1.0 | over3 : 1.0"
+	overlay[]: "center4 | over1 : 1.0 | over2 : 1.0 | over3 : 1.0"
+	overlay[]: "center5 | over1 : 1.0 | over2 : 1.0 | over3 : 1.0"
+}
+
+curve_model : curve.tx_2k00p
+{
+	model_desc: "/model/railing/bridge/tx_brownsville_bridge_pillar_02_curve.pmd"
+	name: "tx brownsville bridge pillar 02 curve"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "5m_pillars | center3 : 1.0"
+	start_part[0]: "s1_cln | s2_star"
+	end_part[0]: "e1_cln | e2_star"
+	variation[1]: "5m_nopillars | center2 : 1.0"
+	start_part[1]: "s1_cln | s2_star"
+	end_part[1]: "e1_cln | e2_star"
+	variation[2]: "2m_nopillars | center1 : 1.0"
+	start_part[2]: "s1_cln | s2_star"
+	end_part[2]: "e1_cln | e2_star"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_2k002
+{
+	model_desc: "/model/bridge/wy_gillette_bridge_0-2_fwy.pmd"
+	name: "wy gillette bridge 0-2 fwy"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+curve_model : curve.il_2p000
+{
+	model_desc: "/model/building/admin/il_building_passage_curve.pmd"
+
+	variation[]: "var1 | center1 : 1.0 | center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | left90 | left90b"
+
+	dynamic_lod_desc[]: "/model/building/admin/il_building_passage_curve_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "start1 | ovr1 : 1.0"
+	overlay[]: "center1 | ovr1 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0"
+}
+
+curve_model : curve.il_6m004
+{
+	model_desc: "/model/barrier/water/il_buoy.pmd"
+
+	variation[]: "round | part1 : 1.0 | part2 : 1.0 | part3 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "end1 | end2 | end3"
+	fixed_inner_start[]: part1
+	fixed_inner_end[]: end1
+
+	fixed_step: &41200000
+}
+
+curve_model : curve.il_6m002
+{
+	model_desc: "/model/barrier/water/il_dam_buoy.pmd"
+
+	variation[]: "big | part1,part2 : 1.0 | part1,part4 : 1.0 | part3,part2 : 1.0 | part3,part4 : 1.0"
+	start_part[]: "start1 | part9"
+	end_part[]: "end1 | part9"
+	fixed_inner_start[]: part9
+	fixed_inner_end[]: part9
+	variation[]: "small | part5,part6 : 1.0 | part5,part8 : 1.0 | part7,part5 : 1.0 | part7,part8 : 1.0"
+	start_part[]: "start1 | part9"
+	end_part[]: "end1 | part9"
+	fixed_inner_start[]: part9
+	fixed_inner_end[]: part9
+
+	dynamic_lod_desc[]: "/model/barrier/water/il_dam_buoy_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	fixed_step: &41000000
+}
+
+curve_model : curve.il_79005
+{
+	model_desc: "/model/props/logistics/il_farm_props_plane.pmd"
+	name: "il farm props plane"
+
+	variation[]: "hay | hy_center1 : 1.0 | hy_center2 : 1.0 | hy_center3 : 1.0 | hy_center4 : 1.0 | hy_center5 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "boxes | bx_center1 : 1.0 | bx_center2 : 1.0 | bx_center3 : 1.0 | bx_center4 : 1.0 | bx_center5 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+}
+
+curve_model : curve.sd_2p000
+{
+	model_desc: "/model/building/bank/sd_bank_drive_in_curve.pmd"
+
+	variation[]: "default | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | end2"
+
+	dynamic_lod_desc[]: "/model/building/bank/sd_bank_drive_in_curve_lod1.pmd"
+	dynamic_lod_dist[]: 130
+}
+
+
+curve_model : curve.il_75000
+{
+	model_desc: "/prefab/depots/marina/il_marina_pier.pmd"
+
+	variation[]: "single | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "double | center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end2"
+
+	dynamic_lod_desc[]: "/prefab/depots/marina/il_marina_pier_lod1.pmd"
+	dynamic_lod_dist[]: 60
+	overlay[]: "center1 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr7 : 1.0"
+	overlay[]: "center2 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr8 : 1.0"
+}
+
+curve_model : curve.sd_79000
+{
+	model_desc: "/model/props/street/sd_tires_pile_plane_curve.pmd"
+	name: "sd tires pile plane curve"
+
+	variation[]: "Default | centre1 : 1.0 | centre2 : 1.0 | centre3 : 1.0 | centre4 : 1.0 | centre5 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+}
+
+curve_model : curve.sd_79001
+{
+	model_desc: "/model/building/logistic/sd_warehouse_plane.pmd"
+	name: "sd warehouse plane curve"
+
+	variation[]: "all | part1 : 1.0 | part2 : 1.0 | part3 : 1.0 | part4 : 1.0 | part5 : 1.0 | part6 : 1.0 | part7 : 1.0 | part8 : 1.0 | part9 : 1.0 | part10 : 1.0 | part11 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: part1
+	fixed_inner_end[]: part1
+	variation[]: "large | part1 : 1.0 | part2 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: part1
+	fixed_inner_end[]: part1
+	variation[]: "medium | part3 : 1.0 | part4 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: part1
+	fixed_inner_end[]: part1
+	variation[]: "small | part5 : 1.0 | part6 : 1.0 | part7 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: part1
+	fixed_inner_end[]: part1
+	variation[]: "x_large | part11 : 1.0 | part8 : 1.0 | part9 : 1.0 | part10 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: part1
+	fixed_inner_end[]: part1
+
+	fixed_step: &42c80000
+}
+
+}
+
