@@ -35,5 +35,38 @@ accessory_trailer_body_data : flatbed_32al.scs.flatbed.body
 
 	defaults[]: "/def/vehicle/trailer_owned/scs.flatbed/accessory/markers/flatbed_28.sii"
 	defaults[]: "/def/vehicle/trailer_owned/scs.flatbed/accessory/r_bumper/flatbed.sii"
+	
+	cargo_loading_methods[]: area
+	#cargo_loading_methods[]: custom
+
+	cargo_regular_width: 2.4
+
+	cargo_areas[]: (2.40, 9.58)
+
+	#cargo_custom_loads[]: .glass_rack_c
+
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+@include "/def/vehicle/lashing_gear.sui"
 }
+
+cargo_lashing_mount : .lashm1
+{
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm2
+{
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_closed.pmd"
+
+}
+@include "/def/vehicle/lashing_gear_data.sui"
 }

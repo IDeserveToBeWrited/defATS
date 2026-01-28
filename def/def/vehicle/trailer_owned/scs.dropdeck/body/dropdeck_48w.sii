@@ -1,0 +1,98 @@
+SiiNunit
+{
+accessory_trailer_body_data : dropdek_48_w.scs.dropdeck.body
+{
+	name: "@@bs_dropdeck@@"
+	price: 3500
+	unlock: 9
+	icon: "trailer_owned/scs_dropdeck/body/dropdeck_48_wood"
+
+	# 48' x 102" x 13'6" (cargo height 120")
+
+	size: (2.5908, 3.048, 14.6304)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 14.6304)	# width, height, length (size of the body + chassis)
+
+	volume: 102		# 3600 cft
+	body_type: dropdeck
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for flatbed trailer is in chassis, bodies have only deltas to flatbed body mass.
+	# Thus flatbed has like 0 while curtain 1000
+	# Shorter body variants have smaller delta (count as x0.9, x0.85, x0.55, x0.5)
+
+	mass: 0
+
+	# visual data
+
+	#detail_model: "/vehicle/trailer_owned/scs_dropdeck/body/dropdeck_48_wood.pmd"
+	model: "/vehicle/trailer_owned/scs_dropdeck/body/dropdeck_48_wood.pmd"
+	# lods[]: ""
+	collision: "/vehicle/trailer_owned/scs_dropdeck/body/dropdeck_48_wood.pmc"
+	# variant: 
+	# look
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.dropdeck/accessory/markers/dropdeck_48.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.dropdeck/accessory/r_bumper/dropdeck_standard.sii"
+
+	#xxxxxxxxxxxxxxxx new cargo system xxxxxxxxxxxxxxxxx
+
+	cargo_loading_methods[]: area
+	cargo_loading_methods[]: custom
+	
+	cargo_regular_width: 2.4
+
+	cargo_areas[]: (2.40, 10.83349)
+	cargo_areas[]: (2.40, 3.67382)
+
+	cargo_custom_loads_path: "/def/vehicle/trailer_owned/scs.dropdeck/body/short"		
+
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+	cargo_lashing_mounts[]: .lashm3
+	cargo_lashing_mounts[]: .lashm4
+@include "/def/vehicle/lashing_gear.sui"
+}
+
+cargo_lashing_mount : .lashm1
+{
+	
+	
+	spacing: 0.396
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm2
+{
+	
+	
+	spacing: 0.396
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm3
+{
+	
+	
+	spacing: 0.396
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm4
+{
+	
+	
+	spacing: 0.396
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_dropdeck/body/hook_chain_closed.pmd"
+
+}
+@include "/def/vehicle/lashing_gear_data.sui"
+}

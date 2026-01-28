@@ -1,0 +1,44 @@
+SiiNunit
+{
+
+accessory_cabin_data : day.kenworth.t680_2022.cabin
+{
+	name: "Day Cab"
+	price: 16600
+	unlock: 0
+	icon: "truck/kenworth_t680_2022/cabin/dc"
+	part_type: factory
+
+	model: "/vehicle/truck/kenworth_t680_2022/cabin/dc.pmd"
+	collision: "/vehicle/truck/kenworth_t680_2022/cabin/dc.pmc"
+
+	variant: default
+	look: default
+
+	wiper_model: "/vehicle/truck/kenworth_t680_2022/cabin/wiper.pmd"
+	wiper_anim: "/vehicle/truck/kenworth_t680_2022/cabin/wiper_anim.pma"
+	windows_model: "/vehicle/truck/kenworth_t680_2022/cabin/win_open.pmd"
+	left_window_anim: "/vehicle/truck/kenworth_t680_2022/cabin/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/kenworth_t680_2022/cabin/win_open_r.pma"
+
+	suspension_type: hinge2air
+	drl_with_headlights: 1.0
+
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/chassis/day_157_4x2.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/doorhndl/standard_chrome.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/exhaust/bottom_day.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/interior/day_gr_v.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/mirror/standard_paint.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/paint_job/color0.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/rear_cab/day_standard.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/int_trim/silver_day.sii"
+
+	conflict_with[]: "52_200_6x4.kenworth.t680_2022.chassis"
+	conflict_with[]: "52_206_6x4.kenworth.t680_2022.chassis"
+	conflict_with[]: "76_224_6x4.kenworth.t680_2022.chassis"
+	conflict_with[]: "76_230_6x4.kenworth.t680_2022.chassis"
+
+@include "sound.sui"
+
+}
+}

@@ -1,0 +1,52 @@
+traffic_vehicle : traffic.oakland_loco
+{
+	accessories[]: .oakland_loco.chassis
+	accessories[]: .oakland_loco.fwheel
+	accessories[]: .oakland_loco.rwheel
+
+	max_speed: 55
+
+	vehicle_mass: 27000
+	engine_power: 2500
+
+	trailer_chains[]: "tram_car.oakland_car1 | tram_car.oakland_car2 | tram_car.oakland_car1 | tram_car.oakland_car2 | tram_car.oakland_car3"
+
+	sound_move[]: "/sound/traffic/tram_1.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+	sound_gears: 1
+
+	displacement_limit: 0.0
+
+	spawn_ratio: 1.0
+
+	lod_dist[]: 50
+	lod_dist[]: 100
+	lod_dist[]: 150
+
+
+	tags[]: metro
+
+	spawn_condition[]: .traffic.oakland_loco.condition.city
+
+}
+vehicle_accessory: .oakland_loco.chassis
+{
+	data_path: "/def/vehicle/ai/oakland_metro/chassis_oakland_loco.sii"
+}
+vehicle_wheel_accessory: .oakland_loco.fwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .oakland_loco.rwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+traffic_spawn_condition: .traffic.oakland_loco.condition.city
+{
+	#spawn only near city with specified name
+	type: city
+	str_param[]: "oakland"
+}
+

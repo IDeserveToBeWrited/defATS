@@ -1,0 +1,56 @@
+traffic_vehicle : traffic.kw_t680_c.context
+{
+	accessories[]: .kw_t680_c.context.cabin
+	accessories[]: .kw_t680_c.context.fwheel
+	accessories[]: .kw_t680_c.context.rwheel
+	accessories[]: .kw_t680_c.context.rwheel2
+	accessories[]: .kw_t680_c.context.trlr_cables
+
+	max_speed: 128
+	trailer_chains[]: "truck context"
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+
+	vehicle_mass: 9200
+	engine_power: 373
+
+	color[]: (0.6, 0.6, 0.6) #white
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.575, 0.375, 0.01) #yellow
+	color[]: (0.030, 0.050, 0.22) #blue
+
+	tags[]: context
+	spawn_condition[]: .traffic.kw_t680_c.context.spawn.condition
+	spawn_condition[]: .traffic.kw_t680_c.context.spawn.condition2
+}
+traffic_spawn_condition: .traffic.kw_t680_c.context.spawn.condition
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "dealer"
+}
+traffic_spawn_condition: .traffic.kw_t680_c.context.spawn.condition2
+{
+	type: area
+	str_param[]: "paccar"
+	str_param[]: "kenworth"
+}
+
+vehicle_accessory : .kw_t680_c.context.cabin {
+	data_path: "/def/vehicle/ai/truck/kenworth.t680/cabin_exclusive.sii"
+}
+vehicle_wheel_accessory : .kw_t680_c.context.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kw_t680_c.context.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .kw_t680_c.context.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .kw_t680_c.context.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/kenworth.t680/accessory/trlr_cables/stock.sii"
+}

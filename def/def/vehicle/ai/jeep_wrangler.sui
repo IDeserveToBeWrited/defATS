@@ -9,9 +9,6 @@ traffic_vehicle : traffic.jeep_w
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	vehicle_mass: 2000
 	
 
@@ -25,6 +22,9 @@ traffic_vehicle : traffic.jeep_w
 	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
 	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
 	color[]: (0.0343, 0.0343, 0.0343) #black
+	tags[]: cheap
+	tags[]: common
+
 
 @include "drivers_generic.sui"
 }
@@ -66,12 +66,12 @@ traffic_vehicle : traffic.jeep_w.soft_open
 	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
 	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
 	color[]: (0.0343, 0.0343, 0.0343) #black
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	vehicle_mass: 2000
 	
 	spawn_condition[]: .traffic.jeep_w.soft_open.condition.weather
+	tags[]: cheap
+	tags[]: common
+
 
 @include "drivers_generic.sui"
 }
@@ -119,10 +119,10 @@ traffic_vehicle : traffic.jeep_w.soft_top
 	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
 	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
 	color[]: (0.0343, 0.0343, 0.0343) #black
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	vehicle_mass: 2000
+	tags[]: cheap
+	tags[]: common
+
 
 @include "drivers_generic.sui"
 }

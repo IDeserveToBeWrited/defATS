@@ -1,0 +1,38 @@
+SiiNunit
+{
+accessory_cabin_data : s48.mack.pinnacle.cabin
+{
+	name: "48@@unit_in@@ Sleeper"
+	price: 27590
+	unlock: 10
+	icon: "mack_pinnacle/cab_s48"
+	part_type: factory
+
+	model: "/vehicle/truck/mack_pinnacle/cabin/cabin_s48.pmd"
+	collision: "/vehicle/truck/mack_pinnacle/cabin/cabin_s48.pmc"
+	variant: default
+	look: default
+
+	wiper_model: "/vehicle/truck/mack_pinnacle/cabin/wiper.pmd"
+	wiper_anim: "/vehicle/truck/mack_pinnacle/cabin/wiper_anim.pma"
+
+	windows_model: "/vehicle/truck/mack_pinnacle/cabin/win_open.pmd"
+	left_window_anim: "/vehicle/truck/mack_pinnacle/cabin/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/mack_pinnacle/cabin/win_open_r.pma"
+
+	suspension_type: hinge2air
+
+	conflict_with[]: "6x4l.mack.pinnacle.chassis"
+	conflict_with[]: "6x2l.mack.pinnacle.chassis"
+	conflict_with[]: "6x4s.mack.pinnacle.chassis"
+	conflict_with[]: "6x2s.mack.pinnacle.chassis"
+
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/chassis/6x2_mid.sii"
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/interior/s48_standard.sii"
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/accessory/rear_cab/s48_black.sii"
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/accessory/slp_hndl/stock.sii"
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/accessory/slp_vent/paint_s48.sii"
+
+@include "sound.sui"
+}
+}

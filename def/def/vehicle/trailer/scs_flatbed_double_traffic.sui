@@ -4,10 +4,18 @@ traffic_trailer : traffic.trailer.scs_flat_2
 
 	accessories[]: .scs_flat_2.chassis
 	accessories[]: .scs_flat_2.rwheel
-	accessories[]: .scs_flat_2.cargo
 	accessories[]: .scs_flat_2.trlr_cables
+	accessories[]: .scs_flat_2.body
 
 	cargo_mass: 8000
+
+	cargoes[]: lumber_p
+	cargoes[]: lumber_b
+	cargoes[]: lumber
+	cargoes[]: house_pref
+	cargoes[]: hay
+	
+	trailer_definition: trailer_def.scs.flatbed.double.flatbed
 
 	slave_trailer: .scs_flat_2.dolly
 }
@@ -22,14 +30,14 @@ vehicle_wheel_accessory: .scs_flat_2.rwheel
 	offset: 0
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-vehicle_accessory: .scs_flat_2.cargo
-{
-	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/hay_28.sii"
-}
 
 vehicle_addon_accessory: .scs_flat_2.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/trlr_cables_trailer_traffic.sii"
+}
+vehicle_accessory: .scs_flat_2.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_28.sii"
 }
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -67,7 +75,7 @@ traffic_trailer : .scs_flat_2.second
 {
 	accessories[]: .scs_flat_2.second.chassis
 	accessories[]: .scs_flat_2.second.rwheel
-	accessories[]: .scs_flat_2.second.cargo
+	accessories[]: .scs_flat_2.second.body
 
 	cargo_mass: 8000
 }
@@ -83,7 +91,7 @@ vehicle_wheel_accessory: .scs_flat_2.second.rwheel
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_accessory: .scs_flat_2.second.cargo
+vehicle_accessory: .scs_flat_2.second.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/hay_28.sii"
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_28.sii"
 }

@@ -3,7 +3,7 @@ trailer : trailer.trans_k_t680.red
 	accessories[]: .trans_k_t680.red.chassis
 	accessories[]: .trans_k_t680.red.rwheel
 	accessories[]: .trans_k_t680.red.rwheel1
-	accessories[]: .trans_k_t680.red.cargo
+	accessories[]: .trans_k_t680.red.body
 
 	slave_trailer: .trans_k_t680.red.second
 }
@@ -25,18 +25,18 @@ vehicle_wheel_accessory: .trans_k_t680.red.rwheel1
 	data_path: "/def/vehicle/r_wheel/chrome.sii"
 }
 
-vehicle_accessory: .trans_k_t680.red.cargo
+vehicle_accessory: .trans_k_t680.red.body
 {
-	data_path: "/def/vehicle/trailer_cargo/truck_transporter/t680_red1.sii"
+	data_path: "/def/vehicle/trailer/truck_transporter/accessory/t680_red1.sii"
 }
 
-# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  second XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 trailer : .trans_k_t680.red.second
 {
 	accessories[]: .trans_k_t680.red.second.chassis
 	accessories[]: .trans_k_t680.red.second.rwheel
-	accessories[]: .trans_k_t680.red.second.cargo
+	accessories[]: .trans_k_t680.red.second.body
 
 	slave_trailer: .trans_k_t680.red.third
 }
@@ -51,18 +51,19 @@ vehicle_wheel_accessory: .trans_k_t680.red.second.rwheel
 	offset: 0
 	data_path: "/def/vehicle/r_wheel/chrome.sii"
 }
-vehicle_accessory: .trans_k_t680.red.second.cargo
+
+vehicle_accessory: .trans_k_t680.red.second.body
 {
-	data_path: "/def/vehicle/trailer_cargo/truck_transporter/t680_red2.sii"
+	data_path: "/def/vehicle/trailer/truck_transporter/accessory/t680_red2.sii"
 }
 
-# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX third 28 trailer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX third XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 trailer : .trans_k_t680.red.third
 {
 	accessories[]: .trans_k_t680.red.third.chassis
 	accessories[]: .trans_k_t680.red.third.rwheel
-	accessories[]: .trans_k_t680.red.third.cargo
+	accessories[]: .trans_k_t680.red.third.body
 }
 
 vehicle_accessory: .trans_k_t680.red.third.chassis
@@ -75,7 +76,8 @@ vehicle_wheel_accessory: .trans_k_t680.red.third.rwheel
 	offset: 0
 	data_path: "/def/vehicle/r_wheel/chrome.sii"
 }
-vehicle_accessory: .trans_k_t680.red.third.cargo
+
+vehicle_accessory: .trans_k_t680.red.third.body
 {
-	data_path: "/def/vehicle/trailer_cargo/truck_transporter/t680_red3.sii"
+	data_path: "/def/vehicle/trailer/truck_transporter/accessory/t680_red3.sii"
 }

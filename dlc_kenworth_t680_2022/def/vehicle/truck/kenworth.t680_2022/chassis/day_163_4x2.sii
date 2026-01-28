@@ -1,0 +1,47 @@
+SiiNunit
+{
+
+accessory_chassis_data : dc_163_4x2.kenworth.t680_2022.chassis
+{
+	name: "4x2 163@@unit_in@@"
+	price: 18900
+	unlock: 3
+	info[]: "4x2"
+	icon: "truck/kenworth_t680_2022/chassis/dc_163_4x2"
+	part_type: factory
+
+	model: "/vehicle/truck/kenworth_t680_2022/chassis/dc_163_4x2.pmd"
+	collision: "/vehicle/truck/kenworth_t680_2022/chassis/dc_163_4x2.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/kenworth_t680_2022/shadow_dc_163_4x2.tobj"
+	extended_shadow_intensity: 1.5
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/kenworth_t680_2022/ui_shadow/dc_163_4x2.pmd"
+
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 4645	# 10220lb
+	kerb_weight[]: 1805	# 3970lb
+
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/bumper/standard_plastic_fog.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/cabin/day.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/f_light_chs/halogen.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/hood/long.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/r_bumper/standard_led.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/sideskirt/day_long_paint.sii"
+
+	suitable_for[]: "day.kenworth.t680_2022.cabin"
+	lamp_setup: "/def/vehicle/truck/kenworth.t680_2022/lamp_setup.sii"
+@include "sound.sui"
+}
+}

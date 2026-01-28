@@ -6,6 +6,7 @@ accessory_interior_data	: s70_std.mack.anthem.interior
 	price: 15180
 	unlock: 0
 	icon: "mack_anthem/int_std"
+	part_type: factory
 
 	model: "/vehicle/truck/mack_anthem/interior/model/sl70_base.pmd"
 	animated_model: "/vehicle/truck/mack_anthem/interior/animation/animation.pmd"
@@ -23,6 +24,8 @@ accessory_interior_data	: s70_std.mack.anthem.interior
 
 @include "animations.sui"
 
+@include "int_shadow_s70.sui"
+
 @include "sound.sui"
 @include "sound_effects.sui"
 
@@ -34,8 +37,8 @@ accessory_interior_data	: s70_std.mack.anthem.interior
 	glass_panes[]: .mack.anthem.r.pane.back_70
 	glass_panes[]: .mack.anthem.r.pane.back_b
 
-
 @include "seat.sui"
+@include "mirrors.sui"
 
 @include "dashboard_color.sui"
 }

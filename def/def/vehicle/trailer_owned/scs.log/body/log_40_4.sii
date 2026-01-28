@@ -33,5 +33,51 @@ accessory_trailer_body_data : log_40_4.scs.log.body
 
 	defaults[]: "/def/vehicle/trailer_owned/scs.log/accessory/markers/simple.sii"
 	defaults[]: "/def/vehicle/trailer_owned/scs.log/accessory/r_bumper/simple.sii"
+
+
+	#XXXXXXXXXXXXXXXXXXXXX NEW CARGO SYSTEM XXXXXXXXXXXXXXXXXXXXX
+
+	cargo_loading_methods[]: area_logger
+	cargo_loading_methods[]: area_cylinder
+	#cargo_loading_methods[]: custom
+	
+	cargo_regular_width: 2.28
+
+	cargo_areas[]: (2.28, 13.0) #X, Z
+	cargo_areas_cylinder_data[]: (2.28, 2.2) #X, Y
+
+	cargo_lashing_mounts[]: .lashm0
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+	cargo_lashing_mounts[]: .lashm3
+
+
+@include "/def/vehicle/lashing_gear.sui"
+@include "/def/vehicle/trailer_owned/scs.log/body/cargo_custom_loads.sui"
 }
+
+cargo_lashing_mount : .lashm0
+{
+	spacing: 1
+
+}
+cargo_lashing_mount : .lashm1
+{
+	spacing: 1
+
+}
+cargo_lashing_mount : .lashm2
+{
+	spacing: 1
+
+
+}
+cargo_lashing_mount : .lashm3
+{
+	spacing: 1
+
+}
+
+@include "/def/vehicle/lashing_gear_data.sui"
+@include "/def/vehicle/trailer_owned/scs.log/body/cargo_custom_load_data.sui"
 }

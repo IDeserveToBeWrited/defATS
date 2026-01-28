@@ -8,8 +8,20 @@ traffic_trailer : traffic.trailer.scs_lboy_23	#spreader 2 axle
 	accessories[]: .scs_lboy_23.trlr_cables
 	
 	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: lowboy
+	tags[]: double
+	tags[]: superlong
 	
+
+	cargoes[]: tamp_machine
+	cargoes[]: bulldozer
+	cargoes[]: digger1000
+
 	slave_trailer: .traffic.trailer.scs_lboy_23.trailer
+
+	trailer_definition: trailer_def.scs.lowboy.double_2_3.fullwood
 }
 
 vehicle_accessory: .scs_lboy_23.chassis
@@ -48,7 +60,7 @@ traffic_trailer : .traffic.trailer.scs_lboy_23.trailer		#chassis 3 axle
 	accessories[]: .scs_lboy_23.trailer.rwheel2
 	accessories[]: .scs_lboy_23.trailer.rwheel3
 	accessories[]: .scs_lboy_23.trailer.paint_job
-	accessories[]: .scs_lboy_23.trailer.cargo
+	accessories[]: .scs_lboy_23.trailer.body
 }
 
 vehicle_accessory: .scs_lboy_23.trailer.chassis
@@ -78,7 +90,7 @@ vehicle_paint_job_accessory: .scs_lboy_23.trailer.paint_job
 	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
 }
 
-vehicle_accessory: .scs_lboy_23.trailer.cargo
+vehicle_accessory: .scs_lboy_23.trailer.body
 {
-    	data_path: "/def/vehicle/trailer_cargo/scs_lowboy/bulldozer.sii"
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
 }

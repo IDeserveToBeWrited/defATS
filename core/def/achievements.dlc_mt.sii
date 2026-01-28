@@ -1,0 +1,434 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Montana --
+
+# Discover at least 12 cities in Montana.
+
+achievement_visit_city_data : .achievement.mt_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: billings
+	cities[]: bozeman
+	cities[]: butte
+	cities[]: glasgow_mt
+	cities[]: glendive
+	cities[]: great_falls
+	cities[]: havre
+	cities[]: helena
+	cities[]: kalispell
+	cities[]: laurel
+	cities[]: lewistown
+	cities[]: miles_city
+	cities[]: missoula
+	cities[]: sidney
+	cities[]: thompson_f
+	target: 12
+
+	achievement_name: mt_visit_cities
+
+	steam_progress_id: "mt_visit_cities-progress"
+	steam_id: mt_visit_cities
+}
+
+# View cutscenes from at least 10 viewpoints in Montana.
+
+achievement_trigger_data : .achievement.mt_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: mt_cutscenes
+	target: 10
+
+	achievement_name: mt_cutscenes
+
+	steam_progress_id: "mt_cutscenes-progress"
+	steam_id: mt_cutscenes
+}
+
+# Show your support for zero waste by completing a total of 10 deliveries of the Dumpster Bins and Paper Waste cargoes to the Waste Transfer Stations in Montana, and at least one Garbage Truck cargo to or from anywhere in Montana.
+
+achievement_delivery : .achievement.mt_waste
+{
+	event_name: job_done
+	initial_check: true
+	condition: .mt_waste.condition
+	target: 11
+
+	achievement_name: mt_waste
+
+	steam_progress_id: "mt_waste-progress"
+	steam_id: mt_waste
+}
+
+achievement_delivery_sequence : .mt_waste.condition
+{
+	list[]: .mt_waste.garbage_trck
+	list[]: .mt_waste.dumpster
+	list[]: .mt_waste.waste_paper
+	list[]: .mt_waste.other
+}
+
+achievement_delivery_each : .mt_waste.garbage_trck
+{
+	list[]: .mt_waste.garbage_trck.cargo
+	list[]: .mt_waste.garbage_trck.montana
+}
+
+achievement_delivery_cargo : .mt_waste.garbage_trck.cargo
+{
+	cargo_name: garbage_trck
+}
+
+achievement_delivery_point_country : .mt_waste.garbage_trck.montana
+{
+	role: any
+	country_name: montana
+}
+
+achievement_delivery_each : .mt_waste.dumpster
+{
+	list[]: .mt_waste.dumpster.cargo
+	list[]: .mt_waste.dumpster.company
+}
+
+achievement_delivery_cargo : .mt_waste.dumpster.cargo
+{
+	cargo_name: dumpster
+}
+
+achievement_delivery_company : .mt_waste.dumpster.company
+{
+	role: target
+	company_name: mwm_wst_whs
+	country_name: montana
+}
+
+achievement_delivery_each : .mt_waste.waste_paper
+{
+	list[]: .mt_waste.waste_paper.cargo
+	list[]: .mt_waste.waste_paper.company
+}
+
+achievement_delivery_cargo : .mt_waste.waste_paper.cargo
+{
+	cargo_name: waste_paper
+}
+
+achievement_delivery_company : .mt_waste.waste_paper.company
+{
+	role: target
+	company_name: mwm_wst_whs
+	country_name: montana
+}
+
+achievement_delivery_count : .mt_waste.other
+{
+	condition: .mt_waste.other.condition
+	count: 8
+}
+
+achievement_delivery_each : .mt_waste.other.condition
+{
+	list[]: .mt_waste.other.cargo
+	list[]: .mt_waste.other.company
+}
+
+achievement_delivery_any : .mt_waste.other.cargo
+{
+	list[]: .mt_waste.other.dumpster
+	list[]: .mt_waste.other.waste_paper
+}
+
+achievement_delivery_cargo : .mt_waste.other.dumpster
+{
+	cargo_name: dumpster
+}
+
+achievement_delivery_cargo : .mt_waste.other.waste_paper
+{
+	cargo_name: waste_paper
+}
+
+achievement_delivery_company : .mt_waste.other.company
+{
+	role: target
+	company_name: mwm_wst_whs
+	country_name: montana
+}
+
+# Spark up Montana and support the power network by delivering a Circuit Breakers cargo and a Utility Poles cargo to the electric substations in each of the following cities: Butte, Glasgow and Havre
+
+achievement_delivery : .achievement.mt_electric
+{
+	event_name: job_done
+	initial_check: true
+	condition: .mt_electric.condition
+	target: 6
+
+	achievement_name: mt_electric
+
+	steam_progress_id: "mt_electric-progress"
+	steam_id: mt_electric
+}
+
+achievement_delivery_sequence : .mt_electric.condition
+{
+	list[]: .mt_electric.circuit_brk.butte
+	list[]: .mt_electric.circuit_brk.glasgow_mt
+	list[]: .mt_electric.circuit_brk.havre
+	list[]: .mt_electric.util_pole.butte
+	list[]: .mt_electric.util_pole.glasgow_mt
+	list[]: .mt_electric.util_pole.havre
+}
+
+achievement_delivery_each : .mt_electric.circuit_brk.butte
+{
+	list[]: .mt_electric.circuit_brk.butte.cargo
+	list[]: .mt_electric.circuit_brk.butte.company
+}
+
+achievement_delivery_cargo : .mt_electric.circuit_brk.butte.cargo
+{
+	cargo_name: circuit_brk
+}
+
+achievement_delivery_company : .mt_electric.circuit_brk.butte.company
+{
+	role: target
+	company_name: frd_epw_sit
+	city_name: butte
+}
+
+achievement_delivery_each : .mt_electric.circuit_brk.glasgow_mt
+{
+	list[]: .mt_electric.circuit_brk.glasgow_mt.cargo
+	list[]: .mt_electric.circuit_brk.glasgow_mt.company
+}
+
+achievement_delivery_cargo : .mt_electric.circuit_brk.glasgow_mt.cargo
+{
+	cargo_name: circuit_brk
+}
+
+achievement_delivery_company : .mt_electric.circuit_brk.glasgow_mt.company
+{
+	role: target
+	company_name: frd_epw_sit
+	city_name: glasgow_mt
+}
+
+achievement_delivery_each : .mt_electric.circuit_brk.havre
+{
+	list[]: .mt_electric.circuit_brk.havre.cargo
+	list[]: .mt_electric.circuit_brk.havre.company
+}
+
+achievement_delivery_cargo : .mt_electric.circuit_brk.havre.cargo
+{
+	cargo_name: circuit_brk
+}
+
+achievement_delivery_company : .mt_electric.circuit_brk.havre.company
+{
+	role: target
+	company_name: frd_epw_sit
+	city_name: havre
+}
+
+achievement_delivery_each : .mt_electric.util_pole.butte
+{
+	list[]: .mt_electric.util_pole.butte.cargo
+	list[]: .mt_electric.util_pole.butte.company
+}
+
+achievement_delivery_cargo : .mt_electric.util_pole.butte.cargo
+{
+	cargo_name: util_pole
+}
+
+achievement_delivery_company : .mt_electric.util_pole.butte.company
+{
+	role: target
+	company_name: frd_epw_sit
+	city_name: butte
+}
+
+achievement_delivery_each : .mt_electric.util_pole.glasgow_mt
+{
+	list[]: .mt_electric.util_pole.glasgow_mt.cargo
+	list[]: .mt_electric.util_pole.glasgow_mt.company
+}
+
+achievement_delivery_cargo : .mt_electric.util_pole.glasgow_mt.cargo
+{
+	cargo_name: util_pole
+}
+
+achievement_delivery_company : .mt_electric.util_pole.glasgow_mt.company
+{
+	role: target
+	company_name: frd_epw_sit
+	city_name: glasgow_mt
+}
+
+achievement_delivery_each : .mt_electric.util_pole.havre
+{
+	list[]: .mt_electric.util_pole.havre.cargo
+	list[]: .mt_electric.util_pole.havre.company
+}
+
+achievement_delivery_cargo : .mt_electric.util_pole.havre.cargo
+{
+	cargo_name: util_pole
+}
+
+achievement_delivery_company : .mt_electric.util_pole.havre.company
+{
+	role: target
+	company_name: frd_epw_sit
+	city_name: havre
+}
+
+# Complete excellent delivery of any machinery equipment to the Bull Mountains coal mine, Silane from the silane gas factory and Talc Powder from the talc factory.
+
+achievement_delivery : .achievement.mt_miner
+{
+	event_name: job_done
+	initial_check: true
+	condition: .mt_miner.condition
+	target: 3
+
+	achievement_name: mt_miner
+
+	steam_progress_id: "mt_miner-progress"
+	steam_id: mt_miner
+}
+
+achievement_delivery_sequence : .mt_miner.condition
+{
+	list[]: .mt_miner.silane
+	list[]: .mt_miner.talc
+	list[]: .mt_miner.lowbed
+}
+
+achievement_delivery_each : .mt_miner.silane
+{
+	list[]: .mt_miner.silane.source
+	list[]: .mt_miner.silane.cargo
+	list[]: .mt_miner.silane.damage
+	list[]: .mt_miner.silane.late
+}
+
+achievement_delivery_company : .mt_miner.silane.source
+{
+	role: source
+	company_name: chm_che_plns
+	country_name: montana
+}
+
+achievement_delivery_cargo : .mt_miner.silane.cargo
+{
+	cargo_name: silane
+}
+
+achievement_delivery_cargo_damage : .mt_miner.silane.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_late : .mt_miner.silane.late
+{
+	late: false
+}
+
+achievement_delivery_each : .mt_miner.talc
+{
+	list[]: .mt_miner.talc.source
+	list[]: .mt_miner.talc.cargo
+	list[]: .mt_miner.talc.damage
+	list[]: .mt_miner.talc.fines
+	list[]: .mt_miner.talc.late
+}
+
+achievement_delivery_company : .mt_miner.talc.source
+{
+	role: source
+	company_name: nmq_min_pln1
+	country_name: montana
+}
+
+achievement_delivery_cargo : .mt_miner.talc.cargo
+{
+	cargo_name: talc_pwdr
+}
+
+achievement_delivery_cargo_damage : .mt_miner.talc.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_fines : .mt_miner.talc.fines
+{
+	fines_max: 0
+}
+
+achievement_delivery_late : .mt_miner.talc.late
+{
+	late: false
+}
+
+achievement_delivery_each : .mt_miner.lowbed
+{
+	list[]: .mt_miner.lowbed.source
+	list[]: .mt_miner.lowbed.cargo
+	list[]: .mt_miner.lowbed.damage
+	list[]: .mt_miner.lowbed.fines
+	list[]: .mt_miner.lowbed.late
+}
+
+achievement_delivery_company : .mt_miner.lowbed.source
+{
+	role: target
+	company_name: nmq_min_svc
+	country_name: montana
+}
+
+achievement_delivery_cargo : .mt_miner.lowbed.cargo
+{
+	cargo_group: lowbed
+}
+
+achievement_delivery_cargo_damage : .mt_miner.lowbed.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_fines : .mt_miner.lowbed.fines
+{
+	fines_max: 0
+}
+
+achievement_delivery_late : .mt_miner.lowbed.late
+{
+	late: false
+}
+
+}

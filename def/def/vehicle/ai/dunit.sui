@@ -1,0 +1,44 @@
+traffic_vehicle : traffic.dunit
+{
+	accessories[]: .dunit.chassis
+	accessories[]: .dunit.fwheel
+	accessories[]: .dunit.rwheel
+
+	max_speed: 160
+
+	allow_parked: false
+
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	spawn_ratio: 0
+	spawn_condition[]: .traffic.dunit.condition.weather 
+
+@include "drivers_generic.sui"	
+}
+
+vehicle_accessory: .dunit.chassis
+{
+	data_path: "/def/vehicle/ai/dino_unit/chassis.sii"
+}
+
+vehicle_wheel_accessory: .dunit.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_o.sii"
+}
+
+vehicle_wheel_accessory: .dunit.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_o.sii"
+}
+
+traffic_spawn_condition: .traffic.dunit.condition.weather
+{
+    # spawn only in bad weater
+    type: weather
+    num_param[]: 1
+}

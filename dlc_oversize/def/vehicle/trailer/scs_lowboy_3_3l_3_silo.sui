@@ -53,8 +53,8 @@ trailer : .trailer.scs_lb_333_t.silo		#chassis 3 axle
 	accessories[]: .scs_lb_333_t.silo.rwheel2
 	accessories[]: .scs_lb_333_t.silo.rwheel3
 	accessories[]: .scs_lb_333_t.silo.paint_job
-	accessories[]: .scs_lb_333_t.silo.cargo
 	accessories[]: .scs_lb_333_t.silo.trlr_cables
+	accessories[]: .scs_lb_333_t.silo.body
 	
 	slave_trailer: .trailer.scs_lb_333_j.silo	
 }
@@ -86,15 +86,15 @@ vehicle_paint_job_accessory: .scs_lb_333_t.silo.paint_job
 	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
 }
 
-vehicle_accessory: .scs_lb_333_t.silo.cargo
-{
-    	data_path: "/def/vehicle/trailer_cargo/scs_lowboy/silo.sii"
-}
-
 vehicle_addon_accessory: .scs_lb_333_t.silo.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/cables_trailer.sii"
 }
+vehicle_accessory: .scs_lb_333_t.silo.body
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body_long.sii"
+}
+
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 

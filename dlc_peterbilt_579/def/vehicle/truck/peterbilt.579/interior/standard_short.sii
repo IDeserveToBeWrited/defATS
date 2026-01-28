@@ -6,6 +6,8 @@ accessory_interior_data	: standard_sh.peterbilt.579.interior
 	price: 15180
 	unlock: 0
 	icon: "peterbilt_579/int_std"
+	part_type: factory
+
 	model: "/vehicle/truck/peterbilt_579/interior/model.pmd"
 	animated_model: "/vehicle/truck/peterbilt_579/interior/anim.pmd"
 	collision: "/vehicle/truck/peterbilt_579/interior/model.pmc"
@@ -22,6 +24,8 @@ accessory_interior_data	: standard_sh.peterbilt.579.interior
 	backlight_with_lights: false
 	air_brake_safeguard: true
 
+	show_chassis_rear: true
+
 	glass_panes[]: .peterbilt579.r.pane.front
 	glass_panes[]: .peterbilt579.r.pane.close
 	glass_panes[]: .peterbilt579.r.pane.far
@@ -37,7 +41,10 @@ accessory_interior_data	: standard_sh.peterbilt.579.interior
 	defaults[]: "/def/vehicle/truck/peterbilt.579/accessory/set_cuphold/set_closed.sii"
 
 @include "seat.sui"
+@include "mirrors.sui"
 @include "dashboard_color.sui"
+
+@include "int_shadow_cab_a.sui"
 }
 
 @include "glass.sui"

@@ -1,0 +1,44 @@
+SiiNunit
+{
+accessory_engine_data : d13_475.volvo.vnl2018.engine
+{
+	name: "Volvo D13 475"
+	price: 43810
+	unlock: 7
+	info[]: "475 @@hp@@ (354@@kw@@)"
+	info[]: "1@@dg@@650 @@lb_ft@@ (2237@@nm@@)"
+	info[]: "1@@dg@@050 @@rpm@@"
+	icon: "engine_volvo_d13k"
+	part_type: factory
+
+	torque: 2237
+	volume: 12.8
+
+	torque_curve[]: (300, 0)
+	torque_curve[]: (500, 0.5)
+	torque_curve[]: (800, 0.73)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1500, 1)
+	torque_curve[]: (1800, 0.85)
+	torque_curve[]: (1900, 0.76)
+	torque_curve[]: (2100, 0.5)
+	torque_curve[]: (2400, 0)
+
+	rpm_idle: 600
+	rpm_limit: 2100
+	rpm_range_low_gear: (750, 1500)
+	rpm_range_high_gear: (1000, 1400)
+	rpm_range_power: (1350, 1850)
+
+	engine_brake: 2.0
+	engine_brake_downshift: 0
+	engine_brake_positions: 3
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/volvo.vnl2018/accessory/badge/volvo.sii"
+
+# 2016 D13 475/1650
+# https://www.volvotrucks.us/-/media/vtna/files/shared/powertrain/revised4147_101-volvo_d13_engine-brochure_low-res.pdf/
+}
+}

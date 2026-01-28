@@ -10,9 +10,6 @@ traffic_vehicle : traffic.hummer
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	vehicle_mass: 3000
 
 	spawn_ratio: 0.2
@@ -25,6 +22,9 @@ traffic_vehicle : traffic.hummer
 	color[]: (0.6, 0.6, 0.6)          #GRAY
 	
 	variant[]: traffic.hummer_p
+
+	tags[]: expensive
+	tags[]: common
 
 @include "drivers_generic.sui"
 	
@@ -65,10 +65,10 @@ traffic_vehicle : traffic.hummer_p
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	vehicle_mass: 3000
+
+	tags[]: expensive
+	tags[]: common
 
 @include "drivers_generic.sui"
 	

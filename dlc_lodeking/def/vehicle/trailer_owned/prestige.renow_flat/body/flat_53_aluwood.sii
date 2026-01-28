@@ -1,0 +1,63 @@
+SiiNunit
+{
+accessory_trailer_body_data : flat53_alw.prestige.renow_flat.body
+{
+	name: "@@bs_flatbed_alu@@"
+	price: 9000
+	unlock: 13
+	icon: "trailer_owned/lodeking_flatbed/accessory/body/alw"
+
+	# 53' x 102" x 13'6" (cargo height 102")
+
+	size: (2.5908, 2.5908, 16.1544)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 16.1544)	# width, height, length (size of the body + chassis)
+
+	volume: 112.56		# 3975 cft
+	body_type: flatbed
+
+	# Mass of the cargo container in KG.
+	# Base mass for trailer is in chassis, bodies have only deltas for eventual variants.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/lodeking_flatbed/body/body_53a_alw.pmd"
+	collision: "/vehicle/trailer_owned/lodeking_flatbed/body/body_53a_alw.pmc"
+	variant: Prestige_var
+
+	defaults[]: "/def/vehicle/trailer_owned/prestige.renow_flat/accessory/markers/simple_53.sii"
+
+	cargo_loading_methods[]: area
+	#cargo_loading_methods[]: custom
+
+	cargo_areas[]: (2.4, 15.8)
+	cargo_regular_width: 2.4
+
+	
+
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+@include "/def/vehicle/lashing_gear.sui" 
+cargo_custom_loads_path: "/def/vehicle/trailer_owned/lodeking.bril_drop/body/short"	
+}
+
+cargo_lashing_mount : .lashm1
+{
+	spacing: 0.1
+	hook_angle_constraints: (30, 20, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+	#closed_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+
+}
+cargo_lashing_mount : .lashm2
+{
+	spacing: 0.1
+	hook_angle_constraints: (30, 20, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+	#closed_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+}
+@include "/def/vehicle/lashing_gear_data.sui" 
+
+}
+

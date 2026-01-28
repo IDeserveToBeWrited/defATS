@@ -1,0 +1,44 @@
+traffic_vehicle : traffic.city_exp.xmas
+{
+	accessories[]: .city_exp.xmas.chassis
+	accessories[]: .city_exp.xmas.fwheel
+	accessories[]: .city_exp.xmas.rwheel
+
+	max_speed: 100
+	allow_parked: false
+	vehicle_mass: 1800
+
+	tags[]: cheap
+	tags[]: common
+	tags[]: xmas
+	tags[]: context
+
+	color[]: (1, 1, 1) #white
+
+
+	spawn_condition[]: .traffic.city_exp.xmas.condition
+
+@include "drivers_generic.sui"
+}
+traffic_spawn_condition: .traffic.city_exp.xmas.condition
+{
+	type: area
+	str_param[]: "xmas"
+}
+
+vehicle_accessory: .city_exp.xmas.chassis
+{
+	data_path: "/def/vehicle/ai/xmas_city_express/chassis.sii"
+}
+
+vehicle_wheel_accessory: .city_exp.xmas.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in.sii"
+}
+
+vehicle_wheel_accessory: .city_exp.xmas.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in.sii"
+}

@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_trailer_body_data : tank_53_dd.scs.chemtank.body
+{
+	name: "@@bs_deep_drop@@"
+	price: 41000
+	unlock: 13
+	icon: "trailer_owned/scs_chemtank/body/tank_deepdrop_53"
+
+	# 53' x 102" x 13'6"
+	# Internal: 51'9" x 96.5" x 101"
+
+	size: (2.4511, 2.5654, 15.7734)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 16.1544)	# width, height, length (size of the body + chassis)
+
+	volume: 37.0		# 9775 gal
+	body_type: chemtank
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for trailer is in chassis, bodies have only deltas to chassis mass.
+	# Shorter body variants would have smaller delta.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_chemtank/body/tank_deepdrop_53.pmd"
+	collision: "/vehicle/trailer_owned/scs_chemtank/body/tank_deepdrop_53.pmc"
+	variant: default
+
+	cargo_loading_methods[]: auxiliary_only
+}
+}

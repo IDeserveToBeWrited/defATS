@@ -12,6 +12,13 @@ mover_model : mover.waterpump
 	model_desc: "/model/mover/machine/waterpump.pmd"
 	model_anim: "/model/mover/machine/waterp_r.pma"
 }
+mover_model : mover.windtower
+{
+	mover_name: "wind tower"
+	model_desc: "/model/mover/machine/waterpump.pmd"
+	model_anim: "/model/mover/machine/waterp_r.pma"
+}
+
 
 mover_model : mover.wind_pp
 {
@@ -75,11 +82,18 @@ mover_model : mover.b747_l_land
 	mover_name: "Boeing 747 landing"
 	model_desc: "/model/mover/aircraft/b747/b747_anim.pmd"
 	model_anim: "/model/mover/aircraft/b747/b747_landing.pma"
+	sound_path[]: "/sound/world/mover.bank#mover/boeing_loop_1"
 }
 mover_model : mover.boeing737
 {
 	mover_name: "Boeing 737 rolling"
 	model_desc: "/model/mover/aircraft/b737/b737_anim.pmd"
+	sound_path[]: "/sound/world/mover.bank#mover/boeing_rolling_loop"
+}
+mover_model : mover.boe737c
+{
+	mover_name: "Boeing 737 rolling close"
+	model_desc: "/model/aircraft/737.pmd"
 	sound_path[]: "/sound/world/mover.bank#mover/boeing_rolling_loop"
 }
 mover_model : mover.b737_l_take
@@ -108,39 +122,7 @@ mover_model : mover.b747_lod
 	model_anim: "/model/mover/aircraft/b747/b747_lod.pma"
 }
 
-mover_model : mover.waves
-{
-	mover_name: "waves"
-	model_desc: "/model/water/waves.pmd"
-	model_anim: "/model/water/wave.pma"
-}
 
-mover_model : mover.waves_small
-{
-	mover_name: "waves small"
-	model_desc: "/model/water/waves_small.pmd"
-}
-
-mover_model : mover.waves2
-{
-	mover_name: "waves fast"
-	model_desc: "/model/water/waves.pmd"
-	model_anim: "/model/water/wave2.pma"
-}
-
-mover_model : mover.wavesgroup
-{
-	mover_name: "waves group"
-	model_desc: "/model/water/waves2.pmd"
-	model_anim: "/model/water/wave_group.pma"
-}
-
-mover_model : mover.wavesgroup2
-{
-	mover_name: "waves group fast"
-	model_desc: "/model/water/waves2.pmd"
-	model_anim: "/model/water/wave_group2.pma"
-}
 mover_model : mover.yachts
 {
 	mover_name: "yachts"
@@ -172,26 +154,7 @@ mover_model : mover.cloud2
 	model_desc: "/model/mover/cloud2.pmd"
 
 }
-mover_model : mover.para1
-{
-	mover_name: "para1"
-	model_desc: "/model/mover/aircraft/para1.pmd"
-}
-mover_model : mover.para2
-{
-	mover_name: "para2"
-	model_desc: "/model/mover/aircraft/para2.pmd"
-}
-mover_model : mover.para3
-{
-	mover_name: "para3"
-	model_desc: "/model/mover/aircraft/para3.pmd"
-}
-mover_model : mover.para4
-{
-	mover_name: "para4"
-	model_desc: "/model/mover/aircraft/para4.pmd"
-}
+
 mover_model : mover.weed
 {
 	mover_name: "weed"
@@ -320,6 +283,8 @@ mover_model : mover.la_move_p2
 {
 	model_desc: "/model/props/street/airdancer.pmd"
 	model_anim: "/model/props/street/airdancer01.pma"
+	
+	sound_path[]: "/sound/world/sounds/machines.bank#artificial/machines/aircondition_loop_4"
 
 
 }
@@ -333,6 +298,7 @@ mover_model : mover.oilpump2
 	mover_name: "oilpump2"
 	model_desc: "/model/mover/machine/oil_pump2.pmd"
 	model_anim: "/model/mover/machine/oil_pump2.pma"
+	model_coll: "/model/mover/machine/oil_pump2.pmc"
 
 	lods[0]: "/model/mover/machine/oil_pump2_lod1.pmd"
 	lod_dist[0]: 100
@@ -526,6 +492,7 @@ mover_model : mover.yacht_motor1
 {
 	mover_name: "motor yacht sailing 1"
 	model_desc: "/model/mover/boat/motor_yacht_sailing_01.pmd"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/motorboat_1"
 }
 mover_model : mover.yacht01
 {
@@ -609,6 +576,9 @@ mover_model : mover.ut_pumpjack
 	model_coll: "/model/mover/machine/pump_jack.pmc"
 	model_anim: "/model/mover/machine/pump_jack.pma"
 
+	sound_path[]: "/sound/world/sounds/refs/artificial/machines/pumpjack_1.soundref"
+
+
 	lods[0]: "/model/mover/machine/pump_jack_lod1.pmd"
 	lods[1]: "/model/mover/machine/pump_jack_lod2.pmd"
 	lods[2]: "/model/mover/machine/pump_jack_lod3.pmd"
@@ -616,12 +586,6 @@ mover_model : mover.ut_pumpjack
 	lod_dist[0]: 30
 	lod_dist[1]: 90
 	lod_dist[2]: 150
-}
-mover_model : mover.trig_view
-{
-	mover_name: "viewpoint trigger visualization"
-	model_desc: "/model/activation/interestingplaces.pmd"
-	model_anim: "/model/activation/interestingplaces.pma"
 }
 
 mover_model : mover.ut_flag
@@ -741,4 +705,168 @@ mover_model : mover.crane
 	lod_dist[2]: 150
 	lod_dist[3]: 200
 }
+mover_model : mover.crane5
+{
+	mover_name: "ca crane1 anim"
+	model_desc: "/model/vehicle/construction/crane/ca_crane1_mov.pmd"
+	model_anim: "/model/vehicle/construction/crane/ca_crane1_ani.pma"
+#	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
+#	sound_max_dist: 100
+}
+mover_model : mover.tx_flag
+{
+	mover_name: "Tx Flag"
+	model_desc: "/model/mover/tx_flag.pmd"
+	model_anim: "/model/mover/flag_anim_37b.pma"
+}
+
+mover_model : mover.tx_flag_d
+{
+	mover_name: "Tx Flag double"
+	model_desc: "/model/mover/tx_flag_double.pmd"
+	model_anim: "/model/mover/flag_anim_37b.pma"
+}
+
+mover_model : mover.d_flag_us
+{
+	mover_name: "US solo flag"
+	model_desc: "/model/mover/flag_hookup.pmd"
+	model_anim: "/model/mover/flag_hookup.pma"
+}
+
+mover_model : mover.windtow
+{
+	mover_name: "co wind tower"
+	model_desc: "/prefab/depots/wind_energy_power/co_wind_tower_mov.pmd"
+
+	model_anim: "/prefab/depots/wind_energy_power/co_wind.pma"
+
+	lods[0]: "/prefab/depots/wind_energy_power/co_wind_tower_mov_lod1.pmd"
+	lods[1]: "/prefab/depots/wind_energy_power/co_wind_tower_mov_lod2.pmd"
+
+	lod_dist[0]: 75
+	lod_dist[1]: 100
+}
+
+mover_model : mover.ovs_barrier
+{
+	mover_name: "oversize road barrier plastic"
+	model_desc: "/model/barrier/road/tx_plastic_barrier02.pmd"
+	model_coll: "/model/barrier/road/tx_plastic_barrier02.pmc"
+	tags[]: "rail_train"
+}
+
+### mover_hookup OF CRANE TRAIN ###
+
+mover_model : mover.crn_trn1
+{
+	mover_name: "crane train day"
+	model_desc: "/model/mover/machine/crane_train_01_anim.pmd"
+	
+	model_anim: "/model/mover/machine/crane_train_01_anim.pma"
+
+	lods[0]: "/model/mover/machine/crane_train_01_anim_lod1.pmd"
+	lods[1]: "/model/mover/machine/crane_train_01_anim_lod2.pmd"
+	
+	lod_dist[0]: 100
+	lod_dist[1]: 200
+	
+}
+mover_model : mover.crn_trn1n
+{
+	mover_name: "crane train night"
+	model_desc: "/model/mover/machine/crane_train_01_anim_n.pmd"
+
+	model_anim: "/model/mover/machine/crane_train_01_anim.pma"
+
+	lods[0]: "/model/mover/machine/crane_train_01_anim_n_lod1.pmd"
+	lods[1]: "/model/mover/machine/crane_train_01_anim_n_lod2.pmd"
+	
+	lod_dist[]: 100
+	lod_dist[]: 200
+	
+}
+
+mover_model : mover.ok_turb
+{
+	mover_name: "ok bailey toll plaza turbine"
+	model_desc: "/model/panorama/ok_i44/ok_bailey_toll_plaza_turbine_mov.pmd"
+
+	model_anim: "/model/panorama/ok_i44/turbine_rotation.pma"
+	model_coll: "/model/panorama/ok_i44/ok_bailey_toll_plaza_turbine_mov.pmc"
+
+	lods[0]: "/model/panorama/ok_i44/ok_bailey_toll_plaza_turbine_mov_lod1.pmd"
+
+	lod_dist[0]: 100
+}
+
+mover_model : mover.rvr_prt_cr
+{
+	mover_name: "river_port_crane_anim"
+	model_desc: "/prefab/depots/river_port/ok_port_crane_mov.pmd"
+	model_anim: "/prefab/depots/river_port/ok_port_crane_anim.pma"
+
+}
+
+#######################################
+###				BOATS				###
+#######################################
+
+mover_model : mover.boatm1
+{
+	mover_name: "motorboat_01 mover"
+	model_desc: "/model/mover/boat/motorboat_01_mov.pmd"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/motorboat_1"
+
+	lods[0]: "/model/mover/boat/motorboat_01_mov_lod.pmd"
+
+	lod_dist[0]: 200
+}
+
+mover_model : mover.yachtm1
+{
+	mover_name: "yacht1 mover"
+	model_desc: "/model/mover/boat/yacht1_mov.pmd"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/motorboat_1"
+
+	lods[0]: "/model/mover/boat/yacht1_mov_lod1.pmd"
+
+	lod_dist[0]: 200
+}
+
+mover_model : mover.yachtm3
+{
+	mover_name: "yacht3 mover"
+	model_desc: "/model/mover/boat/yacht3_mov.pmd"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/motorboat_1"
+
+	lods[0]: "/model/mover/boat/yacht3_mov_lod1.pmd"
+
+	lod_dist[0]: 200
+}
+
+#######################################################
+###				ks cement works cooler				###
+#######################################################
+
+mover_model : mover.cool1wc
+{
+	mover_name: "ks cement works cooler mover"
+	model_desc: "/model/building/industrial/ks_cement_works_cooler_mov.pmd"
+
+	model_anim: "/model/building/industrial/ks_cement_works_cooler_mov.pma"
+
+#	lods[0]: "/model/building/industrial/ks_cement_works_cooler_mov_lod1.pmd"
+#	lod_dist[0]: 100
+}
+
+### flags angled (moved from greece) with all states looks ### 
+mover_model : mover.flaganglus
+{
+	mover_name: "flag small angled US"
+	model_anim: "/model/mover/flag_small_angled_us_ani.pma"
+	model_desc: "/model/mover/flag_small_angled_us_mov.pmd"
+}
+
+
 }

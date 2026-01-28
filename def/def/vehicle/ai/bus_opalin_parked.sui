@@ -1,0 +1,110 @@
+traffic_vehicle : traffic.bus_ws_inv.parked
+{
+	accessories[]: .bus_ws_inv.parked.chassis
+	accessories[]: .bus_ws_inv.parked.fwheel
+	accessories[]: .bus_ws_inv.parked.rwheel
+
+	max_speed: 100
+	
+
+	variant[]: traffic.bus_w.parked
+	variant[]: traffic.bus_e.parked
+	
+
+	tags[]: bus
+	tags[]: parked
+
+	vehicle_mass: 12000
+
+	spawn_ratio: 0.1
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .bus_ws_inv.parked.chassis
+{
+	data_path: "/def/vehicle/ai/bus/chassis_wave_inv_parked.sii"
+}
+
+vehicle_wheel_accessory: .bus_ws_inv.parked.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus2.sii"
+}
+
+vehicle_wheel_accessory: .bus_ws_inv.parked.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus2.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.bus_w.parked
+{
+	accessories[]: .bus_ws.parked.chassis
+	accessories[]: .bus_ws.parked.fwheel
+	accessories[]: .bus_ws.parked.rwheel
+
+	tags[]: bus
+	tags[]: parked
+
+	max_speed: 100
+	
+
+	vehicle_mass: 12000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .bus_ws.parked.chassis
+{
+	data_path: "/def/vehicle/ai/bus/chassis_w_parked.sii"
+}
+
+vehicle_wheel_accessory: .bus_ws.parked.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus2.sii"
+}
+
+vehicle_wheel_accessory: .bus_ws.parked.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus2.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.bus_e.parked
+{
+	accessories[]: .bus_e.parked.chassis
+	accessories[]: .bus_e.parked.fwheel
+	accessories[]: .bus_e.parked.rwheel
+
+	max_speed: 100
+	
+	tags[]: bus
+	tags[]: parked
+
+	vehicle_mass: 12000
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .bus_e.parked.chassis
+{
+	data_path: "/def/vehicle/ai/bus/chassis_e_parked.sii"
+}
+
+vehicle_wheel_accessory: .bus_e.parked.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus2.sii"
+}
+
+vehicle_wheel_accessory: .bus_e.parked.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus2.sii"
+}
+

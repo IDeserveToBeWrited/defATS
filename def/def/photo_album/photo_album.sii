@@ -1,0 +1,163 @@
+SiiNunit
+{
+
+@include "landmarks.sui"
+@include "viewpoints.sui"
+@include "wotr.sui"
+@include "cities.sui"
+
+
+photo_album_sheet : .sheet.screenshots
+{
+	name: "@@photo_album_screenshots_tab@@"
+	rows_count: 3
+	columns_count: 5
+	border_top: 0.0
+	border_bottom: 0.0
+	border_lfrg: 0.0
+	padding_h: 11.0
+	padding_v: 2.0
+	content_type: "screenshots"
+}
+
+photo_album_sheet : .sheet.landmarks
+{
+	name: "@@photo_album_landmarks_tab@@"
+	rows_count: 2
+	columns_count: 3
+	border_top: 20.0
+	border_bottom: 00.0
+	border_lfrg: 10.0
+	padding_h: 11.0
+	padding_v: 45.0
+	content_type: "landmarks"
+	content[]: album.landmarks.california
+	content[]: album.landmarks.nevada
+	content[]: album.landmarks.arizona
+	content[]: album.landmarks.new_mexico
+	content[]: album.landmarks.oregon
+	content[]: album.landmarks.washington
+	content[]: album.landmarks.utah
+	content[]: album.landmarks.idaho
+	content[]: album.landmarks.colorado
+	content[]: album.landmarks.wyoming
+	content[]: album.landmarks.montana
+	content[]: album.landmarks.texas
+	content[]: album.landmarks.oklahoma
+	content[]: album.landmarks.kansas
+	content[]: album.landmarks.nebraska
+	content[]: album.landmarks.arkansas
+	content[]: album.landmarks.missouri
+	content[]: album.landmarks.iowa
+	content[]: album.landmarks.louisiana
+}
+
+photo_album_sheet : .sheet.viewpoints
+{
+	name: "@@photo_album_viewpoints_tab@@"
+	rows_count: 2
+	columns_count: 3
+	border_top: 20.0
+	border_bottom: 00.0
+	border_lfrg: 10.0
+	padding_h: 11.0
+	padding_v: 45.0
+	content_type: "viewpoints"
+	content[]: album.viewpoints.california
+#	content[]: album.viewpoints.nevada
+#	content[]: album.viewpoints.arizona
+	content[]: album.viewpoints.new_mexico
+	content[]: album.viewpoints.oregon
+	content[]: album.viewpoints.washington
+	content[]: album.viewpoints.utah
+	content[]: album.viewpoints.idaho
+	content[]: album.viewpoints.colorado
+	content[]: album.viewpoints.wyoming
+	content[]: album.viewpoints.montana
+	content[]: album.viewpoints.texas
+	content[]: album.viewpoints.oklahoma
+	content[]: album.viewpoints.kansas
+	content[]: album.viewpoints.nebraska
+	content[]: album.viewpoints.arkansas
+	content[]: album.viewpoints.missouri
+	content[]: album.viewpoints.iowa
+	content[]: album.viewpoints.louisiana
+}
+
+photo_album_sheet : .sheet.wotr
+{
+	name: "@@photo_album_wotr_tab@@"
+	rows_count: 2
+	columns_count: 4
+	border_top: 50.0
+	border_bottom: 50.0
+	border_lfrg: 10.0
+	padding_h: 10.0
+	padding_v: 50.0
+	content_type: "wotr"
+	content[]: album.wotr.group
+}
+
+
+photo_album_sheet : .sheet.cities
+{
+	name: "@@photo_album_cities_tab@@"
+	rows_count: 3
+	columns_count: 8
+	border_top: 30.0
+	border_bottom: 101.0
+	border_lfrg: 14.5
+	padding_h: 15.0
+	padding_v: 15.0
+	content_type: "cities"
+	content[]: album.cities.group.california
+	content[]: album.cities.group.nevada
+	content[]: album.cities.group.arizona
+	content[]: album.cities.group.new_mexico
+	content[]: album.cities.group.oregon
+	content[]: album.cities.group.washington
+	content[]: album.cities.group.utah
+	content[]: album.cities.group.idaho
+	content[]: album.cities.group.colorado
+	content[]: album.cities.group.wyoming
+	content[]: album.cities.group.montana
+	content[]: album.cities.group.texas
+	content[]: album.cities.group.oklahoma
+	content[]: album.cities.group.kansas
+	content[]: album.cities.group.nebraska
+	content[]: album.cities.group.arkansas
+	content[]: album.cities.group.missouri
+	content[]: album.cities.group.iowa
+	content[]: album.cities.group.louisiana
+}
+
+#photo_album_sheet : .sheet.pointsoi
+#{
+#	name: "@@photo_album_pointsoi_tab@@"
+#	rows_count: 5
+#	columns_count: 7
+#	content_type: "pointsoi"
+#}
+
+#photo_album_sheet : .sheet.historical
+#{
+#	name: "@@photo_album_history_tab@@"
+#	rows_count: 4
+#	columns_count: 7
+#	content_type: "historical"
+#}
+
+photo_album_def : .album.main
+{
+	name: "@@photo_album@@"
+	sheet: 4
+	sheet[0]: .sheet.screenshots
+	sheet[1]: .sheet.landmarks
+	sheet[2]: .sheet.viewpoints
+	sheet[3]: .sheet.cities
+	sheet[4]: .sheet.wotr
+#	sheet[4]: .sheet.pointsoi
+#	sheet[5]: .sheet.historical
+}
+
+}

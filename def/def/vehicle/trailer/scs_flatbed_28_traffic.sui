@@ -2,10 +2,25 @@ traffic_trailer : traffic.trailer.scs_flat28
 {
 	accessories[]: .traffic.trailer.scs_flat28.chassis
 	accessories[]: .traffic.trailer.scs_flat28.rwheel
+	accessories[]: .traffic.trailer.scs_flat28.body
 
 	cargo_mass: 8000
 
 	spawn_ratio: 0.5
+	
+	tags[]: low
+	tags[]: flatbed
+	tags[]: short
+	tags[]: empty
+	tags[]: construct
+
+	cargoes[]: lumber_p
+	cargoes[]: lumber_b
+	cargoes[]: lumber
+	cargoes[]: largetubes
+	cargoes[]: house_pref
+
+trailer_definition: trailer_def.scs.flatbed.single_28.flatbed
 }
 
 vehicle_accessory: .traffic.trailer.scs_flat28.chassis
@@ -17,4 +32,8 @@ vehicle_wheel_accessory: .traffic.trailer.scs_flat28.rwheel
 {
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.scs_flat28.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_28.sii"
 }

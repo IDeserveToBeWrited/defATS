@@ -9,9 +9,6 @@ traffic_vehicle : traffic.camper
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	vehicle_mass: 2700
 
 	spawn_ratio: 0.1
@@ -27,7 +24,17 @@ traffic_vehicle : traffic.camper
 	color[]: (0.8713, 0.8631, 0.8227) #white
 	color[]: (0.2831, 0.0012, 0.0065) #red
 
+	spawn_condition[]: .traffic.camper.spawn.condition
+
 @include "drivers_generic.sui"
+}
+traffic_spawn_condition: .traffic.camper.spawn.condition
+{
+	type: area
+	str_param[]: "!"
+	str_param[]: "company"
+	str_param[]: "commercial"
+	str_param[]: "industrial"
 }
 
 vehicle_accessory: .camper.chassis

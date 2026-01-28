@@ -1,0 +1,57 @@
+traffic_trailer : traffic.trailer.pr_bril_d48
+{
+	accessories[]: .traffic.trailer.pr_bril_d48.chassis
+	accessories[]: .traffic.trailer.pr_bril_d48.paint_job
+	accessories[]: .traffic.trailer.pr_bril_d48.rwheel0
+	accessories[]: .traffic.trailer.pr_bril_d48.rwheel1
+	accessories[]: .traffic.trailer.pr_bril_d48.rwheel2
+	accessories[]: .traffic.trailer.pr_bril_d48.body
+	
+	cargo_mass: 16000
+	
+	base: traffic.trailer.scs_drop48
+
+	cargoes[]: digger500
+	cargoes[]: glass
+	cargoes[]: roadroller
+	cargoes[]: lumber_p
+	cargoes[]: lumber_b
+	cargoes[]: lumber
+	cargoes[]: largetubes
+	cargoes[]: house_pref
+
+trailer_definition: trailer_def.prestige.bril_drop.single_48_3.dropdeck_alw
+}
+
+vehicle_accessory: .traffic.trailer.pr_bril_d48.chassis
+{
+	data_path: "/def/vehicle/trailer/prestige_brilliance/dropdeck.sii"
+}
+
+vehicle_paint_job_accessory : .traffic.trailer.pr_bril_d48.paint_job
+{
+	data_path: "/def/vehicle/trailer_owned/prestige.bril_drop/paint_job/color.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.pr_bril_d48.rwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.pr_bril_d48.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.pr_bril_d48.rwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_accessory: .traffic.trailer.pr_bril_d48.body
+{
+    	data_path: "/def/vehicle/trailer/prestige_brilliance/accessory/drop_48.sii"
+}

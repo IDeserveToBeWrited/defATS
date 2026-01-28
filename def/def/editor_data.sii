@@ -2,8 +2,8 @@ SiiNunit
 {
 editor_data : .edit_data {
 
-	autosave_interval: 10 #minutes
-	autosave_notify_interval: 6 #seconds
+	autosave_interval: 30 #minutes
+	autosave_notify_interval: 15 #seconds
 
 	startpos_model: "/model/measure_truck_and_trailer.pmd"
 	startpos_rotate_speed: 2.0
@@ -11,9 +11,25 @@ editor_data : .edit_data {
 	stamp_count_warning: 40
 	road_length_warning: 330
 	draw_pin_threshold: 0.5
-	background_map_height : -35
 
-	
+
+	grid_sizes[]: 0.01
+	grid_sizes[]: 0.1
+	grid_sizes[]: 0.5
+	grid_sizes[]: 1.0
+	grid_sizes[]: 1.8
+	grid_sizes[]: 2.0
+	grid_sizes[]: 2.25
+	grid_sizes[]: 3.6
+	grid_sizes[]: 4.5
+	grid_sizes[]: 5.0
+	grid_sizes[]: 10.0
+	grid_sizes[]: 20.0
+	grid_sizes[]: 50.0
+	grid_sizes[]: 100.0
+	grid_sizes[]: 200.0
+	grid_sizes[]: 500.0
+
 	traffic_use_mph: true
 
 	sub_mode_types[]: 39 #bezier patch"
@@ -25,7 +41,8 @@ editor_data : .edit_data {
 	sub_mode_types[]: 8  #cut_plane_item"
 	sub_mode_types[]: 46 #cutscene_item"
 	sub_mode_types[]: 43 #far model"
-	sub_mode_types[]: 19 #ferry_item"
+	sub_mode_types[]: 19 #ferry_item
+	sub_mode_types[]: 49 #gate_item"
 #	sub_mode_types[]: 13 #hinge_item"
 	sub_mode_types[]: 47 #hookup_item"
 	sub_mode_types[]: 42 #map_area_item"
@@ -43,6 +60,14 @@ editor_data : .edit_data {
 	sub_mode_types[]: 34 #trigger_item"
 	sub_mode_types[]: 48 #visibility_area_item"
 
+@include "editor_data_custom.sui"
+ 
+	bcg_map_name[]: "/map/usa.mbd"
+	bcg_material[]: "/material/editor/usa.mat"
+	bcg_size_x[]: 270000
+	bcg_size_y[]: 208800
+	bcg_offset_x[]: -1250
+	bcg_offset_y[]: -4050
 
 	map_import_offset: (-43402, 0, -28089)
 
@@ -55,18 +80,19 @@ editor_data : .edit_data {
 	source_name[]: "arizona"
 	source_tag[]: "az"
 
-	bcg_map_name[]: "/map/usa.mbd"
-	bcg_material[]: "/material/editor/usa.mat"
-	bcg_size_x[]: 270000
-	bcg_size_y[]: 208800
-	bcg_offset_x[]: -1250
-	bcg_offset_y[]: -4050
+
+
+	highlight_colors[]: 0x23009DFF
+	highlight_color_names[]: "Orange"
+	highlight_colors[]: 0x23F18035
+	highlight_color_names[]: "Blue"
+
 
 # For INTERNAL members: Please for added custom map use "/mod_internal/base/def/editor_data_custom.sii".
 # This one below going to be overriden.
 
 # For MODERS: Custom maps should be added to file below.
-@include "editor_data_custom.sui"
+
 
 
 }                         

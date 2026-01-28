@@ -6,11 +6,17 @@ traffic_trailer : traffic.trailer.scs_ref2
 	accessories[]: .scs_ref2.rwheel
 	accessories[]: .scs_ref2.paint_job
 	accessories[]: .scs_ref2.trlr_cables
-	accessories[]: .scs_ref2.cargo
 
 	cargo_mass: 8000
 	
 	company_paint_job: true
+
+	tags[]: high
+	tags[]: box
+	tags[]: reefer
+	tags[]: double
+	tags[]: superlong
+
 	
 	slave_trailer: .scs_ref2.dolly
 }
@@ -36,10 +42,6 @@ vehicle_addon_accessory: .scs_ref2.trlr_cables
 	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer_traffic.sii"
 }
 
-vehicle_accessory: .scs_ref2.cargo
-{
-	data_path: "/def/vehicle/trailer_cargo/scs_box/reefer_indicator.sii"
-}
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -77,7 +79,6 @@ traffic_trailer : .scs_ref2.second
 	accessories[]: .scs_ref2.second.chassis
 	accessories[]: .scs_ref2.second.rwheel
 	accessories[]: .scs_ref2.second.paint_job
-	accessories[]: .scs_ref2.second.cargo
 	
 	cargo_mass: 8000
 	
@@ -99,9 +100,4 @@ vehicle_wheel_accessory: .scs_ref2.second.rwheel
 vehicle_paint_job_accessory: .scs_ref2.second.paint_job
 {
 	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
-}
-
-vehicle_accessory: .scs_ref2.second.cargo
-{
-	data_path: "/def/vehicle/trailer_cargo/scs_box/reefer_indicator.sii"
 }

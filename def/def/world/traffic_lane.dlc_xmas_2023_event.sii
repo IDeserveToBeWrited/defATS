@@ -1,0 +1,28 @@
+SiiNunit
+{
+
+traffic_lane_data : traffic_lane.rail.train.xmas
+{
+	speed_class: rail_train
+
+	traffic_rules[]: traffic_rule.c_train_only
+	traffic_rules[]: traffic_rule.s_train_x
+	traffic_rules[]: traffic_rule.limit_80
+}
+
+traffic_lane_data : traffic_lane.road.local.xmas
+{
+	speed_class: local_road
+
+	rank: 30
+
+	traffic_rules[]: traffic_rule.road
+	traffic_rules[]: traffic_rule.overtake_alw	# Allow overtaking in opposite lane
+#	traffic_rules[]: traffic_rule.uneven_road
+	traffic_rules[]: traffic_rule.custom_only
+	traffic_rules[]: traffic_rule.s_car_x
+	traffic_rules[]: traffic_rule.limit_30
+	traffic_rules[]: traffic_rule.private_area
+}
+
+}

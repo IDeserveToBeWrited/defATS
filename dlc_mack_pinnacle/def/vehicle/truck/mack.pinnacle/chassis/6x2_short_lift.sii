@@ -1,0 +1,55 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2s_l.mack.pinnacle.chassis
+{
+	name: "Short 6x2 @@midlift@@"
+	price: 20200
+	unlock: 2
+	info[]: "6x2 @@midlift@@"
+	info[]: "72/50 @@gal@@"
+	icon: "mack_pinnacle/chs_6x2_lift_dcb"
+	part_type: factory
+
+	model: "/vehicle/truck/mack_pinnacle/chassis/chs_6x2_lift_dcb.pmd"
+	collision: "/vehicle/truck/mack_pinnacle/chassis/chs_6x2_lift_dcb.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/mack_pinnacle/ui_shdw_dcb.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/mack_pinnacle/ui_shadow/ui_shdw_shrt.pmd"
+
+	tank_size: 546
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+
+	liftable_axle[]: false
+	liftable_axle[]: true
+	liftable_axle[]: false
+
+	kerb_weight[]: 4082	# 9000lb
+	kerb_weight[]: 1615	# 3560lb
+	kerb_weight[]: 1216	# 2680lb
+
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/cabin/day.sii"
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/accessory/tank/chrome_72_50.sii"
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/paint_job/color1.sii"
+
+	conflict_with[]: "s70.mack.pinnacle.cabin"
+	conflict_with[]: "s48.mack.pinnacle.cabin"
+
+	lamp_setup: "/def/vehicle/truck/mack.pinnacle/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

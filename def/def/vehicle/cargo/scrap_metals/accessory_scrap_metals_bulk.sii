@@ -1,0 +1,47 @@
+SiiNunit
+{
+accessory_cargo_data : .cargo
+{ 
+	variant: default
+	look: default
+	dynamic_cargo_data: dyn.cargo.data.scrap_metals
+}
+
+dynamic_cargo_data: dyn.cargo.data.scrap_metals
+{
+	type: mover_bulk
+
+	material_path: "/umatlib/vehicle/cargo/scrap_metals.mat" #placeholder
+
+	loading_sound: "/sound/world/sounds/vehicles.bank#artificial/vehicles/loading_scrap_1"
+
+	pile_model: "/vehicle/machine/material_handler/scrap_mov.pmd"
+
+	# If using static model, each variant needs: grab type, model variant, model radius (fill in even if not applicable)
+	#
+	# One grab type can have multiple model variants, in such a case the grab pile variant will be chosen at random
+	#
+
+	grab_types[]: grabber
+	variants[]: open_v1
+	variant_radius[]: 1.0 # invented number, but it sits with grabber handle (see dynamic_cargo_grab_prop.sii)
+
+	grab_types[]: grabber
+	variants[]: open_v2
+	variant_radius[]: 0.9	
+
+	grab_types[]: grabber
+	variants[]: closed_v1
+	variant_radius[]: 0.25
+
+	grab_types[]: magnet
+	variants[]: magnet_v1
+	variant_radius[]: 0.5 # not applicable for magnet (it does not close)
+
+	grab_types[]: magnet
+	variants[]: magnet_v2
+	variant_radius[]: 0.5  # not applicable for magnet
+}
+
+}
+

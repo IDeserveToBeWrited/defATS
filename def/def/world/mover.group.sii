@@ -26,49 +26,87 @@ SiiNunit
 #                  |/
 # ATS, ETS common
 
+###################
+#### FISHERMAN ####
+###################
+
+### idle ###########################################################################
+mover_model_group : mover.fisherman
+{
+	mover_name: "fisherman standing"
+	desc_tags[]: fisherman
+	desc_tags[]: norod
+	anim_tags[]: man
+	anim_tags[]: idle
+	anim_tags[]: handback
+	pedestrian: true
+}
+### fishing ###########################################################################
+mover_model_group : mover.fish_rod
+{
+	mover_name: "fisherman fishing stand"
+	desc_tags[]: fisherman
+	desc_tags[]: rod
+	anim_tags[]: man
+	anim_tags[]: stand
+	anim_tags[]: fishing
+	pedestrian: true
+}
+### boat fishing ###########################################################################
+mover_model_group : mover.fish_boat
+{
+	mover_name: "fisherman fishing boat"
+	desc_tags[]: fisherman
+	desc_tags[]: boat
+	anim_tags[]: man
+	anim_tags[]: sit
+	anim_tags[]: fishing
+	pedestrian: true
+}
 
 ### COW ###
 
-mover_model_group : mover.cow_all
-{
-	mover_name: "cow all"
-	desc_tags[]: cow
-	anim_tags[]: cow
-}
-mover_model_group : mover.cow_eat
-{
-	mover_name: "cow eat"
-	desc_tags[]: cow
-	anim_tags[]: cow
-	anim_tags[]: eating
-}
-mover_model_group : mover.cows_idle
-{
-	mover_name: "cow idle all"
-	desc_tags[]: cow
-	anim_tags[]: cow
-	anim_tags[]: idle
-}
-mover_model_group : mover.calfs_idle
-{
-	mover_name: "calfs idle all"
-	desc_tags[]: calf
-	anim_tags[]: idle
-}
-mover_model_group : mover.cow_we_all
-{
-	mover_name: "cow walking and eating"
-	desc_tags[]: cow
-	anim_tags[]: cow
-	anim_tags[]: eating
-}
-#################################### COWS_HERD_ANIM
-mover_model_group : mover.cows_herd
-{
-	mover_name: "anim cows herd"
-	desc_tags[]: cows_herd
-	anim_tags[]: cows_herd
-}
+#mover_model_group : mover.cow_all
+#{
+#	mover_name: "cow all"
+#	desc_tags[]: cow
+#	anim_tags[]: cow
+#}
+#mover_model_group : mover.cow_eat
+#{
+#	mover_name: "cow eat"
+#	desc_tags[]: cow
+#	anim_tags[]: cow
+#	anim_tags[]: eating
+#}
+#mover_model_group : mover.cows_idle
+#{
+#	mover_name: "cow idle all"
+#	desc_tags[]: cow
+#	anim_tags[]: cow
+#	anim_tags[]: idle
+#}
+#mover_model_group : mover.calfs_idle
+#{
+#	mover_name: "calfs idle all"
+#	desc_tags[]: calf
+#	anim_tags[]: cow
+#	anim_tags[]: idle
+#}
+#mover_model_group : mover.cow_we_all
+#{
+#	mover_name: "cow walking and eating"
+#	desc_tags[]: cow
+#	anim_tags[]: cow
+#	anim_tags[]: w_eating
+#}
+##################################### COWS_HERD_ANIM
+#mover_model_group : mover.cows_herd
+#{
+#	mover_name: "anim cows herd"
+#	desc_tags[]: cows_herd
+#	anim_tags[]: cows_herd
+#}
 
 
 ### HORSE ###
@@ -83,9 +121,9 @@ mover_model_group : mover.horse_all
 mover_model_group : mover.horse_rod
 {
 	mover_name: "rodeo horse"
-	desc_tags[]: horse
+	desc_tags[]: horser
     desc_tags[]: rodeo
-	anim_tags[]: horse
+	anim_tags[]: horser
     anim_tags[]: rodeo
 }
 
@@ -431,7 +469,7 @@ mover_model_group : mover.servidle_v3
 	mover_name: "service idle all new"
 	desc_tags[]: man
 	desc_tags[]: service_v3
-	anim_tags[]: man
+#	anim_tags[]: man
 	anim_tags[]: n_idle
 	pedestrian: true
 }
@@ -440,7 +478,7 @@ mover_model_group : mover.servlean_v3
 	mover_name: "service leaning all new"
 	desc_tags[]: man
 	desc_tags[]: service_v3
-	anim_tags[]: man
+#	anim_tags[]: man
 	anim_tags[]: n_leaning
 	pedestrian: true
 }
@@ -1154,6 +1192,80 @@ mover_model_group : mover.ac_willy
 	anim_tags[]: ac_willy
 }
 
+### PLANES ACTIONS ###
+
+mover_model_group : mover.a_737_la
+{
+	mover_name: "737 landing action"
+	desc_tags[]: ac_737_l
+	anim_tags[]: ac_737_l
+}
+
+mover_model_group : mover.a_737_ta
+{
+	mover_name: "737 takeoff action"
+	desc_tags[]: ac_737_t
+	anim_tags[]: ac_737_t
+}
+
+mover_model_group : mover.a_747_la
+{
+	mover_name: "747 landing action"
+	desc_tags[]: ac_747_l
+	anim_tags[]: ac_747_l
+}
+
+mover_model_group : mover.a_747_ta
+{
+	mover_name: "747 takeoff action"
+	desc_tags[]: ac_747_t
+	anim_tags[]: ac_747_t
+}
+
+### CRANE PORT LAND ###
+
+mover_model_group : mover.ma_cr_port
+{
+	mover_name: "Crane port land"
+	desc_tags[]: machine
+	desc_tags[]: crane
+	desc_tags[]: port
+	desc_tags[]: land
+	desc_tags[]: generic
+	action_tags[]: machine
+	action_tags[]: crane
+	action_tags[]: port
+	action_tags[]: land
+}
+
+
+### CRANE PORT SHIP ###
+
+mover_model_group : mover.ma_cr_ship
+{
+	mover_name: "Crane port ship"
+	desc_tags[]: machine
+	desc_tags[]: crane
+	desc_tags[]: port
+	desc_tags[]: ship
+	desc_tags[]: generic
+	action_tags[]: machine
+	action_tags[]: crane
+	action_tags[]: port
+	action_tags[]: ship
+}
+
+
+### CONTAINER OF CRANE PORT ###
+
+mover_model_group : mover.pr_cr_port
+{
+	mover_name: "Crane port container"
+	desc_tags[]: prop
+	desc_tags[]: crane
+	desc_tags[]: port
+	desc_tags[]: container
+}
 
 #   ____ _               _      _ ___        ___                     _                    _     _ _ _
 #  / ___| |__   ___  ___| | __ ( | ) \      / / |__   ___ _ __ ___  | |_ ___     __ _  __| | __| ( | )
@@ -1192,4 +1304,140 @@ mover_model_group : mover.mixerman
 	anim_tags[]: mixerman
 	pedestrian: false
 }
+
+####################################################################
+####					SEA LION for PIER39 S.F.				####
+####################################################################
+
+mover_model_group : mover.sealm01
+{
+	mover_name: "sea lion 01"
+	desc_tags[]: sealion
+	anim_tags[]: sealion
+	anim_tags[]: scream1
+	pedestrian: false
+}
+
+mover_model_group : mover.sealm02
+{
+	mover_name: "sea lion 02"
+	desc_tags[]: sealion
+	anim_tags[]: sealion
+	anim_tags[]: scream2
+	pedestrian: false
+}
+
+mover_model_group : mover.sealm03
+{
+	mover_name: "sea lion 03"
+	desc_tags[]: sealion
+	anim_tags[]: sealion
+	anim_tags[]: scream3
+	pedestrian: false
+}
+
+####################################################################
+####						ALLIGATORS							####
+####################################################################
+
+mover_model_group : mover.alliw
+{
+	mover_name: "alligator in water"
+	desc_tags[]: allig
+	anim_tags[]: allig
+	anim_tags[]: wat
+	pedestrian: true
+}
+
+mover_model_group : mover.allis
+{
+	mover_name: "alligator on surface"
+	desc_tags[]: allig
+	anim_tags[]: allig
+	anim_tags[]: sur
+	pedestrian: true
+}
+
+mover_model_group : mover.allist
+{
+	mover_name: "alligator static"
+	desc_tags[]: allis
+	pedestrian: false
+}
+
+
+mover_model_group : mover.portl_cr1
+{
+	mover_name: "portal_crane_anim"
+    desc_tags[]: portal_cr
+    anim_tags[]: portal_cr
+}
+
+mover_model_group : mover.hall_cran
+{
+	mover_name: "hall crane coil"
+	desc_tags[]: hall
+	desc_tags[]: crane
+	anim_tags[]: coil
+}
+
+####################################################################
+####						PHEASANTS							####
+####################################################################
+
+mover_model_group : mover.pheasfly
+{
+	mover_name: "pheasant male flying"
+	desc_tags[]: pheasant
+	desc_tags[]: fly
+	anim_tags[]: pheasant
+	anim_tags[]: male
+	anim_tags[]: fly
+	pedestrian: false
+}
+
+mover_model_group : mover.pheasmw
+{
+	mover_name: "pheasant male walking"
+	desc_tags[]: pheasant
+	desc_tags[]: male
+	anim_tags[]: pheasant
+	anim_tags[]: male
+	anim_tags[]: walk
+	pedestrian: false
+}
+
+mover_model_group : mover.pheasmr
+{
+	mover_name: "pheasant male running"
+	desc_tags[]: pheasant
+	desc_tags[]: male
+	anim_tags[]: pheasant
+	anim_tags[]: male
+	anim_tags[]: run
+	pedestrian: false
+}
+
+mover_model_group : mover.pheafw
+{
+	mover_name: "pheasant female walking"
+	desc_tags[]: pheasant
+	desc_tags[]: female
+	anim_tags[]: pheasant
+	anim_tags[]: female
+	anim_tags[]: walk
+	pedestrian: false
+}
+
+mover_model_group : mover.pheasfr
+{
+	mover_name: "pheasant female running"
+	desc_tags[]: pheasant
+	desc_tags[]: female
+	anim_tags[]: pheasant
+	anim_tags[]: female
+	anim_tags[]: run
+	pedestrian: false
+}
+
 }

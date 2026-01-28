@@ -1,0 +1,142 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Iowa --
+
+# Discover at least 8 cities in Iowa.
+
+achievement_visit_city_data : .achievement.ia_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	country_name: iowa
+	target: 8
+
+	achievement_name: ia_visit_cities
+
+	steam_progress_id: "ia_visit_cities-progress"
+	steam_id: ia_visit_cities
+}
+
+# View cutscenes from at least 8 viewpoints in Iowa.
+
+achievement_trigger_data : .achievement.ia_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ia_cutscenes
+	target: 8
+
+	achievement_name: ia_cutscenes
+
+	steam_progress_id: "ia_cutscenes-progress"
+	steam_id: ia_cutscenes
+}
+
+# Cross the iconic bridge in Iowa.
+
+achievement_trigger_data : .achievement.ia_bridge
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ia_bridge
+	target: 1
+
+	achievement_name: ia_bridge
+
+	steam_id: ia_bridge
+}
+
+# Complete a live pigs cargo delivery from two farms in Iowa.
+
+achievement_delivery : .achievement.ia_live_pigs
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ia_live_pigs.condition
+	target: 2
+
+	achievement_name: ia_live_pigs
+
+	steam_progress_id: "ia_live_pigs-progress"
+	steam_id: ia_live_pigs
+}
+
+achievement_delivery_sequence : .ia_live_pigs.condition
+{
+	list[]: .ia_live_pigs.council_bluf.evg_frm
+	list[]: .ia_live_pigs.fort_dodge.evg_frm
+	list[]: .ia_live_pigs.iowa_city.gp_farm
+}
+
+achievement_delivery_each : .ia_live_pigs.council_bluf.evg_frm
+{
+	list[]: .ia_live_pigs.council_bluf.evg_frm.cargo
+	list[]: .ia_live_pigs.council_bluf.evg_frm.source
+}
+
+achievement_delivery_cargo : .ia_live_pigs.council_bluf.evg_frm.cargo
+{
+	cargo_name: live_pigs
+}
+
+achievement_delivery_company : .ia_live_pigs.council_bluf.evg_frm.source
+{
+	role: source
+	company_name: evg_frm
+	city_name: council_bluf
+}
+
+achievement_delivery_each : .ia_live_pigs.fort_dodge.evg_frm
+{
+	list[]: .ia_live_pigs.fort_dodge.evg_frm.cargo
+	list[]: .ia_live_pigs.fort_dodge.evg_frm.source
+}
+
+achievement_delivery_cargo : .ia_live_pigs.fort_dodge.evg_frm.cargo
+{
+	cargo_name: live_pigs
+}
+
+achievement_delivery_company : .ia_live_pigs.fort_dodge.evg_frm.source
+{
+	role: source
+	company_name: evg_frm
+	city_name: fort_dodge
+}
+
+achievement_delivery_each : .ia_live_pigs.iowa_city.gp_farm
+{
+	list[]: .ia_live_pigs.iowa_city.gp_farm.cargo
+	list[]: .ia_live_pigs.iowa_city.gp_farm.source
+}
+
+achievement_delivery_cargo : .ia_live_pigs.iowa_city.gp_farm.cargo
+{
+	cargo_name: live_pigs
+}
+
+achievement_delivery_company : .ia_live_pigs.iowa_city.gp_farm.source
+{
+	role: source
+	company_name: gp_farm
+	city_name: iowa_city
+}
+
+}

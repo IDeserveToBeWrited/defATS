@@ -1,0 +1,45 @@
+SiiNunit
+{
+accessory_interior_data	: day_to.volvo.vnl2018.interior
+{
+	name: "Touring"
+	price: 20250
+	unlock: 10
+	icon: "truck/volvo_vnl2018/interior/int_tour"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2018/interior/model/day.pmd"
+	animated_model: "/vehicle/truck/volvo_vnl2018/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/volvo_vnl2018/interior/model/day.pmc"
+	look: Default
+	variant: touring
+
+	suitable_for[]: "day.volvo.vnl2018.cabin"
+
+	ext_model: "/vehicle/truck/volvo_vnl2018/interior/external/day.pmd"
+	ext_look: touring
+
+	show_chassis_rear: true
+
+@include "animations.sui"
+
+@include "int_shadow_day.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .volvo.vnl2018.r.pane.front
+	glass_panes[]: .volvo.vnl2018.r.pane.close
+	glass_panes[]: .volvo.vnl2018.r.pane.far
+	glass_panes[]: .volvo.vnl2018.r.pane.back_day
+
+# @include "seat.sui"
+@include "mirrors.sui"
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_day.sui"
+@include "sound_effects_units.sui"
+}

@@ -1,12 +1,63 @@
 SiiNunit
 {
+
+mover_model : mover.knuckb
+{
+	mover_name: "knuckle_boom_loading"
+	model_desc: "/vehicle/trailer/knuckle_boom/mover/knuckle_boom_mov.pmd"
+	model_anim: "/vehicle/trailer/knuckle_boom/mover/knuckle_boom_ani.pma"
+	model_coll: "/vehicle/trailer/knuckle_boom/mover/knuckle_boom_mov.pmc"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/harvestor_1"
+	sound_max_dist: 20
+}
+
+mover_model : mover.knuckbb
+{
+	mover_name: "knuckle_boom_belt"
+	model_desc: "/vehicle/trailer/knuckle_boom/mover/knuckle_boom_mov.pmd"
+	model_anim: "/vehicle/trailer/knuckle_boom/mover/knuckle_boom_belt_ani.pma"
+	model_coll: "/vehicle/trailer/knuckle_boom/mover/knuckle_boom_mov.pmc"
+}
+
+mover_model : mover.logloadanim
+{
+	# passive log loader animated part
+	mover_name: "log_loader_loading_anim"
+	model_desc: "/vehicle/share/models/log_loader/mover/log_loader_mov.pmd"
+	model_anim: "/vehicle/share/models/log_loader/mover/log_loader_ani.pma"
+	model_coll: "/vehicle/share/models/log_loader/mover/log_loader_mov.pmc"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/harvestor_1"
+	sound_max_dist: 200
+}
+
+mover_model : mover.logload
+{
+	# passive log loader with base as model
+	mover_name: "log_loader_anim"
+	model_desc: "/vehicle/share/models/log_loader/log_loader_anim_scene.pmd"
+}
+
 mover_model : mover.logger
 {
 	mover_name: "logger"
 	model_desc: "/model/animated/log_grabber/log_grabber.pmd"
 	model_anim: "/model/animated/log_grabber/log_grabber.pma"
 	model_coll: "/model/animated/log_grabber/log_grabber.pmc"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/harvestor_1"
+	sound_max_dist: 200
 }
+
+mover_model : mover.logger1
+
+{
+	mover_name: "logger_anim_loading - do_not_use"
+	model_desc: "/model/animated/log_grabber/log_grabber1.pmd"
+	model_anim: "/model/animated/log_grabber/log_grabber1_anim.pma"
+	model_coll: "/model/animated/log_grabber/log_grabber1.pmc"
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/harvestor_1"
+	sound_max_dist: 200
+}
+
 mover_model : mover.airship_r
 {
 	mover_name: "airshp_r"
@@ -122,7 +173,7 @@ mover_model : mover.bell
 	model_desc: "/model/aircraft/bell/bell.pmd"
 	model_anim: "/model/aircraft/bell/bell.pma"
 	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
-	sound_max_dist: 100
+	sound_max_dist: 200
 }
 
 mover_model : mover.cessna_toff
@@ -130,8 +181,8 @@ mover_model : mover.cessna_toff
 	mover_name: "cessna takeoff"
 	model_desc: "/model/aircraft/cessna/cessna_anim.pmd"
 	model_anim: "/model/aircraft/cessna/cesna_takeoff.pma"
-#	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
-#	sound_max_dist: 100
+	sound_path[]: "/sound/world/mover.bank#mover/bi_plane_01"
+	sound_max_dist: 400
 
 	lods[0]: "/model/aircraft/cessna/cessna_anim_lod1.pmd"
 	lods[1]: "/model/aircraft/cessna/cessna_anim_lod2.pmd"
@@ -144,8 +195,8 @@ mover_model : mover.cessna_land
 	mover_name: "cessna landing"
 	model_desc: "/model/aircraft/cessna/cessna_anim.pmd"
 	model_anim: "/model/aircraft/cessna/cesna_landing.pma"
-#	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
-#	sound_max_dist: 100
+	sound_path[]: "/sound/world/mover.bank#mover/bi_plane_01"
+	sound_max_dist: 400
 
 	lods[0]: "/model/aircraft/cessna/cessna_anim_lod1.pmd"
 	lods[1]: "/model/aircraft/cessna/cessna_anim_lod2.pmd"
@@ -158,8 +209,8 @@ mover_model : mover.cessna_fly
 	mover_name: "cessna flying"
 	model_desc: "/model/aircraft/cessna/cessna_anim.pmd"
 	model_anim: "/model/aircraft/cessna/cesna_flying.pma"
-#	sound_path[]: "/sound/world/mover.bank#mover/heli_middle"
-#	sound_max_dist: 100
+	sound_path[]: "/sound/world/mover.bank#mover/bi_plane_01"
+	sound_max_dist: 400
 
 	lods[0]: "/model/aircraft/cessna/cessna_anim_lod1.pmd"
 	lods[1]: "/model/aircraft/cessna/cessna_anim_lod2.pmd"
@@ -202,6 +253,8 @@ mover_model : mover.towingship2
 
 	lod_dist[0]: 100
 	lod_dist[1]: 300
+	
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/tugboat_1"
 
 }
 mover_model : mover.lower
@@ -216,6 +269,8 @@ mover_model : mover.lower
 	lod_dist[0]: 100
 	lod_dist[1]: 300
 
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/tugboat_1"
+	
 }
 
 mover_model : mover.monorail
@@ -230,5 +285,177 @@ mover_model : mover.cable_sf
 	model_desc: "/model/train/cablecar/cablecar.pmd"
 }
 
+mover_model : mover.pushboat
+{
+	mover_name: "pushboat"
+	model_desc: "/vehicle/ship/pushboat.pmd"
+
+	lods[0]: "/vehicle/ship/pushboat_lod1.pmd"
+
+	lod_dist[0]: 120
+	
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/tugboat_1"
+}
+
+mover_model : mover.latugb
+{
+	mover_name: "la tug boat barge"
+	model_desc: "/vehicle/ship/la_mover/la_tug_boat_barge.pmd"
+
+	lods[0]: "/vehicle/ship/la_mover/la_tug_boat_barge_lod1.pmd"
+
+	lod_dist[0]: 120
+	
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/tugboat_1"
+}
+
+mover_model : mover.tow_tr
+{
+	mover_name: "tow tractor"
+	model_desc: "/vehicle/car/ks_tow_tractor/static/tow_tractor.pmd"
+
+	lods[0]: "/vehicle/car/ks_tow_tractor/static/tow_tractor_lod1.pmd"
+	lods[1]: "/vehicle/car/ks_tow_tractor/static/tow_tractor_lod2.pmd"
+	lods[2]: "/vehicle/car/ks_tow_tractor/static/tow_tractor_lod3.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 80
+	lod_dist[2]: 120
+}
+
+mover_model : mover.ar_dumper
+{
+	mover_name: "articulated dumper"
+	model_desc: "/model/construction/articulated_dumper/articulated_dumper.pmd"
+}
+
+mover_model : mover.rlcar_mov
+{
+	mover_name: "railcar mover"
+	model_desc: "/vehicle/railcar/railcar_mover/static/railcar_mover.pmd"
+	
+	lods[0]: "/vehicle/railcar/railcar_mover/static/railcar_mover_lod1.pmd"
+	lods[1]: "/vehicle/railcar/railcar_mover/static/railcar_mover_lod2.pmd"
+	lods[2]: "/vehicle/railcar/railcar_mover/static/railcar_mover_lod3.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 80
+	lod_dist[2]: 120
+}
+
+mover_model : mover.crawler
+{
+	mover_name: "crawler"
+	model_desc: "/model/parked_cars/static/crawler/crawler_mov.pmd"
+
+
+	lods[0]: "/model/parked_cars/static/crawler/crawler_mov_lod1.pmd"
+	lods[1]: "/model/parked_cars/static/crawler/crawler_mov_lod2.pmd"
+
+	lod_dist[0]: 80
+	lod_dist[1]: 130
+}
+
+mover_model : mover.forklift
+{
+	mover_name: "forklift"
+	model_desc: "/model/construction/forklift/forklift_mov.pmd"
+
+
+	lods[0]: "/model/construction/forklift/forklift_mov_lod1.pmd"
+	lods[1]: "/model/construction/forklift/forklift_mov_lod2.pmd"
+	lods[2]: "/model/construction/forklift/forklift_mov_lod3.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 100
+	lod_dist[2]: 150
+}
+
+mover_model : mover.vhcl_0j000
+{
+	mover_name: "harvester forest"
+	model_desc: "/model/animated/harvester_forest/harvester_forest.pmd"
+}
+
+mover_model : mover.vhcl_0j001
+{
+	mover_name: "forwarder"
+	model_desc: "/model/animated/forwarder/forwarder.pmd"
+}
+
+mover_model : mover.vhcl_0j002
+{
+	mover_name: "wood chipper"
+	model_desc: "/model/animated/tub_grinder/tub_grinder.pmd"
+}
+
+mover_model : mover.vhcl_0j003
+{
+	mover_name: "head light"
+	model_desc: "/vehicle/share/models/log_loader/head_light.pmd"
+}
+
+mover_model : mover.almond_shkr
+{
+	mover_name: "almond shaker mover"
+	model_desc: "/vehicle/machine/almond_shaker/static/almond_shaker_static.pmd"
+
+	lods[0]: "/vehicle/machine/almond_shaker/static/almond_shaker_static_lod1.pmd"
+	lods[1]: "/vehicle/machine/almond_shaker/static/almond_shaker_static_lod2.pmd"
+	lods[2]: "/vehicle/machine/almond_shaker/static/almond_shaker_static_lod3.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 80
+	lod_dist[2]: 120
+}
+
+mover_model : mover.almond_swpr
+{
+	mover_name: "almond sweeper mover"
+	model_desc: "/vehicle/machine/almond_sweeper/static/almond_sweeper_static.pmd"
+
+	lods[0]: "/vehicle/machine/almond_sweeper/static/almond_sweeper_static_lod1.pmd"
+	lods[1]: "/vehicle/machine/almond_sweeper/static/almond_sweeper_static_lod2.pmd"
+	lods[2]: "/vehicle/machine/almond_sweeper/static/almond_sweeper_static_lod3.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 80
+	lod_dist[2]: 120
+}
+
+mover_model : mover.loco_bald
+{
+	mover_name: "locomotive baldwin mover"
+	model_desc: "/vehicle/railcar/locomotive_baldwin/static/static_lod2.pmd"
+	sound_path[]: "/sound/world/mover.bank#mover/diesel_train_1"
+	sound_min_dist: 20
+	sound_max_dist: 200
+
+	lods[0]: "/vehicle/railcar/locomotive_baldwin/static/static_lod3.pmd"
+	lods[1]: "/vehicle/railcar/locomotive_baldwin/static/static_lod4.pmd"
+
+	lod_dist[0]: 60
+	lod_dist[1]: 120
+
+}
+
+##################
+# amish carriage #
+##################
+
+mover_model : mover.amishcart
+{
+	mover_name: "amish carriage"
+	model_desc: "/vehicle/car/carriage_horse/mover/amish_carriage_mov.pmd"
+	model_anim: "/vehicle/car/carriage_horse/mover/amish_carriage_ani.pma"
+
+	lods[0]: "/vehicle/car/carriage_horse/mover/amish_carriage_mov_lod1.pmd"
+	lods[1]: "/vehicle/car/carriage_horse/mover/amish_carriage_mov_lod2.pmd"
+	lods[2]: "/vehicle/car/carriage_horse/mover/amish_carriage_mov_lod3.pmd"
+
+	lod_dist[0]: 50
+	lod_dist[1]: 80
+	lod_dist[2]: 120
+}
 
 }

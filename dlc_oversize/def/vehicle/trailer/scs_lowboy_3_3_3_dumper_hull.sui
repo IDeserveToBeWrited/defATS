@@ -53,8 +53,8 @@ trailer : .trailer.scs_lb_333_t.dumper_hull		#chassis 3 axle
 	accessories[]: .scs_lb_333_t.dumper_hull.rwheel2
 	accessories[]: .scs_lb_333_t.dumper_hull.rwheel3
 	accessories[]: .scs_lb_333_t.dumper_hull.paint_job
-	accessories[]: .scs_lb_333_t.dumper_hull.cargo
 	accessories[]: .scs_lb_333_t.dumper_hull.trlr_cables
+	accessories[]: .scs_lb_333_t.dumper_hull.body
 
 	slave_trailer: .trailer.scs_lb_333_j.dumper_hull
 }
@@ -86,16 +86,14 @@ vehicle_paint_job_accessory: .scs_lb_333_t.dumper_hull.paint_job
 	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii"
 }
 
-vehicle_accessory: .scs_lb_333_t.dumper_hull.cargo
-{
-    	data_path: "/def/vehicle/trailer_cargo/scs_lowboy/dumper_hull.sii"
-}
-
 vehicle_addon_accessory: .scs_lb_333_t.dumper_hull.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/cables_trailer.sii"
 }
-
+vehicle_accessory: .scs_lb_333_t.dumper_hull.body
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body_oversize.sii"
+}
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 trailer : .trailer.scs_lb_333_j.dumper_hull		# 3 axle

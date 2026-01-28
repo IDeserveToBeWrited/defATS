@@ -1,0 +1,169 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Oklahoma --
+
+# Discover at least 8 cities in Oklahoma.
+
+achievement_visit_city_data : .achievement.ok_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: ardmore
+	cities[]: clinton
+	cities[]: enid
+	cities[]: guymon
+	cities[]: idabel
+	cities[]: lawton
+	cities[]: mcalester
+	cities[]: oklahoma_cit
+	cities[]: tulsa
+	cities[]: woodward
+	target: 8
+
+	achievement_name: ok_visit_cities
+
+	steam_progress_id: "ok_visit_cities-progress"
+	steam_id: ok_visit_cities
+}
+
+# View cutscenes from at least 6 viewpoints in Oklahoma.
+
+achievement_trigger_data : .achievement.ok_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ok_cutscenes
+	target: 6
+
+	achievement_name: ok_cutscenes
+
+	steam_progress_id: "ok_cutscenes-progress"
+	steam_id: ok_cutscenes
+}
+
+# Deliver 5 Bus Hood cargoes to and 5 School Bus cargoes from the bus factory in Tulsa.
+
+achievement_delivery : .achievement.ok_bus_facto
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ok_bus_facto.condition
+	target: 10
+
+	achievement_name: ok_bus_factory
+
+	steam_progress_id: "ok_bus_factory-progress"
+	steam_id: ok_bus_factory
+}
+
+achievement_delivery_sequence : .ok_bus_facto.condition
+{
+	list[]: .ok_bus_facto.bus_hood
+	list[]: .ok_bus_facto.school_bus
+}
+
+achievement_delivery_count : .ok_bus_facto.bus_hood
+{
+	condition: .ok_bus_facto.bus_hood.5
+	count: 5
+}
+
+achievement_delivery_each : .ok_bus_facto.bus_hood.5
+{
+	list[]: .ok_bus_facto.bus_hood.cargo
+	list[]: .ok_bus_facto.bus_hood.company
+}
+
+achievement_delivery_cargo : .ok_bus_facto.bus_hood.cargo
+{
+	cargo_name: bus_hood
+}
+
+achievement_delivery_company : .ok_bus_facto.bus_hood.company
+{
+	role: target
+	company_name: yel_bus_pln
+	city_name: tulsa
+}
+
+achievement_delivery_count : .ok_bus_facto.school_bus
+{
+	condition: .ok_bus_facto.school_bus.5
+	count: 5
+}
+
+achievement_delivery_each : .ok_bus_facto.school_bus.5
+{
+	list[]: .ok_bus_facto.school_bus.cargo
+	list[]: .ok_bus_facto.school_bus.company
+}
+
+achievement_delivery_cargo : .ok_bus_facto.school_bus.cargo
+{
+	cargo_name: school_bus
+}
+
+achievement_delivery_company : .ok_bus_facto.school_bus.company
+{
+	role: source
+	company_name: yel_bus_pln
+	city_name: tulsa
+}
+
+# Complete 3 deliveries of Big Tyres cargo from at least 1 tyre factory in Lawton or Ardmore.
+
+achievement_delivery : .achievement.ok_big_tyres
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ok_big_tyres.condition
+	target: 3
+
+	achievement_name: ok_big_tyres
+
+	steam_progress_id: "ok_big_tyres-progress"
+	steam_id: ok_big_tyres
+}
+
+achievement_delivery_count : .ok_big_tyres.condition
+{
+	condition: .ok_big_tyres.3
+	count: 3
+}
+
+achievement_delivery_each : .ok_big_tyres.3
+{
+	list[]: .ok_big_tyres.cargo
+	list[]: .ok_big_tyres.company
+}
+
+achievement_delivery_cargo : .ok_big_tyres.cargo
+{
+	cargo_name: big_tyres
+}
+
+achievement_delivery_company : .ok_big_tyres.company
+{
+	role: source
+	company_name: dyn_car_pln
+	country_name: oklahoma
+}
+
+}

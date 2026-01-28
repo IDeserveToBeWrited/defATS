@@ -1,0 +1,71 @@
+traffic_vehicle : traffic.v_vnl300_2
+{
+	accessories[]: .v_vnl300.chassis
+	accessories[]: .v_vnl300.fwheel
+	accessories[]: .v_vnl300.rwheel
+	accessories[]: .v_vnl300.rwheel2
+	accessories[]: .v_vnl300.trlr_cables
+
+	max_speed: 110
+	trailer_chains[]: "truck_semi"
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 7200
+	engine_power: 298
+
+
+	
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+
+	color[]: (0.337164, 0.002428, 0.002428) #Red 
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+
+	color[]: (0.666597, 0.710937, 0.748423) #Silver 
+	color[]: (0.666597, 0.710937, 0.748423) #Silver
+	color[]: (0.666597, 0.710937, 0.748423) #Silver
+	
+	color[]: (0.095307, 0.107023, 0.124772)
+	color[]: (0.095307, 0.107023, 0.124772)
+	color[]: (0.095307, 0.107023, 0.124772)
+	color[]: (0.095307, 0.107023, 0.124772)
+
+	color[]: (0.022174, 0.018500, 0.019382)
+	color[]: (0.019382, 0.034340, 0.020289)
+	color[]: (0.760525, 0.558341, 0.004777)
+	
+	spawn_ratio: 0.2
+
+}
+
+vehicle_accessory : .v_vnl300.chassis {
+	data_path: "/def/vehicle/ai/truck/volvo.vnl2018/day.sii"
+}
+vehicle_wheel_accessory : .v_vnl300.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .v_vnl300.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .v_vnl300.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .v_vnl300.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/volvo.vnl2018/accessory/trlr_cables/stock.sii"
+}

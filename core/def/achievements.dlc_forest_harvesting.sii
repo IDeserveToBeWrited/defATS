@@ -1,0 +1,70 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Forest Machinery --
+
+# Complete delivery of at least 4 Forest Machinery DLC cargoes.
+
+achievement_each_cargo_data : .achievement.fm_all_cargo
+{
+	event_name: job_done
+	initial_check: true
+	target: 4
+	cargos[]: forwarder
+	cargos[]: kb_loader
+	cargos[]: log_harvest
+	cargos[]: log_loader
+	cargos[]: log_stacker
+	cargos[]: mulcher
+	cargos[]: skidder
+	cargos[]: stumper
+	cargos[]: tub_grinder
+
+	achievement_name: fm_all_cargos
+
+	steam_progress_id: "fm_all_cargos-progress"
+	steam_id: fm_all_cargos
+}
+
+# Complete a perfect delivery (no damage, no fines, in-time) of at least 3 Forest Machinery DLC jobs.
+
+achievement_delivery_log_data : .achievement.fm_3_perfect
+{
+	event_name: job_done
+	fines_max: 0
+	damage_max: 0.0
+	late: false
+	target: 3
+	cargos[]: forwarder
+	cargos[]: kb_loader
+	cargos[]: log_harvest
+	cargos[]: log_loader
+	cargos[]: log_stacker
+	cargos[]: mulcher
+	cargos[]: skidder
+	cargos[]: stumper
+	cargos[]: tub_grinder
+
+	achievement_name: fm_3_perfect
+
+	steam_progress_id: "fm_3_perfect-progress"
+	steam_id: fm_3_perfect
+}
+
+}

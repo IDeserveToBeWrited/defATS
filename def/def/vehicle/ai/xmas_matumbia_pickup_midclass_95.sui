@@ -1,0 +1,48 @@
+############### Default ########################
+
+traffic_vehicle : traffic.matumbia.pickup.xmas
+{
+	accessories[]: .matumbia.pickup.xmas.chassis
+	accessories[]: .matumbia.pickup.xmas.fwheel
+	accessories[]: .matumbia.pickup.xmas.rwheel
+
+	max_speed: 100
+	vehicle_mass: 1500
+
+	sound_move[]: "/sound/traffic/car_default_3.soundref"
+	sound_move[]: "/sound/traffic/car_default_4.soundref"
+
+	tags[]: cheap
+	tags[]: common
+	tags[]: xmas
+
+	color[]: (1, 1, 1) #white
+	
+	spawn_condition[]: .matumbia.pickup.xmas.condition	
+
+
+@include "drivers_generic.sui"
+}
+traffic_spawn_condition: .matumbia.pickup.xmas.condition
+{
+	type: area
+	str_param[]: "xmas"
+}
+
+vehicle_accessory: .matumbia.pickup.xmas.chassis
+{
+	data_path: "/def/vehicle/ai/xmas_matumbia_pickup_midclass_95/chassis.sii"
+}
+
+vehicle_wheel_accessory: .matumbia.pickup.xmas.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_75r15.sii"
+}
+
+vehicle_wheel_accessory: .matumbia.pickup.xmas.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_75r15.sii"
+}
+

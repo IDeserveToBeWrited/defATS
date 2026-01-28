@@ -1,0 +1,235 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Arkansas --
+
+# Discover at least 8 cities in Arkansas.
+
+achievement_visit_city_data : .achievement.ar_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: el_dorado
+	cities[]: fayetteville
+	cities[]: fort_smith
+	cities[]: harrison
+	cities[]: hot_springs
+	cities[]: jonesboro
+	cities[]: little_rock
+	cities[]: pine_bluff
+	cities[]: springdale
+	cities[]: texarkana_ar
+	target: 8
+
+	achievement_name: ar_visit_cities
+
+	steam_progress_id: "ar_visit_cities-progress"
+	steam_id: ar_visit_cities
+}
+
+# View cutscenes from at least 8 viewpoints in Arkansas.
+
+achievement_trigger_data : .achievement.ar_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ar_cutscenes
+	target: 8
+
+	achievement_name: ar_cutscenes
+
+	steam_progress_id: "ar_cutscenes-progress"
+	steam_id: ar_cutscenes
+}
+
+# Complete 3 deliveries of Logs to Chuck & Jack's, and 3 deliveries of Wood Shavings to Page & Price Paper, within Arkansas.
+
+achievement_delivery : .achievement.ar_paper
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ar_paper.condition
+	target: 6
+
+	achievement_name: ar_paper
+
+	steam_progress_id: "ar_paper-progress"
+	steam_id: ar_paper
+}
+
+achievement_delivery_sequence : .ar_paper.condition
+{
+	list[]: .ar_paper.ch_wd_saw
+	list[]: .ar_paper.pnp_wd_pln
+}
+
+achievement_delivery_count : .ar_paper.ch_wd_saw
+{
+	condition: .ar_paper.ch_wd_saw.count
+	count: 3
+}
+
+achievement_delivery_each : .ar_paper.ch_wd_saw.count
+{
+	list[]: .ar_paper.ch_wd_saw.source
+	list[]: .ar_paper.ch_wd_saw.target
+	list[]: .ar_paper.ch_wd_saw.cargo
+}
+
+achievement_delivery_point_country : .ar_paper.ch_wd_saw.source
+{
+	role: source
+	country_name: arkansas
+}
+
+achievement_delivery_company : .ar_paper.ch_wd_saw.target
+{
+	role: target
+	company_name: ch_wd_saw
+	country_name: arkansas
+}
+
+achievement_delivery_cargo : .ar_paper.ch_wd_saw.cargo
+{
+	cargo_name: logs
+}
+
+achievement_delivery_count : .ar_paper.pnp_wd_pln
+{
+	condition: .ar_paper.pnp_wd_pln.count
+	count: 3
+}
+
+achievement_delivery_each : .ar_paper.pnp_wd_pln.count
+{
+	list[]: .ar_paper.pnp_wd_pln.source
+	list[]: .ar_paper.pnp_wd_pln.target
+	list[]: .ar_paper.pnp_wd_pln.cargo
+}
+
+achievement_delivery_point_country : .ar_paper.pnp_wd_pln.source
+{
+	role: source
+	country_name: arkansas
+}
+
+achievement_delivery_company : .ar_paper.pnp_wd_pln.target
+{
+	role: target
+	company_name: pnp_wd_pln
+	country_name: arkansas
+}
+
+achievement_delivery_cargo : .ar_paper.pnp_wd_pln.cargo
+{
+	cargo_name: wshavings
+}
+
+# Complete a delivery to 5 different companies in Hot Springs.
+
+achievement_delivery : .achievement.ar_hot_sprin
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ar_hot_sprin.condition
+	target: 5
+
+	achievement_name: ar_hot_springs
+
+	steam_progress_id: "ar_hot_springs-progress"
+	steam_id: ar_hot_springs
+}
+
+achievement_delivery_sequence : .ar_hot_sprin.condition
+{
+	list[]: .ar_hot_sprin.ch_wd_hrv
+	list[]: .ar_hot_sprin.equ_whs
+	list[]: .ar_hot_sprin.fb_farm_mkt
+	list[]: .ar_hot_sprin.gp_farm
+	list[]: .ar_hot_sprin.gss_air_svc
+	list[]: .ar_hot_sprin.nmq_min_str
+	list[]: .ar_hot_sprin.sh_shp_mar
+	list[]: .ar_hot_sprin.sht_mkt
+	list[]: .ar_hot_sprin.tay_con_sit1
+}
+
+achievement_delivery_company : .ar_hot_sprin.ch_wd_hrv
+{
+	role: target
+	company_name: ch_wd_hrv
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.equ_whs
+{
+	role: target
+	company_name: equ_whs
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.fb_farm_mkt
+{
+	role: target
+	company_name: fb_farm_mkt
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.gp_farm
+{
+	role: target
+	company_name: gp_farm
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.gss_air_svc
+{
+	role: target
+	company_name: gss_air_svc
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.nmq_min_str
+{
+	role: target
+	company_name: nmq_min_str
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.sh_shp_mar
+{
+	role: target
+	company_name: sh_shp_mar
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.sht_mkt
+{
+	role: target
+	company_name: sht_mkt
+	city_name: hot_springs
+}
+
+achievement_delivery_company : .ar_hot_sprin.tay_con_sit1
+{
+	role: target
+	company_name: tay_con_sit1
+	city_name: hot_springs
+}
+
+}

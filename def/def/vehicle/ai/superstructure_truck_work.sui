@@ -1,0 +1,801 @@
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-GRAINBODY-Main-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.grainbody
+{
+	accessories[]: .strtruck.grainbody.chassis
+	accessories[]: .strtruck.grainbody.fwheel
+	accessories[]: .strtruck.grainbody.rwheel
+	accessories[]: .strtruck.grainbody.rwheel2
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+	#no addon
+	variant[]: traffic.strtruck.grainbody.orange
+	variant[]: traffic.strtruck.grainbody.red
+	variant[]: traffic.strtruck.grainbody.white
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.grainbody.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_grainbody_default.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-4x2-Municipal_body-Main-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.munibody
+{
+	accessories[]: .strtruck.munibody.chassis
+	accessories[]: .strtruck.munibody.fwheel
+	accessories[]: .strtruck.munibody.rwheel
+	
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+	
+	variant[]: traffic.strtruck.munibody.orange
+	variant[]: traffic.strtruck.munibody.red
+	variant[]: traffic.strtruck.munibody.white
+	variant[]: traffic.strtruck.munibody.black
+	variant[]: traffic.strtruck.munibody.green
+	variant[]: traffic.strtruck.munibody.blue
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.munibody.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/4x2_munibody_default.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-WITH GRAINBODY-Orange-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.grainbody.orange
+{
+	accessories[]: .strtruck.grainbody.orange.chassis
+	accessories[]: .strtruck.grainbody.orange.fwheel
+	accessories[]: .strtruck.grainbody.orange.rwheel
+	accessories[]: .strtruck.grainbody.orange.rwheel2
+	
+
+	max_speed: 100
+	allow_parked: false
+
+	vehicle_mass: 25000
+
+	engine_power: 330
+
+	spawn_ratio: 0.5
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.grainbody.orange.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_grainbody_orange.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.orange.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.orange.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.orange.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-WITH GRAINBODY-Red-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.grainbody.red
+{
+	accessories[]: .strtruck.grainbody.red.chassis
+	accessories[]: .strtruck.grainbody.red.fwheel
+	accessories[]: .strtruck.grainbody.red.rwheel
+	accessories[]: .strtruck.grainbody.red.rwheel2
+	
+
+	max_speed: 100
+	allow_parked: false
+
+	vehicle_mass: 25000
+
+	engine_power: 330
+
+	spawn_ratio: 0.5
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.grainbody.red.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_grainbody_red.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.red.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.red.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.red.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-WITH GRAINBODY-White-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.grainbody.white
+{
+	accessories[]: .strtruck.grainbody.white.chassis
+	accessories[]: .strtruck.grainbody.white.fwheel
+	accessories[]: .strtruck.grainbody.white.rwheel
+	accessories[]: .strtruck.grainbody.white.rwheel2
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.grainbody.white.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_grainbody_white.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.white.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.white.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.grainbody.white.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-4x2-WITH MuniBody - Orange -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.strtruck.munibody.orange
+{
+	accessories[]: .strtruck.munibody.orange.chassis
+	accessories[]: .strtruck.munibody.orange.fwheel
+	accessories[]: .strtruck.munibody.orange.rwheel
+
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.munibody.orange.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/4x2_munibody_orange.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.orange.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.orange.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-4x2-WITH MuniBody - red -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.strtruck.munibody.red
+{
+	accessories[]: .strtruck.munibody.red.chassis
+	accessories[]: .strtruck.munibody.red.fwheel
+	accessories[]: .strtruck.munibody.red.rwheel
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.munibody.red.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/4x2_munibody_red.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.red.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.red.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-4x2-WITH MuniBody - white -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.strtruck.munibody.white
+{
+	accessories[]: .strtruck.munibody.white.chassis
+	accessories[]: .strtruck.munibody.white.fwheel
+	accessories[]: .strtruck.munibody.white.rwheel
+	
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.munibody.white.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/4x2_munibody_white.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.white.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.white.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-4x2-WITH MuniBody - black -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.strtruck.munibody.black
+{
+	accessories[]: .strtruck.munibody.black.chassis
+	accessories[]: .strtruck.munibody.black.fwheel
+	accessories[]: .strtruck.munibody.black.rwheel
+
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.munibody.black.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/4x2_munibody_black.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.black.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.black.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-4x2-WITH MuniBody - green -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.strtruck.munibody.green
+{
+	accessories[]: .strtruck.munibody.green.chassis
+	accessories[]: .strtruck.munibody.green.fwheel
+	accessories[]: .strtruck.munibody.green.rwheel
+
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.munibody.green.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/4x2_munibody_green.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.green.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.green.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-4x2-WITH MuniBody - blue -XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.strtruck.munibody.blue
+{
+	accessories[]: .strtruck.munibody.blue.chassis
+	accessories[]: .strtruck.munibody.blue.fwheel
+	accessories[]: .strtruck.munibody.blue.rwheel
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.munibody.blue.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/4x2_munibody_blue.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.blue.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.munibody.blue.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-Dump_body-Main-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.dumpbody
+{
+	accessories[]: .strtruck.dumpbody.chassis
+	accessories[]: .strtruck.dumpbody.fwheel
+	accessories[]: .strtruck.dumpbody.rwheel
+	accessories[]: .strtruck.dumpbody.rwheel2
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 1.0
+
+
+	variant[]: traffic.strtruck.dumpbody.green
+	variant[]: traffic.strtruck.dumpbody.brown
+	
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.dumpbody.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_dumpbody_black.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-dump_body_green-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.dumpbody.green
+{
+	accessories[]: .strtruck.dumpbody.green.chassis
+	accessories[]: .strtruck.dumpbody.green.fwheel
+	accessories[]: .strtruck.dumpbody.green.rwheel
+	accessories[]: .strtruck.dumpbody.green.rwheel2
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.dumpbody.green.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_dumpbody_green.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.green.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.green.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.green.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-dump_body_brown-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.dumpbody.brown
+{
+	accessories[]: .strtruck.dumpbody.brown.chassis
+	accessories[]: .strtruck.dumpbody.brown.fwheel
+	accessories[]: .strtruck.dumpbody.brown.rwheel
+	accessories[]: .strtruck.dumpbody.brown.rwheel2
+	
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.dumpbody.brown.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_dumpbody_brown.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.brown.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.brown.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.dumpbody.brown.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-Fuel_body-Main-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.fuelbody
+{
+	accessories[]: .strtruck.fuelbody.chassis
+	accessories[]: .strtruck.fuelbody.fwheel
+	accessories[]: .strtruck.fuelbody.rwheel
+	accessories[]: .strtruck.fuelbody.rwheel2
+
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.0
+
+	
+	
+	
+	variant[]: traffic.strtruck.fuelbody6x4
+	variant[]: traffic.strtruck.fuelbody6x4.white
+	variant[]: traffic.strtruck.fuelbody6x4.red
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.fuelbody.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_fuelbody_default.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-Fuel_body-Default-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.fuelbody6x4
+{
+	accessories[]: .strtruck.fuelbody6x4.chassis
+	accessories[]: .strtruck.fuelbody6x4.fwheel
+	accessories[]: .strtruck.fuelbody6x4.rwheel
+	accessories[]: .strtruck.fuelbody6x4.rwheel2
+
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+	
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.fuelbody6x4.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_fuelbody_default.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-Fuel_body-Red-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.fuelbody6x4.red
+{
+	accessories[]: .strtruck.fuelbody6x4.red.chassis
+	accessories[]: .strtruck.fuelbody6x4.red.fwheel
+	accessories[]: .strtruck.fuelbody6x4.red.rwheel
+	accessories[]: .strtruck.fuelbody6x4.red.rwheel2
+
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+	
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.fuelbody6x4.red.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_fuelbody_red.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.red.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.red.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.red.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-6x4-Fuel_body-White-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.strtruck.fuelbody6x4.white
+{
+	accessories[]: .strtruck.fuelbody6x4.white.chassis
+	accessories[]: .strtruck.fuelbody6x4.white.fwheel
+	accessories[]: .strtruck.fuelbody6x4.white.rwheel
+	accessories[]: .strtruck.fuelbody6x4.white.rwheel2
+
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	allow_parked: false
+	spawn_ratio: 0.5
+
+	
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .strtruck.fuelbody6x4.white.chassis
+{
+	data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_fuelbody_white.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.white.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.white.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+vehicle_wheel_accessory: .strtruck.fuelbody6x4.white.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+}
+
+

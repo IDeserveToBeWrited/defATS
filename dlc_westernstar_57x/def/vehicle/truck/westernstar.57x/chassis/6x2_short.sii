@@ -1,0 +1,46 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2s.westernstar.57x.chassis
+{
+	name: "Short 6x2"
+	price: 19100
+	unlock: 0
+	info[]: "6x2"
+	icon: "truck/westernstar_57x/chassis/dc_6x2"
+	part_type: factory
+
+	model: "/vehicle/truck/westernstar_57x/chassis/dc_6x2.pmd"
+	collision: "/vehicle/truck/westernstar_57x/chassis/dc_6x2.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/westernstar_57x/ui_shadow_s.tobj"
+	extended_shadow_intensity: 1
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/westernstar_57x/ui_shadow/ui_shadow_s.pmd"
+
+	tank_size: 455
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: false
+
+	kerb_weight[]: 4082	# 9000 lb
+	kerb_weight[]: 1615	# 3560 lb
+	kerb_weight[]: 1216	# 2680 lb
+
+	defaults[]: "/def/vehicle/truck/westernstar.57x/cabin/day.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/accessory/tank/short_alu_120.sii"
+
+	conflict_with[]: "s72_rr.westernstar.57x.cabin"
+
+@include "sound.sui"
+}
+}

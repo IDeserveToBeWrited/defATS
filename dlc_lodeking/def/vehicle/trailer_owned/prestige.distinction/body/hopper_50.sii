@@ -1,0 +1,41 @@
+SiiNunit
+{
+accessory_trailer_body_data : hopper_50.prestige.distinction.body
+{
+	name: "@@bs_grain_hopper@@"
+	price: 37000
+	unlock: 13
+	icon: "trailer_owned/lodeking_distinction/body/hopper_50"
+	part_type: factory
+
+	# 50' x 102" x 13'6"
+	# Internal: 49'6" x 99" x 110"
+
+	size: (2.5146, 2.794, 15.0876)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 15.24)	# width, height, length (size of the body + chassis)
+
+	volume: 62.22		# 2197 cft
+	body_type: hopper
+
+	# Mass of the cargo container in KG.
+	# Base mass for trailer is in chassis, bodies have only deltas for eventual variants.
+
+	mass: 0
+
+	# visual data
+
+	model: 		"/vehicle/trailer_owned/lodeking_distinction/body/hopper_50.pmd"
+	collision: 	"/vehicle/trailer_owned/lodeking_distinction/body/hopper_50.pmc"
+	variant: prestige_var
+
+	defaults[]: "/def/vehicle/trailer_owned/prestige.distinction/accessory/f_body/paint_50.sii"
+	defaults[]: "/def/vehicle/trailer_owned/prestige.distinction/accessory/markers/standard_50.sii"
+	defaults[]: "/def/vehicle/trailer_owned/prestige.distinction/accessory/rear_body/paint_50.sii"
+
+
+	#xxxxxxxxxxxxxxxx new cargo system xxxxxxxxxxxxxxxxx
+
+	cargo_loading_methods[]: bulk
+
+}
+}

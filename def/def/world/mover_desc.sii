@@ -28,6 +28,101 @@ SiiNunit
 
 ### TEMPORARY FOR NEW ANIMATIONS - Plz don't delete until we finish all the animations###
 
+###################
+#### FISHERMAN ####
+###################
+
+mover_desc : mover_desc.fisherman
+{
+	model_desc: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_lod0.pmd"
+
+	variants[]: cenda
+	variants[]: nemiro
+	variants[]: diego
+	variants[]: filip
+	variants[]: hynek
+	variants[]: johnny
+	variants[]: marian
+
+	lods[0]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_lod1.pmd"
+	lods[1]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_lod2.pmd"
+	lods[2]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_lod3.pmd"
+	lods[3]: ""
+
+	lod_distances[0]: 12
+	lod_distances[1]: 68
+	lod_distances[2]: 140
+	lod_distances[3]: 200
+
+	group_tags[]: human
+	group_tags[]: man
+	group_tags[]: fisherman
+	group_tags[]: norod
+
+}
+
+mover_desc : mover_desc.fish_rod
+{
+	model_desc: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_fishing_lod0.pmd"
+
+	variants[]: cenda
+	variants[]: nemiro
+	variants[]: diego
+	variants[]: filip
+	variants[]: hynek
+	variants[]: johnny
+	variants[]: marian
+
+	lods[0]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_fishing_lod1.pmd"
+	lods[1]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_fishing_lod2.pmd"
+	lods[2]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_fishing_lod3.pmd"
+	lods[3]: ""
+
+	lod_distances[0]: 12
+	lod_distances[1]: 68
+	lod_distances[2]: 140
+	lod_distances[3]: 200
+
+	group_tags[]: human
+	group_tags[]: man
+	group_tags[]: fisherman
+	group_tags[]: rod
+
+}
+
+###########################################################################################################
+# VARIANTS ARE COMMENTED BECAUSE OF THE BUG IN THE ENGINE (boat hookup is visible only on nemiro variant) #
+###########################################################################################################
+
+mover_desc : mover_desc.fish_boat
+{
+	model_desc: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_boat_fishing_lod0.pmd"
+
+	variants[]: cenda
+	variants[]: nemiro
+	variants[]: diego
+	variants[]: filip
+	variants[]: hynek
+	variants[]: johnny
+	variants[]: marian
+
+	lods[0]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_boat_fishing_lod1.pmd"
+	lods[1]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_boat_fishing_lod2.pmd"
+	lods[2]: "/model/mover/characters/new_generation/new/models/man/fisherman/ngn_fisherman_boat_fishing_lod3.pmd"
+	lods[3]: ""
+
+	lod_distances[0]: 12
+	lod_distances[1]: 68
+	lod_distances[2]: 140
+	lod_distances[3]: 200
+
+	group_tags[]: human
+	group_tags[]: man
+	group_tags[]: fisherman
+	group_tags[]: boat
+
+}
+
 
 ### FARMER - CIVIL - COWBOY
 
@@ -250,7 +345,7 @@ mover_desc : mover_desc.cowboy3_1
 	lod_distances[0]: 18
 	lod_distances[1]: 49
 	lod_distances[2]: 128
-	lod_distances[3]: 160
+	lod_distances[3]: 400
 
 	group_tags[]: human
 	group_tags[]: man
@@ -278,7 +373,7 @@ mover_desc : mover_desc.cowboy3_2
 	lod_distances[0]: 18
 	lod_distances[1]: 49
 	lod_distances[2]: 128
-	lod_distances[3]: 160
+	lod_distances[3]: 400
 
 	group_tags[]: human
 	group_tags[]: man
@@ -306,7 +401,7 @@ mover_desc : mover_desc.cowboy3_3
 	lod_distances[0]: 18
 	lod_distances[1]: 49
 	lod_distances[2]: 128
-	lod_distances[3]: 160
+	lod_distances[3]: 400
 
 	group_tags[]: human
 	group_tags[]: man
@@ -928,47 +1023,47 @@ mover_desc : mover_desc.n_worker_7
 	group_tags[]: n_worker
 }
 
-### COW ###
-
-mover_desc : mover_desc.cow.black
-{
-	model_desc: "/model/mover/animal/cow/cow_black.pmd"
-	group_tags[]: cow
-}
-mover_desc : mover_desc.cow.brown
-{
-	model_desc: "/model/mover/animal/cow/cow_brown.pmd"
-	group_tags[]: cow
-}
-mover_desc : mover_desc.cow.red
-{
-	model_desc: "/model/mover/animal/cow/cow_red.pmd"
-	group_tags[]: cow
-}
-mover_desc : mover_desc.cow.yellow
-{
-	model_desc: "/model/mover/animal/cow/cow_yellow.pmd"
-	group_tags[]: cow
-}
-mover_desc : mover_desc.calf
-{
-	model_desc: "/model/mover/animal/cow/calf.pmd"
-	group_tags[]: calf
-}
-#################################### COWS_HERD_ANIM
-
-mover_desc : mover_desc.cows_herd
-{
-	model_desc: "/model/mover/animal/cow/cows_herd_anim.pmd"
-
-	lods[0]: "/model/mover/animal/cow/cows_herd_anim_lod1.pmd"
-	lods[1]: "/model/mover/animal/cow/cows_herd_anim_lod2.pmd"
-	lod_distances[0]: 60
-	lod_distances[1]: 90
-	group_tags[]: cows_herd
-}
-
-####################################
+# ### COW ###
+# 
+# mover_desc : mover_desc.cow.black
+# {
+# 	model_desc: "/model/mover/animal/cow/cow_black.pmd"
+# 	group_tags[]: cow
+# }
+# mover_desc : mover_desc.cow.brown
+# {
+# 	model_desc: "/model/mover/animal/cow/cow_brown.pmd"
+# 	group_tags[]: cow
+# }
+# mover_desc : mover_desc.cow.red
+# {
+# 	model_desc: "/model/mover/animal/cow/cow_red.pmd"
+# 	group_tags[]: cow
+# }
+# mover_desc : mover_desc.cow.yellow
+# {
+# 	model_desc: "/model/mover/animal/cow/cow_yellow.pmd"
+# 	group_tags[]: cow
+# }
+# mover_desc : mover_desc.calf
+# {
+# 	model_desc: "/model/mover/animal/cow/calf.pmd"
+# 	group_tags[]: calf
+# }
+# #################################### COWS_HERD_ANIM
+# 
+# mover_desc : mover_desc.cows_herd
+# {
+# 	model_desc: "/model/mover/animal/cow/cows_herd_anim.pmd"
+# 
+# 	lods[0]: "/model/mover/animal/cow/cows_herd_anim_lod1.pmd"
+# 	lods[1]: "/model/mover/animal/cow/cows_herd_anim_lod2.pmd"
+# 	lod_distances[0]: 60
+# 	lod_distances[1]: 90
+# 	group_tags[]: cows_herd
+# }
+# 
+# ####################################
 
 ### HORSE ###
 
@@ -1039,8 +1134,8 @@ mover_desc : mover_desc.horse.rodeo
 	lod_distances[3]: 150
 	lod_distances[4]: 200
 
-	group_tags[]: horse
     group_tags[]: rodeo
+	group_tags[]: horser
 }
 
 ### EAGLES ###
@@ -1947,11 +2042,11 @@ mover_desc : mover_desc.worker_1
 	lods[2]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 149
-	lod_distances[4]: 199
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 200
 
 	group_tags[]: human
 	group_tags[]: man
@@ -1974,11 +2069,11 @@ mover_desc : mover_desc.worker_2
 	lods[2]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 149
-	lod_distances[4]: 199
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 200
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2001,11 +2096,11 @@ mover_desc : mover_desc.worker_3
 	lods[2]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 149
-	lod_distances[4]: 199
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 200
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2028,11 +2123,11 @@ mover_desc : mover_desc.worker_4
 	lods[2]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 149
-	lod_distances[4]: 199
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 200
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2055,11 +2150,11 @@ mover_desc : mover_desc.worker_5
 	lods[2]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 149
-	lod_distances[4]: 199
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 200
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2082,11 +2177,11 @@ mover_desc : mover_desc.worker_6
 	lods[2]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 149
-	lod_distances[4]: 199
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 200
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2110,11 +2205,11 @@ mover_desc : mover_desc.worker_7
 	lods[2]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/worker/ng_worker_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 149
-	lod_distances[4]: 199
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 200
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2141,11 +2236,11 @@ mover_desc : mover_desc.security_1
 	lods[2]: "/model/mover/characters/new_generation/models/security/ng_security_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/security/ng_security_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 70
-	lod_distances[4]: 100
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 360
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2168,11 +2263,11 @@ mover_desc : mover_desc.security_2
 	lods[2]: "/model/mover/characters/new_generation/models/security/ng_security_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/security/ng_security_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 70
-	lod_distances[4]: 100
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 360
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2195,11 +2290,11 @@ mover_desc : mover_desc.security_3
 	lods[2]: "/model/mover/characters/new_generation/models/security/ng_security_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/security/ng_security_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 70
-	lod_distances[4]: 100
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 360
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2222,11 +2317,11 @@ mover_desc : mover_desc.security_4
 	lods[2]: "/model/mover/characters/new_generation/models/security/ng_security_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/security/ng_security_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 70
-	lod_distances[4]: 100
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 360
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2249,11 +2344,11 @@ mover_desc : mover_desc.security_5
 	lods[2]: "/model/mover/characters/new_generation/models/security/ng_security_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/security/ng_security_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 70
-	lod_distances[4]: 100
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 360
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2276,11 +2371,11 @@ mover_desc : mover_desc.security_6
 	lods[2]: "/model/mover/characters/new_generation/models/security/ng_security_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/security/ng_security_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 70
-	lod_distances[4]: 100
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 360
 
 	group_tags[]: human
 	group_tags[]: man
@@ -2304,11 +2399,11 @@ mover_desc : mover_desc.security_7
 	lods[2]: "/model/mover/characters/new_generation/models/security/ng_security_lod3.pmd"
 	lods[3]: "/model/mover/characters/new_generation/models/security/ng_security_lod4.pmd"
 	lods[4]: ""
-	lod_distances[0]: 10
-	lod_distances[1]: 20
-	lod_distances[2]: 40
-	lod_distances[3]: 70
-	lod_distances[4]: 100
+	lod_distances[0]: 18
+	lod_distances[1]: 42
+	lod_distances[2]: 100
+	lod_distances[3]: 160
+	lod_distances[4]: 360
 
 	group_tags[]: human
 	group_tags[]: man
@@ -3012,6 +3107,69 @@ mover_desc : mover_desc.ac_willy
 }
 
 
+### CRANE PORT LAND ###
+
+mover_desc : mover_desc.machine.crane.port.land
+{
+	model_desc: "/model/mover/machine/crane_port_01_ne.pmd"
+	model_coll: "/model/mover/machine/crane_port_01_ne.pmc"
+
+	group_tags[]: machine
+	group_tags[]: crane
+	group_tags[]: port
+	group_tags[]: land
+	group_tags[]: generic
+}
+
+
+### CRANE PORT SHIP ###
+
+mover_desc : mover_desc.machine.crane.port.ship
+{
+	model_desc: "/model/mover/machine/port_crane_ship_ne.pmd"
+	model_coll: "/model/mover/machine/port_crane_ship_ne.pmc"
+
+	group_tags[]: machine
+	group_tags[]: crane
+	group_tags[]: port
+	group_tags[]: ship
+	group_tags[]: generic
+}
+
+
+### CONTAINER OF CRANE PORT ###
+
+mover_desc : mover_desc.prop.crane.port.container.blue
+{
+	model_desc: "/model/props/container/crane_port_01_ne_container_blue.pmd"
+
+	group_tags[]: prop
+	group_tags[]: crane
+	group_tags[]: port
+	group_tags[]: container
+}
+
+mover_desc : mover_desc.prop.crane.port.container.green
+{
+	model_desc: "/model/props/container/crane_port_01_ne_container_green.pmd"
+
+	group_tags[]: prop
+	group_tags[]: crane
+	group_tags[]: port
+	group_tags[]: container
+}
+
+mover_desc : mover_desc.prop.crane.port.container.red
+{
+	model_desc: "/model/props/container/crane_port_01_ne_container_red.pmd"
+
+	group_tags[]: prop
+	group_tags[]: crane
+	group_tags[]: port
+	group_tags[]: container
+}
+
+
 #   ____ _               _      _ ___        ___                     _                    _     _ _ _
 #  / ___| |__   ___  ___| | __ ( | ) \      / / |__   ___ _ __ ___  | |_ ___     __ _  __| | __| ( | )
 # | |   | '_ \ / _ \/ __| |/ /  V V \ \ /\ / /| '_ \ / _ \ '__/ _ \ | __/ _ \   / _` |/ _` |/ _` |V V
@@ -3036,6 +3194,233 @@ mover_desc : mover_desc.cofibr
 {
 	model_desc: "/model/building/shop/fastfood/co_cofibreak_totem_anim.pmd"
 	group_tags[]: cofibr
+}
+
+####################################################################
+####					SEA LION for PIER39 S.F.				####
+####################################################################
+
+mover_desc : mover_desc.seali
+{
+	model_desc: "/asset/character/animal/wild/sea_lion_mov.pmd"
+
+	lods[0]: "/asset/character/animal/wild/sea_lion_mov_lod1.pmd"
+	lods[1]: "/asset/character/animal/wild/sea_lion_mov_lod2.pmd"
+	lods[2]: "/asset/character/animal/wild/sea_lion_mov_lod3.pmd"
+	lods[3]: "/asset/character/animal/wild/sea_lion_mov_lod4.pmd"
+	lods[4]: ""
+	lod_distances[0]: 40
+	lod_distances[1]: 60
+	lod_distances[2]: 80
+	lod_distances[3]: 100
+	lod_distances[4]: 200
+
+	group_tags[]: animal
+	group_tags[]: wild
+	group_tags[]: sealion
+}
+
+###########################################
+###				ACTION PLANES			###
+###########################################
+
+mover_desc : mover_desc.ac_737
+{
+	model_desc: "/model/mover/aircraft/b737/b737_anim.pmd"
+	group_tags[]: ac_737_l
+	group_tags[]: ac_737_t
+}
+
+mover_desc : mover_desc.ac_747
+{
+	model_desc: "/model/mover/aircraft/b747/b747_anim.pmd"
+	group_tags[]: ac_747_l
+	group_tags[]: ac_747_t
+}
+
+####################################################################
+####						ALLIGATORS							####
+####################################################################
+
+mover_desc : mover_desc.alligat
+{
+	model_desc: "/asset/character/animal/wild/alligator_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/alligator_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/alligator_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/alligator_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/alligator_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/alligator_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: animal
+	group_tags[]: wild
+	group_tags[]: allig
+}
+
+####################################################################
+####			ALLIGATORS / posed / no ANIMS					####
+####################################################################
+
+mover_desc : mover_desc.allis1
+{
+	model_desc: "/asset/character/animal/wild/alligator_posed1_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/alligator_posed1_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/alligator_posed1_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/alligator_posed1_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/alligator_posed1_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/alligator_posed1_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: allis
+}
+
+mover_desc : mover_desc.allis2
+{
+	model_desc: "/asset/character/animal/wild/alligator_posed2_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/alligator_posed2_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/alligator_posed2_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/alligator_posed2_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/alligator_posed2_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/alligator_posed2_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: allis
+}
+
+mover_desc : mover_desc.allis3
+{
+	model_desc: "/asset/character/animal/wild/alligator_posed3_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/alligator_posed3_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/alligator_posed3_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/alligator_posed3_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/alligator_posed3_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/alligator_posed3_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: allis
+}
+
+mover_desc : mover_desc.allis4
+{
+	model_desc: "/asset/character/animal/wild/alligator_posed4_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/alligator_posed4_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/alligator_posed4_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/alligator_posed4_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/alligator_posed4_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/alligator_posed4_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: allis
+}
+
+mover_desc : mover_desc.portl_cr
+{
+	model_desc: "/prefab/depots/river_port/ok_portal_crane_mov.pmd"
+	model_coll: "/prefab/depots/river_port/ok_portal_crane_mov.pmc"
+
+	group_tags[]: portal_cr
+}
+
+mover_desc : mover_desc.hall_cra
+{
+	model_desc: "/model/props/machinery/ar_hall_crane_mov.pmd"
+    
+	lods[0]: "/model/props/machinery/ar_hall_crane_mov_lod1.pmd"
+	lods[1]: "/model/props/machinery/ar_hall_crane_mov_lod2.pmd"
+
+	lod_distances[0]: 12
+	lod_distances[1]: 68
+
+	group_tags[]: hall
+	group_tags[]: crane
+
+}
+
+####################################################################
+####						PHEASANTS							####
+####################################################################
+
+mover_desc : mover_desc.pheasmfl1
+{
+	model_desc: "/asset/character/animal/wild/pheasant_wings_male_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/pheasant_wings_male_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/pheasant_wings_male_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/pheasant_wings_male_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/pheasant_wings_male_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/pheasant_wings_male_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: pheasant
+	group_tags[]: fly
+}
+
+mover_desc : mover_desc.pheasf1
+{
+	model_desc: "/asset/character/animal/wild/pheasant_female_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/pheasant_female_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/pheasant_female_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/pheasant_female_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/pheasant_female_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/pheasant_female_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: pheasant
+	group_tags[]: female
+}
+
+mover_desc : mover_desc.pheasm1
+{
+	model_desc: "/asset/character/animal/wild/pheasant_male_mov.pmd"
+
+	 lods[0]: "/asset/character/animal/wild/pheasant_male_mov_lod1.pmd"
+	 lods[1]: "/asset/character/animal/wild/pheasant_male_mov_lod2.pmd"
+	 lods[2]: "/asset/character/animal/wild/pheasant_male_mov_lod3.pmd"
+	 lods[3]: "/asset/character/animal/wild/pheasant_male_mov_lod4.pmd"
+	 lods[4]: "/asset/character/animal/wild/pheasant_male_mov_lod5.pmd"
+	 lod_distances[0]: 10
+	 lod_distances[1]: 20
+	 lod_distances[2]: 40
+	 lod_distances[3]: 60
+	 lod_distances[4]: 80
+
+	group_tags[]: pheasant
+	group_tags[]: male
+
 }
 
 }

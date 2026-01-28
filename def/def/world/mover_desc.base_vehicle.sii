@@ -7,4 +7,54 @@ mover_desc : mover_desc.ac_mack
 	model_desc: "/model/event/mack_anim.pmd"
 	group_tags[]: ac_mack
 }
+
+## FIRST VERSION DYNAMIC CARGO LOG LOADER
+
+mover_desc : mover_desc.log_loader.dynamic
+{
+	# dynamic log loader, takes part in dynamic cargo loading
+	model_desc: "/vehicle/share/models/log_loader/mover/log_loader_ne_mov.pmd"
+	model_coll: "/vehicle/share/models/log_loader/mover/log_loader_ne_mov.pmc"
+	group_tags[]: log_loader
+	group_tags[]: dynamic
+}
+
+mover_desc : mover_desc.log.dynamic
+{
+	# bundle of logs, is loaded dynamically onto trailer
+	model_desc: "/vehicle/share/models/log_loader/mover/log_group_mov.pmd"
+	group_tags[]: dc_log
+	group_tags[]: dynamic
+}
+
+## SPLIT UP LOG LOADER
+
+mover_desc : mover_desc.dc_log_load.body
+{
+	# dynamic log loader, takes part in dynamic cargo loading
+	model_desc: "/vehicle/share/models/log_loader/mover_test/log_loader_body_mov.pmd"
+	model_coll: "/vehicle/share/models/log_loader/mover_test/log_loader_body_mov.pmc"
+	group_tags[]: dc_log_load
+	group_tags[]: dc_body
+}
+
+mover_desc : mover_desc.dc_log_load.cargo.logs
+{
+	# LOGS MOVER
+	model_desc: "/vehicle/share/models/log_loader/mover_test/log_loader_prop_mov.pmd"
+	group_tags[]: dc_log_load
+	group_tags[]: dc_cargo
+	group_tags[]: cargo_log
+}
+
+## MATERIAL HANDLER
+
+mover_desc : mover_desc.dc_m_handlr.body
+{
+	model_desc: "/vehicle/machine/material_handler/mover/material_handler_mov.pmd"
+	model_coll: "/vehicle/machine/material_handler/mover/material_handler_mov.pmc"
+	group_tags[]: dc_m_handlr
+	group_tags[]: dc_body
+}
+
 }

@@ -1,0 +1,95 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+prefab_model : prefab.mt_2o001
+{
+	name: "mt cross 2-1-2 country 2-1-2 country billings tmpl"
+	model_desc: "/prefab/cross_billings/mt_cross_2-1-2_country_2-1-2_country_billings_tmpl.pmd"
+	prefab_desc: "/prefab/cross_billings/mt_cross_2-1-2_country_2-1-2_country_billings_tmpl.ppd"
+	category: ""
+
+	corner0[]: "sw140"
+	corner0[]: "kb140"
+	corner1[]: "mt_2o002"
+	corner2[]: "mt_2o001"
+
+}
+
+prefab_model : prefab.mt_2o003
+{
+	name: "mt cross 2-3 country 4-5m x 0-2 country helena tmpl"
+	model_desc: "/prefab/cross_helena/mt_cross_2-3_country_4-5m_x_0-2_country_helena_tmpl.pmd"
+	prefab_desc: "/prefab/cross_helena/mt_cross_2-3_country_4-5m_x_0-2_country_helena_tmpl.ppd"
+	category: ""
+
+	corner0[]: shcr
+	corner0[]: kbc
+	corner0[]: swc
+	corner0[]: swcb
+	corner0[]: swc1p1
+
+	corner1[]: kbc4re
+	corner1[]: shc4re
+	corner1[]: swc4re
+	corner1[]: swc4ref
+
+	corner2[]: mt_2o003
+
+	corner3[]: mt_2o004
+
+}
+
+prefab_model : prefab.mt_2o004
+{
+	name: "mt roundabout butte truck stop tmpl"
+	model_desc: "/prefab/cross_butte_truck_stop_roundabout/mt_roundabout_butte_truck_stop_tmpl.pmd"
+	prefab_desc: "/prefab/cross_butte_truck_stop_roundabout/mt_roundabout_butte_truck_stop_tmpl.ppd"
+	category: ""
+
+	corner0[]: kbrbts
+	corner1[]: kbrbtsm
+	corner2[]: kbrbts1m
+	corner3[]: kbrbts2
+	corner4[]: kb1m
+	corner5[]: kbrbts1
+
+}
+
+prefab_model : prefab.d_food_plnt5
+{
+	name: "mt sugar plant"
+	model_desc: "/prefab/depots/sugar_plant/mt_sugar_plant.pmd"
+	prefab_desc: "/prefab/depots/sugar_plant/mt_sugar_plant.ppd"
+	category: ""
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/prefab/depots/sugar_plant/mt_sugar_plant_lod1.pmd"
+	dynamic_lod_dist[0]: 125
+
+	use_perlin: false
+}
+
+prefab_model : prefab.d_min_plnt1
+{
+	name: "mt talc plant"
+	model_desc: "/prefab/depots/talc_plant/mt_talc_plant.pmd"
+	prefab_desc: "/prefab/depots/talc_plant/mt_talc_plant.ppd"
+	category: ""
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/prefab/depots/talc_plant/mt_talc_plant_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+
+	use_perlin: false
+}
+
+}

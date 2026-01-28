@@ -6,6 +6,7 @@ accessory_interior_data	: day_prm.westernstar.49x.interior
 	price: 22960
 	unlock: 15
 	icon: "truck/westernstar_49x/cabin/int_day_prm"
+	part_type: factory
 
 	model: "/vehicle/truck/westernstar_49x/interior/model/day.pmd"
 	animated_model: "/vehicle/truck/westernstar_49x/interior/animation/animation.pmd"
@@ -19,10 +20,14 @@ accessory_interior_data	: day_prm.westernstar.49x.interior
 
 	defaults[]: "/def/vehicle/truck/westernstar.49x/accessory/steering_w/standard.sii"
 
+	show_chassis_rear: true
+
 	suitable_for[]: "day.westernstar.49x.cabin"
 	suitable_for[]: "daysb.westernstar.49x.cabin"
 
 @include "animations.sui"
+
+@include "int_shadow_day.sui"
 
 @include "sound.sui"
 @include "sound_effects.sui"
@@ -35,6 +40,7 @@ accessory_interior_data	: day_prm.westernstar.49x.interior
 	glass_panes[]: .weststar49x.r.pane.back_day
 
 @include "seat.sui"
+@include "mirrors.sui"
 
 @include "dashboard_color.sui"
 }

@@ -1,0 +1,54 @@
+SiiNunit
+{
+accessory_chassis_data : 6x2l_l.volvo.vnl2018.chassis
+{
+	name: "Long 6x2 @@midlift@@"
+	price: 27900
+	unlock: 22
+	info[]: "6x2 @@midlift@@"
+	icon: "truck/volvo_vnl2018/chassis/chs_6x2lift_860"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2018/chassis/chs_6x2lift_860.pmd"
+	collision: "/vehicle/truck/volvo_vnl2018/chassis/chs_6x2lift_860.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/volvo_vnl2018/uis_860.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/volvo_vnl2018/ui_shadow/shadow_860.pmd"
+
+	tank_size: 909
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: false
+	powered_axle[]: true
+
+	liftable_axle[]: false
+	liftable_axle[]: true
+	liftable_axle[]: false
+
+	kerb_weight[]: 4645	# 10220lb
+	kerb_weight[]: 1805	# 3970lb
+	kerb_weight[]: 1805	# 3970lb
+
+	defaults[]: "/def/vehicle/truck/volvo.vnl2018/cabin/s860.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2018/accessory/r_chs_cover/stock_long.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2018/accessory/tank/alu_225_long.sii"
+
+	conflict_with[]: "day.volvo.vnl2018.cabin"
+	conflict_with[]: "s740.volvo.vnl2018.cabin"
+
+//	lamp_setup: "/def/vehicle/truck/volvo.vnl2018/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

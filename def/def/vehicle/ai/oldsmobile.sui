@@ -8,12 +8,11 @@ traffic_vehicle : traffic.oldsmobile
 
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	vehicle_mass: 1700
 
-	spawn_ratio: 0.15
+	spawn_ratio: 0.05
+
+	tags[]: vintage
 
 	variant[]: traffic.oldsmobile.cabrio
 
@@ -26,6 +25,8 @@ traffic_vehicle : traffic.oldsmobile
 	color[]: (0.8713, 0.8631, 0.8227) #white
 	color[]: (0.8713, 0.8631, 0.8227) #white
 	
+	tags[]: cheap
+
 @include "drivers_generic.sui"
 }
 vehicle_accessory: .oldsmobil.chassis
@@ -49,10 +50,9 @@ traffic_vehicle : traffic.oldsmobile.cabrio
 	accessories[]: .oldsmobil.cabrio.rwheel
 
 	max_speed: 160
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	vehicle_mass: 1700
+
+	tags[]: vintage
 	
 	color[]: (0.0343, 0.0343, 0.0343) #black
 	color[]: (0.0382, 0.0318, 0.0273) #brown
@@ -62,6 +62,8 @@ traffic_vehicle : traffic.oldsmobile.cabrio
 	color[]: (0.2269, 0.0129, 0.0129) #red
 
 	spawn_condition[]: .traffic.oldsmobile.cabrio.condition.weather
+	tags[]: cheap
+
 
 @include "drivers_generic.sui"
 }

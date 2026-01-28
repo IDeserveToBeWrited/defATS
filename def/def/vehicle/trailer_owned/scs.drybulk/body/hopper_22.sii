@@ -1,0 +1,32 @@
+SiiNunit
+{
+accessory_trailer_body_data : hopper_22.scs.drybulk.body
+{
+	name: "@@bs_drybulk@@"
+	price: 9000
+	unlock: 9
+	icon: "trailer_owned/scs_drybulk/chassis/ch_22_1a"
+
+	# 22' x 102" x 13'6"
+	# Internal: 13'6" x 96.5" x 101"
+
+	size: (2.4511, 2.5654, 4.1148)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 6.7056)	# width, height, length (size of the body + chassis)
+
+	volume: 19.8		# 700 cft
+	body_type: silo
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for trailer is in chassis, bodies have only deltas to the mass.
+	# Shorter body variants would have smaller delta.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_drybulk/body/hopper_22.pmd"
+	collision: "/vehicle/trailer_owned/scs_drybulk/body/hopper_22.pmc"
+	variant: default
+}
+}

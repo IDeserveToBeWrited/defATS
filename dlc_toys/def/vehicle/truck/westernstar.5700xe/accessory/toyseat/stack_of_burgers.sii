@@ -1,0 +1,30 @@
+SiiNunit
+{
+accessory_addon_int_data : burgers.westernstar.5700xe.toyseat
+{
+	name: "@@stack_of_burgers@@"
+	price: 55
+	unlock: 0
+	icon: "stack_of_burgers"
+	part_type: aftermarket
+	
+	interior_model: "/vehicle/truck/upgrade/interior_decors/toyseat/stack_of_burgers.pmd"
+	exterior_model: "/vehicle/truck/upgrade/interior_decors/toyseat/stack_of_burgers_ext.pmd"
+
+	data[]: .sburger_cvr.phys_data
+}
+physics_toy_data : .sburger_cvr.phys_data
+{
+	phys_model: "/vehicle/truck/upgrade/interior_decors/toyseat/stack_of_burgers_cvr.pmd"
+	phys_model_coll: "/vehicle/truck/upgrade/interior_decors/toyseat/stack_of_burgers_cvr.pmc"
+
+	toy_type: "TT_joint"		# TT_rope, TT_double_rope, TT_joint
+	toy_mass: 0.4			# toy mass
+	locator_hook_offset: (-0.214f, 0.224f, -0.0125f)	# offset of connection point on hook against toy locator
+
+	# definitions applied only to toys with joint
+	angular_stiffness: (200.0, 200.0)		# joint - together with angular damping influences frequency and amplitude of oscilation
+	angular_damping: (3.5, 3.5)		# joint - together with angular stiffness influences frequency and amplitude of oscilation
+	angular_amplitude: (10.0, 0.0, 0.0)	# joint - maximal deflection agains equilibrium position
+}
+}

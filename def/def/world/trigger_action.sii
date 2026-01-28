@@ -90,6 +90,13 @@ trigger_action : trig_action.offence {
 # Example: 'cvar_g_pounds kg lb' - string cvar with name 'g_pounds' must be set to 'kg' or 'lb' for the check to pass.
 # Example: 'cvar_g_traffic 0' - numeric cvar with name 'g_traffic' must be set to '0' for the check to pass.
 # Example: 'cvar_g_traffic 1 100' - numeric cvar with name 'g_traffic' must be set to some value in interval <1;100> for the check to pass.
+#
+# Check succeeds depending on the oversize job active and given parameter.
+# Possible parameters:
+# 'oversize_job' (no additional parameter) - succeeds if ANY oversize job is active.
+# 'oversize_job none' - succeeds if NO oversize job is active.
+# 'oversize_job law_mca1' - succeeds if SPECIFIC oversize job 'law_mca1' is active.
+#
 
 trigger_action : trig_action.check_and {
 	name: "*Check (all conditions)"
@@ -97,7 +104,7 @@ trigger_action : trig_action.check_and {
 
 	str_params[]: "[param1,2,...] Condition string in format: [check_type] [parameters]"
 	str_params[]: "[param1,2,...] Check types: 'random' | 'trailer_count' | 'trailer_length' | 'cvar'"
-	str_params[]: "[param1,2,...] Check types: 'height' | 'width' | 'speed' | 'weight' | 'state'"
+	str_params[]: "[param1,2,...] Check types: 'height' | 'width' | 'speed' | 'weight' | 'state' | 'oversize_job'"
 	str_params[]: "[param1,2,...] For info about individual check types, see /def/world/trigger_action.sii"
 }
 
@@ -107,7 +114,7 @@ trigger_action : trig_action.check_or {
 
 	str_params[]: "[param1,2,...] Condition string in format: [check_type] [parameters]"
 	str_params[]: "[param1,2,...] Check types: 'random' | 'trailer_count' | 'trailer_length' | 'cvar'"
-	str_params[]: "[param1,2,...] Check types: 'height' | 'width' | 'speed' | 'weight' | 'state'"
+	str_params[]: "[param1,2,...] Check types: 'height' | 'width' | 'speed' | 'weight' | 'state' | 'oversize_job'"
 	str_params[]: "[param1,2,...] For info about individual check types, see /def/world/trigger_action.sii"
 }
 
@@ -124,8 +131,9 @@ trigger_action : trig_action.gate
 	name: "*Gate control"
 	command: "gate"
 
-	str_params[]: "[param1] Action type: 'disable' (auto-reset) | 'lock' (auto-reset)"
+	str_params[]: "[param1] Action type: 'disable' (auto-reset) | 'lock' (auto-reset) | 'open' (auto-reset)"
 	str_params[]: "[note] Target gate(s) must be inside trigger area."
+	str_params[]: "[note] 'disable' and 'lock' can be used only for animated gate hookups, while 'open' is used for gate items."
 }
 
 trigger_action : trig_action.play_anim
@@ -134,6 +142,24 @@ trigger_action : trig_action.play_anim
 	command: "play_anim"
 
 	str_params[]: "[target] Mover item to play the animation."
+}
+
+
+trigger_action : trig_action.toll_start
+{
+	name: "*Tollgate start (override hookups)"
+	command: "toll_start"
+
+	str_params[]: "[param1] Toll amount paid immediately (USD)"
+}
+
+
+trigger_action : trig_action.toll_end
+{
+	name: "*Tollgate end (override hookups)"
+	command: "toll_end"
+
+	str_params[]: "[param1] Toll amount per km of route from the corresponding start tollgate (USD)"
 }
 
 ########## Preset actions ##########
@@ -164,10 +190,66 @@ trigger_action : trig_action.weight_check
 
 trigger_action : trig_action.pay_toll
 {
-	name: "Pay toll (default)"
+	name: "[obsolete] Pay toll (default)"
 
 	command: "_pay_toll"
 	num_params[]: 25
+}
+
+trigger_action : trig_action.pay_toll1
+{
+	name: "[obsolete] Pay toll (INT North - 3 axle)"
+
+	command: "_pay_toll"
+	num_params[]: 2.45
+}
+
+trigger_action : trig_action.pay_toll2
+{
+	name: "[obsolete] Pay toll (INT North - 5 axle)"
+
+	command: "_pay_toll"
+	num_params[]: 7.05
+}
+
+trigger_action : trig_action.pay_toll3
+{
+	name: "[obsolete] Pay toll (INT North - 6 axle)"
+
+	command: "_pay_toll"
+	num_params[]: 8.50
+}
+
+trigger_action : trig_action.pay_toll4
+{
+	name: "[obsolete] Pay toll (I-44 Turner - 3 axle)"
+
+	command: "_pay_toll"
+	num_params[]: 3.65
+}
+
+trigger_action : trig_action.pay_toll5
+{
+	name: "[obsolete] Pay toll (I-44 Turner - 5 axle)"
+
+	command: "_pay_toll"
+	num_params[]: 9.55
+}
+
+trigger_action : trig_action.pay_toll6
+{
+	name: "[obsolete] Pay toll (I-44 Turner - 6 axle)"
+
+	command: "_pay_toll"
+	num_params[]: 11.40
+}
+
+trigger_action : trig_action.toll_onetime
+{
+	name: "*Tollgate one-time (override hookups)"
+	command: "toll_onetime"
+
+	str_params[]: "[param1] Toll amount paid immediately (USD)"
 }
 
 trigger_action : trig_action.park_check
@@ -187,7 +269,9 @@ trigger_action : trig_action.park_toll
 trigger_action : trig_action.slow_time
 {
 	name: "Slow time (auto reset)"
-	command: "_slow_time"
+	#command: "_slow_time"
+	command: "echo"
+	str_params[]: "Slow time trigger"
 }
 
 }

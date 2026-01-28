@@ -176,12 +176,34 @@ traffic_rule_data : traffic_rule.s_trl_r
 	num_params[]: 1		# count limit
 }
 
+traffic_rule_data : traffic_rule.s_trl_t
+{
+	# name: "Spawn density light trucks tourist"
+
+	rule: "density"
+
+	str_params[]: "truck_light tourist"
+
+	num_params[]: 6.0	# 6:00
+	num_params[]: 0.08	# frequency
+	num_params[]: 6		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.1	# frequency
+	num_params[]: 6		# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.03	# frequency
+	num_params[]: 2		# count limit
+}
+
 traffic_rule_data : traffic_rule.s_trm_u
 {
 	# name: "Spawn density medium trucks urban"
 
 	rule: "density"
 
+	str_params[]: "lanes: 0.5 0.3 0.2"
 	str_params[]: "truck_medium"
 
 	num_params[]: 6.0	# 6:00
@@ -203,6 +225,7 @@ traffic_rule_data : traffic_rule.s_trm_r
 
 	rule: "density"
 
+	str_params[]: "lanes: 1.0 0.0 0.0"
 	str_params[]: "truck_medium"
 
 	num_params[]: 0.0	# 00:00
@@ -216,6 +239,7 @@ traffic_rule_data : traffic_rule.s_trh_u
 
 	rule: "density"
 
+	str_params[]: "lanes: 0.5 0.3 0.2"
 	str_params[]: "truck_heavy"
 
 	num_params[]: 6.0	# 6:00
@@ -237,6 +261,7 @@ traffic_rule_data : traffic_rule.s_trh_r
 
 	rule: "density"
 
+	str_params[]: "lanes: 1.0 0.0 0.0"
 	str_params[]: "truck_heavy"
 
 	num_params[]: 0.0	# 00:00
@@ -251,6 +276,7 @@ traffic_rule_data : traffic_rule.s_truck_l
 
 	rule: "density"
 
+	str_params[]: "lanes: 1.0 0.0 0.0"
 	str_params[]: "truck"
 
 	num_params[]: 7.0	# 7:00
@@ -272,6 +298,7 @@ traffic_rule_data : traffic_rule.s_truck_d_l
 
 	rule: "density"
 
+	str_params[]: "lanes: 1.0 0.0 0.0"
 	str_params[]: "truck_long"
 
 	num_params[]: 7.0	# 7:00
@@ -293,6 +320,7 @@ traffic_rule_data : traffic_rule.s_truck_h
 
 	rule: "density"
 
+	str_params[]: "lanes: 1.0 0.0 0.0"
 	str_params[]: "truck"
 
 	num_params[]: 7.0	# 7:00
@@ -389,14 +417,15 @@ traffic_rule_data : traffic_rule.s_bus_l
 
 	rule: "density"
 
+	str_params[]: "lanes: 0.8 0.15 0.05"
 	str_params[]: "bus"
 
 	num_params[]: 7.0	# 7:00
-	num_params[]: 0.02	# frequency
+	num_params[]: 0.015	# frequency
 	num_params[]: 1		# count limit
 
 	num_params[]: 17.0	# 17:00
-	num_params[]: 0.02	# frequency
+	num_params[]: 0.015	# frequency
 	num_params[]: 1		# count limit
 
 	num_params[]: 0.0	# 00:00
@@ -410,19 +439,20 @@ traffic_rule_data : traffic_rule.s_bus_h
 
 	rule: "density"
 
+	str_params[]: "lanes: 0.8 0.15 0.05"
 	str_params[]: "bus"
 
 	num_params[]: 7.0	# 7:00
-	num_params[]: 0.05	# frequency
-	num_params[]: 2		# count limit
+	num_params[]: 0.02	# frequency
+	num_params[]: 1		# count limit
 
 	num_params[]: 17.0	# 17:00
-	num_params[]: 0.05	# frequency
-	num_params[]: 2		# count limit
+	num_params[]: 0.02	# frequency
+	num_params[]: 1		# count limit
 
 	num_params[]: 0.0	# 00:00
-	num_params[]: 0.08	# frequency
-	num_params[]: 2		# count limit
+	num_params[]: 0.02	# frequency
+	num_params[]: 1		# count limit
 }
 
 traffic_rule_data : traffic_rule.s_police
@@ -461,10 +491,31 @@ traffic_rule_data : traffic_rule.s_tram
 
 	num_params[]: 7.0	# 7:00
 	num_params[]: 0.05	# frequency
-	num_params[]: 1		# count limit
+	num_params[]: 2		# count limit
 
 	num_params[]: 17.0	# 17:00
 	num_params[]: 0.05	# frequency
+	num_params[]: 2 	# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.0	# frequency
+	num_params[]: 0		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_tram_c
+{
+	# name: "Spawn density tram custom"
+
+	rule: "density"
+
+	str_params[]: "tram context"
+
+	num_params[]: 7.0	# 7:00
+	num_params[]: 0.5	# frequency
+	num_params[]: 1		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.5	# frequency
 	num_params[]: 1		# count limit
 
 	num_params[]: 0.0	# 00:00
@@ -472,12 +523,13 @@ traffic_rule_data : traffic_rule.s_tram
 	num_params[]: 0		# count limit
 }
 
-traffic_rule_data : traffic_rule.s_train_c
+traffic_rule_data : traffic_rule.s_train_crg
 {
 	# name: "Spawn density cargo train"
 
 	rule: "density"
 
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train cargo"
 
 	num_params[]: 0.0	# 00:00
@@ -485,13 +537,33 @@ traffic_rule_data : traffic_rule.s_train_c
 	num_params[]: 1		# count limit
 }
 
-
-traffic_rule_data : traffic_rule.s_train_c2
+traffic_rule_data : traffic_rule.s_train_m
 {
-	name: "[spawn] Spawn density - cargo train (plane)"
+	# name: "Spawn density metro trains"
 
 	rule: "density"
 
+	str_params[]: "train_custom metro"
+
+	num_params[]: 7.0	# 7:00
+	num_params[]: 0.8	# frequency
+	num_params[]: 2		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.8	# frequency
+	num_params[]: 2		# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.1	# frequency
+	num_params[]: 1		# count limit
+}
+
+
+traffic_rule_data : traffic_rule._s_train_c2
+{
+	rule: "density"
+
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train cargo"
 	str_params[]: "train_car.trplane_car 1 | train_car.trplane_care 1 | train_car.trplane_car 1 | train_car.trplane_care 1 | train_car.trplane_car 1 | train_car.trplane_care 1"
 
@@ -500,12 +572,19 @@ traffic_rule_data : traffic_rule.s_train_c2
 	num_params[]: 1		# count limit
 }
 
-traffic_rule_data : traffic_rule.s_train_c3
+traffic_rule_data : traffic_rule.s_train_c2
 {
-	name: "[spawn] Spawn density - cargo train (windturb - co)"
+	name: "[obsolete] Spawn density - cargo train (plane)"
 
+	str_params[]: "Please replace with '[context] Company area (depot)' and add item tag 'plane'."
+	additional_rules[]: traffic_rule._s_train_c2
+}
+
+traffic_rule_data : traffic_rule._s_train_c3
+{
 	rule: "density"
 
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train cargo"
 	str_params[]: "train_car.tube 6-10"
 
@@ -514,12 +593,19 @@ traffic_rule_data : traffic_rule.s_train_c3
 	num_params[]: 1		# count limit
 }
 
-traffic_rule_data : traffic_rule.s_train_cw
+traffic_rule_data : traffic_rule.s_train_c3
 {
-	name: "[spawn] Spawn density - cargo train (wood full)"
+	name: "[obsolete] Spawn density - cargo train (windturb - co)"
 
+	str_params[]: "Please replace with '[context] Company area (depot)' and add item tag 'wind_turbine'."
+	additional_rules[]: traffic_rule._s_train_c3
+}
+
+traffic_rule_data : traffic_rule._s_train_cw
+{
 	rule: "density"
 
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train cargo"
 	str_params[]: "train_car.cargo.wood 5-9"
 
@@ -528,12 +614,19 @@ traffic_rule_data : traffic_rule.s_train_cw
 	num_params[]: 1		# count limit
 }
 
-traffic_rule_data : traffic_rule.s_train_cwe
+traffic_rule_data : traffic_rule.s_train_cw
 {
-	name: "[spawn] Spawn density - cargo train (wood empty)"
+	name: "[obsolete] Spawn density - cargo train (wood full)"
 
+	str_params[]: "Please replace with '[context] Company area (depot)' and add item tag 'wood_full'."
+	additional_rules[]: traffic_rule._s_train_cw
+}
+
+traffic_rule_data : traffic_rule._s_train_cwe
+{
 	rule: "density"
 
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train cargo"
 	str_params[]: "train_car.cargo.wood_e 5-9"
 
@@ -542,12 +635,21 @@ traffic_rule_data : traffic_rule.s_train_cwe
 	num_params[]: 1		# count limit
 }
 
-traffic_rule_data : traffic_rule.s_train_cl
+traffic_rule_data : traffic_rule.s_train_cwe
+{
+	name: "[obsolete] Spawn density - cargo train (wood empty)"
+
+	str_params[]: "Please change to '[context] Company area (depot)' and add item tag 'wood_empty'."
+	additional_rules[]: traffic_rule._s_train_cwe
+}
+
+traffic_rule_data : traffic_rule.s_train_crgl
 {
 	# name: "Spawn density - 'low' cargo train (no containers)"
 
 	rule: "density"
 
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train cargo"
 	str_params[]: "train_car.cargo.tank 4-7"
 	str_params[]: "train_car.cargo.dump 4-7"
@@ -565,6 +667,7 @@ traffic_rule_data : traffic_rule.s_train_p
 
 	rule: "density"
 
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train passenger"
 
 	num_params[]: 0.0	# 00:00
@@ -578,11 +681,123 @@ traffic_rule_data : traffic_rule.s_train_w
 
 	rule: "density"
 
+	str_params[]: "crossing_distance_min: 450"
 	str_params[]: "train_wire"
 
 	num_params[]: 0.0	# 00:00
 	num_params[]: 0.015	# frequency
 	num_params[]: 1		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_train_dp
+{
+	# name: "Spawn density train depot"
+
+	rule: "density"
+
+	str_params[]: "exclusive: true" # Ensure spawning only at exclusively allowed places (i.e. rails)
+	str_params[]: "context: true"
+
+	str_params[]: "crossing_distance_min: 150"
+	str_params[]: "train cargo"
+	str_params[]: "train depot 5-8"
+	str_params[]: "train depot_short 2-3"
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.02	# frequency
+	num_params[]: 1		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_truck_c_d
+{
+	# name: "Spawn density truck_custom depot"
+
+	rule: "density"
+
+	str_params[]: "truck_custom context"
+
+	num_params[]: 6.0	# 6:00
+	num_params[]: 0.08	# frequency
+	num_params[]: 2		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.08	# frequency
+	num_params[]: 2		# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.0	# frequency
+	num_params[]: 0		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_truck_d
+{
+	# name: "Spawn density truck depot"
+
+	rule: "density"
+
+	str_params[]: "ranged: true"
+	str_params[]: "context: true"
+
+	str_params[]: "truck"
+	str_params[]: "truck context"
+
+	num_params[]: 7.0	# 7:00
+	num_params[]: 0.15	# frequency
+	num_params[]: 5		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.15	# frequency
+	num_params[]: 5		# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.1	# frequency
+	num_params[]: 3		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_car_d
+{
+	# name: "Spawn density car depot"
+
+	rule: "density"
+
+	str_params[]: "ranged: true"
+	str_params[]: "context: true"
+
+	str_params[]: "lanes: 0.6 0.35 0.05"
+	str_params[]: "car"
+
+	num_params[]: 7.0	# 7:00
+	num_params[]: 0.05	# frequency
+	num_params[]: 4		# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.05	# frequency
+	num_params[]: 4		# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.02	# frequency
+	num_params[]: 2		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_car_c_d
+{
+	# name: "Spawn density car_custom depot"
+
+	rule: "density"
+
+	str_params[]: "car_custom context"
+
+	num_params[]: 6.0	# 6:00
+	num_params[]: 0.2	# frequency
+	num_params[]: 10	# count limit
+
+	num_params[]: 17.0	# 17:00
+	num_params[]: 0.2	# frequency
+	num_params[]: 10	# count limit
+
+	num_params[]: 0.0	# 00:00
+	num_params[]: 0.0	# frequency
+	num_params[]: 0		# count limit
 }
 
 traffic_rule_data : traffic_rule.s_slow
@@ -625,6 +840,15 @@ traffic_rule_data : traffic_rule.s_truck_r
 	num_params[]: 0.0	# 00:00
 	num_params[]: 0.0	# frequency
 	num_params[]: 0		# count limit
+}
+
+traffic_rule_data : traffic_rule.s_cust_r
+{
+	# name: "Spawn density custom rural"
+
+	# NOTE: Allow only single spawn density with spawn count limit set to 1
+	# until vehicles are able to avoid each other at narrow (field/walk) roads.
+	additional_rules[]: traffic_rule.s_truck_r
 }
 
 traffic_rule_data : traffic_rule.s_medical_u

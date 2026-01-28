@@ -1,0 +1,57 @@
+SiiNunit
+{
+
+mover_model_group : mover.log_loader
+{
+	mover_name: "log loader dynamic"
+	desc_tags[]: log_loader
+	desc_tags[]: dynamic
+	action_tags[]: log_loader
+	action_tags[]: dynamic
+}
+
+mover_model_group : mover.dc_log
+{
+	mover_name: "log dynamic cargo"
+
+	desc_tags[]: dc_log
+	desc_tags[]: dynamic
+	action_tags[]: dc_log
+	action_tags[]: dynamic
+}
+
+mover_model_group : mover.dc_ll_body
+{
+	mover_name: "(DO NOT USE!) log loader dynamic cargo loader BODY"
+
+	desc_tags[]: dc_log_load
+	desc_tags[]: dc_body
+	
+	action_tags[]: dc_log_load
+	action_tags[]: dc_body
+}
+
+mover_model_group : mover.cargo_logs
+{
+	mover_name: "log CARGO"
+
+	desc_tags[]: dc_cargo
+	desc_tags[]: cargo_log
+	
+	action_tags[]: dc_cargo
+	action_tags[]: cargo_log
+}
+
+mover_model_group : mover.dc_m_handlr
+{
+	mover_name: "(DO NOT USE!) Material handler dynamic cargo BODY"
+
+	desc_tags[]: dc_m_handlr
+	desc_tags[]: dc_body
+	
+	action_tags[]: dc_m_handlr
+	action_tags[]: dc_body
+}
+
+
+}

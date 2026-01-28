@@ -1,0 +1,33 @@
+traffic_trailer : traffic.trailer.scs_gas43p
+{
+	accessories[]: .traffic.trailer.scs_gas43.chassis
+	accessories[]: .traffic.trailer.scs_gas43.rwheel
+	accessories[]: .traffic.trailer.scs_gas43.rwheel2
+	accessories[]: .traffic.trailer.scs_gas43.paint_job
+	
+	cargo_mass: 16000
+
+	company_paint_job: true
+}
+
+vehicle_accessory: .traffic.trailer.scs_gas43.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gastank/chassis_43_2a.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_gas43.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_gas43.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.scs_gas43.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_gastank/company_paint_job/default.sii"
+}

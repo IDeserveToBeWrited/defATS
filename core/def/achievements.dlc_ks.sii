@@ -1,0 +1,284 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Kansas --
+
+# Discover at least 10 cities in Kansas.
+
+achievement_visit_city_data : .achievement.ks_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: colby
+	cities[]: dodge_city
+	cities[]: emporia
+	cities[]: garden_city
+	cities[]: hays
+	cities[]: hutchinson
+	cities[]: junction_cty
+	cities[]: kansas_ci_ks
+	cities[]: marysville
+	cities[]: phillipsburg
+	cities[]: pittsburg
+	cities[]: salina_ks
+	cities[]: topeka
+	cities[]: wichita
+	target: 10
+
+	achievement_name: ks_visit_cities
+
+	steam_progress_id: "ks_visit_cities-progress"
+	steam_id: ks_visit_cities
+}
+
+# View cutscenes from at least 7 viewpoints in Kansas.
+
+achievement_trigger_data : .achievement.ks_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ks_cutscenes
+	target: 7
+
+	achievement_name: ks_cutscenes
+
+	steam_progress_id: "ks_cutscenes-progress"
+	steam_id: ks_cutscenes
+}
+
+# Deliver an Aircraft Wing and Jet Engine Inlets to or from at least 2 aviation depots in Wichita.
+
+achievement_delivery : .achievement.ks_engine_wi
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ks_engine_wi.condition
+	target: 4
+
+	achievement_name: ks_engine_wing
+
+	steam_progress_id: "ks_engine_wing-progress"
+	steam_id: ks_engine_wing
+}
+
+achievement_delivery_sequence : .ks_engine_wi.condition
+{
+	list[]: .ks_engine_wi.air_eng2
+	list[]: .ks_engine_wi.jet_wing
+}
+
+achievement_delivery_sequence : .ks_engine_wi.air_eng2
+{
+	list[]: .ks_engine_wi.air_eng2.dw_air_pln
+	list[]: .ks_engine_wi.air_eng2.aport_ict
+	list[]: .ks_engine_wi.air_eng2.gss_air_svc
+	target: 2
+}
+
+achievement_delivery_each : .ks_engine_wi.air_eng2.dw_air_pln
+{
+	list[]: .ks_engine_wi.air_eng2.dw_air_pln.cargo
+	list[]: .ks_engine_wi.air_eng2.dw_air_pln.any
+}
+
+achievement_delivery_cargo : .ks_engine_wi.air_eng2.dw_air_pln.cargo
+{
+	cargo_name: air_eng2
+}
+
+achievement_delivery_company : .ks_engine_wi.air_eng2.dw_air_pln.any
+{
+	role: any
+	company_name: dw_air_pln
+	city_name: wichita
+}
+
+achievement_delivery_each : .ks_engine_wi.air_eng2.aport_ict
+{
+	list[]: .ks_engine_wi.air_eng2.aport_ict.cargo
+	list[]: .ks_engine_wi.air_eng2.aport_ict.any
+}
+
+achievement_delivery_cargo : .ks_engine_wi.air_eng2.aport_ict.cargo
+{
+	cargo_name: air_eng2
+}
+
+achievement_delivery_company : .ks_engine_wi.air_eng2.aport_ict.any
+{
+	role: any
+	company_name: aport_ict
+	city_name: wichita
+}
+
+achievement_delivery_each : .ks_engine_wi.air_eng2.gss_air_svc
+{
+	list[]: .ks_engine_wi.air_eng2.gss_air_svc.cargo
+	list[]: .ks_engine_wi.air_eng2.gss_air_svc.any
+}
+
+achievement_delivery_cargo : .ks_engine_wi.air_eng2.gss_air_svc.cargo
+{
+	cargo_name: air_eng2
+}
+
+achievement_delivery_company : .ks_engine_wi.air_eng2.gss_air_svc.any
+{
+	role: any
+	company_name: gss_air_svc
+	city_name: wichita
+}
+
+achievement_delivery_sequence : .ks_engine_wi.jet_wing
+{
+	list[]: .ks_engine_wi.jet_wing.dw_air_pln
+	list[]: .ks_engine_wi.jet_wing.aport_ict
+	list[]: .ks_engine_wi.jet_wing.gss_air_svc
+	target: 2
+}
+
+achievement_delivery_each : .ks_engine_wi.jet_wing.dw_air_pln
+{
+	list[]: .ks_engine_wi.jet_wing.dw_air_pln.cargo
+	list[]: .ks_engine_wi.jet_wing.dw_air_pln.any
+}
+
+achievement_delivery_cargo : .ks_engine_wi.jet_wing.dw_air_pln.cargo
+{
+	cargo_name: jet_wing
+}
+
+achievement_delivery_company : .ks_engine_wi.jet_wing.dw_air_pln.any
+{
+	role: any
+	company_name: dw_air_pln
+	city_name: wichita
+}
+
+achievement_delivery_each : .ks_engine_wi.jet_wing.aport_ict
+{
+	list[]: .ks_engine_wi.jet_wing.aport_ict.cargo
+	list[]: .ks_engine_wi.jet_wing.aport_ict.any
+}
+
+achievement_delivery_cargo : .ks_engine_wi.jet_wing.aport_ict.cargo
+{
+	cargo_name: jet_wing
+}
+
+achievement_delivery_company : .ks_engine_wi.jet_wing.aport_ict.any
+{
+	role: any
+	company_name: aport_ict
+	city_name: wichita
+}
+
+achievement_delivery_each : .ks_engine_wi.jet_wing.gss_air_svc
+{
+	list[]: .ks_engine_wi.jet_wing.gss_air_svc.cargo
+	list[]: .ks_engine_wi.jet_wing.gss_air_svc.any
+}
+
+achievement_delivery_cargo : .ks_engine_wi.jet_wing.gss_air_svc.cargo
+{
+	cargo_name: jet_wing
+}
+
+achievement_delivery_company : .ks_engine_wi.jet_wing.gss_air_svc.any
+{
+	role: any
+	company_name: gss_air_svc
+	city_name: wichita
+}
+
+# Discover at least 3 secret roads in Kansas.
+
+achievement_trigger_data : .achievement.ks_secret_ro
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ks_secret_roads
+	target: 3
+
+	achievement_name: ks_secret_roads
+
+	steam_progress_id: "ks_secret_roads-progress"
+	steam_id: ks_secret_roads
+}
+
+# Complete 6 deliveries from the Hutchinson Salt Mine in Kansas. At least 2 deliveries must be to a Food Factory.
+
+achievement_delivery : .achievement.ks_salt_food
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ks_salt_food.condition
+	target: 6
+
+	achievement_name: ks_salt_food
+
+	steam_progress_id: "ks_salt_food-progress"
+	steam_id: ks_salt_food
+}
+
+achievement_delivery_sequence : .ks_salt_food.condition
+{
+	list[]: .ks_salt_food.factory
+	list[]: .ks_salt_food.other
+}
+
+achievement_delivery_count : .ks_salt_food.factory
+{
+	condition: .ks_salt_food.factory.count
+	count: 2
+}
+
+achievement_delivery_each : .ks_salt_food.factory.count
+{
+	list[]: .ks_salt_food.factory.source
+	list[]: .ks_salt_food.factory.target
+}
+
+achievement_delivery_company :  .ks_salt_food.factory.source
+{
+	role: source
+	company_name: nmq_min_qrys
+	city_name: hutchinson	
+}
+
+achievement_delivery_company : .ks_salt_food.factory.target
+{
+	role: target
+	company_name: flv_food_pln
+}
+
+achievement_delivery_count : .ks_salt_food.other
+{
+	condition: .ks_salt_food.other.count
+	count: 4
+}
+
+achievement_delivery_company : .ks_salt_food.other.count
+{
+	role: source
+	company_name: nmq_min_qrys
+	city_name: hutchinson	
+}
+
+}

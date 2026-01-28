@@ -49,6 +49,309 @@ SiiNunit
 # in the beginning of the def
 # before adding any units.
 
+###########
+# FARMERS #
+###########
+
+mover_model_group : mover.farma
+{
+	mover_name: "male farmers"
+	desc_tags[]: mfarmer
+	anim_tags[]: casumr
+	pedestrian: true
+}
+
+mover_model_group : mover.ffarma
+{
+	mover_name: "female farmers"
+	desc_tags[]: ffarmer
+	anim_tags[]: casufr
+	pedestrian: true
+}
+
+
+##########################
+### OLD COWS FROM BASE ###
+##########################
+
+mover_model_group : mover.cow_all
+{
+	mover_name: "cow all"
+	desc_tags[]: cow
+	anim_tags[]: cow
+}
+mover_model_group : mover.cow_eat
+{
+	mover_name: "cow eat"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: eating
+}
+mover_model_group : mover.cows_idle
+{
+	mover_name: "cow idle all"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: idle
+}
+mover_model_group : mover.cow_we_all
+{
+	mover_name: "cow walking and eating"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: w_eating
+}
+
+mover_model_group : mover.calfs_idle
+{
+	mover_name: "calfs idle all"
+	desc_tags[]: calf
+	anim_tags[]: calf
+	anim_tags[]: idle
+}
+
+mover_model_group : mover.cows_herd
+{
+	mover_name: "anim cows herd"
+	desc_tags[]: cows_herd
+	anim_tags[]: cows_herd
+}
+
+mover_model_group : mover.cow_walk_eat
+{
+	mover_name: "cow_walk_eating"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: w_eating
+
+}
+mover_model_group : mover.cow_we
+{
+	mover_name: "cow_walk_eating"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: w_eating
+}
+mover_model_group : mover.cow_e
+{
+	mover_name: "cow_eating"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: eating
+}
+
+mover_model_group : mover.cow_l
+{
+	mover_name: "cow_lean"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: idle
+	anim_tags[]: lean
+}
+
+mover_model_group : mover.cows
+{
+	mover_name: "cows"
+	desc_tags[]: cow
+	anim_tags[]: cow
+	anim_tags[]: idle
+}
+
+###########
+# ANIMALS #
+###########
+
+mover_model_group : mover.moosemw
+{
+	mover_name: "moose male walking"
+	desc_tags[]: moosem
+	anim_tags[]: moosem
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.moosemi
+{
+	mover_name: "moose male idle"
+	desc_tags[]: moosem
+	anim_tags[]: moosem
+	anim_tags[]: idle
+	pedestrian: true
+}
+
+mover_model_group : mover.moosefw
+{
+	mover_name: "moose female walking"
+	desc_tags[]: moosef
+	anim_tags[]: moosef
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.moosefi
+{
+	mover_name: "moose female idle"
+	desc_tags[]: moosef
+	anim_tags[]: moosef
+	anim_tags[]: idle
+	pedestrian: true
+}
+
+mover_model_group : mover.herw
+{
+	mover_name: "heron walking"
+	desc_tags[]: heron
+	anim_tags[]: heron
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.heri
+{
+	mover_name: "heron idle"
+	desc_tags[]: heron
+	anim_tags[]: heron
+	anim_tags[]: idle
+	pedestrian: true
+}
+
+
+mover_model_group : mover.catw
+{
+	mover_name: "cat walking"
+	desc_tags[]: cat
+	anim_tags[]: cat
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.cati
+{
+	mover_name: "cat idle"
+	desc_tags[]: cat
+	anim_tags[]: cat
+	anim_tags[]: idle
+	pedestrian: true
+}
+
+mover_model_group : mover.guifowl
+{
+	mover_name: "guinea fowl walking"
+	desc_tags[]: fowl
+	anim_tags[]: fowl
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.guifowi
+{
+	mover_name: "guinea fowl idle"
+	desc_tags[]: fowl
+	anim_tags[]: fowl
+	anim_tags[]: idle
+	pedestrian: true
+}
+
+mover_model_group : mover.gul_wk1
+{
+	mover_name: "gull walking"
+	desc_tags[]: gull
+	anim_tags[]: gull
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.gul_id1
+{
+	mover_name: "gull idle"
+	desc_tags[]: gull
+	anim_tags[]: gull
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.don_wk1
+{
+	mover_name: "donkey walking"
+	desc_tags[]: donkey
+	anim_tags[]: donkey
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.don_id1
+{
+	mover_name: "donkey idle"
+	desc_tags[]: donkey
+	anim_tags[]: donkey
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.bea_wk1
+{
+	mover_name: "bear walking"
+	desc_tags[]: bear
+	anim_tags[]: bear
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.bea_id1
+{
+	mover_name: "bear idle"
+	desc_tags[]: bear
+	anim_tags[]: bear
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.ishee_ct2
+{
+	mover_name: "icelandic sheep canter"
+	desc_tags[]: isheep
+	anim_tags[]: sheep
+	anim_tags[]: canter
+	pedestrian: true
+}
+
+mover_model_group : mover.ishee_id2
+{
+	mover_name: "icelandic sheep idle"
+	desc_tags[]: isheep
+	anim_tags[]: sheep
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+
+mover_model_group : mover.bison_wlk
+{
+	mover_name: "bison walk"
+	desc_tags[]: bison_new
+	anim_tags[]: bison_new
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.bison_idl
+{
+	mover_name: "bison idle"
+	desc_tags[]: bison_new
+	anim_tags[]: bison_new
+	anim_tags[]: idle
+	pedestrian: true
+}
+
+mover_model_group : mover.bison_eat
+{
+	mover_name: "bison eat"
+	desc_tags[]: bison_new
+	anim_tags[]: bison_new
+	anim_tags[]: eat
+	pedestrian: true
+}
+
 mover_model_group : mover.sheep_wlk
 {
 	mover_name: "sheep walk"
@@ -57,6 +360,7 @@ mover_model_group : mover.sheep_wlk
 	anim_tags[]: walk
 	pedestrian: true
 }
+
 mover_model_group : mover.sheep_ctr
 {
 	mover_name: "sheep canter"
@@ -73,5 +377,347 @@ mover_model_group : mover.sheep_idl
 	anim_tags[]: idle
 	pedestrian: false
 }
+
+mover_model_group : mover.deer_eat
+{
+	mover_name: "deer eating"
+	desc_tags[]: deer
+	anim_tags[]: deer
+	anim_tags[]: eating
+	pedestrian: true
+}
+
+mover_model_group : mover.pig_eat
+{
+	mover_name: "pig eating"
+	desc_tags[]: pig
+	anim_tags[]: pig
+	anim_tags[]: eating
+	pedestrian: false
+}
+
+mover_model_group : mover.goa_eat
+{
+	mover_name: "goat eating"
+	desc_tags[]: goat
+	anim_tags[]: goat
+	anim_tags[]: eating
+	pedestrian: true
+}
+
+mover_model_group : mover.goa_walk
+{
+	mover_name: "goat walking"
+	desc_tags[]: goat
+	anim_tags[]: goat
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.goa_idle
+{
+	mover_name: "goat idle"
+	desc_tags[]: goat
+	anim_tags[]: goat
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.mountgo
+{
+	mover_name: "mountain goat idle"
+	desc_tags[]: mountgo
+	desc_tags[]: wild
+	anim_tags[]: mount
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.lo_idle
+{
+	mover_name: "longhorn bull idle"
+	desc_tags[]: longhorn
+	desc_tags[]: domesticated
+	anim_tags[]: longhorn
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.lo_eat
+{
+	mover_name: "longhorn bull walking"
+	desc_tags[]: longhorn
+	desc_tags[]: domesticated
+	anim_tags[]: longhorn
+	anim_tags[]: eating
+	pedestrian: true
+}
+
+mover_model_group : mover.dog1idle
+{
+	mover_name: "dog husky idle"
+	desc_tags[]: husky
+	desc_tags[]: dog
+	anim_tags[]: dog
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.dog1walk
+{
+	mover_name: "dog husky walking"
+	desc_tags[]: husky
+	desc_tags[]: dog
+	anim_tags[]: dog
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.dog2idle
+{
+	mover_name: "dog shepherd idle"
+	desc_tags[]: shep
+	desc_tags[]: dog
+	anim_tags[]: dog
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.dog2walk
+{
+	mover_name: "dog shepherd walking"
+	desc_tags[]: shep
+	desc_tags[]: dog
+	anim_tags[]: dog
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.rdmwalk
+{
+	mover_name: "reindeer male walking"
+	desc_tags[]: rein
+	desc_tags[]: male
+	anim_tags[]: rein
+	anim_tags[]: male
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.rdmeat
+{
+	mover_name: "reindeer male eating"
+	desc_tags[]: rein
+	desc_tags[]: male
+	anim_tags[]: rein
+	anim_tags[]: male
+	anim_tags[]: eat
+	pedestrian: true
+}
+
+mover_model_group : mover.rdmidl
+{
+	mover_name: "reindeer male idle"
+	desc_tags[]: rein
+	desc_tags[]: male
+	anim_tags[]: rein
+	anim_tags[]: male
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+mover_model_group : mover.rdfwalk
+{
+	mover_name: "reindeer female walking"
+	desc_tags[]: rein
+	desc_tags[]: female
+	anim_tags[]: rein
+	anim_tags[]: female
+	anim_tags[]: walk
+	pedestrian: true
+}
+
+mover_model_group : mover.rdfeat
+{
+	mover_name: "reindeer female eating"
+	desc_tags[]: rein
+	desc_tags[]: female
+	anim_tags[]: rein
+	anim_tags[]: female
+	anim_tags[]: eat
+	pedestrian: true
+}
+
+mover_model_group : mover.rdfidl
+{
+	mover_name: "reindeer female idle"
+	desc_tags[]: rein
+	desc_tags[]: female
+	anim_tags[]: rein
+	anim_tags[]: female
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+############################
+# HUMANS / WOMAN / GRANDMA #
+############################
+
+ mover_model_group : mover.babca_st
+ {
+ 	mover_name: "grandma standing"
+ 	desc_tags[]: grandma
+ 	anim_tags[]: grandma
+	anim_tags[]: stand
+ 	anim_tags[]: idle
+ 	pedestrian: false
+ }
+
+mover_model_group : mover.babca_sit
+{
+	mover_name: "grandma sitting"
+	desc_tags[]: grandma
+	anim_tags[]: grandma
+	anim_tags[]: sit
+	anim_tags[]: idle
+	pedestrian: false
+}
+
+######################################
+# HUMANS / WOMAN / GASSTATION SELLER #
+######################################
+
+# mover_model_group : mover.gass_wo
+# {
+# 	mover_name: "gasstation seller woman"
+# 	desc_tags[]: wseller
+# 	anim_tags[]: wseller
+#	anim_tags[]: stand
+# 	anim_tags[]: idle
+# 	pedestrian: false
+# }
+
+################################
+# HUMANS / UNI / ZIPLINE RIDER #
+################################
+
+mover_model_group : mover.zipliner
+{
+	mover_name: "zipline rider"
+	desc_tags[]: zipline
+	anim_tags[]: zipline
+	pedestrian: true
+}
+
+#######################
+# CRANE / TOWER / SHR #
+#######################
+
+mover_model_group : mover.twr_cr
+{
+	mover_name: "tower_crane_shr_mov"
+    desc_tags[]: tower_cr
+    anim_tags[]: tower_cr
+}
+
+mover_model_group : mover.twr_cr1
+{
+	mover_name: "tower_crane_shr_mov1"
+    desc_tags[]: tower_cr1
+    anim_tags[]: tower_cr1
+}
+
+mover_model_group : mover.twr_cr2
+{
+	mover_name: "tower_crane_shr_mov2"
+    desc_tags[]: tower_cr2
+    anim_tags[]: tower_cr2
+}
+
+mover_model_group : mover.twr_cr3
+{
+	mover_name: "tower_crane_shr_mov3"
+    desc_tags[]: tower_cr3
+    anim_tags[]: tower_cr3
+}
+
+mover_model_group : mover.twr_cr4
+{
+	mover_name: "tower_crane_shr_mov4"
+    desc_tags[]: tower_cr4
+    anim_tags[]: tower_cr4
+}
+
+#####################
+#   BEACH PEOPLES   #
+#####################
+
+mover_model_group : mover.beach_all
+{
+	mover_name: "beach people"
+	desc_tags[]: beachp
+	anim_tags[]: beachp
+	pedestrian: true
+}
+
+mover_model_group : mover.beach_ly
+{
+	mover_name: "beach people lying"
+	desc_tags[]: beapos
+	pedestrian: false
+}
+
+###################
+# BUSINESS PEOPLE #
+###################
+
+mover_model_group : mover.busi_f
+{
+	mover_name: "business females standing"
+	desc_tags[]: busifr
+	anim_tags[]: casufr
+	pedestrian: true
+}
+
+mover_model_group : mover.busi_m
+{
+	mover_name: "business males standing"
+	desc_tags[]: busimr
+	anim_tags[]: casumr
+	pedestrian: true
+}
+mover_model_group : mover.bikem
+{
+	mover_name: "male biker"
+	desc_tags[]: casumr
+	anim_tags[]: bikermr
+	pedestrian: true
+}
+
+mover_model_group : mover.bikef
+{
+	mover_name: "female biker"
+	desc_tags[]: casufr
+	desc_tags[]: seatr
+	anim_tags[]: bikerfr
+	pedestrian: true
+}
+
+mover_model_group : mover.cas_f
+{
+	mover_name: "casual females standing"
+	desc_tags[]: casufr
+	anim_tags[]: casufr
+	pedestrian: true
+}
+
+mover_model_group : mover.cas_m
+{
+	mover_name: "casual males standing"
+	desc_tags[]: casumr
+	anim_tags[]: casumr
+	pedestrian: true
+}
+
 
 }

@@ -1,0 +1,51 @@
+SiiNunit
+{
+accessory_chassis_data : 6x4_m.westernstar.5700xe.chassis
+{
+	name: "Medium 6x4"
+	price: 26200
+	unlock: 13
+	info[]: "6x4"
+	icon: "westernstar_5700xe/chs_6x4_m"
+	part_type: factory
+
+	model: "/vehicle/truck/westernstar_5700xe/chassis/chs_6x4_m.pmd"
+	collision: "/vehicle/truck/westernstar_5700xe/chassis/chs_6x4_m.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/westernstar_5700xe/ui_shadow_m.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/westernstar_5700xe/ui_shadow/ui_shadow_m.pmd"
+
+	tank_size: 909
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: true
+
+	kerb_weight[]: 4645	# 10220 lb
+	kerb_weight[]: 1805	# 3970 lb
+	kerb_weight[]: 1805	# 3970 lb
+
+	defaults[]: "/def/vehicle/truck/westernstar.5700xe/cabin/s54.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.5700xe/accessory/exhaust/stock_s54.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.5700xe/accessory/sideskirt/base_sleeper.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.5700xe/accessory/tank/chrome_240.sii"
+
+	conflict_with[]: "day.westernstar.5700xe.cabin"
+	conflict_with[]: "s82.westernstar.5700xe.cabin"
+
+	lamp_setup: "/def/vehicle/truck/westernstar.5700xe/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

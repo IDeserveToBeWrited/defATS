@@ -1,0 +1,33 @@
+SiiNunit
+{
+
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+prefab_model : prefab.la_1a002
+{
+	name: "la draw bridge 1-1"
+	model_desc: "/prefab/bridge/la_draw_bridge_1-1.pmd"
+	prefab_desc: "/prefab/bridge/la_draw_bridge_1-1.ppd"
+	category: ""
+
+	dynamic_lod_desc[]: "/prefab/bridge/la_draw_bridge_1-1_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+prefab_model : prefab.la_1a003
+{
+	name: "la draw bridge 2-2 static"
+	model_desc: "/prefab/bridge/la_draw_bridge_2-2_static.pmd"
+	prefab_desc: "/prefab/bridge/la_draw_bridge_2-2_static.ppd"
+	category: ""
+
+	dynamic_lod_desc[]: "/prefab/bridge/la_draw_bridge_2-2_static_lod1.pmd"
+	dynamic_lod_dist[]: 150
+}
+
+}

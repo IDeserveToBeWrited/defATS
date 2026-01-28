@@ -1,0 +1,139 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+curve_model : curve.wy_1e001
+{
+	model_desc: "/model/panorama/wy_casper/wy_casper_wall_1.pmd"
+	name: "wy casper wall 1"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_1c002
+{
+	model_desc: "/model/panorama/wy_i80/wy_i80_twin_tunnels.pmd"
+	name: "wy i80 twin tunnels"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center1,center2 : 1.0 | center3,center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_2k002
+{
+	model_desc: "/model/bridge/wy_gillette_bridge_0-2_fwy.pmd"
+	name: "wy gillette bridge 0-2 fwy"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_2o001
+{
+	model_desc: "/model/bridge/wy_wheatland_bridge_1-1-1.pmd"
+	name: "wy wheatland bridge 1-1-1"
+
+	variation[]: "Default | center3,center2,center1,center2,center3 : 1.0"
+
+	dynamic_lod_desc[]: "/model/bridge/wy_wheatland_bridge_1-1-1_lod1.pmd"
+	dynamic_lod_dist[]: 150.0
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_2o003
+{
+	model_desc: "/model/bridge/wy_casper_bridge_0-2_freeway.pmd"
+	name: "wy casper bridge 0-2 freeway"
+
+	variation[0]: "yellow | center3,center2,center1,center0 : 1.0"
+	start_part[0]: "start0"
+	end_part[0]: "end0"
+
+	variation[1]: "blue | center7,center6,center5,center4 : 1.0"
+	start_part[1]: "start1"
+	end_part[1]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_2o004
+{
+	model_desc: "/model/bridge/wy_gillette_bridge_2-1-2_country.pmd"
+	name: "wy gillette bridge 2-1-2 country"
+
+	variation[0]: "yellow | center4,center3,center2,center1 : 1.0"
+	start_part[0]: "start0"
+	end_part[0]: "end0"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_0r001
+{
+	model_desc: "/model/panorama/wy_us191/wy_bird_siluets_wall.pmd"
+	name: "wy bird siluets wall"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "variant1 | center1,center2 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.wy_1p004
+{
+	model_desc: "/model/panorama/wy_i80/wy_rock_i80_tunnel_entrance_curve.pmd"
+	name: "wy rock i80 tunnel entrance curve"
+
+	variation: 3
+	start_part: 3
+	end_part: 3
+	variation[0]: "entrance1 | center5,center6,center7,center8 : 1.0"
+	start_part[0]: "start4"
+	end_part[0]: "end2"
+	variation[1]: "base | center12 : 1.0 | center10 : 1.0 | center14 : 1.0 | center16 : 1.0"
+	start_part[1]: "start4"
+	end_part[1]: "end2"
+	variation[2]: "entrance2 | center12 : 1.0 | center10 : 1.0"
+	start_part[2]: "start2"
+	end_part[2]: "end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/panorama/wy_i80/wy_rock_i80_tunnel_entrance_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 200
+
+	smooth_surface: true
+}
+}

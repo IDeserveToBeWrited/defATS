@@ -1,0 +1,36 @@
+trailer : trailer.scs_fuel43
+{
+	trailer_definition: trailer_def.scs.fueltank.single_43r.fueltank
+
+	accessories[]: .scs_fuel43.chassis
+	accessories[]: .scs_fuel43.rwheel
+	accessories[]: .scs_fuel43.rwheel2
+	accessories[]: .scs_fuel43.paint_job
+	accessories[]: .scs_fuel43.body
+}
+
+vehicle_accessory: .scs_fuel43.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_fueltank/chassis_43_r.sii"
+}
+
+vehicle_wheel_accessory: .scs_fuel43.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_fuel43.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_fuel43.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_fueltank/company_paint_job/default.sii"
+}
+vehicle_accessory: .scs_fuel43.body
+{
+	data_path: "/def/vehicle/trailer/scs_fueltank/accessory/body.sii"
+}

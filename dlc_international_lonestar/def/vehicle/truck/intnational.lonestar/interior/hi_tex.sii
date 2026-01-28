@@ -5,10 +5,10 @@ accessory_interior_data	: hi_tex.intnational.lonestar.interior
 	name: "Diamond"
 	price: 20250
 	unlock: 10
-	icon: "international_lonestar/int_tex"
+	icon: "truck/intnational_lonestar/interior/model/int_tex"
 
 	model: "/vehicle/truck/intnational_lonestar/interior/model/hirise.pmd"
-	animated_model: "/vehicle/truck/intnational_lonestar/interior/animation/animation.pmd"
+	animated_model: "/vehicle/truck/intnational_lonestar/interior/animation/anim.pmd"
 	collision: "/vehicle/truck/intnational_lonestar/interior/model/hirise.pmc"
 	look: int_tex
 	variant: int_tex
@@ -23,6 +23,8 @@ accessory_interior_data	: hi_tex.intnational.lonestar.interior
 
 @include "animations.sui"
 
+@include "int_shadow_hi.sui"
+
 @include "sound.sui"
 @include "sound_effects.sui"
 
@@ -34,6 +36,7 @@ accessory_interior_data	: hi_tex.intnational.lonestar.interior
 	glass_panes[]: .intlonestar.r.pane.back_hi
 
 @include "seat.sui"
+@include "mirrors.sui"
 
 @include "dashboard_color.sui"
 }

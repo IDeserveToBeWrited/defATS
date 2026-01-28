@@ -1,0 +1,39 @@
+traffic_trailer : traffic.trailer.scs_fuel43
+{
+	accessories[]: .traffic.trailer.scs_fuel43.chassis
+	accessories[]: .traffic.trailer.scs_fuel43.rwheel
+	accessories[]: .traffic.trailer.scs_fuel43.rwheel2
+	accessories[]: .traffic.trailer.scs_fuel43.paint_job
+	
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: cistern
+	tags[]: fuel
+	tags[]: chemical
+	tags[]: medium
+
+	company_paint_job: true
+}
+
+vehicle_accessory: .traffic.trailer.scs_fuel43.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_fueltank/chassis_43_r.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_fuel43.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_fuel43.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.scs_fuel43.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_fueltank/company_paint_job/default.sii"
+}

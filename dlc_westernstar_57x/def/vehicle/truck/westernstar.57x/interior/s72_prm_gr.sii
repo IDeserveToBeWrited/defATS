@@ -1,0 +1,47 @@
+SiiNunit
+{
+accessory_interior_data	: s72_prm_gr.westernstar.57x.interior
+{
+	name: "Premium Quarry Grey"
+	price: 22960
+	unlock: 10
+	icon: "truck/westernstar_57x/accessory/int_premium_gr"
+	part_type: factory
+
+	model: "/vehicle/truck/westernstar_57x/interior/model/s72.pmd"
+	animated_model: "/vehicle/truck/westernstar_57x/interior/animation/animation.pmd"
+	collision: "/vehicle/truck/westernstar_57x/interior/model/s72.pmc"
+	look: Premium_gr
+	variant: Premium_gr
+
+	ext_model: "/vehicle/truck/westernstar_57x/interior/external/external_s72.pmd"
+	ext_variant: premium
+	ext_look: Premium_gr
+
+	defaults[]: "/def/vehicle/truck/westernstar.57x/accessory/steering_w/premium.sii"
+
+	suitable_for[]: "s72_rr.westernstar.57x.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_s72.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .weststar57x.r.pane.front
+	glass_panes[]: .weststar57x.r.pane.close
+	glass_panes[]: .weststar57x.r.pane.far
+	glass_panes[]: .weststar57x.r.pane.back_s72
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_s72.sui"
+@include "sound_effects_units.sui"
+}

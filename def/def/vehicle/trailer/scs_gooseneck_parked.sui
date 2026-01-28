@@ -4,10 +4,21 @@ traffic_trailer  : traffic.trailer.gooseneck_b.cabin
 	accessories[]: .gooseneck_b.cabin.chassis
 	accessories[]: .gooseneck_b.cabin.rwheel
 	accessories[]: .gooseneck_b.cabin.rwheel2
-	accessories[]: .gooseneck_b.cabin.cargo
+	accessories[]: .gooseneck_b.cabin.body
 	
 	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: cabin
+	tags[]: medium
+	tags[]: basic
+
+	cargoes[]: const_house
 	
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
 }
 
 vehicle_accessory: .gooseneck_b.cabin.chassis
@@ -26,9 +37,9 @@ vehicle_wheel_accessory: .gooseneck_b.cabin.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-vehicle_accessory: .gooseneck_b.cabin.cargo
+vehicle_accessory: .gooseneck_b.cabin.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_container/construction_houses_40.sii"
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
 }
 
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -39,9 +50,21 @@ traffic_trailer  : traffic.trailer.gooseneck_p
 	accessories[]: .gooseneck_p.chassis
 	accessories[]: .gooseneck_p.rwheel
 	accessories[]: .gooseneck_p.rwheel2
-	accessories[]: .gooseneck_p.cargo
+	accessories[]: .gooseneck_p.body
 	
 	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: basic
+	
+	cargoes[]: beverages
+	
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
 	
 }
 
@@ -61,9 +84,9 @@ vehicle_wheel_accessory: .gooseneck_p.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-vehicle_accessory: .gooseneck_p.cargo
+vehicle_accessory: .gooseneck_p.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_container/container_40.sii"
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
 }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -73,9 +96,21 @@ traffic_trailer  : traffic.trailer.scs_gosck40g
 	accessories[]: .scs_gosck40g.chassis
 	accessories[]: .scs_gosck40g.rwheel
 	accessories[]: .scs_gosck40g.rwheel2
-	accessories[]: .scs_gosck40g.cargo
+	accessories[]: .scs_gosck40g.body
 	
 	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: basic
+	
+	cargoes[]: beverages
+	
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
 }
 
 vehicle_accessory: .scs_gosck40g.chassis
@@ -94,9 +129,9 @@ vehicle_wheel_accessory: .scs_gosck40g.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-vehicle_accessory: .scs_gosck40g.cargo
+vehicle_accessory: .scs_gosck40g.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_container/container_40_green.sii"
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
 }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -106,9 +141,21 @@ traffic_trailer  : traffic.trailer.scs_gosck40b
 	accessories[]: .scs_gosck40b.chassis
 	accessories[]: .scs_gosck40b.rwheel
 	accessories[]: .scs_gosck40b.rwheel2
-	accessories[]: .scs_gosck40b.cargo
+	accessories[]: .scs_gosck40b.body
 	
 	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: basic
+	
+	cargoes[]: beverages
+	
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
 }
 
 vehicle_accessory: .scs_gosck40b.chassis
@@ -127,9 +174,9 @@ vehicle_wheel_accessory: .scs_gosck40b.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-vehicle_accessory: .scs_gosck40b.cargo
+vehicle_accessory: .scs_gosck40b.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_container/container_40_blue.sii"
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
 }
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -139,9 +186,21 @@ traffic_trailer  : traffic.trailer.scs_gosck40s
 	accessories[]: .scs_gosck40s.chassis
 	accessories[]: .scs_gosck40s.rwheel
 	accessories[]: .scs_gosck40s.rwheel2
-	accessories[]: .scs_gosck40s.cargo
+	accessories[]: .scs_gosck40s.body
 	
 	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: basic
+	
+	cargoes[]: beverages
+	
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
 }
 
 vehicle_accessory: .scs_gosck40s.chassis
@@ -160,7 +219,97 @@ vehicle_wheel_accessory: .scs_gosck40s.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-vehicle_accessory: .scs_gosck40s.cargo
+vehicle_accessory: .scs_gosck40s.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_container/container_40_silver.sii"
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
+}
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+traffic_trailer  : traffic.trailer.silane20
+{
+
+	accessories[]: .silane20.chassis
+	accessories[]: .silane20.rwheel
+	accessories[]: .silane20.rwheel2
+	accessories[]: .silane20.body
+	
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: chemical
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: silane
+	tags[]: medium
+	
+	cargoes[]: silane
+	
+	trailer_definition: trailer_def.scs.gooseneck.single_32e.container
+	
+}
+
+vehicle_accessory: .silane20.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_20_black.sii"
+}
+
+vehicle_wheel_accessory: .silane20.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .silane20.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .silane20.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_20.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer  : traffic.trailer.silane40
+{
+
+	accessories[]: .silane40.chassis
+	accessories[]: .silane40.rwheel
+	accessories[]: .silane40.rwheel2
+	accessories[]: .silane40.body
+	
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: chemical
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: silane
+	tags[]: medium
+	
+	cargoes[]: silane
+	
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
+	
+}
+
+vehicle_accessory: .silane40.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii"
+}
+
+vehicle_wheel_accessory: .silane40.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .silane40.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .silane40.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
 }

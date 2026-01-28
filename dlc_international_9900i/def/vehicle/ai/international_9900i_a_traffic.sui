@@ -1,0 +1,63 @@
+traffic_vehicle : traffic.int_9900i_a
+{
+	accessories[]: .int_9900i_a.chassis
+	accessories[]: .int_9900i_a.fwheel
+	accessories[]: .int_9900i_a.rwheel
+	accessories[]: .int_9900i_a.rwheel2
+	accessories[]: .int_9900i_a.trlr_cables
+
+	max_speed: 110
+	trailer_chains[]: "truck_semi"
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 8200
+	engine_power: 298
+
+	tags[]: dealer
+
+	color[]: (0.015209, 0.070360, 0.283149) #Blue 
+	color[]: (0.015209, 0.070360, 0.283149) #Blue 
+	color[]: (0.015209, 0.070360, 0.283149) #Blue 
+	color[]: (0.015209, 0.070360, 0.283149) #Blue 
+
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+
+	color[]: (0.814847, 0.814847, 0.814847) #White 
+	color[]: (0.814847, 0.814847, 0.814847) #White 
+	color[]: (0.814847, 0.814847, 0.814847) #White 
+	
+	color[]: (0.6, 0.6, 0.6) #silver 
+	color[]: (0.6, 0.6, 0.6) #silver 
+	
+
+	color[]: (0, 0, 0) #black 
+	color[]: (0.004777, 0.025187, 0.111932) #Dark blue 
+	color[]: (0.258183, 0.258183, 0.258183) #Gray 
+	color[]: (0.013702, 0.102242, 0.056128) #Green 
+
+
+
+	
+}
+
+vehicle_accessory : .int_9900i_a.chassis {
+	data_path: "/def/vehicle/ai/truck/intnational.9900i/cabin_day.sii"
+}
+vehicle_wheel_accessory : .int_9900i_a.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .int_9900i_a.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .int_9900i_a.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .int_9900i_a.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/intnational.9900i/accessory/trlr_cables/stock.sii"
+}

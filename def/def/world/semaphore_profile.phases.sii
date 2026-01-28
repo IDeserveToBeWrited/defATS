@@ -1,0 +1,81 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+tr_semaphore_profile : tr_sem_prof.2p
+{
+    cycle[0]: 0.0       # primary
+    cycle[1]: 26.0      # primary
+
+    id_map[0]: 0
+    id_map[1]: 1
+    id_map[2]: 0        # virtual
+    id_map[3]: 1        # virtual
+
+    # green > yellow > red > yellow
+    interval[]: (20.0, 4.0, 28.0, 0.0)
+}
+
+tr_semaphore_profile : tr_sem_prof.2p_1s
+{
+    cycle[0]: 0.0       # primary
+    cycle[1]: 42.0      # primary
+    cycle[2]: 16.0      # secondary (turn lane)
+
+    id_map[0]: 0
+    id_map[1]: 1
+    id_map[2]: 2
+    id_map[3]: 0        # virtual
+    id_map[4]: 1        # virtual
+
+    # green > yellow > red > yellow
+    interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (20.0, 4.0, 44.0, 0.0)
+	interval[2]: (10.0, 4.0, 54.0, 0.0)
+}
+
+tr_semaphore_profile : tr_sem_prof.2p_2s
+{
+    cycle[0]: 0.0       # primary
+    cycle[1]: 42.0      # primary
+    cycle[2]: 58.0      # secondary (turn lane)
+    cycle[3]: 16.0      # secondary (turn lane)
+
+    id_map[0]: 0
+    id_map[1]: 1
+    id_map[2]: 2
+    id_map[3]: 3
+    id_map[4]: 0        # virtual
+    id_map[5]: 1        # virtual
+
+    # green > yellow > red > yellow
+    interval[0]: (20.0, 4.0, 60.0, 0.0)
+    interval[1]: (20.0, 4.0, 60.0, 0.0)
+    interval[2]: (10.0, 4.0, 70.0, 0.0)
+    interval[3]: (10.0, 4.0, 70.0, 0.0)
+}
+
+tr_semaphore_profile : tr_sem_prof.3p
+{
+    cycle[0]: 0.0       # primary
+    cycle[1]: 52.0      # primary
+    cycle[2]: 26.0      # primary
+
+    id_map[0]: 0
+    id_map[1]: 1
+    id_map[2]: 2
+    id_map[3]: 0        # virtual
+    id_map[4]: 1        # virtual
+    id_map[5]: 2        # virtual
+
+    # green > yellow > red > yellow
+    interval[]: (20.0, 4.0, 54.0, 0.0)
+}
+
+}

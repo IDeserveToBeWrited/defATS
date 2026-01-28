@@ -5,6 +5,7 @@ trailer : trailer.scs_flat_3
 	accessories[]: .scs_flat_3.chassis
 	accessories[]: .scs_flat_3.rwheel
 	accessories[]: .scs_flat_3.trlr_cables
+	accessories[]: .scs_flat_3.body
 	
 	slave_trailer: .scs_flat_3.dolly
 }
@@ -23,7 +24,10 @@ vehicle_addon_accessory: .scs_flat_3.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer.sii"
 }
-
+vehicle_accessory: .scs_flat_3.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_28.sii"
+}
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 trailer : .scs_flat_3.dolly
@@ -56,6 +60,7 @@ trailer : .scs_flat_3.second
 	accessories[]: .scs_flat_3.second.chassis
 	accessories[]: .scs_flat_3.second.rwheel
 	accessories[]: .scs_flat_3.second.trlr_cables
+	accessories[]: .scs_flat_3.second.body
 
 	slave_trailer: .scs_flat_3.dolly2
 }
@@ -74,7 +79,10 @@ vehicle_addon_accessory: .scs_flat_3.second.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_box/accessory/trlr_cables_trailer.sii"
 }
-
+vehicle_accessory: .scs_flat_3.second.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_28.sii"
+}
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  DOLLY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 trailer : .scs_flat_3.dolly2
@@ -108,6 +116,7 @@ trailer : .scs_flat_3.third
 	accessories[]: .scs_flat_3.third.chassis
 	accessories[]: .scs_flat_3.third.r_banner
 	accessories[]: .scs_flat_3.third.rwheel
+	accessories[]: .scs_flat_3.third.body
 }
 
 vehicle_accessory: .scs_flat_3.third.chassis
@@ -124,4 +133,8 @@ vehicle_wheel_accessory: .scs_flat_3.third.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .scs_flat_3.third.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_28.sii"
 }

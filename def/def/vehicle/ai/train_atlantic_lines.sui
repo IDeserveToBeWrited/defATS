@@ -14,15 +14,15 @@ traffic_vehicle : traffic.a_lines
 
 	trailer_chains[]: "train_cargo 2-3 | train_cargo 2-4 | train_cargo 2-3"
 	trailer_chains[]: "train_cargo 1-2 | train_cargo 2-3 | train_cargo 1-3 | train_cargo 1-3"
+	trailer_chains[]: "train_cargo 1-2 | train_car.cargo.rack 1 | train_car.cargo.racky 1 | train_cargo 1-3 | train_car.cargo.racko 1 | train_cargo 1-3"
+	trailer_chains[]: "train_cargo 1-2 | train_cargo 1-3 | train_car.cargo.racky 1 | train_car.cargo.racko 1 | train_cargo 1-3"
+	trailer_chains[]: "train_cargo 1-2 | train_cargo 1-3 | train_car.cargo.racko 1 | train_cargo 1-3 | train_cargo 1-3 | train_car.cargo.rack 1 | train_cargo 1-3"
 
 	displacement_limit: 0.0
 
 	sound_move[]: "/sound/traffic/train_diesel.soundref"
 	sound_horn[]: "/sound/traffic/train_horn_2.soundref"
 	sound_gears : 1
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 }
 
 vehicle_accessory: .a_lines.chassis

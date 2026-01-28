@@ -1,0 +1,156 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Washington --
+
+# Discover at least 12 cities in Washington.
+
+achievement_visit_city_data : .achievement.wa_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: aberdeen_wa
+	cities[]: bellingham
+	cities[]: colville
+	cities[]: everett
+	cities[]: grand_coulee
+	cities[]: kennewick
+	cities[]: longview
+	cities[]: olympia
+	cities[]: omak
+	cities[]: port_angeles
+	cities[]: seattle
+	cities[]: spokane
+	cities[]: tacoma
+	cities[]: vancouver
+	cities[]: wenatchee
+	cities[]: yakima
+	target: 12
+
+	achievement_name: wa_visit_cities
+
+	steam_progress_id: "wa_visit_cities-progress"
+	steam_id: wa_visit_cities
+}
+
+# Deliver a cargo to an aerospace company in Washington.
+
+achievement_deliver_cargo_data : .achievement.wa_aerospace
+{
+	event_name: job_done
+	initial_check: true
+	targets[]: dw_air_pln.everett
+
+	achievement_name: wa_aerospace
+
+	steam_id: wa_aerospace
+}
+
+# Deliver a boat to a marina in Washington.
+
+achievement_deliver_cargo_data : .achievement.wa_marina
+{
+	event_name: job_done
+	initial_check: true
+	cargo: boat
+	targets[]: sh_shp_mar.aberdeen_wa
+	targets[]: sh_shp_mar.colville
+	targets[]: sh_shp_mar.olympia
+	targets[]: sh_shp_mar.port_angeles
+
+	achievement_name: wa_marina
+
+	steam_id: wa_marina
+}
+
+# Deliver cargo to at least 1 port terminal in Washington.
+
+achievement_each_company_data : .achievement.wa_terminal
+{
+	event_name: job_done
+	initial_check: true
+	targets[]: port_sea.seattle
+	targets[]: port_tac.tacoma
+	target: 1
+
+	achievement_name: wa_terminal
+
+	steam_id: wa_terminal
+}
+
+# Drive through both Seattle tunnels.
+
+achievement_trigger_data : .achievement.wa_tunnels
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: wa_tunnels
+	target: 2
+
+	achievement_name: wa_tunnels
+
+	steam_progress_id: "wa_tunnels-progress"
+	steam_id: wa_tunnels
+}
+
+# Use a ferry to cross the water.
+
+achievement_ferry_data : .achievement.wa_use_ferry
+{
+	event_name: ferry_used
+	delayed_submit: true
+
+	endpoint_a: coupeville
+	endpoint_b: porttownsend
+
+	achievement_name: wa_use_ferry
+
+	steam_id: wa_use_ferry
+}
+
+# Drive through the forest road to timber harvest in Bellingham.
+
+achievement_trigger_data : .achievement.wa_forest
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: wa_forest
+	target: 2
+
+	achievement_name: wa_forest
+
+	steam_id: wa_forest
+}
+
+# Visit Mount St. Helens, Grand Coulee Dam, Mount Rainier.
+
+achievement_trigger_data : .achievement.wa_landmark
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: wa_landmarks
+	target: 3
+
+	achievement_name: wa_landmarks
+
+	steam_progress_id: "wa_landmarks-progress"
+	steam_id: wa_landmarks
+}
+
+}

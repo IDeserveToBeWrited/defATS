@@ -1,14 +1,24 @@
 SiiNunit
 {
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
 
-curve_model : curve.105
+curve_model : curve.nm_0i001
 {
-	name: "nm_roadblock1_curve"
-	model_desc: "/model/barrier/concrete/nm_roadblock1_curve.pmd"
-	variation[]: "default | center1 : 1.0 | center2 : 3.0 | center3 : 1.0 | center4 : 3.0 | center5 : 3.0"
-	start_part[]: "start1 | start2"
-	end_part[]: "end1 | end2"
+	model_desc: "/model/barrier/concrete/nm_wall_albuquerque1_curve.pmd"
+	name: "nm wall albuquerque1 curve"
 
+	variation: 1
+	variation[0]: "default | center1, center2, center3, center4  : 1.0"
+
+	high_tess: 0
 }
+
+
 
 }

@@ -1,0 +1,53 @@
+traffic_vehicle : traffic.sf_tram_loco
+{
+	accessories[]: .sf_tram_loco.chassis
+	accessories[]: .sf_tram_loco.fwheel
+	accessories[]: .sf_tram_loco.rwheel
+
+	max_speed: 40
+
+	vehicle_mass: 27000
+	engine_power: 2500
+
+	trailer_chains[]: "tram_car.sf_car1 | tram_car.sf_car2 | tram_car.sf_car3 | tram_car.sf_car4 | tram_car.sf_car5 | tram_car.sf_car6"
+
+	sound_move[]: "/sound/traffic/tram_1.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+	sound_gears: 1
+
+	displacement_limit: 0.0
+
+	spawn_ratio: 1.0
+
+	lod_dist[]: 30
+	lod_dist[]: 60
+	lod_dist[]: 130
+
+
+	tags[]: tram
+
+	spawn_condition[]: .traffic.sf_tram_loco.condition.city
+
+}
+vehicle_accessory: .sf_tram_loco.chassis
+{
+	data_path: "/def/vehicle/ai/tram_san_francisco/chassis_sftram_loco.sii"
+}
+vehicle_wheel_accessory: .sf_tram_loco.fwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .sf_tram_loco.rwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+
+}
+traffic_spawn_condition: .traffic.sf_tram_loco.condition.city
+{
+	#spawn only near city with specified name
+	type: city
+	str_param[]: "san_francisc"
+}
+

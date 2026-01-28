@@ -1,0 +1,89 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Arizona --
+
+# Discover at least 12 cities in Arizona.
+
+achievement_visit_city_data : .achievement.az_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: camp_verde
+	cities[]: clifton
+	cities[]: flagstaff
+	cities[]: g_canyon_vlg
+	cities[]: holbrook
+	cities[]: kayenta
+	cities[]: kingman
+	cities[]: nogales
+	cities[]: page
+	cities[]: phoenix
+	cities[]: san_simon
+	cities[]: show_low
+	cities[]: sierra_vista
+	cities[]: tucson
+	cities[]: yuma
+	target: 12
+
+	achievement_name: az_visit_cities
+
+	steam_progress_id: "az_visit_cities-progress"
+	steam_id: az_visit_cities
+}
+
+achievement_each_company_data : .achievement.az_aport_phx
+{
+	event_name: job_done
+	initial_check: true
+	targets[]: aport_phx.phoenix
+
+	achievement_name: az_phx_aport
+
+	steam_id: az_phx_aport
+}
+
+achievement_trigger_data : .achievement.az_racetrack
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: az_racetrack
+	target: 1
+
+	achievement_name: az_racetrack
+
+	steam_id: az_racetrack
+}
+
+# Visit at least 4 Colorado River sights.
+
+achievement_trigger_data : .achievement.az_colorado
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: az_colorado
+	target: 4
+
+	achievement_name: az_colorado
+
+	steam_progress_id: "az_colorado-progress"
+	steam_id: az_colorado
+}
+
+}

@@ -1,0 +1,37 @@
+SiiNunit
+{
+sign_template : _nameless.1.9a35.f800 {
+ template_name: rte_tx_3hw_1fw_4arrows
+ model_name: tx_2k03k
+ stand_model_name: 2k0a5
+ traffic_rule: null
+ boards: 4
+ boards[0]: _nameless.4e2.c4b0
+ boards[1]: _nameless.4e2.bf40
+ boards[2]: _nameless.4e2.c240
+ boards[3]: _nameless.4e2.c810
+ items: 0
+ dynamic_attributes: 0
+}
+
+sign_template_board_binding : _nameless.4e2.c4b0 {
+ area_name: board1
+ linked_board: sign_board.234
+}
+
+sign_template_board_binding : _nameless.4e2.bf40 {
+ area_name: board2
+ linked_board: sign_board.234
+}
+
+sign_template_board_binding : _nameless.4e2.c240 {
+ area_name: board4
+ linked_board: sign_board.236
+}
+
+sign_template_board_binding : _nameless.4e2.c810 {
+ area_name: board5
+ linked_board: sign_board.234
+}
+
+}

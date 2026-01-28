@@ -62,12 +62,15 @@ mover_anim_props : mover_props.washer.sponge
 mover_anim_props : mover_props.agitator.smallmix
 {
 	model: "/model/mover/characters/new_generation/models/props/independent/smallmix.pmd"
-	bone_a: lefthand
-	bone_b: righthand
-	bone_offset_a: (0.07, 0.04, 0.0)
-	bone_offset_b: (-0.09, 0.0, 0.0)
-	model_offset: (-0.22, 0.0, 0.0)
-	model_rotation: (0.0, 90.0, 90.0)
+	#bone_a: lefthand
+	bone_a: righthand
+	#bone_b: righthand
+	bone_offset_a: (0.0, 0.0, 0.0)
+	#bone_offset_a: (0.07, 0.04, 0.0)
+	#bone_offset_b: (-0.09, 0.0, 0.0)
+	model_offset: (-0.22, -0.05, 0.05)
+	#model_offset: (0.0, 0.0, 0.0)
+	model_rotation: (-151.0, -9.7, 49.7)
 }
 
 mover_anim_props : mover_props.agitator.bucket
@@ -251,5 +254,17 @@ mover_anim_props : mover_props.mix_pr
 	model_animation: "/model/mover/machine/mixer.pma"
 	model_offset: (0.0, 0.0, 0.0)
 	model_rotation: (0, 0.0, 0.0)
+}
+mover_anim_props : mover_props.containers
+{
+	model: "/prefab/depots/river_port/containers_lod2.pmd"
+	model_animation: "/prefab/depots/river_port/containers_anim_l2.pma"
+	model_offset: (0.0, 0.0, 0.0)
+	model_rotation: (0.0, 0.0, 0.0)
+
+#	lods[0]: "/prefab/depots/river_port/containers_lod1.pmd"
+#	lods[1]: "/prefab/depots/river_port/containers_lod2.pmd"
+#	lod_distances[0]: 10
+#	lod_distances[1]: 30
 }
 }

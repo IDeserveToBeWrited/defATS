@@ -1,0 +1,377 @@
+traffic_vehicle : traffic.hd_pickup
+{
+	accessories[]: .hd_pickup.chassis
+	accessories[]: .hd_pickup.fwheel
+	accessories[]: .hd_pickup.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+
+	
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+
+
+traffic_vehicle : traffic.hd_pickup.boat
+{
+	accessories[]: .hd_pickup.boat.chassis
+	accessories[]: .hd_pickup.boat.fwheel
+	accessories[]: .hd_pickup.boat.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+	trailer_chains[]: "trailer.ai_car.speedboat"
+	
+	spawn_ratio: 0.1
+
+	
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.boat.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis_boat.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.boat.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.boat.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+
+
+
+
+
+
+
+
+traffic_vehicle : traffic.hd_pickup.utility
+{
+	accessories[]: .hd_pickup.utility.chassis
+	accessories[]: .hd_pickup.utility.fwheel
+	accessories[]: .hd_pickup.utility.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+
+	
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.utility.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis_utility.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.utility.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.utility.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+
+
+
+
+traffic_vehicle : traffic.hd_pickup.flatbed
+{
+	accessories[]: .hd_pickup.flatbed.chassis
+	accessories[]: .hd_pickup.flatbed.fwheel
+	accessories[]: .hd_pickup.flatbed.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+
+	
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.flatbed.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis_flatbed.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.flatbed.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.flatbed.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+
+
+
+
+
+
+traffic_vehicle : traffic.hd_pickup.cargo
+{
+	accessories[]: .hd_pickup.cargo.chassis
+	accessories[]: .hd_pickup.cargo.fwheel
+	accessories[]: .hd_pickup.cargo.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+
+	
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.cargo.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis_cargo.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.cargo.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.cargo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+
+###########LarusTravelTrailer################
+traffic_vehicle : traffic.hd_pickup.larus_tt_23
+{
+	accessories[]: .hd_pickup.larus_tt_23.chassis
+	accessories[]: .hd_pickup.larus_tt_23.fwheel
+	accessories[]: .hd_pickup.larus_tt_23.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+	trailer_chains[]: "trailer.larus.trailer.travel_23"
+	
+	spawn_ratio: 0.1
+
+	
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.larus_tt_23.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.larus_tt_23.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.larus_tt_23.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+
+
+
+traffic_vehicle : traffic.hd_pickup.crane
+{
+	accessories[]: .hd_pickup.crane.chassis
+	accessories[]: .hd_pickup.crane.fwheel
+	accessories[]: .hd_pickup.crane.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+
+	
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.crane.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis_crane.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.crane.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.crane.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}

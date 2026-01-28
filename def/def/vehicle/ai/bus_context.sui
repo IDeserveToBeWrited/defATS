@@ -1,0 +1,58 @@
+traffic_vehicle : traffic.bus_school.context
+{
+	accessories[]: .bus_school.context.chassis
+	accessories[]: .bus_school.context.fwheel
+	accessories[]: .bus_school.context.rwheel
+	accessories[]: .bus_school.context.rwheel2
+
+	tags[]: schoolbus
+	tags[]: context
+
+	max_speed: 100
+
+	vehicle_mass: 20000
+	engine_power: 200
+
+	spawn_condition[]: .traffic.bus_school.context.condition.bus_factory
+	spawn_condition[]: .traffic.bus_school.context.condition.company
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .bus_school.context.chassis
+{
+	data_path: "/def/vehicle/ai/bus_school/chassis.sii"
+}
+
+vehicle_wheel_accessory: .bus_school.context.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_school.context.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_school.context.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}
+
+
+traffic_spawn_condition: .traffic.bus_school.context.condition.bus_factory
+{
+	# spawn only inside given company
+	type: area
+	str_param[]: "yel_bus_pln"
+}
+traffic_spawn_condition: .traffic.bus_school.context.condition.company
+{
+	# spawn only inside given company
+	type: area
+	str_param[]: "company"
+}

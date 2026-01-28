@@ -1,0 +1,49 @@
+traffic_vehicle : traffic.lincoln_nav.xmas
+{
+	accessories[]: .lincoln_nav.xmas.chassis
+	accessories[]: .lincoln_nav.xmas.fwheel
+	accessories[]: .lincoln_nav.xmas.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+	allow_parked: false
+
+	vehicle_mass: 2000
+	
+	color[]: (1, 1, 1) #white
+
+	tags[]: cheap
+	tags[]: common
+	tags[]: xmas
+	
+	spawn_condition[]: .lincoln_nav.xmas.condition
+
+
+@include "drivers_generic.sui"
+}
+
+traffic_spawn_condition: .lincoln_nav.xmas.condition
+{
+	type: area
+	str_param[]: "xmas"
+}
+vehicle_accessory: .lincoln_nav.xmas.chassis
+{
+	data_path: "/def/vehicle/ai/xmas_lincoln_navigator/chassis.sii"
+}
+
+vehicle_wheel_accessory: .lincoln_nav.xmas.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .lincoln_nav.xmas.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+

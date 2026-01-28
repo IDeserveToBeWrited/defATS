@@ -1,0 +1,49 @@
+
+traffic_vehicle : traffic.hd_pickup.bare
+{
+	accessories[]: .hd_pickup.bare.chassis
+	accessories[]: .hd_pickup.bare.fwheel
+	accessories[]: .hd_pickup.bare.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+
+	vehicle_mass: 3000
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+
+
+	
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .hd_pickup.bare.chassis
+{
+	data_path: "/def/vehicle/ai/hd_pickup/chassis_bare.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.bare.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .hd_pickup.bare.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}

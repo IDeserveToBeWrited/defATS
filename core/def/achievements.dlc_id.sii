@@ -1,0 +1,192 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Idaho --
+
+# Discover at least 8 cities in Idaho.
+
+achievement_visit_city_data : .achievement.id_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: boise
+	cities[]: coeur_dalene
+	cities[]: grangeville
+	cities[]: idaho_falls
+	cities[]: ketchum
+	cities[]: lewiston
+	cities[]: nampa
+	cities[]: pocatello
+	cities[]: salmon
+	cities[]: sandpoint
+	cities[]: twin_falls
+	target: 8
+
+	achievement_name: id_visit_cities
+
+	steam_progress_id: "id_visit_cities-progress"
+	steam_id: id_visit_cities
+}
+
+# Complete five deliveries of potatoes from Idaho farms.
+
+achievement_delivery : .achievement.id_potatoes
+{
+	event_name: job_done
+	initial_check: true
+	condition: .id_potatoes.condition
+	target: 5
+
+	achievement_name: id_potatoes
+
+	steam_progress_id: "id_potatoes-progress"
+	steam_id: id_potatoes
+}
+
+achievement_delivery_count : .id_potatoes.condition
+{
+	condition: .id_potatoes.5
+	count: 5
+}
+
+achievement_delivery_each : .id_potatoes.5
+{
+	list[]: .id_potatoes.cargo
+	list[]: .id_potatoes.source
+}
+
+achievement_delivery_any : .id_potatoes.cargo
+{
+	list[]: .id_potatoes.potatoes
+	list[]: .id_potatoes.potatoes_b
+}
+
+achievement_delivery_cargo : .id_potatoes.potatoes
+{
+	cargo_name: potatoes
+}
+
+achievement_delivery_cargo : .id_potatoes.potatoes_b 
+{
+	cargo_name: potatoes_b 
+}
+
+achievement_delivery_company : .id_potatoes.source
+{
+	role: source
+	company_name: sc_frm
+	country_name: idaho
+}
+
+# Complete perfect deliveries (no damage, no fines, on time) between the following cities: Kennewick - Lewiston; Boise - Twin Falls; Twin Falls - Pocatello; Pocatello - Idaho Falls. Any order or direction counts.
+
+achievement_each_delivery_point : .achievement.id_snake_riv
+{
+	event_name: job_done
+	initial_check: true
+	both_directions: true
+	damage_max: 0.0
+	fines_max: 0
+	late: false
+	sources[]: .id_snake_riv.kennewick.lewiston.source
+	targets[]: .id_snake_riv.kennewick.lewiston.target
+	sources[]: .id_snake_riv.boise.twin_falls.source
+	targets[]: .id_snake_riv.boise.twin_falls.target
+	sources[]: .id_snake_riv.twin_falls.pocatello.source
+	targets[]: .id_snake_riv.twin_falls.pocatello.target
+	sources[]: .id_snake_riv.pocatello.idaho_falls.source
+	targets[]: .id_snake_riv.pocatello.idaho_falls.target
+	target: 4
+
+	achievement_name: id_snake_river
+
+	steam_progress_id: "id_snake_river-progress"
+	steam_id: id_snake_river
+}
+
+achievement_delivery_city : .id_snake_riv.kennewick.lewiston.source
+{
+	city_name: kennewick
+}
+
+achievement_delivery_city : .id_snake_riv.kennewick.lewiston.target
+{
+	city_name: lewiston
+}
+
+achievement_delivery_city : .id_snake_riv.boise.twin_falls.source
+{
+	city_name: boise
+}
+
+achievement_delivery_city : .id_snake_riv.boise.twin_falls.target
+{
+	city_name: twin_falls
+}
+
+achievement_delivery_city : .id_snake_riv.twin_falls.pocatello.source
+{
+	city_name: twin_falls
+}
+
+achievement_delivery_city : .id_snake_riv.twin_falls.pocatello.target
+{
+	city_name: pocatello
+}
+
+achievement_delivery_city : .id_snake_riv.pocatello.idaho_falls.source
+{
+	city_name: pocatello
+}
+
+achievement_delivery_city : .id_snake_riv.pocatello.idaho_falls.target
+{
+	city_name: idaho_falls
+}
+
+# View cutscenes from at least 8 viewpoints in Idaho.
+
+achievement_trigger_data : .achievement.id_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: id_cutscenes
+	target: 8
+
+	achievement_name: id_cutscenes
+
+	steam_progress_id: "id_cutscenes-progress"
+	steam_id: id_cutscenes
+}
+
+# Visit 45th parallel in Idaho - a halfway between the Equator and the North Pole.
+
+achievement_trigger_data : .achievement.id_45th_para
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: id_45th_parallel
+	target: 1
+
+	achievement_name: id_45th_parallel
+
+	steam_id: id_45th_parallel
+}
+
+}

@@ -1,0 +1,45 @@
+SiiNunit
+{
+accessory_interior_data	: s76hs_gr_d.kenworth.t680_2022.interior
+{
+	name: "Grey Diamond VIT"
+	price: 22960
+	unlock: 15
+	icon: "truck/kenworth_t680_2022/interior/model/s76hs_gr_d"
+
+	model: "/vehicle/truck/kenworth_t680_2022/interior/model/s76hs.pmd"
+	animated_model: "/vehicle/truck/kenworth_t680_2022/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/kenworth_t680_2022/interior/model/s76hs.pmc"
+	look: default
+	variant: grey_diamond
+
+	ext_model: "/vehicle/truck/kenworth_t680_2022/interior/external/s76hs_d.pmd"
+	ext_variant: default
+	ext_look: grey_diamond
+
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/steering_w/standard.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/codrv_seat/std_vin_bk.sii"
+
+	suitable_for[]: "s76h.kenworth.t680_2022.cabin"
+
+@include "animations.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+@include "dashboard_color.sui"
+@include "computers.sui"
+
+	glass_panes[]: .kenw_t680_22.r.pane.front
+	glass_panes[]: .kenw_t680_22.r.pane.close
+	glass_panes[]: .kenw_t680_22.r.pane.far
+	glass_panes[]: .kenw_t680_22.r.pane.top
+	glass_panes[]: .kenw_t680_22.r.pane.bottom
+
+@include "seat.sui"
+@include "int_shadow_76.sui"
+}
+@include "glass.sui"
+@include "glass_s76h.sui"
+@include "sound_effects_units.sui"
+
+}

@@ -1,0 +1,41 @@
+glass_pane_data : .int_9900i.r.pane.front
+{
+	locator: front_glass
+	size: (2.4, 0.8)
+	edge_angle: 20
+	wipers[]: .int_9900i.r.pane.wiper1
+	wipers[]: .int_9900i.r.pane.wiper2
+}
+
+
+wiper_data : .int_9900i.r.pane.wiper1
+{
+	center_bone: wiper_r_tip
+	length: 0.60
+}
+
+wiper_data : .int_9900i.r.pane.wiper2
+{
+	center_bone: wiper_l_tip
+	length: 0.60
+}
+
+glass_pane_data : .int_9900i.r.pane.close
+{
+	locator: l_glasspane
+	size: (0.72, 0.58)
+
+	openable_window_bone: win_open_l
+	openable_window_mask: "/vehicle/truck/intnational_9900i/interior/win_mask_l.mask"
+}
+
+glass_pane_data : .int_9900i.r.pane.far
+{
+	locator: r_glasspane
+	size: (0.72, 0.58)
+
+	openable_window_bone: win_open_r
+	openable_window_mask: "/vehicle/truck/intnational_9900i/interior/win_mask_r.mask"
+}
+
+

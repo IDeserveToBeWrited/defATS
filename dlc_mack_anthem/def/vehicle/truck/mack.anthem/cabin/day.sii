@@ -6,6 +6,7 @@ accessory_cabin_data : day.mack.anthem.cabin
 	price: 16600
 	unlock: 0
 	icon: "mack_anthem/cab_dcb"
+	part_type: factory
 
 	model: "/vehicle/truck/mack_anthem/cabin/cabin_dcb.pmd"
 	collision: "/vehicle/truck/mack_anthem/cabin/cabin_dcb.pmc"
@@ -14,7 +15,8 @@ accessory_cabin_data : day.mack.anthem.cabin
 
 	wiper_model: "/vehicle/truck/mack_anthem/cabin/wiper.pmd"
 	wiper_anim: "/vehicle/truck/mack_anthem/cabin/wiper_anim.pma"
-	suspension: false
+
+	suspension_type: hinge2air
 
 	windows_model: "/vehicle/truck/mack_anthem/cabin/win_open.pmd"
 	left_window_anim: "/vehicle/truck/mack_anthem/cabin/win_open_l.pma"
@@ -24,7 +26,6 @@ accessory_cabin_data : day.mack.anthem.cabin
 	defaults[]: "/def/vehicle/truck/mack.anthem/interior/day_standard_grey.sii"
 	defaults[]: "/def/vehicle/truck/mack.anthem/accessory/doorhndl/plastic.sii"
 	defaults[]: "/def/vehicle/truck/mack.anthem/accessory/filters/plastic.sii"
-	defaults[]: "/def/vehicle/truck/mack.anthem/accessory/hood/silver_dog.sii"
 	defaults[]: "/def/vehicle/truck/mack.anthem/accessory/grill/plastic.sii"
 	defaults[]: "/def/vehicle/truck/mack.anthem/accessory/mirror/plastic.sii"
 	defaults[]: "/def/vehicle/truck/mack.anthem/accessory/hndrail/plastic.sii"
@@ -35,10 +36,14 @@ accessory_cabin_data : day.mack.anthem.cabin
 	conflict_with[]: "6x4l_117.mack.anthem.chassis"
 	conflict_with[]: "6x2l_142.mack.anthem.chassis"
 	conflict_with[]: "6x2l_117.mack.anthem.chassis"
+	conflict_with[]: "6x2l_l_142.mack.anthem.chassis"
+	conflict_with[]: "6x2l_l_117.mack.anthem.chassis"
 	conflict_with[]: "6x4m_117.mack.anthem.chassis"
 	conflict_with[]: "6x4m_93.mack.anthem.chassis"
 	conflict_with[]: "6x2m_117.mack.anthem.chassis"
 	conflict_with[]: "6x2m_93.mack.anthem.chassis"
+	conflict_with[]: "6x2m_l_117.mack.anthem.chassis"
+	conflict_with[]: "6x2m_l_93.mack.anthem.chassis"
 
 @include "sound.sui"
 }

@@ -1,0 +1,82 @@
+traffic_trailer : traffic.trailer.trans_pt_579.yellow
+{
+	accessories[]: .trans_pt_579.yellow.chassis
+	accessories[]: .trans_pt_579.yellow.rwheel
+	accessories[]: .trans_pt_579.yellow.rwheel1
+	accessories[]: .trans_pt_579.yellow.body
+
+	tags[]: piggyback
+	slave_trailer: .traffic.trailer.trans_pt_579.yellow.second
+}
+
+vehicle_accessory: .trans_pt_579.yellow.chassis
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/mid2_first.sii"
+}
+
+vehicle_wheel_accessory: .trans_pt_579.yellow.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+vehicle_wheel_accessory: .trans_pt_579.yellow.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+
+vehicle_accessory: .trans_pt_579.yellow.body
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/accessory/ptb_579_yellow1.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX second XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .traffic.trailer.trans_pt_579.yellow.second
+{
+	accessories[]: .trans_pt_579.yellow.second.chassis
+	accessories[]: .trans_pt_579.yellow.second.rwheel
+	accessories[]: .trans_pt_579.yellow.second.body
+
+	slave_trailer: .traffic.trailer.trans_pt_579.yellow.third
+}
+
+vehicle_accessory: .trans_pt_579.yellow.second.chassis
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/mid_second.sii"
+}
+
+vehicle_wheel_accessory: .trans_pt_579.yellow.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_accessory: .trans_pt_579.yellow.second.body
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/accessory/ptb_579_yellow2.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX third XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .traffic.trailer.trans_pt_579.yellow.third
+{
+	accessories[]: .trans_pt_579.yellow.third.chassis
+	accessories[]: .trans_pt_579.yellow.third.rwheel
+	accessories[]: .trans_pt_579.yellow.third.body
+}
+
+vehicle_accessory: .trans_pt_579.yellow.third.chassis
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/mid_third.sii"
+}
+
+vehicle_wheel_accessory: .trans_pt_579.yellow.third.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_accessory: .trans_pt_579.yellow.third.body
+{
+	data_path: "/def/vehicle/trailer/truck_transporter/accessory/ptb_579_yellow3.sii"
+}

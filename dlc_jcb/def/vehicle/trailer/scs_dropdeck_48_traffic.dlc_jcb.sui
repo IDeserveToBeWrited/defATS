@@ -1,0 +1,43 @@
+traffic_trailer : traffic.trailer.scs_drop48.jcb
+{
+	accessories[]: .scs_drop48.jcb_ev.chassis
+	accessories[]: .scs_drop48.jcb_ev.rwheel
+	accessories[]: .scs_drop48.jcb_ev.rwheel2
+	accessories[]: .scs_drop48.jcb_ev.body
+
+	tags[]: high
+	tags[]: dropdeck
+	tags[]: curtainsider
+	tags[]: medium
+	
+	cargo_mass: 16000
+
+	cargoes[]: jcb_wload457
+	cargoes[]: jcb_g100rs
+
+	base: traffic.trailer.scs_drop48
+
+trailer_definition: trailer_def.scs.dropdeck.single_48f.dropdeck_alu
+
+}
+
+vehicle_accessory: .scs_drop48.jcb_ev.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_dropdeck/dropdeck_48_f.sii"
+}
+
+vehicle_wheel_accessory: .scs_drop48.jcb_ev.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_wheel_accessory: .scs_drop48.jcb_ev.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+vehicle_accessory: .scs_drop48.jcb_ev.body
+{
+    	data_path: "/def/vehicle/trailer/scs_dropdeck/accessory/body_48.sii"
+}

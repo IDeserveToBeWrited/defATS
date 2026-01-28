@@ -9,14 +9,11 @@ traffic_vehicle : traffic.f_expl_d_m
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
 	tags[]: urban
-	
+
 	prefer_variant: true
     variant[]: traffic.f_expl_aqpd
    	variant[]: traffic.f_expl_ppd
@@ -27,6 +24,11 @@ traffic_vehicle : traffic.f_expl_d_m
 	variant[]: traffic.f_expl_co_dn
 	variant[]: traffic.f_expl_nv_vg
 	variant[]: traffic.f_expl_wy_ch
+	variant[]: traffic.f_explorer.tx_au
+	variant[]: traffic.f_explorer.tx_sa
+	variant[]: traffic.f_explorer.tx_ho
+
+
 
 
 @include "drivers_police.sui"
@@ -63,9 +65,6 @@ traffic_vehicle : traffic.f_expl_aqpd
 
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -114,9 +113,6 @@ traffic_vehicle : traffic.f_expl_ppd
 
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -168,9 +164,6 @@ traffic_vehicle : traffic.f_expl_wa_ol
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -218,9 +211,6 @@ traffic_vehicle : traffic.f_expl_wa_se
 
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -273,9 +263,6 @@ traffic_vehicle : traffic.f_expl_id_pd
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -324,9 +311,6 @@ traffic_vehicle : traffic.f_expl_co_pb
 
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -378,9 +362,6 @@ traffic_vehicle : traffic.f_expl_co_dn
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -431,9 +412,6 @@ traffic_vehicle : traffic.f_expl_nv_vg
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -483,9 +461,6 @@ traffic_vehicle : traffic.f_expl_wy_ch
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -517,7 +492,7 @@ vehicle_wheel_accessory: .f_expl_wy_ch.rwheel
 
 traffic_spawn_condition: .traffic.f_expl_wy_ch.cheyenne.condition.city
 {
-	
+
 	type: city
     str_param[]: "cheyenne"
 }
@@ -534,9 +509,6 @@ traffic_vehicle : traffic.f_expl_wy_ca
 
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -572,4 +544,578 @@ traffic_spawn_condition: .traffic.f_expl_wy_ca.casper.condition.city
 
 	type: city
     	str_param[]: "casper"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Texas - Houston Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.tx_ho
+{
+	accessories[]: .f_explorer.tx_ho.chassis
+	accessories[]: .f_explorer.tx_ho.fwheel
+	accessories[]: .f_explorer.tx_ho.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.tx_ho.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.tx_ho.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/tx_ho.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.tx_ho.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.tx_ho.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.tx_ho.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "houston"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Texas - Austin Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.tx_au
+{
+	accessories[]: .f_explorer.tx_au.chassis
+	accessories[]: .f_explorer.tx_au.fwheel
+	accessories[]: .f_explorer.tx_au.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.tx_au.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.tx_au.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/tx_au.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.tx_au.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.tx_au.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.tx_au.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "austin"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Texas - San Antonio Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.tx_sa
+{
+	accessories[]: .f_explorer.tx_sa.chassis
+	accessories[]: .f_explorer.tx_sa.fwheel
+	accessories[]: .f_explorer.tx_sa.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.tx_sa.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.tx_sa.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/tx_sa.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.tx_sa.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.tx_sa.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.tx_sa.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "san_antonio"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Oklahoma Tulsa Municipal Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.ford_expl.ok_tu
+{
+	accessories[]: .ford_expl.ok_tu.chassis
+	accessories[]: .ford_expl.ok_tu.fwheel
+	accessories[]: .ford_expl.ok_tu.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	base: traffic.f_expl_d_m
+
+	spawn_ratio: 0.0
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.ford_expl.ok_tu.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .ford_expl.ok_tu.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ok_tu.sii"
+}
+
+vehicle_wheel_accessory: .ford_expl.ok_tu.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .ford_expl.ok_tu.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.ford_expl.ok_tu.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "tulsa"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Kansas - Topeka Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.ks_to
+{
+	accessories[]: .f_explorer.ks_to.chassis
+	accessories[]: .f_explorer.ks_to.fwheel
+	accessories[]: .f_explorer.ks_to.rwheel
+
+	max_speed: 160
+
+	base: traffic.f_expl_d_m
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	base: traffic.f_expl_d_m
+
+	spawn_ratio: 0.0
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.ks_to.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.ks_to.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ks_to.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ks_to.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ks_to.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.ks_to.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "topeka"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Kansas - Kansas city Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.ks_ka
+{
+	accessories[]: .f_explorer.ks_ka.chassis
+	accessories[]: .f_explorer.ks_ka.fwheel
+	accessories[]: .f_explorer.ks_ka.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	base: traffic.f_expl_d_m
+
+	spawn_ratio: 0.0	
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.ks_ka.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.ks_ka.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ks_ka.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ks_ka.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ks_ka.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.ks_ka.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "kansas_ci_ks"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Nebraska - Omaha Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.ne_om
+{
+	accessories[]: .f_explorer.ne_om.chassis
+	accessories[]: .f_explorer.ne_om.fwheel
+	accessories[]: .f_explorer.ne_om.rwheel
+
+	max_speed: 160
+
+	base: traffic.f_expl_d_m
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	spawn_ratio: 0.0
+	
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.ne_om.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.ne_om.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ne_om.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ne_om.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ne_om.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.ne_om.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "omaha"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Nebraska - Lincoln city Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.ne_li
+{
+	accessories[]: .f_explorer.ne_li.chassis
+	accessories[]: .f_explorer.ne_li.fwheel
+	accessories[]: .f_explorer.ne_li.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	base: traffic.f_expl_d_m
+
+	spawn_ratio: 0.0
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.ne_li.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.ne_li.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ne_li.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ne_li.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ne_li.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.ne_li.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "lincoln"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Missouri - Kansas City Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.mo_ka
+{
+	accessories[]: .f_explorer.mo_ka.chassis
+	accessories[]: .f_explorer.mo_ka.fwheel
+	accessories[]: .f_explorer.mo_ka.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+		
+	base: traffic.f_expl_d_m
+
+	spawn_ratio: 0
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.mo_ka.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.mo_ka.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/mo_ka.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.mo_ka.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.mo_ka.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.mo_ka.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "kansas_ci_mo"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Iowa - Des Moines XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.ia_dm
+{
+	accessories[]: .f_explorer.ia_dm.chassis
+	accessories[]: .f_explorer.ia_dm.fwheel
+	accessories[]: .f_explorer.ia_dm.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	base: traffic.f_expl_d_m
+
+	spawn_ratio: 0.0
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.ia_dm.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.ia_dm.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/ia_dm.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ia_dm.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.ia_dm.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.ia_dm.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "des_moines"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Louisiana - Shreveport  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.f_explorer.la_sp
+{
+	accessories[]: .f_explorer.la_sp.chassis
+	accessories[]: .f_explorer.la_sp.fwheel
+	accessories[]: .f_explorer.la_sp.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+
+	base: traffic.f_expl_d_m
+
+	spawn_ratio: 0.0
+
+	vehicle_mass: 2250
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.f_explorer.la_sp.condition.city
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .f_explorer.la_sp.chassis
+{
+	data_path: "/def/vehicle/ai/ford_explorer/la_sp.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.la_sp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .f_explorer.la_sp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.la_sp.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "shreveport"
 }

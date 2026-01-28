@@ -1,0 +1,46 @@
+SiiNunit
+{
+accessory_engine_data : s13_450.intnational.lt.engine
+{
+	name: "S13 Integrated Powertrain 450"
+	price: 43810
+	unlock: 7
+	info[]: "450 @@hp@@ (335@@kw@@)"
+	info[]: "1@@dg@@750 @@lb_ft@@ (2373@@nm@@)"
+	info[]: "900 @@rpm@@"
+	icon: "engine_scania_s13"
+
+	torque: 2373
+	volume: 12.7
+
+	torque_curve[]: (300, 0)
+	torque_curve[]: (500, 0.5)
+	torque_curve[]: (900, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1800, 0.75)
+	torque_curve[]: (2200, 0)
+
+	rpm_idle: 600
+	rpm_limit: 1800
+	rpm_limit_neutral: 1600
+	rpm_range_low_gear: (750, 1450)
+	rpm_range_high_gear: (900, 1250)
+	rpm_range_power: (1350, 1800)
+	rpm_range_engine_brake: (1400, 2000)
+
+	engine_brake: 2.0
+	engine_brake_downshift: 0
+	engine_brake_positions: 3
+
+	consumption_coef: 0.93
+	adblue_consumption: 0.05
+	no_adblue_power_limit: 0.6
+
+@include "sound_s13.sui"
+
+	overrides[]: "/def/vehicle/truck/intnational.lt/accessory/badge/s13.sii"
+
+# S13 Integrated Powertrain
+# https://www.rwcgroup.com/--Engines-S13-Integrated-Warranty-and-Specs
+}
+}

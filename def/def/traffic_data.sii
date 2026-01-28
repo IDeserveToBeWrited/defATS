@@ -4,6 +4,14 @@ traffic_data : .traffic.data {
 
 	max_vehicle_count: 50 	# Total AI vehicle count limit (including trucks)
 
+	spawn_distance_forward: 600.0 	# The minimum distance for 'far' spawning in the forward direction. We assume that the player cannot see beyond this distance.
+	spawn_distance_backward: 200.0 	# The minimum distance for 'far' spawning in the backward direction. 
+	spawn_distance_min: 80.0 		# The minimum distance for 'close' spawning. We allow spawning from this distance only in places where the player really cannot see (for example thanks to FOV or cutplane).
+
+	remove_distance_forward: 800.0  # The minimum distance for 'far' despawning in the forward direction. We assume that this is too far for the player to meet any potential vehicles that would spawn beyond this distance.
+	remove_distance_backward: 250.0 # The minimum distance for 'far' despawning in the backward direction.
+	remove_distance_min: 150.0		# The minimum distance for 'close' despawning. We allow despawning from this distance only in places where the player really cannot see (for example thanks to FOV or cutplane).
+
 	## Drag length limits - virtually 'shortens' vehicles/trailers to allow then to turn in sharp curves
 	## This attribute affects only on vehicles/trailers which are LONGER than the values set.
 	## The side effect of 'shortening' is that vehicles/trailers slide to sides when turning.
@@ -45,7 +53,6 @@ traffic_data : .traffic.data {
 	# ai_yield_max_speed: (18.0, 26.0)      # lower patience -> lower speed
 	# ai_yield_wait_time: (20.0, 30.0)      # lower patience -> higher wait time
 	# ai_yield_timeout: (3.0, 5.0)          # lower patience -> lower timeout
-
 
 	## Obsolete attributes:
 	#

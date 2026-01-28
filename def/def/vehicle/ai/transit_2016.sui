@@ -8,9 +8,6 @@ traffic_vehicle : traffic.transit_16
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: false
 	vehicle_mass: 2800
 
@@ -70,9 +67,6 @@ traffic_vehicle : traffic.transit_16.dhl
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: false
 	vehicle_mass: 2800
 
@@ -111,9 +105,6 @@ traffic_vehicle : traffic.transit_16.fedex
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: false
 	vehicle_mass: 2800
 
@@ -152,9 +143,6 @@ traffic_vehicle : traffic.transit_16.fox
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: false
 	vehicle_mass: 3500
 
@@ -193,9 +181,6 @@ traffic_vehicle : traffic.transit_16.cbn
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: false
 	vehicle_mass: 3500
 
@@ -234,9 +219,6 @@ traffic_vehicle : traffic.transit_16.fr
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: false
 	vehicle_mass: 2800
 
@@ -280,9 +262,6 @@ traffic_vehicle : traffic.transit_16.glass
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: true
 	vehicle_mass: 3000
 
@@ -327,9 +306,6 @@ traffic_vehicle : traffic.transit_16.ladder
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: true
 	vehicle_mass: 3000
 
@@ -374,9 +350,6 @@ traffic_vehicle : traffic.transit_16.ladder_2
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: true
 	vehicle_mass: 3000
 
@@ -421,9 +394,6 @@ traffic_vehicle : traffic.transit_16.cargo
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: true
 	vehicle_mass: 3000
 
@@ -452,6 +422,47 @@ vehicle_wheel_accessory: .transit_16.cargo.fwheel
 }
 
 vehicle_wheel_accessory: .transit_16.cargo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_5.sii"
+} 
+ 
+  #xxxxxxxxxxxxxxxxxxxxxx black variant event xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_vehicle : traffic.transit_16_b
+{
+	accessories[]: .transit_16_b.chassis
+	accessories[]: .transit_16_b.fwheel
+	accessories[]: .transit_16_b.rwheel
+
+	max_speed: 120
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	allow_parked: false
+	vehicle_mass: 2800
+
+	spawn_ratio: 0.3
+
+	tags[]: van
+
+	color[]: (0.1, 0.1, 0.1)
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .transit_16_b.chassis
+{
+	data_path: "/def/vehicle/ai/transit_2016/generic.sii"
+}
+
+vehicle_wheel_accessory: .transit_16_b.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_5.sii"
+}
+
+vehicle_wheel_accessory: .transit_16_b.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_18in_5.sii"

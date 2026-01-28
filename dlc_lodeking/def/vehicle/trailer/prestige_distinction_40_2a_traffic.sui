@@ -1,0 +1,36 @@
+traffic_trailer : traffic.trailer.pr_dist40
+{
+
+	accessories[]: .traffic.trailer.pr_dist40.chassis
+	accessories[]: .traffic.trailer.pr_dist40.rwheel
+	accessories[]: .traffic.trailer.pr_dist40.rwheel2
+	accessories[]: .traffic.trailer.pr_dist40.paintjob
+	
+	cargo_mass: 16000
+	
+	base: traffic.trailer.scs_flat45f
+	
+	company_paint_job: true
+}
+
+vehicle_accessory: .traffic.trailer.pr_dist40.chassis
+{
+	data_path: "/def/vehicle/trailer/prestige_distinction/ch_40.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.pr_dist40.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.pr_dist40.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.pr_dist40.paintjob
+{
+    	data_path: "/def/vehicle/trailer/prestige_distinction/company_paint_job/default.sii"
+}

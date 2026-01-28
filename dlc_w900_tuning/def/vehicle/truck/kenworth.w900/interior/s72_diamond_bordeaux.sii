@@ -1,0 +1,53 @@
+SiiNunit
+{
+accessory_interior_data	: s72_dia_brdx.kenworth.w900.interior
+{
+	name: "Diamond Bordeaux Red"
+	price: 22960
+	unlock: 10
+	icon: "truck/kenworth_w900/interior/model/sl_72_dia_bordeaux"
+
+	model: "/vehicle/truck/kenworth_w900/interior/model/sl_72.pmd"
+	animated_model: "/vehicle/truck/kenworth_w900/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/kenworth_w900/interior/model/sl_72.pmc"
+
+	look: bordeaux
+	variant: diamond
+
+	suitable_for[]: "s72.kenworth.w900.cabin"
+
+	ext_model: "/vehicle/truck/kenworth_w900/interior/external/sleeper_72.pmd"
+	ext_variant: diamond
+	ext_look: bordeaux
+
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/steering_w/default.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/codrv_seat/leather_bordeaux.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/int_trim/exclusive.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/cab_door/window_diamond_bordeaux.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/roof_window/sleeper_diamond_bordeaux.sii"
+
+@include "animations.sui"
+
+@include "int_shadow_cab_s72.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+@include "computers.sui"
+
+@include "dashboard_colors.sui"
+
+	glass_panes[]: .kenworthw900.r.pane.front
+	glass_panes[]: .kenworthw900.r.pane.close
+	glass_panes[]: .kenworthw900.r.pane.far
+	glass_panes[]: .kenworthw900.r.pane.roof
+	glass_panes[]: .kenworthw900.r.pane.back
+	glass_panes[]: .kenworthw900.r.pane.door
+	glass_panes[]: .kenworthw900.r.pane.top
+
+@include "seat.sui"
+@include "mirrors.sui"
+}
+@include "glass.sui"
+@include "glass_sl72.sui"
+@include "sound_effects_units.sui"
+}

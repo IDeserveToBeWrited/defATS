@@ -1,0 +1,48 @@
+SiiNunit
+{
+accessory_interior_data	: s82_prm_blk.westernstar.5700xe.interior
+{
+	name: "Premium Obsidian Black"
+	price: 22960
+	unlock: 10
+	icon: "westernstar_5700xe/int_black"
+
+	model: "/vehicle/truck/westernstar_5700xe/interior/model/s82_exclusive.pmd"
+	animated_model: "/vehicle/truck/westernstar_5700xe/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/westernstar_5700xe/interior/model/s82_exclusive.pmc"
+	look: black
+	variant: slp
+
+	ext_model: "/vehicle/truck/westernstar_5700xe/interior/external/s82_exclusive_ext.pmd"
+	ext_look: black
+
+	suitable_for[]: "s82.westernstar.5700xe.cabin"
+
+	defaults[]: "/def/vehicle/truck/westernstar.5700xe/accessory/cab_door/stock_prm_blk.sii"
+
+@include "animations.sui"
+
+@include "int_shadow_s82.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .wstar5700xe.r.pane.front
+	glass_panes[]: .wstar5700xe.r.pane.close
+	glass_panes[]: .wstar5700xe.r.pane.far
+	glass_panes[]: .wstar5700xe.r.pane.back_s
+	glass_panes[]: .wstar5700xe.r.pane.back_821
+	glass_panes[]: .wstar5700xe.r.pane.back_822
+	glass_panes[]: .wstar5700xe.r.pane.back_823
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_s82.sui"
+@include "sound_effects_units.sui"
+}

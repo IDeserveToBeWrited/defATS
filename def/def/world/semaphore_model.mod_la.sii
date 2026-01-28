@@ -1,0 +1,182 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+
+tr_semaphore_model : tr_sem_mdl.col_br_la
+{
+	name: "column_movable_bridge_la"
+
+	model_desc: "/asset/props/gate/la_movable_traffic_light.pmd"
+	model_coll: "/asset/props/gate/la_movable_traffic_light.pmc"
+	
+	draw_distance: 500
+}
+
+tr_semaphore_model : tr_sem_mdl.la_chen_br
+{
+
+	name: "la_grand_chenier_bridge_01_mov"
+
+	model_desc: "/model/panorama/la_grand_chenier/la_grand_chenier_bridge_01_mov.pmd"
+
+	draw_distance: 1500
+
+	state_anim: 4
+	
+	# orange_to_red
+	state_anim[0]: ""
+	
+	# red
+	state_anim[1]: "/model/panorama/la_grand_chenier/la_grand_chenier_bridge_01_turn_anim.pma"
+	
+	# orange_to_green
+	state_anim[2]: "/model/panorama/la_grand_chenier/la_grand_chenier_bridge_01_back_anim.pma"
+	
+	# green
+	state_anim[3]: ""
+	
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/swing_bridge_loop_1.soundref"
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/crane_3.soundref"
+}
+
+tr_semaphore_model : tr_sem_mdl.la_houm_br
+{
+
+	name: "la_houma_bridge_01_mov"
+
+	model_desc: "/model/panorama/la_houma/la_houma_bridge_01_mov.pmd"
+
+	draw_distance: 1500
+
+	state_anim: 4
+	
+	# orange_to_red
+	state_anim[0]: ""
+	
+	# red
+	state_anim[1]: "/model/panorama/la_houma/la_houma_bridge_01_up_anim.pma"
+	
+	# orange_to_green
+	state_anim[2]: "/model/panorama/la_houma/la_houma_bridge_01_down_anim.pma"
+	
+	# green
+	state_anim[3]: ""
+    
+	sounds[]: "RO|/sound/world/sounds/refs/artificial/machines/swing_bridge_loop_1.soundref"
+	sounds[]: "RO|/sound/world/sounds/refs/artificial/machines/crane_3.soundref"
+}
+
+tr_semaphore_model : tr_sem_mdl.la_riv_br
+{
+
+	name: "la_river_lock_bridge_mov"
+
+	model_desc: "/model/panorama/la_river_lock/la_river_lock_bridge_mov.pmd"
+
+	draw_distance: 1500
+
+	state_anim: 4
+	
+	# orange_to_red
+	state_anim[0]: ""
+	
+	# red
+	state_anim[1]: "/model/panorama/la_river_lock/la_river_lock_bridge_up.pma"
+	
+	# orange_to_green
+	state_anim[2]: "/model/panorama/la_river_lock/la_river_lock_bridge_dwn.pma"
+	
+	# green
+	state_anim[3]: ""
+    
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/swing_bridge_loop_1.soundref"
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/crane_3.soundref"
+}
+
+tr_semaphore_model : tr_sem_mdl.la_riv_gate
+{
+
+	name: "la_river_lock_bridge_gate_mov"
+
+	model_desc: "/model/panorama/la_river_lock/la_river_lock_bridge_gate_mov.pmd"
+
+	draw_distance: 1500
+
+	state_anim: 4
+	
+	# orange_to_red
+	state_anim[0]: "/model/panorama/la_river_lock/la_river_lock_bridge_gate_open.pma"
+	
+	# red
+	state_anim[1]: ""
+	
+	# orange_to_green
+	state_anim[2]: "/model/panorama/la_river_lock/la_river_lock_bridge_gate_open.pma"
+	
+	# green
+	state_anim[3]: ""
+	
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/industrial/rafinery_pump_1.soundref"
+
+}
+
+tr_semaphore_model : tr_sem_mdl.la_monr_br
+{
+
+	name: "la_monroe_bridge_02_mov"
+
+	model_desc: "/model/panorama/la_monroe/la_monroe_bridge_02_mov.pmd"
+
+	draw_distance: 1500
+
+	state_anim: 4
+	
+	# orange_to_red
+	state_anim[0]: ""
+	
+	# red
+	state_anim[1]: "/model/panorama/la_monroe/la_monroe_bridge_02_up_anim.pma"
+	
+	# orange_to_green
+	state_anim[2]: "/model/panorama/la_monroe/la_monroe_bridge_02_down_anim.pma"
+	
+	# green
+	state_anim[3]: ""
+    
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/swing_bridge_loop_1.soundref"
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/crane_3.soundref"
+}
+
+tr_semaphore_model : tr_sem_mdl.la_dr_br
+{
+
+	name: "la_draw_bridge_1-1_mov"
+
+	model_desc: "/prefab/bridge/la_draw_bridge_1-1_mov.pmd"
+
+	draw_distance: 1500
+
+	state_anim: 4
+	
+	# orange_to_red
+	state_anim[0]: "/prefab/bridge/la_draw_bridge_1-1_up.pma"
+	
+	# red
+	state_anim[1]: ""
+	
+	# orange_to_green
+	state_anim[2]: "/prefab/bridge/la_draw_bridge_1-1_up.pma"
+	
+	# green
+	state_anim[3]: ""
+	
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/swing_bridge_loop_1.soundref"
+	sounds[]: "OY|/sound/world/sounds/refs/artificial/machines/crane_3.soundref"
+}
+
+
+
+}

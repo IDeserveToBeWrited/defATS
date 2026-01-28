@@ -1,0 +1,37 @@
+SiiNunit
+{
+accessory_cabin_data : day.westernstar.57x.cabin
+{
+	name: "Day Cab"
+	price: 16600
+	unlock: 0
+	icon: "truck/westernstar_57x/cabin/dc"
+	part_type: factory
+
+	model: "/vehicle/truck/westernstar_57x/cabin/dc.pmd"
+	collision: "/vehicle/truck/westernstar_57x/cabin/dc.pmc"
+	variant: default
+	look: default
+
+	drl_with_headlights: 1.0
+
+	wiper_model: "/vehicle/truck/westernstar_57x/cabin/wiper.pmd"
+	wiper_anim: "/vehicle/truck/westernstar_57x/cabin/wiper_anim.pma"
+	suspension: false
+
+	windows_model: "/vehicle/truck/westernstar_57x/cabin/win_open.pmd"
+	left_window_anim: "/vehicle/truck/westernstar_57x/cabin/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/westernstar_57x/cabin/win_open_r.pma"
+
+	defaults[]: "/def/vehicle/truck/westernstar.57x/chassis/6x2_short.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/interior/day_bsc_gr.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/paint_job/color11_a.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/accessory/exhaust/day_bottom.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/accessory/sunshield/day_lights.sii"
+
+	conflict_with[]: "6x2l.westernstar.57x.chassis"
+	conflict_with[]: "6x4l.westernstar.57x.chassis"
+
+@include "sound.sui"
+}
+}

@@ -1,0 +1,30 @@
+trailer : trailer.scs_drop53sp
+{
+	trailer_definition: trailer_def.scs.dropdeck.single_53sp.dropdeck_alu
+
+	accessories[]: .scs_drop53sp.chassis
+	accessories[]: .scs_drop53sp.rwheel
+	accessories[]: .scs_drop53sp.rwheel2
+	accessories[]: .scs_drop53sp.body
+}
+
+vehicle_accessory: .scs_drop53sp.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_dropdeck/dropdeck_53_sp.sii"
+}
+
+vehicle_wheel_accessory: .scs_drop53sp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_wheel_accessory: .scs_drop53sp.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+vehicle_accessory: .scs_drop53sp.body
+{
+	data_path: "/def/vehicle/trailer/scs_dropdeck/accessory/body_53.sii"
+}

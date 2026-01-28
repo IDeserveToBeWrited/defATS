@@ -1,0 +1,62 @@
+
+traffic_vehicle : traffic.ks.tow.tractor
+{
+	accessories[]: .ks.tow.tractor.chassis
+	accessories[]: .ks.tow.tractor.fwheel
+	accessories[]: .ks.tow.tractor.rwheel
+
+	max_speed: 60
+	vehicle_mass: 1000
+
+
+	sound_move[]: "/sound/traffic/truck_us_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+
+	trailer_chains[]: "ks.tow.tractor.trailer.empty | ks.tow.tractor.trailer.empty | ks.tow.tractor.trailer.empty | ks.tow.tractor.trailer.empty"
+
+	spawn_ratio: 1
+
+	#variant[]: traffic.ks.tow.tractor.chain.empty
+	#variant[]: traffic.ks.tow.tractor.chain.full
+	#variant[]: traffic.ks.tow.tractor.chain.half
+
+	tags[]: context
+
+	spawn_condition[]: .traffic.ks.tow.tractor.spawn.condition
+	spawn_condition[]: .traffic.ks.tow.tractor.spawn.condition2
+
+@include "drivers_industry.sui"
+}
+traffic_spawn_condition: .traffic.ks.tow.tractor.spawn.condition
+{
+	type: area
+	str_param[]: "company"
+}
+traffic_spawn_condition: .traffic.ks.tow.tractor.spawn.condition2
+{
+	type: area
+	str_param[]: "aport_ult"
+	str_param[]: "aport_dfw"
+	str_param[]: "aport_den"
+	str_param[]: "asu_car_pln"
+	str_param[]: "dw_air_pln"
+}
+vehicle_accessory: .ks.tow.tractor.chassis
+{
+	data_path: "/def/vehicle/ai/ks_tow_tractor/chassis.sii"
+}
+vehicle_wheel_accessory: .ks.tow.tractor.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_towtruck.sii"
+}
+vehicle_wheel_accessory: .ks.tow.tractor.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_towtruck.sii"
+}
+
+
+
+
+

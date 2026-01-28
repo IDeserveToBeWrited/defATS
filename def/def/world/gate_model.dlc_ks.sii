@@ -1,0 +1,84 @@
+SiiNunit
+{
+
+## kansas gate ##
+
+
+
+gate_model : gate_model.slide.ks_gar_01
+{
+	# one animation, collision animated
+
+	name: "ks_factory_gate_ani"
+
+	category: "garage"
+
+	model_desc: "/prefab/depots/aerostructures_factory/ks_factory_gate_ani.pmd"
+	model_coll: "/prefab/depots/aerostructures_factory/ks_factory_gate_ani.pmc"
+
+	state_anim: 4
+
+	# orange_to_red
+	state_anim[0]: "/prefab/depots/aerostructures_factory/ks_factory_gate_ani_open.pma"
+
+	# red
+	state_anim[1]: ""
+
+	# orange_to_green
+	state_anim[2]: "/prefab/depots/aerostructures_factory/ks_factory_gate_ani_open.pma"
+
+	# green
+	state_anim[3]: ""
+
+	#sound
+	sounds[]: "OY|/sound/world/gate_iron.soundref"
+
+	# approximate length of animation is 10.4, so we use interval overrides
+
+	interval_overrides: 4
+	interval_overrides[0]: 0.5 # green
+	interval_overrides[1]: 5.0 # orange_to_red 
+	interval_overrides[2]: 5.0 # red 
+	interval_overrides[3]: 5.0 # orange_to_green
+}
+
+gate_model : gate_model.garage.met_rev_01
+{
+	# one animation, collision animated
+
+	name: "or_metal_storage_door"
+
+	category: "garage"
+
+	model_desc: "/model/props/street/or_metal_storage_door_rev.pmd"
+	model_coll: "/model/props/street/or_metal_storage_door_rev.pmc"
+
+	state_anim: 4
+
+	# orange_to_red
+	state_anim[0]: "/model/props/street/or_metal_storage_door_rev_open.pma"
+
+	# red
+	state_anim[1]: ""
+
+	# orange_to_green
+	state_anim[2]: "/model/props/street/or_metal_storage_door_rev_open.pma"
+
+	# green
+	state_anim[3]: ""
+
+	#sound
+	sounds[]: "OY|/sound/world/gate_iron.soundref"
+
+	# approximate length of animation is 10.4, so we use interval overrides
+
+	interval_overrides: 4
+	interval_overrides[0]: 0.5 # green
+	interval_overrides[1]: 5.0 # orange_to_red 
+	interval_overrides[2]: 5.0 # red 
+	interval_overrides[3]: 5.0 # orange_to_green
+    
+    draw_distance: 1500
+}
+
+}

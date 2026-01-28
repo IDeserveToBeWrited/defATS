@@ -1,0 +1,49 @@
+SiiNunit
+{
+accessory_interior_data	: day_prem_g.mack.pinnacle.interior
+{
+	name: "Premium Grey"
+	price: 20250
+	unlock: 10
+	icon: "mack_pinnacle/int_prem"
+
+	model: "/vehicle/truck/mack_pinnacle/interior/model/dc_premium_grey.pmd"
+	animated_model: "/vehicle/truck/mack_pinnacle/interior/animation/animation.pmd"
+	collision: "/vehicle/truck/mack_pinnacle/interior/model/dc_premium_grey.pmc"
+	variant: default
+	look: default
+
+	ext_model: "/vehicle/truck/mack_pinnacle/interior/external/day_prem_grey.pmd"
+	ext_variant: default
+	ext_look: default
+
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/accessory/steering_w/premium.sii"
+
+	show_chassis_rear: true
+
+	suitable_for[]: "day.mack.pinnacle.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_day.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .mack.pinnacle.r.pane.front
+	glass_panes[]: .mack.pinnacle.r.pane.close
+	glass_panes[]: .mack.pinnacle.r.pane.far
+	glass_panes[]: .mack.pinnacle.r.pane.back_day
+	glass_panes[]: .mack.pinnacle.r.pane.back_b
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_day.sui"
+@include "sound_effects_units.sui"
+}

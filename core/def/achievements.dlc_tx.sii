@@ -1,0 +1,416 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Texas --
+
+# Discover at least 20 cities in Texas.
+
+achievement_visit_city_data : .achievement.tx_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: abilene
+	cities[]: amarillo
+	cities[]: austin
+	cities[]: beaumont
+	cities[]: brownsville
+	cities[]: corpus_chris
+	cities[]: dalhart
+	cities[]: dallas
+	cities[]: del_rio
+	cities[]: el_paso
+	cities[]: fort_stockto
+	cities[]: fort_worth
+	cities[]: galveston
+	cities[]: houston
+	cities[]: huntsville
+	cities[]: junction
+	cities[]: laredo
+	cities[]: longview_tx
+	cities[]: lubbock
+	cities[]: lufkin
+	cities[]: mcallen
+	cities[]: odessa
+	cities[]: san_angelo
+	cities[]: san_antonio
+	cities[]: texarkana
+	cities[]: tyler
+	cities[]: van_horn
+	cities[]: victoria
+	cities[]: waco
+	cities[]: wichita_fall
+	target: 20
+
+	achievement_name: tx_visit_cities
+
+	steam_progress_id: "tx_visit_cities-progress"
+	steam_id: tx_visit_cities
+}
+
+# View cutscenes from at least 25 viewpoints in Texas.
+
+achievement_trigger_data : .achievement.tx_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: tx_cutscenes
+	target: 25
+
+	achievement_name: tx_cutscenes
+
+	steam_progress_id: "tx_cutscenes-progress"
+	steam_id: tx_cutscenes
+}
+
+# Discover at least 30 historical markers in Texas.
+
+achievement_trigger_data : .achievement.tx_markers
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: tx_markers
+	target: 30
+
+	achievement_name: tx_markers
+
+	steam_progress_id: "tx_markers-progress"
+	steam_id: tx_markers
+}
+
+# Deliver cargo to or from at least 2 shipyards and 4 cargo ports in Texasa.
+
+achievement_delivery : .achievement.tx_ship_port
+{
+	event_name: job_done
+	initial_check: true
+	condition: .tx_ship_port.condition
+	target: 6
+
+	achievement_name: tx_shipyards_ports
+
+	steam_progress_id: "tx_shipyards_ports-progress"
+	steam_id: tx_shipyards_ports
+}
+
+achievement_delivery_sequence : .tx_ship_port.condition
+{
+	list[]: .tx_ship_port.ship
+	list[]: .tx_ship_port.port
+}
+
+achievement_delivery_sequence : .tx_ship_port.ship
+{
+	list[]: .tx_ship_port.hds_met_shp.houston
+	list[]: .tx_ship_port.ter_met_shp.brownsville
+	list[]: .tx_ship_port.ter_met_shp.corpus_chris
+	target: 2
+}
+
+achievement_delivery_company : .tx_ship_port.hds_met_shp.houston
+{
+	role: any
+	company_name: hds_met_shp
+	city_name: houston
+}
+
+achievement_delivery_company : .tx_ship_port.ter_met_shp.brownsville
+{
+	role: any
+	company_name: ter_met_shp
+	city_name: brownsville
+}
+
+achievement_delivery_company : .tx_ship_port.ter_met_shp.corpus_chris
+{
+	role: any
+	company_name: ter_met_shp
+	city_name: corpus_chris
+}
+
+achievement_delivery_sequence : .tx_ship_port.port
+{
+	list[]: .tx_ship_port.port_bea.beaumont
+	list[]: .tx_ship_port.port_bro.brownsville
+	list[]: .tx_ship_port.port_cor.corpus_chris
+	list[]: .tx_ship_port.port_gal.galveston
+	list[]: .tx_ship_port.port_hou.houston
+	target: 4
+}
+
+achievement_delivery_company : .tx_ship_port.port_bea.beaumont
+{
+	role: any
+	company_name: port_bea
+	city_name: beaumont
+}
+
+achievement_delivery_company : .tx_ship_port.port_bro.brownsville
+{
+	role: any
+	company_name: port_bro
+	city_name: brownsville
+}
+
+achievement_delivery_company : .tx_ship_port.port_cor.corpus_chris
+{
+	role: any
+	company_name: port_cor
+	city_name: corpus_chris
+}
+
+achievement_delivery_company : .tx_ship_port.port_gal.galveston
+{
+	role: any
+	company_name: port_gal
+	city_name: galveston
+}
+
+achievement_delivery_company : .tx_ship_port.port_hou.houston
+{
+	role: any
+	company_name: port_hou
+	city_name: houston
+}
+
+# Deliver cargo to or from at least 5 farms and 2 livestock auctions in Texas.
+
+achievement_delivery : .achievement.tx_farm_auct
+{
+	event_name: job_done
+	initial_check: true
+	condition: .tx_farm_auct.condition
+	target: 7
+
+	achievement_name: tx_farms_auction_houses
+
+	steam_progress_id: "tx_farms_auction_houses-progress"
+	steam_id: tx_farms_auction_houses
+}
+
+achievement_delivery_sequence : .tx_farm_auct.condition
+{
+	list[]: .tx_farm_auct.gp_farm
+	list[]: .tx_farm_auct.gp_live_auc
+}
+
+achievement_delivery_sequence : .tx_farm_auct.gp_farm
+{
+	list[]: .tx_farm_auct.gp_farm.amarillo
+	list[]: .tx_farm_auct.gp_farm.dalhart
+	list[]: .tx_farm_auct.gp_farm.fort_worth
+	list[]: .tx_farm_auct.gp_farm.lubbock
+	list[]: .tx_farm_auct.gp_farm.san_antonio
+	list[]: .tx_farm_auct.gp_farm.waco
+	target: 5
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_farm.amarillo
+{
+	role: any
+	company_name: gp_farm
+	city_name: amarillo
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_farm.dalhart
+{
+	role: any
+	company_name: gp_farm
+	city_name: dalhart
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_farm.fort_worth
+{
+	role: any
+	company_name: gp_farm
+	city_name: fort_worth
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_farm.lubbock
+{
+	role: any
+	company_name: gp_farm
+	city_name: lubbock
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_farm.san_antonio
+{
+	role: any
+	company_name: gp_farm
+	city_name: san_antonio
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_farm.waco
+{
+	role: any
+	company_name: gp_farm
+	city_name: waco
+}
+
+achievement_delivery_sequence : .tx_farm_auct.gp_live_auc
+{
+	list[]: .tx_farm_auct.gp_live_auc.dalhart
+	list[]: .tx_farm_auct.gp_live_auc.fort_worth
+	list[]: .tx_farm_auct.gp_live_auc.lubbock
+	list[]: .tx_farm_auct.gp_live_auc.victoria
+	target: 2
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_live_auc.dalhart
+{
+	role: any
+	company_name: gp_live_auc
+	city_name: dalhart
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_live_auc.fort_worth
+{
+	role: any
+	company_name: gp_live_auc
+	city_name: fort_worth
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_live_auc.lubbock
+{
+	role: any
+	company_name: gp_live_auc
+	city_name: lubbock
+}
+
+achievement_delivery_company : .tx_farm_auct.gp_live_auc.victoria
+{
+	role: any
+	company_name: gp_live_auc
+	city_name: victoria
+}
+
+# Complete 10 deliveries of at least one Cotton Lint, Cotton Seed and Cotton Gin Harvester in Texas.
+
+achievement_delivery : .achievement.tx_cotton
+{
+	event_name: job_done
+	initial_check: true
+	condition: .tx_cotton.condition
+	target: 10
+
+	achievement_name: tx_cotton
+
+	steam_progress_id: "tx_cotton-progress"
+	steam_id: tx_cotton
+}
+
+achievement_delivery_sequence : .tx_cotton.condition
+{
+	list[]: .tx_cotton.cott_lint
+	list[]: .tx_cotton.cott_seed
+	list[]: .tx_cotton.cott_harvest
+	list[]: .tx_cotton.other
+}
+
+achievement_delivery_each : .tx_cotton.cott_lint
+{
+	list[]: .tx_cotton.cott_lint.cargo
+	list[]: .tx_cotton.cott_lint.country
+}
+
+achievement_delivery_cargo : .tx_cotton.cott_lint.cargo
+{
+	cargo_name: cott_lint
+}
+
+achievement_delivery_point_country : .tx_cotton.cott_lint.country
+{
+	role: both
+	country_name: texas
+}
+
+achievement_delivery_each : .tx_cotton.cott_seed
+{
+	list[]: .tx_cotton.cott_seed.cargo
+	list[]: .tx_cotton.cott_seed.country
+}
+
+achievement_delivery_cargo : .tx_cotton.cott_seed.cargo
+{
+	cargo_name: cott_seed
+}
+
+achievement_delivery_point_country : .tx_cotton.cott_seed.country
+{
+	role: both
+	country_name: texas
+}
+
+achievement_delivery_each : .tx_cotton.cott_harvest
+{
+	list[]: .tx_cotton.cott_harvest.cargo
+	list[]: .tx_cotton.cott_harvest.country
+}
+
+achievement_delivery_cargo : .tx_cotton.cott_harvest.cargo
+{
+	cargo_name: cott_harvest
+}
+
+achievement_delivery_point_country : .tx_cotton.cott_harvest.country
+{
+	role: both
+	country_name: texas
+}
+
+achievement_delivery_count : .tx_cotton.other
+{
+	condition: .tx_cotton.other.condition
+	count: 7
+}
+
+achievement_delivery_each : .tx_cotton.other.condition
+{
+	list[]: .tx_cotton.other.cargo
+	list[]: .tx_cotton.other.country
+}
+
+achievement_delivery_any : .tx_cotton.other.cargo
+{
+	list[]: .tx_cotton.other.cott_lint
+	list[]: .tx_cotton.other.cott_seed
+	list[]: .tx_cotton.other.cott_harvest
+}
+
+achievement_delivery_cargo : .tx_cotton.other.cott_lint
+{
+	cargo_name: cott_lint
+}
+
+achievement_delivery_cargo : .tx_cotton.other.cott_seed
+{
+	cargo_name: cott_seed
+}
+
+achievement_delivery_cargo : .tx_cotton.other.cott_harvest
+{
+	cargo_name: cott_harvest
+}
+
+achievement_delivery_point_country : .tx_cotton.other.country
+{
+	country_name: texas
+	role: both
+}
+
+}

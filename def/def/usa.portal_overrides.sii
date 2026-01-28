@@ -1,0 +1,109 @@
+SiiNunit
+{
+# Xmas land portals
+
+portal_def_override : _nameless.xmas.0 {
+ item_uid: 0x4F4D7079FF830000
+}
+
+portal_def_override : _nameless.xmas.1 {
+ item_uid: 0x4EBB5150DC462C95
+}
+
+portal_def_override : _nameless.xmas.2 {
+ item_uid: 0x4F4D70F00F030000
+}
+
+portal_def_override : _nameless.xmas.3 {
+ item_uid: 0x4F4D722CB4030000
+}
+
+# East of Lewiston with truck hookup outside of the parking
+# area.
+
+portal_def_override : _nameless.lewiston.east {
+ item_uid: 0x459672F0A2DF0000
+ parking_point_node_uid: 0x451AC7CC085F0000
+}
+
+# North of cliffton has parking area with just a truck hookup.
+
+portal_def_override : _nameless.cliffton.north {
+ item_uid: 0x291DCA9CF9CD0000
+ parking_point_node_uid: 0x273DB284784D2082
+ node_additional_rotation_deg: 180
+ node_additional_offset: (0, 0, 3.0)
+}
+
+portal_def_override : _nameless.ukiah.south {
+ item_uid: 0x43FACE7068070001
+ parking_point_node_uid: 0x448259AC44C70001
+ node_additional_offset: (5, 0, 0.0)
+}
+
+portal_def_override : _nameless.ukiah.north {
+ item_uid: 0x3DBDC968DE0711A4
+ parking_point_node_uid: 0x3DBDC96841C72B38
+ node_additional_offset: (0, 0, 6.0)
+}
+
+portal_def_override : _nameless.eureka.east {
+ item_uid: 0x3DBDBC8038470620
+ parking_point_node_uid: 0x3DBDBC80414718EB
+ node_additional_rotation_deg: -121
+ node_additional_offset: (-8, 0, -12.0)
+}
+
+portal_def_override : _nameless.mcallen.west {
+ item_uid: 0x3DCB8830E52B0000
+ parking_point_node_uid: 0x3d7231dc3eeb0000
+ node_additional_offset: (-4, 0, 0)
+}
+
+portal_def_override : _nameless.tonopah.west {
+ item_uid: 0x4E1C1C544EDA118C
+ parking_point_node_uid: 0x4e1c1c58eadae6d7 # -97836.25;107.02;-6057.04
+}
+
+portal_def_override : _nameless.colorado_spr.west {
+ item_uid: 0x381BF2B0C4D606E2
+ parking_point_node_uid: 0x381bf2b0c9960e7a
+ node_additional_rotation_deg: -180
+ node_additional_offset: (0, 0, 1)
+}
+
+portal_def_override : _nameless.pueblo.west {
+ item_uid: 0x39D1D0B8D1DF0000
+ parking_point_node_uid: 0x356e68206a1f0002
+ node_additional_offset: (1, 0, 0)
+}
+
+# After the california reskin many of the rest areas
+# are in cities which are disabled by default, enable
+# some from them.
+
+portal_def_override : _nameless.indio.los_angeles {
+ item_uid: 0x57E08947F3930002
+}
+
+portal_def_override : _nameless.sand_diego.el_centro {
+ item_uid: 0x5772C992911B0000
+}
+
+portal_def_override : _nameless.bakersfield.west {
+ item_uid: 0x577235E8BB9B0000
+}
+
+# A few new cities in Louisiana do not have any suitable
+# parking close by. Forcibly enable areas close or inside
+# the city which can be used by the other city in the area.
+
+portal_def_override : _nameless.houma.north {
+ item_uid: 0x57457AE3421133F2
+}
+
+portal_def_override : _nameless.fourchon.center {
+ item_uid: 0x5C6CE07DDE1F0002
+}
+
+}

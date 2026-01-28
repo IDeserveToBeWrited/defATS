@@ -8,11 +8,212 @@ SiiNunit
 # Warning: Even if the units are specified in more than one source file, they share the
 # same namespace so suffixes or prefixes should be used to avoid conflicts.
 
+mover_model : mover.spboagrs
+{
+	mover_name: "speedboat 01 gr static"
+	model_desc: "/asset/ship/mover/speedboat_01_gr_mov.pmd"
+	model_anim: "/asset/ship/mover/speedboat_01_gr_mov_static.pma"
+
+	lods[0]: "/asset/ship/mover/speedboat_01_gr_mov_lod1.pmd"
+	lods[1]: "/asset/ship/mover/speedboat_01_gr_mov_lod2.pmd"
+
+	lod_dist[0]: 75
+	lod_dist[1]: 150
+}
+
+mover_model : mover.spboagrg
+{
+	mover_name: "speedboat 01 gr sailing"
+	model_desc: "/asset/ship/mover/speedboat_01_gr_mov.pmd"
+	model_anim: "/asset/ship/mover/speedboat_01_gr_mov_sailing.pma"
+
+	lods[0]: "/asset/ship/mover/speedboat_01_gr_mov_lod1.pmd"
+	lods[1]: "/asset/ship/mover/speedboat_01_gr_mov_lod2.pmd"
+
+	lod_dist[0]: 75
+	lod_dist[1]: 150
+
+	sound_path[]: "/sound/world/sounds/vehicles.bank#artificial/vehicles/motorboat_1"
+}
+
 mover_model : mover.windsock
 {
 	mover_name: "wind sock"
 	model_desc: "/asset/props/uni/wind_sock.pmd"
 	model_anim: "/asset/props/uni/wind_sock.pma"
+	model_coll: "/asset/props/uni/wind_sock.pmc"
+}
+mover_model : mover.ducks_idle
+{
+	mover_name: "duck mallard idle 01"
+	model_desc: "/asset/character/animal/wild/duck_mallard_idle_01_mov.pmd"
+}
+mover_model : mover.ducks_idle_g
+{
+	mover_name: "duck mallard idle group 01"
+	model_desc: "/asset/character/animal/wild/duck_mallard_idle_group_01_mov.pmd"
+}
+mover_model : mover.ducks_float
+{
+	mover_name: "duck mallard floating 01"
+	model_desc: "/asset/character/animal/wild/duck_mallard_floating_01_mov.pmd"
+}
+mover_model : mover.ducks_floatg
+{
+	mover_name: "duck mallard floating group 01"
+	model_desc: "/asset/character/animal/wild/duck_mallard_floating_group_01_mov.pmd"
+}
+mover_model : mover.gull_i1
+{
+	mover_name: "herring gull idle 01"
+	model_desc: "/asset/character/animal/wild/herring_gull_idle_01_mov.pmd"
+}
+mover_model : mover.gull_gi1
+{
+	mover_name: "herring gulls group idle 01"
+	model_desc: "/asset/character/animal/wild/herring_gull_idle_group_01_mov.pmd"
+}
+mover_model : mover.gull_i2
+{
+	mover_name: "herring gull idle 02"
+	model_desc: "/asset/character/animal/wild/herring_gull_idle_02_mov.pmd"
+}
+mover_model : mover.gull_f1
+{
+	mover_name: "herring gull fly 01"
+	model_desc: "/asset/character/animal/wild/herring_gull_fly_01.pmd"
+}
+mover_model : mover.gull_f2
+{
+	mover_name: "herring gull fly 02"
+	model_desc: "/asset/character/animal/wild/herring_gull_fly_02.pmd"
+}
+mover_model : mover.gull_f3
+{
+	mover_name: "herring gull fly 03"
+	model_desc: "/asset/character/animal/wild/herring_gull_fly_03.pmd"
+}
+mover_model : mover.gull_fg1
+{
+	mover_name: "herring gulls group fly 01"
+	model_desc: "/asset/character/animal/wild/herring_gull_fly_group_01.pmd"
+}
+mover_model : mover.gull_fg2
+{
+	mover_name: "herring gulls group fly 02"
+	model_desc: "/asset/character/animal/wild/herring_gull_fly_group_02.pmd"
+}
+mover_model : mover.gull_fg3
+{
+	mover_name: "herring gulls group fly 03"
+	model_desc: "/asset/character/animal/wild/herring_gull_fly_group_03.pmd"
+}
+#mover_model : mover.iror_4
+#{
+#	mover_name: "radial_irrigation1_300m"
+#	model_desc: "/asset/props/or_radial_irrigation1_mov_300.pmd"
+#}
+#mover_model : mover.iror_5
+#{
+#	mover_name: "radial_irrigation1_200m"
+#	model_desc: "/asset/props/or_radial_irrigation1_mov_200.pmd"
+#}
+#mover_model : mover.iror_6
+#{
+#	mover_name: "radial_irrigation1_150m"
+#	model_desc: "/asset/props/or_radial_irrigation1_mov_150.pmd"
+#}
+mover_model : mover.iror_7
+{
+	mover_name: "radial_irrigation1_100m"
+	model_desc: "/asset/props/or_radial_irrigation1_mov_100.pmd"
 }
 
+mover_model : mover.invis_mover
+{
+	mover_name: "invisible mover"
+	model_desc: "/asset/animation/nescript/invisible_mover.pmd"
+
+}
+
+mover_model : mover.light_flare
+{
+	mover_name: "light_flare"
+	model_desc: "/asset/animation/nescript/light_flare.pmd"
+}
+
+mover_model : mover.rol_m_01
+{
+	mover_name: "metal_roll_01_mov"
+    
+	model_desc: "/asset/props/factory/metal_rolls_01_blkw_mov.pmd"
+	model_coll: "/asset/props/factory/metal_rolls_01_blkw_mov.pmc"
+
+	lods[0]: "/asset/props/factory/metal_rolls_01_blkw_mov_lod1.pmd"
+	lods[1]: "/asset/props/factory/metal_rolls_01_blkw_mov_lod2.pmd"
+
+	lod_dist[0]: 20
+	lod_dist[1]: 50
+}
+
+mover_model : mover.gar_spr_1
+{
+	mover_name: "garden sprinkler mover"
+	model_desc: "/asset/water/foam/garden_sprinkler.pmd"
+
+}
+mover_model : mover.para1
+{
+	mover_name: "para1"
+	model_desc: "/asset/mover/aircraft/para1.pmd"
+}
+mover_model : mover.para2
+{
+	mover_name: "para2"
+	model_desc: "/asset/mover/aircraft/para2.pmd"
+}
+mover_model : mover.para3
+{
+	mover_name: "para3"
+	model_desc: "/asset/mover/aircraft/para3.pmd"
+}
+mover_model : mover.para4
+{
+	mover_name: "para4"
+	model_desc: "/asset/mover/aircraft/para4.pmd"
+}
+
+mover_model : mover.waves
+{
+	mover_name: "waves"
+	model_desc: "/asset/water/legacy/waves.pmd"
+	model_anim: "/asset/water/legacy/wave.pma"
+}
+
+mover_model : mover.waves_small
+{
+	mover_name: "waves small"
+	model_desc: "/asset/water/legacy/waves_small.pmd"
+}
+
+mover_model : mover.waves2
+{
+	mover_name: "waves fast"
+	model_desc: "/asset/water/legacy/waves.pmd"
+	model_anim: "/asset/water/legacy/wave2.pma"
+}
+
+mover_model : mover.wavesgroup
+{
+	mover_name: "waves group"
+	model_desc: "/asset/water/legacy/waves2.pmd"
+	model_anim: "/asset/water/legacy/wave_group.pma"
+}
+
+mover_model : mover.wavesgroup2
+{
+	mover_name: "waves group fast"
+	model_desc: "/asset/water/legacy/waves2.pmd"
+	model_anim: "/asset/water/legacy/wave_group2.pma"
+}
 }

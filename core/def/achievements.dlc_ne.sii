@@ -1,0 +1,258 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Nebraska --
+
+# Discover at least 10 cities in Nebraska.
+
+achievement_visit_city_data : .achievement.ne_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: alliance
+	cities[]: chadron
+	cities[]: columbus
+	cities[]: grand_island
+	cities[]: lincoln
+	cities[]: mccook
+	cities[]: norfolk
+	cities[]: north_platte
+	cities[]: omaha
+	cities[]: scottsbluff
+	cities[]: sidney_ne
+	cities[]: valentine
+	target: 10
+
+	achievement_name: ne_visit_cities
+
+	steam_progress_id: "ne_visit_cities-progress"
+	steam_id: ne_visit_cities
+}
+
+# View cutscenes from at least 6 viewpoints in Nebraska.
+
+achievement_trigger_data : .achievement.ne_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ne_cutscenes
+	target: 6
+
+	achievement_name: ne_cutscenes
+
+	steam_progress_id: "ne_cutscenes-progress"
+	steam_id: ne_cutscenes
+}
+
+# Complete 3 deliveries from the Utility Vehicle Factory in Lincoln to each of the RV dealers in Omaha, Norfolk, and Columbus.
+
+achievement_delivery : .achievement.ne_out_car_p
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ne_out_car_p.condition
+	target: 3
+
+	achievement_name: ne_out_car_pln
+
+	steam_progress_id: "ne_out_car_pln-progress"
+	steam_id: ne_out_car_pln
+}
+
+achievement_delivery_sequence : .ne_out_car_p.condition
+{
+	list[]: .ne_out_car_p.columbus
+	list[]: .ne_out_car_p.norfolk
+	list[]: .ne_out_car_p.omaha
+}
+
+achievement_delivery_each : .ne_out_car_p.columbus
+{
+	list[]: .ne_out_car_p.columbus.source
+	list[]: .ne_out_car_p.columbus.target
+}
+
+achievement_delivery_company : .ne_out_car_p.columbus.source
+{
+	role: source
+	company_name: out_car_pln
+	city_name: lincoln	
+}
+
+achievement_delivery_company : .ne_out_car_p.columbus.target
+{
+	role: target
+	company_name: wan_car_dlr
+	city_name: columbus
+}
+
+achievement_delivery_each : .ne_out_car_p.norfolk
+{
+	list[]: .ne_out_car_p.norfolk.source
+	list[]: .ne_out_car_p.norfolk.target
+}
+
+achievement_delivery_company : .ne_out_car_p.norfolk.source
+{
+	role: source
+	company_name: out_car_pln
+	city_name: lincoln	
+}
+
+achievement_delivery_company : .ne_out_car_p.norfolk.target
+{
+	role: target
+	company_name: wan_car_dlr
+	city_name: norfolk
+}
+
+achievement_delivery_each : .ne_out_car_p.omaha
+{
+	list[]: .ne_out_car_p.omaha.source
+	list[]: .ne_out_car_p.omaha.target
+}
+
+achievement_delivery_company : .ne_out_car_p.omaha.source
+{
+	role: source
+	company_name: out_car_pln
+	city_name: lincoln	
+}
+
+achievement_delivery_company : .ne_out_car_p.omaha.target
+{
+	role: target
+	company_name: wan_car_dlr
+	city_name: omaha
+}
+
+# Complete one delivery of corn, grain, potatoes and soybean from or within Nebraska. 
+
+achievement_delivery : .achievement.ne_agricultu
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ne_agricultu.condition
+	target: 4
+
+	achievement_name: ne_agriculture
+
+	steam_progress_id: "ne_agriculture-progress"
+	steam_id: ne_agriculture
+}
+
+achievement_delivery_sequence : .ne_agricultu.condition
+{
+	list[]: .ne_agricultu.corn
+	list[]: .ne_agricultu.grain
+	list[]: .ne_agricultu.potatoes
+	list[]: .ne_agricultu.soybean
+}
+
+achievement_delivery_each : .ne_agricultu.corn
+{
+	list[]: .ne_agricultu.corn.source
+	list[]: .ne_agricultu.corn.cargo
+}
+
+achievement_delivery_point_country : .ne_agricultu.corn.source
+{
+	role: source
+	country_name: nebraska	
+}
+
+achievement_delivery_cargo : .ne_agricultu.corn.cargo
+{
+	cargo_name: corn_b
+}
+
+achievement_delivery_each : .ne_agricultu.grain
+{
+	list[]: .ne_agricultu.grain.source
+	list[]: .ne_agricultu.grain.cargo
+}
+
+achievement_delivery_point_country : .ne_agricultu.grain.source
+{
+	role: source
+	country_name: nebraska	
+}
+
+achievement_delivery_any : .ne_agricultu.grain.cargo
+{
+	list[]: .ne_agricultu.grain.cargo.grain
+	list[]: .ne_agricultu.grain.cargo.grain_b
+}
+
+achievement_delivery_cargo : .ne_agricultu.grain.cargo.grain
+{
+	cargo_name: grain
+}
+
+achievement_delivery_cargo : .ne_agricultu.grain.cargo.grain_b
+{
+	cargo_name: grain_b
+}
+
+achievement_delivery_each : .ne_agricultu.potatoes
+{
+	list[]: .ne_agricultu.potatoes.source
+	list[]: .ne_agricultu.potatoes.cargo
+}
+
+achievement_delivery_point_country : .ne_agricultu.potatoes.source
+{
+	role: source
+	country_name: nebraska	
+}
+
+achievement_delivery_any : .ne_agricultu.potatoes.cargo
+{
+	list[]: .ne_agricultu.potatoes.cargo.potatoes
+	list[]: .ne_agricultu.potatoes.cargo.potatoes_b
+}
+
+achievement_delivery_cargo : .ne_agricultu.potatoes.cargo.potatoes
+{
+	cargo_name: potatoes
+}
+
+achievement_delivery_cargo : .ne_agricultu.potatoes.cargo.potatoes_b
+{
+	cargo_name: potatoes_b
+}
+
+achievement_delivery_each : .ne_agricultu.soybean
+{
+	list[]: .ne_agricultu.soybean.source
+	list[]: .ne_agricultu.soybean.cargo
+}
+
+achievement_delivery_point_country : .ne_agricultu.soybean.source
+{
+	role: source
+	country_name: nebraska	
+}
+
+achievement_delivery_cargo : .ne_agricultu.soybean.cargo
+{
+	cargo_name: soybean_b
+}
+
+}

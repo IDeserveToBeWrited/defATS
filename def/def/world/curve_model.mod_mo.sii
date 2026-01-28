@@ -1,0 +1,385 @@
+SiiNunit
+{
+
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+curve_model : curve.mo_01000
+{
+	model_desc: "/model/underground/mo_underground_lights.pmd"
+
+	variation[]: "many | center1 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | left1 | right1"
+	variation[]: "few | center2 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end1 | left2 | right2"
+
+}
+
+curve_model : curve.mo_01001
+{
+	model_desc: "/model/underground/mo_underground_pipe_curve.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | right1 | left1 | jnt_t1 | jnt_t12"
+	variation[]: "var2 | center2 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2 | right2 | left2 | jnt_t2 | jnt_t22"
+	variation[]: "var3 | center3 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3 | right3 | left3 | jnt_t3 | jnt_t32"
+
+	dynamic_lod_desc[]: "/model/underground/mo_underground_pipe_curve_lod1.pmd"
+	dynamic_lod_dist[]: 40
+}
+
+curve_model : curve.mo_6l000
+{
+	model_desc: "/model/underground/mo_underground_wall_curve.pmd"
+
+	variation[]: "default | center1,center2,center3 : 1.0 | center1,center3,center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+
+	high_tess[]: default
+
+	dynamic_lod_desc[]: "/model/underground/mo_underground_wall_curve_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
+
+curve_model : curve.mo_3c000
+{
+	model_desc: "/model/underground/mo_underground_structure_set_01_7m.pmd"
+
+	variation[]: "empty | center4 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_1 | center5 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_2 | center6 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_3 | center7 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_4 | center8 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_1 | center9 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_2 | center10 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_3 | center11 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_1 | center12 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_2 | center13 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290"
+	variation[]: "window_1 | center14 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "window_2 | center15 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+
+	dynamic_lod_desc[]: "/model/underground/mo_underground_structure_set_01_7m_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.mo_3c001
+{
+	model_desc: "/model/underground/mo_underground_structure_set_02_7m.pmd"
+
+	variation[]: "empty | center4 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_1 | center5 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_2 | center6 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_3 | center7 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_4 | center8 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_1 | center9 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_2 | center10 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_3 | center11 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_1 | center12 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_2 | center13 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290"
+	variation[]: "window_1 | center14 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "window_2 | center15 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+
+	dynamic_lod_desc[]: "/model/underground/mo_underground_structure_set_02_7m_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.mo_3c002
+{
+	model_desc: "/model/underground/mo_underground_structure_set_01_10m.pmd"
+
+	variation[]: "empty | center4 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_1 | center5 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_2 | center6 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_3 | center7 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_4 | center8 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_1 | center9 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_2 | center10 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_3 | center11 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_1 | center12 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_2 | center13 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290"
+	variation[]: "window_1 | center14 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "window_2 | center15 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+
+	dynamic_lod_desc[]: "/model/underground/mo_underground_structure_set_01_10m_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.mo_3c003
+{
+	model_desc: "/model/underground/mo_underground_structure_set_02_10m.pmd"
+
+	variation[]: "empty | center4 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_1 | center5 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_2 | center6 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_3 | center7 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "gar_door_4 | center8 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_1 | center9 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_2 | center10 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "serv_door_3 | center11 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_1 | center12 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "main_door_2 | center13 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290"
+	variation[]: "window_1 | center14 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+	variation[]: "window_2 | center15 : 1.0"
+	start_part[]: "start1 | start2 | start3"
+	end_part[]: "left190 | left290 | left390"
+
+	dynamic_lod_desc[]: "/model/underground/mo_underground_structure_set_02_10m_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+
+curve_model : curve.mo_2p001
+{
+	model_desc: "/model/building/farm/mo_farm_roof.pmd"
+	name: "mo farm roof 4m"
+
+	variation[]: "pillar | center2, center1, center2, center2, center1, center2 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start4"
+	end_part[]: "right90 | end1 | end2 | end3 | end4"
+	variation[]: "no_pillar | center2, center3, center2, center3, center2, center3 : 1.0"
+	start_part[]: "start2 | start3 | start4"
+	end_part[]: "end2 | end3 | right90a | end4"
+
+	dynamic_lod_desc[]: "/model/building/farm/mo_farm_roof_lod1.pmd"
+	dynamic_lod_dist[]: 70
+}
+
+curve_model : curve.mo_2p002
+{
+	model_desc: "/model/building/farm/mo_farm_roof_1.pmd"
+	name: "mo farm roof 6m"
+
+	variation[]: "pillar | center2,center1,center2,center2,center1,center2 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start4"
+	end_part[]: "end1 | end2 | end3 | right90 | end4"
+	variation[]: "no_pillar | center2,center3,center2,center3 : 1.0"
+	start_part[]: "start2 | start3 | start4"
+	end_part[]: "end2 | end3 | right90 | end4"
+
+	high_tess: 0
+
+	dynamic_lod_desc[]: "/model/building/farm/mo_farm_roof_1_lod1.pmd"
+	dynamic_lod_dist[]: 70
+}
+
+curve_model : curve.mo_2p003
+{
+	model_desc: "/model/building/farm/mo_farm_roof_small.pmd"
+	name: "mo farm roof small 3m"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "pillar | center2,center1,center2,center2,center1,center2 : 1.0"
+	start_part[0]: "start1 | start3 | start4 | start2"
+	end_part[0]: "end1 | end2 | end3 | end4 | right90"
+	variation[1]: "no_pillar | center2,center3,center2,center3,center2,center3 : 1.0"
+	start_part[1]: "start3 | start4 | start2"
+	end_part[1]: "end2 | end3 | end4 | right90a"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/farm/mo_farm_roof_small_lod1.pmd"
+	dynamic_lod_dist[0]: 70
+}
+
+curve_model : curve.mo_2p004
+{
+	model_desc: "/model/building/farm/mo_farm_roof_small_1.pmd"
+	name: "mo farm roof small 5m"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "pillar | center2,center1,center2,center2,center1,center2 : 1.0"
+	start_part[0]: "start1 | start2 | start3 | start4"
+	end_part[0]: "end1 | end2 | end3 | end4 | right90"
+	variation[1]: "no_pillar | center2,center3,center2,center3,center2,center3 : 1.0"
+	start_part[1]: "start2 | start3 | start4"
+	end_part[1]: "end2 | end3 | end4 | right90a"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/building/farm/mo_farm_roof_small_1_lod1.pmd"
+	dynamic_lod_dist[0]: 70
+}
+
+curve_model : curve.mo_1n001
+{
+	model_desc: "/prefab/depots/underground/mo_concrete_barrier_low_underground.pmd"
+	name: "mo concrete barrier low underground"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+}
+
+curve_model : curve.mo_1n002
+{
+	model_desc: "/prefab/depots/underground/mo_underground_rock_limestone_01_8m.pmd"
+	name: "mo underground rock limestone 01 8m"
+
+	variation[]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc[]: "/prefab/depots/underground/mo_underground_rock_limestone_01_8m_lod1.pmd"
+	dynamic_lod_dist[]: 80
+	dynamic_lod_desc[]: "/prefab/depots/underground/mo_underground_rock_limestone_01_8m_lod2.pmd"
+	dynamic_lod_dist[]: 140
+
+	smooth_surface: true
+}
+
+curve_model : curve.mo_6m000
+{
+	model_desc: "/model/building/farm/mo_farm_garage_shelter_curve.pmd"
+	name: "mo farm garage shelter curve"
+
+	variation[]: "open_cupola | center1,center3,center1 : 1.0"
+	start_part[]: "start1 | start3"
+	end_part[]: "end1 | end3"
+	variation[]: "wall_cupola | center2,center4,center2 : 1.0"
+	start_part[]: "start2 | start4"
+	end_part[]: "end2 | end4"
+	variation[]: "open | center1 : 1.0"
+	start_part[]: "start1 | start3"
+	end_part[]: "end1 | end3"
+	variation[]: "wall | center2 : 1.0"
+	start_part[]: "start2 | start4"
+	end_part[]: "end2 | end4"
+
+	dynamic_lod_desc[]: "/model/building/farm/mo_farm_garage_shelter_curve_lod1.pmd"
+	dynamic_lod_dist[]: 60
+}
+
+curve_model : curve.mo_3a000
+{
+	model_desc: "/model/underground/mo_underground_entrance_wall_curve.pmd"
+
+	variation[]: "Default | center1, center2, center3 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+
+	dynamic_lod_desc[]: "/model/underground/mo_underground_entrance_wall_curve_lod1.pmd"
+	dynamic_lod_dist[]: 70
+}
+
+}

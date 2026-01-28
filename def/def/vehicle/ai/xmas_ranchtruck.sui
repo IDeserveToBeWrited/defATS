@@ -1,0 +1,48 @@
+traffic_vehicle : traffic.ranchtruck.xmas
+{
+	accessories[]: .ranchtruck.xmas.chassis
+	accessories[]: .ranchtruck.xmas.fwheel
+	accessories[]: .ranchtruck.xmas.rwheel
+
+	max_speed: 120
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: rural
+	tags[]: cheap
+	tags[]: common
+	tags[]: xmas
+	tags[]: context
+
+	vehicle_mass: 2000
+
+	color[]: (1, 1, 1) #white
+
+	spawn_condition[]: .traffic.ranchtruck.spawn.condition
+
+@include "drivers_generic.sui"
+}
+traffic_spawn_condition: .traffic.ranchtruck.spawn.condition
+{
+	type: area
+	str_param[]: "xmas"
+}
+
+vehicle_accessory: .ranchtruck.xmas.chassis
+{
+	data_path: "/def/vehicle/ai/xmas_ranchtruck/chassis_fullcolor.sii"
+}
+
+vehicle_wheel_accessory: .ranchtruck.xmas.fwheel
+
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_o.sii"
+}
+
+vehicle_wheel_accessory: .ranchtruck.xmas.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_o.sii"
+}

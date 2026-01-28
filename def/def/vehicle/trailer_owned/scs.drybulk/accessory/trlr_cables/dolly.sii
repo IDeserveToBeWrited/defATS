@@ -1,0 +1,71 @@
+SiiNunit
+{
+accessory_addon_trailer_cables_data : dolly.scs.drybulk.trlr_cables
+{
+	exterior_model: "/vehicle/trailer_owned/scs_drybulk/accessory/trlr_cables/dolly.pmd"
+
+	variant: default
+
+	suitable_for[]: "dolly.scs.drybulk.chassis"
+	suitable_for[]: "dolly_conv2a.scs.drybulk.chassis"
+	
+	cables[]: .air_cable_b
+	cables[]: .air_cable_r
+	cables[]: .ele_cable_g
+}
+
+trailer_cable_data : .air_cable_b
+{
+	locator_prefix: air_cable_b
+	rest_locator_prefix: rst_cable_b
+
+	vehicle_plug_model: "/vehicle/share/models/cables_connectors/air_plug_b.pmd"
+	vehicle_plug_model_offset: (-0.0205, 0.0, -0.121)
+	trailer_plug_model: "/vehicle/share/models/cables_connectors/air_socket_b.pmd"
+	trailer_plug_model_offset: (0.0, 0.0, -0.11)
+
+	ring_count: 20
+	ring_resolution: 4
+	straight_cable_length: 0.7
+	resolution: 5
+
+	color: (0.1, 0.35, 0.55)
+}
+
+trailer_cable_data : .air_cable_r
+{
+	locator_prefix: air_cable_r
+	rest_locator_prefix: rst_cable_r
+
+	vehicle_plug_model: "/vehicle/share/models/cables_connectors/air_plug_r.pmd"
+	vehicle_plug_model_offset: (-0.0205, 0.0, -0.121)
+	trailer_plug_model: "/vehicle/share/models/cables_connectors/air_socket_r.pmd"
+	trailer_plug_model_offset: (0.0, 0.0, -0.11)
+
+	ring_count: 20
+	ring_resolution: 4
+	straight_cable_length: 0.7
+	resolution: 5
+
+	color: (0.5, 0.05, 0.05)
+}
+
+trailer_cable_data : .ele_cable_g
+{
+	locator_prefix: ele_cable_g
+	rest_locator_prefix: rst_cable_g
+
+	#trailer_plug_model: "/vehicle/share/models/cables_connectors/electric_plug.pmd"
+	#trailer_plug_model_offset: (0.0, 0.0, -0.134)
+	vehicle_plug_model: "/vehicle/share/models/cables_connectors/electric_plug.pmd"
+	vehicle_plug_model_offset: (0.0, 0.0, -0.134)
+
+	ring_count: 20
+	ring_resolution: 4
+	straight_cable_length: 0.7
+	resolution: 5
+
+	color: (0.1, 0.1, 0.1)
+}
+
+}

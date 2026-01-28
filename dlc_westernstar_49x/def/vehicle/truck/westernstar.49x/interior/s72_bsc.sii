@@ -6,6 +6,7 @@ accessory_interior_data	: s72_bsc.westernstar.49x.interior
 	price: 15180
 	unlock: 0
 	icon: "truck/westernstar_49x/cabin/int_day_bsc"
+	part_type: factory
 
 	model: "/vehicle/truck/westernstar_49x/interior/model/s72.pmd"
 	animated_model: "/vehicle/truck/westernstar_49x/interior/animation/animation.pmd"
@@ -24,6 +25,8 @@ accessory_interior_data	: s72_bsc.westernstar.49x.interior
 
 @include "animations.sui"
 
+@include "int_shadow_s72.sui"
+
 @include "sound.sui"
 @include "sound_effects.sui"
 
@@ -34,8 +37,8 @@ accessory_interior_data	: s72_bsc.westernstar.49x.interior
 	glass_panes[]: .weststar49x.r.pane.far
 	glass_panes[]: .weststar49x.r.pane.back_s72
 
-
 @include "seat.sui"
+@include "mirrors.sui"
 
 @include "dashboard_color.sui"
 }

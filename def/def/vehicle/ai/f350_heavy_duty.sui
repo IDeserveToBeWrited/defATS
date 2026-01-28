@@ -11,9 +11,6 @@ traffic_vehicle : traffic.f350_hd
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: heavy_duty
 
 	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
@@ -67,9 +64,6 @@ traffic_vehicle : traffic.f350_hd_c
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: heavy_duty
 
 
@@ -105,6 +99,48 @@ vehicle_wheel_accessory: .f350_hd_c.rwheel
 	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
 }
 
+#compressor_white
+
+traffic_vehicle : traffic.f350_hd_cw
+{
+	accessories[]: .f350_hd_cw.chassis
+	accessories[]: .f350_hd_cw.fwheel
+	accessories[]: .f350_hd_cw.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: heavy_duty
+
+
+    color[]: (0.8713, 0.8631, 0.8227) #white
+
+	vehicle_mass: 2000
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .f350_hd_cw.chassis
+{
+	data_path: "/def/vehicle/ai/f350_heavy_duty/chassis_c.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_cw.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_cw.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
 #tow 1
 
 traffic_vehicle : traffic.f350_hd_t1
@@ -122,9 +158,6 @@ traffic_vehicle : traffic.f350_hd_t1
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	vehicle_mass: 2000
 
@@ -166,9 +199,6 @@ traffic_vehicle : traffic.f350_hd_t2
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	vehicle_mass: 2000
 
 
@@ -192,5 +222,3 @@ vehicle_wheel_accessory: .f350_hd_t2.rwheel
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
 }
-
-

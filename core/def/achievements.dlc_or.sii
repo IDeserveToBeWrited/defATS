@@ -1,0 +1,108 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Oregon --
+
+# Discover at least 10 cities in Oregon.
+
+achievement_visit_city_data : .achievement.or_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: astoria
+	cities[]: bend
+	cities[]: burns
+	cities[]: coos_bay
+	cities[]: eugene
+	cities[]: klamath_f
+	cities[]: lakeview
+	cities[]: medford
+	cities[]: newport
+	cities[]: ontario
+	cities[]: pendleton
+	cities[]: portland
+	cities[]: salem
+	cities[]: the_dalles
+	target: 10
+
+	achievement_name: or_visit_cities
+
+	steam_progress_id: "or_visit_cities-progress"
+	steam_id: or_visit_cities
+}
+
+achievement_trigger_data : .achievement.or_drawbridg
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: or_drawbridge
+	target: 1
+
+	achievement_name: or_drawbridge
+
+	steam_id: or_drawbridge
+}
+
+# Deliver cargo from at least 4 timber harvest sites in Oregon.
+
+achievement_each_company_data : .achievement.or_timber_ha
+{
+	event_name: job_done
+	initial_check: true
+	sources[]: dg_wd_hrv.astoria
+	sources[]: dg_wd_hrv.bend
+	sources[]: dg_wd_hrv.medford
+	sources[]: dg_wd_hrv.newport
+	sources[]: dg_wd_hrv.salem
+	target: 4
+
+	achievement_name: or_timber_harvest
+
+	steam_progress_id: "or_timber_harvest-progress"
+	steam_id: or_timber_harvest
+}
+
+achievement_trigger_data : .achievement.or_landmarks
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: or_landmarks
+	target: 4
+
+	achievement_name: or_landmarks
+
+	steam_progress_id: "or_landmarks-progress"
+	steam_id: or_landmarks
+}
+
+achievement_trigger_data : .achievement.or_cabbage
+{
+	event_name: trig_activat
+	initial_check: true
+	cargos[]: frozen_veget
+	cargos[]: vegetable
+	trigger_param: or_cabbage_hill
+	target: 1
+
+	achievement_name: or_cabbage_hill
+
+	steam_id: or_cabbage_hill
+}
+
+}

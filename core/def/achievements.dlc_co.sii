@@ -1,0 +1,218 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Colorado --
+
+# Discover at least 10 cities in Colorado.
+
+achievement_visit_city_data : .achievement.co_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: alamosa
+	cities[]: burlington
+	cities[]: colorado_spr
+	cities[]: denver
+	cities[]: durango
+	cities[]: fort_collins
+	cities[]: grand_juncti
+	cities[]: lamar
+	cities[]: montrose
+	cities[]: pueblo
+	cities[]: rangely
+	cities[]: steamboat_sp
+	cities[]: sterling
+	target: 10
+
+	achievement_name: co_visit_cities
+
+	steam_progress_id: "co_visit_cities-progress"
+	steam_id: co_visit_cities
+}
+
+# Drive along this famously scenic and thrilling section of the U.S. 550 in Colorado.
+
+achievement_trigger_data : .achievement.co_us550
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: co_us550
+	target: 2
+
+	achievement_name: co_us550
+
+	steam_id: co_us550
+}
+
+# Drive through the Eisenhower-Johnson Memorial Tunnel, the highest point on the US Interstate Highway System, in both directions.
+
+achievement_trigger_data : .achievement.co_tunnels
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: co_tunnels
+	target: 2
+
+	achievement_name: co_tunnels
+
+	steam_progress_id: "co_tunnels-progress"
+	steam_id: co_tunnels
+}
+
+# Deliver a Tower and Nacelle to at least 1 Vitas Power wind turbine construction site in Colorado.
+
+achievement_delivery : .achievement.co_wind_turb
+{
+	event_name: job_done
+	initial_check: true
+	condition: .co_wind_turb.condition
+	target: 2
+
+	achievement_name: co_wind_turbine
+
+	steam_progress_id: "co_wind_turbine-progress"
+	steam_id: co_wind_turbine
+}
+
+achievement_delivery_sequence : .co_wind_turb.condition
+{
+	list[]: .co_wind_turb.windml_eng
+	list[]: .co_wind_turb.windml_tube
+}
+
+achievement_delivery_each : .co_wind_turb.windml_eng
+{
+	list[]: .co_wind_turb.windml_eng.cargo
+	list[]: .co_wind_turb.windml_eng.target
+}
+
+achievement_delivery_cargo : .co_wind_turb.windml_eng.cargo
+{
+	cargo_name: windml_eng
+}
+
+achievement_delivery_company : .co_wind_turb.windml_eng.target
+{
+	role: target
+	company_name: vp_epw_sit
+	country_name: colorado
+}
+
+achievement_delivery_each : .co_wind_turb.windml_tube
+{
+	list[]: .co_wind_turb.windml_tube.cargo
+	list[]: .co_wind_turb.windml_tube.target
+}
+
+achievement_delivery_cargo : .co_wind_turb.windml_tube.cargo
+{
+	cargo_name: windml_tube
+}
+
+achievement_delivery_company : .co_wind_turb.windml_tube.target
+{
+	role: target
+	company_name: vp_epw_sit
+	country_name: colorado
+}
+
+# Deliver 10 loads to or from the NAMIQ company at the gold mine in Colorado.
+
+achievement_delivery : .achievement.co_gold_mine
+{
+	event_name: job_done
+	initial_check: true
+	condition: .co_gold_mine.condition
+	target: 10
+
+	achievement_name: co_gold_mine
+
+	steam_progress_id: "co_gold_mine-progress"
+	steam_id: co_gold_mine
+}
+
+achievement_delivery_count : .co_gold_mine.condition
+{
+	condition: .co_gold_mine.10
+	count: 10
+}
+
+achievement_delivery_company : .co_gold_mine.10
+{
+	role: any
+	company_name: nmq_min_qry
+	country_name: colorado
+}
+
+# Complete 10 deliveries to Denver Airport.
+
+achievement_delivery : .achievement.co_denver_ai
+{
+	event_name: job_done
+	initial_check: true
+	condition: .co_denver_ai.condition
+	target: 10
+
+	achievement_name: co_denver_airport
+
+	steam_progress_id: "co_denver_airport-progress"
+	steam_id: co_denver_airport
+}
+
+achievement_delivery_count : .co_denver_ai.condition
+{
+	condition: .co_denver_ai.10
+	count: 10
+}
+
+achievement_delivery_any : .co_denver_ai.10
+{
+	list[]: .co_denver_ai.aport_den
+	list[]: .co_denver_ai.aport_ult
+}
+
+achievement_delivery_company : .co_denver_ai.aport_den
+{
+	role: target
+	company_name: aport_den
+	city_name: denver
+}
+
+achievement_delivery_company : .co_denver_ai.aport_ult
+{
+	role: target
+	company_name: aport_ult
+	city_name: denver
+}
+
+# Visit the famous Four Corners Monument that marks where the states of Arizona, Colorado, New Mexico, and Utah meet.
+
+achievement_trigger_data : .achievement.co_four_corn
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: co_four_corners
+	target: 1
+
+	achievement_name: co_four_corners
+
+	steam_id: co_four_corners
+}
+
+}

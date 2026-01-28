@@ -1,0 +1,203 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Wyoming --
+
+# Discover at least 8 cities in Wyoming.
+
+achievement_visit_city_data : .achievement.wy_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: casper
+	cities[]: cheyenne
+	cities[]: cody
+	cities[]: evanston
+	cities[]: gillette
+	cities[]: jackson
+	cities[]: laramie
+	cities[]: rawlins
+	cities[]: riverton
+	cities[]: rock_springs
+	cities[]: sheridan
+	target: 8
+
+	achievement_name: wy_visit_cities
+
+	steam_progress_id: "wy_visit_cities-progress"
+	steam_id: wy_visit_cities
+}
+
+# View cutscenes from at least 8 viewpoints in Wyoming.
+
+achievement_trigger_data : .achievement.wy_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: wy_cutscenes
+	target: 8
+
+	achievement_name: wy_cutscenes
+
+	steam_progress_id: "wy_cutscenes-progress"
+	steam_id: wy_cutscenes
+}
+
+# Discover and visit the town of Buford.
+
+achievement_trigger_data : .achievement.wy_buford
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: wy_buford
+	target: 1
+
+	achievement_name: wy_buford
+
+	steam_id: wy_buford
+}
+
+# Deliver Train Parts, Tamping Machine and Rails to or from the Rail Yard in Cheyenne.
+
+achievement_delivery : .achievement.wy_train
+{
+	event_name: job_done
+	initial_check: true
+	condition: .wy_train.condition
+	target: 3
+
+	achievement_name: wy_train
+
+	steam_progress_id: "wy_train-progress"
+	steam_id: wy_train
+}
+
+achievement_delivery_sequence : .wy_train.condition
+{
+	list[]: .wy_train.train_part
+	list[]: .wy_train.tamp_machine
+	list[]: .wy_train.rails
+}
+
+achievement_delivery_each : .wy_train.train_part
+{
+	list[]: .wy_train.train_part.cargo
+	list[]: .wy_train.train_part.cheyenne
+}
+
+achievement_delivery_cargo : .wy_train.train_part.cargo
+{
+	cargo_name: train_part
+}
+
+achievement_delivery_company : .wy_train.train_part.cheyenne
+{
+	role: any
+	company_name: aml_rail_str
+	city_name: cheyenne
+}
+
+achievement_delivery_each : .wy_train.tamp_machine
+{
+	list[]: .wy_train.tamp_machine.cargo
+	list[]: .wy_train.tamp_machine.cheyenne
+}
+
+achievement_delivery_cargo : .wy_train.tamp_machine.cargo
+{
+	cargo_name: tamp_machine
+}
+
+achievement_delivery_company : .wy_train.tamp_machine.cheyenne
+{
+	role: any
+	company_name: aml_rail_str
+	city_name: cheyenne
+}
+
+achievement_delivery_each : .wy_train.rails
+{
+	list[]: .wy_train.rails.cargo
+	list[]: .wy_train.rails.cheyenne
+}
+
+achievement_delivery_cargo : .wy_train.rails.cargo
+{
+	cargo_name: rails
+}
+
+achievement_delivery_company : .wy_train.rails.cheyenne
+{
+	role: any
+	company_name: aml_rail_str
+	city_name: cheyenne
+}
+
+# Complete 10 excellent cattle deliveries to livestock auctions in Wyoming.
+
+achievement_delivery : .achievement.wy_cattle
+{
+	event_name: job_done
+	initial_check: true
+	condition: .wy_cattle.condition
+	target: 10
+
+	achievement_name: wy_cattle
+
+	steam_progress_id: "wy_cattle-progress"
+	steam_id: wy_cattle
+}
+
+achievement_delivery_count : .wy_cattle.condition
+{
+	condition: .wy_cattle.10
+	count: 10
+}
+
+achievement_delivery_each : .wy_cattle.10
+{
+	list[]: .wy_cattle.cattle
+	list[]: .wy_cattle.wyoming
+	list[]: .wy_cattle.damage
+	list[]: .wy_cattle.intime
+}
+
+achievement_delivery_cargo : .wy_cattle.cattle
+{
+	cargo_name: cattle
+}
+
+achievement_delivery_company : .wy_cattle.wyoming
+{
+	role: target
+	company_name: bn_live_auc
+	country_name: wyoming
+}
+
+achievement_delivery_cargo_damage : .wy_cattle.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_late : .wy_cattle.intime
+{
+	late: false
+}
+
+}

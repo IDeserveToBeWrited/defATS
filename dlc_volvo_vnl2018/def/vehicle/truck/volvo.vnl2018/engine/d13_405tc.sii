@@ -1,0 +1,42 @@
+SiiNunit
+{
+accessory_engine_data : d13_405tc.volvo.vnl2018.engine
+{
+	name: "Volvo D13 405 TC"
+	price: 44690
+	unlock: 8
+	info[]: "405 @@hp@@ (302@@kw@@)"
+	info[]: "1@@dg@@750 @@lb_ft@@ (2373@@nm@@)"
+	info[]: "900 @@rpm@@"
+	icon: "engine_volvo_d13tc"
+	part_type: factory
+
+	torque: 2373
+	volume: 12.8
+
+	torque_curve[]: (300, 0.0)
+	torque_curve[]: (500, 0.63)
+	torque_curve[]: (800, 0.74)
+	torque_curve[]: (900, 1.0)
+	torque_curve[]: (1200, 1.0)
+	torque_curve[]: (1600, 0.75)
+	torque_curve[]: (2100, 0.0)
+
+	rpm_idle: 600
+	rpm_limit: 2100
+	rpm_range_low_gear: (750, 1500)
+	rpm_range_high_gear: (1000, 1400)
+	rpm_range_power: (1350, 1850)
+
+	engine_brake: 2.0
+	engine_brake_downshift: 0
+	engine_brake_positions: 3
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/volvo.vnl2018/accessory/badge/volvo.sii"
+
+# 2021 D13 405/1750 TC
+# https://www.volvotrucks.us/trucks/powertrain/d13tc/
+}
+}

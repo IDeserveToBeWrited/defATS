@@ -3,12 +3,19 @@ traffic_trailer : traffic.trailer.log
 	accessories[]: .traffic.log.chassis
 	accessories[]: .traffic.log.rwheel
 	accessories[]: .traffic.log.rwheel2
+	accessories[]: .traffic.log.body
 
 	cargo_mass: 16000
 
-	spawn_ratio: 0.0
+	spawn_ratio: 0.001
 
-	variant[]: .traffic.trailer.log_cargo 
+	tags[]: high
+	tags[]: log
+	tags[]: empty
+	tags[]: medium
+	
+	trailer_definition: trailer_def.scs.log.single_40r.log_4
+
 }
 
 vehicle_accessory: .traffic.log.chassis
@@ -27,17 +34,33 @@ vehicle_wheel_accessory: .traffic.log.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
+vehicle_accessory: .traffic.log.body
+{
+	data_path: "/def/vehicle/trailer/scs_log/accessory/body.sii"
+}
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-traffic_trailer : .traffic.trailer.log_cargo 
+traffic_trailer : traffic.trailer.log_cargo 
 {
 	accessories[]: .traffic.log_cargo.chassis
 	accessories[]: .traffic.log_cargo.rwheel
 	accessories[]: .traffic.log_cargo.rwheel2
-	accessories[]: .traffic.log_cargo.wood
+	accessories[]: .traffic.log_cargo.body
 
 	cargo_mass: 16000
+	
+	spawn_ratio: 0.001	
+
+	tags[]: high
+	tags[]: log
+	tags[]: cargo
+	tags[]: medium
+
+	cargoes[]: logs
+
+	trailer_definition: trailer_def.scs.log.single_40r.log_4
+
 }
 
 vehicle_accessory: .traffic.log_cargo.chassis
@@ -56,7 +79,7 @@ vehicle_wheel_accessory: .traffic.log_cargo.rwheel2
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
 }
-vehicle_accessory: .traffic.log_cargo.wood
+vehicle_accessory: .traffic.log_cargo.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_log/logs_long.sii"
+	data_path: "/def/vehicle/trailer/scs_log/accessory/body.sii"
 }

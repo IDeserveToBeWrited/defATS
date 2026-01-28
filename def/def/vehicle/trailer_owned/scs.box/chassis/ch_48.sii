@@ -1,0 +1,50 @@
+SiiNunit
+{
+accessory_chassis_data : ch_48.scs.box.chassis
+{
+	name: "@@tr_single_48_front@@"
+	price: 20500
+	unlock: 9
+	icon: "chassis/scs_box/single_48"
+
+	model: "/vehicle/trailer_owned/scs_box/chassis/ch_48.pmd"
+	collision: "/vehicle/trailer_owned/scs_box/chassis/ch_48.pmc"
+	variant: default
+	look: default
+
+	trailer_brace_model: "/vehicle/trailer_owned/scs_box/chassis/trailer_brace.pmd"
+	trailer_brace_anim: "/vehicle/trailer_owned/scs_box/chassis/trailer_brace.pma"
+
+	trailer_brace_up_sound: "/sound/trailer/default/trailer_brace_up.soundref"
+	trailer_brace_down_sound: "/sound/trailer/default/trailer_brace_down.soundref"
+
+	extended_shadow_texture: "/vehicle/trailer_owned/scs_box/shadow_ch_45.tobj"
+	extended_shadow_intensity: 1.45
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+
+	ui_shadow: "/vehicle/trailer_owned/scs_box/chassis/shadow_ch_48_r.pmd"
+
+	trailer_mass: 6123.5	# 13500 lbs
+
+	cog_cargo_mass_min: 0.0
+	cog_cargo_mass_max: 21300.0
+
+	residual_travel[]: 0.12
+	residual_travel[]: 0.12
+
+	axle_model[]: "/vehicle/trailer_owned/scs_box/chassis/axle_2.pmd"
+	
+	axle_model_collision[]: "/vehicle/trailer_owned/scs_box/chassis/axle_2.pmc"
+
+	axle_model_extended_shadow_texture[]: "/vehicle/trailer_owned/scs_box/shadow_axle_2.tobj"
+
+	axle_model_sliding_limits: (2.2, 0.0) #front, rear
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.box/paint_job/color.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.box/accessory/r_mudflap/simple.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.box/accessory/r_bumper/simple.sii"
+
+@include "sound.sui"
+}
+}

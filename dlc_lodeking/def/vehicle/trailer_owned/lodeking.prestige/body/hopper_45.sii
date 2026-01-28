@@ -1,0 +1,40 @@
+SiiNunit
+{
+accessory_trailer_body_data : hopper_45.lodeking.prestige.body
+{
+	name: "@@bs_grain_hopper@@"
+	price: 32000
+	unlock: 9
+	icon: "trailer_owned/lodeking_prestige/body/hopper_30"
+	part_type: factory
+
+	# 45' x 102" x 13'6"
+	# Internal: 44'6" x 99" x 110"
+
+	size: (2.5146, 2.794, 13.5636)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 13.716)	# width, height, length (size of the body + chassis)
+
+	volume: 56.0		# 1977 cft
+	body_type: hopper
+
+	# Mass of the cargo container in KG.
+	# Base mass for trailer is in chassis, bodies have only deltas for eventual variants.
+
+	mass: 0
+
+	# visual data
+
+	model: 		"/vehicle/trailer_owned/lodeking_prestige/body/hopper_45.pmd"
+	collision: 	"/vehicle/trailer_owned/lodeking_prestige/body/hopper_45.pmc"
+
+	defaults[]: "/def/vehicle/trailer_owned/lodeking.prestige/accessory/f_body/paint_45.sii"
+	defaults[]: "/def/vehicle/trailer_owned/lodeking.prestige/accessory/markers/standard_45.sii"
+	defaults[]: "/def/vehicle/trailer_owned/lodeking.prestige/accessory/rear_body/paint_45.sii"
+
+
+	#xxxxxxxxxxxxxxxx new cargo system xxxxxxxxxxxxxxxxx
+
+	cargo_loading_methods[]: bulk
+
+}
+}

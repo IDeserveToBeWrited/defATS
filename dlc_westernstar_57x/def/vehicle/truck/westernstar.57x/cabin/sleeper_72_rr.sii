@@ -1,0 +1,38 @@
+SiiNunit
+{
+accessory_cabin_data : s72_rr.westernstar.57x.cabin
+{
+	name: "72@@unit_in@@ Sleeper"
+	price: 36500
+	unlock: 25
+	icon: "truck/westernstar_57x/cabin/sl_72rr"
+	part_type: factory
+
+	model: "/vehicle/truck/westernstar_57x/cabin/sl_72rr.pmd"
+	collision: "/vehicle/truck/westernstar_57x/cabin/sl_72rr.pmc"
+	variant: default
+	look: default
+
+	drl_with_headlights: 1.0
+
+	wiper_model: "/vehicle/truck/westernstar_57x/cabin/wiper.pmd"
+	wiper_anim: "/vehicle/truck/westernstar_57x/cabin/wiper_anim.pma"
+	suspension: false
+
+	windows_model: "/vehicle/truck/westernstar_57x/cabin/win_open.pmd"
+	left_window_anim: "/vehicle/truck/westernstar_57x/cabin/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/westernstar_57x/cabin/win_open_r.pma"
+
+	defaults[]: "/def/vehicle/truck/westernstar.57x/chassis/6x2_long.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/interior/s72_bsc_gr.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/paint_job/color11_d.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/accessory/exhaust/s72_bottom.sii"
+	defaults[]: "/def/vehicle/truck/westernstar.57x/accessory/sunshield/sleeper_lights.sii"
+
+	conflict_with[]: "4x2s.westernstar.57x.chassis"
+	conflict_with[]: "6x2s.westernstar.57x.chassis"
+	conflict_with[]: "6x4s.westernstar.57x.chassis"
+
+@include "sound.sui"
+}
+}

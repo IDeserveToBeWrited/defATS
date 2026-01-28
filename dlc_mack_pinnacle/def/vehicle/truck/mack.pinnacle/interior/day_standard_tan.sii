@@ -1,0 +1,50 @@
+SiiNunit
+{
+accessory_interior_data	: day_std_t.mack.pinnacle.interior
+{
+	name: "Standard Tan"
+	price: 15180
+	unlock: 0
+	icon: "mack_pinnacle/int_std_tan"
+	part_type: factory
+
+	model: "/vehicle/truck/mack_pinnacle/interior/model/dc_base_tan.pmd"
+	animated_model: "/vehicle/truck/mack_pinnacle/interior/animation/animation.pmd"
+	collision: "/vehicle/truck/mack_pinnacle/interior/model/dc_base_tan.pmc"
+	variant: default
+	look: default
+
+	ext_model: "/vehicle/truck/mack_pinnacle/interior/external/day_base_tan.pmd"
+	ext_variant: default
+	ext_look: default
+
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/accessory/steering_w/standard.sii"
+
+	show_chassis_rear: true
+
+	suitable_for[]: "day.mack.pinnacle.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_day.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .mack.pinnacle.r.pane.front
+	glass_panes[]: .mack.pinnacle.r.pane.close
+	glass_panes[]: .mack.pinnacle.r.pane.far
+	glass_panes[]: .mack.pinnacle.r.pane.back_day
+	glass_panes[]: .mack.pinnacle.r.pane.back_b
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_day.sui"
+@include "sound_effects_units.sui"
+}

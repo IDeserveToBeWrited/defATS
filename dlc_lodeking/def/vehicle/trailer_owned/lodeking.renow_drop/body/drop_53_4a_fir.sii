@@ -1,0 +1,90 @@
+SiiNunit
+{
+accessory_trailer_body_data : drop534_fir.lodeking.renow_drop.body
+{
+	name: "@@bs_dropdeck_fir@@"
+	price: 1
+	unlock: 0
+	icon: "trailer_owned/lodeking_flatbed/accessory/body/fir"
+	part_type: factory
+
+	# 53' x 102" x 13'6" (cargo height 120")
+
+	size: (2.5908, 3.048, 16.1544)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 16.1544)	# width, height, length (size of the body + chassis)
+
+	volume: 112.56		# 3975 cft
+	body_type: dropdeck 
+	cargo_loading_methods[]: custom
+
+	# Mass of the cargo container in KG.
+	# Base mass for trailer is in chassis, bodies have only deltas for eventual variants.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/lodeking_dropdeck/body/body_53a_4a_wc_fir.pmd"
+	collision: "/vehicle/trailer_owned/lodeking_dropdeck/body/body_53a_4a_wc_fir.pmc"
+	variant: LodeKing_var
+
+	cargo_loading_methods[]: area
+
+	cargo_areas[]: (2.4, 12.5)
+	cargo_regular_width: 2.4
+	cargo_areas[]: (2.4, 3.15)
+
+	
+
+	cargo_lashing_mounts[]: .lashm0
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+	cargo_lashing_mounts[]: .lashm3
+
+@include "/def/vehicle/lashing_gear.sui" 
+cargo_custom_loads_path: "/def/vehicle/trailer_owned/lodeking.bril_drop/body/short"	
+}
+
+cargo_lashing_mount : .lashm0
+{
+	
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm1
+{
+	
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm2
+{
+	
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm3
+{
+	
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/lodeking_dropdeck/body/hook_chain_closed.pmd"
+
+}
+@include "/def/vehicle/lashing_gear_data.sui" 
+
+}

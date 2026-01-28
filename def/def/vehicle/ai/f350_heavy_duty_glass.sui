@@ -1,0 +1,48 @@
+#glass transporter
+
+traffic_vehicle : traffic.f350_hd_g
+{
+	accessories[]: .f350_hd_g.chassis
+	accessories[]: .f350_hd_g.fwheel
+	accessories[]: .f350_hd_g.rwheel
+
+	max_speed: 100
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: heavy_duty
+
+    base: traffic.f350_hd
+
+	color[]: (0.0005, 0.0835, 0.2606) #HYPER BLUE
+	color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+	color[]: (0.5479, 0.0131, 0.0272) #BRIGHT RED
+	color[]: (0.6724, 0.6937, 0.7229) #SILVER ICE
+	color[]: (0.3139, 0.0, 0.0003)    #Standard RED
+	color[]: (0.2581, 0.0221, 0.0097) #Standard ORANGE
+	color[]: (0.0202, 0.0212, 0.0193) #ford transit black
+
+	vehicle_mass: 2000
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .f350_hd_g.chassis
+{
+	data_path: "/def/vehicle/ai/f350_heavy_duty/chassis_g.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_g.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .f350_hd_g.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}

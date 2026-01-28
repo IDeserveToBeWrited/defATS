@@ -5,7 +5,7 @@ accessory_interior_data	: sky_tex.intnational.lt.interior
 	name: "Diamond"
 	price: 20250
 	unlock: 10
-	icon: "international_lt/int_tex"
+	icon: "truck/intnational_lt/interior/model/int_tex"
 
 	model: "/vehicle/truck/intnational_lt/interior/model/skyrise.pmd"
 	animated_model: "/vehicle/truck/intnational_lt/interior/animation/anim.pmd"
@@ -21,6 +21,8 @@ accessory_interior_data	: sky_tex.intnational.lt.interior
 
 @include "animations.sui"
 
+@include "int_shadow_sky.sui"
+
 @include "sound.sui"
 @include "sound_effects.sui"
 
@@ -32,6 +34,7 @@ accessory_interior_data	: sky_tex.intnational.lt.interior
 	glass_panes[]: .intlt.r.pane.back_sky
 
 @include "seat.sui"
+@include "mirrors.sui"
 
 @include "dashboard_color.sui"
 }

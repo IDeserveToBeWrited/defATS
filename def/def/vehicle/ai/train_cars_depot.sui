@@ -1,0 +1,284 @@
+traffic_trailer : train_car.depot.trplane_car
+{
+	accessories[]: .train_car.depot.trplane_car.chassis
+	accessories[]: .train_car.depot.trplane_car.rwheel
+	accessories[]: .train_car.depot.trplane_car.rwheel1
+	accessories[]: .train_car.depot.trplane_car.rwheel2
+	accessories[]: .train_car.depot.trplane_car.rwheel3
+
+	displacement_limit: 0.0
+
+	tags[]: depot_short
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+
+	spawn_condition[]: .train_car.depot.trplane_car.spawn.condition
+
+	slave_trailer: .train_car.depot.trplane_care
+}
+vehicle_accessory: .train_car.depot.trplane_car.chassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_plane.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_car.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_car.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_car.rwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_car.rwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+traffic_spawn_condition: .train_car.depot.trplane_car.spawn.condition
+{
+	type: area
+	str_param[]: "plane"
+}
+traffic_trailer : .train_car.depot.trplane_care
+{
+	accessories[]: .train_car.depot.trplane_care.chassis
+	accessories[]: .train_car.depot.trplane_care.rwheel
+	accessories[]: .train_car.depot.trplane_care.rwheel1
+	accessories[]: .train_car.depot.trplane_care.rwheel2
+	accessories[]: .train_car.depot.trplane_care.rwheel3
+
+	displacement_limit: 0.0
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+}
+vehicle_accessory: .train_car.depot.trplane_care.chassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_plane_empty.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_care.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_care.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_care.rwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.trplane_care.rwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+
+
+traffic_trailer : train_car.depot.wind_plant.tube
+{
+	accessories[]: .train_car.depot.wind_plant.tube.chassis
+	accessories[]: .train_car.depot.wind_plant.tube.rwheel
+	accessories[]: .train_car.depot.wind_plant.tube.rwheel1
+	accessories[]: .train_car.depot.wind_plant.tube.rwheel2
+	accessories[]: .train_car.depot.wind_plant.tube.rwheel3
+
+	displacement_limit: 0.0
+
+	tags[]: depot
+
+	spawn_condition[]: .train_car.depot.wind_plant.tube.spawn.condition
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+}
+vehicle_accessory: .train_car.depot.wind_plant.tube.chassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_tube.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wind_plant.tube.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wind_plant.tube.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wind_plant.tube.rwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wind_plant.tube.rwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+traffic_spawn_condition: .train_car.depot.wind_plant.tube.spawn.condition
+{
+	type: area
+	str_param[]: "wind_turbine"
+}
+
+
+traffic_trailer : train_car.depot.wood.empty
+{
+	accessories[]: .train_car.depot.wood.empty.tchassis
+	accessories[]: .train_car.depot.wood.empty.trwheel0
+	accessories[]: .train_car.depot.wood.empty.trwheel1
+	accessories[]: .train_car.depot.wood.empty.trwheel2
+	accessories[]: .train_car.depot.wood.empty.trwheel3
+
+	displacement_limit: 0.0
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+
+	tags[]: depot
+
+	spawn_condition[]: .train_car.depot.wood.empty.spawn.condition
+}
+vehicle_accessory: .train_car.depot.wood.empty.tchassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_wood_empty.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wood.empty.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wood.empty.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wood.empty.trwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .train_car.depot.wood.empty.trwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+traffic_spawn_condition: .train_car.depot.wood.empty.spawn.condition
+{
+	type: area
+	str_param[]: "wood_empty"
+}
+
+traffic_trailer : train_car.cargo.box.depot
+{
+	accessories[]: .cargo.box.depot.tchassis
+	accessories[]: .cargo.box.depot.trwheel0
+	accessories[]: .cargo.box.depot.trwheel1
+	accessories[]: .cargo.box.depot.trwheel2
+	accessories[]: .cargo.box.depot.trwheel3
+
+	displacement_limit: 0.0
+
+	tags[]: depot
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+
+	spawn_condition[]: .train_car.cargo.box.depot.spawn.condition
+}
+traffic_spawn_condition: .train_car.cargo.box.depot.spawn.condition
+{
+	type: area
+	str_param[]: "!"
+	str_param[]: "plane"
+	str_param[]: "wind_turbine"
+	str_param[]: "underground"
+}
+
+vehicle_accessory: .cargo.box.depot.tchassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_box.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot.trwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot.trwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_trailer : train_car.cargo.box.depot_short
+{
+	accessories[]: .cargo.box.depot_short.tchassis
+	accessories[]: .cargo.box.depot_short.trwheel0
+	accessories[]: .cargo.box.depot_short.trwheel1
+	accessories[]: .cargo.box.depot_short.trwheel2
+	accessories[]: .cargo.box.depot_short.trwheel3
+
+	displacement_limit: 0.0
+
+	tags[]: depot_short
+
+	sound_move: "/sound/traffic/train_car_cargo.soundref"
+
+	spawn_condition[]: .train_car.cargo.box.depot_short.spawn.condition
+}
+
+vehicle_accessory: .cargo.box.depot_short.tchassis
+{
+	data_path: "/def/vehicle/ai/train_cars/chassis_box.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot_short.trwheel0
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot_short.trwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot_short.trwheel2
+{
+	offset: 4
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .cargo.box.depot_short.trwheel3
+{
+	offset: 6
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .train_car.cargo.box.depot_short.spawn.condition
+{
+	type: area
+	str_param[]: "underground"
+}

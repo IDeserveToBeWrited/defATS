@@ -1,0 +1,216 @@
+traffic_vehicle : traffic.c_deville.rv_park.pink
+{
+	accessories[]: .traffic.c_deville.rv_park.pink.chassis
+	accessories[]: .traffic.c_deville.rv_park.pink.fwheel
+	accessories[]: .traffic.c_deville.rv_park.pink.rwheel
+
+
+	vehicle_mass: 2200
+
+	tags[]: context
+
+	spawn_condition[]: .traffic.c_deville.rv_park.pink.spawn.condition
+
+
+	color[]: (1.0, 0.7607, 0.682) # Light Salmon
+	tags[]: budget
+
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .traffic.c_deville.rv_park.pink.chassis
+{
+	data_path: "/def/vehicle/ai/cadillac_deville/chassis.sii"
+}
+vehicle_wheel_accessory: .traffic.c_deville.rv_park.pink.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_oldc.sii"
+}
+vehicle_wheel_accessory: .traffic.c_deville.rv_park.pink.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_oldc.sii"
+}
+traffic_spawn_condition: .traffic.c_deville.rv_park.pink.spawn.condition
+{
+	# spawn only inside specific area around landmark model model.tx_10000
+	type: area
+	str_param[]: "tx_10000"
+}
+
+traffic_vehicle : traffic.c_deville.rv_park.blue
+{
+	accessories[]: .traffic.c_deville.rv_park.blue.chassis
+	accessories[]: .traffic.c_deville.rv_park.blue.fwheel
+	accessories[]: .traffic.c_deville.rv_park.blue.rwheel
+
+
+	vehicle_mass: 2200
+
+	tags[]: context
+
+	spawn_condition[]: .traffic.c_deville.rv_park.blue.spawn.condition
+
+	color[]: (0.529, 0.8078, 1.0) # Light sky blue
+	tags[]: budget
+
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .traffic.c_deville.rv_park.blue.chassis
+{
+	data_path: "/def/vehicle/ai/cadillac_deville/chassis.sii"
+}
+vehicle_wheel_accessory: .traffic.c_deville.rv_park.blue.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_oldc.sii"
+}
+vehicle_wheel_accessory: .traffic.c_deville.rv_park.blue.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_oldc.sii"
+}
+traffic_spawn_condition: .traffic.c_deville.rv_park.blue.spawn.condition
+{
+	# spawn only inside specific area around landmark model model.tx_10000
+	type: area
+	str_param[]: "tx_10000"
+}
+
+
+traffic_vehicle : traffic.c_deville.rv_park.beige
+{
+	accessories[]: .traffic.c_deville.rv_park.beige.chassis
+	accessories[]: .traffic.c_deville.rv_park.beige.fwheel
+	accessories[]: .traffic.c_deville.rv_park.beige.rwheel
+
+
+	vehicle_mass: 2200
+
+	tags[]: context
+
+	spawn_condition[]: .traffic.c_deville.rv_park.beige.spawn.condition
+
+	color[]: (0.8713, 0.8631, 0.8227)
+	tags[]: budget
+
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .traffic.c_deville.rv_park.beige.chassis
+{
+	data_path: "/def/vehicle/ai/cadillac_deville/chassis.sii"
+}
+vehicle_wheel_accessory: .traffic.c_deville.rv_park.beige.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_oldc.sii"
+}
+vehicle_wheel_accessory: .traffic.c_deville.rv_park.beige.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_oldc.sii"
+}
+traffic_spawn_condition: .traffic.c_deville.rv_park.beige.spawn.condition
+{
+	# spawn only inside specific area around landmark model model.tx_10000
+	type: area
+	str_param[]: "tx_10000"
+}
+
+
+traffic_vehicle : traffic.sierra_hd.context
+{
+	accessories[]: .sierra_hd.context.chassis
+	accessories[]: .sierra_hd.context.fwheel
+	accessories[]: .sierra_hd.context.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_2.soundref"
+	vehicle_mass: 3100
+
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+	tags[]: common
+	tags[]: context
+
+	spawn_condition[]: .traffic.sierra_hd.context.spawn.condition
+
+	color[]: (0.9, 0.9, 0.9)
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .sierra_hd.context.chassis
+{
+	data_path: "/def/vehicle/ai/sierra_hd/chassis.sii"
+}
+vehicle_wheel_accessory: .sierra_hd.context.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+vehicle_wheel_accessory: .sierra_hd.context.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+traffic_spawn_condition: .traffic.sierra_hd.context.spawn.condition
+{
+	type: area
+	str_param[]: "industrial"
+	str_param[]: "commercial"
+}
+
+traffic_vehicle : traffic.dodge.ram.context
+{
+	accessories[]: .dodge.ram.context.chassis
+	accessories[]: .dodge.ram.context.fwheel
+	accessories[]: .dodge.ram.context.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	vehicle_mass: 1700
+
+	tags[]: pickup
+	tags[]: empty
+	tags[]: suv
+	tags[]: common
+	tags[]: context
+
+	spawn_condition[]: .traffic.dodge.ram.context.spawn.condition
+
+	color[]: (0.9, 0.9, 0.9)
+
+@include "drivers_generic.sui"
+
+}
+vehicle_accessory: .dodge.ram.context.chassis
+{
+	data_path: "/def/vehicle/ai/dodge_ram_2500/chassis.sii"
+}
+vehicle_wheel_accessory: .dodge.ram.context.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_o.sii"
+}
+vehicle_wheel_accessory: .dodge.ram.context.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_o.sii"
+}
+traffic_spawn_condition: .traffic.dodge.ram.context.spawn.condition
+{
+	type: area
+	str_param[]: "industrial"
+	str_param[]: "commercial"
+}

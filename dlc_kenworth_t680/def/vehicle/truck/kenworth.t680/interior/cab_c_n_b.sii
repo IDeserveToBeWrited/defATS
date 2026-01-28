@@ -6,6 +6,7 @@ accessory_interior_data	: cabcnb.kenworth.t680.interior
 	price: 22960
 	unlock: 10
 	icon: "kenworth_t680/int_vb"
+
 	model: "/vehicle/truck/kenworth_t680/interior/model.pmd"
 	animated_model: "/vehicle/truck/kenworth_t680/interior/anim.pmd"
 	collision: "/vehicle/truck/kenworth_t680/interior/model.pmc"
@@ -22,11 +23,12 @@ accessory_interior_data	: cabcnb.kenworth.t680.interior
 
 @include "animations.sui"
 
+@include "int_shadow_cab_c.sui"
+
 @include "sound.sui"
 @include "sound_effects.sui"
 
 @include "computers.sui"
-
 
 	glass_panes[]: .kenwortht680.r.pane.front
 	glass_panes[]: .kenwortht680.r.pane.close
@@ -34,8 +36,8 @@ accessory_interior_data	: cabcnb.kenworth.t680.interior
 	glass_panes[]: .kenwortht680.r.pane.back_c
 
 @include "seat.sui"
+@include "mirrors.sui"
 }
-
 @include "glass.sui"
 @include "glass_c.sui"
 @include "sound_effects_units.sui"

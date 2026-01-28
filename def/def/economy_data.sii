@@ -2,7 +2,7 @@
 {
 economy_data : economy.data.storage
 {
-	truck_refund: 		0.35	# 35% of original price
+	truck_refund: 		0.6	# 60% of original price
 
 	# Base revenue per km in game native currency.
 	revenue_per_km_base: 15
@@ -15,9 +15,9 @@ economy_data : economy.data.storage
 	garage_prod_plan_large: 300000
 
 	fuel_discount_in_garage: 0.15	# 15%
-	
+
 	truck_count_for_online:	3	# number of owned trucks to unlock buying online feature
-	
+
 	abandoned_job_fine: 12000
 
 	cargo_damage_cost: 5.0 		# -5$ per 1% of damage
@@ -76,12 +76,12 @@ economy_data : economy.data.storage
 
 	driver_hire_cost: 1500		# $
 
-	free_driver_level_cap: 30		# don't grow offered drivers higher than this level
+	free_driver_level_cap: 30	# don't grow offered drivers higher than this level
 	driver_offer_scrap_prob: 0.5
 
 	driver_quitwarn_time: 3		# days
 	driver_quit_time: 5		# days
-	driver_no_return_job_prob: 0.1  # 10% of no return job, decrease with skill
+	driver_no_return_job_prob: 0.1	# 10% of no return job, decrease with skill
 
 	driver_skilled_job_prob: 0.8
 
@@ -96,15 +96,14 @@ economy_data : economy.data.storage
 	skill_distance[4]:	2575.0	# 1600 miles
 	skill_distance[5]:	4024.0	# 2500 miles
 
-
 	fixed_revenue: 600	# in $
 	revenue_coef_per_km: 0.9 # Revenue coefficient per km used during freight market jobs.
 	cargo_market_revenue_coef_per_km: 1.0 # Revenue coefficient per km used during cargo market jobs.
 
 	max_eco_consumption_drop[0]: (0.1, 0.1)	# consumption decreased by 40% (or 60% if driving with trailer) 
-	
+
 	# for ecodriving skill maximum
-	
+
 	max_eco_consumption_drop[1]: (0.15, 0.15)
 	max_eco_consumption_drop[2]: (0.2, 0.2)	
 	max_eco_consumption_drop[3]: (0.25, 0.25)
@@ -205,6 +204,14 @@ economy_data : economy.data.storage
 	reward_title[]:		"@@jobresult_dam_t@@"
 	reward_title[]:		"@@jobresult_reck_t@@"
 
+	reward_name[]:		"@@jobresult_excellent@@"
+	reward_name[]:		"@@jobresult_good_work@@"
+	reward_name[]:		"@@jobresult_sat@@"
+	reward_name[]:		"@@jobresult_reas@@"
+	reward_name[]:		"@@jobresult_tol@@"
+	reward_name[]:		"@@jobresult_dam@@"
+	reward_name[]:		"@@jobresult_reck@@"
+
 	reward_damage_level[]:	0.5
 	reward_damage_level[]:	2.0
 	reward_damage_level[]:	5.0
@@ -234,19 +241,19 @@ economy_data : economy.data.storage
 	currency_sign3[]: ""
 
 	currency_code[]: "CAD"
-	currency_ratio[]: 1.252
+	currency_ratio[]: 1.405
 	currency_sign1[]: ""
 	currency_sign2[]: "$"
 	currency_sign3[]: ""
 
 	currency_code[]: "MXN"
-	currency_ratio[]: 19.923
+	currency_ratio[]: 18.482
 	currency_sign1[]: ""
 	currency_sign2[]: "$"
 	currency_sign3[]: ""
 
 	currency_code[]: "EUR"
-	currency_ratio[]: 0.852
+	currency_ratio[]: 0.8672
 	currency_sign1[]: ""
 	currency_sign2[]: "€"
 	currency_sign3[]: ""

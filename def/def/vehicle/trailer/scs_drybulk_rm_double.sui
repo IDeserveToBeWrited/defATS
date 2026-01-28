@@ -1,0 +1,94 @@
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx default long trailer with hook xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : trailer.scs_dryb_rm
+{
+	trailer_definition: trailer_def.scs.drybulk.rmdouble.drybulk
+
+	accessories[]: .scs_dryb_rm.tchassis
+	accessories[]: .scs_dryb_rm.trwheel0
+	accessories[]: .scs_dryb_rm.trwheel1
+	accessories[]: .scs_dryb_rm.paint_job
+	accessories[]: .scs_dryb_rm.trlr_cables
+	
+	slave_trailer:  .scs_dryb_rm.dolly
+}
+
+vehicle_accessory: .scs_dryb_rm.tchassis
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/chassis42.sii"
+}
+
+vehicle_wheel_accessory: .scs_dryb_rm.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_dryb_rm.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dryb_rm.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .scs_dryb_rm.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/accessory/trlr_cables_trailer.sii"
+}
+
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx dolly xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .scs_dryb_rm.dolly
+{
+	accessories[]: .scs_dryb_rm.dolly.chassis
+	accessories[]: .scs_dryb_rm.dolly.rwheel
+	accessories[]: .scs_dryb_rm.dolly.trlr_cables
+
+	slave_trailer: .scs_dryb_rm.second
+}
+
+vehicle_accessory: .scs_dryb_rm.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/dolly.sii"
+}
+
+vehicle_wheel_accessory: .scs_dryb_rm.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .scs_dryb_rm.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/accessory/trlr_cables_dolly.sii"
+}
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx default long trailer with hook xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .scs_dryb_rm.second
+{
+	accessories[]: .scs_dryb_rm.second.tchassis
+	accessories[]: .scs_dryb_rm.second.trwheel0
+	accessories[]: .scs_dryb_rm.second.paint_job
+}
+
+vehicle_accessory: .scs_dryb_rm.second.tchassis
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/chassis22_double.sii"
+}
+
+vehicle_wheel_accessory: .scs_dryb_rm.second.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dryb_rm.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/company_paint_job/default.sii"
+}

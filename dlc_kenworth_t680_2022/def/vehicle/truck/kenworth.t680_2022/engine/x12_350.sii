@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_engine_data : x12_350.kenworth.t680_2022.engine
+{
+	name: "Cummins X12 Efficiency 350"
+	price: 37950
+	unlock: 0
+	info[]: "350 @@hp@@ (261@@kw@@)"
+	info[]: "1@@dg@@350 @@lb_ft@@ (1830@@nm@@)"
+	info[]: "1@@dg@@000 @@rpm@@"
+
+	icon: "engine_cummins_isx12"
+	part_type: factory
+
+	torque: 1830
+	volume: 11.9
+
+	torque_curve[]: (100, 0)
+	torque_curve[]: (500, 0.67)
+	torque_curve[]: (920, 1)
+	torque_curve[]: (1300, 1)
+	torque_curve[]: (1400, 0.97)
+	torque_curve[]: (1900, 0.71)
+	torque_curve[]: (2400, 0)
+
+	rpm_idle: 650
+	rpm_limit: 1800
+	rpm_range_low_gear: (800, 1600)
+	rpm_range_high_gear: (950, 1300)
+	rpm_range_power: (1400, 1900)
+
+	engine_brake: 2.0
+	engine_brake_downshift: 1
+	engine_brake_positions: 3
+
+	overrides[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/badge/cummins.sii"
+
+@include "sound.sui"
+
+// 2024 Cummins X12 Efficiency 350
+// https://www.cummins.com/engines/x12-2024?v=4636
+}
+}

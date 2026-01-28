@@ -17,10 +17,12 @@ traffic_vehicle : traffic.f350_amb.city
 	variant[]: traffic.f350_amb.nv_lve
 	variant[]: traffic.f350_amb.co_pdqw
 	variant[]: traffic.f350_amb.co_dnv
-
-
-	lod_dist[]: 53
-	lod_dist[]: 70
+	variant[]: traffic.f350_amb.tx_au
+	variant[]: traffic.f350_amb.tx_da
+	variant[]: traffic.f350_amb.tx_el
+	variant[]: traffic.f350_amb.tx_fo
+	variant[]: traffic.f350_amb.tx_ho
+	variant[]: traffic.f350_amb.tx_sa
 
 
 	spawn_ratio: 0
@@ -62,9 +64,6 @@ traffic_vehicle : traffic.f350_amb.id
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	spawn_ratio: 0
 
@@ -102,9 +101,6 @@ traffic_vehicle : traffic.f350_amb.id_cda
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	spawn_condition[]: .f350_amb.id_cda.condition.city
@@ -149,9 +145,6 @@ traffic_vehicle : traffic.f350_amb.id_boi
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	spawn_condition[]: .f350_amb.id_boi.condition.city
 
@@ -194,9 +187,6 @@ traffic_vehicle : traffic.f350_amb.id_idf
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	spawn_condition[]: .f350_amb.id_idf.condition.city
@@ -241,9 +231,6 @@ traffic_vehicle : traffic.f350_amb.nv_lve
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	spawn_condition[]: .f350_amb.nv_lve.condition.city
@@ -290,9 +277,6 @@ traffic_vehicle : traffic.f350_amb.co
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	spawn_ratio: 0
 
@@ -330,9 +314,6 @@ traffic_vehicle : traffic.f350_amb.co_dnv
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	spawn_condition[]: .f350_amb.co_dnv.condition.city
@@ -378,9 +359,6 @@ traffic_vehicle : traffic.f350_amb.co_pdqw
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	spawn_condition[]: .f350_amb.co_pdqw.condition.city
 
@@ -408,7 +386,8 @@ traffic_spawn_condition: .f350_amb.co_pdqw.condition.city
 {
 	# spawn only near city with name equal to traffic vehicle name suffix
 	type: city
-    str_param[]: "pueblo"
+    	str_param[]: "pueblo"
+	str_param[]: "billings"
 }
 
 ########################################## WYOMING #####################################
@@ -428,9 +407,6 @@ traffic_vehicle : traffic.f350_amb.wy
 	prefer_variant: true
 	variant[]: traffic.f350_amb.wy_pdqw
 	variant[]: traffic.f350_amb.wy_ca
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	spawn_ratio: 0
@@ -469,9 +445,6 @@ traffic_vehicle : traffic.f350_amb.wy_pdqw
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	spawn_condition[]: .f350_amb.wy_pdqw.condition.city
@@ -516,9 +489,6 @@ traffic_vehicle : traffic.f350_amb.wy_ca
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	spawn_condition[]: .f350_amb.wy_ca.condition.city
 
@@ -546,4 +516,538 @@ traffic_spawn_condition: .f350_amb.wy_ca.condition.city
 	# spawn only near city with name equal to traffic vehicle name suffix
 	type: city
     str_param[]: "casper"
+}
+
+########################################## montana #####################################
+
+traffic_vehicle : traffic.f350_amb.mo
+{
+	accessories[]: .f350_amb.mo.chassis
+	accessories[]: .f350_amb.mo.fwheel
+	accessories[]: .f350_amb.mo.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	prefer_variant: true
+
+	variant[]: traffic.f350_amb.mo_mis
+
+
+	spawn_ratio: 0
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.mo.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/mo.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.mo.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.mo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+
+########################### montana missoula ##################################
+
+traffic_vehicle : traffic.f350_amb.mo_mis
+{
+	accessories[]: .f350_amb.mo_mis.chassis
+	accessories[]: .f350_amb.mo_mis.fwheel
+	accessories[]: .f350_amb.mo_mis.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	spawn_condition[]: .f350_amb.mo_mis.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.mo_mis.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/mo_mis.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.mo_mis.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.mo_mis.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.mo_mis.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "missoula"
+}
+
+########################### Texas Austin ##################################
+
+traffic_vehicle : traffic.f350_amb.tx_au
+{
+	accessories[]: .f350_amb.tx_au.chassis
+	accessories[]: .f350_amb.tx_au.fwheel
+	accessories[]: .f350_amb.tx_au.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	spawn_condition[]: .f350_amb.tx_au.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.tx_au.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/tx_au.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_au.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_au.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.tx_au.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "austin"
+}
+
+########################### Texas Dallas ##################################
+
+traffic_vehicle : traffic.f350_amb.tx_da
+{
+	accessories[]: .f350_amb.tx_da.chassis
+	accessories[]: .f350_amb.tx_da.fwheel
+	accessories[]: .f350_amb.tx_da.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	spawn_condition[]: .f350_amb.tx_da.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.tx_da.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/tx_da.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_da.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_da.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.tx_da.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "dallas"
+}
+
+########################### Texas El Paso ##################################
+
+traffic_vehicle : traffic.f350_amb.tx_el
+{
+	accessories[]: .f350_amb.tx_el.chassis
+	accessories[]: .f350_amb.tx_el.fwheel
+	accessories[]: .f350_amb.tx_el.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	spawn_condition[]: .f350_amb.tx_el.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.tx_el.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/tx_el.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_el.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_el.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.tx_el.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "el_paso"
+}
+
+########################### Texas Fort Worth ##################################
+
+traffic_vehicle : traffic.f350_amb.tx_fo
+{
+	accessories[]: .f350_amb.tx_fo.chassis
+	accessories[]: .f350_amb.tx_fo.fwheel
+	accessories[]: .f350_amb.tx_fo.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	spawn_condition[]: .f350_amb.tx_fo.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.tx_fo.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/tx_fo.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_fo.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_fo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.tx_fo.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "fort_worth"
+}
+
+########################### Texas Houston ##################################
+
+traffic_vehicle : traffic.f350_amb.tx_ho
+{
+	accessories[]: .f350_amb.tx_ho.chassis
+	accessories[]: .f350_amb.tx_ho.fwheel
+	accessories[]: .f350_amb.tx_ho.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	spawn_condition[]: .f350_amb.tx_ho.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.tx_ho.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/tx_ho.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_ho.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_ho.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.tx_ho.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "houston"
+}
+
+########################### Texas San Antonio ##################################
+
+traffic_vehicle : traffic.f350_amb.tx_sa
+{
+	accessories[]: .f350_amb.tx_sa.chassis
+	accessories[]: .f350_amb.tx_sa.fwheel
+	accessories[]: .f350_amb.tx_sa.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	spawn_condition[]: .f350_amb.tx_sa.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.tx_sa.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/tx_sa.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_sa.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx_sa.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.tx_sa.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "san_antonio"
+}
+
+########################### Texas ambulance ##################################
+
+traffic_vehicle : traffic.f350_amb.tx
+{
+	accessories[]: .f350_amb.tx.chassis
+	accessories[]: .f350_amb.tx.fwheel
+	accessories[]: .f350_amb.tx.rwheel
+
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	spawn_ratio: 0
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.tx.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/tx.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.tx.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+
+
+
+########################### Oklahoma Tulsa ##################################
+ 
+traffic_vehicle : traffic.f350_amb.ok_tu
+{
+	base: traffic.f350_amb.city
+	
+	accessories[]: .f350_amb.ok_tu.chassis
+	accessories[]: .f350_amb.ok_tu.fwheel
+	accessories[]: .f350_amb.ok_tu.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	
+
+	spawn_condition[]: .f350_amb.ok_tu.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.ok_tu.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/ok_tu.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.ok_tu.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.ok_tu.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.ok_tu.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "tulsa"
+	str_param[]: "oklahoma_cit"
+}
+
+########################### Oklahoma City ##################################
+
+traffic_vehicle : traffic.f350_amb.ok_ok
+{
+	base: traffic.f350_amb.city
+	
+	accessories[]: .f350_amb.ok_ok.chassis
+	accessories[]: .f350_amb.ok_ok.fwheel
+	accessories[]: .f350_amb.ok_ok.rwheel
+
+	spawn_ratio: 0
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	spawn_condition[]: .f350_amb.ok_ok.condition.city
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.ok_ok.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/ok_ok.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.ok_ok.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.ok_ok.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
+}
+traffic_spawn_condition: .f350_amb.ok_ok.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "oklahoma_cit"
+}
+
+########################### Oklahoma ambulance ##################################
+
+traffic_vehicle : traffic.f350_amb.ok
+{
+	accessories[]: .f350_amb.ok.chassis
+	accessories[]: .f350_amb.ok.fwheel
+	accessories[]: .f350_amb.ok.rwheel
+
+
+	max_speed: 160
+	vehicle_mass: 2000
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	spawn_ratio: 0
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .f350_amb.ok.chassis
+{
+	data_path: "/def/vehicle/ai/f350_ambulance/ok.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.ok.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_17in_cab.sii"
+}
+
+vehicle_wheel_accessory: .f350_amb.ok.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_17in_cab.sii"
 }

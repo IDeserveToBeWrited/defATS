@@ -1,0 +1,48 @@
+SiiNunit
+{
+accessory_interior_data	: day_22_g.freightliner.cascadia2019.interior
+{
+	name: "Slate Gray 2022"
+	price: 23160
+	unlock: 10
+	icon: "truck/freightliner_cascadia2019/accessory/gray_22"
+	part_type: factory
+
+	model: "/vehicle/truck/freightliner_cascadia2019/interior/model/day_d.pmd"
+	animated_model: "/vehicle/truck/freightliner_cascadia2019/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/freightliner_cascadia2019/interior/model/day_d.pmc"
+	look: Default
+	variant: gray_22
+
+	ext_model: "/vehicle/truck/freightliner_cascadia2019/interior/external/day_d.pmd"
+	ext_look: elite_gr_22
+	ext_variant: default
+
+	suitable_for[]: "day.freightliner.cascadia2019.cabin"
+
+	defaults[]: "/def/vehicle/truck/freightliner.cascadia2019/accessory/steering_w/digital.sii"
+
+	show_chassis_rear: true
+
+@include "animations_digital.sui"
+
+@include "int_shadow_day.sui"
+
+@include "computers_digital.sui"
+
+	glass_panes[]: .freightliner.cascadia2019.r.pane.front
+	glass_panes[]: .freightliner.cascadia2019.r.pane.close
+	glass_panes[]: .freightliner.cascadia2019.r.pane.far
+	glass_panes[]: .freightliner.cascadia2019.r.pane.back_day
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_day.sui"
+@include "sound_effects_units.sui"
+}

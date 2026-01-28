@@ -1,0 +1,45 @@
+glass_pane_data : .wstar5700xe.r.pane.front
+{
+	locator: front_glass
+	size: (2.1, 0.66)
+	edge_angle: 20
+	wipers[]: .wstar5700xe.r.pane.wiper1
+	wipers[]: .wstar5700xe.r.pane.wiper2
+}
+
+
+wiper_data : .wstar5700xe.r.pane.wiper1
+{
+	center_bone: wiper_r_tip
+	length: 0.60
+}
+
+wiper_data : .wstar5700xe.r.pane.wiper2
+{
+	center_bone: wiper_l_tip
+	length: 0.60
+}
+
+glass_pane_data : .wstar5700xe.r.pane.close
+{
+	locator: l_glasspane
+	size: (0.77, 0.64)
+
+	openable_window_bone: lWindow
+	openable_window_mask: "/vehicle/truck/westernstar_5700xe/interior/win_mask_l.mask"
+}
+
+glass_pane_data : .wstar5700xe.r.pane.far
+{
+	locator: r_glasspane
+	size: (0.77, 0.64)
+
+	openable_window_bone: rWindow
+	openable_window_mask: "/vehicle/truck/westernstar_5700xe/interior/win_mask_r.mask"
+}
+
+glass_pane_data : .wstar5700xe.r.pane.back_s				
+{
+	locator: sm_glass
+	size: (0.18, 0.36)
+}

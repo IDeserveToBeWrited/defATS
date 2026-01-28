@@ -1,0 +1,54 @@
+traffic_trailer : traffic.trailer.scs_lowboy.jcb
+{
+
+	accessories[]: .traffic.trailer.scs_lowboy.jcb_bh.chassis
+	accessories[]: .traffic.trailer.scs_lowboy.jcb_bh.rwheel
+	accessories[]: .traffic.trailer.scs_lowboy.jcb_bh.rwheel2
+	accessories[]: .traffic.trailer.scs_lowboy.jcb_bh.rwheel3
+	accessories[]: .traffic.trailer.scs_lowboy.jcb_bh.paint_job
+	accessories[]: .traffic.trailer.scs_lowboy.jcb_bh.body
+
+	cargo_mass: 16000
+	
+	base: traffic.trailer.scs_lowboy
+
+	cargoes[]: jcb_bhl4cx
+	cargoes[]: jcb_exc245xr
+	cargoes[]: jcb_dmp6t2
+	cargoes[]: jcb_th540180
+	cargoes[]: jcb_ft4220
+
+trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+}
+
+vehicle_accessory: .traffic.trailer.scs_lowboy.jcb_bh.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_lowboy.jcb_bh.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_lowboy.jcb_bh.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.scs_lowboy.jcb_bh.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .traffic.trailer.scs_lowboy.jcb_bh.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_accessory: .traffic.trailer.scs_lowboy.jcb_bh.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}

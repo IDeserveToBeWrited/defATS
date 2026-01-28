@@ -6,12 +6,14 @@ traffic_vehicle : traffic.f_150_e_e.front
 
 	max_speed: 160
 
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	vehicle_mass: 3000
 
+	# We want to be able to spawn this vehicle on demand, but forbid 'automatic' spawning as front escort.
+	# In USA, the front escort is usually a police car (see traffic_storage_escort_front.sii)
+	spawn_ratio: 0.001
 
+	tags[]: escort
 
 
 @include "drivers_generic.sui"

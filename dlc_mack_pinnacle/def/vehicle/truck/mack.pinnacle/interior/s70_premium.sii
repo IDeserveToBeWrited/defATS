@@ -1,0 +1,47 @@
+SiiNunit
+{
+accessory_interior_data	: s70_prem.mack.pinnacle.interior
+{
+	name: "Premium"
+	price: 20250
+	unlock: 10
+	icon: "mack_pinnacle/int_prem"
+
+	model: "/vehicle/truck/mack_pinnacle/interior/model/sl70_premium.pmd"
+	animated_model: "/vehicle/truck/mack_pinnacle/interior/animation/animation.pmd"
+	collision: "/vehicle/truck/mack_pinnacle/interior/model/sl70_premium.pmc"
+	variant: default
+	look: default
+
+	ext_model: "/vehicle/truck/mack_pinnacle/interior/external/s70_prem.pmd"
+	ext_variant: default
+	ext_look: default
+
+	defaults[]: "/def/vehicle/truck/mack.pinnacle/accessory/steering_w/premium.sii"
+
+	suitable_for[]: "s70.mack.pinnacle.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_s70.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .mack.pinnacle.r.pane.front
+	glass_panes[]: .mack.pinnacle.r.pane.close
+	glass_panes[]: .mack.pinnacle.r.pane.far
+	glass_panes[]: .mack.pinnacle.r.pane.back_70
+	glass_panes[]: .mack.pinnacle.r.pane.back_b
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_70.sui"
+@include "sound_effects_units.sui"
+}

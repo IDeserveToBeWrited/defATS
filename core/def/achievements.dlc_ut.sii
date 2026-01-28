@@ -1,0 +1,118 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Utah --
+
+# Discover at least 8 cities in Utah.
+
+achievement_visit_city_data : .achievement.ut_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: cedar_city
+	cities[]: logan
+	cities[]: moab
+	cities[]: ogden
+	cities[]: price
+	cities[]: provo
+	cities[]: salina
+	cities[]: salt_lake
+	cities[]: st_george
+	cities[]: vernal
+	target: 8
+
+	achievement_name: ut_visit_cities
+
+	steam_progress_id: "ut_visit_cities-progress"
+	steam_id: ut_visit_cities
+}
+
+# Visit at least 2 mines and quarries in Utah.
+
+achievement_trigger_data : .achievement.ut_mines
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ut_mines
+	target: 2
+
+	achievement_name: ut_mines
+
+	steam_progress_id: "ut_mines-progress"
+	steam_id: ut_mines
+}
+
+# Find a sign that says "nothing".
+
+achievement_trigger_data : .achievement.ut_sign
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: ut_sign
+	target: 1
+
+	achievement_name: ut_sign
+
+	steam_id: ut_sign
+}
+
+# Take a job from each branch of at least 6 companies located in Salt Lake City.
+
+achievement_each_company_data : .achievement.ut_salt_lake
+{
+	event_name: job_done
+	initial_check: true
+	sources[]: apa_car_whs.salt_lake
+	sources[]: avs_met_scr.salt_lake
+	sources[]: avs_met_sml.salt_lake
+	sources[]: cm_min_str.salt_lake
+	sources[]: cm_min_svc.salt_lake
+	sources[]: pns_con_sit2.salt_lake
+	sources[]: sg_whs.salt_lake
+	sources[]: sht_mkt.salt_lake
+	target: 6
+
+	achievement_name: ut_salt_lake_companies
+
+	steam_progress_id: "ut_salt_lake_companies-progress"
+	steam_id: ut_salt_lake_companies
+}
+
+# Deliver 5 frac tank trailers to any oil drilling site in Utah.
+
+achievement_each_company_data : .achievement.ut_frac_tank
+{
+	event_name: job_done
+	initial_check: true
+	cargos[]: frac_tank
+	targets[]: gal_oil_sit.moab
+	targets[]: gal_oil_sit.price
+	targets[]: gal_oil_sit.vernal
+	targets[]: gal_oil_str1.moab
+	targets[]: gal_oil_str1.price
+	targets[]: gal_oil_str1.vernal
+	target: 5
+
+	achievement_name: ut_frac_tank
+
+	steam_progress_id: "ut_frac_tank-progress"
+	steam_id: ut_frac_tank
+}
+
+}

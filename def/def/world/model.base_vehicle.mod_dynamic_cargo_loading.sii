@@ -1,0 +1,39 @@
+SiiNunit
+{
+
+#################################
+# material handler / model part #
+#################################
+
+model_def : model.mhand1
+{
+	model_desc: "/vehicle/machine/material_handler/material_handler_model.pmd"
+
+#	category: "vehicle"
+
+  	name: "material handler model part"
+    
+	static_lod_path[]: "/vehicle/machine/material_handler/material_handler_model_lod1.pmd"
+	static_lod_name[]: "LOD from 40m"
+	static_lod_path[]: "/vehicle/machine/material_handler/material_handler_model_lod2.pmd"
+	static_lod_name[]: "LOD from 80m"
+
+    
+	dynamic_lod_desc[]: "/vehicle/machine/material_handler/material_handler_model_lod1.pmd"
+	dynamic_lod_dist[]: 40
+	dynamic_lod_desc[]: "/vehicle/machine/material_handler/material_handler_model_lod2.pmd"
+	dynamic_lod_dist[]: 80
+
+}
+
+model_def : model.mh_carg
+{
+	model_desc: "/vehicle/model/material_handler_cargo.pmd"
+
+#	category: "vehicle"
+
+  	name: "material handler cargo"
+
+}
+
+}

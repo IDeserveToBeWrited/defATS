@@ -1,0 +1,30 @@
+trailer : trailer.scs_drop48f
+{
+	trailer_definition: trailer_def.scs.dropdeck.single_48f.dropdeck_alu
+
+	accessories[]: .scs_drop48f.chassis
+	accessories[]: .scs_drop48f.rwheel
+	accessories[]: .scs_drop48f.rwheel2
+	accessories[]: .scs_drop48f.body
+}
+
+vehicle_accessory: .scs_drop48f.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_dropdeck/dropdeck_48_f.sii"
+}
+
+vehicle_wheel_accessory: .scs_drop48f.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_wheel_accessory: .scs_drop48f.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+vehicle_accessory: .scs_drop48f.body
+{
+	data_path: "/def/vehicle/trailer/scs_dropdeck/accessory/body_48.sii"
+}

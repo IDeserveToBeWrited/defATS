@@ -1,0 +1,47 @@
+SiiNunit
+{
+accessory_engine_data : x15_605.kenworth.t680_2022.engine
+{
+	name: "Cummins X15 Productivity 605"
+	price: 52030
+	unlock: 16
+	info[]: "605 @@hp@@ (451@@kw@@)"
+	info[]: "2@@dg@@050 @@lb_ft@@ (2779@@nm@@)"
+	info[]: "1@@dg@@000 @@rpm@@"
+
+	icon: "engine_cummins_x15_performance"
+	part_type: factory
+
+	torque: 2779
+	volume: 14.9
+
+	torque_curve[]: (100, 0)
+	torque_curve[]: (500, 0.44)
+	torque_curve[]: (1000, 1)
+	torque_curve[]: (1500, 1)
+	torque_curve[]: (1600, 0.97)
+	torque_curve[]: (2000, 0.77)
+	torque_curve[]: (2400, 0)
+
+	rpm_idle: 650
+	rpm_limit: 2000
+	rpm_range_low_gear: (900, 1600)
+	rpm_range_high_gear: (1000, 1400)
+	rpm_range_power: (1400, 2000)
+
+	engine_brake: 2.0
+	engine_brake_downshift: 1
+	engine_brake_positions: 3
+
+	overrides[]: "/def/vehicle/truck/kenworth.t680_2022/accessory/badge/cummins.sii"
+	suitable_for[]: "dc_163_4x2.kenworth.t680_2022.chassis"	
+	suitable_for[]: "dc_185_6x4.kenworth.t680_2022.chassis"	
+	suitable_for[]: "52_206_6x4.kenworth.t680_2022.chassis"
+	suitable_for[]: "76_230_6x4.kenworth.t680_2022.chassis"	
+
+@include "sound.sui"
+
+// 2024 Cummins X15 Productivity 605
+// https://www.cummins.com/engines/x15-productivity-series-2024
+}
+}

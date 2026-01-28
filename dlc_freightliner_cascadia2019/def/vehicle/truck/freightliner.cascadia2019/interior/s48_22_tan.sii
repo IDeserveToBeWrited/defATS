@@ -1,0 +1,44 @@
+SiiNunit
+{
+accessory_interior_data	: s48_22_t.freightliner.cascadia2019.interior
+{
+	name: "Saddle Tan 2022"
+	price: 23160
+	unlock: 10
+	icon: "truck/freightliner_cascadia2019/accessory/tan_22"
+	part_type: factory
+
+	model: "/vehicle/truck/freightliner_cascadia2019/interior/model/sl_48xt_d.pmd"
+	animated_model: "/vehicle/truck/freightliner_cascadia2019/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/freightliner_cascadia2019/interior/model/sl_48xt_d.pmc"
+	look: Default
+	variant: tan_22
+
+	ext_model: "/vehicle/truck/freightliner_cascadia2019/interior/external/sl_48xt_d.pmd"
+	ext_look: elite_tan_22
+	ext_variant: default
+
+	suitable_for[]: "s48.freightliner.cascadia2019.cabin"
+
+	defaults[]: "/def/vehicle/truck/freightliner.cascadia2019/accessory/steering_w/digital.sii"
+
+@include "animations_digital.sui"
+
+@include "int_shadow_s48.sui"
+
+@include "computers_digital.sui"
+
+	glass_panes[]: .freightliner.cascadia2019.r.pane.front
+	glass_panes[]: .freightliner.cascadia2019.r.pane.close
+	glass_panes[]: .freightliner.cascadia2019.r.pane.far
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "sound_effects_units.sui"
+}

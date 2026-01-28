@@ -1,0 +1,72 @@
+traffic_vehicle : traffic.ws_5700xe_a
+{
+	accessories[]: .ws_5700xe_a.chassis
+	accessories[]: .ws_5700xe_a.fwheel
+	accessories[]: .ws_5700xe_a.rwheel
+	accessories[]: .ws_5700xe_a.rwheel2
+	accessories[]: .ws_5700xe_a.trlr_cables
+
+	max_speed: 110
+	trailer_chains[]: "truck_semi"
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 7200
+	engine_power: 298
+
+	tags[]: dealer
+
+	
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+	color[]: (0.830770, 0.830770, 0.830770) #White 
+
+	color[]: (0.337164, 0.002428, 0.002428) #Red 
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	color[]: (0.337164, 0.002428, 0.002428) #Red
+	
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+	color[]: (0.007499, 0.201556, 0.564712) #Blue 
+
+	color[]: (0.666597, 0.710937, 0.748423) #Silver 
+	color[]: (0.666597, 0.710937, 0.748423) #Silver
+	color[]: (0.666597, 0.710937, 0.748423) #Silver
+	
+	color[]: (0.095307, 0.107023, 0.124772)
+	color[]: (0.095307, 0.107023, 0.124772)
+	color[]: (0.095307, 0.107023, 0.124772)
+	color[]: (0.095307, 0.107023, 0.124772)
+
+	color[]: (0.022174, 0.018500, 0.019382)
+	color[]: (0.019382, 0.034340, 0.020289)
+	color[]: (0.760525, 0.558341, 0.004777)
+	
+	spawn_ratio: 0.2
+
+}
+
+vehicle_accessory : .ws_5700xe_a.chassis {
+	data_path: "/def/vehicle/ai/truck/westernstar.5700xe/cabin_s82.sii"
+}
+vehicle_wheel_accessory : .ws_5700xe_a.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .ws_5700xe_a.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .ws_5700xe_a.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .ws_5700xe_a.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/westernstar.5700xe/accessory/trlr_cables/stock.sii"
+}

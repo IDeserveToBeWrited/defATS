@@ -3,11 +3,27 @@ traffic_trailer : traffic.trailer.scs_flat45f
 	accessories[]: .traffic.trailer.scs_flat45f.chassis
 	accessories[]: .traffic.trailer.scs_flat45f.rwheel0
 	accessories[]: .traffic.trailer.scs_flat45f.rwheel1
-	accessories[]: .traffic.trailer.scs_flat45f.cargo
+	accessories[]: .traffic.trailer.scs_flat45f.body
 
 	cargo_mass: 16000
 
-	spawn_ratio: 1
+	tags[]: low
+	tags[]: flatbed
+	tags[]: pipes
+	tags[]: medium
+	tags[]: cargo
+	tags[]: construct
+
+
+	cargoes[]: lumber_p
+	cargoes[]: lumber_b
+	cargoes[]: lumber
+	cargoes[]: largetubes
+	cargoes[]: house_pref
+	cargoes[]: hay
+	cargoes[]: mtl_coil
+	
+trailer_definition: trailer_def.scs.flatbed.single_45f.flatbed
 
 	#front axle
 	#variant[]: .traffic.trailer.scs_flat45f
@@ -39,11 +55,10 @@ vehicle_wheel_accessory: .traffic.trailer.scs_flat45f.rwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_accessory: .traffic.trailer.scs_flat45f.cargo
+vehicle_accessory: .traffic.trailer.scs_flat45f.body
 {
-    	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/pipes_45.sii"
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_45.sii"
 }
-
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -52,7 +67,24 @@ traffic_trailer : .traffic.trailer.scs_flat45r
 	accessories[]: .traffic.trailer.scs_flat45r.chassis
 	accessories[]: .traffic.trailer.scs_flat45r.rwheel0
 	accessories[]: .traffic.trailer.scs_flat45r.rwheel1
-	accessories[]: .traffic.trailer.scs_flat45r.cargo
+	accessories[]: .traffic.trailer.scs_flat45r.body
+
+	tags[]: low
+	tags[]: flatbed
+	tags[]: vent
+	tags[]: medium
+	tags[]: cargo
+	tags[]: construct
+
+	cargoes[]: lumber_p
+	cargoes[]: lumber_b
+	cargoes[]: lumber
+	cargoes[]: largetubes
+	cargoes[]: house_pref
+	cargoes[]: hay
+	cargoes[]: mtl_coil
+	
+trailer_definition: trailer_def.scs.flatbed.single_45r.flatbed
 
 	cargo_mass: 16000
 }
@@ -74,11 +106,10 @@ vehicle_wheel_accessory: .traffic.trailer.scs_flat45r.rwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_accessory: .traffic.trailer.scs_flat45r.cargo
+vehicle_accessory: .traffic.trailer.scs_flat45r.body
 {
-    	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/vent_45.sii"
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_45.sii"
 }
-
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -88,9 +119,27 @@ traffic_trailer : .traffic.trailer.scs_flat45s
 	accessories[]: .traffic.trailer.scs_flat45s.chassis
 	accessories[]: .traffic.trailer.scs_flat45s.rwheel0
 	accessories[]: .traffic.trailer.scs_flat45s.rwheel1
-	accessories[]: .traffic.trailer.scs_flat45s.cargo
+	accessories[]: .traffic.trailer.scs_flat45s.body
 
 	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: flatbed
+	tags[]: hptank
+	tags[]: medium
+	tags[]: cargo
+	tags[]: construct
+
+	cargoes[]: lumber_p
+	cargoes[]: lumber_b
+	cargoes[]: lumber
+	cargoes[]: largetubes
+	cargoes[]: house_pref
+	cargoes[]: hay
+	cargoes[]: mtl_coil
+
+		trailer_definition: trailer_def.scs.flatbed.single_45sp.flatbed
+
 }
 
 vehicle_accessory: .traffic.trailer.scs_flat45s.chassis
@@ -110,11 +159,10 @@ vehicle_wheel_accessory: .traffic.trailer.scs_flat45s.rwheel1
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
-vehicle_accessory: .traffic.trailer.scs_flat45s.cargo
+vehicle_accessory: .traffic.trailer.scs_flat45s.body
 {
-    	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/hptank_45.sii"
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_45.sii"
 }
-
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -124,6 +172,23 @@ traffic_trailer : .traffic.trailer.scs_flat45s.empty
 	accessories[]: .traffic.trailer.scs_flat45s.empty.chassis
 	accessories[]: .traffic.trailer.scs_flat45s.empty.rwheel0
 	accessories[]: .traffic.trailer.scs_flat45s.empty.rwheel1
+	accessories[]: .traffic.trailer.scs_flat45s.empty.body
+
+	tags[]: low
+	tags[]: flatbed
+	tags[]: medium
+	tags[]: empty
+	tags[]: construct
+
+	cargoes[]: lumber_p
+	cargoes[]: lumber_b
+	cargoes[]: lumber
+	cargoes[]: largetubes
+	cargoes[]: house_pref
+	cargoes[]: hay
+	cargoes[]: mtl_coil
+
+		trailer_definition: trailer_def.scs.flatbed.single_45sp.flatbed
 
 	cargo_mass: 0
 }
@@ -143,4 +208,8 @@ vehicle_wheel_accessory: .traffic.trailer.scs_flat45s.empty.rwheel1
 {
 	offset: 2
     	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.scs_flat45s.empty.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_45.sii"
 }

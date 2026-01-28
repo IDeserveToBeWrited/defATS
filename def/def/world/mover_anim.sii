@@ -26,45 +26,65 @@ SiiNunit
 #                  |/
 # ATS, ETS common
 
+### FISHERMAN FISHING ###
+
+mover_anim : mover_anim.fishing1
+{
+	model_anim: "/model/mover/characters/new_generation/new/animations/customs/stand_fishing.pma"
+	group_tags[]: human
+	group_tags[]: man
+	group_tags[]: stand
+	group_tags[]: fishing
+}
+
+mover_anim : mover_anim.fishing2
+{
+	model_anim: "/model/mover/characters/new_generation/new/animations/customs/sit_fishing.pma"
+	group_tags[]: human
+	group_tags[]: man
+	group_tags[]: sit
+	group_tags[]: fishing
+}
+
 ### TEMPORARY FOR NEW ANIMATIONS - Plz don't delete until we finish all the animations###
 
 mover_anim : mover_anim.n_st_idle_1
 {
 	model_anim: "/model/mover/characters/new_generation/new/animations/universal/ngn_idle_stand_1.pma"
-	group_tags[]: human
-	group_tags[]: man
-	group_tags[]: cross_hand
+#	group_tags[]: human
+#	group_tags[]: man
+#	group_tags[]: cross_hand
 	group_tags[]: n_idle
 }
 mover_anim : mover_anim.n_st_idle_3
 {
 	model_anim: "/model/mover/characters/new_generation/new/animations/universal/ngn_idle_stand_3.pma"
-	group_tags[]: human
-	group_tags[]: man
-	group_tags[]: hips_hand
+#	group_tags[]: human
+#	group_tags[]: man
+#	group_tags[]: hips_hand
 	group_tags[]: n_idle
 }
 mover_anim : mover_anim.n_st_idle_4
 {
 	model_anim: "/model/mover/characters/new_generation/new/animations/universal/ngn_idle_stand_4.pma"
-	group_tags[]: human
-	group_tags[]: man
+#	group_tags[]: human
+#	group_tags[]: man
 	group_tags[]: n_idle
 }
 mover_anim : mover_anim.n_st_idle_5
 {
 	model_anim: "/model/mover/characters/new_generation/new/animations/universal/ngn_idle_stand_5.pma"
-	group_tags[]: human
-	group_tags[]: man
-	group_tags[]: look_watch
+#	group_tags[]: human
+#	group_tags[]: man
+#	group_tags[]: look_watch
 	group_tags[]: n_idle
 }
 ############
 mover_anim : mover_anim.n_st_idle_2
 {
 	model_anim: "/model/mover/characters/new_generation/new/animations/universal/ngn_idle_stand_2.pma"
-	group_tags[]: human
-	group_tags[]: man
+#	group_tags[]: human
+#	group_tags[]: man
 	group_tags[]: n_leaning
 }
 ####################################################################################################################################
@@ -225,26 +245,26 @@ mover_anim : mover_anim.n_sort_crops
 
 }
 
-### COW ###
-
-mover_anim : mover_anim.cow.eating
-{
-	model_anim: "/model/mover/animal/cow/cow_eating.pma"
-	group_tags[]: cow
-	group_tags[]: eating
-}
-mover_anim : mover_anim.cow.walk_eating
-{
-	model_anim: "/model/mover/animal/cow_walk_eating.pma"
-	group_tags[]: cow
-	group_tags[]: eating
-}
-mover_anim : mover_anim.cow.lean
-{
-	model_anim: "/model/mover/animal/cow_lean.pma"
-	group_tags[]: cow
-	group_tags[]: idle
-}
+#### COW ###
+#
+#mover_anim : mover_anim.cow.eating
+#{
+#	model_anim: "/model/mover/animal/cow/cow_eating.pma"
+#	group_tags[]: cow
+#	group_tags[]: eating
+#}
+#mover_anim : mover_anim.cow.walk_eating
+#{
+#	model_anim: "/model/mover/animal/cow_walk_eating.pma"
+#	group_tags[]: cow
+#	group_tags[]: w_eating
+#}
+#mover_anim : mover_anim.cow.lean
+#{
+#	model_anim: "/model/mover/animal/cow_lean.pma"
+#	group_tags[]: cow
+#	group_tags[]: idle
+#}
 #mover_anim : mover_anim.cow.idle
 #{
 #	model_anim: "/model/mover/animal/cow/cow_idle_anim.pma"
@@ -263,38 +283,39 @@ mover_anim : mover_anim.cow.lean
 #	group_tags[]: cow
 #	group_tags[]: idle
 #}
-#################################### COWS_HERD_ANIM
-mover_anim : mover_anim.cows.herd
-{
-	model_anim: "/model/mover/animal/cow/cow_herd_01.pma"
-	group_tags[]: cows_herd
-}
-####################################
-mover_anim : mover_anim.calf.idle1
-{
-	model_anim: "/model/mover/animal/cow/calf_idle_01.pma"
-	group_tags[]: calf
-	group_tags[]: idle
-}
-mover_anim : mover_anim.calf.idle2
-{
-	model_anim: "/model/mover/animal/cow/calf_idle_02.pma"
-	group_tags[]: calf
-	group_tags[]: idle
-}
-mover_anim : mover_anim.coalf.idle3
-{
-	model_anim: "/model/mover/animal/cow/calf_idle_03.pma"
-	group_tags[]: calf
-	group_tags[]: idle
-}
-mover_anim : mover_anim.coalf.idle4
-{
-	model_anim: "/model/mover/animal/cow/calf_idle_eat.pma"
-	group_tags[]: calf
-	group_tags[]: idle
-	group_tags[]: eat
-}
+##################################### COWS_HERD_ANIM
+#mover_anim : mover_anim.cows.herd
+#{
+#	model_anim: "/model/mover/animal/cow/cow_herd_01.pma"
+#	group_tags[]: cows_herd
+#}
+#####################################
+#mover_anim : mover_anim.calf.idle1
+#{
+#	model_anim: "/model/mover/animal/cow/calf_idle_01.pma"
+#	group_tags[]: calf
+#	group_tags[]: idle
+#}
+#mover_anim : mover_anim.calf.idle2
+#{
+#	model_anim: "/model/mover/animal/cow/calf_idle_02.pma"
+#	group_tags[]: calf
+#	group_tags[]: idle
+#}
+#mover_anim : mover_anim.coalf.idle3
+#{
+#	model_anim: "/model/mover/animal/cow/calf_idle_03.pma"
+#	group_tags[]: calf
+#	group_tags[]: idle
+#}
+#mover_anim : mover_anim.coalf.idle4
+#{
+#	model_anim: "/model/mover/animal/cow/calf_idle_eat.pma"
+#	group_tags[]: calf
+#	group_tags[]: idle
+#	group_tags[]: eat
+#}
+
 ### HORSE ###
 
 mover_anim : mover_anim.horse.walk
@@ -325,7 +346,7 @@ mover_anim : mover_anim.horse.nerv_eat
 mover_anim : mover_anim.horse.rodeo
 {
 	model_anim: "/model/mover/animal/horse/rodeo_horse.pma"                     
-	group_tags[]: horse
+	group_tags[]: horser
     group_tags[]: rodeo
 }
 
@@ -578,6 +599,7 @@ mover_anim : mover_anim.blower
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: blower
+	sound_path: "/sound/world/sound.bank#sound/leaf_blower"
 
 	props[]: mover_props.blower.blower
 	props[]: mover_props.blower.screw
@@ -592,6 +614,7 @@ mover_anim : mover_anim.agitator
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: agitator
+	sound_path: "/sound/world/sound.bank#sound/hand_mixer"
 
 	props[]: mover_props.agitator.smallmix
 	props[]: mover_props.agitator.bucket
@@ -624,6 +647,7 @@ mover_anim : mover_anim.road_cutter
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: road_cutter
+	sound_path: "/sound/world/sound.bank#sound/saw_on_asphalt_2"
 
 	props[]: mover_props.road_cutter.roadsaw
 }
@@ -668,6 +692,7 @@ mover_anim : mover_anim.man.photo
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: photo
+	sound_path: "/sound/world/sound.bank#sound/camera_shoot_1"
 
 	props[]: mover_props.photo.camera
 }
@@ -690,6 +715,7 @@ mover_anim : mover_anim.man.reporter.self
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: report_self
+	sound_path: "/sound/world/sound.bank#sound/reporter_man_1"
 
 	props[]: mover_props.report_self.microphone
 	props[]: mover_props.report_self.files
@@ -709,6 +735,7 @@ mover_anim : mover_anim.woman.reporter.self
 	group_tags[]: human
 	group_tags[]: woman
 	group_tags[]: report_self
+	sound_path: "/sound/world/sound.bank#sound/reporter_woman_1"
 
 	props[]: mover_props.report_self.microphone
 	props[]: mover_props.report_self.files
@@ -722,6 +749,7 @@ mover_anim : mover_anim.man.selfie_cell
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: selfie_cell
+	sound_path: "/sound/world/sound.bank#sound/camera_shoot_2"
 
 	props[]: mover_props.selfie_cell.cellphone
 }
@@ -731,6 +759,7 @@ mover_anim : mover_anim.wom.selfie_cell
 	group_tags[]: human
 	group_tags[]: woman
 	group_tags[]: selfie_cell
+	sound_path: "/sound/world/sound.bank#sound/camera_shoot_2"
 
 	props[]: mover_props.selfie_cell.cellphone
 }
@@ -744,6 +773,7 @@ mover_anim : mover_anim.man.selfie_stick
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: selfie_stick
+	sound_path: "/sound/world/sound.bank#sound/camera_shoot_2"
 
 	props[]: mover_props.selfie_stick.stick
 }
@@ -753,6 +783,7 @@ mover_anim : mover_anim.wom.selfie_stick
 	group_tags[]: human
 	group_tags[]: woman
 	group_tags[]: selfie_stick
+	sound_path: "/sound/world/sound.bank#sound/camera_shoot_2"
 
 	props[]: mover_props.selfie_stick.stick
 }
@@ -764,6 +795,7 @@ mover_anim : mover_anim.gardener
 {
 	model_anim: "/model/mover/characters/animations/man/work/gardener.pma"
 	group_tags[]: gardener
+	sound_path: "/sound/world/mover.bank#mover/lawn_mower"
 }
 
 
@@ -783,6 +815,7 @@ mover_anim : mover_anim.basket_pl
 {
 	model_anim: "/model/mover/characters/animations/man/sport/man_dribble.pma"
 	group_tags[]: basket_pl
+	sound_path: "/sound/world/mover.bank#mover/basketball_concrete_1"
 }
 
 
@@ -803,6 +836,7 @@ mover_anim : mover_anim.man.saw
 	group_tags[]: human
 	group_tags[]: man
 	group_tags[]: saw
+	sound_path: "/sound/world/mover.bank#mover/saw_wood_1"
 
 	props[]: mover_props.saw.saw
 }
@@ -864,6 +898,7 @@ mover_anim : mover_anim.mixer_work
 	group_tags[]: man
 	group_tags[]: worker
 	group_tags[]: mixerman
+	sound_path: "/sound/world/sound.bank#sound/mixer"
 
 	props[]: mover_props.mix_pr
 }
@@ -892,6 +927,164 @@ mover_anim : mover_anim.cofibr
 {
 	model_anim: "/model/building/shop/fastfood/co_cofibreak_totem_anim.pma"
 	group_tags[]: cofibr
+}
+
+####################################################################
+####					SEA LION for PIER39 S.F.				####
+####################################################################
+
+mover_anim : mover_anim.seali1
+{
+	model_anim: "/asset/animation/animal/sea_lion_idle_01.pma"
+	group_tags[]: sealion
+	group_tags[]: scream1
+}
+
+mover_anim : mover_anim.seali2
+{
+	model_anim: "/asset/animation/animal/sea_lion_idle_02.pma"
+	group_tags[]: sealion
+	group_tags[]: scream2
+}
+
+mover_anim : mover_anim.seali3
+{
+	model_anim: "/asset/animation/animal/sea_lion_idle_03.pma"
+	group_tags[]: sealion
+	group_tags[]: scream3
+}
+
+###########################################
+###				ACTION PLANES			###
+###########################################
+
+mover_anim : mover_anim.ac_737_l
+{
+	model_anim: "/model/mover/aircraft/b737/b737_landing.pma"
+	group_tags[]: ac_737_l
+	anim_type: action
+	sound_path: "/sound/world/mover.bank#mover/boeing_loop_1"
+}
+
+mover_anim : mover_anim.ac_737_t
+{
+	model_anim: "/model/mover/aircraft/b737/b737_takeoff.pma"
+	group_tags[]: ac_737_t
+	anim_type: action
+	sound_path: "/sound/world/mover.bank#mover/boeing_loop_1"
+}
+
+mover_anim : mover_anim.ac_747_l
+{
+	model_anim: "/model/mover/aircraft/b747/b747_landing.pma"
+	group_tags[]: ac_747_l
+	anim_type: action
+	sound_path: "/sound/world/mover.bank#mover/boeing_loop_1"
+}
+
+mover_anim : mover_anim.ac_747_t
+{
+	model_anim: "/model/mover/aircraft/b747/b747_takeoff.pma"
+	group_tags[]: ac_747_t
+	anim_type: action
+	sound_path: "/sound/world/mover.bank#mover/boeing_loop_1"
+}
+
+####################################################################
+####						ALLIGATORS							####
+####################################################################
+
+ mover_anim : mover_anim.alli_id1
+ {
+ 	model_anim: "/asset/animation/animal/alligator_idle_01_ani.pma"
+ 	group_tags[]: allig
+ 	group_tags[]: sur
+ }
+
+mover_anim : mover_anim.alli_id2
+{
+	model_anim: "/asset/animation/animal/alligator_idle_02_ani.pma"
+	group_tags[]: allig
+	group_tags[]: wat
+}
+
+mover_anim : mover_anim.alli_wk1
+{
+	model_anim: "/asset/animation/animal/alligator_walk_01_ani.pma"
+	group_tags[]: allig
+	group_tags[]: sur
+}
+
+mover_anim : mover_anim.alli_wk2
+{
+	model_anim: "/asset/animation/animal/alligator_walk_02_ani.pma"
+	group_tags[]: allig
+	group_tags[]: sur
+}
+
+mover_anim : mover_anim.alli_sw
+{
+	model_anim: "/asset/animation/animal/alligator_swim_01_ani.pma"
+	group_tags[]: allig
+	group_tags[]: wat
+}
+mover_anim : mover_anim.portal_cr
+{
+	model_anim: "/prefab/depots/river_port/ok_portal_crane_anim.pma"
+	group_tags[]: portal_cr
+
+    props[]: mover_props.containers
+}
+
+mover_anim : mover_anim.hall_cra
+{
+	model_anim: "/model/props/machinery/ar_hall_crane_ani.pma"
+	group_tags[]: coil
+}
+
+####################################################################
+####						PHEASANTS							####
+####################################################################
+
+mover_anim : mover_anim.pheafly
+{
+	model_anim: "/asset/animation/animal/pheasant_wings_fly_ani.pma"
+	group_tags[]: pheasant
+	group_tags[]: male
+	group_tags[]: fly
+	anim_type: action
+}
+
+mover_anim : mover_anim.pheamw
+{
+	model_anim: "/asset/animation/animal/pheasant_male_walk_ani.pma"
+	group_tags[]: pheasant
+	group_tags[]: male
+	group_tags[]: walk
+}
+
+mover_anim : mover_anim.pheamr
+{
+	model_anim: "/asset/animation/animal/pheasant_male_run_ani.pma"
+	group_tags[]: pheasant
+	group_tags[]: male
+	group_tags[]: run
+}
+
+mover_anim : mover_anim.pheafw
+{
+	model_anim: "/asset/animation/animal/pheasant_female_walk_ani.pma"
+	group_tags[]: pheasant
+	group_tags[]: female
+	group_tags[]: walk
+}
+
+mover_anim : mover_anim.pheafr
+{
+	model_anim: "/asset/animation/animal/pheasant_female_run_ani.pma"
+	group_tags[]: pheasant
+	group_tags[]: female
+	group_tags[]: run
 }
 
 }

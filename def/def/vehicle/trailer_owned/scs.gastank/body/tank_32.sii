@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_trailer_body_data : tank_32.scs.gastank.body
+{
+	name: "@@bs_gas_tank@@"
+	price: 23000
+	unlock: 11
+	icon: "trailer_owned/scs_gastank/body/tank_32"
+
+	# 32' x 102" x 13'6"
+	# Internal: 26'9" x 96.5" x 101"
+
+	size: (2.4511, 2.5654, 8.1534)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 9.7536)	# width, height, length (size of the body + chassis)
+
+	volume: 30.29		# 8600 gal
+	body_type: gastank
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for trailer is in chassis, bodies have only deltas to the mass.
+	# Shorter body variants would have smaller delta.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_gastank/body/tank_32.pmd"
+	collision: "/vehicle/trailer_owned/scs_gastank/body/tank_32.pmc"
+	variant: default
+
+	cargo_loading_methods[]: auxiliary_only
+}
+}

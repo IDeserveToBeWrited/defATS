@@ -1,0 +1,82 @@
+SiiNunit
+{
+sign_board_template : _nameless.1.99ab.70e0 {
+ board_name: "weigh test"
+ width: &3fcccccd
+ height: &3ecccccd
+ model_name: ""
+ items: 2
+ items[0]: _nameless.1.aac4.5580
+ items[1]: _nameless.1.aac4.6540
+ dynamic_attributes: 2
+ dynamic_attributes[0]: _nameless.1.aac4.6600
+ dynamic_attributes[1]: _nameless.2.4062.fb90
+}
+
+sign_template_text : _nameless.1.aac4.5580 {
+ text: CLOSED
+ font_face: "/font/sign/dot_matrix.font"
+ font_size: &3ee66666
+ text_halign: center
+ text_valign: top
+ font_color: 255
+ font_opacity: 0
+ line_spacing: &3e4ccccd
+ letter_spacing: &bd23d70a
+ id: 2897346558
+ area_name: ""
+ area_idx: nil
+ coords_l: &3cf47840
+ coords_r: &3fc8f098
+ coords_t: &3ecccccd
+ coords_b: 0
+ z_order: 1
+ tag: ""
+}
+
+sign_template_text : _nameless.1.aac4.6540 {
+ text: OPEN
+ font_face: "/font/sign/us_sign_d.font"
+ font_size: &3efae148
+ text_halign: center
+ text_valign: top
+ font_color: 65280
+ font_opacity: 1
+ line_spacing: &3e4ccccd
+ letter_spacing: &3d4ccccd
+ id: 1194065920
+ area_name: ""
+ area_idx: nil
+ coords_l: &3cf47820
+ coords_r: &3fc8f098
+ coords_t: &3ecccccc
+ coords_b: 0
+ z_order: 2
+ tag: ""
+}
+
+sign_conditional_attribute : _nameless.1.aac4.6600 {
+ conditions: 2
+ conditions[0]: trigger62
+ conditions[1]: default
+ values: 2
+ values[0]: ENTER
+ values[1]: ""
+ traffic_rules: 0
+ item_id: 1194065920
+ attr_name: text
+}
+
+sign_conditional_attribute : _nameless.2.4062.fb90 {
+ conditions: 2
+ conditions[0]: default
+ conditions[1]: trigger62
+ values: 2
+ values[0]: CLOSED
+ values[1]: ""
+ traffic_rules: 0
+ item_id: 2897346558
+ attr_name: text
+}
+
+}

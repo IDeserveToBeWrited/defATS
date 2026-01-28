@@ -1,0 +1,173 @@
+traffic_vehicle : traffic.f_r_solera_w.context
+{
+	accessories[]: .solera_w.chassis
+	accessories[]: .solera_w.fwheel
+	accessories[]: .solera_w.rwheel
+
+	max_speed: 120
+
+	vehicle_mass: 4300
+
+	tags[]: van
+	tags[]: tourist
+	tags[]: context
+
+	spawn_ratio: 0.10
+
+	variant[]: traffic.f_r_solera_e.context
+
+	spawn_condition[]: .traffic.f_r_solera_w.spawn.condition
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .solera_w.chassis
+{
+	data_path: "/def/vehicle/ai/solera/chassis_w.sii"
+}
+vehicle_wheel_accessory: .solera_w.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_3.sii"
+}
+vehicle_wheel_accessory: .solera_w.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_3.sii"
+}
+traffic_spawn_condition: .traffic.f_r_solera_w.spawn.condition
+{
+	type: area
+	str_param[]: "tourist"
+	str_param[]: "rest_area"
+}
+
+
+traffic_vehicle : traffic.f_r_solera_e.context
+{
+	accessories[]: .solera_e.chassis
+	accessories[]: .solera_e.fwheel
+	accessories[]: .solera_e.rwheel
+
+	max_speed: 120
+
+	vehicle_mass: 4300
+
+
+	tags[]: van
+	tags[]: tourist
+	tags[]: context
+
+	spawn_ratio: 0.10
+
+	spawn_condition[]: .traffic.f_r_solera_e.spawn.condition
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .solera_e.chassis
+{
+	data_path: "/def/vehicle/ai/solera/chassis_e.sii"
+}
+vehicle_wheel_accessory: .solera_e.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_3.sii"
+}
+vehicle_wheel_accessory: .solera_e.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_3.sii"
+}
+traffic_spawn_condition: .traffic.f_r_solera_e.spawn.condition
+{
+	type: area
+	str_param[]: "tourist"
+	str_param[]: "rest_area"
+}
+
+
+traffic_vehicle : traffic.transit_16.context
+{
+	accessories[]: .transit_16.context.chassis
+	accessories[]: .transit_16.context.fwheel
+	accessories[]: .transit_16.context.rwheel
+
+	max_speed: 120
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	vehicle_mass: 2800
+
+	spawn_ratio: 0.3
+
+	tags[]: van
+	tags[]: context
+
+	color[]: (1, 1, 1)
+
+	spawn_condition[]: .traffic.transit_16.spawn.condition
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .transit_16.context.chassis
+{
+	data_path: "/def/vehicle/ai/transit_2016/generic.sii"
+}
+vehicle_wheel_accessory: .transit_16.context.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_18in_5.sii"
+}
+vehicle_wheel_accessory: .transit_16.context.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_18in_5.sii"
+}
+traffic_spawn_condition: .traffic.transit_16.spawn.condition
+{
+	type: area
+	str_param[]: "commercial"
+}
+
+traffic_vehicle : traffic.chevy_van.context
+{
+	accessories[]: .chevy_van.context.chassis
+	accessories[]: .chevy_van.context.fwheel
+	accessories[]: .chevy_van.context.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	vehicle_mass: 2700
+
+	tags[]: van
+	tags[]: context
+
+	color[]: (1, 1, 1)
+
+	spawn_condition[]: .traffic.chevy_van.spawn.condition
+
+@include "drivers_generic.sui"
+}
+vehicle_accessory: .chevy_van.context.chassis
+{
+	data_path: "/def/vehicle/ai/chevy_van/chassis.sii"
+}
+vehicle_wheel_accessory: .chevy_van.context.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+vehicle_wheel_accessory: .chevy_van.context.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+traffic_spawn_condition: .traffic.chevy_van.spawn.condition
+{
+	type: area
+	str_param[]: "commercial"
+}
+
+

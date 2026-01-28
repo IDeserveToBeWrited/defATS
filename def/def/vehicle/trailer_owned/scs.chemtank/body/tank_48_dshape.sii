@@ -1,0 +1,34 @@
+SiiNunit
+{
+accessory_trailer_body_data : tank_48_ds.scs.chemtank.body
+{
+	name: "@@bs_dshape@@"
+	price: 35000
+	unlock: 11
+	icon: "trailer_owned/scs_chemtank/body/tank_dshape_43"
+
+	# 43' x 102" x 13'6"
+	# Internal: 41'9" x 96.5" x 101"
+
+	size: (2.4511, 2.5654, 12.7254)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 13.1064)	# width, height, length (size of the body + chassis)
+
+	volume: 30.28		# 8000 gal
+	body_type: chemtank
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for trailer is in chassis, bodies have only deltas to chassis mass.
+	# Shorter body variants would have smaller delta.
+
+	mass: 0
+
+	# visual data
+
+	model: "/vehicle/trailer_owned/scs_chemtank/body/tank_dshape_48.pmd"
+	collision: "/vehicle/trailer_owned/scs_chemtank/body/tank_dshape_48.pmc"
+	variant: default
+
+	cargo_loading_methods[]: auxiliary_only
+}
+}

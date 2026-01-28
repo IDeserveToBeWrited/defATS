@@ -1,0 +1,93 @@
+#----------------------Little Rock -------------------------------------------------------------------------------------------------############
+
+traffic_vehicle : traffic.trolley.historical.01.little.rock
+{
+	accessories[]: .trolley.historical.01.little.rock.chassis
+	accessories[]: .trolley.historical.01.little.rock.fwheel
+	accessories[]: .trolley.historical.01.little.rock.rwheel
+
+	max_speed: 15
+	vehicle_mass: 11000
+	engine_power: 150	#380kW engine whole cable (several vehicles)
+
+	sound_move[]: "/sound/traffic/cablecar_sf.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+
+	displacement_limit: 0.0
+	spawn_condition[]: .traffic.trolley.historical.01.little.rock.condition.city
+	#spawn_condition[]: .traffic.trolley.historical.01.little.rock.condition.area
+
+	tags[]: context
+}
+
+vehicle_accessory: .trolley.historical.01.little.rock.chassis
+{
+	data_path: "/def/vehicle/ai/trolley_historical_01/chassis_l_r.sii"
+}
+
+vehicle_wheel_accessory: .trolley.historical.01.little.rock.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trolley.historical.01.little.rock.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.trolley.historical.01.little.rock.condition.city
+{
+	type: city
+	str_param[]: "little_rock"
+}
+
+
+#---------------------- New Orleans -------------------------------------------------------------------------------------------------############
+
+traffic_vehicle : traffic.trolley.historical.01.new_orl
+{
+	accessories[]: .trolley.historical.01.new_orl.chassis
+	accessories[]: .trolley.historical.01.new_orl.fwheel
+	accessories[]: .trolley.historical.01.new_orl.rwheel
+
+	max_speed: 15
+	vehicle_mass: 11000
+	engine_power: 150	#380kW engine whole cable (several vehicles)
+
+	sound_move[]: "/sound/traffic/cablecar_sf.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+
+	spawn_ratio: 0.0	
+
+	displacement_limit: 0.0
+	spawn_condition[]: .traffic.trolley.historical.01.new_orl.condition.city
+	tags[]: context
+
+}
+
+vehicle_accessory: .trolley.historical.01.new_orl.chassis
+{
+	data_path: "/def/vehicle/ai/trolley_historical_01/chassis_n_o.sii"
+}
+
+vehicle_wheel_accessory: .trolley.historical.01.new_orl.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trolley.historical.01.new_orl.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.trolley.historical.01.new_orl.condition.city
+{
+	type: city
+	str_param[]: "new_orleans"
+}
+
+

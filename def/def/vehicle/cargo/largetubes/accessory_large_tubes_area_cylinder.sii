@@ -1,0 +1,26 @@
+SiiNunit
+{
+accessory_cargo_data : .cargo
+{
+	model: "/vehicle/props/large_tubes/cargo/cargo2.pmd"
+	lods[]: "/vehicle/props/large_tubes/cargo/cargo2_lod1.pmd"
+	lods[]: "/vehicle/props/large_tubes/cargo/cargo2_lod2.pmd"
+	
+	# collision: "/vehicle/props/large_tubes/cargo/cargo.pmc"
+ 
+	variant: default
+	look: default
+
+	dynamic_cargo_data: dyn.cargo.data.large_tubes
+}
+
+dynamic_cargo_data: dyn.cargo.data.large_tubes
+{
+	type: mover
+
+	loading_sound: "/sound/world/sounds/vehicles.bank#artificial/vehicles/loading_iron_poles_1"
+
+	grab_types[]: vacuum_tel
+	grab_types[]: timber_grab
+}
+}

@@ -1,0 +1,449 @@
+SiiNunit
+{
+
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+curve_model : curve.la_4j002
+{
+	model_desc: "/model/building/house/la_stilt_base_contruction_pillars.pmd"
+	name: "la stilt base contruction pillars"
+
+	variation[]: "front | center1 : 1.0"
+	start_part[]: "start1 | start10"
+	end_part[]: "end1 | end10"
+	variation[]: "center | center2 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "back | center3 : 1.0"
+	start_part[]: "start3 | start8"
+	end_part[]: "end3 | end8"
+	variation[]: "full | center11 : 1.0"
+	start_part[]: "start11 | start13"
+	end_part[]: "end11 | end13"
+}
+
+curve_model : curve.la_4j004
+{
+	model_desc: "/model/props/country/la_molo_broken_curve.pmd"
+	name: "la molo broken curve"
+
+	variation[]: "planks | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | jnt_part1 | left1"
+	variation[]: "half | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2 | jnt_part2 | left2"
+	variation[]: "empty | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3 | jnt_part3 | left3"
+
+	dynamic_lod_desc[]: "/model/props/country/la_molo_broken_curve_lod1.pmd"
+	dynamic_lod_dist[]: 60
+	overlay[]: "start1 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center1 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center2 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center3 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "center4 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "end1 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "jnt_part1 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "left1 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0"
+	overlay[]: "start2 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "center5 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "center6 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "center7 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "center8 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "end2 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "jnt_part2 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "left2 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0"
+	overlay[]: "start3 | ovr9 : 1.0 | ovr8 : 1.0 | ovr7 : 1.0"
+	overlay[]: "center9 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0"
+	overlay[]: "center10 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0"
+	overlay[]: "center11 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0"
+	overlay[]: "center12 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0"
+	overlay[]: "end3 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0"
+	overlay[]: "jnt_part3 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0"
+	overlay[]: "left3 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0"
+}
+
+curve_model : curve.la_4j005
+{
+	model_desc: "/model/props/country/la_pedestrian_bridge_wooden.pmd"
+	name: "la pedestrian bridge wooden"
+
+	variation[]: "single | center1 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start4"
+	end_part[]: "end1 | end4 | end5 | jnt_part1 | left1 | end6"
+
+	dynamic_lod_desc[]: "/model/props/country/la_pedestrian_bridge_wooden_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "start1 | ovr1 : 1.0"
+	overlay[]: "center1 | ovr1 : 1.0"
+	overlay[]: "end1 | ovr1 : 1.0"
+	overlay[]: "start2 | ovr1 : 1.0"
+	overlay[]: "start3 | ovr1 : 1.0"
+	overlay[]: "end4 | ovr1 : 1.0"
+	overlay[]: "end5 | ovr1 : 1.0"
+	overlay[]: "start4 | ovr1 : 1.0"
+	overlay[]: "end6 | ovr1 : 1.0"
+}
+
+curve_model : curve.la_3a000
+{
+	model_desc: "/model/distribution/electricity/la_wires_water_curve_1.pmd"
+
+	variation[]: "base | center1 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2 | left90 | right90 | end3"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/distribution/electricity/la_wires_water_curve_1_lod1.pmd"
+	dynamic_lod_dist[]: 50
+	dynamic_lod_desc[]: "/model/distribution/electricity/la_wires_water_curve_1_lod2.pmd"
+	dynamic_lod_dist[]: 100
+
+	fixed_step: &42480000
+}
+
+curve_model : curve.la_2p002
+{
+	model_desc: "/model/building/logistic/la_wharf_curve.pmd"
+	name: "la wharf curve"
+
+	variation[]: "var1 | center1,center2,center1,center2,center1,center2 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | left90"
+
+	high_tess: 0
+
+	dynamic_lod_desc[]: "/model/building/logistic/la_wharf_curve_lod1.pmd"
+	dynamic_lod_dist[]: 70
+	dynamic_lod_desc[]: "/model/building/logistic/la_wharf_curve_lod2.pmd"
+	dynamic_lod_dist[]: 120
+}
+
+curve_model : curve.la_1m000
+{
+	model_desc: "/model/distribution/electricity/la_wires_water_curve_2.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start2 | start3 | start6"
+	end_part[]: "end2 | end3 | end6"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/distribution/electricity/la_wires_water_curve_2_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	fixed_step: &42c60000
+}
+
+curve_model : curve.la_54000
+{
+	model_desc: "/model/distribution/electricity/la_wires_water_curve_3.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start6"
+	end_part[]: "end1 | end2 | end3 | end6"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/distribution/electricity/la_wires_water_curve_3_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	fixed_step: &42c60000
+}
+
+curve_model : curve.la_1y001
+{
+	model_desc: "/model/barrier/water/la_pontoon_mid.pmd"
+	name: "la pontoon mid"
+
+	variation[]: "wide_10m | center1 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "wide_5m | center2 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+}
+
+curve_model : curve.la_1y002
+{
+	model_desc: "/model/props/street/la_stadium_tribunes_mid.pmd"
+	name: "la stadium tribunes mid"
+
+	variation[]: "15_rows_gate | center1 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "15_rows | center2 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "20_rows_gate | center3 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "20_rows | center4 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	no_geometry_stretch: false
+}
+
+curve_model : curve.la_3c003
+{
+	model_desc: "/model/building/distribution/la_industry_pipes_mid.pmd"
+
+	variation[]: "low | center1 : 1.0"
+	start_part[]: start1
+	end_part[]: "left1 | right1 | end1"
+	variation[]: "default | center2 : 1.0"
+	start_part[]: start2
+	end_part[]: "left2 | right2 | end2"
+	variation[]: "default_knot | center3 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "medium | center4 : 1.0"
+	start_part[]: start3
+	end_part[]: "left3 | right3 | end3"
+	variation[]: "med_underpas | center5 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "high | center6 : 1.0"
+	start_part[]: ""
+	end_part[]: "left4 | right4"
+	variation[]: "low_to_def | center7 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "def_to_med | center8 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "med_to_high | center9 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "def_to_low | center10 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "med_to_def | center11 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "high_to_med | center12 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+}
+
+curve_model : curve.la_4j000
+{
+	model_desc: "/model/building/logistic/la_bulk_storage_open.pmd"
+	name: "la bulk storage open"
+
+	variation[]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start4"
+	end_part[]: "end1 | end2 | end3 | end4"
+
+	dynamic_lod_desc[]: "/model/building/logistic/la_bulk_storage_open_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.la_4j007
+{
+	model_desc: "/model/building/logistic/la_bulk_storage_closed.pmd"
+	name: "la bulk storage closed"
+
+	variation[]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start4"
+	end_part[]: "end1 | end2 | end3 | end4"
+
+	dynamic_lod_desc[]: "/model/building/logistic/la_bulk_storage_closed_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.la_79000
+{
+	model_desc: "/model/building/industrial/la_grain_conveyor_big.pmd"
+	name: "la grain conveyor big"
+
+	variation[]: "default | center1 : 1.0 | center2 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: end1
+
+	dynamic_lod_desc[]: "/model/building/industrial/la_grain_conveyor_big_lod1.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.la_75000
+{
+	model_desc: "/model/props/street/la_parking_roof.pmd"
+
+	variation[]: "default | center1 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+
+	dynamic_lod_desc[]: "/model/props/street/la_parking_roof_lod1.pmd"
+	dynamic_lod_dist[]: 60
+	overlay[]: "center1 | ovr1 : 1.0"
+	overlay[]: "start1 | ovr1 : 1.0"
+}
+
+curve_model : curve.la_19000
+{
+	model_desc: "/model/props/garbage/la_rubble_concrete_decal.pmd"
+
+	variation[]: "straight_2m | center1, center2, center3 : 1.0 | center1, center3, center2 : 1.0 | center2, center1, center3 : 1.0 | center2, center3, center1 : 1.0 | center3, center1, center2 : 1.0 | center3, center2, center1 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "straight_4m | center4, center5, center6 : 1.0 | center4, center6, center5 : 1.0 | center5, center4, center6 : 1.0 | center5, center6, center4 : 1.0 | center6, center4, center5 : 1.0 | center6, center5, center4 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "uneven_2m | center7, center8, center9 : 1.0 | center7, center9, center8 : 1.0 | center8, center7, center9 : 1.0 | center8, center9, center7 : 1.0 | center9, center7, center8 : 1.0 | center9, center8, center7 : 1.0"
+	start_part[]: start3
+	end_part[]: end3
+	variation[]: "uneven_4m | center10, center11, center12 : 1.0 | center10, center12, center11 : 1.0 | center11, center10, center12 : 1.0 | center11, center12, center10 : 1.0 | center12, center10, center11 : 1.0 | center12, center11, center10 : 1.0"
+	start_part[]: start4
+	end_part[]: end4
+
+	dynamic_lod_desc[]: "/model/props/garbage/la_rubble_concrete_decal_lod1.pmd"
+	dynamic_lod_dist[]: 30
+	dynamic_lod_desc[]: "/model/props/garbage/la_rubble_concrete_decal_lod2.pmd"
+	dynamic_lod_dist[]: 60
+}
+
+curve_model : curve.la_19001
+{
+	model_desc: "/model/props/garbage/la_rubble_bricks_decal.pmd"
+
+	variation[]: "straight_2m | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "uneven_2m | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "straight_4m | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0 | center15 : 1.0"
+	start_part[]: start3
+	end_part[]: end3
+	variation[]: "uneven_4m | center16 : 1.0 | center17 : 1.0 | center18 : 1.0 | center19 : 1.0 | center20 : 1.0 | center21 : 1.0 | center22 : 1.0"
+	start_part[]: start4
+	end_part[]: end4
+
+	dynamic_lod_desc[]: "/model/props/garbage/la_rubble_bricks_decal_lod1.pmd"
+	dynamic_lod_dist[]: 30
+	overlay[]: "center9 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center10 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center11 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center12 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center13 | ovr13 : 1.0 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0"
+	overlay[]: "center14 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center15 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center16 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center17 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center18 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center19 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center20 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center21 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+	overlay[]: "center22 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0 | ovr9 : 1.0 | ovr10 : 1.0 | ovr11 : 1.0 | ovr12 : 1.0 | ovr13 : 1.0"
+}
+
+curve_model : curve.la_15000
+{
+	model_desc: "/model/props/la_cemetery_tombs_curve_mid.pmd"
+
+	variation[]: "small1 | center222,center213,center244,center253,center263,center231,center251,center234,center211,center214,center233,center254,center252,center262,center243,center242,center212,center241,center224,center221,center232,center223,center225,center261,center264 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "small2 | center254,center234,center251,center221,center252,center222,center211,center233,center262,center261,center253,center213,center231,center232,center264,center243,center212,center263,center225,center224,center223,center242,center241,center214,center244 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "small3 | center223,center254,center264,center251,center225,center243,center261,center252,center221,center224,center214,center262,center232,center212,center231,center233,center234,center253,center241,center213,center222,center244,center242,center263,center211 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "medium1 | center323,center314,center334,center352,center312,center373,center374,center333,center363,center341,center354,center351,center313,center371,center324,center342,center372,center321,center332,center343,center362,center361,center331,center353,center311,center364,center322,center344 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "medium2 | center362,center343,center373,center311,center314,center371,center361,center374,center341,center353,center321,center344,center312,center324,center354,center322,center352,center351,center364,center333,center323,center372,center313,center331,center334,center332,center363,center342 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "mixed1 | center322,center351,center333,center362,center233,center214,center311,center332,center354,center213,center254,center221,center222,center253,center372,center342,center243,center223,center331,center242,center371,center211,center263,center343,center324,center374,center353,center241,center312,center234,center212,center264,center373,center323,center361,center225,center231,center262,center261,center313,center252,center232,center251,center352,center334,center244,center314,center224,center363,center341,center344,center321,center364 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "mixed2 | center332,center354,center342,center363,center322,center264,center242,center323,center253,center361,center343,center374,center262,center312,center352,center372,center233,center341,center324,center222,center232,center333,center224,center344,center214,center211,center254,center313,center252,center223,center351,center212,center225,center234,center321,center244,center331,center241,center213,center243,center334,center362,center364,center373,center231,center263,center221,center314,center251,center353,center311,center371,center261 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "tombstones1 | center422,center413,center444,center453,center463,center431,center451,center434,center411,center414,center433,center454,center452,center462,center443,center442,center412,center441,center424,center421,center432,center423,center461,center464 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "tombstones2 | center454,center434,center451,center421,center452,center422,center411,center433,center462,center461,center453,center413,center431,center432,center464,center443,center463,center412,center423,center424,center442,center441,center414,center444 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "tombstones3 | center423,center454,center464,center451,center443,center461,center452,center421,center424,center462,center414,center432,center412,center431,center433,center434,center453,center413,center441,center422,center444,center442,center463,center411 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "graves1 | center507,center509,center502,center506,center503,center508,center515,center505,center513,center504,center511,center512,center514,center501,center510 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "graves2 | center514,center504,center513,center515,center511,center507,center503,center506,center508,center502,center505,center509,center512,center510,center501 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "graves3 | center501,center512,center508,center510,center505,center503,center514,center509,center502,center515,center506,center511,center504,center507,center513 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/props/la_cemetery_tombs_curve_mid_lod1.pmd"
+	dynamic_lod_dist[]: 200
+
+	high_tess: 0
+
+	fixed_step: &40200000
+}
+
+curve_model : curve.la_15001
+{
+	model_desc: "/model/props/la_cemetery_tombs_wall_curve_mid.pmd"
+
+	variation[]: "v1 | center1111,center1112,center1113,center1114 : 1.0"
+	start_part[]: start1110
+	end_part[]: end1110
+	variation[]: "v2 | center1121,center1122,center1123,center1124 : 1.0"
+	start_part[]: start1120
+	end_part[]: end1120
+	variation[]: "v3 | center1131,center1132,center1133,center1134 : 1.0"
+	start_part[]: start1130
+	end_part[]: end1130
+	variation[]: "v4 | center1141,center1142,center1143,center1144 : 1.0"
+	start_part[]: start1140
+	end_part[]: end1140
+
+	dynamic_lod_desc[]: "/model/props/la_cemetery_tombs_wall_curve_mid_lod1.pmd"
+	dynamic_lod_dist[]: 200
+
+	high_tess: 0
+}
+
+}

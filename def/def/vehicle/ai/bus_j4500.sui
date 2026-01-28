@@ -1,0 +1,41 @@
+traffic_vehicle : traffic.bus_j4500
+{
+	accessories[]: .bus_j4500.chassis
+	accessories[]: .bus_j4500.fwheel
+	accessories[]: .bus_j4500.rwheel
+	accessories[]: .bus_j4500.rwheel2
+
+	max_speed: 113
+
+	tags[]: bus
+	tags[]: passenger
+
+	vehicle_mass: 20000
+	engine_power: 305
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .bus_j4500.chassis
+{
+	data_path: "/def/vehicle/ai/bus_j4500/chassis.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .bus_j4500.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}

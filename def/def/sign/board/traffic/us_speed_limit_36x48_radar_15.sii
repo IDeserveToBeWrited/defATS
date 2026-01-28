@@ -1,0 +1,86 @@
+SiiNunit
+{
+sign_board_template : _nameless.5.246e.2ee0 {
+ board_name: "us speed limit 36x48 radar 15"
+ width: &3f47ae14
+ height: &3f147ae1
+ model_name: ""
+ items: 2
+ items[0]: _nameless.5.324d.e3c0
+ items[1]: _nameless.5.324d.fd40
+ dynamic_attributes: 2
+ dynamic_attributes[0]: _nameless.5.86dd.c160
+ dynamic_attributes[1]: _nameless.5.86dd.a0e0
+}
+
+sign_template_text : _nameless.5.324d.e3c0 {
+ text: 30
+ font_face: "/font/lcd_italic.font"
+ font_size: &3f147ae1
+ text_halign: center
+ text_valign: top
+ font_color: 1544959
+ font_opacity: 1
+ line_spacing: &3e4ccccd
+ letter_spacing: 0
+ id: 4094951422
+ area_name: ""
+ area_idx: nil
+ coords_l: 0
+ coords_r: &3f47ae14
+ coords_t: &3f0afef6
+ coords_b: &3b418480
+ z_order: 1
+ tag: ""
+}
+
+sign_template_text : _nameless.5.324d.fd40 {
+ text: "SLOW<br>DOWN"
+ font_face: "/font/lcd_italic.font"
+ font_size: &3e8a3d71
+ text_halign: center
+ text_valign: center
+ font_color: 255
+ font_opacity: 1
+ line_spacing: &bca3d70a
+ letter_spacing: 0
+ id: 286654464
+ area_name: ""
+ area_idx: nil
+ coords_l: 0
+ coords_r: &3f47ae14
+ coords_t: &3f0b6f2a
+ coords_b: 0
+ z_order: 2
+ tag: ""
+}
+
+sign_radar_attribute : _nameless.5.86dd.c160 {
+ max_distance: 120
+ detection_angle: 60
+ min_speed: 21
+ max_speed: 21
+ inactive_text: ""
+ min_speed_text: ""
+ max_speed_text: "SLOW|DOWN"
+ blink_interval: 1
+ unit: mph
+ item_id: 286654464
+ attr_name: text
+}
+
+sign_radar_attribute : _nameless.5.86dd.a0e0 {
+ max_distance: 120
+ detection_angle: 60
+ min_speed: 1
+ max_speed: 20
+ inactive_text: ""
+ min_speed_text: ""
+ max_speed_text: ""
+ blink_interval: -1
+ unit: mph
+ item_id: 4094951422
+ attr_name: text
+}
+
+}

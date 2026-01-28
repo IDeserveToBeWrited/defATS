@@ -1,0 +1,91 @@
+traffic_trailer : traffic.trailer.cartrans1
+{
+	accessories[]: .cartranst_1.tchassis
+	accessories[]: .cartranst_1.trwheel0
+	accessories[]: .cartranst_1.trwheel1
+	accessories[]: .cartranst_1.body
+	accessories[]: .cartranst_1.paintjob
+	
+	spawn_ratio: 0.1
+	
+	cargo_mass: 10886
+
+	tags[]: low
+	tags[]: carrier
+	tags[]: carr_sports
+	tags[]: medium
+
+	variant[]: .traffic.trailer.cartrans2
+}
+
+vehicle_accessory: .cartranst_1.tchassis
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .cartranst_1.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_wheel_accessory: .cartranst_1.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_accessory: .cartranst_1.body
+{
+	data_path: "/def/vehicle/trailer/car_transporter/accessory/body_cars_small.sii"
+}
+
+vehicle_paint_job_accessory: .cartranst_1.paintjob
+{
+    	data_path: "/def/vehicle/trailer/car_transporter/company_paint_job/black.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.cartrans2
+{
+	accessories[]: .cartranst_2.tchassis
+	accessories[]: .cartranst_2.trwheel0
+	accessories[]: .cartranst_2.trwheel1
+	accessories[]: .cartranst_2.body
+	accessories[]: .cartranst_2.paintjob
+
+	cargo_mass: 8000
+
+	tags[]: low
+	tags[]: carrier
+	tags[]: carr_sports
+	tags[]: medium
+}
+
+vehicle_accessory: .cartranst_2.tchassis
+{
+    	data_path: "/def/vehicle/trailer/van_transporter/chassis.sii"
+}
+
+vehicle_wheel_accessory: .cartranst_2.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_wheel_accessory: .cartranst_2.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single_255_70_r_22_5.sii"
+}
+
+vehicle_accessory: .cartranst_2.body
+{
+	data_path: "/def/vehicle/trailer/van_transporter/accessory/body_cars_pickup.sii"
+}
+
+vehicle_paint_job_accessory: .cartranst_2.paintjob
+{
+    	data_path: "/def/vehicle/trailer/van_transporter/company_paint_job/red.sii"
+}

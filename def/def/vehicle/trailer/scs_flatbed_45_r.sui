@@ -5,6 +5,7 @@ trailer : trailer.scs_flat45r
 	accessories[]: .scs_flat45r.chassis
 	accessories[]: .scs_flat45r.rwheel
 	accessories[]: .scs_flat45r.rwheel2
+	accessories[]: .scs_flat45r.body
 }
 
 vehicle_accessory: .scs_flat45r.chassis
@@ -22,4 +23,58 @@ vehicle_wheel_accessory: .scs_flat45r.rwheel2
 {
 	offset: 2
 	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .scs_flat45r.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_45.sii"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+trailer : trailer.scs_flat45os
+{
+	trailer_definition: trailer_def.scs.flatbed.single_45r.flatbed
+	oversize: true
+
+	accessories[]: .scs_flat45os.chassis
+	accessories[]: .scs_flat45os.rwheel
+	accessories[]: .scs_flat45os.rwheel2
+	accessories[]: .scs_flat45os.os_sign
+	accessories[]: .scs_flat45os.flag_r_r
+	accessories[]: .scs_flat45os.flag_r_l
+	accessories[]: .scs_flat45os.body
+}
+
+vehicle_accessory: .scs_flat45os.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed45_r.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat45os.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat45os.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_addon_accessory: .scs_flat45os.os_sign
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/r_banner_oversize.sii"
+}
+
+vehicle_addon_accessory: .scs_flat45os.flag_r_r
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/flag_r_r.sii"
+}
+
+vehicle_addon_accessory: .scs_flat45os.flag_r_l
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/flag_r_l.sii"
+}
+vehicle_accessory: .scs_flat45os.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_45.sii"
 }

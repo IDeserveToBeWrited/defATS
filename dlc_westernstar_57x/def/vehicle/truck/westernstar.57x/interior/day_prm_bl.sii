@@ -1,0 +1,49 @@
+SiiNunit
+{
+accessory_interior_data	: day_prm_bl.westernstar.57x.interior
+{
+	name: "Premium Charcoal Black"
+	price: 22960
+	unlock: 10
+	icon: "truck/westernstar_57x/accessory/int_premium_bl"
+	part_type: factory
+
+	model: "/vehicle/truck/westernstar_57x/interior/model/day.pmd"
+	animated_model: "/vehicle/truck/westernstar_57x/interior/animation/animation.pmd"
+	collision: "/vehicle/truck/westernstar_57x/interior/model/day.pmc"
+	look: Premium_bl
+	variant: Premium_bl
+
+	ext_model: "/vehicle/truck/westernstar_57x/interior/external/external_day.pmd"
+	ext_variant: premium
+	ext_look: Premium_bl
+
+	defaults[]: "/def/vehicle/truck/westernstar.57x/accessory/steering_w/premium.sii"
+
+	show_chassis_rear: true
+
+	suitable_for[]: "day.westernstar.57x.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_day.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .weststar57x.r.pane.front
+	glass_panes[]: .weststar57x.r.pane.close
+	glass_panes[]: .weststar57x.r.pane.far
+	glass_panes[]: .weststar57x.r.pane.back_day
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_day.sui"
+@include "sound_effects_units.sui"
+}

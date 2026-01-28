@@ -1,24 +1,29 @@
 SiiNunit
 {
-sign_board_template : _nameless.db.9780 {
+sign_board_template : _nameless.1.a4ac.7b60 {
  board_name: "us led speed limit 30"
  width: &40133333
  height: 2
- items: 3
- items[0]: _nameless.4a3.7300
- items[1]: _nameless.4a3.8380
- items[2]: _nameless.4a3.73c0
- dynamic_attributes: 1
- dynamic_attributes[0]: _nameless.49e.8290
+ model_name: ""
+ items: 4
+ items[0]: _nameless.1.e6e5.4a50
+ items[1]: _nameless.1.e6e5.4510
+ items[2]: _nameless.1.e6e5.45d0
+ items[3]: _nameless.1.e6e5.3f10
+ dynamic_attributes: 4
+ dynamic_attributes[0]: _nameless.1.a4ac.8a90
+ dynamic_attributes[1]: _nameless.1.a210.c870
+ dynamic_attributes[2]: _nameless.1.a210.d1f0
+ dynamic_attributes[3]: _nameless.1.a210.d170
 }
 
-sign_template_text : _nameless.4a3.7300 {
+sign_template_text : _nameless.1.e6e5.4a50 {
  text: SPEED
- font_face: "/font/sign/big.font"
+ font_face: "/font/sign/dot_matrix.font"
  font_size: &3f000000
  text_halign: center
  text_valign: center
- font_color: 1544959
+ font_color: 16777215
  font_opacity: 1
  line_spacing: &3e4ccccd
  letter_spacing: 0
@@ -29,17 +34,17 @@ sign_template_text : _nameless.4a3.7300 {
  coords_r: &40133333
  coords_t: &3ff55ca8
  coords_b: &3fb58895
- z_order: 1
+ z_order: 2
  tag: ""
 }
 
-sign_template_text : _nameless.4a3.8380 {
+sign_template_text : _nameless.1.e6e5.4510 {
  text: LIMIT
- font_face: "/font/sign/big.font"
+ font_face: "/font/sign/dot_matrix.font"
  font_size: &3f000000
  text_halign: center
  text_valign: center
- font_color: 1544959
+ font_color: 16777215
  font_opacity: 1
  line_spacing: &3e4ccccd
  letter_spacing: 0
@@ -50,18 +55,18 @@ sign_template_text : _nameless.4a3.8380 {
  coords_r: &40133333
  coords_t: &3fb530bb
  coords_b: &3f6ab94f
- z_order: 2
+ z_order: 3
  tag: ""
 }
 
-sign_template_text : _nameless.4a3.73c0 {
+sign_template_text : _nameless.1.e6e5.45d0 {
  text: 30
- font_face: "/font/sign/big.font"
+ font_face: "/font/sign/dot_matrix.font"
  font_size: 1
  text_halign: center
  text_valign: center
- font_color: 1544959
- font_opacity: 1
+ font_color: 16777215
+ font_opacity: 0
  line_spacing: &3e4ccccd
  letter_spacing: 0
  id: 559022080
@@ -71,11 +76,39 @@ sign_template_text : _nameless.4a3.73c0 {
  coords_r: &40133333
  coords_t: &3f69ed7e
  coords_b: &3da3d700
- z_order: 3
+ z_order: 1
  tag: ""
 }
 
-sign_speed_limit_attribute : _nameless.49e.8290 {
+sign_template_text : _nameless.1.e6e5.3f10 {
+ text: 30
+ font_face: "/font/sign/dot_matrix.font"
+ font_size: 1
+ text_halign: center
+ text_valign: center
+ font_color: 16777215
+ font_opacity: 1
+ line_spacing: &3e4ccccd
+ letter_spacing: 0
+ id: 3492282366
+ area_name: ""
+ area_idx: nil
+ coords_l: &34c00000
+ coords_r: &40133333
+ coords_t: &3f69ed7e
+ coords_b: &3da3d700
+ z_order: 4
+ tag: ""
+}
+
+sign_speed_limit_attribute : _nameless.1.a4ac.8a90 {
+ limits: 5
+ limits[0]: 55
+ limits[1]: 50
+ limits[2]: 55
+ limits[3]: 50
+ limits[4]: 55
+ base_limit: 60
  intervals: 10
  intervals[0]: 300
  intervals[1]: 420
@@ -87,14 +120,73 @@ sign_speed_limit_attribute : _nameless.49e.8290 {
  intervals[7]: 1140
  intervals[8]: 1140
  intervals[9]: 1260
- limits: 5
- limits[0]: 50
- limits[1]: 40
- limits[2]: 50
- limits[3]: 40
- limits[4]: 50
- base_limit: 60
  item_id: 559022080
+ attr_name: text
+}
+
+sign_timed_text_attribute : _nameless.1.a210.c870 {
+ texts: 7
+ texts[0]: ""
+ texts[1]: 55
+ texts[2]: 50
+ texts[3]: 55
+ texts[4]: 50
+ texts[5]: 55
+ texts[6]: ""
+ intervals: 14
+ intervals[0]: 0
+ intervals[1]: 300
+ intervals[2]: 300
+ intervals[3]: 420
+ intervals[4]: 420
+ intervals[5]: 540
+ intervals[6]: 540
+ intervals[7]: 1020
+ intervals[8]: 1020
+ intervals[9]: 1140
+ intervals[10]: 1140
+ intervals[11]: 1260
+ intervals[12]: 1260
+ intervals[13]: 1439
+ item_id: 3492282366
+ attr_name: text
+}
+
+sign_timed_text_attribute : _nameless.1.a210.d1f0 {
+ texts: 4
+ texts[0]: ""
+ texts[1]: LIMIT
+ texts[2]: LIMIT
+ texts[3]: ""
+ intervals: 8
+ intervals[0]: 0
+ intervals[1]: 300
+ intervals[2]: 300
+ intervals[3]: 540
+ intervals[4]: 540
+ intervals[5]: 1260
+ intervals[6]: 1260
+ intervals[7]: 1439
+ item_id: 3736600574
+ attr_name: text
+}
+
+sign_timed_text_attribute : _nameless.1.a210.d170 {
+ texts: 4
+ texts[0]: ""
+ texts[1]: SPEED
+ texts[2]: SPEED
+ texts[3]: ""
+ intervals: 8
+ intervals[0]: 0
+ intervals[1]: 300
+ intervals[2]: 300
+ intervals[3]: 540
+ intervals[4]: 540
+ intervals[5]: 1260
+ intervals[6]: 1260
+ intervals[7]: 1439
+ item_id: 1139015680
  attr_name: text
 }
 

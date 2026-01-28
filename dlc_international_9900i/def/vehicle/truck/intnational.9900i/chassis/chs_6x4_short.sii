@@ -1,0 +1,53 @@
+SiiNunit
+{
+accessory_chassis_data : chs_6x4_s.intnational.9900i.chassis
+{
+	name: "Short 6x4"
+	price: 21300
+	unlock: 0
+	info[]: "6x4"
+	info[]: "100/100 @@gal@@"
+	icon: "international_9900i/chs_6x4_s"
+	part_type: factory
+
+	model: "/vehicle/truck/intnational_9900i/chassis/chs_6x4_s.pmd"
+	collision: "/vehicle/truck/intnational_9900i/chassis/chs_6x4_s.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/intnational_9900i/ui_shadow_s.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/intnational_9900i/ui_shadow/ui_shadow_s.pmd"
+
+	tank_size: 909
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: true
+
+	kerb_weight[]: 4645	# 10220lb
+	kerb_weight[]: 1805	# 3970lb
+	kerb_weight[]: 1805	# 3970lb
+
+	defaults[]: "/def/vehicle/truck/intnational.9900i/cabin/day.sii"
+	defaults[]: "/def/vehicle/truck/intnational.9900i/accessory/bumper/standard.sii"
+	defaults[]: "/def/vehicle/truck/intnational.9900i/accessory/sideskirt/short_base.sii"
+	defaults[]: "/def/vehicle/truck/intnational.9900i/accessory/tank/short_alu_200.sii"
+	defaults[]: "/def/vehicle/truck/intnational.9900i/accessory/trlr_cables/stock.sii"
+
+	conflict_with[]: "s51.intnational.9900i.cabin"
+	conflict_with[]: "s72.intnational.9900i.cabin"
+
+	lamp_setup: "/def/vehicle/truck/intnational.9900i/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

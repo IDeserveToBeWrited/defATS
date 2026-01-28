@@ -1,0 +1,139 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Heavy Cargo --
+
+# Deliver first Heavy Cargo Pack job.
+
+achievement_delivery_log_data : .achievement.hc_firstjob
+{
+	event_name: job_done
+	consecutive: true # Prevent checking previous records
+	cargos[]: asph_miller
+	cargos[]: coil
+	cargos[]: cott_harvest
+	cargos[]: dozer
+	cargos[]: lift_truck
+	cargos[]: lift_truck_s
+	cargos[]: mob_crusher
+	cargos[]: mob_screener
+	cargos[]: mob_stacker
+	cargos[]: mobile_crane
+	cargos[]: scraper
+	cargos[]: tractor_c
+	cargos[]: transformer
+
+	achievement_name: hc_firstjob
+
+	steam_id: hc_firstjob
+}
+
+achievement_actor_data : .achievement.hc_weigh170k
+{
+	event_name: use_weigh
+	min_vehicle_mass: 79378.7 # 175 000 lb (changed from 170k after owned lowboys and their proper mass)
+
+	achievement_name: hc_weigh170k
+
+	steam_id: hc_weigh170k
+}
+
+# Complete excellent delivery of a cargo from the Heavy Cargo Pack which is at least 1,000 miles long.
+
+achievement_delivery_log_data : .achievement.hc_perf_job
+{
+	event_name: job_done
+	consecutive: true # Prevent checking previous records
+	damage_max: 0.0
+	late: false
+	distance_min: 1609 # km = 1000 mi
+	cargos[]: asph_miller
+	cargos[]: coil
+	cargos[]: cott_harvest
+	cargos[]: dozer
+	cargos[]: lift_truck
+	cargos[]: lift_truck_s
+	cargos[]: mob_crusher
+	cargos[]: mob_screener
+	cargos[]: mob_stacker
+	cargos[]: mobile_crane
+	cargos[]: scraper
+	cargos[]: tractor_c
+	cargos[]: transformer
+
+	achievement_name: hc_perf_job
+
+	steam_id: hc_perf_job
+}
+
+# Earn $100,000 on 5 consecutive Heavy Cargo Pack deliveries.
+
+achievement_delivery_log_data : .achievement.hc_100k5jobs
+{
+	event_name: job_done
+	consecutive: true
+	target: 5
+	total_income_min: 100000 # $100K
+	cargos[]: asph_miller
+	cargos[]: coil
+	cargos[]: cott_harvest
+	cargos[]: dozer
+	cargos[]: lift_truck
+	cargos[]: lift_truck_s
+	cargos[]: mob_crusher
+	cargos[]: mob_screener
+	cargos[]: mob_stacker
+	cargos[]: mobile_crane
+	cargos[]: scraper
+	cargos[]: tractor_c
+	cargos[]: transformer
+
+	achievement_name: hc_100k5jobs
+
+	steam_id: hc_100k5jobs
+}
+
+# Complete a delivery of at least 8 cargoes from the Heavy Cargo Pack.
+
+achievement_each_cargo_data : .achievement.hc_allcargos
+{
+	event_name: job_done
+	initial_check: true
+	target: 8
+	cargos[]: asph_miller
+	cargos[]: coil
+	cargos[]: cott_harvest
+	cargos[]: dozer
+	cargos[]: lift_truck
+	cargos[]: lift_truck_s
+	cargos[]: mob_crusher
+	cargos[]: mob_screener
+	cargos[]: mob_stacker
+	cargos[]: mobile_crane
+	cargos[]: scraper
+	cargos[]: tractor_c
+	cargos[]: transformer
+
+	achievement_name: hc_allcargos
+
+	steam_progress_id: "hc_allcargos-progress"
+	steam_id: hc_allcargos
+}
+
+}

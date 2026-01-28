@@ -1,0 +1,497 @@
+SiiNunit
+{
+
+curve_model : curve.ia_4r000
+{
+	model_desc: "/model/distribution/electricity/ia_power_wires.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "var2 | center2 : 1.0"
+	start_part[]: "start3 | start4"
+	end_part[]: "end3 | end4"
+	fixed_inner_start[]: ins2
+	fixed_inner_end[]: ine2
+
+	dynamic_lod_desc[]: "/model/distribution/electricity/ia_power_wires_lod1.pmd"
+	dynamic_lod_dist[]: 40
+
+	fixed_step: &42960000
+}
+
+curve_model : curve.ia_4r001
+{
+	model_desc: "/model/distribution/electricity/ia_power_wires_double.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/distribution/electricity/ia_power_wires_double_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	fixed_step: &42960000
+}
+
+curve_model : curve.ia_01000
+{
+	model_desc: "/model/railing/railroad/ia_trolley_curve.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "var2 | center2 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	fixed_inner_start[]: ins2
+	fixed_inner_end[]: ine2
+	variation[]: "var3 | center3 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+	fixed_inner_start[]: ins3
+	fixed_inner_end[]: ine3
+	variation[]: "var4 | center4 : 1.0"
+	start_part[]: start3
+	end_part[]: end3
+	fixed_inner_start[]: ins4
+	fixed_inner_end[]: ine4
+
+	dynamic_lod_desc[]: "/model/railing/railroad/ia_trolley_curve_lod1.pmd"
+	dynamic_lod_dist[]: 25
+	dynamic_lod_desc[]: "/model/railing/railroad/ia_trolley_curve_lod2.pmd"
+	dynamic_lod_dist[]: 50
+
+	fixed_step: &41c80000
+}
+
+curve_model : curve.ia_2p001
+{
+	model_desc: "/model/building/logistic/ia_logistic_structure_set.pmd"
+	name: "ia logistic structure set"
+
+	variation[]: "entrance1 | center1, center3, center4, center2, center3 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "entrance2 | center3, center1, center8, center2, center3 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "wall | center1 : 1.0 | center2 : 1.0 | center11 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "garage1 | center6, center6, center2, center6, center6, center1 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "garage2 | center1, center9, center2, center9, center1, center5 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "shop | center7, center7, center13, center4, center15 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "window2 | center3, center3, center3 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "window | center10 : 1.0 | center12 : 1.0"
+	start_part[]: start1
+	end_part[]: "end1 | left90 | right90"
+
+	dynamic_lod_desc[]: "/model/building/logistic/ia_logistic_structure_set_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "center11 | ovr1 : 1.0 | ovr4 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr7 : 1.0 | ovr8 : 1.0"
+	overlay[]: "center1 | ovr8 : 1.0 | ovr7 : 1.0"
+}
+
+curve_model : curve.ia_4j001
+{
+	model_desc: "/model/building/industrial/ia_silo_half_structure_set.pmd"
+	name: "ia silo half structure set"
+
+	variation[]: "dirty | center1 : 1.0 | center2 : 1.0"
+	start_part[]: "start1 | left1"
+	end_part[]: "end1 | right1 | right2"
+	no_geometry_stretch: true
+}
+
+curve_model : curve.ia_54000
+{
+	model_desc: "/model/building/industrial/ar_factory_structure_set_mid_high.pmd"
+
+	variation[]: "var1_high | center11,center12,center13 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | left1"
+	variation[]: "var2_high | center21,center22,center23 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2 | left2"
+	variation[]: "var3_high | center31,center32,center33 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3 | left3"
+	variation[]: "var4_high | center41 : 1.0 | center42 : 1.0 | center43 : 1.0"
+	start_part[]: "start4"
+	end_part[]: "end4 | left4"
+
+	dynamic_lod_desc[]: "/model/building/industrial/ar_factory_structure_set_mid_high_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.ia_54001
+{
+	model_desc: "/model/building/industrial/ar_factory_structure_set_mid_tower.pmd"
+
+	variation[]: "var2_tower | center21,center22,center23 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2 | left2"
+	variation[]: "var3_tower | center31,center32,center31 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3 | left3"
+	variation[]: "var4_tower | center41 : 1.0 | center42 : 0.7 | center43 : 0.7"
+	start_part[]: "start4"
+	end_part[]: "end4 | left4"
+	variation[]: "var5_tower | center51,center52,center53 : 1.0"
+	start_part[]: "start5"
+	end_part[]: "end5 | left5"
+
+	dynamic_lod_desc[]: "/model/building/industrial/ar_factory_structure_set_mid_tower_lod1.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.ia_5e000
+{
+	model_desc: "/model/props/country/ia_boat_chain.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start4 | start5"
+	end_part[]: "end1 | end2 | end3 | end4 | end5"
+
+	dynamic_lod_desc[]: "/model/props/country/ia_boat_chain_lod1.pmd"
+	dynamic_lod_dist[]: 15
+}
+
+curve_model : curve.ia_5e002
+{
+	model_desc: "/model/props/country/ia_boat_rope.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1 | start2 | start3 | start4 | start5 | start6"
+	end_part[]: "end1 | end2 | end3 | end4 | end5 | end6"
+
+	dynamic_lod_desc[]: "/model/props/country/ia_boat_rope_lod1.pmd"
+	dynamic_lod_dist[]: 15
+	dynamic_lod_desc[]: "/model/props/country/ia_boat_rope_lod2.pmd"
+	dynamic_lod_dist[]: 45
+}
+
+curve_model : curve.ia_2p000
+{
+	model_desc: "/model/building/logistic/ia_warehouse_structure_set.pmd"
+
+	variation[]: "low | center1, center2 : 1.0 | center11, center22 : 1.0"
+	start_part[]: start1
+	end_part[]: "end2 | left90b"
+	variation[]: "high | center3, center4 : 1.0 | center33, center44 : 1.0"
+	start_part[]: start2
+	end_part[]: "end1 | left90"
+	variation[]: "shop_low | center7, center8 : 1.0 | center77, center88 : 1.0"
+	start_part[]: start1
+	end_part[]: "end2 | left90b"
+	variation[]: "shop_high | center5, center6 : 1.0 | center55, center66 : 1.0"
+	start_part[]: start2
+	end_part[]: "end1 | left90a"
+	variation[]: "win_high | center9 : 1.0 | center10 : 1.0 | center99, center100 : 1.0"
+	start_part[]: start2
+	end_part[]: "left90a | end1"
+
+	dynamic_lod_desc[]: "/model/building/logistic/ia_warehouse_structure_set_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.ia_54002
+{
+	model_desc: "/model/props/agriculture/ia_tractor_tires_curve_far.pmd"
+
+	variation[]: "var1 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0"
+	start_part[]: start11
+	end_part[]: end11
+	variation[]: "var2 | center21 : 1.0 | center22 : 1.0 | center23 : 1.0"
+	start_part[]: start21
+	end_part[]: end21
+}
+
+curve_model : curve.ia_3y000
+{
+	model_desc: "/model/building/house/ia_suburb_house_single_far_2.pmd"
+
+	variation[]: "mix | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center14 : 1.0 | center13 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "front | center7 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "side | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center14 : 1.0 | center8 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "front_brick | center9 : 1.0 | center13 : 1.0 | center7 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "side_brick | center2 : 1.0 | center3 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "side_subtle | center5 : 1.0 | center4 : 1.0 | center2 : 1.0 | center8 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "front_subtle | center11 : 1.0 | center7 : 1.0 | center9 : 1.0 | center12 : 1.0 | center10 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "brick_mix | center2 : 1.0 | center3 : 1.0 | center9 : 1.0 | center7 : 1.0 | center13 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+
+	fixed_step: &41a00000
+}
+
+curve_model : curve.ia_3y002
+{
+	model_desc: "/model/building/house/ia_suburb_house_single_far_3.pmd"
+
+	variation[]: "mix | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "front | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "side | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "front_brick | center8 : 1.0 | center9 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "side_brick | center2 : 1.0 | center3 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "side_subtle | center5 : 1.0 | center4 : 1.0 | center2 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "front_subtle | center11 : 1.0 | center7 : 1.0 | center9 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "brick_mix | center2 : 1.0 | center3 : 1.0 | center8 : 1.0 | center9 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+
+	fixed_step: &41a00000
+}
+
+curve_model : curve.ia_6l000
+{
+	model_desc: "/model/building/house/ia_town_house_single_mid_curve.pmd"
+
+	variation[]: "brick1 | center1, center2, center3, center4 : 1.0 | center2, center4, center1, center3 : 1.0 | center1, center3, center2, center4 : 1.0 | center2, center1, center4, center3 : 1.0"
+	start_part[]: ins1
+	end_part[]: ins1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "brick2 | center5, center4, center6, center2, center1 : 1.0 | center4, center2, center5, center1, center6 : 1.0 | center5, center6, center4, center2, center1 : 1.0 | center2, center4, center5, center1, center6 : 1.0"
+	start_part[]: ins1
+	end_part[]: ins1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "plaster | center7, center8, center9, center10 : 1.0 | center9, center7, center10, center8 : 1.0 | center7, center9, center8, center10 : 1.0 | center9, center10, center7, center8 : 1.0"
+	start_part[]: ins1
+	end_part[]: ins1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0"
+	start_part[]: ins1
+	end_part[]: ins1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/building/house/ia_town_house_single_mid_curve_lod1.pmd"
+	dynamic_lod_dist[]: 135
+
+	fixed_step: &42480000
+	no_geometry_stretch: true
+}
+
+curve_model : curve.ia_5p000
+{
+	model_desc: "/model/props/food/ia_pile_with_feed_01_decal.pmd"
+
+	variation[]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+}
+
+curve_model : curve.ia_5p001
+{
+	model_desc: "/model/barrier/metal/ia_fence_with_feed.pmd"
+
+	variation[]: "vegetables | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "hay | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+}
+
+curve_model : curve.ia_54005
+{
+	model_desc: "/model/building/house/ia_suburb_house_single_mid_curve.pmd"
+
+	variation[]: "front_wood | center43, center11, center12, center13, center14, center15, center44 : 1.0 | center11, center15, center14, center13, center12, center43, center44 : 1.0 | center13, center11, center15, center43, center14, center12, center44 : 1.0"
+	start_part[]: ins
+	end_part[]: ine
+	fixed_inner_start[]: ins
+	fixed_inner_end[]: ine
+	variation[]: "front_brick | center21 : 1.0 | center22 : 1.0"
+	start_part[]: ins
+	end_part[]: ine
+	fixed_inner_start[]: ins
+	fixed_inner_end[]: ine
+	variation[]: "side_wood | center31, center32, center33, center34 : 1.0 | center32, center31, center34, center33 : 1.0"
+	start_part[]: ins
+	end_part[]: ine
+	fixed_inner_start[]: ins
+	fixed_inner_end[]: ine
+	variation[]: "side_brick | center41 : 1.0 | center42 : 1.0"
+	start_part[]: ins
+	end_part[]: ine
+	fixed_inner_start[]: ins
+	fixed_inner_end[]: ine
+	variation[]: "random | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0 | center15 : 1.0 | center21 : 1.0 | center22 : 1.0 | center31 : 1.0 | center32 : 1.0 | center33 : 1.0 | center34 : 1.0 | center41 : 1.0 | center42 : 1.0 | center43 : 1.0 | center44 : 1.0"
+	start_part[]: ins
+	end_part[]: ine
+	fixed_inner_start[]: ins
+	fixed_inner_end[]: ine
+	variation[]: "front_porch | center43 : 1.0 | center44 : 1.0 | center22 : 1.0 | center13 : 1.0"
+	start_part[]: ins
+	end_part[]: ine
+	fixed_inner_start[]: ine
+	fixed_inner_end[]: ine
+
+	dynamic_lod_desc[]: "/model/building/house/ia_suburb_house_single_mid_curve_lod1.pmd"
+	dynamic_lod_dist[]: 110
+
+	fixed_step: &42200000
+	no_geometry_stretch: true
+}
+
+curve_model : curve.ia_3y003
+{
+	model_desc: "/model/props/industrial/ia_aluminium_factory_props_plane.pmd"
+
+	variation[]: "pipes | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "metal_rolls | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "boxes | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "plates | center12 : 1.0 | center13 : 1.0 | center14 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "mix | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+
+	fixed_step: &41100000
+}
+
+curve_model : curve.ia_3y005
+{
+	model_desc: "/model/building/house/ia_town_house_single_mid_curve_plane.pmd"
+
+	variation[]: "brick1 | center8 : 1.0 | center3 : 1.0 | center7 : 1.0 | center2 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "brick2 | center9 : 1.0 | center12 : 1.0 | center2 : 1.0 | center1 : 1.0 | center3 : 1.0 | center8 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "plaster | center5 : 1.0 | center6 : 1.0 | center10 : 1.0 | center11 : 1.0 | center4 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+	variation[]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0 | center12 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	fixed_inner_start[]: ""
+	fixed_inner_end[]: ""
+
+	fixed_step: &41c80000
+}
+
+curve_model : curve.ia_50000
+{
+	model_desc: "/prefab/depots/ethanol_factory/ia_distillers_corn_pile_curve_mid.pmd"
+
+	variation[]: "full | center1, center2, center3 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "empty | center31 : 1.0"
+	start_part[]: "start3 | start4 | start5"
+	end_part[]: "end3 | end4 | end5"
+	variation[]: "covered | center21, center22, center23 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+
+	dynamic_lod_desc[]: "/prefab/depots/ethanol_factory/ia_distillers_corn_pile_curve_mid_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	smooth_surface: true
+}
+
+}

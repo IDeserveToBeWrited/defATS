@@ -1,0 +1,45 @@
+SiiNunit
+{
+accessory_interior_data	: s51_dark.intnational.9900i.interior
+{
+	name: "Dark Wooden"
+	price: 20250
+	unlock: 10
+	icon: "international_9900i/int_dark"
+	part_type: factory
+
+	model: "/vehicle/truck/intnational_9900i/interior/model/s51.pmd"
+	animated_model: "/vehicle/truck/intnational_9900i/interior/animation/anim.pmd"
+	collision: "/vehicle/truck/intnational_9900i/interior/model/s51.pmc"
+	look: default
+	variant: dark
+
+	ext_model: "/vehicle/truck/intnational_9900i/interior/external/external_s51.pmd"
+	ext_variant: default
+	ext_look: dark
+
+	defaults[]: "/def/vehicle/truck/intnational.lt/accessory/steering_w/default.sii"
+
+	suitable_for[]: "s51.intnational.9900i.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_s51.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .int_9900i.r.pane.front
+	glass_panes[]: .int_9900i.r.pane.close
+	glass_panes[]: .int_9900i.r.pane.far
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "sound_effects_units.sui"
+}

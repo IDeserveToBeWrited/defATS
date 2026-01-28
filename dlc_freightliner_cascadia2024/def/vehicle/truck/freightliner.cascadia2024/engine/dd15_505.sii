@@ -1,0 +1,47 @@
+SiiNunit
+{
+accessory_engine_data : dd15_505.freightliner.cascadia2024.engine
+{
+	name: "Detroit DD15 505"
+	price: 48210
+	unlock: 12
+	info[]: "505 @@hp@@ (371@@kw@@)"
+	info[]: "1@@dg@@850 @@lb_ft@@ (2508@@nm@@)"
+	info[]: "975 @@rpm@@"
+	icon: "engine_detroit_dd15"
+	part_type: factory
+
+	torque: 2508
+	volume: 14.8
+
+	torque_curve[]: (300, 0.0)
+	torque_curve[]: (500, 0.49)
+	torque_curve[]: (600, 0.52)
+	torque_curve[]: (900, 1.0)
+	torque_curve[]: (1400, 1.0)
+	torque_curve[]: (1625, 0.88)
+	torque_curve[]: (1800, 0.62)
+	torque_curve[]: (1900, 0.47)
+	torque_curve[]: (2400, 0.0)
+
+	rpm_idle: 650
+	rpm_limit: 1900
+	rpm_range_low_gear: (800, 1550)
+	rpm_range_high_gear: (900, 1260)
+	rpm_range_power: (1250, 1700)
+	rpm_range_engine_brake: (1800, 2300)
+
+	engine_brake: 2.0
+	engine_brake_downshift: 1
+	engine_brake_positions: 3
+
+	no_adblue_power_limit: 0.6
+
+@include "sound.sui"
+
+	overrides[]: "/def/vehicle/truck/freightliner.cascadia2024/accessory/badge/detroit.sii"
+
+# 2024 Detroit DD15 505/1850
+# https://demanddetroit.com/engines/dd15/
+}
+}

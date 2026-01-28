@@ -1,0 +1,38 @@
+traffic_vehicle : traffic.pv_mw
+{
+	accessories[]: .pv_mw.chassis
+	accessories[]: .pv_mw.fwheel
+	accessories[]: .pv_mw.rwheel
+
+	max_speed: 120
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	allow_parked: true
+	vehicle_mass: 3500
+
+	spawn_ratio: 0.20
+
+	tags[]: van
+
+
+@include "drivers_van.sui"
+}
+
+vehicle_accessory: .pv_mw.chassis
+{
+	data_path: "/def/vehicle/ai/package_van/chassis_mw.sii"
+}
+
+vehicle_wheel_accessory: .pv_mw.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_cargo.sii"
+}
+
+vehicle_wheel_accessory: .pv_mw.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_cargo.sii"
+}
+

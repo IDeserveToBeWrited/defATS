@@ -1,0 +1,32 @@
+trailer : trailer.scs_dry
+{
+
+	trailer_definition: trailer_def.scs.drybulk.single_42.drybulk
+
+	accessories[]: .scs_dry.chassis
+	accessories[]: .scs_dry.rwheel
+	accessories[]: .scs_dry.rwheel2
+	accessories[]: .scs_dry.paint_job
+}
+
+vehicle_accessory: .scs_dry.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/chassis42.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dry.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/company_paint_job/default.sii"
+}

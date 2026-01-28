@@ -1,0 +1,87 @@
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx FIRST xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : trailer.scs_dry_d
+{
+
+	trailer_definition: trailer_def.scs.drybulk.double.drybulk
+
+	accessories[]: .scs_dry_d.chassis
+	accessories[]: .scs_dry_d.rwheel
+	accessories[]: .scs_dry_d.paint_job
+	accessories[]: .scs_dry_d.trlr_cables
+	
+	slave_trailer: .scs_dry_d.dolly
+}
+
+vehicle_accessory: .scs_dry_d.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/chassis22.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry_d.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dry_d.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/company_paint_job/default.sii"
+}
+
+vehicle_addon_accessory: .scs_dry_d.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/accessory/trlr_cables_trailer.sii"
+}
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx DOLLY xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .scs_dry_d.dolly
+{
+	accessories[]: .scs_dry_d.dolly.chassis
+	accessories[]: .scs_dry_d.dolly.rwheel
+	accessories[]: .scs_dry_d.dolly.trlr_cables
+
+	slave_trailer: .scs_dry_d.second
+}
+
+vehicle_accessory: .scs_dry_d.dolly.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/dolly.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry_d.dolly.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_addon_accessory: .scs_dry_d.dolly.trlr_cables
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/accessory/trlr_cables_dolly.sii"
+}
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SECOND xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+trailer : .scs_dry_d.second
+{
+	accessories[]: .scs_dry_d.second.chassis
+	accessories[]: .scs_dry_d.second.rwheel
+	accessories[]: .scs_dry_d.second.paint_job
+}
+
+vehicle_accessory: .scs_dry_d.second.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/chassis22_double.sii"
+}
+
+vehicle_wheel_accessory: .scs_dry_d.second.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dry_d.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_drybulk/company_paint_job/default.sii"
+}

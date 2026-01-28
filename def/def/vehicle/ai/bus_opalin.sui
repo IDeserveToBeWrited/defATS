@@ -5,18 +5,20 @@ traffic_vehicle : traffic.bus_ws_inv
 	accessories[]: .bus_ws_inv.rwheel
 
 	max_speed: 100
+	
 
-	lod_dist[]: 60
-	lod_dist[]: 80
-	allow_parked: false
-
-    variant[]: traffic.bus_w
+	variant[]: traffic.bus_w
 	variant[]: traffic.bus_e
 	variant[]: traffic.bus_s
-	
-	
+
+	tags[]: bus
+	tags[]: passenger
+
 	vehicle_mass: 12000
-	
+	allow_parked: false
+
+	spawn_ratio: 0.1
+
 @include "drivers_generic.sui"
 }
 
@@ -46,10 +48,10 @@ traffic_vehicle : traffic.bus_w
 	accessories[]: .bus_w.rwheel
 
 	max_speed: 100
-
-	lod_dist[]: 60
-	lod_dist[]: 80
 	allow_parked: false
+
+	tags[]: bus
+	tags[]: passenger
 
 	vehicle_mass: 12000
 
@@ -81,10 +83,10 @@ traffic_vehicle : traffic.bus_e
 	accessories[]: .bus_e.rwheel
 
 	max_speed: 100
-
-	lod_dist[]: 60
-	lod_dist[]: 80
 	allow_parked: false
+
+	tags[]: bus
+	tags[]: passenger
 
 	vehicle_mass: 12000
 
@@ -106,50 +108,4 @@ vehicle_wheel_accessory: .bus_e.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_bus2.sii"
-}
-
-# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-traffic_vehicle : traffic.bus_s
-{
-	accessories[]: .bus_s.chassis
-	accessories[]: .bus_s.fwheel
-	accessories[]: .bus_s.rwheel
-
-	max_speed: 100
-
-	lod_dist[]: 60
-	lod_dist[]: 80
-	allow_parked: false
-
-	vehicle_mass: 12000
-
-	spawn_condition[]: .traffic.bus_s.condition.time
-
-@include "drivers_generic.sui"
-}
-
-vehicle_accessory: .bus_s.chassis
-{
-	data_path: "/def/vehicle/ai/bus_s/chassis.sii"
-}
-vehicle_wheel_accessory: .bus_s.fwheel
-{
-	data_path: "/def/vehicle/ai_wheel/front_bus.sii"
-}
-vehicle_wheel_accessory: .bus_s.rwheel
-{
-	data_path: "/def/vehicle/ai_wheel/rear_bus.sii"
-}
-traffic_spawn_condition: .traffic.bus_s.condition.time
-{
-	# spawn only in following game time intervals
-	type: time
-
-	# 06:00 - 9:00
-	num_param[]: 360
-	num_param[]: 540
-
-	# 16:00 - 18:00
-	num_param[]: 960 
-	num_param[]: 1080
 }

@@ -1,0 +1,51 @@
+traffic_vehicle : traffic.trmsacram_l
+{
+	accessories[]: .trmsacram_l.chassis
+	accessories[]: .trmsacram_l.fwheel
+	accessories[]: .trmsacram_l.rwheel
+
+
+
+	vehicle_mass: 14000	# 20t whole tram + cca 80ppl
+	engine_power: 580 # 4x145 kW
+	max_speed: 70
+
+
+	trailer_chains[]: "tram_car.trmsacram_c1 | tram_car.trmsacram_c2 | tram_car.trmsacram_c3"
+
+	displacement_limit: 0.0
+
+	sound_move[]: "/sound/traffic/train_electric_1.soundref"
+	sound_gears: 1
+
+
+	spawn_condition[]: .traffic.trmsacram_l.condition.city
+
+}
+
+vehicle_accessory: .trmsacram_l.chassis
+{
+	data_path: "/def/vehicle/ai/tram_sacramento/chassis_l.sii"
+}
+
+vehicle_wheel_accessory: .trmsacram_l.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trmsacram_l.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.trmsacram_l.condition.city
+{
+	# spawn only near city with specified name
+	type: city
+	str_param[]: "sacramento"
+}
+
+
+

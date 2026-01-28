@@ -9,6 +9,7 @@ trailer : trailer.bdump_rm_2
 	accessories[]: .bdump_rm_2.trwheel1
 	accessories[]: .bdump_rm_2.trwheel2
 	accessories[]: .bdump_rm_2.trlr_cables
+	accessories[]: .bdump_rm_2.paint_job
 	
 	slave_trailer: .bdump_rm_2.dolly
 }
@@ -39,6 +40,10 @@ vehicle_addon_accessory: .bdump_rm_2.trlr_cables
 {
     	data_path: "/def/vehicle/trailer/bottom_dump/accessory/trlr_cables/stock.sii"
 }
+vehicle_paint_job_accessory: .bdump_rm_2.paint_job
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/company_paint_job/white.sii"
+}
 
 # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx dolly xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -46,6 +51,7 @@ trailer : .bdump_rm_2.dolly
 {
 	accessories[]: .bdump_rm_2.dolly.tchassis
 	accessories[]: .bdump_rm_2.dolly.trwheel0
+	accessories[]: .bdump_rm_2.dolly.paint_job
 
 	
 	slave_trailer: .bdump_rm_2.second
@@ -61,6 +67,10 @@ vehicle_wheel_accessory: .bdump_rm_2.dolly.trwheel0
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/single.sii"
 }
+vehicle_paint_job_accessory: .bdump_rm_2.dolly.paint_job
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/company_paint_job/white.sii"
+}
 
 # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx trailer 28 with rear bumper xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -68,6 +78,7 @@ trailer : .bdump_rm_2.second
 {
 	accessories[]: .bdump_rm_2.second.tchassis
 	accessories[]: .bdump_rm_2.second.trwheel0
+	accessories[]: .bdump_rm_2.second.paint_job
 }
 
 vehicle_accessory: .bdump_rm_2.second.tchassis
@@ -79,4 +90,9 @@ vehicle_wheel_accessory: .bdump_rm_2.second.trwheel0
 {
 	offset: 0
     	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .bdump_rm_2.second.paint_job
+{
+	data_path: "/def/vehicle/trailer/bottom_dump/company_paint_job/white.sii"
 }

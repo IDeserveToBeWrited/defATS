@@ -1,0 +1,54 @@
+SiiNunit
+{
+accessory_interior_data	: 72f_lgc.kenworth.w900.interior
+{
+	name: "Legacy"
+	price: 24540
+	unlock: 12
+	icon: "truck/kenworth_w900/interior/model/sl_72f_legacy"
+
+	model: "/vehicle/truck/kenworth_w900/interior/model/sl_72f.pmd"
+	animated_model: "/vehicle/truck/kenworth_w900/interior/anim_split/anim.pmd"
+	collision: "/vehicle/truck/kenworth_w900/interior/model/sl_72f.pmc"
+
+	look: black
+	variant: legacy
+
+	suitable_for[]: "s72f.kenworth.w900.cabin"
+
+	ext_model: "/vehicle/truck/kenworth_w900/interior/external/sleeper_72f.pmd"
+	ext_variant: legacy
+	ext_look: legacy
+
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/steering_w/default_lgc.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/codrv_seat/legacy.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/int_trim/legacy.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/cab_door/window_diamond_black.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/roof_window/sleeper_diamond_black.sii"
+
+@include "animations_split.sui"
+
+@include "int_shadow_cab_s72.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+@include "dashboard_colors.sui"
+
+	glass_panes[]: .kenworthw900.r.pane.front
+	glass_panes[]: .kenworthw900.r.pane.close
+	glass_panes[]: .kenworthw900.r.pane.far
+	glass_panes[]: .kenworthw900.r.pane.roof
+	glass_panes[]: .kenworthw900.r.pane.back
+	glass_panes[]: .kenworthw900.r.pane.door
+	glass_panes[]: .kenworthw900.r.pane.top
+
+@include "seat.sui"
+@include "mirrors.sui"
+}
+@include "glass.sui"
+@include "glass_sl72.sui"
+@include "sound_effects_units.sui"
+}

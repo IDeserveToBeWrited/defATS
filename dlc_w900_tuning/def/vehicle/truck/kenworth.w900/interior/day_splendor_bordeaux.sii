@@ -1,0 +1,54 @@
+SiiNunit
+{
+accessory_interior_data	: day_spl_brdx.kenworth.w900.interior
+{
+	name: "Splendor Bordeaux Red"
+	price: 15180
+	unlock: 0
+	icon: "truck/kenworth_w900/interior/model/daycab_spl_bordeaux"
+
+	model: "/vehicle/truck/kenworth_w900/interior/model/daycab.pmd"
+	animated_model: "/vehicle/truck/kenworth_w900/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/kenworth_w900/interior/model/daycab.pmc"
+
+	look: bordeaux
+	variant: splendor
+
+	suitable_for[]: "day.kenworth.w900.cabin"
+
+	ext_model: "/vehicle/truck/kenworth_w900/interior/external/day.pmd"
+	ext_variant: splendor
+	ext_look: bordeaux
+
+	show_chassis_rear: true
+
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/steering_w/default.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/codrv_seat/cloth_bordeaux.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/int_trim/standard.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/cab_door/window_splendor_bordeaux.sii"
+	defaults[]: "/def/vehicle/truck/kenworth.w900/accessory/roof_window/daycab_splendor_bordeaux.sii"
+
+@include "animations.sui"
+
+@include "int_shadow_cab_day.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+@include "computers.sui"
+
+@include "dashboard_colors.sui"
+
+	glass_panes[]: .kenworthw900.r.pane.front
+	glass_panes[]: .kenworthw900.r.pane.close
+	glass_panes[]: .kenworthw900.r.pane.far
+	glass_panes[]: .kenworthw900.r.pane.roof
+	glass_panes[]: .kenworthw900.r.pane.back_sh
+	glass_panes[]: .kenworthw900.r.pane.door
+
+@include "seat.sui"
+@include "mirrors.sui"
+}
+@include "glass.sui"
+@include "glass_sh.sui"
+@include "sound_effects_units.sui"
+}

@@ -1,0 +1,109 @@
+############################################# LOS ANGELES ############################################# ( model tram_san_francisco ) ### 
+
+traffic_vehicle : traffic.la_tram_loco
+{
+	accessories[]: .la_tram_loco.chassis
+	accessories[]: .la_tram_loco.fwheel
+	accessories[]: .la_tram_loco.rwheel
+
+	max_speed: 40
+
+	vehicle_mass: 27000
+	engine_power: 2500
+
+	trailer_chains[]: "tram_car.la_car1 | tram_car.la_car2 | tram_car.la_car3 | tram_car.la_car4 | tram_car.la_car5 | tram_car.la_car6"
+
+	sound_move[]: "/sound/traffic/tram_1.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+	sound_gears: 1
+
+	displacement_limit: 0.0
+
+	lod_dist[]: 30
+	lod_dist[]: 60
+	lod_dist[]: 130
+
+
+	tags[]: tram
+
+	spawn_condition[]: .traffic.la_tram_loco.condition.city
+
+}
+vehicle_accessory: .la_tram_loco.chassis
+{
+	data_path: "/def/vehicle/ai/tram_cities/chassis_la_tram_loco.sii"
+}
+vehicle_wheel_accessory: .la_tram_loco.fwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .la_tram_loco.rwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+
+}
+traffic_spawn_condition: .traffic.la_tram_loco.condition.city
+{
+	#spawn only near city with specified name
+	type: city
+	str_param[]: "los_angeles"
+}
+
+############################################# SAN DIEGO ############################################# ( model tram_san_francisco ) ### 
+
+traffic_vehicle : traffic.sd_tram_loco
+{
+	accessories[]: .sd_tram_loco.chassis
+	accessories[]: .sd_tram_loco.fwheel
+	accessories[]: .sd_tram_loco.rwheel
+
+	max_speed: 40
+
+	vehicle_mass: 27000
+	engine_power: 2500
+
+	trailer_chains[]: "tram_car.sd_car1 | tram_car.sd_car2 | tram_car.sd_car3 | tram_car.sd_car4 | tram_car.sd_car5 | tram_car.sd_car6"
+
+	sound_move[]: "/sound/traffic/tram_1.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+	sound_gears: 1
+
+	displacement_limit: 0.0
+
+	lod_dist[]: 30
+	lod_dist[]: 60
+	lod_dist[]: 130
+
+
+	tags[]: tram
+
+	spawn_condition[]: .traffic.sd_tram_loco.condition.city
+
+}
+vehicle_accessory: .sd_tram_loco.chassis
+{
+	data_path: "/def/vehicle/ai/tram_cities/chassis_sd_tram_loco.sii"
+}
+vehicle_wheel_accessory: .sd_tram_loco.fwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .sd_tram_loco.rwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+
+}
+
+traffic_spawn_condition: .traffic.sd_tram_loco.condition.city
+{
+	#spawn only near city with specified name
+	type: city
+	str_param[]: "san_diego"
+}
+
+
+

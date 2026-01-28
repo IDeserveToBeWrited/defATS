@@ -1,0 +1,43 @@
+SiiNunit
+{
+accessory_trailer_body_data : body_45.scs.flatbed.body
+{
+	volume: 95.6		# 3375 cft
+	body_type: flatbed
+
+	cargo_loading_methods[]: area
+	#cargo_loading_methods[]: custom
+
+	cargo_regular_width: 2.4
+
+	cargo_areas[]: (2.40, 13.48)
+
+	#cargo_custom_loads[]: .glass_rack_c
+
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+@include "/def/vehicle/lashing_gear.sui"
+}
+
+cargo_lashing_mount : .lashm1
+{
+	
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_closed.pmd"
+
+}
+cargo_lashing_mount : .lashm2
+{
+	
+	
+	spacing: 0.4
+	hook_angle_constraints: (90, 90, 10)
+	open_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_open.pmd"
+	closed_model: 	"/vehicle/trailer_owned/scs_flatbed/body/hook_chain_closed.pmd"
+
+}
+@include "/def/vehicle/lashing_gear_data.sui"
+}

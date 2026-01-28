@@ -1,0 +1,42 @@
+SiiNunit
+{
+accessory_cabin_data : s740.volvo.vnl2018.cabin
+{
+	name: "740"
+	price: 27590
+	unlock: 10
+	icon: "truck/volvo_vnl2018/cabin/s740"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2018/cabin/s740.pmd"
+	collision: "/vehicle/truck/volvo_vnl2018/cabin/s740.pmc"
+	variant: default
+	look: default
+
+	wiper_model: "/vehicle/truck/volvo_vnl2018/cabin/wiper.pmd"
+	wiper_anim: "/vehicle/truck/volvo_vnl2018/cabin/wiper_anim.pma"
+
+	suspension_type: hinge2air
+
+	windows_model: "/vehicle/truck/volvo_vnl2018/cabin/win_open.pmd"
+	left_window_anim: "/vehicle/truck/volvo_vnl2018/cabin/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/volvo_vnl2018/cabin/win_open_r.pma"
+
+	drl_with_headlights: 1.0
+
+	defaults[]: "/def/vehicle/truck/volvo.vnl2018/chassis/6x2_m.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2018/interior/s740_fl.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2018/accessory/carpet/fl_rub_s740.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2018/accessory/sunshield/stock_740.sii"
+
+	conflict_with[]: "4x2_s.volvo.vnl2018.chassis"
+	conflict_with[]: "6x4_s.volvo.vnl2018.chassis"
+	conflict_with[]: "6x4_l.volvo.vnl2018.chassis"
+	conflict_with[]: "6x2_s.volvo.vnl2018.chassis"
+	conflict_with[]: "6x2_l.volvo.vnl2018.chassis"
+	conflict_with[]: "6x2l_s.volvo.vnl2018.chassis"
+	conflict_with[]: "6x2l_l.volvo.vnl2018.chassis"
+
+@include "sound.sui"
+}
+}

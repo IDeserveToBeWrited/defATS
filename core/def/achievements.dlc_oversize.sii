@@ -1,0 +1,263 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Special Transport --
+
+# Successfully deliver a Special Transport DLC mission with no damage and on time.
+
+achievement_delivery_log_data : .achievement.st_perf_job
+{
+	event_name: job_done
+	consecutive: true # Prevent checking previous records
+	damage_max: 0.0
+	late: false
+	cargos[]: aircondition
+	cargos[]: art_dumper
+	cargos[]: dumper
+	cargos[]: dumper_hull
+	cargos[]: dumper_tire
+	cargos[]: helicopter
+	cargos[]: house
+	cargos[]: lattice
+	cargos[]: load_un
+	cargos[]: mystery_box
+	cargos[]: pilot_boat
+	cargos[]: silo
+	cargos[]: tank
+	cargos[]: wagon
+	cargos[]: wagon_r211
+	cargos[]: windblade
+	target: 1
+
+	achievement_name: st_perf_job
+
+	steam_id: st_perf_job
+}
+
+# Complete deliveries on at least 10 oversize routes in base game map.
+
+achievement_delivery : .achievement.st_all_route
+{
+	event_name: job_done
+	initial_check: true
+	condition: .st_all_route.condition
+	target: 10
+
+	achievement_name: st_all_routes
+
+	steam_progress_id: "st_all_routes-progress"
+	steam_id: st_all_routes
+}
+
+achievement_delivery_sequence : .st_all_route.condition
+{
+	list[]: .st_all_route.cru_mar1
+	list[]: .st_all_route.eur_red1
+	list[]: .st_all_route.fre_bak1
+	list[]: .st_all_route.kin_fla1
+	list[]: .st_all_route.las_sdg1
+	list[]: .st_all_route.oak_hur1
+	list[]: .st_all_route.oxn_bar1
+	list[]: .st_all_route.pho_sie1
+	list[]: .st_all_route.pri_ely1
+	list[]: .st_all_route.sac_mod1
+	list[]: .st_all_route.san_fre1
+	list[]: .st_all_route.sto_hur1
+	list[]: .st_all_route.sto_sfr1
+	list[]: .st_all_route.tru_car1
+	list[]: .st_all_route.tru_oak1
+	list[]: .st_all_route.yum_tuc1
+	list[]: .st_all_route.win_car1
+}
+
+achievement_delivery_route : .st_all_route.cru_mar1
+{
+	route_name: cru_mar1
+}
+
+achievement_delivery_route : .st_all_route.eur_red1
+{
+	route_name: eur_red1
+}
+
+achievement_delivery_route : .st_all_route.fre_bak1
+{
+	route_name: fre_bak1
+}
+
+achievement_delivery_route : .st_all_route.kin_fla1
+{
+	route_name: kin_fla1
+}
+
+achievement_delivery_route : .st_all_route.las_sdg1
+{
+	route_name: las_sdg1
+}
+
+achievement_delivery_route : .st_all_route.oak_hur1
+{
+	route_name: oak_hur1
+}
+
+achievement_delivery_route : .st_all_route.oxn_bar1
+{
+	route_name: oxn_bar1
+}
+
+achievement_delivery_route : .st_all_route.pho_sie1
+{
+	route_name: pho_sie1
+}
+
+achievement_delivery_route : .st_all_route.pri_ely1
+{
+	route_name: pri_ely1
+}
+
+achievement_delivery_route : .st_all_route.sac_mod1
+{
+	route_name: sac_mod1
+}
+
+achievement_delivery_route : .st_all_route.san_fre1
+{
+	route_name: san_fre1
+}
+
+achievement_delivery_route : .st_all_route.sto_hur1
+{
+	route_name: sto_hur1
+}
+
+achievement_delivery_route : .st_all_route.sto_sfr1
+{
+	route_name: sto_sfr1
+}
+
+achievement_delivery_route : .st_all_route.tru_car1
+{
+	route_name: tru_car1
+}
+
+achievement_delivery_route : .st_all_route.tru_oak1
+{
+	route_name: tru_oak1
+}
+
+achievement_delivery_route : .st_all_route.yum_tuc1
+{
+	route_name: yum_tuc1
+}
+
+achievement_delivery_route : .st_all_route.win_car1
+{
+	route_name: win_car1
+}
+
+achievement_delivery_log_data : .achievement.st_helicopt
+{
+	event_name: job_done
+	consecutive: true # Prevent checking previous records
+	damage_max: 0.0
+	late: false
+	cargos[]: helicopter
+	target: 1
+
+	achievement_name: st_helicopter
+
+	steam_id: st_helicopter
+}
+
+achievement_delivery_log_data : .achievement.st_aircond
+{
+	event_name: job_done
+	consecutive: true # Prevent checking previous records
+	damage_max: 0.0
+	late: false
+	cargos[]: aircondition
+	target: 1
+
+	achievement_name: st_aircondition
+
+	steam_id: st_aircondition
+}
+
+# Make at least 10 unique deliveries of oversize cargoes.
+
+achievement_each_cargo_data : .achievement.st_all_cargo
+{
+	event_name: job_done
+	initial_check: true
+	cargos[]: aircondition
+	cargos[]: art_dumper
+	cargos[]: dumper
+	cargos[]: dumper_hull
+	cargos[]: dumper_tire
+	cargos[]: helicopter
+	cargos[]: house
+	cargos[]: lattice
+	cargos[]: load_un
+	cargos[]: mystery_box
+	cargos[]: pilot_boat
+	cargos[]: silo
+	cargos[]: tank
+	cargos[]: wagon
+	cargos[]: wagon_r211
+	cargos[]: windblade
+	target: 10
+
+	achievement_name: st_all_cargos
+
+	steam_progress_id: "st_all_cargos-progress"
+	steam_id: st_all_cargos
+}
+
+# Deliver all three parts of a disassembled dumper: Haul Truck Hull, Huge Tyres, Haul Truck Chassis.
+
+achievement_each_cargo_data : .achievement.st_mutt_part
+{
+	event_name: job_done
+	initial_check: true
+	cargos[]: dumper
+	cargos[]: dumper_hull
+	cargos[]: dumper_tire
+	target: 3
+
+	achievement_name: st_mutt_part
+
+	steam_progress_id: "st_mutt_part-progress"
+	steam_id: st_mutt_part
+}
+
+achievement_delivery_log_data : .achievement.st_house
+{
+	event_name: job_done
+	consecutive: true # Prevent checking previous records
+	damage_max: 0.0
+	late: false
+	cargos[]: house
+	target: 1
+
+	achievement_name: st_house
+
+	steam_id: st_house
+}
+
+}

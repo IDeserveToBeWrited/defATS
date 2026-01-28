@@ -1,0 +1,41 @@
+SiiNunit
+{
+accessory_interior_data	: s72xt_g_22_t.freightliner.cascadia2024.interior
+{
+	name: "Saddle Tan Classic"
+	price: 17540
+	unlock: 5
+	icon: "truck/freightliner_cascadia2024/accessory/tan_g_22"
+	part_type: factory
+
+	model: "/vehicle/truck/freightliner_cascadia2024/interior/model/sl_72xt_22.pmd"
+	animated_model: "/vehicle/truck/freightliner_cascadia2024/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/freightliner_cascadia2024/interior/model/sl_72xt_22.pmc"
+	look: Default
+	variant: tan_22
+
+	ext_model: "/vehicle/truck/freightliner_cascadia2024/interior/external/sl_72xt_22.pmd"
+	ext_look: tan_22
+	ext_variant: default
+
+	suitable_for[]: "s72_xt.freightliner.cascadia2024.cabin"
+
+@include "animations.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .freightliner.cascadia2024.r.pane.front
+	glass_panes[]: .freightliner.cascadia2024.r.pane.close
+	glass_panes[]: .freightliner.cascadia2024.r.pane.far
+	glass_panes[]: .freightliner.cascadia2024.r.pane.back_s72
+
+@include "seat.sui"
+@include "sound.sui"
+@include "sound_effects.sui"
+@include "dashboard_color.sui"
+@include "int_shadow_s72_xt.sui"
+}
+@include "glass.sui"
+@include "glass_s72.sui"
+@include "sound_effects_units.sui"
+}

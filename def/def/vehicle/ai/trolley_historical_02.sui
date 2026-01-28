@@ -1,0 +1,49 @@
+#----------------------Fort Smith -------------------------------------------------------------------------------------------------############
+
+traffic_vehicle : traffic.trolley.historical.02.fort.smith
+{
+	accessories[]: .trolley.historical.02.fort.smith.chassis
+	accessories[]: .trolley.historical.02.fort.smith.fwheel
+	accessories[]: .trolley.historical.02.fort.smith.rwheel
+
+	max_speed: 15
+	vehicle_mass: 11000
+	engine_power: 150	#380kW engine whole cable (several vehicles)
+
+	sound_move[]: "/sound/traffic/cablecar_sf.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+
+	displacement_limit: 0.0
+	spawn_condition[]: .traffic.trolley.historical.02.fort.smith.condition.city
+	#spawn_condition[]: .traffic.trolley.historical.02.fort.smith.condition.area
+
+	tags[]: context
+	#tags[]: urban
+
+
+}
+
+vehicle_accessory: .trolley.historical.02.fort.smith.chassis
+{
+	data_path: "/def/vehicle/ai/trolley_historical_02/chassis_f_s.sii"
+}
+
+vehicle_wheel_accessory: .trolley.historical.02.fort.smith.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trolley.historical.02.fort.smith.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.trolley.historical.02.fort.smith.condition.city
+{
+	type: city
+	str_param[]: "fort_smith"
+}
+
+

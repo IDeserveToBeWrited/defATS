@@ -12,9 +12,6 @@ traffic_vehicle : traffic.char_ut_hp
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -57,9 +54,6 @@ traffic_vehicle : traffic.char_cal_hp
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -104,9 +98,6 @@ traffic_vehicle : traffic.char_nev_hp
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -149,9 +140,6 @@ traffic_vehicle : traffic.char_or_hp
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -196,9 +184,6 @@ traffic_vehicle : traffic.char_id_hp
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -241,9 +226,6 @@ traffic_vehicle : traffic.char_co_hp
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 
 	vehicle_mass: 2250
@@ -288,9 +270,6 @@ traffic_vehicle : traffic.char_wy_hp
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 
 	vehicle_mass: 2250
 
@@ -320,3 +299,409 @@ vehicle_wheel_accessory: .char_wy_hp.rwheel
 	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
 }
 
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Montana state police (highway police)  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.mt_hp
+{
+	accessories[]: .charger.mt_hp.chassis
+	accessories[]: .charger.mt_hp.fwheel
+	accessories[]: .charger.mt_hp.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.mt_hp.chassis
+{
+	data_path: "/def/vehicle/ai/charger/mt_hp.sii"
+}
+
+vehicle_wheel_accessory: .charger.mt_hp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.mt_hp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Texas state police (highway police)  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.tx_hp
+{
+	accessories[]: .charger.tx_hp.chassis
+	accessories[]: .charger.tx_hp.fwheel
+	accessories[]: .charger.tx_hp.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.tx_hp.chassis
+{
+	data_path: "/def/vehicle/ai/charger/tx_hp.sii"
+}
+
+vehicle_wheel_accessory: .charger.tx_hp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.tx_hp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Oklahoma Highway Patrol XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.ok
+{
+	accessories[]: .charger.ok.chassis
+	accessories[]: .charger.ok.fwheel
+	accessories[]: .charger.ok.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.ok.chassis
+{
+	data_path: "/def/vehicle/ai/charger/ok.sii"
+}
+
+vehicle_wheel_accessory: .charger.ok.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.ok.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Kansas police (highway police)  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.ks_hp
+{
+	accessories[]: .charger.ks_hp.chassis
+	accessories[]: .charger.ks_hp.fwheel
+	accessories[]: .charger.ks_hp.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.ks_hp.chassis
+{
+	data_path: "/def/vehicle/ai/charger/ks_hp.sii"
+}
+
+vehicle_wheel_accessory: .charger.ks_hp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.ks_hp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Nebraska police (highway police)  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.ne
+{
+	accessories[]: .charger.ne.chassis
+	accessories[]: .charger.ne.fwheel
+	accessories[]: .charger.ne.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.ne.chassis
+{
+	data_path: "/def/vehicle/ai/charger/ne.sii"
+}
+
+vehicle_wheel_accessory: .charger.ne.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.ne.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Arkansas State Trooper (highway police)  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.ar
+{
+	accessories[]: .charger.ar.chassis
+	accessories[]: .charger.ar.fwheel
+	accessories[]: .charger.ar.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.ar.chassis
+{
+	data_path: "/def/vehicle/ai/charger/ar.sii"
+}
+
+vehicle_wheel_accessory: .charger.ar.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.ar.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Missouri State Trooper (highway police) - White XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.mo_w
+{
+	accessories[]: .charger.mo_w.chassis
+	accessories[]: .charger.mo_w.fwheel
+	accessories[]: .charger.mo_w.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	variant[]: traffic.charger.mo_b
+	
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.mo_w.chassis
+{
+	data_path: "/def/vehicle/ai/charger/mo_w.sii"
+}
+
+vehicle_wheel_accessory: .charger.mo_w.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.mo_w.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Missouri State Trooper (highway police) - Blue XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.mo_b
+{
+	accessories[]: .charger.mo_b.chassis
+	accessories[]: .charger.mo_b.fwheel
+	accessories[]: .charger.mo_b.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.mo_b.chassis
+{
+	data_path: "/def/vehicle/ai/charger/mo_b.sii"
+}
+
+vehicle_wheel_accessory: .charger.mo_b.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.mo_b.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Iowa State Trooper (highway police)  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.ia
+{
+	accessories[]: .charger.ia.chassis
+	accessories[]: .charger.ia.fwheel
+	accessories[]: .charger.ia.rwheel
+
+	max_speed: 160
+
+	license_plate_type: police_hp
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 2250
+
+	spawn_ratio: 0.0
+
+	tags[]: highway
+
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.ia.chassis
+{
+	data_path: "/def/vehicle/ai/charger/ia.sii"
+}
+
+vehicle_wheel_accessory: .charger.ia.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.ia.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}

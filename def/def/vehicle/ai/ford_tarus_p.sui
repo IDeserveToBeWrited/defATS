@@ -12,10 +12,7 @@ traffic_vehicle : traffic.ford_tarus_p.city
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
-
+	spawn_ratio: 0.0
 
 	vehicle_mass: 1700
 
@@ -27,6 +24,8 @@ traffic_vehicle : traffic.ford_tarus_p.city
 	variant[]: traffic.ford_tarus_p.reno
 	variant[]: traffic.ford_tarus_p.portland
 	variant[]: traffic.ford_tarus_p.idcdal
+	variant[]: traffic.ford_tarus_p.mt_bil
+
 
 
 @include "drivers_police.sui"
@@ -59,10 +58,7 @@ traffic_vehicle : traffic.ford_tarus_p.generic
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
-
+	spawn_ratio: 0.001
 
 	vehicle_mass: 1700
 
@@ -103,10 +99,9 @@ traffic_vehicle : traffic.ford_tarus_p.p45
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	vehicle_mass: 1700
+
+	spawn_ratio: 0.001
 
 	tags[]: urban
 
@@ -137,12 +132,11 @@ traffic_vehicle : traffic.ford_tarus_p.p96
 
 	max_speed: 160
 
+	spawn_ratio: 0.001
+
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	vehicle_mass: 1700
 
@@ -180,9 +174,6 @@ traffic_vehicle : traffic.ford_tarus_p.las_vegas
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	vehicle_mass: 1700
 
@@ -224,9 +215,6 @@ traffic_vehicle : traffic.ford_tarus_p.phoenix
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	vehicle_mass: 1700
 
@@ -270,9 +258,6 @@ traffic_vehicle : traffic.ford_tarus_p.reno
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	vehicle_mass: 1700
 
 	tags[]: urban
@@ -314,9 +299,6 @@ traffic_vehicle : traffic.ford_tarus_p.portland
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	vehicle_mass: 1700
 
@@ -361,9 +343,6 @@ traffic_vehicle : traffic.ford_tarus_p.idcdal
 	sound_move[]: "/sound/traffic/car_normal_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	vehicle_mass: 1700
 
 	tags[]: urban
@@ -392,6 +371,154 @@ traffic_spawn_condition: .traffic.ford_tarus_p.idcdal.condition.city
 	type: city
     str_param[]: "coeur_dalene"
 }
+
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Montana Billings Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.ford_tarus_p.mt_bil
+{
+	accessories[]: .ford_tarus_p.mt_bil.chassis
+	accessories[]: .ford_tarus_p.mt_bil.fwheel
+	accessories[]: .ford_tarus_p.mt_bil.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_move[]: "/sound/traffic/car_normal_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	vehicle_mass: 1700
+
+	tags[]: urban
+
+    spawn_condition[]: .traffic.ford_tarus_p.mt_bil.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.mt_bil.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/mt_bil.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.mt_bil.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.mt_bil.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.ford_tarus_p.mt_bil.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "billings"
+}
+
+
+
+ #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX EL Paso Police XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.taurus.tx_el
+{
+	accessories[]: .taurus.tx_el.chassis
+	accessories[]: .taurus.tx_el.fwheel
+	accessories[]: .taurus.tx_el.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_move[]: "/sound/traffic/car_normal_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	vehicle_mass: 1700
+
+	tags[]: urban
+
+    spawn_condition[]: .traffic.taurus.tx_el.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .taurus.tx_el.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/tx_el.sii"
+}
+vehicle_wheel_accessory: .taurus.tx_el.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .taurus.tx_el.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.taurus.tx_el.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "el_paso"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  oklahoma-oklahoma city XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.ford_tarus_p.ok_ok
+{
+	accessories[]: .ford_tarus_p.ok_ok.chassis
+	accessories[]: .ford_tarus_p.ok_ok.fwheel
+	accessories[]: .ford_tarus_p.ok_ok.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+	sound_move[]: "/sound/traffic/car_normal_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	base: traffic.ford_tarus_p.city
+
+	vehicle_mass: 1700
+
+	tags[]: urban
+
+	spawn_condition[]: .traffic.ford_tarus_p.ok_ok.condition.city
+
+@include "drivers_police.sui"
+
+}
+vehicle_accessory: .ford_tarus_p.ok_ok.chassis
+{
+	data_path: "/def/vehicle/ai/ford_taurus/ok_ok.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.ok_ok.fwheel
+{
+	data_path: "/def/vehicle/ai_wheel/front_18in_p.sii"
+}
+vehicle_wheel_accessory: .ford_tarus_p.ok_ok.rwheel
+{
+	data_path: "/def/vehicle/ai_wheel/rear_18in_p.sii"
+}
+traffic_spawn_condition: .traffic.ford_tarus_p.ok_ok.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+	str_param[]: "oklahoma_cit"
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -8,13 +8,11 @@ traffic_vehicle : traffic.f_150
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	
 	tags[]: pickup
 	tags[]: empty
 	tags[]: suv
+	tags[]: common
 
 	vehicle_mass: 3000
 
@@ -63,13 +61,11 @@ traffic_vehicle : traffic.f_150_r
 
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	
 	tags[]: pickup
 	tags[]: empty
 	tags[]: suv
+	tags[]: common
 
 	color[]: (0.0343, 0.0343, 0.0343) #black
 	#color[]: (0.0382, 0.0318, 0.0273) #brown
@@ -100,6 +96,46 @@ vehicle_wheel_accessory: .f_150_r.rwheel
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_20in_o_3.sii"
 }
+
+traffic_vehicle : traffic.f_150_s
+{
+	accessories[]: .f_150_s.chassis
+	accessories[]: .f_150_s.fwheel
+	accessories[]: .f_150_s.rwheel
+
+	max_speed: 160
+
+	allow_parked: true
+
+	vehicle_mass: 3000
+	tags[]: budget
+	tags[]: heavy_duty
+    
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .f_150_s.chassis
+{
+	data_path: "/def/vehicle/ai/f_150/chassis_service.sii"
+}
+
+vehicle_wheel_accessory: .f_150_s.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o_3.sii"
+}
+
+vehicle_wheel_accessory: .f_150_s.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o_3.sii"
+}
+
 
 
 

@@ -1,0 +1,40 @@
+SiiNunit
+{
+accessory_trailer_body_data : flat48.prestige.renow.flat.body
+{
+	volume: 102		# 3600 cft
+	body_type: flatbed
+
+	cargo_loading_methods[]: area
+	#cargo_loading_methods[]: custom
+
+	cargo_areas[]: (2.4, 14.39)
+	cargo_regular_width: 2.4
+
+	
+
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+@include "/def/vehicle/lashing_gear.sui" 
+cargo_custom_loads_path: "/def/vehicle/trailer_owned/lodeking.bril_drop/body/short"	
+}
+
+cargo_lashing_mount : .lashm1
+{
+	spacing: 0.1
+	hook_angle_constraints: (30, 20, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+	#closed_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+
+}
+cargo_lashing_mount : .lashm2
+{
+	spacing: 0.1
+	hook_angle_constraints: (30, 20, 10)
+	open_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+	#closed_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+}
+@include "/def/vehicle/lashing_gear_data.sui" 
+
+}
+

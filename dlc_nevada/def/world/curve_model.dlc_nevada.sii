@@ -38,20 +38,13 @@ curve_model : curve.nv_1e001
 	high_tess: 0
 }
 
-curve_model : curve.nv_1a001
+curve_model : curve.nv_1j000
 {
-	model_desc: "/model/lv/nv_lv_wall2.pmd"
-	name: "nv lv wall2"
+	model_desc: "/model/reno/nv_reno_railing_01.pmd"
 
-	variation: 1
-	start_part: 1
-	end_part: 1
-	variation[0]: "default | center1,center2,center3,center4,center5,center6 : 1.0"
-	start_part[0]: "center6"
-	end_part[0]: "end"
-
-	high_tess: 0
+	variation[]: "var1 | part1, part2, part3 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
 }
-
 
 }

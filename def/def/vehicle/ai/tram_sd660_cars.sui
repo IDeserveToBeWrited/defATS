@@ -1,8 +1,8 @@
-traffic_trailer : tram_car.sd660_car1
+traffic_trailer : tram_car.sd660_car1.or_po
 {
-	accessories[]: .sd660_car1.chassis
-	accessories[]: .sd660_car1.rwheel
-	accessories[]: .sd660_car1.rwheel1
+	accessories[]: .sd660_car1.or_po.chassis
+	accessories[]: .sd660_car1.or_po.rwheel
+	accessories[]: .sd660_car1.or_po.rwheel1
 
 	vehicle_mass: 12000
 
@@ -11,18 +11,18 @@ traffic_trailer : tram_car.sd660_car1
 	displacement_limit: 0.0
 }
 
-vehicle_accessory: .sd660_car1.chassis
+vehicle_accessory: .sd660_car1.or_po.chassis
 {
-	data_path: "/def/vehicle/ai/tram_sd660/chassis_02.sii"
+	data_path: "/def/vehicle/ai/tram_sd660/car1_or_po.sii"
 }
 
-vehicle_wheel_accessory: .sd660_car1.rwheel
+vehicle_wheel_accessory: .sd660_car1.or_po.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
 }
 
-vehicle_wheel_accessory: .sd660_car1.rwheel1
+vehicle_wheel_accessory: .sd660_car1.or_po.rwheel1
 {
 	offset: 2
 	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
@@ -30,29 +30,90 @@ vehicle_wheel_accessory: .sd660_car1.rwheel1
 
 
 
-traffic_trailer : tram_car.sd660_car2
+traffic_trailer : tram_car.sd660_car2.or_po
 {
-	accessories[]: .sd660_car2.chassis
-	accessories[]: .sd660_car2.rwheel
-	accessories[]: .sd660_car2.rwheel1
+	accessories[]: .sd660_car2.or_po.chassis
+	accessories[]: .sd660_car2.or_po.rwheel
+	accessories[]: .sd660_car2.or_po.rwheel1
 
 	vehicle_mass: 12000
 
 	displacement_limit: 0.0
 }
 
-vehicle_accessory: .sd660_car2.chassis
+vehicle_accessory: .sd660_car2.or_po.chassis
 {
-	data_path: "/def/vehicle/ai/tram_sd660/chassis_03.sii"
+	data_path: "/def/vehicle/ai/tram_sd660/car2_or_po.sii"
 }
 
-vehicle_wheel_accessory: .sd660_car2.rwheel
+vehicle_wheel_accessory: .sd660_car2.or_po.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
 }
 
-vehicle_wheel_accessory: .sd660_car2.rwheel1
+vehicle_wheel_accessory: .sd660_car2.or_po.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX California - San Jose  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_trailer : tram_car.sd660_car1.ca_sj
+{
+	accessories[]: .sd660_car1.ca_sj.chassis
+	accessories[]: .sd660_car1.ca_sj.rwheel
+	accessories[]: .sd660_car1.ca_sj.rwheel1
+
+	vehicle_mass: 12000
+
+	sound_move: "/sound/traffic/tram_1.soundref"
+
+	displacement_limit: 0.0
+}
+
+vehicle_accessory: .sd660_car1.ca_sj.chassis
+{
+	data_path: "/def/vehicle/ai/tram_sd660/car1_ca_sj.sii"
+}
+
+vehicle_wheel_accessory: .sd660_car1.ca_sj.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .sd660_car1.ca_sj.rwheel1
+{
+	offset: 2
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+
+
+traffic_trailer : tram_car.sd660_car2.ca_sj
+{
+	accessories[]: .sd660_car2.ca_sj.chassis
+	accessories[]: .sd660_car2.ca_sj.rwheel
+	accessories[]: .sd660_car2.ca_sj.rwheel1
+
+	vehicle_mass: 12000
+
+	displacement_limit: 0.0
+}
+
+vehicle_accessory: .sd660_car2.ca_sj.chassis
+{
+	data_path: "/def/vehicle/ai/tram_sd660/car2_ca_sj.sii"
+}
+
+vehicle_wheel_accessory: .sd660_car2.ca_sj.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .sd660_car2.ca_sj.rwheel1
 {
 	offset: 2
 	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"

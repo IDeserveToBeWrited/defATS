@@ -1,26 +1,18 @@
-traffic_vehicle : traffic.hyrail_l
+########################################################################## Garc ##################################################################################
+traffic_vehicle : traffic.hyrail.garc.long
 {
-	accessories[]: .hyrail_l.chassis
-	accessories[]: .hyrail_l.fwheel
-	accessories[]: .hyrail_l.rwheel
-	accessories[]: .hyrail_l.rwheel2
+	accessories[]: .hyrail.garc.long.chassis
+	accessories[]: .hyrail.garc.long.fwheel
+	accessories[]: .hyrail.garc.long.rwheel
+	accessories[]: .hyrail.garc.long.rwheel2
 
 	max_speed: 120
 
-	lod_dist[]: 45
-	lod_dist[]: 70
-	lod_dist[]: 100
-
 	tags[]: slow
 
-	#color[]: (0.0343, 0.0343, 0.0343) #black
-	#color[]: (0.0382, 0.0318, 0.0273) #brown
-	#color[]: (0, 0.0263, 0.1347) #blue
-	#color[]: (0.5394, 0.5711, 0.5906) #silver
-	#color[]: (0.8713, 0.8631, 0.8227) #white
-	#color[]: (0.1596, 0.0093, 0.0197) #red
-	#color[]: (0.8713, 0.8631, 0.8227) #white
-	#color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.6514, 0.6724, 0.7157) #white
+	color[]: (0.8, 0.8, 0.8) #white
+	color[]: (0.7157, 0.6795, 0.6654) #white02
 
 	vehicle_mass: 11200
 	engine_power: 500
@@ -28,23 +20,112 @@ traffic_vehicle : traffic.hyrail_l
 @include "drivers_generic.sui"
 }
 
-vehicle_accessory: .hyrail_l.chassis
+vehicle_accessory: .hyrail.garc.long.chassis
 {
-	data_path: "/def/vehicle/ai/towtruck/chassis_hyrail_long.sii"
+	data_path: "/def/vehicle/ai/towtruck/chassis_hyrail_garc_long.sii"
 }
 
-vehicle_wheel_accessory: .hyrail_l.fwheel
+vehicle_wheel_accessory: .hyrail.garc.long.fwheel
 {
 
 	data_path: "/def/vehicle/f_wheel/steel.sii"
 }
 
-vehicle_wheel_accessory: .hyrail_l.rwheel
+vehicle_wheel_accessory: .hyrail.garc.long.rwheel
 {
 
 	data_path: "/def/vehicle/r_wheel/steel.sii"
 }
-vehicle_wheel_accessory: .hyrail_l.rwheel2
+vehicle_wheel_accessory: .hyrail.garc.long.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+######################################################################### John ####################################################################################
+
+traffic_vehicle : traffic.hyrail.john.long
+{
+	accessories[]: .hyrail.john.long.chassis
+	accessories[]: .hyrail.john.long.fwheel
+	accessories[]: .hyrail.john.long.rwheel
+	accessories[]: .hyrail.john.long.rwheel2
+
+	max_speed: 120
+
+	tags[]: slow
+
+	#color[]: (0.1070, 0.1144, 0.1274) #DarkBlue
+	color[]: (0.0382, 0.0452, 0.0423) #DarkBlue02
+
+	vehicle_mass: 11200
+	engine_power: 500
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .hyrail.john.long.chassis
+{
+	data_path: "/def/vehicle/ai/towtruck/chassis_hyrail_john_long.sii"
+}
+
+vehicle_wheel_accessory: .hyrail.john.long.fwheel
+{
+
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .hyrail.john.long.rwheel
+{
+
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory: .hyrail.john.long.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+
+######################################################################### Lines ####################################################################################
+
+traffic_vehicle : traffic.hyrail.lines.long
+{
+	accessories[]: .hyrail.lines.long.chassis
+	accessories[]: .hyrail.lines.long.fwheel
+	accessories[]: .hyrail.lines.long.rwheel
+	accessories[]: .hyrail.lines.long.rwheel2
+
+	max_speed: 120
+
+	tags[]: slow
+
+	color[]: (0.6514, 0.6724, 0.7157) #white
+	color[]: (0.8, 0.8, 0.8) #white
+	color[]: (0.7157, 0.6795, 0.6654) #white02
+
+	vehicle_mass: 11200
+	engine_power: 500
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .hyrail.lines.long.chassis
+{
+	data_path: "/def/vehicle/ai/towtruck/chassis_hyrail_lines_long.sii"
+}
+
+vehicle_wheel_accessory: .hyrail.lines.long.fwheel
+{
+
+	data_path: "/def/vehicle/f_wheel/steel.sii"
+}
+
+vehicle_wheel_accessory: .hyrail.lines.long.rwheel
+{
+
+	data_path: "/def/vehicle/r_wheel/steel.sii"
+}
+vehicle_wheel_accessory: .hyrail.lines.long.rwheel2
 {
 	offset: 2
 	data_path: "/def/vehicle/r_wheel/steel.sii"

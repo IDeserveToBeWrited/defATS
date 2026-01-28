@@ -2,7 +2,7 @@ SiiNunit
 {
 ###				Cargo Dimensions 
 ###   	helicopter (3.9, 3.2, 16.0), house (5.0, 4.0, 12.5), aircondition (5.0, 3.0, 13.0), pilot_boat (5.1, 5.3, 16.0), silo (4.6, 4.7, 13.8)
-###		tank (4.8, 4.4, 7.8), mystery_box (6.0, 5.0, 6.0), dumper_tire (4.4, 3.2, 12.1), dumper (6.1, 4.1, 8.3), lattice (5.0, 4.1, 12.1), dumper_hull (6.4, 4.1, 10.0)
+###		tank (4.8, 4.4, 7.8), mystery_box (6.0, 5.0, 6.0), dumper_tire (4.4, 3.2, 12.1), dumper (6.1, 4.1, 8.3), lattice (5.0, 4.1, 12.1), dumper_hull (6.4, 4.1, 10.0), space (2.6, 2.8, 7.5)
 ###
 
 
@@ -144,9 +144,9 @@ oversize_offer_data : spec_offer.ovesize_2d {
 		cutscenes_intro_night[]: cutscene.ovs_i_latn
 }
 
-### FROM OAKLAND HARBOR TO HURON BUSHNELL FARM 1
+### FROM OAKLAND HARBOR TO HURON SUNSHINE CROPS 1
 oversize_offer_data : spec_offer.ovesize_3 {
-		route : route_data.oak_bus1	
+		route : route_data.oak_hur1	
 		cargo : cargo.silo
 		low_time_limit  : 120
 		high_time_limit : 1900
@@ -157,9 +157,9 @@ oversize_offer_data : spec_offer.ovesize_3 {
 		cutscenes_intro_night[]: cutscene.ovs_i_siln
 }
 
-### FROM OAKLAND HARBOR TO HURON BUSHNELL FARM 2
+### FROM OAKLAND HARBOR TO HURON SUNSHINE CROPS 2
 oversize_offer_data : spec_offer.ovesize_3a {
-		route : route_data.oak_bus1	
+		route : route_data.oak_hur1	
 		cargo : cargo.tank
 		low_time_limit  : 120
 		high_time_limit : 1900
@@ -170,9 +170,9 @@ oversize_offer_data : spec_offer.ovesize_3a {
 		cutscenes_intro_night[]: cutscene.ovs_i_tankn
 }
 
-### FROM OAKLAND HARBOR TO HURON BUSHNELL FARM 3
+### FROM OAKLAND HARBOR TO HURON SUNSHINE CROPS 3
 oversize_offer_data : spec_offer.ovesize_3b {
-		route : route_data.oak_bus1	
+		route : route_data.oak_hur1	
 		cargo : cargo.lattice
 		low_time_limit  : 120
 		high_time_limit : 1900
@@ -183,9 +183,9 @@ oversize_offer_data : spec_offer.ovesize_3b {
 		cutscenes_intro_night[]: cutscene.ovs_i_latn
 }
 
-### FROM OAKLAND HARBOR TO HURON BUSHNELL FARM 4
+### FROM OAKLAND HARBOR TO HURON SUNSHINE CROPS 4
 oversize_offer_data : spec_offer.ovesize_3c {
-		route : route_data.oak_bus1	
+		route : route_data.oak_hur1	
 		cargo : cargo.mystery_box
 		low_time_limit  : 120
 		high_time_limit : 1900
@@ -196,9 +196,9 @@ oversize_offer_data : spec_offer.ovesize_3c {
 		cutscenes_intro_night[]: cutscene.ovs_i_boxn
 }
 
-### FROM OAKLAND HARBOR TO HURON BUSHNELL FARM 5
+### FROM OAKLAND HARBOR TO HURON SUNSHINE CROPS 5
 oversize_offer_data : spec_offer.ovesize_3d {
-		route : route_data.oak_bus1	
+		route : route_data.oak_hur1	
 		cargo : cargo.house
 		low_time_limit  : 120
 		high_time_limit : 1900
@@ -522,7 +522,7 @@ oversize_offer_data : spec_offer.ovesize_7c {
 		cutscenes_intro_night[]: cutscene.ovs_i_tirn
 }
 
-### From Phoenix Airport to Sierra Vista Coastline Mine 4
+### From Phoenix Airport to Sierra Vista Coastline Mine 6
 oversize_offer_data : spec_offer.ovesize_7d {
 		route : route_data.pho_sie1	
 		cargo : cargo.dumper_hull
@@ -535,7 +535,7 @@ oversize_offer_data : spec_offer.ovesize_7d {
 		cutscenes_intro_night[]: cutscene.ovs_i_hulln
 }
 
-### From Phoenix Airport to Sierra Vista Coastline Mine 5
+### From Phoenix Airport to Sierra Vista Coastline Mine 6
 oversize_offer_data : spec_offer.ovesize_7e {
 		route : route_data.pho_sie1	
 		cargo : cargo.dumper
@@ -551,30 +551,16 @@ oversize_offer_data : spec_offer.ovesize_7e {
 ### From Eureka HMS to Redding BITUMEN 1 
 oversize_offer_data : spec_offer.ovesize_8 {
 		route : route_data.eur_red1	
-		cargo : cargo.dumper_tire
+		cargo : cargo.silo
 		low_time_limit  : 120
 		high_time_limit : 2000
-		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_dimension : (4.6, 4.7, 13.8)
 		cargo_trailer_index : 0
 		
-		cutscenes_intro[]: cutscene.ovs_i_tir3
-		cutscenes_intro_night[]: cutscene.ovs_i_tirn3
+		cutscenes_intro[]: cutscene.ovs_i_sil2
+		cutscenes_intro_night[]: cutscene.ovs_i_siln2
 		
 }
-
-### From Eureka HMS to Redding BITUMEN 2 
-oversize_offer_data : spec_offer.ovesize_8a {
-		route : route_data.eur_red1	
-		cargo : cargo.dumper_hull
-		low_time_limit  : 120
-		high_time_limit : 2000
-		cargo_dimension : (6.4, 4.1, 10.0)
-		cargo_trailer_index : 0
-		
-		cutscenes_intro[]: cutscene.ovs_i_hull2
-		cutscenes_intro_night[]: cutscene.ovs_i_hulln2
-}
-
 ### From Eureka HMS to Redding BITUMEN 3 
 oversize_offer_data : spec_offer.ovesize_8b {
 		route : route_data.eur_red1	
@@ -597,21 +583,8 @@ oversize_offer_data : spec_offer.ovesize_8c {
 		cargo_dimension : (4.8, 4.4, 7.8)
 		cargo_trailer_index : 0
 		
-		cutscenes_intro[]: cutscene.ovs_i_tank3
-		cutscenes_intro_night[]: cutscene.ovs_i_tankn3
-}
-
-### From Eureka HMS to Redding BITUMEN 5 
-oversize_offer_data : spec_offer.ovesize_8d {
-		route : route_data.eur_red1	
-		cargo : cargo.dumper 
-		low_time_limit  : 120
-		high_time_limit : 2000
-		cargo_dimension : (6.1, 4.1, 8.3)
-		cargo_trailer_index : 0
-		
-		cutscenes_intro[]: cutscene.ovs_i_mut2
-		cutscenes_intro_night[]: cutscene.ovs_i_mutn2
+		cutscenes_intro[]: cutscene.ovs_i_tank
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn
 }
 
 ### From Eureka HMS to Redding BITUMEN 6 
@@ -692,7 +665,7 @@ oversize_offer_data : spec_offer.ovesize_9d {
 		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
 }
 
-### From Truckee (Bitumen) to Carson City (Crops) 1
+### From Truckee (Bitumen) to Carson City (Coastline Mining) 1
 oversize_offer_data : spec_offer.ovesize_10 {
 		route : route_data.tru_car1
 		cargo : cargo.tank
@@ -705,20 +678,20 @@ oversize_offer_data : spec_offer.ovesize_10 {
 		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
 }
 
-### From Truckee (Bitumen) to Carson City (Crops) 2
+### From Truckee (Bitumen) to Carson City (Coastline Mining) 2
 oversize_offer_data : spec_offer.ovesize_10a {
 		route : route_data.tru_car1
-		cargo : cargo.silo
+		cargo : cargo.dumper_hull
 		low_time_limit  : 120
 		high_time_limit : 1800
-		cargo_dimension : (4.6, 4.7, 13.8)
+		cargo_dimension : (6.4, 4.1, 10.0)
 		cargo_trailer_index : 0
 		
-		cutscenes_intro[]: cutscene.ovs_i_sil2
-		cutscenes_intro_night[]: cutscene.ovs_i_siln2
+		cutscenes_intro[]: cutscene.ovs_i_hull
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln
 }
 
-### From Truckee (Bitumen) to Carson City (Crops) 3
+### From Truckee (Bitumen) to Carson City (Coastline Mining) 3
 oversize_offer_data : spec_offer.ovesize_10b {
 		route : route_data.tru_car1
 		cargo : cargo.mystery_box
@@ -731,7 +704,7 @@ oversize_offer_data : spec_offer.ovesize_10b {
 		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
 }
 
-### From Truckee (Bitumen) to Carson City (Crops) 4
+### From Truckee (Bitumen) to Carson City (Coastline Mining) 4
 oversize_offer_data : spec_offer.ovesize_10c {
 		route : route_data.tru_car1
 		cargo : cargo.dumper_tire
@@ -744,20 +717,33 @@ oversize_offer_data : spec_offer.ovesize_10c {
 		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
 }
 
-### From Truckee (Bitumen) to Carson City (Crops) 5
+### From Truckee (Bitumen) to Carson City (Coastline Mining) 5
 oversize_offer_data : spec_offer.ovesize_10d {
 		route : route_data.tru_car1
-		cargo : cargo.house
+		cargo : cargo.art_dumper
 		low_time_limit  : 120
 		high_time_limit : 1800
-		cargo_dimension : (5.0, 4.0, 12.5)
+		cargo_dimension : (4.2, 4.3, 12.0)
 		cargo_trailer_index : 0
 		
-		cutscenes_intro[]: cutscene.ovs_i_hou3
-		cutscenes_intro_night[]: cutscene.ovs_i_houn3
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
 }
 
-### From Oxnard (wallbert) to mine near Barstow /city (Coastline mining) 1
+### From Truckee (Bitumen) to Carson City (Coastline Mining) 6
+oversize_offer_data : spec_offer.ovesize_10e {
+		route : route_data.tru_car1
+		cargo : cargo.load_un
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.2, 3.0, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_loa
+		cutscenes_intro_night[]: cutscene.ovs_i_loan
+}
+
+### From Oxnard (warehouse) to Borax mine near Barstow /city 1
 oversize_offer_data : spec_offer.ovesize_11 {
 		route : route_data.oxn_bar1
 		cargo : cargo.dumper_tire
@@ -770,30 +756,59 @@ oversize_offer_data : spec_offer.ovesize_11 {
 		cutscenes_intro_night[]: cutscene.ovs_i_tirn
 }
 
-### From Oxnard (wallbert) to mine near Barstow /city (Coastline mining) 2
+### From Oxnard (warehouse) to Borax mine near Barstow /city 1
 oversize_offer_data : spec_offer.ovesize_11a {
 		route : route_data.oxn_bar1
-		cargo : cargo.house
+		cargo : cargo.dumper_hull
 		low_time_limit  : 120
-		high_time_limit : 2300
-		cargo_dimension : (5.0, 4.0, 12.5)
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
 		cargo_trailer_index : 0
 		
-		cutscenes_intro[]: cutscene.ovs_i_hou
-		cutscenes_intro_night[]: cutscene.ovs_i_houn
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
 }
 
-### From Oxnard (wallbert) to mine near Barstow /city (Coastline mining) 3
+### From Oxnard (warehouse) to Borax mine near Barstow /city 1
 oversize_offer_data : spec_offer.ovesize_11b {
 		route : route_data.oxn_bar1
-		cargo : cargo.tank
+		cargo : cargo.dumper
 		low_time_limit  : 120
-		high_time_limit : 2300
-		cargo_dimension : (4.8, 4.4, 7.8)
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
 		cargo_trailer_index : 0
 		
-		cutscenes_intro[]: cutscene.ovs_i_tank
-		cutscenes_intro_night[]: cutscene.ovs_i_tankn
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+
+### From Oxnard (warehouse) to Borax mine near Barstow /city 1
+oversize_offer_data : spec_offer.ovesize_11c {
+		route : route_data.oxn_bar1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### From Oxnard (warehouse) to Borax mine near Barstow /city 1
+oversize_offer_data : spec_offer.ovesize_11d {
+		route : route_data.oxn_bar1
+		cargo : cargo.load_un
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.2, 3.0, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_loa
+		cutscenes_intro_night[]: cutscene.ovs_i_loan
 }
 
 ### Artesia (chems) to Las Cruces (wallbert) - (Mexico) 1
@@ -1067,22 +1082,9 @@ oversize_offer_data : spec_offer.ovesize_15d {
 		cutscenes_intro_night[]: cutscene.ovs_i_siln
 }
 
-### From San Francisco Water Reservoir to Rail Station between Fresno and Bakersfield 1
-oversize_offer_data : spec_offer.ovesize_16 {
-		route : route_data.saf_fre1
-		cargo : cargo.pilot_boat
-		low_time_limit  : 120
-		high_time_limit : 3200
-		cargo_dimension : (5.1, 5.3, 16.0)
-		cargo_trailer_index : 0
-		
-		cutscenes_intro[]: cutscene.ovs_i_boa
-		cutscenes_intro_night[]: cutscene.ovs_i_boan
-}
-
-### From San Francisco Water Reservoir to Rail Station between Fresno and Bakersfield 2
+### From San Francisco Chemistry to Fresno Bitumen 1 (California Rework)
 oversize_offer_data : spec_offer.ovesize_16a {
-		route : route_data.saf_fre1
+		route : route_data.san_fre1
 		cargo : cargo.mystery_box
 		low_time_limit  : 120
 		high_time_limit : 3200
@@ -1093,22 +1095,9 @@ oversize_offer_data : spec_offer.ovesize_16a {
 		cutscenes_intro_night[]: cutscene.ovs_i_boxn
 }
 
-### From San Francisco Water Reservoir to Rail Station between Fresno and Bakersfield 3
-oversize_offer_data : spec_offer.ovesize_16b {
-		route : route_data.saf_fre1
-		cargo : cargo.helicopter
-		low_time_limit  : 120
-		high_time_limit : 3200
-		cargo_dimension : (3.9, 3.2, 16.0)
-		cargo_trailer_index : 0
-		
-		cutscenes_intro[]: cutscene.ovs_i_hel
-		cutscenes_intro_night[]: cutscene.ovs_i_heln
-}
-
-### From San Francisco Water Reservoir to Rail Station between Fresno and Bakersfield 4
+### From San Francisco Chemistry to Fresno Bitumen 2 (California Rework)
 oversize_offer_data : spec_offer.ovesize_16c {
-		route : route_data.saf_fre1
+		route : route_data.san_fre1
 		cargo : cargo.tank
 		low_time_limit  : 120
 		high_time_limit : 3200
@@ -1119,22 +1108,22 @@ oversize_offer_data : spec_offer.ovesize_16c {
 		cutscenes_intro_night[]: cutscene.ovs_i_tankn
 }
 
-### From San Francisco Water Reservoir to Rail Station between Fresno and Bakersfield 5
+### From San Francisco Chemistry to Fresno Bitumen 3 (California Rework)
 oversize_offer_data : spec_offer.ovesize_16d {
-		route : route_data.saf_fre1
+		route : route_data.san_fre1
 		cargo : cargo.silo
 		low_time_limit  : 120
 		high_time_limit : 3200
 		cargo_dimension : (4.6, 4.7, 13.8)
 		cargo_trailer_index : 0
 		
-		cutscenes_intro[]: cutscene.ovs_i_sil
-		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		cutscenes_intro[]: cutscene.ovs_i_sil2
+		cutscenes_intro_night[]: cutscene.ovs_i_siln2
 }
 
-### From San Rafael (Vineyard) to Eureka (Vineyard) 1
+### From Sacramento to Modesto 1
 oversize_offer_data : spec_offer.ovesize_17 {
-		route : route_data.san_eu1
+		route : route_data.sac_mod1
 		cargo : cargo.tank
 		low_time_limit  : 120
 		high_time_limit : 3100
@@ -1145,9 +1134,9 @@ oversize_offer_data : spec_offer.ovesize_17 {
 		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
 }
 
-### From San Rafael (Vineyard) to Eureka (Vineyard) 2
+### From Sacramento to Modesto 2
 oversize_offer_data : spec_offer.ovesize_17a {
-		route : route_data.san_eu1
+		route : route_data.sac_mod1
 		cargo : cargo.silo
 		low_time_limit  : 120
 		high_time_limit : 3100
@@ -1158,9 +1147,9 @@ oversize_offer_data : spec_offer.ovesize_17a {
 		cutscenes_intro_night[]: cutscene.ovs_i_siln2
 }
 
-### From San Rafael (Vineyard) to Eureka (Vineyard) 3
+### From Sacramento to Modesto 3
 oversize_offer_data : spec_offer.ovesize_17b {
-		route : route_data.san_eu1
+		route : route_data.sac_mod1
 		cargo : cargo.house
 		low_time_limit  : 120
 		high_time_limit : 3100
@@ -1171,9 +1160,9 @@ oversize_offer_data : spec_offer.ovesize_17b {
 		cutscenes_intro_night[]: cutscene.ovs_i_houn
 }
 
-### From San Rafael (Vineyard) to Eureka (Vineyard) 4
+### From Sacramento to Modesto 4
 oversize_offer_data : spec_offer.ovesize_17c {
-		route : route_data.san_eu1
+		route : route_data.sac_mod1
 		cargo : cargo.mystery_box
 		low_time_limit  : 120
 		high_time_limit : 3100
@@ -1185,9 +1174,9 @@ oversize_offer_data : spec_offer.ovesize_17c {
 		
 }
 
-### From San Rafael (Vineyard) to Eureka (Vineyard) 5
+### From Sacramento to Modesto 5
 oversize_offer_data : spec_offer.ovesize_17d {
-		route : route_data.san_eu1
+		route : route_data.sac_mod1
 		cargo : cargo.lattice
 		low_time_limit  : 120
 		high_time_limit : 3100
@@ -1842,6 +1831,33 @@ oversize_offer_data : spec_offer.ovesize_28d {
 
 }
 
+### FROM Denver to Gold Mine Near Colorado Springs 5
+oversize_offer_data : spec_offer.ovesize_28e {
+		route : route_data.den_col1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### FROM Denver to Gold Mine Near Colorado Springs 6
+oversize_offer_data : spec_offer.ovesize_28f {
+		route : route_data.den_col1
+		cargo : cargo.load_un
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.2, 3.0, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_loa
+		cutscenes_intro_night[]: cutscene.ovs_i_loan
+}
+
 ### FROM Sterling to Colorado Springs 1
 oversize_offer_data : spec_offer.ovesize_29 {
 		route : route_data.ste_col1
@@ -1981,6 +1997,20 @@ oversize_offer_data : spec_offer.ovesize_31c {
 		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
 }
 
+### FROM Casper to Gillette 5
+oversize_offer_data : spec_offer.ovesize_31d {
+		route : route_data.cas_gil1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
 ### FROM Laramie to Rawlins 1
 oversize_offer_data : spec_offer.ovesize_32 {
 		route : route_data.lar_raw1
@@ -2035,10 +2065,2438 @@ oversize_offer_data : spec_offer.ovesize_33 {
 		
 }
 
+############################ 1.44 DLC UPDATE ####################################
+
+################# Colorado ##################
+
+### FROM Burlington to Lamar 1
+oversize_offer_data : spec_offer.ovesize_34 {
+		route : route_data.bur_lam1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.6, 4.7, 13.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### FROM Burlington to Lamar 2
+oversize_offer_data : spec_offer.ovesize_34a {
+		route : route_data.bur_lam1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Burlington to Lamar 3
+oversize_offer_data : spec_offer.ovesize_34b {
+		route : route_data.bur_lam1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+################# IDAHO ##################
+
+### FROM Lewiston to Sandpoint
+oversize_offer_data : spec_offer.ovesize_35 {
+		route : route_data.lew_san1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.6, 4.7, 13.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### FROM Lewiston to Sandpoint 2
+oversize_offer_data : spec_offer.ovesize_35a {
+		route : route_data.lew_san1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Lewiston to Sandpoint 3
+oversize_offer_data : spec_offer.ovesize_35b {
+		route : route_data.lew_san1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+################# UTAH ##################
+
+### FROM Salina to Cedar City 1
+oversize_offer_data : spec_offer.ovesize_36 {
+		route : route_data.sal_ced1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### FROM Salina to Cedar City 2
+oversize_offer_data : spec_offer.ovesize_36a {
+		route : route_data.sal_ced1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Salina to Cedar City 3
+oversize_offer_data : spec_offer.ovesize_36b {
+		route : route_data.sal_ced1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### FROM Salina to Cedar City 4
+oversize_offer_data : spec_offer.ovesize_36c {
+		route : route_data.sal_ced1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
+}
+### FROM Salina to Cedar City 5
+oversize_offer_data : spec_offer.ovesize_36d {
+		route : route_data.sal_ced1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+
+
+################# WASHINGTON ##################
+
+### FROM Omak to Yakima 1
+oversize_offer_data : spec_offer.ovesize_37 {
+		route : route_data.oma_yak1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### FROM Omak to Yakima 2
+oversize_offer_data : spec_offer.ovesize_37a {
+		route : route_data.oma_yak1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Omak to Yakima 3
+oversize_offer_data : spec_offer.ovesize_37b {
+		route : route_data.oma_yak1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+################# OREGON ##################
+
+### FROM Dalles to Salem 1
+oversize_offer_data : spec_offer.ovesize_38 {
+		route : route_data.dal_sal1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Dalles to Salem 2
+oversize_offer_data : spec_offer.ovesize_38a {
+		route : route_data.dal_sal1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Dalles to Salem 3
+oversize_offer_data : spec_offer.ovesize_38b {
+		route : route_data.dal_sal1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+################# NEW MEXICO ##################
+
+### FROM Santa Fe to Socorro 1
+oversize_offer_data : spec_offer.ovesize_39 {
+		route : route_data.san_soc1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Santa Fe to Socorro 2
+oversize_offer_data : spec_offer.ovesize_39a {
+		route : route_data.san_soc1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### FROM Santa Fe to Socorro 3
+oversize_offer_data : spec_offer.ovesize_39b {
+		route : route_data.san_soc1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
+}
+
+### FROM Santa Fe to Socorro 4
+oversize_offer_data : spec_offer.ovesize_39c {
+		route : route_data.san_soc1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+
+### FROM Santa Fe to Socorro 5
+oversize_offer_data : spec_offer.ovesize_39d {
+		route : route_data.san_soc1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+
+################# WYOMING ##################
+
+### FROM Cheyenne to Rock Springs 1
+oversize_offer_data : spec_offer.ovesize_40 {
+		route : route_data.che_roc1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Cheyenne to Rock Springs 2
+oversize_offer_data : spec_offer.ovesize_40a {
+		route : route_data.che_roc1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### FROM Cheyenne to Rock Springs 3
+oversize_offer_data : spec_offer.ovesize_40b {
+		route : route_data.che_roc1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+################# BASE / NEVADA ##################
+
+### FROM Winnemucca to Carson City 1
+oversize_offer_data : spec_offer.ovesize_41 {
+		route : route_data.win_car1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Winnemucca to Carson City 1
+oversize_offer_data : spec_offer.ovesize_41a {
+		route : route_data.win_car1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Winnemucca to Carson City 1
+oversize_offer_data : spec_offer.ovesize_41b {
+		route : route_data.win_car1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+################# MONTANA ##################
+
+### FROM Havre to Lewiston 1
+oversize_offer_data : spec_offer.ovesize_42 {
+		route : route_data.hav_lew1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Havre to Lewiston 2
+oversize_offer_data : spec_offer.ovesize_42a {
+		route : route_data.hav_lew1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Havre to Lewiston 3
+oversize_offer_data : spec_offer.ovesize_42b {
+		route : route_data.hav_lew1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### FROM Havre to Lewiston 4
+oversize_offer_data : spec_offer.ovesize_42c {
+		route : route_data.hav_lew1
+		cargo : cargo.house
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.0, 12.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hou
+		cutscenes_intro_night[]: cutscene.ovs_i_houn
+}
+
+### FROM Thompson Falls to Kalispell (Glacier National Park)
+oversize_offer_data : spec_offer.ovesize_43 {
+		route : route_data.tho_kal1
+		cargo : cargo.house
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.0, 12.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hou
+		cutscenes_intro_night[]: cutscene.ovs_i_houn
+		
+}
+
+### FROM Thompson Falls to Kalispell (Glacier National Park) 2
+oversize_offer_data : spec_offer.ovesize_43a {
+		route : route_data.tho_kal1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Thompson Falls to Kalispell (Glacier National Park) 3
+oversize_offer_data : spec_offer.ovesize_43b {
+		route : route_data.tho_kal1
+		cargo : cargo.helicopter
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.9, 3.2, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hel
+		cutscenes_intro_night[]: cutscene.ovs_i_heln
+		
+}
+
+### FROM Lauriel to Glendive 1
+oversize_offer_data : spec_offer.ovesize_44 {
+		route : route_data.lau_gle1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Lauriel to Glendive 2
+oversize_offer_data : spec_offer.ovesize_44a {
+		route : route_data.lau_gle1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Lauriel to Glendive 3
+oversize_offer_data : spec_offer.ovesize_44b {
+		route : route_data.lau_gle1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### FROM Butte to Bozeman (Silene GAS)
+oversize_offer_data : spec_offer.ovesize_45 {
+		route : route_data.but_boz1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Butte to Bozeman (Silene GAS) 2
+oversize_offer_data : spec_offer.ovesize_45a {
+		route : route_data.but_boz1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Butte to Bozeman (Silene GAS) 3
+oversize_offer_data : spec_offer.ovesize_45b {
+		route : route_data.but_boz1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+		
+}
+
+
+################# TEXAS ##################
+
+
+### FROM Corpus Christi to Brownsville (Space Industry) 1
+oversize_offer_data : spec_offer.ovesize_46 {
+		route : route_data.cor_bro1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Corpus Christi to Brownsville (Space Industry) 2
+oversize_offer_data : spec_offer.ovesize_46a {
+		route : route_data.cor_bro1
+		cargo : cargo.helicopter
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.9, 3.2, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hel
+		cutscenes_intro_night[]: cutscene.ovs_i_heln
+		
+}
+
+
+### FROM Corpus Christi to Brownsville (Space Industry) 3
+oversize_offer_data : spec_offer.ovesize_46b {
+		route : route_data.cor_bro1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+
+### FROM Corpus Christi to Brownsville (Space Industry) 4
+oversize_offer_data : spec_offer.ovesize_46c {
+		route : route_data.cor_bro1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+		
+}
+
+### FROM Corpus Christi to Brownsville (Space Industry) 5
+oversize_offer_data : spec_offer.ovesize_46d {
+		route : route_data.cor_bro1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### FROM San Angelo to Dallas 1
+oversize_offer_data : spec_offer.ovesize_47 {
+		route : route_data.san_dal1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### FROM San Angelo to Dallas 3
+oversize_offer_data : spec_offer.ovesize_47a {
+		route : route_data.san_dal1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM San Angelo to Dallas 3
+oversize_offer_data : spec_offer.ovesize_48b {
+		route : route_data.san_dal1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Fort Stockton to Abilene 1
+oversize_offer_data : spec_offer.ovesize_49 {
+		route : route_data.for_abi1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Fort Stockton to Abilene 2
+oversize_offer_data : spec_offer.ovesize_49a {
+		route : route_data.for_abi1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Fort Stockton to Abilene 3
+oversize_offer_data : spec_offer.ovesize_49b {
+		route : route_data.for_abi1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### FROM Longview to Galveston 1
+oversize_offer_data : spec_offer.ovesize_50 {
+		route : route_data.lon_gal1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Longview to Galveston 2
+oversize_offer_data : spec_offer.ovesize_50a {
+		route : route_data.lon_gal1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Longview to Galveston 3
+oversize_offer_data : spec_offer.ovesize_50b {
+		route : route_data.lon_gal1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### FROM Longview to Galveston 4
+oversize_offer_data : spec_offer.ovesize_50c {
+		route : route_data.lon_gal1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### FROM Del Rio to Van Horn 1
+oversize_offer_data : spec_offer.ovesize_51{
+		route : route_data.del_van1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Del Rio to Van Horn 2
+oversize_offer_data : spec_offer.ovesize_51a{
+		route : route_data.del_van1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Del Rio to Van Horn 3
+oversize_offer_data : spec_offer.ovesize_51b{
+		route : route_data.del_van1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+		
+}
+
+### FROM Lubbock to Odessa Oil Wells 1
+oversize_offer_data : spec_offer.ovesize_52{
+		route : route_data.lub_ode1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Lubbock to Odessa Oil Wells 2
+oversize_offer_data : spec_offer.ovesize_52a{
+		route : route_data.lub_ode1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### FROM Lubbock to Odessa Oil Wells 3
+oversize_offer_data : spec_offer.ovesize_52b{
+		route : route_data.lub_ode1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Wichita Falls to Amarillo 1
+oversize_offer_data : spec_offer.ovesize_53{
+		route : route_data.wic_ama1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Wichita Falls to Amarillo 2
+oversize_offer_data : spec_offer.ovesize_53a{
+		route : route_data.wic_ama1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+############################ 1.48 DLC UPDATE ####################################
+
+### FROM Truckee to Richmond Wharf 1
+oversize_offer_data : spec_offer.ovesize_54{
+		route : route_data.tru_oak1
+		cargo : cargo.pilot_boat
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.1, 5.3, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_boa2
+		cutscenes_intro_night[]: cutscene.ovs_i_boan2
+
+}
+
+### FROM Truckee to Richmond Wharf 2
+oversize_offer_data : spec_offer.ovesize_54a{
+		route : route_data.tru_oak1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+
+}
+
+### FROM Truckee to Richmond Wharf 3
+oversize_offer_data : spec_offer.ovesize_54b{
+		route : route_data.tru_oak1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+
+}
+
+### FROM Truckee to Richmond Wharf 4
+oversize_offer_data : spec_offer.ovesize_54c{
+		route : route_data.tru_oak1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+
+}
+
+### FROM Truckee to Richmond Wharf 5
+oversize_offer_data : spec_offer.ovesize_54d{
+		route : route_data.tru_oak1
+		cargo : cargo.windblade
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.5, 3.0, 39.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_win
+		cutscenes_intro_night[]: cutscene.ovs_i_winn
+
+}
+
+### FROM Truckee to Richmond Wharf 6
+oversize_offer_data : spec_offer.ovesize_54e{
+		route : route_data.tru_oak1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### FROM Lauriel to Billings 1
+oversize_offer_data : spec_offer.ovesize_55{
+		route : route_data.lau_bil1		
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+
+### FROM Lauriel to Billings 2
+oversize_offer_data : spec_offer.ovesize_55a{
+		route : route_data.lau_bil1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
+}
+
+### FROM Lauriel to Billings 3
+oversize_offer_data : spec_offer.ovesize_55b{
+		route : route_data.lau_bil1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### FROM Lauriel to Billings 4
+oversize_offer_data : spec_offer.ovesize_55c{
+		route : route_data.lau_bil1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat3
+		cutscenes_intro_night[]: cutscene.ovs_i_latn3
+		
+}
+
+### FROM Lauriel to Billings 5
+oversize_offer_data : spec_offer.ovesize_55d{
+		route : route_data.lau_bil1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### FROM Lauriel to Billings 6
+oversize_offer_data : spec_offer.ovesize_55e{
+		route : route_data.lau_bil1
+		cargo : cargo.load_un
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.2, 3.0, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_loa
+		cutscenes_intro_night[]: cutscene.ovs_i_loan
+}
+
+
+
+##################### OKLAHOMA ###########################
+
+### FROM Lawton to McAlester 1
+oversize_offer_data : spec_offer.ovesize_56{
+		route : route_data.law_mca1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Lawton to McAlester 2
+oversize_offer_data : spec_offer.ovesize_56a{
+		route : route_data.law_mca1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### FROM Lawton to McAlester 3
+oversize_offer_data : spec_offer.ovesize_56b{
+		route : route_data.law_mca1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### FROM Oklahoma City to Tulsa 1
+oversize_offer_data : spec_offer.ovesize_57{
+		route : route_data.okl_tul1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### FROM Oklahoma City to Tulsa 2
+oversize_offer_data : spec_offer.ovesize_57a{
+		route : route_data.okl_tul1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Oklahoma City to Tulsa 3
+oversize_offer_data : spec_offer.ovesize_57b{
+		route : route_data.okl_tul1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### FROM Clinton to Guymon 1
+oversize_offer_data : spec_offer.ovesize_58{
+		route : route_data.cli_guy1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### FROM Clinton to Guymon 2
+oversize_offer_data : spec_offer.ovesize_58a{
+		route : route_data.cli_guy1
+		cargo : cargo.house
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.0, 12.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hou
+		cutscenes_intro_night[]: cutscene.ovs_i_houn
+		
+}
+
+################## 1.48 UPDATE MARTIN SAFAR ##################
+
+### FROM Laredo to San Antonio 1
+oversize_offer_data : spec_offer.ovesize_59{
+		route : route_data.lar_ant1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
+}
+
+### FROM Laredo to San Antonio 2
+oversize_offer_data : spec_offer.ovesize_59a{
+		route : route_data.lar_ant1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+
+### FROM Laredo to San Antonio 3
+oversize_offer_data : spec_offer.ovesize_59b{
+		route : route_data.lar_ant1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### FROM Laredo to San Antonio 4
+oversize_offer_data : spec_offer.ovesize_59c{
+		route : route_data.lar_ant1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+		
+}
+
+### FROM Laredo to San Antonio 5
+oversize_offer_data : spec_offer.ovesize_59d{
+		route : route_data.lar_ant1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+##################### 1.49 UPDATE ###########################
+
+### From Pueblo to Limon
+oversize_offer_data : spec_offer.ovesize_60{
+		route : route_data.pue_den1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### From Pueblo to Limon
+oversize_offer_data : spec_offer.ovesize_60a{
+		route : route_data.pue_den1
+		cargo : cargo.windblade
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.5, 3.0, 39.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_win
+		cutscenes_intro_night[]: cutscene.ovs_i_winn
+		
+}
+
+### From Pueblo to Trinidad
+oversize_offer_data : spec_offer.ovesize_61{
+		route : route_data.pue_pue1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### From Pueblo to Trinidad
+oversize_offer_data : spec_offer.ovesize_61a{
+		route : route_data.pue_pue1
+		cargo : cargo.windblade
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.5, 3.0, 39.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_win
+		cutscenes_intro_night[]: cutscene.ovs_i_winn
+		
+}
+
+
+##################### KANSAS ###########################
+
+### From Colby to Hutchinson 1
+oversize_offer_data : spec_offer.ovesize_62{
+		route : route_data.cob_hut1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### From Colby to Hutchinson 2
+oversize_offer_data : spec_offer.ovesize_62a{
+		route : route_data.cob_hut1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### From Colby to Hutchinson 3
+oversize_offer_data : spec_offer.ovesize_62b{
+		route : route_data.cob_hut1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### From Topeka to Pittsburg 1
+oversize_offer_data : spec_offer.ovesize_63{
+		route : route_data.top_pit1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### From Topeka to Pittsburg 2
+oversize_offer_data : spec_offer.ovesize_63a{
+		route : route_data.top_pit1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
+}
+
+### From Topeka to Pittsburg 3
+oversize_offer_data : spec_offer.ovesize_63b{
+		route : route_data.top_pit1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+
+### From Topeka to Pittsburg 4
+oversize_offer_data : spec_offer.ovesize_63c{
+		route : route_data.top_pit1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### From Dodge City to Emporia 1
+oversize_offer_data : spec_offer.ovesize_64{
+		route : route_data.dod_emp1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### From Dodge City to Emporia 2
+oversize_offer_data : spec_offer.ovesize_64a{
+		route : route_data.dod_emp1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+### From Dodge City to Emporia 3
+oversize_offer_data : spec_offer.ovesize_64b{
+		route : route_data.dod_emp1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil
+		cutscenes_intro_night[]: cutscene.ovs_i_siln
+		
+}
+
+### From Dodge City to Emporia 4
+oversize_offer_data : spec_offer.ovesize_64c{
+		route : route_data.dod_emp1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+		
+}
+
+### From Wichita to Salina 1
+oversize_offer_data : spec_offer.ovesize_65{
+		route : route_data.wit_sal1
+		cargo : cargo.helicopter
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.9, 3.2, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hel
+		cutscenes_intro_night[]: cutscene.ovs_i_heln
+		
+}
+
+### From Wichita to Salina 2
+oversize_offer_data : spec_offer.ovesize_65a{
+		route : route_data.wit_sal1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+		
+}
+
+### From Pueblo(co) to Dodge City(ks)
+oversize_offer_data : spec_offer.ovesize_66{
+		route : route_data.pue_dod1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### From Pueblo(co) to Dodge City(ks)
+oversize_offer_data : spec_offer.ovesize_66a{
+		route : route_data.pue_dod1
+		cargo : cargo.windblade
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.5, 3.0, 39.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_win
+		cutscenes_intro_night[]: cutscene.ovs_i_winn
+		
+}
+
+### From Pueblo(co) to Marysville(ks)
+oversize_offer_data : spec_offer.ovesize_67{
+		route : route_data.pue_mar1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### From Pueblo(co) to Marysville(ks)
+oversize_offer_data : spec_offer.ovesize_67a{
+		route : route_data.pue_mar1
+		cargo : cargo.windblade
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.5, 3.0, 39.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_win
+		cutscenes_intro_night[]: cutscene.ovs_i_winn
+		
+}
+
+##################### California Rework ###########################
+
+### From Stockton to a Truck stop near Huron 1
+oversize_offer_data : spec_offer.ovesize_68{
+		route : route_data.sto_hur1
+		cargo : cargo.windblade
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.5, 3.0, 39.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_win
+		cutscenes_intro_night[]: cutscene.ovs_i_winn
+		
+}
+
+### From Stockton to San Francisco 1
+oversize_offer_data : spec_offer.ovesize_69{
+		route : route_data.sto_sfr1
+		cargo : cargo.helicopter
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.9, 3.2, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hel
+		cutscenes_intro_night[]: cutscene.ovs_i_heln
+		
+}
+
+### From Stockton to San Francisco 2
+oversize_offer_data : spec_offer.ovesize_69a{
+		route : route_data.sto_sfr1
+		cargo : cargo.wagon
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.7, 4.6, 20.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_wag
+		cutscenes_intro_night[]: cutscene.ovs_i_wagn
+		
+}
+
+### From Stockton to San Francisco 3
+oversize_offer_data : spec_offer.ovesize_69b{
+		route : route_data.sto_sfr1
+		cargo : cargo.wagon_r211 
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.0, 3.7, 18.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_met
+		cutscenes_intro_night[]: cutscene.ovs_i_metn
+		
+}
+
+############################ Nebraska ####################################
+
+### From Lincoln to Nort Platte 1
+oversize_offer_data : spec_offer.ovesize_70{
+		route : route_data.lin_npl1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### From Lincoln to Nort Platte 2
+oversize_offer_data : spec_offer.ovesize_70a{
+		route : route_data.lin_npl1
+		cargo : cargo.wagon
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.7, 4.6, 20.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_wag
+		cutscenes_intro_night[]: cutscene.ovs_i_wagn
+		
+}
+
+### From Lincoln to Nort Platte 3
+oversize_offer_data : spec_offer.ovesize_70b{
+		route : route_data.lin_npl1
+		cargo : cargo.wagon_r211 
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.0, 3.7, 18.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_met
+		cutscenes_intro_night[]: cutscene.ovs_i_metn
+		
+}
+
+### From Norfolk to Omaha 1
+oversize_offer_data : spec_offer.ovesize_71{
+		route : route_data.nor_oma1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### From Norfolk to Omaha 2
+oversize_offer_data : spec_offer.ovesize_71a{
+		route : route_data.nor_oma1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
+}
+
+### From Norfolk to Omaha 3
+oversize_offer_data : spec_offer.ovesize_71b{
+		route : route_data.nor_oma1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+
+### From Norfolk to Omaha 4
+oversize_offer_data : spec_offer.ovesize_71c{
+		route : route_data.nor_oma1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+
+### From Scottsbluff to McCook 1
+oversize_offer_data : spec_offer.ovesize_72{
+		route : route_data.sco_mcc1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### From Scottsbluff to McCook 2
+oversize_offer_data : spec_offer.ovesize_72a{
+		route : route_data.sco_mcc1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+		
+}
+
+### From Scottsbluff to McCook 3
+oversize_offer_data : spec_offer.ovesize_72b{
+		route : route_data.sco_mcc1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+		
+}
+
+############################ Arkansas ####################################
+
+### From Jonesboro to Hot Springs 1
+oversize_offer_data : spec_offer.ovesize_73{
+		route : route_data.jsb_hsp1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull3
+		cutscenes_intro_night[]: cutscene.ovs_i_hulln3
+		
+}
+
+### From Jonesboro to Hot Springs 1
+oversize_offer_data : spec_offer.ovesize_73a{
+		route : route_data.jsb_hsp1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut3
+		cutscenes_intro_night[]: cutscene.ovs_i_mutn3
+		
+}
+		
+### From Jonesboro to Hot Springs 1
+oversize_offer_data : spec_offer.ovesize_73b{
+		route : route_data.jsb_hsp1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir2
+		cutscenes_intro_night[]: cutscene.ovs_i_tirn2
+		
+}
+		
+### From Jonesboro to Hot Springs 1
+oversize_offer_data : spec_offer.ovesize_73c{
+		route : route_data.jsb_hsp1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum
+		cutscenes_intro_night[]: cutscene.ovs_i_dumn
+		
+}
+
+### From Little Rock to Texarkana 1
+oversize_offer_data : spec_offer.ovesize_74{
+		route : route_data.ltr_txk1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+		
+}
+
+### From Little Rock to Texarkana 1
+oversize_offer_data : spec_offer.ovesize_74a{
+		route : route_data.ltr_txk1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### From Little Rock to Texarkana 1
+oversize_offer_data : spec_offer.ovesize_74b{
+		route : route_data.ltr_txk1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 3100
+		cargo_dimension : (4.6, 4.7, 13.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil2
+		cutscenes_intro_night[]: cutscene.ovs_i_siln2
+}
+
+### From Little Rock to El Dorado 1
+oversize_offer_data : spec_offer.ovesize_75{
+		route : route_data.ltr_eld1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+### From Little Rock to El Dorado 1
+oversize_offer_data : spec_offer.ovesize_75a{
+		route : route_data.ltr_eld1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 3500
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+
+}
+
+### From Little Rock to El Dorado 1
+oversize_offer_data : spec_offer.ovesize_75b{
+		route : route_data.ltr_eld1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 3500
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+}
+
+############################ Update 1.53 (rework California) ####################################
+
+### From Los Angeles to San Diego 1
+oversize_offer_data : spec_offer.ovesize_76{
+		route : route_data.las_sdg1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+}
+
+### From Los Angeles to San Diego 2
+oversize_offer_data : spec_offer.ovesize_76a{
+		route : route_data.las_sdg1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 3500
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+
+}
+
+### From Los Angeles to San Diego 3
+oversize_offer_data : spec_offer.ovesize_76b{
+		route : route_data.las_sdg1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 3500
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+}
+
+### From Los Angeles to San Diego 4
+oversize_offer_data : spec_offer.ovesize_76c{
+		route : route_data.las_sdg1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+		
+}
+
+############################ Missouri ####################################
+
+
+### From Kansas City Mo to Rolla 1
+oversize_offer_data : spec_offer.ovesize_77{
+		route : route_data.kcm_rol1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull4
+		cutscenes_intro_night[]: cutscene.ovs_i_hull4
+		
+}
+
+### From Kansas City Mo to Rolla 2
+oversize_offer_data : spec_offer.ovesize_77a{
+		route : route_data.kcm_rol1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut4
+		cutscenes_intro_night[]: cutscene.ovs_i_mut4
+		
+}
+		
+### From Kansas City Mo to Rolla 3
+oversize_offer_data : spec_offer.ovesize_77b{
+		route : route_data.kcm_rol1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir4
+		cutscenes_intro_night[]: cutscene.ovs_i_tir4
+		
+}
+		
+### From Kansas City Mo to Rolla 4
+oversize_offer_data : spec_offer.ovesize_77c{
+		route : route_data.kcm_rol1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum2
+		cutscenes_intro_night[]: cutscene.ovs_i_dum2
+}
+
+### From Kansas City Mo to Rolla 5
+oversize_offer_data : spec_offer.ovesize_77d{
+		route : route_data.kcm_rol1
+		cargo : cargo.load_un
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.2, 3.0, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_loa2
+		cutscenes_intro_night[]: cutscene.ovs_i_loa2
+}
+
+
+### From Cape Girardeau to Springfield 1
+oversize_offer_data : spec_offer.ovesize_78{
+		route : route_data.cgd_sfd1
+		cargo : cargo.pilot_boat
+		low_time_limit  : 120
+		high_time_limit : 2500
+		cargo_dimension : (5.1, 5.3, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_boa2
+		cutscenes_intro_night[]: cutscene.ovs_i_boan2
+}
+
+### From Cape Girardeau to Springfield 2
+oversize_offer_data : spec_offer.ovesize_78a{
+		route : route_data.cgd_sfd1
+		cargo : cargo.helicopter
+		low_time_limit  : 120
+		high_time_limit : 2500
+		cargo_dimension : (3.9, 3.2, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hel2
+		cutscenes_intro_night[]: cutscene.ovs_i_heln2
+}
+
+### From Cape Girardeau to Springfield 3
+oversize_offer_data : spec_offer.ovesize_78b{
+		route : route_data.cgd_sfd1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 3500
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+
+}
+
+### From Cape Girardeau to Springfield 4
+oversize_offer_data : spec_offer.ovesize_78c{
+		route : route_data.cgd_sfd1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 3500
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+}
+
+### From Cape Girardeau to Springfield 5
+oversize_offer_data : spec_offer.ovesize_78d{
+		route : route_data.cgd_sfd1
+		cargo : cargo.load_un
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.2, 3.0, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_loa
+		cutscenes_intro_night[]: cutscene.ovs_i_loan
+}
+
+### From St. Louis to Kirksville 1
+oversize_offer_data : spec_offer.ovesize_79{
+		route : route_data.stl_kkv1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+}
+
+### From St. Louis to Kirksville 2
+oversize_offer_data : spec_offer.ovesize_79a{
+		route : route_data.stl_kkv1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+}
+
+### From St. Louis to Kirksville 3
+oversize_offer_data : spec_offer.ovesize_79b{
+		route : route_data.stl_kkv1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 3100
+		cargo_dimension : (4.6, 4.7, 13.8)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_sil2
+		cutscenes_intro_night[]: cutscene.ovs_i_siln2
+}
+
+### From St. Louis to Kirksville 4
+oversize_offer_data : spec_offer.ovesize_79c{
+		route : route_data.stl_kkv1
+		cargo : cargo.house
+		low_time_limit  : 120
+		high_time_limit : 1800
+		cargo_dimension : (5.0, 4.0, 12.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hou
+		cutscenes_intro_night[]: cutscene.ovs_i_houn
+}
+
+################################## Iowa #######################################
+
+### From Dubuque to Mason city 1
+oversize_offer_data : spec_offer.ovesize_80{
+		route : route_data.dub_mas1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+}
+
+### From Dubuque to Mason city 2
+oversize_offer_data : spec_offer.ovesize_80a{
+		route : route_data.dub_mas1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+}
+
+### From Dubuque to Mason city 3
+oversize_offer_data : spec_offer.ovesize_80b{
+		route : route_data.dub_mas1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+}
+
+### From Burlington to Iowa City 1
+oversize_offer_data : spec_offer.ovesize_81{
+		route : route_data.bur_iow1
+		cargo : cargo.dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.1, 4.1, 8.3)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_mut4
+		cutscenes_intro_night[]: cutscene.ovs_i_mut4
+}
+
+### From Burlington to Iowa City 2
+oversize_offer_data : spec_offer.ovesize_81a{
+		route : route_data.bur_iow1
+		cargo : cargo.dumper_tire
+		low_time_limit  : 120
+		high_time_limit : 2000
+		cargo_dimension : (4.4, 3.2, 12.1)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_tir4
+		cutscenes_intro_night[]: cutscene.ovs_i_tir4
+}
+
+### From Burlington to Iowa City 3
+oversize_offer_data : spec_offer.ovesize_81b{
+		route : route_data.bur_iow1
+		cargo : cargo.dumper_hull
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.4, 4.1, 10.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_hull4
+		cutscenes_intro_night[]: cutscene.ovs_i_hull4
+}
+
+### From Sioux city to Des Moines 1
+oversize_offer_data : spec_offer.ovesize_82{
+		route : route_data.siu_dmo1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_dum2
+		cutscenes_intro_night[]: cutscene.ovs_i_dum2
+}
+
+### From Sioux city to Des Moines 2
+oversize_offer_data : spec_offer.ovesize_82a{
+		route : route_data.siu_dmo1
+		cargo : cargo.windblade
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (3.5, 3.0, 39.5)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_win
+		cutscenes_intro_night[]: cutscene.ovs_i_winn
+}
+
+### From Sioux city to Des Moines 3
+oversize_offer_data : spec_offer.ovesize_82b{
+		route : route_data.siu_dmo1
+		cargo : cargo.pilot_boat
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.1, 5.3, 16.0)
+		cargo_trailer_index : 0
+		
+		cutscenes_intro[]: cutscene.ovs_i_boa2
+		cutscenes_intro_night[]: cutscene.ovs_i_boan2
+}
+
+### From New Orleans to Lafayette 1
+oversize_offer_data : spec_offer.ovesize_83{
+		route : route_data.nor_laf1
+		cargo : cargo.aircondition
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 3.0, 13.0)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_air
+		cutscenes_intro_night[]: cutscene.ovs_i_airn
+}
+
+### From New Orleans to Lafayette 2
+oversize_offer_data : spec_offer.ovesize_83a{
+		route : route_data.nor_laf1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+}
+
+### From New Orleans to Lafayette 3
+oversize_offer_data : spec_offer.ovesize_83b{
+		route : route_data.nor_laf1
+		cargo : cargo.house
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.0, 12.5)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_hou
+		cutscenes_intro_night[]: cutscene.ovs_i_houn
+}
+
+### From Lake Charles to Natchitoches 1
+oversize_offer_data : spec_offer.ovesize_84{
+		route : route_data.lac_ntc1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+}
+
+### From Lake Charles to Natchitoches 2
+oversize_offer_data : spec_offer.ovesize_84a{
+		route : route_data.lac_ntc1
+		cargo : cargo.lattice
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.0, 4.1, 12.1)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_lat
+		cutscenes_intro_night[]: cutscene.ovs_i_latn
+}
+
+### From Lake Charles to Natchitoches 3
+oversize_offer_data : spec_offer.ovesize_84b{
+		route : route_data.lac_ntc1
+		cargo : cargo.silo
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.6, 4.7, 13.8)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_sil2
+		cutscenes_intro_night[]: cutscene.ovs_i_siln2
+}
+
+### From Shreveport to Baton Rouge 1
+oversize_offer_data : spec_offer.ovesize_85{
+		route : route_data.srp_bro1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+}
+
+### From Shreveport to Baton Rouge 2
+oversize_offer_data : spec_offer.ovesize_85a{
+		route : route_data.srp_bro1
+		cargo : cargo.tank
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.8, 4.4, 7.8)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_tank2
+		cutscenes_intro_night[]: cutscene.ovs_i_tankn2
+}
+
+### From Shreveport to Baton Rouge 3
+oversize_offer_data : spec_offer.ovesize_85b{
+		route : route_data.srp_bro1
+		cargo : cargo.art_dumper
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (4.2, 4.3, 12.0)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_dum2
+		cutscenes_intro_night[]: cutscene.ovs_i_dum2
+}
+
+### From Houma to Port Fourchon 1
+oversize_offer_data : spec_offer.ovesize_86{
+		route : route_data.hom_pof1
+		cargo : cargo.mystery_box
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (6.0, 5.0, 6.0)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_box2
+		cutscenes_intro_night[]: cutscene.ovs_i_boxn2
+}
+
+### From Houma to Port Fourchon 2
+oversize_offer_data : spec_offer.ovesize_86a{
+		route : route_data.hom_pof1
+		cargo : cargo.pilot_boat
+		low_time_limit  : 120
+		high_time_limit : 4000
+		cargo_dimension : (5.1, 5.3, 16.0)
+		cargo_trailer_index : 0
+		
+                cutscenes_intro[]: cutscene.ovs_i_boa2
+		cutscenes_intro_night[]: cutscene.ovs_i_boan2
+}
+
 
 ###				Cargo Dimensions 
 ###   	helicopter (3.9, 3.2, 16.0), house (5.0, 4.0, 12.5), aircondition (5.0, 3.0, 13.0), pilot_boat (5.1, 5.3, 16.0), silo (4.6, 4.7, 13.8)
-###		tank (4.8, 4.4, 7.8), mystery_box (6.0, 5.0, 6.0), dumper_tire (4.4, 3.2, 12.1), dumper (6.1, 4.1, 8.3), lattice (5.0, 4.1, 12.1), dumper_hull (6.4, 4.1, 10.0)
+###		tank (4.8, 4.4, 7.8), mystery_box (6.0, 5.0, 6.0), dumper_tire (4.4, 3.2, 12.1), dumper (6.1, 4.1, 8.3), lattice (5.0, 4.1, 12.1), dumper_hull (6.4, 4.1, 10.0), space (2.6, 2.8, 7.5)
+###		windblade (3.5, 3.0, 39.5), articulated_dumper (4.2, 4.3, 12.0), cargo.wagon (3.7, 4.6, 20.0), cargo.wagonr211 (3.0, 3.7, 18.0), cargo.load_un (3.2, 3.0, 12.0)
 ###
 
 }

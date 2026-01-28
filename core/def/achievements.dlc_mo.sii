@@ -1,0 +1,186 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Missouri --
+
+# Discover at least 10 cities in Missouri.
+
+achievement_visit_city_data : .achievement.mo_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	country_name: missouri
+	target: 10
+
+	achievement_name: mo_visit_cities
+
+	steam_progress_id: "mo_visit_cities-progress"
+	steam_id: mo_visit_cities
+}
+
+# View cutscenes from at least 12 viewpoints in Missouri.
+
+achievement_trigger_data : .achievement.mo_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: mo_cutscenes
+	target: 12
+
+	achievement_name: mo_cutscenes
+
+	steam_progress_id: "mo_cutscenes-progress"
+	steam_id: mo_cutscenes
+}
+
+# Complete a delivery to at least 2 underground Terrastore warehouses.
+
+achievement_delivery : .achievement.mo_trs_whs
+{
+	event_name: job_done
+	initial_check: true
+	condition: .mo_trs_whs.condition
+	target: 2
+
+	achievement_name: mo_trs_whs
+
+	steam_progress_id: "mo_trs_whs-progress"
+	steam_id: mo_trs_whs
+}
+
+achievement_delivery_sequence : .mo_trs_whs.condition
+{
+	list[]: .mo_trs_whs.joplin
+	list[]: .mo_trs_whs.kansas_ci_mo
+	list[]: .mo_trs_whs.springfield
+	list[]: .mo_trs_whs.st_louis
+}
+
+achievement_delivery_company : .mo_trs_whs.joplin
+{
+	role: target
+	company_name: trs_whs
+	city_name: joplin
+}
+
+achievement_delivery_company : .mo_trs_whs.kansas_ci_mo
+{
+	role: target
+	company_name: trs_whs
+	city_name: kansas_ci_mo
+}
+
+achievement_delivery_company : .mo_trs_whs.springfield
+{
+	role: target
+	company_name: trs_whs
+	city_name: springfield
+}
+
+achievement_delivery_company : .mo_trs_whs.st_louis
+{
+	role: target
+	company_name: trs_whs
+	city_name: st_louis
+}
+
+# Deliver ammonia and sulfuric acid to the Dynamiq factory, then deliver dynamite to any other company.
+
+achievement_delivery : .achievement.mo_dynamite
+{
+	event_name: job_done
+	initial_check: true
+	condition: .mo_dynamite.condition
+	target: 3
+
+	achievement_name: mo_dynamite
+
+	steam_progress_id: "mo_dynamite-progress"
+	steam_id: mo_dynamite
+}
+
+achievement_delivery_sequence : .mo_dynamite.condition
+{
+	list[]: .mo_trs_whs.ammonia_sulf
+	list[]: .mo_trs_whs.dynamite
+
+	in_order: true
+}
+
+achievement_delivery_sequence : .mo_trs_whs.ammonia_sulf
+{
+	list[]: .mo_trs_whs.ammonia_sulf.ammonia
+	list[]: .mo_trs_whs.ammonia_sulf.sulfuric
+}
+
+achievement_delivery_each : .mo_trs_whs.ammonia_sulf.ammonia
+{
+	list[]: .mo_trs_whs.ammonia_sulf.ammonia.cargo
+	list[]: .mo_trs_whs.ammonia_sulf.ammonia.target
+}
+
+achievement_delivery_cargo : .mo_trs_whs.ammonia_sulf.ammonia.cargo
+{
+	cargo_name: ammonia
+}
+
+achievement_delivery_company : .mo_trs_whs.ammonia_sulf.ammonia.target
+{
+	role: target
+	company_name: nmq_min_pln2
+	city_name: joplin
+}
+
+achievement_delivery_each : .mo_trs_whs.ammonia_sulf.sulfuric
+{
+	list[]: .mo_trs_whs.ammonia_sulf.sulfuric.cargo
+	list[]: .mo_trs_whs.ammonia_sulf.sulfuric.target
+}
+
+achievement_delivery_cargo : .mo_trs_whs.ammonia_sulf.sulfuric.cargo
+{
+	cargo_name: sulfuric
+}
+
+achievement_delivery_company : .mo_trs_whs.ammonia_sulf.sulfuric.target
+{
+	role: target
+	company_name: nmq_min_pln2
+	city_name: joplin
+}
+
+achievement_delivery_each : .mo_trs_whs.dynamite
+{
+	list[]: .mo_trs_whs.dynamite.cargo
+	list[]: .mo_trs_whs.dynamite.source
+}
+
+achievement_delivery_cargo : .mo_trs_whs.dynamite.cargo
+{
+	cargo_name: dynamite
+}
+
+achievement_delivery_company : .mo_trs_whs.dynamite.source
+{
+	role: source
+	company_name: nmq_min_pln2
+	city_name: joplin
+}
+
+}

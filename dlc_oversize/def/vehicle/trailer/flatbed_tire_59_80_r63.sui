@@ -5,10 +5,11 @@ trailer : trailer.flatbed.m_59_80_r63
 	accessories[]: .flatbed.m_59_80_r63.rwheel2
 	accessories[]: .flatbed.m_59_80_r63.rwheel3
 	accessories[]: .flatbed.m_59_80_r63.rwheel4
-	accessories[]: .flatbed.m_59_80_r63.cargo
+	accessories[]: .flatbed.m_59_80_r63.body
 
   	accessories[]: .flatbed.m_59_80_r63.flag_r_r
   	accessories[]: .flatbed.m_59_80_r63.flag_r_l
+	accessories[]: .flatbed.m_59_80_r63.os_sign
 }
 
 vehicle_accessory: .flatbed.m_59_80_r63.tchassis
@@ -19,7 +20,7 @@ vehicle_accessory: .flatbed.m_59_80_r63.tchassis
 vehicle_wheel_accessory: .flatbed.m_59_80_r63.rwheel
 {
 	offset: 0
-	data_path: "/def/vehicle/t_wheel/front.sii"
+	data_path: "/def/vehicle/t_wheel/single.sii"
 }
 
 vehicle_wheel_accessory: .flatbed.m_59_80_r63.rwheel2
@@ -37,12 +38,17 @@ vehicle_wheel_accessory: .flatbed.m_59_80_r63.rwheel3
 vehicle_wheel_accessory: .flatbed.m_59_80_r63.rwheel4
 {
 	offset: 6
-	data_path: "/def/vehicle/t_wheel/single.sii"
+	data_path: "/def/vehicle/t_wheel/front.sii"
 }
 
-vehicle_accessory: .flatbed.m_59_80_r63.cargo
+vehicle_accessory: .flatbed.m_59_80_r63.body
 {
-	data_path: "/def/vehicle/trailer_cargo/scs_flatbed/cargo_tire.sii"
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_53_oversize.sii"
+}
+
+vehicle_addon_accessory: .flatbed.m_59_80_r63.os_sign
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/r_banner_oversize.sii"
 }
 
 vehicle_addon_accessory: .flatbed.m_59_80_r63.flag_r_r

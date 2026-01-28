@@ -1,0 +1,46 @@
+SiiNunit
+{
+accessory_interior_data	: s860_lm.volvo.vnl2018.interior
+{
+	name: "Limited"
+	price: 22960
+	unlock: 15
+	icon: "truck/volvo_vnl2018/interior/int_ltd"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2018/interior/model/s860.pmd"
+	animated_model: "/vehicle/truck/volvo_vnl2018/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/volvo_vnl2018/interior/model/s860.pmc"
+	look: Default
+	variant: limited
+
+	suitable_for[]: "s860.volvo.vnl2018.cabin"
+
+	ext_model: "/vehicle/truck/volvo_vnl2018/interior/external/s860.pmd"
+	ext_look: limited
+
+@include "animations.sui"
+
+@include "int_shadow_s860.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .volvo.vnl2018.r.pane.front
+	glass_panes[]: .volvo.vnl2018.r.pane.close
+	glass_panes[]: .volvo.vnl2018.r.pane.far
+	glass_panes[]: .volvo.vnl2018.r.pane.back_s860
+	glass_panes[]: .volvo.vnl2018.r.pane.back_s860t
+	glass_panes[]: .volvo.vnl2018.r.pane.roof_front
+
+# @include "seat.sui"
+@include "mirrors.sui"
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_s860.sui"
+@include "glass_roof.sui"
+@include "sound_effects_units.sui"
+}

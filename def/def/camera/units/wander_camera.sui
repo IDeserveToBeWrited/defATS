@@ -4,9 +4,9 @@ wander_camera: camera.wander
 	# - seed if it is not set then it is generated randomly
 	# - freeze_environment whether should freeze environment. Default value is false.
 	movement_speed: 25.0f			# camera/truck movement speed
-	rotation_speed: 1.4f			# camera/truck rotation speed       
-	teleport_delay: 10.0f			# camera teleport delay 
-	detailed_dc_threshold: 45.0f		# FPS treshold for dc data collection max fps=45  
+	rotation_speed: 1.4f			# camera/truck rotation speed
+	teleport_delay: 10.0f			# camera teleport delay
+	detailed_dc_threshold: 45.0f		# FPS treshold for dc data collection max fps=45
 	seed: 1234				# seed value specify deterministic behavior selection on crossroads
 	# freeze_environment: true		# skybox-time freeze
 
@@ -24,23 +24,26 @@ wander_camera: camera.wander
 
 	# Every set describes location. All attributes must be present.
 	# - area_center is point when camera starts, then camera walks randomly.
-	
+
 	# - area_radius defines allowed distance from center, if camera cross the distance its teleported back to center.
 	#               negative value means that no distance is defined and camera is never teleported back.
-	
+
 	# - area_time defines how long (seconds) the camera will walk in given location before moving further.
 	#               negative value means that no time is defined and camera will walk in location forever.
-	
+
 	# - area_ingame_time defines in-game time, which camera sets after teleport to area_center. Time format "HH MM"
 	#
 	# - area_weather defines weather (0 = nice, 1 = bad). Default value is 0 (nice).
 
 	# - area_countries_data[]: "washington". "utah"  wc running path is restricted to selected country-state only. Camera jump to area center on country border
 
-    area_names[]: "base default"
-	area_centers[]: (-115263, 7.02741, -10291.7)
-	area_radii[]: -1500.0f
-	area_times[]: -20.0f
-	area_ingame_times[]: "10 00"
-	area_weather[]: 0
+	# NOTE: If no areas are defined, the camera will start at current player vehicle placement
+
+	# AREA EXAMPLE:
+	# area_names[]: "base default"
+	# area_centers[]: (-115263, 7.02741, -10291.7)
+	# area_radii[]: -1500.0f
+	# area_times[]: -20.0f
+	# area_ingame_times[]: "10 00"
+	# area_weather[]: 0
 }

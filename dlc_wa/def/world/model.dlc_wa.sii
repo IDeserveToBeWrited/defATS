@@ -88,10 +88,6 @@ model_def : model.wa_57
 	model_desc: "/model/panorama/wa_port_angeles/wa_port_angeles_ferry1.pmd"
 
 }
-model_def : model.wa_60
-{
-	model_desc: "/model/panorama/wa_wenatchee/wa_decal_apple.pmd"
-}
 model_def : model.wa_62
 {
 	model_desc: "/model/panorama/wa_port_angeles/wa_port_angeles_ferry2.pmd"
@@ -108,10 +104,6 @@ model_def : model.wa_64
 model_def : model.wa_65
 {
 	model_desc: "/model/panorama/wa_port_angeles/wa_masonic_lodge.pmd"
-}
-model_def : model.wa_70
-{
-	model_desc: "/model/panorama/wa_olympia/wa_capitol_senate01.pmd"
 }
 model_def : model.wa_71
 {
@@ -275,11 +267,6 @@ model_def : model.wa_171
 	dynamic_lod_dist[]: 200
 }
 
-model_def : model.wa_172
-{
-	model_desc: "/model/panorama/wa_tacoma/wa_509_bridge.pmd"
-}
-
 model_def : model.wa_173
 {
 	model_desc: "/model/panorama/wa_colville/wa_colville_welcome.pmd"
@@ -406,10 +393,6 @@ model_def : model.wa_254
 {
 	model_desc: "/model/panorama/wa_omak/wa_omak_clock_totem.pmd"
 }
-model_def : model.wa_256
-{
-	model_desc: "/model/panorama/wa_wenatchee/wa_springhill_suites.pmd"
-}
 model_def : model.wa_259
 {
 	model_desc: "/model/panorama/wa_kennewick/wa_ice_man.pmd"
@@ -425,34 +408,6 @@ model_def : model.wa_263
 model_def : model.wa_265
 {
 	model_desc: "/model/panorama/wa_everett/wa_everett_weigh.pmd"
-}
-model_def : model.wa_266
-{
-	model_desc: "/prefab/depots/wa_port_of_seattle/wa_port_crane1.pmd"
-	name: "wa port crane1"
-
-	color_variant: 5
-	color_variant[0]: "yellow | crane : 242,197,146 | ram : 242,197,146 | ram_up : 242,197,146"
-	color_variant[1]: "blue | crane : 129,166,208 | ram : 129,166,208 | ram_up : 129,166,208"
-	color_variant[2]: "red | crane : 172,132,132 | ram : 172,132,132 | ram_up : 172,132,132"
-	color_variant[3]: "white | crane : 219,219,219 | ram : 219,219,219 | ram_up : 219,219,219"
-	color_variant[4]: "black | crane : 50,50,50 | ram : 50,50,50 | ram_up : 50,50,50"
-
-	static_lod_path: 2
-	static_lod_name: 2
-	static_lod_path[0]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod1.pmd"
-	static_lod_name[0]: "LOD from 30m"
-	static_lod_path[1]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod2.pmd"
-	static_lod_name[1]: "LOD from 100m"
-
-	dynamic_lod_desc: 3
-	dynamic_lod_dist: 3
-	dynamic_lod_desc[0]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod1.pmd"
-	dynamic_lod_dist[0]: 30
-	dynamic_lod_desc[1]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod2.pmd"
-	dynamic_lod_dist[1]: 150
-	dynamic_lod_desc[2]: "/prefab/depots/wa_port_of_seattle/wa_port_crane1_lod3.pmd"
-	dynamic_lod_dist[2]: 250
 }
 model_def : model.wa_267
 {
@@ -612,12 +567,6 @@ model_def : model.wa_353
 	model_desc: "/model/panorama/wa_tacoma/wa_tacoma_panorama9.pmd"
 
 }
-model_def : model.wa_366
-{
-	model_desc: "/model/panorama/wa_seattle/wa_seattle_far_pier_wheel.pmd"
-
-}
-
 model_def : model.wa_379
 {
 	model_desc: "/model/panorama/wa_everett/wa_riverside_welcome.pmd"
@@ -787,5 +736,20 @@ model_def : model.wa_510
 model_def : model.wa_517
 {
 	model_desc: "/model/panorama/wa_tacoma/wa_tacoma_dome_totem.pmd"
+}
+
+model_def : model.wa_04000
+{
+	model_desc: "/prefab/ferry/wa_ferry_ship.pmd"
+
+	static_lod_path[]: "/prefab/ferry/wa_ferry_ship_lod1.pmd"
+	static_lod_name[]: "LOD from 80m"
+	static_lod_path[]: "/prefab/ferry/wa_ferry_ship_lod2.pmd"
+	static_lod_name[]: "LOD from 200m"
+
+	dynamic_lod_desc[]: "/prefab/ferry/wa_ferry_ship_lod1.pmd"
+	dynamic_lod_dist[]: 80
+	dynamic_lod_desc[]: "/prefab/ferry/wa_ferry_ship_lod2.pmd"
+	dynamic_lod_dist[]: 200
 }
 }

@@ -1,0 +1,322 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- Base --
+
+# Discover at least 15 cities in California.
+
+achievement_visit_city_data : .achievement.ca_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: bakersfield
+	cities[]: barstow
+	cities[]: blythe
+	cities[]: el_centro
+	cities[]: eureka
+	cities[]: fresno
+	cities[]: hilt
+	cities[]: huron
+	cities[]: indio	
+	cities[]: los_angeles
+	cities[]: modesto
+	cities[]: mojave
+	cities[]: oakland
+	cities[]: oxnard
+	cities[]: redding
+	cities[]: sacramento
+	cities[]: san_diego
+	cities[]: san_francisc
+	cities[]: san_jose
+	cities[]: santa_cruz
+	cities[]: santa_maria
+	cities[]: stockton
+	cities[]: truckee
+	cities[]: ukiah
+	target: 15
+
+	achievement_name: ca_visit_cities
+
+	steam_progress_id: "ca_visit_cities-progress"
+	steam_id: ca_visit_cities
+}
+
+achievement_limit_data : .achievement.drive_10k
+{
+	event_name: job_done
+	initial_check: true
+	target: 16093 # km = 10 000 mi
+	current: get_jobs_travelled_distance
+
+	achievement_name: drive_10k
+
+	steam_id: drive_10k
+}
+
+achievement_limit_data : .achievement.jobs15comp
+{
+	event_name: job_done
+	initial_check: true
+	target: 15
+	current: get_company_group_count
+
+	achievement_name: jobs15comp
+
+	steam_progress_id: "jobs15comp-progress"
+	steam_id: jobs15comp
+}
+
+achievement_delivery_log_data : .achievement.perf_job
+{
+	event_name: job_done
+	damage_max: 0.0
+	fines_max: 0
+	late: false
+	distance_min: 965 # km = 600 mi
+
+	achievement_name: perf_job
+
+	steam_id: perf_job
+}
+
+achievement_profit_data : .achievement.maxed_garage
+{
+	event_name: garag_change
+	initial_check: true
+	productivity_garages: filtered
+	garage_count: 1
+	garage_size: large
+
+	achievement_name: maxed_garage
+
+	steam_id: maxed_garage
+}
+
+achievement_delivery_log_data : .achievement.no_autopark
+{
+	event_name: job_done
+	consecutive: true
+	autoparking: false
+
+	achievement_name: no_autopark
+
+	steam_id: no_autopark
+}
+
+achievement_delivery_log_data : .achievement.harddifficlt
+{
+	event_name: job_done
+	consecutive: true
+	autoparking: false
+	difficulty: hard
+
+	achievement_name: harddifficlt
+
+	steam_id: harddifficlt
+}
+
+achievement_delivery_log_data : .achievement.finish50jobs
+{
+	event_name: job_done
+	initial_check: true
+	target: 50
+	notifications[]: 10
+	notifications[]: 20
+	notifications[]: 30
+	notifications[]: 40
+
+	achievement_name: finish50jobs
+
+	steam_progress_id: "finish50jobs-progress"
+	steam_id: finish50jobs
+}
+
+achievement_paintjob_data : .achievement.custompj
+{
+	event_name: pj_applied
+	color_changed: true
+
+	achievement_name: custompj
+
+	steam_id: custompj
+}
+
+achievement_data : .achievement.weigh_stat
+{
+	event_name: use_weigh
+
+	achievement_name: use_weigh_stat
+
+	steam_id: use_weigh_stat
+}
+
+achievement_data : .achievement.use_gas_stat
+{
+	event_name: use_gas
+
+	achievement_name: use_gas_stat
+
+	steam_id: use_gas_stat
+}
+
+achievement_limit_data : .achievement.money_100k
+{
+	event_name: job_done
+	initial_check: true
+	target: 100000 # $100K
+	current: get_jobs_total_reward
+
+	achievement_name: money_100k
+
+	steam_id: money_100k
+}
+
+achievement_data : .achievement.buy_truck
+{
+	event_name: truck_bought
+
+	achievement_name: buy_truck
+
+	steam_id: buy_truck
+}
+
+# Deliver cargo to a port in Oakland and a port in San Francisco.
+
+achievement_delivery : .achievement.ca_sea_ports
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ca_sea_ports.condition
+	target: 2
+
+	achievement_name: ca_sea_ports
+
+	steam_progress_id: "ca_sea_ports-progress"
+	steam_id: ca_sea_ports
+}
+
+achievement_delivery_sequence : .ca_sea_ports.condition
+{
+	list[]: .ca_sea_ports.oak_port.oakland
+	list[]: .ca_sea_ports.sf_port.san_francisc
+}
+
+achievement_delivery_company : .ca_sea_ports.oak_port.oakland
+{
+	role: target
+	company_name: oak_port
+	city_name: oakland
+}
+
+achievement_delivery_company : .ca_sea_ports.sf_port.san_francisc
+{
+	role: target
+	company_name: sf_port
+	city_name: san_francisc
+}
+
+# Deliver cargo from at least 3 vineyards in California.
+
+achievement_delivery : .achievement.ca_country
+{
+	event_name: job_done
+	initial_check: true
+	condition: .ca_country.condition
+	target: 3
+
+	achievement_name: ca_country
+
+	steam_progress_id: "ca_country-progress"
+	steam_id: ca_country
+}
+
+achievement_delivery_sequence : .ca_country.condition
+{
+	list[]: .ca_country.mon_farm.fresno
+	list[]: .ca_country.mon_farm.sacramento
+	list[]: .ca_country.mon_farm.san_diego	
+	list[]: .ca_country.mon_farm.ukiah
+}
+
+achievement_delivery_company : .ca_country.mon_farm.fresno
+{
+	role: source
+	company_name: mon_farm
+	city_name: fresno
+}
+
+achievement_delivery_company : .ca_country.mon_farm.sacramento
+{
+	role: source
+	company_name: mon_farm
+	city_name: sacramento
+}
+
+achievement_delivery_company : .ca_country.mon_farm.san_diego
+{
+	role: source
+	company_name: mon_farm
+	city_name: san_diego
+}
+
+achievement_delivery_company : .ca_country.mon_farm.ukiah
+{
+	role: source
+	company_name: mon_farm
+	city_name: ukiah
+}
+
+# Complete 20 deliveries choosing the trailer delivery option which requires reversing.
+
+achievement_delivery : .achievement.unload_diff
+{
+	event_name: job_done
+	initial_check: true
+	condition: .unload_diff.condition
+	target: 20
+
+	achievement_name: unload_difficulty
+
+	steam_progress_id: "unload_difficulty-progress"
+	steam_id: unload_difficulty
+}
+
+achievement_delivery_count : .unload_diff.condition
+{
+	condition: .unload_diff.condition.20
+	count: 20
+}
+
+achievement_delivery_any : .unload_diff.condition.20
+{
+	list[]: .unload_diff.hard
+	list[]: .unload_diff.medium
+}
+
+achievement_delivery_unload_difficulty : .unload_diff.hard
+{
+	difficulty: hard
+}
+
+achievement_delivery_unload_difficulty : .unload_diff.medium
+{
+	difficulty: medium
+}
+
+}

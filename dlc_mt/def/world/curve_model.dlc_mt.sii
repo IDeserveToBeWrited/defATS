@@ -1,0 +1,102 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+
+
+curve_model : curve.mt_2h001
+{
+	model_desc: "/model/panorama/mt_mt24/mt_fort_peck_dam.pmd"
+	name: "mt fort peck dam"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "center | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/panorama/mt_mt24/mt_fort_peck_dam_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+
+	smooth_surface: true
+}
+
+curve_model : curve.mt_2h002
+{
+	model_desc: "/model/panorama/mt_mt24/mt_fort_peck_wall.pmd"
+	name: "mt fort peck wall"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1 | start2 | start3"
+	end_part[0]: "end1 | end2 | end3"
+	variation[1]: "var2 | center2,center1 : 1.0 | center2,center3 : 1.0"
+	start_part[1]: "start1 | start2 | start3"
+	end_part[1]: "end1 | end2 | end3"
+
+	overlay: 1
+	overlay[0]: "center2 | ovr1 : 1.0 | ovr2 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/panorama/mt_mt24/mt_fort_peck_wall_lod1.pmd"
+	dynamic_lod_dist[0]: 70
+}
+
+curve_model : curve.mt_1t002
+{
+	model_desc: "/model/panorama/mt_us93/mt_polson_bridge.pmd"
+	name: "mt polson bridge"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1 : 1.0 | center2 : 2.0 | center3 : 2.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	overlay: 4
+	overlay[0]: "center1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[1]: "center2 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[2]: "center3 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+	overlay[3]: "start1 | ovr1 : 1.0 | ovr2 : 1.0 | ovr3 : 1.0"
+
+	high_tess: 0
+}
+
+curve_model : curve.mt_1a001
+{
+	model_desc: "/model/panorama/mt_great_falls/mt_great_falls_memorial.pmd"
+	name: "mt great falls memorial"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "title | center4,center5,center6 : 1.0"
+	start_part[1]: ""
+	end_part[1]: ""
+
+	high_tess: 0
+}
+
+
+
+}

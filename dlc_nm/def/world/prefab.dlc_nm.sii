@@ -1,10 +1,18 @@
 SiiNunit
 {
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
 
 prefab_model : prefab.d_aport_abq
 {
 	model_desc: "/prefab/depots/albuquerque_airport/albuquerque_airport.pmd"
 	prefab_desc: "/prefab/depots/albuquerque_airport/albuquerque_airport.ppd"
+
 	use_perlin: false
 	dynamic_lod_desc[]: "/prefab/depots/albuquerque_airport/albuquerque_airport_lod1.pmd"
 	dynamic_lod_dist[]: 148
@@ -14,14 +22,17 @@ prefab_model : prefab.d_che_plant2
 {
 	model_desc: "/prefab/depots/gallup_chemical_plant/gallup_chemical_plant.pmd"
 	prefab_desc: "/prefab/depots/gallup_chemical_plant/gallup_chemical_plant.ppd"
+
+	use_perlin: false
 	dynamic_lod_desc[]: "/prefab/depots/gallup_chemical_plant/gallup_chemical_plant_lod1.pmd"
 	dynamic_lod_dist[]: 169
-	use_perlin: false
 }
+
 prefab_model : prefab.temp_101
 {
 	model_desc: "/prefab/weigh_station/gallup.pmd"
 	prefab_desc: "/prefab/weigh_station/gallup.ppd"
+
 	use_perlin: false
 	dynamic_lod_desc[]: "/prefab/weigh_station/gallup_lod1.pmd"
 	dynamic_lod_dist[]: 83
@@ -33,39 +44,31 @@ prefab_model : prefab.temp_103
 	model_desc: "/prefab/weigh_station/vaughn.pmd"
 	prefab_desc: "/prefab/weigh_station/vaughn.ppd"
 }
+
 prefab_model : prefab.nm_115
 {
+	name: "XXX_DO_NOT_USE_XXX nm santa fe cross"
 	model_desc: "/prefab/cross_santa_fe/nm_santa_fe_cross.pmd"
 	prefab_desc: "/prefab/cross_santa_fe/nm_santa_fe_cross.ppd"
-
 }
 
 prefab_model : prefab.nm_116
 {
+	name: "XXX_DO_NOT_USE_XXX nm santa fe fork1"
 	model_desc: "/prefab/cross_santa_fe/nm_santa_fe_fork1.pmd"
 	prefab_desc: "/prefab/cross_santa_fe/nm_santa_fe_fork1.ppd"
-
 }
 
 prefab_model : prefab.nm_117
 {
+	name: "XXX_DO_NOT_USE_XXX nm santa fe fork2"
 	model_desc: "/prefab/cross_santa_fe/nm_santa_fe_fork2.pmd"
 	prefab_desc: "/prefab/cross_santa_fe/nm_santa_fe_fork2.ppd"
-
-}
-
-prefab_model : prefab.d_food_plnt1
-{
-	model_desc: "/prefab/depots/cheese_factory/cheese_factory.pmd"
-	prefab_desc: "/prefab/depots/cheese_factory/cheese_factory.ppd"
-	dynamic_lod_desc[]: "/prefab/depots/cheese_factory/cheese_factory_lod1.pmd"
-	dynamic_lod_dist[]: 92
-	use_perlin: false
 }
 
 prefab_model : prefab.nm_abq
 {
-	name: "albuquerue junction terrain"
+	name: "XXX_DO_NOT_USE_XXX albuquerue junction terrain"
 	model_desc: "/prefab/junction/nm_terrain_abq.pmd"
 	prefab_desc: "/prefab/junction/nm_terrain_abq.ppd"
 
@@ -73,21 +76,13 @@ prefab_model : prefab.nm_abq
 	dynamic_lod_dist[]: 92
 }
 
-prefab_model : prefab.nm_514
-{
-	model_desc: "/prefab/gas/nm_deming_totem.pmd"
-	prefab_desc: "/prefab/gas/nm_deming_totem.ppd"
-	name: "nm deming totem"
-	use_perlin: false
-}
-
 prefab_model : prefab.nm_515
 {
+	name: "XXX_DO_NOT_USE_XXX"
 	model_desc: "/prefab/gas/nm_sky_city_totem.pmd"
 	prefab_desc: "/prefab/gas/nm_sky_city_totem.ppd"
-	name: "nm sky city totem"
+
 	use_perlin: false
 }
-
 
 }

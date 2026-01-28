@@ -1,0 +1,178 @@
+traffic_vehicle : traffic.frl_c2019_a.context
+{
+	accessories[]: .frl_c2019_a.context.chassis
+	accessories[]: .frl_c2019_a.context.fwheel
+	accessories[]: .frl_c2019_a.context.rwheel
+	accessories[]: .frl_c2019_a.context.rwheel2
+	accessories[]: .frl_c2019_a.context.trlr_cables
+
+	max_speed: 110
+	trailer_chains[]: "truck_semi"
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 7200
+	engine_power: 298
+
+
+	tags[]: dealer
+	tags[]: context
+
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+
+	color[]: (0.533277, 0.005182, 0.009721) #viper
+	color[]: (0.533277, 0.005182, 0.009721) #viper
+	color[]: (0.533277, 0.005182, 0.009721) #viper
+
+	color[]: (0.004777, 0.068478, 0.381326) #viper blue
+	color[]: (0.004777, 0.068478, 0.381326) #viper blue
+	color[]: (0.004777, 0.068478, 0.381326) #viper blue
+
+	color[]: (0.174647, 0.332452, 0.603828) #cypres
+	color[]: (0.174647, 0.332452, 0.603828) #cypres
+	color[]: (0.174647, 0.332452, 0.603828) #cypres
+
+	color[]: (0.201556, 0.234551, 0.291771) #slate
+	color[]: (0.201556, 0.234551, 0.291771) #slate
+
+	color[]: (0.009134, 0.278894, 0.603828) #blue
+	color[]: (0.009134, 0.278894, 0.603828) #blue
+
+	color[]: (0.003347, 0.003347, 0.003347) #black
+	color[]: (0.003347, 0.003347, 0.003347) #black
+
+	color[]: (0.174647, 0.332452, 0.603828)
+	color[]: (0.814847, 0.814847, 0.814847)
+	color[]: (0.003347, 0.003347, 0.003347)
+	color[]: (0.021219, 0.084376, 0.686686)
+	color[]: (0.005605, 0.005605, 0.005605)
+	color[]: (0.380048, 0.341977, 0.301309)
+	color[]: (1.000000, 0.040032, 0.027210)
+
+	spawn_ratio: 1.5
+
+	spawn_condition[]: .traffic.frl_c2019_a.context.spawn.condition
+	spawn_condition[]: .traffic.frl_c2019_a.context.spawn.condition2
+}
+traffic_spawn_condition: .traffic.frl_c2019_a.context.spawn.condition
+{
+	type: area
+	str_param[]: "dealer"
+}
+traffic_spawn_condition: .traffic.frl_c2019_a.context.spawn.condition2
+{
+	type: area
+	str_param[]: "freightliner"
+}
+
+vehicle_accessory : .frl_c2019_a.context.chassis {
+	data_path: "/def/vehicle/ai/truck/freightliner.cascadia2019/cabin_daycab.sii"
+}
+vehicle_wheel_accessory : .frl_c2019_a.context.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .frl_c2019_a.context.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .frl_c2019_a.context.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .frl_c2019_a.context.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/freightliner.cascadia2019/accessory/trlr_cables/stock.sii"
+}
+
+
+traffic_vehicle : traffic.frl_c2019_b.context
+{
+	accessories[]: .frl_c2019_b.context.chassis
+	accessories[]: .frl_c2019_b.context.fwheel
+	accessories[]: .frl_c2019_b.context.rwheel
+	accessories[]: .frl_c2019_b.context.rwheel2
+	accessories[]: .frl_c2019_b.context.trlr_cables
+
+	max_speed: 128
+	trailer_chains[]: "truck_semi"
+
+	tags[]: dealer
+	tags[]: context
+
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 8800
+	engine_power: 373
+
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+	color[]: (0.900000, 0.900000, 0.900000)
+
+	color[]: (0.533277, 0.005182, 0.009721) #viper
+	color[]: (0.533277, 0.005182, 0.009721) #viper
+	color[]: (0.533277, 0.005182, 0.009721) #viper
+
+	color[]: (0.004777, 0.068478, 0.381326) #viper blue
+	color[]: (0.004777, 0.068478, 0.381326) #viper blue
+	color[]: (0.004777, 0.068478, 0.381326) #viper blue
+
+	color[]: (0.174647, 0.332452, 0.603828) #cypres
+	color[]: (0.174647, 0.332452, 0.603828) #cypres
+	color[]: (0.174647, 0.332452, 0.603828) #cypres
+
+	color[]: (0.201556, 0.234551, 0.291771) #slate
+	color[]: (0.201556, 0.234551, 0.291771) #slate
+
+	color[]: (0.009134, 0.278894, 0.603828) #blue
+	color[]: (0.009134, 0.278894, 0.603828) #blue
+
+	color[]: (0.003347, 0.003347, 0.003347) #black
+	color[]: (0.003347, 0.003347, 0.003347) #black
+
+	color[]: (0.174647, 0.332452, 0.603828)
+	color[]: (0.814847, 0.814847, 0.814847)
+	color[]: (0.003347, 0.003347, 0.003347)
+	color[]: (0.021219, 0.084376, 0.686686)
+	color[]: (0.005605, 0.005605, 0.005605)
+	color[]: (0.380048, 0.341977, 0.301309)
+	color[]: (1.000000, 0.040032, 0.027210)
+
+	spawn_ratio: 2.5
+
+	spawn_condition[]: .traffic.frl_c2019_b.context.spawn.condition
+	spawn_condition[]: .traffic.frl_c2019_b.context.spawn.condition2
+}
+traffic_spawn_condition: .traffic.frl_c2019_b.context.spawn.condition
+{
+	type: area
+	str_param[]: "dealer"
+}
+traffic_spawn_condition: .traffic.frl_c2019_b.context.spawn.condition2
+{
+	type: area
+	str_param[]: "freightliner"
+}
+
+vehicle_accessory : .frl_c2019_b.context.chassis {
+	data_path: "/def/vehicle/ai/truck/freightliner.cascadia2019/cabin_sl72.sii"
+}
+vehicle_wheel_accessory : .frl_c2019_b.context.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .frl_c2019_b.context.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .frl_c2019_b.context.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .frl_c2019_b.context.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/freightliner.cascadia2019/accessory/trlr_cables/stock.sii"
+}

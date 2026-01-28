@@ -53,8 +53,8 @@ trailer : .trailer.scs_lb_333_t.tank		#chassis 3 axle
 	accessories[]: .scs_lb_333_t.tank.rwheel2
 	accessories[]: .scs_lb_333_t.tank.rwheel3
 	accessories[]: .scs_lb_333_t.tank.paint_job
-	accessories[]: .scs_lb_333_t.tank.cargo
 	accessories[]: .scs_lb_333_t.tank.trlr_cables
+	accessories[]: .scs_lb_333_t.tank.body
 	
 	slave_trailer: .trailer.scs_lb_333_j.tank	
 }
@@ -86,14 +86,13 @@ vehicle_paint_job_accessory: .scs_lb_333_t.tank.paint_job
 	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii"
 }
 
-vehicle_accessory: .scs_lb_333_t.tank.cargo
-{
-    	data_path: "/def/vehicle/trailer_cargo/scs_lowboy/tank.sii"
-}
-
 vehicle_addon_accessory: .scs_lb_333_t.tank.trlr_cables
 {
 	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/cables_trailer.sii"
+}
+vehicle_accessory: .scs_lb_333_t.tank.body
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body_oversize.sii"
 }
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

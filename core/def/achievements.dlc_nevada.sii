@@ -1,0 +1,80 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Nevada --
+
+# Discover at least 8 cities in Nevada.
+
+achievement_visit_city_data : .achievement.nv_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	cities[]: carson_city
+	cities[]: elko
+	cities[]: ely
+	cities[]: jackpot
+	cities[]: las_vegas
+	cities[]: pioche
+	cities[]: primm
+	cities[]: reno
+	cities[]: tonopah
+	cities[]: winnemucca
+	target: 8
+
+	achievement_name: nv_visit_cities
+
+	steam_progress_id: "nv_visit_cities-progress"
+	steam_id: nv_visit_cities
+}
+
+# Deliver cargo to at least 1 quarry in Nevada.
+
+achievement_delivery : .achievement.nv_quarries
+{
+	event_name: job_done
+	initial_check: true
+	condition: .nv_quarries.condition
+	target: 1
+
+	achievement_name: nv_quarries
+
+	steam_id: nv_quarries
+}
+
+achievement_delivery_sequence : .nv_quarries.condition
+{
+	list[]: .nv_quarries.cm_min_qry.carson_city
+	list[]: .nv_quarries.cm_min_qry.elko
+}
+
+achievement_delivery_company : .nv_quarries.cm_min_qry.carson_city
+{
+	role: target
+	company_name: cm_min_qry
+	city_name: carson_city
+}
+
+achievement_delivery_company : .nv_quarries.cm_min_qry.elko
+{
+	role: target
+	company_name: cm_min_qry
+	city_name: elko
+}
+
+}

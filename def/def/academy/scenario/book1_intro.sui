@@ -1,0 +1,45 @@
+
+academy_scenario : academy.scenario.book1.intro
+{
+	map_title: "@@aca_scenario_book1_intro_title@@"
+	map_desc: "@@aca_scenario_book1_intro_desc@@"
+	map_path: "/map/academy/midwest_town.mbd"
+
+	environment_time: 915
+	environment_skybox: 8
+	environment_weather: 0
+	truck_fuel: 0.45
+
+	required_impulses[]: engine
+	required_impulses[]: parkingbrake
+	required_impulses[]: attach
+
+	trailer: academy.trailer.basic
+
+	variants[]: .academy.scenario.book1.intro.variant
+
+	replay: false
+
+
+}
+academy_scenario_variant: .academy.scenario.book1.intro.variant
+{
+
+	map_scenes[]: ac_tdl_intro
+
+	//map_scene_position_tags[]: park2_front
+	//intro_cutscene_tag: intro_book
+	//start_position_tag: start2_03
+	//map_scenes[]: ac_tdl_2_03
+
+	map_scene_position_tags[]: park2_front
+
+	replay_recording_origin_tag: park2_front
+	replay_playback_origin_tag: park2_front
+
+	intro_cutscene_tag: intro2_03
+
+	start_position_tag: start2_03
+	trailer_position_tag: trailer2_03
+
+}

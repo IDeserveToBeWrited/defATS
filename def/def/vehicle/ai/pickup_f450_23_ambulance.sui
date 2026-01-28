@@ -1,0 +1,319 @@
+
+# XXXXXXXXXXXXXXXXXXX .pickup.f450_23.amb_ks_to XXXXXXXXXXXXXXXXXXX
+
+
+traffic_vehicle : traffic.pickup.f450_23.amb_ks_to
+{
+	accessories[]: .pickup.f450_23.amb_ks_to.chassis
+	accessories[]: .pickup.f450_23.amb_ks_to.fwheel
+	accessories[]: .pickup.f450_23.amb_ks_to.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	tags[]: ambulance
+	tags[]: urban
+
+	vehicle_mass: 3000
+
+	spawn_ratio: 0
+
+spawn_condition[]: .traffic.f_explorer.ks_to.condition.city
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_ks_to.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_ks_to.sii"
+}
+
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ks_to.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ks_to.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+traffic_spawn_condition: .traffic.f_explorer.ks_to.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: city
+	str_param[]: "topeka"
+}
+
+# XXXXXXXXXXXXXXXXXXX .pickup.f450_23.amb_ks.amb_ks XXXXXXXXXXXXXXXXXXX
+
+
+traffic_vehicle : traffic.pickup.f450_23.amb_ks
+{
+	accessories[]: .pickup.f450_23.amb_ks.chassis
+	accessories[]: .pickup.f450_23.amb_ks.fwheel
+	accessories[]: .pickup.f450_23.amb_ks.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+
+	
+	
+
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_ks.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_ks_hw.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ks.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ks.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+                # XXXXXXXXXXXXXXXXXXX .pickup.f450_23.amb_ne XXXXXXXXXXXXXXXXXXX
+
+
+traffic_vehicle : traffic.pickup.f450_23.amb_ne
+{
+	accessories[]: .pickup.f450_23.amb_ne.chassis
+	accessories[]: .pickup.f450_23.amb_ne.fwheel
+	accessories[]: .pickup.f450_23.amb_ne.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+
+	
+	
+
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_ne.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_ne.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ne.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ne.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXX Arkansas - Paramedic XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.pickup.f450_23.amb_ar
+{
+	accessories[]: .pickup.f450_23.amb_ar.chassis
+	accessories[]: .pickup.f450_23.amb_ar.fwheel
+	accessories[]: .pickup.f450_23.amb_ar.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+
+	
+	
+
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_ar.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_ar.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ar.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ar.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXX Missouri - Ambulance XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.pickup.f450_23.amb_mo
+{
+	accessories[]: .pickup.f450_23.amb_mo.chassis
+	accessories[]: .pickup.f450_23.amb_mo.fwheel
+	accessories[]: .pickup.f450_23.amb_mo.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_mo.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_mo.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_mo.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_mo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXX Iowa - Ambulance XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.pickup.f450_23.amb_ia
+{
+	accessories[]: .pickup.f450_23.amb_ia.chassis
+	accessories[]: .pickup.f450_23.amb_ia.fwheel
+	accessories[]: .pickup.f450_23.amb_ia.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_ia.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_ia.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ia.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_ia.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXX Louisiana - Ambulance XXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.pickup.f450_23.amb_la
+{
+	accessories[]: .pickup.f450_23.amb_la.chassis
+	accessories[]: .pickup.f450_23.amb_la.fwheel
+	accessories[]: .pickup.f450_23.amb_la.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_la.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_la.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_la.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_la.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
+
+
+
+
+

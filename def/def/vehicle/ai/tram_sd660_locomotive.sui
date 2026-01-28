@@ -1,47 +1,92 @@
-traffic_vehicle : traffic.sd660_loco
+traffic_vehicle : traffic.sd660.or_po
 {
-	accessories[]: .sd660_loco.chassis
-	accessories[]: .sd660_loco.fwheel
-	accessories[]: .sd660_loco.rwheel
+	accessories[]: .sd660.or_po.chassis
+	accessories[]: .sd660.or_po.fwheel
+	accessories[]: .sd660.or_po.rwheel
 
 	max_speed: 30
 	vehicle_mass: 12000
 	engine_power: 500
 
-	trailer_chains[]: "tram_car.sd660_car1 | tram_car.sd660_car2"
+	trailer_chains[]: "tram_car.sd660_car1.or_po | tram_car.sd660_car2.or_po"
 
 	sound_move[]: "/sound/traffic/tram_1.soundref"
 	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
 
 	displacement_limit: 0.0
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-	lod_dist[]: 200
+	spawn_ratio: 0
 
-	spawn_condition[]: .traffic.sd660_loco.condition.city
+	spawn_condition[]: .traffic.sd660.condition.city
 }
 
-vehicle_accessory: .sd660_loco.chassis
+vehicle_accessory: .sd660.or_po.chassis
 {
-	data_path: "/def/vehicle/ai/tram_sd660/chassis_01.sii"
+	data_path: "/def/vehicle/ai/tram_sd660/loco_or_po.sii"
 }
 
-vehicle_wheel_accessory: .sd660_loco.fwheel
+vehicle_wheel_accessory: .sd660.or_po.fwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
 }
 
-vehicle_wheel_accessory: .sd660_loco.rwheel
+vehicle_wheel_accessory: .sd660.or_po.rwheel
 {
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
 }
 
-traffic_spawn_condition: .traffic.sd660_loco.condition.city
+traffic_spawn_condition: .traffic.sd660.condition.city
 {
 	# spawn only near city with specified name
 	type: city
 	str_param[]: "portland"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX California - San Jose  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.sd660.ca_sj
+{
+	accessories[]: .sd660.ca_sj.chassis
+	accessories[]: .sd660.ca_sj.fwheel
+	accessories[]: .sd660.ca_sj.rwheel
+
+	max_speed: 30
+	vehicle_mass: 12000
+	engine_power: 500
+
+	trailer_chains[]: "tram_car.sd660_car1.ca_sj | tram_car.sd660_car2.ca_sj"
+
+	sound_move[]: "/sound/traffic/tram_1.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+
+	displacement_limit: 0.0
+
+	spawn_ratio: 0
+
+	spawn_condition[]: .traffic.sd660.ca_sj.condition.city
+}
+
+vehicle_accessory: .sd660.ca_sj.chassis
+{
+	data_path: "/def/vehicle/ai/tram_sd660/loco_ca_sj.sii"
+}
+
+vehicle_wheel_accessory: .sd660.ca_sj.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .sd660.ca_sj.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+traffic_spawn_condition: .traffic.sd660.ca_sj.condition.city
+{
+	# spawn only near city with specified name
+	type: city
+	str_param[]: "san_jose"
 }

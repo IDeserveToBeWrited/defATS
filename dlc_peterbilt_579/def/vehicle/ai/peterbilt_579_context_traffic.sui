@@ -1,0 +1,111 @@
+traffic_vehicle : traffic.pet579_b.context
+{
+	accessories[]: .pet579_b.context.chassis
+	accessories[]: .pet579_b.context.fwheel
+	accessories[]: .pet579_b.context.rwheel
+	accessories[]: .pet579_b.context.rwheel2
+	accessories[]: .pet579_b.context.trlr_cables
+
+	max_speed: 128
+	trailer_chains[]: "truck context"
+
+	sound_move[]: "/sound/traffic/truck_us_3.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+
+	vehicle_mass: 9200
+	engine_power: 373
+
+	color[]: (0.6, 0.6, 0.6) #white
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.01, 0.175, 0.04) #green
+	color[]: (0.030, 0.050, 0.22) #blue
+
+	tags[]: context
+	spawn_condition[]: .traffic.pet579_b.context.spawn.condition
+	spawn_condition[]: .traffic.pet579_b.context.spawn.condition2
+}
+traffic_spawn_condition: .traffic.pet579_b.context.spawn.condition
+{
+	type: area
+	str_param[]: "company"
+}
+traffic_spawn_condition: .traffic.pet579_b.context.spawn.condition2
+{
+	type: area
+	str_param[]: "paccar"
+}
+
+vehicle_accessory : .pet579_b.context.chassis {
+	data_path: "/def/vehicle/ai/truck/peterbilt.579/cabin_standard.sii"
+}
+vehicle_wheel_accessory : .pet579_b.context.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .pet579_b.context.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .pet579_b.context.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .pet579_b.context.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/peterbilt.579/accessory/trlr_cables/stock.sii"
+}
+
+
+
+traffic_vehicle : traffic.pet579_c.context
+{
+	accessories[]: .pet579_c.context.chassis
+	accessories[]: .pet579_c.context.fwheel
+	accessories[]: .pet579_c.context.rwheel
+	accessories[]: .pet579_c.context.rwheel2
+	accessories[]: .pet579_c.context.trlr_cables
+
+	max_speed: 128
+	trailer_chains[]: "truck context"
+
+	sound_move[]: "/sound/traffic/truck_us_3.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+
+	vehicle_mass: 9200
+	engine_power: 373
+
+	color[]: (0.6, 0.6, 0.6) #white
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.01, 0.175, 0.04) #green
+	color[]: (0.030, 0.050, 0.22) #blue
+
+	tags[]: context
+	spawn_condition[]: .traffic.pet579_c.context.spawn.condition
+	spawn_condition[]: .traffic.pet579_c.context.spawn.condition2
+}
+traffic_spawn_condition: .traffic.pet579_c.context.spawn.condition
+{
+	type: area
+	str_param[]: "company"
+}
+traffic_spawn_condition: .traffic.pet579_c.context.spawn.condition2
+{
+	type: area
+	str_param[]: "paccar"
+}
+
+vehicle_accessory : .pet579_c.context.chassis {
+	data_path: "/def/vehicle/ai/truck/peterbilt.579/cabin_exclusive.sii"
+}
+vehicle_wheel_accessory : .pet579_c.context.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .pet579_c.context.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .pet579_c.context.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .pet579_c.context.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/peterbilt.579/accessory/trlr_cables/stock.sii"
+}

@@ -1,0 +1,31 @@
+trailer : trailer.scs_dumpers
+{
+	trailer_definition: trailer_def.scs.dumper.single_36.side
+	
+	accessories[]: .scs_dumpers.chassis
+	accessories[]: .scs_dumpers.rwheel
+	accessories[]: .scs_dumpers.rwheel2
+	accessories[]: .scs_dumpers.paint_job
+}
+
+vehicle_accessory: .scs_dumpers.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_dumper/chassis_side_dumper.sii"
+}
+
+vehicle_wheel_accessory: .scs_dumpers.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_dumpers.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dumpers.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_dumper/custom_paint_job/red.sii"
+}

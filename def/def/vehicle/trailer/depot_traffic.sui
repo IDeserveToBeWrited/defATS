@@ -1,0 +1,1700 @@
+
+traffic_trailer : traffic.trailer.depot.scs_box_45 # insulated rear
+{
+
+	accessories[]: .traffic.trailer.depot.scs_box_45.chassis
+	accessories[]: .traffic.trailer.depot.scs_box_45.rwheel
+	accessories[]: .traffic.trailer.depot.scs_box_45.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_box_45.paint_job
+
+	cargo_mass: 16000
+
+	variant[]: .traffic.trailer.depot.scs_box_45.dry1.front
+
+	tags[]: high
+	tags[]: box
+	tags[]: dryvan
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_box_45.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_box_45.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_box_45.spawn.condition
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_box_45.spawn.condition2
+{
+	type: area
+	str_param[]: "!"
+	str_param[]: "fuel"
+	str_param[]: "food"
+	str_param[]: "chemical"
+	str_param[]: "container"
+	str_param[]: "construction"
+	str_param[]: "ch_wd_hrv"
+	str_param[]: "dg_wd_hrv"
+	str_param[]: "ch_wd_saw"
+	str_param[]: "dg_wd_saw"
+	str_param[]: "syn_che_plne"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_box_45.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_45_r.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_box_45.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_box_45.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_box_45.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+
+# dyryvan
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer : .traffic.trailer.depot.scs_box_45.dry1.front
+{
+
+	accessories[]: .traffic.trailer.depot.scs_box_45.dry1.front.chassis
+	accessories[]: .traffic.trailer.depot.scs_box_45.dry1.front.rwheel
+	accessories[]: .traffic.trailer.depot.scs_box_45.dry1.front.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_box_45.dry1.front.paint_job
+
+
+	tags[]: high
+	tags[]: box
+	tags[]: dryvan
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_box_45.dry1.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_box_45.dry1.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_box_45.dry1.spawn.condition
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_box_45.dry1.spawn.condition2
+{
+	type: area
+	str_param[]: "!"
+	str_param[]: "fuel"
+	str_param[]: "food"
+	str_param[]: "chemical"
+	str_param[]: "ch_wd_hrv"
+	str_param[]: "dg_wd_hrv"
+	str_param[]: "ch_wd_saw"
+	str_param[]: "dg_wd_saw"
+	str_param[]: "container"
+	str_param[]: "construction"
+	str_param[]: "syn_che_plne"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_box_45.dry1.front.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_box/dry_45_f.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_box_45.dry1.front.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_box_45.dry1.front.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_box_45.dry1.front.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+traffic_trailer : traffic.trailer.depot.scs_fuel43
+{
+	accessories[]: .traffic.trailer.depot.scs_fuel43.chassis
+	accessories[]: .traffic.trailer.depot.scs_fuel43.rwheel
+	accessories[]: .traffic.trailer.depot.scs_fuel43.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_fuel43.paint_job
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: cistern
+	tags[]: fuel
+	tags[]: chemical
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_fuel43.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_fuel43.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_fuel43.spawn.condition
+{
+	type: area
+	str_param[]: "fuel"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_fuel43.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_fuel43.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_fueltank/chassis_43_r.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_fuel43.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_fuel43.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_fuel43.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_fueltank/company_paint_job/default.sii"
+}
+
+
+traffic_trailer  : traffic.trailer.depot.gooseneck_b.cabin
+{
+
+	accessories[]: .traffic.trailer.depot.gooseneck_b.cabin.chassis
+	accessories[]: .traffic.trailer.depot.gooseneck_b.cabin.rwheel
+	accessories[]: .traffic.trailer.depot.gooseneck_b.cabin.rwheel2
+	accessories[]: .traffic.trailer.depot.gooseneck_b.cabin.body
+
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: cabin
+	tags[]: medium
+	tags[]: context
+
+	cargoes[]: const_house
+
+	company_paint_job: false
+
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
+
+	spawn_condition[]: .traffic.trailer.depot.gooseneck_b.cabin.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.gooseneck_b.cabin.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.gooseneck_b.cabin.spawn.condition
+{
+	type: area
+	str_param[]: "construction"
+}
+traffic_spawn_condition: .traffic.trailer.depot.gooseneck_b.cabin.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.gooseneck_b.cabin.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.gooseneck_b.cabin.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.gooseneck_b.cabin.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.depot.gooseneck_b.cabin.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer  : traffic.trailer.depot.gooseneck_p
+{
+
+	accessories[]: .traffic.trailer.depot.gooseneck_p.chassis
+	accessories[]: .traffic.trailer.depot.gooseneck_p.rwheel
+	accessories[]: .traffic.trailer.depot.gooseneck_p.rwheel2
+	accessories[]: .traffic.trailer.depot.gooseneck_p.body
+
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: context
+
+	cargoes[]: beverages
+
+	company_paint_job: false
+
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
+
+	spawn_condition[]: .traffic.trailer.depot.gooseneck_p.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.gooseneck_p.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.gooseneck_p.spawn.condition
+{
+	type: area
+	str_param[]: "container"
+}
+traffic_spawn_condition: .traffic.trailer.depot.gooseneck_p.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.gooseneck_p.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.gooseneck_p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.gooseneck_p.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.depot.gooseneck_p.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer  : traffic.trailer.depot.scs_gosck40g
+{
+
+	accessories[]: .traffic.trailer.depot.scs_gosck40g.chassis
+	accessories[]: .traffic.trailer.depot.scs_gosck40g.rwheel
+	accessories[]: .traffic.trailer.depot.scs_gosck40g.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_gosck40g.body
+
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: context
+
+	cargoes[]: beverages
+
+	company_paint_job: false
+
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
+
+	spawn_condition[]: .traffic.trailer.depot.scs_gosck40g.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_gosck40g.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_gosck40g.spawn.condition
+{
+	type: area
+	str_param[]: "container"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_gosck40g.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_gosck40g.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_40_black.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_gosck40g.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_gosck40g.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.depot.scs_gosck40g.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer  : traffic.trailer.depot.scs_gosck40b
+{
+
+	accessories[]: .traffic.trailer.depot.scs_gosck40b.chassis
+	accessories[]: .traffic.trailer.depot.scs_gosck40b.rwheel
+	accessories[]: .traffic.trailer.depot.scs_gosck40b.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_gosck40b.body
+
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: context
+
+	cargoes[]: beverages
+
+	company_paint_job: false
+
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
+
+	spawn_condition[]: .traffic.trailer.depot.scs_gosck40b.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_gosck40b.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_gosck40b.spawn.condition
+{
+	type: area
+	str_param[]: "container"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_gosck40b.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_gosck40b.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_40_black.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_gosck40b.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_gosck40b.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.depot.scs_gosck40b.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer  : traffic.trailer.depot.scs_gosck40s
+{
+
+	accessories[]: .traffic.trailer.depot.scs_gosck40s.chassis
+	accessories[]: .traffic.trailer.depot.scs_gosck40s.rwheel
+	accessories[]: .traffic.trailer.depot.scs_gosck40s.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_gosck40s.body
+
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: box
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: container
+	tags[]: medium
+	tags[]: context
+
+	cargoes[]: beverages
+
+	company_paint_job: false
+
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
+
+	spawn_condition[]: .traffic.trailer.depot.scs_gosck40s.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_gosck40s.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_gosck40s.spawn.condition
+{
+	type: area
+	str_param[]: "container"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_gosck40s.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_gosck40s.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_40_black.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_gosck40s.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_gosck40s.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.depot.scs_gosck40s.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
+}
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+traffic_trailer  : traffic.trailer.depot.silane20
+{
+
+	accessories[]: .traffic.trailer.depot.silane20.chassis
+	accessories[]: .traffic.trailer.depot.silane20.rwheel
+	accessories[]: .traffic.trailer.depot.silane20.rwheel2
+	accessories[]: .traffic.trailer.depot.silane20.body
+
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: chemical
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: silane
+	tags[]: medium
+	tags[]: context
+
+	cargoes[]: silane
+
+	company_paint_job: false
+
+	trailer_definition: trailer_def.scs.gooseneck.single_32e.container
+
+	spawn_condition[]: .traffic.trailer.depot.silane20.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.silane20.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.silane20.spawn.condition
+{
+	type: area
+	str_param[]: "chemical"
+}
+traffic_spawn_condition: .traffic.trailer.depot.silane20.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.silane20.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_20_black.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.silane20.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.silane20.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.depot.silane20.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_20.sii"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_trailer  : traffic.trailer.depot.silane40
+{
+
+	accessories[]: .traffic.trailer.depot.silane40.chassis
+	accessories[]: .traffic.trailer.depot.silane40.rwheel
+	accessories[]: .traffic.trailer.depot.silane40.rwheel2
+	accessories[]: .traffic.trailer.depot.silane40.body
+
+	cargo_mass: 16000
+
+	tags[]: high
+	tags[]: chemical
+	tags[]: gooseneck
+	tags[]: cargo
+	tags[]: silane
+	tags[]: medium
+	tags[]: context
+
+	cargoes[]: silane
+
+	company_paint_job: false
+
+	trailer_definition: trailer_def.scs.gooseneck.single_40e.container
+
+
+	spawn_condition[]: .traffic.trailer.depot.silane40.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.silane40.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.silane40.spawn.condition
+{
+	type: area
+	str_param[]: "chemical"
+}
+traffic_spawn_condition: .traffic.trailer.depot.silane40.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.silane40.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/ch_40_red.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.silane40.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.silane40.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_accessory: .traffic.trailer.depot.silane40.body
+{
+	data_path: "/def/vehicle/trailer/scs_gooseneck/accessory/body_40.sii"
+}
+
+
+
+
+traffic_trailer : traffic.trailer.depot.scs_chem43p
+{
+	accessories[]: .traffic.trailer.depot.scs_chem43p.chassis
+	accessories[]: .traffic.trailer.depot.scs_chem43p.rwheel
+	accessories[]: .traffic.trailer.depot.scs_chem43p.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_chem43p.paint_job
+
+	cargo_mass: 16000
+
+
+	tags[]: low
+	tags[]: cistern
+	tags[]: chemical
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_chem43p.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_chem43p.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_chem43p.spawn.condition
+{
+	type: area
+	str_param[]: "chemical"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_chem43p.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_chem43p.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_chemtank/chassis_43_r.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_chem43p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_chem43p.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_chem43p.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_chemtank/company_paint_job/default.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : traffic.trailer.depot.scs_chem48p
+{
+
+	accessories[]: .traffic.trailer.depot.scs_chem48p.chassis
+	accessories[]: .traffic.trailer.depot.scs_chem48p.rwheel
+	accessories[]: .traffic.trailer.depot.scs_chem48p.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_chem48p.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_chem48p.paint_job
+
+	cargo_mass: 16000
+
+
+	tags[]: low
+	tags[]: cistern
+	tags[]: chemical
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_chem48p.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_chem48p.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_chem48p.spawn.condition
+{
+	type: area
+	str_param[]: "chemical"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_chem48p.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_chem48p.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_chemtank/chassis_48_3a.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_chem48p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_chem48p.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_chem48p.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_chem48p.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_chemtank/company_paint_job/default.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+traffic_trailer : traffic.trailer.depot.scs_che43ddp
+{
+	accessories[]: .traffic.trailer.depot.scs_che43ddp.chassis
+	accessories[]: .traffic.trailer.depot.scs_che43ddp.rwheel
+	accessories[]: .traffic.trailer.depot.scs_che43ddp.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_che43ddp.paint_job
+
+	cargo_mass: 10000
+
+
+	tags[]: low
+	tags[]: cistern
+	tags[]: chemical
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_che43ddp.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_che43ddp.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_che43ddp.spawn.condition
+{
+	type: area
+	str_param[]: "chemical"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_che43ddp.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_che43ddp.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_chemtank/chassis_43_dd.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_che43ddp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_che43ddp.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_che43ddp.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_chemtank/company_paint_job/default.sii"
+}
+
+
+
+traffic_trailer : traffic.trailer.depot.scs_flat45f
+{
+	accessories[]: .traffic.trailer.depot.scs_flat45f.chassis
+	accessories[]: .traffic.trailer.depot.scs_flat45f.rwheel0
+	accessories[]: .traffic.trailer.depot.scs_flat45f.rwheel1
+	accessories[]: .traffic.trailer.depot.scs_flat45f.body
+
+	cargo_mass: 16000
+
+	spawn_ratio: 1
+
+	tags[]: low
+	tags[]: flatbed
+	tags[]: pipes
+	tags[]: medium
+	tags[]: cargo
+	tags[]: construct
+	tags[]: context
+
+	cargoes[]: pipes
+
+	trailer_definition: trailer_def.scs.flatbed.single_45f.flatbed
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_flat45f.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_flat45f.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_flat45f.spawn.condition
+{
+	type: area
+	str_param[]: "construction"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_flat45f.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_flat45f.chassis
+{
+    	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed45_f.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_flat45f.rwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_flat45f.rwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_flat45f.body
+{
+    	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_45.sii"
+}
+
+
+
+traffic_trailer  : traffic.trailer.depot.scs_fodt40p
+{
+	accessories[]: .traffic.trailer.depot.scs_fodt40p.chassis
+	accessories[]: .traffic.trailer.depot.scs_fodt40p.rwheel
+	accessories[]: .traffic.trailer.depot.scs_fodt40p.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_fodt40p.paint_job
+
+	cargo_mass: 12000
+
+	tags[]: low
+	tags[]: cistern
+	tags[]: food
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_fodt40p.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_fodt40p.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_fodt40p.spawn.condition
+{
+	type: area
+	str_param[]: "food"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_fodt40p.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_fodt40p.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_foodtank/ch_43.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_fodt40p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_fodt40p.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_fodt40p.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer  : traffic.trailer.depot.scs_fodt48p
+{
+	accessories[]: .traffic.trailer.depot.scs_fodt48p.chassis
+	accessories[]: .traffic.trailer.depot.scs_fodt48p.rwheel
+	accessories[]: .traffic.trailer.depot.scs_fodt48p.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_fodt48p.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_fodt48p.paint_job
+
+	cargo_mass: 12000
+
+	tags[]: low
+	tags[]: cistern
+	tags[]: food
+	tags[]: medium
+	tags[]: context
+
+	company_paint_job: false
+
+	spawn_condition[]: .traffic.trailer.depot.scs_fodt48p.spawn.condition
+	spawn_condition[]: .traffic.trailer.depot.scs_fodt48p.spawn.condition2
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_fodt48p.spawn.condition
+{
+	type: area
+	str_param[]: "food"
+}
+traffic_spawn_condition: .traffic.trailer.depot.scs_fodt48p.spawn.condition2
+{
+	type: area
+	str_param[]: "company"
+	str_param[]: "industrial"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_fodt48p.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_foodtank/ch_48.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_fodt48p.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_fodt48p.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_fodt48p.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_fodt48p.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_foodtank/company_paint_job/default.sii"
+}
+
+################# TIMBER, SAWMIL
+
+traffic_trailer : traffic.trailer.depot.log
+{
+	accessories[]: .traffic.depot.log.chassis
+	accessories[]: .traffic.depot.log.rwheel
+	accessories[]: .traffic.depot.log.rwheel2
+
+	cargo_mass: 16000
+
+	spawn_ratio: 0.001
+
+	tags[]: high
+	tags[]: log
+	tags[]: empty
+	tags[]: medium
+	tags[]: context
+
+	spawn_condition[]: .depot.log.condition
+	spawn_condition[]: .depot.log.condition2
+}
+traffic_spawn_condition: .depot.log.condition
+{
+	type: area
+	str_param[]: "ch_wd_hrv"
+	str_param[]: "dg_wd_hrv"
+	str_param[]: "ch_wd_saw"
+	str_param[]: "dg_wd_saw"
+}
+traffic_spawn_condition: .depot.log.condition2
+{
+	type: area
+	str_param[]: "company"
+}
+
+vehicle_accessory: .traffic.depot.log.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_log/ch_black.sii"
+}
+
+vehicle_wheel_accessory: .traffic.depot.log.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.depot.log.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+traffic_trailer : traffic.trailer.depot.scs_chipvan3
+{
+	accessories[]: .depot.scs_chipvan3.chassis
+	accessories[]: .depot.scs_chipvan3.rwheel
+	accessories[]: .depot.scs_chipvan3.rwheel2
+	accessories[]: .depot.scs_chipvan3.rwheel3
+	accessories[]: .depot.scs_chipvan3.paint_job
+
+	company_paint_job: false
+
+	spawn_ratio: 0.001
+
+	tags[]: high
+	tags[]: chipvan
+	tags[]: box
+	tags[]: medium
+	tags[]: context
+
+	spawn_condition[]: .depot.scs_chipvan3.condition
+	spawn_condition[]: .depot.scs_chipvan3.condition2
+}
+traffic_spawn_condition: .depot.scs_chipvan3.condition
+{
+	type: area
+	str_param[]: "ch_wd_saw"
+	str_param[]: "dg_wd_saw"
+}
+traffic_spawn_condition: .depot.scs_chipvan3.condition2
+{
+	type: area
+	str_param[]: "company"
+}
+
+vehicle_accessory: .depot.scs_chipvan3.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_chipvan/ch_3ax.sii"
+}
+
+vehicle_wheel_accessory: .depot.scs_chipvan3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .depot.scs_chipvan3.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .depot.scs_chipvan3.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .depot.scs_chipvan3.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
+}
+
+
+###################################
+
+traffic_trailer : traffic.trailer.depot.scs_lowboy
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_3.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_3.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_3.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_3.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_lboy_3.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_3.body
+
+	cargo_mass: 16000
+
+
+
+	variant[]: .traffic.trailer.depot.scs_lboy_3r
+	variant[]: .traffic.trailer.depot.scs_lboy_3e3
+	variant[]: .traffic.trailer.depot.scs_lboy_3e4
+	variant[]: .traffic.trailer.depot.scs_lboy_2
+	variant[]: .traffic.trailer.depot.scs_lboy_2r
+	variant[]: .traffic.trailer.depot.scs_lboy_2e
+	variant[]: .traffic.trailer.depot.scs_lboy_2r1
+	variant[]: .traffic.trailer.depot.scs_lboy_3e5
+	variant[]: .traffic.trailer.depot.scs_lboy_3gl
+
+	tags[]: low
+	tags[]: medium
+	tags[]: wheel_loader
+	tags[]: cargo
+	tags[]: construct
+
+	cargoes[]: digger1000
+
+	trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_3.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_3r
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_3r.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_3r.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_3r.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_3r.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_lboy_3r.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_3r.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: excavator
+	tags[]: cargo
+	tags[]: construct
+
+	cargoes[]: excavator
+
+	trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3r.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3r.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3r.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3r.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_3r.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/blue.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3r.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_3e3
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e3.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e3.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e3.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e3.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e3.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e3.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: bulldozer
+	tags[]: cargo
+	tags[]: construct
+
+	cargoes[]: dbulldozer
+
+trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3e3.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3_wood.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e3.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e3.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e3.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_3e3.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3e3.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_3e4
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e4.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e4.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e4.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e4.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e4.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e4.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: tractor
+	tags[]: cargo
+	tags[]: farm
+
+	cargoes[]: tractors
+
+trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3e4.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3_wood.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e4.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e4.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e4.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_3e4.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3e4.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_3gl
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_3gl.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_3gl.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_3gl.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_3gl.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_lboy_3gl.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_3gl.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: tractor
+	tags[]: cargo
+	tags[]: farm
+
+
+trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+cargoes[]: tractors
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3gl.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3_wood.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3gl.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3gl.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3gl.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_3gl.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3gl.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_2
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_2.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_2.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_2.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_2.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_2.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: roller
+	tags[]: cargo
+	tags[]: construct
+
+
+	cargoes[]: roadroller
+
+trailer_definition: trailer_def.scs.lowboy.single_45.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_2.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_2.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_2.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_2.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_2r
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: loader
+	tags[]: cargo
+	tags[]: construct
+
+	cargoes[]: digger500
+
+trailer_definition: trailer_def.scs.lowboy.single_45.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_2r.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_2.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2r.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2r.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_2r.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_2r.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_2e
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_2e.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_2e.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_2e.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_2e.paint_job
+
+	cargo_mass: 0
+
+	tags[]: low
+	tags[]: medium
+	tags[]: empty
+	tags[]: construct
+
+trailer_definition: trailer_def.scs.lowboy.single_45.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_2e.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_2.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2e.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2e.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_2e.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_2r1
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r1.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r1.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r1.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r1.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_2r1.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: tractor
+	tags[]: cargo
+	tags[]: farm
+
+	cargoes[]: tractors
+
+trailer_definition: trailer_def.scs.lowboy.single_45.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_2r1.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_2.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2r1.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_2r1.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_2r1.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/default.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_2r1.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.depot.scs_lboy_3e5
+{
+
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e5.chassis
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e5.rwheel
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e5.rwheel2
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e5.rwheel3
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e5.paint_job
+	accessories[]: .traffic.trailer.depot.scs_lboy_3e5.body
+
+	cargo_mass: 16000
+
+	tags[]: low
+	tags[]: medium
+	tags[]: excavator
+	tags[]: cargo
+	tags[]: construct
+
+	cargoes[]: excavator
+
+trailer_definition: trailer_def.scs.lowboy.single_50_3.wood
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3e5.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/ch_3_wood.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e5.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e5.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .traffic.trailer.depot.scs_lboy_3e5.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .traffic.trailer.depot.scs_lboy_3e5.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_lowboy/custom_paint_job/red.sii"
+}
+
+vehicle_accessory: .traffic.trailer.depot.scs_lboy_3e5.body
+{
+    	data_path: "/def/vehicle/trailer/scs_lowboy/accessory/body.sii"
+}
+
+
+traffic_trailer : traffic.trailer.scs_grai40p.depot
+{
+	accessories[]: .scs_grai40p.depot.chassis
+	accessories[]: .scs_grai40p.depot.rwheel
+	accessories[]: .scs_grai40p.depot.rwheel2
+	accessories[]: .scs_grai40p.depot.paintjob
+
+	cargo_mass: 16000
+
+	tags[]: context
+
+	spawn_condition[]: .traffic.trailer.scs_grai40p.depot.condition
+	spawn_condition[]: .traffic.trailer.scs_grai40p.depot.condition2
+}
+	traffic_spawn_condition: .traffic.trailer.scs_grai40p.depot.condition
+	{
+		type: area
+		str_param[]: "syn_che_plne"
+	}
+	traffic_spawn_condition: .traffic.trailer.scs_grai40p.depot.condition2
+	{
+		type: area
+		str_param[]: "company"
+	}
+	vehicle_accessory: .scs_grai40p.depot.chassis
+	{
+		data_path: "/def/vehicle/trailer/scs_grainhopper/ch_40.sii"
+	}
+
+	vehicle_wheel_accessory: .scs_grai40p.depot.rwheel
+	{
+		offset: 0
+		data_path: "/def/vehicle/t_wheel/single.sii"
+	}
+
+	vehicle_wheel_accessory: .scs_grai40p.depot.rwheel2
+	{
+		offset: 2
+		data_path: "/def/vehicle/t_wheel/single.sii"
+	}
+	vehicle_paint_job_accessory: .scs_grai40p.depot.paintjob
+	{
+		data_path: "/def/vehicle/trailer/scs_grainhopper/company_paint_job/default.sii"
+	}
+

@@ -22,16 +22,17 @@ curve_model : curve.114
 	end_part[]: ""
 
 	dynamic_lod_desc[]: "/model/train/wagon_grain_curve_lod1.pmd"
-	dynamic_lod_dist[]: 50.0
-
+	dynamic_lod_dist[]: 50
 	dynamic_lod_desc[]: "/model/train/wagon_grain_curve_lod2.pmd"
-	dynamic_lod_dist[]: 100.0
+	dynamic_lod_dist[]: 100
+	dynamic_lod_desc[]: "/model/train/wagon_grain_curve_lod3.pmd"
+	dynamic_lod_dist[]: 150
 
 }
 
 curve_model : curve.wy_23001
 {
-	model_desc: "/model/train/wagon_coal_curve_.pmd"
+	model_desc: "/model/train/wagon_coal_curve.pmd"
 	name: "wagon coal curve "
 
 	variation: 5
@@ -54,16 +55,241 @@ curve_model : curve.wy_23001
 	end_part[3]: "end"
 	end_part[4]: "end"
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
 	dynamic_lod_desc[0]: "/model/train/wagon_coal_curve_lod1.pmd"
 	dynamic_lod_dist[0]: 50
 	dynamic_lod_desc[1]: "/model/train/wagon_coal_curve_lod2.pmd"
 	dynamic_lod_dist[1]: 70
+	dynamic_lod_desc[2]: "/model/train/wagon_coal_curve_lod3.pmd"
+	dynamic_lod_dist[2]: 140
 
 	high_tess: 0
 }
 
+curve_model : curve.23002
+{
+	model_desc: "/model/train/wagon_wood_curve.pmd"
+	name: "wagon wood curve"
 
+	variation: 2
+	variation[0]: "empty | center2 : 1.0"
+	variation[1]: "full | center1 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/train/wagon_wood_curve_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/train/wagon_wood_curve_lod2.pmd"
+	dynamic_lod_dist[1]: 100
+}
+
+curve_model : curve.vhcl_20001
+{
+	model_desc: "/model/train/wagon_autorack_crv.pmd"
+	name: "wagon autorack crv"
+
+	variation: 4
+	variation[0]: "v1 | center1 : 1.0"
+	variation[1]: "v2 | center2 : 1.0"
+	variation[2]: "v3 | center3 : 1.0"
+	variation[3]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
+	dynamic_lod_desc[0]: "/model/train/wagon_autorack_crv_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/train/wagon_autorack_crv_lod2.pmd"
+	dynamic_lod_dist[1]: 125
+	dynamic_lod_desc[2]: "/model/train/wagon_autorack_crv_lod3.pmd"
+	dynamic_lod_dist[2]: 175
+
+	no_geometry_stretch: true
+}
+
+curve_model : curve.vhcl_20002
+{
+	model_desc: "/model/train/wagon_autorack_low_crv.pmd"
+	name: "wagon autorack low crv"
+
+	variation: 4
+	variation[0]: "v1 | center1 : 1.0"
+	variation[1]: "v2 | center2 : 1.0"
+	variation[2]: "v3 | center3 : 1.0"
+	variation[3]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 2
+	dynamic_lod_dist: 2
+	dynamic_lod_desc[0]: "/model/train/wagon_autorack_low_crv_lod1.pmd"
+	dynamic_lod_dist[0]: 120
+	dynamic_lod_desc[1]: "/model/train/wagon_autorack_low_crv_lod2.pmd"
+	dynamic_lod_dist[1]: 175
+
+	no_geometry_stretch: true
+}
+
+curve_model : curve.vhcl_07001
+{
+	model_desc: "/model/train/wagon_flat_crv.pmd"
+	name: "wagon flat crv"
+
+	variation: 1
+	variation[0]: "default | center1 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
+	dynamic_lod_desc[0]: "/model/train/wagon_flat_crv_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/train/wagon_flat_crv_lod2.pmd"
+	dynamic_lod_dist[1]: 100
+	dynamic_lod_desc[2]: "/model/train/wagon_flat_crv_lod3.pmd"
+	dynamic_lod_dist[2]: 150
+}
+
+curve_model : curve.vhcl_07002
+{
+	model_desc: "/model/train/wagon_dump_crv.pmd"
+	name: "wagon dump crv"
+
+	variation: 1
+	variation[0]: "default | center1 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
+	dynamic_lod_desc[0]: "/model/train/wagon_dump_crv_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/train/wagon_dump_crv_lod2.pmd"
+	dynamic_lod_dist[1]: 100
+	dynamic_lod_desc[2]: "/model/train/wagon_dump_crv_lod3.pmd"
+	dynamic_lod_dist[2]: 150
+}
+
+curve_model : curve.vhcl_07003
+{
+	model_desc: "/model/train/wagon_box_crv.pmd"
+	name: "wagon box crv"
+
+	variation: 2
+	variation[0]: "default | center1 : 1.0"
+	variation[1]: "dropShadow | center2 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
+	dynamic_lod_desc[0]: "/model/train/wagon_box_crv_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	dynamic_lod_desc[1]: "/model/train/wagon_box_crv_lod2.pmd"
+	dynamic_lod_dist[1]: 100
+	dynamic_lod_desc[2]: "/model/train/wagon_box_crv_lod3.pmd"
+	dynamic_lod_dist[2]: 150
+}
+
+curve_model : curve.vhcl_07004
+{
+	model_desc: "/model/train/wagon_container_crv.pmd"
+	name: "wagon container crv"
+
+	variation: 4
+	variation[0]: "containers | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0 | center11 : 1.0"
+	variation[1]: "containers2 | center2,center5,center6,center9 : 1.0 | center4,center10,center3,center11 : 1.0 | center8,center7,center3,center2 : 1.0"
+	variation[2]: "containers3 | center11,center8,center6,center4,center2 : 1.0 | center10,center7,center5,center3,center9 : 1.0"
+	variation[3]: "empty | center1 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
+	dynamic_lod_desc[0]: "/model/train/wagon_container_crv_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/train/wagon_container_crv_lod2.pmd"
+	dynamic_lod_dist[1]: 140
+	dynamic_lod_desc[2]: "/model/train/wagon_container_crv_lod3.pmd"
+	dynamic_lod_dist[2]: 200
+}
+
+curve_model : curve.vhcl_07005
+{
+	model_desc: "/model/train/wagon_tank_crv.pmd"
+	name: "wagon tank crv"
+
+	variation: 1
+	variation[0]: "default | center1 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 3
+	dynamic_lod_dist: 3
+	dynamic_lod_desc[0]: "/model/train/wagon_tank_crv_lod1.pmd"
+	dynamic_lod_dist[0]: 75
+	dynamic_lod_desc[1]: "/model/train/wagon_tank_crv_lod2.pmd"
+	dynamic_lod_dist[1]: 140
+	dynamic_lod_desc[2]: "/model/train/wagon_tank_crv_lod3.pmd"
+	dynamic_lod_dist[2]: 200
+}
+
+curve_model : curve.autorack_far
+{
+  model_desc: "/model/train/wagon_autorack_low_crv_far.pmd"
+  name: "wagon autorack low crv far"
+
+  variation: 4
+  variation[0]: "v1 | center1 : 1.0"
+  variation[1]: "v2 | center2 : 1.0"
+  variation[2]: "v3 | center3 : 1.0"
+  variation[3]: "random | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+
+  no_geometry_stretch: true
+
+}
+
+curve_model : curve.coal_far
+{
+  	model_desc: "/model/train/wagon_coal_curve_far.pmd"
+  	name: "wagon coal curve far"
+
+  	variation: 2
+	
+	variation[0]: "yellow_empty | ye_1,ye_2,ye_3 : 1.0 | ye_2,ye_3,ye_1 : 1.0 | ye_3,ye_1,ye_2 : 1.0"
+	variation[1]: "yellow_full | yf_1,yf_2,yf_3 : 1.0 | yf_2,yf_3,yf_1 : 1.0 | yf_3,yf_1,yf_2 : 1.0"
+	
+}
+
+curve_model : curve.grain_far
+{
+	model_desc: "/model/train/wagon_grain_curve_far.pmd"
+	name: "wagon grain curve far"
+	
+	variation[]: "default | center1 : 1.0"
+	
+}
+
+curve_model : curve.wg_bld_far
+{
+	model_desc: "/model/train/static/wagons_building_lod_far.pmd"
+	name: "wagons building lod far"
+	
+	variation[]: "default | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
+	
+}
+
+curve_model : curve.wg_tank_far
+{
+	model_desc: "/model/train/static/wagons_tank_building_lod_far.pmd"
+	name: "wagons tank building lod far"
+	
+	variation[]: "default | center1 : 1.0"
+	
+}
 
 }

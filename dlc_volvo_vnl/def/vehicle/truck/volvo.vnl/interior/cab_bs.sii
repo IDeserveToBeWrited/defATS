@@ -6,6 +6,8 @@ accessory_interior_data	: bs.volvo.vnl.interior
 	price: 15180
 	unlock: 0
 	icon: "volvo_vnl/int_neoclass"
+	part_type: factory
+
 	model: "/vehicle/truck/volvo_vnl/interior/model.pmd"
 	animated_model: "/vehicle/truck/volvo_vnl/interior/anim.pmd"
 	collision: "/vehicle/truck/volvo_vnl/interior/model.pmc"
@@ -14,19 +16,18 @@ accessory_interior_data	: bs.volvo.vnl.interior
 
 	suitable_for[]: "standard.volvo.vnl.cabin"
 
-
 	ext_model: "/vehicle/truck/upgrade/ext_interior/volvo_vnl/stock.pmd"
 	ext_variant: cab_b
 	ext_look: standard
 
-
 @include "animations.sui"
+
+@include "int_shadow_cab_b.sui"
 
 @include "sound.sui"
 @include "sound_effects.sui"
 
 @include "computers.sui"
-
 
 	glass_panes[]: .volvo.vnl.r.pane.front
 	glass_panes[]: .volvo.vnl.r.pane.close
@@ -34,6 +35,7 @@ accessory_interior_data	: bs.volvo.vnl.interior
 	glass_panes[]: .volvo.vnl.r.pane.back_b
 
 @include "seat.sui"
+@include "mirrors.sui"
 @include "dashboard_color.sui"
 }
 @include "glass.sui"

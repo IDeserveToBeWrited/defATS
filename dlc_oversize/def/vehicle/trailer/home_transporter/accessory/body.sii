@@ -1,0 +1,56 @@
+SiiNunit
+{
+accessory_trailer_body_data : body.scs_hometrns.body
+{
+
+	#XXXXXXXXXXXXXXXXXXXXX NEW CARGO SYSTEM XXXXXXXXXXXXXXXXXXXXX
+
+	cargo_loading_methods[]: custom
+	cargo_custom_loads_path: "/def/vehicle/trailer/home_transporter/accessory/cargo"
+
+	cargo_lashing_mounts[]: .lashm0
+	cargo_lashing_mounts[]: .lashm1
+	cargo_lashing_mounts[]: .lashm2
+	cargo_lashing_mounts[]: .lashm3
+	cargo_lashing_mounts[]: .lashm4
+	cargo_lashing_mounts[]: .lashm5
+
+
+
+	
+@include "/def/vehicle/lashing_gear.sui"
+}
+
+cargo_lashing_mount : .lashm0
+{
+	spacing: 0.015
+	hook_angle_constraints: (90, 90, 90)
+}
+cargo_lashing_mount : .lashm1
+{
+	spacing: 0.015
+	hook_angle_constraints: (90, 90, 90)
+}
+cargo_lashing_mount : .lashm2
+{
+	spacing: 0.015
+	hook_angle_constraints: (90, 90, 90)
+}
+cargo_lashing_mount : .lashm3
+{
+	spacing: 0.015
+	hook_angle_constraints: (90, 90, 90)
+}
+cargo_lashing_mount : .lashm4
+{
+	spacing: 0.015
+	hook_angle_constraints: (90, 90, 90)
+}
+cargo_lashing_mount : .lashm5
+{
+	spacing: 0.015
+	hook_angle_constraints: (90, 90, 90)
+}
+
+@include "/def/vehicle/lashing_gear_data.sui"
+}

@@ -59,6 +59,123 @@ input_device_config : .evdev.df_pro
 
 ### DI8 ###
 
+input_device_config : .di8.tcs
+{
+	device_id: "di8.{017A0F0D-0000-0000-0000-504944564944}"
+
+	override_fusion_mouse: true
+	fusion_mouse_inputs[]: "speed_x=y"
+	fusion_mouse_inputs[]: "speed_y=sl21"
+
+	override_generated_buttons: true
+	generated_buttons[]: "y,left,-1.0,-0.5,L-X @@left@@"
+	generated_buttons[]: "y,right,0.5,1.0,L-X @@right@@"
+	generated_buttons[]: "sl21,up,-1.0,-0.5,L-Y @@up@@"
+	generated_buttons[]: "sl21,down,0.5,1.0,L-Y @@down@@"
+	generated_buttons[]: "rx,left2,-1.0,-0.5,R-X @@left@@"
+	generated_buttons[]: "rx,right2,0.5,1.0,R-X @@right@@"
+	generated_buttons[]: "ry,up2,-1.0,-0.5,R-Y @@up@@"
+	generated_buttons[]: "ry,down2,0.5,1.0,R-Y @@down@@"
+}
+
+input_device_config : .di8.x360
+{
+	device_id: "di8.{028E045E-0000-0000-0000-504944564944}"
+
+	override_generated_buttons: true
+	generated_buttons[]: "x,left,-1.0,-0.5,@@lstick_left@@"
+	generated_buttons[]: "x,right,0.5,1.0,@@lstick_right@@"
+	generated_buttons[]: "y,up,-1.0,-0.5,@@lstick_up@@"
+	generated_buttons[]: "y,down,0.5,1.0,@@lstick_down@@"
+	generated_buttons[]: "rx,rstick_left,-1.0,-0.5,@@rstick_left@@"
+	generated_buttons[]: "rx,rstick_right,0.5,1.0,@@rstick_right@@"
+	generated_buttons[]: "ry,rstick_up,-1.0,-0.5,@@rstick_up@@"
+	generated_buttons[]: "ry,rstick_down,0.5,1.0,@@rstick_down@@"
+	generated_buttons[]: "z,button_lt,-1.0,-0.9,@@button_lt@@"
+	generated_buttons[]: "z,button_rt,0.9,1.0,@@button_rt@@"
+}
+
+input_device_config : .di8.xbone
+{
+	device_id: "di8.{02FF045E-0000-0000-0000-504944564944}"
+
+	override_generated_buttons: true
+	generated_buttons[]: "x,left,-1.0,-0.5,@@lstick_left@@"
+	generated_buttons[]: "x,right,0.5,1.0,@@lstick_right@@"
+	generated_buttons[]: "y,up,-1.0,-0.5,@@lstick_up@@"
+	generated_buttons[]: "y,down,0.5,1.0,@@lstick_down@@"
+	generated_buttons[]: "rx,rstick_left,-1.0,-0.5,@@rstick_left@@"
+	generated_buttons[]: "rx,rstick_right,0.5,1.0,@@rstick_right@@"
+	generated_buttons[]: "ry,rstick_up,-1.0,-0.5,@@rstick_up@@"
+	generated_buttons[]: "ry,rstick_down,0.5,1.0,@@rstick_down@@"
+	generated_buttons[]: "z,button_lt,-1.0,-0.9,@@button_lt@@"
+	generated_buttons[]: "z,button_rt,0.9,1.0,@@button_rt@@"
+}
+
+input_device_config : .di8.xbone7
+{
+	device_id: "di8.{02DD045E-0000-0000-0000-504944564944}"
+
+	override_generated_buttons: true
+	generated_buttons[]: "x,left,-1.0,-0.5,@@lstick_left@@"
+	generated_buttons[]: "x,right,0.5,1.0,@@lstick_right@@"
+	generated_buttons[]: "y,up,-1.0,-0.5,@@lstick_up@@"
+	generated_buttons[]: "y,down,0.5,1.0,@@lstick_down@@"
+	generated_buttons[]: "rx,rstick_left,-1.0,-0.5,@@rstick_left@@"
+	generated_buttons[]: "rx,rstick_right,0.5,1.0,@@rstick_right@@"
+	generated_buttons[]: "ry,rstick_up,-1.0,-0.5,@@rstick_up@@"
+	generated_buttons[]: "ry,rstick_down,0.5,1.0,@@rstick_down@@"
+	generated_buttons[]: "z,button_lt,-1.0,-0.9,@@button_lt@@"
+	generated_buttons[]: "z,button_rt,0.9,1.0,@@button_rt@@"
+}
+
+input_device_config : .di8.xone
+{
+	device_id: "di8.{02D1045E-0000-0000-0000-504944564944}"
+
+	override_generated_buttons: true
+	generated_buttons[]: "x,left,-1.0,-0.5,@@lstick_left@@"
+	generated_buttons[]: "x,right,0.5,1.0,@@lstick_right@@"
+	generated_buttons[]: "y,up,-1.0,-0.5,@@lstick_up@@"
+	generated_buttons[]: "y,down,0.5,1.0,@@lstick_down@@"
+	generated_buttons[]: "rx,rstick_left,-1.0,-0.5,@@rstick_left@@"
+	generated_buttons[]: "rx,rstick_right,0.5,1.0,@@rstick_right@@"
+	generated_buttons[]: "ry,rstick_up,-1.0,-0.5,@@rstick_up@@"
+	generated_buttons[]: "ry,rstick_down,0.5,1.0,@@rstick_down@@"
+	generated_buttons[]: "z,button_lt,-1.0,-0.9,@@button_lt@@"
+	generated_buttons[]: "z,button_rt,0.9,1.0,@@button_rt@@"
+}
+
+input_device_config : .di8.ps4
+{
+	device_id: "di8.{09CC054C-0000-0000-0000-504944564944}"
+
+	override_generated_buttons: true
+	generated_buttons[]: "x,left,-1.0,-0.5,@@lstick_left@@"
+	generated_buttons[]: "x,right,0.5,1.0,@@lstick_right@@"
+	generated_buttons[]: "y,up,-1.0,-0.5,@@lstick_up@@"
+	generated_buttons[]: "y,down,0.5,1.0,@@lstick_down@@"
+	generated_buttons[]: "z,rstick_left,-1.0,-0.5,@@rstick_left@@"
+	generated_buttons[]: "z,rstick_right,0.5,1.0,@@rstick_right@@"
+	generated_buttons[]: "rz,rstick_up,-1.0,-0.5,@@rstick_up@@"
+	generated_buttons[]: "rz,rstick_down,0.5,1.0,@@rstick_down@@"
+}
+
+input_device_config : .di8.ps5
+{
+	device_id: "di8.{0CE6054C-0000-0000-0000-504944564944}"
+
+	override_generated_buttons: true
+	generated_buttons[]: "x,left,-1.0,-0.5,@@lstick_left@@"
+	generated_buttons[]: "x,right,0.5,1.0,@@lstick_right@@"
+	generated_buttons[]: "y,up,-1.0,-0.5,@@lstick_up@@"
+	generated_buttons[]: "y,down,0.5,1.0,@@lstick_down@@"
+	generated_buttons[]: "z,rstick_left,-1.0,-0.5,@@rstick_left@@"
+	generated_buttons[]: "z,rstick_right,0.5,1.0,@@rstick_right@@"
+	generated_buttons[]: "rz,rstick_up,-1.0,-0.5,@@rstick_up@@"
+	generated_buttons[]: "rz,rstick_down,0.5,1.0,@@rstick_down@@"
+}
+
 input_device_config : .di8.g25
 {
 	device_id: "di8.{C299046D-0000-0000-0000-504944564944}"
@@ -117,6 +234,12 @@ input_device_config : .di8.t150
 {
 	device_id: "di8.{B677044F-0000-0000-0000-504944564944}"
 	ffb_lut: .tm_t150_lut
+}
+
+input_device_config : .di8.t248
+{
+	device_id: "di8.{B696044F-0000-0000-0000-504944564944}"
+	ffb_lut: .tm_t248_lut
 }
 
 ### LUTs ###
@@ -538,6 +661,111 @@ input_force_feedback_lut : .tm_t150_lut
 	output_values[]: 0.9700
 	output_values[]: 0.9800
 	output_values[]: 0.9900
+	output_values[]: 1.0000
+}
+
+input_force_feedback_lut : .tm_t248_lut
+{
+	output_values[]: 0.0000
+	output_values[]: 0.0040
+	output_values[]: 0.0080
+	output_values[]: 0.0120
+	output_values[]: 0.0160
+	output_values[]: 0.0200
+	output_values[]: 0.0240
+	output_values[]: 0.0280
+	output_values[]: 0.0320
+	output_values[]: 0.0360
+	output_values[]: 0.0400
+	output_values[]: 0.0440
+	output_values[]: 0.0480
+	output_values[]: 0.0520
+	output_values[]: 0.0560
+	output_values[]: 0.0600
+	output_values[]: 0.0640
+	output_values[]: 0.0680
+	output_values[]: 0.0720
+	output_values[]: 0.0760
+	output_values[]: 0.0800
+	output_values[]: 0.0840
+	output_values[]: 0.0880
+	output_values[]: 0.0920
+	output_values[]: 0.0960
+	output_values[]: 0.1000
+	output_values[]: 0.1040
+	output_values[]: 0.1080
+	output_values[]: 0.1120
+	output_values[]: 0.1160
+	output_values[]: 0.1200
+	output_values[]: 0.1280
+	output_values[]: 0.1360
+	output_values[]: 0.1440
+	output_values[]: 0.1520
+	output_values[]: 0.1600
+	output_values[]: 0.1680
+	output_values[]: 0.1760
+	output_values[]: 0.1840
+	output_values[]: 0.1920
+	output_values[]: 0.2000
+	output_values[]: 0.2100
+	output_values[]: 0.2200
+	output_values[]: 0.2300
+	output_values[]: 0.2400
+	output_values[]: 0.2500
+	output_values[]: 0.2600
+	output_values[]: 0.2700
+	output_values[]: 0.2800
+	output_values[]: 0.2900
+	output_values[]: 0.3000
+	output_values[]: 0.3120
+	output_values[]: 0.3240
+	output_values[]: 0.3360
+	output_values[]: 0.3480
+	output_values[]: 0.3600
+	output_values[]: 0.3720
+	output_values[]: 0.3840
+	output_values[]: 0.3960
+	output_values[]: 0.4080
+	output_values[]: 0.4200
+	output_values[]: 0.4340
+	output_values[]: 0.4480
+	output_values[]: 0.4620
+	output_values[]: 0.4760
+	output_values[]: 0.4900
+	output_values[]: 0.5040
+	output_values[]: 0.5180
+	output_values[]: 0.5320
+	output_values[]: 0.5460
+	output_values[]: 0.5600
+	output_values[]: 0.5760
+	output_values[]: 0.5920
+	output_values[]: 0.6080
+	output_values[]: 0.6240
+	output_values[]: 0.6400
+	output_values[]: 0.6560
+	output_values[]: 0.6720
+	output_values[]: 0.6880
+	output_values[]: 0.7040
+	output_values[]: 0.7200
+	output_values[]: 0.7335
+	output_values[]: 0.7470
+	output_values[]: 0.7605
+	output_values[]: 0.7740
+	output_values[]: 0.7875
+	output_values[]: 0.8010
+	output_values[]: 0.8145
+	output_values[]: 0.8280
+	output_values[]: 0.8415
+	output_values[]: 0.8550
+	output_values[]: 0.8695
+	output_values[]: 0.8840
+	output_values[]: 0.8985
+	output_values[]: 0.9130
+	output_values[]: 0.9275
+	output_values[]: 0.9420
+	output_values[]: 0.9565
+	output_values[]: 0.9710
+	output_values[]: 0.9855
 	output_values[]: 1.0000
 }
 

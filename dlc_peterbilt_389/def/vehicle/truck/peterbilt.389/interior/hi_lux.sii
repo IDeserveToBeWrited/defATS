@@ -6,27 +6,30 @@ accessory_interior_data	: hi_lux.peterbilt.389.interior
 	price: 22960
 	unlock: 10
 	icon: "peterbilt_389/int_beige"
+	part_type: factory
+
 	model: "/vehicle/truck/peterbilt_389/interior/model.pmd"
 	animated_model: "/vehicle/truck/peterbilt_389/interior/anim.pmd"
 	collision: "/vehicle/truck/peterbilt_389/interior/model.pmc"
 	look: default
 	variant: cab_cl
-	suitable_for[]: "exclusive.peterbilt.389.cabin"
-
 
 	ext_model: "/vehicle/truck/upgrade/ext_interior/peterbilt_389/stock.pmd"
 	ext_variant: cab_c
 	ext_look: luxury
 
+	suitable_for[]: "exclusive.peterbilt.389.cabin"
+
 	defaults[]: "/def/vehicle/truck/peterbilt.389/accessory/steering_w/default.sii"
 
 @include "animations.sui"
+
+@include "int_shadow_cab_c.sui"
 
 @include "sound.sui"
 @include "sound_effects.sui"
 
 @include "computers.sui"
-
 
 	glass_panes[]: .peterbilt389.r.pane.frontl
 	glass_panes[]: .peterbilt389.r.pane.frontr
@@ -34,9 +37,8 @@ accessory_interior_data	: hi_lux.peterbilt.389.interior
 	glass_panes[]: .peterbilt389.r.pane.far
 	glass_panes[]: .peterbilt389.r.pane.door
 
-
-
 @include "seat.sui"
+@include "mirrors.sui"
 
 @include "dashboard_color.sui"
 }

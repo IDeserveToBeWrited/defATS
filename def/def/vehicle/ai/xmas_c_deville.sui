@@ -1,0 +1,48 @@
+traffic_vehicle : traffic.c_deville.xmas
+{
+	accessories[]: .c_deville.xmas.chassis
+	accessories[]: .c_deville.xmas.fwheel
+	accessories[]: .c_deville.xmas.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	vehicle_mass: 2200
+
+	color[]: (1, 1, 1) #white
+
+	tags[]: vintage
+	tags[]: cheap
+	tags[]: xmas
+	
+	spawn_condition[]: .c_deville.xmas.condition
+
+
+@include "drivers_generic.sui"
+}
+
+traffic_spawn_condition: .c_deville.xmas.condition
+{
+	type: area
+	str_param[]: "xmas"
+}
+vehicle_accessory: .c_deville.xmas.chassis
+{
+	data_path: "/def/vehicle/ai/xmas_cadillac_deville/chassis.sii"
+}
+
+vehicle_wheel_accessory: .c_deville.xmas.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_oldc.sii"
+}
+
+vehicle_wheel_accessory: .c_deville.xmas.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_oldc.sii"
+}
+

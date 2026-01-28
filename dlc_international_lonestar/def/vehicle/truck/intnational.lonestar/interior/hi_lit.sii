@@ -1,0 +1,46 @@
+SiiNunit
+{
+accessory_interior_data	: hi_lit.intnational.lonestar.interior
+{
+	name: "Diamond Elite"
+	price: 22960
+	unlock: 15
+	icon: "truck/intnational_lonestar/interior/model/int_lit"
+
+	model: "/vehicle/truck/intnational_lonestar/interior/model/hirise.pmd"
+	animated_model: "/vehicle/truck/intnational_lonestar/interior/animation/anim.pmd"
+	collision: "/vehicle/truck/intnational_lonestar/interior/model/hirise.pmc"
+	look: int_lit
+	variant: int_lit
+
+	ext_model: "/vehicle/truck/intnational_lonestar/interior/external/external_hirise.pmd"
+	ext_variant: default
+	ext_look: int_lit
+
+	defaults[]: "/def/vehicle/truck/intnational.lonestar/accessory/steering_w/default.sii"
+
+	suitable_for[]: "hirise.intnational.lonestar.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_hi.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .intlonestar.r.pane.front
+	glass_panes[]: .intlonestar.r.pane.close
+	glass_panes[]: .intlonestar.r.pane.far
+	glass_panes[]: .intlonestar.r.pane.back_hi
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_hi.sui"
+@include "sound_effects_units.sui"
+}

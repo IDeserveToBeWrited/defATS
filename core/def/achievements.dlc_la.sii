@@ -1,0 +1,160 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Louisiana --
+
+# Discover at least 8 cities in Louisiana.
+
+achievement_visit_city_data : .achievement.la_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	country_name: louisiana
+	target: 8
+
+	achievement_name: la_visit_cities
+
+	steam_progress_id: "la_visit_cities-progress"
+	steam_id: la_visit_cities
+}
+
+# View cutscenes from at least 8 viewpoints in Louisiana.
+
+achievement_trigger_data : .achievement.la_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: la_cutscenes
+	target: 8
+
+	achievement_name: la_cutscenes
+
+	steam_progress_id: "la_cutscenes-progress"
+	steam_id: la_cutscenes
+}
+
+# Cross two draw bridges in Louisiana.
+
+achievement_trigger_data : .achievement.la_bridges
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: la_bridges
+	target: 2
+
+	achievement_name: la_bridges
+
+	steam_progress_id: "la_bridges-progress"
+	steam_id: la_bridges
+}
+
+# Deliver iron pipes, metal coils, and lumber to any shipyard in Louisiana for oil tanker construction.
+
+achievement_delivery : .achievement.la_shipyard
+{
+	event_name: job_done
+	initial_check: true
+	condition: .la_shipyard.condition
+	target: 3
+
+	achievement_name: la_shipyard
+
+	steam_progress_id: "la_shipyard-progress"
+	steam_id: la_shipyard
+}
+
+achievement_delivery_sequence : .la_shipyard.condition
+{
+	list[]: .la_shipyard.pipes
+	list[]: .la_shipyard.mtl_coil
+	list[]: .la_shipyard.lumber
+}
+
+achievement_delivery_each : .la_shipyard.pipes
+{
+	list[]: .la_shipyard.pipes.cargo
+	list[]: .la_shipyard.pipes.target
+}
+
+achievement_delivery_cargo : .la_shipyard.pipes.cargo
+{
+	cargo_name: pipes
+}
+
+achievement_delivery_company : .la_shipyard.pipes.target
+{
+	role: target
+	company_name: hds_met_shp
+	country_name: louisiana
+}
+
+achievement_delivery_each : .la_shipyard.mtl_coil
+{
+	list[]: .la_shipyard.mtl_coil.cargo
+	list[]: .la_shipyard.mtl_coil.target
+}
+
+achievement_delivery_cargo : .la_shipyard.mtl_coil.cargo
+{
+	cargo_name: mtl_coil
+}
+
+achievement_delivery_company : .la_shipyard.mtl_coil.target
+{
+	role: target
+	company_name: hds_met_shp
+	country_name: louisiana
+}
+
+achievement_delivery_each : .la_shipyard.lumber
+{
+	list[]: .la_shipyard.lumber.cargo
+	list[]: .la_shipyard.lumber.target
+}
+
+achievement_delivery_any : .la_shipyard.lumber.cargo
+{
+	list[]: .la_shipyard.lumber.cargo.lumber
+	list[]: .la_shipyard.lumber.cargo.lumber_b
+	list[]: .la_shipyard.lumber.cargo.lumber_p
+}
+
+achievement_delivery_cargo : .la_shipyard.lumber.cargo.lumber
+{
+	cargo_name: lumber
+}
+
+achievement_delivery_cargo : .la_shipyard.lumber.cargo.lumber_b
+{
+	cargo_name: lumber_b
+}
+
+achievement_delivery_cargo : .la_shipyard.lumber.cargo.lumber_p
+{
+	cargo_name: lumber_p
+}
+
+achievement_delivery_company : .la_shipyard.lumber.target
+{
+	role: target
+	company_name: hds_met_shp
+	country_name: louisiana
+}
+
+}

@@ -12,9 +12,6 @@ traffic_vehicle : traffic.charger.city
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: urban
 
 	spawn_ratio: 0.0
@@ -27,6 +24,11 @@ traffic_vehicle : traffic.charger.city
 	variant[]: traffic.charger.prpd
 	variant[]: traffic.charger.boisepd
 	variant[]: traffic.charger.co_spr
+	variant[]: traffic.charger.mt_mis
+	variant[]: traffic.charger.tx_da
+	variant[]: traffic.charger.tx_fo
+	
+
 
 @include "drivers_police.sui"
 
@@ -62,10 +64,8 @@ traffic_vehicle : traffic.charger.generic
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
+	spawn_ratio: 0.001
 
-	spawn_ratio: 0.1
 
 	variant[]: traffic.charger.generic2
 	variant[]: traffic.charger.generic3
@@ -113,11 +113,9 @@ traffic_vehicle : traffic.charger.generic2
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: urban
 
+	spawn_ratio: 0.001
 
 
 	vehicle_mass: 2200
@@ -157,10 +155,10 @@ traffic_vehicle : traffic.charger.generic3
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: urban
+
+	spawn_ratio: 0.001
+
 
 	vehicle_mass: 2200
 
@@ -198,9 +196,6 @@ traffic_vehicle : traffic.charger.aqpd
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	tags[]: urban
 
@@ -249,9 +244,6 @@ traffic_vehicle : traffic.charger.stpd
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: urban
 
 	vehicle_mass: 2200
@@ -298,9 +290,6 @@ traffic_vehicle : traffic.charger.prpd
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	tags[]: urban
 
@@ -350,9 +339,6 @@ traffic_vehicle : traffic.charger.sgpd
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: urban
 
 	vehicle_mass: 2200
@@ -399,9 +385,6 @@ traffic_vehicle : traffic.charger.boisepd
 	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 
 	tags[]: urban
 
@@ -450,9 +433,6 @@ traffic_vehicle : traffic.charger.co_spr
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
-	lod_dist[]: 53
-	lod_dist[]: 70
-
 	tags[]: urban
 
 	vehicle_mass: 2200
@@ -485,4 +465,206 @@ traffic_spawn_condition: .traffic.charger.co_spr.condition.city
 	# spawn only near city with name equal to traffic vehicle name suffix
 	type: city
     str_param[]: "colorado_spr"
+}
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Montana  Missoula  PD  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.mt_mis
+{
+	accessories[]: .charger.mt_mis.chassis
+	accessories[]: .charger.mt_mis.fwheel
+	accessories[]: .charger.mt_mis.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.charger.mt_mis.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.mt_mis.chassis
+{
+	data_path: "/def/vehicle/ai/charger/mt_mis.sii"
+}
+
+vehicle_wheel_accessory: .charger.mt_mis.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.mt_mis.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.charger.mt_mis.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "missoula"
+}
+
+
+
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  TX - Dallas  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.tx_da
+{
+	accessories[]: .charger.tx_da.chassis
+	accessories[]: .charger.tx_da.fwheel
+	accessories[]: .charger.tx_da.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	base: traffic.charger.city
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+    spawn_condition[]: .traffic.charger.tx_da.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.tx_da.chassis
+{
+	data_path: "/def/vehicle/ai/charger/tx_da.sii"
+}
+
+vehicle_wheel_accessory: .charger.tx_da.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.tx_da.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.charger.tx_da.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "dallas"
+}
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  TX - Fort Worth  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+traffic_vehicle : traffic.charger.tx_fo
+{
+	accessories[]: .charger.tx_fo.chassis
+	accessories[]: .charger.tx_fo.fwheel
+	accessories[]: .charger.tx_fo.rwheel
+
+	base: traffic.charger.city
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+
+	spawn_condition[]: .traffic.charger.tx_fo.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.tx_fo.chassis
+{
+	data_path: "/def/vehicle/ai/charger/tx_fo.sii"
+}
+
+vehicle_wheel_accessory: .charger.tx_fo.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.tx_fo.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.charger.tx_fo.condition.city
+{
+	# Until 'urban area context' is implemented, use 'area' condition
+	# to allow correct spawning inside urban area even if no city item is nearby.
+	type: area
+	str_param[]: "fort_worth"
+}
+
+#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  Arkansas - Little Rock XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.charger.ar_lr
+{
+	accessories[]: .charger.ar_lr.chassis
+	accessories[]: .charger.ar_lr.fwheel
+	accessories[]: .charger.ar_lr.rwheel
+
+	max_speed: 225
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: urban
+
+	vehicle_mass: 2200
+	
+	base: traffic.charger.city
+	spawn_ratio: 0.0
+
+    spawn_condition[]: .traffic.chrgr_ar_lr.rock.condition.city
+
+@include "drivers_police.sui"
+
+}
+
+vehicle_accessory: .charger.ar_lr.chassis
+{
+	data_path: "/def/vehicle/ai/charger/ar_lr.sii"
+}
+
+vehicle_wheel_accessory: .charger.ar_lr.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_charger.sii"
+}
+
+vehicle_wheel_accessory: .charger.ar_lr.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_charger.sii"
+}
+
+traffic_spawn_condition: .traffic.chrgr_ar_lr.rock.condition.city
+{
+	# spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "little_rock"
 }

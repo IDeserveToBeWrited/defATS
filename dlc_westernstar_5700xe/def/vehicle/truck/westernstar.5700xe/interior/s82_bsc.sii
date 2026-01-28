@@ -1,0 +1,48 @@
+SiiNunit
+{
+accessory_interior_data	: s82_base.westernstar.5700xe.interior
+{
+	name: "@@basic@@"
+	price: 15180
+	unlock: 0
+	icon: "westernstar_5700xe/int_grey"
+
+	model: "/vehicle/truck/westernstar_5700xe/interior/model/s82_base.pmd"
+	animated_model: "/vehicle/truck/westernstar_5700xe/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/westernstar_5700xe/interior/model/s82_base.pmc"
+	look: grey_slp
+	variant: slp
+
+	ext_model: "/vehicle/truck/westernstar_5700xe/interior/external/s82_base_ext.pmd"
+	ext_look: grey_slp
+
+	suitable_for[]: "s82.westernstar.5700xe.cabin"
+
+	defaults[]: "/def/vehicle/truck/westernstar.5700xe/accessory/cab_door/stock_bsc.sii"
+
+@include "animations.sui"
+
+@include "int_shadow_s82.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .wstar5700xe.r.pane.front
+	glass_panes[]: .wstar5700xe.r.pane.close
+	glass_panes[]: .wstar5700xe.r.pane.far
+	glass_panes[]: .wstar5700xe.r.pane.back_s
+	glass_panes[]: .wstar5700xe.r.pane.back_821
+	glass_panes[]: .wstar5700xe.r.pane.back_822
+	glass_panes[]: .wstar5700xe.r.pane.back_823
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_s82.sui"
+@include "sound_effects_units.sui"
+}

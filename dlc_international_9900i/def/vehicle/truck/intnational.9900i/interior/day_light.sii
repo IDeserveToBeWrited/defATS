@@ -1,0 +1,49 @@
+SiiNunit
+{
+accessory_interior_data	: day_light.intnational.9900i.interior
+{
+	name: "Light Wooden"
+	price: 15180
+	unlock: 0
+	icon: "international_9900i/int_light"
+	part_type: factory
+
+	model: "/vehicle/truck/intnational_9900i/interior/model/day.pmd"
+	animated_model: "/vehicle/truck/intnational_9900i/interior/animation/anim.pmd"
+	collision: "/vehicle/truck/intnational_9900i/interior/model/day.pmc"
+	look: default
+	variant: light
+
+	ext_model: "/vehicle/truck/intnational_9900i/interior/external/external_day.pmd"
+	ext_variant: default
+	ext_look: light
+
+	show_chassis_rear: true
+
+	defaults[]: "/def/vehicle/truck/intnational.lt/accessory/steering_w/default.sii"
+
+	suitable_for[]: "day.intnational.9900i.cabin"
+
+@include "animations.sui"
+
+@include "int_shadow_day.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .int_9900i.r.pane.front
+	glass_panes[]: .int_9900i.r.pane.close
+	glass_panes[]: .int_9900i.r.pane.far
+	glass_panes[]: .int_9900i.r.pane.back_day
+
+@include "seat.sui"
+@include "mirrors.sui"
+
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_day.sui"
+@include "sound_effects_units.sui"
+}

@@ -1,0 +1,25 @@
+SiiNunit
+{
+accessory_cargo_data : .cargo
+{
+	model: "/vehicle/props/logs/cargo/cargo.pmd"
+	lods[]: "/vehicle/props/logs/cargo/cargo_lod1.pmd"
+	lods[]: "/vehicle/props/logs/cargo/cargo_lod2.pmd"
+	
+	# collision: "/vehicle/props/logs/cargo/cargo.pmc"
+ 
+	variant: default
+	look: default
+
+	dynamic_cargo_data: dyn.cargo.data.logs_l
+}
+
+dynamic_cargo_data: dyn.cargo.data.logs_l
+{
+	type: mover
+
+	grab_types[]: timber_grab
+
+	loading_sound: "/sound/world/sounds/vehicles.bank#artificial/vehicles/loading_wood_1"
+}
+}

@@ -5,13 +5,19 @@ traffic_trailer : traffic.trailer.scs_ref_45 # rear
 	accessories[]: .scs_ref_45.rwheel
 	accessories[]: .scs_ref_45.rwheel2
 	accessories[]: .scs_ref_45.paint_job
-	accessories[]: .scs_ref_45.cargo
 
 	cargo_mass: 16000
 
 	spawn_ratio: 2
 
 	company_paint_job: true
+
+	
+	tags[]: high
+	tags[]: box
+	tags[]: reefer
+	tags[]: medium
+	tags[]: basic
 
 	variant[]: .traffic.trailer.scs_ref_45.front # front
 }
@@ -38,11 +44,6 @@ vehicle_paint_job_accessory: .scs_ref_45.paint_job
 	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
 }
 
-vehicle_accessory: .scs_ref_45.cargo
-{
-	data_path: "/def/vehicle/trailer_cargo/scs_box/reefer_indicator.sii"
-}
-
 #XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 traffic_trailer : .traffic.trailer.scs_ref_45.front
@@ -51,9 +52,14 @@ traffic_trailer : .traffic.trailer.scs_ref_45.front
 	accessories[]: .scs_ref_45.front.rwheel
 	accessories[]: .scs_ref_45.front.rwheel2
 	accessories[]: .scs_ref_45.front.paint_job
-	accessories[]: .scs_ref_45.front.cargo
 
 	company_paint_job: true
+
+	tags[]: high
+	tags[]: box
+	tags[]: reefer
+	tags[]: medium
+	tags[]: basic
 }
 
 vehicle_accessory: .scs_ref_45.front.chassis
@@ -76,9 +82,4 @@ vehicle_wheel_accessory: .scs_ref_45.front.rwheel2
 vehicle_paint_job_accessory: .scs_ref_45.front.paint_job
 {
 	data_path: "/def/vehicle/trailer/scs_box/company_paint_job/default.sii"
-}
-
-vehicle_accessory: .scs_ref_45.front.cargo
-{
-	data_path: "/def/vehicle/trailer_cargo/scs_box/reefer_indicator.sii"
 }

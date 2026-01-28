@@ -1,4 +1,4 @@
-traffic_trailer : traffic.scs_dumper
+traffic_trailer : traffic.trailer.scs_dumper
 {	
 	accessories[]: .scs_dumper.chassis
 	accessories[]: .scs_dumper.rwheel
@@ -8,6 +8,13 @@ traffic_trailer : traffic.scs_dumper
 	cargo_mass: 14288
 
 	company_paint_job: true
+
+	tags[]: low
+	tags[]: dumper
+	tags[]: medium
+	tags[]: insulated
+	
+	variant[]: .traffic.trailer.scs_dumpers
 }
 
 vehicle_accessory: .scs_dumper.chassis
@@ -30,4 +37,47 @@ vehicle_wheel_accessory: .scs_dumper.rwheel2
 vehicle_paint_job_accessory: .scs_dumper.paint_job
 {
 	data_path: "/def/vehicle/trailer/scs_dumper/company_paint_job/red.sii"
+}
+
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+traffic_trailer : .traffic.trailer.scs_dumpers
+{	
+	accessories[]: .scs_dumpers.chassis
+	accessories[]: .scs_dumpers.rwheel
+	accessories[]: .scs_dumpers.rwheel2
+	accessories[]: .scs_dumpers.paint_job
+
+	cargo_mass: 15298
+
+	tags[]: low
+	tags[]: dumper
+	tags[]: medium
+	tags[]: insulated
+
+	company_paint_job: true
+}
+
+vehicle_accessory: .scs_dumpers.chassis
+{
+	data_path: "/def/vehicle/trailer/scs_dumper/chassis_side_dumper.sii"
+}
+
+vehicle_wheel_accessory: .scs_dumpers.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_dumpers.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_paint_job_accessory: .scs_dumpers.paint_job
+{
+	data_path: "/def/vehicle/trailer/scs_dumper/custom_paint_job/red.sii"
 }

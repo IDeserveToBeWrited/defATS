@@ -8,16 +8,25 @@ traffic_vehicle : traffic.pv_frosty
 
 	sound_move[]: "/sound/traffic/car_normal_3.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
-
-	lod_dist[]: 53
-	lod_dist[]: 70
 	allow_parked: true
 	vehicle_mass: 3500
 
 	tags[]: van
 	tags[]: urban
 
+	spawn_ratio: 0.1
+
+	spawn_condition[]: .traffic.pv_frosty.spawn.condition
+
 @include "drivers_van.sui"
+}
+traffic_spawn_condition: .traffic.pv_frosty.spawn.condition
+{
+	type: area
+	str_param[]: "!"
+	str_param[]: "company"
+	str_param[]: "commercial"
+	str_param[]: "industrial"
 }
 
 vehicle_accessory: .pv_frosty.chassis

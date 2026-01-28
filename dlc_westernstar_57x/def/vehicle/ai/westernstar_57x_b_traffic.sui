@@ -1,0 +1,85 @@
+traffic_vehicle : traffic.ws_57x_b
+{	
+	accessories[]: .ws_57x_b.chassis
+	accessories[]: .ws_57x_b.fwheel
+	accessories[]: .ws_57x_b.rwheel
+	accessories[]: .ws_57x_b.rwheel2
+	accessories[]: .ws_57x_b.trlr_cables
+
+	max_speed: 128
+	trailer_chains[]: "truck_semi"
+
+	tags[]: dealer
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 8800
+	engine_power: 373
+	
+	
+	tags[]: dealer
+
+	color[]: (0.814847, 0.814847, 0.814847) #White 
+	color[]: (0.814847, 0.814847, 0.814847) #White 
+	color[]: (0.814847, 0.814847, 0.814847) #White 
+	color[]: (0.814847, 0.814847, 0.814847) #White 
+
+	color[]: (0.533277, 0.005182, 0.009721) #Viper 
+	color[]: (0.533277, 0.005182, 0.009721) #Viper 
+	color[]: (0.533277, 0.005182, 0.009721) #Viper 
+	color[]: (0.533277, 0.005182, 0.009721) #Viper 
+	color[]: (0.533277, 0.005182, 0.009721) #Viper 
+	color[]: (0.533277, 0.005182, 0.009721) #Viper 
+	
+	color[]: (0.086509, 0.084376, 0.084376) #Antartica
+	color[]: (0.086509, 0.084376, 0.084376) #Antartica
+	color[]: (0.086509, 0.084376, 0.084376) #Antartica
+	color[]: (0.086509, 0.084376, 0.084376) #Antartica
+	color[]: (0.086509, 0.084376, 0.084376) #Antartica
+	color[]: (0.086509, 0.084376, 0.084376) #Antartica
+
+	color[]: (0.666597, 0.710937, 0.748423) #Silver 
+	color[]: (0.666597, 0.710937, 0.748423) #Silver
+	color[]: (0.666597, 0.710937, 0.748423) #Silver
+	
+	color[]: (0.174647, 0.332452, 0.603828)
+	color[]: (0.201556, 0.234551, 0.291771)
+	color[]: (0.814847, 0.814847, 0.814847)
+	color[]: (0.003347, 0.003347, 0.003347)
+	color[]: (0.009134, 0.278894, 0.603828)
+	color[]: (0.004777, 0.068478, 0.381326)
+	color[]: (0.021219, 0.084376, 0.686686)
+	color[]: (0.005605, 0.005605, 0.005605)
+	color[]: (0.380048, 0.341977, 0.301309)
+	color[]: (1.000000, 0.040032, 0.027210)
+	color[]: (0.533277, 0.005182, 0.009721)
+	color[]: (0.204893, 0.004298, 0.016108)
+	color[]: (0.502887, 0.111932, 0.015996)
+	color[]: (0.827536, 0.581297, 0.013344)
+	color[]: (0.520996, 0.752942, 0.012983)
+	color[]: (0.331054, 0.240652, 0.807353)
+	color[]: (0.666597, 0.710937, 0.748423)
+	color[]: (0.095307, 0.502887, 0.013702)
+	color[]: (0.011987, 0.084752, 0.100485)
+	
+
+	spawn_ratio: 0.5
+}
+
+vehicle_accessory : .ws_57x_b.chassis {
+	data_path: "/def/vehicle/ai/truck/westernstar.57x/cabin_sl72.sii"
+}
+vehicle_wheel_accessory : .ws_57x_b.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .ws_57x_b.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .ws_57x_b.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .ws_57x_b.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/westernstar.57x/accessory/trlr_cables/stock.sii"
+}

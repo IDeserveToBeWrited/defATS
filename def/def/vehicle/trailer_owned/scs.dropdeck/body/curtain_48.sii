@@ -1,0 +1,39 @@
+SiiNunit
+{
+accessory_trailer_body_data : curtain_48.scs.dropdeck.body
+{
+	name: "@@bs_curtain@@"
+	price: 16000
+	unlock: 12
+	icon: "trailer_owned/scs_dropdeck/body/curtain_48"
+
+	# 48' x 102" x 13'6"
+	# Internal: 47'6" x 99" x 110"
+
+	size: (2.5146, 2.794, 14.478)		# width, height, length (internal size of the body)
+	total_size: (2.5908, 4.1148, 14.6304)	# width, height, length (size of the body + chassis)
+
+	volume: 102		# 3600 cft
+	body_type: curtainside
+
+	# Mass of the cargo container in KG.
+	#
+	# Base mass for flatbed trailer is in chassis, bodies have only deltas to flatbed body mass.
+	# Thus flatbed has like 0 while curtain 1000
+	# Shorter body variants have smaller delta (count as x0.9, x0.85, x0.55, x0.5)
+
+	mass: 898.2	# 1980 lb
+
+	# visual data
+
+	#detail_model: "/vehicle/trailer_owned/scs_dropdeck/body/curtain_48.pmd"
+	model: "/vehicle/trailer_owned/scs_dropdeck/body/curtain_48.pmd"
+	# lods[]: ""
+	collision: "/vehicle/trailer_owned/scs_dropdeck/body/curtain_48.pmc"
+	# variant: 
+	# look
+
+	defaults[]: "/def/vehicle/trailer_owned/scs.dropdeck/accessory/markers/curtain_48.sii"
+	defaults[]: "/def/vehicle/trailer_owned/scs.dropdeck/accessory/r_bumper/curtain_standard.sii"
+}
+}

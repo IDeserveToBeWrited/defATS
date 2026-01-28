@@ -1,0 +1,94 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+model_def : model.ia_locobald
+{
+	model_desc: "/vehicle/railcar/locomotive_baldwin/static/static_lod1.pmd"
+	name: "locomotive baldwin"
+
+	static_lod_name[]: "lod from 40m"
+	static_lod_path[]: "/vehicle/railcar/locomotive_baldwin/static/static_lod2.pmd"
+	static_lod_name[]: "lod from 80m"
+	static_lod_path[]: "/vehicle/railcar/locomotive_baldwin/static/static_lod3.pmd"
+	static_lod_name[]: "lod from 120m"
+	static_lod_path[]: "/vehicle/railcar/locomotive_baldwin/static/static_lod4.pmd"
+	
+
+	dynamic_lod_desc[]: "/vehicle/railcar/locomotive_baldwin/static/static_lod2.pmd"
+	dynamic_lod_dist[]: 40
+	dynamic_lod_desc[]: "/vehicle/railcar/locomotive_baldwin/static/static_lod3.pmd"
+	dynamic_lod_dist[]: 80
+	dynamic_lod_desc[]: "/vehicle/railcar/locomotive_baldwin/static/static_lod4.pmd"
+	dynamic_lod_dist[]: 120
+}
+model_def : model.ia_tankethan
+{
+	model_desc: "/vehicle/railcar/tank_ethanol/static/static.pmd"
+	name: "tank ethanol"
+
+	static_lod_name[]: "lod from 40m"
+	static_lod_path[]: "/vehicle/railcar/tank_ethanol/static/static_lod1.pmd"
+	static_lod_name[]: "lod from 80m"
+	static_lod_path[]: "/vehicle/railcar/tank_ethanol/static/static_lod2.pmd"
+	static_lod_name[]: "lod from 120m"
+	static_lod_path[]: "/vehicle/railcar/tank_ethanol/static/static_lod3.pmd"
+	
+
+	dynamic_lod_desc[]: "/vehicle/railcar/tank_ethanol/static/static_lod1.pmd"
+	dynamic_lod_dist[]: 40
+	dynamic_lod_desc[]: "/vehicle/railcar/tank_ethanol/static/static_lod2.pmd"
+	dynamic_lod_dist[]: 80
+	dynamic_lod_desc[]: "/vehicle/railcar/tank_ethanol/static/static_lod3.pmd"
+	dynamic_lod_dist[]: 120
+}
+
+model_def : model.ia_plow
+{
+	model_desc: "/vehicle/props/plow/static/static.pmd"
+	name: "plow municipal"
+
+	static_lod_name[]: "lod from 40m"
+	static_lod_path[]: "/vehicle/props/plow/static/static_lod1.pmd"
+	static_lod_name[]: "lod from 80m"
+	static_lod_path[]: "/vehicle/props/plow/static/static_lod2.pmd"
+	static_lod_name[]: "lod from 120m"
+	static_lod_path[]: "/vehicle/props/plow/static/static_lod3.pmd"
+
+	dynamic_lod_desc[]: "/vehicle/props/plow/static/static_lod1.pmd"
+	dynamic_lod_dist[]: 40
+	dynamic_lod_desc[]: "/vehicle/props/plow/static/static_lod2.pmd"
+	dynamic_lod_dist[]: 80
+	dynamic_lod_desc[]: "/vehicle/props/plow/static/static_lod3.pmd"
+	dynamic_lod_dist[]: 120
+
+}
+
+model_def : model.ia_trailer
+{
+	model_desc: "/vehicle/car/trailer_tile/static/static.pmd"
+	name: "trailer tile"
+
+	static_lod_name[]: "lod from 40m"
+	static_lod_path[]: "/vehicle/car/trailer_tile/static/static_lod1.pmd"
+	static_lod_name[]: "lod from 80m"
+	static_lod_path[]: "/vehicle/car/trailer_tile/static/static_lod2.pmd"
+	static_lod_name[]: "lod from 120m"
+	static_lod_path[]: "/vehicle/car/trailer_tile/static/static_lod3.pmd"
+
+	dynamic_lod_desc[]: "/vehicle/car/trailer_tile/static/static_lod1.pmd"
+	dynamic_lod_dist[]: 40
+	dynamic_lod_desc[]: "/vehicle/car/trailer_tile/static/static_lod2.pmd"
+	dynamic_lod_dist[]: 80
+	dynamic_lod_desc[]: "/vehicle/car/trailer_tile/static/static_lod3.pmd"
+	dynamic_lod_dist[]: 120	
+
+}
+
+}

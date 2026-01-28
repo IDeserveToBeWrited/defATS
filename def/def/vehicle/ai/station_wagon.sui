@@ -1,0 +1,48 @@
+traffic_vehicle : traffic.station.wagon
+{
+	accessories[]: .station.wagon.chassis
+	accessories[]: .station.wagon.fwheel
+	accessories[]: .station.wagon.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	vehicle_mass: 2100
+
+	color[]: (0.2581, 0.0168, 0.0356) # red
+	color[]: (0.2581, 0.2622, 0.2158)
+	color[]: (0.3419, 0.3515, 0.3662)
+	color[]: (0.0307, 0.0466, 0.1651)
+	color[]: (1, 1, 1)
+	color[]: (0.0822, 0.0781, 0.0742) # magnetic
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.8713, 0.8631, 0.8227) #white
+
+	tags[]: vintage
+
+	spawn_ratio: 0.01
+	tags[]: cheap
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .station.wagon.chassis
+{
+	data_path: "/def/vehicle/ai/station_wagon/chassis.sii"
+}
+
+vehicle_wheel_accessory: .station.wagon.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_oldm.sii"
+}
+
+vehicle_wheel_accessory: .station.wagon.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_oldm.sii"
+}

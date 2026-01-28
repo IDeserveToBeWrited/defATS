@@ -7,6 +7,7 @@ SiiNunit
 
 
 tr_semaphore_profile : tr_sem_prof.common_base
+	# Standard 4 way intersection with no protected left turns.
 {
 
 	model[]: ""
@@ -25,128 +26,331 @@ tr_semaphore_profile : tr_sem_prof.common_base
 	type[10]: traffic_light
 	type[11]: traffic_light
 
-	interval[]: (15.0, 2.0, 21.0, 0.0)
+	interval[]: (20.0, 4.0, 28.0, 0.0)
 
 	cycle: 20
 	cycle[0]: 0.0
-	cycle[1]: 19.0
+	cycle[1]: 26.0
 	cycle[2]: 0.0
-	cycle[3]: 19.0
+	cycle[3]: 26.0
 	cycle[4]: 0.0
-	cycle[5]: 19.0
+	cycle[5]: 26.0
 	cycle[6]: 0.0
-	cycle[7]: 19.0
+	cycle[7]: 26.0
 	cycle[8]: 0.0
-	cycle[9]: 27.0
+	cycle[9]: 26.0
 	cycle[10]: 0.0
-	cycle[11]: 27.0
+	cycle[11]: 26.0
 	cycle[12]: 0.0
-	cycle[13]: 19.0
+	cycle[13]: 26.0
 	cycle[14]: 0.0
-	cycle[15]: 19.0
+	cycle[15]: 26.0
 	cycle[16]: 0.0
-	cycle[17]: 19.0
+	cycle[17]: 26.0
 	cycle[18]: 0.0
-	cycle[19]: 19.0
+	cycle[19]: 26.0
 }
 
 
 tr_semaphore_profile : tr_sem_prof.base_left
+	# 4 way intersection, 2 with protected left turns
 {
 
 	inherited: tr_sem_prof.common_base
 
 	interval: 19
-	interval[0]: (14.0, 4.0, 32.0, 0.0)
-	interval[1]: (14.0, 4.0, 32.0, 0.0)
-	interval[2]: (14.0, 4.0, 32.0, 0.0)
-	interval[3]: (14.0, 4.0, 32.0, 0.0)
-	interval[4]: (14.0, 4.0, 32.0, 0.0)
-	interval[5]: (14.0, 4.0, 32.0, 0.0)
-	interval[6]: (14.0, 4.0, 32.0, 0.0)
-	interval[7]: (14.0, 4.0, 32.0, 0.0)
-	interval[8]: (14.0, 4.0, 32.0, 0.0)
-	interval[9]: (7.0, 3.0, 40.0, 0.0)
-	interval[10]: (14.0, 4.0, 32.0, 0.0)
-	interval[11]: (7.0, 3.0, 40.0, 0.0)
-	interval[12]: (14.0, 4.0, 32.0, 0.0)
-	interval[13]: (14.0, 4.0, 32.0, 0.0)
-	interval[14]: (14.0, 4.0, 32.0, 0.0)
-	interval[15]: (14.0, 4.0, 32.0, 0.0)
-	interval[16]: (14.0, 4.0, 32.0, 0.0)
-	interval[17]: (14.0, 4.0, 32.0, 0.0)
-	interval[18]: (7.0, 3.0, 40.0, 0.0)
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (20.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (20.0, 4.0, 44.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (20.0, 4.0, 44.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (20.0, 4.0, 44.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
+	interval[12]: (20.0, 4.0, 44.0, 0.0)
+	interval[13]: (20.0, 4.0, 44.0, 0.0)
+	interval[14]: (20.0, 4.0, 44.0, 0.0)
+	interval[15]: (20.0, 4.0, 44.0, 0.0)
+	interval[16]: (20.0, 4.0, 44.0, 0.0)
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)
 
 	cycle: 19
-	cycle[0]: 0.0
-	cycle[1]: 20.0
-	cycle[2]: 0.0
-	cycle[3]: 20.0
-	cycle[4]: 0.0
-	cycle[5]: 20.0
-	cycle[6]: 0.0
-	cycle[7]: 20.0
-	cycle[8]: 0.0
-	cycle[9]: 31.0
-	cycle[10]: 0.0
-	cycle[11]: 31.0
-	cycle[12]: 0.0
-	cycle[13]: 20.0
-	cycle[14]: 0.0
-	cycle[15]: 20.0
-	cycle[16]: 0.0
-	cycle[17]: 20.0
-	cycle[18]: 31.0
+	cycle[0]: 26.0
+	cycle[1]: 52.0
+	cycle[2]: 26.0
+	cycle[3]: 52.0
+	cycle[4]: 26.0
+	cycle[5]: 52.0
+	cycle[6]: 26.0
+	cycle[7]: 52.0
+	cycle[8]: 26.0
+	cycle[9]: 0.0
+	cycle[10]: 26.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 52.0
+	cycle[14]: 26.0
+	cycle[15]: 52.0
+	cycle[16]: 26.0
+	cycle[17]: 52.0
+	cycle[18]: 0.0
 
 }
 
 tr_semaphore_profile : tr_sem_prof.base_left2
+	# 4 way intersection, all with protected left turns
 {
 
 	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)	
+	interval[9]: (10.0, 4.0, 70.0, 0.0)	
+	interval[10]: (10.0, 4.0, 70.0, 0.0)	
+	interval[11]: (10.0, 4.0, 70.0, 0.0)	
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)	
+	interval[17]: (10.0, 4.0, 70.0, 0.0)	
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
 
 	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
 }
+
+tr_semaphore_profile : tr_sem_prof.base_left3  
+	# T Junction with protected left turn
+{
+
+	inherited: tr_sem_prof.common_base
+
+	interval: 19
+	interval[0]: (20.0, 4.0, 44.0, 0.0)		#T jct  ^
+	interval[1]: (36.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[2]: (20.0, 4.0, 44.0, 0.0)		#T jct	^
+	interval[3]: (20.0, 4.0, 44.0, 0.0)		#straight right  -->
+	interval[4]: (20.0, 4.0, 44.0, 0.0)		#T jct	^
+	interval[5]: (36.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[6]: (20.0, 4.0, 44.0, 0.0)		#T jct	^
+	interval[7]: (20.0, 4.0, 44.0, 0.0)		#straight right  -->
+	interval[8]: (10.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[9]: (10.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[10]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[11]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[12]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[13]: (20.0, 4.0, 44.0, 0.0)	#straight right  -->
+	interval[14]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[15]: (20.0, 4.0, 44.0, 0.0)	#straight right  -->
+	interval[16]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[17]: (10.0, 4.0, 54.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+
+	cycle: 19
+	cycle[0]: 26.0
+	cycle[1]: 0.0
+	cycle[2]: 26.0
+	cycle[3]: 52.0
+	cycle[4]: 26.0
+	cycle[5]: 0.0
+	cycle[6]: 26.0
+	cycle[7]: 52.0
+	cycle[8]: 0.0
+	cycle[9]: 0.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 52.0
+	cycle[14]: 26.0
+	cycle[15]: 52.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+
+}
+
+tr_semaphore_profile : tr_sem_prof.base_left3a  
+	# T Junction with protected left turn opposing straight from base_left3
+{
+
+	inherited: tr_sem_prof.common_base
+
+interval: 19
+	interval[0]: (20.0, 4.0, 44.0, 0.0)		
+	interval[1]: (20.0, 4.0, 44.0, 0.0)		
+	interval[2]: (20.0, 4.0, 44.0, 0.0)		
+	interval[3]: (36.0, 4.0, 28.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)		
+	interval[5]: (36.0, 4.0, 28.0, 0.0)		
+	interval[6]: (20.0, 4.0, 44.0, 0.0)		#
+	interval[7]: (20.0, 4.0, 44.0, 0.0)		
+	interval[8]: (10.0, 4.0, 54.0, 0.0)		#
+	interval[9]: (10.0, 4.0, 54.0, 0.0)		
+	interval[10]: (10.0, 4.0, 54.0, 0.0)	#
+	interval[11]: (10.0, 4.0, 54.0, 0.0)	#
+	interval[12]: (20.0, 4.0, 44.0, 0.0)	#
+	interval[13]: (20.0, 4.0, 44.0, 0.0)	#
+	interval[14]: (20.0, 4.0, 44.0, 0.0)	#
+	interval[15]: (20.0, 4.0, 44.0, 0.0)	#
+	interval[16]: (20.0, 4.0, 44.0, 0.0)	#
+	interval[17]: (20.0, 4.0, 44.0, 0.0)	#
+	interval[18]: (10.0, 4.0, 54.0, 0.0)	#
+
+	cycle: 19
+	cycle[0]: 26.0
+	cycle[1]: 52.0
+	cycle[2]: 26.0
+	cycle[3]: 0.0
+	cycle[4]: 26.0
+	cycle[5]: 0.0
+	cycle[6]: 26.0
+	cycle[7]: 52.0
+	cycle[8]: 0.0
+	cycle[9]: 0.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 52.0
+	cycle[14]: 26.0
+	cycle[15]: 52.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.base_left3.lead  
+	# T Junction with protected left turn lead
+{
+
+	inherited: tr_sem_prof.common_base
+
+	interval: 19
+	interval[0]: (20.0, 4.0, 46.0, 0.0)		#T jct  ^
+	interval[1]: (38.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[2]: (20.0, 4.0, 46.0, 0.0)		#T jct	^
+	interval[3]: (20.0, 4.0, 46.0, 0.0)		#straight right  -->
+	interval[4]: (20.0, 4.0, 46.0, 0.0)		#T jct	^
+	interval[5]: (38.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[6]: (20.0, 4.0, 46.0, 0.0)		#T jct	^
+	interval[7]: (20.0, 4.0, 46.0, 0.0)		#straight right  -->
+	interval[8]: (12.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[9]: (12.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[10]: (12.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[11]: (12.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[12]: (20.0, 4.0, 46.0, 0.0)	#T jct	^
+	interval[13]: (20.0, 4.0, 46.0, 0.0)	#straight right  -->
+	interval[14]: (20.0, 4.0, 46.0, 0.0)	#T jct	^
+	interval[15]: (20.0, 4.0, 46.0, 0.0)	#straight right  -->
+	interval[16]: (20.0, 4.0, 46.0, 0.0)	#T jct	^
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (12.0, 4.0, 54.0, 0.0)	#turn left	<--
+
+	cycle: 19
+	cycle[0]: 26.0
+	cycle[1]: 0.0
+	cycle[2]: 26.0
+	cycle[3]: 52.0
+	cycle[4]: 26.0
+	cycle[5]: 0.0
+	cycle[6]: 26.0
+	cycle[7]: 52.0
+	cycle[8]: 0.0
+	cycle[9]: 0.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 52.0
+	cycle[14]: 26.0
+	cycle[15]: 52.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+
+}
+
+tr_semaphore_profile : tr_sem_prof.base_left3.lag  
+	# T Junction with protected left turn lag
+{
+
+	inherited: tr_sem_prof.common_base
+
+	interval: 19
+	interval[0]: (20.0, 4.0, 46.0, 0.0)		#T jct  ^
+	interval[1]: (38.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[2]: (20.0, 4.0, 46.0, 0.0)		#T jct	^
+	interval[3]: (20.0, 4.0, 46.0, 0.0)		#straight right  -->
+	interval[4]: (20.0, 4.0, 46.0, 0.0)		#T jct	^
+	interval[5]: (38.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[6]: (20.0, 4.0, 46.0, 0.0)		#T jct	^
+	interval[7]: (20.0, 4.0, 46.0, 0.0)		#straight right  -->
+	interval[8]: (12.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[9]: (12.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[10]: (12.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[11]: (12.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[12]: (20.0, 4.0, 46.0, 0.0)	#T jct	^
+	interval[13]: (20.0, 4.0, 46.0, 0.0)	#straight right  -->
+	interval[14]: (20.0, 4.0, 46.0, 0.0)	#T jct	^
+	interval[15]: (20.0, 4.0, 46.0, 0.0)	#straight right  -->
+	interval[16]: (20.0, 4.0, 46.0, 0.0)	#T jct	^
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (12.0, 4.0, 54.0, 0.0)	#turn left	<--
+
+	cycle: 19
+	cycle[0]: 26.0
+	cycle[1]: 0.0
+	cycle[2]: 26.0
+	cycle[3]: 0.0
+	cycle[4]: 26.0
+	cycle[5]: 0.0
+	cycle[6]: 26.0
+	cycle[7]: 0.0
+	cycle[8]: 44.0
+	cycle[9]: 44.0
+	cycle[10]: 44.0
+	cycle[11]: 44.0
+	cycle[12]: 26.0
+	cycle[13]: 0.0
+	cycle[14]: 24.0
+	cycle[15]: 0.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 44.0
+
+}
+
 
 tr_semaphore_profile : tr_sem_prof.ca_1x1
 {
@@ -482,7 +686,7 @@ tr_semaphore_profile : tr_sem_prof.ca_1x2_lefts
 tr_semaphore_profile : tr_sem_prof.ca_1x2_left3
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "crossroad 1x2 protected left (separated left arrows)"
 
@@ -596,6 +800,18 @@ tr_semaphore_profile : tr_sem_prof.ab_toll_a
 	cycle[]: 0.0
 }
 
+tr_semaphore_profile : tr_sem_prof.ab_toll_n
+{
+	name: "tollgate"
+
+	model[]: ""
+
+	type[]: barrier_manual
+
+	interval[]: (1.0, 1.0, 3.0, 1.0)
+	cycle[]: 0.0
+}
+
 tr_semaphore_profile : tr_sem_prof.gas
 {
 
@@ -657,7 +873,7 @@ tr_semaphore_profile : tr_sem_prof.agri_check_l
 	model[3]: ""
 
 	type[0]: barrier_manual
-	
+
 	id_map: 4
 	id_map[0]: 1
 	id_map[1]: 1
@@ -680,7 +896,7 @@ tr_semaphore_profile : tr_sem_prof.agri_check_r
 	model[3]: "column_p"
 
 	type[0]: barrier_manual
-	
+
 	id_map: 4
 	id_map[0]: 1
 	id_map[1]: 1
@@ -688,7 +904,7 @@ tr_semaphore_profile : tr_sem_prof.agri_check_r
 	id_map[3]: 1
 
 	interval[0]: (1.0, 0.0, 1.0, 3.0)
-	
+
 	cycle[0]: 0.0
 }
 
@@ -712,7 +928,7 @@ tr_semaphore_profile : tr_sem_prof.crossing
 	type[]: barrier_distance
 	type[]: model_only
 
-	id_map: 13
+	id_map: 31
 	id_map[0]: 0
 	id_map[1]: 0
 	id_map[2]: 0
@@ -726,8 +942,26 @@ tr_semaphore_profile : tr_sem_prof.crossing
 	id_map[10]: 0
 	id_map[11]: 0
 	id_map[12]: 0
+	id_map[13]: 0
+	id_map[14]: 0
+	id_map[15]: 0
+	id_map[16]: 0
+	id_map[17]: 0
+	id_map[18]: 0
+	id_map[19]: 0
+	id_map[20]: 0
+	id_map[21]: 0
+	id_map[22]: 0
+	id_map[23]: 0
+	id_map[24]: 0
+	id_map[25]: 0
+	id_map[26]: 0
+	id_map[27]: 0
+	id_map[28]: 0
+	id_map[29]: 0
+	id_map[30]: 0
 
-	model: 13
+	model: 25
 	model[0]: ""
 
 	# 1-road x 1-rail
@@ -750,6 +984,27 @@ tr_semaphore_profile : tr_sem_prof.crossing
 	model[10]: ""
 	model[11]: "cr1_r_2ln"
 	model[12]: "cr2_r_2ln"
+
+	model[13]: "cr2_l_2ln"
+	
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	model[20]: ""
+	model[21]: ""
+	model[22]: ""
+	
+	model[23]: "crossing4_r"
+	model[24]: "crossing4_l"
+	
+	model[25]: ""
+	model[26]: ""
+	
+	model[27]: "cr4_r_2ln"
+	model[28]: ""
 }
 
 tr_semaphore_profile : tr_sem_prof.crossing_c
@@ -785,6 +1040,67 @@ tr_semaphore_profile : tr_sem_prof.crossing_c
 	model[10]: "rl_light2_c"
 	model[11]: "rail_lvl_c_l"
 	model[12]: "rail_lvl_c_l"
+
+	model[13]: "cr2_l_2ln"
+	
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	model[20]: ""
+	model[21]: ""
+	model[22]: ""
+	
+	model[23]: ""
+	model[24]: ""
+	
+	model[25]: ""
+	model[26]: ""
+	
+	model[27]: "rail_level_c"
+	model[28]: ""
+	
+	model[29]: ""
+	model[30]: "rl_light4_c"
+}
+
+tr_semaphore_profile : tr_sem_prof.crossing_cs
+{
+
+	name: "road crossing - city"
+
+	inherited: tr_sem_prof.crossing
+
+	model[0]: ""
+
+	# 1-road x 1-rail
+	model[1]: "rail_level_s"
+	model[2]: "crossing_l"
+
+	# 1-road x 2-rail
+	model[3]: "crossing2_r"
+	model[4]: "crossing2_l"
+
+	# 2-road
+	model[5]: "rail_level_s"
+	model[6]: ""
+
+	# 2-road
+	model[7]: "rail_level_s"
+	model[8]: ""
+
+	# 1-rail lights
+	model[9]: "rl_light1_cs"
+
+
+	# 2-rail lights
+	model[10]: "rl_light2_cs"
+	model[11]: "rail_lvl_c_l"
+	model[12]: "rail_lvl_c_l"
+
+	model[13]: "cr2_l_2ln"
 }
 
 tr_semaphore_profile : tr_sem_prof.crossing_co
@@ -899,9 +1215,17 @@ tr_semaphore_profile : tr_sem_prof.column_only
 
 	model[]: "column"
 	model[]: "column"
-	model[]: "column"
-	model[]: "column"
 	model[]: ""
+	model[]: ""
+	model[]: ""
+	model[]: ""
+	model[]: ""
+	model[]: ""
+	model[]: ""
+	model[]: ""
+	model[]: ""
+	model[]: "column"
+	model[]: "column"
 }
 
 tr_semaphore_profile : tr_sem_prof.1x1
@@ -934,8 +1258,12 @@ tr_semaphore_profile : tr_sem_prof.1x1_g
 	model[5]: ""
 	model[6]: ""
 	model[7]: ""
-	model[8]: "single_light"
-	model[9]: "single_light"
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "single_light"
+	model[13]: "single_light"
 
 }
 
@@ -991,6 +1319,28 @@ tr_semaphore_profile : tr_sem_prof.1x1_center_w
 	model_offset[]: (4, 0, 3)
 	model_offset[]: (4, 0, 3)
 	model_offset[]: (4, 0, 3)
+
+}
+
+tr_semaphore_profile : tr_sem_prof.1x1_center_x
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 1x1 center"
+
+
+	model[]: "single_pnd"
+	model[]: "single_pnd"
+	model[]: "single_pnd"
+	model[]: "single_pnd"
+	model[]: ""
+	
+	model_offset[]: (3.6, 0, 3.84)
+	model_offset[]: (4, 0, 3)
+	model_offset[]: (3.5, 0, 4.04)
+	model_offset[]: (4, 0, 3)
+
 
 }
 
@@ -1077,6 +1427,20 @@ tr_semaphore_profile : tr_sem_prof.2x2
 	model[3]: "double_sh"
 	model[4]: ""
 
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_o
+{
+
+	inherited: tr_sem_prof.2x2
+
+	name: "us 2x2 offset"
+	
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
 
 }
 
@@ -1168,68 +1532,68 @@ tr_semaphore_profile : tr_sem_prof.2x2_turn_2_g
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2x2 turn gantry"
-	
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
-	interval[19]: (14.0, 4.0, 42.0, 0.0)
-	interval[20]: (14.0, 4.0, 42.0, 0.0)
-	interval[21]: (14.0, 4.0, 42.0, 0.0)
-	interval[22]: (14.0, 4.0, 42.0, 0.0)
-	interval[23]: (14.0, 4.0, 42.0, 0.0)
-	interval[24]: (14.0, 4.0, 42.0, 0.0)
-	interval[25]: (14.0, 4.0, 42.0, 0.0)
-	interval[26]: (14.0, 4.0, 42.0, 0.0)
-	interval[27]: (14.0, 4.0, 42.0, 0.0)
-	interval[28]: (7.0, 3.0, 50.0, 0.0)
-	interval[29]: (7.0, 3.0, 50.0, 0.0)
 
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
-	cycle[19]: 41.0
-	cycle[20]: 0.0
-	cycle[21]: 30.0
-	cycle[22]: 0.0
-	cycle[23]: 30.0
-	cycle[24]: 0.0
-	cycle[25]: 30.0
-	cycle[26]: 0.0
-	cycle[27]: 30.0
-	cycle[28]: 41.0
-	cycle[29]: 11.0
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)
+	interval[29]: (10.0, 4.0, 70.0, 0.0)
+
+	cycle[0]: 68.0	#0.0
+	cycle[1]: 26.0	#42.0
+	cycle[2]: 68.0	#0.0
+	cycle[3]: 26.0	#42.0
+	cycle[4]: 68.0	#0.0
+	cycle[5]: 26.0	#42.0
+	cycle[6]: 68.0	#0.0
+	cycle[7]: 26.0	#42.0
+	cycle[8]: 0.0	#58.0
+	cycle[9]: 42.0	#16.0
+	cycle[10]: 0.0	#58.0
+	cycle[11]: 42.0	#16.0
+	cycle[12]: 68.0	#0.0
+	cycle[13]: 26.0	#42.0
+	cycle[14]: 68.0	#0.0
+	cycle[15]: 26.0	#42.0
+	cycle[16]: 42.0	#16.0
+	cycle[17]: 0.0	#58.0
+	cycle[18]: 0.0	#58.0
+	cycle[19]: 0.0	#58.0
+	cycle[20]: 68.0	#0.0
+	cycle[21]: 26.0	#42.0
+	cycle[22]: 68.0	#0.0
+	cycle[23]: 26.0	#42.0
+	cycle[24]: 68.0	#0.0
+	cycle[25]: 26.0	#42.0
+	cycle[26]: 68.0	#0.0
+	cycle[27]: 26.0	#42.0
+	cycle[28]: 0.0	#58.0
+	cycle[29]: 42.0	#16.0
 
 	model[0]: ""
 	model[1]: ""
@@ -1289,6 +1653,29 @@ tr_semaphore_profile : tr_sem_prof.2t2
 	model[1]: "single_nl"
 	model[2]: "double_sh"
 	model[3]: "dbl_sh_nl"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single"
+	model[9]: ""
+	model[10]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t2ow
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2"
+	
+	interval[0]: (52.0, 0.0, 0.0, 0.0)
+	interval[1]: (20.0, 4.0, 28.0, 0.0)
+
+	model[0]: "double_cut"
+	model[1]: "double_sh"
+	model[2]: "left_turn"
+	model[3]: "double_sh"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1422,6 +1809,66 @@ tr_semaphore_profile : tr_sem_prof.111x111
 
 }
 
+tr_semaphore_profile : tr_sem_prof.32x32
+{
+	# for crossroad with no dedicated left turn
+	inherited: tr_sem_prof.common_base
+
+	name: "us 3-2 x 3-2"
+
+	model[0]: "double"
+	model[1]: "double"
+	model[2]: "double_sh"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.32x11x02ow
+{
+	# for crossroad with no dedicated left turn
+	inherited: tr_sem_prof.common_base
+
+	name: "us 3-2 x 1-1 x 0-2 oneway"
+
+	model[0]: "double"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+
+}
+
 tr_semaphore_profile : tr_sem_prof.2t2_nl
 {
 
@@ -1483,28 +1930,70 @@ tr_semaphore_profile : tr_sem_prof.2x1_turn
 tr_semaphore_profile : tr_sem_prof.2x1_oneway
 {
 
-	inherited: tr_sem_prof.common_base
+	inherited: tr_sem_prof.common_base  #common_base
 
 	name: "us 2x1 oneway"
 
-	model[]: "double_sh"
-	model[]: "single"
-	model[]: "single"
-	model[]: "double_sh"
-	model[]: ""
+	model[0]: "double_sh"
+	model[1]: ""
+	model[2]: "single"
+	model[3]: "double_sh"
+	model[4]: ""
 }
 
-tr_semaphore_profile : tr_sem_prof.2x1_oway_trn
+tr_semaphore_profile : tr_sem_prof.2x1_twoway
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.common_base  #common_base
 
 	name: "us 2x1 oneway"
 
 	model[0]: "double_sh"
 	model[1]: "double_sh"
 	model[2]: "single"
+	model[3]: "double_sh"
+	model[4]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_oway_trn
+{
+
+	inherited: tr_sem_prof.base_left3a
+
+	name: "us 2x1 oneway"
+
+	model[0]: "double_sh"
+	model[1]: "single"
+	model[2]: "single"
 	model[3]: "dbl_sh_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_short"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "single"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_oway_tr2
+{
+
+	inherited: tr_sem_prof.base_left3a
+
+	name: "us 2x1 oneway tr2"
+
+	model[0]: "double_sh"
+	model[1]: "single"
+	model[2]: "dbl_sh_cut"
+	model[3]: "single"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -1562,6 +2051,158 @@ tr_semaphore_profile : tr_sem_prof.2t1
 	model[16]: "singl_mir_np"
 }
 
+tr_semaphore_profile : tr_sem_prof.2t1_seat
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1 seattle"
+
+	model[0]: "left_turn_ex"
+	model[1]: "left_turn_ex"
+	model[2]: "single_nl"
+	model[3]: "left_turn_ex"
+	model[4]: ""
+	model[5]: "dbl_cut_nl"
+	model[6]: "dbl_cut_nl"
+	model[7]: "dbl_cut_nl"
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "singl_mir_np"
+	
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	
+	interval[0]: (20.0, 4.0, 80.0, 0.0)
+	interval[1]: (16.0, 4.0, 84.0, 0.0)
+	interval[2]: (20.0, 4.0, 80.0, 0.0)
+	interval[3]: (16.0, 4.0, 84.0, 0.0)
+	interval[4]: (20.0, 4.0, 80.0, 0.0)
+	interval[5]: (16.0, 4.0, 84.0, 0.0)
+	interval[6]: (20.0, 4.0, 80.0, 0.0)
+	interval[7]: (16.0, 4.0, 84.0, 0.0)
+
+	cycle: 17
+	cycle[0]: 0.0
+	cycle[1]: 76.0
+	cycle[2]: 0.0
+	cycle[3]: 76.0
+	cycle[4]: 0.0
+	cycle[5]: 76.0
+	cycle[6]: 0.0
+	cycle[7]: 76.0
+	cycle[8]: 0.0
+	cycle[9]: 26.0
+	cycle[10]: 0.0
+	cycle[11]: 26.0
+	cycle[12]: 0.0
+	cycle[13]: 26.0
+	cycle[14]: 0.0
+	cycle[15]: 26.0
+	cycle[16]: 0.0
+}
+
+tr_semaphore_profile : tr_sem_prof.2t1_seat2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1 seattle2"
+
+	model[0]: "left_turn_ex"
+	model[1]: "left_turn_ex"
+	model[2]: "single_nl"
+	model[3]: "left_turn_ex"
+	model[4]: ""
+	model[5]: "dbl_cut_nl"
+	model[6]: "dbl_cut_nl"
+	model[7]: "dbl_cut_nl"
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "singl_mir_np"
+	
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	
+	interval[0]: (20.0, 4.0, 80.0, 0.0)
+	interval[1]: (16.0, 4.0, 84.0, 0.0)
+	interval[2]: (20.0, 4.0, 80.0, 0.0)
+	interval[3]: (16.0, 4.0, 84.0, 0.0)
+	interval[4]: (20.0, 4.0, 80.0, 0.0)
+	interval[5]: (16.0, 4.0, 84.0, 0.0)
+	interval[6]: (20.0, 4.0, 80.0, 0.0)
+	interval[7]: (16.0, 4.0, 84.0, 0.0)
+
+	cycle: 17
+	cycle[0]: 52.0
+	cycle[1]: 24.0
+	cycle[2]: 52.0
+	cycle[3]: 24.0
+	cycle[4]: 52.0
+	cycle[5]: 24.0
+	cycle[6]: 52.0
+	cycle[7]: 24.0
+	cycle[8]: 0.0
+	cycle[9]: 26.0
+	cycle[10]: 0.0
+	cycle[11]: 26.0
+	cycle[12]: 0.0
+	cycle[13]: 26.0
+	cycle[14]: 0.0
+	cycle[15]: 26.0
+	cycle[16]: 0.0
+}
+
+tr_semaphore_profile : tr_sem_prof.2t1_column
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1"
+
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "single_nl"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "column"
+	model[13]: "column"
+	model[14]: ""
+	model[15]: ""
+	model[16]: "singl_mir_np"
+}
+
 tr_semaphore_profile : tr_sem_prof.2t1_nl
 {
 
@@ -1580,6 +2221,90 @@ tr_semaphore_profile : tr_sem_prof.2t1_nl
 	model_offset[]: (0, 0, 0)
 	model_offset[]: (0, 0, 0)
 
+}
+
+tr_semaphore_profile : tr_sem_prof.212x11
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1"
+
+	model[0]: "single"
+	model[1]: "dbl_sh_cut"
+	model[2]: "double_sh"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_short"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x11_v1
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1"
+
+	model[0]: "single_1"
+	model[1]: "dbl_sh_cut_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_short_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x11_v1.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1"
+
+	model[0]: "single_1"
+	model[1]: "dbl_sh_cut_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_short_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: "left_side_1"
 }
 
 
@@ -1609,6 +2334,138 @@ tr_semaphore_profile : tr_sem_prof.212x111
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_o
+{
+
+	inherited: tr_sem_prof.212x111
+
+	name: "us 2-1-2 x 1-1-1 3m offset"
+	
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+	model_offset[11]: (2, 0, 0)
+	model_offset[12]: (0, 0, 0)
+	model_offset[13]: (0, 0, 0)
+	model_offset[14]: (0, 0, 0)
+	model_offset[15]: (0, 0, 0)
+	model_offset[16]: (0, 0, 0)
+	model_offset[17]: (0, 0, 0)
+	model_offset[18]: (0, 0, 0)
+
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_hang
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1-1"
+	
+	interval: 18
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (20.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (20.0, 4.0, 44.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (20.0, 4.0, 44.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (20.0, 4.0, 44.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
+	interval[12]: (20.0, 4.0, 44.0, 0.0)
+	interval[13]: (20.0, 4.0, 44.0, 0.0)
+	interval[14]: (20.0, 4.0, 44.0, 0.0)
+	interval[15]: (20.0, 4.0, 44.0, 0.0)
+	interval[16]: (20.0, 4.0, 44.0, 0.0)
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)
+	interval[19]: (20.0, 4.0, 44.0, 0.0)
+	interval[20]: (20.0, 4.0, 44.0, 0.0)
+	interval[21]: (20.0, 4.0, 44.0, 0.0)
+	interval[22]: (20.0, 4.0, 44.0, 0.0)
+	interval[23]: (20.0, 4.0, 44.0, 0.0)
+	interval[24]: (20.0, 4.0, 44.0, 0.0)
+	interval[25]: (20.0, 4.0, 44.0, 0.0)
+	interval[26]: (20.0, 4.0, 44.0, 0.0)
+	interval[27]: (20.0, 4.0, 44.0, 0.0)
+	interval[28]: (10.0, 4.0, 54.0, 0.0)
+	interval[29]: (10.0, 4.0, 54.0, 0.0)
+
+	cycle[0]: 0.0
+	cycle[1]: 26.0
+	cycle[2]: 0.0
+	cycle[3]: 26.0
+	cycle[4]: 0.0
+	cycle[5]: 26.0
+	cycle[6]: 0.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 0.0
+	cycle[13]: 26.0
+	cycle[14]: 0.0
+	cycle[15]: 26.0
+	cycle[16]: 0.0
+	cycle[17]: 26.0
+	cycle[18]: 42.0
+	cycle[19]: 42.0
+	cycle[20]: 0.0
+	cycle[21]: 26.0
+	cycle[22]: 0.0
+	cycle[23]: 26.0
+	cycle[24]: 0.0
+	cycle[25]: 26.0
+	cycle[26]: 0.0
+	cycle[27]: 26.0
+	cycle[28]: 42.0
+	cycle[29]: 42.0
+
+	model[0]: ""
+	model[1]: ""
+	model[2]: ""
+	model[3]: ""
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	model[20]: "single_light"
+	model[21]: "single_light"
+	model[22]: "single_light"
+	model[23]: "single_light"
+	model[24]: ""
+	model[25]: ""
+	model[26]: ""
+	model[27]: ""
+	model[28]: "single_left"
+	model[29]: "single_left"
 }
 
 tr_semaphore_profile : tr_sem_prof.212x111_2
@@ -1647,67 +2504,67 @@ tr_semaphore_profile : tr_sem_prof.212x111_2_g
 	name: "us 2-1-2 x 1-1-1 gantry"
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 32.0, 0.0)
-	interval[1]: (14.0, 4.0, 32.0, 0.0)
-	interval[2]: (14.0, 4.0, 32.0, 0.0)
-	interval[3]: (14.0, 4.0, 32.0, 0.0)
-	interval[4]: (14.0, 4.0, 32.0, 0.0)
-	interval[5]: (14.0, 4.0, 32.0, 0.0)
-	interval[6]: (14.0, 4.0, 32.0, 0.0)
-	interval[7]: (14.0, 4.0, 32.0, 0.0)
-	interval[8]: (14.0, 4.0, 32.0, 0.0)
-	interval[9]: (7.0, 3.0, 40.0, 0.0)
-	interval[10]: (14.0, 4.0, 32.0, 0.0)
-	interval[11]: (7.0, 3.0, 40.0, 0.0)
-	interval[12]: (14.0, 4.0, 32.0, 0.0)
-	interval[13]: (14.0, 4.0, 32.0, 0.0)
-	interval[14]: (14.0, 4.0, 32.0, 0.0)
-	interval[15]: (14.0, 4.0, 32.0, 0.0)
-	interval[16]: (14.0, 4.0, 32.0, 0.0)
-	interval[17]: (14.0, 4.0, 32.0, 0.0)
-	interval[18]: (7.0, 3.0, 40.0, 0.0)
-	interval[19]: (14.0, 4.0, 32.0, 0.0)
-	interval[20]: (14.0, 4.0, 32.0, 0.0)
-	interval[21]: (14.0, 4.0, 32.0, 0.0)
-	interval[22]: (14.0, 4.0, 32.0, 0.0)
-	interval[23]: (14.0, 4.0, 32.0, 0.0)
-	interval[24]: (14.0, 4.0, 32.0, 0.0)
-	interval[25]: (14.0, 4.0, 32.0, 0.0)
-	interval[26]: (14.0, 4.0, 32.0, 0.0)
-	interval[27]: (14.0, 4.0, 32.0, 0.0)
-	interval[28]: (7.0, 3.0, 40.0, 0.0)
-	interval[29]: (7.0, 3.0, 40.0, 0.0)
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (20.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (20.0, 4.0, 44.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (20.0, 4.0, 44.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (20.0, 4.0, 44.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
+	interval[12]: (20.0, 4.0, 44.0, 0.0)
+	interval[13]: (20.0, 4.0, 44.0, 0.0)
+	interval[14]: (20.0, 4.0, 44.0, 0.0)
+	interval[15]: (20.0, 4.0, 44.0, 0.0)
+	interval[16]: (20.0, 4.0, 44.0, 0.0)
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)
+	interval[19]: (20.0, 4.0, 44.0, 0.0)
+	interval[20]: (20.0, 4.0, 44.0, 0.0)
+	interval[21]: (20.0, 4.0, 44.0, 0.0)
+	interval[22]: (20.0, 4.0, 44.0, 0.0)
+	interval[23]: (20.0, 4.0, 44.0, 0.0)
+	interval[24]: (20.0, 4.0, 44.0, 0.0)
+	interval[25]: (20.0, 4.0, 44.0, 0.0)
+	interval[26]: (20.0, 4.0, 44.0, 0.0)
+	interval[27]: (20.0, 4.0, 44.0, 0.0)
+	interval[28]: (10.0, 4.0, 54.0, 0.0)
+	interval[29]: (10.0, 4.0, 54.0, 0.0)
 
 	cycle[0]: 0.0
-	cycle[1]: 20.0
+	cycle[1]: 26.0
 	cycle[2]: 0.0
-	cycle[3]: 20.0
+	cycle[3]: 26.0
 	cycle[4]: 0.0
-	cycle[5]: 20.0
+	cycle[5]: 26.0
 	cycle[6]: 0.0
-	cycle[7]: 20.0
+	cycle[7]: 26.0
 	cycle[8]: 0.0
-	cycle[9]: 31.0
+	cycle[9]: 42.0
 	cycle[10]: 0.0
-	cycle[11]: 31.0
+	cycle[11]: 42.0
 	cycle[12]: 0.0
-	cycle[13]: 20.0
+	cycle[13]: 26.0
 	cycle[14]: 0.0
-	cycle[15]: 20.0
+	cycle[15]: 26.0
 	cycle[16]: 0.0
-	cycle[17]: 20.0
-	cycle[18]: 31.0
-	cycle[19]: 31.0
+	cycle[17]: 26.0
+	cycle[18]: 42.0
+	cycle[19]: 42.0
 	cycle[20]: 0.0
-	cycle[21]: 20.0
+	cycle[21]: 26.0
 	cycle[22]: 0.0
-	cycle[23]: 20.0
+	cycle[23]: 26.0
 	cycle[24]: 0.0
-	cycle[25]: 20.0
+	cycle[25]: 26.0
 	cycle[26]: 0.0
-	cycle[27]: 20.0
-	cycle[28]: 31.0
-	cycle[29]: 31.0
+	cycle[27]: 26.0
+	cycle[28]: 42.0
+	cycle[29]: 42.0
 
 	model[0]: "double_sh"
 	model[1]: ""
@@ -1745,9 +2602,53 @@ tr_semaphore_profile : tr_sem_prof.212x111_2_g
 tr_semaphore_profile : tr_sem_prof.212x111oway
 {
 
+# opposite function to base_left3
+
 	inherited: tr_sem_prof.base_left
 
 	name: "us 2-1-2 x 1-1-1"
+	
+	interval: 19
+	interval[0]: (20.0, 4.0, 44.0, 0.0)		#T jct  ^
+	interval[1]: (20.0, 4.0, 44.0, 0.0)		#straight right  -->
+	interval[2]: (20.0, 4.0, 44.0, 0.0)		#T jct	^
+	interval[3]: (36.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[4]: (20.0, 4.0, 44.0, 0.0)		#T jct	^
+	interval[5]: (20.0, 4.0, 44.0, 0.0)		#straight right  -->
+	interval[6]: (20.0, 4.0, 44.0, 0.0)		#T jct	^
+	interval[7]: (36.0, 4.0, 28.0, 0.0)		#straight left <--
+	interval[8]: (10.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[9]: (10.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[10]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[11]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[12]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[13]: (36.0, 4.0, 28.0, 0.0)	#straight left <--
+	interval[14]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[15]: (36.0, 4.0, 28.0, 0.0)	#straight left <--
+	interval[16]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+
+	cycle: 19
+	cycle[0]: 26.0
+	cycle[1]: 52.0
+	cycle[2]: 26.0
+	cycle[3]: 0.0
+	cycle[4]: 26.0
+	cycle[5]: 52.0
+	cycle[6]: 26.0
+	cycle[7]: 0.0
+	cycle[8]: 0.0
+	cycle[9]: 0.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 0.0
+	cycle[14]: 26.0
+	cycle[15]: 0.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
 
 	model[0]: "double_sh"
 	model[1]: "double_sh"
@@ -1768,6 +2669,98 @@ tr_semaphore_profile : tr_sem_prof.212x111oway
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111tway
+{
+
+# opposite function to base_left3
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1-1 x 0-3"
+	
+	interval: 19
+	interval[0]: (20.0, 4.0, 70.0, 0.0)		#T jct  left <--
+	interval[1]: (20.0, 4.0, 70.0, 0.0)		#straight right  -->
+	interval[2]: (20.0, 4.0, 70.0, 0.0)		#T jct	left <--
+	interval[3]: (36.0, 4.0, 54.0, 0.0)		#straight left <--
+	interval[4]: (20.0, 4.0, 70.0, 0.0)		#T jct	^
+	interval[5]: (20.0, 4.0, 70.0, 0.0)		#straight right  -->
+	interval[6]: (20.0, 4.0, 70.0, 0.0)		#T jct	^
+	interval[7]: (36.0, 4.0, 54.0, 0.0)		#straight left <--
+	interval[8]: (10.0, 4.0, 54.0, 0.0)		#turn left	<--
+	interval[9]: (10.0, 4.0, 80.0, 0.0)		#turn left	<--
+	interval[10]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[11]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+	interval[12]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[13]: (36.0, 4.0, 28.0, 0.0)	#straight left <--
+	interval[14]: (20.0, 4.0, 70.0, 0.0)	#T jct	left <--
+	interval[15]: (36.0, 4.0, 28.0, 0.0)	#straight left <--
+	interval[16]: (20.0, 4.0, 44.0, 0.0)	#T jct	^
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)	#turn left	<--
+
+	cycle: 19
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 0.0
+	cycle[3]: 42.0
+	cycle[4]: 0.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 42.0
+	cycle[8]: 42.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 0.0
+	cycle[14]: 0.0
+	cycle[15]: 0.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+
+	model[0]: "left_turn"
+	model[1]: "double_sh"
+	model[2]: "left_turn"
+	model[3]: "double_cut"
+	model[4]: "double_cut"
+	model[5]: ""
+	model[6]: "double_cut"
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_turn"
+	model[10]: "single_light"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: ""
+	model[14]: "left_side"
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-2.25, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-2.781, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	
 }
 
 tr_semaphore_profile : tr_sem_prof.212x111_turn
@@ -1796,6 +2789,96 @@ tr_semaphore_profile : tr_sem_prof.212x111_turn
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_dt
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "double_cut_d"
+	model[1]: "double_sh"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_d"
+	model[9]: "left_turn"
+	model[10]: "left_short"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	
+	model_offset[]: (-2.5, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-2.5, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	
+	interval: 18
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (36.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)	
+	interval[9]: (10.0, 4.0, 70.0, 0.0)	
+	interval[10]: (10.0, 4.0, 70.0, 0.0)	
+	interval[11]: (10.0, 4.0, 70.0, 0.0)	
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)	
+	interval[17]: (10.0, 4.0, 70.0, 0.0)	
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+
+	cycle: 18
+	cycle[0]: 68.0
+	cycle[1]: 42.0
+	cycle[2]: 68.0
+	cycle[3]: 42.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 16.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
 }
 
 tr_semaphore_profile : tr_sem_prof.212x111_tur2
@@ -1831,7 +2914,7 @@ tr_semaphore_profile : tr_sem_prof.212x111_tur3
 
 	inherited: tr_sem_prof.base_left2
 
-	name: "us 2-1-2 x 1-1-1 alt2"
+	name: "us 2-1-2 x 1-1-1 alt3"
 
 	model[0]: "double_cut"
 	model[1]: "double_cut"
@@ -1854,53 +2937,83 @@ tr_semaphore_profile : tr_sem_prof.212x111_tur3
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111_t3_o
+{
+
+	inherited: tr_sem_prof.212x111_tur3
+
+	name: "us 2-1-2 x 1-1-1 alt3 3m offset"
+
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (2, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (2, 0, 0)
+	model_offset[11]: (2, 0, 0)
+	model_offset[12]: (0, 0, 0)
+	model_offset[13]: (2, 0, 0)
+	model_offset[14]: (0, 0, 0)
+	model_offset[15]: (2, 0, 0)
+	model_offset[16]: (0, 0, 0)
+	model_offset[17]: (0, 0, 0)
+	model_offset[18]: (0, 0, 0)
+}
+
 tr_semaphore_profile : tr_sem_prof.212x111_tur4
 {
 
 	inherited: tr_sem_prof.common_base
 
-	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (7.0, 3.0, 50.0, 0.0)
-	interval[19]: (7.0, 3.0, 50.0, 0.0)
+	interval: 20
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (10.0, 4.0, 70.0, 0.0)
+	interval[19]: (10.0, 4.0, 70.0, 0.0)
 
-	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
+	cycle: 20
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 0.0
+
 
 	name: "us 2-1-2 x 1-1-1 alt2"
 
@@ -1927,78 +3040,133 @@ tr_semaphore_profile : tr_sem_prof.212x111_tur4
 	model[20]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111_tur5
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt"
+
+	model[0]: "single"
+	model[1]: "single"
+	model[2]: "double_cut"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_tur6
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "dbl_sh_cut"
+	model[3]: "dbl_sh_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_short"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+
 tr_semaphore_profile : tr_sem_prof.212x111_t_g
 {
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 1-1-1 gantry"
-	
-	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
-	interval[19]: (14.0, 4.0, 42.0, 0.0)
-	interval[20]: (14.0, 4.0, 42.0, 0.0)
-	interval[21]: (14.0, 4.0, 42.0, 0.0)
-	interval[22]: (14.0, 4.0, 42.0, 0.0)
-	interval[23]: (14.0, 4.0, 42.0, 0.0)
-	interval[24]: (14.0, 4.0, 42.0, 0.0)
-	interval[25]: (14.0, 4.0, 42.0, 0.0)
-	interval[26]: (14.0, 4.0, 42.0, 0.0)
-	interval[27]: (14.0, 4.0, 42.0, 0.0)
-	interval[28]: (7.0, 3.0, 50.0, 0.0)
-	interval[29]: (7.0, 3.0, 50.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)
+	interval[29]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
-	cycle[19]: 41.0
-	cycle[20]: 0.0
-	cycle[21]: 30.0
-	cycle[22]: 0.0
-	cycle[23]: 30.0
-	cycle[24]: 0.0
-	cycle[25]: 30.0
-	cycle[26]: 0.0
-	cycle[27]: 30.0
-	cycle[28]: 41.0
-	cycle[29]: 11.0
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 42.0
+	cycle[20]: 68.0
+	cycle[21]: 26.0
+	cycle[22]: 68.0
+	cycle[23]: 26.0
+	cycle[24]: 68.0
+	cycle[25]: 26.0
+	cycle[26]: 68.0
+	cycle[27]: 26.0
+	cycle[28]: 0.0
+	cycle[29]: 42.0
 
 	model[0]: "dbl_sh_cut"
 	model[1]: ""
@@ -2036,14 +3204,14 @@ tr_semaphore_profile : tr_sem_prof.212x111_t_g
 tr_semaphore_profile : tr_sem_prof.212t111
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2-1-2 t 1-1-1"
 
 	model[0]: "dbl_sh_nl"
 	model[1]: "double_cut"
-	model[2]: "single_nl"
-	model[3]: "double_sh"
+	model[2]: "dbl_sh_nl"		#single_nl
+	model[3]: "double_sh"		#double_cut
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -2060,12 +3228,179 @@ tr_semaphore_profile : tr_sem_prof.212t111
 	model[17]: ""
 	model[18]: ""
 	model[19]: ""
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_m
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "us 2-1-2 t 1-1-1 mirror"
+
+	model[0]: "dbl_sh_o_m"
+	model[1]: "double_cut"
+	model[2]: "dbl_sh_nl"		#single_nl
+	model[3]: "double_sh"		#double_cut
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "double_cut"
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_la
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "us 2-1-2 t 1-1-1"
+
+	model[0]: "column"
+	model[1]: "double_cut"
+	model[2]: "single_left"		
+	model[3]: "double_sh"		
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "double_cut"
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: "left_side"
+	model[17]: ""
+	model[18]: "left_column"
+	model[19]: ""
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_o
+{
+
+	inherited: tr_sem_prof.212t111
+
+	name: "us 2-1-2 t 1-1-1 3m offset"
+
+	model_offset[0]: (0, 0, -2)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (0, 0, -2)
+	model_offset[3]: (0, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_x_o
+{
+
+	inherited: tr_sem_prof.212t111
+
+	name: "us 2-1-2 t 1-1-1 3m x offset"
+
+	model_offset[0]: (0, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (0, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_lead
+{
+
+	inherited: tr_sem_prof.base_left3.lead
+
+	name: "us 2-1-2 t 1-1-1 lead"
+
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_cut"
+	model[2]: "dbl_sh_nl"		#single_nl
+	model[3]: "triple"		#double_cut
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "double_cut"
+	model[13]: ""
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_lag
+{
+
+	inherited: tr_sem_prof.base_left3.lag
+
+	name: "us 2-1-2 t 1-1-1 lag"
+
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_cut"		
+	model[2]: "dbl_sh_nl"		#single_nl
+	model[3]: "triple"		#double_cut
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "double_cut"
+	model[13]: ""
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	
+
 }
 
 tr_semaphore_profile : tr_sem_prof.212t111_2
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2-1-2 t 1-1-1"
 
@@ -2094,72 +3429,103 @@ tr_semaphore_profile : tr_sem_prof.212t111_2
 tr_semaphore_profile : tr_sem_prof.212t111_2_g
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.common_base
 
 	name: "us 2-1-2 x 1-1-1 gantry"
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 32.0, 0.0)
-	interval[1]: (14.0, 4.0, 32.0, 0.0)
-	interval[2]: (14.0, 4.0, 32.0, 0.0)
-	interval[3]: (14.0, 4.0, 32.0, 0.0)
-	interval[4]: (14.0, 4.0, 32.0, 0.0)
-	interval[5]: (14.0, 4.0, 32.0, 0.0)
-	interval[6]: (14.0, 4.0, 32.0, 0.0)
-	interval[7]: (14.0, 4.0, 32.0, 0.0)
-	interval[8]: (14.0, 4.0, 32.0, 0.0)
-	interval[9]: (7.0, 3.0, 40.0, 0.0)
-	interval[10]: (14.0, 4.0, 32.0, 0.0)
-	interval[11]: (7.0, 3.0, 40.0, 0.0)
-	interval[12]: (14.0, 4.0, 32.0, 0.0)
-	interval[13]: (14.0, 4.0, 32.0, 0.0)
-	interval[14]: (14.0, 4.0, 32.0, 0.0)
-	interval[15]: (14.0, 4.0, 32.0, 0.0)
-	interval[16]: (14.0, 4.0, 32.0, 0.0)
-	interval[17]: (14.0, 4.0, 32.0, 0.0)
-	interval[18]: (7.0, 3.0, 40.0, 0.0)
-	interval[19]: (14.0, 4.0, 32.0, 0.0)
-	interval[20]: (14.0, 4.0, 32.0, 0.0)
-	interval[21]: (14.0, 4.0, 32.0, 0.0)
-	interval[22]: (14.0, 4.0, 32.0, 0.0)
-	interval[23]: (14.0, 4.0, 32.0, 0.0)
-	interval[24]: (14.0, 4.0, 32.0, 0.0)
-	interval[25]: (14.0, 4.0, 32.0, 0.0)
-	interval[26]: (14.0, 4.0, 32.0, 0.0)
-	interval[27]: (14.0, 4.0, 32.0, 0.0)
-	interval[28]: (7.0, 3.0, 40.0, 0.0)
-	interval[29]: (7.0, 3.0, 40.0, 0.0)
-
-	cycle[0]: 0.0
-	cycle[1]: 20.0
-	cycle[2]: 0.0
-	cycle[3]: 20.0
-	cycle[4]: 0.0
-	cycle[5]: 20.0
-	cycle[6]: 0.0
-	cycle[7]: 20.0
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (36.0, 4.0, 28.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (36.0, 4.0, 28.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (20.0, 4.0, 44.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (20.0, 4.0, 44.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
+	interval[12]: (20.0, 4.0, 44.0, 0.0)
+	interval[13]: (20.0, 4.0, 44.0, 0.0)
+	interval[14]: (20.0, 4.0, 44.0, 0.0)
+	interval[15]: (20.0, 4.0, 44.0, 0.0)
+	interval[16]: (20.0, 4.0, 44.0, 0.0)
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)
+	interval[19]: (20.0, 4.0, 44.0, 0.0)
+	interval[20]: (20.0, 4.0, 44.0, 0.0)
+	interval[21]: (36.0, 4.0, 28.0, 0.0)
+	interval[22]: (20.0, 4.0, 44.0, 0.0)
+	interval[23]: (20.0, 4.0, 44.0, 0.0)
+	interval[24]: (20.0, 4.0, 44.0, 0.0)
+	interval[25]: (20.0, 4.0, 44.0, 0.0)
+	interval[26]: (20.0, 4.0, 44.0, 0.0)
+	interval[27]: (20.0, 4.0, 44.0, 0.0)
+	interval[28]: (10.0, 4.0, 54.0, 0.0)
+	interval[29]: (10.0, 4.0, 54.0, 0.0)
+	
+	cycle[0]: 26.0
+	cycle[1]: 0.0
+	cycle[2]: 26.0
+	cycle[3]: 52.0
+	cycle[4]: 26.0
+	cycle[5]: 0.0
+	cycle[6]: 26.0
+	cycle[7]: 52.0
 	cycle[8]: 0.0
-	cycle[9]: 31.0
+	cycle[9]: 0.0
 	cycle[10]: 0.0
-	cycle[11]: 31.0
-	cycle[12]: 0.0
-	cycle[13]: 20.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 0.0
 	cycle[14]: 0.0
-	cycle[15]: 20.0
+	cycle[15]: 26.0
 	cycle[16]: 0.0
-	cycle[17]: 20.0
-	cycle[18]: 31.0
-	cycle[19]: 31.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 0.0
 	cycle[20]: 0.0
-	cycle[21]: 20.0
-	cycle[22]: 0.0
-	cycle[23]: 20.0
+	cycle[21]: 0.0
+	cycle[22]: 26.0
+	cycle[23]: 26.0
 	cycle[24]: 0.0
-	cycle[25]: 20.0
-	cycle[26]: 0.0
-	cycle[27]: 20.0
-	cycle[28]: 31.0
-	cycle[29]: 31.0
+	cycle[25]: 0.0
+	cycle[26]: 26.0
+	cycle[27]: 52.0
+	cycle[28]: 0.0
+	cycle[29]: 0.0
+
+#	cycle[0]: 0.0
+#	cycle[1]: 42.0
+#	cycle[2]: 0.0
+#	cycle[3]: 26.0
+#	cycle[4]: 0.0
+#	cycle[5]: 42.0
+#	cycle[6]: 0.0
+#	cycle[7]: 26.0
+#	cycle[8]: 0.0
+#	cycle[9]: 42.0
+#	cycle[10]: 0.0
+#	cycle[11]: 42.0
+#	cycle[12]: 0.0
+#	cycle[13]: 42.0
+#	cycle[14]: 0.0
+#	cycle[15]: 26.0
+#	cycle[16]: 0.0
+#	cycle[17]: 26.0
+#	cycle[18]: 42.0
+#	cycle[19]: 42.0
+#	cycle[20]: 0.0
+#	cycle[21]: 26.0
+#	cycle[22]: 0.0
+#	cycle[23]: 26.0
+#	cycle[24]: 0.0
+#	cycle[25]: 26.0
+#	cycle[26]: 0.0
+#	cycle[27]: 26.0
+#	cycle[28]: 42.0
+#	cycle[29]: 42.0
 
 	model[0]: ""
 	model[1]: ""
@@ -2221,13 +3587,14 @@ tr_semaphore_profile : tr_sem_prof.212t111_3
 	model[17]: ""
 	model[18]: ""
 	model[19]: ""
+
 }
 
 tr_semaphore_profile : tr_sem_prof.212t111ow
 {
 
 	name: "us 2-1-2 t 1-1-1 one way"
-	
+
 	type: 12
 	type[0]: traffic_light
 	type[1]: traffic_light
@@ -2242,29 +3609,29 @@ tr_semaphore_profile : tr_sem_prof.212t111ow
 	type[10]: traffic_light
 	type[11]: traffic_light
 
-	interval[0]: (15.0, 2.0, 14.0, 0.0)
-	interval[1]: (31.0, 0.0, 0.0, 0.0)
-	interval[2]: (15.0, 2.0, 14.0, 0.0)
-	interval[3]: (15.0, 2.0, 14.0, 0.0)
-	interval[4]: (15.0, 2.0, 14.0, 0.0)
-	interval[5]: (15.0, 2.0, 14.0, 0.0)
-	interval[6]: (15.0, 2.0, 14.0, 0.0)
-	interval[7]: (15.0, 2.0, 14.0, 0.0)
-	interval[8]: (8.0, 2.0, 21.0, 0.0)
-	interval[9]: (8.0, 2.0, 21.0, 0.0)
+	interval[0]: (20.0, 4.0, 23.0, 0.0)
+	interval[1]: (47.0, 0.0, 0.0, 0.0)
+	interval[2]: (20.0, 4.0, 23.0, 0.0)
+	interval[3]: (20.0, 4.0, 23.0, 0.0)
+	interval[4]: (20.0, 4.0, 23.0, 0.0)
+	interval[5]: (20.0, 4.0, 23.0, 0.0)
+	interval[6]: (20.0, 4.0, 23.0, 0.0)
+	interval[7]: (20.0, 4.0, 23.0, 0.0)
+	interval[8]: (15.0, 4.0, 28.0, 0.0)
+	interval[9]: (15.0, 4.0, 28.0, 0.0)
 
 	cycle: 20
 	cycle[0]: 0.0
-	cycle[1]: 19.0
+	cycle[1]: 26.0
 	cycle[2]: 0.0
-	cycle[3]: 19.0
+	cycle[3]: 26.0
 	cycle[4]: 0.0
-	cycle[5]: 19.0
+	cycle[5]: 26.0
 	cycle[6]: 0.0
-	cycle[7]: 19.0
+	cycle[7]: 26.0
 	cycle[8]: 0.0
-	cycle[9]: 19.0
-	
+	cycle[9]: 26.0
+
 
 	model[0]: "dbl_sh_nl"
 	model[1]: "double_cut"
@@ -2277,6 +3644,108 @@ tr_semaphore_profile : tr_sem_prof.212t111ow
 	model[8]: "left_turn"
 	model[9]: "left_turn"
 
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_hang
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "us 2-1-2 t 1-1-1"
+	
+	interval: 18
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (36.0, 4.0, 28.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (36.0, 4.0, 28.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (10.0, 4.0, 54.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (10.0, 4.0, 54.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
+	interval[12]: (20.0, 4.0, 44.0, 0.0)
+	interval[13]: (20.0, 4.0, 44.0, 0.0)
+	interval[14]: (20.0, 4.0, 44.0, 0.0)
+	interval[15]: (20.0, 4.0, 44.0, 0.0)
+	interval[16]: (20.0, 4.0, 44.0, 0.0)
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)
+	interval[19]: (20.0, 4.0, 44.0, 0.0)
+	interval[20]: (20.0, 4.0, 44.0, 0.0)
+	interval[21]: (36.0, 4.0, 28.0, 0.0)
+	interval[22]: (20.0, 4.0, 44.0, 0.0)
+	interval[23]: (20.0, 4.0, 44.0, 0.0)
+	interval[24]: (20.0, 4.0, 44.0, 0.0)
+	interval[25]: (20.0, 4.0, 44.0, 0.0)
+	interval[26]: (20.0, 4.0, 44.0, 0.0)
+	interval[27]: (20.0, 4.0, 44.0, 0.0)
+	interval[28]: (10.0, 4.0, 54.0, 0.0)
+	interval[29]: (10.0, 4.0, 54.0, 0.0)
+
+	cycle[0]: 26.0
+	cycle[1]: 0.0
+	cycle[2]: 26.0
+	cycle[3]: 52.0
+	cycle[4]: 26.0
+	cycle[5]: 0.0
+	cycle[6]: 26.0
+	cycle[7]: 52.0
+	cycle[8]: 0.0
+	cycle[9]: 0.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 26.0
+	cycle[13]: 52.0
+	cycle[14]: 26.0
+	cycle[15]: 52.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 42.0
+	cycle[20]: 0.0
+	cycle[21]: 0.0
+	cycle[22]: 26.0
+	cycle[23]: 52.0
+	cycle[24]: 0.0
+	cycle[25]: 26.0
+	cycle[26]: 0.0
+	cycle[27]: 26.0
+	cycle[28]: 42.0
+	cycle[29]: 0.0
+
+	model[0]: ""
+	model[1]: ""
+	model[2]: ""
+	model[3]: ""
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	model[20]: "single_light"
+	model[21]: "single_light"
+	model[22]: "single_light"
+	model[23]: "single_light"
+	model[24]: ""
+	model[25]: ""
+	model[26]: ""
+	model[27]: ""
+	model[28]: "single_left"
+	model[29]: "single_left"
 }
 
 tr_semaphore_profile : tr_sem_prof.212x212
@@ -2306,78 +3775,289 @@ tr_semaphore_profile : tr_sem_prof.212x212
 	model[17]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x212_o
+{
+
+	inherited: tr_sem_prof.212x212
+
+	name: "us 2-1-2 x 2-1-2 offset"
+
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (2, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (2, 0, 0)
+	model_offset[11]: (2, 0, 0)
+	model_offset[12]: (0, 0, 0)
+	model_offset[13]: (0, 0, 0)
+	model_offset[14]: (0, 0, 0)
+	model_offset[15]: (0, 0, 0)
+	model_offset[16]: (0, 0, 0)
+	model_offset[17]: (0, 0, 0)
+	model_offset[18]: (0, 0, 0)
+}
+
+
+tr_semaphore_profile : tr_sem_prof.212x212s
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2"
+
+	model[0]: "double_cut"
+	model[1]: "double_cut"
+	model[2]: "double_cut"
+	model[3]: "single_light"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_nl
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2 no lamp"
+
+	model[0]: "dbl_cut_nl"
+	model[1]: "dbl_cut_nl"
+	model[2]: "dbl_cut_nl"
+	model[3]: "dbl_cut_nl"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_hang
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2 hanging"
+	
+	interval: 18
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)
+	interval[29]: (10.0, 4.0, 70.0, 0.0)
+
+	cycle: 18
+	cycle[0]: 0.0
+	cycle[1]: 42.0
+	cycle[2]: 0.0
+	cycle[3]: 42.0
+	cycle[4]: 0.0
+	cycle[5]: 42.0
+	cycle[6]: 0.0
+	cycle[7]: 42.0
+	cycle[8]: 58.0
+	cycle[9]: 16.0
+	cycle[10]: 58.0
+	cycle[11]: 16.0
+	cycle[12]: 0.0
+	cycle[13]: 42.0
+	cycle[14]: 0.0
+	cycle[15]: 42.0
+	cycle[16]: 16.0
+	cycle[17]: 58.0
+	cycle[18]: 58.0
+	cycle[19]: 16.0
+	cycle[20]: 0.0
+	cycle[21]: 42.0
+	cycle[22]: 0.0
+	cycle[23]: 42.0
+	cycle[24]: 0.0
+	cycle[25]: 42.0
+	cycle[26]: 0.0
+	cycle[27]: 42.0
+	cycle[28]: 58.0
+	cycle[29]: 16.0
+
+	model[0]: ""
+	model[1]: ""
+	model[2]: ""
+	model[3]: ""
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	model[20]: "single_light"
+	model[21]: "single_light"
+	model[22]: "single_light"
+	model[23]: "single_light"
+	model[24]: ""
+	model[25]: ""
+	model[26]: ""
+	model[27]: ""
+	model[28]: "single_left"
+	model[29]: "single_left"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2"
+
+	model[0]: "double_sh"
+	model[1]: "double_cut"
+	model[2]: "double_cut"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+}
+
 tr_semaphore_profile : tr_sem_prof.212x212_g
 {
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 2-1-2 gantry"
-	
-	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
-	interval[19]: (14.0, 4.0, 42.0, 0.0)
-	interval[20]: (14.0, 4.0, 42.0, 0.0)
-	interval[21]: (14.0, 4.0, 42.0, 0.0)
-	interval[22]: (14.0, 4.0, 42.0, 0.0)
-	interval[23]: (14.0, 4.0, 42.0, 0.0)
-	interval[24]: (14.0, 4.0, 42.0, 0.0)
-	interval[25]: (14.0, 4.0, 42.0, 0.0)
-	interval[26]: (14.0, 4.0, 42.0, 0.0)
-	interval[27]: (14.0, 4.0, 42.0, 0.0)
-	interval[28]: (7.0, 3.0, 50.0, 0.0)
-	interval[29]: (7.0, 3.0, 50.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)	
+	interval[9]: (10.0, 4.0, 70.0, 0.0)	
+	interval[10]: (10.0, 4.0, 70.0, 0.0)	
+	interval[11]: (10.0, 4.0, 70.0, 0.0)	
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)	
+	interval[17]: (10.0, 4.0, 70.0, 0.0)	
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)	
+	interval[29]: (10.0, 4.0, 70.0, 0.0)	
 
 	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
-	cycle[19]: 41.0
-	cycle[20]: 0.0
-	cycle[21]: 30.0
-	cycle[22]: 0.0
-	cycle[23]: 30.0
-	cycle[24]: 0.0
-	cycle[25]: 30.0
-	cycle[26]: 0.0
-	cycle[27]: 30.0
-	cycle[28]: 41.0
-	cycle[29]: 11.0
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 42.0
+	cycle[20]: 68.0
+	cycle[21]: 26.0
+	cycle[22]: 68.0
+	cycle[23]: 26.0
+	cycle[24]: 68.0
+	cycle[25]: 26.0
+	cycle[26]: 68.0
+	cycle[27]: 26.0
+	cycle[28]: 0.0
+	cycle[29]: 42.0
 
 	model[0]: "double_cut"
 	model[1]: ""
@@ -2410,6 +4090,75 @@ tr_semaphore_profile : tr_sem_prof.212x212_g
 	model[28]: "single_left"
 	model[29]: "single_left"
 
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212x212
+{
+
+	inherited: tr_sem_prof.common_base
+	
+		name: "us 2-1-2 x 2-1-2 x 2-1-2"
+
+	interval: 18
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (10.0, 4.0, 70.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (10.0, 4.0, 70.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)	
+	interval[9]: (20.0, 4.0, 60.0, 0.0)	
+	interval[10]: (10.0, 4.0, 70.0, 0.0)	
+	interval[11]: (10.0, 4.0, 70.0, 0.0)	
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)	
+	interval[17]: (10.0, 4.0, 70.0, 0.0)	
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+
+	cycle: 18
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 42.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 42.0
+	cycle[8]: 0.0
+	cycle[9]: 26.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+
+	model[0]: "double_cut"
+	model[1]: "double_cut"
+	model[2]: "double_cut"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "light_cut"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
 }
 
 tr_semaphore_profile : tr_sem_prof.212t212
@@ -2491,12 +4240,83 @@ tr_semaphore_profile : tr_sem_prof.212t212o
 tr_semaphore_profile : tr_sem_prof.212xexl
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2-1-2 x exit left"
 
 
 	model[0]: "single"
+	model[1]: "double_cut"
+	model[2]: "column"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212xexlg
+{
+
+	inherited: tr_sem_prof.common_base
+
+	interval: 19
+	interval[0]: (15.0, 4.0, 23.0, 0.0)
+	interval[1]: (42.0, 0.0, 0.0, 0.0)
+	interval[2]: (15.0, 4.0, 23.0, 0.0)
+	interval[3]: (15.0, 4.0, 23.0, 0.0)
+	interval[4]: (15.0, 4.0, 23.0, 0.0)
+	interval[5]: (15.0, 4.0, 23.0, 0.0)
+	interval[6]: (15.0, 4.0, 23.0, 0.0)
+	interval[7]: (15.0, 4.0, 23.0, 0.0)
+	interval[8]: (15.0, 4.0, 23.0, 0.0)
+	interval[9]: (15.0, 4.0, 23.0, 0.0)
+	interval[10]: (15.0, 4.0, 23.0, 0.0)
+	interval[11]: (15.0, 4.0, 23.0, 0.0)
+	interval[12]: (15.0, 4.0, 23.0, 0.0)
+	interval[13]: (15.0, 4.0, 23.0, 0.0)
+	interval[14]: (15.0, 4.0, 23.0, 0.0)
+	interval[15]: (15.0, 4.0, 23.0, 0.0)
+	interval[16]: (15.0, 4.0, 23.0, 0.0)
+	interval[17]: (15.0, 4.0, 23.0, 0.0)
+	interval[18]: (15.0, 4.0, 23.0, 0.0)
+
+	cycle: 20
+	cycle[0]: 0.0
+	cycle[1]: 21.0
+	cycle[2]: 0.0
+	cycle[3]: 21.0
+	cycle[4]: 0.0
+	cycle[5]: 21.0
+	cycle[6]: 0.0
+	cycle[7]: 21.0
+	cycle[8]: 0.0
+	cycle[9]: 27.0
+	cycle[10]: 0.0
+	cycle[11]: 27.0
+	cycle[12]: 0.0
+	cycle[13]: 21.0
+	cycle[14]: 0.0
+	cycle[15]: 21.0
+	cycle[16]: 0.0
+	cycle[17]: 21.0
+	cycle[18]: 0.0
+
+	name: "us 2-1-2 x exit left always green"
+
+
+	model[0]: "left_turn"
 	model[1]: "double_cut"
 	model[2]: "column"
 	model[3]: "double_sh"
@@ -2548,7 +4368,7 @@ tr_semaphore_profile : tr_sem_prof.212texl
 tr_semaphore_profile : tr_sem_prof.212_x_ex
 {
 
-	inherited: tr_sem_prof.base_left2
+	inherited: tr_sem_prof.base_left #2
 
 	name: "crossroad 2-1-2_x_exit"
 
@@ -2605,39 +4425,186 @@ tr_semaphore_profile : tr_sem_prof.212x212x2
 
 
 	interval: 15
-	interval[0]: (15.0, 2.0, 60, 0.0)
-	interval[1]: (15.0, 2.0, 60, 0.0)
-	interval[2]: (15.0, 2.0, 60, 0.0)
-	interval[3]: (15.0, 2.0, 60, 0.0)
-	interval[4]: (15.0, 2.0, 60, 0.0)
-	interval[5]: (15.0, 2.0, 60, 0.0)
-	interval[6]: (15.0, 2.0, 60, 0.0)
-	interval[7]: (15.0, 2.0, 60, 0.0)
-	interval[8]: (15.0, 2.0, 60, 0.0)
-	interval[9]: (15.0, 2.0, 60, 0.0)
-	interval[10]: (36.0, 2.0, 39, 0.0)
-	interval[11]: (15.0, 2.0, 60, 0.0)
-	interval[12]: (15.0, 2.0, 60, 0.0)
-	interval[13]: (15.0, 2.0, 60, 0.0)
-	interval[14]: (15.0, 2.0, 60, 0.0)
+	interval[0]: (20.0, 4.0, 80, 0.0)
+	interval[1]: (20.0, 4.0, 80, 0.0)
+	interval[2]: (20.0, 4.0, 80, 0.0)
+	interval[3]: (20.0, 4.0, 80, 0.0)
+	interval[4]: (20.0, 4.0, 80, 0.0)
+	interval[5]: (20.0, 4.0, 80, 0.0)
+	interval[6]: (20.0, 4.0, 80, 0.0)
+	interval[7]: (20.0, 4.0, 80, 0.0)
+	interval[8]: (20.0, 4.0, 80, 0.0)
+	interval[9]: (20.0, 4.0, 80, 0.0)
+	interval[10]: (46.0, 4.0, 54, 0.0)
+	interval[11]: (20.0, 4.0, 80, 0.0)
+	interval[12]: (20.0, 4.0, 80, 0.0)
+	interval[13]: (20.0, 4.0, 80, 0.0)
+	interval[14]: (20.0, 4.0, 80, 0.0)
 
 	cycle: 15
 	cycle[0]: 0.0
-	cycle[1]: 57.0
-	cycle[2]: 19.0
+	cycle[1]: 78.0
+	cycle[2]: 26.0
 	cycle[3]: 0.0
-	cycle[4]: 19.0
+	cycle[4]: 26.0
 	cycle[5]: 0.0
-	cycle[6]: 19.0
-	cycle[7]: 57.0
+	cycle[6]: 26.0
+	cycle[7]: 78.0
 	cycle[8]: 0.0
-	cycle[9]: 57.0
+	cycle[9]: 78.0
 	cycle[10]: 0.0
-	cycle[11]: 19.0
-	cycle[12]: 38.0
+	cycle[11]: 26.0
+	cycle[12]: 52.0
 	cycle[13]: 0.0
-	cycle[14]: 38.0
+	cycle[14]: 52.0
 
+}
+
+tr_semaphore_profile : tr_sem_prof.3x1_oway_trn
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 3x1 oneway turn"
+
+	model[0]: "triple"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_turn"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "single"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.3x1_oway_dtr
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 3x1 oneway double turn"
+
+	model[0]: "triple"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "double_cut_d"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_turn_d"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "single"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212x11_2
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 2-1-2 x 2-1-2 x 1-1"
+
+	model[0]: "dbl_ex_cut"
+	model[1]: "double_sh"
+	model[2]: "single"
+	model[3]: "double_cut"
+	model[4]: "left_turn"
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_turn"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "single"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	
+	
+	interval: 18
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (10.0, 4.0, 70.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (10.0, 4.0, 70.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)	
+	interval[9]: (10.0, 4.0, 70.0, 0.0)	
+	interval[10]: (0, 0, 0, 0)	
+	interval[11]: (0, 0, 0, 0)	
+	interval[12]: (0, 0, 0, 0)
+	interval[13]: (0, 0, 0, 0)
+	interval[14]: (0, 0, 0, 0)
+	interval[15]: (0, 0, 0, 0)
+	interval[16]: (0, 0, 0, 0)	
+	interval[17]: (0, 0, 0, 0)	
+	interval[18]: (0, 0, 0, 0)
+
+	cycle: 18
+	cycle[0]: 0.0
+	cycle[1]: 26.0
+	cycle[2]: 16.0
+	cycle[3]: 42.0
+	cycle[4]: 0.0
+	cycle[5]: 26.0
+	cycle[6]: 16.0
+	cycle[7]: 42.0
+	cycle[8]: 0.0
+	cycle[9]: 58.0
+	cycle[10]: 0
+	cycle[11]: 0
+	cycle[12]: 0
+	cycle[13]: 0
+	cycle[14]: 0
+	cycle[15]: 0
+	cycle[16]: 0
+	cycle[17]: 0
+	cycle[18]: 0
 }
 
 tr_semaphore_profile : tr_sem_prof.313x313
@@ -2750,6 +4717,264 @@ tr_semaphore_profile : tr_sem_prof.313t111
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.313x11
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1"
+
+	model[0]: "single"
+	model[1]: "triple_cut"
+	model[2]: "double_sh"
+	model[3]: "triple_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "triple_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.313t11
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2-1-2 t 1-1"
+
+	model[0]: "single"
+	model[1]: "triple"
+	model[2]: "double_sh"
+	model[3]: "triple"
+	model[4]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2x2
+{
+
+inherited: tr_sem_prof.common_base
+
+	interval[0]: (14.0, 4.0, 42.0, 0.0)
+	interval[1]: (14.0, 4.0, 42.0, 0.0)
+	interval[2]: (14.0, 4.0, 42.0, 0.0)
+	interval[3]: (14.0, 4.0, 42.0, 0.0)
+	interval[4]: (14.0, 4.0, 42.0, 0.0)
+	interval[5]: (14.0, 4.0, 42.0, 0.0)
+	interval[6]: (14.0, 4.0, 42.0, 0.0)
+	interval[7]: (14.0, 4.0, 42.0, 0.0)
+
+	cycle[0]: 0.0
+	cycle[1]: 20.0
+	cycle[2]: 40.0
+	cycle[3]: 0.0
+	cycle[4]: 20.0
+	cycle[5]: 40.0
+	cycle[6]: 0.0
+	cycle[7]: 20.0
+	
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "double_sh"
+	model[3]: ""
+
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212x11x02
+{
+
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light_virtual
+	type[9]: traffic_light
+
+	interval[0]: (10.0, 4.0, 70.0, 0.0)
+	interval[1]: (36.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (10.0, 4.0, 70.0, 0.0)
+	interval[5]: (10.0, 4.0, 70.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+
+	cycle[0]: 0.0
+	cycle[1]: 0.0
+	cycle[2]: 68.0
+	cycle[3]: 42.0
+	cycle[4]: 16.0
+	cycle[5]: 0.0
+	cycle[6]: 68.0
+	cycle[7]: 42.0
+	cycle[8]: 16.0
+	
+	model[0]: "left_turn"
+	model[1]: "double_cut"
+	model[2]: "double_sh"
+	model[3]: "double_sh"
+	model[4]: "single"
+	model[5]: ""
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212x11x02hng
+{
+
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light_virtual
+	type[9]: traffic_light
+	type[10]: traffic_light
+	type[11]: traffic_light
+	type[12]: traffic_light
+	type[13]: traffic_light
+	type[14]: traffic_light
+
+	interval[0]: (10.0, 4.0, 70.0, 0.0)
+	interval[1]: (36.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (10.0, 4.0, 70.0, 0.0)
+	interval[5]: (10.0, 4.0, 70.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (36.0, 4.0, 44.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (10.0, 4.0, 70.0, 0.0)
+
+	cycle[0]: 0.0
+	cycle[1]: 0.0
+	cycle[2]: 68.0
+	cycle[3]: 42.0
+	cycle[4]: 16.0
+	cycle[5]: 0.0
+	cycle[6]: 68.0
+	cycle[7]: 42.0
+	cycle[8]: 16.0
+	cycle[9]: 0.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 68.0
+	cycle[13]: 42.0
+	cycle[14]: 16.0
+	
+	model[0]: ""
+	model[1]: ""
+	model[2]: ""
+	model[3]: ""
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: "single_left"
+	model[11]: "single_light"
+	model[12]: "single_light"
+	model[13]: "single_light"
+	model[14]: "single_light"
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.212x11x02c
+{
+
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light
+	type[5]: traffic_light_virtual
+	type[6]: traffic_light_virtual
+	type[7]: traffic_light_virtual
+	type[8]: traffic_light_virtual
+	type[9]: traffic_light
+
+	interval[0]: (10.0, 4.0, 70.0, 0.0)
+	interval[1]: (36.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (10.0, 4.0, 70.0, 0.0)
+	interval[5]: (10.0, 4.0, 70.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+
+	cycle[0]: 0.0
+	cycle[1]: 0.0
+	cycle[2]: 68.0
+	cycle[3]: 42.0
+	cycle[4]: 16.0
+	cycle[5]: 0.0
+	cycle[6]: 68.0
+	cycle[7]: 42.0
+	cycle[8]: 16.0
+	
+	model[0]: "left_turn"
+	model[1]: "double_cut"
+	model[2]: "double_sh"
+	model[3]: "column"
+	model[4]: "single"
+	model[5]: ""
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.111x02
+{
+
+	model[0]: "dbl_sh_cut"
+	model[1]: "single"
+	model[2]: "left_short"
+	model[3]: ""
+	model[4]: ""
+
+	type: 12
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light_virtual
+	type[5]: traffic_light_virtual
+
+	interval[0]: (10.0, 0.0, 0.0, 0.0)
+	interval[1]: (15.0, 2.0, 21.0, 0.0)
+
+	cycle[0]: 0.0
+	cycle[1]: 19.0
+	cycle[2]: 0.0
+	cycle[3]: 19.0
+	cycle[4]: 0.0
+	cycle[5]: 19.0
+
+}
+
 
 ################
 ###California###
@@ -2758,14 +4983,42 @@ tr_semaphore_profile : tr_sem_prof.313t111
 tr_semaphore_profile : tr_sem_prof.212t111.california
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2-1-2 t 1-1-1"
 
 	model[0]: "dbl_sh_nl"
 	model[1]: "double_cut"
-	model[2]: "single_nl"
+	model[2]: "dbl_sh_nl"
 	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "double_cut"
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: "left_side"
+	model[17]: ""
+	model[18]: "left_column"
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_dog.california
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "us 2-1-2 t 1-1-1"
+
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_dog_c"
+	model[2]: "single_nl"
+	model[3]: "double_dog"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -2840,6 +5093,34 @@ tr_semaphore_profile : tr_sem_prof.212x111.california
 	model[18]: "left_side"
 }
 
+tr_semaphore_profile : tr_sem_prof.313x11.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "single"
+	model[1]: "triple_cut"
+	model[2]: "double_sh"
+	model[3]: "triple_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "triple_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: "left_side"
+}
+
 tr_semaphore_profile : tr_sem_prof.212x111_2.california
 {
 
@@ -2866,6 +5147,7 @@ tr_semaphore_profile : tr_sem_prof.212x111_2.california
 	model[16]: ""
 	model[17]: ""
 	model[18]: "left_side"
+	model[19]: ""
 }
 
 tr_semaphore_profile : tr_sem_prof.212x212.california
@@ -2879,6 +5161,34 @@ tr_semaphore_profile : tr_sem_prof.212x212.california
 	model[1]: "double_cut"
 	model[2]: "double_cut"
 	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: "left_side"
+	model[17]: "left_side"
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_dog.california
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2"
+
+	model[0]: "double_dog_c"
+	model[1]: "double_dog_c"
+	model[2]: "double_dog_c"
+	model[3]: "double_dog_c"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -2951,10 +5261,64 @@ tr_semaphore_profile : tr_sem_prof.2x1.california
 	model[17]: "column"
 }
 
+tr_semaphore_profile : tr_sem_prof.2x1_column.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1"
+
+	model[0]: "column"
+	model[1]: "double_sh"
+	model[2]: "column"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "column"
+	model[13]: "column"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: "column"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_dog.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1"
+
+	model[0]: "single"
+	model[1]: "double_dog"
+	model[2]: "single"
+	model[3]: "double_dog"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: "column"
+}
+
 tr_semaphore_profile : tr_sem_prof.2x1_oneway.california
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.2x2x2 #base_left
 
 	name: "us 2x1 oneway"
 
@@ -2975,12 +5339,12 @@ tr_semaphore_profile : tr_sem_prof.2x1_oneway.california
 tr_semaphore_profile : tr_sem_prof.2x1_oway_trn.california
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3a
 
 	name: "us 2x1 oneway"
 
 	model[0]: "double_sh"
-	model[1]: "double_sh"
+	model[1]: "single" #double_sh
 	model[2]: "single"
 	model[3]: "dbl_sh_cut"
 	model[4]: ""
@@ -3011,6 +5375,60 @@ tr_semaphore_profile : tr_sem_prof.2x2.california
 	model[1]: "double_sh"
 	model[2]: "double_sh"
 	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side"
+	model[17]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_column.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad 2x2"
+
+	model[0]: "double_sh"
+	model[1]: "double_sh"
+	model[2]: "double_sh"
+	model[3]: "double_sh"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "column"
+	model[13]: "column"
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side"
+	model[17]: "left_side"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_dog.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad 2x2"
+
+	model[0]: "double_sh"
+	model[1]: "double_dog"
+	model[2]: "double_sh"
+	model[3]: "double_dog"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -3344,47 +5762,48 @@ tr_semaphore_profile : tr_sem_prof.212x111_tur4.california
 	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (7.0, 3.0, 50.0, 0.0)
-	interval[19]: (7.0, 3.0, 50.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (10.0, 4.0, 70.0, 0.0)
+	interval[19]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 0.0
 
 	name: "us 2-1-2 x 1-1-1 alt2"
 
@@ -3392,6 +5811,36 @@ tr_semaphore_profile : tr_sem_prof.212x111_tur4.california
 	model[1]: "double_cut"
 	model[2]: "dbl_sh_cut"
 	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: "left_side"
+	model[17]: "left_side"
+	model[18]: "left_turn"
+	model[19]: "left_short"
+	model[20]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_t4_d.california
+{
+
+	inherited: tr_sem_prof.212x111_tur4.california
+
+	name: "us 2-1-2 x 1-1-1 alt2"
+
+	model[0]: "dbl_sh_cut"
+	model[1]: "double_dog_c"
+	model[2]: "dbl_sh_cut"
+	model[3]: "double_dog_c"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -3525,6 +5974,706 @@ tr_semaphore_profile : tr_sem_prof.2t2_turn.california
 	model[16]: ""
 	model[17]: ""
 	model[18]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_v1.california
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "us 2-1-2 t 1-1-1"
+
+	model[0]: "dbl_sh_nl_1"
+	model[1]: "double_cut_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: "double_cut_1"
+	model[13]: "light_cut_1"
+	model[14]: "light_cut_1"
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: ""
+	model[18]: "l_column_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_d_v1.california
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "us 2-1-2 t 1-1-1"
+
+	model[0]: "dbl_sh_nl_1"
+	model[1]: "dbl_dog_c_1"
+	model[2]: "single_nl_1"
+	model[3]: "double_dog_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: "double_cut_1"
+	model[13]: "light_cut_1"
+	model[14]: "light_cut_1"
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: ""
+	model[18]: "l_column_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212xexl_v1.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x exit left"
+
+
+	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "column_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: "l_column_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111_v1.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: "left_side_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111ow_v1.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_turn_1"
+	model[10]: "sin_light_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: "light_side_1"
+	model[15]: ""
+	model[16]: "light_side_1"
+	model[17]: "left_side_1"
+	model[18]: "left_side_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_v1.california
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2"
+
+	model[0]: "double_cut_1"
+	model[1]: "double_cut_1"
+	model[2]: "double_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x212_d_v1.california
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 2-1-2"
+
+	model[0]: "dbl_dog_c_1"
+	model[1]: "dbl_dog_c_1"
+	model[2]: "dbl_dog_c_1"
+	model[3]: "dbl_dog_c_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+	model[18]: ""
+}
+
+
+
+tr_semaphore_profile : tr_sem_prof.2t2_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2"
+
+	model[0]: "double_sh_1"
+	model[1]: "single_nl_1"
+	model[2]: "double_sh_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_1"
+	model[9]: ""
+	model[10]: "column_1"
+	model[11]: ""
+	model[12]: ""
+	model[13]: "left_side_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: "l_column_1"
+	model[17]: "left_side_1"
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1"
+
+	model[0]: "single_1"
+	model[1]: "double_sh_1"
+	model[2]: "single_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: "column_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_dog_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1"
+
+	model[0]: "single_1"
+	model[1]: "double_dog_1"
+	model[2]: "single_1"
+	model[3]: "double_dog_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: "column_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_oway_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2x1 oneway"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "single_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: "l_column_1"
+	model[18]: ""
+	model[19]: "left_short_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x1_ow_t_v1.california
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "us 2x1 oneway"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_short_1"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: "single_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side_1"
+	model[17]: ""
+	model[18]: "l_column_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2column_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad 2x2"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "column_1"
+	model[13]: "column_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad 2x2"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "double_sh_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.111t111_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 111t111"
+
+	model[0]: "double_sh_1"
+	model[1]: "single_nl_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "l_column_1"
+	model[17]: "left_side_1"
+
+}
+
+
+
+tr_semaphore_profile : tr_sem_prof.212x111_t_v1.california
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+	model[18]: "left_side_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111t2_v1.california
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt"
+
+	model[0]: "single_1"
+	model[1]: "single_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+	model[18]: "left_side_1"
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111t4_v1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	interval: 18
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (10.0, 4.0, 70.0, 0.0)
+	interval[19]: (10.0, 4.0, 70.0, 0.0)
+
+	cycle: 18
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+
+	name: "us 2-1-2 x 1-1-1 alt2"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "double_cut_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+	model[18]: "left_turn_1"
+	model[19]: "left_short_1"
+	model[20]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111t4dv1.california
+{
+
+	inherited: tr_sem_prof.212x111_tur4.california
+
+	name: "us 2-1-2 x 1-1-1 alt2"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "dbl_dog_c_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "dbl_dog_c_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+	model[18]: "left_turn_1"
+	model[19]: "left_short_1"
+	model[20]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.2x2_turn_v1.california
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2x2"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "dbl_sh_cut_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_short_1"
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: "left_side_1"
+	model[17]: "left_side_1"
+
+}
+
+tr_semaphore_profile : tr_sem_prof.111t111_t_v1.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 111t111"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "single_nl_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "left_short_1"
+	model[10]: ""
+	model[11]: "l_column_1"
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: "left_side_1"
+	model[18]: ""
+	model[19]: ""
+
+}
+
+tr_semaphore_profile : tr_sem_prof.2t2_turn_v1.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2t2 turn"
+
+	model[0]: "dbl_sh_cut_1"
+	model[1]: "single_nl_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_1"
+	model[9]: "left_short_1"
+	model[10]: "column_1"
+	model[11]: "l_column_1"
+	model[12]: ""
+	model[13]: "left_side_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+
+}
+
+
+
+tr_semaphore_profile : tr_sem_prof.2x1_turn_v1.california
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2x1 turn"
+
+	model[0]: "single_1"
+	model[1]: "dbl_sh_cut_1"
+	model[2]: "single_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: "l_column_1"
+	model[10]: ""
+	model[11]: "left_short_1"
+	model[12]: ""
+	model[13]: ""
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
 
 }
 
@@ -3955,32 +7104,32 @@ tr_semaphore_profile : tr_sem_prof.2x11_exit
 	inherited: tr_sem_prof.common_base
 
 	interval: 12
-	interval[0]: (14.0, 4.0, 32.0, 0.0)
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
 	interval[1]: (25.0, 4.0, 21.0, 0.0)
-	interval[2]: (14.0, 4.0, 32.0, 0.0)
-	interval[3]: (14.0, 4.0, 32.0, 0.0)
-	interval[4]: (14.0, 4.0, 32.0, 0.0)
-	interval[5]: (14.0, 4.0, 32.0, 0.0)
-	interval[6]: (14.0, 4.0, 32.0, 0.0)
-	interval[7]: (14.0, 4.0, 32.0, 0.0)
-	interval[8]: (14.0, 4.0, 32.0, 0.0)
-	interval[9]: (7.0, 3.0, 40.0, 0.0)
-	interval[10]: (14.0, 4.0, 32.0, 0.0)
-	interval[11]: (7.0, 3.0, 40.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (20.0, 4.0, 44.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (20.0, 4.0, 44.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (20.0, 4.0, 44.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
 
 	cycle: 12
 	cycle[0]: 0.0
-	cycle[1]: 31.0
+	cycle[1]: 42.0
 	cycle[2]: 0.0
-	cycle[3]: 20.0
+	cycle[3]: 26.0
 	cycle[4]: 0.0
-	cycle[5]: 20.0
+	cycle[5]: 26.0
 	cycle[6]: 0.0
-	cycle[7]: 20.0
+	cycle[7]: 26.0
 	cycle[8]: 0.0
-	cycle[9]: 31.0
+	cycle[9]: 42.0
 	cycle[10]: 0.0
-	cycle[11]: 31.0
+	cycle[11]: 42.0
 
 
 	model[0]: "single"
@@ -4018,16 +7167,20 @@ tr_semaphore_profile : tr_sem_prof.redding
 	model[14]: "column"
 	model[15]: "single"
 	model[16]: ""
+	model[17]: "single_light"
+	model[18]: "single_light"
+	model[19]: "single_light"
+
 
 
 	type[0]: traffic_light
 	type[1]: traffic_light
 	type[2]: traffic_light
 	type[3]: traffic_light
-	type[4]: traffic_light_virtual
-	type[5]: traffic_light_virtual
-	type[6]: traffic_light_virtual
-	type[7]: traffic_light_virtual
+	type[4]: traffic_light #virtual
+	type[5]: traffic_light #virtual
+	type[6]: traffic_light #virtual
+	type[7]: traffic_light #virtual
 	type[8]: traffic_light
 	type[9]: traffic_light
 	type[10]: traffic_light
@@ -4036,47 +7189,115 @@ tr_semaphore_profile : tr_sem_prof.redding
 	type[13]: traffic_light
 	type[14]: traffic_light
 	type[15]: traffic_light
-	type[16]: traffic_light_virtual
+	type[16]: traffic_light #virtual
+	type[17]: traffic_light
+	type[18]: traffic_light
+	type[19]: traffic_light
+	type[20]: traffic_light #virtual
 
 
-	interval[0]: (25.0, 3.0, 29.0, 0.0)
-	interval[1]: (25.0, 3.0, 29.0, 0.0)
-	interval[2]: (25.0, 3.0, 29.0, 0.0)
-	interval[3]: (25.0, 3.0, 29.0, 0.0)
+	interval[0]: (19.0, 4.0, 40.0, 0.0)
+	interval[1]: (32.0, 4.0, 27.0, 0.0)
+	interval[2]: (19.0, 4.0, 40.0, 0.0)
+	interval[3]: (32.0, 4.0, 27.0, 0.0)
 	interval[4]: (27.0, 3.0, 27.0, 0.0)
-	interval[5]: (14.0, 4.0, 39.0, 0.0)
-	interval[6]: (14.0, 4.0, 39.0, 0.0)
-	interval[7]: (14.0, 4.0, 39.0, 0.0)
-	interval[8]: (14.0, 4.0, 39.0, 0.0)
-	interval[9]: (14.0, 4.0, 39.0, 0.0)
-	interval[10]: (14.0, 4.0, 39.0, 0.0)
-	interval[11]: (14.0, 4.0, 39.0, 0.0)
-	interval[12]: (14.0, 4.0, 39.0, 0.0)
-	interval[13]: (14.0, 4.0, 39.0, 0.0)
-	interval[14]: (14.0, 4.0, 39.0, 0.0)
-	interval[15]: (14.0, 4.0, 39.0, 0.0)
-	interval[16]: (14.0, 4.0, 39.0, 0.0)
+	interval[5]: (15.0, 4.0, 44.0, 0.0)
+	interval[6]: (15.0, 4.0, 44.0, 0.0)
+	interval[7]: (15.0, 4.0, 44.0, 0.0)
+	interval[8]: (15.0, 4.0, 44.0, 0.0)
+	interval[9]: (15.0, 4.0, 44.0, 0.0)
+	interval[10]: (15.0, 4.0, 44.0, 0.0)
+	interval[11]: (15.0, 4.0, 44.0, 0.0)
+	interval[12]: (15.0, 4.0, 44.0, 0.0)
+	interval[13]: (15.0, 4.0, 44.0, 0.0)
+	interval[14]: (15.0, 4.0, 44.0, 0.0)
+	interval[15]: (15.0, 4.0, 44.0, 0.0)
+	interval[16]: (15.0, 4.0, 44.0, 0.0)
 
-	cycle[0]: 28.0
-	cycle[1]: 0.0
-	cycle[2]: 28.0
-	cycle[3]: 0.0
-	cycle[4]: 0.0
-	cycle[5]: 20.0
-	cycle[6]: 0.0
-	cycle[7]: 20.0
+	cycle[0]: 21.0
+	cycle[1]: 59.0
+	cycle[2]: 21.0
+	cycle[3]: 59.0
+	cycle[4]: 21.0
+	cycle[5]: 21.0
+	cycle[6]: 21.0
+	cycle[7]: 21.0
 	cycle[8]: 0.0
-	cycle[9]: 20.0
+	cycle[9]: 21.0
 	cycle[10]: 0.0
-	cycle[11]: 20.0
+	cycle[11]: 21.0
 	cycle[12]: 0.0
-	cycle[13]: 20.0
-	cycle[14]: 40.0
-	cycle[15]: 40.0
-	cycle[16]: 20.0
+	cycle[13]: 21.0
+	cycle[14]: 42.0
+	cycle[15]: 42.0
+	cycle[16]: 21.0
+	cycle[17]: 0.0
+	cycle[18]: 21.0
+	cycle[19]: 42.0
 }
 
 
+tr_semaphore_profile : tr_sem_prof.crossing_d
+{
+
+	name: "road crossing - country"
+
+	interval[]: (50.0, 550.0, 350.0, 20.0)
+
+	cycle[]: 4.0
+
+	type[]: barrier_distance
+	type[]: model_only
+
+	id_map: 12
+	id_map[0]: 0
+	id_map[1]: 0
+	id_map[2]: 0
+	id_map[3]: 0
+	id_map[4]: 0
+	id_map[5]: 0
+	id_map[6]: 0
+	id_map[7]: 0
+	id_map[8]: 0
+	id_map[9]: 0
+	id_map[10]: 0
+	id_map[11]: 0
+
+	model: 12
+	model[0]: ""
+
+	# 1-road x 1-rail
+	model[1]: "crossing_r"
+	model[2]: "crossing_l"
+
+	# 1-road x 2-rail
+	model[3]: "crossing2_r"
+	model[4]: "crossing2_l"
+
+	# 1-road x 2-rail
+	model[5]: "cr1_r_2ln"
+	model[6]: "cr1_l_2ln"
+
+	# 2-road x 2-rail
+	model[7]: "cr2_r_2ln"
+	model[8]: "cr2_l_2ln"
+
+	model[9]: "train_w_l"
+	model[10]: "train_w_r"
+	model[11]: "train_w_s"
+}
+
+tr_semaphore_profile : tr_sem_prof.crossing_d_o
+{
+
+	name: "road crossing - country (offset)"
+
+	inherited: tr_sem_prof.crossing_d
+
+	# Use ID offset to allow combining this profile with others
+	#
+	id_offset: 20
+}
 
 
 
@@ -4123,8 +7344,12 @@ tr_semaphore_profile : tr_sem_prof.1x1_g_v1
 	model[5]: ""
 	model[6]: ""
 	model[7]: ""
-	model[8]: "sin_light_1"
-	model[9]: "sin_light_1"
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "sin_light_1"
+	model[13]: "sin_light_1"
 
 }
 
@@ -4250,6 +7475,20 @@ tr_semaphore_profile : tr_sem_prof.2x2_v1
 
 }
 
+tr_semaphore_profile : tr_sem_prof.2x2_v1_o
+{
+
+	inherited: tr_sem_prof.2x2_v1
+
+	name: "us 2x2_v1 offset"
+	
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+
+}
+
 tr_semaphore_profile : tr_sem_prof.2x2_g_v1
 {
 
@@ -4337,68 +7576,68 @@ tr_semaphore_profile : tr_sem_prof.2x2_tr2_g_v1
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2x2 turn gantry"
-	
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
-	interval[19]: (14.0, 4.0, 42.0, 0.0)
-	interval[20]: (14.0, 4.0, 42.0, 0.0)
-	interval[21]: (14.0, 4.0, 42.0, 0.0)
-	interval[22]: (14.0, 4.0, 42.0, 0.0)
-	interval[23]: (14.0, 4.0, 42.0, 0.0)
-	interval[24]: (14.0, 4.0, 42.0, 0.0)
-	interval[25]: (14.0, 4.0, 42.0, 0.0)
-	interval[26]: (14.0, 4.0, 42.0, 0.0)
-	interval[27]: (14.0, 4.0, 42.0, 0.0)
-	interval[28]: (7.0, 3.0, 50.0, 0.0)
-	interval[29]: (7.0, 3.0, 50.0, 0.0)
+
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)
+	interval[29]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle[0]: 0.0
-	cycle[1]: 30.0
+	cycle[1]: 42.0
 	cycle[2]: 0.0
-	cycle[3]: 30.0
+	cycle[3]: 42.0
 	cycle[4]: 0.0
-	cycle[5]: 30.0
+	cycle[5]: 42.0
 	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
+	cycle[7]: 42.0
+	cycle[8]: 58.0
+	cycle[9]: 16.0
+	cycle[10]: 58.0
+	cycle[11]: 16.0
 	cycle[12]: 0.0
-	cycle[13]: 30.0
+	cycle[13]: 42.0
 	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
-	cycle[19]: 41.0
+	cycle[15]: 42.0
+	cycle[16]: 16.0
+	cycle[17]: 58.0
+	cycle[18]: 58.0
+	cycle[19]: 58.0
 	cycle[20]: 0.0
-	cycle[21]: 30.0
+	cycle[21]: 42.0
 	cycle[22]: 0.0
-	cycle[23]: 30.0
+	cycle[23]: 42.0
 	cycle[24]: 0.0
-	cycle[25]: 30.0
+	cycle[25]: 42.0
 	cycle[26]: 0.0
-	cycle[27]: 30.0
-	cycle[28]: 41.0
-	cycle[29]: 11.0
+	cycle[27]: 42.0
+	cycle[28]: 58.0
+	cycle[29]: 16.0
 
 	model[0]: ""
 	model[1]: ""
@@ -4439,68 +7678,68 @@ tr_semaphore_profile : tr_sem_prof.2x2_tr2_g_v2
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2x2 turn gantry"
-	
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
-	interval[19]: (14.0, 4.0, 42.0, 0.0)
-	interval[20]: (14.0, 4.0, 42.0, 0.0)
-	interval[21]: (14.0, 4.0, 42.0, 0.0)
-	interval[22]: (14.0, 4.0, 42.0, 0.0)
-	interval[23]: (14.0, 4.0, 42.0, 0.0)
-	interval[24]: (14.0, 4.0, 42.0, 0.0)
-	interval[25]: (14.0, 4.0, 42.0, 0.0)
-	interval[26]: (14.0, 4.0, 42.0, 0.0)
-	interval[27]: (14.0, 4.0, 42.0, 0.0)
-	interval[28]: (7.0, 3.0, 50.0, 0.0)
-	interval[29]: (7.0, 3.0, 50.0, 0.0)
+
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)
+	interval[29]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle[0]: 0.0
-	cycle[1]: 30.0
+	cycle[1]: 42.0
 	cycle[2]: 0.0
-	cycle[3]: 30.0
+	cycle[3]: 42.0
 	cycle[4]: 0.0
-	cycle[5]: 30.0
+	cycle[5]: 42.0
 	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
+	cycle[7]: 42.0
+	cycle[8]: 58.0
+	cycle[9]: 16.0
+	cycle[10]: 58.0
+	cycle[11]: 16.0
 	cycle[12]: 0.0
-	cycle[13]: 30.0
+	cycle[13]: 42.0
 	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
-	cycle[19]: 41.0
+	cycle[15]: 42.0
+	cycle[16]: 16.0
+	cycle[17]: 58.0
+	cycle[18]: 58.0
+	cycle[19]: 58.0
 	cycle[20]: 0.0
-	cycle[21]: 30.0
+	cycle[21]: 42.0
 	cycle[22]: 0.0
-	cycle[23]: 30.0
+	cycle[23]: 42.0
 	cycle[24]: 0.0
-	cycle[25]: 30.0
+	cycle[25]: 42.0
 	cycle[26]: 0.0
-	cycle[27]: 30.0
-	cycle[28]: 41.0
-	cycle[29]: 11.0
+	cycle[27]: 42.0
+	cycle[28]: 58.0
+	cycle[29]: 16.0
 
 	model[0]: ""
 	model[1]: ""
@@ -4560,6 +7799,29 @@ tr_semaphore_profile : tr_sem_prof.2t2_v1
 	model[1]: "single_nl_1"
 	model[2]: "double_sh_1"
 	model[3]: "dbl_sh_nl_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_1"
+	model[9]: ""
+	model[10]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212t2ow_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2_v1"
+	
+	interval[0]: (52.0, 0.0, 0.0, 0.0)
+	interval[1]: (20.0, 4.0, 28.0, 0.0)
+
+	model[0]: "double_cut_1"
+	model[1]: "double_sh_1"
+	model[2]: "left_turn_1"
+	model[3]: "double_sh_1"
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -4735,7 +7997,7 @@ tr_semaphore_profile : tr_sem_prof.2x1_turn_v1
 tr_semaphore_profile : tr_sem_prof.2x1_oway_v1
 {
 
-	inherited: tr_sem_prof.common_base
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2x1 oneway_v1"
 
@@ -4749,12 +8011,12 @@ tr_semaphore_profile : tr_sem_prof.2x1_oway_v1
 tr_semaphore_profile : tr_sem_prof.2x1_ow_t_v1
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3a
 
 	name: "us 2x1 oneway_v1"
-
+	
 	model[0]: "double_sh_1"
-	model[1]: "double_sh_1"
+	model[1]: "single_1"
 	model[2]: "single_1"
 	model[3]: "dbl_sh_cut_1"
 	model[4]: ""
@@ -4814,6 +8076,32 @@ tr_semaphore_profile : tr_sem_prof.2t1_v1
 	model[16]: "sin_mir_np_1"
 }
 
+tr_semaphore_profile : tr_sem_prof.2t1column_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t1_v1"
+
+	model[0]: "double_sh_1"
+	model[1]: "double_sh_1"
+	model[2]: "single_nl_1"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "column_1"
+	model[13]: "column_1"
+	model[14]: ""
+	model[15]: ""
+	model[16]: "sin_mir_np_1"
+}
+
 tr_semaphore_profile : tr_sem_prof.2t1_nl_v1
 {
 
@@ -4863,6 +8151,36 @@ tr_semaphore_profile : tr_sem_prof.212x111_v1
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111_v1_o
+{
+
+	inherited: tr_sem_prof.212x111_v1
+
+	name: "us 2-1-2 x 1-1-1_v1 3m offset"
+	
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+	model_offset[11]: (2, 0, 0)
+	model_offset[12]: (0, 0, 0)
+	model_offset[13]: (0, 0, 0)
+	model_offset[14]: (0, 0, 0)
+	model_offset[15]: (0, 0, 0)
+	model_offset[16]: (0, 0, 0)
+	model_offset[17]: (0, 0, 0)
+	model_offset[18]: (0, 0, 0)
+
+	
+}
+
 tr_semaphore_profile : tr_sem_prof.212x111_2_v1
 {
 
@@ -4899,67 +8217,67 @@ tr_semaphore_profile : tr_sem_prof.212x1112g_v1
 	name: "us 2-1-2 x 1-1-1 gantry"
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 32.0, 0.0)
-	interval[1]: (14.0, 4.0, 32.0, 0.0)
-	interval[2]: (14.0, 4.0, 32.0, 0.0)
-	interval[3]: (14.0, 4.0, 32.0, 0.0)
-	interval[4]: (14.0, 4.0, 32.0, 0.0)
-	interval[5]: (14.0, 4.0, 32.0, 0.0)
-	interval[6]: (14.0, 4.0, 32.0, 0.0)
-	interval[7]: (14.0, 4.0, 32.0, 0.0)
-	interval[8]: (14.0, 4.0, 32.0, 0.0)
-	interval[9]: (7.0, 3.0, 40.0, 0.0)
-	interval[10]: (14.0, 4.0, 32.0, 0.0)
-	interval[11]: (7.0, 3.0, 40.0, 0.0)
-	interval[12]: (14.0, 4.0, 32.0, 0.0)
-	interval[13]: (14.0, 4.0, 32.0, 0.0)
-	interval[14]: (14.0, 4.0, 32.0, 0.0)
-	interval[15]: (14.0, 4.0, 32.0, 0.0)
-	interval[16]: (14.0, 4.0, 32.0, 0.0)
-	interval[17]: (14.0, 4.0, 32.0, 0.0)
-	interval[18]: (7.0, 3.0, 40.0, 0.0)
-	interval[19]: (14.0, 4.0, 32.0, 0.0)
-	interval[20]: (14.0, 4.0, 32.0, 0.0)
-	interval[21]: (14.0, 4.0, 32.0, 0.0)
-	interval[22]: (14.0, 4.0, 32.0, 0.0)
-	interval[23]: (14.0, 4.0, 32.0, 0.0)
-	interval[24]: (14.0, 4.0, 32.0, 0.0)
-	interval[25]: (14.0, 4.0, 32.0, 0.0)
-	interval[26]: (14.0, 4.0, 32.0, 0.0)
-	interval[27]: (14.0, 4.0, 32.0, 0.0)
-	interval[28]: (7.0, 3.0, 40.0, 0.0)
-	interval[29]: (7.0, 3.0, 40.0, 0.0)
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (20.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (20.0, 4.0, 44.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (20.0, 4.0, 44.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (20.0, 4.0, 44.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
+	interval[12]: (20.0, 4.0, 44.0, 0.0)
+	interval[13]: (20.0, 4.0, 44.0, 0.0)
+	interval[14]: (20.0, 4.0, 44.0, 0.0)
+	interval[15]: (20.0, 4.0, 44.0, 0.0)
+	interval[16]: (20.0, 4.0, 44.0, 0.0)
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)
+	interval[19]: (20.0, 4.0, 44.0, 0.0)
+	interval[20]: (20.0, 4.0, 44.0, 0.0)
+	interval[21]: (20.0, 4.0, 44.0, 0.0)
+	interval[22]: (20.0, 4.0, 44.0, 0.0)
+	interval[23]: (20.0, 4.0, 44.0, 0.0)
+	interval[24]: (20.0, 4.0, 44.0, 0.0)
+	interval[25]: (20.0, 4.0, 44.0, 0.0)
+	interval[26]: (20.0, 4.0, 44.0, 0.0)
+	interval[27]: (20.0, 4.0, 44.0, 0.0)
+	interval[28]: (10.0, 4.0, 54.0, 0.0)
+	interval[29]: (10.0, 4.0, 54.0, 0.0)
 
 	cycle[0]: 0.0
-	cycle[1]: 20.0
+	cycle[1]: 26.0
 	cycle[2]: 0.0
-	cycle[3]: 20.0
+	cycle[3]: 26.0
 	cycle[4]: 0.0
-	cycle[5]: 20.0
+	cycle[5]: 26.0
 	cycle[6]: 0.0
-	cycle[7]: 20.0
+	cycle[7]: 26.0
 	cycle[8]: 0.0
-	cycle[9]: 31.0
+	cycle[9]: 42.0
 	cycle[10]: 0.0
-	cycle[11]: 31.0
+	cycle[11]: 42.0
 	cycle[12]: 0.0
-	cycle[13]: 20.0
+	cycle[13]: 26.0
 	cycle[14]: 0.0
-	cycle[15]: 20.0
+	cycle[15]: 26.0
 	cycle[16]: 0.0
-	cycle[17]: 20.0
-	cycle[18]: 31.0
-	cycle[19]: 31.0
+	cycle[17]: 26.0
+	cycle[18]: 42.0
+	cycle[19]: 42.0
 	cycle[20]: 0.0
-	cycle[21]: 20.0
+	cycle[21]: 26.0
 	cycle[22]: 0.0
-	cycle[23]: 20.0
+	cycle[23]: 26.0
 	cycle[24]: 0.0
-	cycle[25]: 20.0
+	cycle[25]: 26.0
 	cycle[26]: 0.0
-	cycle[27]: 20.0
-	cycle[28]: 31.0
-	cycle[29]: 31.0
+	cycle[27]: 26.0
+	cycle[28]: 42.0
+	cycle[29]: 42.0
 
 	model[0]: "double_sh_1"
 	model[1]: ""
@@ -5078,53 +8396,82 @@ tr_semaphore_profile : tr_sem_prof.212x111t2_v1
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111t3_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt3_v1"
+
+	model[0]: "double_cut_1"
+	model[1]: "double_cut_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_1"
+	model[9]: "left_short_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
 tr_semaphore_profile : tr_sem_prof.212x111t4_v1
 {
 
 	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (7.0, 3.0, 50.0, 0.0)
-	interval[19]: (7.0, 3.0, 50.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (10.0, 4.0, 70.0, 0.0)
+	interval[19]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 0.0
 
 	name: "us 2-1-2 x 1-1-1 alt2"
 
@@ -5151,17 +8498,73 @@ tr_semaphore_profile : tr_sem_prof.212x111t4_v1
 	model[20]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111t5_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt_v1"
+
+	model[0]: "single_1"
+	model[1]: "single_1"
+	model[2]: "double_cut_1"
+	model[3]: "double_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111t6_v1
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "dbl_sh_cut_1"
+	model[3]: "dbl_sh_cut_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
 tr_semaphore_profile : tr_sem_prof.212t111_v1
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2-1-2 t 1-1-1_v1"
 
 	model[0]: "dbl_sh_nl_1"
 	model[1]: "double_cut_1"
-	model[2]: "single_nl_1"
-	model[3]: "double_sh_1"
+	model[2]: "double_sh_1"			#single_nl_1
+	model[3]: "double_sh_1"		#double_cut_1
 	model[4]: ""
 	model[5]: ""
 	model[6]: ""
@@ -5179,11 +8582,113 @@ tr_semaphore_profile : tr_sem_prof.212t111_v1
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212t111_v1_o
+{
+
+	inherited: tr_sem_prof.212t111_v1
+
+	name: "us 2-1-2 t 1-1-1_v1_offset"
+
+	model_offset[0]: (0, 0, -2)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (0, 0, -2)
+	model_offset[3]: (0, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_v1xo
+{
+
+	inherited: tr_sem_prof.212t111_v1
+
+	name: "us 2-1-2 t 1-1-1_v1 x offset"
+
+	model_offset[0]: (0, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (0, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_v1ld
+{
+
+	inherited: tr_sem_prof.base_left3.lead
+
+	name: "us 2-1-2 t 1-1-1_v1"
+
+	model[0]: "dbl_sh_nl_1"
+	model[1]: "double_cut_1"		
+	model[2]: "double_sh_1"			#single_nl_1
+	model[3]: "triple_1"				#double_cut_1
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: "double_cut_1"
+	model[13]: "light_cut_1"
+	model[14]: "light_cut_1"
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	
+
+}
+
+
+tr_semaphore_profile : tr_sem_prof.212t111_v1lg
+{
+
+	inherited: tr_sem_prof.base_left3.lag
+
+	name: "us 2-1-2 t 1-1-1_v1"
+
+	model[0]: "dbl_sh_nl_1"
+	model[1]: "double_cut_1"		
+	model[2]: "double_sh_1"			#single_nl_1
+	model[3]: "triple_1"		#double_cut_1
+	model[4]: ""
+	model[5]: ""		
+	model[6]: ""
+	model[7]: ""		
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: "double_cut_1"
+	model[13]: "light_cut_1"
+	model[14]: "light_cut_1"
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	
+	
+}
+
 tr_semaphore_profile : tr_sem_prof.212t111ow_v1
 {
 
 	name: "us 2-1-2 t 1-1-1 one way_v1"
-	
+
 	type: 12
 	type[0]: traffic_light
 	type[1]: traffic_light
@@ -5220,7 +8725,7 @@ tr_semaphore_profile : tr_sem_prof.212t111ow_v1
 	cycle[7]: 19.0
 	cycle[8]: 0.0
 	cycle[9]: 19.0
-	
+
 
 	model[0]: "dbl_sh_nl_1"
 	model[1]: "double_cut_1"
@@ -5262,78 +8767,105 @@ tr_semaphore_profile : tr_sem_prof.212x212_v1
 	model[17]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x212_v1_o
+{
+
+	inherited: tr_sem_prof.212x212_v1
+
+	name: "us 2-1-2 x 2-1-2_v1 offset"
+
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (2, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (2, 0, 0)
+	model_offset[11]: (2, 0, 0)
+	model_offset[12]: (0, 0, 0)
+	model_offset[13]: (0, 0, 0)
+	model_offset[14]: (0, 0, 0)
+	model_offset[15]: (0, 0, 0)
+	model_offset[16]: (0, 0, 0)
+	model_offset[17]: (0, 0, 0)
+	model_offset[18]: (0, 0, 0)
+	
+}
+
 tr_semaphore_profile : tr_sem_prof.212x212_g_v1
 {
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 2-1-2 gantry"
-	
-	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
-	interval[19]: (14.0, 4.0, 42.0, 0.0)
-	interval[20]: (14.0, 4.0, 42.0, 0.0)
-	interval[21]: (14.0, 4.0, 42.0, 0.0)
-	interval[22]: (14.0, 4.0, 42.0, 0.0)
-	interval[23]: (14.0, 4.0, 42.0, 0.0)
-	interval[24]: (14.0, 4.0, 42.0, 0.0)
-	interval[25]: (14.0, 4.0, 42.0, 0.0)
-	interval[26]: (14.0, 4.0, 42.0, 0.0)
-	interval[27]: (14.0, 4.0, 42.0, 0.0)
-	interval[28]: (7.0, 3.0, 50.0, 0.0)
-	interval[29]: (7.0, 3.0, 50.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)
+	interval[29]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
-	cycle[19]: 41.0
-	cycle[20]: 0.0
-	cycle[21]: 30.0
-	cycle[22]: 0.0
-	cycle[23]: 30.0
-	cycle[24]: 0.0
-	cycle[25]: 30.0
-	cycle[26]: 0.0
-	cycle[27]: 30.0
-	cycle[28]: 41.0
-	cycle[29]: 11.0
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 42.0
+	cycle[20]: 68.0
+	cycle[21]: 26.0
+	cycle[22]: 68.0
+	cycle[23]: 26.0
+	cycle[24]: 68.0
+	cycle[25]: 26.0
+	cycle[26]: 68.0
+	cycle[27]: 26.0
+	cycle[28]: 0.0
+	cycle[29]: 42.0
 
 	model[0]: "double_cut_1"
 	model[1]: ""
@@ -5403,6 +8935,77 @@ tr_semaphore_profile : tr_sem_prof.212xexl_v1
 
 
 	model[0]: "single_1"
+	model[1]: "double_cut_1"
+	model[2]: "column"
+	model[3]: "double_sh_1"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_1"
+	model[9]: "left_turn_1"
+	model[10]: "left_turn_1"
+	model[11]: "left_turn_1"
+	model[12]: ""
+	model[13]: "light_cut_1"
+	model[14]: ""
+	model[15]: "light_cut_1"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212xexlg_v1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	interval: 19
+	interval[0]: (15.0, 2.0, 21.0, 0.0)
+	interval[1]: (39.0, 0.0, 0.0, 0.0)
+	interval[2]: (15.0, 2.0, 21.0, 0.0)
+	interval[3]: (15.0, 2.0, 21.0, 0.0)
+	interval[4]: (15.0, 2.0, 21.0, 0.0)
+	interval[5]: (15.0, 2.0, 21.0, 0.0)
+	interval[6]: (15.0, 2.0, 21.0, 0.0)
+	interval[7]: (15.0, 2.0, 21.0, 0.0)
+	interval[8]: (15.0, 2.0, 21.0, 0.0)
+	interval[9]: (15.0, 2.0, 21.0, 0.0)
+	interval[10]: (15.0, 2.0, 21.0, 0.0)
+	interval[11]: (15.0, 2.0, 21.0, 0.0)
+	interval[12]: (15.0, 2.0, 21.0, 0.0)
+	interval[13]: (15.0, 2.0, 21.0, 0.0)
+	interval[14]: (15.0, 2.0, 21.0, 0.0)
+	interval[15]: (15.0, 2.0, 21.0, 0.0)
+	interval[16]: (15.0, 2.0, 21.0, 0.0)
+	interval[17]: (15.0, 2.0, 21.0, 0.0)
+	interval[18]: (15.0, 2.0, 21.0, 0.0)
+
+	cycle: 20
+	cycle[0]: 0.0
+	cycle[1]: 19.0
+	cycle[2]: 0.0
+	cycle[3]: 19.0
+	cycle[4]: 0.0
+	cycle[5]: 19.0
+	cycle[6]: 0.0
+	cycle[7]: 19.0
+	cycle[8]: 0.0
+	cycle[9]: 27.0
+	cycle[10]: 0.0
+	cycle[11]: 27.0
+	cycle[12]: 0.0
+	cycle[13]: 19.0
+	cycle[14]: 0.0
+	cycle[15]: 19.0
+	cycle[16]: 0.0
+	cycle[17]: 19.0
+	cycle[18]: 0.0
+
+	name: "us 2-1-2 x exit left always green"
+
+
+	model[0]: "left_turn_1"
 	model[1]: "double_cut_1"
 	model[2]: "column"
 	model[3]: "double_sh_1"
@@ -5506,7 +9109,7 @@ tr_semaphore_profile : tr_sem_prof.212x212o_v1
 tr_semaphore_profile : tr_sem_prof.212_x_ex_v1
 {
 
-	inherited: tr_sem_prof.base_left2
+	inherited: tr_sem_prof.base_left #2
 
 	name: "crossroad 2-1-2_x_exit"
 
@@ -5711,8 +9314,12 @@ tr_semaphore_profile : tr_sem_prof.1x1_g_v2
 	model[5]: ""
 	model[6]: ""
 	model[7]: ""
-	model[8]: "sin_light_2"
-	model[9]: "sin_light_2"
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: "sin_light_2"
+	model[13]: "sin_light_2"
 
 }
 
@@ -5839,6 +9446,20 @@ tr_semaphore_profile : tr_sem_prof.2x2_v2
 
 }
 
+tr_semaphore_profile : tr_sem_prof.2x2_v2_o
+{
+
+	inherited: tr_sem_prof.2x2_v2
+
+	name: "us 2x2_v2 offset"
+	
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+
+}
+
 tr_semaphore_profile : tr_sem_prof.2x2_g_v2
 {
 
@@ -5955,6 +9576,29 @@ tr_semaphore_profile : tr_sem_prof.2t2_v2
 	model[10]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212t2ow_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2t2_v2"
+	
+	interval[0]: (52.0, 0.0, 0.0, 0.0)
+	interval[1]: (20.0, 4.0, 28.0, 0.0)
+
+	model[0]: "double_cut_2"
+	model[1]: "double_sh_2"
+	model[2]: "left_turn_2"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "single_2"
+	model[9]: ""
+	model[10]: ""
+}
+
 tr_semaphore_profile : tr_sem_prof.2t2_turn_v2
 {
 
@@ -6002,7 +9646,7 @@ tr_semaphore_profile : tr_sem_prof.111t111_v2
 tr_semaphore_profile : tr_sem_prof.111t111_t_v2
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 111t111_v2"
 
@@ -6076,7 +9720,7 @@ tr_semaphore_profile : tr_sem_prof.2t2_nl_v2
 tr_semaphore_profile : tr_sem_prof.2x1_v2
 {
 
-	inherited: tr_sem_prof.common_base
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2x1_v2"
 
@@ -6134,12 +9778,12 @@ tr_semaphore_profile : tr_sem_prof.2x1_oway_v2
 tr_semaphore_profile : tr_sem_prof.2x1_ow_t_v2
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3a
 
 	name: "us 2x1 oneway_v2"
 
 	model[0]: "double_sh_2"
-	model[1]: "double_sh_2"
+	model[1]: "single_2"
 	model[2]: "single_2"
 	model[3]: "dbl_sh_cut_2"
 	model[4]: ""
@@ -6248,6 +9892,36 @@ tr_semaphore_profile : tr_sem_prof.212x111_v2
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111_v2_o
+{
+
+	inherited: tr_sem_prof.212x111_v2
+
+	name: "us 2-1-2 x 1-1-1_v2 3m offset"
+	
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+	model_offset[11]: (2, 0, 0)
+	model_offset[12]: (0, 0, 0)
+	model_offset[13]: (0, 0, 0)
+	model_offset[14]: (0, 0, 0)
+	model_offset[15]: (0, 0, 0)
+	model_offset[16]: (0, 0, 0)
+	model_offset[17]: (0, 0, 0)
+	model_offset[18]: (0, 0, 0)
+
+	
+}
+
 tr_semaphore_profile : tr_sem_prof.212x111_2_v2
 {
 
@@ -6284,67 +9958,67 @@ tr_semaphore_profile : tr_sem_prof.212x1112g_v2
 	name: "us 2-1-2 x 1-1-1 gantry"
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 32.0, 0.0)
-	interval[1]: (14.0, 4.0, 32.0, 0.0)
-	interval[2]: (14.0, 4.0, 32.0, 0.0)
-	interval[3]: (14.0, 4.0, 32.0, 0.0)
-	interval[4]: (14.0, 4.0, 32.0, 0.0)
-	interval[5]: (14.0, 4.0, 32.0, 0.0)
-	interval[6]: (14.0, 4.0, 32.0, 0.0)
-	interval[7]: (14.0, 4.0, 32.0, 0.0)
-	interval[8]: (14.0, 4.0, 32.0, 0.0)
-	interval[9]: (7.0, 3.0, 40.0, 0.0)
-	interval[10]: (14.0, 4.0, 32.0, 0.0)
-	interval[11]: (7.0, 3.0, 40.0, 0.0)
-	interval[12]: (14.0, 4.0, 32.0, 0.0)
-	interval[13]: (14.0, 4.0, 32.0, 0.0)
-	interval[14]: (14.0, 4.0, 32.0, 0.0)
-	interval[15]: (14.0, 4.0, 32.0, 0.0)
-	interval[16]: (14.0, 4.0, 32.0, 0.0)
-	interval[17]: (14.0, 4.0, 32.0, 0.0)
-	interval[18]: (7.0, 3.0, 40.0, 0.0)
-	interval[19]: (14.0, 4.0, 32.0, 0.0)
-	interval[20]: (14.0, 4.0, 32.0, 0.0)
-	interval[21]: (14.0, 4.0, 32.0, 0.0)
-	interval[22]: (14.0, 4.0, 32.0, 0.0)
-	interval[23]: (14.0, 4.0, 32.0, 0.0)
-	interval[24]: (14.0, 4.0, 32.0, 0.0)
-	interval[25]: (14.0, 4.0, 32.0, 0.0)
-	interval[26]: (14.0, 4.0, 32.0, 0.0)
-	interval[27]: (14.0, 4.0, 32.0, 0.0)
-	interval[28]: (7.0, 3.0, 40.0, 0.0)
-	interval[29]: (7.0, 3.0, 40.0, 0.0)
+	interval[0]: (20.0, 4.0, 44.0, 0.0)
+	interval[1]: (20.0, 4.0, 44.0, 0.0)
+	interval[2]: (20.0, 4.0, 44.0, 0.0)
+	interval[3]: (20.0, 4.0, 44.0, 0.0)
+	interval[4]: (20.0, 4.0, 44.0, 0.0)
+	interval[5]: (20.0, 4.0, 44.0, 0.0)
+	interval[6]: (20.0, 4.0, 44.0, 0.0)
+	interval[7]: (20.0, 4.0, 44.0, 0.0)
+	interval[8]: (20.0, 4.0, 44.0, 0.0)
+	interval[9]: (10.0, 4.0, 54.0, 0.0)
+	interval[10]: (20.0, 4.0, 44.0, 0.0)
+	interval[11]: (10.0, 4.0, 54.0, 0.0)
+	interval[12]: (20.0, 4.0, 44.0, 0.0)
+	interval[13]: (20.0, 4.0, 44.0, 0.0)
+	interval[14]: (20.0, 4.0, 44.0, 0.0)
+	interval[15]: (20.0, 4.0, 44.0, 0.0)
+	interval[16]: (20.0, 4.0, 44.0, 0.0)
+	interval[17]: (20.0, 4.0, 44.0, 0.0)
+	interval[18]: (10.0, 4.0, 54.0, 0.0)
+	interval[19]: (20.0, 4.0, 44.0, 0.0)
+	interval[20]: (20.0, 4.0, 44.0, 0.0)
+	interval[21]: (20.0, 4.0, 44.0, 0.0)
+	interval[22]: (20.0, 4.0, 44.0, 0.0)
+	interval[23]: (20.0, 4.0, 44.0, 0.0)
+	interval[24]: (20.0, 4.0, 44.0, 0.0)
+	interval[25]: (20.0, 4.0, 44.0, 0.0)
+	interval[26]: (20.0, 4.0, 44.0, 0.0)
+	interval[27]: (20.0, 4.0, 44.0, 0.0)
+	interval[28]: (10.0, 4.0, 54.0, 0.0)
+	interval[29]: (10.0, 4.0, 54.0, 0.0)
 
 	cycle[0]: 0.0
-	cycle[1]: 20.0
+	cycle[1]: 26.0
 	cycle[2]: 0.0
-	cycle[3]: 20.0
+	cycle[3]: 26.0
 	cycle[4]: 0.0
-	cycle[5]: 20.0
+	cycle[5]: 26.0
 	cycle[6]: 0.0
-	cycle[7]: 20.0
+	cycle[7]: 26.0
 	cycle[8]: 0.0
-	cycle[9]: 31.0
+	cycle[9]: 42.0
 	cycle[10]: 0.0
-	cycle[11]: 31.0
+	cycle[11]: 42.0
 	cycle[12]: 0.0
-	cycle[13]: 20.0
+	cycle[13]: 26.0
 	cycle[14]: 0.0
-	cycle[15]: 20.0
+	cycle[15]: 26.0
 	cycle[16]: 0.0
-	cycle[17]: 20.0
-	cycle[18]: 31.0
-	cycle[19]: 31.0
+	cycle[17]: 26.0
+	cycle[18]: 42.0
+	cycle[19]: 42.0
 	cycle[20]: 0.0
-	cycle[21]: 20.0
+	cycle[21]: 26.0
 	cycle[22]: 0.0
-	cycle[23]: 20.0
+	cycle[23]: 26.0
 	cycle[24]: 0.0
-	cycle[25]: 20.0
+	cycle[25]: 26.0
 	cycle[26]: 0.0
-	cycle[27]: 20.0
-	cycle[28]: 31.0
-	cycle[29]: 31.0
+	cycle[27]: 26.0
+	cycle[28]: 42.0
+	cycle[29]: 42.0
 
 	model[0]: "double_sh_2"
 	model[1]: ""
@@ -6463,53 +10137,81 @@ tr_semaphore_profile : tr_sem_prof.212x111t2_v2
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111t3_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt3_v2"
+
+	model[0]: "double_cut_2"
+	model[1]: "double_cut_2"
+	model[2]: "dbl_sh_cut_2"
+	model[3]: "dbl_sh_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_short_2"
+	model[9]: "left_short_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
 tr_semaphore_profile : tr_sem_prof.212x111t4_v2
 {
 
 	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (7.0, 3.0, 50.0, 0.0)
-	interval[19]: (7.0, 3.0, 50.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)	
+	interval[9]: (10.0, 4.0, 70.0, 0.0)	
+	interval[10]: (10.0, 4.0, 70.0, 0.0)	
+	interval[11]: (10.0, 4.0, 70.0, 0.0)	
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)	
+	interval[17]: (10.0, 4.0, 70.0, 0.0)	
+	interval[18]: (10.0, 4.0, 70.0, 0.0)
+	interval[19]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle: 18
 	cycle[0]: 0.0
-	cycle[1]: 30.0
+	cycle[1]: 42.0
 	cycle[2]: 0.0
-	cycle[3]: 30.0
+	cycle[3]: 42.0
 	cycle[4]: 0.0
-	cycle[5]: 30.0
+	cycle[5]: 42.0
 	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
+	cycle[7]: 42.0
+	cycle[8]: 58.0
+	cycle[9]: 16.0
+	cycle[10]: 58.0
+	cycle[11]: 16.0
 	cycle[12]: 0.0
-	cycle[13]: 30.0
+	cycle[13]: 42.0
 	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
+	cycle[15]: 42.0
+	cycle[16]: 16.0
+	cycle[17]: 58.0
+	cycle[18]: 58.0
 
 	name: "us 2-1-2 x 1-1-1 alt2"
 
@@ -6536,10 +10238,66 @@ tr_semaphore_profile : tr_sem_prof.212x111t4_v2
 	model[20]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x111t5_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1 alt_v2"
+
+	model[0]: "single_2"
+	model[1]: "single_2"
+	model[2]: "double_cut_2"
+	model[3]: "double_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+tr_semaphore_profile : tr_sem_prof.212x111t6_v2
+{
+
+	inherited: tr_sem_prof.base_left2
+
+	name: "us 2-1-2 x 1-1-1"
+
+	model[0]: "single_2"
+	model[1]: "double_cut_2"
+	model[2]: "dbl_sh_cut_2"
+	model[3]: "dbl_sh_cut_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
 tr_semaphore_profile : tr_sem_prof.212t111_v2
 {
 
-	inherited: tr_sem_prof.base_left
+	inherited: tr_sem_prof.base_left3
 
 	name: "us 2-1-2 t 1-1-1_v2"
 
@@ -6564,11 +10322,79 @@ tr_semaphore_profile : tr_sem_prof.212t111_v2
 	model[18]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212t111_v2_o
+{
+
+	inherited: tr_sem_prof.212t111_v2
+
+	name: "us 2-1-2 t 1-1-1_v1_offset"
+
+	model_offset[0]: (0, 0, -2)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (0, 0, -2)
+	model_offset[3]: (0, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+}
+
+tr_semaphore_profile : tr_sem_prof.212t111_v2xo
+{
+
+	inherited: tr_sem_prof.212t111_v2
+
+	name: "us 2-1-2 t 1-1-1_v2 x offset"
+
+	model_offset[0]: (0, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (0, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (0, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (0, 0, 0)
+}
+
+#tr_semaphore_profile : tr_sem_prof.212t111_v2_lag
+#{
+#
+#	inherited: tr_sem_prof.base_left3.lag
+#
+#	name: "us 2-1-2 t 1-1-1_v2"
+#
+#	model[0]: "dbl_sh_nl_2"
+#	model[1]: "double_cut_2"
+#	model[2]: "single_nl_2"
+#	model[3]: "double_sh_2"
+#	model[4]: ""
+#	model[5]: ""
+#	model[6]: ""
+#	model[7]: ""
+#	model[8]: "left_turn_2"
+#	model[9]: "left_turn_2"
+#	model[10]: "left_turn_2"
+#	model[11]: "left_turn_2"
+#	model[12]: "double_cut_2"
+#	model[13]: "light_cut_2"
+#	model[14]: "light_cut_2"
+#	model[15]: "light_cut_2"
+#	model[16]: ""
+#	model[17]: ""
+#	model[18]: ""
+#}
+
 tr_semaphore_profile : tr_sem_prof.212t111ow_v2
 {
 
 	name: "us 2-1-2 t 1-1-1 one way_v2"
-	
+
 	type: 12
 	type[0]: traffic_light
 	type[1]: traffic_light
@@ -6583,29 +10409,29 @@ tr_semaphore_profile : tr_sem_prof.212t111ow_v2
 	type[10]: traffic_light
 	type[11]: traffic_light
 
-	interval[0]: (15.0, 2.0, 14.0, 0.0)
-	interval[1]: (31.0, 0.0, 0.0, 0.0)
-	interval[2]: (15.0, 2.0, 14.0, 0.0)
-	interval[3]: (15.0, 2.0, 14.0, 0.0)
-	interval[4]: (15.0, 2.0, 14.0, 0.0)
-	interval[5]: (15.0, 2.0, 14.0, 0.0)
-	interval[6]: (15.0, 2.0, 14.0, 0.0)
-	interval[7]: (15.0, 2.0, 14.0, 0.0)
-	interval[8]: (8.0, 2.0, 21.0, 0.0)
-	interval[9]: (8.0, 2.0, 21.0, 0.0)
+	interval[0]: (20.0, 4.0, 18.0, 0.0)
+	interval[1]: (42.0, 0.0, 0.0, 0.0)
+	interval[2]: (20.0, 4.0, 18.0, 0.0)
+	interval[3]: (20.0, 4.0, 18.0, 0.0)
+	interval[4]: (20.0, 4.0, 18.0, 0.0)
+	interval[5]: (20.0, 4.0, 18.0, 0.0)
+	interval[6]: (20.0, 4.0, 18.0, 0.0)
+	interval[7]: (20.0, 4.0, 18.0, 0.0)
+	interval[8]: (10.0, 4.0, 28.0, 0.0)
+	interval[9]: (10.0, 4.0, 28.0, 0.0)
 
 	cycle: 20
 	cycle[0]: 0.0
-	cycle[1]: 19.0
+	cycle[1]: 16.0
 	cycle[2]: 0.0
-	cycle[3]: 19.0
+	cycle[3]: 16.0
 	cycle[4]: 0.0
-	cycle[5]: 19.0
+	cycle[5]: 16.0
 	cycle[6]: 0.0
-	cycle[7]: 19.0
+	cycle[7]: 16.0
 	cycle[8]: 0.0
-	cycle[9]: 19.0
-	
+	cycle[9]: 16.0
+
 
 	model[0]: "dbl_sh_nl_2"
 	model[1]: "double_cut_2"
@@ -6647,78 +10473,104 @@ tr_semaphore_profile : tr_sem_prof.212x212_v2
 	model[17]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x212_v2_o
+{
+
+	inherited: tr_sem_prof.212x212_v2
+
+	name: "us 2-1-2 x 2-1-2_v2 offset"
+
+	model_offset[0]: (2, 0, 0)
+	model_offset[1]: (2, 0, 0)
+	model_offset[2]: (2, 0, 0)
+	model_offset[3]: (2, 0, 0)
+	model_offset[4]: (0, 0, 0)
+	model_offset[5]: (0, 0, 0)
+	model_offset[6]: (0, 0, 0)
+	model_offset[7]: (0, 0, 0)
+	model_offset[8]: (2, 0, 0)
+	model_offset[9]: (2, 0, 0)
+	model_offset[10]: (2, 0, 0)
+	model_offset[11]: (2, 0, 0)
+	model_offset[12]: (0, 0, 0)
+	model_offset[13]: (0, 0, 0)
+	model_offset[14]: (0, 0, 0)
+	model_offset[15]: (0, 0, 0)
+	model_offset[16]: (0, 0, 0)
+	model_offset[17]: (0, 0, 0)
+	model_offset[18]: (0, 0, 0)
+}
+
 tr_semaphore_profile : tr_sem_prof.212x212_g_v2
 {
 
 	inherited: tr_sem_prof.base_left2
 
 	name: "us 2-1-2 x 2-1-2 gantry"
-	
-	inherited: tr_sem_prof.common_base
 
 	interval: 18
-	interval[0]: (14.0, 4.0, 42.0, 0.0)
-	interval[1]: (14.0, 4.0, 42.0, 0.0)
-	interval[2]: (14.0, 4.0, 42.0, 0.0)
-	interval[3]: (14.0, 4.0, 42.0, 0.0)
-	interval[4]: (14.0, 4.0, 42.0, 0.0)
-	interval[5]: (14.0, 4.0, 42.0, 0.0)
-	interval[6]: (14.0, 4.0, 42.0, 0.0)
-	interval[7]: (14.0, 4.0, 42.0, 0.0)
-	interval[8]: (7.0, 3.0, 50.0, 0.0)
-	interval[9]: (7.0, 3.0, 50.0, 0.0)
-	interval[10]: (7.0, 3.0, 50.0, 0.0)
-	interval[11]: (7.0, 3.0, 50.0, 0.0)
-	interval[12]: (14.0, 4.0, 42.0, 0.0)
-	interval[13]: (14.0, 4.0, 42.0, 0.0)
-	interval[14]: (14.0, 4.0, 42.0, 0.0)
-	interval[15]: (14.0, 4.0, 42.0, 0.0)
-	interval[16]: (7.0, 3.0, 50.0, 0.0)
-	interval[17]: (7.0, 3.0, 50.0, 0.0)
-	interval[18]: (14.0, 4.0, 42.0, 0.0)
-	interval[19]: (14.0, 4.0, 42.0, 0.0)
-	interval[20]: (14.0, 4.0, 42.0, 0.0)
-	interval[21]: (14.0, 4.0, 42.0, 0.0)
-	interval[22]: (14.0, 4.0, 42.0, 0.0)
-	interval[23]: (14.0, 4.0, 42.0, 0.0)
-	interval[24]: (14.0, 4.0, 42.0, 0.0)
-	interval[25]: (14.0, 4.0, 42.0, 0.0)
-	interval[26]: (14.0, 4.0, 42.0, 0.0)
-	interval[27]: (14.0, 4.0, 42.0, 0.0)
-	interval[28]: (7.0, 3.0, 50.0, 0.0)
-	interval[29]: (7.0, 3.0, 50.0, 0.0)
+	interval[0]: (20.0, 4.0, 60.0, 0.0)
+	interval[1]: (20.0, 4.0, 60.0, 0.0)
+	interval[2]: (20.0, 4.0, 60.0, 0.0)
+	interval[3]: (20.0, 4.0, 60.0, 0.0)
+	interval[4]: (20.0, 4.0, 60.0, 0.0)
+	interval[5]: (20.0, 4.0, 60.0, 0.0)
+	interval[6]: (20.0, 4.0, 60.0, 0.0)
+	interval[7]: (20.0, 4.0, 60.0, 0.0)
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
+	interval[12]: (20.0, 4.0, 60.0, 0.0)
+	interval[13]: (20.0, 4.0, 60.0, 0.0)
+	interval[14]: (20.0, 4.0, 60.0, 0.0)
+	interval[15]: (20.0, 4.0, 60.0, 0.0)
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
+	interval[18]: (20.0, 4.0, 60.0, 0.0)
+	interval[19]: (20.0, 4.0, 60.0, 0.0)
+	interval[20]: (20.0, 4.0, 60.0, 0.0)
+	interval[21]: (20.0, 4.0, 60.0, 0.0)
+	interval[22]: (20.0, 4.0, 60.0, 0.0)
+	interval[23]: (20.0, 4.0, 60.0, 0.0)
+	interval[24]: (20.0, 4.0, 60.0, 0.0)
+	interval[25]: (20.0, 4.0, 60.0, 0.0)
+	interval[26]: (20.0, 4.0, 60.0, 0.0)
+	interval[27]: (20.0, 4.0, 60.0, 0.0)
+	interval[28]: (10.0, 4.0, 70.0, 0.0)
+	interval[29]: (10.0, 4.0, 70.0, 0.0)
 
 	cycle: 18
-	cycle[0]: 0.0
-	cycle[1]: 30.0
-	cycle[2]: 0.0
-	cycle[3]: 30.0
-	cycle[4]: 0.0
-	cycle[5]: 30.0
-	cycle[6]: 0.0
-	cycle[7]: 30.0
-	cycle[8]: 41.0
-	cycle[9]: 11.0
-	cycle[10]: 41.0
-	cycle[11]: 11.0
-	cycle[12]: 0.0
-	cycle[13]: 30.0
-	cycle[14]: 0.0
-	cycle[15]: 30.0
-	cycle[16]: 11.0
-	cycle[17]: 41.0
-	cycle[18]: 41.0
-	cycle[19]: 41.0
-	cycle[20]: 0.0
-	cycle[21]: 30.0
-	cycle[22]: 0.0
-	cycle[23]: 30.0
-	cycle[24]: 0.0
-	cycle[25]: 30.0
-	cycle[26]: 0.0
-	cycle[27]: 30.0
-	cycle[28]: 41.0
-	cycle[29]: 11.0
+	cycle[0]: 68.0
+	cycle[1]: 26.0
+	cycle[2]: 68.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 26.0
+	cycle[6]: 68.0
+	cycle[7]: 26.0
+	cycle[8]: 0.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 42.0
+	cycle[12]: 68.0
+	cycle[13]: 26.0
+	cycle[14]: 68.0
+	cycle[15]: 26.0
+	cycle[16]: 42.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+	cycle[19]: 42.0
+	cycle[20]: 68.0
+	cycle[21]: 26.0
+	cycle[22]: 68.0
+	cycle[23]: 26.0
+	cycle[24]: 68.0
+	cycle[25]: 26.0
+	cycle[26]: 68.0
+	cycle[27]: 26.0
+	cycle[28]: 0.0
+	cycle[29]: 42.0
 
 	model[0]: "double_cut_2"
 	model[1]: ""
@@ -6807,6 +10659,79 @@ tr_semaphore_profile : tr_sem_prof.212xexl_v2
 	model[17]: ""
 	model[18]: ""
 }
+
+tr_semaphore_profile : tr_sem_prof.212xexlg_v2
+{
+
+	inherited: tr_sem_prof.common_base
+
+	interval: 19
+	interval[0]: (15.0, 4.0, 23.0, 0.0)
+	interval[1]: (39.0, 0.0, 0.0, 0.0)
+	interval[2]: (15.0, 4.0, 23.0, 0.0)
+	interval[3]: (15.0, 4.0, 23.0, 0.0)
+	interval[4]: (15.0, 4.0, 23.0, 0.0)
+	interval[5]: (15.0, 4.0, 23.0, 0.0)
+	interval[6]: (15.0, 4.0, 23.0, 0.0)
+	interval[7]: (15.0, 4.0, 23.0, 0.0)
+	interval[8]: (15.0, 4.0, 23.0, 0.0)
+	interval[9]: (15.0, 4.0, 23.0, 0.0)
+	interval[10]: (15.0, 4.0, 23.0, 0.0)
+	interval[11]: (15.0, 4.0, 23.0, 0.0)
+	interval[12]: (15.0, 4.0, 23.0, 0.0)
+	interval[13]: (15.0, 4.0, 23.0, 0.0)
+	interval[14]: (15.0, 4.0, 23.0, 0.0)
+	interval[15]: (15.0, 4.0, 23.0, 0.0)
+	interval[16]: (15.0, 4.0, 23.0, 0.0)
+	interval[17]: (15.0, 4.0, 23.0, 0.0)
+	interval[18]: (15.0, 4.0, 23.0, 0.0)
+
+	cycle: 20
+	cycle[0]: 0.0
+	cycle[1]: 21.0
+	cycle[2]: 0.0
+	cycle[3]: 21.0
+	cycle[4]: 0.0
+	cycle[5]: 21.0
+	cycle[6]: 0.0
+	cycle[7]: 21.0
+	cycle[8]: 0.0
+	cycle[9]: 27.0
+	cycle[10]: 0.0
+	cycle[11]: 27.0
+	cycle[12]: 0.0
+	cycle[13]: 21.0
+	cycle[14]: 0.0
+	cycle[15]: 21.0
+	cycle[16]: 0.0
+	cycle[17]: 21.0
+	cycle[18]: 0.0
+
+	name: "us 2-1-2 x exit left always green"
+
+
+	model[0]: "left_turn_2"
+	model[1]: "double_cut_2"
+	model[2]: "column"
+	model[3]: "double_sh_2"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn_2"
+	model[9]: "left_turn_2"
+	model[10]: "left_turn_2"
+	model[11]: "left_turn_2"
+	model[12]: ""
+	model[13]: "light_cut_2"
+	model[14]: ""
+	model[15]: "light_cut_2"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+}
+
+
 
 tr_semaphore_profile : tr_sem_prof.212texl_v2
 {
@@ -7158,5 +11083,321 @@ tr_semaphore_profile : tr_sem_prof.212x212_if
 	model[17]: ""
 }
 
+tr_semaphore_profile : tr_sem_prof.212x22
+{
+
+	inherited: tr_sem_prof.base_left
+
+	name: "us 2-1-2 x 2-2"
+
+	model[0]: "double_sh"
+	model[1]: "double_cut"
+	model[2]: "double_sh"
+	model[3]: "double_cut"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: ""
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-3, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+}
+
+tr_semaphore_profile : tr_sem_prof.212x22_o
+{
+
+	inherited: tr_sem_prof.212x22
+
+	name: "us 2-1-2 x 2-2 offset"
+	
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-1, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (-1, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+	model_offset[]: (0, 0, 0)
+
+}
+
+
+tr_semaphore_profile : tr_sem_prof.212x212x02
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "us 2-1-2 x 2-1-2 x 0-2"
+
+	model[0]: "double_cut"
+	model[1]: "double_cut"
+	model[2]: "double_cut"
+	model[3]: "single_light"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: ""
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	
+	type: 14
+	type[0]: traffic_light
+	type[1]: traffic_light
+	type[2]: traffic_light
+	type[3]: traffic_light
+	type[4]: traffic_light
+	type[5]: traffic_light
+	type[6]: traffic_light
+	type[7]: traffic_light
+	type[8]: traffic_light
+	type[9]: traffic_light
+	type[10]: traffic_light
+	type[11]: traffic_light
+	type[12]: traffic_light
+	type[13]: traffic_light
+	
+	interval: 19
+	interval[0]: (20.0, 4.0, 70.0, 0.0)
+	interval[1]: (36.0, 4.0, 54.0, 0.0)
+	interval[2]: (20.0, 4.0, 70.0, 0.0)
+	interval[3]: (20.0, 4.0, 70.0, 0.0)
+	interval[4]: (20.0, 4.0, 70.0, 0.0)
+	interval[5]: (1.0, 1.0, 10.0, 1.0)
+	interval[6]: (1.0, 1.0, 1.0, 10.0)
+	interval[7]: (10.0, 1.0, 1.0, 10.0)
+	interval[8]: (20.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 80.0, 0.0)
+	interval[10]: (20.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 1.0, 1.0, 10.0)
+	interval[12]: (2.0, 2.0, 2.0, 0.0)
+	interval[13]: (20.0, 4.0, 70.0, 0.0)
+	interval[14]: (2.0, 2.0, 2.0, 0.0)
+	interval[15]: (2.0, 2.0, 2.0, 0.0)
+	interval[16]: (2.0, 2.0, 2.0, 0.0)
+	interval[17]: (2.0, 2.0, 2.0, 0.0)
+	interval[18]: (2.0, 2.0, 2.0, 0.0)
+	
+	cycle[0]: 68.0
+	cycle[1]: 42.0
+	cycle[2]: 0.0
+	cycle[3]: 26.0
+	cycle[4]: 68.0
+	cycle[5]: 42.0
+	cycle[6]: 26.0
+	cycle[7]: 52.0
+	cycle[8]: 68.0
+	cycle[9]: 42.0
+	cycle[10]: 0.0
+	cycle[11]: 0.0
+	cycle[12]: 0.0
+	cycle[13]: 26.0
+	cycle[14]: 26.0
+	cycle[15]: 52.0
+	cycle[16]: 26.0
+	cycle[17]: 0.0
+	cycle[18]: 0.0
+}
+
+tr_semaphore_profile : tr_sem_prof.ca_sf1
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad san francisco tram 2"
+
+	model[0]: "single_light"
+	model[1]: "single_left"
+	model[2]: "single_light"
+
+	
+	interval[0]: (52.0, 0.0, 0.0, 0.0)
+	interval[1]: (20.0, 4.0, 28.0, 0.0)
+
+}
+
+tr_semaphore_profile : tr_sem_prof.ca_sf1.california
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "crossroad san francisco tram 2"
+
+	model[0]: "single_light"
+	model[1]: "single_left"
+	model[2]: "single_light"
+
+	
+	interval[0]: (52.0, 0.0, 0.0, 0.0)
+	interval[1]: (20.0, 4.0, 28.0, 0.0)
+
+}
+
+tr_semaphore_profile : tr_sem_prof.la_lach_r
+{
+
+	name: "LA Lake Charles rail"
+
+	inherited: tr_sem_prof.crossing
+
+	model: 25
+	model[0]: ""
+
+	# 2 lane gate
+	model[1]: "cr1_r_2ln"
+	# 3 lane gate
+	model[2]: "cr1_r_3ln"
+	model[3]: ""
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: ""
+	model[9]: ""
+	model[10]: ""
+	model[11]: ""
+	model[12]: ""
+	model[13]: ""	
+	model[14]: ""
+	model[15]: ""
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	model[20]: ""
+	model[21]: ""
+	model[22]: ""	
+	model[23]: ""
+	model[24]: ""
+	model[25]: ""
+	model[26]: ""
+	model[27]: ""
+	model[28]: ""
+
+	# Use ID offset to allow combining this profile with others
+	#
+	id_offset: 20
+
+}
+
+tr_semaphore_profile : tr_sem_prof.la_lach_tr
+{
+
+	inherited: tr_sem_prof.base_left3
+
+	name: "LA Lake Charles traffic"
+
+	model[0]: "dbl_sh_nl"
+	model[1]: "double_cut"
+	model[2]: "dbl_sh_o_m"		#single_nl
+	model[3]: "double_sh"		#double_cut
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "left_turn"
+	model[9]: "left_turn"
+	model[10]: "left_turn"
+	model[11]: "left_turn"
+	model[12]: "double_cut"
+	model[13]: "light_cut"
+	model[14]: "light_cut"
+	model[15]: "light_cut"
+	model[16]: ""
+	model[17]: ""
+	model[18]: ""
+	model[19]: ""
+	
+}
+
+tr_semaphore_profile : tr_sem_prof.il_x_chcgo_5
+{
+
+	inherited: tr_sem_prof.common_base
+
+	name: "il cross x chicago 5"
+
+	interval: 19
+	interval[0]: (20.0, 4.0, 44.0, 0.0)	
+	interval[1]: (36.0, 4.0, 28.0, 0.0)	
+	interval[2]: (20.0, 4.0, 44.0, 0.0)	
+	interval[3]: (10.0, 4.0, 54.0, 0.0)	
+	interval[4]: (20.0, 4.0, 44.0, 0.0)	
+	interval[5]: (36.0, 4.0, 28.0, 0.0)	
+	interval[6]: (20.0, 4.0, 44.0, 0.0)	
+	interval[7]: (10.0, 4.0, 54.0, 0.0)	
+	interval[8]: (10.0, 4.0, 54.0, 0.0)	
+	interval[9]: (20.0, 4.0, 44.0, 0.0)	
+
+	cycle: 19
+	cycle[0]: 26.0
+	cycle[1]: 0.0
+	cycle[2]: 26.0
+	cycle[3]: 42.0
+	cycle[4]: 26.0
+	cycle[5]: 0.0
+	cycle[6]: 26.0
+	cycle[7]: 42.0
+	cycle[8]: 0.0
+	cycle[9]: 0.0
+
+	model[0]: "column"
+	model[1]: "column"
+	model[2]: "column"
+	model[3]: "column"
+	model[4]: ""
+	model[5]: ""
+	model[6]: ""
+	model[7]: ""
+	model[8]: "column"
+	model[9]: "column"
+	
+}
 
 }
