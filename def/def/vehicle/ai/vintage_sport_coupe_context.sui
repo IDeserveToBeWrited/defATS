@@ -1,0 +1,56 @@
+
+traffic_vehicle : traffic.vintage.sport.coupe.context
+{
+	accessories[]: .vintage.sport.coupe.context.chassis
+	accessories[]: .vintage.sport.coupe.context.fwheel
+	accessories[]: .vintage.sport.coupe.context.rwheel
+
+	max_speed: 100
+	vehicle_mass: 1000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	
+	spawn_ratio: 0.1
+
+	tags[]: context
+	tags[]: vintagesport
+
+
+	color[]: (0.0296, 0.0685, 0.1912)
+	color[]: (0.5776, 0.3185, 0.0168)
+	color[]: (0.4020, 0.0185, 0.0030)
+
+	spawn_condition[]: .traffic.vintage.sport.coupe.context.condition
+	spawn_condition[]: .traffic.vintage.sport.coupe.context.condition2
+
+
+@include "drivers_police.sui"
+}
+
+traffic_spawn_condition: .traffic.vintage.sport.coupe.context.condition
+{
+	type: area
+	str_param[]: "vintagesport"
+}
+traffic_spawn_condition: .traffic.vintage.sport.coupe.context.condition2
+{
+	type: area
+	str_param[]: "company"
+}
+
+vehicle_accessory: .vintage.sport.coupe.context.chassis
+{
+	data_path: "/def/vehicle/ai/vintage_sport_coupe/chassis.sii"
+}
+vehicle_wheel_accessory: .vintage.sport.coupe.context.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_16in.sii"
+}
+vehicle_wheel_accessory: .vintage.sport.coupe.context.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_16in.sii"
+}

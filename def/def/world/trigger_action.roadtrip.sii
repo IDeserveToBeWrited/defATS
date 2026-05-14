@@ -17,7 +17,7 @@ SiiNunit
 trigger_action : trig_action.parking_car
 {
 	# dummy action for future use
-	name: "[RT] Car parking HUD activation (auto reset)"
+	name: "Parking - Small vehicles"
 
 	command: "echo"
 	str_params[]: ""
@@ -26,7 +26,15 @@ trigger_action : trig_action.parking_car
 trigger_action : trig_action.poi
 {
 	# dummy action for future use
-	name: "[RT] Point of interest activation"
+	name: "[OBSOLETE] Point of interest activation"
+
+	command: "echo"
+	str_params[]: ""
+}
+
+trigger_action : trig_action.poi_activate
+{
+	name: "[roadtrip] Point of interest activation"
 
 	command: "echo"
 	str_params[]: ""

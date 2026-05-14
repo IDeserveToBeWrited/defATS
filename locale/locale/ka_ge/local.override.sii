@@ -1,0 +1,2656 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://www.americantrucksimulator.com/support.html"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	key[]: "airdam"
+	val[]: "წინა ქარამრიდი"
+
+	key[]: "b_mudflap"
+	val[]: "ბამპერის საშხეფრები"
+
+	key[]: "bckpanel"
+	val[]: "უკანა კედლის ნივთები"	#+ Interior accessories placed on the back panel of the truck cabin
+
+	key[]: "cabflares"
+	val[]: "კაბინის განათება"
+
+	key[]: "cabdefl"
+	val[]: "კაბინის ამრეკლები"
+
+	key[]: "deflector"
+	val[]: "მწერებისგან დამცავი"
+
+	key[]: "filter_cover"
+	val[]: "ფილტრის ხუფი"
+
+	key[]: "filters"
+	val[]: "ჰაერის ფილტრები"
+
+	key[]: "fl_mirror"
+	val[]: "წინა სარკეები"
+
+	key[]: "flag_f_l"
+	val[]: "წინა დროშები"
+
+	key[]: "flag_f_r"
+	val[]: "წინა დროშები"
+
+	key[]: "flag_r_l"
+	val[]: "უკანა დროშები"
+
+	key[]: "flag_r_r"
+	val[]: "უკანა დროშები"
+
+	key[]: "fr_mirror"
+	val[]: "წინა სარკეები"
+
+	key[]: "grill"
+	val[]: "ცხაურა"
+
+	key[]: "headache_r"
+	val[]: "სალონის დამცავი"
+
+	key[]: "hndrail"
+	val[]: "ხელის მოსაკიდებელი"
+
+	key[]: "horns"
+	val[]: "საყვირები"
+
+	key[]: "hood"
+	val[]: "კაპოტი"
+
+	key[]: "int_trim"
+	val[]: "სალონის მორთულობა"
+
+	key[]: "lampbar"
+	val[]: "ნათურებიანი ძელი"
+
+	key[]: "lghfender"
+	val[]: "ფრთების მცველები"
+
+	key[]: "mudflaps"
+	val[]: "საშხეფრები"
+
+	key[]: "mudguard"
+	val[]: "საშხეფარი ფარი"
+
+	key[]: "ornament"
+	val[]: "მოხატულობა"
+
+	key[]: "rear_cab"
+	val[]: "კაბინის უკანა არე"
+
+	key[]: "rear2_cab"
+	val[]: "კაბინის უკანა არე"
+
+	key[]: "rearstep"
+	val[]: "უკანა საფეხურები"
+
+	key[]: "roof_window"
+	val[]: "ასახდელი ფანჯარა"
+
+	key[]: "s_logo"
+	val[]: "გვერდითი ლოგო"
+
+	key[]: "set_cabinet"
+	val[]: "კარადის სამაგრები" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "sideflares"
+	val[]: "კაბინის პანელები"
+
+	key[]: "slp_hndl"
+	val[]: "კარის სახელურები"
+
+	key[]: "slp_vent"
+	val[]: "საჰაერო"
+
+	key[]: "topflares"
+	val[]: "ძილის სახურავის შუქები"
+
+	key[]: "toyback"
+	val[]: "ძირზე საძილე არეში" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "ძირზე" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "ნივთების შესანახი" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "ნივთები დივანზე" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "ნივთები თაროზე" #+ Interior accessories placed on the table in back of the truck cabin
+
+	key[]: "wing"
+	val[]: "ტურბო ფრთა"
+
+
+#	key[]: "aero"
+#	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero2"
+#	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero_chrom"
+#	val[]: "Aero Chromed"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero_paint"
+#	val[]: "Aero Painted"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aerox"
+#	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "alu_tank"
+#	val[]: "Aluminium Tank"	#+ Aluminium tank accessory (water, fuel, etc)
+#
+#	key[]: "cabinet"
+#	val[]: "Cabinet"	#+ Default cabinet and pin set name
+#
+#	key[]: "chrom_tank"
+#	val[]: "Chromed Tank"	#+ Chromed tank accessory (water, fuel, etc)
+#
+#	key[]: "chrome_pipeguard"
+#	val[]: "Chromed Pipeguard"	#+ Pipeguard accessory name
+#
+#	key[]: "d_shape"
+#	val[]: "D-Shape"	#+ D-shaped tank accessory (water, fuel, etc)
+#
+#	key[]: "dresser"
+#	val[]: "Dresser"	#+ Alternative "cabinet" and pin set name
+#
+#	key[]: "drl"
+#	val[]: "DRL"		#+ Daytime running lights
+#
+#	key[]: "elite"
+#	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "fog_lights"
+#	val[]: "Fog Lights"
+#
+#	key[]: "fridge"
+#	val[]: "Fridge"	#+ Alternative "cabinet" and pin set name
+#
+#	key[]: "hvac"
+#	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "light_adapter"
+#	val[]: "Light Adapter"
+#
+#	key[]: "paint_pipeguard"
+#	val[]: "Painted Pipeguard"	#+ Pipeguard accessory name
+#
+#	key[]: "utility"
+#	val[]: "Utility"	#+ Alternative "cabinet" and pin set name
+
+
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+#	key[]: "amber_sunflower"
+#	val[]: "Amber Sunflower"
+#
+#	key[]: "american_football_ball"
+#	val[]: "American Football Ball"
+#
+#	key[]: "armadillo_plush"
+#	val[]: "Armadillo Plush"
+#
+#	key[]: "ats_bag"
+#	val[]: "ATS Bag"
+#
+#	key[]: "ats_cap"
+#	val[]: "ATS Cap"
+#
+#	key[]: "ats_game_box"
+#	val[]: "ATS Game Box"
+#
+#	key[]: "ats_lunch_box"
+#	val[]: "ATS Lunch Box"
+#
+#	key[]: "ats_mug"
+#	val[]: "ATS Mug"
+#
+#	key[]: "ats_truck_bag"
+#	val[]: "ATS Truck Bag"
+#
+#	key[]: "baseball_ball"
+#	val[]: "Baseball Ball"
+#
+#	key[]: "baseball_bat"
+#	val[]: "Baseball Bat"
+#
+#	key[]: "bee"
+#	val[]: "Bee"
+#
+#	key[]: "black_ats_mug"
+#	val[]: "Black ATS Mug"
+#
+#	key[]: "black_swallowtail"
+#	val[]: "Black Swallowtail"
+#
+#	key[]: "blanket_stars"
+#	val[]: "Stars Blanket"
+#
+#	key[]: "boudreaux_the_bear"
+#	val[]: "Boudreaux the Bear"
+#
+#	key[]: "box_turtle"
+#	val[]: "Box Turtle"
+#
+#	key[]: "burger"
+#	val[]: "Burger"
+#
+#	key[]: "can"
+#	val[]: "Can"
+#
+#	key[]: "can_pack"
+#	val[]: "Can Pack"
+#
+#	key[]: "can_sixpack"
+#	val[]: "Can Sixpack"
+#
+#	key[]: "cans"
+#	val[]: "Cans"
+#
+#	key[]: "car_perfume"
+#	val[]: "Car Perfume"
+#
+#	key[]: "cardbox"
+#	val[]: "Cardboard Box"
+#
+#	key[]: "carrier"
+#	val[]: "Bottle Carrier"
+#
+#	key[]: "chainsaw_toy"
+#	val[]: "Chainsaw Toy"
+#
+#	key[]: "chewing_gums"
+#	val[]: "Chewing Gum"
+#
+#	key[]: "coffee_cup"
+#	val[]: "Coffee Cup"
+#
+#	key[]: "costs_list"
+#	val[]: "Fuel Consumption Log"
+#
+#	key[]: "diamond_apple_blossom"
+#	val[]: "Diamond Apple Blossom"
+#
+#	key[]: "dreamcatcher"
+#	val[]: "Dreamcatcher"
+#
+#	key[]: "emergency_triangles"
+#	val[]: "Warning Triangles"
+#
+#	key[]: "ear_mufflers"
+#	val[]: "Ear Mufflers"
+#
+#	key[]: "expenses_list"
+#	val[]: "Expense Report"
+#
+#	key[]: "first_sign"
+#	val[]: "First Sign"
+#
+#	key[]: "fishing_bag"
+#	val[]: "Fishing Bag"
+#
+#	key[]: "giant_salamander_sticker"
+#	val[]: "Giant Salamander Sticker"
+#
+#	key[]: "goalkeeper_mask"
+#	val[]: "Goalkeeper Mask"
+#
+#	key[]: "golden_south"
+#	val[]: "Golden South"
+#
+#	key[]: "guitar"
+#	val[]: "Guitar"
+#
+#	key[]: "guitar_case"
+#	val[]: "Guitar Case"
+#
+#	key[]: "happy_hog"
+#	val[]: "Happy Hog"
+#
+#	key[]: "hockey_stick"
+#	val[]: "Hockey Stick"
+#
+#	key[]: "holy_field_blanket"
+#	val[]: "Holly Field Blanket"
+#
+#	key[]: "honey_bee"
+#	val[]: "Honey Bee"
+#
+#	key[]: "honey_bee_plush"
+#	val[]: "Honey Bee Plush"
+#
+#	key[]: "idaho_nights_air_freshener"
+#	val[]: "Idaho Nights Air Freshener"
+#
+#	key[]: "idaho_spuds_sticker"
+#	val[]: "Idaho Spuds Sticker"
+#
+#	key[]: "kw_airfreshener"
+#	val[]: "Kenworth Air Freshener"
+#
+#	key[]: "kw_cancooler"
+#	val[]: "Kenworth Can Cooler"
+#
+#	key[]: "kw_contrast_cap"
+#	val[]: "Kenworth Contrast Cap"
+#
+#	key[]: "kw_dufflebag"
+#	val[]: "Kenworth Dufflebag"
+#
+#	key[]: "kw_keychain"
+#	val[]: "Kenworth Keychain"
+#
+#	key[]: "kw_retro_cap"
+#	val[]: "Kenworth Retro Cap"
+#
+#	key[]: "kw_tumbler"
+#	val[]: "Kenworth 20oz Red Tumbler"
+#
+#	key[]: "kw_100y_airfresh"
+#	val[]: "Kenworth 100 year Air Freshener"
+#
+#	key[]: "kw_100y_cap"
+#	val[]: "Kenworth 100 year Cap"
+#
+#	key[]: "kw_100y_tumbler"
+#	val[]: "Kenworth 100 year 20oz Rambler Tumbler"
+#
+#	key[]: "laundry_box"
+#	val[]: "Laundry Basket"
+#
+#	key[]: "lone_star_longhorn"
+#	val[]: "Lone Star Longhorn"
+#
+#	key[]: "mammoth_archie"
+#	val[]: "Mammoth Archie"
+#
+#	key[]: "mountain_goat_plush"
+#	val[]: "Mountain Goat Plush"
+#
+#	key[]: "owl_mug"
+#	val[]: "OWL Mug"
+#
+#	key[]: "peppermints"
+#	val[]: "Peppermints"
+#
+#	key[]: "plush_donut"
+#	val[]: "Plush Donut"
+#
+#	key[]: "plush_lion"
+#	val[]: "Plush Lion"
+#
+#	key[]: "porcelain_wild_rose"
+#	val[]: "Porcelain Wild Rose"
+#
+#	key[]: "power_inverter"
+#	val[]: "Power Inverter"
+#
+#	key[]: "propeller"
+#	val[]: "Propeller"
+#
+#	key[]: "sapphire_meadowlark"
+#	val[]: "Sapphire Meadowlark"
+#
+#	key[]: "shoes"
+#	val[]: "Shoes"
+#
+#	key[]: "spearmints"
+#	val[]: "Spearmints"
+#
+#	key[]: "sport_sunglasses"
+#	val[]: "Sport Sunglasses"
+#
+#	key[]: "stack_of_burgers"
+#	val[]: "Stack of Burgers"
+#
+#	key[]: "striking_mule"
+#	val[]: "Striking Mule"
+#
+#	key[]: "tiger_salamander"
+#	val[]: "Tiger Salamander"
+#
+#	key[]: "tom_hopper"
+#	val[]: "Tom Hopper"
+#
+#	key[]: "usa_cap"
+#	val[]: "USA Cap"
+#
+#	key[]: "usa_flag"
+#	val[]: "USA Flag"
+#
+#	key[]: "usa_flag_cap"
+#	val[]: "USA Flag Cap"
+#
+#	key[]: "ventilator"
+#	val[]: "Fan"
+#
+#	key[]: "walnut_rocking_horse"
+#	val[]: "Walnut Rocking Horse"
+#
+#	key[]: "white_tailed_deer"
+#	val[]: "White-tailed Deer"
+#
+#	key[]: "wooden_bowl_of_chips"
+#	val[]: "Wooden Bowl of Chips"
+#
+#	key[]: "wotr_cap"
+#	val[]: "WoTr Cap"
+#
+#	key[]: "wyo_bison"
+#	val[]: "Jade Bison"
+#
+#	key[]: "wyo_dino"
+#	val[]: "Plush Triceratops"
+#
+#
+#	key[]: "ats_pillow"
+#	val[]: "ATS Pillow"
+#
+#	key[]: "heart_pillow"
+#	val[]: "Heart Pillow"
+#
+#	key[]: "kiss_me_pillow"
+#	val[]: "Kiss Me Pillow"
+#
+#	key[]: "protector_pillow"
+#	val[]: "Protector Pillow"
+#
+#	key[]: "show_me_pillow"
+#	val[]: "Show-Me Pillow"
+#
+#	key[]: "star_pillow"
+#	val[]: "Star Pillow"
+#
+#	key[]: "truck_yeah_pillow"
+#	val[]: "Truck Yeah Pillow"
+#
+#	key[]: "usa_flag_pillow"
+#	val[]: "USA Flag Pillow"
+#
+#	key[]: "usa_shield_pillow"
+#	val[]: "USA Shield Pillow"
+#
+#
+#	key[]: "ats_fragrance_tag"
+#	val[]: "ATS Air Freshener"
+#
+#	key[]: "cactus_fragrance_tag"
+#	val[]: "Cactus Air Freshener"
+#
+#	key[]: "lemon_fragrance_tag"
+#	val[]: "Lemon Air Freshener"
+#
+#	key[]: "maple_leaf_fragrance_tag"
+#	val[]: "Maple Leaf Air Freshener"
+#
+#	key[]: "orange_fragrance_tag"
+#	val[]: "Orange Air Freshener"
+#
+#	key[]: "usa_fragrance_tag"
+#	val[]: "USA Air Freshener"
+#
+#
+#	key[]: "blue_plush_cube"
+#	val[]: "Blue Plush Cube"
+#
+#	key[]: "red_plush_cube"
+#	val[]: "Red Plush Cube"
+#
+#	key[]: "double_plush_cube"
+#	val[]: "Double Plush Cube"
+#
+#
+#	key[]: "alien_head"
+#	val[]: "Alien Head"
+#
+#	key[]: "cowboy_head"
+#	val[]: "Cowboy Head"
+#
+#	key[]: "pirate_head"
+#	val[]: "Pirate Head"
+#
+#
+#	key[]: "eagle_sticker"
+#	val[]: "Eagle Sticker"
+#
+#	key[]: "goodyear_logo_sticker"
+#	val[]: "Goodyear Logo Sticker"
+#
+#	key[]: "goodyear_old_logo_sticker"
+#	val[]: "Goodyear Old Logo Sticker"
+#
+#	key[]: "guitar_sticker"
+#	val[]: "Guitar Sticker"
+#
+#	key[]: "hat_sticker"
+#	val[]: "Hat Sticker"
+#
+#	key[]: "maple_sirup_sticker"
+#	val[]: "Maple Syrup Sticker"
+#
+#	key[]: "steering_wheel_sticker"
+#	val[]: "Steering Wheel Sticker"
+#
+#	key[]: "taco_sticker"
+#	val[]: "Taco Sticker"
+#
+#	key[]: "truck_sticker"
+#	val[]: "Truck Sticker"
+#
+#	key[]: "usa_country_sticker"
+#	val[]: "USA Country Sticker"
+#
+#	key[]: "usa_flag_sticker"
+#	val[]: "USA Flag Sticker"
+
+#@}
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "განათავსეთ სასურველი მუსიკა საქაღალდეში <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>/<color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@> და აქ გამოჩნდება."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "ჩაასწორეთ <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>ფაილი საქაღალდეში <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>/<color value=@@clr_sel@@>Documents <color value=@@clr_txt@@> და მოუსმინეთ საყვარელ რადიოს თამაშში!"
+
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "გთხოვთ, წაიკითხოთ ფაილში <color value=@@clr_sel@@>readme.rtf<color value=@@clr_txt@@>, მისამართზე <color value=@@clr_sel@@>Documents / American Truck Simulator <color value=@@clr_txt@@>, თუ როგორ ხდება საკუთარი მუსიკის ან რადიოსადგურების დამატება."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "მოგესალმებათ American Truck Simulator!"
+#@}
+
+#+ Input wizard
+#@{
+	key[]: "wiz_cfg_steam"
+	val[]: "შეგიძლიათ გადაამოწმოთ და გამართოთ ღილაკების ან ღერძების განლაგება ამ ჯოისტიკისთვის Steam-პროგრამიდან. Steam-ის ჯოისტიკის პარამეტრების შესასწორებლად მოცემული თამაშისთვის იხილეთ Steam > Library > American Truck Simulator > Controller Configuration."
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "თქვენს სატვირთოზე ამგვარი მისაბმელი იკრძალება ამ მხარეში!" #+ Adviser text
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_air_condition"
+	val[]: "კონდიციონერის ერთეულები"
+
+	key[]: "cn_aircraft_engine"
+	val[]: "ავიაძრავა"
+
+	key[]: "cn_aircraft_wing"
+	val[]: "საჰაერო ხომალდის ფრთა"
+
+	key[]: "cn_almond_boxes"
+	val[]: "ნუშის ყუთები"
+
+	key[]: "cn_beet_harvester"
+	val[]: "ჭარხლის ასაღები მანქანა"
+
+	key[]: "cn_big_tires"
+	val[]: "ვეება საბურავები"
+
+	key[]: "cn_boat"
+	val[]: "ნავი"
+
+	key[]: "cn_boom_lift"
+	val[]: "ამწევი ისარი"
+
+	key[]: "cn_borates"
+	val[]: "ბორმჟავის მარილები"
+
+	key[]: "cn_bottles"
+	val[]: "ცარიელი ბოთლები"
+
+	key[]: "cn_bromine"
+	val[]: "ბრომი"
+
+	key[]: "cn_bus_hood"
+	val[]: "ავტობუსის ასახდელი ხუფი  "
+
+	key[]: "cn_butter"
+	val[]: "კარაქი"
+
+	key[]: "cn_buttermilk"
+	val[]: "დო (რძის ნაღების)"
+
+	key[]: "cn_cable"
+	val[]: "სადენები"
+
+	key[]: "cn_cable_reel"
+	val[]: "სადენის დასახვევი"
+
+	key[]: "cn_cans"
+	val[]: "ქილები"
+
+	key[]: "cn_cattle_equipment"
+	val[]: "აღჭურვილობა საქონლისთვის"
+
+	key[]: "cn_circuit_breakers"
+	val[]: "წრედის ამომრთველები"
+
+	key[]: "cn_clamshell_bucket"
+	val[]: "ორნაწილიანი ჩამჩა"
+
+	key[]: "cn_colors"
+	val[]: "საღებავი"
+
+	key[]: "cn_compact_tractor"
+	val[]: "მომცრო ტრაქტორი"
+
+	key[]: "cn_concrete_barrier"
+	val[]: "ბეტონის ზღუდეები"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "ბეტონის მილები"
+
+	key[]: "cn_const_houses"
+	val[]: "მუშების სახლი"
+
+	key[]: "cn_cooling_tower"
+	val[]: "კოშკური საცივარი"
+
+	key[]: "cn_corn_head"
+	val[]: "მარცვლეული ამღები"
+
+	key[]: "cn_cotton_lint"
+	val[]: "ბამბის ბოჭკო"
+
+	key[]: "cn_cotton_seed"
+	val[]: "ბამბის თესლი"
+
+	key[]: "cn_crude_oil"
+	val[]: "ნედლი ნავთობი"
+
+	key[]: "cn_curtains"
+	val[]: "ფარდები"
+
+	key[]: "cn_dryfruit"
+	val[]: "გამხმარე ხილი"
+
+	key[]: "cn_dump_truck"
+	val[]: "თვითმცლელი სატვირთო"
+
+	key[]: "cn_dumpster"
+	val[]: "ნაგვის ურნა"
+
+	key[]: "cn_ethanol"
+	val[]: "ღვინის სპირტი"
+
+	key[]: "cn_fertilizer_tank"
+	val[]: "სასუქის ცისტერნა"
+
+	key[]: "cn_frac_tank"
+	val[]: "ცისტერნა-კონტეინერი"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "გაყინული ხილი"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "გაყინული ბოსტნეული"
+
+	key[]: "cn_fruits"
+	val[]: "ხილი"
+
+	key[]: "cn_fruit_juice"
+	val[]: "ხილის წვენი"
+
+	key[]: "cn_garbage_truck"
+	val[]: "ნაგავმზიდი"
+
+	key[]: "cn_generator_set"
+	val[]: "დიზელ-გენერატორული დანადგარი"
+
+	key[]: "cn_glass"
+	val[]: "მინა"
+
+	key[]: "cn_glass_racks"
+	val[]: "მინის დასაწყობი"
+
+	key[]: "cn_grain"
+	val[]: "მარცვლეული"
+
+	key[]: "cn_harvester"
+	val[]: "კომბაინი"
+
+	key[]: "cn_hay"
+	val[]: "თივა"
+
+	key[]: "cn_heavy_bulldozer"
+	val[]: "მძიმე ბულდოზერი"
+
+	key[]: "cn_house_prefabs"
+	val[]: "ანაკრები სახლი"
+
+	key[]: "cn_industrial_pallets"
+	val[]: "სამშენებლო ქვესადგამები"
+
+	key[]: "cn_insulation_panels"
+	val[]: "გაუმტარობის ფილები"
+
+	key[]: "cn_jet_engine_inlet_cowl"
+	val[]: "ავიაძრავის შიდა ჰაერამღები"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "სატვირთოები Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "სახსრებიანი ამწე"
+
+	key[]: "cn_lift_truck"
+	val[]: "მტვირთავი"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "მტვირთავის შასი"
+
+	key[]: "cn_log_loader"
+	val[]: "მორების სატვირთველი"
+
+	key[]: "cn_lye"
+	val[]: "ლიქიორი"
+
+	key[]: "cn_maize"
+	val[]: "სიმინდი"
+
+	key[]: "cn_mbt"
+	val[]: "გადასატანი ზღუდე"
+
+	key[]: "cn_meat"
+	val[]: "ხორცი"
+
+	key[]: "cn_medium_truck_chassis"
+	val[]: "საშუალო სატვირთოს ძარები"
+
+	key[]: "cn_milling_machine"
+	val[]: "საფქვავი დანადგარი"
+
+	key[]: "cn_mix_tank"
+	val[]: "შემრევი ავზი"
+
+#	key[]: "cn_mobile_air_compressor"
+#	val[]: "Mobile Air Compressor"
+
+	key[]: "cn_mobile_crane"
+	val[]: "ყველა რელიეფის ამწე"
+
+	key[]: "cn_moor_buoy"
+	val[]: "ჩასაბმელი ტივტივა"
+
+	key[]: "cn_mortar"
+	val[]: "ბეტონი"
+
+	key[]: "cn_moving_containers"
+	val[]: "გადასატანი სათავსები"
+
+	key[]: "cn_oil_pipes"
+	val[]: "ნავთობის მილსადენი"
+
+	key[]: "cn_paper"
+	val[]: "ქაღალდი"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "ცხოველის გრანულირებული საკვები"
+
+	key[]: "cn_peterbilt_579"
+	val[]: "სატვირთოები Peterbilt"
+
+	key[]: "cn_plows"
+	val[]: "გუთნები"
+
+	key[]: "cn_power_generator"
+	val[]: "ელექტროგენერატორი"
+
+	key[]: "cn_pumpjack"
+	val[]: "სარწეველა ჩარხი"
+
+	key[]: "cn_rails"
+	val[]: "რელსები"
+
+	key[]: "cn_railcar_mover"
+	val[]: "სარკინიგზო გადამტანი"
+
+	key[]: "cn_rawmilk"
+	val[]: "რძე"
+
+	key[]: "cn_recreational_vehicle"
+	val[]: "საცხოვრებელი ფურგონი"
+
+	key[]: "cn_salt"
+	val[]: "მარილი"
+
+	key[]: "cn_school_bus"
+	val[]: "სკოლის ავტობუსი"
+
+	key[]: "cn_scissor_lift"
+	val[]: "მაკრატელა საწეველა"
+
+	key[]: "cn_scrap_cars"
+	val[]: "ჩამოწერილი მანქანები"
+
+	key[]: "cn_scraper"
+	val[]: "სკრეპერი"
+
+	key[]: "cn_service_truck"
+	val[]: "მომსახურე სატვირთო"
+
+	key[]: "cn_silane"
+	val[]: "სილანი"
+
+	key[]: "cn_soda_ash"
+	val[]: "ნატრიუმის კარბონატი"
+
+	key[]: "cn_soybean"
+	val[]: "სოიოს მარცვალი"
+
+	key[]: "cn_space_container"
+	val[]: "კოსმოსური აღჭურვილობის სათავსი"
+
+	key[]: "cn_speed_motor_boat"
+	val[]: "სწრაფმავალი ძრავიანი ნავი"
+
+	key[]: "cn_stumper"
+	val[]: "კუნძის მოსათხრელი"
+
+	key[]: "cn_sugar_beet"
+	val[]: "შაქრის ჭარხალი"
+
+	key[]: "cn_talc_powder"
+	val[]: "ტალკის ფხვნილი"
+
+	key[]: "cn_tamping_machine"
+	val[]: "ლიანდაგდამგები დანადგარი"
+
+	key[]: "cn_telescopic_handler"
+	val[]: "გასაშლელი სატვირთველი"
+
+	key[]: "cn_trees"
+	val[]: "ხეები"
+
+	key[]: "cn_tub_grinder"
+	val[]: "საღერღი მანქანა"
+
+	key[]: "cn_utility_poles"
+	val[]: "ხის ბოძები"
+
+	key[]: "cn_utility_terrain_vehicle"
+	val[]: "მსუბუქი ყველგანმავალი"
+
+	key[]: "cn_vegetable"
+	val[]: "ბოსტნეული"
+
+	key[]: "cn_waste_paper"
+	val[]: "ქაღალდის ნარჩენები"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "სატვირთო Western Star"
+
+	key[]: "cn_windrower"
+	val[]: "სათიბი-მომსწორებელი"
+
+	key[]: "cn_wire_rod_coil"
+	val[]: "სამავთულე ხვეულა"
+
+	key[]: "cn_work_truck_chassis"
+	val[]: "სამუშაო სატვირთოების ძარები"
+
+	key[]: "cn_yard_truck"
+	val[]: "სასადგურე საწევარი"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	key[]: "cn_aircondition"
+	val[]: "ჰაერის კონდიცირების სისტემა"
+
+	key[]: "cn_haul_truck_hull"
+	val[]: "ვეება თვითმცლელის ძარა"
+
+	key[]: "cn_house"
+	val[]: "მთლიანი სახლის ნაგებობა"
+
+	key[]: "cn_lattice"
+	val[]: "ვეებერთელა ნაგებობა"
+
+	key[]: "cn_metro_wagon"
+	val[]: "მეტროს ვაგონი"
+
+	key[]: "cn_ovs_helicopter"
+	val[]: "გადამზიდი შვეულმფრენი"
+#@}
+
+#+ Names of individual trailer, trailer chassis types or trailer virtual company look names. (for trailer listing screen)
+#@{
+	key[]: "tn_acid"
+	val[]: "მჟავის ცისტერნიანი"
+
+	key[]: "tn_acid_long"
+	val[]: "მჟავის ცისტერნიანი გრძელი"
+
+	key[]: "tn_bottom_dump"
+	val[]: "ფსკერული განტვირთვის"
+
+	key[]: "tn_car"
+	val[]: "მანქანის გადამზიდი"
+
+	key[]: "tn_cement"
+	val[]: "ფხვიერი ცემენტის ცისტერნა"
+
+	key[]: "tn_chemical"
+	val[]: "ქიმიური ნივთიერებების ცისტერნა"
+
+	key[]: "tn_chemical_long"
+	val[]: "ქიმიური ნივთიერებების ცისტერნა გრძელი"
+
+	key[]: "tn_dry_bulk"
+	val[]: "ნაყარი მასალებისთვის"
+
+	key[]: "tn_dump"
+	val[]: "საყირავი მისაბმელი"
+
+	key[]: "tn_flatbed"
+	val[]: "სწორზედაპირიანი"
+
+	key[]: "tn_frac_tank"
+	val[]: "ცისტერნა-კონტეინერი"
+
+	key[]: "tn_fuel"
+	val[]: "საწვავის ავზიანი"
+
+	key[]: "tn_fuel_long"
+	val[]: "საწვავის ავზიანი გრძელი"
+
+	key[]: "tn_gas"
+	val[]: "აირის ავზიანი"
+
+	key[]: "tn_gas_long"
+	val[]: "აირის ავზიანი გრძელი"
+
+	key[]: "tn_home_transporter"
+	val[]: "სახლის გადამზიდი"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "სახსრებიანი ამწე"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "ნავის დაბალჩარჩოიანი"
+
+	key[]: "tn_scs_lowboy"
+	val[]: "დაბალი გასაშლელი"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "გადასატანი ზღუდე-მისაბმელი"
+
+	key[]: "tn_tub_grinder"
+	val[]: "საღერღი მანქანა"
+
+#virtual logistic company trailer looks (for trailer listing screen)
+
+	key[]: "tcn_ate"
+	val[]: "ATE"
+
+	key[]: "tcn_blackwing"
+	val[]: "Blackwing Haul"
+
+	key[]: "tcn_crosslink"
+	val[]: "Crosslink Haul"
+
+	key[]: "tcn_ets"
+	val[]: "ETS"
+
+	key[]: "tcn_hfx"
+	val[]: "HFX"
+
+	key[]: "tcn_ncs"
+	val[]: "NCS"
+
+	key[]: "tcn_omniway"
+	val[]: "Omniway"
+
+	key[]: "tcn_primeway"
+	val[]: "Primeway Logistics"
+
+	key[]: "tcn_reed"
+	val[]: "F.D.Reed"
+
+	key[]: "tcn_sabre"
+	val[]: "Sabre Transport"
+
+#lodeking/prestige trailers (for trailer listing screen)
+
+	key[]: "tn_lodeking_brilliance"
+	val[]: "მბზინვარე Lodeking"
+
+	key[]: "tn_lodeking_distinction"
+	val[]: "მახარისხებელი Lodeking"
+
+	key[]: "tn_lodeking_forceline"
+	val[]: "Lodeking Forceline"
+
+	key[]: "tn_lodeking_prestige"
+	val[]: "Lodeking Prestige"
+
+	key[]: "tn_lodeking_renown"
+	val[]: "სახელგანთქმული Lodeking"
+
+	key[]: "tn_prestige_brilliance"
+	val[]: "მბზინვარე Prestige"
+
+	key[]: "tn_prestige_distinction"
+	val[]: "მახარისხებელი Prestige"
+
+	key[]: "tn_prestige_forceline"
+	val[]: "Lodeking Forceline"
+
+	key[]: "tn_prestige_renown"
+	val[]: "სახელგანთქმული Prestige"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+
+	key[]: "tt_ico_adr_1"
+	val[]: "საფრთხის ხარისხი 1"
+
+	key[]: "tt_ico_adr_2"
+	val[]: "საფრთხის ხარისხი 2"
+
+	key[]: "tt_ico_adr_3"
+	val[]: "საფრთხის ხარისხი 3"
+
+	key[]: "tt_ico_adr_4"
+	val[]: "საფრთხის ხარისხი 4"
+
+	key[]: "tt_ico_adr_5"
+	val[]: "საფრთხის ხარისხი 5"
+
+	key[]: "tt_ico_adr_6"
+	val[]: "საფრთხის ხარისხი 6"
+
+	key[]: "tt_ico_adr_8"
+	val[]: "საფრთხის ხარისხი 8"
+#@}
+
+#+ Names of individual experience tiers of the driver.
+#@{
+
+	key[]: "lvl_name2"
+	val[]: "ნამდვილი მუშა"
+
+	key[]: "lvl_name3"
+	val[]: "მეწარმე"
+
+	key[]: "lvl_name4"
+	val[]: "პროფესიონალი"
+
+	key[]: "lvl_name6"
+	val[]: "ოსტატობის 18 ბორბალი"
+#@}
+
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "ავტოსალონი"
+
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator ვებგვერდზე" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook-ზე American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+
+	key[]: "sys_no_graphics"
+	val[]: "American Truck Simulator ხარვეზებს წააწყდა და ვერ ახერხებს გამოსახულების გამოტანას თქვენს კომპიუტერში (გამოსახვის სათანადო მოწყობილობა ვერ მოიძებნა).\nშემოთავაზებული ნაბიჯები:\n\n1. დარწმუნდით, რომ თქვენი კომპიუტერის ვიდეოგამოსახვის ბარათი აკმაყოფილებს თამაშის უმცირეს მოთხოვნებს.\n2. განაახლეთ თქვენი კომპიუტერი, რომ ეყენოს ბოლოს გამოშვების Microsoft DirectX.\n3. გადმოწერეთ და დააყენეთ გამოსახვის მოწყობილობის უახლესი სამართავი (Driver) პროგრამები მწარმოებლის ვებსაიტიდან – შეიძლება ვადაგასული გეყენოთ.\n4. გამოსახვის დამმუშავებელი OpenGL შეანაცვლეთ DirectX-ით.\n5. საქაღალდეში 'Documents' - 'American Truck Simulator' წაშალეთ გამართვის ფაილი 'config.cfg'. შესაძლოა, დაზიანებულიყო. \n(თამაშის მომდევნო ჩართვისას აღნიშნული ფაილი თავისთავად შეიქმნება სათანადო მნიშვნელობების დართვით)."
+
+	key[]: "sys_no_graphics_simple"
+	val[]: "American Truck Simulator ხარვეზს გადააწყდა და ვერ ახერხებს ზედაპირების გამოსახვას (არ მოიძებნა გრაფიკის შესაბამისი მოწყობილობა)."
+#@}
+
+#+ Activation screen
+#@{
+
+	key[]: "activated"
+	val[]: "თამაში გააქტიურდა.<br>მადლობას გიხდით American Truck Simulator-ის შეძენისთვის."
+
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator-ის ვებგვერდი"
+
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+
+	key[]: "profile_sel_t"
+	val[]: "საქმიანობის არჩევა" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#+ Agriculture checks.
+#@{
+	#+ title of the feature
+	key[]: "agri_check_title"
+	val[]: "სამეურნეო შემოწმება"
+
+	#+ prepare the player for an upcoming check
+	key[]: "agri_check_ahead"
+	val[]: "წინ სამეურნეო შემოწმებაა. მოემზადეთ შესანელებლად."
+
+	#+ stop the vehicle
+	key[]: "agri_check_stop"
+	val[]: "სამეურნეო შემოწმებისთვის, გააჩერეთ და დააჭირეთ:"
+
+	#+ checking/waiting
+	key[]: "agri_check_wait"
+	val[]: "მიმდინარეობს შემოწმება."
+
+	#+ inspection passed
+	key[]: "agri_check_pass"
+	val[]: "შემოწმება დასრულებულია. შეგიძლიათ განაგრძოთ სვლა."
+
+	#+ inspection skipped
+	key[]: "offence_avoid_inspection"
+	val[]: "გაჩერება შესამოწმებლად წარუმატებელია."
+#@}
+
+#+ Tollgate messages.
+#@{
+	key[]: "thanks_using_bailey"
+	val[]: "გმადლობთ, რომ სარგებლობთ ჰ. ი. ბეილის ფასიანი გზატკეცილით."
+
+	key[]: "thanks_using_causeway"
+	val[]: "გმადლობთ, რომ სარგებლობთ პონჩარტრეინის ნაპირით."
+
+	key[]: "thanks_using_cimarron"
+	val[]: "გმადლობთ, რომ სარგებლობთ ციმარონის ფასიანი გზატკეცილით."
+
+	key[]: "thanks_using_indian"
+	val[]: "გმადლობთ, რომ სარგებლობთ ინდიელთა ეროვნული ფასიანი გზატკეცილით."
+
+	key[]: "thanks_using_leeville"
+	val[]: "გმადლობთ, რომ სარგებლობთ ლივილის საგუშაგოთი."
+
+	key[]: "thanks_using_rogers"
+	val[]: "გმადლობთ, რომ სარგებლობთ უილ როჯერსის ფასიანი გზატკეცილით."
+
+	key[]: "thanks_using_turner"
+	val[]: "გმადლობთ, რომ სარგებლობთ ტერნერის ფასიანი გზატკეცილით."
+
+	key[]: "thanks_using_turnpass"
+	val[]: "გმადლობთ, რომ გამოიყენეთ TurnPass."
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "თამაშს მოყოლილი" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "საკვებმზიდი"
+
+	key[]: "curtainside"
+	val[]: "გადასაწევი ფარდა"
+
+	key[]: "chipvan"
+	val[]: "ქვა-ღორღის საზიდი"
+
+	key[]: "dropdeck"
+	val[]: "საფეხურიანი ბაქანი"
+
+	key[]: "dryvan"
+	val[]: "ფურგონი"
+
+	key[]: "hopper"
+	val[]: "ჰოპერი"
+
+	key[]: "lowbed"
+	val[]: "დაბალჩარჩოიანი"
+
+	key[]: "lowboy"
+	val[]: "დაბალჩარჩოიანი"
+
+	key[]: "silo"
+	val[]: "ფხვიერი ტვირთის საზიდი"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "ფხვიერი საკვები მასალა"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "მსუბუქი ფხვიერი მასალა"
+
+	key[]: "body_cargo_types_dropdeck"
+	val[]: "სამშენებლო დანადგარები, მექანიზმები, მასალები და მაღალი ტვირთი"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "მარცვლოვანი და ფხვიერი მასალა"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "ერთიანი"
+
+	key[]: "double"
+	val[]: "ორმაგი"
+
+	key[]: "bdouble"
+	val[]: "დაერთ. ორმაგი"
+
+	key[]: "rmdouble"
+	val[]: "სამთო ორმაგი"
+
+	key[]: "tpdouble"
+	val[]: "ორმაგი სრული"
+
+	key[]: "triple"
+	val[]: "სამმაგი"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "ერთიანი"
+
+	key[]: "chain_double"
+	val[]: "ორმაგი"
+
+	key[]: "chain_staa_double"
+	val[]: "ორმაგი STAA"
+
+	key[]: "chain_b_double"
+	val[]: "დაერთ. ორმაგი"
+
+	key[]: "chain_rm_double"
+	val[]: "Rocky Mountain ორმაგი"
+
+	key[]: "chain_tp_double"
+	val[]: "სრული სიგრძის ორმაგი"
+
+	key[]: "chain_triple"
+	val[]: "სამმაგი"
+#@}
+
+#+ Trailer configurations
+
+#@{
+
+	key[]: "tr_articulated_3axle"
+	val[]: "შესახსრებული, 3 ღერძი"
+
+	key[]: "tr_articulated_4axle"
+	val[]: "შესახსრებული, 4 ღერძი"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "შესახსრებული, 5 ღერძი"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "შესახსრებული, 6 ღერძი"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "შესახსრებული, 7 ღერძი"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "შესახსრებული, 8 ღერძი"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "შესახსრებული, 9 ღერძი"
+
+	key[]: "tr_b_double"
+	val[]: "დაერთ. ორმაგი"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "დაერთ. ორმაგი, 5 ღერძი"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "დაერთ. ორმაგი, 6 ღერძი"
+
+	key[]: "tr_double_staa"
+	val[]: "ორმაგი STAA"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "ორმაგი მოკლე STAA"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "ორმაგი მოკლე STAA, 4 ღერძი"
+
+	key[]: "tr_jeep"
+	val[]: "წინ ურიკა"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "წინა ურიკა, 3 ღერძი"
+
+	key[]: "tr_rm_double"
+	val[]: "Rocky Mountain ორმაგი"
+
+	key[]: "tr_rm_double_5axle"
+	val[]: "Rocky Mountain ორმაგი, 5 ღერძი"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Rocky Mountain ორმაგი, მოკლე"
+
+	key[]: "tr_single_22"
+	val[]: "22 ფუტი"
+
+	key[]: "tr_single_28"
+	val[]: "28 ფუტი"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 ფუტი, 2 ღერძი"
+
+	key[]: "tr_single_30"
+	val[]: "30 ფუტის"
+
+	key[]: "tr_single_32"
+	val[]: "32 ფუტი"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 ფუტი, 2 ღერძი"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 ფუტი, გასაშლელი"
+
+	key[]: "tr_single_36"
+	val[]: "36 ფუტის"
+
+	key[]: "tr_single_36_3axle"
+	val[]: "36 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_40"
+	val[]: "40 ფუტი"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 ფუტი, გასაშლელი"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 ფუტი, უკანა"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 ფუტი, დაშორებული"
+
+	key[]: "tr_single_42"
+	val[]: "42 ფუტი"
+
+	key[]: "tr_single_42_3axle"
+	val[]: "42 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_43_rear"
+	val[]: "43 ფუტი, უკანა"
+
+	key[]: "tr_single_45"
+	val[]: "45 ფუტი"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 ფუტი, 3 ღერძი, ერთიანი"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 ფუტი, 3 ღერძი, მართვადი"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 ფუტი, წინა"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 ფუტი, უკანა"
+
+	key[]: "tr_single_45_slide"
+	val[]: "45 ფუტი, გასაწევი ორმაგი ხიდი"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 ფუტი, დაშორებული"
+
+	key[]: "tr_single_48"
+	val[]: "48 ფუტის"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_48_4axle"
+	val[]: "48 ფუტი, 4 ღერძი"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 ფუტი, წინა"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 ფუტი, უკანა"
+
+	key[]: "tr_single_48_slide"
+	val[]: "48 ფუტი, გასაწევი ორმაგი ხიდი"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 ფუტი, დაშორებული"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 ფუტი, 3 ღერძი, ერთიანი"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 ფუტი, 3 ღერძი, მართვადი"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 ფუტი, დაშორებული"
+
+	key[]: "tr_single_53"
+	val[]: "53 ფუტის"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 ფუტი, 3 ღერძი"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 ფუტი, 4 ღერძი"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 ფუტი, 4 ღერძი, დაშორებული"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 ფუტი, 4 ღერძი, მართვადი"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 ფუტი, წინა"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 ფუტი, უკანა"
+
+	key[]: "tr_single_53_slide"
+	val[]: "53 ფუტი, გასაწევი ორმაგი ხიდი"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 ფუტი, დაშორებული"
+
+	key[]: "tr_spreader_1axle"
+	val[]: "უკანა ურიკა, 1 ღერძი"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "უკანა ურიკა, 2 ღერძი"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "უკანა ურიკა, 3 ღერძი"
+
+	key[]: "tr_tp_double"
+	val[]: "სრული სიგრძის ორმაგი"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "სრული სიგრძის ორმაგი, 6 ღერძი"
+
+	key[]: "tr_triple"
+	val[]: "სამმაგი"
+
+	key[]: "tr_triple_pup"
+	val[]: "სამმაგი მოკლე მისაბმელი"
+
+	key[]: "tr_conv_dolly"
+	val[]: "შუალედური ურიკა"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "შუალედური ურიკა, 2 ღერძი"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "შუალედური ურიკა"		#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly_2"
+	val[]: "შუალედური ურიკა, 2 ღერძი"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "ფსკერული განტვირთვის"
+
+	key[]: "bs_bulk_feed"
+	val[]: "საკვებმზიდი"
+
+	key[]: "bs_bottomdumper_horizontal"
+	val[]: "თარაზული, ფსკერული განტვირთვის"
+
+	key[]: "bs_bottomdumper_vertical"
+	val[]: "შვეული, ფსკერული განტვირთვის"
+
+	key[]: "bs_chipvan"
+	val[]: "ქვა-ღორღის საზიდი"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "ქვა-ღორღის საზიდი, მოძრავი იატაკით"
+
+	key[]: "bs_container"
+	val[]: "კონტეინერმზიდი"
+
+	key[]: "bs_curtain"
+	val[]: "გადასაწევი ფარდა"
+
+	key[]: "bs_deep_drop"
+	val[]: "ცისტერნა დაწეული ძირით"
+
+	key[]: "bs_dropdeck"
+	val[]: "საფეხურიანი ბაქანი"
+
+	key[]: "bs_dropdeck_alu"
+	val[]: "საფეხურიანი ალუმინის ბაქანი"
+
+	key[]: "bs_dropdeck_fir"
+	val[]: "საფეხურიანი ფიჭვის ბაქანი"
+
+	key[]: "bs_dropdeck_hardwood"
+	val[]: "საფეხურიანი ხის ბაქანი"
+
+	key[]: "bs_drybulk"
+	val[]: "ფხვიერი ტვირთის საზიდი"
+
+	key[]: "bs_dryvan"
+	val[]: "ფურგონი"
+
+	key[]: "bs_dshape"
+	val[]: "მომრგვალო ფორმის ცისტერნა"
+
+	key[]: "bs_end_dumper"
+	val[]: "უკანა განტვირთვის"
+
+	key[]: "bs_live_floor_dumper"
+	val[]: "მოძრავი იატაკით განტვირთვის"
+
+	key[]: "bs_side_dumper"
+	val[]: "გვერდზე საყირაო"
+
+	key[]: "bs_flatbed"
+	val[]: "ბაქანი"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "ალუმინის ბაქანი"
+
+	key[]: "bs_flatbed_fir"
+	val[]: "ფიჭვის ბაქანი"
+
+	key[]: "bs_flatbed_hardwood"
+	val[]: "ხის ბაქანი"
+
+	key[]: "bs_food_tank"
+	val[]: "საკვების ცისტერნა"
+
+	key[]: "bs_fuel_tank"
+	val[]: "საწვავის ავზი"
+
+	key[]: "bs_fuel_tank_4comp"
+	val[]: "საწვავის ავზი, 4-განყოფილებიანი"
+
+	key[]: "bs_grain_hopper"
+	val[]: "მარცვალსაზიდი"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "მარცვალსაზიდი ღვედით"
+
+	key[]: "bs_insulated"
+	val[]: "თბოგაუმტარი"
+
+	key[]: "bs_livestock"
+	val[]: "პირუტყვის საზიდი"
+
+	key[]: "bs_livestock_belly"
+	val[]: "პირუტყვის საზიდი დაბალძირიანი"
+
+	key[]: "bs_log_4"
+	val[]: "ხეტყის საზიდი 4 საყრდენით"
+
+	key[]: "bs_log_6"
+	val[]: "ხეტყის საზიდი 6 საყრდენით"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "დაბალჩარჩოიანი ხის"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "დაბალჩარჩოიანი, მთლიანი ხის"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "დაბალჩარჩოიანი ხის, ალუმინით"
+
+	key[]: "bs_reefer"
+	val[]: "სამაცივრე"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+#	key[]: "turbo_cooler"
+#	val[]: "Turbo Cooler"
+#
+#	key[]: "chrome_cooler"
+#	val[]: "Chromed Cooler"
+#
+#	key[]: "paint_wall"
+#	val[]: "Painted Wall"
+#
+#	key[]: "chrome_wall"
+#	val[]: "Chromed Wall"
+#
+#	key[]: "alu_wall"
+#	val[]: "Aluminium Wall"
+#
+#	key[]: "steel_wall"
+#	val[]: "Steel Wall"
+#
+#	key[]: "light"
+#	val[]: "Light"
+#
+#	key[]: "log_cage"
+#	val[]: "Log Cage"
+#
+#	key[]: "log_wall"
+#	val[]: "Log Wall"
+#
+#	key[]: "wind_deflector"
+#	val[]: "Wind Deflector"
+#
+#	key[]: "aero_sideskirt"
+#	val[]: "Aero Sideskirt"
+#
+#	key[]: "black_sideskirt"
+#	val[]: "Black Sideskirt"
+#
+#	key[]: "paint_sideskirt"
+#	val[]: "Painted Sideskirt"
+#
+#	key[]: "support_frame"
+#	val[]: "Support Frame"
+#
+#	key[]: "chrome_door"
+#	val[]: "Chromed Door"
+#
+#	key[]: "standard_door"
+#	val[]: "Standard Door"
+#
+#	key[]: "standard_door_aero"
+#	val[]: "Standard Door, Wind Deflector"
+#
+#	key[]: "wooden_deck"
+#	val[]: "Wooden Deck"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "არიზონა"
+
+	key[]: "arkansas"
+	val[]: "არკანზასი"
+
+	key[]: "california"
+	val[]: "კალიფორნია"
+
+	key[]: "colorado"
+	val[]: "კოლორადო"
+
+	key[]: "idaho"
+	val[]: "აიდაჰო"
+
+	key[]: "illinois"
+	val[]: "ილინოისი"
+
+	key[]: "iowa"
+	val[]: "აიოვა"
+
+	key[]: "kansas"
+	val[]: "კანზასი"
+
+	key[]: "louisiana"
+	val[]: "ლუიზიანა"
+
+	key[]: "missouri"
+	val[]: "მისური"
+
+	key[]: "montana"
+	val[]: "მონტანა"
+
+	key[]: "nebraska"
+	val[]: "ნებრასკა"
+
+	key[]: "nevada"
+	val[]: "ნევადა"
+
+	key[]: "new_mexico"
+	val[]: "ნიუ მეხიკო"
+
+	key[]: "oklahoma"
+	val[]: "ოკლაჰომა"
+
+	key[]: "oregon"
+	val[]: "ორეგონი"
+
+	key[]: "texas"
+	val[]: "ტეხასი"
+
+	key[]: "utah"
+	val[]: "იუტა"
+
+	key[]: "washington"
+	val[]: "ვაშინგტონი"
+
+	key[]: "wyoming"
+	val[]: "უაიომინგი"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "აბერდინი"
+
+	key[]: "abilene"
+	val[]: "აბილინი"
+
+	key[]: "alamogordo"
+	val[]: "ალამოგორდო"
+
+	key[]: "alamosa"
+	val[]: "ალამოსა"
+
+	key[]: "albuquerque"
+	val[]: "ალბუკერკე"
+
+	key[]: "alexandria"
+	val[]: "ალექსანდრია"
+
+	key[]: "alliance"
+	val[]: "ალაიანსი"
+
+	key[]: "amarillo"
+	val[]: " ამარილო"
+
+	key[]: "ardmore"
+	val[]: "არდმორი"
+
+	key[]: "artesia"
+	val[]: "არტეზია"
+
+	key[]: "astoria"
+	val[]: "ასტორია"
+
+	key[]: "austin"
+	val[]: "ოსტინი"
+
+	key[]: "bakersfield"
+	val[]: "ბეიკერსფილდი"
+
+	key[]: "barstow"
+	val[]: "ბარსტოუ"
+
+	key[]: "bartlesville"
+	val[]: "ბარტლსვილი"
+
+	key[]: "baton_rouge"
+	val[]: "ბატონ-რუჟი"
+
+	key[]: "beaumont"
+	val[]: "ბომონტი"
+
+	key[]: "bellingham"
+	val[]: "ბელინგემი"
+
+	key[]: "bend"
+	val[]: "ბენდი"
+
+	key[]: "billings"
+	val[]: "ბილინგსი"
+
+	key[]: "bloomington"
+	val[]: "ბლუმინგტონი"
+
+	key[]: "blythe"
+	val[]: "ბლაითი"
+
+	key[]: "boise"
+	val[]: "ბოისე"
+
+	key[]: "bozeman"
+	val[]: "ბოზემანი"
+
+	key[]: "brownsville"
+	val[]: "ბრაუნსვილი"
+
+	key[]: "burlington"
+	val[]: "ბარლინგტონი"
+
+	key[]: "burns"
+	val[]: "ბერნსი"
+
+	key[]: "butte"
+	val[]: "ბიუტი"
+
+	key[]: "cameron"
+	val[]: "კამერონი"
+
+	key[]: "camp_verde"
+	val[]: "კამპ-ვერდე"
+
+	key[]: "cape_girardeau"
+	val[]: "კეიპ-ჯირარდო"
+
+	key[]: "carlsbad"
+	val[]: "კარლსბადი"
+
+	key[]: "carson_city"
+	val[]: "კარსონ-სიტი"
+
+	key[]: "casper"
+	val[]: "კასპერი"
+
+	key[]: "cedar_city"
+	val[]: "სიდარ-სიტი"
+
+	key[]: "cedar_rapids"
+	val[]: "სიდარ-რაპიდსი"
+
+	key[]: "chadron"
+	val[]: "შადრონი"
+
+	key[]: "champaign"
+	val[]: "შამპანი"
+
+	key[]: "cheyenne"
+	val[]: "შაიენი"
+
+	key[]: "chicago"
+	val[]: "ჩიკაგო"
+
+	key[]: "clifton"
+	val[]: "კლიფტონი"
+
+	key[]: "clinton"
+	val[]: "კლინტონი"
+
+	key[]: "clovis"
+	val[]: "კლოვისი"
+
+	key[]: "cody"
+	val[]: "კოდი"
+
+	key[]: "coeur_dalene"
+	val[]: "კორ-დ’ალენი"
+
+	key[]: "colby"
+	val[]: "კოლბი"
+
+	key[]: "colorado_springs"
+	val[]: "კოლორადო-სპრინგზი"
+
+	key[]: "columbia"
+	val[]: "კოლუმბია"
+
+	key[]: "columbus"
+	val[]: "კოლუმბუსი"
+
+	key[]: "colville"
+	val[]: "კოლვილი"
+
+	key[]: "coos_bay"
+	val[]: "კუს-ბეი"
+
+	key[]: "corpus_christi"
+	val[]: "კორპუს-კრისტი"
+
+	key[]: "cote_blanche_island"
+	val[]: "კუნძული კოტ-ბლანშე"
+
+	key[]: "council_bluffs"
+	val[]: "კაუნსილ-ბლაფსი"
+
+	key[]: "dalhart"
+	val[]: "დალჰარტი"
+
+	key[]: "dallas"
+	val[]: "დალასი"
+
+	key[]: "davenport"
+	val[]: "დევენპორტი"
+
+	key[]: "del_rio"
+	val[]: "დელ-რიო"
+
+	key[]: "denver"
+	val[]: "დენვერი"
+
+	key[]: "deridder"
+	val[]: "დე-რიდერი"
+
+	key[]: "des_moines"
+	val[]: "დეს-მოინსი"
+
+	key[]: "dodge_city"
+	val[]: "დოჯ-სიტი"
+
+	key[]: "dubuque"
+	val[]: "დუბუკე"
+
+	key[]: "durango"
+	val[]: "დურანგო"
+
+	key[]: "durant"
+	val[]: "დურანტი"
+
+	key[]: "east_st_louis"
+	val[]: "აღმ. სენტ-ლუისი"
+
+	key[]: "ehrenberg"
+	val[]: "ერენბერგი"
+
+	key[]: "effingham"
+	val[]: "ეფინგჰემი"
+
+	key[]: "el_centro"
+	val[]: "ელ-ცენტრო"
+
+	key[]: "el_dorado"
+	val[]: "ელ-დორადო"
+
+	key[]: "el_paso"
+	val[]: "ელ-პასო"
+
+	key[]: "elko"
+	val[]: "ელკო"
+
+	key[]: "ely"
+	val[]: "ელი"
+
+	key[]: "emporia"
+	val[]: "ემპორია"
+
+	key[]: "enid"
+	val[]: "ინიდი"
+
+	key[]: "eugene"
+	val[]: "იუჯინი"
+
+	key[]: "eureka"
+	val[]: "იურიკა"
+
+	key[]: "evanston"
+	val[]: "ევანსტონი"
+
+	key[]: "everett"
+	val[]: "ევერეტი"
+
+	key[]: "farmington"
+	val[]: "ფარმინგტონი"
+
+	key[]: "fayetteville"
+	val[]: "ფაიეტვილი"
+
+	key[]: "flagstaff"
+	val[]: "ფლაგსტაფი"
+
+	key[]: "fort_collins"
+	val[]: "ფორტ-კოლინსი"
+
+	key[]: "fort_dodge"
+	val[]: "ფორტ-დოჯი"
+
+	key[]: "fort_smith"
+	val[]: "ფორტ-სმითი"
+
+	key[]: "fort_stockton"
+	val[]: "ფორტ-სტოკტონი"
+
+	key[]: "fort_worth"
+	val[]: "ფორტ-უორტი"
+
+	key[]: "fourchon_island"
+	val[]: "კუნძული ფურშონი"
+
+	key[]: "fresno"
+	val[]: "ფრესნო"
+
+	key[]: "fusion_travel_plaza"
+	val[]: "ფუჟენ-ტრეველ-პლაზა"
+
+	key[]: "gallup"
+	val[]: "გალაპი"
+
+	key[]: "galveston"
+	val[]: "გალვესტონი"
+
+	key[]: "garden_city"
+	val[]: "გარდენ-სიტი"
+
+	key[]: "gillette"
+	val[]: "ჯილეტი"
+
+	key[]: "glasgow"
+	val[]: "გლაზგო"
+
+	key[]: "glendive"
+	val[]: "გლენდაივი"
+
+	key[]: "grand_canyon"
+	val[]: "გრანდ-კანიონი"
+
+	key[]: "grand_canyon_village"
+	val[]: "გრანდ-კანიონ-ვილიჯი"
+
+	key[]: "grand_coulee"
+	val[]: "გრანდ-კული"
+
+	key[]: "grand_island"
+	val[]: "გრანდ-აილენდი"
+
+	key[]: "grand_junction"
+	val[]: "გრანდ-ჯანკშენი"
+
+	key[]: "grangeville"
+	val[]: "გრეინჯვილი"
+
+	key[]: "great_falls"
+	val[]: "გრეიტ-ფოლსი"
+
+	key[]: "guymon"
+	val[]: "გაიმონი"
+
+	key[]: "harrison"
+	val[]: "ჰარისონი"
+
+	key[]: "havre"
+	val[]: "ჰავრი"
+
+	key[]: "hays"
+	val[]: "ჰეისი"
+
+	key[]: "helena"
+	val[]: "ჰელენა"
+
+	key[]: "hilt"
+	val[]: "ჰილტი"
+
+	key[]: "hobbs"
+	val[]: "ჰობსი"
+
+	key[]: "holbrook"
+	val[]: "ჰოლბრუკი"
+
+	key[]: "holly_beach"
+	val[]: "ჰოლი-ბიჩი"
+
+	key[]: "hornbrook"
+	val[]: "ჰორნბრუკი"
+
+	key[]: "hot_springs"
+	val[]: "ჰოტ-სპრინგსი"
+
+	key[]: "houma"
+	val[]: "ჰაუმა"
+
+	key[]: "houston"
+	val[]: "ჰიუსტონი"
+
+	key[]: "huntsville"
+	val[]: "ჰანტსვილი"
+
+	key[]: "huron"
+	val[]: "ჰურონი"
+
+	key[]: "hutchinson"
+	val[]: "ჰატჩინსონი"
+
+	key[]: "idabel"
+	val[]: "აიდაბელი"
+
+	key[]: "idaho_falls"
+	val[]: "აიდაჰო-ფოლსი"
+
+	key[]: "indio"
+	val[]: "ინდიო"
+
+	key[]: "iowa_city"
+	val[]: "აიოვა-სიტი"
+
+	key[]: "jackpot"
+	val[]: "ჯეკპოტი"
+
+	key[]: "jackson"
+	val[]: "ჯექსონი"
+
+	key[]: "jefferson_city"
+	val[]: "ჯეფერსონ-სიტი"
+
+	key[]: "jonesboro"
+	val[]: "ჯონსბორო"
+
+	key[]: "joplin"
+	val[]: "ჯოპლინი"
+
+	key[]: "junction"
+	val[]: "ჯანკშენი"
+
+	key[]: "junction_city"
+	val[]: "ჯანკშენ-სიტი"
+
+	key[]: "kalispell"
+	val[]: "კალისპელი"
+
+	key[]: "kansas_city"
+	val[]: "კანზას-სიტი"
+
+	key[]: "kayenta"
+	val[]: "კაიენტა"
+
+	key[]: "kennewick"
+	val[]: "კენევიკი"
+
+	key[]: "ketchum"
+	val[]: "კეტჩუმი"
+
+	key[]: "kingman"
+	val[]: "კინგმანი"
+
+	key[]: "kirksville"
+	val[]: "კირკსვილი"
+
+	key[]: "klamath_falls"
+	val[]: "კლამათ-ფოლსი"
+
+	key[]: "lafayette"
+	val[]: "ლაფეიეტი"
+
+	key[]: "lake_charles"
+	val[]: "ტბა ჩარლზი"
+
+	key[]: "lake_havasu_city"
+	val[]: "ლეიკ-ჰავასუ"
+
+	key[]: "lakeview"
+	val[]: "ლეიკვიუ"
+
+	key[]: "lamar"
+	val[]: "ლამარი"
+
+	key[]: "laramie"
+	val[]: "ლარამი"
+
+	key[]: "laredo"
+	val[]: "ლარედო"
+
+	key[]: "las_cruces"
+	val[]: "ლას-კრუსიზი"
+
+	key[]: "las_vegas"
+	val[]: "ლას-ვეგასი"
+
+	key[]: "laurel"
+	val[]: "ლორელი"
+
+	key[]: "lawton"
+	val[]: "ლოუტონი"
+
+	key[]: "lewiston"
+	val[]: "ლიუისტონი"
+
+	key[]: "lewistown"
+	val[]: "ლუისტაუნი"
+
+	key[]: "lincoln"
+	val[]: "ლინკოლნი"
+
+	key[]: "little_rock"
+	val[]: "ლიტლ-როკი"
+
+	key[]: "logan"
+	val[]: "ლოგანი"
+
+	key[]: "longview"
+	val[]: "ლონგვიუ"
+
+	key[]: "los_angeles"
+	val[]: "ლოს-ანჯელესი"
+
+	key[]: "lubbock"
+	val[]: "ლაბოკი"
+
+	key[]: "lufkin"
+	val[]: "ლუფკინი"
+
+	key[]: "marion"
+	val[]: "მარიონი"
+
+	key[]: "marysville"
+	val[]: "მერისვილი"
+
+	key[]: "maryville"
+	val[]: "მერივილი"
+
+	key[]: "mason_city"
+	val[]: "მეისონ-სიტი"
+
+	key[]: "medford"
+	val[]: "მედფორდი"
+
+	key[]: "miles_city"
+	val[]: "მაილს-სიტი"
+
+	key[]: "mcalester"
+	val[]: "მაკალესტერი"
+
+	key[]: "mcallen"
+	val[]: "მაკალენი"
+
+	key[]: "mccook"
+	val[]: "მაკკუკი"
+
+	key[]: "missoula"
+	val[]: "მისულა"
+
+	key[]: "moab"
+	val[]: "მოაბი"
+
+	key[]: "modesto"
+	val[]: "მოდესტო"
+
+	key[]: "mojave"
+	val[]: "მოხავე"
+
+	key[]: "moline"
+	val[]: "მოლინი"
+
+	key[]: "monroe"
+	val[]: "მონრო"
+
+	key[]: "montrose"
+	val[]: "მონტროუზი"
+
+	key[]: "muskogee"
+	val[]: "მასკოგი"
+
+	key[]: "nampa"
+	val[]: "ნამპა"
+
+	key[]: "natchitoches"
+	val[]: "ნაკიტოში"
+
+	key[]: "new_orleans"
+	val[]: "ახალი ორლეანი"
+
+	key[]: "newport"
+	val[]: "ნიუპორტი"
+
+	key[]: "nogales"
+	val[]: "ნოგალესი"
+
+	key[]: "norfolk"
+	val[]: "ნორფოლკი"
+
+	key[]: "north_platte"
+	val[]: "ჩრდილო პლატი"
+
+	key[]: "oakdale"
+	val[]: "ოკდეილი"
+
+	key[]: "oakland"
+	val[]: "ოკლენდი"
+
+	key[]: "odessa"
+	val[]: "ოდესა"
+
+	key[]: "ogden"
+	val[]: "ოგდენი"
+
+	key[]: "oklahoma_city"
+	val[]: "ოკლაჰომა"
+
+	key[]: "olympia"
+	val[]: "ოლიმპია"
+
+	key[]: "omaha"
+	val[]: "ომაჰა"
+
+	key[]: "omak"
+	val[]: "ომაკი"
+
+	key[]: "ontario"
+	val[]: "ონტარიო"
+
+	key[]: "ottumwa"
+	val[]: "ოტამუა"
+
+	key[]: "oxnard"
+	val[]: "ოქსნარდი"
+
+	key[]: "page"
+	val[]: "პეიჯი"
+
+	key[]: "pajarito_rest_area"
+	val[]: "პახარიტოს მოსასვენებელი არე"
+
+	key[]: "pendleton"
+	val[]: "პენდელტონი"
+
+	key[]: "peoria"
+	val[]: "პეორია"
+
+	key[]: "phillipsburg"
+	val[]: "ფილიპსბურგი"
+
+	key[]: "phoenix"
+	val[]: "ფენიქსი"
+
+	key[]: "pine_bluff"
+	val[]: "პაინ-ბლაფი"
+
+	key[]: "pioche"
+	val[]: "პაიოში"
+
+	key[]: "pittsburg"
+	val[]: "პიტსბურგი"
+
+	key[]: "pocatello"
+	val[]: "პოკატელო"
+
+	key[]: "ponca_city"
+	val[]: "პონკა"
+
+	key[]: "poplar_bluff"
+	val[]: "პოპლარ-ბლაფი"
+
+	key[]: "port_angeles"
+	val[]: "პორტ-ანჯელესი"
+
+	key[]: "port_fourchon"
+	val[]: "ფურშონი"
+
+	key[]: "portland"
+	val[]: "პორტლენდი"
+
+	key[]: "price_ut"
+	val[]: "პრაისი"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "პრიმი"
+
+	key[]: "provo"
+	val[]: "პროვო"
+
+	key[]: "pueblo"
+	val[]: "პუებლო"
+
+	key[]: "quincy"
+	val[]: "კუინსი"
+
+	key[]: "rangely"
+	val[]: "რეინჯლი"
+
+	key[]: "raton"
+	val[]: "რატონი"
+
+	key[]: "rawlins"
+	val[]: "როლინსი"
+
+	key[]: "redding"
+	val[]: "რედინგი"
+
+	key[]: "reno"
+	val[]: "რენო"
+
+	key[]: "riverton"
+	val[]: "რივერტონი"
+
+	key[]: "rock_springs"
+	val[]: "როკ-სპრინგსი"
+
+	key[]: "rockford"
+	val[]: "როკფორდი"
+
+	key[]: "rolla"
+	val[]: "როლა"
+
+	key[]: "roswell"
+	val[]: "როსველი"
+
+	key[]: "sacramento"
+	val[]: "საკრამენტო"
+
+	key[]: "salem"
+	val[]: "სეილემი"
+
+	key[]: "salina"
+	val[]: "სალინა"
+
+	key[]: "salina_ks"
+	val[]: "სალაინა"
+
+	key[]: "salmon"
+	val[]: "სალმონი"
+
+	key[]: "salt_lake_city"
+	val[]: "სოლტ-ლეიკ-სიტი"
+
+	key[]: "san_angelo"
+	val[]: "სან-ანჯელო"
+
+	key[]: "san_antonio"
+	val[]: "სან-ანტონიო"
+
+	key[]: "san_diego"
+	val[]: "სან-დიეგო"
+
+	key[]: "san_francisco"
+	val[]: "სან-ფრანცისკო"
+
+	key[]: "san_jose"
+	val[]: "სან-ხოსე"
+
+	key[]: "san_rafael"
+	val[]: "სან-რაფაელი"
+
+	key[]: "san_simon"
+	val[]: "სან-სიმონი"
+
+	key[]: "sandpoint"
+	val[]: "სანდპოინტი"
+
+	key[]: "santa_cruz"
+	val[]: "სანტა-კრუსი"
+
+	key[]: "santa_fe"
+	val[]: "სანტა-ფე"
+
+	key[]: "santa_maria"
+	val[]: "სანტა-მარია"
+
+	key[]: "scottsbluff"
+	val[]: "სკოტსბლაფი"
+
+	key[]: "seattle"
+	val[]: "სიეტლი"
+
+	key[]: "sheridan"
+	val[]: "შერიდანი"
+
+	key[]: "show_low"
+	val[]: "შოუ-ლოუ"
+
+	key[]: "shreveport"
+	val[]: "შრევეპორტი"
+
+	key[]: "sidney"
+	val[]: "სიდნეი"
+
+	key[]: "sierra_vista"
+	val[]: "სიერა-ვისტა"
+
+	key[]: "sioux_city"
+	val[]: "სუ-სიტი"
+
+	key[]: "socorro"
+	val[]: "სოკორო"
+
+	key[]: "spokane"
+	val[]: "სპოუკენი"
+
+	key[]: "springdale"
+	val[]: "სპრინგდეილი"
+
+	key[]: "springfield"
+	val[]: "სპრინგფილდი"
+
+	key[]: "st_george"
+	val[]: "სენტ-ჯორჯი"
+
+	key[]: "st_joseph"
+	val[]: "სენტ-ჯოზეფი"
+
+	key[]: "st_louis"
+	val[]: "სენტ-ლუისი"
+
+	key[]: "steamboat_springs"
+	val[]: "სტიმბოუტ-სპრინგზი"
+
+	key[]: "sterling"
+	val[]: "სტერლინგი"
+
+	key[]: "stockton"
+	val[]: "სტოკტონი"
+
+	key[]: "tacoma"
+	val[]: "ტაკომა"
+
+	key[]: "texarkana"
+	val[]: "ტექსარკანა"
+
+	key[]: "the_dalles"
+	val[]: "დალესი"
+
+	key[]: "thompson_falls"
+	val[]: "ტომპსონ-ფოლსი"
+
+	key[]: "tonopah"
+	val[]: "ტონოპა"
+
+	key[]: "topeka"
+	val[]: "ტოპეკა"
+
+	key[]: "truckee"
+	val[]: "ტრაკი"
+
+	key[]: "tucson"
+	val[]: "ტუსონი"
+
+	key[]: "tucumcari"
+	val[]: "ტუკუმკარი"
+
+	key[]: "tulsa"
+	val[]: "ტულსა"
+
+	key[]: "twin_falls"
+	val[]: "ტვინ-ფოლსი"
+
+	key[]: "tyler"
+	val[]: "ტაილერი"
+
+	key[]: "ukiah"
+	val[]: "უკია"
+
+	key[]: "valentine"
+	val[]: "ვალენტაინი"
+
+	key[]: "van_horn"
+	val[]: "ვან-ჰორნი"
+
+	key[]: "vancouver"
+	val[]: "ვანკუვერი"
+
+	key[]: "vernal"
+	val[]: "ვერნალი"
+
+	key[]: "victoria"
+	val[]: "ვიქტორია"
+
+	key[]: "waco"
+	val[]: "უეიკო"
+
+	key[]: "waterloo"
+	val[]: "უატერლუ"
+
+	key[]: "wenatchee"
+	val[]: "ვენატჩი"
+
+	key[]: "wichita"
+	val[]: "უიჩიტო"
+
+	key[]: "wichita_falls"
+	val[]: "უიჩიტო-ფოლზი"
+
+	key[]: "winnemucca"
+	val[]: "ვინემაკა"
+
+	key[]: "winslow"
+	val[]: "უინსლოუ"
+
+	key[]: "woodward"
+	val[]: "ვუდუორდი"
+
+	key[]: "yakima"
+	val[]: "იაკიმა"
+
+	key[]: "yuma"
+	val[]: "იუმა"
+#@}
+
+}
+}

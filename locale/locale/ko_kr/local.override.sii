@@ -1,0 +1,2656 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://www.americantrucksimulator.com/support.html"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	key[]: "airdam"
+	val[]: "에어 댐"
+
+	key[]: "b_mudflap"
+	val[]: "범퍼 흙받이"
+
+	key[]: "bckpanel"
+	val[]: "백 패널 아이템"	#+ Interior accessories placed on the back panel of the truck cabin
+
+	key[]: "cabflares"
+	val[]: "캐빈 라이트"
+
+	key[]: "cabdefl"
+	val[]: "캐빈 디플렉터"
+
+	key[]: "deflector"
+	val[]: "버그 디플렉터"
+
+	key[]: "filter_cover"
+	val[]: "필터 커버"
+
+	key[]: "filters"
+	val[]: "에어필터"
+
+	key[]: "fl_mirror"
+	val[]: "전방 미러"
+
+	key[]: "flag_f_l"
+	val[]: "전방 깃발"
+
+	key[]: "flag_f_r"
+	val[]: "전방 깃발"
+
+	key[]: "flag_r_l"
+	val[]: "후방 깃발"
+
+	key[]: "flag_r_r"
+	val[]: "후방 깃발"
+
+	key[]: "fr_mirror"
+	val[]: "전방 미러"
+
+	key[]: "grill"
+	val[]: "그릴"
+
+	key[]: "headache_r"
+	val[]: "헤드에이크 랙"
+
+	key[]: "hndrail"
+	val[]: "핸드레일"
+
+	key[]: "horns"
+	val[]: "경적"
+
+	key[]: "hood"
+	val[]: "후드"
+
+	key[]: "int_trim"
+	val[]: "인테리어 트림"
+
+	key[]: "lampbar"
+	val[]: "램프 바"
+
+	key[]: "lghfender"
+	val[]: "펜더 보호대"
+
+	key[]: "mudflaps"
+	val[]: "머드플랩"
+
+	key[]: "mudguard"
+	val[]: "머드가드"
+
+	key[]: "ornament"
+	val[]: "장식품"
+
+	key[]: "rear_cab"
+	val[]: "캐빈 후방"
+
+	key[]: "rear2_cab"
+	val[]: "캐빈 후방"
+
+	key[]: "rearstep"
+	val[]: "후방 스텝"
+
+	key[]: "roof_window"
+	val[]: "지붕 윈도우"
+
+	key[]: "s_logo"
+	val[]: "사이드 로고"
+
+	key[]: "set_cabinet"
+	val[]: "캐비닛 세트" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "sideflares"
+	val[]: "캡 패널"
+
+	key[]: "slp_hndl"
+	val[]: "도어 핸들"
+
+	key[]: "slp_vent"
+	val[]: "벤트"
+
+	key[]: "topflares"
+	val[]: "루프 슬리퍼 라이트"
+
+	key[]: "toyback"
+	val[]: "슬리퍼 플로어 아이템" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "플로어 아이템" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "대시보드 스토리지 아이템" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "소파 아이템" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "테이블 아이템" #+ Interior accessories placed on the table in back of the truck cabin
+
+	key[]: "wing"
+	val[]: "터보 윙"
+
+
+#	key[]: "aero"
+#	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero2"
+#	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero_chrom"
+#	val[]: "Aero Chromed"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero_paint"
+#	val[]: "Aero Painted"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aerox"
+#	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "alu_tank"
+#	val[]: "Aluminium Tank"	#+ Aluminium tank accessory (water, fuel, etc)
+#
+#	key[]: "cabinet"
+#	val[]: "Cabinet"	#+ Default cabinet and pin set name
+#
+#	key[]: "chrom_tank"
+#	val[]: "Chromed Tank"	#+ Chromed tank accessory (water, fuel, etc)
+#
+#	key[]: "chrome_pipeguard"
+#	val[]: "Chromed Pipeguard"	#+ Pipeguard accessory name
+#
+#	key[]: "d_shape"
+#	val[]: "D-Shape"	#+ D-shaped tank accessory (water, fuel, etc)
+#
+#	key[]: "dresser"
+#	val[]: "Dresser"	#+ Alternative "cabinet" and pin set name
+#
+#	key[]: "drl"
+#	val[]: "DRL"		#+ Daytime running lights
+#
+#	key[]: "elite"
+#	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "fog_lights"
+#	val[]: "Fog Lights"
+#
+#	key[]: "fridge"
+#	val[]: "Fridge"	#+ Alternative "cabinet" and pin set name
+#
+#	key[]: "hvac"
+#	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "light_adapter"
+#	val[]: "Light Adapter"
+#
+#	key[]: "paint_pipeguard"
+#	val[]: "Painted Pipeguard"	#+ Pipeguard accessory name
+#
+#	key[]: "utility"
+#	val[]: "Utility"	#+ Alternative "cabinet" and pin set name
+
+
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+#	key[]: "amber_sunflower"
+#	val[]: "Amber Sunflower"
+#
+#	key[]: "american_football_ball"
+#	val[]: "American Football Ball"
+#
+#	key[]: "armadillo_plush"
+#	val[]: "Armadillo Plush"
+#
+#	key[]: "ats_bag"
+#	val[]: "ATS Bag"
+#
+#	key[]: "ats_cap"
+#	val[]: "ATS Cap"
+#
+#	key[]: "ats_game_box"
+#	val[]: "ATS Game Box"
+#
+#	key[]: "ats_lunch_box"
+#	val[]: "ATS Lunch Box"
+#
+#	key[]: "ats_mug"
+#	val[]: "ATS Mug"
+#
+#	key[]: "ats_truck_bag"
+#	val[]: "ATS Truck Bag"
+#
+#	key[]: "baseball_ball"
+#	val[]: "Baseball Ball"
+#
+#	key[]: "baseball_bat"
+#	val[]: "Baseball Bat"
+#
+#	key[]: "bee"
+#	val[]: "Bee"
+#
+#	key[]: "black_ats_mug"
+#	val[]: "Black ATS Mug"
+#
+#	key[]: "black_swallowtail"
+#	val[]: "Black Swallowtail"
+#
+#	key[]: "blanket_stars"
+#	val[]: "Stars Blanket"
+#
+#	key[]: "boudreaux_the_bear"
+#	val[]: "Boudreaux the Bear"
+#
+#	key[]: "box_turtle"
+#	val[]: "Box Turtle"
+#
+#	key[]: "burger"
+#	val[]: "Burger"
+#
+#	key[]: "can"
+#	val[]: "Can"
+#
+#	key[]: "can_pack"
+#	val[]: "Can Pack"
+#
+#	key[]: "can_sixpack"
+#	val[]: "Can Sixpack"
+#
+#	key[]: "cans"
+#	val[]: "Cans"
+#
+#	key[]: "car_perfume"
+#	val[]: "Car Perfume"
+#
+#	key[]: "cardbox"
+#	val[]: "Cardboard Box"
+#
+#	key[]: "carrier"
+#	val[]: "Bottle Carrier"
+#
+#	key[]: "chainsaw_toy"
+#	val[]: "Chainsaw Toy"
+#
+#	key[]: "chewing_gums"
+#	val[]: "Chewing Gum"
+#
+#	key[]: "coffee_cup"
+#	val[]: "Coffee Cup"
+#
+#	key[]: "costs_list"
+#	val[]: "Fuel Consumption Log"
+#
+#	key[]: "diamond_apple_blossom"
+#	val[]: "Diamond Apple Blossom"
+#
+#	key[]: "dreamcatcher"
+#	val[]: "Dreamcatcher"
+#
+#	key[]: "emergency_triangles"
+#	val[]: "Warning Triangles"
+#
+#	key[]: "ear_mufflers"
+#	val[]: "Ear Mufflers"
+#
+#	key[]: "expenses_list"
+#	val[]: "Expense Report"
+#
+#	key[]: "first_sign"
+#	val[]: "First Sign"
+#
+#	key[]: "fishing_bag"
+#	val[]: "Fishing Bag"
+#
+#	key[]: "giant_salamander_sticker"
+#	val[]: "Giant Salamander Sticker"
+#
+#	key[]: "goalkeeper_mask"
+#	val[]: "Goalkeeper Mask"
+#
+#	key[]: "golden_south"
+#	val[]: "Golden South"
+#
+#	key[]: "guitar"
+#	val[]: "Guitar"
+#
+#	key[]: "guitar_case"
+#	val[]: "Guitar Case"
+#
+#	key[]: "happy_hog"
+#	val[]: "Happy Hog"
+#
+#	key[]: "hockey_stick"
+#	val[]: "Hockey Stick"
+#
+#	key[]: "holy_field_blanket"
+#	val[]: "Holly Field Blanket"
+#
+#	key[]: "honey_bee"
+#	val[]: "Honey Bee"
+#
+#	key[]: "honey_bee_plush"
+#	val[]: "Honey Bee Plush"
+#
+#	key[]: "idaho_nights_air_freshener"
+#	val[]: "Idaho Nights Air Freshener"
+#
+#	key[]: "idaho_spuds_sticker"
+#	val[]: "Idaho Spuds Sticker"
+#
+#	key[]: "kw_airfreshener"
+#	val[]: "Kenworth Air Freshener"
+#
+#	key[]: "kw_cancooler"
+#	val[]: "Kenworth Can Cooler"
+#
+#	key[]: "kw_contrast_cap"
+#	val[]: "Kenworth Contrast Cap"
+#
+#	key[]: "kw_dufflebag"
+#	val[]: "Kenworth Dufflebag"
+#
+#	key[]: "kw_keychain"
+#	val[]: "Kenworth Keychain"
+#
+#	key[]: "kw_retro_cap"
+#	val[]: "Kenworth Retro Cap"
+#
+#	key[]: "kw_tumbler"
+#	val[]: "Kenworth 20oz Red Tumbler"
+#
+#	key[]: "kw_100y_airfresh"
+#	val[]: "Kenworth 100 year Air Freshener"
+#
+#	key[]: "kw_100y_cap"
+#	val[]: "Kenworth 100 year Cap"
+#
+#	key[]: "kw_100y_tumbler"
+#	val[]: "Kenworth 100 year 20oz Rambler Tumbler"
+#
+#	key[]: "laundry_box"
+#	val[]: "Laundry Basket"
+#
+#	key[]: "lone_star_longhorn"
+#	val[]: "Lone Star Longhorn"
+#
+#	key[]: "mammoth_archie"
+#	val[]: "Mammoth Archie"
+#
+#	key[]: "mountain_goat_plush"
+#	val[]: "Mountain Goat Plush"
+#
+#	key[]: "owl_mug"
+#	val[]: "OWL Mug"
+#
+#	key[]: "peppermints"
+#	val[]: "Peppermints"
+#
+#	key[]: "plush_donut"
+#	val[]: "Plush Donut"
+#
+#	key[]: "plush_lion"
+#	val[]: "Plush Lion"
+#
+#	key[]: "porcelain_wild_rose"
+#	val[]: "Porcelain Wild Rose"
+#
+#	key[]: "power_inverter"
+#	val[]: "Power Inverter"
+#
+#	key[]: "propeller"
+#	val[]: "Propeller"
+#
+#	key[]: "sapphire_meadowlark"
+#	val[]: "Sapphire Meadowlark"
+#
+#	key[]: "shoes"
+#	val[]: "Shoes"
+#
+#	key[]: "spearmints"
+#	val[]: "Spearmints"
+#
+#	key[]: "sport_sunglasses"
+#	val[]: "Sport Sunglasses"
+#
+#	key[]: "stack_of_burgers"
+#	val[]: "Stack of Burgers"
+#
+#	key[]: "striking_mule"
+#	val[]: "Striking Mule"
+#
+#	key[]: "tiger_salamander"
+#	val[]: "Tiger Salamander"
+#
+#	key[]: "tom_hopper"
+#	val[]: "Tom Hopper"
+#
+#	key[]: "usa_cap"
+#	val[]: "USA Cap"
+#
+#	key[]: "usa_flag"
+#	val[]: "USA Flag"
+#
+#	key[]: "usa_flag_cap"
+#	val[]: "USA Flag Cap"
+#
+#	key[]: "ventilator"
+#	val[]: "Fan"
+#
+#	key[]: "walnut_rocking_horse"
+#	val[]: "Walnut Rocking Horse"
+#
+#	key[]: "white_tailed_deer"
+#	val[]: "White-tailed Deer"
+#
+#	key[]: "wooden_bowl_of_chips"
+#	val[]: "Wooden Bowl of Chips"
+#
+#	key[]: "wotr_cap"
+#	val[]: "WoTr Cap"
+#
+#	key[]: "wyo_bison"
+#	val[]: "Jade Bison"
+#
+#	key[]: "wyo_dino"
+#	val[]: "Plush Triceratops"
+#
+#
+#	key[]: "ats_pillow"
+#	val[]: "ATS Pillow"
+#
+#	key[]: "heart_pillow"
+#	val[]: "Heart Pillow"
+#
+#	key[]: "kiss_me_pillow"
+#	val[]: "Kiss Me Pillow"
+#
+#	key[]: "protector_pillow"
+#	val[]: "Protector Pillow"
+#
+#	key[]: "show_me_pillow"
+#	val[]: "Show-Me Pillow"
+#
+#	key[]: "star_pillow"
+#	val[]: "Star Pillow"
+#
+#	key[]: "truck_yeah_pillow"
+#	val[]: "Truck Yeah Pillow"
+#
+#	key[]: "usa_flag_pillow"
+#	val[]: "USA Flag Pillow"
+#
+#	key[]: "usa_shield_pillow"
+#	val[]: "USA Shield Pillow"
+#
+#
+#	key[]: "ats_fragrance_tag"
+#	val[]: "ATS Air Freshener"
+#
+#	key[]: "cactus_fragrance_tag"
+#	val[]: "Cactus Air Freshener"
+#
+#	key[]: "lemon_fragrance_tag"
+#	val[]: "Lemon Air Freshener"
+#
+#	key[]: "maple_leaf_fragrance_tag"
+#	val[]: "Maple Leaf Air Freshener"
+#
+#	key[]: "orange_fragrance_tag"
+#	val[]: "Orange Air Freshener"
+#
+#	key[]: "usa_fragrance_tag"
+#	val[]: "USA Air Freshener"
+#
+#
+#	key[]: "blue_plush_cube"
+#	val[]: "Blue Plush Cube"
+#
+#	key[]: "red_plush_cube"
+#	val[]: "Red Plush Cube"
+#
+#	key[]: "double_plush_cube"
+#	val[]: "Double Plush Cube"
+#
+#
+#	key[]: "alien_head"
+#	val[]: "Alien Head"
+#
+#	key[]: "cowboy_head"
+#	val[]: "Cowboy Head"
+#
+#	key[]: "pirate_head"
+#	val[]: "Pirate Head"
+#
+#
+#	key[]: "eagle_sticker"
+#	val[]: "Eagle Sticker"
+#
+#	key[]: "goodyear_logo_sticker"
+#	val[]: "Goodyear Logo Sticker"
+#
+#	key[]: "goodyear_old_logo_sticker"
+#	val[]: "Goodyear Old Logo Sticker"
+#
+#	key[]: "guitar_sticker"
+#	val[]: "Guitar Sticker"
+#
+#	key[]: "hat_sticker"
+#	val[]: "Hat Sticker"
+#
+#	key[]: "maple_sirup_sticker"
+#	val[]: "Maple Syrup Sticker"
+#
+#	key[]: "steering_wheel_sticker"
+#	val[]: "Steering Wheel Sticker"
+#
+#	key[]: "taco_sticker"
+#	val[]: "Taco Sticker"
+#
+#	key[]: "truck_sticker"
+#	val[]: "Truck Sticker"
+#
+#	key[]: "usa_country_sticker"
+#	val[]: "USA Country Sticker"
+#
+#	key[]: "usa_flag_sticker"
+#	val[]: "USA Flag Sticker"
+
+#@}
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "<color value=@@clr_sel@@>내 문서<color value=@@clr_txt@@>의 <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>폴더에 음악 파일을 넣으면 이곳에 표시됩니다."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "<color value=@@clr_sel@@>내 문서<color value=@@clr_txt@@>의 <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>폴더에 있는 <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>파일을 수정하면 게임 안에서 당신이 좋아하는 인터넷 라디오 방송을 들을 수 있습니다!"
+
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "<color value=@@clr_sel@@>내 문서<color value=@@clr_txt@@>의 <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>폴더에 있는 <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>문서 파일에 음악과 라디오를 추가하는 방법이 설명되어있습니다."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "American Truck Simulator 에 오신 것을 환영합니다!"
+#@}
+
+#+ Input wizard
+#@{
+	key[]: "wiz_cfg_steam"
+	val[]: "스팀 클라이언트를 사용하여 이 컨트롤러에 대한 버튼과 축 매핑을 확인하거나 구성할 수 있습니다. 스팀 게임패드 설정은 Steam > Library > American Truck Simulator > Controller Configuration에서 할 수 있습니다."
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "당신의 트럭과 트레일러의 조합은 이 지역에서 불법입니다!" #+ Adviser text
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_air_condition"
+	val[]: "에어컨 유닛"
+
+	key[]: "cn_aircraft_engine"
+	val[]: "항공기 엔진"
+
+	key[]: "cn_aircraft_wing"
+	val[]: "항공기 날개"
+
+	key[]: "cn_almond_boxes"
+	val[]: "아몬드 박스"
+
+	key[]: "cn_beet_harvester"
+	val[]: "비트 하베스터"
+
+	key[]: "cn_big_tires"
+	val[]: "빅 타이어"
+
+	key[]: "cn_boat"
+	val[]: "보트"
+
+	key[]: "cn_boom_lift"
+	val[]: "붐 리프트"
+
+	key[]: "cn_borates"
+	val[]: "붕산염"
+
+	key[]: "cn_bottles"
+	val[]: "빈 병"
+
+	key[]: "cn_bromine"
+	val[]: "브로민"
+
+	key[]: "cn_bus_hood"
+	val[]: "버스 후드"
+
+	key[]: "cn_butter"
+	val[]: "버터"
+
+	key[]: "cn_buttermilk"
+	val[]: "버터밀크"
+
+	key[]: "cn_cable"
+	val[]: "케이블"
+
+	key[]: "cn_cable_reel"
+	val[]: "케이블 릴"
+
+	key[]: "cn_cans"
+	val[]: "캔"
+
+	key[]: "cn_cattle_equipment"
+	val[]: "가축 장비"
+
+	key[]: "cn_circuit_breakers"
+	val[]: "서킷 브레이커"
+
+	key[]: "cn_clamshell_bucket"
+	val[]: "클램셀 버킷"
+
+	key[]: "cn_colors"
+	val[]: "페인트"
+
+	key[]: "cn_compact_tractor"
+	val[]: "콤팩터 트랙터"
+
+	key[]: "cn_concrete_barrier"
+	val[]: "콘크리트 배리어"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "콘크리트 튜브"
+
+	key[]: "cn_const_houses"
+	val[]: "컨테이너 주택"
+
+	key[]: "cn_cooling_tower"
+	val[]: "냉각탑"
+
+	key[]: "cn_corn_head"
+	val[]: "콘 헤드"
+
+	key[]: "cn_cotton_lint"
+	val[]: "목화 린트"
+
+	key[]: "cn_cotton_seed"
+	val[]: "목화씨"
+
+	key[]: "cn_crude_oil"
+	val[]: "원유"
+
+	key[]: "cn_curtains"
+	val[]: "커튼"
+
+	key[]: "cn_dryfruit"
+	val[]: "말린 과일"
+
+	key[]: "cn_dump_truck"
+	val[]: "덤프 트럭"
+
+	key[]: "cn_dumpster"
+	val[]: "덤스터"
+
+	key[]: "cn_ethanol"
+	val[]: "에탄올"
+
+	key[]: "cn_fertilizer_tank"
+	val[]: "비료 탱크"
+
+	key[]: "cn_frac_tank"
+	val[]: "프락 탱크"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "냉동 과일"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "냉동 야채"
+
+	key[]: "cn_fruits"
+	val[]: "과일"
+
+	key[]: "cn_fruit_juice"
+	val[]: "과일 주스"
+
+	key[]: "cn_garbage_truck"
+	val[]: "쓰레기 트럭"
+
+	key[]: "cn_generator_set"
+	val[]: "발전기 세트"
+
+	key[]: "cn_glass"
+	val[]: "유리"
+
+	key[]: "cn_glass_racks"
+	val[]: "유리 랙"
+
+	key[]: "cn_grain"
+	val[]: "곡물"
+
+	key[]: "cn_harvester"
+	val[]: "하베스터"
+
+	key[]: "cn_hay"
+	val[]: "건초 더미"
+
+	key[]: "cn_heavy_bulldozer"
+	val[]: "대형 불도저"
+
+	key[]: "cn_house_prefabs"
+	val[]: "프리패브 주택"
+
+	key[]: "cn_industrial_pallets"
+	val[]: "공업용 파렛트"
+
+	key[]: "cn_insulation_panels"
+	val[]: "절연 패널"
+
+	key[]: "cn_jet_engine_inlet_cowl"
+	val[]: "제트 엔진 흡입구 카울"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Kenworth 트럭"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "너클붐 로더"
+
+	key[]: "cn_lift_truck"
+	val[]: "리프트 트럭"
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "리프트 트럭 샤시"
+
+	key[]: "cn_log_loader"
+	val[]: "통나무 로더"
+
+	key[]: "cn_lye"
+	val[]: "가성소다"
+
+	key[]: "cn_maize"
+	val[]: "옥수수"
+
+	key[]: "cn_mbt"
+	val[]: "모바일 배리어"
+
+	key[]: "cn_meat"
+	val[]: "고기"
+
+	key[]: "cn_medium_truck_chassis"
+	val[]: "중형 트럭 샤시"
+
+	key[]: "cn_milling_machine"
+	val[]: "밀링 머신"
+
+	key[]: "cn_mix_tank"
+	val[]: "믹스 탱크"
+
+#	key[]: "cn_mobile_air_compressor"
+#	val[]: "Mobile Air Compressor"
+
+	key[]: "cn_mobile_crane"
+	val[]: "전지형 크레인"
+
+	key[]: "cn_moor_buoy"
+	val[]: "계선 부표"
+
+	key[]: "cn_mortar"
+	val[]: "회반죽"
+
+	key[]: "cn_moving_containers"
+	val[]: "무빙 컨테이너"
+
+	key[]: "cn_oil_pipes"
+	val[]: "오일 파이프"
+
+	key[]: "cn_paper"
+	val[]: "종이"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "뭉친 가축 사료"
+
+	key[]: "cn_peterbilt_579"
+	val[]: "Peterbilt 트럭"
+
+	key[]: "cn_plows"
+	val[]: "쟁기"
+
+	key[]: "cn_power_generator"
+	val[]: "동력 발전기"
+
+	key[]: "cn_pumpjack"
+	val[]: "펌프잭"
+
+	key[]: "cn_rails"
+	val[]: "레일"
+
+	key[]: "cn_railcar_mover"
+	val[]: "철도차량 이동장치"
+
+	key[]: "cn_rawmilk"
+	val[]: "미살균 우유"
+
+	key[]: "cn_recreational_vehicle"
+	val[]: "레크리에이션 차량"
+
+	key[]: "cn_salt"
+	val[]: "소금"
+
+	key[]: "cn_school_bus"
+	val[]: "스쿨버스"
+
+	key[]: "cn_scissor_lift"
+	val[]: "고소 작업대"
+
+	key[]: "cn_scrap_cars"
+	val[]: "폐차"
+
+	key[]: "cn_scraper"
+	val[]: "스크레이퍼"
+
+	key[]: "cn_service_truck"
+	val[]: "서비스 트럭"
+
+	key[]: "cn_silane"
+	val[]: "실레인"
+
+	key[]: "cn_soda_ash"
+	val[]: "소다회"
+
+	key[]: "cn_soybean"
+	val[]: "콩"
+
+	key[]: "cn_space_container"
+	val[]: "스페이스 컨테이너"
+
+	key[]: "cn_speed_motor_boat"
+	val[]: "스피드 모터 보트"
+
+	key[]: "cn_stumper"
+	val[]: "스텀퍼"
+
+	key[]: "cn_sugar_beet"
+	val[]: "사탕무"
+
+	key[]: "cn_talc_powder"
+	val[]: "활석 분말"
+
+	key[]: "cn_tamping_machine"
+	val[]: "탬핑 머신"
+
+	key[]: "cn_telescopic_handler"
+	val[]: "텔레스코픽 핸들러"
+
+	key[]: "cn_trees"
+	val[]: "나무"
+
+	key[]: "cn_tub_grinder"
+	val[]: "목재 파쇄기"
+
+	key[]: "cn_utility_poles"
+	val[]: "전신주"
+
+	key[]: "cn_utility_terrain_vehicle"
+	val[]: "유틸리티 지형 차량"
+
+	key[]: "cn_vegetable"
+	val[]: "야채"
+
+	key[]: "cn_waste_paper"
+	val[]: "폐지"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Western Star 트럭"
+
+	key[]: "cn_windrower"
+	val[]: "윈드로어"
+
+	key[]: "cn_wire_rod_coil"
+	val[]: "와이어로드 코일"
+
+	key[]: "cn_work_truck_chassis"
+	val[]: "작업 트럭 샤시"
+
+	key[]: "cn_yard_truck"
+	val[]: "야드 트럭"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	key[]: "cn_aircondition"
+	val[]: "대형 공조장치"
+
+	key[]: "cn_haul_truck_hull"
+	val[]: "하울 트럭 차체"
+
+	key[]: "cn_house"
+	val[]: "턴키 하우스 자재"
+
+	key[]: "cn_lattice"
+	val[]: "대형 건설자재"
+
+	key[]: "cn_metro_wagon"
+	val[]: "지하철 철도차량"
+
+	key[]: "cn_ovs_helicopter"
+	val[]: "수송용 헬리콥터"
+#@}
+
+#+ Names of individual trailer, trailer chassis types or trailer virtual company look names. (for trailer listing screen)
+#@{
+	key[]: "tn_acid"
+	val[]: "산성 탱크 트레일러"
+
+	key[]: "tn_acid_long"
+	val[]: "산성 탱크 장축 트레일러"
+
+	key[]: "tn_bottom_dump"
+	val[]: "하부 개폐식 덤프 트레일러"
+
+	key[]: "tn_car"
+	val[]: "차량 트랜스포터"
+
+	key[]: "tn_cement"
+	val[]: "벌크 시멘트 트레일러"
+
+	key[]: "tn_chemical"
+	val[]: "화학약품 탱크 트레일러"
+
+	key[]: "tn_chemical_long"
+	val[]: "화학약품 탱크 장축 트레일러"
+
+	key[]: "tn_dry_bulk"
+	val[]: "드라이 벌크 트레일러"
+
+	key[]: "tn_dump"
+	val[]: "덤프 트레일러"
+
+	key[]: "tn_flatbed"
+	val[]: "평판 트레일러"
+
+	key[]: "tn_frac_tank"
+	val[]: "프락 탱크"
+
+	key[]: "tn_fuel"
+	val[]: "연료 탱크 트레일러"
+
+	key[]: "tn_fuel_long"
+	val[]: "연료 탱크 장축 트레일러"
+
+	key[]: "tn_gas"
+	val[]: "가스 탱크 트레일러"
+
+	key[]: "tn_gas_long"
+	val[]: "가스 탱크 장축 트레일러"
+
+	key[]: "tn_home_transporter"
+	val[]: "홈 트랜스포터"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "너클붐 로더"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "로우보이 보트 트레일러"
+
+	key[]: "tn_scs_lowboy"
+	val[]: "로우보이 연장형 트레일러"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "모바일 배리어 트레일러"
+
+	key[]: "tn_tub_grinder"
+	val[]: "목재 파쇄기"
+
+#virtual logistic company trailer looks (for trailer listing screen)
+
+	key[]: "tcn_ate"
+	val[]: "ATE"
+
+	key[]: "tcn_blackwing"
+	val[]: "블랙윙 하울"
+
+	key[]: "tcn_crosslink"
+	val[]: "크로스링크 홀"
+
+	key[]: "tcn_ets"
+	val[]: "ETS"
+
+	key[]: "tcn_hfx"
+	val[]: "HFX"
+
+	key[]: "tcn_ncs"
+	val[]: "NCS"
+
+	key[]: "tcn_omniway"
+	val[]: "옴니웨이"
+
+	key[]: "tcn_primeway"
+	val[]: "프라임웨이 로지스틱스"
+
+	key[]: "tcn_reed"
+	val[]: "F.D.리드"
+
+	key[]: "tcn_sabre"
+	val[]: "세이버 트랜스포트"
+
+#lodeking/prestige trailers (for trailer listing screen)
+
+	key[]: "tn_lodeking_brilliance"
+	val[]: "Lodeking Brilliance"
+
+	key[]: "tn_lodeking_distinction"
+	val[]: "Lodeking Distinction"
+
+	key[]: "tn_lodeking_forceline"
+	val[]: "Lodeking Forceline"
+
+	key[]: "tn_lodeking_prestige"
+	val[]: "Lodeking Prestige"
+
+	key[]: "tn_lodeking_renown"
+	val[]: "Lodeking Renown"
+
+	key[]: "tn_prestige_brilliance"
+	val[]: "Prestige Brilliance"
+
+	key[]: "tn_prestige_distinction"
+	val[]: "Prestige Distinction"
+
+	key[]: "tn_prestige_forceline"
+	val[]: "Lodeking Forceline"
+
+	key[]: "tn_prestige_renown"
+	val[]: "Prestige Renown"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+
+	key[]: "tt_ico_adr_1"
+	val[]: "유해물질 1등급"
+
+	key[]: "tt_ico_adr_2"
+	val[]: "유해물질 2등급"
+
+	key[]: "tt_ico_adr_3"
+	val[]: "유해물질 3등급"
+
+	key[]: "tt_ico_adr_4"
+	val[]: "유해물질 4등급"
+
+	key[]: "tt_ico_adr_5"
+	val[]: "유해물질 5등급"
+
+	key[]: "tt_ico_adr_6"
+	val[]: "유해물질 6등급"
+
+	key[]: "tt_ico_adr_8"
+	val[]: "유해물질 8등급"
+#@}
+
+#+ Names of individual experience tiers of the driver.
+#@{
+
+	key[]: "lvl_name2"
+	val[]: "노동자"
+
+	key[]: "lvl_name3"
+	val[]: "기업가"
+
+	key[]: "lvl_name4"
+	val[]: "전문가"
+
+	key[]: "lvl_name6"
+	val[]: "기술의 18휠즈"
+#@}
+
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "쇼룸"
+
+	key[]: "weblink_game"
+	val[]: "American Truck Simulator 홈페이지" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "American Truck Simulator 페이스북" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+
+	key[]: "sys_no_graphics"
+	val[]: "당신의 컴퓨터에서 American Truck Simulator의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)\n문제 해결을 위한 제안입니다:\n\n1. 당신의 컴퓨터에 장착된 그래픽카드가 시스템 최소 요구사양을 충족하는지 확인하십시오.\n2. Microsoft DirectX를 최신 버전으로 업데이트하십시오.\n3. 사용 중인 그래픽카드의 드라이버를 최신 버전으로 업데이트하십시오. 그래픽카드 드라이버가 오래되었을 가능성도 있습니다.\n4. 렌더링 방식을 OpenGL에서 DirectX로 바꾸거나 반대로 바꿔보시기 바랍니다.\n5. '내 문서'의 'American Truck Simulator' 폴더에 있는 게임 구성 파일인 Config.cfg 파일이 손상되었을 가능성이 있으니 삭제하십시오.\n    이 파일은 게임을 다시 시작하면 유효한 기본값이 적용되어 자동으로 생성됩니다."
+
+	key[]: "sys_no_graphics_simple"
+	val[]: "당신의 컴퓨터에서 American Truck Simulator의 그래픽을 표현할 수 없습니다. (유효한 그래픽 장치를 찾을 수 없습니다)"
+#@}
+
+#+ Activation screen
+#@{
+
+	key[]: "activated"
+	val[]: "성공적으로 인증되었습니다.<br>American Truck Simulator를 구입해 주셔서 감사합니다."
+
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+
+	key[]: "profile_sel_t"
+	val[]: "경력 선택" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#+ Agriculture checks.
+#@{
+	#+ title of the feature
+	key[]: "agri_check_title"
+	val[]: "농업 검사소"
+
+	#+ prepare the player for an upcoming check
+	key[]: "agri_check_ahead"
+	val[]: "농업 검사를 앞두고 있습니다. 감속할 준비를 하십시오."
+
+	#+ stop the vehicle
+	key[]: "agri_check_stop"
+	val[]: "농업 검사를 시작하려면 정차 후 다음 키를 누르십시오:"
+
+	#+ checking/waiting
+	key[]: "agri_check_wait"
+	val[]: "검사가 진행 중입니다."
+
+	#+ inspection passed
+	key[]: "agri_check_pass"
+	val[]: "검사가 완료되었습니다. 계속 운행할 수 있습니다."
+
+	#+ inspection skipped
+	key[]: "offence_avoid_inspection"
+	val[]: "검사임에도 정차하지 않았습니다."
+#@}
+
+#+ Tollgate messages.
+#@{
+	key[]: "thanks_using_bailey"
+	val[]: "H. E. 베일리 턴파이크를 이용해 주셔서 감사합니다."
+
+	key[]: "thanks_using_causeway"
+	val[]: "폰트차트레인 코즈웨이를 이용해 주셔서 감사합니다."
+
+	key[]: "thanks_using_cimarron"
+	val[]: "시마론 턴파이크를 이용해 주셔서 감사합니다."
+
+	key[]: "thanks_using_indian"
+	val[]: "인디언 네이션 턴파이크를 이용해 주셔서 감사합니다."
+
+	key[]: "thanks_using_leeville"
+	val[]: "리빌 톨게이트를 이용해 주셔서 감사합니다."
+
+	key[]: "thanks_using_rogers"
+	val[]: "윌 로저스 턴파이크를 이용해 주셔서 감사합니다."
+
+	key[]: "thanks_using_turner"
+	val[]: "터너 턴파이크를 이용해 주셔서 감사합니다."
+
+	key[]: "thanks_using_turnpass"
+	val[]: "턴패스를 이용해 주셔서 감사합니다."
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "American Truck Simulator 콘텐츠" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "벌크 피드"
+
+	key[]: "curtainside"
+	val[]: "슬라이딩 타프"
+
+	key[]: "chipvan"
+	val[]: "칩 밴"
+
+	key[]: "dropdeck"
+	val[]: "드롭데크"
+
+	key[]: "dryvan"
+	val[]: "드라이 밴"
+
+	key[]: "hopper"
+	val[]: "호퍼"
+
+	key[]: "lowbed"
+	val[]: "로우베드"
+
+	key[]: "lowboy"
+	val[]: "로우보이"
+
+	key[]: "silo"
+	val[]: "드라이 벌크"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "벌크 피드 원료"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "경량 벌크 원료"
+
+	key[]: "body_cargo_types_dropdeck"
+	val[]: "건설 장비, 기계, 자재 및 높은 화물"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "곡물 & 벌크 원료"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "싱글"
+
+	key[]: "double"
+	val[]: "더블"
+
+	key[]: "bdouble"
+	val[]: "B-더블"
+
+	key[]: "rmdouble"
+	val[]: "R.M. 더블"
+
+	key[]: "tpdouble"
+	val[]: "T.P. 더블"
+
+	key[]: "triple"
+	val[]: "트리플"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "싱글"
+
+	key[]: "chain_double"
+	val[]: "더블"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA 더블"
+
+	key[]: "chain_b_double"
+	val[]: "B-더블"
+
+	key[]: "chain_rm_double"
+	val[]: "로키 마운틴 더블"
+
+	key[]: "chain_tp_double"
+	val[]: "턴 파이크 더블"
+
+	key[]: "chain_triple"
+	val[]: "트리플"
+#@}
+
+#+ Trailer configurations
+
+#@{
+
+	key[]: "tr_articulated_3axle"
+	val[]: "굴절식, 3액슬"
+
+	key[]: "tr_articulated_4axle"
+	val[]: "굴절식, 4액슬"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "굴절식, 5액슬"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "굴절식, 6액슬"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "굴절식, 7액슬"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "굴절식, 8액슬"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "굴절식, 9액슬"
+
+	key[]: "tr_b_double"
+	val[]: "B-더블"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-더블, 5액슬"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-더블, 6액슬"
+
+	key[]: "tr_double_staa"
+	val[]: "STAA 더블"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA 더블 펍"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA 더블 펍, 4액슬"
+
+	key[]: "tr_jeep"
+	val[]: "지프"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "지프, 3액슬"
+
+	key[]: "tr_rm_double"
+	val[]: "로키 마운틴 더블"
+
+	key[]: "tr_rm_double_5axle"
+	val[]: "로키 마운틴 더블, 5액슬"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "로키 마운틴 더블 펍"
+
+	key[]: "tr_single_22"
+	val[]: "22ft"
+
+	key[]: "tr_single_28"
+	val[]: "28ft"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28ft, 2액슬"
+
+	key[]: "tr_single_30"
+	val[]: "30ft"
+
+	key[]: "tr_single_32"
+	val[]: "32ft"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32ft, 2액슬"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32ft, 3액슬"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32ft, 연장형"
+
+	key[]: "tr_single_36"
+	val[]: "36ft"
+
+	key[]: "tr_single_36_3axle"
+	val[]: "36ft, 3액슬"
+
+	key[]: "tr_single_40"
+	val[]: "40ft"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40ft, 3액슬"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40ft, 연장형"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40ft, 후방"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40ft, 스프레드"
+
+	key[]: "tr_single_42"
+	val[]: "42ft"
+
+	key[]: "tr_single_42_3axle"
+	val[]: "42ft, 3액슬"
+
+	key[]: "tr_single_43_rear"
+	val[]: "43ft, 후방"
+
+	key[]: "tr_single_45"
+	val[]: "45ft"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45ft, 3액슬"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45ft, 3액슬, 싱글"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45ft, 3액슬, 조향가능"
+
+	key[]: "tr_single_45_front"
+	val[]: "45ft, 전방"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45ft, 후방"
+
+	key[]: "tr_single_45_slide"
+	val[]: "45 ft, 슬라이딩 탠덤"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45ft, 스프레드"
+
+	key[]: "tr_single_48"
+	val[]: "48ft"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48ft, 3액슬"
+
+	key[]: "tr_single_48_4axle"
+	val[]: "48ft, 4액슬"
+
+	key[]: "tr_single_48_front"
+	val[]: "48ft, 전방"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48ft, 후방"
+
+	key[]: "tr_single_48_slide"
+	val[]: "48 ft, 슬라이딩 탠덤"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48ft, 스프레드"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50ft, 3액슬"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50ft, 3액슬, 싱글"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50ft, 3액슬, 조향가능"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50ft, 스프레드"
+
+	key[]: "tr_single_53"
+	val[]: "53ft"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53ft, 3액슬"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53ft, 4액슬"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53ft, 4액슬, 스프레드"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53ft, 4액슬, 조향가능"
+
+	key[]: "tr_single_53_front"
+	val[]: "53ft, 전방"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53ft, 후방"
+
+	key[]: "tr_single_53_slide"
+	val[]: "53 ft, 슬라이딩 탠덤"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53ft, 스프레드"
+
+	key[]: "tr_spreader_1axle"
+	val[]: "스프레더, 1액슬"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "스프레더, 2액슬"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "스프레더, 3액슬"
+
+	key[]: "tr_tp_double"
+	val[]: "턴 파이크 더블"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "턴 파이크 더블, 6액슬"
+
+	key[]: "tr_triple"
+	val[]: "트리플"
+
+	key[]: "tr_triple_pup"
+	val[]: "트리플 펍"
+
+	key[]: "tr_conv_dolly"
+	val[]: "컨버터 돌리"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "컨버터 돌리, 2액슬"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "돌리"		#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly_2"
+	val[]: "돌리, 2액슬"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "벨리 밴"
+
+	key[]: "bs_bulk_feed"
+	val[]: "벌크 피드"
+
+	key[]: "bs_bottomdumper_horizontal"
+	val[]: "수평 보텀 덤프"
+
+	key[]: "bs_bottomdumper_vertical"
+	val[]: "수직 보텀 덤프"
+
+	key[]: "bs_chipvan"
+	val[]: "칩 밴"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "칩 밴, 무빙 플로어"
+
+	key[]: "bs_container"
+	val[]: "컨테이너 캐리어"
+
+	key[]: "bs_curtain"
+	val[]: "슬라이딩 타프"
+
+	key[]: "bs_deep_drop"
+	val[]: "딥 드롭 탱크"
+
+	key[]: "bs_dropdeck"
+	val[]: "드롭데크"
+
+	key[]: "bs_dropdeck_alu"
+	val[]: "알루미늄 드롭데크"
+
+	key[]: "bs_dropdeck_fir"
+	val[]: "전나무 드롭데크"
+
+	key[]: "bs_dropdeck_hardwood"
+	val[]: "활엽수 드롭데크"
+
+	key[]: "bs_drybulk"
+	val[]: "드라이 벌크"
+
+	key[]: "bs_dryvan"
+	val[]: "드라이 밴"
+
+	key[]: "bs_dshape"
+	val[]: "D-쉐이프 탱크"
+
+	key[]: "bs_end_dumper"
+	val[]: "엔드 덤프"
+
+	key[]: "bs_live_floor_dumper"
+	val[]: "라이브 플로어 덤프"
+
+	key[]: "bs_side_dumper"
+	val[]: "사이드 덤프"
+
+	key[]: "bs_flatbed"
+	val[]: "평판"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "알루미늄 평판"
+
+	key[]: "bs_flatbed_fir"
+	val[]: "전나무 평판"
+
+	key[]: "bs_flatbed_hardwood"
+	val[]: "활엽수 평판"
+
+	key[]: "bs_food_tank"
+	val[]: "푸드 탱크"
+
+	key[]: "bs_fuel_tank"
+	val[]: "연료 탱크"
+
+	key[]: "bs_fuel_tank_4comp"
+	val[]: "연료 탱크, 4칸"
+
+	key[]: "bs_grain_hopper"
+	val[]: "곡물 호퍼"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "곡물 호퍼 벨트"
+
+	key[]: "bs_insulated"
+	val[]: "단열"
+
+	key[]: "bs_livestock"
+	val[]: "라이브스톡"
+
+	key[]: "bs_livestock_belly"
+	val[]: "벨리 라이브스톡"
+
+	key[]: "bs_log_4"
+	val[]: "4 볼스터 로거"
+
+	key[]: "bs_log_6"
+	val[]: "6 볼스터 로거"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "나무바닥 로우보이"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "폐쇄식 나무바닥 로우보이"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "나무-알루미늄 로우보이"
+
+	key[]: "bs_reefer"
+	val[]: "냉장"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+#	key[]: "turbo_cooler"
+#	val[]: "Turbo Cooler"
+#
+#	key[]: "chrome_cooler"
+#	val[]: "Chromed Cooler"
+#
+#	key[]: "paint_wall"
+#	val[]: "Painted Wall"
+#
+#	key[]: "chrome_wall"
+#	val[]: "Chromed Wall"
+#
+#	key[]: "alu_wall"
+#	val[]: "Aluminium Wall"
+#
+#	key[]: "steel_wall"
+#	val[]: "Steel Wall"
+#
+#	key[]: "light"
+#	val[]: "Light"
+#
+#	key[]: "log_cage"
+#	val[]: "Log Cage"
+#
+#	key[]: "log_wall"
+#	val[]: "Log Wall"
+#
+#	key[]: "wind_deflector"
+#	val[]: "Wind Deflector"
+#
+#	key[]: "aero_sideskirt"
+#	val[]: "Aero Sideskirt"
+#
+#	key[]: "black_sideskirt"
+#	val[]: "Black Sideskirt"
+#
+#	key[]: "paint_sideskirt"
+#	val[]: "Painted Sideskirt"
+#
+#	key[]: "support_frame"
+#	val[]: "Support Frame"
+#
+#	key[]: "chrome_door"
+#	val[]: "Chromed Door"
+#
+#	key[]: "standard_door"
+#	val[]: "Standard Door"
+#
+#	key[]: "standard_door_aero"
+#	val[]: "Standard Door, Wind Deflector"
+#
+#	key[]: "wooden_deck"
+#	val[]: "Wooden Deck"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "애리조나"
+
+	key[]: "arkansas"
+	val[]: "아칸소"
+
+	key[]: "california"
+	val[]: "캘리포니아"
+
+	key[]: "colorado"
+	val[]: "콜로라도"
+
+	key[]: "idaho"
+	val[]: "아이다호"
+
+	key[]: "illinois"
+	val[]: "일리노이"
+
+	key[]: "iowa"
+	val[]: "아이오와"
+
+	key[]: "kansas"
+	val[]: "캔자스"
+
+	key[]: "louisiana"
+	val[]: "루이지애나"
+
+	key[]: "missouri"
+	val[]: "미주리"
+
+	key[]: "montana"
+	val[]: "몬태나"
+
+	key[]: "nebraska"
+	val[]: "네브래스카"
+
+	key[]: "nevada"
+	val[]: "네바다"
+
+	key[]: "new_mexico"
+	val[]: "뉴멕시코"
+
+	key[]: "oklahoma"
+	val[]: "오클라호마"
+
+	key[]: "oregon"
+	val[]: "오리건"
+
+	key[]: "texas"
+	val[]: "텍사스"
+
+	key[]: "utah"
+	val[]: "유타"
+
+	key[]: "washington"
+	val[]: "워싱턴"
+
+	key[]: "wyoming"
+	val[]: "와이오밍"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "애버딘"
+
+	key[]: "abilene"
+	val[]: "애빌린"
+
+	key[]: "alamogordo"
+	val[]: "앨라모고도"
+
+	key[]: "alamosa"
+	val[]: "앨라모사"
+
+	key[]: "albuquerque"
+	val[]: "앨버커키"
+
+	key[]: "alexandria"
+	val[]: "알렉산드리아"
+
+	key[]: "alliance"
+	val[]: "얼라이언스"
+
+	key[]: "amarillo"
+	val[]: "애머릴로"
+
+	key[]: "ardmore"
+	val[]: "아드모어"
+
+	key[]: "artesia"
+	val[]: "아르테시아"
+
+	key[]: "astoria"
+	val[]: "애스토리아"
+
+	key[]: "austin"
+	val[]: "오스틴"
+
+	key[]: "bakersfield"
+	val[]: "베이커스필드"
+
+	key[]: "barstow"
+	val[]: "바스토"
+
+	key[]: "bartlesville"
+	val[]: "바틀즈빌"
+
+	key[]: "baton_rouge"
+	val[]: "배턴루지"
+
+	key[]: "beaumont"
+	val[]: "보몬트"
+
+	key[]: "bellingham"
+	val[]: "벨링햄"
+
+	key[]: "bend"
+	val[]: "벤드"
+
+	key[]: "billings"
+	val[]: "빌링스"
+
+	key[]: "bloomington"
+	val[]: "블루밍턴"
+
+	key[]: "blythe"
+	val[]: "블라이스"
+
+	key[]: "boise"
+	val[]: "보이시"
+
+	key[]: "bozeman"
+	val[]: "보즈먼"
+
+	key[]: "brownsville"
+	val[]: "브라운즈빌"
+
+	key[]: "burlington"
+	val[]: "벌링턴"
+
+	key[]: "burns"
+	val[]: "번즈"
+
+	key[]: "butte"
+	val[]: "뷰트"
+
+	key[]: "cameron"
+	val[]: "카메론"
+
+	key[]: "camp_verde"
+	val[]: "캠프 베르드"
+
+	key[]: "cape_girardeau"
+	val[]: "케이프지라도"
+
+	key[]: "carlsbad"
+	val[]: "칼즈배드"
+
+	key[]: "carson_city"
+	val[]: "카슨시티"
+
+	key[]: "casper"
+	val[]: "캐스퍼"
+
+	key[]: "cedar_city"
+	val[]: "시더시티"
+
+	key[]: "cedar_rapids"
+	val[]: "시더래피즈"
+
+	key[]: "chadron"
+	val[]: "채드론"
+
+	key[]: "champaign"
+	val[]: "샴페인"
+
+	key[]: "cheyenne"
+	val[]: "샤이엔"
+
+	key[]: "chicago"
+	val[]: "시카고"
+
+	key[]: "clifton"
+	val[]: "클리프턴"
+
+	key[]: "clinton"
+	val[]: "클린턴"
+
+	key[]: "clovis"
+	val[]: "클로비스"
+
+	key[]: "cody"
+	val[]: "코디"
+
+	key[]: "coeur_dalene"
+	val[]: "코달레인"
+
+	key[]: "colby"
+	val[]: "콜비"
+
+	key[]: "colorado_springs"
+	val[]: "콜로라도 스프링스"
+
+	key[]: "columbia"
+	val[]: "콜롬비아"
+
+	key[]: "columbus"
+	val[]: "콜럼버스"
+
+	key[]: "colville"
+	val[]: "콜빌"
+
+	key[]: "coos_bay"
+	val[]: "코어스 베이"
+
+	key[]: "corpus_christi"
+	val[]: "코퍼스크리스티"
+
+	key[]: "cote_blanche_island"
+	val[]: "코트 블랑슈 아일랜드"
+
+	key[]: "council_bluffs"
+	val[]: "카운실 블러프스"
+
+	key[]: "dalhart"
+	val[]: "달하트"
+
+	key[]: "dallas"
+	val[]: "댈러스"
+
+	key[]: "davenport"
+	val[]: "대븐포트"
+
+	key[]: "del_rio"
+	val[]: "델 리오"
+
+	key[]: "denver"
+	val[]: "덴버"
+
+	key[]: "deridder"
+	val[]: "데리더"
+
+	key[]: "des_moines"
+	val[]: "디모인"
+
+	key[]: "dodge_city"
+	val[]: "도지시티"
+
+	key[]: "dubuque"
+	val[]: "더뷰크"
+
+	key[]: "durango"
+	val[]: "두랑고"
+
+	key[]: "durant"
+	val[]: "듀런트"
+
+	key[]: "east_st_louis"
+	val[]: "동 세인트루이스"
+
+	key[]: "ehrenberg"
+	val[]: "에렌버그"
+
+	key[]: "effingham"
+	val[]: "에핑험"
+
+	key[]: "el_centro"
+	val[]: "엘센트로"
+
+	key[]: "el_dorado"
+	val[]: "엘 도라도"
+
+	key[]: "el_paso"
+	val[]: "엘패소"
+
+	key[]: "elko"
+	val[]: "엘코"
+
+	key[]: "ely"
+	val[]: "일리"
+
+	key[]: "emporia"
+	val[]: "엠포리아"
+
+	key[]: "enid"
+	val[]: "이너드"
+
+	key[]: "eugene"
+	val[]: "유진"
+
+	key[]: "eureka"
+	val[]: "유레카"
+
+	key[]: "evanston"
+	val[]: "에번스턴"
+
+	key[]: "everett"
+	val[]: "에버렛"
+
+	key[]: "farmington"
+	val[]: "파밍턴"
+
+	key[]: "fayetteville"
+	val[]: "페이엣빌"
+
+	key[]: "flagstaff"
+	val[]: "플래그스태프"
+
+	key[]: "fort_collins"
+	val[]: "포트콜린스"
+
+	key[]: "fort_dodge"
+	val[]: "포트 다지"
+
+	key[]: "fort_smith"
+	val[]: "포트스미스"
+
+	key[]: "fort_stockton"
+	val[]: "포트스톡턴"
+
+	key[]: "fort_worth"
+	val[]: "포트워스"
+
+	key[]: "fourchon_island"
+	val[]: "포천 아일랜드"
+
+	key[]: "fresno"
+	val[]: "프레즈노"
+
+	key[]: "fusion_travel_plaza"
+	val[]: "퓨전 트래블 플라자"
+
+	key[]: "gallup"
+	val[]: "갤럽"
+
+	key[]: "galveston"
+	val[]: "갤버스턴"
+
+	key[]: "garden_city"
+	val[]: "가든 시티"
+
+	key[]: "gillette"
+	val[]: "질레트"
+
+	key[]: "glasgow"
+	val[]: "글래스고"
+
+	key[]: "glendive"
+	val[]: "글렌다이브"
+
+	key[]: "grand_canyon"
+	val[]: "그랜드 캐니언"
+
+	key[]: "grand_canyon_village"
+	val[]: "그랜드 캐니언 빌리지"
+
+	key[]: "grand_coulee"
+	val[]: "그랜드 쿨리"
+
+	key[]: "grand_island"
+	val[]: "그랜드아일랜드"
+
+	key[]: "grand_junction"
+	val[]: "그랜드정션"
+
+	key[]: "grangeville"
+	val[]: "그랜지빌"
+
+	key[]: "great_falls"
+	val[]: "그레이트 폴스"
+
+	key[]: "guymon"
+	val[]: "가이먼"
+
+	key[]: "harrison"
+	val[]: "해리슨"
+
+	key[]: "havre"
+	val[]: "헤이버"
+
+	key[]: "hays"
+	val[]: "헤이스"
+
+	key[]: "helena"
+	val[]: "헬레나"
+
+	key[]: "hilt"
+	val[]: "힐트"
+
+	key[]: "hobbs"
+	val[]: "홉스"
+
+	key[]: "holbrook"
+	val[]: "홀브룩"
+
+	key[]: "holly_beach"
+	val[]: "홀리 비치"
+
+	key[]: "hornbrook"
+	val[]: "혼브룩"
+
+	key[]: "hot_springs"
+	val[]: "핫스프링스"
+
+	key[]: "houma"
+	val[]: "후마"
+
+	key[]: "houston"
+	val[]: "휴스턴"
+
+	key[]: "huntsville"
+	val[]: "헌츠빌"
+
+	key[]: "huron"
+	val[]: "휴런"
+
+	key[]: "hutchinson"
+	val[]: "허친슨"
+
+	key[]: "idabel"
+	val[]: "아이다벨"
+
+	key[]: "idaho_falls"
+	val[]: "아이다호폴스"
+
+	key[]: "indio"
+	val[]: "인디오"
+
+	key[]: "iowa_city"
+	val[]: "아이오와 시티"
+
+	key[]: "jackpot"
+	val[]: "잭팟"
+
+	key[]: "jackson"
+	val[]: "잭슨"
+
+	key[]: "jefferson_city"
+	val[]: "제퍼슨시티"
+
+	key[]: "jonesboro"
+	val[]: "존즈버러"
+
+	key[]: "joplin"
+	val[]: "조플린"
+
+	key[]: "junction"
+	val[]: "정션"
+
+	key[]: "junction_city"
+	val[]: "정션 시티"
+
+	key[]: "kalispell"
+	val[]: "칼리스펠"
+
+	key[]: "kansas_city"
+	val[]: "캔자스시티"
+
+	key[]: "kayenta"
+	val[]: "카이옌타"
+
+	key[]: "kennewick"
+	val[]: "케너윅"
+
+	key[]: "ketchum"
+	val[]: "케첨"
+
+	key[]: "kingman"
+	val[]: "킹맨"
+
+	key[]: "kirksville"
+	val[]: "커크스빌"
+
+	key[]: "klamath_falls"
+	val[]: "클래머스폴스"
+
+	key[]: "lafayette"
+	val[]: "라파예트"
+
+	key[]: "lake_charles"
+	val[]: "레이크찰스"
+
+	key[]: "lake_havasu_city"
+	val[]: "레이크 하바수시티"
+
+	key[]: "lakeview"
+	val[]: "레이크뷰"
+
+	key[]: "lamar"
+	val[]: "라마"
+
+	key[]: "laramie"
+	val[]: "래러미"
+
+	key[]: "laredo"
+	val[]: "러레이도"
+
+	key[]: "las_cruces"
+	val[]: "라스크루시스"
+
+	key[]: "las_vegas"
+	val[]: "라스베이거스"
+
+	key[]: "laurel"
+	val[]: "로럴"
+
+	key[]: "lawton"
+	val[]: "로턴"
+
+	key[]: "lewiston"
+	val[]: "루이스턴"
+
+	key[]: "lewistown"
+	val[]: "루이스타운"
+
+	key[]: "lincoln"
+	val[]: "링컨"
+
+	key[]: "little_rock"
+	val[]: "리틀록"
+
+	key[]: "logan"
+	val[]: "로건"
+
+	key[]: "longview"
+	val[]: "롱뷰"
+
+	key[]: "los_angeles"
+	val[]: "로스앤젤레스"
+
+	key[]: "lubbock"
+	val[]: "러벅"
+
+	key[]: "lufkin"
+	val[]: "러프킨"
+
+	key[]: "marion"
+	val[]: "마리온"
+
+	key[]: "marysville"
+	val[]: "메리즈빌"
+
+	key[]: "maryville"
+	val[]: "메리빌"
+
+	key[]: "mason_city"
+	val[]: "메이슨 시티"
+
+	key[]: "medford"
+	val[]: "메드퍼드"
+
+	key[]: "miles_city"
+	val[]: "마일스시티"
+
+	key[]: "mcalester"
+	val[]: "매캘러스터"
+
+	key[]: "mcallen"
+	val[]: "매캘런"
+
+	key[]: "mccook"
+	val[]: "맥쿡"
+
+	key[]: "missoula"
+	val[]: "미줄라"
+
+	key[]: "moab"
+	val[]: "모아브"
+
+	key[]: "modesto"
+	val[]: "머데스토"
+
+	key[]: "mojave"
+	val[]: "모하비"
+
+	key[]: "moline"
+	val[]: "몰린"
+
+	key[]: "monroe"
+	val[]: "먼로"
+
+	key[]: "montrose"
+	val[]: "몬트로즈"
+
+	key[]: "muskogee"
+	val[]: "머스코지"
+
+	key[]: "nampa"
+	val[]: "넴파"
+
+	key[]: "natchitoches"
+	val[]: "내키토시"
+
+	key[]: "new_orleans"
+	val[]: "뉴올리언스"
+
+	key[]: "newport"
+	val[]: "뉴포트"
+
+	key[]: "nogales"
+	val[]: "노게일스"
+
+	key[]: "norfolk"
+	val[]: "노퍽"
+
+	key[]: "north_platte"
+	val[]: "노스플랫"
+
+	key[]: "oakdale"
+	val[]: "오크데일"
+
+	key[]: "oakland"
+	val[]: "오클랜드"
+
+	key[]: "odessa"
+	val[]: "오데사"
+
+	key[]: "ogden"
+	val[]: "오그던"
+
+	key[]: "oklahoma_city"
+	val[]: "오클라호마 시티"
+
+	key[]: "olympia"
+	val[]: "올림피아"
+
+	key[]: "omaha"
+	val[]: "오마하"
+
+	key[]: "omak"
+	val[]: "오마크"
+
+	key[]: "ontario"
+	val[]: "온타리오"
+
+	key[]: "ottumwa"
+	val[]: "오텀와"
+
+	key[]: "oxnard"
+	val[]: "옥스나드"
+
+	key[]: "page"
+	val[]: "페이지"
+
+	key[]: "pajarito_rest_area"
+	val[]: "파자리토 휴게소"
+
+	key[]: "pendleton"
+	val[]: "펜들턴"
+
+	key[]: "peoria"
+	val[]: "피오리아"
+
+	key[]: "phillipsburg"
+	val[]: "필립스버그"
+
+	key[]: "phoenix"
+	val[]: "피닉스"
+
+	key[]: "pine_bluff"
+	val[]: "파인블러프"
+
+	key[]: "pioche"
+	val[]: "피오세"
+
+	key[]: "pittsburg"
+	val[]: "피츠버그"
+
+	key[]: "pocatello"
+	val[]: "포커텔로"
+
+	key[]: "ponca_city"
+	val[]: "퐁카시티"
+
+	key[]: "poplar_bluff"
+	val[]: "포플러 블러프"
+
+	key[]: "port_angeles"
+	val[]: "포트앤젤레스"
+
+	key[]: "port_fourchon"
+	val[]: "포트 포천"
+
+	key[]: "portland"
+	val[]: "포틀랜드"
+
+	key[]: "price_ut"
+	val[]: "프라이스"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "프림"
+
+	key[]: "provo"
+	val[]: "프로보"
+
+	key[]: "pueblo"
+	val[]: "푸에블로"
+
+	key[]: "quincy"
+	val[]: "퀸시"
+
+	key[]: "rangely"
+	val[]: "랭글리"
+
+	key[]: "raton"
+	val[]: "래턴"
+
+	key[]: "rawlins"
+	val[]: "롤린스"
+
+	key[]: "redding"
+	val[]: "레딩"
+
+	key[]: "reno"
+	val[]: "리노"
+
+	key[]: "riverton"
+	val[]: "리버턴"
+
+	key[]: "rock_springs"
+	val[]: "록 스프링스"
+
+	key[]: "rockford"
+	val[]: "록퍼드"
+
+	key[]: "rolla"
+	val[]: "롤라"
+
+	key[]: "roswell"
+	val[]: "로즈웰"
+
+	key[]: "sacramento"
+	val[]: "새크라멘토"
+
+	key[]: "salem"
+	val[]: "세일럼"
+
+	key[]: "salina"
+	val[]: "살리나"
+
+	key[]: "salina_ks"
+	val[]: "살리나"
+
+	key[]: "salmon"
+	val[]: "새먼"
+
+	key[]: "salt_lake_city"
+	val[]: "솔트레이크시티"
+
+	key[]: "san_angelo"
+	val[]: "샌앤젤로"
+
+	key[]: "san_antonio"
+	val[]: "샌안토니오"
+
+	key[]: "san_diego"
+	val[]: "샌디에이고"
+
+	key[]: "san_francisco"
+	val[]: "샌프란시스코"
+
+	key[]: "san_jose"
+	val[]: "산호세"
+
+	key[]: "san_rafael"
+	val[]: "샌 라파엘"
+
+	key[]: "san_simon"
+	val[]: "샌 사이먼"
+
+	key[]: "sandpoint"
+	val[]: "샌드포인트"
+
+	key[]: "santa_cruz"
+	val[]: "산타크루즈"
+
+	key[]: "santa_fe"
+	val[]: "산타페"
+
+	key[]: "santa_maria"
+	val[]: "산타마리아"
+
+	key[]: "scottsbluff"
+	val[]: "스코츠블러프"
+
+	key[]: "seattle"
+	val[]: "시애틀"
+
+	key[]: "sheridan"
+	val[]: "셰리든"
+
+	key[]: "show_low"
+	val[]: "쇼로"
+
+	key[]: "shreveport"
+	val[]: "슈리브포트"
+
+	key[]: "sidney"
+	val[]: "시드니"
+
+	key[]: "sierra_vista"
+	val[]: "시에라 비스타"
+
+	key[]: "sioux_city"
+	val[]: "수 시티"
+
+	key[]: "socorro"
+	val[]: "소코로"
+
+	key[]: "spokane"
+	val[]: "스포캔"
+
+	key[]: "springdale"
+	val[]: "스프링데일"
+
+	key[]: "springfield"
+	val[]: "스프링필드"
+
+	key[]: "st_george"
+	val[]: "세인트 조지"
+
+	key[]: "st_joseph"
+	val[]: "세인트 조셉"
+
+	key[]: "st_louis"
+	val[]: "세인트루이스"
+
+	key[]: "steamboat_springs"
+	val[]: "스팀보트 스프링스"
+
+	key[]: "sterling"
+	val[]: "스털링"
+
+	key[]: "stockton"
+	val[]: "스톡턴"
+
+	key[]: "tacoma"
+	val[]: "타코마"
+
+	key[]: "texarkana"
+	val[]: "텍사캐나"
+
+	key[]: "the_dalles"
+	val[]: "더 댈러스"
+
+	key[]: "thompson_falls"
+	val[]: "톰슨폴스"
+
+	key[]: "tonopah"
+	val[]: "토노파"
+
+	key[]: "topeka"
+	val[]: "토피카"
+
+	key[]: "truckee"
+	val[]: "트러키"
+
+	key[]: "tucson"
+	val[]: "투손"
+
+	key[]: "tucumcari"
+	val[]: "투컴캐리"
+
+	key[]: "tulsa"
+	val[]: "털사"
+
+	key[]: "twin_falls"
+	val[]: "트윈폴스"
+
+	key[]: "tyler"
+	val[]: "타일러"
+
+	key[]: "ukiah"
+	val[]: "유키아"
+
+	key[]: "valentine"
+	val[]: "밸런타인"
+
+	key[]: "van_horn"
+	val[]: "반 호른"
+
+	key[]: "vancouver"
+	val[]: "밴쿠버"
+
+	key[]: "vernal"
+	val[]: "버날"
+
+	key[]: "victoria"
+	val[]: "빅토리아"
+
+	key[]: "waco"
+	val[]: "웨이코"
+
+	key[]: "waterloo"
+	val[]: "워털루"
+
+	key[]: "wenatchee"
+	val[]: "웨나치"
+
+	key[]: "wichita"
+	val[]: "위치토"
+
+	key[]: "wichita_falls"
+	val[]: "위치토폴스"
+
+	key[]: "winnemucca"
+	val[]: "위네뮤카"
+
+	key[]: "winslow"
+	val[]: "윈슬로우"
+
+	key[]: "woodward"
+	val[]: "우드워드"
+
+	key[]: "yakima"
+	val[]: "야키마"
+
+	key[]: "yuma"
+	val[]: "유마"
+#@}
+
+}
+}

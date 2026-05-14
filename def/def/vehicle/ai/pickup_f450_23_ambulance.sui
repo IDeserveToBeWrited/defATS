@@ -10,7 +10,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_ks_to
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	tags[]: ambulance
@@ -64,7 +64,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_ks
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	spawn_ratio: 0.0
@@ -110,7 +110,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_ne
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	spawn_ratio: 0.0
@@ -155,7 +155,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_ar
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	spawn_ratio: 0.0
@@ -200,7 +200,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_mo
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	spawn_ratio: 0.0
@@ -241,7 +241,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_ia
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	spawn_ratio: 0.0
@@ -282,7 +282,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_la
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	spawn_ratio: 0.0
@@ -323,7 +323,7 @@ traffic_vehicle : traffic.pickup.f450_23.amb_az
 
 	max_speed: 160
 
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
 	
 	spawn_ratio: 0.0
@@ -354,6 +354,45 @@ vehicle_wheel_accessory: .pickup.f450_23.amb_az.rwheel
 	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
 }
 
+# XXXXXXXXXXXXXXXXXXX Illinois - Ambulance XXXXXXXXXXXXXXXXXXX
 
+traffic_vehicle : traffic.pickup.f450_23.amb_il
+{
+	accessories[]: .pickup.f450_23.amb_il.chassis
+	accessories[]: .pickup.f450_23.amb_il.fwheel
+	accessories[]: .pickup.f450_23.amb_il.rwheel
+
+	max_speed: 160
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 0.0
+
+	tags[]: ambulance
+	
+	vehicle_mass: 3000
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .pickup.f450_23.amb_il.chassis
+{
+	data_path: "/def/vehicle/ai/pickup_f450_23/chassis_amb_il.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_il.fwheel
+{
+	offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_box.sii"
+}
+
+vehicle_wheel_accessory: .pickup.f450_23.amb_il.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_box.sii"
+}
 
 

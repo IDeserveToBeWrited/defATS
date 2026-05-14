@@ -80,6 +80,12 @@ country_traffic_info : .country.info.traffic.chevy_pickup {
 	spawn_ratio: 0.30
 }
 
+country_traffic_info : .country.info.traffic.hd_pickup.tour {
+	object: traffic.hd_pickup.tour
+	spawn_ratio: 1.00
+}
+
+
 #################################################
 ########### car_city
 #################################################
@@ -99,7 +105,7 @@ country_traffic_info : .country.info.traffic.mack_rd.garb {
 }
 
 #################################################
-########### police_hp
+########### Police Highway Patrol
 #################################################
 
 country_traffic_info : .country.info.traffic.ford_tarus.hp_az {
@@ -107,6 +113,11 @@ country_traffic_info : .country.info.traffic.ford_tarus.hp_az {
 	spawn_ratio: 1.0
 }
 
+country_traffic_info : .country.info.traffic.caliber.suv.premium_23.az
+{
+	object: traffic.caliber.suv.premium_23.az
+	spawn_ratio: 1.0
+}
 
 country_traffic_info : .country.info.traffic.f_expl_ar_hp {
 	object: traffic.f_expl_ar_hp
@@ -120,9 +131,40 @@ country_traffic_info : .country.info.traffic.f_expl_d_hp {
 
 
 #################################################
-########### bus
+########### Fire Truck
 #################################################
 
+country_traffic_info : .country.info.traffic.arrow_xt.az
+{
+	object: traffic.arrow_xt.az
+	spawn_ratio: 1.0
+}
+
+
+#################################################
+########### Ambulance
+#################################################
+
+country_traffic_info : .country.info.traffic.f350_ar {
+	object: traffic.f350_ar
+	spawn_ratio: 1.0
+} 
+
+country_traffic_info : .country.info.traffic.pickup.f450_23.amb_az
+{
+	object: traffic.pickup.f450_23.amb_az
+	spawn_ratio: 1.0
+}
+
+country_traffic_info : .country.info.traffic.f350_ge {
+	object: traffic.f350_ge
+	spawn_ratio: 0.0
+} # generic version
+
+
+#################################################
+########### Bus
+#################################################
 
 country_traffic_info : .country.info.traffic.bus_e {
 	object: traffic.bus_e
@@ -133,17 +175,18 @@ country_traffic_info : .country.info.traffic.bus_ws_inv {
 	object: traffic.bus_ws_inv
 	spawn_ratio: 0.80
 }
-#################################################
-########### paramedic
-#################################################
 
-country_traffic_info : .country.info.traffic.f350_ar {
-	object: traffic.f350_ar
+country_traffic_info : .country.info.traffic.bus.city_24.az_can_p
+{
+	object: traffic.bus.city_24.az_can_p
 	spawn_ratio: 1.0
-} # az version
+}
 
-country_traffic_info : .country.info.traffic.f350_ge {
-	object: traffic.f350_ge
-	spawn_ratio: 0.0
-} # generic version
+country_traffic_info : .country.info.traffic.bus.city_24.az_can
+{
+	object: traffic.bus.city_24.az_can
+	spawn_ratio: 0.01
+}
+
+
 }

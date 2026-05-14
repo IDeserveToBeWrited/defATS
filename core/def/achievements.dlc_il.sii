@@ -1,0 +1,173 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC Illinois --
+
+# Discover at least 8 cities in Illinois.
+
+achievement_visit_city_data : .achievement.il_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	country_name: illinois
+	target: 8
+
+	achievement_name: il_visit_cities
+
+	steam_progress_id: "il_visit_cities-progress"
+	steam_id: il_visit_cities
+}
+
+# View cutscenes from at least 12 viewpoints in Illinois.
+
+achievement_trigger_data : .achievement.il_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: il_cutscenes
+	target: 12
+
+	achievement_name: il_cutscenes
+
+	steam_progress_id: "il_cutscenes-progress"
+	steam_id: il_cutscenes
+}
+
+# Perfectly deliver any machinery: Springfield (IL) - Peoria, then Peoria - Chicago (NAMIQ quarry).
+
+achievement_delivery : .achievement.il_machinery
+{
+	event_name: job_done
+	initial_check: true
+	condition: .il_machinery.condition
+	target: 2
+
+	achievement_name: il_machinery
+
+	steam_progress_id: "il_machinery-progress"
+	steam_id: il_machinery
+}
+
+achievement_delivery_sequence : .il_machinery.condition
+{
+	list[]: .il_machinery.springfie_il
+	list[]: .il_machinery.peoria
+
+	in_order: true
+}
+
+achievement_delivery_each : .il_machinery.springfie_il
+{
+	list[]: .il_machinery.springfie_il.damage
+	list[]: .il_machinery.springfie_il.fines
+	list[]: .il_machinery.springfie_il.late
+	list[]: .il_machinery.springfie_il.cargo
+	list[]: .il_machinery.springfie_il.source
+	list[]: .il_machinery.springfie_il.target
+}
+
+achievement_delivery_cargo_damage : .il_machinery.springfie_il.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_fines : .il_machinery.springfie_il.fines
+{
+	fines_max: 0
+}
+
+achievement_delivery_late : .il_machinery.springfie_il.late
+{
+	late: false
+}
+
+achievement_delivery_cargo : .il_machinery.springfie_il.cargo
+{
+	cargo_group: lowbed
+}
+
+achievement_delivery_point_city : .il_machinery.springfie_il.source
+{
+	role: source
+	city_name: springfie_il
+}
+
+achievement_delivery_point_city : .il_machinery.springfie_il.target
+{
+	role: target
+	city_name: peoria
+}
+
+achievement_delivery_each : .il_machinery.peoria
+{
+	list[]: .il_machinery.peoria.damage
+	list[]: .il_machinery.peoria.fines
+	list[]: .il_machinery.peoria.late
+	list[]: .il_machinery.peoria.cargo
+	list[]: .il_machinery.peoria.source
+	list[]: .il_machinery.peoria.target
+}
+
+achievement_delivery_cargo_damage : .il_machinery.peoria.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_fines : .il_machinery.peoria.fines
+{
+	fines_max: 0
+}
+
+achievement_delivery_late : .il_machinery.peoria.late
+{
+	late: false
+}
+
+achievement_delivery_cargo : .il_machinery.peoria.cargo
+{
+	cargo_group: lowbed
+}
+
+achievement_delivery_point_city : .il_machinery.peoria.source
+{
+	role: source
+	city_name: peoria
+}
+
+achievement_delivery_company : .il_machinery.peoria.target
+{
+	role: target
+	company_name: nmq_min_qry
+	city_name: chicago
+}
+
+# Drive through the Evergreen cornfield maze.
+
+achievement_trigger_data : .achievement.il_cornfield
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: il_cornfield
+
+	achievement_name: il_cornfield
+
+	steam_id: il_cornfield
+}
+
+}

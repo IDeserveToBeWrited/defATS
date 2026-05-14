@@ -1458,3 +1458,40 @@ vehicle_wheel_accessory: .arrow_xt.az.rwheel
 	data_path: "/def/vehicle/r_wheel/chrome.sii"
 }
 
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Illinois - Fire truck XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.arrow_xt.il
+{
+	accessories[]: .arrow_xt.il.chassis
+	accessories[]: .arrow_xt.il.fwheel
+	accessories[]: .arrow_xt.il.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/truck_us_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+	
+	spawn_ratio: 0
+
+
+
+@include "drivers_police.sui"
+}
+
+vehicle_accessory: .arrow_xt.il.chassis
+{
+	data_path: "/def/vehicle/ai/arrow_xt/il.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.il.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory: .arrow_xt.il.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+

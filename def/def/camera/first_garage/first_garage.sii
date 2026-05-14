@@ -4,6 +4,8 @@ SiiNunit
 cinematic_camera : _nameless.cinematic.camera
 {
 	cameras[]: "_nameless.camera0"
+	cameras[]: "_nameless.camera1"
+	cameras[]: "_nameless.camera2"
 	animations[]: "_nameless.camera.animation.info0"
 	animations[]: "_nameless.camera.animation.info1"
 	animations[]: "_nameless.camera.animation.info2"
@@ -17,46 +19,104 @@ cinematic_camera : _nameless.cinematic.camera
 
 orbit_camera : _nameless.camera0
 {
-	name: cameraShape1
-	camera_fov: &42628aba
+	name: cameraShape4
+	camera_fov: &42a5fb2f
+	roll: &00000000
+}
+
+orbit_camera : _nameless.camera1
+{
+	name: cameraShape6
+	camera_fov: &4259ba99
+	roll: &00000000
+}
+
+orbit_camera : _nameless.camera2
+{
+	name: cameraShape7
+	camera_fov: &4259ba99
 	roll: &00000000
 }
 
 camera_animation_info : _nameless.camera.animation.info0
 {
-	camera_index: 0
-	frame_count: 2
-	frame_duration: &40055555
-	positions[]: (&c2bac05e, &410f5478, &3e9c373d)
-	positions[]: (&c29ff8e5, &410f5478, &c1859131)
-	positions[]: (&c285316c, &410f5478, &c206c99f)
-	aims[]: (&45919369, &c4537feb, &c39ca04a)
-	aims[]: (&45504db3, &c4537feb, &44ab3b1a)
-	aims[]: (&44fae92b, &c4537feb, &453ecf24)
+	camera_index: 1
+	frame_count: 9
+	frame_duration: &3f855555
+	positions[]: (&c1802131, &41e44fca, &42510af9)
+	positions[]: (&c165547d, &41e36f6b, &424ff0d9)
+	positions[]: (&c1401c60, &41e0e4c3, &424cd132)
+	positions[]: (&c116f1c6, &41dc9a0a, &42479866)
+	positions[]: (&c0dde767, &41d70bcc, &4240e43c)
+	positions[]: (&c0988b25, &41d0eee8, &42399643)
+	positions[]: (&c04a1b11, &41cb0dfc, &4232a965)
+	positions[]: (&c0138309, &41c656c9, &422d3d84)
+	positions[]: (&c00a62da, &41c44d24, &422afb50)
+	positions[]: (&c00a62da, &41c44d24, &422afb50)
+	aims[]: (&c4fba4e3, &c53095b6, &c595d605)
+	aims[]: (&c5083c70, &c52fe82d, &c594fbd0)
+	aims[]: (&c516a124, &c52df0ef, &c5929155)
+	aims[]: (&c5268c9e, &c52a9f24, &c58e8767)
+	aims[]: (&c53603de, &c5265320, &c589580e)
+	aims[]: (&c5436d35, &c52198c8, &c583b1c0)
+	aims[]: (&c54d61ff, &c51d0cd1, &c57cad18)
+	aims[]: (&c552a932, &c5196720, &c5744a39)
+	aims[]: (&c5538b0e, &c517d3aa, &c570cbd0)
+	aims[]: (&c5538b0e, &c517d3aa, &c570cbd0)
 }
 
 camera_animation_info : _nameless.camera.animation.info1
 {
 	camera_index: 0
-	frame_count: 2
-	frame_duration: &40855555
-	positions[]: (&c12553b9, &410f5478, &42009069)
-	positions[]: (&40e2a0a0, &410f5478, &409b4976)
-	positions[]: (&416b8768, &410f5478, &c1993d91)
-	aims[]: (&c55eacf0, &c4537fea, &c5589021)
-	aims[]: (&c5a53730, &c4537feb, &c43eddca)
-	aims[]: (&c5bcd8d7, &c4537feb, &44c9a9c0)
+	frame_count: 9
+	frame_duration: &3f555555
+	positions[]: (&c057d14a, &408d77ee, &c22c366a)
+	positions[]: (&c0bddf9f, &408d77ee, &c22bfd96)
+	positions[]: (&c107ec2d, &408d77ee, &c22bd019)
+	positions[]: (&c130e93a, &408d77ee, &c22badd2)
+	positions[]: (&c159e6b9, &408d77ee, &c22b957b)
+	positions[]: (&c1817239, &408d77ee, &c22b843d)
+	positions[]: (&c195f11e, &408d77ee, &c22b759c)
+	positions[]: (&c1aa6ffb, &408d77ee, &c22b642e)
+	positions[]: (&c1beeeb5, &408d77ee, &c22b4ada)
+	positions[]: (&c1d36d29, &408d77ee, &c22b25f8)
+	aims[]: (&c0b834fb, &4067865e, &c21aedde)
+	aims[]: (&c10515fa, &4067865e, &c21ab50a)
+	aims[]: (&c12e1258, &4067865e, &c21a878d)
+	aims[]: (&c1570f65, &4067865e, &c21a6546)
+	aims[]: (&c1800672, &4067865e, &c21a4cef)
+	aims[]: (&c194854f, &4067865e, &c21a3bb1)
+	aims[]: (&c1a90434, &4067865e, &c21a2d10)
+	aims[]: (&c1bd8310, &4067865e, &c21a1ba2)
+	aims[]: (&c1d201ca, &4067865e, &c21a024e)
+	aims[]: (&c1e6803e, &4067865e, &c219dd6c)
 }
 
 camera_animation_info : _nameless.camera.animation.info2
 {
-	camera_index: 0
-	frame_count: 1
-	frame_duration: &40855555
-	positions[]: (&c2a5c22c, &40f29d18, &410812c0)
-	positions[]: (&c2bac05e, &410f5478, &3e9c373d)
-	aims[]: (&45623467, &c4316ec3, &c48c9ffd)
-	aims[]: (&45919369, &c4537feb, &c39ca04a)
+	camera_index: 2
+	frame_count: 9
+	frame_duration: &3f555555
+	positions[]: (&c28d6cc0, &409341a0, &42051d26)
+	positions[]: (&c28dbb6b, &4092bd9a, &41f55280)
+	positions[]: (&c28e2d50, &4091fe76, &41d70e60)
+	positions[]: (&c28eb457, &40911bdb, &41b32c74)
+	positions[]: (&c28f4269, &40902d6c, &418d6b45)
+	positions[]: (&c28fc970, &408f4ad1, &415312b2)
+	positions[]: (&c2903b55, &408e8bad, &41168a73)
+	positions[]: (&c2908a00, &408e07a7, &40d975b4)
+	positions[]: (&c290a75a, &408dd664, &40ba41f4)
+	positions[]: (&c290a75a, &408dd664, &40ba41f4)
+	aims[]: (&452a0d8f, &c3e3c984, &c562939e)
+	aims[]: (&452b00f0, &c3e2fd4a, &c5526856)
+	aims[]: (&452c614b, &c3e1d59f, &c53affa6)
+	aims[]: (&452e0309, &c3e07716, &c51f3ee9)
+	aims[]: (&452fba92, &c3df0644, &c5020b7f)
+	aims[]: (&45315c4f, &c3dda7bb, &c4cc9584)
+	aims[]: (&4532bcaa, &c3dc8010, &c49dc424)
+	aims[]: (&4533b00b, &c3dbb3d6, &c47adb27)
+	aims[]: (&45340adb, &c3db67a2, &c462b921)
+	aims[]: (&45340adb, &c3db67a2, &c462b921)
 }
 
 transition_info : _nameless.transition.info0

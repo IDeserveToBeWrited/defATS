@@ -1,0 +1,43 @@
+SiiNunit
+{
+
+accessory_cabin_data : 42m.volvo.vnl2025.cabin
+{
+	name: "@@cabin_440@@"
+	price: 27590
+	unlock: 10
+	icon: "truck/volvo_vnl2025/cabin/s42m"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2025/cabin/s42m.pmd"
+	collision: "/vehicle/truck/volvo_vnl2025/cabin/s42m.pmc"
+
+	variant: default
+	look: default
+
+	wiper_model: "/vehicle/truck/volvo_vnl2025/cabin/wiper.pmd"
+	wiper_anim: "/vehicle/truck/volvo_vnl2025/cabin/wiper_anim.pma"
+	windows_model: "/vehicle/truck/volvo_vnl2025/cabin/win_open.pmd"
+	left_window_anim: "/vehicle/truck/volvo_vnl2025/cabin/win_open_l.pma"
+	right_window_anim: "/vehicle/truck/volvo_vnl2025/cabin/win_open_r.pma"
+
+	suspension_type: hinge2air
+	drl_with_headlights: 1.0
+
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/chassis/42_220_6x2m.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/interior/42m_core.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/s_deflector/42_low.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/s_logo/vnl_440.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/carpet/single_rubber.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/mirror/standard_plastic.sii"
+
+	conflict_with[]: "dc_155_4x2.volvo.vnl2025.chassis"
+	conflict_with[]: "dc_164_6x4.volvo.vnl2025.chassis"
+	conflict_with[]: "dc_190_6x2m.volvo.vnl2025.chassis"
+	conflict_with[]: "74_211_4x2.volvo.vnl2025.chassis"
+	conflict_with[]: "74_220_6x4.volvo.vnl2025.chassis"
+	conflict_with[]: "74_246_6x2m.volvo.vnl2025.chassis"
+
+@include "sound.sui"
+}
+}

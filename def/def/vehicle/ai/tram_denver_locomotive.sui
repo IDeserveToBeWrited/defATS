@@ -47,3 +47,55 @@ traffic_spawn_condition: .traffic.trmdenver_l.condition.city
 	type: city
 	str_param[]: "denver"
 }
+
+################################## Illinois - East St Loui ################################## 
+
+traffic_vehicle : traffic.trmdenver_l.il
+{
+	accessories[]: .trmdenver_l.il.chassis
+	accessories[]: .trmdenver_l.il.fwheel
+	accessories[]: .trmdenver_l.il.rwheel
+
+
+
+	vehicle_mass: 14000	# 20t whole tram + cca 80ppl
+	engine_power: 580 # 4x145 kW
+	max_speed: 80
+
+	trailer_chains[]: "train_car.trmdenver_c.il 1"
+
+	displacement_limit: 0.0
+
+	sound_move[]: "/sound/traffic/train_electric_1.soundref"
+	sound_gears: 1
+
+	spawn_ratio: 0.0
+
+	spawn_condition[]: .traffic.trmdenver_l.il.condition.city
+
+}
+
+vehicle_accessory: .trmdenver_l.il.chassis
+{
+	data_path: "/def/vehicle/ai/tram_denver/chassis_l_il.sii"
+}
+
+vehicle_wheel_accessory: .trmdenver_l.il.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+
+vehicle_wheel_accessory: .trmdenver_l.il.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+
+
+traffic_spawn_condition: .traffic.trmdenver_l.il.condition.city
+{
+	# spawn only near city with specified name
+	type: city
+	str_param[]: "east_st_loui"
+}

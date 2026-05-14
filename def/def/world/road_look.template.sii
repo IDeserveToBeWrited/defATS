@@ -3961,6 +3961,7 @@ road_look : road.us_tmpl431
 	compatible_edges_right[]: "dw2_con_sw"
 	compatible_edges_right[]: "dw4_con_sw"
 	compatible_edges_right[]: "dw_con_sw_dp"
+	compatible_edges_right[]: "sw_2_2m_d"
 
 	shoulder_space_left: 1.2
 	shoulder_space_right: 1.2
@@ -9199,6 +9200,7 @@ road_look : road.us_tmpl48
 	compatible_edges_right[]: "dw2_con_sw"
 	compatible_edges_right[]: "dw4_con_sw"
 	compatible_edges_right[]: "dw_con_sw_dp"
+	compatible_edges_right[]: "sw_2_2m_d"
 
 	shoulder_space_left: 0.5
 	shoulder_space_right: 1.2
@@ -9807,7 +9809,6 @@ road_look : road.or_tmpl01
 	name: "us 1-1 forest"
 	template_right: "/road_template/or/or_forest_road.pmd"
 
-
 	lanes_right[]: traffic_lane.no_vehicles.dirt
 	lanes_left[]: traffic_lane.no_vehicles.dirt
 
@@ -9816,8 +9817,8 @@ road_look : road.or_tmpl01
 
 	compatible_edges_right[]: "sh_f"
 
-	shoulder_space_left: -1.0
-	shoulder_space_right: -1.0
+	shoulder_space_left: -1.0	# forest road
+	shoulder_space_right: -1.0	# forest road
 }
 
 road_look : road.us_tmpl01
@@ -9834,15 +9835,14 @@ road_look : road.us_tmpl01
 
 	compatible_edges_right[]: "sh_f"
 
-	shoulder_space_left: -1.0
-	shoulder_space_right: -1.0
+	shoulder_space_left: -1.0	# field road
+	shoulder_space_right: -1.0	# field road
 }
 
 road_look : road.or_tmpl01l
 {
 	name: "us 1-1 forest / lowpoly"
 	template_right: "/road_template/or/or_forest_road_lowpoly.pmd"
-
 
 	lanes_right[]: traffic_lane.no_vehicles
 	lanes_left[]: traffic_lane.no_vehicles
@@ -9852,15 +9852,14 @@ road_look : road.or_tmpl01l
 
 	compatible_edges_right[]: "sh_fl"
 
-	shoulder_space_left: -1.0
-	shoulder_space_right: -1.0
+	shoulder_space_left: -1.0	# forest road
+	shoulder_space_right: -1.0	# forest road
 }
 
 road_look : road.us_tmpl02
 {
 	name: "us 1-1 field asphalt"
 	template_right: "/road_template/us/us_asphalt_field_road.pmd"
-
 
 	lanes_right[]: traffic_lane.no_vehicles
 	lanes_left[]: traffic_lane.no_vehicles
@@ -9928,8 +9927,8 @@ road_look : road.us_tmpl02
 	compatible_edges_right[]: "dw2_sh_fl"
 	compatible_edges_right[]: "dw4_sh_fl"
 
-	shoulder_space_left: -1.0
-	shoulder_space_right: -1.0
+	shoulder_space_left: -1.0	# field asphalt road
+	shoulder_space_right: -1.0	# field asphalt road
 }
 
 road_look : road.or_tmpl02
@@ -9952,8 +9951,8 @@ road_look : road.or_tmpl02
 	compatible_edges_left[]: "sh_f"
 	compatible_edges_left[]: "sh_fn"
 
-	shoulder_space_left: -1.0
-	shoulder_space_right: -1.0
+	shoulder_space_left: -1.0	# forest road
+	shoulder_space_right: -1.0	# forest road
 
 }
 
@@ -9980,9 +9979,8 @@ road_look : road.or_tmpl05
 	compatible_edges_right[]: "sh_f"
 	compatible_edges_right[]: "sh_fn"
 
-	shoulder_space_left: -1.0
-	shoulder_space_right: -1.0
-
+	shoulder_space_left: -1.0	# forest road
+	shoulder_space_right: -1.0	# forest road
 }
 
 road_look : road.or_tmpl05l
@@ -9996,9 +9994,8 @@ road_look : road.or_tmpl05l
 
 	compatible_edges_right[]: "sh_fl"
 
-	shoulder_space_left: -1.0
-	shoulder_space_right: -1.0
-
+	shoulder_space_left: -1.0	# forest road
+	shoulder_space_right: -1.0	# forest road
 }
 
 road_look : road.or_tmpl06

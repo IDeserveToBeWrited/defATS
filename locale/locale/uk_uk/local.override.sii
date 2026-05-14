@@ -1,0 +1,2656 @@
+SiiNunit
+{
+
+localization_db : .localization
+{
+
+# Usefull urls. Theoretically can be language specific. Not exported to GetLoc
+#!{
+	key[]: "offline_activation_url"
+	val[]: "https://www.americantrucksimulator.com/support.html"
+
+	key[]: "tobii_url"
+	val[]: "https://gaming.tobii.com/games/american-truck-simulator/?utm_campaign=American%20Truck%20Simulator&utm_source=in-game&utm_medium=referral"
+#!}
+
+#+ Various accessory slots or accessory names.
+#@{
+	key[]: "airdam"
+	val[]: "Обтічна деталь"
+
+	key[]: "b_mudflap"
+	val[]: "Бризковики бампера"
+
+	key[]: "bckpanel"
+	val[]: "Аксесуари задньої стінки"	#+ Interior accessories placed on the back panel of the truck cabin
+
+	key[]: "cabflares"
+	val[]: "Освітлення кабіни"
+
+	key[]: "cabdefl"
+	val[]: "Бічні дефлектори"
+
+	key[]: "deflector"
+	val[]: "Дефлектор"
+
+	key[]: "filter_cover"
+	val[]: "Захист фільтра"
+
+	key[]: "filters"
+	val[]: "Повітряні фільтри"
+
+	key[]: "fl_mirror"
+	val[]: "Передні дзеркала"
+
+	key[]: "flag_f_l"
+	val[]: "Передні прапорці"
+
+	key[]: "flag_f_r"
+	val[]: "Передні прапорці"
+
+	key[]: "flag_r_l"
+	val[]: "Задні прапорці"
+
+	key[]: "flag_r_r"
+	val[]: "Задні прапорці"
+
+	key[]: "fr_mirror"
+	val[]: "Передні дзеркала"
+
+	key[]: "grill"
+	val[]: "Решітка"
+
+	key[]: "headache_r"
+	val[]: "Захист кабіни"
+
+	key[]: "hndrail"
+	val[]: "Поручень"
+
+	key[]: "horns"
+	val[]: "Пневматичні сигнали"
+
+	key[]: "hood"
+	val[]: "Капот"
+
+	key[]: "int_trim"
+	val[]: "Оздоблення інтер'єру"
+
+	key[]: "lampbar"
+	val[]: "Світлова панель"
+
+	key[]: "lghfender"
+	val[]: "Захист крила"
+
+	key[]: "mudflaps"
+	val[]: "Бризковики"
+
+	key[]: "mudguard"
+	val[]: "Бризковики"
+
+	key[]: "ornament"
+	val[]: "Оздоба"
+
+	key[]: "rear_cab"
+	val[]: "Зад кабіни"
+
+	key[]: "rear2_cab"
+	val[]: "Зад кабіни"
+
+	key[]: "rearstep"
+	val[]: "Задні східця"
+
+	key[]: "roof_window"
+	val[]: "Люк"
+
+	key[]: "s_logo"
+	val[]: "Бічний логотип"
+
+	key[]: "set_cabinet"
+	val[]: "Шафки" #+ Large Pin for sets of small pins of the cabinet accessories
+
+	key[]: "sideflares"
+	val[]: "Декоративні Панелі"
+
+	key[]: "slp_hndl"
+	val[]: "Дверні ручки"
+
+	key[]: "slp_vent"
+	val[]: "Вентиляція"
+
+	key[]: "topflares"
+	val[]: "Ліхтарі спальника"
+
+	key[]: "toyback"
+	val[]: "Предмети спальника" #+ Interior accessories placed on the floor of the sleeper cabin
+
+	key[]: "toybig"
+	val[]: "Підлога кабіни" #+ Interior accessories placed on the floor of the truck cabin
+
+	key[]: "toydash"
+	val[]: "Консоль" #+ Interior accessories placed on the floor in storage in dashboard
+
+	key[]: "toysofa"
+	val[]: "Спальник" #+ Interior accessories placed on the floor of the sleeper sofa
+
+	key[]: "toytable"
+	val[]: "Столик" #+ Interior accessories placed on the table in back of the truck cabin
+
+	key[]: "wing"
+	val[]: "Антикрило"
+
+
+#	key[]: "aero"
+#	val[]: "Aero"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero2"
+#	val[]: "Aero II"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero_chrom"
+#	val[]: "Aero Chromed"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aero_paint"
+#	val[]: "Aero Painted"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "aerox"
+#	val[]: "AeroX"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "alu_tank"
+#	val[]: "Aluminium Tank"	#+ Aluminium tank accessory (water, fuel, etc)
+#
+#	key[]: "cabinet"
+#	val[]: "Cabinet"	#+ Default cabinet and pin set name
+#
+#	key[]: "chrom_tank"
+#	val[]: "Chromed Tank"	#+ Chromed tank accessory (water, fuel, etc)
+#
+#	key[]: "chrome_pipeguard"
+#	val[]: "Chromed Pipeguard"	#+ Pipeguard accessory name
+#
+#	key[]: "d_shape"
+#	val[]: "D-Shape"	#+ D-shaped tank accessory (water, fuel, etc)
+#
+#	key[]: "dresser"
+#	val[]: "Dresser"	#+ Alternative "cabinet" and pin set name
+#
+#	key[]: "drl"
+#	val[]: "DRL"		#+ Daytime running lights
+#
+#	key[]: "elite"
+#	val[]: "Elite"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "fog_lights"
+#	val[]: "Fog Lights"
+#
+#	key[]: "fridge"
+#	val[]: "Fridge"	#+ Alternative "cabinet" and pin set name
+#
+#	key[]: "hvac"
+#	val[]: "HVAC"	#+ Specific accesory name (eg. Freightliner Cascadia)
+#
+#	key[]: "light_adapter"
+#	val[]: "Light Adapter"
+#
+#	key[]: "paint_pipeguard"
+#	val[]: "Painted Pipeguard"	#+ Pipeguard accessory name
+#
+#	key[]: "utility"
+#	val[]: "Utility"	#+ Alternative "cabinet" and pin set name
+
+
+
+#+ Cabin accessory items and sets (toys)
+#@{
+
+#	key[]: "amber_sunflower"
+#	val[]: "Amber Sunflower"
+#
+#	key[]: "american_football_ball"
+#	val[]: "American Football Ball"
+#
+#	key[]: "armadillo_plush"
+#	val[]: "Armadillo Plush"
+#
+#	key[]: "ats_bag"
+#	val[]: "ATS Bag"
+#
+#	key[]: "ats_cap"
+#	val[]: "ATS Cap"
+#
+#	key[]: "ats_game_box"
+#	val[]: "ATS Game Box"
+#
+#	key[]: "ats_lunch_box"
+#	val[]: "ATS Lunch Box"
+#
+#	key[]: "ats_mug"
+#	val[]: "ATS Mug"
+#
+#	key[]: "ats_truck_bag"
+#	val[]: "ATS Truck Bag"
+#
+#	key[]: "baseball_ball"
+#	val[]: "Baseball Ball"
+#
+#	key[]: "baseball_bat"
+#	val[]: "Baseball Bat"
+#
+#	key[]: "bee"
+#	val[]: "Bee"
+#
+#	key[]: "black_ats_mug"
+#	val[]: "Black ATS Mug"
+#
+#	key[]: "black_swallowtail"
+#	val[]: "Black Swallowtail"
+#
+#	key[]: "blanket_stars"
+#	val[]: "Stars Blanket"
+#
+#	key[]: "boudreaux_the_bear"
+#	val[]: "Boudreaux the Bear"
+#
+#	key[]: "box_turtle"
+#	val[]: "Box Turtle"
+#
+#	key[]: "burger"
+#	val[]: "Burger"
+#
+#	key[]: "can"
+#	val[]: "Can"
+#
+#	key[]: "can_pack"
+#	val[]: "Can Pack"
+#
+#	key[]: "can_sixpack"
+#	val[]: "Can Sixpack"
+#
+#	key[]: "cans"
+#	val[]: "Cans"
+#
+#	key[]: "car_perfume"
+#	val[]: "Car Perfume"
+#
+#	key[]: "cardbox"
+#	val[]: "Cardboard Box"
+#
+#	key[]: "carrier"
+#	val[]: "Bottle Carrier"
+#
+#	key[]: "chainsaw_toy"
+#	val[]: "Chainsaw Toy"
+#
+#	key[]: "chewing_gums"
+#	val[]: "Chewing Gum"
+#
+#	key[]: "coffee_cup"
+#	val[]: "Coffee Cup"
+#
+#	key[]: "costs_list"
+#	val[]: "Fuel Consumption Log"
+#
+#	key[]: "diamond_apple_blossom"
+#	val[]: "Diamond Apple Blossom"
+#
+#	key[]: "dreamcatcher"
+#	val[]: "Dreamcatcher"
+#
+#	key[]: "emergency_triangles"
+#	val[]: "Warning Triangles"
+#
+#	key[]: "ear_mufflers"
+#	val[]: "Ear Mufflers"
+#
+#	key[]: "expenses_list"
+#	val[]: "Expense Report"
+#
+#	key[]: "first_sign"
+#	val[]: "First Sign"
+#
+#	key[]: "fishing_bag"
+#	val[]: "Fishing Bag"
+#
+#	key[]: "giant_salamander_sticker"
+#	val[]: "Giant Salamander Sticker"
+#
+#	key[]: "goalkeeper_mask"
+#	val[]: "Goalkeeper Mask"
+#
+#	key[]: "golden_south"
+#	val[]: "Golden South"
+#
+#	key[]: "guitar"
+#	val[]: "Guitar"
+#
+#	key[]: "guitar_case"
+#	val[]: "Guitar Case"
+#
+#	key[]: "happy_hog"
+#	val[]: "Happy Hog"
+#
+#	key[]: "hockey_stick"
+#	val[]: "Hockey Stick"
+#
+#	key[]: "holy_field_blanket"
+#	val[]: "Holly Field Blanket"
+#
+#	key[]: "honey_bee"
+#	val[]: "Honey Bee"
+#
+#	key[]: "honey_bee_plush"
+#	val[]: "Honey Bee Plush"
+#
+#	key[]: "idaho_nights_air_freshener"
+#	val[]: "Idaho Nights Air Freshener"
+#
+#	key[]: "idaho_spuds_sticker"
+#	val[]: "Idaho Spuds Sticker"
+#
+#	key[]: "kw_airfreshener"
+#	val[]: "Kenworth Air Freshener"
+#
+#	key[]: "kw_cancooler"
+#	val[]: "Kenworth Can Cooler"
+#
+#	key[]: "kw_contrast_cap"
+#	val[]: "Kenworth Contrast Cap"
+#
+#	key[]: "kw_dufflebag"
+#	val[]: "Kenworth Dufflebag"
+#
+#	key[]: "kw_keychain"
+#	val[]: "Kenworth Keychain"
+#
+#	key[]: "kw_retro_cap"
+#	val[]: "Kenworth Retro Cap"
+#
+#	key[]: "kw_tumbler"
+#	val[]: "Kenworth 20oz Red Tumbler"
+#
+#	key[]: "kw_100y_airfresh"
+#	val[]: "Kenworth 100 year Air Freshener"
+#
+#	key[]: "kw_100y_cap"
+#	val[]: "Kenworth 100 year Cap"
+#
+#	key[]: "kw_100y_tumbler"
+#	val[]: "Kenworth 100 year 20oz Rambler Tumbler"
+#
+#	key[]: "laundry_box"
+#	val[]: "Laundry Basket"
+#
+#	key[]: "lone_star_longhorn"
+#	val[]: "Lone Star Longhorn"
+#
+#	key[]: "mammoth_archie"
+#	val[]: "Mammoth Archie"
+#
+#	key[]: "mountain_goat_plush"
+#	val[]: "Mountain Goat Plush"
+#
+#	key[]: "owl_mug"
+#	val[]: "OWL Mug"
+#
+#	key[]: "peppermints"
+#	val[]: "Peppermints"
+#
+#	key[]: "plush_donut"
+#	val[]: "Plush Donut"
+#
+#	key[]: "plush_lion"
+#	val[]: "Plush Lion"
+#
+#	key[]: "porcelain_wild_rose"
+#	val[]: "Porcelain Wild Rose"
+#
+#	key[]: "power_inverter"
+#	val[]: "Power Inverter"
+#
+#	key[]: "propeller"
+#	val[]: "Propeller"
+#
+#	key[]: "sapphire_meadowlark"
+#	val[]: "Sapphire Meadowlark"
+#
+#	key[]: "shoes"
+#	val[]: "Shoes"
+#
+#	key[]: "spearmints"
+#	val[]: "Spearmints"
+#
+#	key[]: "sport_sunglasses"
+#	val[]: "Sport Sunglasses"
+#
+#	key[]: "stack_of_burgers"
+#	val[]: "Stack of Burgers"
+#
+#	key[]: "striking_mule"
+#	val[]: "Striking Mule"
+#
+#	key[]: "tiger_salamander"
+#	val[]: "Tiger Salamander"
+#
+#	key[]: "tom_hopper"
+#	val[]: "Tom Hopper"
+#
+#	key[]: "usa_cap"
+#	val[]: "USA Cap"
+#
+#	key[]: "usa_flag"
+#	val[]: "USA Flag"
+#
+#	key[]: "usa_flag_cap"
+#	val[]: "USA Flag Cap"
+#
+#	key[]: "ventilator"
+#	val[]: "Fan"
+#
+#	key[]: "walnut_rocking_horse"
+#	val[]: "Walnut Rocking Horse"
+#
+#	key[]: "white_tailed_deer"
+#	val[]: "White-tailed Deer"
+#
+#	key[]: "wooden_bowl_of_chips"
+#	val[]: "Wooden Bowl of Chips"
+#
+#	key[]: "wotr_cap"
+#	val[]: "WoTr Cap"
+#
+#	key[]: "wyo_bison"
+#	val[]: "Jade Bison"
+#
+#	key[]: "wyo_dino"
+#	val[]: "Plush Triceratops"
+#
+#
+#	key[]: "ats_pillow"
+#	val[]: "ATS Pillow"
+#
+#	key[]: "heart_pillow"
+#	val[]: "Heart Pillow"
+#
+#	key[]: "kiss_me_pillow"
+#	val[]: "Kiss Me Pillow"
+#
+#	key[]: "protector_pillow"
+#	val[]: "Protector Pillow"
+#
+#	key[]: "show_me_pillow"
+#	val[]: "Show-Me Pillow"
+#
+#	key[]: "star_pillow"
+#	val[]: "Star Pillow"
+#
+#	key[]: "truck_yeah_pillow"
+#	val[]: "Truck Yeah Pillow"
+#
+#	key[]: "usa_flag_pillow"
+#	val[]: "USA Flag Pillow"
+#
+#	key[]: "usa_shield_pillow"
+#	val[]: "USA Shield Pillow"
+#
+#
+#	key[]: "ats_fragrance_tag"
+#	val[]: "ATS Air Freshener"
+#
+#	key[]: "cactus_fragrance_tag"
+#	val[]: "Cactus Air Freshener"
+#
+#	key[]: "lemon_fragrance_tag"
+#	val[]: "Lemon Air Freshener"
+#
+#	key[]: "maple_leaf_fragrance_tag"
+#	val[]: "Maple Leaf Air Freshener"
+#
+#	key[]: "orange_fragrance_tag"
+#	val[]: "Orange Air Freshener"
+#
+#	key[]: "usa_fragrance_tag"
+#	val[]: "USA Air Freshener"
+#
+#
+#	key[]: "blue_plush_cube"
+#	val[]: "Blue Plush Cube"
+#
+#	key[]: "red_plush_cube"
+#	val[]: "Red Plush Cube"
+#
+#	key[]: "double_plush_cube"
+#	val[]: "Double Plush Cube"
+#
+#
+#	key[]: "alien_head"
+#	val[]: "Alien Head"
+#
+#	key[]: "cowboy_head"
+#	val[]: "Cowboy Head"
+#
+#	key[]: "pirate_head"
+#	val[]: "Pirate Head"
+#
+#
+#	key[]: "eagle_sticker"
+#	val[]: "Eagle Sticker"
+#
+#	key[]: "goodyear_logo_sticker"
+#	val[]: "Goodyear Logo Sticker"
+#
+#	key[]: "goodyear_old_logo_sticker"
+#	val[]: "Goodyear Old Logo Sticker"
+#
+#	key[]: "guitar_sticker"
+#	val[]: "Guitar Sticker"
+#
+#	key[]: "hat_sticker"
+#	val[]: "Hat Sticker"
+#
+#	key[]: "maple_sirup_sticker"
+#	val[]: "Maple Syrup Sticker"
+#
+#	key[]: "steering_wheel_sticker"
+#	val[]: "Steering Wheel Sticker"
+#
+#	key[]: "taco_sticker"
+#	val[]: "Taco Sticker"
+#
+#	key[]: "truck_sticker"
+#	val[]: "Truck Sticker"
+#
+#	key[]: "usa_country_sticker"
+#	val[]: "USA Country Sticker"
+#
+#	key[]: "usa_flag_sticker"
+#	val[]: "USA Flag Sticker"
+
+#@}
+
+#@}
+
+
+#+ Text deviations for American Truck Simulator. Please, use only terms appropriate for USA (i.e. culture specific nuances, not American English).
+#@{
+
+#+ Music/radio player
+#@{
+
+#+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
+
+	key[]: "music_player_hint"
+	val[]: "Скопіюйте Вашу музику у папку <color value=@@clr_sel@@>American Truck Simulator/music <color value=@@clr_txt@@>у Ваших <color value=@@clr_sel@@>Документах, <color value=@@clr_txt@@>і Ви побачите їх тут."
+
+#+ Tooltip shown when hovering over the radio_stream button.
+
+	key[]: "radio_hint"
+	val[]: "Відредагуйте <color value=@@clr_sel@@>live_streams.sii <color value=@@clr_txt@@>у папці <color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>у Ваших <color value=@@clr_sel@@>Документах <color value=@@clr_txt@@>і слухайте улюблені онлайн-радіостанції за кермом!"
+
+#+ Hint shown if no online radio streams are defined.
+
+	key[]: "empty_radio_hint"
+	val[]: "Будь ласка, зверніться до <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>у папці<color value=@@clr_sel@@>American Truck Simulator <color value=@@clr_txt@@>у Ваших <color value=@@clr_sel@@>Документах <color value=@@clr_txt@@>за інформацією про те, як додати Вашу власну музику та онлайн-радіо."
+#@}
+
+#+ Messages shown as part of the tutorial.
+#+
+#+ The $KEY$ texts are placeholders for various keys and should be left intact.
+#@{
+
+	key[]: "intro_1"
+	val[]: "Вітаємо у American Truck Simulator!"
+#@}
+
+#+ Input wizard
+#@{
+	key[]: "wiz_cfg_steam"
+	val[]: "Перевірити та налаштувати кнопки й осі цього контролера можна за допомогою клієнта Steam. Налаштування контролера знаходяться у меню Steam > Бібліотека > American Truck Simulator > Налаштування контролера."
+#@}
+
+#+ Messages shown in the route adviser.
+#@{
+	key[]: "weigh_illegal_trailer"
+	val[]: "Комбінація ваших вантажівки та причепа заборонена в цьому штаті!" #+ Adviser text
+#@}
+
+#+ Names of individual cargos.
+#@{
+
+	key[]: "cn_air_condition"
+	val[]: "Кондиціонери"
+
+	key[]: "cn_aircraft_engine"
+	val[]: "Авіаційний двигун"
+
+	key[]: "cn_aircraft_wing"
+	val[]: "Крило літака"
+
+	key[]: "cn_almond_boxes"
+	val[]: "Упакований мигдаль"
+
+	key[]: "cn_beet_harvester"
+	val[]: "Бурякозбиральний комбайн"
+
+	key[]: "cn_big_tires"
+	val[]: "Велика гума"
+
+	key[]: "cn_boat"
+	val[]: "Човен"
+
+	key[]: "cn_boom_lift"
+	val[]: "Телескопічний підйомник"
+
+	key[]: "cn_borates"
+	val[]: "Борати"
+
+	key[]: "cn_bottles"
+	val[]: "Порожні пляшки"
+
+	key[]: "cn_bromine"
+	val[]: "Бром"
+
+	key[]: "cn_bus_hood"
+	val[]: "Капоти автобусів"
+
+	key[]: "cn_butter"
+	val[]: "Масло "
+
+	key[]: "cn_buttermilk"
+	val[]: "Маслянка"
+
+	key[]: "cn_cable"
+	val[]: "Кабель"
+
+	key[]: "cn_cable_reel"
+	val[]: "Котушка Кабелю "
+
+	key[]: "cn_cans"
+	val[]: "Банки"
+
+	key[]: "cn_cattle_equipment"
+	val[]: "Устаткування для тваринництва"
+
+	key[]: "cn_circuit_breakers"
+	val[]: "Автоматичні вимикачі"
+
+	key[]: "cn_clamshell_bucket"
+	val[]: "Грейфер"
+
+	key[]: "cn_colors"
+	val[]: "Фарба "
+
+	key[]: "cn_compact_tractor"
+	val[]: "Мінітрактор"
+
+	key[]: "cn_concrete_barrier"
+	val[]: "Бетонний бар'єр"
+
+	key[]: "cn_concrete_tubes"
+	val[]: "Бетонні Труби"
+
+	key[]: "cn_const_houses"
+	val[]: "Модульні будинки"
+
+	key[]: "cn_cooling_tower"
+	val[]: "Охолоджувальна вежа"
+
+	key[]: "cn_corn_head"
+	val[]: "Кукурудзяна жниварка"
+
+	key[]: "cn_cotton_lint"
+	val[]: "Бавовняна шарпина"
+
+	key[]: "cn_cotton_seed"
+	val[]: "Насіння бавовни"
+
+	key[]: "cn_crude_oil"
+	val[]: "Сира нафта"
+
+	key[]: "cn_curtains"
+	val[]: "Штори"
+
+	key[]: "cn_dryfruit"
+	val[]: "Сухофрукти "
+
+	key[]: "cn_dump_truck"
+	val[]: "Самоскид"
+
+	key[]: "cn_dumpster"
+	val[]: "Сміттєві контейнери"
+
+	key[]: "cn_ethanol"
+	val[]: "Етанол"
+
+	key[]: "cn_fertilizer_tank"
+	val[]: "Резервуар для добрива"
+
+	key[]: "cn_frac_tank"
+	val[]: "Контейнер ГРП"
+
+	key[]: "cn_frozen_fruits"
+	val[]: "Морожені Фрукти"
+
+	key[]: "cn_frozen_vegetable"
+	val[]: "Морожені Овочі"
+
+	key[]: "cn_fruits"
+	val[]: "Фрукти"
+
+	key[]: "cn_fruit_juice"
+	val[]: "Фруктовий сік"
+
+	key[]: "cn_garbage_truck"
+	val[]: "Сміттєвоз"
+
+	key[]: "cn_generator_set"
+	val[]: "Генераторна установка"
+
+	key[]: "cn_glass"
+	val[]: "Скло"
+
+	key[]: "cn_glass_racks"
+	val[]: "Піраміди для скла"
+
+	key[]: "cn_grain"
+	val[]: "Зерно "
+
+	key[]: "cn_harvester"
+	val[]: "Комбайн"
+
+	key[]: "cn_hay"
+	val[]: "Сіно"
+
+	key[]: "cn_heavy_bulldozer"
+	val[]: "Тяжкий бульдозер"
+
+	key[]: "cn_house_prefabs"
+	val[]: "Частини збірного будинку"
+
+	key[]: "cn_industrial_pallets"
+	val[]: "Промислові палети"
+
+	key[]: "cn_insulation_panels"
+	val[]: "Ізоляційні плити"
+
+	key[]: "cn_jet_engine_inlet_cowl"
+	val[]: "Повітрозабирач реактивного двигуна"
+
+	key[]: "cn_kenworth_t680"
+	val[]: "Вантажівки Kenworth"
+
+	key[]: "cn_knuckleboom_loader"
+	val[]: "Кран-маніпулятор"
+
+	key[]: "cn_lift_truck"
+	val[]: "Річстакер "
+
+	key[]: "cn_lift_truck_chassis"
+	val[]: "Шасі Річстакера "
+
+	key[]: "cn_log_loader"
+	val[]: "Навантажувач колод"
+
+	key[]: "cn_lye"
+	val[]: "Луг "
+
+	key[]: "cn_maize"
+	val[]: "Кукурудза"
+
+	key[]: "cn_mbt"
+	val[]: "Мобільний Бар'єр "
+
+	key[]: "cn_meat"
+	val[]: "М'ясо"
+
+	key[]: "cn_medium_truck_chassis"
+	val[]: "Середньорозмірне шасі"
+
+	key[]: "cn_milling_machine"
+	val[]: "Фрезерна машина"
+
+	key[]: "cn_mix_tank"
+	val[]: "Змішувач"
+
+#	key[]: "cn_mobile_air_compressor"
+#	val[]: "Mobile Air Compressor"
+
+	key[]: "cn_mobile_crane"
+	val[]: "Позашляховий Кран "
+
+	key[]: "cn_moor_buoy"
+	val[]: "Швартовий буй"
+
+	key[]: "cn_mortar"
+	val[]: "Будівельний Розчин "
+
+	key[]: "cn_moving_containers"
+	val[]: "Контейнери для переїзду"
+
+	key[]: "cn_oil_pipes"
+	val[]: "Нафтові труби"
+
+	key[]: "cn_paper"
+	val[]: "Папір"
+
+	key[]: "cn_pelleted_animal_food"
+	val[]: "Гранульований корм для тварин"
+
+	key[]: "cn_peterbilt_579"
+	val[]: "Вантажівки Peterbilt"
+
+	key[]: "cn_plows"
+	val[]: "Плуги"
+
+	key[]: "cn_power_generator"
+	val[]: "Генератор"
+
+	key[]: "cn_pumpjack"
+	val[]: "Верстат-качалка"
+
+	key[]: "cn_rails"
+	val[]: "Рейки"
+
+	key[]: "cn_railcar_mover"
+	val[]: "Мотовоз"
+
+	key[]: "cn_rawmilk"
+	val[]: "Свіже молоко"
+
+	key[]: "cn_recreational_vehicle"
+	val[]: "Автобудинок"
+
+	key[]: "cn_salt"
+	val[]: "Сіль"
+
+	key[]: "cn_school_bus"
+	val[]: "Шкільний автобус"
+
+	key[]: "cn_scissor_lift"
+	val[]: "Стіл-підйомник"
+
+	key[]: "cn_scrap_cars"
+	val[]: "Стиснуті автомобілі"
+
+	key[]: "cn_scraper"
+	val[]: "Скрепер "
+
+	key[]: "cn_service_truck"
+	val[]: "Авто служби допомоги"
+
+	key[]: "cn_silane"
+	val[]: "Силан"
+
+	key[]: "cn_soda_ash"
+	val[]: "Кальцинована сода"
+
+	key[]: "cn_soybean"
+	val[]: "Соя"
+
+	key[]: "cn_space_container"
+	val[]: "Космічний контейнер"
+
+	key[]: "cn_speed_motor_boat"
+	val[]: "Швидкісний човен"
+
+	key[]: "cn_stumper"
+	val[]: "Корчувальник"
+
+	key[]: "cn_sugar_beet"
+	val[]: "Цукровий буряк"
+
+	key[]: "cn_talc_powder"
+	val[]: "Тальк"
+
+	key[]: "cn_tamping_machine"
+	val[]: "Залізнична машина"
+
+	key[]: "cn_telescopic_handler"
+	val[]: "Телескопічний навантажувач"
+
+	key[]: "cn_trees"
+	val[]: "Дерева"
+
+	key[]: "cn_tub_grinder"
+	val[]: "Дробарка"
+
+	key[]: "cn_utility_poles"
+	val[]: "Дерев'яні стовби"
+
+	key[]: "cn_utility_terrain_vehicle"
+	val[]: "Мотовсюдиходи"
+
+	key[]: "cn_vegetable"
+	val[]: "Овочі"
+
+	key[]: "cn_waste_paper"
+	val[]: "Макулатура"
+
+	key[]: "cn_westernstar_49x"
+	val[]: "Вантажівки Western Star"
+
+	key[]: "cn_windrower"
+	val[]: "Валкоутворювач"
+
+	key[]: "cn_wire_rod_coil"
+	val[]: "Дріт-катанка"
+
+	key[]: "cn_work_truck_chassis"
+	val[]: "Шасі вантажного автомобіля"
+
+	key[]: "cn_yard_truck"
+	val[]: "Портовий тягач"
+
+#@}
+
+#+ Special transport cargo names
+#@{
+	key[]: "cn_aircondition"
+	val[]: "Промисловий кондиціонер"
+
+	key[]: "cn_haul_truck_hull"
+	val[]: "Кузов кар'єрного самоскида"
+
+	key[]: "cn_house"
+	val[]: "Цілісний будинок"
+
+	key[]: "cn_lattice"
+	val[]: "Велика конструкція"
+
+	key[]: "cn_metro_wagon"
+	val[]: "Вагон метро"
+
+	key[]: "cn_ovs_helicopter"
+	val[]: "Транспортний вертоліт"
+#@}
+
+#+ Names of individual trailer, trailer chassis types or trailer virtual company look names. (for trailer listing screen)
+#@{
+	key[]: "tn_acid"
+	val[]: "Цистерна для Кислот"
+
+	key[]: "tn_acid_long"
+	val[]: "Довга Цистерна для Кислот"
+
+	key[]: "tn_bottom_dump"
+	val[]: "Напівпричіп-самоскид"
+
+	key[]: "tn_car"
+	val[]: "Причіп для автомобілів"
+
+	key[]: "tn_cement"
+	val[]: "Цементовоз"
+
+	key[]: "tn_chemical"
+	val[]: "Цистерна для хімікатів"
+
+	key[]: "tn_chemical_long"
+	val[]: "Довга цистерна для хімікатів"
+
+	key[]: "tn_dry_bulk"
+	val[]: "Для сипучих вантажів"
+
+	key[]: "tn_dump"
+	val[]: "Причіп-Самоскид"
+
+	key[]: "tn_flatbed"
+	val[]: "Платформа"
+
+	key[]: "tn_frac_tank"
+	val[]: "Контейнер ГРП"
+
+	key[]: "tn_fuel"
+	val[]: "Паливна цистерна"
+
+	key[]: "tn_fuel_long"
+	val[]: "Довга паливна цистерна"
+
+	key[]: "tn_gas"
+	val[]: "Газова цистерна"
+
+	key[]: "tn_gas_long"
+	val[]: "Довга Газова Цистерна"
+
+	key[]: "tn_home_transporter"
+	val[]: "Для перевезення будинків"
+
+	key[]: "tn_knuckle_boom"
+	val[]: "Кран-маніпулятор"
+
+	key[]: "tn_lowboy_boat"
+	val[]: "Низькорамний трал для човнів"
+
+	key[]: "tn_scs_lowboy"
+	val[]: "Рознесений трал"
+
+	key[]: "tn_mbt1_barrier"
+	val[]: "Напівпричіп - мобільний бар'єр"
+
+	key[]: "tn_tub_grinder"
+	val[]: "Дробарка"
+
+#virtual logistic company trailer looks (for trailer listing screen)
+
+	key[]: "tcn_ate"
+	val[]: "ATE"
+
+	key[]: "tcn_blackwing"
+	val[]: "Blackwing Haul"
+
+	key[]: "tcn_crosslink"
+	val[]: "Crosslink Haul"
+
+	key[]: "tcn_ets"
+	val[]: "ETS"
+
+	key[]: "tcn_hfx"
+	val[]: "HFX"
+
+	key[]: "tcn_ncs"
+	val[]: "NCS"
+
+	key[]: "tcn_omniway"
+	val[]: "Omniway"
+
+	key[]: "tcn_primeway"
+	val[]: "Primeway Logistics"
+
+	key[]: "tcn_reed"
+	val[]: "F.D.Reed"
+
+	key[]: "tcn_sabre"
+	val[]: "Sabre Transport"
+
+#lodeking/prestige trailers (for trailer listing screen)
+
+	key[]: "tn_lodeking_brilliance"
+	val[]: "Lodeking Brilliance"
+
+	key[]: "tn_lodeking_distinction"
+	val[]: "Lodeking Distinction"
+
+	key[]: "tn_lodeking_forceline"
+	val[]: "Lodeking Forceline"
+
+	key[]: "tn_lodeking_prestige"
+	val[]: "Lodeking Prestige"
+
+	key[]: "tn_lodeking_renown"
+	val[]: "Lodeking Renown"
+
+	key[]: "tn_prestige_brilliance"
+	val[]: "Prestige Brilliance"
+
+	key[]: "tn_prestige_distinction"
+	val[]: "Prestige Distinction"
+
+	key[]: "tn_prestige_forceline"
+	val[]: "Lodeking Forceline"
+
+	key[]: "tn_prestige_renown"
+	val[]: "Prestige Renown"
+
+#@}
+
+
+#+ Tooltip texts for job offer icons
+#@{
+
+	key[]: "tt_ico_adr_1"
+	val[]: "Клас 1"
+
+	key[]: "tt_ico_adr_2"
+	val[]: "Клас 2"
+
+	key[]: "tt_ico_adr_3"
+	val[]: "Клас 3"
+
+	key[]: "tt_ico_adr_4"
+	val[]: "Клас 4"
+
+	key[]: "tt_ico_adr_5"
+	val[]: "Клас 5"
+
+	key[]: "tt_ico_adr_6"
+	val[]: "Клас 6"
+
+	key[]: "tt_ico_adr_8"
+	val[]: "Клас 8"
+#@}
+
+#+ Names of individual experience tiers of the driver.
+#@{
+
+	key[]: "lvl_name2"
+	val[]: "Бджілка-трудівниця"
+
+	key[]: "lvl_name3"
+	val[]: "Завзятий тракер"
+
+	key[]: "lvl_name4"
+	val[]: "Профі"
+
+	key[]: "lvl_name6"
+	val[]: "Повний бак досвіду"
+#@}
+
+#+ Map legend
+
+	key[]: "tdsel_dealer_big"
+	val[]: "Виставковий зал"
+
+	key[]: "weblink_game"
+	val[]: "Веб-сайт American Truck Simulator" #+ weblink description
+
+	key[]: "weblink_facebook"
+	val[]: "Facebook American Truck Simulator" #+ facebook weblink description
+
+#+ System error message - the game will close gracefully with this msg if graphics cannot start - keep the '\n' intact!
+#@{
+
+	key[]: "sys_no_graphics"
+	val[]: "У American Truck Simulator проблеми із графічними пристроями на вашому комп'ютері (не знайдено пристроїв).\nПропонуємо:\n\n1. Перевірити відповідність вашого комп'ютера та відеокарти зокрема мінімальним системним вимогам.\n2. Оновити DirectX.\n3. Встановити найновіші драйвери для вашої відеокарти із веб-сайту її виробника.\n4. Змінити метод рендерингу із OpenGL на DirectX чи навпаки.\n5. Видалити файл конфігурації 'config.cfg' із папки 'American Truck Simulator' у ваших Документах. Його буде автоматично створено заново."
+
+	key[]: "sys_no_graphics_simple"
+	val[]: "У American Truck Simulator проблеми із графічними пристроями на вашому комп'ютері (не знайдено пристроїв). "
+#@}
+
+#+ Activation screen
+#@{
+
+	key[]: "activated"
+	val[]: "Активація пройшла успішно.<br>Дякуємо за покупку American Truck Simulator."
+
+	key[]: "www_link_game"
+	val[]: "American Truck Simulator"
+
+#@}
+
+#+ Profile selection.
+#@{
+#profile_t: 		"PROFILE" - Seems to be not used anymore.
+
+	key[]: "profile_sel_t"
+	val[]: "Вибір кар'єри" #+ Title of the screen. Please keep in upper case where possible.
+#@}
+
+#+ Agriculture checks.
+#@{
+	#+ title of the feature
+	key[]: "agri_check_title"
+	val[]: "Сільськогосподарська інспекція"
+
+	#+ prepare the player for an upcoming check
+	key[]: "agri_check_ahead"
+	val[]: "Попереду сільськогосподарська інспекція. Приготуйтеся сповільнити рух."
+
+	#+ stop the vehicle
+	key[]: "agri_check_stop"
+	val[]: "Щоб почати сільськогосподарську інспекцію, зупиніться та натисніть:"
+
+	#+ checking/waiting
+	key[]: "agri_check_wait"
+	val[]: "Виконується інспекція."
+
+	#+ inspection passed
+	key[]: "agri_check_pass"
+	val[]: "Інспекцію завершено. Можете продовжувати рух."
+
+	#+ inspection skipped
+	key[]: "offence_avoid_inspection"
+	val[]: "Пропуск зупинки на інспекцію."
+#@}
+
+#+ Tollgate messages.
+#@{
+	key[]: "thanks_using_bailey"
+	val[]: "Дякуємо, що скористалися автодорогою H. E. Bailey Turnpike!"
+
+	key[]: "thanks_using_causeway"
+	val[]: "Дякуємо, що скористалися мостом-дамбою через Пончартрейн."
+
+	key[]: "thanks_using_cimarron"
+	val[]: "Дякуємо, що скористалися автодорогою Cimarron Turnpike!"
+
+	key[]: "thanks_using_indian"
+	val[]: "Дякуємо, що скористалися автодорогою Indian Nation Turnpike!"
+
+	key[]: "thanks_using_leeville"
+	val[]: "Дякуємо, що скористалися маршрутом через пункт Лівілл."
+
+	key[]: "thanks_using_rogers"
+	val[]: "Дякуємо, що скористалися автодорогою Will Rogers Turnpike!"
+
+	key[]: "thanks_using_turner"
+	val[]: "Дякуємо, що скористалися автодорогою Turner Turnpike!"
+
+	key[]: "thanks_using_turnpass"
+	val[]: "Thank you for using the TurnPass."
+#@}
+
+#@}
+
+#+ Strings related to accessory filtering feature.
+#@{
+	key[]: "base"
+	val[]: "Контент American Truck Simulator" #+ The category of the accessories that are inside the base game files.
+#@}
+
+
+#+ Trailer body type names (short/preview variant).
+#@{
+	key[]: "bulkfeed"
+	val[]: "Кормовоз"
+
+	key[]: "curtainside"
+	val[]: "Зсувний тент"
+
+	key[]: "chipvan"
+	val[]: "Щеповоз"
+
+	key[]: "dropdeck"
+	val[]: "Низька платформа"
+
+	key[]: "dryvan"
+	val[]: "Фургон"
+
+	key[]: "hopper"
+	val[]: "Хоппер"
+
+	key[]: "lowbed"
+	val[]: "Низькорамний"
+
+	key[]: "lowboy"
+	val[]: "Трал"
+
+	key[]: "silo"
+	val[]: "Суховантажний"
+#@}
+
+#+ Trailer cargo based on body type (tooltip usage)
+#@{
+	key[]: "body_cargo_types_bulkfeed"
+	val[]: "Насипний вантаж"
+
+	key[]: "body_cargo_types_chipvan"
+	val[]: "Легкий сипучий матеріал"
+
+	key[]: "body_cargo_types_dropdeck"
+	val[]: "Будівельне обладнання, техніка, матеріали та високі вантажі"
+
+	key[]: "body_cargo_types_hopper"
+	val[]: "Зерно і сипучий матеріал"
+#@}
+
+#+ Trailer chain type names (short/preview variant).
+#@{
+	key[]: "single"
+	val[]: "Одиночний"
+
+	key[]: "double"
+	val[]: "Подвійна"
+
+	key[]: "bdouble"
+	val[]: "B-Double"
+
+	key[]: "rmdouble"
+	val[]: "R.M. Double"
+
+	key[]: "tpdouble"
+	val[]: "T.P. Double"
+
+	key[]: "triple"
+	val[]: "Потрійний"
+#@}
+
+#+ Trailer chain type names (long variant)
+
+#@{
+	key[]: "chain_single"
+	val[]: "Одиночний"
+
+	key[]: "chain_double"
+	val[]: "Подвійна"
+
+	key[]: "chain_staa_double"
+	val[]: "STAA Double"
+
+	key[]: "chain_b_double"
+	val[]: "B-Double"
+
+	key[]: "chain_rm_double"
+	val[]: "Подвійна зчіпка Rocky Mountain"
+
+	key[]: "chain_tp_double"
+	val[]: "Turnpike Double"
+
+	key[]: "chain_triple"
+	val[]: "Потрійний"
+#@}
+
+#+ Trailer configurations
+
+#@{
+
+	key[]: "tr_articulated_3axle"
+	val[]: "Зчленований, 3 осі"
+
+	key[]: "tr_articulated_4axle"
+	val[]: "Зчленований, 4 осі"
+
+	key[]: "tr_articulated_5axle"
+	val[]: "Зчленований, 5 осей"
+
+	key[]: "tr_articulated_6axle"
+	val[]: "Зчленований, 6 осей"
+
+	key[]: "tr_articulated_7axle"
+	val[]: "Зчленований, 7 осей"
+
+	key[]: "tr_articulated_8axle"
+	val[]: "Зчленований, 8 осей"
+
+	key[]: "tr_articulated_9axle"
+	val[]: "Зчленований, 9 осей"
+
+	key[]: "tr_b_double"
+	val[]: "B-Double"
+
+	key[]: "tr_b_double_5axle"
+	val[]: "B-double, 5 осей"
+
+	key[]: "tr_b_double_6axle"
+	val[]: "B-double, 6 осей"
+
+	key[]: "tr_double_staa"
+	val[]: "STAA Double"
+
+	key[]: "tr_double_staa_pup"
+	val[]: "STAA Double Pup"
+
+	key[]: "tr_double_staa_pup_4axle"
+	val[]: "STAA Double Pup, 4 осі"
+
+	key[]: "tr_jeep"
+	val[]: "Передній візок"
+
+	key[]: "tr_jeep_3axle"
+	val[]: "Візок Jeep, 3 осі"
+
+	key[]: "tr_rm_double"
+	val[]: "Подвійна зчіпка Rocky Mountain"
+
+	key[]: "tr_rm_double_5axle"
+	val[]: "Подвійна зчіпка Rocky Mountain, 5 осей"
+
+	key[]: "tr_rm_double_pup"
+	val[]: "Подвійна зчіпка Rocky Mountain Pup"
+
+	key[]: "tr_single_22"
+	val[]: "22 фути"
+
+	key[]: "tr_single_28"
+	val[]: "28 футів"
+
+	key[]: "tr_single_28_2axle"
+	val[]: "28 футів, 2 осі"
+
+	key[]: "tr_single_30"
+	val[]: "30 футів"
+
+	key[]: "tr_single_32"
+	val[]: "32 фути"
+
+	key[]: "tr_single_32_2axle"
+	val[]: "32 фути, 2 осі"
+
+	key[]: "tr_single_32_3axle"
+	val[]: "32 фути, 3 осі"
+
+	key[]: "tr_single_32_ext"
+	val[]: "32 фути, розсувне шасі"
+
+	key[]: "tr_single_36"
+	val[]: "36 футів"
+
+	key[]: "tr_single_36_3axle"
+	val[]: "36 футів, 3 осі"
+
+	key[]: "tr_single_40"
+	val[]: "40 футів"
+
+	key[]: "tr_single_40_3axle"
+	val[]: "40 футів, 3 осі"
+
+	key[]: "tr_single_40_ext"
+	val[]: "40 футів, розсувне шасі"
+
+	key[]: "tr_single_40_rear"
+	val[]: "40 футів, ззаду"
+
+	key[]: "tr_single_40_spread"
+	val[]: "40 футів, рознесені осі"
+
+	key[]: "tr_single_42"
+	val[]: "42 фути"
+
+	key[]: "tr_single_42_3axle"
+	val[]: "42 фути, 3 осі"
+
+	key[]: "tr_single_43_rear"
+	val[]: "43 фути, ззаду"
+
+	key[]: "tr_single_45"
+	val[]: "45 футів"
+
+	key[]: "tr_single_45_3axle"
+	val[]: "45 футів, 3 осі"
+
+	key[]: "tr_single_45_3axle_single"
+	val[]: "45 футів, 3 осі, одинарна"
+
+	key[]: "tr_single_45_3axle_steer"
+	val[]: "45 футів, 3 осі, керована"
+
+	key[]: "tr_single_45_front"
+	val[]: "45 футів, спереду"
+
+	key[]: "tr_single_45_rear"
+	val[]: "45 футів, ззаду"
+
+	key[]: "tr_single_45_slide"
+	val[]: "45 футів, зсувна вісь"
+
+	key[]: "tr_single_45_spread"
+	val[]: "45 футів, рознесені осі"
+
+	key[]: "tr_single_48"
+	val[]: "48 футів"
+
+	key[]: "tr_single_48_3axle"
+	val[]: "48 футів, 3 осі"
+
+	key[]: "tr_single_48_4axle"
+	val[]: "48 футів, 4 осі"
+
+	key[]: "tr_single_48_front"
+	val[]: "48 футів, спереду"
+
+	key[]: "tr_single_48_rear"
+	val[]: "48 футів, ззаду"
+
+	key[]: "tr_single_48_slide"
+	val[]: "48 футів, зсувна вісь"
+
+	key[]: "tr_single_48_spread"
+	val[]: "48 футів, рознесені осі"
+
+	key[]: "tr_single_50_3axle"
+	val[]: "50 футів, 3 осі"
+
+	key[]: "tr_single_50_3axle_single"
+	val[]: "50 футів, 3 осі, одинарна"
+
+	key[]: "tr_single_50_3axle_steer"
+	val[]: "50 футів, 3 осі, керована"
+
+	key[]: "tr_single_50_spread"
+	val[]: "50 футів, рознесені осі"
+
+	key[]: "tr_single_53"
+	val[]: "53 фути"
+
+	key[]: "tr_single_53_3axle"
+	val[]: "53 фути, 3 осі"
+
+	key[]: "tr_single_53_4axle"
+	val[]: "53 фути, 4 осі"
+
+	key[]: "tr_single_53_4axle_spread"
+	val[]: "53 фути, 4 осі, рознесені"
+
+	key[]: "tr_single_53_4axle_steer"
+	val[]: "53 фути, 4 осі, керовані"
+
+	key[]: "tr_single_53_front"
+	val[]: "53 фути, спереду"
+
+	key[]: "tr_single_53_rear"
+	val[]: "53 фути, ззаду"
+
+	key[]: "tr_single_53_slide"
+	val[]: "53 фути, зсувна вісь"
+
+	key[]: "tr_single_53_spread"
+	val[]: "53 фути, рознесені осі"
+
+	key[]: "tr_spreader_1axle"
+	val[]: "Задній візок, 1 вісь"
+
+	key[]: "tr_spreader_2axle"
+	val[]: "Візок-бустер, 2 осі"
+
+	key[]: "tr_spreader_3axle"
+	val[]: "Візок-бустер, 3 осі"
+
+	key[]: "tr_tp_double"
+	val[]: "Turnpike Double"
+
+	key[]: "tr_tp_double_6axle"
+	val[]: "Turnpike Double, 6 осей"
+
+	key[]: "tr_triple"
+	val[]: "Потрійний"
+
+	key[]: "tr_triple_pup"
+	val[]: "Потрійна зчіпка Pup"
+
+	key[]: "tr_conv_dolly"
+	val[]: "Зчіпка Dolly"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_conv_dolly_2"
+	val[]: "Проміжний візок, 2 осі"	#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly"
+	val[]: "Маленький"		#+ Component chassis name (upgrade screen only)
+
+	key[]: "tr_dolly_2"
+	val[]: "Dolly, 2 Axles"		#+ Component chassis name (upgrade screen only)
+#@}
+
+#+ Trailer body sets
+
+#@{
+	key[]: "bs_bellyvan"
+	val[]: "Щеповоз з низькою підлогою"
+
+	key[]: "bs_bulk_feed"
+	val[]: "Кормовоз"
+
+	key[]: "bs_bottomdumper_horizontal"
+	val[]: "Горизонтальне розвантаження"
+
+	key[]: "bs_bottomdumper_vertical"
+	val[]: "Вертикальне розвантаження"
+
+	key[]: "bs_chipvan"
+	val[]: "Щеповоз"
+
+	key[]: "bs_chipvan_mfloor"
+	val[]: "Щеповоз, зсувна підлога"
+
+	key[]: "bs_container"
+	val[]: "Контейнеровоз"
+
+	key[]: "bs_curtain"
+	val[]: "Зсувний тент"
+
+	key[]: "bs_deep_drop"
+	val[]: "Цистерна Deep Drop"
+
+	key[]: "bs_dropdeck"
+	val[]: "Платформа"
+
+	key[]: "bs_dropdeck_alu"
+	val[]: "Алюмінієва платформа"
+
+	key[]: "bs_dropdeck_fir"
+	val[]: "Соснова низька платформа"
+
+	key[]: "bs_dropdeck_hardwood"
+	val[]: "Дерев'яна низька платформа"
+
+	key[]: "bs_drybulk"
+	val[]: "Суховантажний"
+
+	key[]: "bs_dryvan"
+	val[]: "Фургон"
+
+	key[]: "bs_dshape"
+	val[]: "D-подібна цистерна"
+
+	key[]: "bs_end_dumper"
+	val[]: "Розвантаження ззаду"
+
+	key[]: "bs_live_floor_dumper"
+	val[]: "Живе дно"
+
+	key[]: "bs_side_dumper"
+	val[]: "Бічне розвантаження"
+
+	key[]: "bs_flatbed"
+	val[]: "Платформа"
+
+	key[]: "bs_flatbed_alu"
+	val[]: "Алюмінієва платформа"
+
+	key[]: "bs_flatbed_fir"
+	val[]: "Соснова платформа"
+
+	key[]: "bs_flatbed_hardwood"
+	val[]: "Дерев'яна платформа"
+
+	key[]: "bs_food_tank"
+	val[]: "Харчова цистерна"
+
+	key[]: "bs_fuel_tank"
+	val[]: "Паливна цистерна"
+
+	key[]: "bs_fuel_tank_4comp"
+	val[]: "Паливна цистерна, 4 відсіки"
+
+	key[]: "bs_grain_hopper"
+	val[]: "Зерновоз"
+
+	key[]: "bs_grain_hopper_belt"
+	val[]: "Зерновоз зі стрічкою"
+
+	key[]: "bs_insulated"
+	val[]: "Ізотермічний"
+
+	key[]: "bs_livestock"
+	val[]: "Скотовоз"
+
+	key[]: "bs_livestock_belly"
+	val[]: "Низький скотовоз"
+
+	key[]: "bs_log_4"
+	val[]: "Лісовоз (4 стійки)"
+
+	key[]: "bs_log_6"
+	val[]: "Лісовоз (6 стійок)"
+
+	key[]: "bs_wood_lowboy"
+	val[]: "Трал, дерев'яний настил"
+
+	key[]: "bs_wood_full_lowboy"
+	val[]: "Трал, цільно-дерев'яний настил"
+
+	key[]: "bs_wood_alu_lowboy"
+	val[]: "Трал, дерев'янно-алюмінівий настил"
+
+	key[]: "bs_reefer"
+	val[]: "Рефрижератор"
+#@}
+
+#+ Trailer only accessories
+
+#@{
+#	key[]: "turbo_cooler"
+#	val[]: "Turbo Cooler"
+#
+#	key[]: "chrome_cooler"
+#	val[]: "Chromed Cooler"
+#
+#	key[]: "paint_wall"
+#	val[]: "Painted Wall"
+#
+#	key[]: "chrome_wall"
+#	val[]: "Chromed Wall"
+#
+#	key[]: "alu_wall"
+#	val[]: "Aluminium Wall"
+#
+#	key[]: "steel_wall"
+#	val[]: "Steel Wall"
+#
+#	key[]: "light"
+#	val[]: "Light"
+#
+#	key[]: "log_cage"
+#	val[]: "Log Cage"
+#
+#	key[]: "log_wall"
+#	val[]: "Log Wall"
+#
+#	key[]: "wind_deflector"
+#	val[]: "Wind Deflector"
+#
+#	key[]: "aero_sideskirt"
+#	val[]: "Aero Sideskirt"
+#
+#	key[]: "black_sideskirt"
+#	val[]: "Black Sideskirt"
+#
+#	key[]: "paint_sideskirt"
+#	val[]: "Painted Sideskirt"
+#
+#	key[]: "support_frame"
+#	val[]: "Support Frame"
+#
+#	key[]: "chrome_door"
+#	val[]: "Chromed Door"
+#
+#	key[]: "standard_door"
+#	val[]: "Standard Door"
+#
+#	key[]: "standard_door_aero"
+#	val[]: "Standard Door, Wind Deflector"
+#
+#	key[]: "wooden_deck"
+#	val[]: "Wooden Deck"
+#@}
+
+#+ Names of countries/states
+#@{
+	key[]: "arizona"
+	val[]: "Аризона"
+
+	key[]: "arkansas"
+	val[]: "Арканзас"
+
+	key[]: "california"
+	val[]: "Каліфорнія"
+
+	key[]: "colorado"
+	val[]: "Колорадо"
+
+	key[]: "idaho"
+	val[]: "Айдахо"
+
+	key[]: "illinois"
+	val[]: "Illinois"
+
+	key[]: "iowa"
+	val[]: "Айова"
+
+	key[]: "kansas"
+	val[]: "Канзас"
+
+	key[]: "louisiana"
+	val[]: "Луїзіана"
+
+	key[]: "missouri"
+	val[]: "Міссурі"
+
+	key[]: "montana"
+	val[]: "Монтана"
+
+	key[]: "nebraska"
+	val[]: "Небраска"
+
+	key[]: "nevada"
+	val[]: "Невада"
+
+	key[]: "new_mexico"
+	val[]: "Нью-Мексико"
+
+	key[]: "oklahoma"
+	val[]: "Оклагома"
+
+	key[]: "oregon"
+	val[]: "Ореґон"
+
+	key[]: "texas"
+	val[]: "Техас"
+
+	key[]: "utah"
+	val[]: "Юта"
+
+	key[]: "washington"
+	val[]: "Вашинґтон"
+
+	key[]: "wyoming"
+	val[]: "Вайомінґ"
+#@}
+
+#+ Names of cities
+#@{
+	key[]: "aberdeen"
+	val[]: "Абердин"
+
+	key[]: "abilene"
+	val[]: "Абілін"
+
+	key[]: "alamogordo"
+	val[]: "Аламоґордо"
+
+	key[]: "alamosa"
+	val[]: "Аламоса"
+
+	key[]: "albuquerque"
+	val[]: "Альбукерке"
+
+	key[]: "alexandria"
+	val[]: "Александрія"
+
+	key[]: "alliance"
+	val[]: "Еллаєнс"
+
+	key[]: "amarillo"
+	val[]: "Амарилло"
+
+	key[]: "ardmore"
+	val[]: "Ардмор"
+
+	key[]: "artesia"
+	val[]: "Артезія"
+
+	key[]: "astoria"
+	val[]: "Асторія"
+
+	key[]: "austin"
+	val[]: "Остін"
+
+	key[]: "bakersfield"
+	val[]: "Бейкерсфілд"
+
+	key[]: "barstow"
+	val[]: "Барстоу"
+
+	key[]: "bartlesville"
+	val[]: "Бартелсвілл"
+
+	key[]: "baton_rouge"
+	val[]: "Батон-Руж"
+
+	key[]: "beaumont"
+	val[]: "Бомонт"
+
+	key[]: "bellingham"
+	val[]: "Беллінгем"
+
+	key[]: "bend"
+	val[]: "Бенд"
+
+	key[]: "billings"
+	val[]: "Біллінґс"
+
+	key[]: "bloomington"
+	val[]: "Bloomington"
+
+	key[]: "blythe"
+	val[]: "Блайт"
+
+	key[]: "boise"
+	val[]: "Бойсе"
+
+	key[]: "bozeman"
+	val[]: "Бозмен"
+
+	key[]: "brownsville"
+	val[]: "Браунсвілл"
+
+	key[]: "burlington"
+	val[]: "Берлінґтон"
+
+	key[]: "burns"
+	val[]: "Бернс"
+
+	key[]: "butte"
+	val[]: "Б'ют"
+
+	key[]: "cameron"
+	val[]: "Камерон"
+
+	key[]: "camp_verde"
+	val[]: "Камп Верде"
+
+	key[]: "cape_girardeau"
+	val[]: "Кейп-Джирардо"
+
+	key[]: "carlsbad"
+	val[]: "Карлсбад"
+
+	key[]: "carson_city"
+	val[]: "Карсон-Сіті"
+
+	key[]: "casper"
+	val[]: "Каспер"
+
+	key[]: "cedar_city"
+	val[]: "Сідар-Сіті"
+
+	key[]: "cedar_rapids"
+	val[]: "Сідар-Рапідс"
+
+	key[]: "chadron"
+	val[]: "Шадрон"
+
+	key[]: "champaign"
+	val[]: "Champaign"
+
+	key[]: "cheyenne"
+	val[]: "Шаєнн"
+
+	key[]: "chicago"
+	val[]: "Chicago"
+
+	key[]: "clifton"
+	val[]: "Кліфтон"
+
+	key[]: "clinton"
+	val[]: "Клінтон"
+
+	key[]: "clovis"
+	val[]: "Кловіс"
+
+	key[]: "cody"
+	val[]: "Коді"
+
+	key[]: "coeur_dalene"
+	val[]: "Коур-д'Ален"
+
+	key[]: "colby"
+	val[]: "Колбі"
+
+	key[]: "colorado_springs"
+	val[]: "Колорадо-Спрінґс"
+
+	key[]: "columbia"
+	val[]: "Колумбія"
+
+	key[]: "columbus"
+	val[]: "Колумбус"
+
+	key[]: "colville"
+	val[]: "Колвілл"
+
+	key[]: "coos_bay"
+	val[]: "Кус-Бей"
+
+	key[]: "corpus_christi"
+	val[]: "Корпус-Крісті"
+
+	key[]: "cote_blanche_island"
+	val[]: "Острів Кот-Бланш"
+
+	key[]: "council_bluffs"
+	val[]: "Консіл-Блафс"
+
+	key[]: "dalhart"
+	val[]: "Далгарт"
+
+	key[]: "dallas"
+	val[]: "Даллас"
+
+	key[]: "davenport"
+	val[]: "Давенпорт"
+
+	key[]: "del_rio"
+	val[]: "Дель-Ріо"
+
+	key[]: "denver"
+	val[]: "Денвер"
+
+	key[]: "deridder"
+	val[]: "Де-Ріддер"
+
+	key[]: "des_moines"
+	val[]: "Де-Мойн"
+
+	key[]: "dodge_city"
+	val[]: "Додж-Сіті"
+
+	key[]: "dubuque"
+	val[]: "Дюбюк"
+
+	key[]: "durango"
+	val[]: "Дюранґо"
+
+	key[]: "durant"
+	val[]: "Дюрант"
+
+	key[]: "east_st_louis"
+	val[]: "East St. Louis"
+
+	key[]: "ehrenberg"
+	val[]: "Еренберґ"
+
+	key[]: "effingham"
+	val[]: "Effingham"
+
+	key[]: "el_centro"
+	val[]: "Ель-Центро"
+
+	key[]: "el_dorado"
+	val[]: "Ель-Дорадо"
+
+	key[]: "el_paso"
+	val[]: "Ель-Пасо"
+
+	key[]: "elko"
+	val[]: "Елко"
+
+	key[]: "ely"
+	val[]: "Елі"
+
+	key[]: "emporia"
+	val[]: "Емпорія"
+
+	key[]: "enid"
+	val[]: "Енід"
+
+	key[]: "eugene"
+	val[]: "Юджін"
+
+	key[]: "eureka"
+	val[]: "Юріка"
+
+	key[]: "evanston"
+	val[]: "Еванстон"
+
+	key[]: "everett"
+	val[]: "Еверетт"
+
+	key[]: "farmington"
+	val[]: "Фармінгтон"
+
+	key[]: "fayetteville"
+	val[]: "Фаєтвіль"
+
+	key[]: "flagstaff"
+	val[]: "Флагстаф"
+
+	key[]: "fort_collins"
+	val[]: "Форт-Коллінс"
+
+	key[]: "fort_dodge"
+	val[]: "Форт-Додж"
+
+	key[]: "fort_smith"
+	val[]: "Форт-Сміт"
+
+	key[]: "fort_stockton"
+	val[]: "Форт-Стоктон"
+
+	key[]: "fort_worth"
+	val[]: "Форт-Ворт"
+
+	key[]: "fourchon_island"
+	val[]: "Острів Фуршон"
+
+	key[]: "fresno"
+	val[]: "Фресно"
+
+	key[]: "fusion_travel_plaza"
+	val[]: "Ф'южн Тревел Плаза"
+
+	key[]: "gallup"
+	val[]: "Галуп"
+
+	key[]: "galveston"
+	val[]: "Галвестон"
+
+	key[]: "garden_city"
+	val[]: "Ґарден-Сіті"
+
+	key[]: "gillette"
+	val[]: "Джіллет"
+
+	key[]: "glasgow"
+	val[]: "Ґлазґо"
+
+	key[]: "glendive"
+	val[]: "Ґлендайв"
+
+	key[]: "grand_canyon"
+	val[]: "Ґранд-Каньйон"
+
+	key[]: "grand_canyon_village"
+	val[]: "Ґранд-Каньйон-Вілледж"
+
+	key[]: "grand_coulee"
+	val[]: "Ґранд-Кулі"
+
+	key[]: "grand_island"
+	val[]: "Ґренд-Айленд"
+
+	key[]: "grand_junction"
+	val[]: "Ґранд-Джанкшн"
+
+	key[]: "grangeville"
+	val[]: "Ґрейнджвілл"
+
+	key[]: "great_falls"
+	val[]: "Ґрейт Фолс"
+
+	key[]: "guymon"
+	val[]: "Ґаймон"
+
+	key[]: "harrison"
+	val[]: "Гаррісон"
+
+	key[]: "havre"
+	val[]: "Гавер"
+
+	key[]: "hays"
+	val[]: "Гейс"
+
+	key[]: "helena"
+	val[]: "Гелена"
+
+	key[]: "hilt"
+	val[]: "Гілт"
+
+	key[]: "hobbs"
+	val[]: "Гоббс"
+
+	key[]: "holbrook"
+	val[]: "Холбрук"
+
+	key[]: "holly_beach"
+	val[]: "Холлі-Біч"
+
+	key[]: "hornbrook"
+	val[]: "Хорнбрук"
+
+	key[]: "hot_springs"
+	val[]: "Гот-Спрінґс"
+
+	key[]: "houma"
+	val[]: "Гоума"
+
+	key[]: "houston"
+	val[]: "Г'юстон"
+
+	key[]: "huntsville"
+	val[]: "Гантсвіль"
+
+	key[]: "huron"
+	val[]: "Хюрон"
+
+	key[]: "hutchinson"
+	val[]: "Гатчинсон"
+
+	key[]: "idabel"
+	val[]: "Айдабел"
+
+	key[]: "idaho_falls"
+	val[]: "Айдаго-Фоллс"
+
+	key[]: "indio"
+	val[]: "Індіо"
+
+	key[]: "iowa_city"
+	val[]: "Айова-Сіті"
+
+	key[]: "jackpot"
+	val[]: "Джекпот"
+
+	key[]: "jackson"
+	val[]: "Джексон"
+
+	key[]: "jefferson_city"
+	val[]: "Джеферсон-Сіті"
+
+	key[]: "jonesboro"
+	val[]: "Джонсборо"
+
+	key[]: "joplin"
+	val[]: "Джоплін"
+
+	key[]: "junction"
+	val[]: "Джанкшен"
+
+	key[]: "junction_city"
+	val[]: "Джанкшен-Сіті"
+
+	key[]: "kalispell"
+	val[]: "Каліспелл"
+
+	key[]: "kansas_city"
+	val[]: "Канзас-Сіті"
+
+	key[]: "kayenta"
+	val[]: "Каєнта"
+
+	key[]: "kennewick"
+	val[]: "Кенневік"
+
+	key[]: "ketchum"
+	val[]: "Кетчум"
+
+	key[]: "kingman"
+	val[]: "Кінґмен"
+
+	key[]: "kirksville"
+	val[]: "Керксвілл"
+
+	key[]: "klamath_falls"
+	val[]: "Кламат Фолс"
+
+	key[]: "lafayette"
+	val[]: "Лафаєт"
+
+	key[]: "lake_charles"
+	val[]: "Лейк-Чарльз"
+
+	key[]: "lake_havasu_city"
+	val[]: "Лейк-Гавасу-Сіті"
+
+	key[]: "lakeview"
+	val[]: "Лейкв'ю"
+
+	key[]: "lamar"
+	val[]: "Ламар"
+
+	key[]: "laramie"
+	val[]: "Ларамі"
+
+	key[]: "laredo"
+	val[]: "Ларедо"
+
+	key[]: "las_cruces"
+	val[]: "Лас-Крусес"
+
+	key[]: "las_vegas"
+	val[]: "Лас-Вeґас"
+
+	key[]: "laurel"
+	val[]: "Лорел"
+
+	key[]: "lawton"
+	val[]: "Лотон"
+
+	key[]: "lewiston"
+	val[]: "Льюїстон"
+
+	key[]: "lewistown"
+	val[]: "Льюїстаун"
+
+	key[]: "lincoln"
+	val[]: "Лінкольн"
+
+	key[]: "little_rock"
+	val[]: "Літл-Рок"
+
+	key[]: "logan"
+	val[]: "Логан"
+
+	key[]: "longview"
+	val[]: "Лонґв'ю"
+
+	key[]: "los_angeles"
+	val[]: "Лос-Анджелес"
+
+	key[]: "lubbock"
+	val[]: "Лаббок"
+
+	key[]: "lufkin"
+	val[]: "Луфкін"
+
+	key[]: "marion"
+	val[]: "Marion"
+
+	key[]: "marysville"
+	val[]: "Мерісвілл"
+
+	key[]: "maryville"
+	val[]: "Мерівілл"
+
+	key[]: "mason_city"
+	val[]: "Мейсон-Сіті"
+
+	key[]: "medford"
+	val[]: "Медфорд"
+
+	key[]: "miles_city"
+	val[]: "Майлс-Сіті"
+
+	key[]: "mcalester"
+	val[]: "Макалестер"
+
+	key[]: "mcallen"
+	val[]: "Мак-Аллен"
+
+	key[]: "mccook"
+	val[]: "Маккук"
+
+	key[]: "missoula"
+	val[]: "Міссула"
+
+	key[]: "moab"
+	val[]: "Моаб"
+
+	key[]: "modesto"
+	val[]: "Модесто"
+
+	key[]: "mojave"
+	val[]: "Мохаве"
+
+	key[]: "moline"
+	val[]: "Moline"
+
+	key[]: "monroe"
+	val[]: "Монро"
+
+	key[]: "montrose"
+	val[]: "Монтроз"
+
+	key[]: "muskogee"
+	val[]: "Маскоґі"
+
+	key[]: "nampa"
+	val[]: "Нампа"
+
+	key[]: "natchitoches"
+	val[]: "Накетош"
+
+	key[]: "new_orleans"
+	val[]: "Новий Орлеан"
+
+	key[]: "newport"
+	val[]: "Нюпорт"
+
+	key[]: "nogales"
+	val[]: "Ноґалес"
+
+	key[]: "norfolk"
+	val[]: "Норфолк"
+
+	key[]: "north_platte"
+	val[]: "Норт-Платт"
+
+	key[]: "oakdale"
+	val[]: "Окдейл"
+
+	key[]: "oakland"
+	val[]: "Окленд"
+
+	key[]: "odessa"
+	val[]: "Одеса"
+
+	key[]: "ogden"
+	val[]: "Огден"
+
+	key[]: "oklahoma_city"
+	val[]: "Оклагома-Сіті"
+
+	key[]: "olympia"
+	val[]: "Олімпія"
+
+	key[]: "omaha"
+	val[]: "Омаха"
+
+	key[]: "omak"
+	val[]: "Омак"
+
+	key[]: "ontario"
+	val[]: "Онтаріо"
+
+	key[]: "ottumwa"
+	val[]: "Оттамва"
+
+	key[]: "oxnard"
+	val[]: "Окснард"
+
+	key[]: "page"
+	val[]: "Пейдж"
+
+	key[]: "pajarito_rest_area"
+	val[]: "Зона відпочинку Пахаріто"
+
+	key[]: "pendleton"
+	val[]: "Пендлтон"
+
+	key[]: "peoria"
+	val[]: "Peoria"
+
+	key[]: "phillipsburg"
+	val[]: "Філліпсбурґ"
+
+	key[]: "phoenix"
+	val[]: "Фінікс"
+
+	key[]: "pine_bluff"
+	val[]: "Пайн-Блафф"
+
+	key[]: "pioche"
+	val[]: "Пайош"
+
+	key[]: "pittsburg"
+	val[]: "Піттсбурґ"
+
+	key[]: "pocatello"
+	val[]: "Покателло"
+
+	key[]: "ponca_city"
+	val[]: "Понка-Сіті"
+
+	key[]: "poplar_bluff"
+	val[]: "Поплар-Блафф"
+
+	key[]: "port_angeles"
+	val[]: "Порт-Анджелес"
+
+	key[]: "port_fourchon"
+	val[]: "Порт-Фуршон"
+
+	key[]: "portland"
+	val[]: "Портленд"
+
+	key[]: "price_ut"
+	val[]: "Прайс"		# city Price in Utah
+
+	key[]: "primm"
+	val[]: "Прімм"
+
+	key[]: "provo"
+	val[]: "Прово"
+
+	key[]: "pueblo"
+	val[]: "Пуебло"
+
+	key[]: "quincy"
+	val[]: "Quincy"
+
+	key[]: "rangely"
+	val[]: "Рейнджелі"
+
+	key[]: "raton"
+	val[]: "Ратон"
+
+	key[]: "rawlins"
+	val[]: "Ролінз"
+
+	key[]: "redding"
+	val[]: "Редінг"
+
+	key[]: "reno"
+	val[]: "Ріно"
+
+	key[]: "riverton"
+	val[]: "Рівертон"
+
+	key[]: "rock_springs"
+	val[]: "Рок-Cпрінґс"
+
+	key[]: "rockford"
+	val[]: "Rockford"
+
+	key[]: "rolla"
+	val[]: "Ролла"
+
+	key[]: "roswell"
+	val[]: "Розвелл"
+
+	key[]: "sacramento"
+	val[]: "Сакраменто"
+
+	key[]: "salem"
+	val[]: "Салем"
+
+	key[]: "salina"
+	val[]: "Селайна"
+
+	key[]: "salina_ks"
+	val[]: "Селайна"
+
+	key[]: "salmon"
+	val[]: "Салман"
+
+	key[]: "salt_lake_city"
+	val[]: "Солт-Лейк-Сіті"
+
+	key[]: "san_angelo"
+	val[]: "Сан-Анджело"
+
+	key[]: "san_antonio"
+	val[]: "Сан-Антоніо"
+
+	key[]: "san_diego"
+	val[]: "Сан-Дієґо"
+
+	key[]: "san_francisco"
+	val[]: "Сан-Франциско"
+
+	key[]: "san_jose"
+	val[]: "Сан-Хосе"
+
+	key[]: "san_rafael"
+	val[]: "Сан-Рафаель"
+
+	key[]: "san_simon"
+	val[]: "Сан-Сімон"
+
+	key[]: "sandpoint"
+	val[]: "Сендпойнт"
+
+	key[]: "santa_cruz"
+	val[]: "Санта-Крус"
+
+	key[]: "santa_fe"
+	val[]: "Санта-Фе"
+
+	key[]: "santa_maria"
+	val[]: "Санта-Марія"
+
+	key[]: "scottsbluff"
+	val[]: "Скотсблафф"
+
+	key[]: "seattle"
+	val[]: "Сіетл"
+
+	key[]: "sheridan"
+	val[]: "Шерідан"
+
+	key[]: "show_low"
+	val[]: "Шоу-Лоу"
+
+	key[]: "shreveport"
+	val[]: "Шрівпорт"
+
+	key[]: "sidney"
+	val[]: "Сідней"
+
+	key[]: "sierra_vista"
+	val[]: "Сієра-Віста"
+
+	key[]: "sioux_city"
+	val[]: "Су-Сіті"
+
+	key[]: "socorro"
+	val[]: "Сокоро"
+
+	key[]: "spokane"
+	val[]: "Спокан"
+
+	key[]: "springdale"
+	val[]: "Спрінґдейл"
+
+	key[]: "springfield"
+	val[]: "Спрінґфілд"
+
+	key[]: "st_george"
+	val[]: "Сент-Джордж"
+
+	key[]: "st_joseph"
+	val[]: "Сент-Джозеф"
+
+	key[]: "st_louis"
+	val[]: "Сент-Луїс"
+
+	key[]: "steamboat_springs"
+	val[]: "Стімбоут-Спрінґс"
+
+	key[]: "sterling"
+	val[]: "Стерлінґ"
+
+	key[]: "stockton"
+	val[]: "Стоктон"
+
+	key[]: "tacoma"
+	val[]: "Такома"
+
+	key[]: "texarkana"
+	val[]: "Тексаркана"
+
+	key[]: "the_dalles"
+	val[]: "Даллес"
+
+	key[]: "thompson_falls"
+	val[]: "Томпсон-Фоллс"
+
+	key[]: "tonopah"
+	val[]: "Тонопа"
+
+	key[]: "topeka"
+	val[]: "Топіка"
+
+	key[]: "truckee"
+	val[]: "Тракі"
+
+	key[]: "tucson"
+	val[]: "Туксон"
+
+	key[]: "tucumcari"
+	val[]: "Тукумкарі"
+
+	key[]: "tulsa"
+	val[]: "Талса"
+
+	key[]: "twin_falls"
+	val[]: "Твін-Фоллс"
+
+	key[]: "tyler"
+	val[]: "Тайлер"
+
+	key[]: "ukiah"
+	val[]: "Юкайа"
+
+	key[]: "valentine"
+	val[]: "Валентайн"
+
+	key[]: "van_horn"
+	val[]: "Ван-Горн"
+
+	key[]: "vancouver"
+	val[]: "Ванкувер"
+
+	key[]: "vernal"
+	val[]: "Вернал"
+
+	key[]: "victoria"
+	val[]: "Вікторія"
+
+	key[]: "waco"
+	val[]: "Вейко"
+
+	key[]: "waterloo"
+	val[]: "Ватерлоо"
+
+	key[]: "wenatchee"
+	val[]: "Венатчі"
+
+	key[]: "wichita"
+	val[]: "Вічита"
+
+	key[]: "wichita_falls"
+	val[]: "Вічита-Фоллс"
+
+	key[]: "winnemucca"
+	val[]: "Віннемакка"
+
+	key[]: "winslow"
+	val[]: "Вінслов"
+
+	key[]: "woodward"
+	val[]: "Вудворд"
+
+	key[]: "yakima"
+	val[]: "Якіма"
+
+	key[]: "yuma"
+	val[]: "Юма"
+#@}
+
+}
+}

@@ -1,0 +1,146 @@
+traffic_vehicle : traffic.int_9900i_a.context
+{
+	accessories[]: .int_9900i_a.context.chassis
+	accessories[]: .int_9900i_a.context.fwheel
+	accessories[]: .int_9900i_a.context.rwheel
+	accessories[]: .int_9900i_a.context.rwheel2
+	accessories[]: .int_9900i_a.context.trlr_cables
+
+	max_speed: 110
+	trailer_chains[]: "truck_semi"
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 8200
+	engine_power: 298
+
+	tags[]: dealer
+	tags[]: context
+
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+
+	color[]: (0.814847, 0.814847, 0.814847) #White
+	color[]: (0.814847, 0.814847, 0.814847) #White
+	color[]: (0.814847, 0.814847, 0.814847) #White
+
+	color[]: (0.6, 0.6, 0.6) #silver
+	color[]: (0.6, 0.6, 0.6) #silver
+
+
+	color[]: (0, 0, 0) #black
+	color[]: (0.004777, 0.025187, 0.111932) #Dark blue
+	color[]: (0.258183, 0.258183, 0.258183) #Gray
+	color[]: (0.013702, 0.102242, 0.056128) #Green
+
+
+	spawn_condition[]: .traffic.int_9900i_a.context.spawn.condition
+	spawn_condition[]: .traffic.int_9900i_a.context.spawn.condition2
+}
+traffic_spawn_condition: .traffic.int_9900i_a.context.spawn.condition
+{
+	type: area
+	str_param[]: "dealer"
+}
+traffic_spawn_condition: .traffic.int_9900i_a.context.spawn.condition2
+{
+	type: area
+	str_param[]: "intnational"
+}
+
+vehicle_accessory : .int_9900i_a.context.chassis {
+	data_path: "/def/vehicle/ai/truck/intnational.9900i/cabin_day.sii"
+}
+vehicle_wheel_accessory : .int_9900i_a.context.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .int_9900i_a.context.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .int_9900i_a.context.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .int_9900i_a.context.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/intnational.9900i/accessory/trlr_cables/stock.sii"
+}
+
+
+traffic_vehicle : traffic.int_9900i_b.context
+{
+	accessories[]: .int_9900i_b.context.chassis
+	accessories[]: .int_9900i_b.context.fwheel
+	accessories[]: .int_9900i_b.context.rwheel
+	accessories[]: .int_9900i_b.context.rwheel2
+	accessories[]: .int_9900i_b.context.trlr_cables
+
+	max_speed: 128
+	trailer_chains[]: "truck_semi"
+
+	sound_move[]: "/sound/traffic/truck_us_4.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_5.soundref"
+
+	vehicle_mass: 9200
+	engine_power: 373
+
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+	color[]: (0.015209, 0.070360, 0.283149) #Blue
+
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+	color[]: (0.18, 0.003, 0.003) #red
+
+	color[]: (0.814847, 0.814847, 0.814847) #White
+	color[]: (0.814847, 0.814847, 0.814847) #White
+	color[]: (0.814847, 0.814847, 0.814847) #White
+
+	color[]: (0.6, 0.6, 0.6) #silver
+	color[]: (0.6, 0.6, 0.6) #silver
+
+
+	color[]: (0, 0, 0) #black
+	color[]: (0.004777, 0.025187, 0.111932) #Dark blue
+	color[]: (0.258183, 0.258183, 0.258183) #Gray
+	color[]: (0.013702, 0.102242, 0.056128) #Green
+
+	spawn_condition[]: .traffic.int_9900i_b.context.spawn.condition
+	spawn_condition[]: .traffic.int_9900i_b.context.spawn.condition2
+}
+traffic_spawn_condition: .traffic.int_9900i_b.context.spawn.condition
+{
+	type: area
+	str_param[]: "dealer"
+}
+traffic_spawn_condition: .traffic.int_9900i_b.context.spawn.condition2
+{
+	type: area
+	str_param[]: "intnational"
+}
+
+vehicle_accessory : .int_9900i_b.context.chassis {
+	data_path: "/def/vehicle/ai/truck/intnational.9900i/cabin_s72.sii"
+}
+vehicle_wheel_accessory : .int_9900i_b.context.fwheel {
+	data_path: "/def/vehicle/f_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .int_9900i_b.context.rwheel {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+}
+vehicle_wheel_accessory : .int_9900i_b.context.rwheel2 {
+	data_path: "/def/vehicle/r_wheel/chrome.sii"
+	offset: 2
+}
+vehicle_addon_accessory : .int_9900i_b.context.trlr_cables {
+	data_path: "/def/vehicle/ai/truck/intnational.9900i/accessory/trlr_cables/stock.sii"
+}

@@ -2,7 +2,7 @@ SiiNunit
 {
 accessory_trailer_body_data : flat53_fir.lodeking.force_flat.body
 {
-	name: "@@bs_flatbed_fir@@"
+	name: "@@body_flatbed_fir@@"
 	price: 4000
 	unlock: 13
 	icon: "trailer_owned/lodeking_flatbed/accessory/body/fir"
@@ -26,7 +26,6 @@ accessory_trailer_body_data : flat53_fir.lodeking.force_flat.body
 	collision: "/vehicle/trailer_owned/lodeking_flatbed/body/body_53p_fir.pmc"
 	variant: LodeKing_var
 
-
 	defaults[]: "/def/vehicle/trailer_owned/lodeking.force_flat/accessory/markers/simple_53.sii"
 
 	cargo_loading_methods[]: area
@@ -35,30 +34,26 @@ accessory_trailer_body_data : flat53_fir.lodeking.force_flat.body
 	cargo_areas[]: (2.4, 15.8)
 	cargo_regular_width: 2.4
 
-	
-
 	cargo_lashing_mounts[]: .lashm1
 	cargo_lashing_mounts[]: .lashm2
 @include "/def/vehicle/lashing_gear.sui" 
-cargo_custom_loads_path: "/def/vehicle/cargo_custom_loads/lodeking_dropdeck/short"	
+	cargo_custom_loads_path: "/def/vehicle/cargo_custom_loads/lodeking_dropdeck/short"
 }
 
 cargo_lashing_mount : .lashm1
 {
 	spacing: 0.1
 	hook_angle_constraints: (30, 20, 10)
-	open_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+	open_model: "/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
 	#closed_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
-
 }
 cargo_lashing_mount : .lashm2
 {
 	spacing: 0.1
 	hook_angle_constraints: (30, 20, 10)
-	open_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
+	open_model: "/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
 	#closed_model: 	"/vehicle/trailer_owned/lodeking_flatbed/body/hook_open.pmd"
 }
 @include "/def/vehicle/lashing_gear_data.sui" 
 
 }
-

@@ -1,0 +1,53 @@
+SiiNunit
+{
+
+accessory_chassis_data : 42_194_6x4.volvo.vnl2025.chassis
+{
+	name: "@@chassis_6x4_194in@@"
+	price: 26200
+	unlock: 13
+	info[]: "@@chassis_6x4@@"
+	icon: "truck/volvo_vnl2025/chassis/s42_194_6x4"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2025/chassis/s42_194_6x4.pmd"
+	collision: "/vehicle/truck/volvo_vnl2025/chassis/s42_194_6x4.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/volvo_vnl2025/ui_shadow_mid.tobj"
+	extended_shadow_intensity: 1.5
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/volvo_vnl2025/ui_shadow/s42_220_6xx.pmd"
+
+	tank_size: 665
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+	powered_axle[]: true
+
+	kerb_weight[]: 4863
+	kerb_weight[]: 2082
+	kerb_weight[]: 2082
+
+	lamp_setup: "/def/vehicle/truck/volvo.vnl2025/lamp_setup.sii"
+
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/cabin/42m.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/exhaust/bottom_42.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/r_bumper/modern.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/sideskirt/standard_plastic_42.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/tank/mid_175_aluminum_sideskirt.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/trlr_cables/sleeper.sii"
+
+	suitable_for[]: "42m.volvo.vnl2025.cabin"
+
+@include "sound.sui"
+}
+}

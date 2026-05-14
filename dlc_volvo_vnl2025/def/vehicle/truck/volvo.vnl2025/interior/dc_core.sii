@@ -1,0 +1,45 @@
+SiiNunit
+{
+accessory_interior_data	: dc_core.volvo.vnl2025.interior
+{
+	name: "@@interior_core@@"
+	price: 15180
+	unlock: 0
+	icon: "truck/volvo_vnl2025/interior/model/core"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2025/interior/model/dc.pmd"
+	animated_model: "/vehicle/truck/volvo_vnl2025/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/volvo_vnl2025/interior/model/dc.pmc"
+	look: Default
+	variant: core
+
+	suitable_for[]: "dc.volvo.vnl2025.cabin"
+
+	ext_model: "/vehicle/truck/volvo_vnl2025/interior/external/dc.pmd"
+	ext_look: core
+	ext_variant: Default
+	show_chassis_rear: true
+
+@include "animations.sui"
+
+@include "int_shadows_dc.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .volvo.vnl2025.r.pane.front
+	glass_panes[]: .volvo.vnl2025.r.pane.close
+	glass_panes[]: .volvo.vnl2025.r.pane.far
+	glass_panes[]: .volvo.vnl2025.r.pane.back
+
+@include "seat.sui"
+#@include "mirrors.sui"
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_dc.sui"
+@include "sound_effects_units.sui"
+}

@@ -104,7 +104,8 @@ traffic_vehicle : traffic.transit_16.context
 
 	color[]: (1, 1, 1)
 
-	spawn_condition[]: .traffic.transit_16.spawn.condition
+	spawn_condition[]: .traffic.transit_16.context.spawn.condition
+	spawn_condition[]: .traffic.transit_16.context.spawn.condition2
 
 @include "drivers_generic.sui"
 }
@@ -122,10 +123,16 @@ vehicle_wheel_accessory: .transit_16.context.rwheel
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_18in_5.sii"
 }
-traffic_spawn_condition: .traffic.transit_16.spawn.condition
+traffic_spawn_condition: .traffic.transit_16.context.spawn.condition
 {
 	type: area
 	str_param[]: "commercial"
+}
+traffic_spawn_condition: .traffic.transit_16.context.spawn.condition2
+{
+	type: area
+	str_param[]: "!"
+	str_param[]: "posted"
 }
 
 traffic_vehicle : traffic.chevy_van.context
@@ -146,7 +153,8 @@ traffic_vehicle : traffic.chevy_van.context
 
 	color[]: (1, 1, 1)
 
-	spawn_condition[]: .traffic.chevy_van.spawn.condition
+	spawn_condition[]: .traffic.chevy_van.context.spawn.condition
+	spawn_condition[]: .traffic.chevy_van.context.spawn.condition2
 
 @include "drivers_generic.sui"
 }
@@ -164,10 +172,236 @@ vehicle_wheel_accessory: .chevy_van.context.rwheel
 	offset: 0
 	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
 }
-traffic_spawn_condition: .traffic.chevy_van.spawn.condition
+traffic_spawn_condition: .traffic.chevy_van.context.spawn.condition
 {
 	type: area
 	str_param[]: "commercial"
 }
+traffic_spawn_condition: .traffic.chevy_van.context.spawn.condition2
+{
+	type: area
+	str_param[]: "!"
+	str_param[]: "posted"
+}
 
 
+#traffic_vehicle : traffic.pv_posted.context
+#{
+#	accessories[]: .pv_posted.context.chassis
+#	accessories[]: .pv_posted.context.fwheel
+#	accessories[]: .pv_posted.context.rwheel
+#
+#	max_speed: 120
+#
+#	sound_move[]: "/sound/traffic/car_normal_3.soundref"
+#	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+#	allow_parked: true
+#	vehicle_mass: 3500
+#
+#	spawn_ratio: 0.20
+#
+#	tags[]: van
+#	tags[]: context
+#
+#
+#@include "drivers_van.sui"
+#
+#	spawn_condition[]: .traffic.pv_posted.context.spawn.condition
+#	spawn_condition[]: .traffic.pv_posted.context.spawn.condition2
+#}
+#	traffic_spawn_condition: .traffic.pv_posted.context.spawn.condition
+#	{
+#		type: area
+#		str_param[]: "commercial"
+#	}
+#	traffic_spawn_condition: .traffic.pv_posted.context.spawn.condition2
+#	{
+#		type: area
+#		str_param[]: "posted"
+#	}
+#
+#	vehicle_accessory: .pv_posted.context.chassis
+#	{
+#		data_path: "/def/vehicle/ai/package_van/chassis_posted.sii"
+#	}
+#
+#	vehicle_wheel_accessory: .pv_posted.context.fwheel
+#	{
+#		offset: 0
+#		data_path: "/def/vehicle/ai_wheel/front_cargo.sii"
+#	}
+#
+#	vehicle_wheel_accessory: .pv_posted.context.rwheel
+#	{
+#		offset: 0
+#		data_path: "/def/vehicle/ai_wheel/rear_cargo.sii"
+#	}
+
+
+traffic_vehicle : traffic.strtruck.dumpbody.context
+{
+	accessories[]: .strtruck.dumpbody.context.chassis
+	accessories[]: .strtruck.dumpbody.context.fwheel
+	accessories[]: .strtruck.dumpbody.context.rwheel
+	accessories[]: .strtruck.dumpbody.context.rwheel2
+
+
+	max_speed: 100
+	vehicle_mass: 25000
+	engine_power: 330
+
+	spawn_ratio: 1.0
+
+	tags[]: context
+
+
+@include "drivers_generic.sui"
+
+	spawn_condition[]: .strtruck.dumpbody.context.spawn.condition
+	spawn_condition[]: .strtruck.dumpbody.context.spawn.condition2
+}
+	traffic_spawn_condition: .strtruck.dumpbody.context.spawn.condition
+	{
+		type: area
+		str_param[]: "company"
+	}
+	traffic_spawn_condition: .strtruck.dumpbody.context.spawn.condition2
+	{
+		type: area
+		str_param[]: "nmq_min_qry"
+	}
+	vehicle_accessory: .strtruck.dumpbody.context.chassis
+	{
+		data_path: "/def/vehicle/ai/superstructure_truck_work/6x4_dumpbody_black.sii"
+	}
+	vehicle_wheel_accessory: .strtruck.dumpbody.context.fwheel
+	{
+		offset: 0
+		data_path: "/def/vehicle/ai_wheel/front_hdpickup.sii"
+	}
+	vehicle_wheel_accessory: .strtruck.dumpbody.context.rwheel
+	{
+		offset: 0
+		data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+	}
+	vehicle_wheel_accessory: .strtruck.dumpbody.context.rwheel2
+	{
+		offset: 2
+		data_path: "/def/vehicle/ai_wheel/rear_hdpickup.sii"
+	}
+
+traffic_vehicle : traffic.mack_rd.dump.context
+{
+	accessories[]: .mack_rd.dump.context.chassis
+	accessories[]: .mack_rd.dump.context.fwheel
+	accessories[]: .mack_rd.dump.context.rwheel
+	accessories[]: .mack_rd.dump.context.rwheel2
+
+	max_speed: 100
+
+	vehicle_mass: 25000
+
+	engine_power: 330
+
+	spawn_ratio: 0.5
+
+	tags[]: context
+
+	color[]: (0.2541, 0.0212, 0.0091) #red
+	color[]: (0.2581, 0.2622, 0.2158) #light brown
+	color[]: (0.3419, 0.3515, 0.3662) #white
+	color[]: (0.3419, 0.3515, 0.3662) #white
+	color[]: (0.0109, 0.0761, 0.2541) #blue
+	color[]: (0.9822, 0.552, 0.0168) # yellow
+
+@include "drivers_generic.sui"
+
+	spawn_condition[]: .mack_rd.dump.context.spawn.condition
+	spawn_condition[]: .mack_rd.dump.context.spawn.condition2
+}
+	traffic_spawn_condition: .mack_rd.dump.context.spawn.condition
+	{
+		type: area
+		str_param[]: "company"
+	}
+	traffic_spawn_condition: .mack_rd.dump.context.spawn.condition2
+	{
+		type: area
+		str_param[]: "nmq_min_qry"
+	}
+	vehicle_accessory: .mack_rd.dump.context.chassis
+	{
+		data_path: "/def/vehicle/ai/mack_rd/dump.sii"
+	}
+	vehicle_wheel_accessory: .mack_rd.dump.context.fwheel
+	{
+		offset: 0
+		data_path: "/def/vehicle/f_wheel/steel.sii"
+	}
+	vehicle_wheel_accessory: .mack_rd.dump.context.rwheel
+	{
+		offset: 0
+		data_path: "/def/vehicle/r_wheel/steel.sii"
+	}
+	vehicle_wheel_accessory: .mack_rd.dump.context.rwheel2
+	{
+		offset: 2
+		data_path: "/def/vehicle/r_wheel/steel.sii"
+	}
+
+
+
+traffic_vehicle : traffic.yard_truck.context
+{
+	accessories[]: .yard_truck.context.chassis
+	accessories[]: .yard_truck.context.fwheel
+	accessories[]: .yard_truck.context.rwheel
+	accessories[]: .yard_truck.context.trlr_cables
+
+	max_speed: 160
+
+	trailer_chains[]: "traffic.trailer.scs_gosck20"
+
+	vehicle_mass: 2100
+
+	sound_move[]: "/sound/traffic/car_diesel_2.soundref"
+
+	tags[]: context
+
+	spawn_condition[]: .traffic.yard_truck.context.spawn.condition
+	spawn_condition[]: .traffic.yard_truck.context.spawn.condition2
+
+@include "drivers_generic.sui"
+}
+	traffic_spawn_condition: .traffic.yard_truck.context.spawn.condition
+	{
+		type: area
+		str_param[]: "container"
+	}
+	traffic_spawn_condition: .traffic.yard_truck.context.spawn.condition2
+	{
+		type: area
+		str_param[]: "company"
+		str_param[]: "industrial"
+	}
+
+	vehicle_accessory: .yard_truck.context.chassis
+	{
+		data_path: "/def/vehicle/ai/yard_truck/chassis.sii"
+	}
+
+	vehicle_wheel_accessory: .yard_truck.context.fwheel
+	{
+		offset: 0
+		data_path: "/def/vehicle/f_wheel/steel.sii"
+	}
+
+	vehicle_wheel_accessory: .yard_truck.context.rwheel
+	{
+		offset: 0
+		data_path: "/def/vehicle/r_wheel/steel.sii"
+	}
+	vehicle_addon_accessory : .yard_truck.context.trlr_cables
+	{
+		data_path: "/def/vehicle/ai/yard_truck/accessory/trlr_cables/stock.sii"
+	}

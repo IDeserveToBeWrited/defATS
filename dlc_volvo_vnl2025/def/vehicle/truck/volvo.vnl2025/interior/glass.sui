@@ -1,0 +1,41 @@
+glass_pane_data : .volvo.vnl2025.r.pane.front
+{
+	locator: front_glass
+	size: (1.85720, 1.03748)
+	edge_angle: 30
+	wipers[]: .volvo.vnl2025.r.pane.wiper1
+	wipers[]: .volvo.vnl2025.r.pane.wiper2
+	mask_texture: "/vehicle/truck/volvo_vnl2025/interior/front_glass_mask.tobj"
+	depth_texture: "/vehicle/truck/volvo_vnl2025/interior/front_glass_depth.tobj"
+	depth_range: 0.35545
+}
+
+wiper_data : .volvo.vnl2025.r.pane.wiper1
+{
+	center_bone: wiper_r_tip
+	length: 0.7
+}
+
+wiper_data : .volvo.vnl2025.r.pane.wiper2
+{
+	center_bone: wiper_l_tip
+	length: 0.7
+}
+
+glass_pane_data : .volvo.vnl2025.r.pane.close
+{
+	locator: l_glasspane
+	size: (0.80213, 0.72183)
+
+	openable_window_bone: l_wnd
+	mask_texture: "/vehicle/truck/volvo_vnl2025/interior/l_glasspane_mask.tobj"
+}
+
+glass_pane_data : .volvo.vnl2025.r.pane.far
+{
+	locator: r_glasspane
+	size: (0.80665, 0.74025)
+
+	openable_window_bone: r_wnd
+	mask_texture: "/vehicle/truck/volvo_vnl2025/interior/r_glasspane_mask.tobj"
+}

@@ -1,0 +1,38 @@
+glass_pane_data : .volvo.vnr_e.r.pane.front
+{
+	locator: front_glass
+	size: (2.3, 0.9)
+	edge_angle: 30
+	wipers[]: .volvo.vnr_e.r.pane.wiper1
+	wipers[]: .volvo.vnr_e.r.pane.wiper2
+}
+
+wiper_data : .volvo.vnr_e.r.pane.wiper1
+{
+	center_bone: wiper_r_tip
+	length: 0.6
+}
+
+wiper_data : .volvo.vnr_e.r.pane.wiper2
+{
+	center_bone: wiper_l_tip
+	length: 0.6
+}
+
+glass_pane_data : .volvo.vnr_e.r.pane.close
+{
+	locator: l_glasspane
+	size: (0.85, 0.7)
+
+	openable_window_bone: win_open_l
+	mask_texture: "/vehicle/truck/volvo_vnr_e/interior/win_mask_l.tobj"
+}
+
+glass_pane_data : .volvo.vnr_e.r.pane.far
+{
+	locator: r_glasspane
+	size: (0.85, 0.7)
+
+	openable_window_bone: win_open_r
+	mask_texture: "/vehicle/truck/volvo_vnr_e/interior/win_mask_r.tobj"
+}

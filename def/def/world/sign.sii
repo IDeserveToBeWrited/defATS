@@ -2032,19 +2032,15 @@ sign_model : sign.433
 
 sign_model : sign.434
 {
-
 	sign_name: "nv reflection post white 1"
-
 	model_desc: "/model/sign/nv_ref_post1.pmd"
 	model_coll: "/model/sign/nv_ref_post1.pmc"
 	look_name: default
 
 	dynamic: true
-	mass: 100
 	road_model: true
 	instanced: true
-
-
+	mass: 100
 }
 
 sign_model : sign.435
@@ -11283,45 +11279,40 @@ sign_model : sign.766
 	mass: 120
 
 }
+
 sign_model : sign.767
 {
-
 	sign_name: "US curve chevron left48"
-
 	model_desc: "/model/sign/traffic/us_curve_chevron_left48.pmd"
 	model_coll: "/model/sign/traffic/us_curve_chevron_left48.pmc"
 	look_name: default
 
 	dynamic: true
 	mass: 120
-
 }
+
 sign_model : sign.768
 {
-
 	sign_name: "US curve chevron right48"
-
 	model_desc: "/model/sign/traffic/us_curve_chevron_right48.pmd"
 	model_coll: "/model/sign/traffic/us_curve_chevron_right48.pmc"
 	look_name: default
 
 	dynamic: true
 	mass: 120
-
 }
 
 sign_model : sign.769
 {
-
 	sign_name: "us truck crossing"
-
 	model_desc: "/model/sign/traffic/us_truck_crossing.pmd"
 	model_coll: "/model/sign/traffic/us_truck_crossing.pmc"
 	look_name: default
+	variant_name: default
+
 	dynamic: true
 	editable: false
 	mass: 100.0
-
 }
 
 sign_model : sign.790
@@ -11587,17 +11578,17 @@ sign_model : sign.wa_5
 	road_model: true
 	instanced: true
 }
+
 sign_model : sign.wa_6
 {
+	sign_name: wa_lamp_2_double
 	model_desc: "/model/props/lamp/wa_lamp_2_double.pmd"
 	model_coll: "/model/props/lamp/wa_lamp_2_double.pmc"
+	look_name: default
 
-	sign_name: "wa_lamp_2_double"
-
-	look_name: Default
+	dynamic: false
 	road_model: true
 	instanced: true
-	dynamic: false
 }
 sign_model : sign.wa_8
 {
@@ -15041,13 +15032,11 @@ sign_model : sign.0300g
 	model_coll: "/model/panorama/truck_stop/co_driving_totem_01.pmc"
 	look_name: "default"
 	category: ""
-#	old_sign_name: "co driving totem 01"
 
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/model/panorama/truck_stop/co_driving_totem_01_lod1.pmd"
-	dynamic_lod_dist[0]: 100
+	dynamic_lod_desc[]: "/model/panorama/truck_stop/co_driving_totem_01_lod1.pmd"
+	dynamic_lod_dist[]: 100
 
+	dynamic: false
 	editable: true
 	drop_sun_shadows: 1
 }
@@ -22377,7 +22366,6 @@ sign_model : sign.mt_2k001
 	model_desc: "/model/sign/mt_reflection_post_1_white.pmd"
 	model_coll: "/model/sign/mt_reflection_post_1_white.pmc"
 	look_name: "default"
-
 	category: ""
 
 	dynamic: true
@@ -25857,7 +25845,7 @@ sign_model : sign.3a00o
 	mass: 500.0
 }
 
-sign_model : sign.3a00p
+sign_model : sign.3a00pa
 {
 	sign_name: "global sky arrow straight"
 	model_desc: "/model/sign/company_logos/global_sky/global_sky_arrow_straight.pmd"
@@ -25870,7 +25858,7 @@ sign_model : sign.3a00p
 	mass: 500.0
 }
 
-sign_model : sign.3a00q
+sign_model : sign.3a00qa
 {
 	sign_name: "caliber mot arrow left"
 	model_desc: "/model/sign/company_logos/caliber_mot/caliber_mot_arrow_left.pmd"
@@ -38842,16 +38830,6 @@ sign_model : sign.54007a
 	mass: &42c80000
 }
 
-sign_model : sign.54008
-{
-	model_desc: "/model/sign/company_logos/american_lines/american_lines_arrow_straight.pmd"
-	model_coll: "/model/sign/company_logos/american_lines/american_lines_arrow_straight.pmc"
-
-	dynamic: false
-	drop_sun_shadows: 1
-	mass: &42c80000
-}
-
 sign_model : sign.54008a
 {
 	model_desc: "/model/sign/company_logos/american_lines/american_lines_arrow_straight.pmd"
@@ -44540,7 +44518,7 @@ sign_model : sign.2k11z
 
 sign_model : sign.2k120
 {
-	sign_name: "us side board green 210/150/120x30"
+	sign_name: "us side board green 210/150/120/90x30"
 	model_desc: "/model/sign/navigation/us_side_board_green_210_150_120x30.pmd"
 	model_coll: "/model/sign/navigation/us_side_board_green_210_150_120x30.pmc"
 	look_name: default
@@ -46098,6 +46076,7 @@ sign_model : sign.2k14u
 	dynamic: true
 	drop_sun_shadows: 1
 	mass: &42c80000
+	traffic_rule: traffic_rule.stop
 }
 
 sign_model : sign.2k14v
@@ -46112,6 +46091,7 @@ sign_model : sign.2k14v
 	dynamic: true
 	drop_sun_shadows: 1
 	mass: &42c80000
+	traffic_rule: traffic_rule.stop
 }
 
 sign_model : sign.2k14w
@@ -47570,6 +47550,1527 @@ sign_model : sign.2k17h
 
 	dynamic: false
 	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k17i
+{
+	sign_name: "sd welcome sign 200x100"
+	model_desc: "/model/sign/sd_welcome_sign_200x100.pmd"
+	model_coll: "/model/sign/sd_welcome_sign_200x100.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17j
+{
+	sign_name: "us side board yellow 135x90"
+	model_desc: "/model/sign/navigation/us_side_board_yellow_135x90.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_yellow_135x90.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17k
+{
+	sign_name: "us 2hw 2wide 2dir 1arrow"
+	model_desc: "/model/sign/navigation/us_2hw_2wide_2dir_1arrow.pmd"
+	model_coll: "/model/sign/navigation/us_2hw_2wide_2dir_1arrow.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17l
+{
+	sign_name: "us 2hw 1wide1 2arrow 2dir"
+	model_desc: "/model/sign/navigation/us_2hw_1wide1_2arrow_2dir.pmd"
+	model_coll: "/model/sign/navigation/us_2hw_1wide1_2arrow_2dir.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17m
+{
+	sign_name: "us 4hw 2wide24 4arrow 4dir"
+	model_desc: "/model/sign/navigation/us_4hw_2wide24_4arrow_4dir.pmd"
+	model_coll: "/model/sign/navigation/us_4hw_2wide24_4arrow_4dir.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17n
+{
+	sign_name: "us 2fw 1dir lg"
+	model_desc: "/model/sign/navigation/us_2fw_1dir_lg.pmd"
+	model_coll: "/model/sign/navigation/us_2fw_1dir_lg.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17o
+{
+	sign_name: "us curve chevron left48 steel (road model)"
+	model_desc: "/model/sign/traffic/us_curve_chevron_left48_steel_road_model.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_left48_steel_road_model.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17p
+{
+	sign_name: "us curve chevron left48 wooden (road model)"
+	model_desc: "/model/sign/traffic/us_curve_chevron_left48_wood_road_model.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_left48_wood_road_model.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17q
+{
+	sign_name: "us curve chevron right48 steel (road model)"
+	model_desc: "/model/sign/traffic/us_curve_chevron_right48_steel_road_model.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_right48_steel_road_model.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17r
+{
+	sign_name: "us curve chevron right48 wood (road model)"
+	model_desc: "/model/sign/traffic/us_curve_chevron_right48_wood_road_model.pmd"
+	model_coll: "/model/sign/traffic/us_curve_chevron_right48_wood_road_model.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17s
+{
+	sign_name: "info shield single arrow"
+	model_desc: "/model/sign/navigation/info_shield_single_arrow.pmd"
+	model_coll: "/model/sign/navigation/info_shield_single_arrow.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17t
+{
+	sign_name: "us side board green 860x560"
+	model_desc: "/model/sign/navigation/us_side_board_green_860x560.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_860x560.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k17u
+{
+	sign_name: "us side board green 840x480"
+	model_desc: "/model/sign/navigation/us_side_board_green_840x480.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_840x480.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k17v
+{
+	sign_name: "us side board green 720x450"
+	model_desc: "/model/sign/navigation/us_side_board_green_720x450.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_720x450.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k17w
+{
+	sign_name: "us side board 90x135 white/ brown arrow"
+	model_desc: "/model/sign/us_side_board_90x135_white_brown_arrow.pmd"
+	model_coll: "/model/sign/us_side_board_90x135_white_brown_arrow.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17x
+{
+	sign_name: "us 2fw 2dir lg"
+	model_desc: "/model/sign/navigation/us_2fw_2dir_lg.pmd"
+	model_coll: "/model/sign/navigation/us_2fw_2dir_lg.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k17z
+{
+	sign_name: "us side board green 570x360"
+	model_desc: "/model/sign/navigation/us_side_board_green_570x360.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_570x360.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k181
+{
+	sign_name: "wa lamp 2 sm black"
+	model_desc: "/model/props/lamp/wa_lamp_2_sm_black.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2_sm_black.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.2k180
+{
+	sign_name: "wa lamp 2 black"
+	model_desc: "/model/props/lamp/wa_lamp_2_black.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2_black.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.2k182
+{
+	sign_name: "wa lamp 2 double black"
+	model_desc: "/model/props/lamp/wa_lamp_2_double_black.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2_double_black.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.2k183
+{
+	sign_name: "wa lamp 2 double sm black"
+	model_desc: "/model/props/lamp/wa_lamp_2_double_sm_black.pmd"
+	model_coll: "/model/props/lamp/wa_lamp_2_double_sm_black.pmc"
+	look_name: default
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.0100i
+{
+	sign_name: "a-frame sign 1"
+	model_desc: "/model/props/street/a-frame_sign_1_sign.pmd"
+	model_coll: "/model/props/street/a-frame_sign_1_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100j
+{
+	sign_name: "a-frame sign 2"
+	model_desc: "/model/props/street/a-frame_sign_2_sign.pmd"
+	model_coll: "/model/props/street/a-frame_sign_2_sign.pmc"
+	look_name: asian_food
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100k
+{
+	sign_name: "a-frame sign 3"
+	model_desc: "/model/props/street/a-frame_sign_3_sign.pmd"
+	model_coll: "/model/props/street/a-frame_sign_3_sign.pmc"
+	look_name: asian_food
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100l
+{
+	sign_name: "az market cart"
+	model_desc: "/model/props/street/az_market_cart_sign.pmd"
+	model_coll: "/model/props/street/az_market_cart_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/az_market_cart_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100m
+{
+	sign_name: "az platform cart"
+	model_desc: "/model/props/logistic/az_platform_cart_sign.pmd"
+	model_coll: "/model/props/logistic/az_platform_cart_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/logistic/az_platform_cart_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100n
+{
+	sign_name: "az trash bin 1"
+	model_desc: "/model/props/street/az_trash_bin_1_sign.pmd"
+	model_coll: "/model/props/street/az_trash_bin_1_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/az_trash_bin_1_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100o
+{
+	sign_name: "az trash bin 2"
+	model_desc: "/model/props/street/az_trash_bin_2_sign.pmd"
+	model_coll: "/model/props/street/az_trash_bin_2_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/az_trash_bin_2_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100w
+{
+	sign_name: "bench city generic shr"
+	model_desc: "/model/props/street/ok_bench_city_generic_sign.pmd"
+	model_coll: "/model/props/street/ok_bench_city_generic_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/ok_bench_city_generic_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100x
+{
+	sign_name: "ca plastic box 01"
+	model_desc: "/prefab/depots/grape_processing/ca_plastic_box_01_sign.pmd"
+	model_coll: "/prefab/depots/grape_processing/ca_plastic_box_01_sign.pmc"
+
+	dynamic_lod_desc[]: "/prefab/depots/grape_processing/ca_plastic_box_01_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100y
+{
+	sign_name: "carton single shr"
+	model_desc: "/asset/props/paper/ar_carton_single_sign.pmd"
+	model_coll: "/asset/props/paper/ar_carton_single_sign.pmc"
+
+	dynamic_lod_desc[]: "/asset/props/paper/ar_carton_single_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0100z
+{
+	sign_name: "dust bin 01"
+	model_desc: "/model/props/street/dust_bin_01_sign.pmd"
+	model_coll: "/model/props/street/dust_bin_01_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/dust_bin_01_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01010
+{
+	sign_name: "field signs logos"
+	model_desc: "/model/props/farm/field_signs_logos_sign.pmd"
+	model_coll: "/model/props/farm/field_signs_logos_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01011
+{
+	sign_name: "flowerpot concrete shr"
+	model_desc: "/asset/props/street/ok_flowerpot_concrete_sign.pmd"
+	model_coll: "/asset/props/street/ok_flowerpot_concrete_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01012
+{
+	sign_name: "flowerpot concrete2 shr"
+	model_desc: "/asset/props/street/ok_flowerpot_concrete2_sign.pmd"
+	model_coll: "/asset/props/street/ok_flowerpot_concrete2_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01013
+{
+	sign_name: "flowerpot2 shr"
+	model_desc: "/asset/props/street/ok_flowerpot2_sign.pmd"
+	model_coll: "/asset/props/street/ok_flowerpot2_sign.pmc"
+
+	dynamic_lod_desc[]: "/asset/props/street/ok_flowerpot2_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01014
+{
+	sign_name: "crate block food 03 shr"
+	model_desc: "/asset/props/storage/crate_block_food_03_shr_sign.pmd"
+	model_coll: "/asset/props/storage/crate_block_food_03_shr_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01015
+{
+	sign_name: "crate block food 02 shr"
+	model_desc: "/asset/props/storage/crate_block_food_02_shr_sign.pmd"
+	model_coll: "/asset/props/storage/crate_block_food_02_shr_sign.pmc"
+
+	dynamic_lod_desc[]: "/asset/props/storage/crate_block_food_02_shr_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01016
+{
+	sign_name: "crate block food 01 shr"
+	model_desc: "/asset/props/storage/crate_block_food_01_shr_sign.pmd"
+	model_coll: "/asset/props/storage/crate_block_food_01_shr_sign.pmc"
+
+	dynamic_lod_desc[]: "/asset/props/storage/crate_block_food_01_shr_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01017
+{
+	sign_name: "tower binocular"
+	model_desc: "/model/props/street/tower_binocular_sign.pmd"
+	model_coll: "/model/props/street/tower_binocular_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01019
+{
+	sign_name: "parking machine"
+	model_desc: "/model/props/street/parking_machine1_sign.pmd"
+	model_coll: "/model/props/street/parking_machine1_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101g
+{
+	sign_name: "ia mailbox"
+	model_desc: "/model/props/street/ia_mailbox_sign.pmd"
+	model_coll: "/model/props/street/ia_mailbox_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/ia_mailbox_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101h
+{
+	sign_name: "ia mailway delivery box"
+	model_desc: "/model/props/street/ia_mailway_delivery_box_sign.pmd"
+	model_coll: "/model/props/street/ia_mailway_delivery_box_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/ia_mailway_delivery_box_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101i
+{
+	sign_name: "ia pallet flag"
+	model_desc: "/model/props/street/ia_pallet_flag_sign.pmd"
+	model_coll: "/model/props/street/ia_pallet_flag_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/ia_pallet_flag_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101j
+{
+	sign_name: "ia memorial plaque"
+	model_desc: "/model/props/street/ia_memorial_plaque_sign.pmd"
+	model_coll: "/model/props/street/ia_memorial_plaque_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101k
+{
+	sign_name: "ia pallets single"
+	model_desc: "/model/props/factory/ia_pallets_single_sign.pmd"
+	model_coll: "/model/props/factory/ia_pallets_single_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/factory/ia_pallets_single_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101q
+{
+	sign_name: "or adv giftshop 02"
+	model_desc: "/model/advert/or_adv_giftshop_02_sign.pmd"
+	model_coll: "/model/advert/or_adv_giftshop_02_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101r
+{
+	sign_name: "or adv giftshop 04"
+	model_desc: "/model/advert/or_adv_giftshop_04_sign.pmd"
+	model_coll: "/model/advert/or_adv_giftshop_04_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101s
+{
+	sign_name: "or adv giftshop 05"
+	model_desc: "/model/advert/or_adv_giftshop_05_sign.pmd"
+	model_coll: "/model/advert/or_adv_giftshop_05_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101t
+{
+	sign_name: "or adv giftshop 06"
+	model_desc: "/model/advert/or_adv_giftshop_06_sign.pmd"
+	model_coll: "/model/advert/or_adv_giftshop_06_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101u
+{
+	sign_name: "or adv giftshop 03"
+	model_desc: "/model/advert/or_adv_giftshop_03_sign.pmd"
+	model_coll: "/model/advert/or_adv_giftshop_03_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.2k184
+{
+	sign_name: "us side board 60x90 white/brown 1dir"
+	model_desc: "/model/sign/us_side_board_60x90_white_brown_dir.pmd"
+	model_coll: "/model/sign/us_side_board_60x90_white_brown_dir.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.0101v
+{
+	sign_name: "stacking steel box 02 shr"
+	model_desc: "/prefab/depots/construction_garage/stacking_steel_box_02_shr_sign.pmd"
+	model_coll: "/prefab/depots/construction_garage/stacking_steel_box_02_shr_sign.pmc"
+
+	dynamic_lod_desc[]: "/prefab/depots/construction_garage/stacking_steel_box_02_shr_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101w
+{
+	sign_name: "tx vending machin superjuice"
+	model_desc: "/model/props/street/tx_vending_machin_superjuice_sign.pmd"
+	model_coll: "/model/props/street/tx_vending_machin_superjuice_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101x
+{
+	sign_name: "tx city bin"
+	model_desc: "/model/props/street/tx_city_bin_sign.pmd"
+	model_coll: "/model/props/street/tx_city_bin_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/tx_city_bin_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01022
+{
+	sign_name: "or bench1"
+	model_desc: "/model/props/street/or_bench1_sign.pmd"
+	model_coll: "/model/props/street/or_bench1_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/or_bench1_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01024
+{
+	sign_name: "or bench2"
+	model_desc: "/model/props/street/or_bench2_sign.pmd"
+	model_coll: "/model/props/street/or_bench2_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/or_bench2_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101c
+{
+	sign_name: "wheelbarrow 01 blkw"
+	model_desc: "/asset/props/construction/close/wheelbarrow_01_blkw_sign.pmd"
+	model_coll: "/asset/props/construction/close/wheelbarrow_01_blkw_sign.pmc"
+
+	dynamic_lod_desc[]: "/asset/props/construction/close/wheelbarrow_01_blkw_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101d
+{
+	sign_name: "us gas phoenix trashcap"
+	model_desc: "/prefab/gas/us_gas_phoenix_trashcap_sign.pmd"
+	model_coll: "/prefab/gas/us_gas_phoenix_trashcap_sign.pmc"
+
+	dynamic_lod_desc[]: "/prefab/gas/us_gas_phoenix_trashcap_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101e
+{
+	sign_name: "us gas fusion trashcap"
+	model_desc: "/prefab/gas/us_gas_fusion_trashcap_sign.pmd"
+	model_coll: "/prefab/gas/us_gas_fusion_trashcap_sign.pmc"
+
+	dynamic_lod_desc[]: "/prefab/gas/us_gas_fusion_trashcap_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101b
+{
+	sign_name: "us gas driverse trashcap"
+	model_desc: "/prefab/gas/us_gas_driverse_trashcap_sign.pmd"
+	model_coll: "/prefab/gas/us_gas_driverse_trashcap_sign.pmc"
+
+	dynamic_lod_desc[]: "/prefab/gas/us_gas_driverse_trashcap_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101f
+{
+	sign_name: "clearview a stand"
+	model_desc: "/model/carwash/clearview_a_stand_sign.pmd"
+	model_coll: "/model/carwash/clearview_a_stand_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101y
+{
+	sign_name: "sponge wash a stand"
+	model_desc: "/model/carwash/sponge_wash_a_stand_sign.pmd"
+	model_coll: "/model/carwash/sponge_wash_a_stand_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0101z
+{
+	sign_name: "the wash a stand"
+	model_desc: "/model/carwash/the_wash_a_stand_sign.pmd"
+	model_coll: "/model/carwash/the_wash_a_stand_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01020
+{
+	sign_name: "clearview cone"
+	model_desc: "/model/carwash/clearview_cone_sign.pmd"
+	model_coll: "/model/carwash/clearview_cone_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01025
+{
+	sign_name: "the wash cone"
+	model_desc: "/model/carwash/the_wash_cone_sign.pmd"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01026
+{
+	sign_name: "sponge wash cone"
+	model_desc: "/model/carwash/sponge_wash_cone_sign.pmd"
+	model_coll: "/model/carwash/sponge_wash_cone_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01027
+{
+	sign_name: "mt ice machine1"
+	model_desc: "/model/props/street/mt_ice_machine1_sign.pmd"
+	model_coll: "/model/props/street/mt_ice_machine1_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01028
+{
+	sign_name: "mt refuse container"
+	model_desc: "/model/props/street/mt_refuse_container_sign.pmd"
+	model_coll: "/model/props/street/mt_refuse_container_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/mt_refuse_container_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.01029
+{
+	sign_name: "mt trashbin 1"
+	model_desc: "/model/props/street/mt_trashbin_1_sign.pmd"
+	model_coll: "/model/props/street/mt_trashbin_1_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/mt_trashbin_1_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102a
+{
+	sign_name: "mt trashbin 2"
+	model_desc: "/model/props/street/mt_trashbin_2_sign.pmd"
+	model_coll: "/model/props/street/mt_trashbin_2_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/mt_trashbin_2_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102b
+{
+	sign_name: "mt trashbin 4"
+	model_desc: "/model/props/street/mt_trashbin_4_sign.pmd"
+	model_coll: "/model/props/street/mt_trashbin_4_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/mt_trashbin_4_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102d
+{
+	sign_name: "mt trashbin 3"
+	model_desc: "/model/props/street/mt_trashbin_3_sign.pmd"
+	model_coll: "/model/props/street/mt_trashbin_3_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/mt_trashbin_3_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102e
+{
+	sign_name: "ok welcome center bin"
+	model_desc: "/model/props/street/ok_welcome_center_bin_sign.pmd"
+	model_coll: "/model/props/street/ok_welcome_center_bin_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/ok_welcome_center_bin_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102f
+{
+	sign_name: "ok tire truck"
+	model_desc: "/prefab/depots/tire_factory/ok_tire_truck_sign.pmd"
+	model_coll: "/prefab/depots/tire_factory/ok_tire_truck_sign.pmc"
+
+	dynamic_lod_desc[]: "/prefab/depots/tire_factory/ok_tire_truck_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102g
+{
+	sign_name: "ne seed box 01"
+	model_desc: "/model/props/farming/ne_seed_box_01_sign.pmd"
+	model_coll: "/model/props/farming/ne_seed_box_01_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/farming/ne_seed_box_01_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102h
+{
+	sign_name: "az box 01 rusty "
+	model_desc: "/model/props/logistic/az_box_01_rusty_sign.pmd"
+	model_coll: "/model/props/logistic/az_box_01_rusty_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/logistic/az_box_01_rusty_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.2k185
+{
+	sign_name: "us 1fw nodir"
+	model_desc: "/model/sign/navigation/us_1fw_nodir.pmd"
+	model_coll: "/model/sign/navigation/us_1fw_nodir.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.0102i
+{
+	sign_name: "mt gas bomb box1"
+	model_desc: "/model/props/street/mt_gas_bomb_box1_sign.pmd"
+	model_coll: "/model/props/street/mt_gas_bomb_box1_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102j
+{
+	sign_name: "mt dumpster1"
+	model_desc: "/model/props/street/mt_dumpster1_sign.pmd"
+	model_coll: "/model/props/street/mt_dumpster1_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/mt_dumpster1_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102k
+{
+	sign_name: "mt ashtray stand1"
+	model_desc: "/model/props/street/mt_ashtray_stand1_sign.pmd"
+	model_coll: "/model/props/street/mt_ashtray_stand1_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/mt_ashtray_stand1_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102l
+{
+	sign_name: "sd grill"
+	model_desc: "/model/props/street/sd_grill_sign.pmd"
+	model_coll: "/model/props/street/sd_grill_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/sd_grill_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102m
+{
+	sign_name: "mo garage tools small"
+	model_desc: "/model/props/garage/mo_garage_tools_small_sign.pmd"
+	model_coll: "/model/props/garage/mo_garage_tools_small_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/garage/mo_garage_tools_small_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102n
+{
+	sign_name: "mo garage tools large"
+	model_desc: "/model/props/garage/mo_garage_tools_large_sign.pmd"
+	model_coll: "/model/props/garage/mo_garage_tools_large_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/garage/mo_garage_tools_large_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102o
+{
+	sign_name: "mo garage tables"
+	model_desc: "/model/props/garage/mo_garage_tables_sign.pmd"
+	model_coll: "/model/props/garage/mo_garage_tables_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/garage/mo_garage_tables_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102p
+{
+	sign_name: "mo garage cabinets"
+	model_desc: "/model/props/garage/mo_garage_cabinets_sign.pmd"
+	model_coll: "/model/props/garage/mo_garage_cabinets_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/garage/mo_garage_cabinets_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102q
+{
+	sign_name: "mo garage containers"
+	model_desc: "/model/props/garage/mo_garage_containers_sign.pmd"
+	model_coll: "/model/props/garage/mo_garage_containers_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/garage/mo_garage_containers_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102s
+{
+	sign_name: "mo garage props sign"
+	model_desc: "/model/props/garage/mo_garage_props_sign.pmd"
+	model_coll: "/model/props/garage/mo_garage_props_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/garage/mo_garage_props_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102t
+{
+	sign_name: "il bench concrete"
+	model_desc: "/model/props/street/il_bench_concrete_sign.pmd"
+	model_coll: "/model/props/street/il_bench_concrete_sign.pmc"
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102u
+{
+	sign_name: "il emergency pole"
+	model_desc: "/model/props/street/il_emergency_pole_sign.pmd"
+	model_coll: "/model/props/street/il_emergency_pole_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/il_emergency_pole_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102v
+{
+	sign_name: "la rocking chair"
+	model_desc: "/model/props/street/la_rocking_chair_sign.pmd"
+	model_coll: "/model/props/street/la_rocking_chair_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/la_rocking_chair_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102w
+{
+	sign_name: "il bench city 02"
+	model_desc: "/model/props/street/il_bench_city_02_sign.pmd"
+	model_coll: "/model/props/street/il_bench_city_02_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/il_bench_city_02_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102x
+{
+	sign_name: "il bench city"
+	model_desc: "/model/props/street/il_bench_city_sign.pmd"
+	model_coll: "/model/props/street/il_bench_city_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/il_bench_city_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102y
+{
+	sign_name: "ibc container single 1 shr"
+	model_desc: "/asset/props/logistics/containers/ibc_container_single_1_shr_sign.pmd"
+	model_coll: "/asset/props/logistics/containers/ibc_container_single_1_shr_sign.pmc"
+
+	dynamic_lod_desc[]: "/asset/props/logistics/containers/ibc_container_single_1_shr_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.0102z
+{
+	sign_name: "ibc container single 1 dirty shr"
+	model_desc: "/asset/props/logistics/containers/ibc_container_single_1_dirty_shr_sign.pmd"
+	model_coll: "/asset/props/logistics/containers/ibc_container_single_1_dirty_shr_sign.pmc"
+
+	dynamic_lod_desc[]: "/asset/props/logistics/containers/ibc_container_single_1_dirty_shr_sign_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.2k187
+{
+	sign_name: "us side board green 690x270 ep"
+	model_desc: "/model/sign/navigation/us_side_board_green_690x270_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_690x270_ep.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k188
+{
+	sign_name: "us side board green 150x76"
+	model_desc: "/model/sign/navigation/us_side_board_green_150x76.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_150x76.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k189
+{
+	sign_name: "us side board white 305x210 flashing beacons"
+	model_desc: "/model/sign/navigation/us_side_board_white_305x210_beacons.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_white_305x210_beacons.pmc"
+	variant_name: enabled
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18a
+{
+	sign_name: "us side board green 450x210 ep"
+	model_desc: "/model/sign/navigation/us_side_board_green_450x210_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_450x210_ep.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &43480000
+}
+
+sign_model : sign.2k18b
+{
+	sign_name: "us 1fw wide 1hw wide 2dir lge 2"
+	model_desc: "/model/sign/navigation/us_1fw_wide_1hw_wide_2dir_lge_2.pmd"
+	model_coll: "/model/sign/navigation/us_1fw_wide_1hw_wide_2dir_lge_2.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18c
+{
+	sign_name: "us 1fw wide 1hw wide 2dir lge 1"
+	model_desc: "/model/sign/navigation/us_1fw_wide_1hw_wide_2dir_lge_1.pmd"
+	model_coll: "/model/sign/navigation/us_1fw_wide_1hw_wide_2dir_lge_1.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18d
+{
+	sign_name: "nv ref post1 snow white 1 orange"
+	model_desc: "/model/sign/nv_ref_post1_snow_white_1_orange.pmd"
+	model_coll: "/model/sign/nv_ref_post1_snow_white_1_orange.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	mass: &42c80000
+}
+
+sign_model : sign.2k18e
+{
+	sign_name: "us side board white 180x120"
+	model_desc: "/model/sign/navigation/us_side_board_white_180x120.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_white_180x120.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.38006
+{
+	sign_name: "sd delivery posted box"
+	model_desc: "/model/props/street/sd_delivery_posted_box_sign.pmd"
+	model_coll: "/model/props/street/sd_delivery_posted_box_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/sd_delivery_posted_box_sign_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	dynamic: true
+	road_model: true
+}
+
+sign_model : sign.2k18f
+{
+	sign_name: "us 3hw 2arrow 3dir"
+	model_desc: "/model/sign/navigation/us_3hw_2arrow_3dir.pmd"
+	model_coll: "/model/sign/navigation/us_3hw_2arrow_3dir.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18g
+{
+	sign_name: "us blank diamond (91x91) advisory plaque (Y 61x61) (Y 61x46)"
+	model_desc: "/model/sign/traffic/us_blank_diamond_91x91_adv_yellow_plq_61x61_61x46.pmd"
+	model_coll: "/model/sign/traffic/us_blank_diamond_91x91_adv_yellow_plq_61x61_61x46.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18h
+{
+	sign_name: "ne reflection post 3 yellow double sided"
+	model_desc: "/model/sign/ne_reflection_post_3_yellow_double_sided.pmd"
+	model_coll: "/model/sign/ne_reflection_post_3_yellow_double_sided.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18i
+{
+	sign_name: "mt reflection post 2 light orange"
+	model_desc: "/model/sign/mt_reflection_post_2_light_orange.pmd"
+	model_coll: "/model/sign/mt_reflection_post_2_light_orange.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	mass: &42c80000
+}
+
+sign_model : sign.2k18j
+{
+	sign_name: "us bicycle (plaque 60x30) fluro yellow"
+	model_desc: "/model/sign/traffic/us_bicycle_yellow_plq_60x30_fluro_yellow.pmd"
+	model_coll: "/model/sign/traffic/us_bicycle_yellow_plq_60x30_fluro_yellow.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18k
+{
+	sign_name: "us side board green 120x90"
+	model_desc: "/model/sign/navigation/us_side_board_green_120x90.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_120x90.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18l
+{
+	sign_name: "us side board green/blue 270x106"
+	model_desc: "/model/sign/navigation/us_side_board_green_blue_270x106.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_blue_270x106.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18m
+{
+	sign_name: "us side board 450x450 (green x230) (blue x220) ep"
+	model_desc: "/model/sign/navigation/us_side_board_green_450x450_blue_450x220_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_450x450_blue_450x220_ep.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k18n
+{
+	sign_name: "us side board 390x360 (green x285) (blue x75) ep"
+	model_desc: "/model/sign/navigation/us_side_board_390x360_green_x285_blue_x75_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_390x360_green_x285_blue_x75_ep.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_74000
+{
+	sign_name: "sd food kiosk sign"
+	model_desc: "/model/building/shop/sd_food_kiosk_sign.pmd"
+	model_coll: "/model/building/shop/sd_food_kiosk_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/building/shop/sd_food_kiosk_sign_lod1.pmd"
+	dynamic_lod_dist[]: 70
+
+	dynamic: true
+	mass: &41200000
+}
+
+sign_model : sign.sd_79005
+{
+	sign_name: "trashbin 05 rework sign"
+	model_desc: "/model/props/street/trashbin_05_rework_sign.pmd"
+	model_coll: "/model/props/street/trashbin_05_rework_sign.pmc"
+
+	dynamic_lod_desc[]: "/model/props/street/trashbin_05_rework_sign_lod1.pmd"
+	dynamic_lod_dist[]: 50
+	dynamic_lod_desc[]: "/model/props/street/trashbin_05_rework_sign_lod2.pmd"
+	dynamic_lod_dist[]: 80
+
+	dynamic: true
+	mass: &41700000
 }
 
 }

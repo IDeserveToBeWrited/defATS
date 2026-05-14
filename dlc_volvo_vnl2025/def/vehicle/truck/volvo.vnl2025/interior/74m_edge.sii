@@ -1,0 +1,46 @@
+SiiNunit
+{
+accessory_interior_data	: 74m_edge.volvo.vnl2025.interior
+{
+	name: "@@interior_edge@@"
+	price: 20250
+	unlock: 10
+	icon: "truck/volvo_vnl2025/interior/model/edge"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnl2025/interior/model/s74m.pmd"
+	animated_model: "/vehicle/truck/volvo_vnl2025/interior/anim/anim.pmd"
+	collision: "/vehicle/truck/volvo_vnl2025/interior/model/s74m.pmc"
+	look: Default
+	variant: edge
+
+	suitable_for[]: "74m.volvo.vnl2025.cabin"
+
+	ext_model: "/vehicle/truck/volvo_vnl2025/interior/external/s74m.pmd"
+	ext_look: edge
+	ext_variant: lounge
+
+@include "animations.sui"
+
+@include "int_shadows_74m.sui"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "computers.sui"
+
+	glass_panes[]: .volvo.vnl2025.r.pane.front
+	glass_panes[]: .volvo.vnl2025.r.pane.close
+	glass_panes[]: .volvo.vnl2025.r.pane.far
+	glass_panes[]: .volvo.vnl2025.r.pane.bottom
+
+	defaults[]: "/def/vehicle/truck/volvo.vnl2025/accessory/intlight_bgr/ambient_light_74m.sii"
+
+@include "seat.sui"
+#@include "mirrors.sui"
+@include "dashboard_color.sui"
+}
+@include "glass.sui"
+@include "glass_74.sui"
+@include "sound_effects_units.sui"
+}

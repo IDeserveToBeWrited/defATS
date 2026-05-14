@@ -1,0 +1,44 @@
+SiiNunit
+{
+accessory_chassis_data : 4x2_s.volvo.vnr_e.chassis
+{
+	name: "@@chassis_4x2@@"
+	price: 17200
+	unlock: 0
+	info[]: "@@chassis_4x2@@"
+	icon: "truck/volvo_vnr_e/chassis/chs_4x2"
+	part_type: factory
+
+	model: "/vehicle/truck/volvo_vnr_e/chassis/chs_4x2.pmd"
+	collision: "/vehicle/truck/volvo_vnr_e/chassis/chs_4x2.pmc"
+	variant: default
+	look: default
+
+	extended_shadow_texture: "/vehicle/truck/volvo_vnr_e/uis_4x2.tobj"
+	extended_shadow_intensity: 1.0
+	extended_shadow_fadeout_start: 10
+	extended_shadow_fadeout_length: 0
+	ui_shadow: "/vehicle/truck/volvo_vnr_e/ui_shadow/shadow_4x2.pmd"
+
+	tank_size: 375
+	air_tank_pressure: 8.5
+	nominal_voltage: 12
+
+	residual_travel[]: 0.1
+	residual_travel[]: 0.088
+
+	powered_axle[]: false
+	powered_axle[]: true
+
+	kerb_weight[]: 5545	# 12220lb
+	kerb_weight[]: 2705	# 5970lb
+
+	defaults[]: "/def/vehicle/truck/volvo.vnr_e/cabin/day.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnr_e/accessory/r_chs_cover/std_4x2.sii"
+	defaults[]: "/def/vehicle/truck/volvo.vnr_e/accessory/mudguard/standard.sii"
+
+//	lamp_setup: "/def/vehicle/truck/volvo.vnr_e/lamp_setup.sii"
+
+@include "sound.sui"
+}
+}

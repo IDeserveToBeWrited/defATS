@@ -1,0 +1,52 @@
+traffic_vehicle : traffic.chicago_loco
+{
+	accessories[]: .chicago_loco.chassis
+	accessories[]: .chicago_loco.fwheel
+	accessories[]: .chicago_loco.rwheel
+
+	max_speed: 55
+
+	vehicle_mass: 27000
+	engine_power: 2500
+
+	trailer_chains[]: "metro_car.chicago_car1 | metro_car.chicago_car2 | metro_car.chicago_car3 | metro_car.chicago_car4 | metro_car.chicago_car5"
+
+	sound_move[]: "/sound/traffic/tram_1.soundref"
+	sound_horn[]: "/sound/traffic/tram_horn_1.soundref"
+	sound_gears: 1
+
+	displacement_limit: 0.0
+
+	spawn_ratio: 1.0
+
+	lod_dist[]: 50
+	lod_dist[]: 100
+	lod_dist[]: 150
+
+
+	tags[]: metro
+
+	spawn_condition[]: .traffic.chicago_loco.condition.city
+
+}
+vehicle_accessory: .chicago_loco.chassis
+{
+	data_path: "/def/vehicle/ai/metro_chicago/chassis_chicago_loco.sii"
+}
+vehicle_wheel_accessory: .chicago_loco.fwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/front_empty_50cm.sii"
+}
+vehicle_wheel_accessory: .chicago_loco.rwheel
+{
+
+	data_path: "/def/vehicle/ai_wheel/rear_empty_50cm.sii"
+}
+traffic_spawn_condition: .traffic.chicago_loco.condition.city
+{
+	#spawn only near city with specified name
+	type: city
+	str_param[]: "chicago"
+}
+
