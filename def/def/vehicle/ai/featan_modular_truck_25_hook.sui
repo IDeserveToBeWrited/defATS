@@ -1,0 +1,63 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX PICKUP_HOOK XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.pickup.midclass_25.hook
+{
+	accessories[]: .featan.pickup.midclass_25.hook.chassis
+	accessories[]: .featan.pickup.midclass_25.hook.fwheel
+	accessories[]: .featan.pickup.midclass_25.hook.rwheel
+
+	max_speed: 160
+	
+	
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+
+	allow_parked: false
+
+	tags[]: heavy_duty
+	tags[]: tourist
+
+	trailer_chains[]: "trailer.ai_car.camper"
+	trailer_chains[]: "trailer.ai_car.util_buggy"
+	trailer_chains[]: "trailer.ai_car.util_boat"
+	trailer_chains[]: "trailer.ai_car.horse"
+	trailer_chains[]: "trailer.ai_car.small_cargo1"
+	trailer_chains[]: "trailer.ai_car.small_cargo2"
+
+
+	spawn_ratio: 0.1
+
+	vehicle_mass: 3000
+
+
+	color[]: (0.0343, 0.0343, 0.0343) #black
+	color[]: (0.0382, 0.0318, 0.0273) #brown
+	color[]: (0.0544, 0.0886, 0.1274) #blue
+	color[]: (0.5394, 0.5711, 0.5906) #silver
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.2831, 0.0012, 0.0065) #red
+	color[]: (0.8713, 0.8631, 0.8227) #white
+	color[]: (0.8713, 0.8631, 0.8227) #white
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .featan.pickup.midclass_25.hook.chassis
+{
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_hook.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.hook.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.hook.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+

@@ -41,6 +41,12 @@
 	key[]: "loading_no_job"
 	val[]: "Na volné noze"
 
+	key[]: "loading_location_country"
+	val[]: "Někde ve státě $COUNTRY$" #+ Message shown on loading screen when player location is inside specific country.
+
+	key[]: "loading_changing_mode"
+	val[]: "Přesun" #+ Message shown on loading screen when player is switching between vehicle modes.
+
 	key[]: "current_job_title"
 	val[]: "Aktuální zakázka"
 
@@ -124,17 +130,17 @@
 
 #+ Truck analysis feature - truck konfigurator and pop-up
 
-	key[]: "truck_analysis_t"
-	val[]: "ANALÝZA VOZIDLA" #+ Header of the widget in truck configurator
+	key[]: "vehicle_analysis_t"
+	val[]: "ANALÝZA VOZIDLA" #+ Header of the widget in vehicle configurator
 
-	key[]: "truck_analysis_popup_t"
+	key[]: "vehicle_analysis_popup_t"
 	val[]: "ANALÝZA VOZIDLA" #+ Header of the pop-up when taking heavy cargo
 
-	key[]: "current_truck_params"
-	val[]: "Konfigurace vozidla" #+ Header inside the truck analysis widget for truck parameters
+	key[]: "current_vehicle_params"
+	val[]: "Konfigurace vozidla" #+ Header inside the vehicle analysis widget for vehicle parameters
 
-	key[]: "current_truck_parameters"
-	val[]: "Konfigurace vozidla" #+ Header inside the truck analysis pop-up for truck parameters
+	key[]: "current_vehicle_parameters"
+	val[]: "Konfigurace vozidla" #+ Header inside the vehicle analysis pop-up for vehicle parameters
 
 	key[]: "normal_cargo"
 	val[]: "Běžný náklad" #+ name of the bar for normal cargo suitability
@@ -190,8 +196,8 @@
 	key[]: "truck_analysis_heavy_introduction"
 	val[]: "Chystáš se na přepravu těžkého nákladu. Zkontroluj konfiguraci svého aktuálního tahače a ujisti se, že danou zakázku zvládne." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
-	key[]: "truck_analysis_info_tooltip"
-	val[]: "Na základě předpokládaného způsobu dopravy vylepši své vozidlo pro optimální poměr mezi úsporným ježděním a technickými i zákonnými limity." #+  General tooltip description of Truck Analysis feature
+	key[]: "vehicle_analysis_info_tooltip"
+	val[]: "Na základě předpokládaného způsobu dopravy vylepši své vozidlo pro optimální poměr mezi úsporným ježděním a technickými i zákonnými limity." #+  General tooltip description of Vehicle Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Optimalizováno pro převoz zakázek s lehkými a středně těžkými náklady" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -200,10 +206,10 @@
 	val[]: "Optimalizováno pro převoz zakázek s těžkými a speciálními náklady" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Schopnost tvého vozidla manévrovat v úzkých prostorách" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Schopnost tvého vozidla manévrovat v úzkých prostorách" #+  Tooltip description for the Maneuverability bar in Vehicle Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Optimalizace pohonného ústrojí vozidla pro plynulé stoupání a klesání" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Optimalizace pohonného ústrojí vozidla pro plynulé stoupání a klesání" #+  Tooltip description for the Hill Traversal bar in Vehicle Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Vylepšená schopnost překonávat hrbolaté a drsné povrchy" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -275,8 +281,8 @@
 	key[]: "truck_service"
 	val[]: "Servis" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
-	key[]: "truck_service_about"
-	val[]: "Údržba a opravy vozidla. Dobrý řidič udržuje své vozidlo vždy v nejlepším stavu." #+ Help message associated with service icon.
+	key[]: "vehicle_service_about"
+	val[]: "Údržba a opravy tahače. Dobrý řidič udržuje své vozidlo vždy v nejlepším stavu." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
 	val[]: "PŘEHLED POŠKOZENÍ" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
@@ -287,8 +293,8 @@
 	key[]: "truck_service_replace_all"
 	val[]: "Vyměnit vše" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
-	key[]: "truck_service_truck_t"
-	val[]: "PŘEHLED POŠKOZENÍ VOZIDLA" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	key[]: "vehicle_service_vehicle_t"
+	val[]: "PŘEHLED POŠKOZENÍ VOZIDLA" #+ Header of section displaying status of individual components of the vehicle. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "PŘEHLED POŠKOZENÍ NÁVĚSU" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -296,8 +302,8 @@
 	key[]: "repair"
 	val[]: "Potvrdit" #+ Button which confirms selected actions.
 
-	key[]: "truck_damage"
-	val[]: "Poškození vozidla" #+ Price for the truck damage
+	key[]: "vehicle_damage"
+	val[]: "Poškození vozidla" #+ Price for the vehicle damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -305,13 +311,13 @@
 #+ Allows to add or remove various accessories.
 #@{
 
-	key[]: "truck_config_t"
+	key[]: "vehicle_config_t"
 	val[]: "KONFIGURACE VOZIDLA" #+ Title of the screen. Please keep in upper case where possible.
 
-	key[]: "truck_config"
-	val[]: "Konfigurace vozidla" #+ Icon allowing player to upgrade the truck.
+	key[]: "vehicle_config"
+	val[]: "Konfigurace vozidla" #+ Icon allowing player to upgrade the vehicle.
 
-	key[]: "truck_config_about"
+	key[]: "vehicle_config_about"
 	val[]: "Znáš to, vždycky se najde něco, co můžeš vylepšit nebo přebarvit, abys měl ze svého vozidla lepší pocit." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
@@ -410,7 +416,7 @@
 	key[]: "truck_diag"
 	val[]: "Diagnostika vozidla" #+ Icon allowing player to show damage on the truck.
 
-	key[]: "truck_diag_about"
+	key[]: "vehicle_diag_about"
 	val[]: "Zobraz informace o svém vozidlu a jeho aktuálním stavu."
 
 	key[]: "truck_diag_warning"
@@ -498,8 +504,8 @@
 	key[]: "cart_not_empty"
 	val[]: "Umístil jsi nějaké položky do své objednávky!<br><br>Chceš zrušit veškeré nové úpravy?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
-	key[]: "borrowed_truck_refusal"
-	val[]: "Zaměstnavateli by se nelíbilo, kdyby sis hrál s jejich vozidlem." #+ Shown if user attempts to upgrade a quick job truck.
+	key[]: "borrowed_vehicle_refusal"
+	val[]: "Zaměstnavateli by se nelíbilo, kdyby sis hrál s jejich vozidlem." #+ Shown if user attempts to upgrade a quick job vehicle.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Nemůžeš měnit typ zapojení, nástavbu nebo podvozek návěsu během zakázky! Nejdříve zakázku dokonči, a poté to zkus znovu." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -540,6 +546,9 @@
 
 	key[]: "b_grill"
 	val[]: "Spodní ochranný rám"
+
+	key[]: "bed_addon"
+	val[]: "Zadní nástavba"
 
 	key[]: "bullbar"
 	val[]: "Ochranný rám"
@@ -620,7 +629,7 @@
 	val[]: "Obložení kabiny"
 
 	key[]: "f_fender"
-	val[]: "Přední blatník" #+ Fender of the truck above front wheel
+	val[]: "Přední blatníky" #+ Fender of the truck above front wheel
 
 	key[]: "f_fender_cab"
 	val[]: "Přední blatník" #+ Fender (cabin part-based) of the truck above front wheel
@@ -649,6 +658,9 @@
 	key[]: "f_intk_b_cab"
 	val[]: "Mřížka přední masky" #+ Bars of plastic radiator mask (grill) in on the truck's front
 
+	key[]: "f_light"
+	val[]: "Přední světlo"
+
 	key[]: "f_light_chs"
 	val[]: "Přední světla"
 
@@ -668,7 +680,7 @@
 	val[]: "Přední zástěrky kol" #+ A couple of mudflaps on the front of the trucks bumper
 
 	key[]: "f_turn_light"
-	val[]: "Přední směrové světlo"
+	val[]: "Přední směrová světla"
 
 	key[]: "f_window"
 	val[]: "Čelní sklo"
@@ -679,8 +691,11 @@
 	key[]: "f_wnd_frame"
 	val[]: "Rám čelního skla" #+ The plate under truck windshield (where wipers are installed).
 
+	key[]: "fenders"
+	val[]: "Blatníky" #+ Fenders accessory, word for all fenders on vehicle.
+
 	key[]: "filter"
-	val[]: "Vzduchový filtr" #+ Air filter accessoty.
+	val[]: "Vzduchový filtr" #+ Air filter accessory.
 
 	key[]: "flag_r"
 	val[]: "Vlajka na pravém zrcátku" #+ Right window flag
@@ -690,6 +705,9 @@
 
 	key[]: "frntglss_mid"
 	val[]: "Střed čelního skla" #+ Pin that is placed on the bottom of the windshield centre to accomodate various decarative elements
+
+	key[]: "fuelcap"
+	val[]: "Víčko nádrže"
 
 	key[]: "fwheel"
 	val[]: "Přední kola"
@@ -727,6 +745,9 @@
 	key[]: "nuts"
 	val[]: "Matice" #+ Wheel nuts
 
+	key[]: "r_badge"
+	val[]: "Zadní označení" #+ Badge or logo on the rear of a vehicle
+
 	key[]: "r_banner"
 	val[]: "Zadní označení" #+ Banner on the rear
 
@@ -740,7 +761,7 @@
 	val[]: "Střešní deflektor"
 
 	key[]: "r_fender"
-	val[]: "Zadní blatník" #+ Fender of the truck above rear wheel(s)
+	val[]: "Zadní blatníky" #+ Fender of the truck above rear wheel(s)
 
 	key[]: "r_fendr_top"
 	val[]: "Zadní blatník (vrchní část)" #+ Fender top part of the truck above rear wheel(s)
@@ -754,8 +775,17 @@
 	key[]: "r_light"
 	val[]: "Zadní světlo" #+ Rear lights accessory
 
+	key[]: "r_logo"
+	val[]: "Zadní logo"
+
 	key[]: "r_mudflap"
 	val[]: "Zadní zástěrky kol" #+ A couple of rear mudflaps
+
+	key[]: "r_panel"
+	val[]: "Panel"
+
+	key[]: "r_turn_light"
+	val[]: "Zadní směrové světlo"
 
 	key[]: "r_wheel"
 	val[]: "Zadní kola"
@@ -765,6 +795,9 @@
 
 	key[]: "rn_mirror"
 	val[]: "Pravé zrcátko na kapotě"
+
+	key[]: "roof_addon"
+	val[]: "Střešní nástavba"
 
 	key[]: "rwheel"
 	val[]: "Zadní kola"
@@ -790,6 +823,9 @@
 	key[]: "s_strip"
 	val[]: "Boční pruh"
 
+	key[]: "s_vent"
+	val[]: "Větrací otvor"
+
 	key[]: "set_cuphold"
 	val[]: "Sady pro držák nápojů" #+ Large Pin for sets of small pins of the cup holder accessories
 
@@ -810,6 +846,9 @@
 
 	key[]: "sideskrt_bar"
 	val[]: "Lišty bočního obložení"
+
+	key[]: "spare_w"
+	val[]: "Náhradní kolo"
 
 	key[]: "steering_w"
 	val[]: "Volant" #+ Steering wheel
@@ -846,6 +885,9 @@
 
 	key[]: "toystand"
 	val[]: "Předměty na středovém panelu" #+ Interior accessories placed on stands or centre console available in the truck
+
+	key[]: "trunk"
+	val[]: "Kufr"
 
 	key[]: "windowtrim"
 	val[]: "Obložení okna" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
@@ -1045,7 +1087,7 @@
 	val[]: "Byla zjištěna úprava hry! Aby ses vyhnul problémům s kompatibilitou kvůli změnám v herním světě, veškeré nedokončené zakázky byly zrušeny bez jakékoliv penalizace." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Byla zjištěna úprava hry!<br><br>Aby ses vyhnul problémům s kompatibilitou, veškeré nedokončené zakázky byly zrušeny bez jakékoliv penalizace. Je však vyžadováno přemístění tahače na bezpečné místo.<br><br>Pro pokračování vyber destinaci rychlého cestování." #+ Game state reset info message, plus free teleport
+	val[]: "Byla zjištěna úprava hry!<br><br>Aby ses vyhnul problémům s kompatibilitou, veškeré nedokončené zakázky byly zrušeny bez jakékoliv penalizace. Je však vyžadováno přemístění vozidla na bezpečné místo.<br><br>Pro pokračování vyber destinaci rychlého cestování." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Ukládám..." #+ Game save indicator message.
@@ -1073,6 +1115,9 @@
 
 	key[]: "load_game"
 	val[]: "Načíst hru" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
+
+	key[]: "load_game_failed"
+	val[]: "Nepodařilo se načíst uloženou pozici hry."
 
 	key[]: "load_game_desc"
 	val[]: "Načíst předchozí uloženou pozici. Aktuální postup bude ztracen!" #+ Help message associated with load game icon.
@@ -1353,7 +1398,7 @@
 	val[]: "Vzdálenost jízdy po silnici" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Pro zobrazení podrobností o trase vyber náklad" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Pro zobrazení podrobností o trase vyber nabídku" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Neúplná" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -1439,7 +1484,7 @@
 	val[]: "Chladicí a izolované"
 
 	key[]: "cargo_type_dryvan"
-	val[]: "Plachtové a Dry Freighters"
+	val[]: "Plachtové a pevné"
 
 	key[]: "cargo_type_container"
 	val[]: "Kontejnerový podvozek"
@@ -1628,7 +1673,7 @@
 	val[]: "Nový příspěvek na blogu je k dispozici online!" #+ Fallback news text content in case of fetch errors
 
 	key[]: "no_truck_dlc"
-	val[]: "Žádná vozidla nebyla nalezena! Aktivuj prosím alespoň jedno DLC s vozidlem a restartuj hru." #+ Text shown when there is no truck available.
+	val[]: "Nebyly nalezeny žádné tahače! Aktivuj prosím alespoň jedno DLC s tahačem a restartuj hru." #+ Text shown when there is no truck available.
 
 	key[]: "extras"
 	val[]: "Ostatní"
@@ -1969,6 +2014,9 @@
 	key[]: "sort_by_ownership"
 	val[]: "Vlastnictví" #+ Button in sort by droplist. Please keep it as short as possible.
 
+	key[]: "sort_by_price"
+	val[]: "Cena" #+ Button in sort by droplist. Please keep it as short as possible.
+
 	key[]: "filter_dlc"
 	val[]: "Filtr" #+ Combo box with job sorting options."
 
@@ -2044,6 +2092,9 @@
 	key[]: "dlc_category_paint_jobs"
 	val[]: "Nátěry" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
+	key[]: "dlc_category_vehicles"
+	val[]: "Vozidla" #+ Button/tab in DLC browser. Please keep it as short as possible.
+
 	key[]: "dlc_category_all"
 	val[]: "Vše" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
@@ -2067,6 +2118,48 @@
 
 	key[]: "dlc_browser_online_wait_message"
 	val[]: "Stahuji informace o DLC. Chvilku strpení."
+
+	key[]: "dlc_browser_open_store"
+	val[]: "Chceš otevřít internetový prohlížeč a přejít na vybranou webovou stránku?"
+
+	key[]: "dlc_browser_no_valid_data"
+	val[]: "Momentálně není k dispozici žádné DLC."
+
+	key[]: "dlc_browser_catalogue_canceled"
+	val[]: "Operace s katalogem byla zrušena." #+ The operation was cancelled by the player, and finished correctly.
+
+	key[]: "dlc_browser_catalogue_unknown_error"
+	val[]: "Neznámá chyba katalogu." #+ Catalogue unknown error.
+
+	key[]: "dlc_browser_catalogue_not_initialized"
+	val[]: "Katalog se nepodařilo načíst." #+ Error caused by either module or library not being properly initialized (yet).
+
+	key[]: "dlc_browser_catalogue_incompatible_state"
+	val[]: "Operaci nebylo možné spustit, protože právě probíhá jiná operace." #+ Error caused attempting to start an operation when another, blocking is in progress
+
+	key[]: "dlc_browser_catalogue_bad_data"
+	val[]: "Některé z poskytnutých údajů jsou nesprávné nebo neúplné." #+ Bad data were supplied either by caller or by first party.
+
+	key[]: "dlc_browser_catalogue_product_misssing"
+	val[]: "Pokus o zadání operace s produktem, který chybí v našem místním katalogu nebo v katalogu primárního poskytovatele." #+ Trying to request operation with a product that is either missing from our local caltalogue or the first party back end catalogue.
+
+	key[]: "dlc_browser_catalogue_sending_failed"
+	val[]: "Žádost o katalog se nezdařila." #+ The request failed, accompanied error message/ other logs should explain why.
+
+	key[]: "dlc_browser_catalogue_parse_failed"
+	val[]: "Obdržená odpověď je neplatná." #+ The respone received was malformed.
+
+	key[]: "dlc_browser_catalogue_first_party_fail"
+	val[]: "Vnitřní chyba katalogu." #+ First party api call failed for reason beyond our capabilities to fix.
+
+	key[]: "dlc_browser_catalogue_bad_platform"
+	val[]: "Tato funkce není na současné platformě k dispozici." #+ The functionality is not present on current platform.
+
+	key[]: "dlc_browser_catalogue_try_later"
+	val[]: "Služba katalogu je momentálně nedostupná, zkus to později." #+ The service is currently unavailable, the caller should try later.
+
+	key[]: "dlc_browser_commerce_module_internal_error"
+	val[]: "Vnitřní chyba katalogu." #+ Catalogue internal error.
 #@}
 
 #+ Activation screen
@@ -2322,7 +2415,7 @@
 	key[]: "interface_sound_settings_t"
 	val[]: "ROZHRANÍ" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
-	key[]: "truck_sound_settings_t"
+	key[]: "vehicle_sound_settings_t"
 	val[]: "ZVUKY VOZIDLA" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
@@ -2334,20 +2427,20 @@
 	key[]: "master_volume"
 	val[]: "Celková hlasitost" #+ Slider controlling master volume.
 
-	key[]: "truck_engine_volume"
-	val[]: "Hlasitost motoru vozidla" #+ Slider controlling volume of the truck engine.
+	key[]: "vehicle_engine_volume"
+	val[]: "Hlasitost motoru" #+ Slider controlling volume of the vehicle engine.
 
-	key[]: "truck_exhaust_volume"
-	val[]: "Hlasitost výfuku vozidla" #+ Slider controlling volume of the truck exhaust.
+	key[]: "vehicle_exhaust_volume"
+	val[]: "Hlasitost výfuku" #+ Slider controlling volume of the vehicle exhaust.
 
-	key[]: "truck_turbo_volume"
-	val[]: "Hlasitost turba vozidla" #+ Slider controlling volume of the truck turbo.
+	key[]: "vehicle_turbo_volume"
+	val[]: "Hlasitost turba" #+ Slider controlling volume of the vehicle turbo.
 
-	key[]: "truck_effects_volume"
-	val[]: "Hlasitost efektů vozidla" #+ Slider controlling volume of the truck effects.
+	key[]: "vehicle_effects_volume"
+	val[]: "Hlasitost efektů vozidla" #+ Slider controlling volume of the vehicle effects.
 
-	key[]: "truck_noise_volume"
-	val[]: "Hlasitost hluku vozidla" #+ Slider controlling volume of the truck noises.
+	key[]: "vehicle_noise_volume"
+	val[]: "Hlasitost hluku vozidla" #+ Slider controlling volume of the vehicle noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Hlasitost hluku návěsu" #+ Slider controlling volume of the trailer noises.
@@ -2489,19 +2582,19 @@
 	key[]: "master_volume_op_tooltip" # - Audio, Simple
 	val[]: "Upravuje celkovou hlasitost hry."
 
-	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_engine_volume_op_tooltip" # - Audio, Simple
 	val[]: "Upravuje hlasitost motoru vozidla."
 
-	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_exhaust_volume_op_tooltip" # - Audio, Simple
 	val[]: "Upravuje hlasitost výfuku vozidla."
 
-	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_turbo_volume_op_tooltip" # - Audio, Simple
 	val[]: "Upravuje hlasitost turba vozidla."
 
-	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_effects_volume_op_tooltip" # - Audio, Simple
 	val[]: "Upravuje hlasitost ostatních efektů vozidla, např. syčení vzduchových brzd."
 
-	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "Upravuje hlasitost hluku vycházejícího z pneumatik vozidla."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
@@ -2580,10 +2673,10 @@
 	val[]: "Zapíná dodatečný hluk proudícího vzduchu skrz okna vozidla, pokud jsou otevřená.<br><br><color value=@@clr_txt_d@@>Vyžaduje zároveň zapnutý \"Hluk proudícího vzduchu\"."
 
 	key[]: "noise_aero_op_tooltip" # - Audio, Advanced
-	val[]: "Zapíná hluk vzduchu proudícího kolem kabiny tvého vozidla."
+	val[]: "Zapíná hluk vzduchu proudícího kolem tvého vozidla."
 
 	key[]: "reverb_cabin_op_tooltip" # - Audio, Advanced
-	val[]: "Zapíná efekt dozvuku kabiny tvého vozidla."
+	val[]: "Zapíná efekt dozvuku interiéru tvého vozidla."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
 	val[]: "Zapíná efekt dozvuku okolního prostředí."
@@ -2629,8 +2722,8 @@
 	key[]: "transmission_settings"
 	val[]: "PŘEVODOVKA" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
-	key[]: "truck_physics_settings"
-	val[]: "FYZIKA VOZIDLA" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	key[]: "vehicle_physics_settings"
+	val[]: "FYZIKA VOZIDLA" #+ Title of 'Vehicle physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "ASISTENTY" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2767,7 +2860,7 @@
 	val[]: "Jednotky spotřeby" #+ Selector for consumption unit display (l/100km, mpg).
 
 	key[]: "default_setting"
-	val[]: "výchozí (dle jednotek objemu/vzdálenosti)"
+	val[]: "výchozí (dle jednotek objemu/délky)"
 
 	key[]: "mpg_us_setting"
 	val[]: "mpg (americké galony)"
@@ -2818,11 +2911,11 @@
 	key[]: "hide"
 	val[]: "Skrýt" #+ Hide speed limit display on the advisor.
 
-	key[]: "truck_limit"
-	val[]: "Zobrazit rychlostní limit dle aktuálního vozového režimu" #+ Show speed limits for trucks on the advisor.
+	key[]: "automatic_limit"
+	val[]: "Zobrazit limit dle režimu vozidla" #+ Show speed limits for vehicles on the advisor.
 
 	key[]: "generic_limit"
-	val[]: "Zobrazit rychlostní limit aut" #+ Show speed limits for ordinary cars on the advisor.
+	val[]: "Zobrazit limit aut" #+ Show speed limits for ordinary cars on the advisor.
 
 	key[]: "adviser_speed_warning"
 	val[]: "Rychlostní varování v navigaci" #+ Checkbox enabling speeding warning
@@ -2952,7 +3045,7 @@
 	key[]: "brake_intensity"
 	val[]: "Intenzita brzdění" #+ Slider for player modification of braking force.
 
-	key[]: "truck_stability"
+	key[]: "vehicle_stability"
 	val[]: "Stabilita vozidla" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
@@ -3018,7 +3111,7 @@
 	key[]: "throttle_double_tap"
 	val[]: "Chytré ovládání plynu" #+ Checkbox for double tap mode of the digital throttle.
 
-	key[]: "truck_speed_limiter"
+	key[]: "vehicle_speed_limiter"
 	val[]: "Omezovač rychlosti" #+ Checkbox for enabling of speed limiter.
 
 	key[]: "rain_sensor"
@@ -3135,6 +3228,9 @@
 	key[]: "cam_horizon_lock_factor"
 	val[]: "Činitel vyrovnávání horizontu vnitřní kamery" #+ Slider for interior camera horizon locking.
 
+	key[]: "cam_fov_speed_factor"
+	val[]: "Činitel zorného pole vnitří kamery dle rychlosti" #+ Slider for interior camera speed-based FOV changes.
+
 	key[]: "cam_auto_center_delay"
 	val[]: "Prodleva automatického centrování kamery" #+ Dropdown for camera auto centering delay.
 
@@ -3180,7 +3276,7 @@
 	val[]: "Je-li povoleno, musíš dodržovat pravidla silničního provozu nebo riskovat pokuty. Riziko je větší v blízkosti policejních vozidel, radarů a dopravních kamer."
 
 	key[]: "preferred_job_length_op_tooltip" # - Gameplay, Advanced
-	val[]: "Upravuje průměrnou délku nabízených zakázek."
+	val[]: "Upravuje průměrnou délku nabízených zakázek.<br><br><color value=@@clr_txt_d@@>Platí pro zakázky v režimu tahače."
 
 	key[]: "adviser_speed_limit_op_tooltip" # - Gameplay, Advanced
 	val[]: "Výběr rychlostního limitu, který se má zobrazit v navigaci."
@@ -3207,7 +3303,7 @@
 	val[]: "Vyber způsob, jakým se zobrazuje mapa světa."
 
 	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "(placeholder) Vyber způsob objevování mapy."
+	val[]: "Vyber způsob, jakým způsobem bude prozkoumávána mapa světa:<br>- „Objevování blízkého okolí“ označí jako prozkoumanou větší oblast kolem hráče.<br>- „Přesné objevování“ označí pouze oblasti přímo u hráče."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Výběr způsobu, jakým se zobrazuje navigace."
@@ -3254,7 +3350,7 @@
 	key[]: "brake_intensity_op_tooltip" # - Gameplay, Advanced
 	val[]: "Nastavuje intenzitu brzd."
 
-	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
+	key[]: "vehicle_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "Nastavuje stabilitu vozidla snížením jeho těžiště."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
@@ -3278,8 +3374,8 @@
 	key[]: "trailer_cables_mode_op_tooltip" # - Gameplay, Simple
 	val[]: "Výběr, na kterých návěsech se mají animovat kabely.<br><br><color value=@@clr_txt_d@@>Zapnutí animace kabelů pro více vozidel může ovlivnit výkon na starších systémech."
 
-	key[]: "truck_speed_limiter_op_tooltip" # - Gameplay, Simple
-	val[]: "Zapíná elektronický omezovač rychlosti tahače na 105 km/h (65 mil/h).<br><br><color value=@@clr_txt_d@@>Zakázky přes World of Trucks mají tuto funkci zapnutou permanentně."
+	key[]: "vehicle_speed_limiter_op_tooltip" # - Gameplay, Simple
+	val[]: "Zapíná elektronický omezovač rychlosti vozidla na hodnotě dle modelu.<br><br><color value=@@clr_txt_d@@>Zakázky přes World of Trucks mají tuto funkci zapnutou permanentně."
 
 	key[]: "rain_sensor_op_tooltip" # - Gameplay, Simple
 	val[]: "Je-li tato funkce povolena a stěrače jsou nastavené do první polohy, budou se automaticky zapínat a upravovat svou rychlost podle vnějších podmínek."
@@ -3370,6 +3466,9 @@
 
 	key[]: "cam_horizon_lock_factor_op_tooltip" # - Gameplay, Advanced
 	val[]: "Nastavuje, jak moc se může vnitřní kamera naklánět vůči pohybu vozidla."
+
+	key[]: "cam_fov_speed_factor_op_tooltip" # - Gameplay, Advanced
+	val[]: "Nastavuje, jak moc se může měnit zorné pole vnitřní kamery dle rychlosti vozidla."
 
 	key[]: "cam_auto_center_delay_op_tooltip" # - Gameplay, Advanced
 	val[]: "Nastavuje prodlevu, po které se kamera automaticky vycentruje.<br><br>Pro aktivaci funkce se vozidlo musí pohybovat nezanedbatelnou rychlostí. Platí pouze pro vnitřní a vnější kameru při pohybu vpřed a pro kameru z okýnka při pohybu vzad."
@@ -3571,6 +3670,9 @@
 	key[]: "lost_function_binding"
 	val[]: "Přiřazení ke ztracené funkci:" #+ Shown when key was rebound to a different function.
 
+	key[]: "unavailable_assignment"
+	val[]: "$INPUT$ nelze použít." #+ Shown when the player presses a key that cannot in input binding.
+
 #!{
 	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
 	val[]: "@@keyboard_ico@@"
@@ -3579,7 +3681,7 @@
 #+ Headers of individual sections
 #@{
 
-	key[]: "truck_controls"
+	key[]: "vehicle_controls"
 	val[]: "VOZIDLO"
 
 	key[]: "assistant_controls"
@@ -3690,6 +3792,9 @@
 
 	key[]: "o_im_parkingbrake"
 	val[]: "Parkovací brzda"
+
+	key[]: "o_im_handbrake"
+	val[]: "Ruční brzda"
 
 	key[]: "o_im_motorbrake"
 	val[]: "Motorová brzda"
@@ -3849,6 +3954,9 @@
 
 	key[]: "o_im_infotainment"
 	val[]: "Režim zobrazení infotainmentu" #+ Action for cycling between infotainement display pages/modes.
+
+	key[]: "o_im_parking_cameras"
+	val[]: "Režim parkovací kamery" #+ Action for toggling parking camera display pages/modes (if available).
 
 	key[]: "o_im_dashboard_map"
 	val[]: "Režim příblížení mapy v navigaci" #+ Action for cycling trough zoom levels in all vehicle navigational devices.
@@ -4104,6 +4212,9 @@
 	key[]: "o_im_parkingbrake_op_tooltip"
 	val[]: "Přiřazuje tlačítko pro parkovací brzdu."
 
+	key[]: "o_im_handbrake_op_tooltip"
+	val[]: "Přiřazuje tlačítko pro ruční brzdu."
+
 	key[]: "o_im_motorbrake_op_tooltip"
 	val[]: "Přiřazuje tlačítko pro motorovou brzdu.<br><br>Motorová brzda bude aktivní, dokud budeš držet tlačítko."
 
@@ -4226,6 +4337,9 @@
 
 	key[]: "o_im_infotainment_op_tooltip"
 	val[]: "Přiřazuje tlačítko pro přepínání obrazovek infotainmentu."
+
+	key[]: "o_im_parking_cameras_op_tooltip"
+	val[]: "Přiřazuje tlačítko pro přepínání obrazovky parkovací kamery. Použitím tlačítka při couvání se obraz kamery dočasně skryje a při jízdě vpřed se naopak zobrazí."
 
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "Přiřazuje tlačítko pro změnu úrovně přiblížení obrazovky navigace na palubní desce nebo displeji infotainmentu."
@@ -5248,10 +5362,10 @@
 	val[]: "Nastav si bod trasy k požadovanému portálu"
 
 	key[]: "wanna_assistance_portal"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout k náhodnému portálu zdarma.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout k náhodnému portálu zdarma.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_assistance_portal_online"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout k náhodnému portálu zdarma.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout k náhodnému portálu zdarma.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
 
 	key[]: "mp_job_quick_travel_other_land"
 	val[]: "Aktuálně se nacházíš velmi daleko od místa počáteční firmy v jiné zemi.<br><br>Chceš si přesto vzít tuto zakázku?"
@@ -5429,6 +5543,9 @@
 	key[]: "grass_detail"
 	val[]: "Hustota trávy" #+ Combo box selecting density of grass.
 
+	key[]: "tire_smoke"
+	val[]: "Kouř z pneumatik" #+ Combo box selecting amount of tire smoke.
+
 	key[]: "shadow_quality"
 	val[]: "Kvalita stínů"  #+ Combo box selecting quality of shadows.
 
@@ -5479,7 +5596,7 @@
 	val[]: "Nastavení zobrazení bylo změněno.<br>Chceš toto nastavení ponechat?"
 
 	key[]: "reverting_in"
-	val[]: "Původní nastavení budou obnovena za:" #+ Shown in message box if the user applies some complex settings. Followed by number of seconds before the settings are reverted unless the player confirms the message box. For example "Reverting in 18 seconds."
+	val[]: "Původní nastavení budou obnovena za" #+ Shown in message box if the user applies some complex settings. Followed by number of seconds before the settings are reverted unless the player confirms the message box. For example "Reverting in 18 seconds."
 
 	key[]: "sec"
 	val[]: "s" #+ Suffix added after number of seconds in "Reverting in 18 seconds."
@@ -5545,6 +5662,9 @@
 
 	key[]: "grass_detail_op_tooltip" # - Graphics, Advanced
 	val[]: "Upravuje hustotu trávy po stranách silnice.<br><br><color value=@@clr_txt_d@@>Toto nastavení má obvykle průměrný vliv na výkon."
+
+	key[]: "tire_smoke_op_tooltip" # - Graphics, Advanced
+	val[]: "Reguluje množství kouře vznikajícího třením pneumatik o vozovku.<br><br><color value=@@clr_txt_d@@>Experimentální funkce, momentálně funguje pouze při řízení auta.<br>Toto nastavení má obvykle průměrný vliv na výkon."
 
 	key[]: "shadow_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Upravuje kvalitu stínů vržených sluncem nebo měsícem.<br><br><color value=@@clr_txt_d@@>Toto nastavení má obvykle průměrný vliv na výkon."
@@ -6207,31 +6327,31 @@
 	val[]: "Příjem ze zakázky" #+ For example "Job income: E6,526"
 
 	key[]: "wanna_assistance"
-	val[]: "Asistenční služba může tebe a tvé vozdilo přesunout do města $CITY$. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout do města $CITY$. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "Asistenční služba může tebe a tvé vozdilo přesunout do města $CITY$. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout do města $CITY$. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "Asistenční služba může tebe a tvé vozidlo přesunout do města $CITY$. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout do města $CITY$. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_recover"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout na nejbližší silnici. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout na nejbližší silnici. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_recover_quick"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout na nejbližší silnici. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba může tebe a tvé vozidlo přesunout na nejbližší silnici. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_recover_online"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout na nejbližší silnici. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout na nejbližší silnici. Bude tě to stát $MONEY$ a cesta bude trvat $TIME$.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_refuel"
-	val[]: "Nouzové doplnění paliva ti zajistí $VOLUME$ nafty. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br offset=30>Souhlasíš?"
+	val[]: "Nouzové doplnění paliva ti zajistí $VOLUME$ paliva. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_refuel_quick"
-	val[]: "Nouzové doplnění paliva ti zajistí $VOLUME$ nafty. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
+	val[]: "Nouzové doplnění paliva ti zajistí $VOLUME$ paliva. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_refuel_online"
-	val[]: "Nouzové doplnění paliva ti zajistí $VOLUME$ nafty. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br offset=30>Souhlasíš?"
+	val[]: "Nouzové doplnění paliva ti zajistí $VOLUME$ paliva. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_recharge"
 	val[]: "Nouzové dobijení ti zajistí dobití baterie o $ENERGY$. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br offset=30>Souhlasíš?"
@@ -6243,22 +6363,22 @@
 	val[]: "Nouzové dobijení ti zajistí dobití baterie o $ENERGY$. Bude tě to stát $MONEY$ a budeš čekat $TIME$.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_assistance_mp"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout do města $CITY$. Bude tě to stát $MONEY$.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout do města $CITY$. Bude tě to stát $MONEY$.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_assistance_quick_mp"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout do města $CITY$. Bude tě to stát $MONEY$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout do města $CITY$. Bude tě to stát $MONEY$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_assistance_online_mp"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout do města $CITY$. Bude tě to stát $MONEY$.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout do města $CITY$. Bude tě to stát $MONEY$.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_recover_mp"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout na nejbližší silnici. Bude tě to stát $MONEY$.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout na nejbližší silnici. Bude tě to stát $MONEY$.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_recover_quick_mp"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout na nejbližší silnici. Bude tě to stát $MONEY$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout na nejbližší silnici. Bude tě to stát $MONEY$.<br>(Poplatek bude uhrazen tvým zaměstnavatelem.)<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_recover_online_mp"
-	val[]: "Asistenční služba může tebe a tvůj tahač přesunout na nejbližší silnici. Bude tě to stát $MONEY$.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
+	val[]: "Asistenční služba tě může spolu s vozidlem přesunout na nejbližší silnici. Bude tě to stát $MONEY$.<br offset=30>Tvoje aktuální zakázka bude zrušena.<br offset=30>Souhlasíš?"
 
 	key[]: "wanna_refuel_mp"
 	val[]: "Nouzové doplnění paliva ti zajistí $VOLUME$ nafty. Bude tě to stát $MONEY$.<br offset=30>Souhlasíš?"
@@ -6292,6 +6412,9 @@
 
 	key[]: "cancel_cur_job"
 	val[]: "Opravdu chceš ukončit aktuální zakázku?<br offset=10>Bude tě to stát $MONEY$"
+
+	key[]: "cancel_cur_car_job"
+	val[]: "Opravdu chceš ukončit aktuální zakázku?<br offset=10>Bude tě to stát $MONEY$ a ztratíš sérii perfektních doručení."
 
 	key[]: "no_cancel_first_job"
 	val[]: "Nemůžeš zrušit svou první zakázku. Nikdo by tě potom nebral vážně."
@@ -6342,7 +6465,7 @@
 	val[]: "Došlo ti AdBlue!<br>Měl bys co nejrychleji najít čerpací stanici."
 
 	key[]: "out_of_adblue_limit"
-	val[]: "Došlo ti AdBlue!<br>Motor bude teď pracovat s omezeným točivým momentem.<br>Měl bys co nejrychleji najít čerpací stanici."
+	val[]: "Došlo ti AdBlue!<br>Motor teď bude pracovat s omezeným točivým momentem.<br>Měl bys co nejrychleji najít čerpací stanici."
 
 	key[]: "trailer_lost"
 	val[]: "Přišel jsi o návěs!"
@@ -6409,7 +6532,7 @@
 	val[]: "Opravdu chceš zakoupit tuto garáž?"
 
 	key[]: "dozing"
-	val[]: "... usínáš..."
+	val[]: "... usínáš ..."
 
 	key[]: "sleeping"
 	val[]: "Dopřáváš si odpočinku ..."
@@ -6433,7 +6556,7 @@
 	val[]: "Vyhlídkové místo"
 
 	key[]: "viewpoint_msg"
-	val[]: "Pro přehrání vyhlídkového místa stiskni následující klávesu:"
+	val[]: "Pro aktivaci vyhlídkového místa stiskni:"
 
 	key[]: "viewpoint_found"
 	val[]: "Objevil jsi nové vyhlídkové místo!"
@@ -6450,8 +6573,8 @@
 	key[]: "stop_engine_short"
 	val[]: "Vypni motor!"
 
-	key[]: "stop_truck_short"
-	val[]: "Zastav vozidlo!"   #+ Quick message shown when sleep was prevented by truck movement.
+	key[]: "stop_vehicle_short"
+	val[]: "Zastav vozidlo!"   #+ Quick message shown when sleep was prevented by vehicle movement.
 
 	key[]: "stop_engine"
 	val[]: "Použitím následující klávesy vypneš motor:"
@@ -6463,10 +6586,13 @@
 	val[]: "Použij následující klávesu pro zatažení parkovací brzdy:"
 
 	key[]: "gas_station_hint"
-	val[]: "Stiskni a drž následující klávesu pro naplnění palivové nádrže."
+	val[]: "Stiskni a drž následující klávesu pro naplnění palivové nádrže:"
 
 	key[]: "diesel_price"
 	val[]: "Cena nafty"
+
+	key[]: "petrol_price"
+	val[]: "Cena benzínu"
 
 	key[]: "total_price"
 	val[]: "Celková cena"
@@ -7671,6 +7797,9 @@
 	key[]: "cn_drymilk"
 	val[]: "Sušené mléko"
 
+	key[]: "cn_dry_van"
+	val[]: "Valník na suché zboží"
+
 	key[]: "cn_drywall"
 	val[]: "Sádrokarton"
 
@@ -7736,6 +7865,9 @@
 
 	key[]: "cn_frozen_hake"
 	val[]: "Mražený hejk"
+
+	key[]: "cn_fuel_tank"
+	val[]: "Palivová cisterna"
 
 	key[]: "cn_fuel_tanks"
 	val[]: "Palivové nádrže"
@@ -7826,6 +7958,9 @@
 
 	key[]: "cn_logs"
 	val[]: "Klády"
+
+	key[]: "cn_low_bed_trailers"
+	val[]: "Podvalníky"
 
 	key[]: "cn_lpg"
 	val[]: "LPG"
@@ -7956,6 +8091,9 @@
 	key[]: "cn_red_bricks"
 	val[]: "Cihly"
 
+	key[]: "cn_refrigerated_trailer"
+	val[]: "Chladicí návěs"
+
 	key[]: "cn_rice"
 	val[]: "Rýže"
 
@@ -7979,6 +8117,9 @@
 
 	key[]: "cn_scrap_metals"
 	val[]: "Železný šrot"
+
+	key[]: "cn_seed_containers"
+	val[]: "Kontejnery na osivo"
 
 	key[]: "cn_silica"
 	val[]: "Křemen"
@@ -8035,10 +8176,13 @@
 	val[]: "Traktory"
 
 	key[]: "cn_trailers"
-	val[]: "Podvalníky"
+	val[]: "Návěsy"
 
 	key[]: "cn_train_parts"
 	val[]: "Nápravy lokomotivy"
+
+	key[]: "cn_truss"
+	val[]: "Krov"
 
 	key[]: "cn_tv"
 	val[]: "Televize"
@@ -8339,7 +8483,7 @@
 	val[]: "Rotorový shrnovač Krone Swadro TC 1370"
 
 	key[]: "cn_round_baler_krone_vpv190xc"
-	val[]: "Lis na kulaté balíky Krone Vari Pack V 190 XC"
+	val[]: "Lis na kulaté balíky Krone VariPack V 190 XC"
 
 	key[]: "cn_square_baler_krone_bigp1290"
 	val[]: "Lis na hranaté balíky Krone BiG Pack 1290 HDP VC"
@@ -8669,6 +8813,15 @@
 	key[]: "bank_money"
 	val[]: "Zůstatek na účtu: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
 
+	key[]: "bank_loan_unlock_requirement"
+	val[]: "Pro odemčení této půjčky pokroč v kariéře v režimu tahače."
+
+	key[]: "bank_loan_locked_wrong_mode"
+	val[]: "Pro odemčení této půjčky pokroč v kariéře v $MODE$."
+
+    key[]: "bank_loan_in_debt"
+	val[]: "Máš příliš mnoho dluhů na to, aby sis mohl vzít tuto půjčku."
+
 #+ New loan confirmation window
 #@{
 
@@ -8743,6 +8896,9 @@
 	key[]: "bank_sell_report_garage"
 	val[]: "Garáž ve městě $CITY$, odhadovaná hodnota: $MONEY$"
 
+	key[]: "bank_sell_report_car"
+	val[]: "Auto $NAME$, odhadovaná hodnota: $MONEY$" #+ Message used to show information about a car to sell to cover debt. Same style as bank_sell_report_trailer.
+
 #+ Mail screen
 #+
 #+ Shows incomming emails from bank and truck dealers.
@@ -8790,7 +8946,7 @@
 	val[]: "Zobrazit na mapě" #+ Button which switches the screen into map view.
 
 	key[]: "compman_teleport"
-	val[]: "Okamžitě odcestovat" #+ Button that allows to teleport to a garage.
+	val[]: "Rychle odcestovat" #+ Button that allows to teleport to a garage.
 
 	key[]: "compman_summary"
 	val[]: "Přehled" #+ Header of the block containing summary informations about player's company.
@@ -8841,16 +8997,22 @@
 #@{
 
 	key[]: "compman_qt_t"
-	val[]: "OKAMŽITĚ ODCESTOVAT"
+	val[]: "RYCHLE ODCESTOVAT"
 
 	key[]: "compman_qt_onjob"
-	val[]: "Nemůžeš okamžitě odcestovat dokud máš zakázku!"
+	val[]: "Nemůžeš použít rychlé cestování, dokud máš zakázku!"
 
 	key[]: "compman_qt_notruck"
-	val[]: "Nemůžeš okamžitě odcestovat, dokud nemáš své vlastní vozidlo!"
+	val[]: "Nemůžeš použít rychlé cestování, dokud nemáš svůj vlastní tahač!"
+
+	key[]: "compman_qt_nocar"
+	val[]: "Nemůžeš použít rychlé cestování, dokud nemáš své vlastní auto!"
+
+	key[]: "compman_qt_nobus"
+	val[]: "Nemůžeš použít rychlé cestování, dokud nemáš svůj vlastní autobus!"
 
 	key[]: "compman_qt_confirm"
-	val[]: "Přeješ si okamžitě odcestovat do vybrané garáže?"
+	val[]: "Chceš použít rychlé cestování do vybrané garáže?"
 #@}
 
 #+ Sumary informations about player's company.
@@ -9216,14 +9378,14 @@
 #+ Message box shown when user requests to sell selected truck.
 #@{
 
-	key[]: "truckman_sell_t"
+	key[]: "vehicleman_sell_t"
 	val[]: "PRODAT VOZIDLO"  #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_reallysell"
-	val[]: "Opravdu chceš prodat svůj $TRUCK$ za $MONEY$?"
+	key[]: "vehicleman_msg_reallysell"
+	val[]: "Opravdu chceš prodat své vozidlo $VEHICLE$ za $MONEY$?"
 
-	key[]: "truckman_msg_nosell"
-	val[]: "Nemůžeš prodat vozidlo, dokud máš aktivní zakázku! Nejdříve zakázku dokonči a poté to zkus znovu."
+	key[]: "vehicleman_msg_nosell"
+	val[]: "Nemůžeš prodat vozidlo, dokud máš aktivní zakázku! Nejdřív zakázku dokonči a pak to zkus znovu."
 
 	key[]: "truckman_total_restoration_t"
 	val[]: "KOMPLETNÍ RENOVACE"  #+ Message box title. Please keep in upper case where possible.
@@ -9245,7 +9407,7 @@
 	val[]: "PŘEMÍSTIT TAHAČ" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_norelocate"
-	val[]: "Nemůžeš změnit tahač, dokud máš zakázku. Nejdříve musíš svou aktuální zakázku dokončit."
+	val[]: "Nemůžeš změnit tahač, dokud máš aktivní zakázku. Nejdříve musíš svou zakázku dokončit."
 
 	key[]: "truckman_conf_relocate"
 	val[]: "Opravdu si přeješ vyměnit tahač $TRUCK_SRC$ ve městě $CITY_SRC$ s tahačem $TRUCK_DST$ ve městě $CITY_DST$?<br>(Výměna se provede jakmile oba tahače dokončí své zakázky.)"
@@ -9254,10 +9416,10 @@
 #+ Message box shown when user requests to become driver of selected truck.
 #@{
 
-	key[]: "truckman_change_t"
+	key[]: "vehicleman_change_t"
 	val[]: "ZMĚNIT VOZIDLO" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nochange"
+	key[]: "vehicleman_msg_nochange"
 	val[]: "Nemůžeš si změnit vozidlo, dokud máš aktivní zakázku! Nejdřív zakázku dokonči."
 
 	key[]: "truckman_conf_drive"
@@ -9294,8 +9456,8 @@
 	key[]: "truckman_copy_configuration_t"
 	val[]: "KOPÍROVÁNÍ KONFIGURACE" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nouse"
-	val[]: "Toto vozidlo nelze použít jako zdrojové pro zkopírování konfigurace, kvůli chybějícím datům, což bylo způsobeno pravděpodobně odstraněním modifikace nebo DLC.<br><br>Nainstaluj znovu příslušné modifikace nebo DLC."
+	key[]: "vehicleman_msg_nouse"
+	val[]: "Toto vozidlo nelze použít jako zdrojové pro zkopírování konfigurace kvůli chybějícím datům, což bylo pravděpodobně způsobeno odstraněním modifikace nebo DLC.<br><br>Nainstaluj znovu příslušné modifikace nebo DLC."
 #@}
 
 # End of: "Truck management screen"
@@ -9507,7 +9669,7 @@
 	val[]: "PŘEMÍSTIT ŘIDIČE" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "driverman_msg_norelocate"
-	val[]: "Nemůžeš se přemístit, dokud máš zakázku! Nejdřív prosím zakázku dokonči."
+	val[]: "Nemůžeš se přemístit, dokud máš zakázku! Nejdřív zakázku dokonči."
 
 	key[]: "driverman_conf_relocate"
 	val[]: "Opravdu se chceš vyměnit s řidičem $DRIVER_DST$?"
@@ -9675,6 +9837,9 @@
 	key[]: "td_msg_first_and_busy"
 	val[]: "Děkujeme za zakoupení vašeho prvního tahače od nás!<br><br>Doručíme jej do vašeho sídla, odkud si jej budete moci vyzvednout po dokončení aktuální zakázky."
 
+	key[]: "td_first_truck_switch_mode_city"
+	val[]: "Děkujeme za zakoupení vašeho prvního tahače od nás! <br><br>Chceš se přesunout do svého nového tahače ve městě <color value=@@clr_sel@@>$CITY$</color>?"
+
 	key[]: "td_msg_bought_assigned"
 	val[]: "Děkujeme za váš nákup. Užijte si svůj nový tahač!<br><br>Ten starý vám ihned odvezeme do garáže ve městě $CITY$."
 
@@ -9771,7 +9936,7 @@
 	val[]: "Opravdu si přeješ odjet do města $CITY$ a navštívit zde prodejce tahačů $BRAND$?"
 
 	key[]: "tdsel_novisit_msg"
-	val[]: "Promiň, ale nemůžeš okamžitě odcestovat dokud máš zakázku! Nejdřív prosím zakázku dokonči."
+	val[]: "Nemůžeš použít rychlé cestování, dokud máš aktivní zakázku! Nejdřív prosím zakázku dokonči."
 
 	key[]: "tdsel_locked"
 	val[]: "Zatím jsi neobjevil žádné prodejce tahačů!"
@@ -10004,6 +10169,12 @@
 	key[]: "mapl_convoy_member"
 	val[]: "Účastník konvoje"
 
+	key[]: "mapl_company_vehicle"
+	val[]: "Vozidlo na rychlé zakázce"
+
+	key[]: "mapl_my_vehicle"
+	val[]: "Lokace druhého vozidla"
+
 	key[]: "mapl_quarry"
 	val[]: "Lom"
 
@@ -10016,7 +10187,7 @@
 	key[]: "mapl_undiscovered"
 	val[]: "Neobjevené místo"
 
-	key[]: "mapl_viewpoint"
+	key[]: "mapl_viewpoint_visited"
 	val[]: "Vyhlídkové místo (navštívené)"
 
 	key[]: "mapl_viewpoint_unvisited"
@@ -10890,7 +11061,7 @@
 	val[]: "Vítejte v Euro Truck Simulator 2!"
 
 	key[]: "intro_2"
-	val[]: "Konečně máš možnost zažít práci svých snů - řízení tahače!"
+	val[]: "Konečně máš možnost zažít práci svých snů – řízení tahače!"
 
 	key[]: "intro_3"
 	val[]: "Tvá společnost nyní začala podnikat, bohužel ale nemáš peníze pro nákup vlastního tahače. Musíš tedy zatím pracovat u jiných společností jako běžný řidič."
@@ -10900,7 +11071,7 @@
 
 
 	key[]: "intro_garage_1"
-	val[]: "Toto je tvoje hlavní sídlo."
+	val[]: "Toto je tvé hlavní sídlo."
 
 	key[]: "intro_garage_2"
 	val[]: "Je to velmi obyčejná garáž. Není to mnoho, ale pro začátek dostačující."
@@ -10936,6 +11107,9 @@
 	key[]: "desktop_tut_visit_directive"
 	val[]: "Navštiv $SCREEN_NAME$" #+ The $SCREEN_NAME$ text is a placeholder for different screen names in game and should be left intact
 
+	key[]: "desktop_tut_vehicle_mode"
+	val[]: "Pomocí tlačítka režimu můžeš přepínat mezi různými režimy plochy a příslušnými typy vozidel."
+
 	key[]: "desktop_tut_tour_welcome_t"
 	val[]: "VÍTEJ"
 
@@ -10962,6 +11136,28 @@
 
 	key[]: "desktop_tut_tour_finish"
 	val[]: "Děkujeme za prohlídku naší aktualizované domovské obrazovky."
+
+
+	key[]: "desktop_vehicle_mode_reenable_hints_t"
+    val[]: "POVOLIT TIPY"
+
+    key[]: "desktop_vehicle_mode_reenable_hints"
+    val[]: "Vstupuješ do nového herního režimu a kontextové tipy jsou momentálně vypnuté. Tipy pomáhají osvojit si nové funkce hry. Chceš je znovu zapnout?"
+
+	key[]: "desktop_tut_first_car_job_t"
+	val[]: "VÍTEJ V REŽIMU ROAD TRIP"
+
+	key[]: "desktop_tut_first_car_job"
+	val[]: "Režim auta je centrem tvého automobilového zážitku – pořiď si auto svých snů, staň se kurýrem nebo si otevři turistického průvodce a vyraz na cestu, abys prozkoumal svět.<br><br>Začni tím, že si vezmeš svou první rychlou zakázku."
+
+	key[]: "desktop_tut_atlas"
+	val[]: "Atlas je tvůj osobní turistický průvodce pro naplánování výletu."
+
+	key[]: "desktop_tut_car_eshop"
+	val[]: "Prodejce aut - pořiď si svůj vlastní vůz."
+
+	key[]: "desktop_tut_owned_car_job"
+	val[]: "Nabídka zakázek – nech se najmout jako profesionální kurýr s použitím vlastního vozidla."
 #@}
 
 
@@ -13399,16 +13595,16 @@
 	key[]: "quick_travel_cond_fix_cables"
 	val[]: "Tvůj tahač není způsobilý pro rychlé cestování. Zkontroluj propojení kabelů s návěsem."
 
-	key[]: "quick_travel_cond_repair_truck"
+	key[]: "quick_travel_cond_repair_vehicle"
 	val[]: "Tvé vozidlo není způsobilé pro rychlé cestování. Navštiv servis nebo zavolej asistenční službu."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "Tvůj návěs není způsobilý pro rychlé cestování. Navštiv servis nebo zavolej asistenční službu."
 
-	key[]: "quick_travel_cond_truck_fuel"
+	key[]: "quick_travel_cond_vehicle_fuel"
 	val[]: "Tvé vozidlo není způsobilé pro rychlé cestování. Natankuj nebo zavolej asistenční službu."
 
-	key[]: "quick_travel_cond_truck_fallen"
+	key[]: "quick_travel_cond_vehicle_fallen"
 	val[]: "Tvé vozidlo není způsobilé pro rychlé cestování. Zavolej asistenční službu."
 
 	key[]: "quick_travel_cond_trailer_fallen"
@@ -13436,7 +13632,7 @@
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "Vyžadované DLC (oficiální rozšíření hry) $DEPENDENCY_NAME$ chybí. Pro správné fungování této uložené pozice je potřeba mít DLC nainstalované a aktivované na tomto počítači. Před načtením této uložené pozice musíš problém vyřešit." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "Vyžadované DLC (oficiální rozšíření hry) $DEPENDENCY_NAME$ chybí. Pro správné fungování této uložené pozice je potřeba mít DLC nainstalované a aktivované na tomto systému. Před načtením této uložené pozice musíš problém vyřešit." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
 	val[]: "Volitelné DLC (oficiální rozšíření hry) $DEPENDENCY_NAME$ chybí. Pokud se domníváš, že by vše mělo být v pořádku, zkontroluj prosím stav DLC.<br><br>Jinak můžeš uloženou pozici nechat načíst, avšak některé funkce obsažené v DLC mohou být ztraceny." #+ Information showed when dependency of type optional DLC is missing.
@@ -13524,6 +13720,27 @@
 	val[]: "Zakázka právě probíhá."
 #@}
 
+#+ Job cancellation
+#@{
+	key[]: "drive_active_job_t"
+	val[]: "AKTIVNÍ ZAKÁZKA"
+
+	key[]: "drive_active_job"
+	val[]: "Máš aktivní zakázku v jiném režimu hry.<br offset=10>Můžeš ji zrušit nebo zobrazit detaily v $VEHICLE$ @@vehicle_mode@@.<br><br><br>$ADDITIONAL_INFO$"
+
+	key[]: "drive_active_job_yes"
+	val[]: "@@abort_job@@"
+
+	key[]: "drive_active_job_no"
+	val[]: "Přepnout režim"
+
+	key[]: "cancel_cur_job_warning"
+	val[]: "V případě zrušení zakázky budeš muset zaplatit poplatek ve výši $MONEY$."
+
+	key[]: "cancel_cur_car_job_warning"
+	val[]: "V případě zrušení zakázky budeš muset zaplatit poplatek ve výši $MONEY$ a ztratíš sérii perfektních doručení."
+#@}
+
 #+ Trailer coupling phases info messages, shown in route advisor during coupling/decoupling.
 #@{
 
@@ -13579,14 +13796,14 @@
 	key[]: "no_accessory_found"
 	val[]: "Nepodařilo se nalézt položky odpovídající tvému filtru" #+ Text shown when there are no accessories found by filters.
 
-	key[]: "no_truck_found"
-	val[]: "Nepodařilo se nalézt vozidla odpovídající tvému filtru" #+ Text shown when there are no trucks found by filters.
+	key[]: "no_vehicle_found"
+	val[]: "Nepodařilo se najít vozidla odpovídající tvému filtru" #+ Text shown when there are no vehicles found by filters.
 #@}
 
 #+ Strings related to job filtering feature
 #@{
 	key[]: "no_job_found"
-	val[]: "Nepodařilo se nalézt zakázky odpovídající tvému filtru nákladů nebo aktuálním dovednostem" #+ Text shown when there are no jobs found by filters.
+	val[]: "Nepodařilo se nalézt zakázky odpovídající tvému filtru nebo aktuálním dovednostem" #+ Text shown when there are no jobs found by filters.
 #@}
 
 #+ Game demo related strings.
@@ -14304,16 +14521,19 @@
 	val[]: "Pro více informaci vyber slot." #+ Hint shown in garage management screen.
 
 	key[]: "garage_quicktravel_locked_tooltip"
-	val[]: "Nemůžeš okamžitě odcestovat do garáže, ve které se právě nacházíš." #+ Tooltip shown when player hovers over disabled quick travel button.
+	val[]: "Nemůžeš použít rychlé cestování do garáže, ve které se právě nacházíš." #+ Tooltip shown when player hovers over disabled quick travel button.
 
 	key[]: "garage_quicktravel_locked_trailer_tooltip"
-	val[]: "Nemůžeš okamžitě odcestovat do vybrané garáže, protože tvůj aktuální návěs není povolen ve státě, ve kterém garáž sídlí." #+ Tooltip shown when player hovers over quick travel button that is disabled because their's currently assigned is not allowed in the garage's state.
+	val[]: "Nemůžeš použít rychlé cestování do vybrané garáže, protože tvůj aktuální návěs není povolen ve státě, ve kterém garáž sídlí." #+ Tooltip shown when player hovers over quick travel button that is disabled because their's currently assigned is not allowed in the garage's state.
 
 	key[]: "garage_sell_locked_tooltip"
 	val[]: "Nemůžeš prodat garáž, ve které jsou umístěni řidiči, tahače a návěsy." #+ Tooltip shown when player hovers over disabled garage sell button.
 
 	key[]: "garage_upgrade_locked_tooltip"
 	val[]: "Tato garáž již byla vylepšena na nejvyšší úroveň." #+ Tooltip shown when player hovers over upgrade button.
+
+	key[]: "garage_upgrade_locked_vehicle_tooltip"
+	val[]: "Garáž nelze vylepšit, protože tvé vozidlo stojí příliš blízko ní." #+ Tooltip shown when garage cannot be upgraded due to player's vehicles being too close to upgraded garage.
 
 	key[]: "driverman_stats_trailer"
 	val[]: "Aktuální návěs:" #+ Title of the current trailer statistics.
@@ -14360,8 +14580,8 @@
 	key[]: "link_locked_msg_trailer_upgrades"
 	val[]: "Momentálně nejsou dostupná žádná nová vylepšení pro návěsy."
 
-	key[]: "link_locked_msg_truck_diag"
-	val[]: "Pro přístup do diagnostiky musíš nejdříve mít přiřazené vozidlo."
+	key[]: "link_locked_msg_vehicle_diag"
+	val[]: "Pro přístup do diagnostiky musíš nejdřív mít přiřazené vozidlo."
 
 	key[]: "link_locked_msg_truck_dealer_map"
 	val[]: "Zatím jsi neobjevil žádné prodejce tahačů."
@@ -14478,7 +14698,7 @@
 	val[]: "Řada:" #+ Name of the property in the trailer detail tooltip.
 
 	key[]: "tdt_type"
-	val[]: "Typ návěsu:" #+ Name of the property in the trailer detail tooltip.
+	val[]: "Typ zapojení:" #+ Name of the property in the trailer detail tooltip.
 
 	key[]: "tdt_body"
 	val[]: "Typ nástavby:" #+ Name of the property in the trailer detail tooltip.
@@ -14575,13 +14795,13 @@
 	val[]: "Přepravník kontejnerů"
 
 	key[]: "dryvan"
-	val[]: "Dry Freighter"
+	val[]: "Pevná"
 
 	key[]: "dumper"
-	val[]: "Sklápěč"
+	val[]: "Sklápěcí"
 
 	key[]: "flatbed"
-	val[]: "Plochý návěs"
+	val[]: "Plochá"
 
 	key[]: "foodtank"
 	val[]: "Potravinářská cisterna"
@@ -14749,22 +14969,22 @@
 	val[]: "Chemická cisterna, chromovaná"
 
 	key[]: "bs_chem_tank_paint"
-	val[]: "Chemická cisterna, nalakovaná"
+	val[]: "Chemická cisterna, lakovaná"
 
 	key[]: "bs_container"
 	val[]: "Přepravník kontejnerů"
 
 	key[]: "bs_curtain"
-	val[]: "Plachtová nástavba"
+	val[]: "Plachtová"
 
 	key[]: "bs_dryvan"
-	val[]: "Dry Freighter"
+	val[]: "Pevná nástavba"
 
 	key[]: "bs_dryvan_mfloor"
-	val[]: "Dry Freighter, posuvná podlaha"
+	val[]: "Pevná nástavba, posuvná podlaha"
 
 	key[]: "bs_dryvan_side"
-	val[]: "Dry Freighter, boční dveře"
+	val[]: "Pevná nástavba, boční dveře"
 
 	key[]: "bs_dumper_steel"
 	val[]: "Sklápěč, ocelový"
@@ -14773,10 +14993,10 @@
 	val[]: "Sklápěč, hliníkový"
 
 	key[]: "bs_flatbed_steel"
-	val[]: "Plochý návěs, ocelová podlaha"
+	val[]: "Ocelová podlaha"
 
 	key[]: "bs_flatbed_wood"
-	val[]: "Plochý návěs, dřevěná podlaha"
+	val[]: "Dřevěná podlaha"
 
 	key[]: "bs_flatbed_brick"
 	val[]: "Boční otevírání"
@@ -14791,7 +15011,7 @@
 	val[]: "Potravinářská cisterna, chromovaná"
 
 	key[]: "bs_food_tank_paint"
-	val[]: "Potravinářská cisterna, nalakovaná"
+	val[]: "Potravinářská cisterna, lakovaná"
 
 	key[]: "bs_fuel_tank"
 	val[]: "Palivová cisterna"
@@ -14800,10 +15020,10 @@
 	val[]: "Plynová cisterna"
 
 	key[]: "bs_insulated"
-	val[]: "Izolovaná nástavba"
+	val[]: "Izolovaná"
 
 	key[]: "bs_insulated_side"
-	val[]: "Izolovaná nástavba, boční dveře"
+	val[]: "Izolovaná, boční dveře"
 
 	key[]: "bs_livestock"
 	val[]: "Přepravník hospodářských zvířat"
@@ -14812,10 +15032,10 @@
 	val[]: "Nízkopodlažní přepravník hospodářských zvířat"
 
 	key[]: "bs_log_steel"
-	val[]: "Klanicový, ocelová podlaha"
+	val[]: "Klanicová, ocelová podlaha"
 
 	key[]: "bs_log_wood"
-	val[]: "Klanicový, dřevěná podlaha"
+	val[]: "Klanicová, dřevěná podlaha"
 
 	key[]: "bs_lowbed"
 	val[]: "Podvalník"
@@ -14824,13 +15044,13 @@
 	val[]: "Snížený podvalník"
 
 	key[]: "bs_reefer"
-	val[]: "Chladicí nástavba"
+	val[]: "Chladicí"
 
 	key[]: "bs_reefer_mfloor"
-	val[]: "Chladicí nástavba, posuvná podlaha"
+	val[]: "Chladicí, posuvná podlaha"
 
 	key[]: "bs_reefer_side"
-	val[]: "Chladicí nástavba, boční dveře"
+	val[]: "Chladicí, boční dveře"
 
 	key[]: "bs_silo"
 	val[]: "Silo"
@@ -15400,8 +15620,8 @@
 	key[]: "mp_job_wrong_cargo"
 	val[]: "Pro aktuální náklad nevlastníš kompatibilní návěs."
 
-	key[]: "mp_job_missing_truck"
-	val[]: "Může být přijata pouze s vlastním vozidlem."
+	key[]: "mp_job_missing_vehicle"
+	val[]: "Lze přijmout pouze s vlastním vozidlem."
 
 	key[]: "mp_job_missing_trailer"
 	val[]: "Aktuálně nemáš připojený kompatibilní návěs."
@@ -15974,14 +16194,20 @@
 	key[]: "mp_view_job"
 	val[]: "Zobrazit a vzít stejnou zakázku"
 
+	key[]: "mp_car_quick_job"
+	val[]: "Rychlá zakázka (Road Trip)"
+
+	key[]: "mp_car_dispatch_job"
+	val[]: "Nabídka zakázek (Road Trip)"
+
 	key[]: "mp_truck_idle"
 	val[]: "Nečinný"
 
 	key[]: "mp_truck_on_job"
-	val[]: "Ve službě"
+	val[]: "Zakázka není k dispozici"
 
 	key[]: "mp_truck_on_convoy"
-	val[]: "V konvoji"
+	val[]: "Zakázka k dispozici"
 
 	key[]: "mp_fetching_from_server"
 	val[]: "Načítám ze serveru..."
@@ -16004,8 +16230,8 @@
 	key[]: "mp_warning_close_to_conflicted_company_teleport"
 	val[]: "Pro připojení k této relaci bude nutné aktivovat firmu poblíž tvého tahače nebo návěsu.<br>Aby ses vyhnul jakýmkoliv problémům, přesuň svůj tahač a návěs dále od firmy, jinak bude tvá aktuální zakázka zrušena a zároveň budeš přesunut k nejbližšímu servisu.<br><br>Chceš pokračovat?"
 
-	key[]: "mp_warning_truck_before_quick_job_close_cancel_teleport"
-	val[]: "Pro připojení k této relaci bude nutné aktivovat firmu poblíž místa, kde jsi nechal svůj tahač nebo návěs.<br>Aby ses vyhnul jakýmkoliv problémům po návratu ke svému tahači, tvá rychlá zakázka musí být zrušena a zároveň budeš přesunut k nejbližšímu servisu.<br><br>Chceš pokračovat?"
+	key[]: "mp_warning_vehicle_close_cancel_teleport"
+	val[]: "Pro připojení k této relaci bude nutné aktivovat firmu poblíž místa, kde se nachází tvoje vozidlo nebo návěs.<br>Aby po návratu k vozidlu nedošlo k žádným problémům, hra tě přesune k nejbližšímu servisu.<br><br>Chceš pokračovat?"
 
 	key[]: "mp_warning_company_with_selected_job_sleeping"
 	val[]: "Tvá vybraná zakázka začíná nebo končí ve firmě, která v této relaci není aktivní a po připojení nebude k dispozici.<br><br>Chceš pokračovat?"
@@ -16039,6 +16265,12 @@
 
 	key[]: "mp_error_skills"
 	val[]: "Musíš získat následující dovednosti:"
+
+	key[]: "mp_error_car_courier_onboarding"
+	val[]: "Pro získání této zakázky musíš nejdřív dokončit svých $ONBOARDING$ prvních zakázek a dosáhnout požadovaného hodnocení kurýra ($REQUIRED$)." #+ $ONBOARDING$ is replaced with a number. $REQUIRED$ is replaced with a courier rating. Example: You need to complete your first 5 deliveries and reach the required courier rating (4.6) to be eligible for this job.
+
+	key[]: "mp_error_car_courier_rating"
+	val[]: "Tvé hodnocení kurýra ($CURRENT$) je pod minimální požadovanou hodnotou ($REQUIRED$) pro tuto zakázku."  #+ $CURRENT$ and $REQUIRED$ are replaced with a courier rating. Example: Your courier rating (3.3) is below the minimum required (4.6) for this job.
 
 	key[]: "mp_error_dlc"
 	val[]: "Chybí ti DLC potřebné pro tuto zakázku."
@@ -16221,13 +16453,13 @@
 	key[]: "job_equipment"
 	val[]: "Vybavení zakázky:"
 
-	key[]: "equipment_provided_truck_and_trailer"
+	key[]: "equipment_provided_vehicle_and_trailer"
 	val[]: "Poskytnuté vozidlo a návěs"
 
-	key[]: "equipment_owned_truck_provided_trailer"
-	val[]: "Vlastněné vozidlo"
+	key[]: "equipment_owned_vehicle_provided_trailer"
+	val[]: "Vlastní vozidlo"
 
-	key[]: "equipment_owned_truck_and_trailer"
+	key[]: "equipment_owned_vehicle_and_trailer"
 	val[]: "Vlastněné vozidlo a návěs"
 
 	key[]: "mp_job_quick_travel_message"
@@ -17322,10 +17554,10 @@
 	key[]: "career_progress_stats_discovered_countries_count"
 	val[]: "Návštíveno států"
 
-	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots a cargo was delivered from or to and number of all depots.
+	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots cargo was delivered from or to and number of all depots.
 	val[]: "Zásobováno skladů"
 
-	key[]: "career_progress_stats_companies_used_count" #+ Number of companies a cargo was delivered from or to and number of all companies.
+	key[]: "career_progress_stats_companies_used_count" #+ Number of companies cargo was delivered from or to and number of all companies.
 	val[]: "Zásobováno firem"
 
 	key[]: "career_progress_stats_truck_dealer_discovered_count"
@@ -17485,7 +17717,7 @@
 	val[]: "SEZNAM ZMĚN" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "patch_notes_old_data_warning"
-	val[]: "Nepodařilo se připojit k serveru, informace mohou být zastaralé."
+	val[]: "Nepodařilo se připojit k hernímu serveru, informace mohou být zastaralé."
 
 	key[]: "patch_notes_download_confirm"
 	val[]: "Chceš nechat stáhnout informace o aktualizacích?<br><br>Pro automatické stahování povol novinky v nastavení."
@@ -17537,6 +17769,36 @@
 
 	key[]: "desktop_menu_category_leave"
 	val[]: "Odejít"
+#@}
+
+#+ Vehicle mode switch
+#@{
+	key[]: "vehicle_mode"
+	val[]: "Režim"
+
+	key[]: "truck_mode"
+	val[]: "Režim tahače"
+
+	key[]: "truck_mode_help"
+	val[]: "Převezmi jiné druhy zakázek s tahačem"
+
+	key[]: "bus_mode"
+	val[]: "Režim autobusu"
+
+	key[]: "bus_mode_help"
+	val[]: "Vyzkoušejte si jiný režim v roli řidiče dálkového autobusu"
+
+	key[]: "bus_mode_locked_tooltip"
+	val[]: "Pro přístup do režimu autobusu musíš dokončit svou první zakázku"
+
+	key[]: "car_mode"
+	val[]: "Režim auta"
+
+	key[]: "car_mode_help"
+	val[]: "Převezmi jiné druhy zakázek a prozkoumej svět autem"
+
+	key[]: "car_mode_locked_tooltip"
+	val[]: "Pro přístup do režimu auta musíš dokončit svou první zakázku"
 #@}
 
 #+ Menu upper bar
@@ -17687,7 +17949,7 @@
 	key[]: "time_skip_hours"
 	val[]: "Počet hodin k přeskočení"
 
-	
+
 	key[]: "time_skip_current_time"
 	val[]: "Aktuální čas"
 
@@ -17707,7 +17969,7 @@
 	key[]: "time_skip_charging_title"
 	val[]: "Nabití baterie"
 
-	
+
 	key[]: "time_skip_to_next_mandatory_break_ok"
 	val[]: "za $TIME$"
 
@@ -17738,7 +18000,7 @@
 	key[]: "time_skip_rest_full"
 	val[]: "Plně odpočatý"
 
-	
+
 	key[]: "time_skip_tooltip_mandatory_break_not_met"
 	val[]: "Tento odpočinek nesplní limit povinné přestávky. Zbyde ti $LEFT_TIME$ do další povinné přestávky."
 
@@ -17747,18 +18009,18 @@
 
 	key[]: "time_skip_tooltip_mandatory_break_cont"
 	val[]: "Za každých <color value=@@clr_sel@@>$DRIVE_TIME$</color> hodin jízdy musíš absolvovat povinnou přestávku v délce nejméně <color value=@@clr_sel@@>$BREAK_TIME$</color> hodin, jinak můžeš dostat pokutu."
-	
+
 
 	key[]: "time_skip_tooltip_job_on_time"
 	val[]: "Po tomto odpočinku a ohadované době jízdy do destinace budeš mít <color value=@@clr_sel@@>$LEFT_TIME$</color> zbývajícího času na zakázku."
-	
+
 	key[]: "time_skip_tooltip_job_late"
 	val[]: "Po tomto odpočinku a ohadované době jízdy do destinace bude doručení zakázky zpožděné o <color value=@@clr_sel@@>$LEFT_TIME$</color>."
 
 	key[]: "time_skip_max_sleep_reached"
 	val[]: "<color value=@@clr_red@@>Budeš plně odpočatý</color>"
 
-# shown in job detail widget and pause screen	
+# shown in job detail widget and pause screen
 	key[]: "job_eta"
 	val[]: "Odhadovaný příjezd"
 
@@ -17792,9 +18054,1460 @@
 
 	key[]: "rest_state_simulation"
 	val[]: "Simulace únavy"
-	
+
 	key[]: "rest_state_simulation_op_tooltip"
 	val[]: "Je-li povoleno, začneš časem pociťovat účinky únavy.<br><br>Pro zotavení budeš muset odpočívat."
 #@}
 
+#+ Road trip localization.
+#@{
+	key[]: "poi_discovered"
+	val[]: "OBJEVIL JSI <color value=@@clr_sel@@>$item_name$ <color value=@@clr_txt@@>" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_msg"
+	val[]: "Pro aktivaci turistické tabule stiskni následující klávesu:"
+#@}
+
+
+#+ Road Trip Desktop specifics
+#@{
+	key[]: "desktop_menu_category_car_company"
+	val[]: "Garáž"
+
+#@}
+
+#+ Car job localization.
+#@{
+	key[]: "car_job_type_delivery"
+	val[]: "Kurýrní zakázka"
+
+	key[]: "car_job_type_driving"
+	val[]: "Nájemný řidič"
+
+	key[]: "car_quick_job_desc"
+	val[]: "Nech se najmout jako profesionální kurýr s použitím vlastního vozidla. Prostě si vyber zakázku a jeď."
+
+	key[]: "car_dispatch_job_resumed"
+	val[]: "Právě probíhá přepravní zakázka."
+
+	key[]: "customer_prio_info"
+	val[]: "Priorita zákazníka"
+
+	key[]: "cargo_type_prio_cargo"
+	val[]: "Stav nákladu"
+
+	key[]: "cargo_type_prio_time"
+	val[]: "Řízení času"
+
+	key[]: "cargo_type_prio_vehicle"
+	val[]: "Stav vozidla"
+
+	key[]: "cargo_type_prio_none"
+	val[]: "Bez priority"
+
+	key[]: "cargo_attributes"
+	val[]: "Vlastnosti"
+
+	key[]: "cargo_type_cstandard"
+	val[]: "Běžné doručení"
+
+	key[]: "cargo_type_cexpress"
+	val[]: "Přesný čas doručení"
+
+	key[]: "cargo_type_rt_highvalue"
+	val[]: "Hodnotné"
+
+	key[]: "cargo_type_rt_fragile"
+	val[]: "Křehké"
+
+	key[]: "provided_vehicle"
+	val[]: "Poskytnuté vozidlo"
+
+	key[]: "cjob_arrived"
+	val[]: "Příjezd"
+
+	key[]: "customer_satisfaction_t"
+	val[]: "Spokojenost zákazníka"
+
+	key[]: "provisional_reward"
+	val[]: "Předběžná odměna"
+
+	key[]: "customer_satisfaction"
+	val[]: "Spokojenost zákazníka"
+
+	key[]: "customer_rejected_delivery"
+	val[]: "Odmítnuté doručení"
+
+	key[]: "cjob_rating_0"
+	val[]: "Neprofesionální"
+
+	key[]: "cjob_rating_1"
+	val[]: "Špatné"
+
+	key[]: "cjob_rating_2"
+	val[]: "Podprůměrné"
+
+	key[]: "cjob_rating_3"
+	val[]: "Uspokojivé"
+
+	key[]: "cjob_rating_4"
+	val[]: "Dobré"
+
+	key[]: "cjob_rating_5"
+	val[]: "Perfektní"
+
+	key[]: "cjob_default_negative_note_time"
+	val[]: "Neočekávaný čas příjezdu"
+
+	key[]: "cjob_default_neutral_note_time"
+	val[]: "Přijatelný čas příjezdu"
+
+	key[]: "cjob_default_positive_note_time"
+	val[]: "Přesně na čas"
+
+	key[]: "cjob_default_negative_note_cargo"
+	val[]: "Poškozené zboží"
+
+	key[]: "cjob_default_neutral_note_cargo"
+	val[]: "Přiměřená služba"
+
+	key[]: "cjob_default_positive_note_cargo"
+	val[]: "Doručení bez poškození"
+
+	key[]: "cjob_default_negative_note_cargo_1"
+	val[]: "Neopatrné zacházení"
+
+	key[]: "cjob_default_negative_note_vehicle"
+	val[]: "Neprofesionální stav"
+
+	key[]: "cjob_default_neutral_note_vehicle"
+	val[]: "Uspokojivý stav"
+
+	key[]: "cjob_default_positive_note_vehicle"
+	val[]: "Vozidlo v bezvadném stavu"
+
+	key[]: "no_car_job_found"
+	val[]: "Nepodařilo se nalézt zakázky odpovídající vybranému filtru"
+
+	key[]: "hint_open_global_dispatch_market"
+	val[]: "Momentálně vidíš pouze omezenou nabídku zakázek. Pro zobrazení globální nabídky klikni na tlačítko níže."
+
+	key[]: "view_global_dispatch_market"
+	val[]: "Zobrazit globální nabídku zakázek"
+
+	key[]: "car_dispatch_job_t"
+	val[]: "NABÍDKA PŘEPRAVNÍCH ZAKÁZEK"
+
+	key[]: "car_dispatch_job"
+	val[]: "Nabídka zakázek"
+
+	key[]: "car_dispatch_job_desc"
+	val[]: "Nech se najmout jako profesionální kurýr s použitím vlastního vozidla."
+
+	key[]: "link_locked_msg_dispatch_job"
+	val[]: "Pro přístup do nabídky zakázek musíš nejdříve mít přiřazené auto."
+
+	key[]: "vehicle_transfer"
+	val[]: "Přesun vozidla"
+
+	key[]: "car_job_rating"
+	val[]: "Hodnocení zakázky"
+
+	key[]: "car_courier_rating"
+	val[]: "Hodnocení kurýra"
+
+	key[]: "car_courier_rating_na"
+	val[]: "-" #+ Shown at various places if the player has no courier rating yet. Please keep it as short as possible.
+
+	key[]: "car_delivery_streak"
+	val[]: "Série perfektních doručení"
+
+	key[]: "car_benefit_max_dist"
+	val[]: "Maximální vzdálenost"
+
+	key[]: "car_benefit_reward_bonus"
+	val[]: "Bonusová odměna"
+
+	key[]: "car_benefit_cargo_access"
+	val[]: "Přístup k nákladům"
+
+	key[]: "car_active_benefits"
+	val[]: "Aktivní výhody"
+
+	key[]: "car_benefits_locked"
+	val[]: "Pro odemčení výhod dokonči svých prvních <color value=@@clr_white@@>5 zakázek</color>."
+
+	key[]: "car_route_details"
+	val[]: "Detail trasy"
+
+	key[]: "ccargo_business_documents"
+	val[]: "Obchodní dokumenty"
+
+	key[]: "ccargo_personal_documents"
+	val[]: "Osobní doklady"
+
+	key[]: "ccargo_legal_documents"
+	val[]: "Právní dokumenty"
+
+	key[]: "cjob_dealer_allocation"
+	val[]: "Přesun vozu prodejci"
+
+	key[]: "cjob_premium_allocation"
+	val[]: "Přesun prémiového vozu prodejci"
+
+	key[]: "ccargo_job_tools"
+	val[]: "Nářadí na staveniště"
+
+	key[]: "ccargo_soil_samples"
+	val[]: "Zemědělské vzorky"
+
+	key[]: "ccargo_plant_seedlings"
+	val[]: "Sazenice rostlin"
+
+	key[]: "ccargo_product_samples"
+	val[]: "Vzorky produktů"
+
+	key[]: "ccargo_return_package"
+	val[]: "Vrácený balíček"
+
+	key[]: "ccargo_machine_parts"
+	val[]: "Náhradní díly strojů"
+
+	key[]: "ccargo_customs_docs"
+	val[]: "Celní doklady"
+
+	key[]: "ccargo_diplomatic_pouch"
+	val[]: "Diplomatická pošta"
+
+	key[]: "ccargo_missed_connection"
+	val[]: "Zmeškaná zásilka"
+
+	key[]: "ccargo_redirected_parcel"
+	val[]: "Přesměrovaná zásilka"
+
+	key[]: "ccargo_vehicle_reg_papers"
+	val[]: "Doklady o registraci vozidla"
+
+	key[]: "ccargo_livestock_auction_docs"
+	val[]: "Dokumenty k aukci hospodářských zvířat"
+
+	key[]: "ccargo_replacement_keys"
+	val[]: "Náhradní klíče"
+
+	key[]: "ccargo_freight_manifests"
+	val[]: "Nákladní listy"
+
+	key[]: "ccargo_payroll_envelopes"
+	val[]: "Výplatní lístky"
+
+	key[]: "ccargo_export_customs_decl"
+	val[]: "Vývozní celní prohlášení"
+
+	key[]: "ccargo_rail_waybills"
+	val[]: "Železniční nákladní listy"
+
+	key[]: "ccargo_livestock_health_certs"
+	val[]: "Veterinární osvědčení hospodářských zvířat"
+
+	key[]: "ccargo_dealer_trade_docs"
+	val[]: "Obchodní dokumenty prodejce"
+
+	key[]: "ccargo_ore_samples"
+	val[]: "Vzorky rud a nerostů"
+
+	key[]: "ccargo_drill_core_samples"
+	val[]: "Vzorky vrtných jader"
+
+	key[]: "ccargo_chemical_samples"
+	val[]: "Chemické vzorky"
+
+	key[]: "ccargo_grid_relays"
+	val[]: "Součásti síťových relé"
+
+	key[]: "ccargo_truck_small_parts"
+	val[]: "Drobné součástky tahače"
+
+	key[]: "ccargo_packaging_prototypes"
+	val[]: "Prototypy obalů"
+
+	key[]: "ccargo_outboard_parts"
+	val[]: "Díly závěsného motoru"
+
+	key[]: "ccargo_boat_reg_papers"
+	val[]: "Doklady o registraci plavidla"
+
+	key[]: "ccargo_fillin_restock"
+	val[]: "Doplnění zásob"
+
+	key[]: "ccargo_lost_wallet"
+	val[]: "Ztracená peněženka"
+
+	key[]: "ccargo_regatta_trophy"
+	val[]: "Pohár regaty"
+
+	key[]: "ccargo_repl_propeller"
+	val[]: "Náhradní vrtule"
+
+	key[]: "ccargo_yacht_brokerage"
+	val[]: "Dokumenty prodejce jachet"
+
+	key[]: "ccargo_tractor_diag_module"
+	val[]: "Diagnostický modul traktoru"
+
+	key[]: "ccargo_substation_keys"
+	val[]: "Přístupové klíče k rozvodně"
+
+	key[]: "ccargo_flight_crew_docs"
+	val[]: "Dokumenty letové posádky"
+
+	key[]: "ccargo_misrouted_delivery"
+	val[]: "Chybně doručená zásilka"
+
+	key[]: "ccargo_transfer_seals"
+	val[]: "Bezpečnostní kontejnerové plomby"
+
+	key[]: "ccargo_crew_supplies"
+	val[]: "Zásoby a občerstvení posádky"
+
+	key[]: "ccargo_tourist_maps"
+	val[]: "Doplnění zásob turistických map"
+
+	key[]: "ccargo_fish_finder"
+	val[]: "Rybářský sonar"
+
+	key[]: "ccargo_unident_shipment"
+	val[]: "Neidentifikovaná zásilka"
+
+	key[]: "ccargo_undisc_consignment"
+	val[]: "Utajená zásilka"
+
+	key[]: "ccargo_confid_delivery"
+	val[]: "Důvěrné doručení"
+
+#+ Icon legend specific text
+#@{
+	key[]: "quick_jobs_legend"
+	val[]: "POPIS RYCHLÝCH ZAKÁZEK" #+ Keep uppercase where possible
+
+	key[]: "dispatch_jobs_legend"
+	val[]: "POPIS NABÍDKY ZAKÁZEK" #+ Keep uppercase where possible
+
+	key[]: "car_legend_job_types"
+	val[]: "Typy zakázek"
+
+	key[]: "car_legend_delivery_job_desc"
+	val[]: "Přeprava nákladu – doručuj menší zásilky a dokumenty"
+
+	key[]: "car_legend_driving_job_desc"
+	val[]: "Přeprava vozidel – vozidlo, které řídíš, je zároveň nákladem"
+
+	key[]: "car_legend_cargo_prio_desc"
+	val[]: "Jeď bezpečně a hlídej si náklad – zákazníci oceňují nepoškozené balíky"
+
+	key[]: "car_legend_vehicle_prio_desc"
+	val[]: "Sebeprezentace je důležitá – příjezd v poškozeném autě může zákazníka znepokojit"
+
+	key[]: "car_legend_time_prio_desc"
+	val[]: "Zákazníci očekávají, že dorazíš v dohodnutý čas – ani příliš brzy, ani příliš pozdě"
+
+	key[]: "car_legend_prio_desc"
+	val[]: "Pozor na vybranou míru spokojenosti zákazníka – výrazně ovlivňuje hodnocení i odměnu"
+	
+	key[]: "car_legend_modifiers"
+	val[]: "Modifikátory"
+
+	key[]: "car_legend_standard_desc"
+	val[]: "Standardní časové okno pro doručení"
+
+	key[]: "car_legend_express_desc"
+	val[]: "Kratší časové okno s vyšší odměnou"
+
+	key[]: "car_legend_valuable_desc"
+	val[]: "Vyšší nároky zákazníků na stav vozidla s větší odměnou"
+
+	key[]: "car_legend_fragile_desc"
+	val[]: "Větší odměna za křehký náklad, který se snáze poškodí"
+
+	key[]: "car_legend_rating"
+	val[]: "Hodnocení"
+
+	key[]: "car_legend_job_rating_desc"
+	val[]: "Hodnocení spokojenosti zákazníka s tvým výkonem"
+
+	key[]: "car_legend_courier_rating_desc"
+	val[]: "Zahrnuje posledních 25 zakázek – lze si je prohlédnout v sekci „Kariérní postup“"
+
+	key[]: "car_legend_delivery_streak_desc"
+	val[]: "Počet perfektních hodnocení doručení v řadě"
+
+	key[]: "car_legend_benefits"
+	val[]: "Výhody"
+
+	key[]: "car_legend_benefit_max_dist_desc"
+	val[]: "Vyšší hodnocení kurýra odemyká delší trasy"
+
+	key[]: "car_legend_benefit_reward_bonus_desc"
+	val[]: "Extra odměna za každou zakázku – na základě tvého hodnocení kurýra a počtu perfektních doručení v řadě"
+
+	key[]: "car_legend_benefit_cargo_access_desc"
+	val[]: "Náklad, který ti byl svěřen – nabídka se rozšiřuje spolu s tvým hodnocením"
+
+#@}
+
+#@}
+
+#+ Unavailable data
+#@{
+	key[]: "car_job_name_na"
+	val[]: "neznámá" # Shown at various places if car job name is unavailable. Please keep it as short as possible.
+#@}
+
+#+ Multiplayer
+#@{
+
+	key[]: "no_car_preview"
+	val[]: "Žádný náhled auta"
+
+	key[]: "mp_car_job_missing_job_data"
+	val[]: "Nepodařilo se najít data o zakázce. Možná patří k chybějícímu modu nebo DLC."
+
+	key[]: "mp_car_job_wrong_cargo"
+	val[]: "Nepodařilo se najít náklad pro tuto zakázku."
+
+	key[]: "mp_car_job_wrong_car"
+	val[]: "Nepodařilo se najít auto vhodné pro tuto zakázku."
+
+	key[]: "mp_car_job_must_use_company_car"
+	val[]: "Tuto zakázku je nutné doručit s poskytnutým vozidlem."
+
+	key[]: "mp_customer_prio_info"
+	val[]: "Priorita zákazníka:"
+
+	key[]: "mp_no_vehicle"
+	val[]: "Žádné vozidlo"
+
+	key[]: "mp_job_status_truck"
+	val[]: "Tahač"
+
+	key[]: "mp_job_status_car"
+	val[]: "Auto"
+
+	key[]: "mp_car_idle"
+	val[]: "Nečinné"
+
+	key[]: "mp_car_on_job"
+	val[]: "Zakázka není k dispozici"
+
+	key[]: "mp_car_on_convoy"
+	val[]: "Zakázka k dispozici"
+
+	key[]: "equipment_provided_car"
+	val[]: "Poskytnuté auto"
+
+	key[]: "equipment_owned_car"
+	val[]: "Vlastní auto"
+#@}
+
+#+ Road trip specific customer notes.
+#@{
+	#+ Documents (Business / Personal)
+	key[]: "cjob_documents_negative_note_cargo"
+	val[]: "Špatné zacházení s dokumenty"
+
+	key[]: "cjob_documents_negative_note_cargo_1"
+	val[]: "Roztržená obálka"
+
+	key[]: "cjob_documents_negative_note_cargo_2"
+	val[]: "Zmačkané papíry"
+
+	key[]: "cjob_documents_neutral_note_cargo"
+	val[]: "Šetrné zacházení"
+
+	key[]: "cjob_documents_neutral_note_cargo_1"
+	val[]: "Mírně pomačkané"
+
+	key[]: "cjob_documents_positive_note_cargo"
+	val[]: "Dokumenty v bezvadném stavu"
+
+	key[]: "cjob_documents_positive_note_cargo_1"
+	val[]: "Neporušená obálka"
+
+	#+ Legal Documents (valuable)
+	key[]: "cjob_legaldoc_negative_note_cargo"
+	val[]: "Špatné zacházení s dokumenty"
+
+	key[]: "cjob_legaldoc_negative_note_cargo_1"
+	val[]: "Porušená pečeť"
+
+	key[]: "cjob_legaldoc_positive_note_cargo"
+	val[]: "Neporušená pečeť"
+
+	key[]: "cjob_legaldoc_positive_note_cargo_1"
+	val[]: "Diskrétní zacházení"
+
+	#+ Machine Parts
+	key[]: "cjob_parts_negative_note_cargo"
+	val[]: "Chrastící obsah"
+
+	key[]: "cjob_parts_neutral_note_cargo"
+	val[]: "Kosmetické vady"
+
+	key[]: "cjob_parts_positive_note_cargo"
+	val[]: "Bezvadný stav"
+
+	#+ Job Site Tools (negative reuses parts/box keys: Rattling Contents / Dented Package / Punctured Parcel)
+	key[]: "cjob_tools_neutral_note_cargo"
+	val[]: "Poškrábané nářadí"
+
+	key[]: "cjob_tools_neutral_note_cargo_1"
+	val[]: "Lehké opotřebení"
+
+	key[]: "cjob_tools_positive_note_cargo"
+	val[]: "Bezvadná sada nástrojů"
+
+	key[]: "cjob_tools_positive_note_cargo_1"
+	val[]: "Ve skvělém stavu"
+
+	#+ Agricultural Samples (internal id: soil)
+	key[]: "cjob_soil_negative_note_cargo"
+	val[]: "Kontaminované vzorky"
+
+	key[]: "cjob_soil_negative_note_cargo_1"
+	val[]: "Vysypané nádoby"
+
+	key[]: "cjob_soil_negative_note_cargo_2"
+	val[]: "Zkažené vzorky"
+
+	key[]: "cjob_soil_negative_note_cargo_3"
+	val[]: "Prosakující nádoby"
+
+	key[]: "cjob_soil_neutral_note_cargo"
+	val[]: "Nepatrný únik"
+
+	key[]: "cjob_soil_neutral_note_cargo_1"
+	val[]: "Mírně vysypáno"
+
+	key[]: "cjob_soil_neutral_note_cargo_2"
+	val[]: "Uvolněná víčka"
+
+	key[]: "cjob_soil_positive_note_cargo"
+	val[]: "Bezpečně utěsněno"
+
+	key[]: "cjob_soil_positive_note_cargo_1"
+	val[]: "Dokonale zachovalé"
+
+	key[]: "cjob_soil_positive_note_cargo_2"
+	val[]: "Čisté vzorky"
+
+	key[]: "cjob_soil_positive_note_cargo_3"
+	val[]: "Bezvadné vzorky"
+
+	key[]: "cjob_soil_positive_note_cargo_4"
+	val[]: "Netknuté nádoby"
+
+	#+ Product Samples (neutral also references parts key cjob_parts_neutral_note_cargo = Cosmetic Marks)
+	key[]: "cjob_samples_negative_note_cargo"
+	val[]: "Poškozené vzorky"
+
+	key[]: "cjob_samples_negative_note_cargo_1"
+	val[]: "Roztržený obal"
+
+	key[]: "cjob_samples_neutral_note_cargo"
+	val[]: "Drobné nedokonalosti"
+
+	key[]: "cjob_samples_positive_note_cargo"
+	val[]: "Stav jako z výlohy"
+
+	key[]: "cjob_samples_positive_note_cargo_1"
+	val[]: "Bezvadný obal"
+
+	#+ Return Package (generic box). NOTE: negative keys are shared by machine parts & job tools.
+	key[]: "cjob_box_negative_note_cargo"
+	val[]: "Promáčknutý obal"
+
+	key[]: "cjob_box_negative_note_cargo_1"
+	val[]: "Propíchnutý balík"
+
+	key[]: "cjob_box_negative_note_cargo_2"
+	val[]: "Poškozený obal"
+
+	key[]: "cjob_box_neutral_note_cargo"
+	val[]: "Otřepané rohy"
+
+	key[]: "cjob_box_neutral_note_cargo_1"
+	val[]: "Drobné promáčkliny"
+
+	key[]: "cjob_box_positive_note_cargo"
+	val[]: "Nepoškozený balík"
+
+	key[]: "cjob_box_positive_note_cargo_1"
+	val[]: "Vráceno v pořádku"
+
+	key[]: "cjob_box_positive_note_cargo_2"
+	val[]: "Opatrné zacházení"
+
+	#+ Replacement Keys (neutral also refs parts Cosmetic Marks; positive also refs parts Mint Condition)
+	key[]: "cjob_keys_negative_note_cargo"
+	val[]: "Poškrábaný přívěsek"
+
+	key[]: "cjob_keys_negative_note_cargo_1"
+	val[]: "Prasklý kryt klíče"
+
+	key[]: "cjob_keys_negative_note_cargo_2"
+	val[]: "Ohnutý klíč"
+
+	key[]: "cjob_keys_negative_note_cargo_3"
+	val[]: "Zlomený kroužek na klíče"
+
+	key[]: "cjob_keys_neutral_note_cargo"
+	val[]: "Lehké škrábance"
+
+	key[]: "cjob_keys_positive_note_cargo"
+	val[]: "Nedotčené balení"
+
+	#+ Plant Seedlings
+	key[]: "cjob_seedlings_negative_note_cargo"
+	val[]: "Poškozené kořeny"
+
+	key[]: "cjob_seedlings_negative_note_cargo_1"
+	val[]: "Zlomené klíčky"
+
+	key[]: "cjob_seedlings_negative_note_cargo_2"
+	val[]: "Zlomené stonky"
+
+	key[]: "cjob_seedlings_neutral_note_cargo"
+	val[]: "Pár spadaných listů"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_1"
+	val[]: "Ohnuté stonky"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_2"
+	val[]: "Mírné vadnutí"
+
+	key[]: "cjob_seedlings_positive_note_cargo"
+	val[]: "Připraveno k výsadbě"
+
+	key[]: "cjob_seedlings_positive_note_cargo_1"
+	val[]: "Zdravé rostliny"
+
+	key[]: "cjob_seedlings_positive_note_cargo_2"
+	val[]: "Zdravé sazenice"
+
+	key[]: "cjob_seedlings_positive_note_cargo_3"
+	val[]: "V perfektní kondici"
+
+	#+ Customs Documents
+	key[]: "cjob_customs_negative_note_cargo"
+	val[]: "Roztrhané stránky"
+
+	key[]: "cjob_customs_negative_note_cargo_1"
+	val[]: "Rozmazaný inkoust"
+
+	key[]: "cjob_customs_neutral_note_cargo"
+	val[]: "Mírný záhyb"
+
+	key[]: "cjob_customs_neutral_note_cargo_1"
+	val[]: "Drobné šmouhy"
+
+	key[]: "cjob_customs_positive_note_cargo"
+	val[]: "Čisté dokumenty"
+
+	key[]: "cjob_customs_positive_note_cargo_1"
+	val[]: "Řádně odesláno"
+
+	#+ Diplomatic Pouch
+	key[]: "cjob_dippouch_negative_note_cargo"
+	val[]: "Porušená pečeť"
+
+	key[]: "cjob_dippouch_negative_note_cargo_1"
+	val[]: "Poškozené pouzdro"
+
+	key[]: "cjob_dippouch_negative_note_cargo_2"
+	val[]: "Narušený obsah"
+
+	key[]: "cjob_dippouch_neutral_note_cargo"
+	val[]: "Drobné oděrky"
+
+	key[]: "cjob_dippouch_neutral_note_cargo_1"
+	val[]: "Mírně uvolněné těsnění"
+
+	key[]: "cjob_dippouch_positive_note_cargo"
+	val[]: "Neporušená pečeť"
+
+	key[]: "cjob_dippouch_positive_note_cargo_1"
+	val[]: "Příkladná diskrétnost"
+
+	key[]: "cjob_dippouch_positive_note_cargo_2"
+	val[]: "Bezpečně doručeno"
+
+	#+ Shared Parcel notes (Missed Connection + Redirected Parcel)
+	key[]: "cjob_parcel_negative_note_cargo"
+	val[]: "Nesprávné zacházení"
+
+	key[]: "cjob_parcel_negative_note_cargo_1"
+	val[]: "Špatné zacházení"
+
+	key[]: "cjob_parcel_neutral_note_cargo"
+	val[]: "Očekávané opotřebení"
+
+	key[]: "cjob_parcel_neutral_note_cargo_1"
+	val[]: "Přiměřený stav"
+
+	key[]: "cjob_parcel_neutral_note_cargo_2"
+	val[]: "Stopy po přepravě"
+
+	#+ Missed Connection Parcel
+	key[]: "cjob_missed_positive_note_cargo"
+	val[]: "Úspěšně přesměrováno"
+
+	#+ Redirected Parcel
+	key[]: "cjob_redirected_positive_note_cargo"
+	val[]: "Bezchybně přesměrováno"
+
+	#+ Shared Paperwork notes (Vehicle Registration + Livestock Auction Documents)
+	key[]: "cjob_paperwork_negative_note_cargo"
+	val[]: "Poškozené záznamy"
+
+	key[]: "cjob_paperwork_negative_note_cargo_1"
+	val[]: "Chybějící stránky"
+
+	key[]: "cjob_paperwork_neutral_note_cargo"
+	val[]: "Mírné ohnutí"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_1"
+	val[]: "Slabé fleky"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_2"
+	val[]: "Drobné záhyby"
+
+	#+ Vehicle Registration Papers
+	key[]: "cjob_vehreg_negative_note_cargo"
+	val[]: "Ohnutý certifikát"
+
+	key[]: "cjob_vehreg_negative_note_cargo_1"
+	val[]: "Pomačkaná registrace"
+
+	key[]: "cjob_vehreg_positive_note_cargo"
+	val[]: "Dokumenty v bezvadném stavu"
+
+	key[]: "cjob_vehreg_positive_note_cargo_1"
+	val[]: "Netknuté dokumenty"
+
+	#+ Livestock Auction Documents
+	key[]: "cjob_auctdoc_negative_note_cargo"
+	val[]: "Poškozený certifikát"
+
+	key[]: "cjob_auctdoc_positive_note_cargo"
+	val[]: "Netknuté záznamy"
+
+	key[]: "cjob_auctdoc_positive_note_cargo_1"
+	val[]: "Bezchybné papírování"
+#@}
+
+#+ Car job localization which doens't require translation.
+#!{
+	key[]: "tt_ico_driving"
+	val[]: "@@car_job_type_driving@@"
+
+	key[]: "tt_ico_delivery"
+	val[]: "@@car_job_type_delivery@@"
+
+	key[]: "tt_ico_cstandard"
+	val[]: "@@cargo_type_cstandard@@"
+
+	key[]: "tt_ico_cexpress"
+	val[]: "@@cargo_type_cexpress@@"
+
+	key[]: "tt_ico_rt_highvalue"
+	val[]: "@@cargo_type_rt_highvalue@@"
+
+	key[]: "tt_ico_rt_fragile"
+	val[]: "@@cargo_type_rt_fragile@@"
+
+	key[]: "car_quick_job_resumed"
+	val[]: "@@quick_job_resumed@@"
+
+	key[]: "car_job_detail_t"
+	val[]: "@@job_detail_word_t@@"
+
+	key[]: "car_quick_job"
+	val[]: "@@job_quick@@"
+
+	key[]: "car_quick_job_t"
+	val[]: "@@quick_job_t@@"
+#!}
+
+#+ Car shop and brand dealer localization.
+#+
+#+ Shows window with all car brands and then another window with specific cars of a given brand to purchase.
+#@{
+	key[]: "car_shop_icon"
+	val[]: "Prodejci aut" #+ Icon opening the car dealer screen.
+
+	key[]: "car_shop_help"
+	val[]: "Pořiď si auta do své garáže." #+ Help message associated the dealer map icon.
+
+	key[]: "car_shop_t"
+	val[]: "NÁKUP AUTA" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "car_shop_explanation"
+	val[]: "Vyber značku pro zobrazení nabídky prodejců."
+
+	key[]: "car_shop_all_dlc"
+	val[]: "Otevřít prohlížeč DLC"
+
+	key[]: "car_shop_view_offers"
+	val[]: "Zobrazit nabídku"
+
+	key[]: "car_shop_view_in_dlc_browser"
+	val[]: "Zobrazit v prohlížeči DLC"
+
+	key[]: "car_shop_coming_soon"
+	val[]: "JIŽ BRZY" #+ Text shown when a car brand is not yet available in the game. Please keep in uppercase.
+
+	key[]: "car_shop_tooltip_dlc_browser"
+	val[]: "Prohlížeč DLC"
+
+	key[]: "car_purchase_t"
+	val[]: "NÁKUP AUTA" #+ Title of the screen. Please keep in upper case where possible.
+	
+	key[]: "car_purchase_info_model"
+	val[]: "Model:"
+
+	key[]: "car_purchase_info_drivetrain"
+	val[]: "Pohon:"
+
+	key[]: "car_purchase_info_bodywork"
+	val[]: "Karoserie:"
+
+	key[]: "car_purchase_info_engine"
+	val[]: "Motor:"
+
+	key[]: "car_purchase_table_fuel_tank"
+	val[]: "Palivová nádrž"
+
+	key[]: "car_purchase_table_drivetrain"
+	val[]: "Pohon"
+
+	key[]: "car_purchase_table_trans"
+	val[]: "Převodovka"
+
+	key[]: "car_purchase_color_configuration"
+	val[]: "Barevná varianta" #+ Title above color configuration list.
+
+	key[]: "car_purchase_checkout"
+	val[]: "Souhrn objednávky" #+ Title above color configuration list.
+
+	key[]: "car_purchase_bank_balance"
+	val[]: "Zůstatek na účtu:"
+
+	key[]: "car_purchase_color_fee"
+	val[]: "Příplatek za barvu:"
+
+	key[]: "car_purchase_confirm"
+	val[]: "Koupit"
+
+	key[]: "car_purchase_back"
+	val[]: "Zpět"
+
+	key[]: "car_purchase_car_bought_t"
+	val[]: "NÁKUP AUTA" #+ Title of car bought message box. Please keep in upper case where possible.
+
+	key[]: "car_purchase_confirm_exit_t"
+	val[]: "UPOZORNĚNÍ"
+
+	key[]: "car_purchase_confirm_exit_msg"
+	val[]: "Nákup nového auta ještě není dokončen. Opravdu chceš z této obrazovky odejít?"
+
+	key[]: "car_purchase_leave"
+	val[]: "Odejít"
+
+	key[]: "car_purchase_stay"
+	val[]: "Zůstat"
+
+	key[]: "car_purchase_car_bought"
+	val[]: "Děkujeme za zakoupení.<br>$CAR_NAME$ máš teď ve svém vozovém parku." #+ Message of car bought message box.
+
+	key[]: "view_in_garage"
+	val[]: "Zobrazit v garáži" #+ Button that takes player to vehicle garage.
+
+#@}
+
+#+ Car-specific time skip localization.
+#@{
+	key[]: "time_skip_delivery_early"
+	val[]: "Předčasné doručení" 
+
+	key[]: "time_skip_tooltip_job_early"
+	val[]: "Po tomto odpočinku a odhadované době jízdy do destinace bude zakázka doručena předčasně o <color value=@@clr_sel@@>$LEFT_TIME$</color>."
+#@}
+
+
+#+ Car configurator localization.
+#@{
+	key[]: "bodywork_t"
+	val[]: "KAROSERIE"
+
+	key[]: "bodywork"
+	val[]: "Karoserie"
+
+	key[]: "drivetrain_t"
+	val[]: "POHON"
+
+	key[]: "drivetrain"
+	val[]: "Pohon"
+
+	key[]: "car_brand_t"
+	val[]: "MODEL VOZIDLA"
+
+	key[]: "car_brand"
+	val[]: "Model vozidla"
+
+	key[]: "no_car_found"
+	val[]: "Nepodařilo se nalézt vozidla odpovídající tvému filtru" #+ Text shown when there are no cars found by filters.
+#@}
+
+#+ Car diagnostic localization.
+#@{
+	key[]: "car_service_about"
+	val[]: "Údržba a opravy auta. Dobrý řidič vždy udržuje své vozidlo v nejlepším stavu." #+ Help message associated with service icon.
+
+	key[]: "car_service_car_t"
+	val[]: "PŘEHLED POŠKOZENÍ VOZIDLA" #+ Header of section displaying status of individual components of the car. Please keep in upper case where possible.
+
+	key[]: "car_diag_about"
+	val[]: "Zobrazit informace o svém autě a jeho aktuálním stavu."
+
+	key[]: "cd_info_model"
+	val[]: "Model:"
+
+	key[]: "cd_info_drivetrain"
+	val[]: "Pohon:"
+
+	key[]: "cd_info_bodywork"
+	val[]: "Karoserie:"
+
+	key[]: "cd_info_engine"
+	val[]: "Motor:"
+
+	key[]: "car_damage"
+	val[]: "Poškození auta" #+ Price for the car damage
+
+	key[]: "adj_rearview"
+	val[]: "Vnitřní"
+#@}
+
+#+ Car browser localization.
+#@{
+	key[]: "car_browser_t"
+	val[]: "PROHLÍŽEČ AUT"
+
+	key[]: "car_browser"
+	val[]: "Prohlížeč aut"
+
+	key[]: "car_browser_help"
+	val[]: "Vyzkoušej si různé konfigurace aut."  #+ Description for the Car Browser icon.
+#@}
+
+#+ Car career localization.
+#@{
+	key[]: "car_career_log_job"
+	val[]: "Zakázka"
+
+	key[]: "car_career_log_customer_satisfaction"
+	val[]: "Spokojenost zákazníka"
+
+	key[]: "car_career_stats_job_rating"
+	val[]: "Hodnocení zakázky"
+
+	key[]: "car_career_progress_stats_experience_cars"
+	val[]: "Auta"
+
+	key[]: "car_career_progress_stats_owned_car_count"
+	val[]: "Vlastněno aut"
+
+	key[]: "car_career_progress_stats_used_car_count"
+	val[]: "Modelů použitých při zakázkách"
+
+	key[]: "car_career_progress_stats_most_used_car"
+	val[]: "Nejpoužívanější model"
+
+	key[]: "car_career_progress_stats_max_customer_bonus"
+	val[]: "Nejvyšší odměna od zákazníka"
+
+	key[]: "car_career_progress_stats_max_customer_penalty"
+	val[]: "Nejvyšší sankce od zákazníka"
+
+	key[]: "car_career_progress_stats_customer_positive"
+	val[]: "Pozitivní hodnocení"
+
+	key[]: "car_career_progress_stats_customer_neutral"
+	val[]: "Neutrální hodnocení"
+
+	key[]: "car_career_progress_stats_customer_negative"
+	val[]: "Negativní hodnocení"
+
+	key[]: "car_career_progress_stats_longest_perfect_streak"
+	val[]: "Nejdelší série perfektních doručení"
+
+	key[]: "car_career_progress_stats_most_money_earned"
+	val[]: "Nejvyšší denní výdělek"
+
+	key[]: "career_progress_stats_explore_atlas"
+	val[]: "Atlas"
+
+	key[]: "career_progress_stats_explore_pois_explored"
+	val[]: "Prozkoumáno bodů zájmu"
+
+	key[]: "career_progress_stats_explore_postcards_completed"
+	val[]: "Dokončeno pohlednic"
+
+	key[]: "career_progress_stats_tab_courier_rating_t"
+	val[]: "HODNOCENÍ KURÝRA"
+#@}
+
+#+ Job widget.
+#@{
+	key[]: "truck_job_different_mode"
+	val[]: "Režim tahače<br>Aktivní zakázka"
+	
+	key[]: "car_job_different_mode"
+	val[]: "Režim auta<br>Aktivní zakázka"
+#@}
+
+#+ World map.
+#@{
+	key[]: "no_gps_different_mode"
+	val[]: "Pro změnu navigace jeď vozidlem v aktuálním režimu"
+#@}
+
+#+ Quick travel.
+#@{
+	key[]: "select_quick_travel_destination_economy_reset_truck"
+	val[]: "Byla zjištěna úprava hry. Vyber prosím destinaci rychlého cestování pro tvůj tahač:" #+ Shown during economy reset quick travel for truck.
+
+	key[]: "select_quick_travel_destination_economy_reset_car"
+	val[]: "Byla zjištěna úprava hry. Vyber prosím destinaci rychlého cestování pro tvé auto:" #+ Shown during economy reset quick travel for car.
+#@}
+
+#+ Mail screen
+#+
+#+ Shows incomming emails from bank and truck dealers.
+#@{
+	key[]: "mail_switch_vehicle_mode_confirmation"
+	val[]: "Pro zobrazení těchto informací se musíš přepnout na $VEHICLE_MODE$<br><br>Chceš pokračovat?" #+ Shown when clicking on link in message would cause vehicle mode switch.
+#@}
+
+#+ Atlas localization.
+#@{
+	key[]: "tourist_atlas_filter_all"
+	val[]: "Zobrazit vše"
+
+	key[]: "tourist_atlas_filter_touristbs"
+	val[]: "Všechny turistické tabule"
+
+	key[]: "tourist_atlas_filter_photo_trophies"
+	val[]: "Všechny fotoúlovky"
+
+	key[]: "tourist_atlas_filter_viewpoints"
+	val[]: "Všechna vyhlídková místa"
+
+	key[]: "tourist_atlas_filter_pointsoi"
+	val[]: "Všechny body zájmu"
+
+	key[]: "mapl_locations"
+	val[]: "Lokace:"
+
+	key[]: "mapl_photo_sight"
+	val[]: "Fotoúlovek"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Vyhlídkové místo"
+
+	key[]: "mapl_point_of_interest"
+	val[]: "Bod zájmu"
+
+	key[]: "mapl_point_of_interest_completed"
+	val[]: "Bod zájmu (prozkoumaný)"
+
+	key[]: "mapl_point_of_interest_discovered"
+	val[]: "Bod zájmu (objevený)"
+
+	key[]: "mapl_tourist_board"
+	val[]: "Turistická tabule"
+
+	key[]: "mapl_tourist_board_completed"
+	val[]: "Turistická tabule (prozkoumaná)"
+
+	key[]: "mapl_tourist_board_discovered"
+	val[]: "Turistická tabule (objevená)"
+
+	key[]: "mapl_tourist_board_undiscovered"
+	val[]: "Turistická tabule (neobjevená)"
+
+	key[]: "mapl_location_states"
+	val[]: "Stav lokace:"
+
+	key[]: "mapl_state_explored"
+	val[]: "Prozkoumaná"
+
+	key[]: "mapl_state_discovered"
+	val[]: "Objevená"
+
+	key[]: "mapl_state_undiscovered"
+	val[]: "Neobjevená"
+
+	key[]: "tourist_atlas_summary_hint"
+	val[]: "Vyber položku na pravé straně pro zobrazení podrobností"
+
+	key[]: "tourist_atlas_postcardsview"
+	val[]: "Galerie pohlednic"
+
+	key[]: "tourist_atlas_locations"
+	val[]: "Lokace:"
+
+	key[]: "tourist_atlas_last_updated_tb"
+	val[]: "Naposledy aktualizovaná turistická tabule:"
+
+	key[]: "tourist_atlas_last_updated_loc"
+	val[]: "Naposledy aktualizovaná lokace:"
+
+	key[]: "tourist_atlas_list_of_all"
+	val[]: "Seznam všech:"
+
+	key[]: "tourist_atlas_overview_t"
+	val[]: "Přehled atlasu"
+
+	key[]: "tourist_atlas_link"
+	val[]: "Atlas"
+
+	key[]: "tourist_atlas_title"
+	val[]: "ATLAS"
+
+	key[]: "tourist_atlas_help"
+	val[]: "Otevři si osobního turistického průvodce a naplánuj si výlet autem – objevuj, prozkoumávej a poznávej zajímavá místa."
+
+	key[]: "tourist_atlas_explored"
+	val[]: "Prozkoumaná"
+
+	key[]: "tourist_atlas_discovered"
+	val[]: "Objevená"
+
+	key[]: "tourist_atlas_undiscovered"
+	val[]: "Neobjevená"
+
+	key[]: "tourist_atlas_touristbs"
+	val[]: "Turistické tabule"
+
+	key[]: "tourist_atlas_photo_trophies"
+	val[]: "Fotoúlovky"
+
+	key[]: "tourist_atlas_viewpoints"
+	val[]: "Vyhlídková místa"
+
+	key[]: "tourist_atlas_pointsoi"
+	val[]: "Body zájmu"
+
+	key[]: "tourist_atlas_select_tb"
+	val[]: "Pro více informací vyber turistickou tabuli."
+
+	key[]: "attractions_along_the_road"
+	val[]: "Zajímavosti podél silnice"
+
+	key[]: "belongs_to_tb"
+	val[]: "Patří k této turistické tabuli:"
+
+	key[]: "tourist_atlas_detail_show_location"
+	val[]: "Zobrazit lokaci"
+
+	key[]: "overlay_focus_map"
+	val[]: "Zaměřit na mapu"
+
+	key[]: "overlay_focus_panel"
+	val[]: "Zaměřit na panel"
+
+	key[]: "overlay_open_tb"
+	val[]: "Otevřít turistickou tabuli"
+
+	key[]: "overlay_open_item"
+	val[]: "Otevřít položku"
+
+	key[]: "overlay_select_atlas_item"
+	val[]: "Vybrat položku"
+
+	key[]: "tourist_atlas_add_navigation"
+	val[]: "Přidat do navigace"
+
+	key[]: "tourist_atlas_remove_navigation"
+	val[]: "Odebrat z navigace"
+
+	key[]: "tourist_atlas_reset_navigation"
+	val[]: "Resetovat navigaci"
+
+	key[]: "tourist_atlas_view_in_gallery"
+	val[]: "Zobrazit v galerii"
+
+	key[]: "detail_discover_tb"
+	val[]: "Objev tuto turistickou tabuli pro více informací."
+
+	key[]: "detail_discover_photo_album_item"
+	val[]: "Objev turistickou tabuli pro zjištění její lokace."
+
+	key[]: "detail_explore_photo_album_item"
+	val[]: "Prozkoumej tuto lokaci pro více informací."
+
+	key[]: "tourist_atlas_nav_oversize_job"
+	val[]: "Navigace k lokacím z atlasu je během speciální přepravy zakázána."
+
+	key[]: "tourist_atlas_nav_goal_fixed"
+	val[]: "Navigace k lokacím z atlasu je nyní zakázána. Nejprve dokonči svůj aktuální navigační cíl."
+
+	key[]: "tourist_atlas_nav_disabled"
+	val[]: "Navigace je vypnutá. Můžeš ji zapnout v nastavení."
+
+	key[]: "tourist_atlas_nav_full"
+	val[]: "V navigaci je už maximální počet přidaných bodů."
+
+	key[]: "tourist_atlas_nav_requires_vehicle"
+	val[]: "Navigace vyžaduje vozidlo"
+
+	key[]: "no_discovered_tb"
+	val[]: "Žádné objevené turistické tabule"
+
+	key[]: "postcard_progress"
+	val[]: "Průběh pohlednice"
+
+	key[]: "photo_album_touristbs_tab"
+	val[]: "Turistické tabule"
+
+	key[]: "photo_album_touristbs_non_visited_tooltip"
+	val[]: "Turistická tabule ještě není dokončená"
+
+	key[]: "photo_album_poi_unknown"
+	val[]: "Bod zájmu nelze přehrát. Ujisti se, že máš aktivována odpovídající DLC."
+
+	key[]: "pin_children"
+	val[]: "Připnout přidružené"
+
+	key[]: "unpin_children"
+	val[]: "Odepnout přidružené"
+
+	key[]: "pin_item"
+	val[]: "Připnout na mapě"
+
+	key[]: "unpin_item"
+	val[]: "Odepnout na mapě"
+
+	key[]: "atlas_welcome_t"
+	val[]: "VÍTEJ V ATLASU" #+ Message box title. Keep in upper case where possible.
+
+	key[]: "atlas_welcome_text"
+	val[]: "<align hstyle=left><font face=/font/normal_bold.font>Atlas</font> je tvůj osobní turistický průvodce – objevuj, prozkoumávej a poznávej během svého výletu autem zajímavá místa.<br><br>Začni tím, že objevíš místní $TOURIST_BOARD$ se zajímavými lokacemi v okolí:<br><br>$POI$<br>$VIEWPOINT$<br>$LANDMARK$<br><br>Za kompletní prozkoumání každé turistické tabule získáš jako odměnu pohlednici, kterou si můžeš vystavit ve svém vozidle.</align>"
+#@}
+
+#+ Tourist atlas reward texts.
+#@{
+	key[]: "new_tourist_atlas_rewards_t"
+	val[]: "ODEMKNUTY NOVÉ ODMĚNY" #+ Title of the window displaying list of the new tourist atlas rewards.
+
+	key[]: "new_tourist_atlas_rewards_help"
+	val[]: "Na základě postupu v režimu Road Trip byly přidány nové předměty pro tuto kariéru: <font face=/font/normal_bold.font>$profile_name$</font>." #+ The help text for new tourist atlas reward items dialog.
+
+	key[]: "tourist_atlas_reward"
+	val[]: "Road Trip" #+ Text in explorer on tourist atlas reward accessory.
+
+	key[]: "tourist_atlas_reward_locked"
+	val[]: "Dostupné z režimu <color value=@@clr_sel@@>Road Trip" #+ Text in configurator when tourist atlas accessory is locked.
+#@}
+
+
+#+ Vehicle garage screen.
+#@{
+	key[]: "car_garage_t"
+	val[]: "MOJE AUTA"
+
+	key[]: "car_garage_icon"
+	val[]: "Moje auta"
+
+	key[]: "car_garage_help"
+	val[]: "Vyber si auto, které chceš řídit."
+
+	key[]: "vehicle_garage_no_vehicles"
+	val[]: "Žádná vozidla v garáži."
+
+	key[]: "vehicle_garage_sell"
+	val[]: "Prodat"
+
+	key[]: "vehicle_garage_configure"
+	val[]: "Konfigurovat"
+
+	key[]: "vehicle_garage_use"
+	val[]: "Použít"
+
+	key[]: "vehicle_garage_drive"
+	val[]: "Řídit"
+
+	key[]: "vehicle_garage_sell_t"
+	val[]: "PRODAT VOZIDLO"
+
+	key[]: "vehicle_garage_sell_message"
+	val[]: "Opravdu chceš prodat své vozidlo $VEHICLE$ za $MONEY$?"
+
+	key[]: "vehicle_garage_sell_message_on_job"
+	val[]: "Nemůžeš prodat vozidlo, dokud máš aktivní zakázku! Nejdřív zakázku dokonči a pak to zkus znovu."
+
+	key[]: "vehicle_garage_use_t"
+	val[]: "POUŽÍT VOZIDLO" #+ Message box title. Please keep in upper case where possible.
+
+	key[]: "vehicle_garage_use_message_on_job"
+	val[]: "Nemůžeš si změnit auto, dokud máš aktivní zakázku! Nejdřív zakázku dokonči."
+
+	key[]: "garage_configure_message_teleport"
+	val[]: "Pro změnu konfigurace vozidla, které aktuálně používáš, musíš navštívit servis. Chceš použít rychlé cestování k nejbližšímu servisu?"
+	
+	key[]: "garage_vehicle_name"
+	val[]: "Vozidlo"
+
+	key[]: "garage_power"
+	val[]: "Výkon motoru"
+
+	key[]: "garage_fuel_tank"
+	val[]: "Palivová nádrž:"
+
+	key[]: "garage_distance"
+	val[]: "Ujetá vzdálenost:"
+
+	key[]: "garage_condition"
+	val[]: "Stav:"
+
+	key[]: "vehicle_details_tab"
+	val[]: "Detail vozidla"
+
+	key[]: "all_vehicles_tab"
+	val[]: "Všechna vozidla"
+
+	key[]: "garage_statistics"
+	val[]: "Statistiky vozidla"
+
+	key[]: "garage_value"
+	val[]: "Hodnota"
+
+	key[]: "garage_current_value"
+	val[]: "Aktuální hodnota:"
+
+	key[]: "garage_value_of_new"
+	val[]: "Cena nového:"
+
+	key[]: "garage_info_model"
+	val[]: "Model:"
+
+	key[]: "garage_info_drivetrain"
+	val[]: "Pohon:"
+
+	key[]: "garage_info_bodywork"
+	val[]: "Karoserie:"
+
+	key[]: "garage_info_steering"
+	val[]: "Řízení:" #+ Steering side. For example "Steering:&nbsp;&nbsp;&nbsp;&nbsp; Left-hand"
+
+	key[]: "garage_info_engine_name"
+	val[]: "Motor:"
+
+	key[]: "garage_info_transmission"
+	val[]: "Převodovka:" #+ Type of the gearbox. "For example "Gearbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 speed gearbox"
+
+	key[]: "garage_info_tank"
+	val[]: "Palivová nádrž:"
+
+	key[]: "garage_damage"
+	val[]: "Poškození:"
+
+	key[]: "garage_ownership_time"
+	val[]: "Doba vlastnictví:"
+
+	key[]: "garage_configure_t"
+	val[]: "KONFIGUROVAT VOZIDLO"
+
+	key[]: "garage_configure_message_on_job"
+	val[]: "Nemůžeš si konfigurovat auto během aktivní zakázky! Nejdřív zakázku dokonči."
+
+	key[]: "garage_fuel_consumption"
+	val[]: "Průměrná spotřeba paliva:"
+
+	key[]: "link_locked_msg_car_garage"
+	val[]: "@@car_garage_icon@@ se ti zpřístupní až po zakoupení prvního auta."
+
+	key[]: "garage_vehicle_name_column"
+	val[]: "Vozidlo"
+
+	key[]: "garage_ownership_time_column"
+	val[]: "Doba vlastnictví"
+
+	key[]: "garage_power_column"
+	val[]: "Výkon motoru"
+
+	key[]: "garage_avg_fuel_column"
+	val[]: "Průměrná spotřeba"
+
+	key[]: "garage_distance_column"
+	val[]: "Ujetá vzdálenost"
+
+	key[]: "garage_condition_column"
+	val[]: "Stav"
+
+	key[]: "garage_currently_driving_t"
+	val[]: "VYBRANÉ VOZIDLO" #+ Keep capitalized
+	
+#@}
+
+#+ On-screen message
+#+
+#+ Hint that appears after taking a car job. It's composed of two parts, separated by a new line. It has no length limit.
+#@{
+
+	key[]: "car_delivery_ready1"
+	val[]: "Zakázka je připravena."
+
+	key[]: "car_delivery_ready2"
+	val[]: "Jeď do destinace."
+
+#@}
+
+#+ Adviser Options
+#@{
+	key[]: "adv_hud_tourist_board_line"
+	val[]: "Atlas režimu Road Trip" #+ Widget name for the tourist board progress.
+
+	key[]: "adv_hud_tourist_board_newly_discovered"
+	val[]: "Pouze nově prozkoumané"
+
+	key[]: "adv_hud_tourist_board_completed"
+	val[]: "Turistická tabule dokončena"
+
+	key[]: "adv_hud_tourist_board_details"
+	val[]: "Podrobnosti v atlasu si zobrazíš pomocí $KEY$"
+
+	key[]: "adv_hud_tourist_board_line_op_tooltip"
+	val[]: "Upozorňuje tě a ukazuje postup či další informace při prozkoumávání míst z atlasu. Widget se zobrazuje dynamicky na základě tvého nastavení."
+#@}
+
+#+ Garage & Shop - car descriptions
+#+ 
+#@{
+
+	key[]: "description_ford_bronco_2024"
+	val[]: "Bronco, znovuzrozená ikona robustních terénních vozů, spojuje hranatý retro styl s ochrannými prvky karoserie, díky kterým si poradí s jakýmkoli terénem."
+
+	key[]: "description_ford_f150_2023"
+	val[]: "Model F-150, který je již po celá desetiletí nejprodávanějším pick-upem v Americe, spojuje značnou tažnou sílu s každodenním komfortem a spolehlivou všestranností."
+
+	key[]: "description_ford_mustang_1967"
+	val[]: "Mustang definoval éru tzv. „pony cars“ svými elegantními liniemi fastbacku, nezaměnitelnou siluetou a řevem motoru, který dodnes přitahuje pozornost."
+
+	key[]: "description_ford_crown_victoria_2006"
+	val[]: "Crown Victoria, prostorný pracant s pohonem zadních kol, který si vydobyl své místo jakožto léty osvědčený americký policejní vůz či taxi."
+#@}
 

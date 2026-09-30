@@ -41,6 +41,12 @@
 	key[]: "loading_no_job"
 	val[]: "Tự do như cơn gió"
 
+	key[]: "loading_location_country"
+	val[]: "Ở đâu đó tại $COUNTRY$" #+ Message shown on loading screen when player location is inside specific country.
+
+	key[]: "loading_changing_mode"
+	val[]: "Đang chuyển" #+ Message shown on loading screen when player is switching between vehicle modes.
+
 	key[]: "current_job_title"
 	val[]: "Công việc hiện tại"
 
@@ -124,17 +130,17 @@
 
 #+ Truck analysis feature - truck konfigurator and pop-up
 
-	key[]: "truck_analysis_t"
-	val[]: "PHÂN TÍCH PHƯƠNG TIỆN" #+ Header of the widget in truck configurator
+	key[]: "vehicle_analysis_t"
+	val[]: "PHÂN TÍCH PHƯƠNG TIỆN" #+ Header of the widget in vehicle configurator
 
-	key[]: "truck_analysis_popup_t"
+	key[]: "vehicle_analysis_popup_t"
 	val[]: "PHÂN TÍCH PHƯƠNG TIỆN" #+ Header of the pop-up when taking heavy cargo
 
-	key[]: "current_truck_params"
-	val[]: "Tùy chỉnh Phương tiện" #+ Header inside the truck analysis widget for truck parameters
+	key[]: "current_vehicle_params"
+	val[]: "Tùy chỉnh Phương tiện" #+ Header inside the vehicle analysis widget for vehicle parameters
 
-	key[]: "current_truck_parameters"
-	val[]: "Tùy chỉnh Phương tiện" #+ Header inside the truck analysis pop-up for truck parameters
+	key[]: "current_vehicle_parameters"
+	val[]: "Tùy chỉnh Phương tiện" #+ Header inside the vehicle analysis pop-up for vehicle parameters
 
 	key[]: "normal_cargo"
 	val[]: "Hàng hóa thông thường" #+ name of the bar for normal cargo suitability
@@ -190,8 +196,8 @@
 	key[]: "truck_analysis_heavy_introduction"
 	val[]: "Bạn đang chuẩn bị kéo một kiện hàng rất nặng. Hãy kiểm tra lại xe tải của bạn và đảm bảo rằng nó sẽ đáp ứng được công việc." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
-	key[]: "truck_analysis_info_tooltip"
-	val[]: "Với phương tiện giao thông mà bạn thường sử dụng, hãy điều chỉnh xe để tối ưu hóa hiệu suất dựa trên sự kết hợp giữa tiết kiệm nhiên liệu, các giới hạn kỹ thuật và pháp lý." #+  General tooltip description of Truck Analysis feature
+	key[]: "vehicle_analysis_info_tooltip"
+	val[]: "Với phương tiện giao thông mà bạn thường sử dụng, hãy điều chỉnh xe để tối ưu hóa hiệu suất dựa trên sự kết hợp giữa tiết kiệm nhiên liệu, các giới hạn kỹ thuật và pháp lý." #+  General tooltip description of Vehicle Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Được tối ưu hóa cho các nhiệm vụ vận chuyển hàng hóa hạng nhẹ và trung bình" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -200,10 +206,10 @@
 	val[]: "Được tối ưu hóa cho vận chuyển hàng nặng và vận tải đặc biệt" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Khả năng di chuyển của xe bạn trong không gian hẹp" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Khả năng di chuyển của xe bạn trong không gian hẹp" #+  Tooltip description for the Maneuverability bar in Vehicle Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Hệ thống truyền động của xe được tối ưu hóa giúp leo dốc và xuống dốc mượt mà hơn" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Hệ thống truyền động của xe được tối ưu hóa giúp leo dốc và xuống dốc mượt mà hơn" #+  Tooltip description for the Hill Traversal bar in Vehicle Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Khả năng vượt qua các bề mặt gồ ghề và mấp mô được cải thiện" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -275,7 +281,7 @@
 	key[]: "truck_service"
 	val[]: "Dịch vụ" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
-	key[]: "truck_service_about"
+	key[]: "vehicle_service_about"
 	val[]: "Bảo dưỡng và sửa chữa xe. Một người lái xe giỏi luôn giữ cho xe của mình trong tình trạng tốt nhất." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
@@ -287,8 +293,8 @@
 	key[]: "truck_service_replace_all"
 	val[]: "Thay thế toàn bộ" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
-	key[]: "truck_service_truck_t"
-	val[]: "BÁO CÁO HƯ HẠI XE" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	key[]: "vehicle_service_vehicle_t"
+	val[]: "BÁO CÁO HƯ HẠI XE" #+ Header of section displaying status of individual components of the vehicle. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "BÁO CÁO HƯ HẠI RƠ-MOÓC" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -296,8 +302,8 @@
 	key[]: "repair"
 	val[]: "Xác nhận" #+ Button which confirms selected actions.
 
-	key[]: "truck_damage"
-	val[]: "Hư hại xe" #+ Price for the truck damage
+	key[]: "vehicle_damage"
+	val[]: "Hư hại xe" #+ Price for the vehicle damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -305,13 +311,13 @@
 #+ Allows to add or remove various accessories.
 #@{
 
-	key[]: "truck_config_t"
+	key[]: "vehicle_config_t"
 	val[]: "TÙY CHỈNH PHƯƠNG TIỆN" #+ Title of the screen. Please keep in upper case where possible.
 
-	key[]: "truck_config"
-	val[]: "Tùy chỉnh Phương tiện" #+ Icon allowing player to upgrade the truck.
+	key[]: "vehicle_config"
+	val[]: "Tùy chỉnh Phương tiện" #+ Icon allowing player to upgrade the vehicle.
 
-	key[]: "truck_config_about"
+	key[]: "vehicle_config_about"
 	val[]: "Bạn biết đấy, luôn có những thứ bạn có thể điều chỉnh hoặc sơn lại để khiến bạn cảm thấy hài lòng hơn về chiếc xe của mình." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
@@ -410,7 +416,7 @@
 	key[]: "truck_diag"
 	val[]: "Chẩn đoán xe" #+ Icon allowing player to show damage on the truck.
 
-	key[]: "truck_diag_about"
+	key[]: "vehicle_diag_about"
 	val[]: "Xem thông tin về xe của bạn và tình trạng hiện tại của xe."
 
 	key[]: "truck_diag_warning"
@@ -498,8 +504,8 @@
 	key[]: "cart_not_empty"
 	val[]: "Bạn đã thêm một số mặt hàng vào đơn hàng của mình!<br><br>Bạn có muốn hủy tất cả các thay đổi mới không?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
-	key[]: "borrowed_truck_refusal"
-	val[]: "Ông chủ của bạn sẽ không thích nếu bạn tự ý sửa chữa xe của họ." #+ Shown if user attempts to upgrade a quick job truck.
+	key[]: "borrowed_vehicle_refusal"
+	val[]: "Ông chủ của bạn sẽ không thích nếu bạn tự ý sửa chữa xe của họ." #+ Shown if user attempts to upgrade a quick job vehicle.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Bạn không thể thay đổi loại, thân hoặc khung gầm rơ-moóc khi đang thực hiện công việc. Hãy hoàn thành việc giao hàng rồi thử lại." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -540,6 +546,9 @@
 
 	key[]: "b_grill"
 	val[]: "Lưới Tản Nhiệt Bên Dưới"
+
+	key[]: "bed_addon"
+	val[]: "Giường bổ sung"
 
 	key[]: "bullbar"
 	val[]: "Thanh cản trước"
@@ -649,6 +658,9 @@
 	key[]: "f_intk_b_cab"
 	val[]: "Xương sườn mặt nạ trước" #+ Bars of plastic radiator mask (grill) in on the truck's front
 
+	key[]: "f_light"
+	val[]: "Đèn pha"
+
 	key[]: "f_light_chs"
 	val[]: "Đèn Trước"
 
@@ -679,8 +691,11 @@
 	key[]: "f_wnd_frame"
 	val[]: "Khung kính chắn gió" #+ The plate under truck windshield (where wipers are installed).
 
+	key[]: "fenders"
+	val[]: "Chắn bùn" #+ Fenders accessory, word for all fenders on vehicle.
+
 	key[]: "filter"
-	val[]: "Lọc gió" #+ Air filter accessoty.
+	val[]: "Lọc gió" #+ Air filter accessory.
 
 	key[]: "flag_r"
 	val[]: "Cờ cửa sổ phải" #+ Right window flag
@@ -690,6 +705,9 @@
 
 	key[]: "frntglss_mid"
 	val[]: "Giữa kính chắn gió" #+ Pin that is placed on the bottom of the windshield centre to accomodate various decarative elements
+
+	key[]: "fuelcap"
+	val[]: "Nắp bình nh.liệu"
 
 	key[]: "fwheel"
 	val[]: "Bánh Xe Trước"
@@ -727,6 +745,9 @@
 	key[]: "nuts"
 	val[]: "Ốc" #+ Wheel nuts
 
+	key[]: "r_badge"
+	val[]: "Huy hiệu phía sau" #+ Badge or logo on the rear of a vehicle
+
 	key[]: "r_banner"
 	val[]: "Bảng hiệu phía sau" #+ Banner on the rear
 
@@ -754,8 +775,17 @@
 	key[]: "r_light"
 	val[]: "Đèn hậu" #+ Rear lights accessory
 
+	key[]: "r_logo"
+	val[]: "Logo phía sau"
+
 	key[]: "r_mudflap"
 	val[]: "Chắn bùn sau" #+ A couple of rear mudflaps
+
+	key[]: "r_panel"
+	val[]: "Panel"
+
+	key[]: "r_turn_light"
+	val[]: "Đèn báo rẽ phía sau"
 
 	key[]: "r_wheel"
 	val[]: "Bánh Xe Trước"
@@ -765,6 +795,9 @@
 
 	key[]: "rn_mirror"
 	val[]: "Kính Mũi Xe Phải"
+
+	key[]: "roof_addon"
+	val[]: "Mái bổ sung"
 
 	key[]: "rwheel"
 	val[]: "Bánh Xe Trước"
@@ -790,6 +823,9 @@
 	key[]: "s_strip"
 	val[]: "Dán kẻ xọc hông"
 
+	key[]: "s_vent"
+	val[]: "Khe thông gió"
+
 	key[]: "set_cuphold"
 	val[]: "Bộ kệ giữ cốc" #+ Large Pin for sets of small pins of the cup holder accessories
 
@@ -810,6 +846,9 @@
 
 	key[]: "sideskrt_bar"
 	val[]: "Thanh cản bên hông"
+
+	key[]: "spare_w"
+	val[]: "Bánh xe dự phòng"
 
 	key[]: "steering_w"
 	val[]: "Vô lăng" #+ Steering wheel
@@ -846,6 +885,9 @@
 
 	key[]: "toystand"
 	val[]: "Giá để phụ kiện" #+ Interior accessories placed on stands or centre console available in the truck
+
+	key[]: "trunk"
+	val[]: "Trunk"
 
 	key[]: "windowtrim"
 	val[]: "Khung cửa sổ" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
@@ -1045,7 +1087,7 @@
 	val[]: "Đã phát hiện thay đổi trong game! Để tránh các vấn đề tương thích dữ liệu lưu game do thay đổi trong thế giới game, mọi đơn hàng chưa hoàn thành đã bị hủy mà bạn không phải chịu bất kỳ khoản phí nào." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Đã phát hiện thay đổi trong trò chơi!<br><br>Để tránh các vấn đề về khả năng tương thích dữ liệu lưu trò chơi, tất cả các đơn hàng chưa hoàn thành đã bị hủy mà bạn không phải chịu bất kỳ khoản phí nào. Bạn cần đỗ xe tải lại ở nơi an toàn.<br><br>Vui lòng chọn điểm đến nhanh để tiếp tục." #+ Game state reset info message, plus free teleport
+	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Đang lưu..." #+ Game save indicator message.
@@ -1069,19 +1111,22 @@
 #@{
 
 	key[]: "load_game_t"
-	val[]: "TẢI GAME"  #+ Title of the window. Please keep in upper case where possible.
+	val[]: "TẢI BẢN LƯU"  #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "load_game"
-	val[]: "Tải game" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Tải bản lưu" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
+
+	key[]: "load_game_failed"
+	val[]: "Không thể tải file lưu game."
 
 	key[]: "load_game_desc"
-	val[]: "Tải lại phần lưu game gần đây nhất! Tất cả tiến trình hiện tại sẽ bị mất!" #+ Help message associated with load game icon.
+	val[]: "Tải lại bản lưu game gần đây nhất! Tất cả tiến trình hiện tại sẽ bị mất!" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
-	val[]: "Bạn có chắc chắn muốn tải một trò chơi khác không?<br><br>Tiến trình hiện tại của bạn sẽ bị mất trừ khi bạn đã lưu trước đó."
+	val[]: "Bạn có chắc chắn muốn tải một bản lưu khác không?<br><br>Tiến trình hiện tại của bạn sẽ bị mất trừ khi bạn đã lưu trước đó."
 
 	key[]: "load_progress_lost_mp"
-	val[]: "Bạn có chắc chắn muốn tải một bản lưu trò chơi khác không?<br>Việc này trong chế độ nhiều người chơi có thể dẫn đến việc hủy hoặc tạm dừng công việc, dịch chuyển đến điểm dịch vụ gần nhất hoặc công việc đã chọn không khả dụng.<br><br>Tiến trình hiện tại của bạn sẽ bị mất trừ khi bạn đã lưu trước đó."
+	val[]: "Bạn có chắc chắn muốn tải một bản lưu trò chơi khác không?<br>Việc này trong chế độ nhiều người chơi có thể dẫn đến việc hủy hoặc tạm dừng công việc, dịch chuyển đến điểm dịch vụ gần nhất hoặc công việc đã chọn sẽ không khả dụng.<br><br>Tiến trình hiện tại của bạn sẽ bị mất trừ khi bạn đã lưu trước đó."
 
 	key[]: "load_game_mp_suspended_job"
 	val[]: "Quá trình lưu đã thành công, nhưng công việc World of Trucks hiện tại của bạn đã bị tạm dừng và không khả dụng trong phiên này."
@@ -1093,7 +1138,7 @@
 	val[]: "- Lưu nhanh -" #+ Name used inside slot corresponding to a quick saved game.
 
 	key[]: "show_autosaves"
-	val[]: "Hiển thị các mục lưu tự động" #+ Description of checkbox allowing user to enable display of automatically generated saves.
+	val[]: "Hiện bản lưu tự động tạo" #+ Description of checkbox allowing user to enable display of automatically generated saves.
 
 	key[]: "no_manual_saves"
 	val[]: "Không tìm thấy bản lưu thủ công nào." #+ Shown when no saves are found.
@@ -1113,10 +1158,10 @@
 	val[]: "LƯU Ý" #+ Panel title. Please keep in upper case where possible.
 
 	key[]: "load_msg_load_error"
-	val[]: "<color value=@@clr_red@@>Lỗi khi tải file lưu.<color value=@@clr_txt@@><br><br> File lưu không tải được. Bạn có thể thử xác định và khắc phục sự cố bằng cách sử dụng thông tin bên dưới. Hoặc, bạn có thể thử tải một file lưu khác.<br><br>Các lý do sau thường gây ra sự cố:<br><br>1. File lưu không tương thích với một số MOD đã được cài đặt.<br><br>2. File lưu chứa thông tin từ MOD bị thiếu hoặc bị vô hiệu hóa.<br><br>3. File lưu bị hỏng do sử dụng MOD được tạo kém chất lượng.<br><br>4. Máy tính bị treo trong hoặc ngay sau quá trình lưu có thể làm hỏng file lưu."
+	val[]: "<color value=@@clr_red@@>Có vấn đề khi tải bản save.<color value=@@clr_txt@@><br><br>Không thể tải bản save. Bạn có thể thử xác định và khắc phục sự cố bằng cách sử dụng thông tin bên dưới. Ngoài ra, bạn có thể thử tải một bản save khác.<br><br>Các nguyên nhân sau thường gây ra sự cố này:<br><br>1. Bản save không tương thích với một hoặc nhiều MOD hiện đang được cài đặt.<br><br>2. Bản save chứa dữ liệu từ một hoặc nhiều MOD đang bị thiếu hoặc bị tắt.<br><br>3. Bản save đã bị hỏng do sử dụng một MOD được tạo không đúng cách.<br><br>4. Máy tính bị crash trong hoặc ngay sau quá trình lưu có thể làm hỏng bản save."
 
 	key[]: "load_msg_missing_mod"
-	val[]: "<color value=@@clr_sel@@>MOD bị thất lạc.<color value=@@clr_txt@@><br><br>Bản lưu gần nhất bị mất thông tin MOD(s).<br><br>Nếu bạn không tin, bạn có thề kiểm tra lại MOD(s).<br><br>Cũng như bạn có thể load bản lưu lại một lần nữa. Tuy nhiên vấn đề này cũng có thể do những lý do khác.<br><br>Suy cho cùng, cách tốt nhất là bạn nên tải một bản lưu khác.."
+	val[]: "<color value=@@clr_sel@@>Đã phát hiện MOD bị thiếu.<color value=@@clr_txt@@><br><br>Bản save mới nhất có phụ thuộc vào một hoặc nhiều MOD bị thiếu hoặc đang bị tắt.<br><br>Nếu bạn không mong đợi điều này, hãy kiểm tra trạng thái của các MOD đó.<br><br>Nếu không, bạn có thể thử tải bản save này. Tuy nhiên, tùy thuộc vào chức năng mà MOD đó cung cấp, việc tải có thể thất bại hoặc gây ra các vấn đề khác.<br><br>Ngoài ra, bạn có thể thử tải một bản save khác không phụ thuộc vào các MOD bị thiếu."
 
 	key[]: "load_msg_missing_rem_dlc"
 	val[]: "<color value=@@clr_sel@@>Đã phát hiện DLC tùy chọn bị thiếu.<color value=@@clr_txt@@><br><br>Tệp lưu mới nhất có phụ thuộc vào một DLC bị thiếu (bản mở rộng chính thức của trò chơi).<br><br>Nếu bạn không mong muốn điều này, vui lòng kiểm tra trạng thái của (các) DLC.<br><br>Nếu không, bạn vẫn có thể tải tệp lưu, tuy nhiên một số chức năng do (các) DLC cung cấp có thể bị mất.<br><br>Ngoài ra, bạn có thể thử tải một tệp lưu khác, không phụ thuộc vào (các) DLC bị thiếu."
@@ -1125,10 +1170,10 @@
 	val[]: "<color value=@@clr_red@@>Đã phát hiện DLC bị thiếu.<color value=@@clr_txt@@><br><br>Tệp lưu game mới nhất phụ thuộc vào một DLC bị thiếu (bản mở rộng chính thức của game).<br><br>Để tệp lưu này hoạt động chính xác, DLC đó cần phải có và được kích hoạt trên máy tính này.<br><br>Ngoài ra, bạn có thể thử tải một tệp lưu khác không phụ thuộc vào DLC bị thiếu."
 
 	key[]: "load_msg_mod_dlc_dep"
-	val[]: "<color value=@@clr_red@@>MOD phụ thuộc vào nội dung DLC.<color value=@@clr_txt@@><br><br>Ít nhất một MOD phụ thuộc vào DLC (bản mở rộng chính thức của trò chơi) hiện chưa được cài đặt.<br><br>Bạn cần vô hiệu hóa (các) MOD hoặc cài đặt (các) DLC mà chúng phụ thuộc vào."
+	val[]: "<color value=@@clr_red@@>MOD phụ thuộc vào nội dung DLC.<color value=@@clr_txt@@><br><br>Có ít nhất một MOD đang phụ thuộc vào DLC (bản mở rộng chính thức của trò chơi) hiện chưa được cài đặt.<br><br>Bạn cần tắt MOD đó hoặc cài đặt DLC mà MOD đó phụ thuộc vào."
 
 	key[]: "load_msg_crash"
-	val[]: "<color value=@@clr_red@@>Đã phát hiện lỗi<color value=@@clr_txt@@><br><br>Có vẻ như trò chơi đã bị lỗi trong quá trình tải trước đó.<br><br>Bạn có thể thử xác định và khắc phục sự cố bằng cách sử dụng thông tin bên dưới. Hoặc, bạn có thể thử tải một file lưu khác.<br><br>Các lý do sau thường gây ra sự cố:<br><br>1. Một hoặc nhiều MOD đã cài đặt bị lỗi hoặc không tương thích với phiên bản hiện tại của trò chơi.<br><br>2. File lưu chứa thông tin từ (các) MOD bị thiếu hoặc bị vô hiệu hóa.<br><br>3. File lưu bị hỏng do sử dụng MOD được tạo kém chất lượng.<br><br>4. Trong một số trường hợp, sự cố phần cứng hoặc trình điều khiển có thể gây ra lỗi trò chơi."
+	val[]: "<color value=@@clr_red@@>Đã phát hiện sự cố crash<color value=@@clr_txt@@><br><br>Có vẻ như trò chơi đã bị crash trong lần tải trước.<br><br>Bạn có thể thử xác định và khắc phục sự cố bằng cách sử dụng thông tin bên dưới. Ngoài ra, bạn có thể thử tải một bản save khác.<br><br>Các nguyên nhân sau thường gây ra sự cố này:<br><br>1. Một hoặc nhiều MOD đã cài đặt bị lỗi hoặc không tương thích với phiên bản hiện tại của trò chơi.<br><br>2. Bản save chứa dữ liệu từ một hoặc nhiều MOD đang bị thiếu hoặc bị tắt.<br><br>3. Bản save đã bị hỏng do sử dụng một MOD được tạo không đúng cách.<br><br>4. Trong một số trường hợp, lỗi phần cứng hoặc driver cũng có thể khiến trò chơi bị crash."
 
 	key[]: "mods_detected_warning"
 	val[]: "Phát hiện sự hiện diện của mod. Hãy ý thức rằng hỏng hóc, sự lỗi thời, hoặc mod không tương thích có thể gây mất ổn định trò chơi. Hãy xem các mod đang hoạt động trong trình quản lý mod." #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
@@ -1141,16 +1186,16 @@
 #@{
 
 	key[]: "save_game_t"
-	val[]: "LƯU TRÒ CHƠI" #+ Title of the window. Please keep in upper case where possible.
+	val[]: "TẠO BẢN LƯU GAME" #+ Title of the window. Please keep in upper case where possible.
 
 	key[]: "save_game"
-	val[]: "Lưu trò chơi" #+ Icon allowing player to save game. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Tạo bản lưu" #+ Icon allowing player to save game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_desc"
-	val[]: "Lưu quá trình chơi hiện tại"  #+ Help message associated with save game icon.
+	val[]: "Tạo một bản save cho quá trình chơi hiện tại."  #+ Help message associated with save game icon.
 
 	key[]: "new_save_game"
-	val[]: "- Lưu mới -" #+ Name of save slot which create a new save file.
+	val[]: "- Bản lưu mới -" #+ Name of save slot which create a new save file.
 
 	key[]: "noname_save_game"
 	val[]: "Bản lưu không tên" #+ Name used instead as the name of the save file if no name was provided by player. For example "Unamed save 1"
@@ -1353,7 +1398,7 @@
 	val[]: "Khoảng cách đường" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Chọn loại hàng hóa để xem chi tiết tuyến đường" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Chọn công việc để xem chi tiết tuyến đường" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Chưa hoàn chỉnh" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -1969,6 +2014,9 @@
 	key[]: "sort_by_ownership"
 	val[]: "Sở hữu" #+ Button in sort by droplist. Please keep it as short as possible.
 
+	key[]: "sort_by_price"
+	val[]: "Giá" #+ Button in sort by droplist. Please keep it as short as possible.
+
 	key[]: "filter_dlc"
 	val[]: "Bộ lọc" #+ Combo box with job sorting options."
 
@@ -2044,6 +2092,9 @@
 	key[]: "dlc_category_paint_jobs"
 	val[]: "Màu sơn" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
+	key[]: "dlc_category_vehicles"
+	val[]: "Phương tiện" #+ Button/tab in DLC browser. Please keep it as short as possible.
+
 	key[]: "dlc_category_all"
 	val[]: "Tất cả" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
@@ -2067,6 +2118,48 @@
 
 	key[]: "dlc_browser_online_wait_message"
 	val[]: "Đang tải thông tin cập DLC. Vui lòng chờ."
+
+	key[]: "dlc_browser_open_store"
+	val[]: "Bạn có muốn mở trình duyệt Internet và truy cập trang web đã chọn không?"
+
+	key[]: "dlc_browser_no_valid_data"
+	val[]: "Hiện tại chưa có DLC nào."
+
+	key[]: "dlc_browser_catalogue_canceled"
+	val[]: "Thao tác lập danh mục đã bị hủy." #+ The operation was cancelled by the player, and finished correctly.
+
+	key[]: "dlc_browser_catalogue_unknown_error"
+	val[]: "Lỗi không xác định trong danh mục." #+ Catalogue unknown error.
+
+	key[]: "dlc_browser_catalogue_not_initialized"
+	val[]: "Danh mục chưa được khởi tạo." #+ Error caused by either module or library not being properly initialized (yet).
+
+	key[]: "dlc_browser_catalogue_incompatible_state"
+	val[]: "Không thể bắt đầu thao tác vì hiện đang có một thao tác khác đang diễn ra." #+ Error caused attempting to start an operation when another, blocking is in progress
+
+	key[]: "dlc_browser_catalogue_bad_data"
+	val[]: "Một số dữ liệu được cung cấp không chính xác hoặc không đầy đủ." #+ Bad data were supplied either by caller or by first party.
+
+	key[]: "dlc_browser_catalogue_product_misssing"
+	val[]: "Đang cố gắng yêu cầu thao tác với một sản phẩm không có trong danh mục sản phẩm nội bộ hoặc danh mục sản phẩm của bên thứ nhất." #+ Trying to request operation with a product that is either missing from our local caltalogue or the first party back end catalogue.
+
+	key[]: "dlc_browser_catalogue_sending_failed"
+	val[]: "Yêu cầu danh mục không thành công." #+ The request failed, accompanied error message/ other logs should explain why.
+
+	key[]: "dlc_browser_catalogue_parse_failed"
+	val[]: "Phản hồi nhận được bị lỗi." #+ The respone received was malformed.
+
+	key[]: "dlc_browser_catalogue_first_party_fail"
+	val[]: "Lỗi nội bộ của danh mục." #+ First party api call failed for reason beyond our capabilities to fix.
+
+	key[]: "dlc_browser_catalogue_bad_platform"
+	val[]: "Chức năng này hiện không có trên nền tảng hiện tại." #+ The functionality is not present on current platform.
+
+	key[]: "dlc_browser_catalogue_try_later"
+	val[]: "Dịch vụ đặt hàng qua catalog hiện không khả dụng, bạn vui lòng thử lại sau." #+ The service is currently unavailable, the caller should try later.
+
+	key[]: "dlc_browser_commerce_module_internal_error"
+	val[]: "Lỗi nội bộ của danh mục." #+ Catalogue internal error.
 #@}
 
 #+ Activation screen
@@ -2322,7 +2415,7 @@
 	key[]: "interface_sound_settings_t"
 	val[]: "ÂM THANH GIAO DIỆN" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
-	key[]: "truck_sound_settings_t"
+	key[]: "vehicle_sound_settings_t"
 	val[]: "ÂM THANH PHƯƠNG TIỆN" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
@@ -2334,20 +2427,20 @@
 	key[]: "master_volume"
 	val[]: "Âm thanh tổng" #+ Slider controlling master volume.
 
-	key[]: "truck_engine_volume"
-	val[]: "Âm lượng động cơ xe" #+ Slider controlling volume of the truck engine.
+	key[]: "vehicle_engine_volume"
+	val[]: "Âm lượng động cơ xe" #+ Slider controlling volume of the vehicle engine.
 
-	key[]: "truck_exhaust_volume"
-	val[]: "Âm lượng ống khói xe" #+ Slider controlling volume of the truck exhaust.
+	key[]: "vehicle_exhaust_volume"
+	val[]: "Âm lượng ống khói xe" #+ Slider controlling volume of the vehicle exhaust.
 
-	key[]: "truck_turbo_volume"
-	val[]: "Âm lượng tăng áp xe" #+ Slider controlling volume of the truck turbo.
+	key[]: "vehicle_turbo_volume"
+	val[]: "Âm lượng tăng áp xe" #+ Slider controlling volume of the vehicle turbo.
 
-	key[]: "truck_effects_volume"
-	val[]: "Âm lượng hiệu ứng xe" #+ Slider controlling volume of the truck effects.
+	key[]: "vehicle_effects_volume"
+	val[]: "Âm lượng hiệu ứng xe" #+ Slider controlling volume of the vehicle effects.
 
-	key[]: "truck_noise_volume"
-	val[]: "Âm lượng tiếng ồn xe" #+ Slider controlling volume of the truck noises.
+	key[]: "vehicle_noise_volume"
+	val[]: "Âm lượng tiếng ồn xe" #+ Slider controlling volume of the vehicle noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Âm lượng tiếng ồn rơ-moóc" #+ Slider controlling volume of the trailer noises.
@@ -2489,19 +2582,19 @@
 	key[]: "master_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm lượng toàn bộ game."
 
-	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_engine_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm lượng động cơ xe."
 
-	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_exhaust_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm lượng ống xả xe."
 
-	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_turbo_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm lượng bộ tăng áp xe."
 
-	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_effects_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm lượng cách hiệu ứng liên quan đến xe, ví dụ như tiếng xì phanh hơi."
 
-	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm lượng âm thanh dội lên từ lốp xe."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
@@ -2571,7 +2664,7 @@
 	val[]: "Xem trước âm báo kết thúc."
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "Cho phép phát âm thanh còi khi lùi xe. Âm lượng có thể được điều chỉnh bằng thanh trượt \"Hiệu ứng xe\".<br><br>Khi được bật, bạn cũng sẽ nghe thấy tiếng còi lùi của những người chơi khác khi tham gia phiên chơi theo đoàn."
+	val[]: "Cho phép phát âm thanh còi khi lùi xe. Âm lượng có thể được điều chỉnh bằng thanh trượt \"Hiệu ứng xe\".<br><br>Khi được bật, bạn cũng sẽ nghe thấy tiếng còi lùi của những người chơi khác khi tham gia phiên đoàn xe."
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Kích hoạt tiếng gầm khi lái xe ngang qua."
@@ -2586,7 +2679,7 @@
 	val[]: "Cho phép tạo hiệu ứng âm vang trong cabin xe của bạn."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
-	val[]: "Kích hoạt hiệu ứng vọng của môi trường xung quanh."
+	val[]: "Bật hiệu ứng vang cho âm thanh môi trường."
 
 	key[]: "inactive_app_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Khi được kích hoạt, tất cả âm thanh trong trò chơi vẫn sẽ phát khi trò chơi bị ẩn cửa sổ xuống nền."
@@ -2629,8 +2722,8 @@
 	key[]: "transmission_settings"
 	val[]: "HỘP SỐ" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
-	key[]: "truck_physics_settings"
-	val[]: "VẬT LÝ PHƯƠNG TIỆN" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	key[]: "vehicle_physics_settings"
+	val[]: "VẬT LÝ PHƯƠNG TIỆN" #+ Title of 'Vehicle physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "TRỢ LÝ" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2801,13 +2894,13 @@
 #+ Unavailable data
 #@{
 	key[]: "cargo_na"
-	val[]: "Không rõ" # Shown at various places if cargo name is unavailable. Please keep it as short as possible.
+	val[]: "N/A" # Shown at various places if cargo name is unavailable. Please keep it as short as possible.
 
 	key[]: "city_na"
-	val[]: "Không rõ" # Shown at various places if city name is unavailable. Please keep it as short as possible.
+	val[]: "N/A" # Shown at various places if city name is unavailable. Please keep it as short as possible.
 
 	key[]: "country_na"
-	val[]: "Không rõ" # Shown at various places if country name is unavailable. Please keep it as short as possible.
+	val[]: "N/A" # Shown at various places if country name is unavailable. Please keep it as short as possible.
 #@}
 
 #+ Adviser speed limit visualization
@@ -2818,8 +2911,8 @@
 	key[]: "hide"
 	val[]: "Ẩn" #+ Hide speed limit display on the advisor.
 
-	key[]: "truck_limit"
-	val[]: "Hiển thị giới hạn cho chế độ xe hiện tại" #+ Show speed limits for trucks on the advisor.
+	key[]: "automatic_limit"
+	val[]: "Hiển thị giới hạn cho chế độ xe hiện tại" #+ Show speed limits for vehicles on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "Hiện giới hạn xe ô tô" #+ Show speed limits for ordinary cars on the advisor.
@@ -2952,7 +3045,7 @@
 	key[]: "brake_intensity"
 	val[]: "Cường độ phanh" #+ Slider for player modification of braking force.
 
-	key[]: "truck_stability"
+	key[]: "vehicle_stability"
 	val[]: "Độ ổn định của xe" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
@@ -3018,7 +3111,7 @@
 	key[]: "throttle_double_tap"
 	val[]: "Kiểm soát ga thông minh" #+ Checkbox for double tap mode of the digital throttle.
 
-	key[]: "truck_speed_limiter"
+	key[]: "vehicle_speed_limiter"
 	val[]: "Giới hạn tốc độ xe tải" #+ Checkbox for enabling of speed limiter.
 
 	key[]: "rain_sensor"
@@ -3097,7 +3190,7 @@
 	val[]: "Tin tức trực tuyến" #+ Checkbox enabling display of online news and informations about game updates.
 
 	key[]: "online_loading_screens"
-	val[]: "Những hình ảnh tiêu biểu" #+ Checkbox enabling use of online loading screens.
+	val[]: "Điểm nhấn hình ảnh" #+ Checkbox enabling use of online loading screens.
 
 	key[]: "online_billboards"
 	val[]: "Bảng quảng cáo động" #+ Checkbox enabling use of online data for ingame billboards
@@ -3134,6 +3227,9 @@
 
 	key[]: "cam_horizon_lock_factor"
 	val[]: "Hệ số khóa camera theo đường chân trời" #+ Slider for interior camera horizon locking.
+
+	key[]: "cam_fov_speed_factor"
+	val[]: "Thay đổi FOV camera cabin theo tốc độ" #+ Slider for interior camera speed-based FOV changes.
 
 	key[]: "cam_auto_center_delay"
 	val[]: "Độ trễ căn chỉnh tự động về giữa của camera" #+ Dropdown for camera auto centering delay.
@@ -3180,7 +3276,7 @@
 	val[]: "Khi được kích hoạt, bạn phải tuân thủ luật giao thông, nếu không sẽ có nguy cơ bị phạt. Nguy cơ này tăng cao khi ở gần xe cảnh sát, máy đo tốc độ và camera giao thông."
 
 	key[]: "preferred_job_length_op_tooltip" # - Gameplay, Advanced
-	val[]: "Điều chỉnh độ dài trung bình của các công việc được cung cấp."
+	val[]: "Điều chỉnh độ dài trung bình của các chuyến giao hàng được đề xuất.<br><br><color value=@@clr_txt_d@@>Áp dụng cho các chuyến giao hàng trong Chế độ Xe tải."
 
 	key[]: "adviser_speed_limit_op_tooltip" # - Gameplay, Advanced
 	val[]: "Chọn giới hạn tốc độ bạn muốn hiển thị trên widget chỉ đường."
@@ -3207,7 +3303,7 @@
 	val[]: "Chọn cách căn chỉnh bản đồ thế giới."
 
 	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "(placeholder) Chọn cách khám phá bản đồ."
+	val[]: "Chọn cách khám phá Bản đồ Thế giới:<br>- \"Khám phá lân cận\" đánh dấu một khu vực rộng lớn hơn là đã được khám phá.<br>- \"Khám phá chính xác\" chỉ hiển thị các khu vực ngay xung quanh người chơi."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Chọn cách hiển thị điều hướng."
@@ -3254,7 +3350,7 @@
 	key[]: "brake_intensity_op_tooltip" # - Gameplay, Advanced
 	val[]: "Điều chỉnh cường độ phanh."
 
-	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
+	key[]: "vehicle_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "Thay đổi độ ổn định của xe bằng cách hạ thấp trọng tâm."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
@@ -3278,8 +3374,8 @@
 	key[]: "trailer_cables_mode_op_tooltip" # - Gameplay, Simple
 	val[]: "Chọn có hiển thị hiệu ứng chuyển động của dây cáp rơ-moóc hay không, và loại dây cáp nào sẽ được hiển thị.<br><br><color value=@@clr_txt_d@@>Việc bật dây cáp trên nhiều phương tiện có thể ảnh hưởng đến hiệu năng của các máy tính đời cũ."
 
-	key[]: "truck_speed_limiter_op_tooltip" # - Gameplay, Simple
-	val[]: "Cho phép giới hạn tốc độ điện tử của xe tải ở mức 105 km/h (65 mph).<br><br><color value=@@clr_txt_d@@>Các công việc từ World of Trucks đều bật tính năng này vĩnh viễn."
+	key[]: "vehicle_speed_limiter_op_tooltip" # - Gameplay, Simple
+	val[]: "Kích hoạt bộ giới hạn tốc độ điện tử của xe ở mức tùy thuộc vào từng mẫu xe.<br><br><color value=@@clr_txt_d@@>Các công việc trong World of Trucks luôn bật tính năng này."
 
 	key[]: "rain_sensor_op_tooltip" # - Gameplay, Simple
 	val[]: "Khi kích hoạt và cần gạt nước được đặt ở vị trí thứ nhất, gạt nước sẽ tự động bật và điều chỉnh tốc độ theo điều kiện thực tế."
@@ -3370,6 +3466,9 @@
 
 	key[]: "cam_horizon_lock_factor_op_tooltip" # - Gameplay, Advanced
 	val[]: "Điều chỉnh phạm vi xoay của camera bên trong dựa trên chuyển động của xe."
+
+	key[]: "cam_fov_speed_factor_op_tooltip" # - Gameplay, Advanced
+	val[]: "Điều chỉnh mức độ thay đổi góc nhìn camera cabin theo tốc độ di chuyển của xe."
 
 	key[]: "cam_auto_center_delay_op_tooltip" # - Gameplay, Advanced
 	val[]: "Thiết lập độ trễ trước khi camera tự động căn giữa lại.<br><br>Để chức năng này được kích hoạt, xe phải đang di chuyển với tốc độ đáng kể. Chỉ áp dụng cho camera bên trong và camera theo dõi khi di chuyển về phía trước và camera nghiêng ra ngoài khi di chuyển lùi."
@@ -3547,7 +3646,7 @@
 	val[]: "Phụ" #+ Header of column containing a secondary key/button.
 
 	key[]: "na"
-	val[]: "Chưa gán" #+ Shown if no key is configured to this slot.
+	val[]: "N/A" #+ Shown if no key is configured to this slot.
 
 
 	key[]: "unassign"
@@ -3571,6 +3670,9 @@
 	key[]: "lost_function_binding"
 	val[]: "Lệnh vừa mất phím:" #+ Shown when key was rebound to a different function.
 
+	key[]: "unavailable_assignment"
+	val[]: "$INPUT$ không thể sử dụng." #+ Shown when the player presses a key that cannot in input binding.
+
 #!{
 	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
 	val[]: "@@keyboard_ico@@"
@@ -3579,7 +3681,7 @@
 #+ Headers of individual sections
 #@{
 
-	key[]: "truck_controls"
+	key[]: "vehicle_controls"
 	val[]: "PHƯƠNG TIỆN"
 
 	key[]: "assistant_controls"
@@ -3622,7 +3724,7 @@
 	val[]: "TRÌNH PHÁT ÂM THANH"
 
 	key[]: "convoy_controls"
-	val[]: "CONVOY"
+	val[]: "ĐOÀN XE"
 
 	key[]: "eye_tracking_controls"
 	val[]: "THEO DÕI ĐẦU"
@@ -3689,6 +3791,9 @@
 	val[]: "Bật/Tắt điện động cơ"
 
 	key[]: "o_im_parkingbrake"
+	val[]: "Phanh tay"
+
+	key[]: "o_im_handbrake"
 	val[]: "Phanh tay"
 
 	key[]: "o_im_motorbrake"
@@ -3849,6 +3954,9 @@
 
 	key[]: "o_im_infotainment"
 	val[]: "Chế độ hiển thị thông tin giải trí" #+ Action for cycling between infotainement display pages/modes.
+
+	key[]: "o_im_parking_cameras"
+	val[]: "Chế độ camera đỗ xe" #+ Action for toggling parking camera display pages/modes (if available).
 
 	key[]: "o_im_dashboard_map"
 	val[]: "Chế độ thu phóng điều hướng" #+ Action for cycling trough zoom levels in all vehicle navigational devices.
@@ -4104,6 +4212,9 @@
 	key[]: "o_im_parkingbrake_op_tooltip"
 	val[]: "Gán nút cho phanh tay."
 
+	key[]: "o_im_handbrake_op_tooltip"
+	val[]: "Gán phím cho phanh tay."
+
 	key[]: "o_im_motorbrake_op_tooltip"
 	val[]: "Gán nút cho phanh động cơ.<br><br>Phanh động cơ sẽ hoạt động miễn là bạn giữ nút này."
 
@@ -4226,6 +4337,9 @@
 
 	key[]: "o_im_infotainment_op_tooltip"
 	val[]: "Gán nút để thay đổi màn hình hiển thị thông tin giải trí."
+
+	key[]: "o_im_parking_cameras_op_tooltip"
+	val[]: "Gán phím để bật/tắt màn hình hiển thị camera đỗ xe."
 
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "Gán nút để thay đổi mức độ phóng to thu nhỏ của màn hình điều hướng trong bảng điều khiển hoặc màn hình thông tin giải trí."
@@ -4414,7 +4528,7 @@
 	val[]: "Gán nút để hiển thị/ẩn các điều khiển trong chế độ chụp ảnh."
 
 	key[]: "o_im_photomode_names_op_tooltip"
-	val[]: "Gán nút để hiển thị/ẩn tên người chơi trong chế độ chụp ảnh, nếu đang có phiên di chuyển theo đoàn."
+	val[]: "Gán nút để hiển thị/ẩn tên người chơi trong chế độ chụp ảnh, nếu đang có phiên đoàn xe."
 
 	key[]: "o_im_activate_op_tooltip"
 	val[]: "Chỉ định nút được sử dụng để kích hoạt/xác nhận các hành động tương ứng trong trò chơi."
@@ -4465,19 +4579,19 @@
 	val[]: "Gán nút để chụp ảnh màn hình."
 
 	key[]: "sidebar_activation_op_tooltip"
-	val[]: "Gán nút để hiển thị/ẩn lớp phủ trong suốt phiên di chuyển theo đoàn."
+	val[]: "Gán nút để hiển thị/ẩn lớp phủ trong suốt phiên đoàn xe."
 
 	key[]: "chat_activation_op_tooltip"
-	val[]: "Gán nút để kích hoạt chức năng trò chuyện trong suốt phiên di chuyển theo đoàn."
+	val[]: "Gán nút để kích hoạt chức năng trò chuyện trong suốt phiên đoàn xe."
 
 	key[]: "quick_chat_op_tooltip"
 	val[]: "Gán nút để hiển thị menu trả lời nhanh trong suốt phiên đoàn xe."
 
 	key[]: "push_to_talk_op_tooltip"
-	val[]: "Chỉ định nút bạn cần giữ nếu muốn nói chuyện bằng bộ đàm CB trong lúc di chuyển theo đoàn."
+	val[]: "Chỉ định nút bạn cần giữ nếu muốn nói chuyện bằng bộ đàm CB trong phiên đoàn xe."
 
 	key[]: "show_name_tags_op_tooltip"
-	val[]: "Gán nút để hiển thị/ẩn thẻ tên người chơi trong suốt phiên di chuyển theo đoàn."
+	val[]: "Gán nút để hiển thị/ẩn thẻ tên người chơi trong suốt phiên đoàn xe."
 #@}
 #@}
 
@@ -5339,7 +5453,7 @@
 
 
 	key[]: "refresh_rate"
-	val[]: "Tốc độ làm mới" #+ Combo box for selection of the refresh rate.
+	val[]: "Tần số quét màn hình" #+ Combo box for selection of the refresh rate.
 
 	key[]: "fps_limit"
 	val[]: "Giới hạn FPS" #+ Maximum FPS allowed while in game.
@@ -5348,7 +5462,7 @@
 	val[]: "Giới hạn FPS khi chạy nền" #+ Maximum FPS allowed while the game is alt-tabbed in the background.
 
 	key[]: "default_refresh"
-	val[]: "Làm mới mặc định" #+ Value in the refresh rate combo box corresponding to default refresh rate as configured in the system.
+	val[]: "Theo thiết lập máy" #+ Value in the refresh rate combo box corresponding to default refresh rate as configured in the system.
 
 	key[]: "hz"
 	val[]: "Hz" #+ Suffix appended to each value in the refresh rate combo box. For example "60 Hz".
@@ -5429,6 +5543,9 @@
 	key[]: "grass_detail"
 	val[]: "Mật độ cỏ" #+ Combo box selecting density of grass.
 
+	key[]: "tire_smoke"
+	val[]: "Khói lốp xe" #+ Combo box selecting amount of tire smoke.
+
 	key[]: "shadow_quality"
 	val[]: "Chất lượng đổ bóng"  #+ Combo box selecting quality of shadows.
 
@@ -5496,7 +5613,7 @@
 	val[]: "Thay đổi độ phân giải của trò chơi."
 
 	key[]: "refresh_rate_op_tooltip" # - Graphics, Advanced
-	val[]: "Thay đổi tốc độ làm mới mục tiêu của trò chơi."
+	val[]: "Thay đổi tần số quét để hiện thị trên màn hình của trò chơi."
 
 	key[]: "vsync_op_tooltip" # - Graphics, Advanced
 	val[]: "Chế độ này đồng bộ tốc độ khung hình với màn hình để chống xé hình. Chế độ Tiết kiệm cũng giảm một nửa khung hình để giảm tiêu thụ điện năng."
@@ -5545,6 +5662,9 @@
 
 	key[]: "grass_detail_op_tooltip" # - Graphics, Advanced
 	val[]: "Điều chỉnh mật độ cỏ nhìn thấy ở hai bên đường.<br><br><color value=@@clr_txt_d@@>Thiết lập này thường có tác động vừa phải đến hiệu năng."
+
+	key[]: "tire_smoke_op_tooltip" # - Graphics, Advanced
+	val[]: "Kiểm soát lượng khói sinh ra do ma sát giữa lốp xe và mặt đường.<br><br><color value=@@clr_txt_d@@>Cài đặt này thường có tác động ở mức trung bình đến hiệu suất."
 
 	key[]: "shadow_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Điều chỉnh chất lượng bóng đổ của mặt trời hoặc mặt trăng.<br><br><color value=@@clr_txt_d@@>Thiết lập này thường có tác động vừa phải đến hiệu năng."
@@ -6225,13 +6345,13 @@
 	val[]: "Dịch vụ cứu hộ sẽ đưa bạn và xe ra đoạn đường gần nhất. Chi phí $MONEY$ và chuyến đi mất $TIME$.<br offset=30>Đơn hàng hiện tại sẽ bị hủy.<br offset=30>Bạn có đồng ý không?"
 
 	key[]: "wanna_refuel"
-	val[]: "Dịch vụ tiếp nhiên liệu khẩn cấp sẽ cung cấp $VOLUME$ dầu diesel. Chi phí là $MONEY$ và sẽ mất $TIME$.<br offset=30>Bạn có đồng ý?"
+	val[]: "Dịch vụ tiếp nhiên liệu khẩn cấp sẽ cung cấp cho bạn $VOLUME$ nhiên liệu. Việc này sẽ tốn $MONEY$ và mất $TIME$.<br offset=30>Bạn có đồng ý không?"
 
 	key[]: "wanna_refuel_quick"
-	val[]: "Dịch vụ tiếp nhiên liệu khẩn cấp sẽ cung cấp $VOLUME$ dầu diesel. Chi phí là $MONEY$ và sẽ mất $TIME$.<br>(Chi phí sẽ do chủ thuê chi trả.)<br offset=30>Bạn có đồng ý?"
+	val[]: "Dịch vụ tiếp nhiên liệu khẩn cấp sẽ cung cấp cho bạn $VOLUME$ nhiên liệu. Dịch vụ này sẽ tốn $MONEY$ và mất $TIME$.<br>(Chi phí sẽ do chủ thuê chi trả.)<br offset=30>Bạn có đồng ý không?"
 
 	key[]: "wanna_refuel_online"
-	val[]: "Dịch vụ tiếp nhiên liệu khẩn cấp sẽ cung cấp $VOLUME$ dầu diesel. Chi phí là $MONEY$ và sẽ mất $TIME$.<br offset=30>Bạn có đồng ý?"
+	val[]: "Dịch vụ tiếp nhiên liệu khẩn cấp sẽ cung cấp cho bạn $VOLUME$ nhiên liệu. Việc này sẽ tốn $MONEY$ và mất $TIME$.<br offset=30>Bạn có đồng ý không?"
 
 	key[]: "wanna_recharge"
 	val[]: "Dịch vụ Sạc Khẩn cấp sẽ sạc pin cho xe của bạn thêm $ENERGY$. Chi phí là $MONEY$ và sẽ mất $TIME$.<be offset=30>Bạn có đồng ý không?"
@@ -6292,6 +6412,9 @@
 
 	key[]: "cancel_cur_job"
 	val[]: "Bạn thực sự muốn hủy bỏ công việc hiện tại của mình sao?<br offset=10>Bạn sẽ phải trả một khoản phí phạt là $MONEY$"
+
+	key[]: "cancel_cur_car_job"
+	val[]: "Bạn có thực sự muốn hủy công việc hiện tại không?<br offset=10>Bạn sẽ phải trả khoản phí phạt $MONEY$ và mất chuỗi giao hàng hoàn hảo."
 
 	key[]: "no_cancel_first_job"
 	val[]: "Bạn không thể hủy bỏ chuyến hàng đầu tiên này. Sẽ không ai tôn trọng bạn nếu bạn làm vậy."
@@ -6450,8 +6573,8 @@
 	key[]: "stop_engine_short"
 	val[]: "Tắt động cơ!"
 
-	key[]: "stop_truck_short"
-	val[]: "Dừng xe lại!"   #+ Quick message shown when sleep was prevented by truck movement.
+	key[]: "stop_vehicle_short"
+	val[]: "Dừng xe lại!"   #+ Quick message shown when sleep was prevented by vehicle movement.
 
 	key[]: "stop_engine"
 	val[]: "Sử dụng phím sau để tắt động cơ:"
@@ -6467,6 +6590,9 @@
 
 	key[]: "diesel_price"
 	val[]: "Giá dầu Diesel"
+
+	key[]: "petrol_price"
+	val[]: "Giá xăng dầu"
 
 	key[]: "total_price"
 	val[]: "Tổng tiền là"
@@ -6859,7 +6985,7 @@
 	val[]: "Chế độ chụp ảnh" #+ Photo mode name, with each word capitalized
 
 	key[]: "landmark_word"
-	val[]: "Ảnh danh thắng" #+ How we call landmarks/photo sights/photo trophies
+	val[]: "Ảnh lưu niệm" #+ How we call landmarks/photo sights/photo trophies
 #@}
 
 #@}
@@ -7671,6 +7797,9 @@
 	key[]: "cn_drymilk"
 	val[]: "Sữa bột"
 
+	key[]: "cn_dry_van"
+	val[]: "Xe thùng kín"
+
 	key[]: "cn_drywall"
 	val[]: "Tấm thạch cao"
 
@@ -7736,6 +7865,9 @@
 
 	key[]: "cn_frozen_hake"
 	val[]: "Cá hồi đông lạnh"
+
+	key[]: "cn_fuel_tank"
+	val[]: "Bồn Nhiên liệu"
 
 	key[]: "cn_fuel_tanks"
 	val[]: "Bồn Nhiên liệu"
@@ -7826,6 +7958,9 @@
 
 	key[]: "cn_logs"
 	val[]: "Ghi chú"
+
+	key[]: "cn_low_bed_trailers"
+	val[]: "Rơ-moóc sàn thấp"
 
 	key[]: "cn_lpg"
 	val[]: "LPG"
@@ -7956,6 +8091,9 @@
 	key[]: "cn_red_bricks"
 	val[]: "Gạch"
 
+	key[]: "cn_refrigerated_trailer"
+	val[]: "Rơ-móc đông lạnh"
+
 	key[]: "cn_rice"
 	val[]: "Gạo"
 
@@ -7979,6 +8117,9 @@
 
 	key[]: "cn_scrap_metals"
 	val[]: "Kim loại phế liệu"
+
+	key[]: "cn_seed_containers"
+	val[]: "Container hạt giống"
 
 	key[]: "cn_silica"
 	val[]: "Silica"
@@ -8035,10 +8176,13 @@
 	val[]: "Máy kéo"
 
 	key[]: "cn_trailers"
-	val[]: "Rơ-moóc sàn thấp"
+	val[]: "Rơ-moóc"
 
 	key[]: "cn_train_parts"
 	val[]: "Trục bánh xe lửa"
+
+	key[]: "cn_truss"
+	val[]: "Container khung kèo"
 
 	key[]: "cn_tv"
 	val[]: "Tivi"
@@ -8669,6 +8813,15 @@
 	key[]: "bank_money"
 	val[]: "Số dư tài khoản: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
 
+	key[]: "bank_loan_unlock_requirement"
+	val[]: "Hãy thúc đẩy sự nghiệp của bạn để mở khóa khoản vay."
+
+	key[]: "bank_loan_locked_wrong_mode"
+	val[]: "Hãy thúc đẩy sự nghiệp của bạn trong $MODE$ để mở khóa khoản vay."
+
+    key[]: "bank_loan_in_debt"
+	val[]: "Bạn đang gánh quá nhiều nợ để có thể vay khoản này."
+
 #+ New loan confirmation window
 #@{
 
@@ -8743,6 +8896,9 @@
 	key[]: "bank_sell_report_garage"
 	val[]: "Ga ra ở thành phố $CITY$, giá còn lại: $MONEY$"
 
+	key[]: "bank_sell_report_car"
+	val[]: "Xe $NAME$, giá trị ước tính: $MONEY$" #+ Message used to show information about a car to sell to cover debt. Same style as bank_sell_report_trailer.
+
 #+ Mail screen
 #+
 #+ Shows incomming emails from bank and truck dealers.
@@ -8796,7 +8952,7 @@
 	val[]: "Tổng kết" #+ Header of the block containing summary informations about player's company.
 
 	key[]: "compman_na"
-	val[]: "N / A" #+ Shown if no data/asset is available in company management screens.
+	val[]: "N/A" #+ Shown if no data/asset is available in company management screens.
 
 	key[]: "compman_summary_drivers_count"
 	val[]: "Tài xế được thuê:"
@@ -8848,6 +9004,12 @@
 
 	key[]: "compman_qt_notruck"
 	val[]: "Bạn không thể nhận chở hàng nhanh khi bạn chưa có xe riêng!"
+
+	key[]: "compman_qt_nocar"
+	val[]: "Bạn không thể di chuyển nhanh vì bạn chưa có xe hơi!"
+
+	key[]: "compman_qt_nobus"
+	val[]: "Bạn không thể di chuyển nhanh vì bạn chưa có xe khách!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "Bạn có muốn di chuyển nhanh đến ga-ra đã chọn ?"
@@ -9179,7 +9341,7 @@
 #@{
 
 	key[]: "truckman_op_relocate"
-	val[]: "Định vị lại" #+ Moves truck to another garage.
+	val[]: "Di dời" #+ Moves truck to another garage.
 
 	key[]: "truckman_op_sell"
 	val[]: "Bán" #+ Sels the truck.
@@ -9216,13 +9378,13 @@
 #+ Message box shown when user requests to sell selected truck.
 #@{
 
-	key[]: "truckman_sell_t"
+	key[]: "vehicleman_sell_t"
 	val[]: "BÁN PHƯƠNG TIỆN"  #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_reallysell"
+	key[]: "vehicleman_msg_reallysell"
 	val[]: "Bạn có muốn bán chiếc xe $TRUCK$ với giá <br>$MONEY$?"
 
-	key[]: "truckman_msg_nosell"
+	key[]: "vehicleman_msg_nosell"
 	val[]: "Bạn không thể bán chiếc xe đang lái khi đang làm việc! Hãy hoàn thành công việc rồi hãy thử lại."
 
 	key[]: "truckman_total_restoration_t"
@@ -9242,10 +9404,10 @@
 #@{
 
 	key[]: "truckman_relocate_t"
-	val[]: "DI CHUYỂN XE TẢI" #+ Message box title. Please keep in upper case where possible.
+	val[]: "DI DỜI XE TẢI" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_norelocate"
-	val[]: "Bạn không thể tái phân công xe tải khi nó đang vận chuyển. Bạn đợi nó giao hàng xong đã."
+	val[]: "Bạn không thể giao lại xe tải cho người khác khi đang thực hiện công việc. Bạn phải hoàn thành việc giao hàng trước đã."
 
 	key[]: "truckman_conf_relocate"
 	val[]: "Bạn có chắc chắn muốn hoán đổi $TRUCK_SRC$ từ $CITY_SRC$ với $TRUCK_DST$ từ $CITY_DST$ không?<br>(Việc hoán đổi sẽ diễn ra sau khi cả hai xe tải hoàn thành nhiệm vụ của mình.)"
@@ -9254,10 +9416,10 @@
 #+ Message box shown when user requests to become driver of selected truck.
 #@{
 
-	key[]: "truckman_change_t"
+	key[]: "vehicleman_change_t"
 	val[]: "ĐỔI PHƯƠNG TIỆN" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nochange"
+	key[]: "vehicleman_msg_nochange"
 	val[]: "Bạn không được phép thay đổi phương tiện khi đang làm việc! Hãy hoàn thành công việc trước đã."
 
 	key[]: "truckman_conf_drive"
@@ -9294,7 +9456,7 @@
 	key[]: "truckman_copy_configuration_t"
 	val[]: "SAO CHÉP THIẾT LẬP" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nouse"
+	key[]: "vehicleman_msg_nouse"
 	val[]: "Không thể sử dụng phương tiện này làm nguồn cấu hình sao chép do thiếu dữ liệu, rất có thể là do đã gỡ bỏ MOD hoặc DLC.<br><br>Vui lòng cài đặt lại MOD/DLC."
 #@}
 
@@ -9348,7 +9510,7 @@
 	val[]: "Sửa tài xế"
 
 	key[]: "relocate_together"
-	val[]: "Di chuyển tài xế và xe tải được chỉ định của họ cùng nhau."
+	val[]: "Di dời tài xế và xe tải được chỉ định của họ cùng nhau."
 
 	key[]: "skill_in_training"
 	val[]: "<color value=@@clr_green@@>Kỹ năng đang đào tạo:"
@@ -9504,7 +9666,7 @@
 #@{
 
 	key[]: "driverman_relocate_t"
-	val[]: "DI CHUYỂN TÀI XẾ" #+ Message box title. Please keep in upper case where possible.
+	val[]: "DI DỜI TÀI XẾ" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "driverman_msg_norelocate"
 	val[]: "Bạn không thể di chuyển chỗ ở trong khi đang làm việc! Hãy hoàn thành việc giao hàng trước đã."
@@ -9675,6 +9837,9 @@
 	key[]: "td_msg_first_and_busy"
 	val[]: "Cảm ơn bạn đã mua chiếc xe tải đầu tiên từ chúng tôi!<br><br>Chúng tôi sẽ giao xe đến trụ sở của bạn, nơi bạn có thể đến nhận sau khi hoàn thành công việc hiện tại."
 
+	key[]: "td_first_truck_switch_mode_city"
+	val[]: "Cảm ơn bạn đã mua chiếc xe tải đầu tiên từ chúng tôi!<br><br>Bạn có muốn chuyển sang chiếc xe tải mới của mình tại <color value=@@clr_sel@@>$CITY$</color> không?"
+
 	key[]: "td_msg_bought_assigned"
 	val[]: "Cảm ơn bạn đã mua. Hãy tận hưởng chiếc xe mới!<br><br>Chúng tôi sẽ thu hồi xe cũ của bạn ở ga ra thành phố $CITY$."
 
@@ -9768,7 +9933,7 @@
 	val[]: "GHÉ THĂM ĐẠI LÝ XE TẢI"  #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "tdsel_visit_msg"
-	val[]: "Bạn có muốn chuyển đến $CITY$ và ghé cửa hàng bán xe tải $BRAND$"
+	val[]: "Bạn có muốn đến $CITY$ và ghé đại lý xe tải $BRAND$ chứ?"
 
 	key[]: "tdsel_novisit_msg"
 	val[]: "Rất tiếc, bạn không thể di chuyển nhanh trong khi đang làm việc! Vui lòng hoàn thành việc giao hàng trước đã."
@@ -10002,7 +10167,13 @@
 	val[]: "Bạn ở đây"
 
 	key[]: "mapl_convoy_member"
-	val[]: "Thành viên đoàn"
+	val[]: "Th.viên đoàn xe"
+
+	key[]: "mapl_company_vehicle"
+	val[]: "Xe đang thực hiện nhiệm vụ nhanh"
+
+	key[]: "mapl_my_vehicle"
+	val[]: "Xe đang thực hiện nhiệm vụ nhanh"
 
 	key[]: "mapl_quarry"
 	val[]: "Mỏ đá"
@@ -10016,7 +10187,7 @@
 	key[]: "mapl_undiscovered"
 	val[]: "Điểm chưa khám phá"
 
-	key[]: "mapl_viewpoint"
+	key[]: "mapl_viewpoint_visited"
 	val[]: "Thắng cảnh (đã đến)"
 
 	key[]: "mapl_viewpoint_unvisited"
@@ -10124,16 +10295,16 @@
 	val[]: "Bullet (c)  2003-2011 Erwin Coumans"
 
 	key[]: "credits_ogg"
-	val[]: "Quỹ Xiph.org"
+	val[]: "Xiph.org Foundation"
 
 	key[]: "credits_fmod"
-	val[]: "Được tạo bằng FMOD Studio bởi Firelight Technologies Pty Ltd."
+	val[]: "Made with FMOD Studio by Firelight Technologies Pty Ltd."
 
 	key[]: "credits_speedtree"
-	val[]: "Một số phần của phần mềm này sử dụng công nghệ SpeedTree® (©2024 do Unity Technologies SF cung cấp). Mọi quyền được bảo lưu."
+	val[]: "Portions of this software utilize SpeedTree® technology (©2024 provided by Unity Technologies SF). All rights reserved."
 
 	key[]: "jpeg_credits"
-	val[]: "Phần mềm này được phát triển một phần dựa trên công trình nghiên cứu của Nhóm JPEG độc lập."
+	val[]: "This software is based in part on the work of the Independent JPEG Group."
 #@}
 
 #+ Truck browser
@@ -10267,10 +10438,10 @@
 	val[]: "Tr" #+ Mega as factor of 1 million
 
 	key[]: "money_unit_giga"
-	val[]: "B"  #+ Money unit for giga (10^9).
+	val[]: "T"  #+ Money unit for giga (10^9).
 
 	key[]: "money_unit_tera"
-	val[]: "T" #+ Money unit for tera (10^12).
+	val[]: "NT" #+ Money unit for tera (10^12).
 
 #@}
 
@@ -10529,7 +10700,7 @@
 	val[]: "Hộp số 12 cấp" #+ Name of transmission accessory.
 
 	key[]: "available_at"
-	val[]: "Có sẵn từ" #+ Appended with translation of "level" and index of level the player needs to have before he can buy specified stuff. For example "Available from Level 16"
+	val[]: "Khả dụng từ" #+ Appended with translation of "level" and index of level the player needs to have before he can buy specified stuff. For example "Available from Level 16"
 
 	key[]: "hookup_lost"
 	val[]: "Bộ phận bạn đang muốn thay thế có gắn kèm các phụ kiện khác. Nếu bạn tiếp tục, chúng cũng sẽ bị tháo ra. Bạn có muốn tiếp tục không?"
@@ -10611,7 +10782,7 @@
 	val[]: "Đảo Síp"
 
 	key[]: "czech"
-	val[]: "Cộng Hòa Séc"
+	val[]: "Cộng Hòa Czech"
 
 	key[]: "denmark"
 	val[]: "Đan Mạch"
@@ -10936,6 +11107,9 @@
 	key[]: "desktop_tut_visit_directive"
 	val[]: "Truy cập $SCREEN_NAME$" #+ The $SCREEN_NAME$ text is a placeholder for different screen names in game and should be left intact
 
+	key[]: "desktop_tut_vehicle_mode"
+	val[]: "Sử dụng nút Chế độ để chuyển đổi giữa các chế độ màn hình khác nhau và các loại phương tiện khác nhau."
+
 	key[]: "desktop_tut_tour_welcome_t"
 	val[]: "CHÀO MỪNG"
 
@@ -10962,6 +11136,28 @@
 
 	key[]: "desktop_tut_tour_finish"
 	val[]: "Cảm ơn bạn đã xem xét bản cập nhật Desktop chúng tôi."
+
+
+	key[]: "desktop_vehicle_mode_reenable_hints_t"
+    val[]: "BẬT GỢI Ý"
+
+    key[]: "desktop_vehicle_mode_reenable_hints"
+    val[]: "Bạn đang bước vào một chế độ chơi mới và các gợi ý theo ngữ cảnh hiện đang bị tắt. Các gợi ý này có thể giúp bạn học cách chơi. Bạn có muốn bật lại chúng không?"
+
+	key[]: "desktop_tut_first_car_job_t"
+	val[]: "CHÀO MỪNG ĐẾN VỚI CHUYẾN DU NGOẠN"
+
+	key[]: "desktop_tut_first_car_job"
+	val[]: "Chế độ Lái xe (Car Mode) là trọng tâm trải nghiệm lái xe của bạn – hãy tậu chiếc xe mơ ước, trở thành tài xế giao hàng hoặc làm hướng dẫn viên du lịch và lên đường khám phá thế giới.<br><br>Để bắt đầu, hãy nhận Nhiệm vụ Nhanh (Quick Job) đầu tiên của bạn."
+
+	key[]: "desktop_tut_atlas"
+	val[]: "Atlas là hướng dẫn viên du lịch cá nhân giúp bạn lên kế hoạch cho chuyến đi đường bộ của mình."
+
+	key[]: "desktop_tut_car_eshop"
+	val[]: "Đại lý ô tô - mua xe của riêng bạn."
+
+	key[]: "desktop_tut_owned_car_job"
+	val[]: "Dispatch Market – trở thành tài xế giao hàng chuyên nghiệp sử dụng phương tiện cá nhân của bạn."
 #@}
 
 
@@ -12360,13 +12556,13 @@
 	val[]: "Ảnh của tôi" #+ 'My Images' tab button
 
 	key[]: "photo_album_landmarks_tab"
-	val[]: "Ảnh danh thắng" #+ 'Photo Trophies' tab button
+	val[]: "Ảnh lưu niệm" #+ 'Photo Trophies' tab button
 
 	key[]: "photo_album_viewpoints_tab"
 	val[]: "Điểm ngắm cảnh" #+ 'Viewpoints' tab button
 
 	key[]: "photo_album_pointsoi_tab"
-	val[]: "Các điểm tham quan" #+ 'Points of Interest' tab button
+	val[]: "Địa danh nổi tiếng" #+ 'Points of Interest' tab button
 
 	key[]: "photo_album_history_tab"
 	val[]: "Địa điểm lịch sử" #+ 'Historical Places' tab button
@@ -12483,7 +12679,7 @@
 #+ Photo mode window and settings.
 #@{
 	key[]: "lscr_browser_link"
-	val[]: "Hình ảnh nổi bật" #+ link button title
+	val[]: "Điểm nhấn hình ảnh" #+ link button title
 
 	key[]: "lscr_browser_help"
 	val[]: "Duyệt qua những bức anh tiêu biểu được chọn lọc từ World of Trucks và sử dụng làm màn hình chờ."
@@ -13098,13 +13294,13 @@
 #+ Loading screens browser
 #@{
 	key[]: "lscr_browser_t"
-	val[]: "TRÌNH DUYỆT ẢNH TIÊU BIỂU" #+ Title of the loading screens browser window
+	val[]: "TRÌNH DUYỆT ĐIỂM NHẤN HÌNH ẢNH" #+ Title of the loading screens browser window
 
 	key[]: "lscr_browser_no_data"
 	val[]: "Không có ảnh để trình chiếu" #+ Showed when there are no loading screens to show in the browser
 
 	key[]: "lscr_browser_no_online"
-	val[]: "Không thể trình chiếu ảnh. Trò chơi đang chạy ở chế độ ngoại tuyến." #+ Showed when game is running in offline mode
+	val[]: "Không thể hiển thị hình ảnh. Trò chơi đang chạy ở chế độ ngoại tuyến." #+ Showed when game is running in offline mode
 
 	key[]: "lscr_browser_disabled"
 	val[]: "Không thể trình chiếu bất kỳ ảnh nào. Thiết lập này đang bị tắt trong mục Tùy chọn." #+ Showed when the user disabled the online loading screens in options
@@ -13113,7 +13309,7 @@
 #+ Loading screen preview
 #@{
 	key[]: "lscr_preview_t"
-	val[]: "Xem trước những bức ảnh tiêu biểu" #+ Title of the loading screen preview window
+	val[]: "XEM TRƯỚC ĐIỂM NHẤN HÌNH ẢNH" #+ Title of the loading screen preview window
 
 	key[]: "view_wotr_profile"
 	val[]: "Xem trên World of Trucks" #+ Button opening image on WoTr
@@ -13123,10 +13319,10 @@
 #@{
 
 	key[]: "lscr_wotr"
-	val[]: "Hình ảnh tiêu biểu trên World of Truck - Tác giả:" #+ Shown on loading screen
+	val[]: "Điểm nhấn hình ảnh World of Trucks - tác giả:" #+ Shown on loading screen
 
 	key[]: "allow_loading_screens"
-	val[]: "Bật tính năng những bức ảnh tiêu biểu(Image Spotlight)? <br><br> Bạn có thể xem những bức ảnh phong cảnh tuyệt vời được chọn lọc từ World of Trucks để sử dụng làm màn hình tải game." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
+	val[]: "Bật tính năng Điểm nhấn hình ảnh?<br><br>Bạn sẽ có thể xem qua tuyển tập những hình ảnh ấn tượng được chọn lọc từ World of Trucks để sử dụng làm Màn hình tải." #+ Text shown in a message box when the game asks the player if he wants to enable the online loading screens
 
 	key[]: "content_change_detected"
 	val[]: "Đã phát hiện thay đổi nội dung. Đang cập nhật dữ liệu điều hướng. Vui lòng chờ..." #+ Shown on loading screen
@@ -13238,7 +13434,7 @@
 	val[]: "Công việc trên World of Trucks đã được trì hoãn." #+ Icons with this text appears on the desktop when online job in suspended / paused
 
 	key[]: "economy_sync_failed"
-	val[]: "Mất kết nối với máy chủ World of Trucks.<br>Không thể lưu lại quá trình của bạn." #+ Advisor message when game unable establish server connection to save the progress
+	val[]: "Kết nối World of Trucks bị mất.<br>Không thể lưu tiến trình chơi." #+ Advisor message when game unable establish server connection to save the progress
 
 	key[]: "suspend_online_job"
 	val[]: "Công việc hiện tại trong World of Trucks cần được tạm dừng để bạn có thể nhận công việc thứ hai.<br><br>Bạn có thể tiếp tục hoàn thành hợp đồng World of Trucks sau khi hoàn thành công việc thứ hai.<br><br>Bắt đầu công việc khác ngay bây giờ?" #+ Warning message to inform that player about to suspend online job in order to take offline one.
@@ -13399,16 +13595,16 @@
 	key[]: "quick_travel_cond_fix_cables"
 	val[]: "Xe tải của bạn không đủ điều kiện để di chuyển nhanh. Hãy sửa chữa dây cáp rơ-moóc."
 
-	key[]: "quick_travel_cond_repair_truck"
+	key[]: "quick_travel_cond_repair_vehicle"
 	val[]: "Xe của bạn hiện không đủ điều kiện để di chuyển nhanh. Vui lòng đến trung tâm dịch vụ hoặc gọi điện để được hỗ trợ."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "Xe moóc của bạn hiện không đủ điều kiện để di chuyển nhanh. Vui lòng đến trung tâm dịch vụ hoặc gọi điện để được hỗ trợ."
 
-	key[]: "quick_travel_cond_truck_fuel"
+	key[]: "quick_travel_cond_vehicle_fuel"
 	val[]: "Xe của bạn hiện không đủ điều kiện để di chuyển nhanh. Vui lòng đến trung tâm dịch vụ hoặc gọi điện để được hỗ trợ."
 
-	key[]: "quick_travel_cond_truck_fallen"
+	key[]: "quick_travel_cond_vehicle_fallen"
 	val[]: "Xe của bạn hiện không đủ điều kiện để di chuyển nhanh. Hãy gọi điện để được hỗ trợ."
 
 	key[]: "quick_travel_cond_trailer_fallen"
@@ -13436,7 +13632,7 @@
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "Gói DLC (bản mở rộng chính thức) bắt buộc $DEPENDENCY_NAME$ bị thiếu. Để file lưu này hoạt động chính xác, gói DLC này cần phải có và được kích hoạt trên máy tính này. Bạn cần khắc phục sự cố trước khi có thể tải file lưu này." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "Gói DLC (bản mở rộng chính thức) bắt buộc $DEPENDENCY_NAME$ bị thiếu. Để file lưu này hoạt động chính xác, gói DLC này cần phải có và được kích hoạt trên hệ thống này. Bạn cần khắc phục sự cố trước khi có thể tải file lưu này." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
 	val[]: "Gói DLC tùy chọn (bản mở rộng chính thức của trò chơi) $DEPENDENCY_NAME$ bị thiếu. Nếu bạn không mong đợi điều này, vui lòng kiểm tra trạng thái của DLC.<br><br>Nếu không, bạn vẫn có thể tải file lưu, tuy nhiên một số chức năng do DLC cung cấp có thể bị mất." #+ Information showed when dependency of type optional DLC is missing.
@@ -13481,7 +13677,7 @@
 	val[]: "DLC tùy chọn" #+ DLC that can be removed or disabled.
 
 	key[]: "required_dlc"
-	val[]: "DLC bắt buộc" #+ DLC that is required to load save that is depending on it.
+	val[]: "Yêu cầu DLC" #+ DLC that is required to load save that is depending on it.
 #@}
 
 #+ Steam Workshop wait dialogs.
@@ -13522,6 +13718,27 @@
 
 	key[]: "cargo_market_job_resumed"
 	val[]: "Công việc Thị trường hàng hóa đang thực hiện."
+#@}
+
+#+ Job cancellation
+#@{
+	key[]: "drive_active_job_t"
+	val[]: "CÔNG VIỆC ĐANG TIẾN HÀNH"
+
+	key[]: "drive_active_job"
+	val[]: "Bạn có một công việc đang hoạt động ở chế độ khác.<br offset=10>Bạn có thể hủy bỏ nó hoặc hiển thị chi tiết trong $VEHICLE$ @@vehicle_mode@@.<br><br><br>$ADDITIONAL_INFO$"
+
+	key[]: "drive_active_job_yes"
+	val[]: "@@abort_job@@"
+
+	key[]: "drive_active_job_no"
+	val[]: "Đổi chế độ"
+
+	key[]: "cancel_cur_job_warning"
+	val[]: "Bạn sẽ phải trả một khoản phí phạt là $MONEY$ nếu bỏ việc."
+
+	key[]: "cancel_cur_car_job_warning"
+	val[]: "Việc bỏ công việc sẽ khiến bạn phải chịu khoản phạt $MONEY$ và mất chuỗi giao hàng hoàn hảo hiện tại."
 #@}
 
 #+ Trailer coupling phases info messages, shown in route advisor during coupling/decoupling.
@@ -13579,14 +13796,14 @@
 	key[]: "no_accessory_found"
 	val[]: "Không thể tìm ra thứ bạn đang cần" #+ Text shown when there are no accessories found by filters.
 
-	key[]: "no_truck_found"
-	val[]: "Không tìm thấy xe phù hợp với bộ lọc của bạn" #+ Text shown when there are no trucks found by filters.
+	key[]: "no_vehicle_found"
+	val[]: "Không tìm thấy xe phù hợp với bộ lọc của bạn" #+ Text shown when there are no vehicles found by filters.
 #@}
 
 #+ Strings related to job filtering feature
 #@{
 	key[]: "no_job_found"
-	val[]: "Không tìm thấy việc làm phù hợp với bộ lọc hàng hóa hoặc kỹ năng hiện tại của bạn." #+ Text shown when there are no jobs found by filters.
+	val[]: "Không tìm thấy việc làm phù hợp với bộ lọc hoặc kỹ năng hiện tại của bạn" #+ Text shown when there are no jobs found by filters.
 #@}
 
 #+ Game demo related strings.
@@ -14169,16 +14386,16 @@
 	val[]: "Rơ-moóc cũ của bạn đã được đậu trong gara và rơ-moóc mới đã được gắn vào." #+ Success message when trailer swap succeeeds. (while swapping trailers in garage)
 
 	key[]: "trailerman_trailer_relocated"
-	val[]: "Rơ-moóc đã chọn đã được di chuyển thành công đến gara của bạn ở $CITY$." #+ Message shown after trailer relocation.
+	val[]: "Rơ-moóc đã chọn đã được di dời thành công đến gara của bạn ở $CITY$." #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_confirm_relocate"
-	val[]: "Bạn thực sự muốn di chuyển chiếc rơ-moóc $TRAILER$ đến gara của mình ở thành phố $CITY$?" #+ Message shown after trailer relocation.
+	val[]: "Bạn thực sự muốn di dời chiếc rơ-moóc $TRAILER$ đến gara của mình ở thành phố $CITY$?" #+ Message shown after trailer relocation.
 
 	key[]: "trailerman_swap_blocked"
 	val[]: "Để hoán đổi, hãy đến gara của rơ-moóc" #+ Tooltip message shown when player is not able to swap his currently attached trailer with the currently previewed trailer in trailer manager because he is not in the garage where previewed trailer is stored at.
 
 	key[]: "trailerman_relocate_blocked"
-	val[]: "Để di chuyển rơ-moóc, nó phải ở trong gara." #+ Tooltip message shown when player is not able to relocate trailer because he is currently using it.
+	val[]: "Để di dời rơ-moóc, nó phải ở trong gara." #+ Tooltip message shown when player is not able to relocate trailer because he is currently using it.
 
 	key[]: "company_job_own_trailer_warning"
 	val[]: "Vì anh/chị đã mang theo rơ-moóc đến kho này, nên cần phải vận chuyển nó đến nhà để xe ở $CITY$ trước khi nhận công việc này.<br><br>Anh/chị có muốn bỏ rơ-moóc hiện tại và nhận công việc này không?" #+ Alert showed when player tries to take company job (with company trailer) while having own trailer attached.
@@ -14315,6 +14532,9 @@
 	key[]: "garage_upgrade_locked_tooltip"
 	val[]: "Garage này đã được nâng cấp tối đa." #+ Tooltip shown when player hovers over upgrade button.
 
+	key[]: "garage_upgrade_locked_vehicle_tooltip"
+	val[]: "Bạn không thể nâng cấp gara vì xe của bạn đang đậu quá gần gara." #+ Tooltip shown when garage cannot be upgraded due to player's vehicles being too close to upgraded garage.
+
 	key[]: "driverman_stats_trailer"
 	val[]: "Rơ-moóc hiện tại:" #+ Title of the current trailer statistics.
 
@@ -14360,7 +14580,7 @@
 	key[]: "link_locked_msg_trailer_upgrades"
 	val[]: "Hiện tại chưa có bản nâng cấp rơ-moóc mới nào."
 
-	key[]: "link_locked_msg_truck_diag"
+	key[]: "link_locked_msg_vehicle_diag"
 	val[]: "Để truy cập vào chức năng Chẩn đoán, trước tiên bạn phải được chỉ định một phương tiện."
 
 	key[]: "link_locked_msg_truck_dealer_map"
@@ -15395,12 +15615,12 @@
 	val[]: "Không có định vị dẫn đường giữa các công ty được chọn." #+ internal error message
 
 	key[]: "mp_job_missing_cargo"
-	val[]: "Không thể tìm thấy hàng cho công việc. Các công ty không có hàng để vận chuyển."
+	val[]: "Không tìm được hàng hóa cho công việc này. Các công ty không có hàng hóa nào để vận chuyển qua lại giữa họ."
 
 	key[]: "mp_job_wrong_cargo"
 	val[]: "Bạn không có rơ-moóc tương thích cho hàng hóa hiện tại."
 
-	key[]: "mp_job_missing_truck"
+	key[]: "mp_job_missing_vehicle"
 	val[]: "Chỉ có thể thực hiện bằng phương tiện cá nhân."
 
 	key[]: "mp_job_missing_trailer"
@@ -15555,7 +15775,7 @@
 	val[]: "Sảnh Đoàn xe"
 
 	key[]: "parameter_uneeded"
-	val[]: "Không có sự ưu tiên nào"
+	val[]: "Tùy ý"
 
 	key[]: "parameter_enabled"
 	val[]: "Đã bật"
@@ -15672,7 +15892,7 @@
 	val[]: "Tạo Đoàn xe riêng"
 
 	key[]: "join_selected_convoy"
-	val[]: "Tham gia đoàn xe"
+	val[]: "Tham gia Đoàn xe"
 
 	key[]: "join_convoy_t"
 	val[]: "THAM GIA ĐOÀN XE"
@@ -15974,14 +16194,20 @@
 	key[]: "mp_view_job"
 	val[]: "Xem và ứng tuyển cùng một công việc"
 
+	key[]: "mp_car_quick_job"
+	val[]: "Chuyến phượt nhanh"
+
+	key[]: "mp_car_dispatch_job"
+	val[]: "Chợ nhận đơn Chuyến phượt"
+
 	key[]: "mp_truck_idle"
 	val[]: "Chờ"
 
 	key[]: "mp_truck_on_job"
-	val[]: "Đang làm việc"
+	val[]: "Công việc hiện không có sẵn"
 
 	key[]: "mp_truck_on_convoy"
-	val[]: "Trong một đoàn xe"
+	val[]: "Có việc làm"
 
 	key[]: "mp_fetching_from_server"
 	val[]: "Đang tải dữ liệu từ máy chủ..."
@@ -16004,7 +16230,7 @@
 	key[]: "mp_warning_close_to_conflicted_company_teleport"
 	val[]: "Bạn cần kích hoạt một công ty gần xe tải hoặc rơ-moóc của mình để tham gia phiên này.<br>Để tránh bất kỳ sự cố nào, vui lòng di chuyển xe tải và rơ-moóc của bạn ra xa công ty hơn, nếu không công việc hiện tại của bạn sẽ bị hủy và bạn sẽ được dịch chuyển đến dịch vụ gần nhất.<br><br>Bạn có muốn tiếp tục không?"
 
-	key[]: "mp_warning_truck_before_quick_job_close_cancel_teleport"
+	key[]: "mp_warning_vehicle_close_cancel_teleport"
 	val[]: "Một công ty gần nơi bạn để xe tải hoặc xe kéo trước khi nhận nhiệm vụ nhanh cần được kích hoạt để bạn có thể tham gia phiên này.<br>Để tránh bất kỳ sự cố nào khi bạn quay lại xe tải, nhiệm vụ nhanh của bạn cần được hủy bỏ và bạn sẽ được dịch chuyển đến dịch vụ gần nhất.<br><br>Bạn có muốn tiếp tục không?"
 
 	key[]: "mp_warning_company_with_selected_job_sleeping"
@@ -16017,7 +16243,7 @@
 	val[]: "Công việc của bạn đã bị hủy vì đang giao hàng cho một công ty không hoạt động trong phiên này."
 
 	key[]: "mp_warning_load_job_canceled_special"
-	val[]: "Công việc của bạn đã bị hủy vì các công việc đặc biệt không được hỗ trợ trong chế độ hộ tống."
+	val[]: "Công việc của bạn đã bị hủy vì trong đoàn xe các công việc đặc biệt không được hỗ trợ."
 
 	key[]: "mp_warning_load_job_unavailable"
 	val[]: "Công việc bạn đã chọn hiện không còn khả dụng vì đó là công ty không hoạt động trong kỳ này."
@@ -16039,6 +16265,12 @@
 
 	key[]: "mp_error_skills"
 	val[]: "Bạn cần đạt được các kỹ năng sau:"
+
+	key[]: "mp_error_car_courier_onboarding"
+	val[]: "Bạn cần hoàn thành $ONBOARDING$ chuyến giao hàng đầu tiên và đạt điểm đánh giá yêu cầu ($REQUIRED$) để đủ điều kiện nhận công việc này." #+ $ONBOARDING$ is replaced with a number. $REQUIRED$ is replaced with a courier rating. Example: You need to complete your first 5 deliveries and reach the required courier rating (4.6) to be eligible for this job.
+
+	key[]: "mp_error_car_courier_rating"
+	val[]: "Điểm đánh giá người giao hàng của bạn ($CURRENT$) thấp hơn mức tối thiểu yêu cầu ($REQUIRED$) cho công việc này."  #+ $CURRENT$ and $REQUIRED$ are replaced with a courier rating. Example: Your courier rating (3.3) is below the minimum required (4.6) for this job.
 
 	key[]: "mp_error_dlc"
 	val[]: "Bạn đang thiếu DLC cần cho công việc này."
@@ -16117,13 +16349,13 @@
 #+ Multiplayer widget.
 #@{
 	key[]: "mp_session_widget_hint"
-	val[]: "Xem tất cả thành viên trong phiên Đoàn xe hiện tại của bạn.<br>Duyệt qua các Convoy hiện tại, tham gia cùng bạn bè và hoàn thành các nhiệm vụ chung."
+	val[]: "Xem tất cả thành viên trong phiên Đoàn xe hiện tại của bạn.<br>Duyệt qua các đoàn xe hiện tại, tham gia cùng bạn bè và hoàn thành các nhiệm vụ chung."
 
 	key[]: "mp_session"
 	val[]: "Phiên:"
 
 	key[]: "convoy_members"
-	val[]: "Thành viên đoàn xe:"
+	val[]: "Th.viên đoàn xe:"
 #@}
 
 #+ Multiplayer sidebar.
@@ -16221,13 +16453,13 @@
 	key[]: "job_equipment"
 	val[]: "Hình thức làm việc:"
 
-	key[]: "equipment_provided_truck_and_trailer"
+	key[]: "equipment_provided_vehicle_and_trailer"
 	val[]: "Xei và rơ móc được cấp sẵn"
 
-	key[]: "equipment_owned_truck_provided_trailer"
+	key[]: "equipment_owned_vehicle_provided_trailer"
 	val[]: "Xe của bạn"
 
-	key[]: "equipment_owned_truck_and_trailer"
+	key[]: "equipment_owned_vehicle_and_trailer"
 	val[]: "Xe và rơ-moóc của bạn"
 
 	key[]: "mp_job_quick_travel_message"
@@ -16306,13 +16538,13 @@
 #+ Multiplayer convoy concluded screen.
 #@{
 	key[]: "convoy_concluded_t"
-	val[]: "TỔNG KẾT ĐOÀN XE"
+	val[]: "ĐOÀN XE ĐÃ KẾT THÚC"
 
 	key[]: "convoy_concluded_info"
 	val[]: "Phiên Đoàn xe của bạn đã kết thúc. Quá trình đánh giá bao gồm tình trạng tài chính, lịch sử công việc, kỹ năng, thăng tiến, cấu hình xe và rơ-moóc đã mua cũng như thiết bị và tiến độ của tài xế công ty bạn."
 
 	key[]: "convoy_concluded_warning"
-	val[]: "Chọn chấp nhận tiến độ để tiếp tục với tất cả tiến độ thu thập được. Hoặc bạn có thể khôi phục về bản tự động lưu trước phiên này hoặc tải lại bất kỳ bản lưu nào khác."
+	val[]: "Chọn \"Chấp nhận tiến độ\" để tiếp tục với tất cả tiến độ đã đạt được. Hoặc bạn có thể quay lại bản lưu tự động trước phiên này hoặc tải bất kỳ bản lưu nào khác."
 
 	key[]: "convoy_reject_data_merge"
 	val[]: "Hoàn tác tiến trình"
@@ -16321,7 +16553,7 @@
 	val[]: "Tải bản lưu"
 
 	key[]: "convoy_confirm_data_merge"
-	val[]: "Chấp nhận tiến độ"
+	val[]: "Chấp nhận tiến trình"
 
 	key[]: "convoy_concluded_reject_t"
 	val[]: "HOÀN TÁC TIẾN TRÌNH"
@@ -16347,10 +16579,10 @@
 	val[]: "Văn phòng tuyển dụng đã khám phá"
 
 	key[]: "convoy_concluded_dealers_discovered"
-	val[]: "Cửa hàng xe đã được khám phá"
+	val[]: "Các đại lý xe đã khám phá"
 
 	key[]: "convoy_concluded_explored_ratio"
-	val[]: "Những đường đã khám phá"
+	val[]: "Đường đã khám phá"
 
 	key[]: "convoy_concluded_money_earned"
 	val[]: "Tiền kiếm được"
@@ -16672,7 +16904,7 @@
 #@}
 
 	key[]: "stop_to_access_screen"
-	val[]: "Vui lòng dừng lại để truy cập màn hình." #+  Message that appears in the middle of the screen during a convoy session when the player is driving and is trying to open a menu window.
+	val[]: "Hãy dừng xe lại trước để truy cập màn hình." #+  Message that appears in the middle of the screen during a convoy session when the player is driving and is trying to open a menu window.
 
 	key[]: "close_mp_to_edit_profile"
 	val[]: "Để sửa hồ sơ của bạn, hãy rời khỏi phiên Đoàn xe hiện tại."
@@ -17263,7 +17495,7 @@
 	val[]: "Thời gian tốn" #+ Delivery log table header for delivery duration.
 
 	key[]: "career_progres_delivery_duration_na"
-	val[]: "Không rõ" #+ Delivery log duration value if value isn't available.
+	val[]: "N/A" #+ Delivery log duration value if value isn't available.
 #@}
 
 #+ Career progress stats tab.
@@ -17305,7 +17537,7 @@
 	val[]: "Khám phá bản đồ"
 
 	key[]: "career_progress_stats_explore_visited"
-	val[]: "Đã  khám phá"
+	val[]: "Đã khám phá"
 
 	key[]: "career_progress_stats_explore_gallery"
 	val[]: "Thư viện"
@@ -17322,10 +17554,10 @@
 	key[]: "career_progress_stats_discovered_countries_count"
 	val[]: "Bang đã ghé"
 
-	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots a cargo was delivered from or to and number of all depots.
+	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots cargo was delivered from or to and number of all depots.
 	val[]: "Các kho hàng phục vụ"
 
-	key[]: "career_progress_stats_companies_used_count" #+ Number of companies a cargo was delivered from or to and number of all companies.
+	key[]: "career_progress_stats_companies_used_count" #+ Number of companies cargo was delivered from or to and number of all companies.
 	val[]: "Các công ty được phục vụ"
 
 	key[]: "career_progress_stats_truck_dealer_discovered_count"
@@ -17338,7 +17570,7 @@
 	val[]: "Các điểm quan sát đã ghé thăm"
 
 	key[]: "career_progress_stats_captured_landmark_count"
-	val[]: "Thành tựu ảnh (đã chụp)"
+	val[]: "Ảnh lưu niệm đã chụp"
 
 	key[]: "career_progress_stats_experience"
 	val[]: "Kinh nghiệm lái xe"
@@ -17485,7 +17717,7 @@
 	val[]: "NHẬT KÝ THAY ĐỔI" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "patch_notes_old_data_warning"
-	val[]: "Kết nối đến máy chủ thất bại, thông tin có thể đã lỗi thời."
+	val[]: "Kết nối đến máy chủ trò chơi thất bại, thông tin có thể đã lỗi thời."
 
 	key[]: "patch_notes_download_confirm"
 	val[]: "Bạn có muốn tải xuống thông tin cập nhật không?<br><br>Bật tùy chọn tin tức để tải xuống tự động."
@@ -17537,6 +17769,36 @@
 
 	key[]: "desktop_menu_category_leave"
 	val[]: "Rời khỏi"
+#@}
+
+#+ Vehicle mode switch
+#@{
+	key[]: "vehicle_mode"
+	val[]: "Đổi xe"
+
+	key[]: "truck_mode"
+	val[]: "Mode Xe tải"
+
+	key[]: "truck_mode_help"
+	val[]: "Nhận các công việc khác nhau với xe tải"
+
+	key[]: "bus_mode"
+	val[]: "Mode Xe khách"
+
+	key[]: "bus_mode_help"
+	val[]: "Trải nghiệm một vai trò khác với tư cách là tài xế xe khách"
+
+	key[]: "bus_mode_locked_tooltip"
+	val[]: "Để truy cập Chế độ Huấn luyện viên, bạn phải hoàn thành công việc đầu tiên của mình"
+
+	key[]: "car_mode"
+	val[]: "Mode Ô tô"
+
+	key[]: "car_mode_help"
+	val[]: "Đảm nhận các công việc khác nhau và khám phá thế giới bằng xe hơi"
+
+	key[]: "car_mode_locked_tooltip"
+	val[]: "Để truy cập Chế độ ô tô, bạn phải hoàn thành công việc đầu tiên của mình"
 #@}
 
 #+ Menu upper bar
@@ -17596,7 +17858,7 @@
 	val[]: "Dịch vụ di chuyển nhanh đến một thành phố đã được khám phá trước đó, với một khoản phí."
 
 	key[]: "convoy_sessions_desc" # - tooltip for explaining what the Convoy Lobby (searching and creating sessions) is - feature is active
-	val[]: "Tìm kiếm, duyệt và lọc các phiên họp nhóm trực tuyến để tham gia hoặc tạo và tổ chức phiên họp của riêng bạn cho người khác."
+	val[]: "Tìm kiếm, duyệt và lọc các phiên họp nhóm trực tuyến để tham gia hoặc tạo và tổ chức phiên của riêng bạn cho người khác."
 
 	key[]: "mail_desc" # - tooltip for explaining what mail is - feature is active
 	val[]: "Hộp thư đến của bạn sẽ nhận được các tin nhắn từ thế giới kinh doanh, ngân hàng và thông báo tuyển dụng nhân viên mới của công ty."
@@ -17629,19 +17891,19 @@
 	val[]: "Xem lại tiến trình sự nghiệp, số liệu thống kê và các công việc đã hoàn thành gần đây của bạn."
 
 	key[]: "link_locked_msg_current_session" # - tooltip for when the Active convoy is not yet unlocked
-	val[]: "Để truy cập Chế độ Đoàn xe đang hoạt động, trước tiên bạn cần tham gia một phiên đoàn xe."
+	val[]: "Để truy cập Đoàn xe hiện tại, trước tiên bạn cần tham gia một phiên đoàn xe."
 #@}
 
 #+ Intro Scene. Only translate into officially supported languages.
 #@{
 	key[]: "health_warning"
-	val[]: "Cảnh báo sức khỏe"
+	val[]: "Health warning"
 
 	key[]: "health_warning_description"
-	val[]: "Một số ít người dùng có thể dễ bị co giật động kinh hoặc mất ý thức khi tiếp xúc với một số loại ánh sáng nhấp nháy hoặc các kiểu ánh sáng nhất định. Những người này có thể bị co giật khi xem một số hình ảnh hoặc chơi trò chơi điện tử. Nếu bạn hoặc bất kỳ ai trong gia đình bạn đã từng có các triệu chứng liên quan đến động kinh (co giật hoặc mất ý thức) khi tiếp xúc với ánh sáng nhấp nháy, vui lòng tham khảo ý kiến chuyên gia y tế và thực hiện tất cả các biện pháp phòng ngừa cần thiết trước khi chơi trò chơi.<br offset=20>Nếu bạn hoặc con bạn gặp bất kỳ triệu chứng nào sau đây khi chơi bất kỳ trò chơi điện tử nào: chóng mặt, thay đổi thị lực, co giật mắt hoặc cơ, mất ý thức, mất phương hướng, co giật, cử động không tự chủ, hãy ngừng sử dụng trò chơi điện tử ngay lập tức và tham khảo ý kiến chuyên gia y tế."
+	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "Tất cả tên thương hiệu, nhãn hiệu, nhãn hiệu đã đăng ký, logo và biểu tượng trên các phương tiện trong trò chơi đều thuộc sở hữu của chủ sở hữu hợp pháp. Được sử dụng với sự cho phép. International® và tất cả các nhãn hiệu International Truck là nhãn hiệu được cấp phép bởi INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. Các nhãn hiệu và thiết kế VOLVO là quyền đã đăng ký hoặc được cấp phép cho AB Volvo Group và được sử dụng theo giấy phép. Các nhãn hiệu và thiết kế MACK là quyền đã đăng ký của AB Volvo Group và được sử dụng theo giấy phép. Western Star là nhãn hiệu của Daimler Trucks North America LLC và được sử dụng theo giấy phép của SCS Software s.r.o. Freightliner là nhãn hiệu của Daimler Trucks North America LLC và được sử dụng theo giấy phép của SCS Software s.r.o."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
 #@}
 
 #+ Save manager errors
@@ -17687,7 +17949,7 @@
 	key[]: "time_skip_hours"
 	val[]: "Số giờ cần bỏ qua"
 
-	
+
 	key[]: "time_skip_current_time"
 	val[]: "Thời gian hiện tại"
 
@@ -17707,7 +17969,7 @@
 	key[]: "time_skip_charging_title"
 	val[]: "Sạc pin"
 
-	
+
 	key[]: "time_skip_to_next_mandatory_break_ok"
 	val[]: "trong $TIME$"
 
@@ -17738,7 +18000,7 @@
 	key[]: "time_skip_rest_full"
 	val[]: "Đã nghỉ ngơi đầy đủ"
 
-	
+
 	key[]: "time_skip_tooltip_mandatory_break_not_met"
 	val[]: "Thời gian nghỉ này không đáp ứng yêu cầu nghỉ giải lao bắt buộc. Bạn còn $LEFT_TIME$ thời gian nữa mới đến giờ nghỉ giải lao bắt buộc tiếp theo."
 
@@ -17747,18 +18009,18 @@
 
 	key[]: "time_skip_tooltip_mandatory_break_cont"
 	val[]: "Cứ mỗi <color value=@@clr_sel@@>$DRIVE_TIME$</color> giờ lái xe, bạn phải nghỉ bắt buộc ít nhất <color value=@@clr_sel@@>$BREAK_TIME$</color> giờ để tránh bị phạt."
-	
+
 
 	key[]: "time_skip_tooltip_job_on_time"
 	val[]: "Sau khi nghỉ ngơi và cộng thêm thời gian lái xe ước tính đến đích, bạn sẽ còn lại <color value=@@clr_sel@@>$LEFT_TIME$</color> thời gian làm việc."
-	
+
 	key[]: "time_skip_tooltip_job_late"
 	val[]: "Sau khi nghỉ ngơi và tính cả thời gian lái xe ước tính đến điểm đến, việc giao hàng sẽ bị trễ <color value=@@clr_red@@>$LEFT_TIME$</color>."
 
 	key[]: "time_skip_max_sleep_reached"
 	val[]: "<color value=@@clr_red@@>Bạn sẽ được nghỉ ngơi đầy đủ</color>"
 
-# shown in job detail widget and pause screen	
+# shown in job detail widget and pause screen
 	key[]: "job_eta"
 	val[]: "Thời gian dự kiến đến"
 
@@ -17792,9 +18054,1460 @@
 
 	key[]: "rest_state_simulation"
 	val[]: "Mô phỏng trạng thái nghỉ"
-	
+
 	key[]: "rest_state_simulation_op_tooltip"
 	val[]: "Khi được kích hoạt, bạn sẽ cảm thấy mệt mỏi theo thời gian.<br><br>Bạn cần nghỉ ngơi để hồi phục."
 #@}
 
+#+ Road trip localization.
+#@{
+	key[]: "poi_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$ <color value=@@clr_txt@@>ĐÃ KHÁM PHÁ" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_msg"
+	val[]: "Nhấn phím sau để kích hoạt Bảng Thông tin Du lịch:"
+#@}
+
+
+#+ Road Trip Desktop specifics
+#@{
+	key[]: "desktop_menu_category_car_company"
+	val[]: "Gara"
+
+#@}
+
+#+ Car job localization.
+#@{
+	key[]: "car_job_type_delivery"
+	val[]: "Công việc giao nhận"
+
+	key[]: "car_job_type_driving"
+	val[]: "Tài xế theo yêu cầu"
+
+	key[]: "car_quick_job_desc"
+	val[]: "Trở thành tài xế giao hàng chuyên nghiệp với xe được cung cấp sẵn. Chỉ cần chọn đơn hàng và bắt đầu giao."
+
+	key[]: "car_dispatch_job_resumed"
+	val[]: "Công việc điều phối đang được thực hiện."
+
+	key[]: "customer_prio_info"
+	val[]: "Ưu tiên kh.hàng"
+
+	key[]: "cargo_type_prio_cargo"
+	val[]: "Xếp dỡ hàng hóa"
+
+	key[]: "cargo_type_prio_time"
+	val[]: "Quản lý thời gian"
+
+	key[]: "cargo_type_prio_vehicle"
+	val[]: "Tình trạng xe"
+
+	key[]: "cargo_type_prio_none"
+	val[]: "Không ưu tiên"
+
+	key[]: "cargo_attributes"
+	val[]: "Đặc tính"
+
+	key[]: "cargo_type_cstandard"
+	val[]: "Giao hàng Tiêu chuẩn"
+
+	key[]: "cargo_type_cexpress"
+	val[]: "Khung th.gian giao hàng nghiêm ngặt"
+
+	key[]: "cargo_type_rt_highvalue"
+	val[]: "Có giá trị lớn"
+
+	key[]: "cargo_type_rt_fragile"
+	val[]: "Dễ vỡ"
+
+	key[]: "provided_vehicle"
+	val[]: "Phương tiện được cung cấp"
+
+	key[]: "cjob_arrived"
+	val[]: "Đến"
+
+	key[]: "customer_satisfaction_t"
+	val[]: "Độ hài lòng của khách hàng"
+
+	key[]: "provisional_reward"
+	val[]: "Phần thưởng tạm tính"
+
+	key[]: "customer_satisfaction"
+	val[]: "Độ hài lòng của khách hàng"
+
+	key[]: "customer_rejected_delivery"
+	val[]: "Giao hàng bị từ chối"
+
+	key[]: "cjob_rating_0"
+	val[]: "Thiếu chuyên nghiệp"
+
+	key[]: "cjob_rating_1"
+	val[]: "Rất kém"
+
+	key[]: "cjob_rating_2"
+	val[]: "Dưới tr.bình"
+
+	key[]: "cjob_rating_3"
+	val[]: "Đạt yêu cầu"
+
+	key[]: "cjob_rating_4"
+	val[]: "Tốt"
+
+	key[]: "cjob_rating_5"
+	val[]: "Hoàn hảo"
+
+	key[]: "cjob_default_negative_note_time"
+	val[]: "Thời gian đến bất ngờ"
+
+	key[]: "cjob_default_neutral_note_time"
+	val[]: "Thời gian đến chấp nhận được"
+
+	key[]: "cjob_default_positive_note_time"
+	val[]: "Đúng lúc"
+
+	key[]: "cjob_default_negative_note_cargo"
+	val[]: "Hàng hư hỏng"
+
+	key[]: "cjob_default_neutral_note_cargo"
+	val[]: "Dịch vụ công bằng"
+
+	key[]: "cjob_default_positive_note_cargo"
+	val[]: "Giao hàng không hư hại"
+
+	key[]: "cjob_default_negative_note_cargo_1"
+	val[]: "Xử lý bất cẩn"
+
+	key[]: "cjob_default_negative_note_vehicle"
+	val[]: "Diện mạo thiếu chuyên nghiệp"
+
+	key[]: "cjob_default_neutral_note_vehicle"
+	val[]: "Diện mạo đạt yêu cầu"
+
+	key[]: "cjob_default_positive_note_vehicle"
+	val[]: "Xe trong tình trạng hoàn hảo"
+
+	key[]: "no_car_job_found"
+	val[]: "Không tìm thấy công việc nào phù hợp với các bộ lọc đã chọn"
+
+	key[]: "hint_open_global_dispatch_market"
+	val[]: "Hiện tại, bạn chỉ đang xem một số lượng hạn chế các chào giá trên thị trường điều độ. Bạn có thể xem các chào giá trên toàn thị trường bằng cách nhấp vào nút bên dưới."
+
+	key[]: "view_global_dispatch_market"
+	val[]: "Xem thị trường điều phối toàn cầu"
+
+	key[]: "car_dispatch_job_t"
+	val[]: "DANH SÁCH CÔNG VIỆC ĐIỀU PHỐI"
+
+	key[]: "car_dispatch_job"
+	val[]: "Th.trường Điều phối"
+
+	key[]: "car_dispatch_job_desc"
+	val[]: "Trở thành tài xế giao hàng chuyên nghiệp sử dụng phương tiện cá nhân của bạn."
+
+	key[]: "link_locked_msg_dispatch_job"
+	val[]: "Để truy cập Thị trường Điều phối, trước tiên bạn phải được chỉ định một chiếc xe."
+
+	key[]: "vehicle_transfer"
+	val[]: "Chuyển nhượng xe"
+
+	key[]: "car_job_rating"
+	val[]: "Đánh giá công việc"
+
+	key[]: "car_courier_rating"
+	val[]: "Đánh giá đơn vị vận chuyển"
+
+	key[]: "car_courier_rating_na"
+	val[]: "N/A" #+ Shown at various places if the player has no courier rating yet. Please keep it as short as possible.
+
+	key[]: "car_delivery_streak"
+	val[]: "Chuỗi giao hàng hoàn hảo"
+
+	key[]: "car_benefit_max_dist"
+	val[]: "Khoảng cách tối đa"
+
+	key[]: "car_benefit_reward_bonus"
+	val[]: "Tiền thưởng"
+
+	key[]: "car_benefit_cargo_access"
+	val[]: "Lối vào khoang hàng"
+
+	key[]: "car_active_benefits"
+	val[]: "Active Benefits"
+
+	key[]: "car_benefits_locked"
+	val[]: "Hãy hoàn tất <color value=@@clr_white@@>5 chuyến giao hàng</color> đầu tiên để mở khóa các quyền lợi."
+
+	key[]: "car_route_details"
+	val[]: "Chi tiết lộ trình"
+
+	key[]: "ccargo_business_documents"
+	val[]: "Tài liệu kinh doanh"
+
+	key[]: "ccargo_personal_documents"
+	val[]: "Giấy tờ cá nhân"
+
+	key[]: "ccargo_legal_documents"
+	val[]: "Hồ sơ pháp lý"
+
+	key[]: "cjob_dealer_allocation"
+	val[]: "Lô xe phân phối đại lý"
+
+	key[]: "cjob_premium_allocation"
+	val[]: "Lô xe cao cấp phân phối đại lý"
+
+	key[]: "ccargo_job_tools"
+	val[]: "Dụng cụ công trường"
+
+	key[]: "ccargo_soil_samples"
+	val[]: "Mẫu sản phẩm nông nghiệp"
+
+	key[]: "ccargo_plant_seedlings"
+	val[]: "Cây giống"
+
+	key[]: "ccargo_product_samples"
+	val[]: "Mẫu sản phẩm thương mại"
+
+	key[]: "ccargo_return_package"
+	val[]: "Bưu kiện hoàn trả"
+
+	key[]: "ccargo_machine_parts"
+	val[]: "Phụ tùng máy móc dự phòng"
+
+	key[]: "ccargo_customs_docs"
+	val[]: "Tờ khai hải quan"
+
+	key[]: "ccargo_diplomatic_pouch"
+	val[]: "Túi ngoại giao"
+
+	key[]: "ccargo_missed_connection"
+	val[]: "Bưu kiện thất lạc tuyến"
+
+	key[]: "ccargo_redirected_parcel"
+	val[]: "Bưu kiện chuyển hướng"
+
+	key[]: "ccargo_vehicle_reg_papers"
+	val[]: "Giấy đăng ký xe"
+
+	key[]: "ccargo_livestock_auction_docs"
+	val[]: "Hồ sơ đấu giá gia súc"
+
+	key[]: "ccargo_replacement_keys"
+	val[]: "Chìa khóa dự phòng"
+
+	key[]: "ccargo_freight_manifests"
+	val[]: "Bản kê khai hàng hóa"
+
+	key[]: "ccargo_payroll_envelopes"
+	val[]: "Bì thư bảng lương"
+
+	key[]: "ccargo_export_customs_decl"
+	val[]: "Tờ khai hải quan xuất khẩu"
+
+	key[]: "ccargo_rail_waybills"
+	val[]: "Vận đơn đường sắt"
+
+	key[]: "ccargo_livestock_health_certs"
+	val[]: "Giấy chứng nhận kiểm dịch gia súc"
+
+	key[]: "ccargo_dealer_trade_docs"
+	val[]: "Hồ sơ giao dịch đại lý"
+
+	key[]: "ccargo_ore_samples"
+	val[]: "Mẫu quặng & khoáng sản"
+
+	key[]: "ccargo_drill_core_samples"
+	val[]: "Mẫu lõi khoan"
+
+	key[]: "ccargo_chemical_samples"
+	val[]: "Mẫu hóa chất"
+
+	key[]: "ccargo_grid_relays"
+	val[]: "Linh kiện rơ-le lưới điện"
+
+	key[]: "ccargo_truck_small_parts"
+	val[]: "Linh kiện nhỏ xe tải"
+
+	key[]: "ccargo_packaging_prototypes"
+	val[]: "Mẫu bao bì thử nghiệm"
+
+	key[]: "ccargo_outboard_parts"
+	val[]: "Phụ tùng động cơ gắn ngoài"
+
+	key[]: "ccargo_boat_reg_papers"
+	val[]: "Giấy đăng ký tàu thuyền"
+
+	key[]: "ccargo_fillin_restock"
+	val[]: "Hàng bổ sung kho"
+
+	key[]: "ccargo_lost_wallet"
+	val[]: "Ví bị thất lạc"
+
+	key[]: "ccargo_regatta_trophy"
+	val[]: "Cúp đua thuyền"
+
+	key[]: "ccargo_repl_propeller"
+	val[]: "Chân vịt thay thế"
+
+	key[]: "ccargo_yacht_brokerage"
+	val[]: "Hồ sơ môi giới du thuyền"
+
+	key[]: "ccargo_tractor_diag_module"
+	val[]: "Mô-đun chẩn đoán máy kéo"
+
+	key[]: "ccargo_substation_keys"
+	val[]: "Chìa khóa trạm biến áp"
+
+	key[]: "ccargo_flight_crew_docs"
+	val[]: "Hồ sơ tổ bay"
+
+	key[]: "ccargo_misrouted_delivery"
+	val[]: "Đơn hàng nhà cung cấp bị giao nhầm tuyến"
+
+	key[]: "ccargo_transfer_seals"
+	val[]: "Kẹp chì vận tải đa phương thức"
+
+	key[]: "ccargo_crew_supplies"
+	val[]: "Nhu yếu phẩm & đồ ăn nhẹ cho thủy thủ đoàn"
+
+	key[]: "ccargo_tourist_maps"
+	val[]: "Bản đồ du lịch bổ sung"
+
+	key[]: "ccargo_fish_finder"
+	val[]: "Thiết bị dò cá"
+
+	key[]: "ccargo_unident_shipment"
+	val[]: "Lô hàng chưa xác định"
+
+	key[]: "ccargo_undisc_consignment"
+	val[]: "Lô hàng bảo mật thông tin"
+
+	key[]: "ccargo_confid_delivery"
+	val[]: "Bưu kiện bảo mật"
+
+#+ Icon legend specific text
+#@{
+	key[]: "quick_jobs_legend"
+	val[]: "THÔNG TIN CÔNG VIỆC NHANH" #+ Keep uppercase where possible
+
+	key[]: "dispatch_jobs_legend"
+	val[]: "THÔNG TIN THỊ TRƯỜNG ĐIỀU PHỐI" #+ Keep uppercase where possible
+
+	key[]: "car_legend_job_types"
+	val[]: "Loại công việc"
+
+	key[]: "car_legend_delivery_job_desc"
+	val[]: "Giao hàng - vận chuyển các kiện hàng nhỏ, tài liệu"
+
+	key[]: "car_legend_driving_job_desc"
+	val[]: "Vận chuyển xe – chiếc xe bạn đang lái chính là hàng hóa"
+
+	key[]: "car_legend_cargo_prio_desc"
+	val[]: "Hãy lái xe an toàn và bảo quản hàng hóa cẩn thận – khách hàng rất trân trọng những kiện hàng còn nguyên vẹn"
+
+	key[]: "car_legend_vehicle_prio_desc"
+	val[]: "Việc thể hiện hình ảnh bản thân rất quan trọng – việc đến nơi trên một chiếc xe bị hư hại có thể khiến khách hàng không hài lòng"
+
+	key[]: "car_legend_time_prio_desc"
+	val[]: "Khách hàng mong đợi bạn đến đúng giờ đã thỏa thuận – không quá sớm cũng không quá muộn"
+
+	key[]: "car_legend_prio_desc"
+	val[]: "Hãy đặc biệt chú trọng đến mức độ hài lòng của khách hàng được chọn – điểm đánh giá và phần thưởng phụ thuộc rất nhiều vào yếu tố này"
+	
+	key[]: "car_legend_modifiers"
+	val[]: "Ký hiệu tùy chọn hàng"
+
+	key[]: "car_legend_standard_desc"
+	val[]: "Hạn giao hàng chuẩn"
+
+	key[]: "car_legend_express_desc"
+	val[]: "Thời gian giao hàng ngắn hơn với phần thưởng lớn hơn"
+
+	key[]: "car_legend_valuable_desc"
+	val[]: "Kỳ vọng của khách hàng chặt chẽ hơn về tình trạng xe với phần thưởng lớn hơn"
+
+	key[]: "car_legend_fragile_desc"
+	val[]: "Phần thưởng cao hơn cho các loại hàng hóa nhạy cảm, dễ bị hư hại"
+
+	key[]: "car_legend_rating"
+	val[]: "Đánh giá"
+
+	key[]: "car_legend_job_rating_desc"
+	val[]: "Mức độ hài lòng của khách hàng về hiệu quả công việc của bạn"
+
+	key[]: "car_legend_courier_rating_desc"
+	val[]: "Tổng hợp kết quả đánh giá của 25 công việc gần nhất – có thể xem trong mục Tiến trình Sự nghiệp"
+
+	key[]: "car_legend_delivery_streak_desc"
+	val[]: "Số lượng đánh giá công việc hoàn hảo liên tiếp"
+
+	key[]: "car_legend_benefits"
+	val[]: "Q.lợi ch.hàng"
+
+	key[]: "car_legend_benefit_max_dist_desc"
+	val[]: "Xếp hạng người giao hàng cao hơn giúp mở khóa các tuyến đường dài hơn"
+
+	key[]: "car_legend_benefit_reward_bonus_desc"
+	val[]: "Nhận thêm thu nhập cho mỗi đơn hàng – dựa trên đánh giá của bạn và chuỗi giao hàng hoàn hảo"
+
+	key[]: "car_legend_benefit_cargo_access_desc"
+	val[]: "Các loại hàng hóa được tin tưởng giao cho bạn – sẽ đa dạng hơn khi xếp hạng của bạn tăng lên"
+
+#@}
+
+#@}
+
+#+ Unavailable data
+#@{
+	key[]: "car_job_name_na"
+	val[]: "N/A" # Shown at various places if car job name is unavailable. Please keep it as short as possible.
+#@}
+
+#+ Multiplayer
+#@{
+
+	key[]: "no_car_preview"
+	val[]: "Không có bản xem trước ô tô"
+
+	key[]: "mp_car_job_missing_job_data"
+	val[]: "Không tìm thấy dữ liệu công việc. Có thể nó thuộc về một bản mod hoặc DLC bị thiếu."
+
+	key[]: "mp_car_job_wrong_cargo"
+	val[]: "Không tìm được hàng cho công việc này."
+
+	key[]: "mp_car_job_wrong_car"
+	val[]: "Không tìm được chiếc xe phù hợp cho công việc."
+
+	key[]: "mp_car_job_must_use_company_car"
+	val[]: "Công việc này phải được thực hiện bằng chiếc xe được cung cấp."
+
+	key[]: "mp_customer_prio_info"
+	val[]: "Ưu tiên kh.hàng:"
+
+	key[]: "mp_no_vehicle"
+	val[]: "Không có ph.tiện"
+
+	key[]: "mp_job_status_truck"
+	val[]: "Xe tải"
+
+	key[]: "mp_job_status_car"
+	val[]: "Ô tô"
+
+	key[]: "mp_car_idle"
+	val[]: "Nhàn rỗi"
+
+	key[]: "mp_car_on_job"
+	val[]: "Công việc hiện không có sẵn"
+
+	key[]: "mp_car_on_convoy"
+	val[]: "Có việc làm"
+
+	key[]: "equipment_provided_car"
+	val[]: "Ô tô cấp sẵn"
+
+	key[]: "equipment_owned_car"
+	val[]: "Ô tô của bạn"
+#@}
+
+#+ Road trip specific customer notes.
+#@{
+	#+ Documents (Business / Personal)
+	key[]: "cjob_documents_negative_note_cargo"
+	val[]: "Tài liệu bị hư hại"
+
+	key[]: "cjob_documents_negative_note_cargo_1"
+	val[]: "Phong bì bị rách"
+
+	key[]: "cjob_documents_negative_note_cargo_2"
+	val[]: "Giấy tờ bị nhăn"
+
+	key[]: "cjob_documents_neutral_note_cargo"
+	val[]: "Ít va chạm"
+
+	key[]: "cjob_documents_neutral_note_cargo_1"
+	val[]: "Hơi nhăn nhẹ"
+
+	key[]: "cjob_documents_positive_note_cargo"
+	val[]: "Tài liệu nguyên vẹn"
+
+	key[]: "cjob_documents_positive_note_cargo_1"
+	val[]: "Phong bì nguyên vẹn"
+
+	#+ Legal Documents (valuable)
+	key[]: "cjob_legaldoc_negative_note_cargo"
+	val[]: "Tài liệu bị hư hại"
+
+	key[]: "cjob_legaldoc_negative_note_cargo_1"
+	val[]: "Niêm phong bị vỡ"
+
+	key[]: "cjob_legaldoc_positive_note_cargo"
+	val[]: "Niêm phong nguyên vẹn"
+
+	key[]: "cjob_legaldoc_positive_note_cargo_1"
+	val[]: "Vận chuyển bảo mật"
+
+	#+ Machine Parts
+	key[]: "cjob_parts_negative_note_cargo"
+	val[]: "Bên trong bị xóc va đập"
+
+	key[]: "cjob_parts_neutral_note_cargo"
+	val[]: "Trầy xước bên ngoài"
+
+	key[]: "cjob_parts_positive_note_cargo"
+	val[]: "Tình trạng như mới"
+
+	#+ Job Site Tools (negative reuses parts/box keys: Rattling Contents / Dented Package / Punctured Parcel)
+	key[]: "cjob_tools_neutral_note_cargo"
+	val[]: "Dụng cụ trầy xước"
+
+	key[]: "cjob_tools_neutral_note_cargo_1"
+	val[]: "Bị hao mòn nhẹ"
+
+	key[]: "cjob_tools_positive_note_cargo"
+	val[]: "Bộ dụng cụ mới tinh"
+
+	key[]: "cjob_tools_positive_note_cargo_1"
+	val[]: "Tình trạng hoàn hảo"
+
+	#+ Agricultural Samples (internal id: soil)
+	key[]: "cjob_soil_negative_note_cargo"
+	val[]: "Mẫu vật bị nhiễm bẩn"
+
+	key[]: "cjob_soil_negative_note_cargo_1"
+	val[]: "Thùng chứa bị tràn"
+
+	key[]: "cjob_soil_negative_note_cargo_2"
+	val[]: "Mẫu vật bị hỏng"
+
+	key[]: "cjob_soil_negative_note_cargo_3"
+	val[]: "Thùng chứa bị rò rỉ"
+
+	key[]: "cjob_soil_neutral_note_cargo"
+	val[]: "Rò rỉ nhẹ"
+
+	key[]: "cjob_soil_neutral_note_cargo_1"
+	val[]: "Tràn nhẹ bên ngoài"
+
+	key[]: "cjob_soil_neutral_note_cargo_2"
+	val[]: "Nắp đậy bị hở"
+
+	key[]: "cjob_soil_positive_note_cargo"
+	val[]: "Niêm phong chắc chắn"
+
+	key[]: "cjob_soil_positive_note_cargo_1"
+	val[]: "Bảo quản hoàn hảo"
+
+	key[]: "cjob_soil_positive_note_cargo_2"
+	val[]: "Mẫu vật nguyên vẹn"
+
+	key[]: "cjob_soil_positive_note_cargo_3"
+	val[]: "Mẫu vật hoàn hảo"
+
+	key[]: "cjob_soil_positive_note_cargo_4"
+	val[]: "Thùng chứa nguyên vẹn"
+
+	#+ Product Samples (neutral also references parts key cjob_parts_neutral_note_cargo = Cosmetic Marks)
+	key[]: "cjob_samples_negative_note_cargo"
+	val[]: "Mẫu vật bị hư hại"
+
+	key[]: "cjob_samples_negative_note_cargo_1"
+	val[]: "Bao bì bị rách"
+
+	key[]: "cjob_samples_neutral_note_cargo"
+	val[]: "Vết xước nhỏ"
+
+	key[]: "cjob_samples_positive_note_cargo"
+	val[]: "Tình trạng như trưng bày"
+
+	key[]: "cjob_samples_positive_note_cargo_1"
+	val[]: "Bao bì hoàn hảo"
+
+	#+ Return Package (generic box). NOTE: negative keys are shared by machine parts & job tools.
+	key[]: "cjob_box_negative_note_cargo"
+	val[]: "Kiện hàng bị móp"
+
+	key[]: "cjob_box_negative_note_cargo_1"
+	val[]: "Bưu kiện bị đâm thủng"
+
+	key[]: "cjob_box_negative_note_cargo_2"
+	val[]: "Bao bì bị hư hại"
+
+	key[]: "cjob_box_neutral_note_cargo"
+	val[]: "Móp góc kiện hàng"
+
+	key[]: "cjob_box_neutral_note_cargo_1"
+	val[]: "Vết móp nhẹ"
+
+	key[]: "cjob_box_positive_note_cargo"
+	val[]: "Bưu kiện nguyên vẹn"
+
+	key[]: "cjob_box_positive_note_cargo_1"
+	val[]: "Hoàn trả cẩn thận"
+
+	key[]: "cjob_box_positive_note_cargo_2"
+	val[]: "Bưu kiện nâng niu"
+
+	#+ Replacement Keys (neutral also refs parts Cosmetic Marks; positive also refs parts Mint Condition)
+	key[]: "cjob_keys_negative_note_cargo"
+	val[]: "Chìa khóa bị xước"
+
+	key[]: "cjob_keys_negative_note_cargo_1"
+	val[]: "Vỏ chìa khóa bị nứt"
+
+	key[]: "cjob_keys_negative_note_cargo_2"
+	val[]: "Chìa khóa bị cong"
+
+	key[]: "cjob_keys_negative_note_cargo_3"
+	val[]: "Vòng chìa khóa bị gãy"
+
+	key[]: "cjob_keys_neutral_note_cargo"
+	val[]: "Xước nhẹ"
+
+	key[]: "cjob_keys_positive_note_cargo"
+	val[]: "Nguyên niêm phong nhà máy"
+
+	#+ Plant Seedlings
+	key[]: "cjob_seedlings_negative_note_cargo"
+	val[]: "Rễ cây bị tổn thương"
+
+	key[]: "cjob_seedlings_negative_note_cargo_1"
+	val[]: "Mầm cây bị gãy"
+
+	key[]: "cjob_seedlings_negative_note_cargo_2"
+	val[]: "Thân cây bị gãy"
+
+	key[]: "cjob_seedlings_neutral_note_cargo"
+	val[]: "Rụng một vài lá"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_1"
+	val[]: "Thân cây bị cong"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_2"
+	val[]: "Héo nhẹ"
+
+	key[]: "cjob_seedlings_positive_note_cargo"
+	val[]: "Sẵn sàng để trồng"
+
+	key[]: "cjob_seedlings_positive_note_cargo_1"
+	val[]: "Cây phát triển tốt"
+
+	key[]: "cjob_seedlings_positive_note_cargo_2"
+	val[]: "Cây giống khỏe mạnh"
+
+	key[]: "cjob_seedlings_positive_note_cargo_3"
+	val[]: "Chăm sóc hoàn hảo"
+
+	#+ Customs Documents
+	key[]: "cjob_customs_negative_note_cargo"
+	val[]: "Tài liệu bị rách"
+
+	key[]: "cjob_customs_negative_note_cargo_1"
+	val[]: "Mực bị nhòe"
+
+	key[]: "cjob_customs_neutral_note_cargo"
+	val[]: "Bị nếp gấp nhẹ"
+
+	key[]: "cjob_customs_neutral_note_cargo_1"
+	val[]: "Nhòe nhẹ"
+
+	key[]: "cjob_customs_positive_note_cargo"
+	val[]: "Tài liệu sạch đẹp"
+
+	key[]: "cjob_customs_positive_note_cargo_1"
+	val[]: "Nộp hồ sơ đúng quy cách"
+
+	#+ Diplomatic Pouch
+	key[]: "cjob_dippouch_negative_note_cargo"
+	val[]: "Niêm phong bị vỡ"
+
+	key[]: "cjob_dippouch_negative_note_cargo_1"
+	val[]: "Túi bảo mật bị can thiệp"
+
+	key[]: "cjob_dippouch_negative_note_cargo_2"
+	val[]: "Nội dung bị rò rỉ"
+
+	key[]: "cjob_dippouch_neutral_note_cargo"
+	val[]: "Bị trầy xước nhẹ"
+
+	key[]: "cjob_dippouch_neutral_note_cargo_1"
+	val[]: "Niêm phong hơi lỏng"
+
+	key[]: "cjob_dippouch_positive_note_cargo"
+	val[]: "Niêm phong nguyên vẹn"
+
+	key[]: "cjob_dippouch_positive_note_cargo_1"
+	val[]: "Bảo mật tuyệt đối"
+
+	key[]: "cjob_dippouch_positive_note_cargo_2"
+	val[]: "Giao hàng an toàn"
+
+	#+ Shared Parcel notes (Missed Connection + Redirected Parcel)
+	key[]: "cjob_parcel_negative_note_cargo"
+	val[]: "Xử lý kém"
+
+	key[]: "cjob_parcel_negative_note_cargo_1"
+	val[]: "Vi phạm quy trình xử lý"
+
+	key[]: "cjob_parcel_neutral_note_cargo"
+	val[]: "Hao mòn thông thường"
+
+	key[]: "cjob_parcel_neutral_note_cargo_1"
+	val[]: "Tình trạng chấp nhận được"
+
+	key[]: "cjob_parcel_neutral_note_cargo_2"
+	val[]: "Vết xước vận chuyển"
+
+	#+ Missed Connection Parcel
+	key[]: "cjob_missed_positive_note_cargo"
+	val[]: "Đổi tuyến thành công"
+
+	#+ Redirected Parcel
+	key[]: "cjob_redirected_positive_note_cargo"
+	val[]: "Chuyển tuyến cực mượt"
+
+	#+ Shared Paperwork notes (Vehicle Registration + Livestock Auction Documents)
+	key[]: "cjob_paperwork_negative_note_cargo"
+	val[]: "Hồ sơ bị lỗi"
+
+	key[]: "cjob_paperwork_negative_note_cargo_1"
+	val[]: "Thiếu trang"
+
+	key[]: "cjob_paperwork_neutral_note_cargo"
+	val[]: "Bị cong nhẹ"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_1"
+	val[]: "Vết mờ"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_2"
+	val[]: "Nhăn nhẹ"
+
+	#+ Vehicle Registration Papers
+	key[]: "cjob_vehreg_negative_note_cargo"
+	val[]: "Giấy chứng nhận bị cong"
+
+	key[]: "cjob_vehreg_negative_note_cargo_1"
+	val[]: "Giấy đăng ký bị nhàu"
+
+	key[]: "cjob_vehreg_positive_note_cargo"
+	val[]: "Tài liệu hoàn hảo"
+
+	key[]: "cjob_vehreg_positive_note_cargo_1"
+	val[]: "Tài liệu nguyên vẹn"
+
+	#+ Livestock Auction Documents
+	key[]: "cjob_auctdoc_negative_note_cargo"
+	val[]: "Giấy chứng nhận bị hỏng"
+
+	key[]: "cjob_auctdoc_positive_note_cargo"
+	val[]: "Hồ sơ nguyên vẹn"
+
+	key[]: "cjob_auctdoc_positive_note_cargo_1"
+	val[]: "Hồ sơ hoàn hảo"
+#@}
+
+#+ Car job localization which doens't require translation.
+#!{
+	key[]: "tt_ico_driving"
+	val[]: "@@car_job_type_driving@@"
+
+	key[]: "tt_ico_delivery"
+	val[]: "@@car_job_type_delivery@@"
+
+	key[]: "tt_ico_cstandard"
+	val[]: "@@cargo_type_cstandard@@"
+
+	key[]: "tt_ico_cexpress"
+	val[]: "@@cargo_type_cexpress@@"
+
+	key[]: "tt_ico_rt_highvalue"
+	val[]: "@@cargo_type_rt_highvalue@@"
+
+	key[]: "tt_ico_rt_fragile"
+	val[]: "@@cargo_type_rt_fragile@@"
+
+	key[]: "car_quick_job_resumed"
+	val[]: "@@quick_job_resumed@@"
+
+	key[]: "car_job_detail_t"
+	val[]: "@@job_detail_word_t@@"
+
+	key[]: "car_quick_job"
+	val[]: "@@job_quick@@"
+
+	key[]: "car_quick_job_t"
+	val[]: "@@quick_job_t@@"
+#!}
+
+#+ Car shop and brand dealer localization.
+#+
+#+ Shows window with all car brands and then another window with specific cars of a given brand to purchase.
+#@{
+	key[]: "car_shop_icon"
+	val[]: "Đại lý ô tô" #+ Icon opening the car dealer screen.
+
+	key[]: "car_shop_help"
+	val[]: "Mua xe đưa vào gara của bạn." #+ Help message associated the dealer map icon.
+
+	key[]: "car_shop_t"
+	val[]: "MUA Ô TÔ" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "car_shop_explanation"
+	val[]: "Chọn thương hiệu để xem các ưu đãi mua hàng."
+
+	key[]: "car_shop_all_dlc"
+	val[]: "Mở trình duyệt DLC"
+
+	key[]: "car_shop_view_offers"
+	val[]: "Xem báo giá"
+
+	key[]: "car_shop_view_in_dlc_browser"
+	val[]: "Xem trên Trình duyệt DLC"
+
+	key[]: "car_shop_coming_soon"
+	val[]: "SẮP RA MẮT" #+ Text shown when a car brand is not yet available in the game. Please keep in uppercase.
+
+	key[]: "car_shop_tooltip_dlc_browser"
+	val[]: "Trình duyệt DLC"
+
+	key[]: "car_purchase_t"
+	val[]: "MUA Ô TÔ" #+ Title of the screen. Please keep in upper case where possible.
+	
+	key[]: "car_purchase_info_model"
+	val[]: "Model:"
+
+	key[]: "car_purchase_info_drivetrain"
+	val[]: "Hệ dẫn động:"
+
+	key[]: "car_purchase_info_bodywork"
+	val[]: "Thân xe:"
+
+	key[]: "car_purchase_info_engine"
+	val[]: "Động cơ:"
+
+	key[]: "car_purchase_table_fuel_tank"
+	val[]: "Bình nhiên liệu"
+
+	key[]: "car_purchase_table_drivetrain"
+	val[]: "Hệ dẫn động"
+
+	key[]: "car_purchase_table_trans"
+	val[]: "Hộp số"
+
+	key[]: "car_purchase_color_configuration"
+	val[]: "Cấu hình màu sắc" #+ Title above color configuration list.
+
+	key[]: "car_purchase_checkout"
+	val[]: "Thanh toán" #+ Title above color configuration list.
+
+	key[]: "car_purchase_bank_balance"
+	val[]: "Số dư TK:"
+
+	key[]: "car_purchase_color_fee"
+	val[]: "Phí sơn màu tùy chỉnh:"
+
+	key[]: "car_purchase_confirm"
+	val[]: "Mua"
+
+	key[]: "car_purchase_back"
+	val[]: "Trở về"
+
+	key[]: "car_purchase_car_bought_t"
+	val[]: "MUA Ô TÔ" #+ Title of car bought message box. Please keep in upper case where possible.
+
+	key[]: "car_purchase_confirm_exit_t"
+	val[]: "LƯU Ý"
+
+	key[]: "car_purchase_confirm_exit_msg"
+	val[]: "Bạn chưa hoàn tất việc mua chiếc xe mới của mình. Bạn có chắc chắn muốn rời khỏi màn hình này không?"
+
+	key[]: "car_purchase_leave"
+	val[]: "Rời khỏi"
+
+	key[]: "car_purchase_stay"
+	val[]: "Ở lại"
+
+	key[]: "car_purchase_car_bought"
+	val[]: "Cảm ơn bạn đã mua hàng.<br>$CAR_NAME$ hiện đã có trong bộ sưu tập của bạn." #+ Message of car bought message box.
+
+	key[]: "view_in_garage"
+	val[]: "Xem trong gara" #+ Button that takes player to vehicle garage.
+
+#@}
+
+#+ Car-specific time skip localization.
+#@{
+	key[]: "time_skip_delivery_early"
+	val[]: "Giao hàng sớm" 
+
+	key[]: "time_skip_tooltip_job_early"
+	val[]: "Sau khi nghỉ ngơi và tính cả thời gian di chuyển đến đích, việc giao hàng sẽ sớm hơn <color value=@@clr_sel@@>$LEFT_TIME$</color> so với dự kiến."
+#@}
+
+
+#+ Car configurator localization.
+#@{
+	key[]: "bodywork_t"
+	val[]: "THÂN XE"
+
+	key[]: "bodywork"
+	val[]: "Thân xe"
+
+	key[]: "drivetrain_t"
+	val[]: "HỆ DẪN ĐỘNG"
+
+	key[]: "drivetrain"
+	val[]: "Hệ dẫn động"
+
+	key[]: "car_brand_t"
+	val[]: "THIẾT KẾ PHƯƠNG TIỆN"
+
+	key[]: "car_brand"
+	val[]: "Thiết kế Phương tiện"
+
+	key[]: "no_car_found"
+	val[]: "Không tìm thấy phương tiện nào phù hợp với các bộ lọc của bạn" #+ Text shown when there are no cars found by filters.
+#@}
+
+#+ Car diagnostic localization.
+#@{
+	key[]: "car_service_about"
+	val[]: "Bảo dưỡng và sửa chữa ô tô. Một người lái xe giỏi luôn giữ cho chiếc xe của mình ở trạng thái tốt nhất." #+ Help message associated with service icon.
+
+	key[]: "car_service_car_t"
+	val[]: "BÁO CÁO HƯ HẠI Ô TÔ" #+ Header of section displaying status of individual components of the car. Please keep in upper case where possible.
+
+	key[]: "car_diag_about"
+	val[]: "Xem thông tin về xe của bạn và tình trạng hiện tại của xe."
+
+	key[]: "cd_info_model"
+	val[]: "Model:"
+
+	key[]: "cd_info_drivetrain"
+	val[]: "Hệ dẫn động:"
+
+	key[]: "cd_info_bodywork"
+	val[]: "Thân xe:"
+
+	key[]: "cd_info_engine"
+	val[]: "Động cơ:"
+
+	key[]: "car_damage"
+	val[]: "Thiệt hại xô tô" #+ Price for the car damage
+
+	key[]: "adj_rearview"
+	val[]: "Gương chiếu hậu"
+#@}
+
+#+ Car browser localization.
+#@{
+	key[]: "car_browser_t"
+	val[]: "KHÁM PHÁ Ô TÔ"
+
+	key[]: "car_browser"
+	val[]: "K.phá Ô tô"
+
+	key[]: "car_browser_help"
+	val[]: "Hãy thử nghiệm các cấu hình xe khác nhau."  #+ Description for the Car Browser icon.
+#@}
+
+#+ Car career localization.
+#@{
+	key[]: "car_career_log_job"
+	val[]: "Công việc"
+
+	key[]: "car_career_log_customer_satisfaction"
+	val[]: "Độ hài lòng của khách hàng"
+
+	key[]: "car_career_stats_job_rating"
+	val[]: "Đánh giá công việc"
+
+	key[]: "car_career_progress_stats_experience_cars"
+	val[]: "Ô tô"
+
+	key[]: "car_career_progress_stats_owned_car_count"
+	val[]: "Ô tô sở hữu"
+
+	key[]: "car_career_progress_stats_used_car_count"
+	val[]: "Model SD trong c.việc"
+
+	key[]: "car_career_progress_stats_most_used_car"
+	val[]: "Model dùng nhiều nhất"
+
+	key[]: "car_career_progress_stats_max_customer_bonus"
+	val[]: "Thưởng khách hàng cao nhất"
+
+	key[]: "car_career_progress_stats_max_customer_penalty"
+	val[]: "Phạt khách hàng cao nhất"
+
+	key[]: "car_career_progress_stats_customer_positive"
+	val[]: "Đánh giá tích cực"
+
+	key[]: "car_career_progress_stats_customer_neutral"
+	val[]: "Đánh giá trung lập"
+
+	key[]: "car_career_progress_stats_customer_negative"
+	val[]: "Đánh giá tiêu cực"
+
+	key[]: "car_career_progress_stats_longest_perfect_streak"
+	val[]: "Chuỗi giao hàng hoàn hảo dài nhất"
+
+	key[]: "car_career_progress_stats_most_money_earned"
+	val[]: "Thu nhập cao nhất trong một ngày"
+
+	key[]: "career_progress_stats_explore_atlas"
+	val[]: "Atlas"
+
+	key[]: "career_progress_stats_explore_pois_explored"
+	val[]: "Địa danh nổi tiếng đã khám phá"
+
+	key[]: "career_progress_stats_explore_postcards_completed"
+	val[]: "Bưu thiếp đã hoàn thành"
+
+	key[]: "career_progress_stats_tab_courier_rating_t"
+	val[]: "ĐÁNH GIÁ TÀI XẾ GIAO HÀNG"
+#@}
+
+#+ Job widget.
+#@{
+	key[]: "truck_job_different_mode"
+	val[]: "Mode Xe tải<br>Đang thực hiện công việc"
+	
+	key[]: "car_job_different_mode"
+	val[]: "Mode Ô tô<br>Đang thực hiện công việc"
+#@}
+
+#+ World map.
+#@{
+	key[]: "no_gps_different_mode"
+	val[]: "Bắt đầu lái xe để kích hoạt tính năng dẫn đường"
+#@}
+
+#+ Quick travel.
+#@{
+	key[]: "select_quick_travel_destination_economy_reset_truck"
+	val[]: "Đã phát hiện thay đổi trong trò chơi. Vui lòng chọn điểm đến di chuyển nhanh cho xe tải của bạn:" #+ Shown during economy reset quick travel for truck.
+
+	key[]: "select_quick_travel_destination_economy_reset_car"
+	val[]: "Đã phát hiện thay đổi trong trò chơi. Vui lòng chọn điểm đến để di chuyển nhanh cho xe của bạn:" #+ Shown during economy reset quick travel for car.
+#@}
+
+#+ Mail screen
+#+
+#+ Shows incomming emails from bank and truck dealers.
+#@{
+	key[]: "mail_switch_vehicle_mode_confirmation"
+	val[]: "Để xem thông tin này, bạn cần chuyển sang chế độ $VEHICLE_MODE$<br><br>Bạn có muốn tiếp tục không?" #+ Shown when clicking on link in message would cause vehicle mode switch.
+#@}
+
+#+ Atlas localization.
+#@{
+	key[]: "tourist_atlas_filter_all"
+	val[]: "Xem tất cả"
+
+	key[]: "tourist_atlas_filter_touristbs"
+	val[]: "Tất cả bảng du lịch"
+
+	key[]: "tourist_atlas_filter_photo_trophies"
+	val[]: "Tất cả ảnh lưu niệm"
+
+	key[]: "tourist_atlas_filter_viewpoints"
+	val[]: "Tất cả điểm ngắm cảnh"
+
+	key[]: "tourist_atlas_filter_pointsoi"
+	val[]: "Tất cả địa danh nổi tiếng"
+
+	key[]: "mapl_locations"
+	val[]: "Địa điểm:"
+
+	key[]: "mapl_photo_sight"
+	val[]: "Ảnh danh thắng"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Điểm ngắm cảnh"
+
+	key[]: "mapl_point_of_interest"
+	val[]: "Địa danh nổi tiếng"
+
+	key[]: "mapl_point_of_interest_completed"
+	val[]: "Địa danh nổi tiếng (đã khám phá)"
+
+	key[]: "mapl_point_of_interest_discovered"
+	val[]: "Địa danh nổi tiếng (đã khám phá)"
+
+	key[]: "mapl_tourist_board"
+	val[]: "Bảng du lịch"
+
+	key[]: "mapl_tourist_board_completed"
+	val[]: "Bảng du lịch (đã khám phá)"
+
+	key[]: "mapl_tourist_board_discovered"
+	val[]: "Bảng du lịch (đã khám phá)"
+
+	key[]: "mapl_tourist_board_undiscovered"
+	val[]: "Bảng du lịch (chưa khám phá)"
+
+	key[]: "mapl_location_states"
+	val[]: "Trạng thái địa điểm:"
+
+	key[]: "mapl_state_explored"
+	val[]: "Đã khám phá"
+
+	key[]: "mapl_state_discovered"
+	val[]: "Đã khám phá"
+
+	key[]: "mapl_state_undiscovered"
+	val[]: "Chưa khám phá"
+
+	key[]: "tourist_atlas_summary_hint"
+	val[]: "Chọn một mục từ phía bên phải để xem chi tiết"
+
+	key[]: "tourist_atlas_postcardsview"
+	val[]: "Bộ sưu tập bưu thiếp"
+
+	key[]: "tourist_atlas_locations"
+	val[]: "Địa điểm:"
+
+	key[]: "tourist_atlas_last_updated_tb"
+	val[]: "Bảng du lịch cập nhật gần nhất:"
+
+	key[]: "tourist_atlas_last_updated_loc"
+	val[]: "Địa điểm cập nhật gần nhất:"
+
+	key[]: "tourist_atlas_list_of_all"
+	val[]: "Danh sách tất cả:"
+
+	key[]: "tourist_atlas_overview_t"
+	val[]: "Tổng quan Atlas"
+
+	key[]: "tourist_atlas_link"
+	val[]: "Atlas"
+
+	key[]: "tourist_atlas_title"
+	val[]: "ATLAS"
+
+	key[]: "tourist_atlas_help"
+	val[]: "Mở hướng dẫn du lịch cá nhân và lên kế hoạch cho chuyến đi đường bộ của bạn – khám phá, trải nghiệm và tìm hiểu về những địa điểm thú vị."
+
+	key[]: "tourist_atlas_explored"
+	val[]: "Đã khám phá"
+
+	key[]: "tourist_atlas_discovered"
+	val[]: "Đã khám phá"
+
+	key[]: "tourist_atlas_undiscovered"
+	val[]: "Chưa khám phá"
+
+	key[]: "tourist_atlas_touristbs"
+	val[]: "Bảng du lịch"
+
+	key[]: "tourist_atlas_photo_trophies"
+	val[]: "Ảnh lưu niệm"
+
+	key[]: "tourist_atlas_viewpoints"
+	val[]: "Điểm ngắm cảnh"
+
+	key[]: "tourist_atlas_pointsoi"
+	val[]: "Địa danh nổi tiếng"
+
+	key[]: "tourist_atlas_select_tb"
+	val[]: "Chọn một Bảng Du lịch để tìm hiểu thêm."
+
+	key[]: "attractions_along_the_road"
+	val[]: "Điểm tham quan dọc đường"
+
+	key[]: "belongs_to_tb"
+	val[]: "Thuộc Bảng du lịch:"
+
+	key[]: "tourist_atlas_detail_show_location"
+	val[]: "Chỉ vị trí"
+
+	key[]: "overlay_focus_map"
+	val[]: "Nhắm vào bản đồ"
+
+	key[]: "overlay_focus_panel"
+	val[]: "Nhắm vào panel"
+
+	key[]: "overlay_open_tb"
+	val[]: "Mở Bảng du lịch"
+
+	key[]: "overlay_open_item"
+	val[]: "Mở mục"
+
+	key[]: "overlay_select_atlas_item"
+	val[]: "Chọn mục"
+
+	key[]: "tourist_atlas_add_navigation"
+	val[]: "Thêm vào định vị"
+
+	key[]: "tourist_atlas_remove_navigation"
+	val[]: "Xóa khỏi định vị"
+
+	key[]: "tourist_atlas_reset_navigation"
+	val[]: "Đặt lại định vị"
+
+	key[]: "tourist_atlas_view_in_gallery"
+	val[]: "Xem trong thư viện"
+
+	key[]: "detail_discover_tb"
+	val[]: "Khám phá Bảng du lịch này để tìm hiểu thêm."
+
+	key[]: "detail_discover_photo_album_item"
+	val[]: "Hãy tìm đến Bảng Du lịch để biết địa điểm của nó."
+
+	key[]: "detail_explore_photo_album_item"
+	val[]: "Thám hiểm địa điểm để biết thêm chi tiết."
+
+	key[]: "tourist_atlas_nav_oversize_job"
+	val[]: "Định vị đến vị trí Atlas bị vô hiệu hóa trong quá trình thực hiện công việc vận chuyển hàng quá khổ."
+
+	key[]: "tourist_atlas_nav_goal_fixed"
+	val[]: "Định vị đến vị trí Atlas hiện đã bị tắt. Vui lòng hoàn tất mục tiêu điều hướng hiện tại trước."
+
+	key[]: "tourist_atlas_nav_disabled"
+	val[]: "Tính năng điều hướng đã bị tắt. Bạn có thể bật tính năng này trong phần tùy chọn."
+
+	key[]: "tourist_atlas_nav_full"
+	val[]: "Định vị đã đạt số lượng ghim tối đa."
+
+	key[]: "tourist_atlas_nav_requires_vehicle"
+	val[]: "Định vị yêu cầu phải có phương tiện"
+
+	key[]: "no_discovered_tb"
+	val[]: "Chưa khám phá Bảng du lịch nào"
+
+	key[]: "postcard_progress"
+	val[]: "Tiến trình bưu thiếp"
+
+	key[]: "photo_album_touristbs_tab"
+	val[]: "Bảng du lịch"
+
+	key[]: "photo_album_touristbs_non_visited_tooltip"
+	val[]: "Bảng du lịch chưa hoàn thành"
+
+	key[]: "photo_album_poi_unknown"
+	val[]: "Không thể xem địa điểm quan tâm. Hãy đảm bảo rằng bạn đã kích hoạt (các) DLC tương ứng."
+
+	key[]: "pin_children"
+	val[]: "Ghim mục con"
+
+	key[]: "unpin_children"
+	val[]: "Bỏ ghim mục con"
+
+	key[]: "pin_item"
+	val[]: "Ghim trên bản đồ"
+
+	key[]: "unpin_item"
+	val[]: "Bỏ ghim trên bản đồ"
+
+	key[]: "atlas_welcome_t"
+	val[]: "CHÀO MỪNG ĐẾN VỚI ATLAS" #+ Message box title. Keep in upper case where possible.
+
+	key[]: "atlas_welcome_text"
+	val[]: "<align hstyle=left><font face=/font/normal_bold.font>Atlas</font> là hướng dẫn viên du lịch cá nhân của bạn - giúp bạn khám phá, tìm hiểu và học hỏi về những địa điểm thú vị trong chuyến hành trình đường bộ.<br><br>Bắt đầu bằng cách khám phá $TOURIST_BOARD$ địa phương, nơi sẽ hướng dẫn bạn đến những địa điểm đáng chú ý trong khu vực:<br><br>$POI$<br>$VIEWPOINT$<br>$LANDMARK$<br><br>Bằng cách khám phá đầy đủ từng Bảng Du lịch, bạn sẽ được thưởng một tấm bưu thiếp mà bạn có thể trưng bày trong phương tiện của mình.</align>"
+#@}
+
+#+ Tourist atlas reward texts.
+#@{
+	key[]: "new_tourist_atlas_rewards_t"
+	val[]: "PHẦN THƯỞNG MỚI ĐÃ ĐƯỢC MỞ KHÓA" #+ Title of the window displaying list of the new tourist atlas rewards.
+
+	key[]: "new_tourist_atlas_rewards_help"
+	val[]: "Các vật phẩm mới đã được thêm vào dựa trên tiến trình trong chế độ Road Trip. Áp dụng cho sự nghiệp: <font face=/font/normal_bold.font>$profile_name$</font>." #+ The help text for new tourist atlas reward items dialog.
+
+	key[]: "tourist_atlas_reward"
+	val[]: "Chuyến du ngoạn" #+ Text in explorer on tourist atlas reward accessory.
+
+	key[]: "tourist_atlas_reward_locked"
+	val[]: "Khả dụng từ <color value=@@clr_sel@@>Road Trip" #+ Text in configurator when tourist atlas accessory is locked.
+#@}
+
+
+#+ Vehicle garage screen.
+#@{
+	key[]: "car_garage_t"
+	val[]: "Ô TÔ CỦA TÔI"
+
+	key[]: "car_garage_icon"
+	val[]: "Ô tô của tôi"
+
+	key[]: "car_garage_help"
+	val[]: "Chọn xe bạn muốn lái."
+
+	key[]: "vehicle_garage_no_vehicles"
+	val[]: "Không có xe trong gara."
+
+	key[]: "vehicle_garage_sell"
+	val[]: "Bán"
+
+	key[]: "vehicle_garage_configure"
+	val[]: "Tùy chỉnh"
+
+	key[]: "vehicle_garage_use"
+	val[]: "Dùng"
+
+	key[]: "vehicle_garage_drive"
+	val[]: "Lái"
+
+	key[]: "vehicle_garage_sell_t"
+	val[]: "BÁN PHƯƠNG TIỆN"
+
+	key[]: "vehicle_garage_sell_message"
+	val[]: "Bạn thực sự muốn bán $VEHICLE$ của mình để lấy $MONEY$ sao?"
+
+	key[]: "vehicle_garage_sell_message_on_job"
+	val[]: "Bạn không thể bán chiếc xe đang lái khi đang làm việc! Hãy hoàn thành công việc rồi hãy thử lại."
+
+	key[]: "vehicle_garage_use_t"
+	val[]: "SỬ DỤNG PHƯƠNG TIỆN" #+ Message box title. Please keep in upper case where possible.
+
+	key[]: "vehicle_garage_use_message_on_job"
+	val[]: "Bạn không thể đổi xe khi đang làm việc, hãy hoàn thành chuyến hàng trước."
+
+	key[]: "garage_configure_message_teleport"
+	val[]: "Để tùy chỉnh chiếc xe đang sử dụng, bạn cần đến trạm dịch vụ. Bạn có muốn di chuyển nhanh đến trạm gần nhất không?"
+	
+	key[]: "garage_vehicle_name"
+	val[]: "Phương tiện"
+
+	key[]: "garage_power"
+	val[]: "Công suất động cơ"
+
+	key[]: "garage_fuel_tank"
+	val[]: "Bình nhiên liệu:"
+
+	key[]: "garage_distance"
+	val[]: "Quãng đường đã đi:"
+
+	key[]: "garage_condition"
+	val[]: "Điều kiện:"
+
+	key[]: "vehicle_details_tab"
+	val[]: "Chi tiết xe"
+
+	key[]: "all_vehicles_tab"
+	val[]: "Tất cả xe"
+
+	key[]: "garage_statistics"
+	val[]: "Thống kê xe"
+
+	key[]: "garage_value"
+	val[]: "Giá trị"
+
+	key[]: "garage_current_value"
+	val[]: "Giá hiện tại:"
+
+	key[]: "garage_value_of_new"
+	val[]: "Giá tại showroom:"
+
+	key[]: "garage_info_model"
+	val[]: "Model:"
+
+	key[]: "garage_info_drivetrain"
+	val[]: "Hệ dẫn động:"
+
+	key[]: "garage_info_bodywork"
+	val[]: "Thân xe:"
+
+	key[]: "garage_info_steering"
+	val[]: "Vô lăng:" #+ Steering side. For example "Steering:&nbsp;&nbsp;&nbsp;&nbsp; Left-hand"
+
+	key[]: "garage_info_engine_name"
+	val[]: "Động cơ:"
+
+	key[]: "garage_info_transmission"
+	val[]: "Hộp số:" #+ Type of the gearbox. "For example "Gearbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 speed gearbox"
+
+	key[]: "garage_info_tank"
+	val[]: "Bình nhiên liệu:"
+
+	key[]: "garage_damage"
+	val[]: "Báo cáo hư hại:"
+
+	key[]: "garage_ownership_time"
+	val[]: "Th.gian sở hữu:"
+
+	key[]: "garage_configure_t"
+	val[]: "CẤU HÌNH PHƯƠNG TIỆN"
+
+	key[]: "garage_configure_message_on_job"
+	val[]: "Bạn không thể tùy chỉnh xe khi đang thực hiện công việc! Hãy hoàn tất việc giao hàng trước đã."
+
+	key[]: "garage_fuel_consumption"
+	val[]: "Mức tiêu thụ nh.liệu TB:"
+
+	key[]: "link_locked_msg_car_garage"
+	val[]: "Để truy cập @@car_garage_icon@@, bạn cần mua chiếc xe đầu tiên của mình."
+
+	key[]: "garage_vehicle_name_column"
+	val[]: "Phương tiện"
+
+	key[]: "garage_ownership_time_column"
+	val[]: "Th.gian sở hữu"
+
+	key[]: "garage_power_column"
+	val[]: "Công suất động cơ"
+
+	key[]: "garage_avg_fuel_column"
+	val[]: "Mức tiêu thụ nh.liệu TB"
+
+	key[]: "garage_distance_column"
+	val[]: "Quãng đường đã đi"
+
+	key[]: "garage_condition_column"
+	val[]: "Điều kiện"
+
+	key[]: "garage_currently_driving_t"
+	val[]: "ĐANG LÁI XE" #+ Keep capitalized
+	
+#@}
+
+#+ On-screen message
+#+
+#+ Hint that appears after taking a car job. It's composed of two parts, separated by a new line. It has no length limit.
+#@{
+
+	key[]: "car_delivery_ready1"
+	val[]: "Hàng hóa đã sẵn sàng vận chuyển."
+
+	key[]: "car_delivery_ready2"
+	val[]: "Lái xe đến điểm đích."
+
+#@}
+
+#+ Adviser Options
+#@{
+	key[]: "adv_hud_tourist_board_line"
+	val[]: "Bản đồ du ngoạn Atlas" #+ Widget name for the tourist board progress.
+
+	key[]: "adv_hud_tourist_board_newly_discovered"
+	val[]: "Chỉ địa điểm mới thám hiểm"
+
+	key[]: "adv_hud_tourist_board_completed"
+	val[]: "Bảng du lịch đã hoàn thành"
+
+	key[]: "adv_hud_tourist_board_details"
+	val[]: "Nhấn $KEY$ để xem chi tiết trong Atlas"
+
+	key[]: "adv_hud_tourist_board_line_op_tooltip"
+	val[]: "Thông báo cho bạn cũng như hiển thị tiến trình và thông tin khi khám phá các địa điểm trong Atlas. Tiện ích này sẽ tự động xuất hiện tùy theo cài đặt của bạn."
+#@}
+
+#+ Garage & Shop - car descriptions
+#+ 
+#@{
+
+	key[]: "description_ford_bronco_2024"
+	val[]: "Là biểu tượng xe địa hình mạnh mẽ được tái sinh, Bronco kết hợp phong cách hoài cổ vuông vức với sức mạnh chinh phục mọi địa hình."
+
+	key[]: "description_ford_f150_2023"
+	val[]: "Là mẫu xe bán tải bán chạy nhất nước Mỹ trong nhiều thập kỷ, F-150 kết hợp hoàn hảo giữa khả năng vận chuyển mạnh mẽ, sự thoải mái khi sử dụng hàng ngày và tính linh hoạt đầy tin cậy."
+
+	key[]: "description_ford_mustang_1967"
+	val[]: "Chiếc Mustang đã định hình kỷ nguyên \"pony car\" với những đường nét fastback đầy cuốn hút, kiểu dáng đặc trưng không thể nhầm lẫn cùng tiếng gầm động cơ vẫn khiến người ta phải ngoái nhìn cho đến tận ngày nay."
+
+	key[]: "description_ford_crown_victoria_2006"
+	val[]: "Là mẫu xe \"cày ải\" bền bỉ, rộng rãi và sử dụng hệ dẫn động cầu sau, Crown Victoria đã khẳng định được vị thế là dòng xe cảnh sát và xe taxi đáng tin cậy tại Mỹ trong suốt nhiều năm liền."
+#@}
 

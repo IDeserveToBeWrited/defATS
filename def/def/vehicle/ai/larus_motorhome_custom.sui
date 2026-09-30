@@ -1,0 +1,101 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Nebraska - motorhome XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.larus.motorhome_c
+{
+	accessories[]: .larus.motorhome_c.chassis
+	accessories[]: .larus.motorhome_c.fwheel
+	accessories[]: .larus.motorhome_c.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/truck_us_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+
+	tags[]: caravan
+	
+	variant[]: traffic.larus.motorhome_c.orange
+
+	spawn_ratio: 1.0
+
+	license_plate_type: car
+
+	spawn_condition[]: .traffic.motorhome_c.spawn.condition
+
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .larus.motorhome_c.chassis
+{
+	data_path: "/def/vehicle/ai/larus_motorhome/blue.sii"
+}
+vehicle_wheel_accessory: .larus.motorhome_c.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus.sii"
+}
+vehicle_wheel_accessory: .larus.motorhome_c.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus.sii"
+}
+traffic_spawn_condition: .traffic.motorhome_c.spawn.condition
+{
+
+	type: area
+	str_param[]: "tourist"
+	str_param[]: "rest_area"
+
+}
+
+
+##################### ORANGE #########################################
+
+traffic_vehicle : traffic.larus.motorhome_c.orange
+{
+	accessories[]: .larus.motorhome_c.orange.chassis
+	accessories[]: .larus.motorhome_c.orange.fwheel
+	accessories[]: .larus.motorhome_c.orange.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/truck_us_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_3.soundref"
+	
+	spawn_ratio: 1.0
+
+	tags[]: caravan
+
+	license_plate_type: car
+
+	spawn_condition[]: .traffic.motorhome_c.orange.spawn.condition
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .larus.motorhome_c.orange.chassis
+{
+	data_path: "/def/vehicle/ai/larus_motorhome/orange.sii"
+}
+vehicle_wheel_accessory: .larus.motorhome_c.orange.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_bus.sii"
+}
+vehicle_wheel_accessory: .larus.motorhome_c.orange.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_bus.sii"
+}
+traffic_spawn_condition: .traffic.motorhome_c.orange.spawn.condition
+{
+	type: area
+	str_param[]: "tourist"
+	str_param[]: "rest_area"
+}

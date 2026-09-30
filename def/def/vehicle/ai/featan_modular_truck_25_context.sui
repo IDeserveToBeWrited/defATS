@@ -1,0 +1,45 @@
+traffic_vehicle : traffic.featan.pickup.midclass_25.ranger.context
+{
+	accessories[]: .featan.pickup.midclass_25.ranger.context.chassis
+	accessories[]: .featan.pickup.midclass_25.ranger.context.fwheel
+	accessories[]: .featan.pickup.midclass_25.ranger.context.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2900
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	tags[]: context
+
+	spawn_condition[]: .traffic.featan.pickup.midclass_25.ranger.context.condition
+
+@include "drivers_generic.sui"
+
+}
+
+
+
+traffic_spawn_condition: .traffic.featan.pickup.midclass_25.ranger.context.condition
+{
+	type: area
+	str_param[]: "tourist"
+}
+
+
+vehicle_accessory: .featan.pickup.midclass_25.ranger.context.chassis
+{
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_ranger.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.ranger.context.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.ranger.context.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}

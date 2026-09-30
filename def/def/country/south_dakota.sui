@@ -1,0 +1,42 @@
+
+country_data : country.data.south_dakota
+{
+	country_id: 41
+
+	name: "South Dakota"
+	name_localized: "@@south_dakota@@"
+	country_code: "SD"
+	iso_country_code: ussd
+
+	pos: (-17000, 0, -32000)
+
+	fuel_price: 1.56575	# $5.927/gallonUS [5.929] = $1.56575/litre
+	petrol_price: 1.09763	# $4.155/gallonUS [4.159] = $1.09763/litre
+
+	lights_mandatory: false
+	imperial_units: true
+	driving_tired_offence: true
+
+	time_zone: -300		# -5 hours in minutes
+	time_zone_name: "@@tz_cdt@@"
+
+	# Northern part, west from Missouri river at Moobridge
+	secondary_time_zone_area[]: (-35000.0, -18406.2, -41000.0, -32000.0)
+	secondary_time_zone[]: -360
+	secondary_time_zone_name[]: "@@tz_mdt@@"
+
+	# Mid part, west from Missouri river at Pierre
+	secondary_time_zone_area[]: (-35000.0, -17837.9, -33000.0, -29000.0)
+	secondary_time_zone[]: -360
+	secondary_time_zone_name[]: "@@tz_mdt@@"
+
+	# Southern part, west from county borders Jackson/Jones, Bennet/Todd
+	secondary_time_zone_area[]: (-35000.0, -21695.1, -30000.0, -24000.0)
+	secondary_time_zone[]: -360
+	secondary_time_zone_name[]: "@@tz_mdt@@"
+
+	mass_limit_per_axle_count[]: 18143.7	# 40000 lb	# 2-axle vehicle
+	mass_limit_per_axle_count[]: 27215.6	# 60000 lb
+	mass_limit_per_axle_count[]: 36287.4	# 80000 lb
+}
+

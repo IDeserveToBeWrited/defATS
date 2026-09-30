@@ -1,107 +1,120 @@
-traffic_vehicle : traffic.featan.pickup
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX PICKUP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.pickup.midclass_25
 {
-	accessories[]: .featan.pickup.chassis
-	accessories[]: .featan.pickup.fwheel
-	accessories[]: .featan.pickup.rwheel
+	accessories[]: .featan.pickup.midclass_25.chassis
+	accessories[]: .featan.pickup.midclass_25.fwheel
+	accessories[]: .featan.pickup.midclass_25.rwheel
 
 	max_speed: 160
+	vehicle_mass: 2900
 
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
-	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
-	
-	tags[]: pickup
-	tags[]: empty
-	tags[]: suv
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
 
-
-	vehicle_mass: 3000
-
-	color[]: (0.8713, 0.8631, 0.8227) #white
-	color[]: (0.8713, 0.8631, 0.8227) #white
-	color[]: (0.8713, 0.8631, 0.8227) #white
-	color[]: (0.0544, 0.0886, 0.1274) #blue
-	color[]: (0.2831, 0.0012, 0.0065) #red
 
 
 @include "drivers_generic.sui"
-	
+
 }
 
-vehicle_accessory: .featan.pickup.chassis
+vehicle_accessory: .featan.pickup.midclass_25.chassis
 {
 	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis.sii"
 }
 
-vehicle_wheel_accessory: .featan.pickup.fwheel
+vehicle_wheel_accessory: .featan.pickup.midclass_25.fwheel
 {
 	offset: 0
-		data_path: "/def/vehicle/ai_wheel/front_offroad.sii"
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
 }
 
-vehicle_wheel_accessory: .featan.pickup.rwheel
+vehicle_wheel_accessory: .featan.pickup.midclass_25.rwheel
 {
 	offset: 0
-	data_path: "/def/vehicle/ai_wheel/rear_offroad.sii"
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
 }
 
 
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXX CAMPER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-
-traffic_vehicle : traffic.featan.hook
+traffic_vehicle : traffic.featan.pickup.midclass_25.camper
 {
-	accessories[]: .featan.hook.chassis
-	accessories[]: .featan.hook.fwheel
-	accessories[]: .featan.hook.rwheel
+	accessories[]: .featan.pickup.midclass_25.camper.chassis
+	accessories[]: .featan.pickup.midclass_25.camper.fwheel
+	accessories[]: .featan.pickup.midclass_25.camper.rwheel
 
 	max_speed: 160
+	vehicle_mass: 2900
+	tags[]: tourist
 
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
-	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
-	
-	tags[]: pickup
-	tags[]: empty
-	tags[]: suv
-
-
-
-	vehicle_mass: 3000
-
-	color[]: (0.8713, 0.8631, 0.8227) #white
-	color[]: (0.8713, 0.8631, 0.8227) #white
-	color[]: (0.8713, 0.8631, 0.8227) #white
-	color[]: (0.0544, 0.0886, 0.1274) #blue
-	color[]: (0.2831, 0.0012, 0.0065) #red
-	
-	
-	trailer_chains[]: "trailer.ai_car.camper"
-	trailer_chains[]: "trailer.ai_car.util_buggy"
-	trailer_chains[]: "trailer.ai_car.util_boat"
-	trailer_chains[]: "trailer.ai_car.horse"
-	trailer_chains[]: "trailer.ai_car.small_cargo1"
-	trailer_chains[]: "trailer.ai_car.small_cargo2"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
 
 @include "drivers_generic.sui"
-	
+
 }
 
-vehicle_accessory: .featan.hook.chassis
+vehicle_accessory: .featan.pickup.midclass_25.camper.chassis
 {
-	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_hook.sii"
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_camper.sii"
 }
 
-vehicle_wheel_accessory: .featan.hook.fwheel
-{
-	offset: 0
-		data_path: "/def/vehicle/ai_wheel/front_offroad.sii"
-}
-
-vehicle_wheel_accessory: .featan.hook.rwheel
+vehicle_wheel_accessory: .featan.pickup.midclass_25.camper.fwheel
 {
 	offset: 0
-	data_path: "/def/vehicle/ai_wheel/rear_offroad.sii"
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
 }
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.camper.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXX CAMPER 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.pickup.midclass_25.camper2
+{
+	accessories[]: .featan.pickup.midclass_25.camper2.chassis
+	accessories[]: .featan.pickup.midclass_25.camper2.fwheel
+	accessories[]: .featan.pickup.midclass_25.camper2.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2900
+	tags[]: tourist
+
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .featan.pickup.midclass_25.camper2.chassis
+{
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_camper2.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.camper2.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.camper2.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+
+

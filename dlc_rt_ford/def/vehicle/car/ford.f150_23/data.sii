@@ -1,0 +1,40 @@
+SiiNunit
+{
+accessory_truck_data : vehicle.ford.f150_23
+{
+	info[]: "@@brand_ford@@"
+	info[]: "@@series_ford_f150_2023@@"
+	info[]: "@@description_ford_f150_2023@@"
+
+	tags[]: "pickup"
+
+	driver_animation: "/asset/character/human/driver/$driver_type$/ford_f150_ani.pma"
+
+	behind_camera: camera.behind.suv
+	interior_camera: camera.interior.ford.f150_23
+	interior_camera_oculus: camera.interior.ford.f150_23.oculus
+	bumper_camera: camera.bumper.car
+	window_camera: camera.window.car
+	cabin_camera: camera.cabin.car
+	wheel_camera: camera.wheel.car
+	top_camera: camera.top.car
+	tv_camera: camera.tv.basic
+	wander_camera: camera.wander
+	debug_camera: camera.debug
+
+	fallback[]: "chassis|4doors_55_awd.sii"
+	fallback[]: "cabin|pickup_4doors_55.sii"
+	fallback[]: "engine|ford_tivct_32v_v8.sii"
+	fallback[]: "transmission|ford_10r80.sii"
+	fallback[]: "interior|lariat.sii"
+	fallback[]: "x_tire|f150_r20.sii"
+	fallback[]: "x_disc|lariat_r20_black.sii"
+	fallback[]: "head_light|standard.sii"
+	fallback[]: "paint_job|color11.sii"
+
+	use_non_wheel_pin_placement_from_model: true
+
+@include "/def/vehicle/car/common_car_data.sui"
+
+}
+}

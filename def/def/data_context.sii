@@ -69,4 +69,372 @@ data_context : context.area.weigh.station
 }
 
 
+
+#### RT
+
+
+data_context : context.prefab.warehouse
+{
+	target_data[]: prefab.d_el_whs1
+	target_data[]: prefab.d_food_whs1
+	target_data[]: prefab.d_gen_whs2
+	target_data[]: prefab.d_gen_whs3
+	target_data[]: prefab.d_gen_whs4
+	target_data[]: prefab.d_gen_whs5
+	target_data[]: prefab.d_gen_whs6
+	target_data[]: prefab.d_hs_whs
+	target_data[]: prefab.d_trans
+	target_data[]: prefab.d_el_whs
+	target_data[]: prefab.d_food_whs
+	target_data[]: prefab.d_gen_whs
+	target_data[]: prefab.d_gen_whs1
+	target_data[]: prefab.d_gen_whs7
+	target_data[]: prefab.d_met_whs1
+	target_data[]: prefab.d_car_whs1
+	target_data[]: prefab.d_met_whs
+	target_data[]: prefab.d_car_whs
+	target_data[]: prefab.d_car_whs2
+	# prefab.d_car_whs3  # excluded: go-through prefab, spawns player wrong way
+
+	tags[]: warehouse
+}
+
+data_context : context.prefab.car_dealer
+{
+	target_data[]: prefab.d_car_deal
+	target_data[]: prefab.d_car_deal2
+	target_data[]: prefab.d_car_dlr3
+
+	tags[]: car_dealer
+}
+
+data_context : context.prefab.vehicle.logistics
+{
+	# target_data[]: prefab.d_port_sea
+	# prefab.d_port_tac  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_port
+	target_data[]: prefab.d_port_tul
+	target_data[]: prefab.d_train_st3
+	# prefab.d_train_st2  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_train_st1
+	target_data[]: prefab.d_train_st
+	# prefab.d_train_st4  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_rail_str
+	target_data[]: prefab.d_rail_str1
+	target_data[]: prefab.d_port_hou
+
+	tags[]: veh_logistic
+}
+
+data_context : context.prefab.port
+{
+	# target_data[]: prefab.d_port_sea
+	# prefab.d_port_tac  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_port
+	target_data[]: prefab.d_port_tul
+	target_data[]: prefab.d_port_hou
+
+	tags[]: port
+}
+
+data_context : context.prefab.train_depot
+{
+	target_data[]: prefab.d_train_st3
+	# prefab.d_train_st2  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_train_st1
+	target_data[]: prefab.d_train_st
+	# prefab.d_train_st4  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_rail_str
+	target_data[]: prefab.d_rail_str1
+
+	tags[]: train_depot
+}
+
+data_context : context.prefab.agriculture
+{
+	target_data[]: prefab.d_farm_wine
+	target_data[]: prefab.d_farm1
+	target_data[]: prefab.d_farm4
+	target_data[]: prefab.d_farm5
+	target_data[]: prefab.d_farm_alm
+	# prefab.d_food_plnt  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_food_plnt1
+	target_data[]: prefab.d_farm_str
+	target_data[]: prefab.d_farm
+	target_data[]: prefab.d_farm2
+	target_data[]: prefab.d_farm3
+	target_data[]: prefab.d_farm_wine1
+	target_data[]: prefab.d_farm_plnt
+	target_data[]: prefab.d_farm_pln1
+
+	tags[]: agriculture
+}
+
+data_context : context.prefab.factory
+{
+	target_data[]: prefab.d_met_whs1
+	target_data[]: prefab.d_met_wrk1
+	target_data[]: prefab.d_met_wrk2
+	# prefab.d_pck_plnt  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_el_pln1
+	target_data[]: prefab.d_gls_pln
+	target_data[]: prefab.d_trk_plnt
+	target_data[]: prefab.d_car_plant2
+	target_data[]: prefab.d_car_plant3
+	target_data[]: prefab.d_farm_pln2
+	target_data[]: prefab.d_car_pln6
+	target_data[]: prefab.d_shp_plnt
+	target_data[]: prefab.d_air_pln1
+	target_data[]: prefab.d_che_str1
+	target_data[]: prefab.d_oil_site
+	target_data[]: prefab.d_che_plant3
+	target_data[]: prefab.d_che_str
+	target_data[]: prefab.d_che_pln5
+	# prefab.d_food_plnt  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_food_plnt3
+	# prefab.d_food_plnt4  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_food_plnt5
+	target_data[]: prefab.d_food_pln7
+	target_data[]: prefab.d_food_pln6
+	target_data[]: prefab.d_food_pln9
+	target_data[]: prefab.d_wd_saw2
+	target_data[]: prefab.d_wd_saw1
+	target_data[]: prefab.d_wd_saw
+	target_data[]: prefab.d_wd_pln2
+	# prefab.d_wd_pln  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_air_pln2
+	target_data[]: prefab.d_oil_str1
+	target_data[]: prefab.d_cot_pln
+	target_data[]: prefab.d_wd_pln1
+	target_data[]: prefab.d_min_plnt
+	target_data[]: prefab.d_min_plnt1
+	target_data[]: prefab.d_min_plnt2
+	target_data[]: prefab.d_min_pln3
+	target_data[]: prefab.d_el_pln
+	target_data[]: prefab.d_met_sml
+	target_data[]: prefab.d_met_shp
+	target_data[]: prefab.d_met_shp2
+	target_data[]: prefab.d_met_wrk
+	target_data[]: prefab.d_che_plant
+	target_data[]: prefab.d_che_plant1
+	target_data[]: prefab.d_che_plant2
+	target_data[]: prefab.d_che_plant4
+	target_data[]: prefab.d_che_pln6
+	target_data[]: prefab.d_con_pln
+	target_data[]: prefab.d_con_pln1
+	target_data[]: prefab.d_car_pln5
+	target_data[]: prefab.d_car_pln7
+	target_data[]: prefab.d_car_plant4
+	# prefab.d_car_pln8  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_food_plnt2
+	target_data[]: prefab.d_food_pln8
+	target_data[]: prefab.d_food_pln11
+	target_data[]: prefab.d_print
+	target_data[]: prefab.d_oil_ref
+	target_data[]: prefab.d_ws_plnt
+	target_data[]: prefab.d_epw_plnt
+	# prefab.d_kw_plnt  # excluded: go-through prefab, spawns player wrong way
+	# prefab.d_air_plnt  # excluded: go-through prefab, spawns player wrong way
+
+	tags[]: factory
+}
+
+data_context : context.prefab.auction
+{
+	target_data[]: prefab.d_farm_mkt1
+
+	tags[]: auction
+}
+
+data_context : context.prefab.airport
+{
+	target_data[]: prefab.d_aport_phx
+	target_data[]: prefab.d_aport_ant
+	target_data[]: prefab.d_aport_gtf
+	target_data[]: prefab.d_aport_abq
+	target_data[]: prefab.d_aport_den
+	target_data[]: prefab.d_aport_dfw
+	# prefab.d_aport_elp  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_aport_iah
+	target_data[]: prefab.d_aport_ict
+	target_data[]: prefab.d_aport_lax
+	target_data[]: prefab.d_aport_lit
+	target_data[]: prefab.d_aport_pcc
+
+	tags[]: airport
+}
+
+data_context : context.prefab.retail
+{
+	# prefab.d_hs_mkt  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_gen_mkt3
+	target_data[]: prefab.d_gen_mkt6
+	# prefab.d_food_mkt4  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_food_mkt5
+	target_data[]: prefab.d_wd_mkt
+	target_data[]: prefab.d_farm_mkt
+	target_data[]: prefab.d_food_mkt1
+	target_data[]: prefab.d_food_mkt2
+	# prefab.d_food_mkt  # excluded: go-through prefab, spawns player wrong way
+	target_data[]: prefab.d_gen_mkt1
+	target_data[]: prefab.d_gen_mkt2
+	target_data[]: prefab.d_el_mkt
+
+	tags[]: retail
+}
+
+data_context : context.prefab.construction
+{
+	target_data[]: prefab.d_met_scr
+	target_data[]: prefab.d_road_grg2
+	target_data[]: prefab.d_road_grg3
+	target_data[]: prefab.d_road_svc1
+	target_data[]: prefab.d_road_wrk2
+	target_data[]: prefab.d_road_wrk3
+	target_data[]: prefab.d_road_wrk4
+	target_data[]: prefab.d_con_grg1
+	target_data[]: prefab.d_con_site4
+	target_data[]: prefab.d_con_site6
+	target_data[]: prefab.d_con_site7
+	target_data[]: prefab.d_con_site3
+	target_data[]: prefab.d_con_site8
+	target_data[]: prefab.d_con_svc2
+	target_data[]: prefab.d_rail_sit
+	target_data[]: prefab.d_min_str1
+	target_data[]: prefab.d_qry4
+	target_data[]: prefab.d_wd_hrv1
+	target_data[]: prefab.d_wd_hrv
+	target_data[]: prefab.d_con_svc1
+	target_data[]: prefab.d_con_whs1
+	target_data[]: prefab.d_epw_sit
+	target_data[]: prefab.d_epw_sit1
+	target_data[]: prefab.d_wst_whs
+	target_data[]: prefab.d_con_site
+	target_data[]: prefab.d_con_site1
+	target_data[]: prefab.d_con_site2
+	target_data[]: prefab.d_con_site5
+	target_data[]: prefab.d_con_whs
+	target_data[]: prefab.d_con_grg
+	target_data[]: prefab.d_con_svc
+	target_data[]: prefab.d_con_hom
+	target_data[]: prefab.d_road_svc
+	target_data[]: prefab.d_road_grg
+	target_data[]: prefab.d_road_wrk
+	target_data[]: prefab.d_qry
+	target_data[]: prefab.d_qry1
+	target_data[]: prefab.d_qry2
+	target_data[]: prefab.d_qry3
+	target_data[]: prefab.d_qry5
+	target_data[]: prefab.d_min_str
+	target_data[]: prefab.d_az_mine
+
+	tags[]: construction
+}
+
+data_context : context.prefab.custom_depot
+{
+	target_data[]: prefab.d_cust_1
+	target_data[]: prefab.d_cust_2
+	target_data[]: prefab.d_cust_3
+	target_data[]: prefab.d_cust_4
+	target_data[]: prefab.d_cust_5
+	target_data[]: prefab.d_cust_6
+	target_data[]: prefab.d_cust_7
+	target_data[]: prefab.d_cust_8
+
+	tags[]: custom_depot
+}
+
+data_context : context.prefab.truck_dealer
+{
+	target_data[]: prefab.43c
+	target_data[]: prefab.43d
+	target_data[]: prefab.d_ws_dlr
+	target_data[]: prefab.d_trl_svc
+	target_data[]: prefab.d_trk_svc
+
+	tags[]: truck_dealer
+}
+
+data_context : context.prefab.farm_service
+{
+	target_data[]: prefab.d_farm_grg
+	target_data[]: prefab.d_farm_grg1
+	target_data[]: prefab.d_farm_dlr
+
+	tags[]: farm_service
+}
+
+data_context : context.prefab.gas_station
+{
+	target_data[]: prefab.d_oil_gst
+	target_data[]: prefab.d_oil_gst2
+	target_data[]: prefab.d_oil_gst2m
+	target_data[]: prefab.d_oil_gst3
+	target_data[]: prefab.us_gas_06
+	# prefab.us_gas_07  # excluded: go-through prefab, spawns player wrong way
+
+	tags[]: gas_station
+}
+
+data_context : context.prefab.oil_field
+{
+	target_data[]: prefab.d_oil_well
+	target_data[]: prefab.d_oil_svc
+	target_data[]: prefab.d_oil_svc1
+	target_data[]: prefab.d_oil_str
+
+	tags[]: oil_field
+}
+
+data_context : context.prefab.marina
+{
+	target_data[]: prefab.d_shp_mar
+	target_data[]: prefab.d_shp_mar1
+
+	tags[]: marina
+}
+
+data_context : context.prefab.utility
+{
+	target_data[]: prefab.d_epw_svc
+
+	tags[]: utility
+}
+
+data_context : context.prefab.metalworks
+{
+	target_data[]: prefab.d_met_wrk
+	target_data[]: prefab.d_met_wrk1
+	target_data[]: prefab.d_met_wrk2
+	target_data[]: prefab.d_met_sml
+	target_data[]: prefab.d_met_shp
+	target_data[]: prefab.d_met_shp2
+	target_data[]: prefab.d_met_whs
+	target_data[]: prefab.d_met_whs1
+	target_data[]: prefab.d_min_plnt
+	target_data[]: prefab.d_min_plnt1
+	target_data[]: prefab.d_min_plnt2
+	target_data[]: prefab.d_min_pln3
+
+	tags[]: metalworks
+}
+
+data_context : context.prefab.mining
+{
+	target_data[]: prefab.d_qry
+	target_data[]: prefab.d_qry1
+	target_data[]: prefab.d_qry2
+	target_data[]: prefab.d_qry3
+	target_data[]: prefab.d_qry5
+	target_data[]: prefab.d_min_str
+	target_data[]: prefab.d_min_str1
+	target_data[]: prefab.d_az_mine
+	target_data[]: prefab.d_met_scr
+
+	tags[]: mining
+}
+
+
+
 }

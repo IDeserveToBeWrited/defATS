@@ -175,6 +175,17 @@ trigger_action : trig_action.hud_parking
 	str_params[]: "bus"
 }
 
+trigger_action : trig_action.parking_car
+{
+	name: "Parking - Small vehicles"
+
+	command: "hud_activate"
+	num_params[]: 3
+
+	str_params[]: "car"
+}
+
+
 trigger_action : trig_action.weigh
 {
 	name: "Weight request (default)"
@@ -276,5 +287,17 @@ trigger_action : trig_action.slow_time
 	command: "echo"
 	str_params[]: "Slow time trigger"
 }
+
+trigger_action : trig_action.poi_activate
+{
+	name: "[roadtrip] Point of interest activation"
+
+	command: "cutscene"
+	str_params[]: "activate"
+
+	target_tags[]: poi
+	target_range: 200
+}
+
 
 }

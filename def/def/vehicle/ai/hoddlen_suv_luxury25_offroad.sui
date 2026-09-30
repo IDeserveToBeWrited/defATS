@@ -1,0 +1,44 @@
+traffic_vehicle : traffic.hoddlen.suv.luxury25.offroad
+{
+	accessories[]: .hoddlen.suv.luxury25.offroad.chassis
+	accessories[]: .hoddlen.suv.luxury25.offroad.fwheel
+	accessories[]: .hoddlen.suv.luxury25.offroad.rwheel
+
+	max_speed: 200
+
+	vehicle_mass: 2600
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_4.soundref"
+	
+	
+	color[]: (0.4020, 0.4020, 0.2122)
+	color[]: (1.0000, 0.6240, 0.1845) 
+	color[]: (0.1274, 0.1274, 0.0331) 
+	color[]: (1.0000, 0.2423, 0.0545)
+	color[]: (0.0284, 0.0284, 0.0284)
+	color[]: (0.0232, 0.1248, 0.4793)
+
+	tags[]: suv
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .hoddlen.suv.luxury25.offroad.chassis
+{
+	data_path: "/def/vehicle/ai/hoddlen_suv_luxury_25/offroad.sii"
+}
+
+vehicle_wheel_accessory: .hoddlen.suv.luxury25.offroad.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/hoddlen_foffroad.sii"
+}
+
+vehicle_wheel_accessory: .hoddlen.suv.luxury25.offroad.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/hoddlen_roffroad.sii"
+}

@@ -1,0 +1,38 @@
+SiiNunit
+{
+
+#
+# See '/base/def/world/trigger_action.sii' for available commands
+#
+
+cutscene_action : _nameless.cutscene_act.1
+{
+	cutscene_time: 0.0
+
+	command: "ui_create"
+
+	str_params[]: "ui"
+	str_params[]: "/ui/viewpoint_cutscene.sii"
+	str_params[]: "nolock"
+}
+
+cutscene_action : _nameless.cutscene_act.2
+{
+	cutscene_time: 2.0
+
+	command: "ui_show"
+
+	str_params[]: "ui"
+}
+
+cutscene_action : _nameless.cutscene_act.3
+{
+	cutscene_time: 20.0
+
+	command: "ui_hide"
+
+	str_params[]: "ui"
+}
+
+
+}

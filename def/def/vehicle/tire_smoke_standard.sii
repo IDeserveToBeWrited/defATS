@@ -1,0 +1,55 @@
+SiiNunit
+{
+
+tire_smoke_setup : tire_smoke.standard {
+	particle_set: "model.particle.tire_smoke.standard"
+
+	generator_configs: 3
+	generator_configs[0]: tire_smoke.standard.patch
+	generator_configs[1]: tire_smoke.standard.trail
+	generator_configs[2]: tire_smoke.standard.wheel
+}
+
+tire_smoke_generator_config : tire_smoke.standard.patch {
+	temperature_factor_with_min_density: 0.025
+	temperature_factor_min_density: 0.25
+
+	wheel_skid_speed_with_zero_density: 0.5
+	wheel_skid_speed_with_full_density: 1.0
+
+	wheel_angular_speed_with_zero_density: 0.0
+	wheel_angular_speed_with_full_density: 0.0
+
+	impart_speed_min: 0.0
+	impart_speed_factor: 0.25
+}
+
+tire_smoke_generator_config : tire_smoke.standard.trail {
+	temperature_factor_with_min_density: 0.4
+	temperature_factor_min_density: 0.01
+
+	wheel_skid_speed_with_zero_density: 0.5
+	wheel_skid_speed_with_full_density: 1.0
+
+	wheel_angular_speed_with_zero_density: 0.0
+	wheel_angular_speed_with_full_density: 0.0
+
+	impart_speed_min: 0.0
+	impart_speed_factor: 0.0
+}
+
+tire_smoke_generator_config : tire_smoke.standard.wheel {
+	temperature_factor_with_min_density: 0.025
+	temperature_factor_min_density: 0.75
+
+	wheel_skid_speed_with_zero_density: 0.0
+	wheel_skid_speed_with_full_density: 0.0
+
+	wheel_angular_speed_with_zero_density: 3.1415926535897932384626433832795
+	wheel_angular_speed_with_full_density: 6.283185307179586476925286766559
+
+	impart_speed_min: 0.0
+	impart_speed_factor: 0.0
+}
+
+}

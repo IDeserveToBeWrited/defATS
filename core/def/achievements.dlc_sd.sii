@@ -1,0 +1,151 @@
+SiiNunit
+{
+# Available events:
+# job_done
+# use_rest
+# use_gas
+# road_disc
+# truck_bought
+# ferry_used
+# city_visited
+# service_disc
+# quick_travel
+# new_day
+# new_week
+# garag_change
+# use_weigh
+# trig_activat
+# aca_log_entr
+
+# -- DLC South Dakota --
+
+# Discover at least 10 cities in South Dakota.
+
+achievement_visit_city_data : .achievement.sd_visit_cit
+{
+	event_name: city_visited
+	initial_check: true
+	country_name: south_dakota
+	target: 10
+
+	achievement_name: sd_visit_cities
+
+	steam_progress_id: "sd_visit_cities-progress"
+	steam_id: sd_visit_cities
+}
+
+# View cutscenes from at least 10 viewpoints in South Dakota.
+
+achievement_trigger_data : .achievement.sd_cutscenes
+{
+	event_name: trig_activat
+	initial_check: true
+	trigger_param: sd_cutscenes
+	target: 10
+
+	achievement_name: sd_cutscenes
+
+	steam_progress_id: "sd_cutscenes-progress"
+	steam_id: sd_cutscenes
+}
+
+# Complete two undamaged deliveries in this order: Mobridge - Pierre, Pierre - Yankton.
+
+achievement_delivery : .achievement.sd_no_damage
+{
+	event_name: job_done
+	initial_check: true
+	condition: .sd_no_damage.condition
+	target: 2
+
+	achievement_name: sd_no_damage
+
+	steam_progress_id: "sd_no_damage-progress"
+	steam_id: sd_no_damage
+}
+
+achievement_delivery_sequence : .sd_no_damage.condition
+{
+	list[]: .sd_no_damage.mobridge.pierre
+	list[]: .sd_no_damage.pierre.yankton
+
+	in_order: true
+}
+
+achievement_delivery_each : .sd_no_damage.mobridge.pierre
+{
+	list[]: .sd_no_damage.mobridge.pierre.damage
+	list[]: .sd_no_damage.mobridge.pierre.source
+	list[]: .sd_no_damage.mobridge.pierre.target
+}
+
+achievement_delivery_cargo_damage : .sd_no_damage.mobridge.pierre.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_point_city : .sd_no_damage.mobridge.pierre.source
+{
+	role: source
+	city_name: mobridge
+}
+
+achievement_delivery_point_city : .sd_no_damage.mobridge.pierre.target
+{
+	role: target
+	city_name: pierre
+}
+
+achievement_delivery_each : .sd_no_damage.pierre.yankton
+{
+	list[]: .sd_no_damage.pierre.yankton.damage
+	list[]: .sd_no_damage.pierre.yankton.source
+	list[]: .sd_no_damage.pierre.yankton.target
+}
+
+achievement_delivery_cargo_damage : .sd_no_damage.pierre.yankton.damage
+{
+	damage_max: 0.0
+}
+
+achievement_delivery_point_city : .sd_no_damage.pierre.yankton.source
+{
+	role: source
+	city_name: pierre
+}
+
+achievement_delivery_point_city : .sd_no_damage.pierre.yankton.target
+{
+	role: target
+	city_name: yankton
+}
+
+# Deliver two different types of cargo to the residential construction sites in Watertown or Spearfish.
+
+achievement_delivery : .achievement.sd_unique_ca
+{
+	event_name: job_done
+	initial_check: true
+	condition: .sd_unique_ca.condition
+	target: 2
+
+	achievement_name: sd_unique_cargos
+
+	steam_progress_id: "sd_unique_cargos-progress"
+	steam_id: sd_unique_cargos
+}
+
+achievement_unique_cargos : .sd_unique_ca.condition
+{
+	condition: .sd_unique_ca.condition.target
+	count: 2
+}
+
+achievement_delivery_company : .sd_unique_ca.condition.target
+{
+	role: target
+	company_name: tay_con_sit2
+	country_name: south_dakota
+}
+
+}

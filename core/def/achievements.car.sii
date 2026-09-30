@@ -1,0 +1,82 @@
+SiiNunit
+{
+
+# -- Car vehicle mode --
+
+# Deliver 5 unique cargoes using a car.
+
+achievement_car : .achievement.car_unique_c
+{
+	event_name: car_job_done
+	type: jobs_unique_cargos
+	target: 5
+
+	achievement_name: car_jobs_unique_cargos
+
+	steam_progress_id: "car_jobs_unique_cargos-progress"
+	steam_id: car_jobs_unique_cargos
+}
+
+# Earn a Postcard by completing a Tourist Board.
+        
+achievement_data : .achievement.car_tb_compl
+{       
+        event_name: tb_completed
+        
+        achievement_name: car_tb_completed
+
+        steam_id: car_tb_completed
+}
+
+# Own your first car.
+	
+achievement_data : .achievement.car_bought
+{       
+	event_name: car_bought
+	
+	achievement_name: car_bought
+
+	steam_id: car_bought
+}
+
+# Drive 5,000 miles or earn 50,000 dollars while in Car Mode.
+
+achievement_car : .achievement.car_dist_rew
+{
+	event_name: car_job_done
+	type: distance_or_jobs_reward
+
+	achievement_name: car_distance_or_jobs_reward
+
+	steam_id: car_distance_or_jobs_reward
+}
+
+# Deliver cargo with a 5-star rating 5 times in a row while in Car Mode.
+
+achievement_car : .achievement.car_job_rati
+{
+	event_name: car_job_done
+	type: jobs_consecutive_rating_level
+	target: 5
+
+	achievement_name: car_jobs_rating_level
+
+	steam_progress_id: "car_jobs_rating_level-progress"
+	steam_id: car_jobs_rating_level
+}
+
+# Complete 20 consecutive jobs without a fine while in Car Mode.
+
+achievement_car : .achievement.car_job_no_f
+{
+	event_name: car_job_done
+	type: jobs_consecutive_no_fines
+	target: 20
+
+	achievement_name: car_jobs_no_fines
+
+	steam_progress_id: "car_jobs_no_fines-progress"
+	steam_id: car_jobs_no_fines
+}
+
+}

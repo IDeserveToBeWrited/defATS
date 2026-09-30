@@ -1,0 +1,156 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Civilian - Sport XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.dylamic.sport
+{
+	accessories[]: .dylamic.sport.chassis
+	accessories[]: .dylamic.sport.fwheel
+	accessories[]: .dylamic.sport.rwheel
+
+	max_speed: 280
+	vehicle_mass: 1980
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+        
+           color[]: (0.0343, 0.0343, 0.0343) #black
+        color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+        color[]: (0.3325, 0.3663, 0.3864) #GRAY
+        color[]:(0.0631, 0.1171, 0.1873)  #blue 
+	color[]: (0.4639, 0.1500, 0.0003) #Orange
+        color[]: (0.3185, 0, 0.0006)      #RED
+
+
+
+
+
+
+	tags[]: expensive
+	tags[]: luxury
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .dylamic.sport.chassis
+{
+	data_path: "/def/vehicle/ai/dylamic_sport_premium_25/chassis.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.sport.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.sport.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in.sii"
+}
+
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Civilian - Coupe XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.dylamic.coupe
+{
+	accessories[]: .dylamic.coupe.chassis
+	accessories[]: .dylamic.coupe.fwheel
+	accessories[]: .dylamic.coupe.rwheel
+
+	max_speed: 280
+	vehicle_mass: 1980
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+        
+       
+        color[]: (0.0343, 0.0343, 0.0343) #black
+        color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+        color[]: (0.3325, 0.3663, 0.3864) #GRAY
+        color[]:(0.0631, 0.1171, 0.1873)  #blue 
+	color[]: (0.4639, 0.1500, 0.0003) #Orange
+        color[]: (0.3185, 0, 0.0006)      #RED
+
+	tags[]: expensive
+	tags[]: luxury
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .dylamic.coupe.chassis
+{
+	data_path: "/def/vehicle/ai/dylamic_sport_premium_25/coupe.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.coupe.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.coupe.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in.sii"
+}
+
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Civilian - Cabrio XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.dylamic.cabrio
+{
+	accessories[]: .dylamic.cabrio.chassis
+	accessories[]: .dylamic.cabrio.fwheel
+	accessories[]: .dylamic.cabrio.rwheel
+
+	max_speed: 280
+	vehicle_mass: 1980
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+        color[]: (0.0343, 0.0343, 0.0343) #black
+        color[]: (0.9909, 0.5522, 0.017)  #Standart YELLOW
+        color[]: (0.3325, 0.3663, 0.3864) #GRAY
+        color[]:(0.0631, 0.1171, 0.1873)  #blue 
+	color[]: (0.4639, 0.1500, 0.0003) #Orange
+        color[]: (0.3185, 0, 0.0006)      #RED
+
+	tags[]: expensive
+	tags[]: luxury
+	
+	spawn_condition[]: .traffic.dylamic.cabrio.condition.weather
+
+
+@include "drivers_generic.sui"
+	
+}
+
+vehicle_accessory: .dylamic.cabrio.chassis
+{
+	data_path: "/def/vehicle/ai/dylamic_sport_premium_25/cabrio.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.cabrio.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.cabrio.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in.sii"
+}
+
+traffic_spawn_condition: .traffic.dylamic.cabrio.condition.weather
+{
+	# spawn only in nice weater
+	type: weather
+	num_param[]: 0
+}

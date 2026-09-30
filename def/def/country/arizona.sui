@@ -10,7 +10,8 @@ country_data : country.data.arizona
 
 	pos: (-72000, 0, 22000)
 
-	fuel_price: 1.59454	# $6.036/gallonUS [6.039] = $1.59454/litre
+	fuel_price: 1.64685	# $6.234/gallonUS [6.239] = $1.64685/litre
+	petrol_price: 1.20964	# $4.579/gallonUS [4.579] = $1.20964/litre
 
 	lights_mandatory: false
 	imperial_units: true
@@ -18,6 +19,26 @@ country_data : country.data.arizona
 
 	time_zone: -420		# -7 hours in minutes
 	time_zone_name: "@@tz_mst@@"
+
+	# Navajo nation (south from Page), MDT, -6
+	secondary_time_zone_area[]: (-71000.0, -69400.0, 5969.92, 6700.0)
+	secondary_time_zone[]: -360
+	secondary_time_zone_name[]: "@@tz_mdt@@"
+
+	# Navajo nation (central part, east from Page)
+	secondary_time_zone_area[]: (-70669.4, -64000.0, 6587.08, 11985.5)
+	secondary_time_zone[]: -360
+	secondary_time_zone_name[]: "@@tz_mdt@@"
+
+	# Navajo nation (road 191)
+	secondary_time_zone_area[]: (-65000.0, -59000.0, 6000.0, 15555.5)
+	secondary_time_zone[]: -360
+	secondary_time_zone_name[]: "@@tz_mdt@@"
+
+	# Navajo nation (NM border)
+	secondary_time_zone_area[]: (-60603.8, -59000.0, 6000.0, 16494.6)
+	secondary_time_zone[]: -360
+	secondary_time_zone_name[]: "@@tz_mdt@@"
 
 	mass_limit_per_axle_count[]: 18143.7	# 40000 lb	# 2-axle vehicle
 	mass_limit_per_axle_count[]: 27215.6	# 60000 lb

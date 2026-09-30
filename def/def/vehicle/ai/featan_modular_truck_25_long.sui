@@ -1,94 +1,117 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX PICKUP_BED_LONG XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-traffic_vehicle : traffic.featan.service
+traffic_vehicle : traffic.featan.pickup_long.midclass_25
 {
-	accessories[]: .featan.service.chassis
-	accessories[]: .featan.service.fwheel
-	accessories[]: .featan.service.rwheel
+	accessories[]: .featan.pickup_long.midclass_25.chassis
+	accessories[]: .featan.pickup_long.midclass_25.fwheel
+	accessories[]: .featan.pickup_long.midclass_25.rwheel
 
 	max_speed: 160
+	vehicle_mass: 2900
 
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
 	sound_move[]: "/sound/traffic/car_v8_2.soundref"
-	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
-	
-	tags[]: pickup
-	tags[]: empty
-	tags[]: suv
-
-	variant[]: traffic.featan.highway
-	
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
 
 
-	vehicle_mass: 3000
-
-	spawn_ratio: 0.1
-	
-@include "drivers_generic.sui"
-	
-}
-
-vehicle_accessory: .featan.service.chassis
-{
-	data_path: "/def/vehicle/ai/featan_modular_truck_25/service.sii"
-}
-
-vehicle_wheel_accessory: .featan.service.fwheel
-{
-	offset: 0
-		data_path: "/def/vehicle/ai_wheel/front_offroad.sii"
-}
-
-vehicle_wheel_accessory: .featan.service.rwheel
-{
-	offset: 0
-	data_path: "/def/vehicle/ai_wheel/rear_offroad.sii"
-}
-
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-
-traffic_vehicle : traffic.featan.highway
-{
-	accessories[]: .featan.highway.chassis
-	accessories[]: .featan.highway.fwheel
-	accessories[]: .featan.highway.rwheel
-
-	max_speed: 160
-
-	sound_move[]: "/sound/traffic/car_v8_2.soundref"
-	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
-	
-	tags[]: pickup
-	tags[]: empty
-	tags[]: suv
-
-
-
-	vehicle_mass: 3000
 
 
 @include "drivers_generic.sui"
-	
+
 }
 
-vehicle_accessory: .featan.highway.chassis
+vehicle_accessory: .featan.pickup_long.midclass_25.chassis
 {
-	data_path: "/def/vehicle/ai/featan_modular_truck_25/highway.sii"
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_long.sii"
 }
 
-vehicle_wheel_accessory: .featan.highway.fwheel
-{
-	offset: 0
-		data_path: "/def/vehicle/ai_wheel/front_offroad.sii"
-}
-
-vehicle_wheel_accessory: .featan.highway.rwheel
+vehicle_wheel_accessory: .featan.pickup_long.midclass_25.fwheel
 {
 	offset: 0
-	data_path: "/def/vehicle/ai_wheel/rear_offroad.sii"
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
 }
 
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+vehicle_wheel_accessory: .featan.pickup_long.midclass_25.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FEATAN HIGHWAY DISPLAY DOWN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.midclass_25.highway_down
+{
+	accessories[]: .featan.midclass_25.highway_down.chassis
+	accessories[]: .featan.midclass_25.highway_down.fwheel
+	accessories[]: .featan.midclass_25.highway_down.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2900
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	spawn_ratio: 0.2
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .featan.midclass_25.highway_down.chassis
+{
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_highway_down.sii"
+}
+
+vehicle_wheel_accessory: .featan.midclass_25.highway_down.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .featan.midclass_25.highway_down.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FEATAN SERVICE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.midclass_25.service
+{
+	accessories[]: .featan.midclass_25.service.chassis
+	accessories[]: .featan.midclass_25.service.fwheel
+	accessories[]: .featan.midclass_25.service.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2900
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	spawn_ratio: 0.4
+
+
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .featan.midclass_25.service.chassis
+{
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_service.sii"
+}
+
+vehicle_wheel_accessory: .featan.midclass_25.service.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .featan.midclass_25.service.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}

@@ -41,6 +41,12 @@
 	key[]: "loading_no_job"
 	val[]: "Libre coma o vento"
 
+	key[]: "loading_location_country"
+	val[]: "Somewhere in $COUNTRY$" #+ Message shown on loading screen when player location is inside specific country.
+
+	key[]: "loading_changing_mode"
+	val[]: "Transferring" #+ Message shown on loading screen when player is switching between vehicle modes.
+
 	key[]: "current_job_title"
 	val[]: "Traballo actual"
 
@@ -124,17 +130,17 @@
 
 #+ Truck analysis feature - truck konfigurator and pop-up
 
-	key[]: "truck_analysis_t"
-	val[]: "ANÁLISE DO VEHÍCULO" #+ Header of the widget in truck configurator
+	key[]: "vehicle_analysis_t"
+	val[]: "ANÁLISE DO VEHÍCULO" #+ Header of the widget in vehicle configurator
 
-	key[]: "truck_analysis_popup_t"
+	key[]: "vehicle_analysis_popup_t"
 	val[]: "ANÁLISE DO VEHÍCULO" #+ Header of the pop-up when taking heavy cargo
 
-	key[]: "current_truck_params"
-	val[]: "Configuración do vehículo" #+ Header inside the truck analysis widget for truck parameters
+	key[]: "current_vehicle_params"
+	val[]: "Configuración do vehículo" #+ Header inside the vehicle analysis widget for vehicle parameters
 
-	key[]: "current_truck_parameters"
-	val[]: "Configuración do vehículo" #+ Header inside the truck analysis pop-up for truck parameters
+	key[]: "current_vehicle_parameters"
+	val[]: "Configuración do vehículo" #+ Header inside the vehicle analysis pop-up for vehicle parameters
 
 	key[]: "normal_cargo"
 	val[]: "Carga normal" #+ name of the bar for normal cargo suitability
@@ -190,8 +196,8 @@
 	key[]: "truck_analysis_heavy_introduction"
 	val[]: "Estás a punto de realizar un traballo de carga pesada. Revisa a configuración actual do teu camión para asegurar que está preparado para a tarefa." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
-	key[]: "truck_analysis_info_tooltip"
-	val[]: "Tendo en conta o teu transporte típico esperado, configura o teu vehículo para optimizalo de acordo a unha combinación de condución económica e limitacións técnicas e legais." #+  General tooltip description of Truck Analysis feature
+	key[]: "vehicle_analysis_info_tooltip"
+	val[]: "Tendo en conta o teu transporte típico esperado, configura o teu vehículo para optimizalo de acordo a unha combinación de condución económica e limitacións técnicas e legais." #+  General tooltip description of Vehicle Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Optimizado para o transporte de cargas de peso lixeiro e medio" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -200,10 +206,10 @@
 	val[]: "Optimizado para cargas pesadas e transportes especiais" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Habilidade do teu vehículo de manobrar en zonas con pouco espazo" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Habilidade do teu vehículo de manobrar en zonas con pouco espazo" #+  Tooltip description for the Maneuverability bar in Vehicle Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Tren motor do vehículo optimizado para un mellor ascenso e descenso de pendentes" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Tren motor do vehículo optimizado para un mellor ascenso e descenso de pendentes" #+  Tooltip description for the Hill Traversal bar in Vehicle Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Habilidade mellorada para superar superficies bacheadas e irregulares" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -275,7 +281,7 @@
 	key[]: "truck_service"
 	val[]: "Taller" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
-	key[]: "truck_service_about"
+	key[]: "vehicle_service_about"
 	val[]: "Mantemento e arranxos do vehículo. Un bo condutor mantén sempre o seu vehículo en condicións óptimas." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
@@ -287,8 +293,8 @@
 	key[]: "truck_service_replace_all"
 	val[]: "Substituír todo" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
-	key[]: "truck_service_truck_t"
-	val[]: "INFORME DE DANOS DO VEHÍCULO" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	key[]: "vehicle_service_vehicle_t"
+	val[]: "INFORME DE DANOS DO VEHÍCULO" #+ Header of section displaying status of individual components of the vehicle. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "INFORME DE DANOS DO REMOLQUE" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -296,8 +302,8 @@
 	key[]: "repair"
 	val[]: "Confirmar" #+ Button which confirms selected actions.
 
-	key[]: "truck_damage"
-	val[]: "Danos do vehículo" #+ Price for the truck damage
+	key[]: "vehicle_damage"
+	val[]: "Danos do vehículo" #+ Price for the vehicle damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -305,13 +311,13 @@
 #+ Allows to add or remove various accessories.
 #@{
 
-	key[]: "truck_config_t"
-	val[]: "CONFIGURADOR DE VEHÍCULOS" #+ Title of the screen. Please keep in upper case where possible.
+	key[]: "vehicle_config_t"
+	val[]: "CONFIGURADOR" #+ Title of the screen. Please keep in upper case where possible.
 
-	key[]: "truck_config"
-	val[]: "Configurador de vehículos" #+ Icon allowing player to upgrade the truck.
+	key[]: "vehicle_config"
+	val[]: "Configurador de vehículos" #+ Icon allowing player to upgrade the vehicle.
 
-	key[]: "truck_config_about"
+	key[]: "vehicle_config_about"
 	val[]: "Xa sabes, sempre hai algo que podes axustar ou pintar para sentirte mellor co teu vehículo." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
@@ -410,7 +416,7 @@
 	key[]: "truck_diag"
 	val[]: "Diagnóstico do vehículo" #+ Icon allowing player to show damage on the truck.
 
-	key[]: "truck_diag_about"
+	key[]: "vehicle_diag_about"
 	val[]: "Ver información do teu vehículo e o seu estado actual."
 
 	key[]: "truck_diag_warning"
@@ -498,8 +504,8 @@
 	key[]: "cart_not_empty"
 	val[]: "Tes varios artigos no teu pedido!<br><br>Queres cancelar todas as novas modificacións?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
-	key[]: "borrowed_truck_refusal"
-	val[]: "Ao teu empregador non lle vai gustar que xogues co seu vehículo." #+ Shown if user attempts to upgrade a quick job truck.
+	key[]: "borrowed_vehicle_refusal"
+	val[]: "Ao teu empregador non lle vai gustar que xogues co seu vehículo." #+ Shown if user attempts to upgrade a quick job vehicle.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Non podes mudar o tipo de remolque, o corpo ou o chasis durante un traballo. Remata a túa entrega e téntao de novo." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -540,6 +546,9 @@
 
 	key[]: "b_grill"
 	val[]: "Barra de protección baixa"
+
+	key[]: "bed_addon"
+	val[]: "Bed Addon"
 
 	key[]: "bullbar"
 	val[]: "Barra parachoques"
@@ -649,6 +658,9 @@
 	key[]: "f_intk_b_cab"
 	val[]: "Nervios da máscara frontal" #+ Bars of plastic radiator mask (grill) in on the truck's front
 
+	key[]: "f_light"
+	val[]: "Headlights"
+
 	key[]: "f_light_chs"
 	val[]: "Faros dianteiros"
 
@@ -679,8 +691,11 @@
 	key[]: "f_wnd_frame"
 	val[]: "Marco do parabrisas" #+ The plate under truck windshield (where wipers are installed).
 
+	key[]: "fenders"
+	val[]: "Fenders" #+ Fenders accessory, word for all fenders on vehicle.
+
 	key[]: "filter"
-	val[]: "Filtro de aire" #+ Air filter accessoty.
+	val[]: "Filtro de aire" #+ Air filter accessory.
 
 	key[]: "flag_r"
 	val[]: "Bandeira da fiestra dereita" #+ Right window flag
@@ -690,6 +705,9 @@
 
 	key[]: "frntglss_mid"
 	val[]: "Centro do parabrisas" #+ Pin that is placed on the bottom of the windshield centre to accomodate various decarative elements
+
+	key[]: "fuelcap"
+	val[]: "Fuel Cap"
 
 	key[]: "fwheel"
 	val[]: "Rodas frontais"
@@ -727,6 +745,9 @@
 	key[]: "nuts"
 	val[]: "Porca" #+ Wheel nuts
 
+	key[]: "r_badge"
+	val[]: "Rear Badge" #+ Badge or logo on the rear of a vehicle
+
 	key[]: "r_banner"
 	val[]: "Pancarta traseira" #+ Banner on the rear
 
@@ -754,8 +775,17 @@
 	key[]: "r_light"
 	val[]: "Luz traseira" #+ Rear lights accessory
 
+	key[]: "r_logo"
+	val[]: "Rear Logo"
+
 	key[]: "r_mudflap"
 	val[]: "Faldróns gardalamas traseiros" #+ A couple of rear mudflaps
+
+	key[]: "r_panel"
+	val[]: "Panel"
+
+	key[]: "r_turn_light"
+	val[]: "Rear Turn Light"
 
 	key[]: "r_wheel"
 	val[]: "Rodas traseiras"
@@ -765,6 +795,9 @@
 
 	key[]: "rn_mirror"
 	val[]: "Espello frontal dereito"
+
+	key[]: "roof_addon"
+	val[]: "Roof Addon"
 
 	key[]: "rwheel"
 	val[]: "Rodas traseiras"
@@ -790,6 +823,9 @@
 	key[]: "s_strip"
 	val[]: "Franxa lateral"
 
+	key[]: "s_vent"
+	val[]: "Vent"
+
 	key[]: "set_cuphold"
 	val[]: "Conxuntos de portavasos" #+ Large Pin for sets of small pins of the cup holder accessories
 
@@ -810,6 +846,9 @@
 
 	key[]: "sideskrt_bar"
 	val[]: "Barras do faldrón lateral"
+
+	key[]: "spare_w"
+	val[]: "Spare Wheel"
 
 	key[]: "steering_w"
 	val[]: "Volante" #+ Steering wheel
@@ -846,6 +885,9 @@
 
 	key[]: "toystand"
 	val[]: "Obxectos na consola" #+ Interior accessories placed on stands or centre console available in the truck
+
+	key[]: "trunk"
+	val[]: "Trunk"
 
 	key[]: "windowtrim"
 	val[]: "Embelecedores das fiestras" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
@@ -934,13 +976,13 @@
 	val[]: "Adiante" #+ Tooltip for walk forward.
 
 	key[]: "tooltip_walk_back"
-	val[]: "Back" #+ Tooltip for walk back.
+	val[]: "Atrás" #+ Tooltip for walk back.
 
 	key[]: "tooltip_walk_left"
-	val[]: "Left" #+ Tooltip for walk left.
+	val[]: "Esquerda" #+ Tooltip for walk left.
 
 	key[]: "tooltip_walk_right"
-	val[]: "Right" #+ Tooltip for walk right.
+	val[]: "Dereita" #+ Tooltip for walk right.
 
 	key[]: "tooltip_walk_crouch"
 	val[]: "Abaixarse" #+ Tooltip for crouch.
@@ -1014,7 +1056,7 @@
 	val[]: "Mellorar" #+ Button allowing user to upgrade something.
 
 	key[]: "confirm"
-	val[]: "Confirm" #+ Button which applies the state configured in the screen.
+	val[]: "Confirmar" #+ Button which applies the state configured in the screen.
 
 	key[]: "continue"
 	val[]: "Continuar" #+ Button which usually continues to next screen or message in sequence.
@@ -1045,7 +1087,7 @@
 	val[]: "¡Cambios no xogo detectados! Para evitar problemas de incompatibilidade cos arquivos de gardado debido aos cambios no mundo, calquera entrega sen rematar foi cancelada sen penalizacións para ti." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "¡Cambios no xogo detectados!<br><br>Para evitar problemas de incompatibilidade cos arquivos de gardado, calquera entrega sen rematar foi cancelada sen penalizacións para ti. Requírese de volver a estacionar o camión nun lugar seguro.<br><br>Por favor, escolle un lugar de viaxe rápida para continuar." #+ Game state reset info message, plus free teleport
+	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Gardando..." #+ Game save indicator message.
@@ -1073,6 +1115,9 @@
 
 	key[]: "load_game"
 	val[]: "Cargar partida" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
+
+	key[]: "load_game_failed"
+	val[]: "Non se puido cargar a partida gardada."
 
 	key[]: "load_game_desc"
 	val[]: "Carga unha partida gardada previamente. O progreso actual perderase!" #+ Help message associated with load game icon.
@@ -1353,7 +1398,7 @@
 	val[]: "Distancia por estrada" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Escolle a carga para ollar os detalles da ruta" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Escolle a oferta para ollar os detalles da ruta" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Incompleta" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -1730,7 +1775,7 @@
 	val[]: "Actualmente a túa carreira está desconectada da experiencia en liña $SHORTCUT1$$FRONTEND_URL$."
 
 	key[]: "connect_to_wotr_login_t"
-	val[]: "Connect"
+	val[]: "Conectar"
 
 	key[]: "connect_to_wotr_skip_t"
 	val[]: "Conectar máis tarde"
@@ -1771,10 +1816,10 @@
 	val[]: "Escolle entre unha variedade de camións para definir a túa experiencia inicial. Cada unha das opcións é unha elección perfecta."
 
 	key[]: "random_truck"
-	val[]: "Random"
+	val[]: "Aleatorio"
 
 	key[]: "confirm_preferred_truck"
-	val[]: "Confirm"
+	val[]: "Confirmar"
 #@}
 
 
@@ -1969,6 +2014,9 @@
 	key[]: "sort_by_ownership"
 	val[]: "Propiedade" #+ Button in sort by droplist. Please keep it as short as possible.
 
+	key[]: "sort_by_price"
+	val[]: "Prezo" #+ Button in sort by droplist. Please keep it as short as possible.
+
 	key[]: "filter_dlc"
 	val[]: "Filtro" #+ Combo box with job sorting options."
 
@@ -2044,6 +2092,9 @@
 	key[]: "dlc_category_paint_jobs"
 	val[]: "Pinturas" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
+	key[]: "dlc_category_vehicles"
+	val[]: "Vehículos" #+ Button/tab in DLC browser. Please keep it as short as possible.
+
 	key[]: "dlc_category_all"
 	val[]: "Todos" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
@@ -2067,6 +2118,48 @@
 
 	key[]: "dlc_browser_online_wait_message"
 	val[]: "Descargando información do DLC. Por favor agarda."
+
+	key[]: "dlc_browser_open_store"
+	val[]: "Queres abrir un navegador de Internet e visitar a páxina web seleccionada?"
+
+	key[]: "dlc_browser_no_valid_data"
+	val[]: "No DLC available at this time."
+
+	key[]: "dlc_browser_catalogue_canceled"
+	val[]: "The catalogue operation was cancelled." #+ The operation was cancelled by the player, and finished correctly.
+
+	key[]: "dlc_browser_catalogue_unknown_error"
+	val[]: "The catalogue has encountered an unknown error." #+ Catalogue unknown error.
+
+	key[]: "dlc_browser_catalogue_not_initialized"
+	val[]: "The catalogue is not initialized." #+ Error caused by either module or library not being properly initialized (yet).
+
+	key[]: "dlc_browser_catalogue_incompatible_state"
+	val[]: "The operation could not start because a blocking operation is currently in progress." #+ Error caused attempting to start an operation when another, blocking is in progress
+
+	key[]: "dlc_browser_catalogue_bad_data"
+	val[]: "Some of the data provided is incorrect or incomplete." #+ Bad data were supplied either by caller or by first party.
+
+	key[]: "dlc_browser_catalogue_product_misssing"
+	val[]: "Trying to request operation with a product that is either missing from our local catalogue or the platform back end catalogue." #+ Trying to request operation with a product that is either missing from our local caltalogue or the first party back end catalogue.
+
+	key[]: "dlc_browser_catalogue_sending_failed"
+	val[]: "The catalogue request has failed." #+ The request failed, accompanied error message/ other logs should explain why.
+
+	key[]: "dlc_browser_catalogue_parse_failed"
+	val[]: "The response received was malformed." #+ The respone received was malformed.
+
+	key[]: "dlc_browser_catalogue_first_party_fail"
+	val[]: "The catalogue has encountered an internal error." #+ First party api call failed for reason beyond our capabilities to fix.
+
+	key[]: "dlc_browser_catalogue_bad_platform"
+	val[]: "Functionality is unavailable on the current platform." #+ The functionality is not present on current platform.
+
+	key[]: "dlc_browser_catalogue_try_later"
+	val[]: "The catalogue service is currently unavailable. Try again later." #+ The service is currently unavailable, the caller should try later.
+
+	key[]: "dlc_browser_commerce_module_internal_error"
+	val[]: "The catalogue has encountered an internal error." #+ Catalogue internal error.
 #@}
 
 #+ Activation screen
@@ -2322,7 +2415,7 @@
 	key[]: "interface_sound_settings_t"
 	val[]: "INTERFACE" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
-	key[]: "truck_sound_settings_t"
+	key[]: "vehicle_sound_settings_t"
 	val[]: "SONS DO VEHÍCULO" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
@@ -2334,20 +2427,20 @@
 	key[]: "master_volume"
 	val[]: "Volume principal" #+ Slider controlling master volume.
 
-	key[]: "truck_engine_volume"
-	val[]: "Volume do motor do vehículo" #+ Slider controlling volume of the truck engine.
+	key[]: "vehicle_engine_volume"
+	val[]: "Volume do motor" #+ Slider controlling volume of the vehicle engine.
 
-	key[]: "truck_exhaust_volume"
-	val[]: "Volume do escape do vehículo" #+ Slider controlling volume of the truck exhaust.
+	key[]: "vehicle_exhaust_volume"
+	val[]: "Volume do escape" #+ Slider controlling volume of the vehicle exhaust.
 
-	key[]: "truck_turbo_volume"
-	val[]: "Volume do turbo do vehículo" #+ Slider controlling volume of the truck turbo.
+	key[]: "vehicle_turbo_volume"
+	val[]: "Volume do turbo" #+ Slider controlling volume of the vehicle turbo.
 
-	key[]: "truck_effects_volume"
-	val[]: "Volume dos efectos do vehículo" #+ Slider controlling volume of the truck effects.
+	key[]: "vehicle_effects_volume"
+	val[]: "Volume dos efectos do vehículo" #+ Slider controlling volume of the vehicle effects.
 
-	key[]: "truck_noise_volume"
-	val[]: "Volume dos ruídos do vehículo" #+ Slider controlling volume of the truck noises.
+	key[]: "vehicle_noise_volume"
+	val[]: "Volume dos ruídos do vehículo" #+ Slider controlling volume of the vehicle noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Volume dos ruídos do remolque" #+ Slider controlling volume of the trailer noises.
@@ -2489,19 +2582,19 @@
 	key[]: "master_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume xeral do xogo."
 
-	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_engine_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume do motor do vehículo."
 
-	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_exhaust_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume do escape do vehículo."
 
-	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_turbo_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume do turbo do vehículo."
 
-	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_effects_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume doutros sons do vehículo, como o asubío dos freos pneumáticos."
 
-	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume do ruído procedente dos pneumáticos do vehículo."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
@@ -2580,10 +2673,10 @@
 	val[]: "Activa ruído adicional do aire fluíndo a través das fiestras do vehículo cando están abertas.<br><br><color value=@@clr_txt_d@@>Require activar a función de \"Volume do vento\"."
 
 	key[]: "noise_aero_op_tooltip" # - Audio, Advanced
-	val[]: "Activa o ruído producido polo aire que flúe ao redor da cabina do teu vehículo."
+	val[]: "Activa o ruído producido polo aire que flúe ao redor do teu vehículo."
 
 	key[]: "reverb_cabin_op_tooltip" # - Audio, Advanced
-	val[]: "Activa o efecto de reverberación da cabina do teu vehículo."
+	val[]: "Activa o efecto de reverberación do interior do teu vehículo."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
 	val[]: "Activa o efecto de reverberación dos sons ambientais."
@@ -2629,8 +2722,8 @@
 	key[]: "transmission_settings"
 	val[]: "TRANSMISIÓN" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
-	key[]: "truck_physics_settings"
-	val[]: "FÍSICAS DO VEHÍCULO" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	key[]: "vehicle_physics_settings"
+	val[]: "FÍSICAS DO VEHÍCULO" #+ Title of 'Vehicle physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "ASISTENTES" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2818,8 +2911,8 @@
 	key[]: "hide"
 	val[]: "Agochar" #+ Hide speed limit display on the advisor.
 
-	key[]: "truck_limit"
-	val[]: "Amosar límite para o tipo de vehículo actual" #+ Show speed limits for trucks on the advisor.
+	key[]: "automatic_limit"
+	val[]: "Amosar límite do tipo de vehículo actual" #+ Show speed limits for vehicles on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "Amosar límite de coche" #+ Show speed limits for ordinary cars on the advisor.
@@ -2952,7 +3045,7 @@
 	key[]: "brake_intensity"
 	val[]: "Intensidade de freado" #+ Slider for player modification of braking force.
 
-	key[]: "truck_stability"
+	key[]: "vehicle_stability"
 	val[]: "Estabilidade do vehículo" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
@@ -3010,7 +3103,7 @@
 	val[]: "Prendido automático de electricidade e motor" #+ Checkbox for automatic engine/electricity start by throttle.
 
 	key[]: "auto_park_brake"
-	val[]: "Activación automática do freo de man" #+ Checkbox for automatic parking brake.
+	val[]: "Activación automática do freo de estacionamento" #+ Checkbox for automatic parking brake.
 
 	key[]: "auto_drop_axles"
 	val[]: "Baixada automática de eixos elevábeis" #+ Checkbox for automatic axle dropping of liftable axles.
@@ -3018,8 +3111,8 @@
 	key[]: "throttle_double_tap"
 	val[]: "Control intelixente do acelerador" #+ Checkbox for double tap mode of the digital throttle.
 
-	key[]: "truck_speed_limiter"
-	val[]: "Limitador de velocidade do camión" #+ Checkbox for enabling of speed limiter.
+	key[]: "vehicle_speed_limiter"
+	val[]: "Limitador de velocidade do vehículo" #+ Checkbox for enabling of speed limiter.
 
 	key[]: "rain_sensor"
 	val[]: "Sensor de chuvia" #+ Checkbox for enabling rain sensor usage (automatic wipers).
@@ -3135,6 +3228,9 @@
 	key[]: "cam_horizon_lock_factor"
 	val[]: "Factor de bloqueo do horizonte na cámara interior" #+ Slider for interior camera horizon locking.
 
+	key[]: "cam_fov_speed_factor"
+	val[]: "Cambio do campo de visión da cámara interior segundo a velocidade" #+ Slider for interior camera speed-based FOV changes.
+
 	key[]: "cam_auto_center_delay"
 	val[]: "Retardo do centrado automático da cámara" #+ Dropdown for camera auto centering delay.
 
@@ -3180,7 +3276,7 @@
 	val[]: "Ao activalo, tes que obedecer as normas de tráfico ou arriscaraste a recibir sancións. O risco aumenta preto de vehículos policiais, radares ou cámaras de tráfico."
 
 	key[]: "preferred_job_length_op_tooltip" # - Gameplay, Advanced
-	val[]: "Axusta a distancia media dos traballos que se ofertan."
+	val[]: "Adjusts the average length of jobs that are offered.<br><br><color value=@@clr_txt_d@@>Applies to jobs in Truck Mode."
 
 	key[]: "adviser_speed_limit_op_tooltip" # - Gameplay, Advanced
 	val[]: "Selecciona o límite de velocidade que se amosa no widget de navegación."
@@ -3207,7 +3303,7 @@
 	val[]: "Selecciona como se aliña o mapa do mundo."
 
 	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "(placeholder) Choose how the Map is explored."
+	val[]: "Escolle como se explora o mapa do mundo:<br>- \"Exploración de proximidade\" marca como explorada unha área máis grande.<br>- \"Exploración precisa\" descubre só as áreas que están inmediatamente arredor do xogador."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Selecciona como debe amosarse a navegación."
@@ -3231,7 +3327,7 @@
 	val[]: "Escolle se se amosa información da zona horaria ademais da hora actual."
 
 	key[]: "show_cutscenes_op_tooltip" # - Gameplay, Simple
-	val[]: "Activa as escenas que se amosan despois da compra dun camión, ao mellorar un garaxe ou durante o embarque de pasaxeiros."
+	val[]: "Activa as escenas que se amosan despois da compra dun vehículo, ao mellorar un garaxe ou durante o embarque de pasaxeiros."
 
 	key[]: "show_blockers_op_tooltip" # - Gameplay, Simple
 	val[]: "Escolle se se amosan bloqueadores semitranslúcidos nas estradas non accesibles."
@@ -3254,7 +3350,7 @@
 	key[]: "brake_intensity_op_tooltip" # - Gameplay, Advanced
 	val[]: "Cambia a intensidade dos freos."
 
-	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
+	key[]: "vehicle_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "Cambia a estabilidade do vehículo baixando o seu centro de gravidade."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
@@ -3278,8 +3374,8 @@
 	key[]: "trailer_cables_mode_op_tooltip" # - Gameplay, Simple
 	val[]: "Selecciona se os cabos do remolque reaccionan ao movemento e cales.<br><br><color value=@@clr_txt_d@@>Activar a animación en máis vehículos pode afectar ao rendemento en sistemas máis antigos."
 
-	key[]: "truck_speed_limiter_op_tooltip" # - Gameplay, Simple
-	val[]: "Activa o limitador electrónico da velocidade do camión a 105 km/h (65 mph).<br><br><color value=@@clr_txt_d@@>Os traballos de World of Trucks sempre teñen esta función activada."
+	key[]: "vehicle_speed_limiter_op_tooltip" # - Gameplay, Simple
+	val[]: "Activa o limitador electrónico da velocidade do vehículo dependendo do modelo.<br><br><color value=@@clr_txt_d@@>Os traballos de World of Trucks sempre teñen esta función activada."
 
 	key[]: "rain_sensor_op_tooltip" # - Gameplay, Simple
 	val[]: "Ao activalo e co selector dos limpaparabrisas na primeira posición, estes activaranse automaticamente e axustarán a súa velocidade segundo as condicións meteorolóxicas."
@@ -3370,6 +3466,9 @@
 
 	key[]: "cam_horizon_lock_factor_op_tooltip" # - Gameplay, Advanced
 	val[]: "Cambia canto se pode inclinar a cámara interior segundo os movementos do vehículo."
+
+	key[]: "cam_fov_speed_factor_op_tooltip" # - Gameplay, Advanced
+	val[]: "Modifica canto cambia o campo de visión da cámara interior segundo a velocidade do vehículo."
 
 	key[]: "cam_auto_center_delay_op_tooltip" # - Gameplay, Advanced
 	val[]: "Establece o retardo antes de que a cámara volve ao centro automaticamente.<br><br>O vehículo ten que moverse a unha velocidade apreciable para que se active esta función. Só aplica á cámara interior ou á persecutoria mentres te moves cara adiante, e á cámara para mirar por fóra da fiestra mentres te moves marcha atrás."
@@ -3571,6 +3670,9 @@
 	key[]: "lost_function_binding"
 	val[]: "Perdeuse a asignación da función:" #+ Shown when key was rebound to a different function.
 
+	key[]: "unavailable_assignment"
+	val[]: "Non se pode usar $INPUT$." #+ Shown when the player presses a key that cannot in input binding.
+
 #!{
 	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
 	val[]: "@@keyboard_ico@@"
@@ -3579,14 +3681,14 @@
 #+ Headers of individual sections
 #@{
 
-	key[]: "truck_controls"
+	key[]: "vehicle_controls"
 	val[]: "VEHÍCULO"
 
 	key[]: "assistant_controls"
 	val[]: "ASISTENTES"
 
 	key[]: "transmission_controls"
-	val[]: "TRANSMISSION"
+	val[]: "TRANSMISIÓN"
 
 	key[]: "suspension_controls"
 	val[]: "SUSPENSIÓN"
@@ -3690,6 +3792,9 @@
 
 	key[]: "o_im_parkingbrake"
 	val[]: "Freo de estacionamento"
+
+	key[]: "o_im_handbrake"
+	val[]: "Freo de man"
 
 	key[]: "o_im_motorbrake"
 	val[]: "Freo motor"
@@ -3850,6 +3955,9 @@
 	key[]: "o_im_infotainment"
 	val[]: "Modo da pantalla de infoentretemento" #+ Action for cycling between infotainement display pages/modes.
 
+	key[]: "o_im_parking_cameras"
+	val[]: "Parking Camera Mode" #+ Action for toggling parking camera display pages/modes (if available).
+
 	key[]: "o_im_dashboard_map"
 	val[]: "Modo do zoom da navegación" #+ Action for cycling trough zoom levels in all vehicle navigational devices.
 
@@ -3999,7 +4107,7 @@
 	val[]: "Adiante" #+ Walk forward.
 
 	key[]: "o_im_walk_back"
-	val[]: "Back" #+ Walk back.
+	val[]: "Atrás" #+ Walk back.
 
 	key[]: "o_im_walk_left"
 	val[]: "Esquerda" #+ Walk left.
@@ -4103,6 +4211,9 @@
 
 	key[]: "o_im_parkingbrake_op_tooltip"
 	val[]: "Asigna un botón para activar ou desactivar o freo de estacionamento."
+
+	key[]: "o_im_handbrake_op_tooltip"
+	val[]: "Asigna un botón para activar ou desactivar o freo de man."
 
 	key[]: "o_im_motorbrake_op_tooltip"
 	val[]: "Asigna un botón para o freo motor.<br><br>O freo motor estará activo mentres manteñas premido este botón."
@@ -4226,6 +4337,9 @@
 
 	key[]: "o_im_infotainment_op_tooltip"
 	val[]: "Asigna un botón para cambiar o modo da pantalla de infoentretemento."
+
+	key[]: "o_im_parking_cameras_op_tooltip"
+	val[]: "Assigns button for toggling the parking camera on demand. The button temporarily hides the camera feed while reversing and shows it while driving forward. (@@car_mode@@)"
 
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "Asigna un botón para cambiar o zoom do navegador na pantalla do cadro de mandos do vehículo."
@@ -5248,10 +5362,10 @@
 	val[]: "Set waypoint to the desired portal"
 
 	key[]: "wanna_assistance_portal"
-	val[]: "Assistance Service can take you and your truck to a random portal for free.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a un portal aleatorio de balde.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_assistance_portal_online"
-	val[]: "Assistance Service can take you and your truck to a random portal for free.<br offset=30>Your current delivery will be cancelled.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a un portal aleatorio de balde.<br offset=30>A túa entrega actual será cancelada.<br offset=30>Estás de acordo?"
 
 	key[]: "mp_job_quick_travel_other_land"
 	val[]: "You are currently too far away from the source company location which is in a different land.<br><br>Do you still want to take the job?"
@@ -5266,7 +5380,7 @@
 	val[]: "Modo da pausa automática" #+ Type of the autopause
 
 	key[]: "eye_autopause_mode_never"
-	val[]: "Disabled" #+ Autopause is disabled
+	val[]: "Desactivado" #+ Autopause is disabled
 
 	key[]: "eye_autopause_mode_presence"
 	val[]: "Presenza" #+ Autopause if user is not present
@@ -5429,6 +5543,9 @@
 	key[]: "grass_detail"
 	val[]: "Densidade de herba" #+ Combo box selecting density of grass.
 
+	key[]: "tire_smoke"
+	val[]: "Fume de pneumático" #+ Combo box selecting amount of tire smoke.
+
 	key[]: "shadow_quality"
 	val[]: "Calidade das sombras"  #+ Combo box selecting quality of shadows.
 
@@ -5545,6 +5662,9 @@
 
 	key[]: "grass_detail_op_tooltip" # - Graphics, Advanced
 	val[]: "Axusta a densidade da herba aos lados das estradas.<br><br><color value=@@clr_txt_d@@>Normalmente, este axuste ten un impacto moderado no rendemento."
+
+	key[]: "tire_smoke_op_tooltip" # - Graphics, Advanced
+	val[]: "Controla a cantidade de fume xerado pola fricción dos pneumáticos co chan.<br><br><color value=@@clr_txt_d@@>Característica experimental, polo de agora só funciona ao conducir coches.<br>Normalmente, este axuste ten un impacto moderado no rendemento."
 
 	key[]: "shadow_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Axusta a calidade das sombras proxectadas polo sol e a lúa.<br><br><color value=@@clr_txt_d@@>Normalmente, este axuste ten un impacto moderado no rendemento."
@@ -5955,7 +6075,7 @@
 	val[]: "Reverse Gear" #+ Reverse gear button of a steering wheel, usually from a h-shifter.
 
 	key[]: "button_gear"
-	val[]: "Gear" #+ N-th gear button of a steering wheel, usually from a h-shifter. For example "Gear 1".
+	val[]: "Marcha" #+ N-th gear button of a steering wheel, usually from a h-shifter. For example "Gear 1".
 #@}
 
 #+ XInput button names
@@ -6216,22 +6336,22 @@
 	val[]: "O servizo de asistencia pode levarte co teu vehículo a $CITY$. Custará $MONEY$ e a viaxe levará $TIME$.<br offset=30>O teu traballo actual será cancelado.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_recover"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo á estrada máis próxima. Custarache $MONEY$ e a viaxe levará $TIME$.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_recover_quick"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo á estrada máis próxima. Custará $MONEY$ e a viaxe levará $TIME$.<br>(O custo cubrirao o teu empregador).<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_recover_online"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Your current delivery will be cancelled.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo á estrada máis próxima. Custarache $MONEY$ e a viaxe levará $TIME$.<br offset=30>A túa entrega actual será cancelada.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_refuel"
-	val[]: "O servizo de reabastecemento de emerxencia proporcionarache $VOLUME$ de gasóleo. Custarache $MONEY$ e tardará $TIME$.<br offset=30>Estás de acordo?"
+	val[]: "Emergency Refueling service will provide you with $VOLUME$ of fuel. It will cost $MONEY$ and will take $TIME$.<br offset=30>Do you agree?"
 
 	key[]: "wanna_refuel_quick"
-	val[]: "O servizo de reabastecemento de emerxencia proporcionarache $VOLUME$ de gasóleo. Custará $MONEY$ e tardará $TIME$.<br>(O importe será pagado polo teu empregador.)<br offset=30>Estás de acordo?"
+	val[]: "Emergency Refueling service will provide you with $VOLUME$ of fuel. It will cost $MONEY$ and will take $TIME$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
 
 	key[]: "wanna_refuel_online"
-	val[]: "O servizo de reabastecemento de emerxencia proporcionarache $VOLUME$ de gasóleo. Custarache $MONEY$ e tardará $TIME$.<br offset=30>Estás de acordo?"
+	val[]: "Emergency Refueling service will provide you with $VOLUME$ of fuel. It will cost $MONEY$ and will take $TIME$.<br offset=30>Do you agree?"
 
 	key[]: "wanna_recharge"
 	val[]: "O servizo de recarga de emerxencia recargará a túa batería con $ENERGY$. Custará $MONEY$ e tardará $TIME$.<br offset=30>Estás de acordo?"
@@ -6243,22 +6363,22 @@
 	val[]: "O servizo de recarga de emerxencia recargará a túa batería con $ENERGY$. Custará $MONEY$ e tardará $TIME$.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_assistance_mp"
-	val[]: "Assistance Service can take you and your truck to $CITY$. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a $CITY$. Custará $MONEY$.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_assistance_quick_mp"
-	val[]: "Assistance Service can take you and your truck to $CITY$. It will cost $MONEY$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a $CITY$. Custará $MONEY$.<br>(O custo cubrirao o teu empregador).<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_assistance_online_mp"
-	val[]: "Assistance Service can take you and your truck to $CITY$. It will cost $MONEY$.<br offset=30>Your current delivery will be cancelled.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a $CITY$. Custará $MONEY$.<br offset=30>A túa entrega actual será cancelada.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_recover_mp"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo á estrada máis próxima. Custarache $MONEY$.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_recover_quick_mp"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo á estrada máis próxima. Custará $MONEY$.<br>(O custo cubrirao o teu empregador).<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_recover_online_mp"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$.<br offset=30>Your current delivery will be cancelled.<br offset=30>Do you agree?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo á estrada máis próxima. Custarache $MONEY$.<br offset=30>A túa entrega actual será cancelada.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_refuel_mp"
 	val[]: "Emergency Refueling service will provide you with $VOLUME$ of diesel. It will cost $MONEY$.<br offset=30>Do you agree?"
@@ -6292,6 +6412,9 @@
 
 	key[]: "cancel_cur_job"
 	val[]: "Realmente queres cancelar o teu traballo actual?<br offset=10>Terás que pagar unha penalización de $MONEY$"
+
+	key[]: "cancel_cur_car_job"
+	val[]: "Realmente queres cancelar o teu traballo actual?<br offset=10>Terás que pagar unha penalización de $MONEY$ e perderás a túa serie de entregas perfectas consecutivas."
 
 	key[]: "no_cancel_first_job"
 	val[]: "Non podes cancelar o teu primeiro traballo. Ninguén te respectaría despois de facer iso."
@@ -6450,8 +6573,8 @@
 	key[]: "stop_engine_short"
 	val[]: "Para o motor!"
 
-	key[]: "stop_truck_short"
-	val[]: "Detén o vehículo!"   #+ Quick message shown when sleep was prevented by truck movement.
+	key[]: "stop_vehicle_short"
+	val[]: "Detén o vehículo!"   #+ Quick message shown when sleep was prevented by vehicle movement.
 
 	key[]: "stop_engine"
 	val[]: "Use a seguinte tecla para parar o motor:"
@@ -6467,6 +6590,9 @@
 
 	key[]: "diesel_price"
 	val[]: "Prezo do gasóleo"
+
+	key[]: "petrol_price"
+	val[]: "Prezo da gasolina"
 
 	key[]: "total_price"
 	val[]: "Prezo total"
@@ -6585,7 +6711,7 @@
 	val[]: "Preme $KEY$ para activar o contacto."
 
 	key[]: "parking_brake_on1"
-	val[]: "Freo de man posto!"
+	val[]: "Freo de estacionamento posto!"
 
 	key[]: "parking_brake_on2"
 	val[]: "Use a seguinte tecla para quitalo:"
@@ -6691,7 +6817,7 @@
 	val[]: "Reprodutor de son"
 
 	key[]: "adv_hud_radio_op_tooltip"
-	val[]: "On manual change — the widget appears when you take an action, such as switching stations, or adding a station to your favourites.<br><br>On all changes — the widget appears for every update, including manual actions and automatic track transitions."
+	val[]: "Ao cambiar manualmente — o widget amósase cando realizas algunha acción, como cambiar de emisora ou engadila aos teus favoritos.<br><br>Con todos os cambios — o widget amósase en cada cambio, tanto en accións manuais como en transicións automáticas entre pistas."
 
 	key[]: "adv_hud_finances_line"
 	val[]: "Finanzas" #+ Widget name for the current bank account balance and the last 7 days profit.
@@ -7671,6 +7797,9 @@
 	key[]: "cn_drymilk"
 	val[]: "Leite en po"
 
+	key[]: "cn_dry_van"
+	val[]: "Dry Van"
+
 	key[]: "cn_drywall"
 	val[]: "Drywall"
 
@@ -7736,6 +7865,9 @@
 
 	key[]: "cn_frozen_hake"
 	val[]: "Pescada conxelada"
+
+	key[]: "cn_fuel_tank"
+	val[]: "Fuel Tank"
 
 	key[]: "cn_fuel_tanks"
 	val[]: "Tanques de combustible"
@@ -7826,6 +7958,9 @@
 
 	key[]: "cn_logs"
 	val[]: "Troncos"
+
+	key[]: "cn_low_bed_trailers"
+	val[]: "Semirremolques de cama baixa"
 
 	key[]: "cn_lpg"
 	val[]: "GLP"
@@ -7956,6 +8091,9 @@
 	key[]: "cn_red_bricks"
 	val[]: "Ladrillos"
 
+	key[]: "cn_refrigerated_trailer"
+	val[]: "Remolque refrixerado"
+
 	key[]: "cn_rice"
 	val[]: "Arroz"
 
@@ -7979,6 +8117,9 @@
 
 	key[]: "cn_scrap_metals"
 	val[]: "Chatarra"
+
+	key[]: "cn_seed_containers"
+	val[]: "Seed Containers"
 
 	key[]: "cn_silica"
 	val[]: "Sílice"
@@ -8035,10 +8176,13 @@
 	val[]: "Tractores"
 
 	key[]: "cn_trailers"
-	val[]: "Semirremolques de leito baixo"
+	val[]: "Trailers"
 
 	key[]: "cn_train_parts"
 	val[]: "Eixos de tren"
+
+	key[]: "cn_truss"
+	val[]: "Truss"
 
 	key[]: "cn_tv"
 	val[]: "Televisores"
@@ -8669,6 +8813,15 @@
 	key[]: "bank_money"
 	val[]: "Saldo da conta: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
 
+	key[]: "bank_loan_unlock_requirement"
+	val[]: "Avanza na túa carreira no modo Camión para desbloquear os préstamos."
+
+	key[]: "bank_loan_locked_wrong_mode"
+	val[]: "Avanza na túa carreira no $MODE$ para desbloquear os préstamos."
+
+    key[]: "bank_loan_in_debt"
+	val[]: "Tes demasiadas débedas para obter este préstamo."
+
 #+ New loan confirmation window
 #@{
 
@@ -8742,6 +8895,9 @@
 
 	key[]: "bank_sell_report_garage"
 	val[]: "Garaxe en $CITY$, valor estimado: $MONEY$"
+
+	key[]: "bank_sell_report_car"
+	val[]: "Coche $NAME$, valor estimado: $MONEY$" #+ Message used to show information about a car to sell to cover debt. Same style as bank_sell_report_trailer.
 
 #+ Mail screen
 #+
@@ -8848,6 +9004,12 @@
 
 	key[]: "compman_qt_notruck"
 	val[]: "Non podes facer unha viaxe rápida porque non tes vehículo!"
+
+	key[]: "compman_qt_nocar"
+	val[]: "Non podes facer unha viaxe rápida porque non tes coche!"
+
+	key[]: "compman_qt_nobus"
+	val[]: "Non podes facer unha viaxe rápida porque non tes autocar!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "Queres facer unha viaxe rápida ó garaxe seleccionado?"
@@ -9216,13 +9378,13 @@
 #+ Message box shown when user requests to sell selected truck.
 #@{
 
-	key[]: "truckman_sell_t"
+	key[]: "vehicleman_sell_t"
 	val[]: "VENDER VEHÍCULO"  #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_reallysell"
-	val[]: "Realmente queres vender o $TRUCK$ por $MONEY$?"
+	key[]: "vehicleman_msg_reallysell"
+	val[]: "Realmente queres vender o teu $VEHICLE$ por $MONEY$?"
 
-	key[]: "truckman_msg_nosell"
+	key[]: "vehicleman_msg_nosell"
 	val[]: "Non podes vender o vehículo que estás a conducir durante un traballo! Termina o teu traballo e entón téntao de novo."
 
 	key[]: "truckman_total_restoration_t"
@@ -9254,10 +9416,10 @@
 #+ Message box shown when user requests to become driver of selected truck.
 #@{
 
-	key[]: "truckman_change_t"
+	key[]: "vehicleman_change_t"
 	val[]: "CAMBIAR VEHÍCULO" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nochange"
+	key[]: "vehicleman_msg_nochange"
 	val[]: "Non podes cambiar de vehículo mentres esteas traballando! Finaliza o teu traballo primeiro."
 
 	key[]: "truckman_conf_drive"
@@ -9294,7 +9456,7 @@
 	key[]: "truckman_copy_configuration_t"
 	val[]: "COPIAR CONFIGURACIÓN" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nouse"
+	key[]: "vehicleman_msg_nouse"
 	val[]: "Non se pode copiar a configuración deste vehículo por falta de datos, probablemente por mor da eliminación dalgún mod ou DLC.<br><br>Reinstala o(s) mod/DLC."
 #@}
 
@@ -9324,7 +9486,7 @@
 	val[]: "Asignación do condutor"
 
 	key[]: "driverman_current_job"
-	val[]: "Current job"
+	val[]: "Traballo actual"
 
 	key[]: "driverman_no_job"
 	val[]: "Ningunha entrega en curso"
@@ -9675,6 +9837,9 @@
 	key[]: "td_msg_first_and_busy"
 	val[]: "Grazas por comprarnos o teu primeiro camión!<br><br>Entregarémolo na túa sede para que podas usalo cando remates a túa tarefa actual."
 
+	key[]: "td_first_truck_switch_mode_city"
+	val[]: "Grazas por comprar o teu primeiro camión connosco!<br><br>Queres cambiar ao teu novo camión en <color value=@@clr_sel@@>$CITY$</color>?"
+
 	key[]: "td_msg_bought_assigned"
 	val[]: "Grazas pola túa compra. Disfruta do teu novo camión!<br><br>Levaremos o teu camión vello ó teu garaxe en $CITY$ xa mesmo."
 
@@ -10004,6 +10169,12 @@
 	key[]: "mapl_convoy_member"
 	val[]: "Membro do convoi"
 
+	key[]: "mapl_company_vehicle"
+	val[]: "Vehículo en traballo rápido"
+
+	key[]: "mapl_my_vehicle"
+	val[]: "Localización doutro vehículo"
+
 	key[]: "mapl_quarry"
 	val[]: "Pedreira"
 
@@ -10016,7 +10187,7 @@
 	key[]: "mapl_undiscovered"
 	val[]: "Punto non descuberto"
 
-	key[]: "mapl_viewpoint"
+	key[]: "mapl_viewpoint_visited"
 	val[]: "Miradoiro (visitado)"
 
 	key[]: "mapl_viewpoint_unvisited"
@@ -10133,7 +10304,7 @@
 	val[]: "Portions of this software utilize SpeedTree® technology (©2024 provided by Unity Technologies SF). All rights reserved."
 
 	key[]: "jpeg_credits"
-	val[]: "Este software está baseado en parte no traballo do Grupo Independente JPEG."
+	val[]: "This software is based in part on the work of the Independent JPEG Group."
 #@}
 
 #+ Truck browser
@@ -10267,10 +10438,10 @@
 	val[]: "M" #+ Mega as factor of 1 million
 
 	key[]: "money_unit_giga"
-	val[]: "B"  #+ Money unit for giga (10^9).
+	val[]: "k M"  #+ Money unit for giga (10^9).
 
 	key[]: "money_unit_tera"
-	val[]: "T" #+ Money unit for tera (10^12).
+	val[]: "B" #+ Money unit for tera (10^12).
 
 #@}
 
@@ -10405,10 +10576,10 @@
 	val[]: "Iluminación adicional" #+ Header of section for auxilliary ilumination
 
 	key[]: "front_aux"
-	val[]: "Auxiliar frontal" #+ Checkbox enabling lights on additional front accessories.
+	val[]: "Auxiliares frontais" #+ Checkbox enabling lights on additional front accessories.
 
 	key[]: "roof_aux"
-	val[]: "Auxiliares teito" #+ Checkbox enabling lights on additional roof accessories.
+	val[]: "Auxiliares do teito" #+ Checkbox enabling lights on additional roof accessories.
 
 	key[]: "dash_backlight"
 	val[]: "Luz da instrumentación" #+ Label of slider controlling intensity of dashboard backlight.
@@ -10822,7 +10993,7 @@
 	val[]: "NORMATIVAS LOCAIS"
 
 	key[]: "no_job_taken"
-	val[]: "No job is currently taken"
+	val[]: "Non hai ningunha entrega en curso"
 
 	key[]: "searching_for_navigation"
 	val[]: "Procurando sinal GPS..."
@@ -10936,6 +11107,9 @@
 	key[]: "desktop_tut_visit_directive"
 	val[]: "Visita $SCREEN_NAME$" #+ The $SCREEN_NAME$ text is a placeholder for different screen names in game and should be left intact
 
+	key[]: "desktop_tut_vehicle_mode"
+	val[]: "Use the Mode button to switch between different desktop modes and different vehicle types."
+
 	key[]: "desktop_tut_tour_welcome_t"
 	val[]: "BENVIDO/A"
 
@@ -10962,6 +11136,28 @@
 
 	key[]: "desktop_tut_tour_finish"
 	val[]: "Grazas por botar unha ollada á nosa actualización da pantalla de inicio."
+
+
+	key[]: "desktop_vehicle_mode_reenable_hints_t"
+    val[]: "ACTIVAR SUXESTIÓNS"
+
+    key[]: "desktop_vehicle_mode_reenable_hints"
+    val[]: "Estás a entrar nun modo de xogo novo e as suxestións contextuais, que che poden axudar a aprender a xogar, están desactivadas. Queres volver a activalas?"
+
+	key[]: "desktop_tut_first_car_job_t"
+	val[]: "BENVIDO/A AO ROAD TRIP"
+
+	key[]: "desktop_tut_first_car_job"
+	val[]: "O modo coche é o epicentro da túa experiencia de condución — merca o coche dos teus sonos, faite transportador de paquetes ou abre a guía turística e sae á estrada para explorar o mundo.<br><br>Para comezar, acepta o teu primeiro Traballo rápido."
+
+	key[]: "desktop_tut_atlas"
+	val[]: "O Atlas é a túa guía turística persoal para planificar a túa viaxe por estrada."
+
+	key[]: "desktop_tut_car_eshop"
+	val[]: "Concesionario de coches — merca o teu propio vehículo."
+
+	key[]: "desktop_tut_owned_car_job"
+	val[]: "Dispatch Market - get hired as a professional courier driver using your own vehicle."
 #@}
 
 
@@ -12387,7 +12583,7 @@
 	val[]: "Subir a World of Trucks"
 
 	key[]: "photo_album_action_delete"
-	val[]: "Delete"
+	val[]: "Eliminar"
 
 	key[]: "photo_album_overlay_menu"
 	val[]: "Accións de foto"
@@ -12429,7 +12625,7 @@
 	val[]: "Aínda non descubriches esta cidade"
 
 	key[]: "open_wotr_profile"
-	val[]: "View on World of Trucks"
+	val[]: "Ver no World of Trucks"
 
 	key[]: "photo_album_no_screenshot_warning"
 	val[]: "Your Gallery is empty. Use Photo Mode to capture images."
@@ -12537,25 +12733,25 @@
 	val[]: "HORA E METEOROLOXÍA"
 
 	key[]: "photomode_light_adjustment"
-	val[]: "LIGHT ADJUSTMENT"
+	val[]: "AXUSTE DAS LUCES"
 
 	key[]: "photomode_tooltip_light1"
-	val[]: "Parking lights"
+	val[]: "Luces de posición"
 
 	key[]: "photomode_tooltip_light2"
-	val[]: "Low beam"
+	val[]: "Luces de cruzamento"
 
 	key[]: "photomode_tooltip_light3"
-	val[]: "High beam"
+	val[]: "Luces de longo alcance"
 
 	key[]: "photomode_tooltip_light4"
-	val[]: "Beacon"
+	val[]: "Baliza luminosa"
 
 	key[]: "photomode_tooltip_light5"
-	val[]: "Front auxiliary"
+	val[]: "Auxiliares frontais"
 
 	key[]: "photomode_tooltip_light6"
-	val[]: "Roof auxiliary"
+	val[]: "Auxiliares do teito"
 #@}
 
 #+ Photo Mode overlay helper.
@@ -12588,10 +12784,10 @@
 	val[]: "Amosar controis"
 
 	key[]: "photo_mode_help_move"
-	val[]: "Move"
+	val[]: "Mover"
 
 	key[]: "photo_mode_help_look"
-	val[]: "Look"
+	val[]: "Mirar"
 
 	key[]: "photo_mode_help_take_picture"
 	val[]: "Tomar fotografía"
@@ -12661,7 +12857,7 @@
 	val[]: "Usar como camión do meu perfil" #+ Upload button
 
 	key[]: "delete_screenshot"
-	val[]: "Do you want to permanently delete the following screenshot?"
+	val[]: "Queres borrar permanentemente a seguinte captura?"
 
 	key[]: "upload_screenshot"
 	val[]: "Do you want to upload the screenshot to the selected slot?<br><br>Previous content of the screenshot slot will be overwritten!"
@@ -13399,17 +13595,17 @@
 	key[]: "quick_travel_cond_fix_cables"
 	val[]: "O camión non se atopa en condicións para facer unha viaxe rápida. Revisa o cableado co remolque."
 
-	key[]: "quick_travel_cond_repair_truck"
+	key[]: "quick_travel_cond_repair_vehicle"
 	val[]: "O teu vehículo non se atopa en condicións para facer unha viaxe rápida. Visita un taller ou chama ao servizo de asistencia."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "O teu remolque non se atopa en condicións para facer unha viaxe rápida. Visita un taller ou chama ao servizo de asistencia."
 
-	key[]: "quick_travel_cond_truck_fuel"
-	val[]: "O vehículo non se atopa en condicións para facer unha viaxe rápida. Enche de combustible o teu vehículo ou chama ao servizo de asistencia."
+	key[]: "quick_travel_cond_vehicle_fuel"
+	val[]: "O teu vehículo non se atopa en condicións para facer unha viaxe rápida. Enche de combustible o teu vehículo ou chama ao servizo de asistencia."
 
-	key[]: "quick_travel_cond_truck_fallen"
-	val[]: "O vehículo non se atopa en condicións para facer unha viaxe rápida. Chama ao servizo de asistencia."
+	key[]: "quick_travel_cond_vehicle_fallen"
+	val[]: "O teu vehículo non se atopa en condicións para facer unha viaxe rápida. Chama ao servizo de asistencia."
 
 	key[]: "quick_travel_cond_trailer_fallen"
 	val[]: "O remolque non se atopa en condicións para facer unha viaxe rápida. Chama ao servizo de asistencia."
@@ -13418,7 +13614,7 @@
 	val[]: "O teu remolque actual non é legal no estado de destino. Gardarase no garaxe." #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
 
 	key[]: "quick_travel_illegal_trailer_dismiss_confirm"
-	val[]: "Confirm"
+	val[]: "Confirmar"
 
 	key[]: "quick_travel_no_service"
 	val[]: "Cidade sen taller"
@@ -13524,6 +13720,27 @@
 	val[]: "Está en curso un traballo do Mercado de Cargas."
 #@}
 
+#+ Job cancellation
+#@{
+	key[]: "drive_active_job_t"
+	val[]: "TRABALLO EN CURSO"
+
+	key[]: "drive_active_job"
+	val[]: "Tes un traballo en curso noutro modo.<br offset=10>Podes abandonalo ou amosar máis detalles en $VEHICLE$ @@vehicle_mode@@.<br><br><br>$ADDITIONAL_INFO$"
+
+	key[]: "drive_active_job_yes"
+	val[]: "@@abort_job@@"
+
+	key[]: "drive_active_job_no"
+	val[]: "Cambiar de modo"
+
+	key[]: "cancel_cur_job_warning"
+	val[]: "Terás que pagar unha penalización de $MONEY$ no caso de abandonar o traballo."
+
+	key[]: "cancel_cur_car_job_warning"
+	val[]: "Abandonar o traballo vaiche custar unha multa de $MONEY$ e perderás a túa serie de entregas perfectas consecutivas."
+#@}
+
 #+ Trailer coupling phases info messages, shown in route advisor during coupling/decoupling.
 #@{
 
@@ -13577,16 +13794,16 @@
 	val[]: "Filtros de contido" #+ Button opening truck customization content filters dialog.
 
 	key[]: "no_accessory_found"
-	val[]: "Non se puido encontrar obxectos que coincidan cos teus filtros" #+ Text shown when there are no accessories found by filters.
+	val[]: "Non se puido atopar obxectos<br>que coincidan cos teus filtros" #+ Text shown when there are no accessories found by filters.
 
-	key[]: "no_truck_found"
-	val[]: "Non se puido atopar vehículos que coincidan cos teus filtros" #+ Text shown when there are no trucks found by filters.
+	key[]: "no_vehicle_found"
+	val[]: "Non se puido atopar vehículos que coincidan cos teus filtros" #+ Text shown when there are no vehicles found by filters.
 #@}
 
 #+ Strings related to job filtering feature
 #@{
 	key[]: "no_job_found"
-	val[]: "Non se atoparon traballos que coincidan cos teus filtros de cargas ou coas túas habilidades actuais" #+ Text shown when there are no jobs found by filters.
+	val[]: "Non se atoparon traballos que coincidan cos teus filtros ou coas túas habilidades actuais" #+ Text shown when there are no jobs found by filters.
 #@}
 
 #+ Game demo related strings.
@@ -14315,6 +14532,9 @@
 	key[]: "garage_upgrade_locked_tooltip"
 	val[]: "Este garaxe foi mellorado por completo." #+ Tooltip shown when player hovers over upgrade button.
 
+	key[]: "garage_upgrade_locked_vehicle_tooltip"
+	val[]: "Non podes mellorar o garaxe porque o teu vehículo está demasiado preto del." #+ Tooltip shown when garage cannot be upgraded due to player's vehicles being too close to upgraded garage.
+
 	key[]: "driverman_stats_trailer"
 	val[]: "Remolque actual:" #+ Title of the current trailer statistics.
 
@@ -14360,7 +14580,7 @@
 	key[]: "link_locked_msg_trailer_upgrades"
 	val[]: "Non hai novas melloras de tráiler dispoñibles neste momento."
 
-	key[]: "link_locked_msg_truck_diag"
+	key[]: "link_locked_msg_vehicle_diag"
 	val[]: "Para acceder ao diagnóstico do vehículo primeiro tes que ter un vehículo asignado."
 
 	key[]: "link_locked_msg_truck_dealer_map"
@@ -14466,7 +14686,7 @@
 	val[]: "O remolque atópase en perfectas condicións." #+ Message shown when player tries to restore trailer in perfect condition.
 
 	key[]: "trailerman_total_restoration"
-	val[]: "Total restoration price:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Return the vehicle to pristine condition by requesting a complete disassembly and restoration of all worn components. It poses a greater challenge than constructing an entirely new vehicle." #+ Content of the screen, explaining total restoration.
+	val[]: "Prezo total da restauración:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Devolve o vehículo a unhas condicións perfectas solicitando unha desmontaxe e restauración completa de todos os compoñentes desgastados. Supón un desafío maior que construír un vehículo completamente novo." #+ Content of the screen, explaining total restoration.
 #@}
 
 #+ Trailer detail tooltip.
@@ -14526,7 +14746,7 @@
 	val[]: "Remolcar ata taller"
 
 	key[]: "call_assistance_recovery"
-	val[]: "Tow To Road"
+	val[]: "Remolcar á estrada"
 
 	key[]: "call_refuel_service"
 	val[]: "Repostaxe de emerxencia"
@@ -14550,7 +14770,7 @@
 #+ Vehicle adjustments related texts
 #@{
 	key[]: "vehicle_adjustments_t"
-	val[]: "VEHICLE ADJUSTMENTS"
+	val[]: "AXUSTES DO VEHÍCULO"
 
 	key[]: "adj_mirrors"
 	val[]: "Axustar espellos"
@@ -15059,7 +15279,7 @@
 #+ Trailer browser
 #@{
 	key[]: "select_option_to_preview_cargo_model"
-	val[]: "None" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
+	val[]: "Ningunha" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
 	val[]: "Non se atoparon remolques" #+ Text shown if there are no trailer of given brands found.
@@ -15395,13 +15615,13 @@
 	val[]: "Given companies do not have a navigation path between them." #+ internal error message
 
 	key[]: "mp_job_missing_cargo"
-	val[]: "Unable to find a cargo for the job. The companies do not have any cargo to transport between them."
+	val[]: "Unable to find cargo for the job. The companies do not have any cargo to transport between them."
 
 	key[]: "mp_job_wrong_cargo"
 	val[]: "You do not have a compatible trailer for the current cargo."
 
-	key[]: "mp_job_missing_truck"
-	val[]: "Can be only taken with your own vehicle."
+	key[]: "mp_job_missing_vehicle"
+	val[]: "Só se pode aceptar co teu propio vehículo."
 
 	key[]: "mp_job_missing_trailer"
 	val[]: "You don’t have a compatible trailer currently assigned."
@@ -15524,7 +15744,7 @@
 	val[]: "Tes prohibida a entrada aos convois."
 
 	key[]: "reason_system"
-	val[]: "An unexpected error has occured.<br><br>You have been disconnected from the session."
+	val[]: "An unexpected error has occurred.<br><br>You have been disconnected from the session."
 
 	key[]: "reason_server_authentication_failed"
 	val[]: "Unable to authenticate the connection with the host."
@@ -15974,14 +16194,20 @@
 	key[]: "mp_view_job"
 	val[]: "Ver e aceptar o mesmo traballo"
 
+	key[]: "mp_car_quick_job"
+	val[]: "Road Trip Quick Job"
+
+	key[]: "mp_car_dispatch_job"
+	val[]: "Road Trip Dispatch Market"
+
 	key[]: "mp_truck_idle"
 	val[]: "Inactivo"
 
 	key[]: "mp_truck_on_job"
-	val[]: "En traballo"
+	val[]: "Traballo non dispoñible"
 
 	key[]: "mp_truck_on_convoy"
-	val[]: "Nun convoi"
+	val[]: "Traballo dispoñible"
 
 	key[]: "mp_fetching_from_server"
 	val[]: "Obtendo do servidor..."
@@ -16004,8 +16230,8 @@
 	key[]: "mp_warning_close_to_conflicted_company_teleport"
 	val[]: "A company near your truck or trailer will need to be activated in order for you to join this session.<br>To avoid any problems, please move your truck and trailer further away from the company or your current job will be canceled and you will be teleported to the nearest service.<br><br>Do you wish to continue?"
 
-	key[]: "mp_warning_truck_before_quick_job_close_cancel_teleport"
-	val[]: "A company near where you left your truck or trailer before accepting your quick job will need to be activated in order for you to join this session.<br>To avoid any problems once you return to your truck, your quick job needs to be canceled and you will be teleported to the nearest service.<br><br>Do you wish to continue?"
+	key[]: "mp_warning_vehicle_close_cancel_teleport"
+	val[]: "A company near where you left your vehicle or trailer will need to be activated in order for you to join this session.<br>To avoid any problems once you return to your vehicle you will be teleported to the nearest service.<br><br>Do you wish to continue?"
 
 	key[]: "mp_warning_company_with_selected_job_sleeping"
 	val[]: "Your selected job is delivering from or to a company that is inactive in this session and will not be available once you connect.<br><br>Do you wish to continue?"
@@ -16039,6 +16265,12 @@
 
 	key[]: "mp_error_skills"
 	val[]: "Debes obter as seguintes habilidades:"
+
+	key[]: "mp_error_car_courier_onboarding"
+	val[]: "You need to complete your first $ONBOARDING$ deliveries and reach the required courier rating ($REQUIRED$) to be eligible for this job." #+ $ONBOARDING$ is replaced with a number. $REQUIRED$ is replaced with a courier rating. Example: You need to complete your first 5 deliveries and reach the required courier rating (4.6) to be eligible for this job.
+
+	key[]: "mp_error_car_courier_rating"
+	val[]: "Your courier rating ($CURRENT$) is below the minimum required ($REQUIRED$) for this job."  #+ $CURRENT$ and $REQUIRED$ are replaced with a courier rating. Example: Your courier rating (3.3) is below the minimum required (4.6) for this job.
 
 	key[]: "mp_error_dlc"
 	val[]: "You are missing the DLC needed for this job."
@@ -16221,13 +16453,13 @@
 	key[]: "job_equipment"
 	val[]: "Job equipment:"
 
-	key[]: "equipment_provided_truck_and_trailer"
+	key[]: "equipment_provided_vehicle_and_trailer"
 	val[]: "Vehículo e remolque subministrados"
 
-	key[]: "equipment_owned_truck_provided_trailer"
+	key[]: "equipment_owned_vehicle_provided_trailer"
 	val[]: "Vehículo en propiedade"
 
-	key[]: "equipment_owned_truck_and_trailer"
+	key[]: "equipment_owned_vehicle_and_trailer"
 	val[]: "Vehículo e remolque en propiedade"
 
 	key[]: "mp_job_quick_travel_message"
@@ -16701,7 +16933,7 @@
 #+ Mod changes confirm window title.
 #@{
 	key[]: "confirm_mounted_mod_changes_title"
-	val[]: "CONFIRM MOUNTED MOD CHANGES"
+	val[]: "CONFIRMAR CAMBIOS NOS MODS CARGADOS"
 #@}
 
 #+ Mod changes confirm window text.
@@ -16713,7 +16945,7 @@
 #+ Mod changes confirm not possible.
 #@{
 	key[]: "mod_changes_confirm_not_possible"
-	val[]: "Confirm is no longer possible. It seems like you no longer have all the required mods."
+	val[]: "Non se pode confirmar. Semella que xa non tes todos os mods requiridos."
 #@}
 
 
@@ -16726,7 +16958,7 @@
 #+ Session mod sync info.
 #@{
 	key[]: "session_mod_sync_info"
-	val[]: "Your currenly active mods will be updated to match the selected host's mods.<br>You can subscribe to the missing mods on Steam. Click on them and choose 'Subscribe'."
+	val[]: "Your currently active mods will be updated to match the selected host's mods.<br>You can subscribe to the missing mods on Steam. Click on them and choose 'Subscribe'."
 #@}
 
 #+ Session mod sync warning.
@@ -16762,7 +16994,7 @@
 #+ Session mod sync confirm and mount.
 #@{
 	key[]: "confirm_and_mount"
-	val[]: "Confirm MOD Activation"
+	val[]: "Confirmar activación dos mods"
 #@}
 
 #+ Session mod sync no mod active text.
@@ -17322,10 +17554,10 @@
 	key[]: "career_progress_stats_discovered_countries_count"
 	val[]: "Estados visitados"
 
-	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots a cargo was delivered from or to and number of all depots.
+	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots cargo was delivered from or to and number of all depots.
 	val[]: "Terminais servidas"
 
-	key[]: "career_progress_stats_companies_used_count" #+ Number of companies a cargo was delivered from or to and number of all companies.
+	key[]: "career_progress_stats_companies_used_count" #+ Number of companies cargo was delivered from or to and number of all companies.
 	val[]: "Empresas servidas"
 
 	key[]: "career_progress_stats_truck_dealer_discovered_count"
@@ -17431,10 +17663,10 @@
 	val[]: "Compatible Controllers" #+ Button showing compatible controllers screen.
 
 	key[]: "current_controller"
-	val[]: "Current Controller" #+ Title for the current controller row in Options.
+	val[]: "Controlador actual" #+ Title for the current controller row in Options.
 
 	key[]: "current_controller_t"
-	val[]: "CURRENT CONTROLLER" #+ Title for the current controller row in Options (all uppercase).
+	val[]: "CONTROLADOR ACTUAL" #+ Title for the current controller row in Options (all uppercase).
 
 	key[]: "edit_controller_bindings"
 	val[]: "Edit Bindings" #+ Button showing Controller bindings screen.
@@ -17452,7 +17684,7 @@
 	val[]: "Controller name" #+ Compatible controller name header.
 
 	key[]: "compatible_controller_type"
-	val[]: "Type" #+ Compatible controller type header.
+	val[]: "Tipo" #+ Compatible controller type header.
 
 	key[]: "controller_binding_label"
 	val[]: "Binding" #+ Controller Bindings options screen column header for the currently bound button.
@@ -17485,10 +17717,10 @@
 	val[]: "REXISTRO DE CAMBIOS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "patch_notes_old_data_warning"
-	val[]: "Connection to server failed, information can be out of date."
+	val[]: "Connection to game server failed, information can be out of date."
 
 	key[]: "patch_notes_download_confirm"
-	val[]: "Do you want to download update information?<br><br>Enable news in options for automatic download."
+	val[]: "¿Queres descargar a información da actualización?<br><br>Activa as novidades en opcións para descargalas automaticamente."
 
 	key[]: "patch_notes_online_wait_title"
 	val[]: "DOWNLOADING DATA" #+ Title of the screen. Please keep in upper case where possible.
@@ -17537,6 +17769,36 @@
 
 	key[]: "desktop_menu_category_leave"
 	val[]: "Leave"
+#@}
+
+#+ Vehicle mode switch
+#@{
+	key[]: "vehicle_mode"
+	val[]: "Modo"
+
+	key[]: "truck_mode"
+	val[]: "Modo Camión"
+
+	key[]: "truck_mode_help"
+	val[]: "Fai traballos distintos cun camión"
+
+	key[]: "bus_mode"
+	val[]: "Modo Autocar"
+
+	key[]: "bus_mode_help"
+	val[]: "Experience another mode as a coach driver"
+
+	key[]: "bus_mode_locked_tooltip"
+	val[]: "To access Coach Mode you must finish your first job"
+
+	key[]: "car_mode"
+	val[]: "Modo Coche"
+
+	key[]: "car_mode_help"
+	val[]: "Take on different jobs and explore the world with a car"
+
+	key[]: "car_mode_locked_tooltip"
+	val[]: "To access Car Mode you must finish your first job"
 #@}
 
 #+ Menu upper bar
@@ -17635,10 +17897,10 @@
 #+ Intro Scene. Only translate into officially supported languages.
 #@{
 	key[]: "health_warning"
-	val[]: "Advertencia de saúde"
+	val[]: "Health warning"
 
 	key[]: "health_warning_description"
-	val[]: "Un pequeno porcentaxe de usuarios pode ser susceptible de sufrir ataques epilépticos ou perda de conciencia ao expoñerse a certos lampos intermitentes ou patróns luminosos. Estas persoas poden sufrir un ataque ao presenciar certas imaxes ou executar xogos. Se ti ou algún familiar tivestes algunha vez síntomas relacionados coa epilepsia (ataques ou perda de consciencia), consulta a un profesional médico e toma todas as precaucións necesarias antes de xogar.<br offset=20>Deixa de xogar inmediatamente e consulta a un profesional médico se ti ou algún familiar experimentades algún destes síntomas: Mareos, alteracións da visión, espasmos oculares ou musculares, perda de consciencia, desorientación, movementos involuntarios ou convulsiones."
+	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
 	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
@@ -17687,7 +17949,7 @@
 	key[]: "time_skip_hours"
 	val[]: "Número de horas de descanso"
 
-	
+
 	key[]: "time_skip_current_time"
 	val[]: "Hora actual"
 
@@ -17707,7 +17969,7 @@
 	key[]: "time_skip_charging_title"
 	val[]: "Carga da batería"
 
-	
+
 	key[]: "time_skip_to_next_mandatory_break_ok"
 	val[]: "dentro de $TIME$"
 
@@ -17738,7 +18000,7 @@
 	key[]: "time_skip_rest_full"
 	val[]: "Completamente descansado/a"
 
-	
+
 	key[]: "time_skip_tooltip_mandatory_break_not_met"
 	val[]: "Esta parada non cumprirá os requirimentos de descansos obrigatorios. Quedaranche $LEFT_TIME$ ata o seguinte descanso obrigatorio."
 
@@ -17747,18 +18009,18 @@
 
 	key[]: "time_skip_tooltip_mandatory_break_cont"
 	val[]: "Por cada <color value=@@clr_sel@@>$DRIVE_TIME$</color> horas de condución, tes que tomar un descanso obrigatorio de polo menos <color value=@@clr_sel@@>$BREAK_TIME$</color> horas para evitar que che poñan unha multa."
-	
+
 
 	key[]: "time_skip_tooltip_job_on_time"
 	val[]: "Despois do descanso e do tempo de condución estimado ata o destino, sobraranche <color value=@@clr_sel@@>$LEFT_TIME$</color> neste traballo."
-	
+
 	key[]: "time_skip_tooltip_job_late"
 	val[]: "Despois do descanso e do tempo de condución estimado ata o destino, farás a entrega con <color value=@@clr_red@@>$LEFT_TIME$</color> de atraso."
 
 	key[]: "time_skip_max_sleep_reached"
 	val[]: "<color value=@@clr_red@@>Estarás completamente descansado</color>"
 
-# shown in job detail widget and pause screen	
+# shown in job detail widget and pause screen
 	key[]: "job_eta"
 	val[]: "Chegada estimada"
 
@@ -17792,9 +18054,1460 @@
 
 	key[]: "rest_state_simulation"
 	val[]: "Simulación do estado de descanso"
-	
+
 	key[]: "rest_state_simulation_op_tooltip"
 	val[]: "Cando está activado, sufrirás os efectos da fatiga co tempo.<br><br>Terás que descansar para recuperarte."
 #@}
 
+#+ Road trip localization.
+#@{
+	key[]: "poi_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$ <color value=@@clr_txt@@>DESCUBERTO" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_msg"
+	val[]: "Press the following key to activate the Tourist Board:"
+#@}
+
+
+#+ Road Trip Desktop specifics
+#@{
+	key[]: "desktop_menu_category_car_company"
+	val[]: "Garaxe"
+
+#@}
+
+#+ Car job localization.
+#@{
+	key[]: "car_job_type_delivery"
+	val[]: "Courier Job"
+
+	key[]: "car_job_type_driving"
+	val[]: "Driver on Demand"
+
+	key[]: "car_quick_job_desc"
+	val[]: "Get hired as a professional courier driver with a provided vehicle. Just pick a job and drive."
+
+	key[]: "car_dispatch_job_resumed"
+	val[]: "Dispatch Job is in progress."
+
+	key[]: "customer_prio_info"
+	val[]: "Customer Priority"
+
+	key[]: "cargo_type_prio_cargo"
+	val[]: "Cargo Handling"
+
+	key[]: "cargo_type_prio_time"
+	val[]: "Time Management"
+
+	key[]: "cargo_type_prio_vehicle"
+	val[]: "Vehicle Condition"
+
+	key[]: "cargo_type_prio_none"
+	val[]: "Without Priority"
+
+	key[]: "cargo_attributes"
+	val[]: "Attributes"
+
+	key[]: "cargo_type_cstandard"
+	val[]: "Standard Delivery"
+
+	key[]: "cargo_type_cexpress"
+	val[]: "Strict Delivery Window"
+
+	key[]: "cargo_type_rt_highvalue"
+	val[]: "Valuable"
+
+	key[]: "cargo_type_rt_fragile"
+	val[]: "Fráxil"
+
+	key[]: "provided_vehicle"
+	val[]: "Provided Vehicle"
+
+	key[]: "cjob_arrived"
+	val[]: "Arrived"
+
+	key[]: "customer_satisfaction_t"
+	val[]: "Customer Satisfaction"
+
+	key[]: "provisional_reward"
+	val[]: "Provisional Reward"
+
+	key[]: "customer_satisfaction"
+	val[]: "Customer Satisfaction"
+
+	key[]: "customer_rejected_delivery"
+	val[]: "Rejected Delivery"
+
+	key[]: "cjob_rating_0"
+	val[]: "Unprofessional"
+
+	key[]: "cjob_rating_1"
+	val[]: "Very poor"
+
+	key[]: "cjob_rating_2"
+	val[]: "Subpar"
+
+	key[]: "cjob_rating_3"
+	val[]: "Satisfactory"
+
+	key[]: "cjob_rating_4"
+	val[]: "Good"
+
+	key[]: "cjob_rating_5"
+	val[]: "Perfecto"
+
+	key[]: "cjob_default_negative_note_time"
+	val[]: "Unexpected Arrival Time"
+
+	key[]: "cjob_default_neutral_note_time"
+	val[]: "Acceptable Arrival Time"
+
+	key[]: "cjob_default_positive_note_time"
+	val[]: "Right on Time"
+
+	key[]: "cjob_default_negative_note_cargo"
+	val[]: "Broken Cargo"
+
+	key[]: "cjob_default_neutral_note_cargo"
+	val[]: "Fair Service"
+
+	key[]: "cjob_default_positive_note_cargo"
+	val[]: "Damage-free Delivery"
+
+	key[]: "cjob_default_negative_note_cargo_1"
+	val[]: "Careless Handling"
+
+	key[]: "cjob_default_negative_note_vehicle"
+	val[]: "Unprofessional Appearance"
+
+	key[]: "cjob_default_neutral_note_vehicle"
+	val[]: "Satisfactory Appearance"
+
+	key[]: "cjob_default_positive_note_vehicle"
+	val[]: "Pristine Vehicle"
+
+	key[]: "no_car_job_found"
+	val[]: "Unable to find jobs matching selected filters"
+
+	key[]: "hint_open_global_dispatch_market"
+	val[]: "You are currently seeing a limited number of dispatch market offers. You may see global offers by clicking the button below."
+
+	key[]: "view_global_dispatch_market"
+	val[]: "View Global Dispatch Market"
+
+	key[]: "car_dispatch_job_t"
+	val[]: "DISPATCH JOB OFFERS"
+
+	key[]: "car_dispatch_job"
+	val[]: "Dispatch Market"
+
+	key[]: "car_dispatch_job_desc"
+	val[]: "Get hired as a professional courier driver using your own vehicle."
+
+	key[]: "link_locked_msg_dispatch_job"
+	val[]: "To access the Dispatch Market you must have a car assigned first."
+
+	key[]: "vehicle_transfer"
+	val[]: "Vehicle Transfer"
+
+	key[]: "car_job_rating"
+	val[]: "Job Rating"
+
+	key[]: "car_courier_rating"
+	val[]: "Courier Rating"
+
+	key[]: "car_courier_rating_na"
+	val[]: "N / D" #+ Shown at various places if the player has no courier rating yet. Please keep it as short as possible.
+
+	key[]: "car_delivery_streak"
+	val[]: "Perfect Delivery Streak"
+
+	key[]: "car_benefit_max_dist"
+	val[]: "Max Distance"
+
+	key[]: "car_benefit_reward_bonus"
+	val[]: "Reward Bonus"
+
+	key[]: "car_benefit_cargo_access"
+	val[]: "Cargo Access"
+
+	key[]: "car_active_benefits"
+	val[]: "Active Benefits"
+
+	key[]: "car_benefits_locked"
+	val[]: "Completa as túas primeiras <color value=@@clr_white@@>5 entregas</color> para desbloquear beneficios."
+
+	key[]: "car_route_details"
+	val[]: "Detalles da ruta"
+
+	key[]: "ccargo_business_documents"
+	val[]: "Business Documents"
+
+	key[]: "ccargo_personal_documents"
+	val[]: "Personal Documents"
+
+	key[]: "ccargo_legal_documents"
+	val[]: "Legal Documents"
+
+	key[]: "cjob_dealer_allocation"
+	val[]: "Car Dealer Allocation"
+
+	key[]: "cjob_premium_allocation"
+	val[]: "Premium Car Dealer Allocation"
+
+	key[]: "ccargo_job_tools"
+	val[]: "Job Site Tools"
+
+	key[]: "ccargo_soil_samples"
+	val[]: "Agricultural Samples"
+
+	key[]: "ccargo_plant_seedlings"
+	val[]: "Plant Seedlings"
+
+	key[]: "ccargo_product_samples"
+	val[]: "Product Samples"
+
+	key[]: "ccargo_return_package"
+	val[]: "Return Package"
+
+	key[]: "ccargo_machine_parts"
+	val[]: "Spare Machine Parts"
+
+	key[]: "ccargo_customs_docs"
+	val[]: "Customs Documents"
+
+	key[]: "ccargo_diplomatic_pouch"
+	val[]: "Diplomatic Pouch"
+
+	key[]: "ccargo_missed_connection"
+	val[]: "Missed Connection Parcel"
+
+	key[]: "ccargo_redirected_parcel"
+	val[]: "Redirected Parcel"
+
+	key[]: "ccargo_vehicle_reg_papers"
+	val[]: "Vehicle Registration Papers"
+
+	key[]: "ccargo_livestock_auction_docs"
+	val[]: "Livestock Auction Documents"
+
+	key[]: "ccargo_replacement_keys"
+	val[]: "Replacement Keys"
+
+	key[]: "ccargo_freight_manifests"
+	val[]: "Freight Manifests"
+
+	key[]: "ccargo_payroll_envelopes"
+	val[]: "Payroll Envelopes"
+
+	key[]: "ccargo_export_customs_decl"
+	val[]: "Export Customs Declarations"
+
+	key[]: "ccargo_rail_waybills"
+	val[]: "Rail Waybills"
+
+	key[]: "ccargo_livestock_health_certs"
+	val[]: "Livestock Health Certificates"
+
+	key[]: "ccargo_dealer_trade_docs"
+	val[]: "Dealer Trade Documents"
+
+	key[]: "ccargo_ore_samples"
+	val[]: "Ore & Mineral Samples"
+
+	key[]: "ccargo_drill_core_samples"
+	val[]: "Drill Core Samples"
+
+	key[]: "ccargo_chemical_samples"
+	val[]: "Chemical Samples"
+
+	key[]: "ccargo_grid_relays"
+	val[]: "Grid Relay Components"
+
+	key[]: "ccargo_truck_small_parts"
+	val[]: "Truck Small Parts"
+
+	key[]: "ccargo_packaging_prototypes"
+	val[]: "Packaging Prototypes"
+
+	key[]: "ccargo_outboard_parts"
+	val[]: "Outboard Engine Parts"
+
+	key[]: "ccargo_boat_reg_papers"
+	val[]: "Boat Registration Papers"
+
+	key[]: "ccargo_fillin_restock"
+	val[]: "Fill-In Restock"
+
+	key[]: "ccargo_lost_wallet"
+	val[]: "Lost Wallet"
+
+	key[]: "ccargo_regatta_trophy"
+	val[]: "Regatta Trophy"
+
+	key[]: "ccargo_repl_propeller"
+	val[]: "Replacement Propeller"
+
+	key[]: "ccargo_yacht_brokerage"
+	val[]: "Yacht Brokerage Papers"
+
+	key[]: "ccargo_tractor_diag_module"
+	val[]: "Tractor Diagnostic Module"
+
+	key[]: "ccargo_substation_keys"
+	val[]: "Substation Access Keys"
+
+	key[]: "ccargo_flight_crew_docs"
+	val[]: "Flight Crew Documents"
+
+	key[]: "ccargo_misrouted_delivery"
+	val[]: "Misrouted Supplier Delivery"
+
+	key[]: "ccargo_transfer_seals"
+	val[]: "Intermodal Transfer Seals"
+
+	key[]: "ccargo_crew_supplies"
+	val[]: "Crew Supplies & Snacks"
+
+	key[]: "ccargo_tourist_maps"
+	val[]: "Tourist Maps Resupply"
+
+	key[]: "ccargo_fish_finder"
+	val[]: "Fish Finder Unit"
+
+	key[]: "ccargo_unident_shipment"
+	val[]: "Unidentified Shipment"
+
+	key[]: "ccargo_undisc_consignment"
+	val[]: "Undisclosed Consignment"
+
+	key[]: "ccargo_confid_delivery"
+	val[]: "Confidential Delivery"
+
+#+ Icon legend specific text
+#@{
+	key[]: "quick_jobs_legend"
+	val[]: "QUICK JOBS INFO" #+ Keep uppercase where possible
+
+	key[]: "dispatch_jobs_legend"
+	val[]: "DISPATCH MARKET INFO" #+ Keep uppercase where possible
+
+	key[]: "car_legend_job_types"
+	val[]: "Tipos de traballo"
+
+	key[]: "car_legend_delivery_job_desc"
+	val[]: "Cargo delivery - deliver smaller packages, documents"
+
+	key[]: "car_legend_driving_job_desc"
+	val[]: "Vehicle transport - the car you are driving is the cargo"
+
+	key[]: "car_legend_cargo_prio_desc"
+	val[]: "Drive safely and take care of your cargo - customers appreciate non-damaged packages"
+
+	key[]: "car_legend_vehicle_prio_desc"
+	val[]: "Self-presentation is important - arriving in a damaged car can dissatisfy the customer"
+
+	key[]: "car_legend_time_prio_desc"
+	val[]: "Customers expect you to arrive at an agreed time - not too early or late"
+
+	key[]: "car_legend_prio_desc"
+	val[]: "Take extra care of the selected customer satisfaction - rating and rewards greatly depend on it"
+	
+	key[]: "car_legend_modifiers"
+	val[]: "Modifiers"
+
+	key[]: "car_legend_standard_desc"
+	val[]: "Standard delivery window"
+
+	key[]: "car_legend_express_desc"
+	val[]: "Shorter delivery window with a bigger reward"
+
+	key[]: "car_legend_valuable_desc"
+	val[]: "Stricter customer expectations of the vehicle condition with a bigger reward"
+
+	key[]: "car_legend_fragile_desc"
+	val[]: "Bigger reward for delicate cargo that is more easily damaged"
+
+	key[]: "car_legend_rating"
+	val[]: "Rating"
+
+	key[]: "car_legend_job_rating_desc"
+	val[]: "Customer's rating of satisfaction with your performance"
+
+	key[]: "car_legend_courier_rating_desc"
+	val[]: "Last 25 job ratings combined - can be examined in Career Progress"
+
+	key[]: "car_legend_delivery_streak_desc"
+	val[]: "Number of consecutive perfect job ratings"
+
+	key[]: "car_legend_benefits"
+	val[]: "Benefits"
+
+	key[]: "car_legend_benefit_max_dist_desc"
+	val[]: "Higher courier rating unlocks longer routes"
+
+	key[]: "car_legend_benefit_reward_bonus_desc"
+	val[]: "Extra pay on every job - based on your courier rating and perfect delivery streak"
+
+	key[]: "car_legend_benefit_cargo_access_desc"
+	val[]: "Cargo you're trusted with - expands with your rating"
+
+#@}
+
+#@}
+
+#+ Unavailable data
+#@{
+	key[]: "car_job_name_na"
+	val[]: "N / D" # Shown at various places if car job name is unavailable. Please keep it as short as possible.
+#@}
+
+#+ Multiplayer
+#@{
+
+	key[]: "no_car_preview"
+	val[]: "No car preview"
+
+	key[]: "mp_car_job_missing_job_data"
+	val[]: "Unable to find the job data. It may belong to a missing mod or DLC."
+
+	key[]: "mp_car_job_wrong_cargo"
+	val[]: "Unable to find cargo for the job."
+
+	key[]: "mp_car_job_wrong_car"
+	val[]: "Unable to find a car suitable for the job."
+
+	key[]: "mp_car_job_must_use_company_car"
+	val[]: "This job must be performed with the provided car."
+
+	key[]: "mp_customer_prio_info"
+	val[]: "Customer priority:"
+
+	key[]: "mp_no_vehicle"
+	val[]: "No vehicle"
+
+	key[]: "mp_job_status_truck"
+	val[]: "Camión"
+
+	key[]: "mp_job_status_car"
+	val[]: "Coche"
+
+	key[]: "mp_car_idle"
+	val[]: "Idle"
+
+	key[]: "mp_car_on_job"
+	val[]: "Traballo non dispoñible"
+
+	key[]: "mp_car_on_convoy"
+	val[]: "Traballo dispoñible"
+
+	key[]: "equipment_provided_car"
+	val[]: "Provided car"
+
+	key[]: "equipment_owned_car"
+	val[]: "Owned car"
+#@}
+
+#+ Road trip specific customer notes.
+#@{
+	#+ Documents (Business / Personal)
+	key[]: "cjob_documents_negative_note_cargo"
+	val[]: "Mishandled Documents"
+
+	key[]: "cjob_documents_negative_note_cargo_1"
+	val[]: "Torn Envelope"
+
+	key[]: "cjob_documents_negative_note_cargo_2"
+	val[]: "Creased Papers"
+
+	key[]: "cjob_documents_neutral_note_cargo"
+	val[]: "Lightly Handled"
+
+	key[]: "cjob_documents_neutral_note_cargo_1"
+	val[]: "Slightly Creased"
+
+	key[]: "cjob_documents_positive_note_cargo"
+	val[]: "Pristine Documents"
+
+	key[]: "cjob_documents_positive_note_cargo_1"
+	val[]: "Intact Envelope"
+
+	#+ Legal Documents (valuable)
+	key[]: "cjob_legaldoc_negative_note_cargo"
+	val[]: "Mishandled Documents"
+
+	key[]: "cjob_legaldoc_negative_note_cargo_1"
+	val[]: "Broken Seal"
+
+	key[]: "cjob_legaldoc_positive_note_cargo"
+	val[]: "Unbroken Seal"
+
+	key[]: "cjob_legaldoc_positive_note_cargo_1"
+	val[]: "Handled with Discretion"
+
+	#+ Machine Parts
+	key[]: "cjob_parts_negative_note_cargo"
+	val[]: "Rattling Contents"
+
+	key[]: "cjob_parts_neutral_note_cargo"
+	val[]: "Cosmetic Marks"
+
+	key[]: "cjob_parts_positive_note_cargo"
+	val[]: "Mint Condition"
+
+	#+ Job Site Tools (negative reuses parts/box keys: Rattling Contents / Dented Package / Punctured Parcel)
+	key[]: "cjob_tools_neutral_note_cargo"
+	val[]: "Scuffed Tools"
+
+	key[]: "cjob_tools_neutral_note_cargo_1"
+	val[]: "Light Wear"
+
+	key[]: "cjob_tools_positive_note_cargo"
+	val[]: "Spotless Toolkit"
+
+	key[]: "cjob_tools_positive_note_cargo_1"
+	val[]: "In Top Shape"
+
+	#+ Agricultural Samples (internal id: soil)
+	key[]: "cjob_soil_negative_note_cargo"
+	val[]: "Contaminated Samples"
+
+	key[]: "cjob_soil_negative_note_cargo_1"
+	val[]: "Spilled Containers"
+
+	key[]: "cjob_soil_negative_note_cargo_2"
+	val[]: "Spoiled Samples"
+
+	key[]: "cjob_soil_negative_note_cargo_3"
+	val[]: "Leaking Containers"
+
+	key[]: "cjob_soil_neutral_note_cargo"
+	val[]: "Faint Leakage"
+
+	key[]: "cjob_soil_neutral_note_cargo_1"
+	val[]: "Minor Spillage"
+
+	key[]: "cjob_soil_neutral_note_cargo_2"
+	val[]: "Loose Lids"
+
+	key[]: "cjob_soil_positive_note_cargo"
+	val[]: "Securely Sealed"
+
+	key[]: "cjob_soil_positive_note_cargo_1"
+	val[]: "Perfectly Preserved"
+
+	key[]: "cjob_soil_positive_note_cargo_2"
+	val[]: "Untouched Samples"
+
+	key[]: "cjob_soil_positive_note_cargo_3"
+	val[]: "Pristine Samples"
+
+	key[]: "cjob_soil_positive_note_cargo_4"
+	val[]: "Intact Containers"
+
+	#+ Product Samples (neutral also references parts key cjob_parts_neutral_note_cargo = Cosmetic Marks)
+	key[]: "cjob_samples_negative_note_cargo"
+	val[]: "Damaged Samples"
+
+	key[]: "cjob_samples_negative_note_cargo_1"
+	val[]: "Torn Packaging"
+
+	key[]: "cjob_samples_neutral_note_cargo"
+	val[]: "Minor Blemishes"
+
+	key[]: "cjob_samples_positive_note_cargo"
+	val[]: "Showroom-Ready Condition"
+
+	key[]: "cjob_samples_positive_note_cargo_1"
+	val[]: "Pristine Packaging"
+
+	#+ Return Package (generic box). NOTE: negative keys are shared by machine parts & job tools.
+	key[]: "cjob_box_negative_note_cargo"
+	val[]: "Dented Package"
+
+	key[]: "cjob_box_negative_note_cargo_1"
+	val[]: "Punctured Parcel"
+
+	key[]: "cjob_box_negative_note_cargo_2"
+	val[]: "Damaged Packaging"
+
+	key[]: "cjob_box_neutral_note_cargo"
+	val[]: "Dinged Corners"
+
+	key[]: "cjob_box_neutral_note_cargo_1"
+	val[]: "Minor Dents"
+
+	key[]: "cjob_box_positive_note_cargo"
+	val[]: "Undamaged Parcel"
+
+	key[]: "cjob_box_positive_note_cargo_1"
+	val[]: "Carefully Returned"
+
+	key[]: "cjob_box_positive_note_cargo_2"
+	val[]: "Handled with Care"
+
+	#+ Replacement Keys (neutral also refs parts Cosmetic Marks; positive also refs parts Mint Condition)
+	key[]: "cjob_keys_negative_note_cargo"
+	val[]: "Scratched Fob"
+
+	key[]: "cjob_keys_negative_note_cargo_1"
+	val[]: "Cracked Key Casing"
+
+	key[]: "cjob_keys_negative_note_cargo_2"
+	val[]: "Bent Key"
+
+	key[]: "cjob_keys_negative_note_cargo_3"
+	val[]: "Broken Keyring"
+
+	key[]: "cjob_keys_neutral_note_cargo"
+	val[]: "Light Scratches"
+
+	key[]: "cjob_keys_positive_note_cargo"
+	val[]: "Factory-Sealed"
+
+	#+ Plant Seedlings
+	key[]: "cjob_seedlings_negative_note_cargo"
+	val[]: "Damaged Roots"
+
+	key[]: "cjob_seedlings_negative_note_cargo_1"
+	val[]: "Broken Sprouts"
+
+	key[]: "cjob_seedlings_negative_note_cargo_2"
+	val[]: "Snapped Stems"
+
+	key[]: "cjob_seedlings_neutral_note_cargo"
+	val[]: "Few Lost Leaves"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_1"
+	val[]: "Bent Stems"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_2"
+	val[]: "Minor Wilting"
+
+	key[]: "cjob_seedlings_positive_note_cargo"
+	val[]: "Ready to Plant"
+
+	key[]: "cjob_seedlings_positive_note_cargo_1"
+	val[]: "Thriving Plants"
+
+	key[]: "cjob_seedlings_positive_note_cargo_2"
+	val[]: "Healthy Seedlings"
+
+	key[]: "cjob_seedlings_positive_note_cargo_3"
+	val[]: "Perfectly Tended"
+
+	#+ Customs Documents
+	key[]: "cjob_customs_negative_note_cargo"
+	val[]: "Torn Pages"
+
+	key[]: "cjob_customs_negative_note_cargo_1"
+	val[]: "Smudged Ink"
+
+	key[]: "cjob_customs_neutral_note_cargo"
+	val[]: "Slight Fold"
+
+	key[]: "cjob_customs_neutral_note_cargo_1"
+	val[]: "Minor Smudges"
+
+	key[]: "cjob_customs_positive_note_cargo"
+	val[]: "Clean Documents"
+
+	key[]: "cjob_customs_positive_note_cargo_1"
+	val[]: "Properly Submitted"
+
+	#+ Diplomatic Pouch
+	key[]: "cjob_dippouch_negative_note_cargo"
+	val[]: "Broken Seal"
+
+	key[]: "cjob_dippouch_negative_note_cargo_1"
+	val[]: "Tampered Pouch"
+
+	key[]: "cjob_dippouch_negative_note_cargo_2"
+	val[]: "Compromised Contents"
+
+	key[]: "cjob_dippouch_neutral_note_cargo"
+	val[]: "Minor Abrasion"
+
+	key[]: "cjob_dippouch_neutral_note_cargo_1"
+	val[]: "Slightly Loose Seal"
+
+	key[]: "cjob_dippouch_positive_note_cargo"
+	val[]: "Intact Seal"
+
+	key[]: "cjob_dippouch_positive_note_cargo_1"
+	val[]: "Exemplary Discretion"
+
+	key[]: "cjob_dippouch_positive_note_cargo_2"
+	val[]: "Securely Delivered"
+
+	#+ Shared Parcel notes (Missed Connection + Redirected Parcel)
+	key[]: "cjob_parcel_negative_note_cargo"
+	val[]: "Poorly Handled"
+
+	key[]: "cjob_parcel_negative_note_cargo_1"
+	val[]: "Handling Breach"
+
+	key[]: "cjob_parcel_neutral_note_cargo"
+	val[]: "Expected Wear"
+
+	key[]: "cjob_parcel_neutral_note_cargo_1"
+	val[]: "Reasonable Condition"
+
+	key[]: "cjob_parcel_neutral_note_cargo_2"
+	val[]: "Transit Marks"
+
+	#+ Missed Connection Parcel
+	key[]: "cjob_missed_positive_note_cargo"
+	val[]: "Successfully Rerouted"
+
+	#+ Redirected Parcel
+	key[]: "cjob_redirected_positive_note_cargo"
+	val[]: "Flawlessly Rerouted"
+
+	#+ Shared Paperwork notes (Vehicle Registration + Livestock Auction Documents)
+	key[]: "cjob_paperwork_negative_note_cargo"
+	val[]: "Corrupted Records"
+
+	key[]: "cjob_paperwork_negative_note_cargo_1"
+	val[]: "Missing Pages"
+
+	key[]: "cjob_paperwork_neutral_note_cargo"
+	val[]: "Minor Bending"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_1"
+	val[]: "Faint Marks"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_2"
+	val[]: "Minor Creasing"
+
+	#+ Vehicle Registration Papers
+	key[]: "cjob_vehreg_negative_note_cargo"
+	val[]: "Bent Certificate"
+
+	key[]: "cjob_vehreg_negative_note_cargo_1"
+	val[]: "Creased Registration"
+
+	key[]: "cjob_vehreg_positive_note_cargo"
+	val[]: "Pristine Documents"
+
+	key[]: "cjob_vehreg_positive_note_cargo_1"
+	val[]: "Intact Papers"
+
+	#+ Livestock Auction Documents
+	key[]: "cjob_auctdoc_negative_note_cargo"
+	val[]: "Damaged Certificate"
+
+	key[]: "cjob_auctdoc_positive_note_cargo"
+	val[]: "Intact Records"
+
+	key[]: "cjob_auctdoc_positive_note_cargo_1"
+	val[]: "Flawless Paperwork"
+#@}
+
+#+ Car job localization which doens't require translation.
+#!{
+	key[]: "tt_ico_driving"
+	val[]: "@@car_job_type_driving@@"
+
+	key[]: "tt_ico_delivery"
+	val[]: "@@car_job_type_delivery@@"
+
+	key[]: "tt_ico_cstandard"
+	val[]: "@@cargo_type_cstandard@@"
+
+	key[]: "tt_ico_cexpress"
+	val[]: "@@cargo_type_cexpress@@"
+
+	key[]: "tt_ico_rt_highvalue"
+	val[]: "@@cargo_type_rt_highvalue@@"
+
+	key[]: "tt_ico_rt_fragile"
+	val[]: "@@cargo_type_rt_fragile@@"
+
+	key[]: "car_quick_job_resumed"
+	val[]: "@@quick_job_resumed@@"
+
+	key[]: "car_job_detail_t"
+	val[]: "@@job_detail_word_t@@"
+
+	key[]: "car_quick_job"
+	val[]: "@@job_quick@@"
+
+	key[]: "car_quick_job_t"
+	val[]: "@@quick_job_t@@"
+#!}
+
+#+ Car shop and brand dealer localization.
+#+
+#+ Shows window with all car brands and then another window with specific cars of a given brand to purchase.
+#@{
+	key[]: "car_shop_icon"
+	val[]: "Concesionarios de coches" #+ Icon opening the car dealer screen.
+
+	key[]: "car_shop_help"
+	val[]: "Purchase cars into your garage." #+ Help message associated the dealer map icon.
+
+	key[]: "car_shop_t"
+	val[]: "COMPRA DE COCHES" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "car_shop_explanation"
+	val[]: "Select the brand to view purchase offers."
+
+	key[]: "car_shop_all_dlc"
+	val[]: "Open DLC Browser"
+
+	key[]: "car_shop_view_offers"
+	val[]: "Ver ofertas"
+
+	key[]: "car_shop_view_in_dlc_browser"
+	val[]: "View in DLC Browser"
+
+	key[]: "car_shop_coming_soon"
+	val[]: "PROXIMAMENTE" #+ Text shown when a car brand is not yet available in the game. Please keep in uppercase.
+
+	key[]: "car_shop_tooltip_dlc_browser"
+	val[]: "Explorador de DLC"
+
+	key[]: "car_purchase_t"
+	val[]: "COMPRA DE COCHES" #+ Title of the screen. Please keep in upper case where possible.
+	
+	key[]: "car_purchase_info_model"
+	val[]: "Modelo:"
+
+	key[]: "car_purchase_info_drivetrain"
+	val[]: "Drivetrain:"
+
+	key[]: "car_purchase_info_bodywork"
+	val[]: "Bodywork:"
+
+	key[]: "car_purchase_info_engine"
+	val[]: "Motor:"
+
+	key[]: "car_purchase_table_fuel_tank"
+	val[]: "Depósito de combustible"
+
+	key[]: "car_purchase_table_drivetrain"
+	val[]: "Drivetrain"
+
+	key[]: "car_purchase_table_trans"
+	val[]: "Caixa de cambios"
+
+	key[]: "car_purchase_color_configuration"
+	val[]: "Colour Configuration" #+ Title above color configuration list.
+
+	key[]: "car_purchase_checkout"
+	val[]: "Checkout" #+ Title above color configuration list.
+
+	key[]: "car_purchase_bank_balance"
+	val[]: "Bank balance:"
+
+	key[]: "car_purchase_color_fee"
+	val[]: "Custom colour fee:"
+
+	key[]: "car_purchase_confirm"
+	val[]: "Purchase"
+
+	key[]: "car_purchase_back"
+	val[]: "Back"
+
+	key[]: "car_purchase_car_bought_t"
+	val[]: "COMPRA DE COCHES" #+ Title of car bought message box. Please keep in upper case where possible.
+
+	key[]: "car_purchase_confirm_exit_t"
+	val[]: "ATTENTION"
+
+	key[]: "car_purchase_confirm_exit_msg"
+	val[]: "You have not finished purchase of your new car yet. Are you sure you want to leave this screen?"
+
+	key[]: "car_purchase_leave"
+	val[]: "Leave"
+
+	key[]: "car_purchase_stay"
+	val[]: "Stay"
+
+	key[]: "car_purchase_car_bought"
+	val[]: "Thank you for your purchase.<br>$CAR_NAME$ is now in your collection." #+ Message of car bought message box.
+
+	key[]: "view_in_garage"
+	val[]: "Ver no garaxe" #+ Button that takes player to vehicle garage.
+
+#@}
+
+#+ Car-specific time skip localization.
+#@{
+	key[]: "time_skip_delivery_early"
+	val[]: "Early delivery" 
+
+	key[]: "time_skip_tooltip_job_early"
+	val[]: "After the rest and the estimated drive time to the destination, the delivery will be too early by <color value=@@clr_sel@@>$LEFT_TIME$</color>."
+#@}
+
+
+#+ Car configurator localization.
+#@{
+	key[]: "bodywork_t"
+	val[]: "BODYWORK"
+
+	key[]: "bodywork"
+	val[]: "Bodywork"
+
+	key[]: "drivetrain_t"
+	val[]: "DRIVETRAIN"
+
+	key[]: "drivetrain"
+	val[]: "Drivetrain"
+
+	key[]: "car_brand_t"
+	val[]: "DESEÑO DO VEHÍCULO"
+
+	key[]: "car_brand"
+	val[]: "Deseño do vehículo"
+
+	key[]: "no_car_found"
+	val[]: "Unable to find vehicles matching your filters" #+ Text shown when there are no cars found by filters.
+#@}
+
+#+ Car diagnostic localization.
+#@{
+	key[]: "car_service_about"
+	val[]: "Car maintenance and repairs. A great driver always keeps their vehicle in top condition." #+ Help message associated with service icon.
+
+	key[]: "car_service_car_t"
+	val[]: "VEHICLE DAMAGE REPORT" #+ Header of section displaying status of individual components of the car. Please keep in upper case where possible.
+
+	key[]: "car_diag_about"
+	val[]: "View information about your car and its current condition."
+
+	key[]: "cd_info_model"
+	val[]: "Modelo:"
+
+	key[]: "cd_info_drivetrain"
+	val[]: "Drivetrain:"
+
+	key[]: "cd_info_bodywork"
+	val[]: "Bodywork:"
+
+	key[]: "cd_info_engine"
+	val[]: "Motor:"
+
+	key[]: "car_damage"
+	val[]: "Car damage" #+ Price for the car damage
+
+	key[]: "adj_rearview"
+	val[]: "Central"
+#@}
+
+#+ Car browser localization.
+#@{
+	key[]: "car_browser_t"
+	val[]: "EXPLORADOR DE COCHES"
+
+	key[]: "car_browser"
+	val[]: "Explorador de coches"
+
+	key[]: "car_browser_help"
+	val[]: "Experiment with various car configurations."  #+ Description for the Car Browser icon.
+#@}
+
+#+ Car career localization.
+#@{
+	key[]: "car_career_log_job"
+	val[]: "Traballo"
+
+	key[]: "car_career_log_customer_satisfaction"
+	val[]: "Customer Satisfaction"
+
+	key[]: "car_career_stats_job_rating"
+	val[]: "Job Rating"
+
+	key[]: "car_career_progress_stats_experience_cars"
+	val[]: "Coches"
+
+	key[]: "car_career_progress_stats_owned_car_count"
+	val[]: "Cars owned"
+
+	key[]: "car_career_progress_stats_used_car_count"
+	val[]: "Modelos usados no traballo"
+
+	key[]: "car_career_progress_stats_most_used_car"
+	val[]: "Most used model"
+
+	key[]: "car_career_progress_stats_max_customer_bonus"
+	val[]: "Biggest customer bonus"
+
+	key[]: "car_career_progress_stats_max_customer_penalty"
+	val[]: "Biggest customer penalty"
+
+	key[]: "car_career_progress_stats_customer_positive"
+	val[]: "Positive reviews"
+
+	key[]: "car_career_progress_stats_customer_neutral"
+	val[]: "Neutral reviews"
+
+	key[]: "car_career_progress_stats_customer_negative"
+	val[]: "Negative reviews"
+
+	key[]: "car_career_progress_stats_longest_perfect_streak"
+	val[]: "Longest perfect delivery streak"
+
+	key[]: "car_career_progress_stats_most_money_earned"
+	val[]: "Most money earned in one day"
+
+	key[]: "career_progress_stats_explore_atlas"
+	val[]: "Atlas"
+
+	key[]: "career_progress_stats_explore_pois_explored"
+	val[]: "Points of interests explored"
+
+	key[]: "career_progress_stats_explore_postcards_completed"
+	val[]: "Postcards completed"
+
+	key[]: "career_progress_stats_tab_courier_rating_t"
+	val[]: "COURIER RATING"
+#@}
+
+#+ Job widget.
+#@{
+	key[]: "truck_job_different_mode"
+	val[]: "Truck Mode<br>Job in progress"
+	
+	key[]: "car_job_different_mode"
+	val[]: "Car Mode<br>Job in progress"
+#@}
+
+#+ World map.
+#@{
+	key[]: "no_gps_different_mode"
+	val[]: "Start driving to enable navigation"
+#@}
+
+#+ Quick travel.
+#@{
+	key[]: "select_quick_travel_destination_economy_reset_truck"
+	val[]: "Game change detected. Please select quick travel destination for your truck:" #+ Shown during economy reset quick travel for truck.
+
+	key[]: "select_quick_travel_destination_economy_reset_car"
+	val[]: "Game change detected. Please select quick travel destination for your car:" #+ Shown during economy reset quick travel for car.
+#@}
+
+#+ Mail screen
+#+
+#+ Shows incomming emails from bank and truck dealers.
+#@{
+	key[]: "mail_switch_vehicle_mode_confirmation"
+	val[]: "In order to see this information, you need to switch to $VEHICLE_MODE$<br><br>Do you want to continue?" #+ Shown when clicking on link in message would cause vehicle mode switch.
+#@}
+
+#+ Atlas localization.
+#@{
+	key[]: "tourist_atlas_filter_all"
+	val[]: "Amosar todo"
+
+	key[]: "tourist_atlas_filter_touristbs"
+	val[]: "All Tourist Boards"
+
+	key[]: "tourist_atlas_filter_photo_trophies"
+	val[]: "Todos os trofeos fotográficos"
+
+	key[]: "tourist_atlas_filter_viewpoints"
+	val[]: "All Viewpoints"
+
+	key[]: "tourist_atlas_filter_pointsoi"
+	val[]: "All Points of Interest"
+
+	key[]: "mapl_locations"
+	val[]: "Locations:"
+
+	key[]: "mapl_photo_sight"
+	val[]: "Trofeo fotográfico"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Miradoiro"
+
+	key[]: "mapl_point_of_interest"
+	val[]: "Point of Interest"
+
+	key[]: "mapl_point_of_interest_completed"
+	val[]: "Point of Interest (explored)"
+
+	key[]: "mapl_point_of_interest_discovered"
+	val[]: "Point of Interest (discovered)"
+
+	key[]: "mapl_tourist_board"
+	val[]: "Tourist Board"
+
+	key[]: "mapl_tourist_board_completed"
+	val[]: "Tourist Board (explored)"
+
+	key[]: "mapl_tourist_board_discovered"
+	val[]: "Tourist Board (discovered)"
+
+	key[]: "mapl_tourist_board_undiscovered"
+	val[]: "Tourist Board (undiscovered)"
+
+	key[]: "mapl_location_states"
+	val[]: "Location states:"
+
+	key[]: "mapl_state_explored"
+	val[]: "Explorado"
+
+	key[]: "mapl_state_discovered"
+	val[]: "Discovered"
+
+	key[]: "mapl_state_undiscovered"
+	val[]: "Undiscovered"
+
+	key[]: "tourist_atlas_summary_hint"
+	val[]: "Select a item from right side to view its details"
+
+	key[]: "tourist_atlas_postcardsview"
+	val[]: "Postcard Gallery"
+
+	key[]: "tourist_atlas_locations"
+	val[]: "Locations:"
+
+	key[]: "tourist_atlas_last_updated_tb"
+	val[]: "Last updated Tourist Board:"
+
+	key[]: "tourist_atlas_last_updated_loc"
+	val[]: "Last updated locations:"
+
+	key[]: "tourist_atlas_list_of_all"
+	val[]: "List of All:"
+
+	key[]: "tourist_atlas_overview_t"
+	val[]: "Atlas Overview"
+
+	key[]: "tourist_atlas_link"
+	val[]: "Atlas"
+
+	key[]: "tourist_atlas_title"
+	val[]: "ATLAS"
+
+	key[]: "tourist_atlas_help"
+	val[]: "Open a personal tourist guide and plan your road trip - discover, explore, and learn about interesting locations."
+
+	key[]: "tourist_atlas_explored"
+	val[]: "Explorado"
+
+	key[]: "tourist_atlas_discovered"
+	val[]: "Discovered"
+
+	key[]: "tourist_atlas_undiscovered"
+	val[]: "Undiscovered"
+
+	key[]: "tourist_atlas_touristbs"
+	val[]: "Tourist Boards"
+
+	key[]: "tourist_atlas_photo_trophies"
+	val[]: "Trofeos fotográficos"
+
+	key[]: "tourist_atlas_viewpoints"
+	val[]: "Viewpoints"
+
+	key[]: "tourist_atlas_pointsoi"
+	val[]: "Points of Interest"
+
+	key[]: "tourist_atlas_select_tb"
+	val[]: "Select a Tourist Board to learn more."
+
+	key[]: "attractions_along_the_road"
+	val[]: "Attractions along the road"
+
+	key[]: "belongs_to_tb"
+	val[]: "Belongs to Tourist Board:"
+
+	key[]: "tourist_atlas_detail_show_location"
+	val[]: "Show Location"
+
+	key[]: "overlay_focus_map"
+	val[]: "Focus to map"
+
+	key[]: "overlay_focus_panel"
+	val[]: "Focus to panel"
+
+	key[]: "overlay_open_tb"
+	val[]: "Open Tourist Board"
+
+	key[]: "overlay_open_item"
+	val[]: "Abrir elemento"
+
+	key[]: "overlay_select_atlas_item"
+	val[]: "Seleccionar elemento"
+
+	key[]: "tourist_atlas_add_navigation"
+	val[]: "Add to Navigation"
+
+	key[]: "tourist_atlas_remove_navigation"
+	val[]: "Remove from Navigation"
+
+	key[]: "tourist_atlas_reset_navigation"
+	val[]: "Restablecer navegación"
+
+	key[]: "tourist_atlas_view_in_gallery"
+	val[]: "View in Gallery"
+
+	key[]: "detail_discover_tb"
+	val[]: "Discover this Tourist Board to learn more."
+
+	key[]: "detail_discover_photo_album_item"
+	val[]: "Discover the Tourist Board to learn its location."
+
+	key[]: "detail_explore_photo_album_item"
+	val[]: "Explore the location to learn more."
+
+	key[]: "tourist_atlas_nav_oversize_job"
+	val[]: "Navigation to Atlas locations is disabled during oversize job."
+
+	key[]: "tourist_atlas_nav_goal_fixed"
+	val[]: "Navigation to Atlas locations is disabled now. Finish your current navigation goal first."
+
+	key[]: "tourist_atlas_nav_disabled"
+	val[]: "Navigation is disabled. You can enable it in options."
+
+	key[]: "tourist_atlas_nav_full"
+	val[]: "Navigation has reached the maximum number of added pins."
+
+	key[]: "tourist_atlas_nav_requires_vehicle"
+	val[]: "A navegación require un vehículo"
+
+	key[]: "no_discovered_tb"
+	val[]: "No Tourist Boards discovered"
+
+	key[]: "postcard_progress"
+	val[]: "Postcard progress"
+
+	key[]: "photo_album_touristbs_tab"
+	val[]: "Tourist Boards"
+
+	key[]: "photo_album_touristbs_non_visited_tooltip"
+	val[]: "Tourist Board is not completed yet"
+
+	key[]: "photo_album_poi_unknown"
+	val[]: "Point of interest cannot be viewed. Make sure you have the corresponding DLC(s) activated."
+
+	key[]: "pin_children"
+	val[]: "Pin Children"
+
+	key[]: "unpin_children"
+	val[]: "Unpin Children"
+
+	key[]: "pin_item"
+	val[]: "Pin on Map"
+
+	key[]: "unpin_item"
+	val[]: "Unpin on Map"
+
+	key[]: "atlas_welcome_t"
+	val[]: "DÁMOSTE A BENVIDA AO ATLAS" #+ Message box title. Keep in upper case where possible.
+
+	key[]: "atlas_welcome_text"
+	val[]: "<align hstyle=left><font face=/font/normal_bold.font>Atlas</font> is your personal tourist guide - discover, explore, and learn about interesting locations while you travel on your road trip.<br><br>Start by discovering local $TOURIST_BOARD$ that will guide you to noteworthy places in the area:<br><br>$POI$<br>$VIEWPOINT$<br>$LANDMARK$<br><br>By fully exploring each Tourist Board, you will be rewarded with a postcard that you can display in your vehicle.</align>"
+#@}
+
+#+ Tourist atlas reward texts.
+#@{
+	key[]: "new_tourist_atlas_rewards_t"
+	val[]: "NEW REWARDS UNLOCKED" #+ Title of the window displaying list of the new tourist atlas rewards.
+
+	key[]: "new_tourist_atlas_rewards_help"
+	val[]: "New items have been added based on progress in Road Trip. Applicable for career: <font face=/font/normal_bold.font>$profile_name$</font>." #+ The help text for new tourist atlas reward items dialog.
+
+	key[]: "tourist_atlas_reward"
+	val[]: "Road Trip" #+ Text in explorer on tourist atlas reward accessory.
+
+	key[]: "tourist_atlas_reward_locked"
+	val[]: "Available from <color value=@@clr_sel@@>Road Trip" #+ Text in configurator when tourist atlas accessory is locked.
+#@}
+
+
+#+ Vehicle garage screen.
+#@{
+	key[]: "car_garage_t"
+	val[]: "OS MEUS COCHES"
+
+	key[]: "car_garage_icon"
+	val[]: "Os meus coches"
+
+	key[]: "car_garage_help"
+	val[]: "Escolle o coche que queres conducir."
+
+	key[]: "vehicle_garage_no_vehicles"
+	val[]: "No vehicles in garage."
+
+	key[]: "vehicle_garage_sell"
+	val[]: "Vender"
+
+	key[]: "vehicle_garage_configure"
+	val[]: "Configurar"
+
+	key[]: "vehicle_garage_use"
+	val[]: "Use"
+
+	key[]: "vehicle_garage_drive"
+	val[]: "Drive"
+
+	key[]: "vehicle_garage_sell_t"
+	val[]: "VENDER VEHÍCULO"
+
+	key[]: "vehicle_garage_sell_message"
+	val[]: "Do you really wish to sell your $VEHICLE$ for $MONEY$?"
+
+	key[]: "vehicle_garage_sell_message_on_job"
+	val[]: "You cannot sell the vehicle you're driving while on a job! Finish your job and then try again."
+
+	key[]: "vehicle_garage_use_t"
+	val[]: "USAR VEHÍCULO" #+ Message box title. Please keep in upper case where possible.
+
+	key[]: "vehicle_garage_use_message_on_job"
+	val[]: "You cannot change your vehicle while on a job! Finish your delivery first."
+
+	key[]: "garage_configure_message_teleport"
+	val[]: "Para configurar un vehículo en uso, tes que visitar un taller. Queres facer unha viaxe rápida ao máis próximo?"
+	
+	key[]: "garage_vehicle_name"
+	val[]: "Vehículo"
+
+	key[]: "garage_power"
+	val[]: "Potencia do motor"
+
+	key[]: "garage_fuel_tank"
+	val[]: "Depósito de combustible:"
+
+	key[]: "garage_distance"
+	val[]: "Distancia percorrida:"
+
+	key[]: "garage_condition"
+	val[]: "Condition:"
+
+	key[]: "vehicle_details_tab"
+	val[]: "Vehicle details"
+
+	key[]: "all_vehicles_tab"
+	val[]: "Todos os vehículos"
+
+	key[]: "garage_statistics"
+	val[]: "Estatísticas do vehículo"
+
+	key[]: "garage_value"
+	val[]: "Value"
+
+	key[]: "garage_current_value"
+	val[]: "Current value:"
+
+	key[]: "garage_value_of_new"
+	val[]: "Showroom price:"
+
+	key[]: "garage_info_model"
+	val[]: "Modelo:"
+
+	key[]: "garage_info_drivetrain"
+	val[]: "Drivetrain:"
+
+	key[]: "garage_info_bodywork"
+	val[]: "Bodywork:"
+
+	key[]: "garage_info_steering"
+	val[]: "Steering:" #+ Steering side. For example "Steering:&nbsp;&nbsp;&nbsp;&nbsp; Left-hand"
+
+	key[]: "garage_info_engine_name"
+	val[]: "Motor:"
+
+	key[]: "garage_info_transmission"
+	val[]: "Caixa de cambios:" #+ Type of the gearbox. "For example "Gearbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 speed gearbox"
+
+	key[]: "garage_info_tank"
+	val[]: "Depósito de combustible:"
+
+	key[]: "garage_damage"
+	val[]: "Damage report:"
+
+	key[]: "garage_ownership_time"
+	val[]: "Time owned:"
+
+	key[]: "garage_configure_t"
+	val[]: "CONFIGURAR VEHÍCULO"
+
+	key[]: "garage_configure_message_on_job"
+	val[]: "You cannot configure your vehicle while on a job! Finish your delivery first."
+
+	key[]: "garage_fuel_consumption"
+	val[]: "Average fuel consumption:"
+
+	key[]: "link_locked_msg_car_garage"
+	val[]: "To access @@car_garage_icon@@ you need to buy your first car."
+
+	key[]: "garage_vehicle_name_column"
+	val[]: "Vehículo"
+
+	key[]: "garage_ownership_time_column"
+	val[]: "Time owned"
+
+	key[]: "garage_power_column"
+	val[]: "Potencia do motor"
+
+	key[]: "garage_avg_fuel_column"
+	val[]: "Avg. fuel use"
+
+	key[]: "garage_distance_column"
+	val[]: "Driven distance"
+
+	key[]: "garage_condition_column"
+	val[]: "Condition"
+
+	key[]: "garage_currently_driving_t"
+	val[]: "CONDUCÍNDOO ACTUALMENTE" #+ Keep capitalized
+	
+#@}
+
+#+ On-screen message
+#+
+#+ Hint that appears after taking a car job. It's composed of two parts, separated by a new line. It has no length limit.
+#@{
+
+	key[]: "car_delivery_ready1"
+	val[]: "Delivery ready to go."
+
+	key[]: "car_delivery_ready2"
+	val[]: "Drive to the destination."
+
+#@}
+
+#+ Adviser Options
+#@{
+	key[]: "adv_hud_tourist_board_line"
+	val[]: "Road Trip Atlas" #+ Widget name for the tourist board progress.
+
+	key[]: "adv_hud_tourist_board_newly_discovered"
+	val[]: "Newly explored only"
+
+	key[]: "adv_hud_tourist_board_completed"
+	val[]: "Tourist Board completed"
+
+	key[]: "adv_hud_tourist_board_details"
+	val[]: "Usa $KEY$ para ver os detalles no Atlas"
+
+	key[]: "adv_hud_tourist_board_line_op_tooltip"
+	val[]: "Notifies you and shows progress and info while exploring locations in Atlas. The widget appears dynamically based on your settings."
+#@}
+
+#+ Garage & Shop - car descriptions
+#+ 
+#@{
+
+	key[]: "description_ford_bronco_2024"
+	val[]: "A rugged off-road icon reborn, the Bronco pairs boxy retro style with trail-ready muscle built to conquer any terrain."
+
+	key[]: "description_ford_f150_2023"
+	val[]: "America's best-selling truck for decades, the F-150 blends serious hauling power with everyday comfort and dependable versatility."
+
+	key[]: "description_ford_mustang_1967"
+	val[]: "The Mustang defined the pony car era with sleek fastback lines, an unmistakable silhouette, and a roar that still turns heads today."
+
+	key[]: "description_ford_crown_victoria_2006"
+	val[]: "A spacious rear-drive workhorse, the Crown Victoria earned its place as America's trusted police cruiser and taxi for years on end."
+#@}
 

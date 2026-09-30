@@ -1,0 +1,97 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX South Dacota | Sioux Falls XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.suv.midclass_25.sd_sf
+{
+	accessories[]: .featan.suv.midclass_25.sd_sf.chassis
+	accessories[]: .featan.suv.midclass_25.sd_sf.fwheel
+	accessories[]: .featan.suv.midclass_25.sd_sf.rwheel
+
+	max_speed: 240
+	vehicle_mass: 2600
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	
+	tags[]: urban
+
+	spawn_ratio: 0
+
+spawn_condition[]: .traffic.featan.suv.midclass_25.sd_sf.condition.city
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .featan.suv.midclass_25.sd_sf.chassis
+{
+	data_path: "/def/vehicle/ai/featan_suv_midclass_25/sd_sf.sii"
+}
+
+vehicle_wheel_accessory: .featan.suv.midclass_25.sd_sf.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .featan.suv.midclass_25.sd_sf.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.featan.suv.midclass_25.sd_sf.condition.city
+{
+	#spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "sioux_falls"
+}
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX South Dacota | Rapid City XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.suv.midclass_25.sd_rc
+{
+	accessories[]: .featan.suv.midclass_25.sd_rc.chassis
+	accessories[]: .featan.suv.midclass_25.sd_rc.fwheel
+	accessories[]: .featan.suv.midclass_25.sd_rc.rwheel
+
+	max_speed: 240
+	vehicle_mass: 2600
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+	
+	tags[]: urban
+
+	spawn_ratio: 0
+
+spawn_condition[]: .traffic.featan.suv.midclass_25.sd_rc.condition.city
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .featan.suv.midclass_25.sd_rc.chassis
+{
+	data_path: "/def/vehicle/ai/featan_suv_midclass_25/sd_rc.sii"
+}
+
+vehicle_wheel_accessory: .featan.suv.midclass_25.sd_rc.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_p.sii"
+}
+
+vehicle_wheel_accessory: .featan.suv.midclass_25.sd_rc.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_p.sii"
+}
+
+traffic_spawn_condition: .traffic.featan.suv.midclass_25.sd_rc.condition.city
+{
+	#spawn only near city with name equal to traffic vehicle name suffix
+	type: city
+    str_param[]: "rapid_city"
+}

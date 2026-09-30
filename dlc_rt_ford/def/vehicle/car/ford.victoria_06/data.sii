@@ -1,0 +1,42 @@
+SiiNunit
+{
+accessory_truck_data : vehicle.ford.victoria_06
+{
+	info[]: "@@brand_ford@@"
+	info[]: "@@series_ford_crown_victoria_2006@@"
+	info[]: "@@description_ford_crown_victoria_2006@@"
+
+	tags[]: "sedan"
+
+	driver_animation: "/asset/character/human/driver/$driver_type$/ford_victoria_06_ani.pma"
+
+	behind_camera: camera.behind.car
+	interior_camera: camera.interior.ford.victoria_06
+	interior_camera_oculus: camera.interior.ford.victoria_06.oculus
+	bumper_camera: camera.bumper.car
+	window_camera: camera.window.car
+	cabin_camera: camera.cabin.car
+	wheel_camera: camera.wheel.car
+	top_camera: camera.top.car
+	tv_camera: camera.tv.basic
+	wander_camera: camera.wander
+	debug_camera: camera.debug
+
+	fallback[]: "chassis|rwd.sii"
+	fallback[]: "cabin|sedan.sii"
+	fallback[]: "engine|v8_46l.sii"
+	fallback[]: "transmission|ford_r470w.sii"
+	fallback[]: "interior|standard_black.sii"
+	fallback[]: "p_tire|victoria_r16.sii"
+	fallback[]: "p_disc|victoria_r16_steel.sii"
+	fallback[]: "head_light|standard.sii"
+	fallback[]: "paint_job|color6.sii"
+
+	use_non_wheel_pin_placement_from_model: true
+
+@include "/def/vehicle/car/common_car_data.sui"
+
+
+}
+}
+

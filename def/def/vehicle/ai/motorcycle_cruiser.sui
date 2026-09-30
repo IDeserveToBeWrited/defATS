@@ -1,0 +1,37 @@
+traffic_vehicle : traffic.motorcycle_c
+{
+	accessories[]: .motorcycle_c.chassis
+	accessories[]: .motorcycle_c.fwheel
+	accessories[]: .motorcycle_c.rwheel
+
+	max_speed: 100
+
+	vehicle_mass: 400
+	
+	tags[]: motorcycle
+	
+}
+
+vehicle_accessory: .motorcycle_c.chassis
+{
+	data_path: "/def/vehicle/ai/motorcycle_cruiser/chassis.sii"
+}
+
+vehicle_wheel_accessory: .motorcycle_c.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_empty_10cm.sii"
+}
+
+vehicle_wheel_accessory: .motorcycle_c.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_empty_10cm.sii"
+}
+
+
+
+
+
+
+

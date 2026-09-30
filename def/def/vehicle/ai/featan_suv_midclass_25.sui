@@ -1,0 +1,42 @@
+traffic_vehicle : traffic.featan.suv.midclass_25
+{
+	accessories[]: .featan.suv.midclass_25.chassis
+	accessories[]: .featan.suv.midclass_25.fwheel
+	accessories[]: .featan.suv.midclass_25.rwheel
+
+	max_speed: 240
+
+	vehicle_mass: 2600
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/truck_horn_4.soundref"
+	
+	
+	color[]: (0.7097, 0.7097, 0.7097)
+	color[]: (0.5650, 0.4780, 0.3760) 
+	color[]: (0.3760, 0.4430, 0.4980) 
+	color[]: (0.1760, 0.3840, 0.2000) 
+
+	tags[]: suv
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .featan.suv.midclass_25.chassis
+{
+	data_path: "/def/vehicle/ai/featan_suv_midclass_25/chassis.sii"
+}
+
+vehicle_wheel_accessory: .featan.suv.midclass_25.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o_3.sii"
+}
+
+vehicle_wheel_accessory: .featan.suv.midclass_25.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o_3.sii"
+}

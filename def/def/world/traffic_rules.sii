@@ -385,6 +385,17 @@ traffic_rule_data : traffic_rule.limit_80
 	editor_allow_signs: true
 }
 
+traffic_rule_data : traffic_rule.limit_80_t
+{
+	name: "Speed limit 80 (trucks only)"
+
+	rule: "speed_limit"
+	num_params[]: 80
+	str_params[]: "truck_all"
+
+	editor_allow_signs: true
+}
+
 traffic_rule_data : traffic_rule.limit_90
 {
 	name: "Speed limit 90"
@@ -428,7 +439,7 @@ traffic_rule_data : traffic_rule.limit_120
 traffic_rule_data : traffic_rule.no_trucks
 {
 	# kept for backward compatibility
-	name: "[special] No trucks (backward compatibility only)"
+	# name: "[special] No trucks (backward compatibility only)"
 	rule: "actor_access"
 	num_params[]: 0 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
@@ -556,7 +567,7 @@ traffic_rule_data : traffic_rule.horn_on
 
 traffic_rule_data : traffic_rule.rail_cross
 {
-	name: "[prefab] Rail crossing"
+	# name: "[prefab] Rail crossing"
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
@@ -605,7 +616,7 @@ traffic_rule_data : traffic_rule.bus_only
 
 traffic_rule_data : traffic_rule.no_trailers
 {
-	name: "[access] No trailers"
+	# name: "[access] No trailers"
 	rule: "actor_access"
 	num_params[]: 0 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive

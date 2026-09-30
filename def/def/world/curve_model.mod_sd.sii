@@ -1,0 +1,151 @@
+SiiNunit
+{
+
+curve_model : curve.sd_6p003
+{
+	model_desc: "/model/props/train/sd_rail_fall_protection.pmd"
+	name: "sd rail fall protection"
+
+	variation[]: "beam_pill | part1 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "beam | part4 : 1.0"
+	start_part[]: start2
+	end_part[]: end3
+
+	dynamic_lod_desc[]: "/model/props/train/sd_rail_fall_protection_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	overlay[]: "part1 | ovr : 1.0"
+}
+
+curve_model : curve.sd_54000
+{
+	model_desc: "/model/props/farm/sd_livestock_load_fence.pmd"
+
+	variation[]: "wide | center1 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2 | left90 | right90"
+	variation[]: "narrow | center2 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2 | left90 | right90"
+
+	dynamic_lod_desc[]: "/model/props/farm/sd_livestock_load_fence_lod1.pmd"
+	dynamic_lod_dist[]: 100
+}
+
+curve_model : curve.sd_54001
+{
+	model_desc: "/model/props/farm/sd_livestock_load_alley.pmd"
+
+	variation[]: "open | center1 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	variation[]: "left_closed | center2 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "right_closed | center3 : 1.0"
+	start_part[]: start3
+	end_part[]: end3
+
+	dynamic_lod_desc[]: "/model/props/farm/sd_livestock_load_alley_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
+
+curve_model : curve.sd_50000
+{
+	model_desc: "/model/building/house/sd_construction_house_base_excavation_curve.pmd"
+
+	variation[]: "one_side | center11, center12, center13, center14 : 1.0"
+	start_part[]: start1
+	end_part[]: "left90 | right90 | end1"
+	variation[]: "two_side | center21, center22, center23, center24 : 1.0"
+	start_part[]: start2
+	end_part[]: end2
+	variation[]: "pipe | center31, center32, center33, center34 : 1.0"
+	start_part[]: start3
+	end_part[]: end3
+
+	smooth_surface: true
+}
+
+curve_model : curve.sd_79003
+{
+	model_desc: "/model/props/factory/sd_pallete_pile_curve.pmd"
+	name: "sd pallete pile curve"
+
+	variation[]: "high | c_var3_03 : 1.0 | c_var3_01 : 1.0 | c_var3_02 : 1.0"
+	start_part[]: "start_01 | start_02"
+	end_part[]: "end_01 | end_02"
+	variation[]: "mid | c_var2_03 : 1.0 | c_var2_01 : 1.0 | c_var2_02 : 1.0"
+	start_part[]: "start_01 | start_02"
+	end_part[]: "end_01 | end_02"
+	variation[]: "low | c_var1_03 : 1.0 | c_var1_01 : 1.0 | c_var1_02 : 1.0"
+	start_part[]: "start_01 | start_02"
+	end_part[]: "end_01 | end_02"
+	variation[]: "random | c_var1_01 : 1.0 | c_var1_02 : 1.0 | c_var1_03 : 1.0 | c_var2_01 : 1.0 | c_var2_02 : 1.0 | c_var2_03 : 1.0 | c_var3_01 : 1.0 | c_var3_02 : 1.0 | c_var3_03 : 1.0"
+	start_part[]: "start_01 | start_02"
+	end_part[]: "end_01 | end_02"
+
+	dynamic_lod_desc[]: "/model/props/factory/sd_pallete_pile_curve_lod1.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.sd_52003
+{
+	model_desc: "/model/distribution/electricity/sd_wires_curve_02.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start2 | start3 | start6 | start7"
+	end_part[]: "end2 | end3 | end6 | end7"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/distribution/electricity/sd_wires_curve_02_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	fixed_step: &42c60000
+}
+
+curve_model : curve.sd_52004
+{
+	model_desc: "/model/distribution/electricity/sd_wires_curve_03.pmd"
+
+	variation[]: "var1 | center1 : 1.0"
+	start_part[]: "start1 | start6 | start3 | start2"
+	end_part[]: "end1 | end2 | end3 | end6"
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/distribution/electricity/sd_wires_curve_03_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	fixed_step: &42c60000
+}
+
+curve_model : curve.sd_3x000
+{
+	model_desc: "/model/props/train/sd_rail_fall_protection.pmd"
+	name: "sd rail fall protection wire"
+
+	variation[]: "wire | part2 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/props/train/sd_rail_fall_protection_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	fixed_step: &41200000
+}
+
+curve_model : curve.sd_4r000
+{
+	model_desc: "/model/props/scrapyard/mo_scrapped_cars_plane.pmd"
+
+	variation[]: "var1 | center1, center6, center2, center8, center3, center7, center4, center5 : 1.0 | center6, center2, center3, center4, center5, center1, center7, center8, center9 : 1.0 | center4, center3, center8, center5, center6, center1, center9, center7, center2 : 1.0 | center7, center6, center9, center4, center2, center8, center1, center5, center3 : 1.0"
+	start_part[]: "start1 | start2"
+	end_part[]: "end1 | end2"
+}
+
+}

@@ -1,0 +1,50 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXX Park Ranger XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.pickup.midclass_25.us_rg
+{
+	accessories[]: .featan.pickup.midclass_25.us_rg.chassis
+	accessories[]: .featan.pickup.midclass_25.us_rg.fwheel
+	accessories[]: .featan.pickup.midclass_25.us_rg.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2900
+	spawn_ratio: 1.0
+
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: context
+	tags[]: tourist
+	tags[]: highway
+
+	spawn_condition[]: .traffic.featan.pickup.midclass_25.us_rg.condition
+
+@include "drivers_police.sui"
+
+}
+
+traffic_spawn_condition: .traffic.featan.pickup.midclass_25.us_rg.condition
+{
+	type: area
+	str_param[]: "tourist"
+}
+
+
+vehicle_accessory: .featan.pickup.midclass_25.us_rg.chassis
+{
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_ranger.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.us_rg.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .featan.pickup.midclass_25.us_rg.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}

@@ -5,6 +5,8 @@ SiiNunit
 @include "viewpoints.sui"
 @include "wotr.sui"
 @include "cities.sui"
+@include "pointsoi.sui"
+@include "tourist_boards.sui"
 
 
 photo_album_sheet : .sheet.screenshots
@@ -51,6 +53,7 @@ photo_album_sheet : .sheet.landmarks
 	content[]: album.landmarks.iowa
 	content[]: album.landmarks.louisiana
 	content[]: album.landmarks.illinois
+	content[]: album.landmarks.south_dakota
 }
 
 photo_album_sheet : .sheet.viewpoints
@@ -84,6 +87,7 @@ photo_album_sheet : .sheet.viewpoints
 	content[]: album.viewpoints.iowa
 	content[]: album.viewpoints.louisiana
 	content[]: album.viewpoints.illinois
+	content[]: album.viewpoints.south_dakota
 }
 
 photo_album_sheet : .sheet.wotr
@@ -132,15 +136,48 @@ photo_album_sheet : .sheet.cities
 	content[]: album.cities.group.iowa
 	content[]: album.cities.group.louisiana
 	content[]: album.cities.group.illinois
+	content[]: album.cities.group.south_dakota
 }
 
-#photo_album_sheet : .sheet.pointsoi
-#{
-#	name: "@@photo_album_pointsoi_tab@@"
-#	rows_count: 5
-#	columns_count: 7
-#	content_type: "pointsoi"
-#}
+photo_album_sheet : .sheet.pointsoi
+{
+	name: "@@photo_album_pointsoi_tab@@"
+	rows_count: 2
+	columns_count: 3
+	border_top: 20.0
+	border_bottom: 00.0
+	border_lfrg: 10.0
+	padding_h: 11.0
+	padding_v: 45.0
+	content_type: "pointsoi"
+	content[]: album.pointsoi.group.california
+	content[]: album.pointsoi.group.oregon
+	content[]: album.pointsoi.group.washington
+	content[]: album.pointsoi.group.idaho
+	content[]: album.pointsoi.group.montana
+	content[]: album.pointsoi.group.wyoming
+	content[]: album.pointsoi.group.south_dakota
+}
+
+photo_album_sheet : .sheet.touristbs
+{
+	name: "@@photo_album_touristbs_tab@@"
+	rows_count: 2
+	columns_count: 3
+	border_top: 20.0
+	border_bottom: 00.0
+	border_lfrg: 10.0
+	padding_h: 11.0
+	padding_v: 45.0
+	content_type: "touristbs"
+	content[]: album.touristbs.group.california
+	content[]: album.touristbs.group.oregon
+	content[]: album.touristbs.group.washington
+	content[]: album.touristbs.group.idaho
+	content[]: album.touristbs.group.montana
+	content[]: album.touristbs.group.wyoming
+	content[]: album.touristbs.group.south_dakota
+}
 
 #photo_album_sheet : .sheet.historical
 #{
@@ -153,14 +190,15 @@ photo_album_sheet : .sheet.cities
 photo_album_def : .album.main
 {
 	name: "@@photo_album@@"
-	sheet: 4
-	sheet[0]: .sheet.screenshots
-	sheet[1]: .sheet.landmarks
-	sheet[2]: .sheet.viewpoints
-	sheet[3]: .sheet.cities
-	sheet[4]: .sheet.wotr
-#	sheet[4]: .sheet.pointsoi
-#	sheet[5]: .sheet.historical
+
+	sheet[]: .sheet.screenshots
+	sheet[]: .sheet.landmarks
+	sheet[]: .sheet.viewpoints
+	sheet[]: .sheet.cities
+	sheet[]: .sheet.wotr
+	sheet[]: .sheet.pointsoi
+	sheet[]: .sheet.touristbs
+#	sheet[]: .sheet.historical
 }
 
 }

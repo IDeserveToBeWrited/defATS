@@ -41,6 +41,12 @@
 	key[]: "loading_no_job"
 	val[]: "Свободен като вятъра"
 
+	key[]: "loading_location_country"
+	val[]: "Някъде в $COUNTRY$" #+ Message shown on loading screen when player location is inside specific country.
+
+	key[]: "loading_changing_mode"
+	val[]: "Прехвърляне" #+ Message shown on loading screen when player is switching between vehicle modes.
+
 	key[]: "current_job_title"
 	val[]: "Текуща доставка"
 
@@ -124,17 +130,17 @@
 
 #+ Truck analysis feature - truck konfigurator and pop-up
 
-	key[]: "truck_analysis_t"
-	val[]: "АНАЛИЗ НА ПРЕВОЗНОТО СРЕДСТВО" #+ Header of the widget in truck configurator
+	key[]: "vehicle_analysis_t"
+	val[]: "АНАЛИЗ НА ПРЕВОЗНОТО СРЕДСТВО" #+ Header of the widget in vehicle configurator
 
-	key[]: "truck_analysis_popup_t"
+	key[]: "vehicle_analysis_popup_t"
 	val[]: "АНАЛИЗ НА ПРЕВОЗНОТО СРЕДСТВО" #+ Header of the pop-up when taking heavy cargo
 
-	key[]: "current_truck_params"
-	val[]: "Конфигурация на превозното средство" #+ Header inside the truck analysis widget for truck parameters
+	key[]: "current_vehicle_params"
+	val[]: "Конфигурация на превозното средство" #+ Header inside the vehicle analysis widget for vehicle parameters
 
-	key[]: "current_truck_parameters"
-	val[]: "Конфигурация на превозното средство" #+ Header inside the truck analysis pop-up for truck parameters
+	key[]: "current_vehicle_parameters"
+	val[]: "Конфигурация на превозното средство" #+ Header inside the vehicle analysis pop-up for vehicle parameters
 
 	key[]: "normal_cargo"
 	val[]: "Обикновен товар" #+ name of the bar for normal cargo suitability
@@ -190,8 +196,8 @@
 	key[]: "truck_analysis_heavy_introduction"
 	val[]: "Предстои да започнете превоз на тежък товар. Уверете се, че камионът ви е пригоден за тази цел." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
-	key[]: "truck_analysis_info_tooltip"
-	val[]: "Съобразно очаквания от вас типичен вид транспорт, конфигурирайте превозното си средство, за да го оптимизирате спрямо комбинация от икономичност при шофиране, технически и законови ограничения." #+  General tooltip description of Truck Analysis feature
+	key[]: "vehicle_analysis_info_tooltip"
+	val[]: "Въз основа на очаквания тип транспорт, настройте превозното си средство, за да го оптимизирате според комбинация от икономичност при шофиране, технически и законови ограничения." #+  General tooltip description of Vehicle Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Подходящ за превози на леки до средно тежки товари" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -200,10 +206,10 @@
 	val[]: "Подходящ за превози на тежки и извънгабаритни товари" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Способност на вашето превозно средство да маневрира в тесни пространства" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Способност на вашето превозно средство да маневрира в тесни пространства" #+  Tooltip description for the Maneuverability bar in Vehicle Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Оптимизирана задвижваща система на превозното средство за по-плавно изкачване и спускане по наклони" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Оптимизирана задвижваща система на превозното средство за по-плавно изкачване и спускане по наклони" #+  Tooltip description for the Hill Traversal bar in Vehicle Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Подобрена възможност за преодоляване на неравни и необработени пътни настилки" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -275,7 +281,7 @@
 	key[]: "truck_service"
 	val[]: "Сервиз" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
-	key[]: "truck_service_about"
+	key[]: "vehicle_service_about"
 	val[]: "Поддръжка и ремонти на превозното средство. Добрият шофьор винаги поддържа превозното си средство в отлично състояние." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
@@ -287,8 +293,8 @@
 	key[]: "truck_service_replace_all"
 	val[]: "Замени всички" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
-	key[]: "truck_service_truck_t"
-	val[]: "ДОКЛАД ЗА ЩЕТИТЕ ПО ПРЕВОЗНОТО СРЕДСТВО" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	key[]: "vehicle_service_vehicle_t"
+	val[]: "ДОКЛАД ЗА ЩЕТИТЕ ПО ПРЕВОЗНОТО СРЕДСТВО" #+ Header of section displaying status of individual components of the vehicle. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "ОТЧЕТ ЗА ЩЕТИ ПО РЕМАРКЕТО" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -296,8 +302,8 @@
 	key[]: "repair"
 	val[]: "Потвържди" #+ Button which confirms selected actions.
 
-	key[]: "truck_damage"
-	val[]: "Щети по превозното средство" #+ Price for the truck damage
+	key[]: "vehicle_damage"
+	val[]: "Щети по превозното средство" #+ Price for the vehicle damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -305,13 +311,13 @@
 #+ Allows to add or remove various accessories.
 #@{
 
-	key[]: "truck_config_t"
+	key[]: "vehicle_config_t"
 	val[]: "КОНФИГУРАТОР НА ПРЕВОЗНОТО СРЕДСТВО" #+ Title of the screen. Please keep in upper case where possible.
 
-	key[]: "truck_config"
-	val[]: "Конфигуратор на превозното средство" #+ Icon allowing player to upgrade the truck.
+	key[]: "vehicle_config"
+	val[]: "Конфигуратор на превозното средство" #+ Icon allowing player to upgrade the vehicle.
 
-	key[]: "truck_config_about"
+	key[]: "vehicle_config_about"
 	val[]: "Знаете ли, винаги има какво да тунинговате или боядисате, за да сте по-доволни от превозното си средство." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
@@ -410,7 +416,7 @@
 	key[]: "truck_diag"
 	val[]: "Диагностика на автомобили" #+ Icon allowing player to show damage on the truck.
 
-	key[]: "truck_diag_about"
+	key[]: "vehicle_diag_about"
 	val[]: "Вижте информация за вашето превозно средство и текущото му състояние."
 
 	key[]: "truck_diag_warning"
@@ -498,8 +504,8 @@
 	key[]: "cart_not_empty"
 	val[]: "При отмяна на поръчката, всички направени нови изменения, ще бъдат отменени!<br><br>Искате ли да продължите?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
-	key[]: "borrowed_truck_refusal"
-	val[]: "На вашия работодател няма да му хареса, ако правите промени по превозното му средство." #+ Shown if user attempts to upgrade a quick job truck.
+	key[]: "borrowed_vehicle_refusal"
+	val[]: "На вашия работодател няма да му хареса, ако правите промени по превозното му средство." #+ Shown if user attempts to upgrade a quick job vehicle.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Не можете да променяте типа, корпуса и шасито на ремаркето, докато тече доставка. Завършете доставката и опитайте отново." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -540,6 +546,9 @@
 
 	key[]: "b_grill"
 	val[]: "Ниска предна броня"
+
+	key[]: "bed_addon"
+	val[]: "Надстройка на каросерията"
 
 	key[]: "bullbar"
 	val[]: "Противоударна решетка"
@@ -649,6 +658,9 @@
 	key[]: "f_intk_b_cab"
 	val[]: "Предна маска, централна част" #+ Bars of plastic radiator mask (grill) in on the truck's front
 
+	key[]: "f_light"
+	val[]: "Фарове"
+
 	key[]: "f_light_chs"
 	val[]: "Фарове"
 
@@ -679,8 +691,11 @@
 	key[]: "f_wnd_frame"
 	val[]: "Рамка на предно стъкло" #+ The plate under truck windshield (where wipers are installed).
 
+	key[]: "fenders"
+	val[]: "Калници" #+ Fenders accessory, word for all fenders on vehicle.
+
 	key[]: "filter"
-	val[]: "Въздушен филтър" #+ Air filter accessoty.
+	val[]: "Въздушен филтър" #+ Air filter accessory.
 
 	key[]: "flag_r"
 	val[]: "Знаме на десен прозорец" #+ Right window flag
@@ -690,6 +705,9 @@
 
 	key[]: "frntglss_mid"
 	val[]: "Горна част на предното стъкло" #+ Pin that is placed on the bottom of the windshield centre to accomodate various decarative elements
+
+	key[]: "fuelcap"
+	val[]: "Капачка на резервоара"
 
 	key[]: "fwheel"
 	val[]: "Предни колела"
@@ -727,6 +745,9 @@
 	key[]: "nuts"
 	val[]: "Болтове" #+ Wheel nuts
 
+	key[]: "r_badge"
+	val[]: "Задна емблема" #+ Badge or logo on the rear of a vehicle
+
 	key[]: "r_banner"
 	val[]: "Заден надпис" #+ Banner on the rear
 
@@ -754,8 +775,17 @@
 	key[]: "r_light"
 	val[]: "Задни светлини" #+ Rear lights accessory
 
+	key[]: "r_logo"
+	val[]: "Задна емблема"
+
 	key[]: "r_mudflap"
 	val[]: "Задни калобрани" #+ A couple of rear mudflaps
+
+	key[]: "r_panel"
+	val[]: "Панел"
+
+	key[]: "r_turn_light"
+	val[]: "Заден мигач"
 
 	key[]: "r_wheel"
 	val[]: "Задни колела"
@@ -765,6 +795,9 @@
 
 	key[]: "rn_mirror"
 	val[]: "Предно дясно огледало"
+
+	key[]: "roof_addon"
+	val[]: "Надстройка на покрива"
 
 	key[]: "rwheel"
 	val[]: "Задни колела"
@@ -790,6 +823,9 @@
 	key[]: "s_strip"
 	val[]: "Странична лента"
 
+	key[]: "s_vent"
+	val[]: "Вентилация"
+
 	key[]: "set_cuphold"
 	val[]: "Комплект поставки за чаши" #+ Large Pin for sets of small pins of the cup holder accessories
 
@@ -810,6 +846,9 @@
 
 	key[]: "sideskrt_bar"
 	val[]: "Странични прагове"
+
+	key[]: "spare_w"
+	val[]: "Резервна гума"
 
 	key[]: "steering_w"
 	val[]: "Волан" #+ Steering wheel
@@ -846,6 +885,9 @@
 
 	key[]: "toystand"
 	val[]: "Предмети на централната конзола" #+ Interior accessories placed on stands or centre console available in the truck
+
+	key[]: "trunk"
+	val[]: "Багажник"
 
 	key[]: "windowtrim"
 	val[]: "Лайстна на прозорец" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
@@ -934,13 +976,13 @@
 	val[]: "Напред" #+ Tooltip for walk forward.
 
 	key[]: "tooltip_walk_back"
-	val[]: "Back" #+ Tooltip for walk back.
+	val[]: "Назад" #+ Tooltip for walk back.
 
 	key[]: "tooltip_walk_left"
-	val[]: "Left" #+ Tooltip for walk left.
+	val[]: "Ляво" #+ Tooltip for walk left.
 
 	key[]: "tooltip_walk_right"
-	val[]: "Right" #+ Tooltip for walk right.
+	val[]: "Дясно" #+ Tooltip for walk right.
 
 	key[]: "tooltip_walk_crouch"
 	val[]: "Клякане" #+ Tooltip for crouch.
@@ -1014,7 +1056,7 @@
 	val[]: "Подобри" #+ Button allowing user to upgrade something.
 
 	key[]: "confirm"
-	val[]: "Confirm" #+ Button which applies the state configured in the screen.
+	val[]: "Потвърди" #+ Button which applies the state configured in the screen.
 
 	key[]: "continue"
 	val[]: "Продължи" #+ Button which usually continues to next screen or message in sequence.
@@ -1045,7 +1087,7 @@
 	val[]: "Засечени са промени по играта! За да се избегнат проблеми със съвместимостта на записа, всички незавършени доставки ще бъдат отменени без да бъдете санкционирани за това." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Засечени са промени по играта!<br><br>За да се избегнат проблеми със съвместимостта на записа, всички незавършени доставки са отменени без да бъдете санкционирани за това. Трябва да паркирате камиона на безопасно място.<br><br>Изберете място за бързо пътуване, за да продължите." #+ Game state reset info message, plus free teleport
+	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Записване..." #+ Game save indicator message.
@@ -1073,6 +1115,9 @@
 
 	key[]: "load_game"
 	val[]: "Зареди игра" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
+
+	key[]: "load_game_failed"
+	val[]: "Неуспешно зареждане на запазената игра."
 
 	key[]: "load_game_desc"
 	val[]: "Зареждане на предишен запис. Текущият напредък ще бъде загубен!" #+ Help message associated with load game icon.
@@ -1353,7 +1398,7 @@
 	val[]: "Разстояние по суша" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Изберете товар, за да видите информация за маршрута" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Изберете оферта, за да видите детайли за маршрута" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Незавършен" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -1433,7 +1478,7 @@
 	val[]: "Оборудване"
 
 	key[]: "cargo_type_adr"
-	val[]: "Hazardous"
+	val[]: "Опасен"
 
 	key[]: "cargo_type_refrigerated"
 	val[]: "Хладилни и изотермични"
@@ -1730,7 +1775,7 @@
 	val[]: "Вашата кариера в момента е не е свързана с онлайн преживяването на $SHORTCUT1$$FRONTEND_URL$."
 
 	key[]: "connect_to_wotr_login_t"
-	val[]: "Connect"
+	val[]: "Свържи"
 
 	key[]: "connect_to_wotr_skip_t"
 	val[]: "Свържи се по-късно"
@@ -1771,10 +1816,10 @@
 	val[]: "Изберете от разнообразие камиони, за да оформите началното си изживяване. Всеки вариант е отличен избор."
 
 	key[]: "random_truck"
-	val[]: "Random"
+	val[]: "Случайно"
 
 	key[]: "confirm_preferred_truck"
-	val[]: "Confirm"
+	val[]: "Потвърди"
 #@}
 
 
@@ -1969,6 +2014,9 @@
 	key[]: "sort_by_ownership"
 	val[]: "Състояние" #+ Button in sort by droplist. Please keep it as short as possible.
 
+	key[]: "sort_by_price"
+	val[]: "Цена" #+ Button in sort by droplist. Please keep it as short as possible.
+
 	key[]: "filter_dlc"
 	val[]: "Подредба" #+ Combo box with job sorting options."
 
@@ -2033,19 +2081,22 @@
 	val[]: "Карта" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_cargo"
-	val[]: "Cargo" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Товар" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_trailer"
-	val[]: "Trailer" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Вилнюс, Литва" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_accessories"
-	val[]: "Accessories" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Аксесоари" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_paint_jobs"
-	val[]: "Paint jobs" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Боя" #+ Button/tab in DLC browser. Please keep it as short as possible.
+
+	key[]: "dlc_category_vehicles"
+	val[]: "Превозни средства" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_all"
-	val[]: "All" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Всички" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "no_dlc_found"
 	val[]: "Не могат да бъдат намерени DLC-та, съответстващи на вашите филтри"
@@ -2057,16 +2108,58 @@
 	val[]: "Резултати от търсенето в: " #+ Text shown when searching DLC and only other category screen contain some matches. Followed by list of category screen titles.
 
 	key[]: "dlc_widget_open"
-	val[]: "Open" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
+	val[]: "Отворете" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_widget_close"
 	val[]: "Затвори" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_browser_online_wait_title"
-	val[]: "DOWNLOADING DATA" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "Изтегляне на данни" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_online_wait_message"
-	val[]: "Downloading DLC information. Please wait."
+	val[]: "Изтегляне на информация за DLC. Моля, изчакайте."
+
+	key[]: "dlc_browser_open_store"
+	val[]: "Желаете ли да отворите интернет браузър и да отидете на избраната уеб страница?"
+
+	key[]: "dlc_browser_no_valid_data"
+	val[]: "В момента няма налични DLC."
+
+	key[]: "dlc_browser_catalogue_canceled"
+	val[]: "Операцията с каталога е отменена." #+ The operation was cancelled by the player, and finished correctly.
+
+	key[]: "dlc_browser_catalogue_unknown_error"
+	val[]: "Неизвестна грешка в каталога." #+ Catalogue unknown error.
+
+	key[]: "dlc_browser_catalogue_not_initialized"
+	val[]: "Каталогът не е стартиран." #+ Error caused by either module or library not being properly initialized (yet).
+
+	key[]: "dlc_browser_catalogue_incompatible_state"
+	val[]: "Операцията не можа да започне, тъй като в момента се извършва блокираща операция." #+ Error caused attempting to start an operation when another, blocking is in progress
+
+	key[]: "dlc_browser_catalogue_bad_data"
+	val[]: "Част от предоставените данни са неточни или непълни." #+ Bad data were supplied either by caller or by first party.
+
+	key[]: "dlc_browser_catalogue_product_misssing"
+	val[]: "Опит за заявка на операция с продукт, който липсва в локалния ни каталог или в бекенд каталога на основната система." #+ Trying to request operation with a product that is either missing from our local caltalogue or the first party back end catalogue.
+
+	key[]: "dlc_browser_catalogue_sending_failed"
+	val[]: "Заявката за каталога беше неуспешна." #+ The request failed, accompanied error message/ other logs should explain why.
+
+	key[]: "dlc_browser_catalogue_parse_failed"
+	val[]: "Полученият отговор беше некоректно форматиран." #+ The respone received was malformed.
+
+	key[]: "dlc_browser_catalogue_first_party_fail"
+	val[]: "Вътрешна грешка в каталога." #+ First party api call failed for reason beyond our capabilities to fix.
+
+	key[]: "dlc_browser_catalogue_bad_platform"
+	val[]: "Функционалността не е налична на текущата платформа." #+ The functionality is not present on current platform.
+
+	key[]: "dlc_browser_catalogue_try_later"
+	val[]: "Услугата за каталога в момента не е достъпна, заявителят трябва да опита по-късно." #+ The service is currently unavailable, the caller should try later.
+
+	key[]: "dlc_browser_commerce_module_internal_error"
+	val[]: "Вътрешна грешка в каталога." #+ Catalogue internal error.
 #@}
 
 #+ Activation screen
@@ -2322,7 +2415,7 @@
 	key[]: "interface_sound_settings_t"
 	val[]: "ИНТЕРФЕЙС" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
-	key[]: "truck_sound_settings_t"
+	key[]: "vehicle_sound_settings_t"
 	val[]: "ЗВУЦИ НА ПРЕВОЗНОТО СРЕДСТВО" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
@@ -2334,20 +2427,20 @@
 	key[]: "master_volume"
 	val[]: "Обща сила на звука" #+ Slider controlling master volume.
 
-	key[]: "truck_engine_volume"
-	val[]: "Сила на звуците от двигателя" #+ Slider controlling volume of the truck engine.
+	key[]: "vehicle_engine_volume"
+	val[]: "Сила на звуците от двигателя" #+ Slider controlling volume of the vehicle engine.
 
-	key[]: "truck_exhaust_volume"
-	val[]: "Сила на звуците от ауспуха" #+ Slider controlling volume of the truck exhaust.
+	key[]: "vehicle_exhaust_volume"
+	val[]: "Сила на звуците от ауспуха" #+ Slider controlling volume of the vehicle exhaust.
 
-	key[]: "truck_turbo_volume"
-	val[]: "Сила на звуците от турбокомпресора" #+ Slider controlling volume of the truck turbo.
+	key[]: "vehicle_turbo_volume"
+	val[]: "Сила на звуците от турбокомпресора" #+ Slider controlling volume of the vehicle turbo.
 
-	key[]: "truck_effects_volume"
-	val[]: "Сила на звука на ефектите на превозното средство" #+ Slider controlling volume of the truck effects.
+	key[]: "vehicle_effects_volume"
+	val[]: "Сила на звука на ефектите на превозното средство" #+ Slider controlling volume of the vehicle effects.
 
-	key[]: "truck_noise_volume"
-	val[]: "Сила на шума на превозното средство" #+ Slider controlling volume of the truck noises.
+	key[]: "vehicle_noise_volume"
+	val[]: "Сила на шума на превозното средство" #+ Slider controlling volume of the vehicle noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Сила на шумовете от ремаркето" #+ Slider controlling volume of the trailer noises.
@@ -2407,7 +2500,7 @@
 	val[]: "Прослушване на глас" #+ Label for the button to preview message of the voice navigation pack..
 
 	key[]: "voice_preview"
-	val[]: "Preview" #+ The button to preview message of the voice navigation pack..
+	val[]: "Преглед" #+ The button to preview message of the voice navigation pack..
 
 	key[]: "voice_speed_warning"
 	val[]: "Предупреждение за скорост" #+ Droplist for selection of the speed warning type.
@@ -2489,19 +2582,19 @@
 	key[]: "master_volume_op_tooltip" # - Audio, Simple
 	val[]: "Настройка на общия звук на играта."
 
-	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_engine_volume_op_tooltip" # - Audio, Simple
 	val[]: "Регулира силата на звука на двигателя на превозното средство."
 
-	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_exhaust_volume_op_tooltip" # - Audio, Simple
 	val[]: "Регулира силата на звука на ауспуха на превозното средство."
 
-	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_turbo_volume_op_tooltip" # - Audio, Simple
 	val[]: "Регулира силата на звука на турбото на превозното средство."
 
-	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_effects_volume_op_tooltip" # - Audio, Simple
 	val[]: "Регулира силата на звука на другите звукови ефекти на превозното средство, като например съскането на въздушните спирачки."
 
-	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "Регулира силата на шума от гумите на превозното средство."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
@@ -2583,10 +2676,10 @@
 	val[]: "Активира шума от въздушния поток около кабината на вашето превозно средство."
 
 	key[]: "reverb_cabin_op_tooltip" # - Audio, Advanced
-	val[]: "Enables reverb effect of your vehicle's cabin."
+	val[]: "Активира ефекта на реверберация в купето на вашето превозно средство."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
-	val[]: "Позволяване на реверберационен ефект на звуците от околната среда."
+	val[]: "Активира ефекта на реверберация на околните звуци."
 
 	key[]: "inactive_app_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Когато е активирано, всички звуци от играта ще продължат да се чуват дори когато играта е минимизирана във фонов режим."
@@ -2629,8 +2722,8 @@
 	key[]: "transmission_settings"
 	val[]: "ТРАНСМИСИЯ" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
-	key[]: "truck_physics_settings"
-	val[]: "VEHICLE PHYSICS" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	key[]: "vehicle_physics_settings"
+	val[]: "Физика на превозното средство" #+ Title of 'Vehicle physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "ПОМОЩНИЦИ" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2807,7 +2900,7 @@
 	val[]: "Недостъпно" # Shown at various places if city name is unavailable. Please keep it as short as possible.
 
 	key[]: "country_na"
-	val[]: "N / A" # Shown at various places if country name is unavailable. Please keep it as short as possible.
+	val[]: "Няма данни" # Shown at various places if country name is unavailable. Please keep it as short as possible.
 #@}
 
 #+ Adviser speed limit visualization
@@ -2818,8 +2911,8 @@
 	key[]: "hide"
 	val[]: "Не показвай" #+ Hide speed limit display on the advisor.
 
-	key[]: "truck_limit"
-	val[]: "Show limit for current vehicle mode" #+ Show speed limits for trucks on the advisor.
+	key[]: "automatic_limit"
+	val[]: "Покажи ограничението за текущия режим на превозното средство" #+ Show speed limits for vehicles on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "Показвай само за коли" #+ Show speed limits for ordinary cars on the advisor.
@@ -2952,8 +3045,8 @@
 	key[]: "brake_intensity"
 	val[]: "Сила на спирачките" #+ Slider for player modification of braking force.
 
-	key[]: "truck_stability"
-	val[]: "Vehicle stability" #+ Slider for player modification of truckstability (COG position).
+	key[]: "vehicle_stability"
+	val[]: "Стабилност на превозното средство" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
 	val[]: "Устойчивост на ремаркето" #+ Slider for player modification of trailer stability (COG position).
@@ -3018,8 +3111,8 @@
 	key[]: "throttle_double_tap"
 	val[]: "Интелигентно управление на газта" #+ Checkbox for double tap mode of the digital throttle.
 
-	key[]: "truck_speed_limiter"
-	val[]: "Ограничител на скоростта" #+ Checkbox for enabling of speed limiter.
+	key[]: "vehicle_speed_limiter"
+	val[]: "Ограничител на скоростта на превозното средство" #+ Checkbox for enabling of speed limiter.
 
 	key[]: "rain_sensor"
 	val[]: "Датчик за дъжд" #+ Checkbox for enabling rain sensor usage (automatic wipers).
@@ -3135,6 +3228,9 @@
 	key[]: "cam_horizon_lock_factor"
 	val[]: "Хоризонтална фиксация на вътрешната камера" #+ Slider for interior camera horizon locking.
 
+	key[]: "cam_fov_speed_factor"
+	val[]: "Динамична промяна на зрителното поле на интериорната камера спрямо скоростта" #+ Slider for interior camera speed-based FOV changes.
+
 	key[]: "cam_auto_center_delay"
 	val[]: "Закъснение при автоматично центриране на камерата" #+ Dropdown for camera auto centering delay.
 
@@ -3180,7 +3276,7 @@
 	val[]: "Когато е активирана, трябва да спазвате правилата за движение, иначе рискувате да получите нарушения. Рискът се увеличава в близост до полицейски превозни средства, радари и пътни камери."
 
 	key[]: "preferred_job_length_op_tooltip" # - Gameplay, Advanced
-	val[]: "Определя средната продължителност на предлаганите доставки."
+	val[]: "Регулира средната дължина на предлаганите курсове.<br><br><color value=@@clr_txt_d@@>Важи за курсове в Режим на камион."
 
 	key[]: "adviser_speed_limit_op_tooltip" # - Gameplay, Advanced
 	val[]: "Изберете коя скоростна граница да се показва в навигацията."
@@ -3207,7 +3303,7 @@
 	val[]: "Изберете как да бъде подравнена картата на света."
 
 	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "Изберете как да се открива картата."
+	val[]: "Изберете как да се открива картата на света:<br>„Откриване при приближаване“ отбелязва по-голяма зона като открита.<br>„Прецизно откриване“ разкрива само зоните непосредствено около играча."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Изберете как да се показва навигацията."
@@ -3231,7 +3327,7 @@
 	val[]: "Изберете дали информацията за часовата зона да се показва в допълнение към текущия час."
 
 	key[]: "show_cutscenes_op_tooltip" # - Gameplay, Simple
-	val[]: "Enables in-game cutscenes typically displayed after truck purchases, garage upgrades or during passenger loading."
+	val[]: "Активира видеосцени в играта, които обикновено се показват след покупка на превозно средство, надграждане на гараж или по време на качване на пътници."
 
 	key[]: "show_blockers_op_tooltip" # - Gameplay, Simple
 	val[]: "Изберете дали полупрозрачните блокери да се показват на пътища, до които няма достъп."
@@ -3254,14 +3350,14 @@
 	key[]: "brake_intensity_op_tooltip" # - Gameplay, Advanced
 	val[]: "Променя интензивността на спирачките."
 
-	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
-	val[]: "Changes stability of the vehicle by lowering its centre of gravity."
+	key[]: "vehicle_stability_op_tooltip" # - Gameplay, Advanced
+	val[]: "Променя стабилността на превозното средство чрез понижаване на неговия център на тежестта."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "Променя стабилността на ремаркето чрез понижаване на центъра на тежестта му."
 
 	key[]: "driveshaft_torque_op_tooltip" # - Gameplay, Advanced
-	val[]: "Changes intensity of the torque generated from the driveline.<br><br>Raising this setting will increase the feeling of the vehicle \"twisting\" to the right."
+	val[]: "Променя интензивността на въртящия момент, генериран от трансмисията<br><br>величаването на тази настройка ще увеличи усещането за „усукване“ на превозното средство надясно."
 
 	key[]: "suspension_stiffness_op_tooltip" # - Gameplay, Advanced
 	val[]: "Променя твърдостта на окачването на шасито."
@@ -3278,8 +3374,8 @@
 	key[]: "trailer_cables_mode_op_tooltip" # - Gameplay, Simple
 	val[]: "Избира дали и кои кабели на ремаркето да се анимират.<br><br><color value=@@clr_txt_d@@>Активирането на кабели на повече превозни средства може да повлияе на производителността на по-стари системи."
 
-	key[]: "truck_speed_limiter_op_tooltip" # - Gameplay, Simple
-	val[]: "Активира електронния ограничител на скоростта на камиона от 105 км/ч (65 мили/ч).<br><br><color value=@@clr_txt_d@@>За заданията в World of Trucks тази функция е постоянно включена."
+	key[]: "vehicle_speed_limiter_op_tooltip" # - Gameplay, Simple
+	val[]: "Активира електронния ограничител на скоростта на превозното средство със стойност в зависимост от неговия модел.<br><br><color value=@@clr_txt_d@@>Поръчките от World of Trucks имат тази функция постоянно включена."
 
 	key[]: "rain_sensor_op_tooltip" # - Gameplay, Simple
 	val[]: "Когато е активирано и чистачките на предното стъкло са настроени на първа позиция, чистачките автоматично ще се включат и ще регулират скоростта си според условията."
@@ -3297,7 +3393,7 @@
 	val[]: "Когато е разрешено, двигателят ще стартира веднага след натискане на педала на газта."
 
 	key[]: "auto_park_brake_op_tooltip" # - Gameplay, Advanced
-	val[]: "When enabled, the vehicle's parking brake is applied by default (after using a ferry, towing to service, quick travelling, etc.)."
+	val[]: "Когато е активирано, ръчната спирачка на превозното средство се задейства по подразбиране (след използване на ферибот, теглене до сервиз, бързо пътуване и т. н.)."
 
 	key[]: "auto_drop_axles_op_tooltip" # - Gameplay, Advanced
 	val[]: "Автоматично спускане на повдигащи се оси, когато е необходимо в зависимост от теглото на автомобила."
@@ -3315,10 +3411,10 @@
 	val[]: "Когато е активиран, ABS ще предотврати блокиране на колелата, за да запази контрола и да подобри спирачната способност."
 
 	key[]: "traction_control_op_tooltip" # - Gameplay, Advanced
-	val[]: "When enabled, the vehicle will apply per-wheel braking to prevent wheelspin, understeer or oversteer to help maintain control."
+	val[]: "Когато е активирано, превозното средство ще прилага спирачно усилие на всяко колело поотделно, за да предотврати пребуксуване, недозавиване или свръхзавиване и да помогне за запазване на контрола."
 
 	key[]: "auto_diff_lock_op_tooltip" # - Gameplay, Advanced
-	val[]: "When enabled, the vehicle will lock the differential if wheels begin to slip to improve traction."
+	val[]: "Когато е активирано, превозното средство ще блокира диференциала, ако колелата започнат да боксуват, за да подобри сцеплението."
 
 	key[]: "cruise_control_grid_op_tooltip" # - Gameplay, Advanced
 	val[]: "Променя стъпката на скоростта, с която круиз контролът ще се увеличи или намали, когато се натисне съответният бутон."
@@ -3333,10 +3429,10 @@
 	val[]: "Активира аварийно спиране, ако системата усети неизбежен сблъсък.<br> Изберете дали системата ще реагира само на превозни средства или на всички препятствия."
 
 	key[]: "lane_assistant_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "Selection of lane assistant modes:<br>- The \"Lane departure warning\" mode audibly warns you when you are about to leave the lane.<br>- In addition to the audible warning, the \"Lane keep support\" also automatically steers your vehicle to keep it from leaving the lane.<br><br>Both modes are only active at speeds above 55 km/h (~35 mph).<br>The Lane Assistant also considers your usage of the turn signals before engaging."
+	val[]: "Избор на режими на асистента за следене на пътната лента:<br>Режимът „Предупреждение за напускане на лентата“ ви предупреждава със звуков сигнал, когато сте на път да напуснете лентата<br>- В допълнение към звуковото предупреждение, „Асистентът за поддържане на лентата“ също така автоматично управлява превозното ви средство, за да го предпази от напускане на лентата<br><br>И двата режима са активни само при скорост над 55 км/ч (~35 мили/ч).<br>Асистентът за лентата също така взема предвид използването на мигачите, преди да се задейства."
 
 	key[]: "blind_spot_op_tooltip" # - Gameplay, Advanced
-	val[]: "Enables the blind spot sensor functions, if your vehicle is equipped with it."
+	val[]: "Активира функциите на сензора за сляпа зона, ако превозното ви средство е оборудвано с такъв."
 
 	key[]: "automatic_headlights_op_tooltip" # - Gameplay, Simple
 	val[]: "Когато е активирана и фаровете са настроени на първа позиция, фаровете ще се включват автоматично при слабо осветление."
@@ -3370,6 +3466,9 @@
 
 	key[]: "cam_horizon_lock_factor_op_tooltip" # - Gameplay, Advanced
 	val[]: "Променя колко е позволено да се върти вътрешната камера въз основа на движението на превозното средство."
+
+	key[]: "cam_fov_speed_factor_op_tooltip" # - Gameplay, Advanced
+	val[]: "Интензивност на промяната на FOV спрямо скоростта."
 
 	key[]: "cam_auto_center_delay_op_tooltip" # - Gameplay, Advanced
 	val[]: "Задава закъснението, преди камерата да се центрира автоматично.<br><br> Превозното средство трябва да се движи с незначителна скорост, за да се активира това. Прилага се само за вътрешна и преследваща камера, докато се движите напред, и за наклонена навън камера, докато се движите назад."
@@ -3474,7 +3573,7 @@
 	val[]: "Интерфейс" #+ Icon opening the gameplay options window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "adviser_settings"
-	val[]: "HUD" #+ Title of adviser setting section. Please keep in upper case where possible.
+	val[]: "Екранен интерфейс" #+ Title of adviser setting section. Please keep in upper case where possible.
 
 	key[]: "navigation_settings"
 	val[]: "Навигация" #+ Title of 'Navigation' settings section. Please keep in upper case where possible.
@@ -3571,6 +3670,9 @@
 	key[]: "lost_function_binding"
 	val[]: "Загубено действие:" #+ Shown when key was rebound to a different function.
 
+	key[]: "unavailable_assignment"
+	val[]: "$INPUT$ не може да се използва." #+ Shown when the player presses a key that cannot in input binding.
+
 #!{
 	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
 	val[]: "@@keyboard_ico@@"
@@ -3579,14 +3681,14 @@
 #+ Headers of individual sections
 #@{
 
-	key[]: "truck_controls"
-	val[]: "VEHICLE"
+	key[]: "vehicle_controls"
+	val[]: "ПРЕВОЗНО СРЕДСТВО"
 
 	key[]: "assistant_controls"
 	val[]: "ПОМОЩНИЦИ"
 
 	key[]: "transmission_controls"
-	val[]: "TRANSMISSION"
+	val[]: "ТРАНСМИСИЯ"
 
 	key[]: "suspension_controls"
 	val[]: "ОКАЧВАНЕ"
@@ -3598,7 +3700,7 @@
 	val[]: "ПОМОЩНИ СПИРАЧКИ"
 
 	key[]: "interior_controls"
-	val[]: "INTERIOR"
+	val[]: "ИНТЕРИОР"
 
 	key[]: "hud_controls"
 	val[]: "Екранен интерфейс"
@@ -3690,6 +3792,9 @@
 
 	key[]: "o_im_parkingbrake"
 	val[]: "Паркинг спирачка"
+
+	key[]: "o_im_handbrake"
+	val[]: "Ръчна спирачка"
 
 	key[]: "o_im_motorbrake"
 	val[]: "Моторна спирачка"
@@ -3850,6 +3955,9 @@
 	key[]: "o_im_infotainment"
 	val[]: "Режим на мултимедийната система" #+ Action for cycling between infotainement display pages/modes.
 
+	key[]: "o_im_parking_cameras"
+	val[]: "Режим на камера за паркиране" #+ Action for toggling parking camera display pages/modes (if available).
+
 	key[]: "o_im_dashboard_map"
 	val[]: "Мащаб на картата на навигацията" #+ Action for cycling trough zoom levels in all vehicle navigational devices.
 
@@ -3894,7 +4002,7 @@
 	val[]: "Бърза информация"
 
 	key[]: "o_im_adjuster"
-	val[]: "Vehicle Adjustment"
+	val[]: "Настройки на превозното средство"
 
 	key[]: "o_im_services"
 	val[]: "Услуги и регулировки"
@@ -3999,13 +4107,13 @@
 	val[]: "Напред" #+ Walk forward.
 
 	key[]: "o_im_walk_back"
-	val[]: "Back" #+ Walk back.
+	val[]: "Назад" #+ Walk back.
 
 	key[]: "o_im_walk_left"
-	val[]: "Left" #+ Walk left.
+	val[]: "Наляво" #+ Walk left.
 
 	key[]: "o_im_walk_right"
-	val[]: "Right" #+ Walk right.
+	val[]: "Надясно" #+ Walk right.
 
 	key[]: "o_im_walk_crouch"
 	val[]: "Клякане" #+ Activate crouch.
@@ -4104,6 +4212,9 @@
 	key[]: "o_im_parkingbrake_op_tooltip"
 	val[]: "Задава клавиш за ръчната спирачка."
 
+	key[]: "o_im_handbrake_op_tooltip"
+	val[]: "Задава бутон за ръчната спирачка."
+
 	key[]: "o_im_motorbrake_op_tooltip"
 	val[]: "Присвоява бутон за спирачката на двигателя.<br><br>Спирачката на двигателя ще бъде активна, докато държите бутона."
 
@@ -4132,7 +4243,7 @@
 	val[]: "Задава клавиш за включване/изключване на автоматичния ретардер."
 
 	key[]: "o_im_lift_axle_op_tooltip"
-	val[]: "Assigns button for lifting/dropping the axle, if your vehicle has liftable axle."
+	val[]: "Задава бутон за повдигане/спускане на оста, ако превозното ви средство има повдигаща се ос."
 
 	key[]: "o_im_lift_axle_trailer_op_tooltip"
 	val[]: "Задава бутон за повдигане/пускане на оста, ако ремаркето ви има повдигаща се ос."
@@ -4180,13 +4291,13 @@
 	val[]: "Задава клавиш за включване/изключване на дългите светлини."
 
 	key[]: "o_im_beacon_op_tooltip"
-	val[]: "Assigns button for turning on/off the beacon, if your vehicle or trailer is equipped with it."
+	val[]: "Задава бутон за включване/изключване на сигналната лампа, ако превозното ви средство или ремаркето е оборудвано с такава."
 
 	key[]: "o_im_horn_op_tooltip"
 	val[]: "Присвоява клавиш за използване на електрическия клаксон."
 
 	key[]: "o_im_air_horn_op_tooltip"
-	val[]: "Assigns button for using the air horn, if your vehicle is equipped with it."
+	val[]: "Задава бутон за използване на въздушния клаксон, ако превозното ви средство е оборудвано с такъв."
 
 	key[]: "o_im_light_horn_op_tooltip"
 	val[]: "Задава калавиш за мигане на дългите светлини."
@@ -4227,6 +4338,9 @@
 	key[]: "o_im_infotainment_op_tooltip"
 	val[]: "Присвоява клавиш за смяна на екраните на дисплея на информационно-развлекателната система."
 
+	key[]: "o_im_parking_cameras_op_tooltip"
+	val[]: "Задава бутон за превключване на екраните на паркинг камерата."
+
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "Присвоява клавиш за промяна на нивото на увеличение на навигационния екран в таблото или дисплея на информационно-развлекателната система."
 
@@ -4258,7 +4372,7 @@
 	val[]: "Присвоява бутон за показване на менюто „Услуги и регулировки“."
 
 	key[]: "o_im_adviser_cursor_op_tooltip"
-	val[]: "Assigns button for showing quick info about the job status, vehicle condition, and local regulations which also pauses the game when not in a convoy."
+	val[]: "Задава бутон за показване на бърза информация за състоянието на задачата, състоянието на превозното средство и местните разпоредби, което също така поставя играта на пауза, когато не сте в конвой."
 
 	key[]: "o_im_adviser_zoom_in_op_tooltip"
 	val[]: "Присвоява бутон за приближаване в навигацията."
@@ -4438,22 +4552,22 @@
 	val[]: "Присвоява клаиш за отваряне на аудио плейъра."
 
 	key[]: "o_im_radio_next_op_tooltip"
-	val[]: "Assigns button for playing the next item on the audio player's list while driving."
+	val[]: "Задава бутон за пускане на следващия елемент от списъка на аудио плейъра по време на шофиране."
 
 	key[]: "o_im_radio_prev_op_tooltip"
-	val[]: "Assigns button for playing the previous item on the audio player's list while driving."
+	val[]: "Задава бутон за пускане на предишния елемент от списъка на аудио плейъра по време на шофиране."
 
 	key[]: "o_im_radio_vol_up_op_tooltip"
-	val[]: "Assigns button for increasing the volume of the audio player while driving."
+	val[]: "Задава бутон за увеличаване на силата на звука на аудио плейъра по време на шофиране."
 
 	key[]: "o_im_radio_vol_down_op_tooltip"
-	val[]: "Assigns button for decreasing the volume of the audio player while driving."
+	val[]: "Задава бутон за намаляване на силата на звука на аудио плейъра по време на шофиране."
 
 	key[]: "o_im_radio_toggle_op_tooltip"
-	val[]: "Assigns button for pausing and resuming the music while driving."
+	val[]: "Задава бутон за поставяне на пауза и възобновяване на музиката по време на шофиране."
 
 	key[]: "o_im_radio_favorite_op_tooltip"
-	val[]: "Assigns button for adding or removing radio stations from the favourites while driving."
+	val[]: "Задава бутон за добавяне или премахване на радиостанции от любими по време на шофиране."
 
 	key[]: "o_im_nav_map_op_tooltip"
 	val[]: "Присвоява клаиш за отваряне на картата на света."
@@ -4840,7 +4954,7 @@
 	val[]: "Проследяване на поглед (не е намерено устройство)" #+ Eye tracking enable checkbox if no eye compatible eye tracking HW is detected
 
 	key[]: "eye_configure"
-	val[]: "Configure" #+ Eye tracking configuration button
+	val[]: "Конфигуриране" #+ Eye tracking configuration button
 
 	key[]: "visit_tobii"
 	val[]: "Посети Tobii Gaming" #+ Link to tobii gaming related page
@@ -5248,10 +5362,10 @@
 	val[]: "Задайте точка към желания портал"
 
 	key[]: "wanna_assistance_portal"
-	val[]: "Пътна помощ може да Ви изтегли безплатно вас и вашия камион до произволен портал. <br offset=30>Съгласни ли сте?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до произволен портал безплатно.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_assistance_portal_online"
-	val[]: "Пътна помощ може да Ви изтегли безплатно вас и вашия камион до произволен портал.<br offset=30>Текущата ви доставка ще бъде анулирана.<br offset=30>Съгласни ли сте?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до произволен портал безплатно.<br offset=30>Текущата ви доставка ще бъде отменена.<br offset=30>Съгласни ли сте?"
 
 	key[]: "mp_job_quick_travel_other_land"
 	val[]: "Намирате се твърде далеч от компанията-възложител, която е в друга държава.<br><br>Все още ли искате да вземете доставката?"
@@ -5266,7 +5380,7 @@
 	val[]: "Режим на автоматичното прекъсване" #+ Type of the autopause
 
 	key[]: "eye_autopause_mode_never"
-	val[]: "Disabled" #+ Autopause is disabled
+	val[]: "Деактивирано" #+ Autopause is disabled
 
 	key[]: "eye_autopause_mode_presence"
 	val[]: "Присъствие" #+ Autopause if user is not present
@@ -5429,6 +5543,9 @@
 	key[]: "grass_detail"
 	val[]: "Гъстота на тревата" #+ Combo box selecting density of grass.
 
+	key[]: "tire_smoke"
+	val[]: "Дим от гумите" #+ Combo box selecting amount of tire smoke.
+
 	key[]: "shadow_quality"
 	val[]: "Качество на сенките"  #+ Combo box selecting quality of shadows.
 
@@ -5546,6 +5663,9 @@
 	key[]: "grass_detail_op_tooltip" # - Graphics, Advanced
 	val[]: "Регулира гъстотата на тревата, която се вижда отстрани на пътя.<br><br><color value=@@clr_txt_d@@>Тази настройка обикновено има умерено въздействие върху производителността."
 
+	key[]: "tire_smoke_op_tooltip" # - Graphics, Advanced
+	val[]: "Контролира количеството дим, генериран от триенето на гумите в земята.<br><br><color value=@@clr_txt_d@@>Експериментална функция, работеща в момента само при шофиране на автомобили.<br>Тази настройка обикновено има умерено въздействие върху производителността."
+
 	key[]: "shadow_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Регулира качеството на сенките, хвърляни от слънцето или луната.<br><br><color value=@@clr_txt_d@@>Тази настройка обикновено има умерено влияние върху производителността."
 
@@ -5553,7 +5673,7 @@
 	val[]: "Позволява изобразяване на сенки дори от много отдалечени обекти.<br><br><color value=@@clr_txt_d@@>Тази настройка обикновено има умерено влияние върху производителността."
 
 	key[]: "interior_shadow_op_tooltip" # - Graphics, Advanced
-	val[]: "Enables night-time dynamic shadows in the vehicle interior.<br><br><color value=@@clr_txt_d@@>This setting usually has a moderate impact on performance."
+	val[]: "Активира динамичните сенки през нощта в интериора на превозното средство.<br><br><color value=@@clr_txt_d@@>Тази настройка обикновено има умерено влияние върху производителността."
 
 	key[]: "weather_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Регулира качеството на метеорологичните ефекти, като например отражения."
@@ -5844,10 +5964,10 @@
 	val[]: "CMD"
 
 	key[]: "no_cstm_mod"
-	val[]: "No modifier"
+	val[]: "Без модификация"
 
 	key[]: "cstm_mod_prefix"
-	val[]: "Modifier"
+	val[]: "Модификация"
 
 	key[]: "cstm_mod_1"
 	val[]: "Модификатор 1"
@@ -5934,28 +6054,28 @@
 #+ Steering wheel button and axis names
 #@{
 	key[]: "axis_steering"
-	val[]: "Steering" #+ Steering axis of a steering wheel.
+	val[]: "Завиване" #+ Steering axis of a steering wheel.
 
 	key[]: "axis_throttle"
-	val[]: "Throttle" #+ Throttle pedal axis of a steering wheel.
+	val[]: "Газ" #+ Throttle pedal axis of a steering wheel.
 
 	key[]: "axis_brake"
-	val[]: "Brake" #+ Brake pedal axis of a steering wheel.
+	val[]: "Спирачка" #+ Brake pedal axis of a steering wheel.
 
 	key[]: "axis_clutch"
-	val[]: "Clutch" #+ Clutch pedal axis of a steering wheel.
+	val[]: "Съединител" #+ Clutch pedal axis of a steering wheel.
 
 	key[]: "axis_handbrake"
-	val[]: "Handbrake" #+ Handbrake axis of a steering wheel.
+	val[]: "Ръчна спирачка" #+ Handbrake axis of a steering wheel.
 
 	key[]: "axis_gear"
-	val[]: "Gear Axis" #+ Gear axis of a steering wheel, usually from a h-shifter.
+	val[]: "Ос за предавките" #+ Gear axis of a steering wheel, usually from a h-shifter.
 
 	key[]: "button_reverse_gear"
-	val[]: "Reverse Gear" #+ Reverse gear button of a steering wheel, usually from a h-shifter.
+	val[]: "Задна предавка" #+ Reverse gear button of a steering wheel, usually from a h-shifter.
 
 	key[]: "button_gear"
-	val[]: "Gear" #+ N-th gear button of a steering wheel, usually from a h-shifter. For example "Gear 1".
+	val[]: "Предавка" #+ N-th gear button of a steering wheel, usually from a h-shifter. For example "Gear 1".
 #@}
 
 #+ XInput button names
@@ -6078,7 +6198,7 @@
 	val[]: "РАДИО" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "radio"
-	val[]: "Audio Player" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Радио" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "music_player"
 	val[]: "Музикален плеър" #+ Button for selecting music player.
@@ -6087,19 +6207,19 @@
 	val[]: "Интернет радио" #+ Button for selecting online radio.
 
 	key[]: "game_radio"
-	val[]: "Game radio" #+ Button for selecting game radio (offline radio).
+	val[]: "Радио в играта" #+ Button for selecting game radio (offline radio).
 
 	key[]: "radio_changed"
 	val[]: "В момента се изпълнява <color value=@@clr_sel@@>$NAME$" #+ Notification that playing track/stream have changed.
 
 	key[]: "stream_safe"
-	val[]: "Stream-safe" #+ Text for enabling stream-safe mode (offline game radios that are designed to avoid content claims)
+	val[]: "Безопасно за излъчване" #+ Text for enabling stream-safe mode (offline game radios that are designed to avoid content claims)
 
 	key[]: "volume_up"
-	val[]: "Volume Up" #+ Controller hint text for increasing volume
+	val[]: "Увеличаване на звука" #+ Controller hint text for increasing volume
 
 	key[]: "volume_down"
-	val[]: "Volume Down" #+ Controller hint text for decreasing volume
+	val[]: "Намаляване на звука" #+ Controller hint text for decreasing volume
 
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
@@ -6117,25 +6237,25 @@
 	val[]: "Моля, прочетете файла <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>, намиращ се в папка <color value=@@clr_sel@@>Euro Truck Simulator 2 <color value=@@clr_txt@@>в <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>, за да разберете как да добавите своя музика или радио поток."
 
 	key[]: "radio_hint_repeat_favorites"
-	val[]: "Switch between cycling all or favourites only.<br><br>\"Cycle favourites only\" is available when there is at least one favourite item on your list."
+	val[]: "Превключване между превъртане на всички или само на любимите.<br><br>„Превъртане само на любимите“ е достъпно, когато в списъка ви има поне един любим елемент."
 
 	key[]: "radio_cycling_all"
-	val[]: "Cycling all" #+ Text shown if currently we are cycling between all tracks
+	val[]: "Превъртане на всички" #+ Text shown if currently we are cycling between all tracks
 
 	key[]: "radio_cycling_favorites"
-	val[]: "Cycling only favourites" #+ Text shown if currently we are cycling between only favorite
+	val[]: "Превъртане само на любимите" #+ Text shown if currently we are cycling between only favorite
 
 	key[]: "radio_hint_online_update"
-	val[]: "Clicking this button refreshes your list of radio streams available for listening online."
+	val[]: "Атискането на този бутон опреснява вашия списък с радиопотоци, достъпни за слушане онлайн."
 
 	key[]: "music_player_hint_shuffle"
-	val[]: "Switch between normal and shuffled song order."
+	val[]: "Смяна между последователно и разбъркано възпроизвеждане на песните."
 
 	key[]: "stream_safe_hint_unmodded"
-	val[]: "Radio station designated to avoid content claims."
+	val[]: "Радиостанция, предназначена за избягване на претенции за авторски права."
 
 	key[]: "stream_safe_hint_modded"
-	val[]: "Community-created radio content marked as stream safe. Not reviewed or guaranteed and may still trigger content claims."
+	val[]: "Създадено от общността радиосъдържание, маркирано като безопасно за стрийминг. Не е прегледано или гарантирано и все още може да предизвика претенции за съдържание."
 
 	key[]: "radio_update"
 	val[]: "Обнови от интернет" #+ Button used to update the list of live streams from the web.
@@ -6150,7 +6270,7 @@
 	val[]: "ИНФОРМАЦИЯ ЗА МУЗИКАЛНИЯ ПЛЕЪР"
 
 	key[]: "my_music"
-	val[]: "My Music"
+	val[]: "Моята музика"
 
 #+ Music player columns.
 
@@ -6207,31 +6327,31 @@
 	val[]: "Приход" #+ For example "Job income: E6,526"
 
 	key[]: "wanna_assistance"
-	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да откара вас и вашето превозно средство до $CITY$. Това ще струва $MONEY$, а пътуването ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да откара вас и вашето превозно средство до $CITY$. Това ще струва $MONEY$, а пътуването ще отнеме $TIME$.<br>(Разходите ще бъдат поети от вашия работодател.)<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Your current job will be cancelled.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да откара вас и вашето превозно средство до $CITY$. Това ще струва $MONEY$, а пътуването ще отнеме $TIME$.<br offset=30>Текущата ви доставка ще бъде анулирана.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recover"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до най-близкия път. Това ще струва $MONEY$ и пътуването ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recover_quick"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до най-близкия път. Това ще струва $MONEY$ и пътуването ще отнеме $TIME$.<br>(Таксата ще бъде покрита от вашия работодател.)<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recover_online"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Your current delivery will be cancelled.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до най-близкия път. Това ще струва $MONEY$ и пътуването ще отнеме $TIME$.<br offset=30>Текущата ви доставка ще бъде отменена.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_refuel"
-	val[]: "Мобилната служба по презареждане на гориво ще ви осигури $VOLUME$ дизел. Това ще струва $MONEY$ и ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
+	val[]: "Службата за аварийно зареждане ще ви осигури $VOLUME$ гориво. Това ще струва $MONEY$, а процедурата ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_refuel_quick"
-	val[]: "Мобилната служба по презареждане на гориво ще ви осигури $VOLUME$ дизел. Това ще струва $MONEY$ и ще отнеме $TIME$.<br>(Разходите ще бъдат поети от вашия работодател.)<br offset=30>Съгласни ли сте?"
+	val[]: "Службата за аварийно зареждане ще ви осигури $VOLUME$ гориво. Това ще струва $MONEY$, а процедурата ще отнеме $TIME$.<br>(Разходите ще бъдат поети от вашия работодател.)<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_refuel_online"
-	val[]: "Мобилната служба по презареждане на гориво ще ви осигури $VOLUME$ дизел. Това ще струва $MONEY$ и ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
+	val[]: "Службата за аварийно зареждане ще ви осигури $VOLUME$ гориво. Това ще струва $MONEY$, а процедурата ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recharge"
 	val[]: "Услугата за спешно презареждане ще зареди батерията ви с $ENERGY$. Ще струва $MONEY$ и ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
@@ -6243,40 +6363,40 @@
 	val[]: "Услугата за спешно презареждане ще зареди батерията ви с $ENERGY$. Ще струва $MONEY$ и ще отнеме $TIME$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_assistance_mp"
-	val[]: "Assistance Service can take you and your truck to $CITY$. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до $CITY$. Това ще струва $MONEY$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_assistance_quick_mp"
-	val[]: "Assistance Service can take you and your truck to $CITY$. It will cost $MONEY$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до $CITY$. Това ще струва $MONEY$.<br>(Таксата ще бъде покрита от вашия работодател.)<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_assistance_online_mp"
-	val[]: "Assistance Service can take you and your truck to $CITY$. It will cost $MONEY$.<br offset=30>Your current delivery will be cancelled.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да транспортира вас и вашето превозно средство до $CITY$. Това ще струва $MONEY$.<br offset=30>Текущата ви доставка ще бъде отменена.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recover_mp"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да ви откара вас и превозното ви средство до най-близкия път. Това ще струва $MONEY$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recover_quick_mp"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да ви откара вас и превозното ви средство до най-близкия път. Това ще струва $MONEY$.<br>(Таксата ще бъде покрита от вашия работодател.)<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recover_online_mp"
-	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$.<br offset=30>Your current delivery will be cancelled.<br offset=30>Do you agree?"
+	val[]: "Пътната помощ може да ви откара вас и превозното ви средство до най‑близкия път. Това ще струва $MONEY$.<br offset=30>Текущата ви доставка ще бъде анулирана.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_refuel_mp"
-	val[]: "Emergency Refueling service will provide you with $VOLUME$ of diesel. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "Услугата за аварийно зареждане ще ви осигури $VOLUME$ дизелово гориво. Това ще струва $MONEY$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_refuel_quick_mp"
-	val[]: "Emergency Refueling service will provide you with $VOLUME$ of diesel. It will cost $MONEY$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "Услугата за аварийно зареждане ще ви осигури $VOLUME$ дизелово гориво. Това ще струва $MONEY$.<br>(Таксата ще бъде покрита от вашия работодател.)<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_refuel_online_mp"
-	val[]: "Emergency Refueling service will provide you with $VOLUME$ of diesel. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "Услугата за аварийно зареждане ще ви осигури $VOLUME$ дизелово гориво. Това ще струва $MONEY$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recharge_mp"
-	val[]: "Emergency Recharge service will charge your battery with $ENERGY$. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "Услугата за аварийно зареждане ще зареди батерията ви с $ENERGY$. Това ще струва $MONEY$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recharge_quick_mp"
-	val[]: "Emergency Recharge service will charge your battery with $ENERGY$. It will cost $MONEY$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
+	val[]: "Услугата за аварийно зареждане ще зареди батерията ви с $ENERGY$. Това ще струва $MONEY$.<br>(Таксата ще бъде покрита от вашия работодател.)<br offset=30>Съгласни ли сте?"
 
 	key[]: "wanna_recharge_online_mp"
-	val[]: "Emergency Recharge service will charge your battery with $ENERGY$. It will cost $MONEY$.<br offset=30>Do you agree?"
+	val[]: "Услугата за аварийно зареждане ще зареди батерията ви с $ENERGY$. Това ще струва $MONEY$.<br offset=30>Съгласни ли сте?"
 
 	key[]: "wait_refuel_fade_message"
 	val[]: "Изчаквате пристигането на Мобилната служба по презареждане на гориво."
@@ -6292,6 +6412,9 @@
 
 	key[]: "cancel_cur_job"
 	val[]: "Наистина ли искате да откажете текущата доставка?<br offset=10>Длъжни сте да платите неустойка от $MONEY$"
+
+	key[]: "cancel_cur_car_job"
+	val[]: "Наистина ли искате да откажете текущия курс?<br offset=10>Ще трябва да платите неустойка от $MONEY$ и ще загубите поредицата си от перфектни доставки."
 
 	key[]: "no_cancel_first_job"
 	val[]: "Не може да откажете първата си доставка. Така никой повече няма да ви уважава."
@@ -6355,7 +6478,7 @@
 	val[]: "Открит търговец на камиони $BRAND$!"
 
 	key[]: "service"
-	val[]: "To repair, upgrade, or paint<br>your vehicle press:"
+	val[]: "За да ремонтирате, подобрите или пребоядисате<br>превозното си средство, натиснете:"
 
 	key[]: "job_offer"
 	val[]: "Натиснете следния клавиш, за да видите офертите за работа:"
@@ -6450,8 +6573,8 @@
 	key[]: "stop_engine_short"
 	val[]: "Загасете двигателя!"
 
-	key[]: "stop_truck_short"
-	val[]: "Stop the vehicle!"   #+ Quick message shown when sleep was prevented by truck movement.
+	key[]: "stop_vehicle_short"
+	val[]: "Спрете превозното средство!"   #+ Quick message shown when sleep was prevented by vehicle movement.
 
 	key[]: "stop_engine"
 	val[]: "Натиснете следния клавиш, за да загасите двигателя:"
@@ -6467,6 +6590,9 @@
 
 	key[]: "diesel_price"
 	val[]: "Цена на дизел"
+
+	key[]: "petrol_price"
+	val[]: "Цени на горивата"
 
 	key[]: "total_price"
 	val[]: "Сума за плащане"
@@ -6606,7 +6732,7 @@
 	val[]: "Неуспешно повдигане на окачване<br>Ремаркето е твърде тежко."
 
 	key[]: "diff_lock_fail"
-	val[]: "Differential(s) cannot be locked. Slow down the vehicle and try again."
+	val[]: "Диференциалът(ите) не може да се блокира(т). Намалете скоростта на превозното средство и опитайте отново."
 
 	key[]: "diff_lock_hint"
 	val[]: "Ако изпитвате затруднение да се задвижите от място, опитайте да приложите блокаж на диференциала.<br>Натиснете клавиша за включване:"
@@ -6673,7 +6799,7 @@
 	val[]: "Съобщения от компанията"
 
 	key[]: "adv_hud_running_line_op_tooltip"
-	val[]: "Dynamically tracks your organization’s incoming revenue and operational costs."
+	val[]: "Динамично проследява входящите приходи и оперативните разходи на вашата организация."
 
 	key[]: "adv_hud_notifications"
 	val[]: "Известия"
@@ -6688,31 +6814,31 @@
 	val[]: "Мултимедиен екран за навигация."
 
 	key[]: "adv_hud_radio"
-	val[]: "Audio Player"
+	val[]: "Аудио плеър"
 
 	key[]: "adv_hud_radio_op_tooltip"
-	val[]: "On manual change — the widget appears when you take an action, such as switching stations, or adding a station to your favourites.<br><br>On all changes — the widget appears for every update, including manual actions and automatic track transitions."
+	val[]: "При ръчна промяна — уиджетът се появява, когато извършите действие, като например смяна на станции или добавяне на станция към любими.<br><br>При всички промени — уиджетът се появява при всяко обновяване, включително ръчни действия и автоматично преминаване между песните."
 
 	key[]: "adv_hud_finances_line"
-	val[]: "Finances" #+ Widget name for the current bank account balance and the last 7 days profit.
+	val[]: "Финанси" #+ Widget name for the current bank account balance and the last 7 days profit.
 
 	key[]: "adv_hud_finances_line_op_tooltip"
-	val[]: "Shows the total bank balance and 7-day profit flow, including dynamic earnings and penalties."
+	val[]: "Показва общия банков баланс и 7-дневния поток на печалбата, включително динамичните приходи и глоби."
 
 	key[]: "adv_hud_damage_line"
-	val[]: "Damage" #+ Widget name for displaying vehicle damage.
+	val[]: "Щети" #+ Widget name for displaying vehicle damage.
 
 	key[]: "adv_hud_job_info"
-	val[]: "Job details" #+ Widget name for displaying job info.
+	val[]: "Подробности за доставката" #+ Widget name for displaying job info.
 
 	key[]: "adv_hud_chat"
-	val[]: "Chat" #+ Widget name for displaying the convoy chat.
+	val[]: "Съобщения" #+ Widget name for displaying the convoy chat.
 
 	key[]: "adv_hud_autopark"
 	val[]: "Автопаркинг"
 
 	key[]: "adv_last_7_days"
-	val[]: "/ 7d" #+ In the finances widget adviser profit for the last seven days is displayed using a profit icon and adv_in_7_days suffix. The suffix indicates the 7 day period and should be kept short due to limited space.
+	val[]: "/ 7д" #+ In the finances widget adviser profit for the last seven days is displayed using a profit icon and adv_in_7_days suffix. The suffix indicates the 7 day period and should be kept short due to limited space.
 
 	key[]: "adv_hud_invisible"
 	val[]: "Изключено"
@@ -6727,10 +6853,10 @@
 	val[]: "Включено"
 
 	key[]: "adv_hud_radio_interaction"
-	val[]: "On manual change" #+ HUD audio player widget visibility setting for showing the widget only when the user causes a change
+	val[]: "При ръчна промяна" #+ HUD audio player widget visibility setting for showing the widget only when the user causes a change
 
 	key[]: "adv_hud_radio_change"
-	val[]: "On all changes" #+ HUD audio player widget visibility setting for showing the widget only when there is any change (e.g. next song automatically plays)
+	val[]: "При всяка промяна" #+ HUD audio player widget visibility setting for showing the widget only when there is any change (e.g. next song automatically plays)
 
 	key[]: "hud_mirrors_none"
 	val[]: "Не показвай изобщо"
@@ -6968,44 +7094,44 @@
 	val[]: "УМЕНИЯ" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "skills_screen_subtitle"
-	val[]: "Each level you gain a skill point. Use your hard-earned skill points to unlock better jobs and useful improvements!"
+	val[]: "С всяко ниво получавате точка за умения. Използвайте трудно спечелените си точки, за да отключите по-добри професии и полезни подобрения!"
 
 	key[]: "skills_screen_subtitle_max"
-	val[]: "All skills unlocked. You can still review your skill bonuses anytime." #+ Screen subtitle alternative shown when all skills are unlocked
+	val[]: "Всички умения са отключени. Все още можете да преглеждате своите бонуси от умения по всяко време." #+ Screen subtitle alternative shown when all skills are unlocked
 
 
 	key[]: "skill_points"
-	val[]: "Skill points" #+ Title followed by the number of available skill points.
+	val[]: "Точки за умения" #+ Title followed by the number of available skill points.
 
 	key[]: "skill_points_assigned"
-	val[]: "Assigned" #+ Title followed by the number of assigned skill points.
+	val[]: "Разпределен" #+ Title followed by the number of assigned skill points.
 
 	key[]: "skill_points_max"
-	val[]: "All skill points collected" #+ Text shown instead of the xp bar when no more skill points can be gained.
+	val[]: "Всички точки за умения са събрани" #+ Text shown instead of the xp bar when no more skill points can be gained.
 
 
 	key[]: "skills_apply_all"
-	val[]: "Apply All" #+ Button that applies/confirms all assigned skill points.
+	val[]: "Приложи всички" #+ Button that applies/confirms all assigned skill points.
 
 	key[]: "skills_undo_all"
-	val[]: "Undo All" #+ Button that resets all assigned skill points.
+	val[]: "Отмени всички" #+ Button that resets all assigned skill points.
 
 	key[]: "skills_apply_single_ask"
-	val[]: "Do you want to apply this skill point to your profile?" #+ Message in a pop up message box shown after clicking Apply All with one point assigned.
+	val[]: "Искате ли да приложите тази точка за умения към профила си?" #+ Message in a pop up message box shown after clicking Apply All with one point assigned.
 
 	key[]: "skills_apply_all_ask"
-	val[]: "Do you want to apply all $POINTS$ skill points to your profile?" #+ Message in a pop up message box shown after clicking Apply All with multiple points assigned.
+	val[]: "Искате ли да приложите всички $POINTS$ точки за умения към профила си?" #+ Message in a pop up message box shown after clicking Apply All with multiple points assigned.
 
 
 	key[]: "unlimited_distance"
-	val[]: "unlimited" #+ Fallback text shown when skill data contains reference to max rank distance (which is unlimited) of the Long Distance skill
+	val[]: "неограничен" #+ Fallback text shown when skill data contains reference to max rank distance (which is unlimited) of the Long Distance skill
 
 
 #+ Names of individual skills which can be improved.
 #@{
 
 	key[]: "adr"
-	val[]: "Hazardous Cargo"
+	val[]: "Опасен товар"
 
 	key[]: "long_dist"
 	val[]: "Дълги разстояния"
@@ -7033,61 +7159,61 @@
 #@{
 
 	key[]: "skill_adr_title"
-	val[]: "Hazardous Cargo"
+	val[]: "Опасен товар"
 
 	key[]: "skill_adr_info"
-	val[]: "Use your skill points to unlock DOT HazMat certificates and transport more types of dangerous goods."
+	val[]: "Използвайте точките си за умения, за да отключите DOT HazMat сертификати и да превозвате повече видове опасни товари."
 
 	key[]: "skill_adr_classt1"
 	val[]: "Експлозиви"
 
 	key[]: "skill_adr_1"
-	val[]: "Explosives (e.g. dynamite, fireworks, ammunition)"
+	val[]: "Експлозиви (напр. динамит, фойерверки, боеприпаси)"
 
 	key[]: "skill_adr_classt2"
 	val[]: "Газове"
 
 	key[]: "skill_adr_21"
-	val[]: "Flammable gases (e.g. acetylene, hydrogen)"
+	val[]: "Леснозапалими газове (напр. ацетилен, водород)"
 
 	key[]: "skill_adr_22"
-	val[]: "Non-flammable gases (e.g. nitrogen, neon)"
+	val[]: "Незапалими газове (напр. азот, неон)"
 
 	key[]: "skill_adr_23"
-	val[]: "Poisonous gases (e.g. fluorine, hydrogen cyanide)"
+	val[]: "Отровни газове (напр. флуор, циановодород)"
 
 	key[]: "skill_adr_classt3"
 	val[]: "Запалими течности"
 
 	key[]: "skill_adr_3"
-	val[]: "Flammable liquids (e.g. petrol, diesel, kerosene)"
+	val[]: "Запалими течности (напр. бензин, дизел, керосин)"
 
 	key[]: "skill_adr_classt4"
 	val[]: "Запалими твърди вещества"
 
 	key[]: "skill_adr_41"
-	val[]: "Flammable solids (e.g. nitrocellulose, magnesium)"
+	val[]: "Запалими твърди вещества (напр. нитроцелулоза, магнезий)"
 
 	key[]: "skill_adr_42"
-	val[]: "Spontaneously combustible (e.g. white phosphorus)"
+	val[]: "Самовъзпламеняващи се вещества (напр. бял фосфор)"
 
 	key[]: "skill_adr_43"
-	val[]: "Water-reactive solids (e.g. sodium, potassium)"
+	val[]: "Твърди вещества, реагиращи с вода (напр. натрий, калий)"
 
 	key[]: "skill_adr_classt6"
 	val[]: "Токсични и заразни вещества"
 
 	key[]: "skill_adr_61"
-	val[]: "Poisons (e.g. potassium cyanide, pesticides)"
+	val[]: "Отровни вещества (напр. калиев цианид, пестициди)"
 
 	key[]: "skill_adr_62"
-	val[]: "Biohazard (e.g. infectious materials, virus cultures)"
+	val[]: "Биологична опасност (напр. инфекциозни материали, вирусни култури)"
 
 	key[]: "skill_adr_classt8"
 	val[]: "Корозивни вещества"
 
 	key[]: "skill_adr_8"
-	val[]: "Corrosive substances (e.g. sulphuric acid, sodium hydroxide)"
+	val[]: "Корозионни вещества (напр. сярна киселина, натриев хидроксид)"
 #@}
 
 #+ Informations about individual ranks of Long distance skill.
@@ -7097,25 +7223,25 @@
 	val[]: "Дълги разстояния"
 
 	key[]: "skill_distance_info"
-	val[]: "Your @@skill_distance_title@@ skill determines the maximum distance you can travel on duty."
+	val[]: "Вашето умение @@skill_distance_title@@ определя максималното разстояние, което можете да изминете по време на работа."
 
 	key[]: "long_dist_desc_distance"
-	val[]: "Take jobs up to <color value=@@clr_skill_desc_highlight@@>$NEW_DIST$</color>"
+	val[]: "Поемайте поръчки до <color value=@@clr_skill_desc_highlight@@>$NEW_DIST$</color>"
 
 	key[]: "long_dist_desc_distance_max"
-	val[]: "Unlimited delivery distance"
+	val[]: "Неограничено разстояние за доставка"
 
 	key[]: "long_dist_desc_revenue_bonus"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% higher revenue</color> for deliveries<br>between $OLD_DIST$ and $NEW_DIST$"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% по-висок приход</color> за доставки<br>между $OLD_DIST$ и $NEW_DIST$"
 
 	key[]: "long_dist_desc_revenue_bonus_max"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% higher revenue</color> for deliveries over $OLD_DIST$"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$ по-високи приходи</color> за доставки над $OLD_DIST$"
 
 	key[]: "long_dist_desc_revenue_bonus_total"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>0-$REVENUE_BONUS$% higher revenue</color> based on delivery distance"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>0-$REVENUE_BONUS$% по-високи приходи</color> въз основа на разстоянието за доставка"
 
 	key[]: "long_dist_desc_xp_bonus"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% XP bonus</color> for deliveries over $FIRST_DIST$"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% бонус за опит</color> за доставки над $FIRST_DIST$"
 
 #@}
 
@@ -7126,16 +7252,16 @@
 	val[]: "Ценен товар"
 
 	key[]: "skill_heavy_info"
-	val[]: "Your @@skill_heavy_title@@ skill determines how much companies trust you with high-value deliveries."
+	val[]: "Вашето умение @@skill_heavy_title@@ определя доколко компаниите ви имат доверие за доставки на ценни товари."
 
 	key[]: "valuable_desc_initial"
-	val[]: "New <color value=@@clr_skill_desc_highlight@@>high value</color> deliveries <color value=@@clr_skill_desc_highlight@@>available</color>"
+	val[]: "Нови <color value=@@clr_skill_desc_highlight@@> доставки на ценни</color> товари<color value=@@clr_skill_desc_highlight@@>са достъпни</color>"
 
 	key[]: "valuable_desc_revenue_bonus"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% higher revenue</color> for high value deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% по-високи приходи </color> за доставки на ценни товари"
 
 	key[]: "valuable_desc_xp_bonus"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% XP bonus</color> for high value deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% бонус опит </color> за доставки на ценни товари"
 #@}
 
 #+ Informations about individual ranks of Just-In-Time Delivery skill.
@@ -7145,25 +7271,25 @@
 	val[]: "Спешни доставки"
 
 	key[]: "skill_jit_info"
-	val[]: "Your @@skill_jit_title@@ skill determines your compensation for tight-deadline jobs."
+	val[]: "Вашето умение @@skill_jit_title@@ определя възнаграждението ви за поръчки с кратки срокове."
 
 	key[]: "urgent_desc_initial_important"
-	val[]: "New <color value=@@clr_skill_desc_highlight@@>important</color> deliveries <color value=@@clr_skill_desc_highlight@@>available</color>"
+	val[]: "Нови <color value=@@clr_skill_desc_highlight@@> важни</color> доставки <color value=@@clr_skill_desc_highlight@@>са достъпни</color>"
 
 	key[]: "urgent_desc_initial_urgent"
-	val[]: "New <color value=@@clr_skill_desc_highlight@@>urgent</color> deliveries <color value=@@clr_skill_desc_highlight@@>available</color>"
+	val[]: "Нови <color value=@@clr_skill_desc_highlight@@>спешни </color>доставки <color value=@@clr_skill_desc_highlight@@>са достъпни</color>"
 
 	key[]: "urgent_desc_revenue_bonus_important"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS_IMPORTANT$% higher revenue</color> for important deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS_IMPORTANT$% по-високи приходи </color>за важни доставки"
 
 	key[]: "urgent_desc_revenue_bonus_urgent"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% higher revenue</color> for urgent deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% по-високи приходи </color>за спешни доставки"
 
 	key[]: "urgent_desc_xp_bonus_important"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS_IMPORTANT$% XP bonus</color> for important deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS_IMPORTANT$% бонус опит </color>за важни доставки"
 
 	key[]: "urgent_desc_xp_bonus_urgent"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% XP bonus</color> for urgent deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% бонус опит </color>за спешни доставки"
 
 #@}
 
@@ -7174,16 +7300,16 @@
 	val[]: "Чуплив товар"
 
 	key[]: "skill_fragile_info"
-	val[]: "Your @@skill_fragile_title@@ skill determines your ability to transport delicate goods."
+	val[]: "Вашето умение @@skill_fragile_title@@ определя способността ви да превозвате чупливи товари."
 
 	key[]: "fragile_desc_initial"
-	val[]: "New <color value=@@clr_skill_desc_highlight@@>fragile goods</color> deliveries <color value=@@clr_skill_desc_highlight@@>available</color>"
+	val[]: "Нови <color value=@@clr_skill_desc_highlight@@>доставки </color>на чупливи товари <color value=@@clr_skill_desc_highlight@@>са достъпни</color>"
 
 	key[]: "fragile_desc_revenue_bonus"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% higher revenue</color> for fragile cargo deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% по-високи приходи </color>за доставки на чупливи товари"
 
 	key[]: "fragile_desc_xp_bonus"
-	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% XP bonus</color> for fragile cargo deliveries"
+	val[]: "<color value=@@clr_skill_desc_highlight@@>$XP_BONUS$% бонус опит </color>за доставки на чупливи товари"
 
 #@}
 
@@ -7191,13 +7317,13 @@
 #@{
 
 	key[]: "skill_mechanical_title"
-	val[]: "Ecodriving"
+	val[]: "Екошофиране"
 
 	key[]: "skill_mechanical_info"
-	val[]: "Your @@skill_mechanical_title@@ skill reduces your fuel consumption."
+	val[]: "Вашето умение @@skill_mechanical_title@@ намалява разхода ви на гориво."
 
 	key[]: "ecodriving_desc_saved"
-	val[]: "Up to <color value=@@clr_skill_desc_highlight@@>$CONSUMPTION_DROP$% of fuel saved</color> when driving"
+	val[]: "До <color value=@@clr_skill_desc_highlight@@>$CONSUMPTION_DROP$% спестено гориво </color> при шофиране"
 
 #@}
 #@}
@@ -7487,7 +7613,7 @@
 	val[]: "Доп. точки опит за спешна доставка"
 
 	key[]: "adr_bonus"
-	val[]: "HazMat delivery bonus"
+	val[]: "Бонус за доставка на опасни товари"
 
 	key[]: "damage_penalty"
 	val[]: "Неустойка за повреден товар"
@@ -7499,10 +7625,10 @@
 	val[]: "Доп. точки опит за маневриране"
 
 	key[]: "adr_class"
-	val[]: "Hazard class"
+	val[]: "Клас на опасност"
 
 	key[]: "skill_level"
-	val[]: "Skill rank" #+ Bonus for skill rank with specific cargo. For example "skill rank 5"
+	val[]: "Ранг на умението" #+ Bonus for skill rank with specific cargo. For example "skill rank 5"
 #@}
 
 
@@ -7671,8 +7797,11 @@
 	key[]: "cn_drymilk"
 	val[]: "Сухо мляко"
 
+	key[]: "cn_dry_van"
+	val[]: "Сухотоварно ремарке"
+
 	key[]: "cn_drywall"
-	val[]: "Drywall"
+	val[]: "Гипсокартон"
 
 	key[]: "cn_dynamite"
 	val[]: "Динамит"
@@ -7737,6 +7866,9 @@
 	key[]: "cn_frozen_hake"
 	val[]: "Замразен хек"
 
+	key[]: "cn_fuel_tank"
+	val[]: "Цистерна за гориво"
+
 	key[]: "cn_fuel_tanks"
 	val[]: "Резервоари за гориво"
 
@@ -7747,7 +7879,7 @@
 	val[]: "Чесън"
 
 	key[]: "cn_geo_membranes_rolls"
-	val[]: "Geo Membranes Rolls"
+	val[]: "Ролки геомембрана"
 
 	key[]: "cn_gifts"
 	val[]: "Подаръци"
@@ -7827,6 +7959,9 @@
 	key[]: "cn_logs"
 	val[]: "Трупи"
 
+	key[]: "cn_low_bed_trailers"
+	val[]: "Нископодови полуремаркета"
+
 	key[]: "cn_lpg"
 	val[]: "Пропан-бутан"
 
@@ -7861,7 +7996,7 @@
 	val[]: "Мляко"
 
 	key[]: "cn_mobile_air_compressor"
-	val[]: "Mobile Air Compressor"
+	val[]: "Мобилен въздушен компресор"
 
 	key[]: "cn_mobile_crusher"
 	val[]: "Мобилна трошачка"
@@ -7873,7 +8008,7 @@
 	val[]: "Подвижен стекер"
 
 	key[]: "cn_motor_grader"
-	val[]: "Motor Grader"
+	val[]: "Автогрейдер"
 
 	key[]: "cn_municipal_truck"
 	val[]: "Общински камион"
@@ -7956,6 +8091,9 @@
 	key[]: "cn_red_bricks"
 	val[]: "Тухли"
 
+	key[]: "cn_refrigerated_trailer"
+	val[]: "Хладилно Ремарке"
+
 	key[]: "cn_rice"
 	val[]: "Ориз"
 
@@ -7979,6 +8117,9 @@
 
 	key[]: "cn_scrap_metals"
 	val[]: "Метален скрап"
+
+	key[]: "cn_seed_containers"
+	val[]: "Контейнери със семена"
 
 	key[]: "cn_silica"
 	val[]: "Силициев двуокис"
@@ -8035,10 +8176,13 @@
 	val[]: "Трактори"
 
 	key[]: "cn_trailers"
-	val[]: "Нискорамни полуремаркета"
+	val[]: "Ремаркета"
 
 	key[]: "cn_train_parts"
 	val[]: "Влакови оси"
+
+	key[]: "cn_truss"
+	val[]: "Ферма"
 
 	key[]: "cn_tv"
 	val[]: "Телевизори"
@@ -8669,6 +8813,15 @@
 	key[]: "bank_money"
 	val[]: "Баланс по сметка: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
 
+	key[]: "bank_loan_unlock_requirement"
+	val[]: "Напреднете в кариерата си в режим на камион, за да отключите заема."
+
+	key[]: "bank_loan_locked_wrong_mode"
+	val[]: "Напреднете в кариерата си в $MODE$, за да отключите заема."
+
+    key[]: "bank_loan_in_debt"
+	val[]: "Имате твърде много задължения, за да вземете този заем."
+
 #+ New loan confirmation window
 #@{
 
@@ -8743,6 +8896,9 @@
 	key[]: "bank_sell_report_garage"
 	val[]: "Гараж в $CITY$ е оценен на стойност $MONEY$"
 
+	key[]: "bank_sell_report_car"
+	val[]: "Автомобил $NAME$, приблизителна стойност: $MONEY$" #+ Message used to show information about a car to sell to cover debt. Same style as bank_sell_report_trailer.
+
 #+ Mail screen
 #+
 #+ Shows incomming emails from bank and truck dealers.
@@ -8805,10 +8961,10 @@
 	val[]: "Открити трудови агенции:"
 
 	key[]: "compman_summary_truck_count"
-	val[]: "Trucks owned:"
+	val[]: "Притежавани камиони:"
 
 	key[]: "compman_summary_trailer_count"
-	val[]: "Trailers owned:"
+	val[]: "Притежавани ремаркета:"
 
 	key[]: "compman_no_driver"
 	val[]: "Няма нает шофьор"
@@ -8832,7 +8988,7 @@
 	val[]: "Графиката ще бъде налична след края на първия ден."
 
 	key[]: "compman_op_economy_summary"
-	val[]: "Economy Summary"
+	val[]: "Обзор на икономиката"
 
 	key[]: "compman_op_company_branding"
 	val[]: "Име и лого на компанията"
@@ -8847,7 +9003,13 @@
 	val[]: "Не може да извършвате бързи пътувания, докато сте на работа!"
 
 	key[]: "compman_qt_notruck"
-	val[]: "You cannot quick travel since you don't have a truck, coach or car!"
+	val[]: "Не можете да използвате бързо пътуване, тъй като нямате камион, автобус или автомобил!"
+
+	key[]: "compman_qt_nocar"
+	val[]: "Не можете да използвате бързо пътуване, тъй като нямате автомобил!"
+
+	key[]: "compman_qt_nobus"
+	val[]: "Не можете да използвате бързо пътуване, тъй като нямате автобус!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "Искате ли да се преместите в избрания гараж?"
@@ -9216,14 +9378,14 @@
 #+ Message box shown when user requests to sell selected truck.
 #@{
 
-	key[]: "truckman_sell_t"
-	val[]: "SELL VEHICLE"  #+ Message box title. Please keep in upper case where possible.
+	key[]: "vehicleman_sell_t"
+	val[]: "ПРОДАЖБА НА ПРЕВОЗНО СРЕДСТВО"  #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_reallysell"
+	key[]: "vehicleman_msg_reallysell"
 	val[]: "Наистина ли искате да продадете Вашия камион $TRUCK$ за $MONEY$?"
 
-	key[]: "truckman_msg_nosell"
-	val[]: "You cannot sell the vehicle you're driving while on a job! Finish your job and then try again."
+	key[]: "vehicleman_msg_nosell"
+	val[]: "Не можете да продадете превозното средство, което управлявате, докато изпълнявате доставка! Завършете задачата си и опитайте отново."
 
 	key[]: "truckman_total_restoration_t"
 	val[]: "ОСНОВЕН РЕМОНТ"  #+ Message box title. Please keep in upper case where possible.
@@ -9254,11 +9416,11 @@
 #+ Message box shown when user requests to become driver of selected truck.
 #@{
 
-	key[]: "truckman_change_t"
-	val[]: "CHANGE VEHICLE" #+ Message box title. Please keep in upper case where possible.
+	key[]: "vehicleman_change_t"
+	val[]: "СМЯНА НА ПРЕВОЗНО СРЕДСТВО" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nochange"
-	val[]: "You cannot change your vehicle while on a job! Finish your job first."
+	key[]: "vehicleman_msg_nochange"
+	val[]: "Не можете да смените превозното си средство, докато изпълнявате доставката! Първо завършете задачата си."
 
 	key[]: "truckman_conf_drive"
 	val[]: "Сигурни ли сте, че искате да размените Вашия камион $TRUCK_SRC$ в $CITY_DST$ и да карате $TRUCK_DST$?"
@@ -9294,8 +9456,8 @@
 	key[]: "truckman_copy_configuration_t"
 	val[]: "КОПИРАНЕ НА КОНФИГУРАЦИЯ" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nouse"
-	val[]: "This vehicle cannot be used as copy configuration source due to missing data which is most likely caused by either MOD or DLC removal.<br><br>Reinstall MOD/DLC."
+	key[]: "vehicleman_msg_nouse"
+	val[]: "Това превозно средство не може да се използва като източник за копиране на конфигурацията поради липсващи данни, което най-вероятно се дължи на премахването на MOD или DLC.<br><br>Преинсталирайте MOD/DLC."
 #@}
 
 # End of: "Truck management screen"
@@ -9324,7 +9486,7 @@
 	val[]: "Назначаване на шофьор"
 
 	key[]: "driverman_current_job"
-	val[]: "Current job"
+	val[]: "Текуща доставка"
 
 	key[]: "driverman_no_job"
 	val[]: "Няма текуща доставка"
@@ -9333,7 +9495,7 @@
 	val[]: "Развитие на умения (приоритет)"
 
 	key[]: "driverman_op_player_skills"
-	val[]: "Skills"
+	val[]: "Умения"
 
 	key[]: "driverman_skill_training_t"
 	val[]: "Развитие на умения (приоритет)"
@@ -9675,6 +9837,9 @@
 	key[]: "td_msg_first_and_busy"
 	val[]: "Благодарим Ви, че купихте първия си камион от нас!<br><br>Ще го доставим до Вашата централа, където ще можете да го ползвате, след като завършите текущата доставка."
 
+	key[]: "td_first_truck_switch_mode_city"
+	val[]: "Благодарим ви, че закупихте първия си камион от нас!<br><br>Искате ли да преминете към новия си камион в<color value=@@clr_sel@@>$CITY$</color>?"
+
 	key[]: "td_msg_bought_assigned"
 	val[]: "Благодарим Ви за покупката. Насладете се на новия си камион!<br><br>Ще изпратим стария Ви камион във Вашия гараж в $CITY$ веднага."
 
@@ -9966,10 +10131,10 @@
 	val[]: "Премахване маршрут" #+ Text on a button that deletes all custom navigation pins. The button is shown only when there are any custom pins to delete.
 
 	key[]: "append_new_pins"
-	val[]: "Always add new checkpoints to the end" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
+	val[]: "Винаги добавяй новите контролни точки в края" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
 
 	key[]: "append_new_avoid_pins"
-	val[]: "Place avoid pins" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
+	val[]: "Поставяне на карфици за избягване" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
 
 
 #+ Texts shown near individual icons on the map legend.
@@ -10004,6 +10169,12 @@
 	key[]: "mapl_convoy_member"
 	val[]: "Участник в конвоя"
 
+	key[]: "mapl_company_vehicle"
+	val[]: "Превозно средство в бърза доставка"
+
+	key[]: "mapl_my_vehicle"
+	val[]: "Местоположение на друго превозно средство"
+
 	key[]: "mapl_quarry"
 	val[]: "Кариера"
 
@@ -10016,7 +10187,7 @@
 	key[]: "mapl_undiscovered"
 	val[]: "Неоткрита точка"
 
-	key[]: "mapl_viewpoint"
+	key[]: "mapl_viewpoint_visited"
 	val[]: "Панорамна гледка (посетена)"
 
 	key[]: "mapl_viewpoint_unvisited"
@@ -10130,10 +10301,10 @@
 	val[]: "Made with FMOD Studio by Firelight Technologies Pty Ltd."
 
 	key[]: "credits_speedtree"
-	val[]: "Части от този софтуер използват технологията SpeedTree® (©2024 предоставена от Unity Technologies SF). Всички права запазени."
+	val[]: "Portions of this software utilize SpeedTree® technology (©2024 provided by Unity Technologies SF). All rights reserved."
 
 	key[]: "jpeg_credits"
-	val[]: "Тази програма е частично основана на разработките на Independent JPEG Group."
+	val[]: "This software is based in part on the work of the Independent JPEG Group."
 #@}
 
 #+ Truck browser
@@ -10936,6 +11107,9 @@
 	key[]: "desktop_tut_visit_directive"
 	val[]: "Посетете $SCREEN_NAME$" #+ The $SCREEN_NAME$ text is a placeholder for different screen names in game and should be left intact
 
+	key[]: "desktop_tut_vehicle_mode"
+	val[]: "Използвайте бутона Mode за превключване между различни десктоп режими и различни видове превозни средства."
+
 	key[]: "desktop_tut_tour_welcome_t"
 	val[]: "ДОБРЕ ДОШЛИ"
 
@@ -10962,6 +11136,28 @@
 
 	key[]: "desktop_tut_tour_finish"
 	val[]: "Благодарим ви, че прегледахте нашата актуализация на началния екран."
+
+
+	key[]: "desktop_vehicle_mode_reenable_hints_t"
+    val[]: "Включи подсказките"
+
+    key[]: "desktop_vehicle_mode_reenable_hints"
+    val[]: "Влизате в нов режим на игра и контекстните подсказки в момента са изключени. Подсказките могат да ви помогнат да се научите как да играете. Искате ли да ги включите отново?"
+
+	key[]: "desktop_tut_first_car_job_t"
+	val[]: "ДОБРЕ ДОШЛИ В ROAD TRIP"
+
+	key[]: "desktop_tut_first_car_job"
+	val[]: "Режим Автомобил е центърът на вашето шофьорско преживяване - купете мечтаното возило, станете куриер или отворете туристически справочник и поемете по открития път, за да изследвате света.<br><br>За да започнете, вземете първата си бърза доставка."
+
+	key[]: "desktop_tut_atlas"
+	val[]: "Атласът е вашият личен туристически справочник за планиране на вашето пътуване."
+
+	key[]: "desktop_tut_car_eshop"
+	val[]: "Автомобилен дилър - купете свое собствено превозно средство."
+
+	key[]: "desktop_tut_owned_car_job"
+	val[]: "Диспечерски пазар - започнете работа като професионален шофьор-куриер със собственото си превозно средство."
 #@}
 
 
@@ -11272,16 +11468,16 @@
 #@{
 
 	key[]: "wiz_gb_simple"
-	val[]: "Press FORWARD to move ahead, and press BACK to brake or reverse. The gearbox automatically manages everything else, handling transitions between driving, braking, and reversing, as well as selecting the appropriate gears."
+	val[]: "Натиснете НАПРЕД, за да се движите напред, и натиснете НАЗАД, за да спирате или да карате на заден ход. Скоростната кутия управлява всичко останало автоматично, като поема преходите между движение, спиране и заден ход, както и избора на подходящите предавки."
 
 	key[]: "wiz_gb_automatic"
-	val[]: "Use the buttons to switch between driving forward, neutral, or reversing. Then press the accelerator and let the automatic transmission handle gear changes."
+	val[]: "Използвайте бутоните за превключване между движение напред, неутрална предавка или заден ход. След това натиснете газта и оставете автоматичната скоростна кутия да се погрижи за смяната на предавките."
 
 	key[]: "wiz_gb_sequential"
-	val[]: "Manually shift gears up and down to select each individual gear within the transmission. This configuration provides full control over the vehicle’s gearbox."
+	val[]: "Превключвайте предавките ръчно нагоре и надолу, за да изберете всяка отделна предавка в скоростната кутия. Тази конфигурация осигурява пълен контрол върху скоростната кутия на превозното средство."
 
 	key[]: "wiz_gb_hshifter"
-	val[]: "Select the desired gear directly. This offers the most realistic configuration. A physical H-pattern shifter is recommended and requires clutch input."
+	val[]: "Изберете желаната предавка директно. Това предлага най-реалистичната конфигурация. Препоръчва се физически H-образен скоростен лост и се изисква използването на съединител."
 #@}
 
 #+ Shown when feature requires a gamming controller.
@@ -11334,7 +11530,7 @@
 #+ Configuration complete page
 #@{
 	key[]: "wiz_cfg_done"
-	val[]: "The game is now configured and you can continue. You can change the configuration later in Options."
+	val[]: "Играта вече е конфигурирана и можете да продължите. Можете да промените конфигурацията по-късно в Опции."
 
 	key[]: "wiz_cfg_steam"
 	val[]: "Може да проверите и настроите бутоните и осите на контролера в Steam. Настройките за геймпад в Steam се намират в Library > Euro Truck Simulator 2 > Controller Configuration."
@@ -12387,7 +12583,7 @@
 	val[]: "Качете в World of Trucks"
 
 	key[]: "photo_album_action_delete"
-	val[]: "Delete"
+	val[]: "Изтрий"
 
 	key[]: "photo_album_overlay_menu"
 	val[]: "Действия със снимки"
@@ -12411,7 +12607,7 @@
 	val[]: "Градското въведение не може да се играе. Уверете се, че сте активирали съответните DLC-(та)."
 
 	key[]: "photo_album_tooltip_dlc_required"
-	val[]: "Required DLC"
+	val[]: "Изисквано DLC"
 
 	key[]: "photo_album_city_non_visited_tooltip"
 	val[]: "Все още не сте открили този град."
@@ -12423,25 +12619,25 @@
 	val[]: "Все още не сте посетили тази гледка."
 
 	key[]: "photo_album_city_dlc_locked"
-	val[]: "not available" #+ the actual ingame text is: DLC XY not available.
+	val[]: "недостъпно" #+ the actual ingame text is: DLC XY not available.
 
 	key[]: "photo_album_city_not_visited"
 	val[]: "Все още не сте открили този град"
 
 	key[]: "open_wotr_profile"
-	val[]: "View on World of Trucks"
+	val[]: "Преглед в World of Trucks"
 
 	key[]: "photo_album_no_screenshot_warning"
-	val[]: "Your Gallery is empty. Use Photo Mode to capture images."
+	val[]: "Галерията ви е празна. Използвайте фото режима, за да заснемете изображения."
 
 	key[]: "link_locked_msg_photo_mode"
-	val[]: "To access the Photo Mode you must have a vehicle assigned first."
+	val[]: "За да достъпите Фото режима, първо трябва да имате назначено превозно средство."
 
 	key[]: "photo_album_delete_failed"
-	val[]: "Failed to delete the image due to an unexpected error."
+	val[]: "Изображението не можа да бъде изтрито поради неочаквана грешка."
 
 	key[]: "screenshot_failed_general_error"
-	val[]: "Screenshot capture failed due to an unexpected error."
+	val[]: "Заснемането на екранна снимка беше неуспешно поради неочаквана грешка."
 #@}
 
 #+ Photo album actions.
@@ -12465,7 +12661,7 @@
 	val[]: "Галерия със снимки"
 
 	key[]: "photo_album_upload_selected_to_wotr"
-	val[]: "Upload to selected slot"
+	val[]: "Качване в избраното място"
 
 	key[]: "photo_album_wotr_upload_info"
 	val[]: "Можете да качите това изображение в портала World of Trucks. <br>Изберете уеб слот по-долу и натиснете Качване в избрания слот."
@@ -12477,7 +12673,7 @@
 	val[]: "$LANDMARK$ Фототрофей ще бъде заменен с този. Продължи?"
 
 	key[]: "no_original_landmark_screenshot"
-	val[]: "The original screenshot is not available!"
+	val[]: "Оригиналната екранна снимка не е налична!"
 #@}
 
 #+ Photo mode window and settings.
@@ -12537,25 +12733,25 @@
 	val[]: "ЧАС И ВРЕМЕВИ УСЛОВИЯ"
 
 	key[]: "photomode_light_adjustment"
-	val[]: "LIGHT ADJUSTMENT"
+	val[]: "НАСТРОЙКА НА СВЕТЛИНИТЕ"
 
 	key[]: "photomode_tooltip_light1"
-	val[]: "Parking lights"
+	val[]: "Габаритни светлини"
 
 	key[]: "photomode_tooltip_light2"
-	val[]: "Low beam"
+	val[]: "Къси светлини"
 
 	key[]: "photomode_tooltip_light3"
-	val[]: "High beam"
+	val[]: "Дълги светлини"
 
 	key[]: "photomode_tooltip_light4"
-	val[]: "Beacon"
+	val[]: "Извънгаб. сигнализация"
 
 	key[]: "photomode_tooltip_light5"
-	val[]: "Front auxiliary"
+	val[]: "Преден спомагателен"
 
 	key[]: "photomode_tooltip_light6"
-	val[]: "Roof auxiliary"
+	val[]: "Покривен спомагателен"
 #@}
 
 #+ Photo Mode overlay helper.
@@ -12588,10 +12784,10 @@
 	val[]: "Покажи контролите"
 
 	key[]: "photo_mode_help_move"
-	val[]: "Move"
+	val[]: "Движене"
 
 	key[]: "photo_mode_help_look"
-	val[]: "Look"
+	val[]: "Оглеждане"
 
 	key[]: "photo_mode_help_take_picture"
 	val[]: "Направи снимка"
@@ -12616,10 +12812,10 @@
 #@{
 
 	key[]: "photo_no_drive_t"
-	val[]: "NO VEHICLE" #+ Message box title. Please keep in upper case where possible.
+	val[]: "НЯМА ПРЕВОЗНО СРЕДСТВО" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "photo_no_drive"
-	val[]: "You cannot take pictures of a vehicle because you don't have one! You must purchase one or take one from your fleet."
+	val[]: "Не можете да правите снимки на превозно средство, защото нямате такова! Трябва да закупите такова или да вземете от автопарка си."
 #@}
 
 #+ Screenshot manager
@@ -12661,7 +12857,7 @@
 	val[]: "Задаване като профилна снимка" #+ Upload button
 
 	key[]: "delete_screenshot"
-	val[]: "Do you want to permanently delete the following screenshot?"
+	val[]: "Искате ли да изтриете за постоянно следната екранна снимка?"
 
 	key[]: "upload_screenshot"
 	val[]: "Искате ли да качите екранната снимка в избрания слот?<br><br>Предишното съдържание на слота за екранна снимка ще бъде презаписано!"
@@ -13373,7 +13569,7 @@
 	val[]: "Бързо пътуване"
 
 	key[]: "link_locked_msg_quick_travel"
-	val[]: "To access the Quick Travel you must have a vehicle assigned first."
+	val[]: "За достъп до бързото пътуване първо трябва да имате назначено превозно средство."
 
 	key[]: "select_quick_travel_destination"
 	val[]: "Изберете местоположение"
@@ -13399,17 +13595,17 @@
 	key[]: "quick_travel_cond_fix_cables"
 	val[]: "Вашият камион не е в състояние, позволяващо бързо пътуване. Закачете кабелите за ремаркето."
 
-	key[]: "quick_travel_cond_repair_truck"
-	val[]: "Your vehicle is not in a condition for quick travel. Visit service or call for an assistance."
+	key[]: "quick_travel_cond_repair_vehicle"
+	val[]: "Вашето превозно средство не е в състояние за бързо пътуване. Посетете сервиз или потърсете пътна помощ."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "Вашето ремарке не е в състояние, позволяващо бързо пътуване. Посетете сервиз или повикайте пътна помощ."
 
-	key[]: "quick_travel_cond_truck_fuel"
-	val[]: "Your vehicle is not in a condition for quick travel. Refuel your truck or call for an assistance."
+	key[]: "quick_travel_cond_vehicle_fuel"
+	val[]: "Вашето превозно средство не е в състояние за бързо пътуване. Заредете камиона си с гориво или потърсете пътна помощ."
 
-	key[]: "quick_travel_cond_truck_fallen"
-	val[]: "Your vehicle is not in a condition for quick travel. Call for an assistance."
+	key[]: "quick_travel_cond_vehicle_fallen"
+	val[]: "Вашето превозно средство не е в състояние за бързо пътуване. Потърсете пътна помощ."
 
 	key[]: "quick_travel_cond_trailer_fallen"
 	val[]: "Вашето ремарке не е в подготвено за бързо пътуване. Повикайте пътна помощ."
@@ -13418,7 +13614,7 @@
 	val[]: "Текущото ремарке е незаконно в държавата, в която с намерите. Ще се съхранява в гараж." #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
 
 	key[]: "quick_travel_illegal_trailer_dismiss_confirm"
-	val[]: "Confirm"
+	val[]: "Потвърди"
 
 	key[]: "quick_travel_no_service"
 	val[]: "В този град няма сервиз"
@@ -13524,6 +13720,27 @@
 	val[]: "Изпълнявате доставка от Пазара за товари."
 #@}
 
+#+ Job cancellation
+#@{
+	key[]: "drive_active_job_t"
+	val[]: "АКТИВНА ДОСТАВКА"
+
+	key[]: "drive_active_job"
+	val[]: "Имате активна доставка в друг режим<br offset=10>Можете да се откажете от нея или да видите детайли в $VEHICLE$@@vehicle_mode@@.<br><br><br>$ADDITIONAL_INFO$"
+
+	key[]: "drive_active_job_yes"
+	val[]: "@@abort_job@@"
+
+	key[]: "drive_active_job_no"
+	val[]: "Смяна на режим"
+
+	key[]: "cancel_cur_job_warning"
+	val[]: "Ще трябва да платите неустойка в размер на $MONEY$, ако прекратите доставката."
+
+	key[]: "cancel_cur_car_job_warning"
+	val[]: "Изоставянето на курса ще доведе до неустойка от $MONEY$ и загуба на текущата ви поредица от перфектни доставки."
+#@}
+
 #+ Trailer coupling phases info messages, shown in route advisor during coupling/decoupling.
 #@{
 
@@ -13579,14 +13796,14 @@
 	key[]: "no_accessory_found"
 	val[]: "Няма намерени елементи, съответстващи на зададените филтри" #+ Text shown when there are no accessories found by filters.
 
-	key[]: "no_truck_found"
-	val[]: "Unable to find vehicles matching your filters" #+ Text shown when there are no trucks found by filters.
+	key[]: "no_vehicle_found"
+	val[]: "Не са намерени превозни средства, отговарящи на вашите филтри" #+ Text shown when there are no vehicles found by filters.
 #@}
 
 #+ Strings related to job filtering feature
 #@{
 	key[]: "no_job_found"
-	val[]: "Не можете да намерите доставки, съответстващи на вашите товарни филтри или текущи умения" #+ Text shown when there are no jobs found by filters.
+	val[]: "Не можете да намерите доставки, съответстващи на вашите филтри или текущи умения" #+ Text shown when there are no jobs found by filters.
 #@}
 
 #+ Game demo related strings.
@@ -14241,7 +14458,7 @@
 	val[]: "Основен ремонт"
 
 	key[]: "trailerman_status"
-	val[]: "Status:" #+ Current trailer status.
+	val[]: "Състояние:" #+ Current trailer status.
 
 	key[]: "trailer_status_private"
 	val[]: "Лично" #+ Trailer status name - private - only can be used by player.
@@ -14265,16 +14482,16 @@
 	val[]: "Текущ товар:" #+ Currently loaded cargo statistic.
 
 	key[]: "trailerman_all_time_stats"
-	val[]: "All time statistics" #+ All time statistics section title.
+	val[]: "Статистика за всички времена" #+ All time statistics section title.
 
 	key[]: "trailerman_stats_dist_on_job"
-	val[]: "Distance on job:" #+ Total distance this trailer driven during jobs.
+	val[]: "Разстояние на доставката:" #+ Total distance this trailer driven during jobs.
 
 	key[]: "trailerman_stats_cargo_transp"
-	val[]: "Cargo transported:" #+ Total number of transported cargoes.
+	val[]: "Превозени товари:" #+ Total number of transported cargoes.
 
 	key[]: "trailerman_stats_weight_transp"
-	val[]: "Weight transported:" #+ Total weight transported by the trailer.
+	val[]: "Транспортирано тегло:" #+ Total weight transported by the trailer.
 
 	key[]: "trailerman_col_type"
 	val[]: "Тип" #+ Title of the trailer type column.
@@ -14314,6 +14531,9 @@
 
 	key[]: "garage_upgrade_locked_tooltip"
 	val[]: "Гаражът бе изцяло обновен." #+ Tooltip shown when player hovers over upgrade button.
+
+	key[]: "garage_upgrade_locked_vehicle_tooltip"
+	val[]: "Не можеш да надградиш гаража, защото превозното ти средство е твърде близо до него." #+ Tooltip shown when garage cannot be upgraded due to player's vehicles being too close to upgraded garage.
 
 	key[]: "driverman_stats_trailer"
 	val[]: "Текущо ремарке:" #+ Title of the current trailer statistics.
@@ -14360,8 +14580,8 @@
 	key[]: "link_locked_msg_trailer_upgrades"
 	val[]: "Не са налични нови подобрения за ремаркето в момента."
 
-	key[]: "link_locked_msg_truck_diag"
-	val[]: "To access the Diagnostics you must have a vehicle assigned first."
+	key[]: "link_locked_msg_vehicle_diag"
+	val[]: "За достъп до диагностиката първо трябва да имате назначено превозно средство."
 
 	key[]: "link_locked_msg_truck_dealer_map"
 	val[]: "Не сте открили търговци на камиони."
@@ -14457,7 +14677,7 @@
 #+ Message box shown when user requests to use total restoration of trailer in trailer manager.
 #@{
 	key[]: "trailerman_total_restoration_t"
-	val[]: "TOTAL RESTORATION"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "ОСНОВЕН РЕМОНТ"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_total_restoration_service"
 	val[]: "Моля, посетете директно сервиз, за да поправите ремаркето, което използвате." #+ Message shown when player tries to restore trailer that he is using.
@@ -14466,7 +14686,7 @@
 	val[]: "Ремаркето е в отлично състояние." #+ Message shown when player tries to restore trailer in perfect condition.
 
 	key[]: "trailerman_total_restoration"
-	val[]: "Total restoration price:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Return the vehicle to pristine condition by requesting a complete disassembly and restoration of all worn components. It poses a greater challenge than constructing an entirely new vehicle." #+ Content of the screen, explaining total restoration.
+	val[]: "Обща цена за реставрация:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Върнете превозното средство в безупречно състояние, като заявите пълно разглобяване и реставрация на всички износени компоненти. Това представлява по-голямо предизвикателство от конструирането на изцяло ново превозно средство." #+ Content of the screen, explaining total restoration.
 #@}
 
 #+ Trailer detail tooltip.
@@ -14526,7 +14746,7 @@
 	val[]: "Изтегляне до сервиз"
 
 	key[]: "call_assistance_recovery"
-	val[]: "Tow To Road"
+	val[]: "Изтегляне до пътя"
 
 	key[]: "call_refuel_service"
 	val[]: "Презареждане на гориво"
@@ -14550,7 +14770,7 @@
 #+ Vehicle adjustments related texts
 #@{
 	key[]: "vehicle_adjustments_t"
-	val[]: "VEHICLE ADJUSTMENTS"
+	val[]: "НАСТРОЙКИ НА ПРЕВОЗНОТО СРЕДСТВО"
 
 	key[]: "adj_mirrors"
 	val[]: "Нагласяне на огледала"
@@ -14587,7 +14807,7 @@
 	val[]: "Хранителна цистерна"
 
 	key[]: "fueltank"
-	val[]: "Fuel Tank"
+	val[]: "Цистерна за гориво"
 
 	key[]: "gastank"
 	val[]: "Цистерна за гориво"
@@ -14615,7 +14835,7 @@
 	val[]: "Насипни"
 
 	key[]: "tr_tank"
-	val[]: "Tank"
+	val[]: "Цистерна"
 
 #@}
 
@@ -14643,7 +14863,7 @@
 	val[]: "Течни хранителни продукти"
 
 	key[]: "body_cargo_types_fueltank"
-	val[]: "Flammable liquids"
+	val[]: "Запалими течности"
 
 	key[]: "body_cargo_types_gastank"
 	val[]: "Горими газове, превозвани във втечнена форма"
@@ -15395,13 +15615,13 @@
 	val[]: "Избраните компании не са свързани помежду си." #+ internal error message
 
 	key[]: "mp_job_missing_cargo"
-	val[]: "Неуспешно намиране на товар за поръчката. Няма товари, достъпни за превоз между компаниите."
+	val[]: "Няма намерен товар за доставка. Компаниите нямат товари за транспортиране помежду си."
 
 	key[]: "mp_job_wrong_cargo"
 	val[]: "Нямате подходящо ремарке за текущия товар."
 
-	key[]: "mp_job_missing_truck"
-	val[]: "Can be only taken with your own vehicle."
+	key[]: "mp_job_missing_vehicle"
+	val[]: "Може да се поеме само със собствено превозно средство."
 
 	key[]: "mp_job_missing_trailer"
 	val[]: "Нямате назначено подходящо ремарке."
@@ -15750,7 +15970,7 @@
 	val[]: "ВНИМАНИЕ"
 
 	key[]: "mp_experience"
-	val[]: "Please note that the game experience may change during online play. Parental guidance is advised. The <nowrap><link url=@@privacy_url@@ color=@@clr_link@@>Privacy Policy</link>$SHORTCUT1$</nowrap> applies.<br><br>When online, follow the <nowrap><link url=@@conduct_url@@ color=@@clr_link@@>Code of Conduct</link>$SHORTCUT2$</nowrap> and be kind and respectful to your fellow drivers so the experience is pleasant and optimal for everyone."
+	val[]: "Моля, имайте предвид, че преживяването в играта може да се промени по време на онлайн игра. Препоръчва се родителски контрол. Прилага се<nowrap> <link url=@@privacy_url@@ color=@@clr_link@@>Политиката за поверителност</link>$SHORTCUT1$</nowrap>.<br><br>Когато сте онлайн, спазвайте<nowrap> <link url=@@conduct_url@@ color=@@clr_link@@>Кодекса за поведение</link>$SHORTCUT2$ </nowrap>и бъдете любезни и уважителни към останалите шофьори, за да бъде изживяването приятно и оптимално за всички."
 
 	key[]: "session_friends"
 	val[]: "Приятели"
@@ -15974,14 +16194,20 @@
 	key[]: "mp_view_job"
 	val[]: "Преглед и взимане на еднакъв товар"
 
+	key[]: "mp_car_quick_job"
+	val[]: "Бърза поръчка - Пътешествие"
+
+	key[]: "mp_car_dispatch_job"
+	val[]: "Диспечерска борса - Пътешествие"
+
 	key[]: "mp_truck_idle"
 	val[]: "Без товар"
 
 	key[]: "mp_truck_on_job"
-	val[]: "Взет товар"
+	val[]: "Доставката не е налична"
 
 	key[]: "mp_truck_on_convoy"
-	val[]: "В конвой"
+	val[]: "Налична доставка"
 
 	key[]: "mp_fetching_from_server"
 	val[]: "Изискване от сървъра..."
@@ -16004,7 +16230,7 @@
 	key[]: "mp_warning_close_to_conflicted_company_teleport"
 	val[]: "Фирма близо до вашия камион или ремарке ще трябва да бъде активирана, за да се присъедините към тази сесия.<br>За да избегнете проблеми, моля, преместете камиона и ремаркето си по-далеч от компанията или текущата ви доставка ще бъде анулирана и вие ще се телепортират до най-близкия сервиз.<br><br>Искате ли да продължите?"
 
-	key[]: "mp_warning_truck_before_quick_job_close_cancel_teleport"
+	key[]: "mp_warning_vehicle_close_cancel_teleport"
 	val[]: "Фирма близо до мястото, където сте оставили камиона или ремаркето си, преди да приемете бързата си работа, ще трябва да бъде активирана, за да се присъедините към тази сесия.<br>За да избегнете проблеми, след като се върнете при камиона си, бързата ви доставка трябва да бъде отменена и ще бъдете телепортиран до най-близкия сервиз.<br><br>Искате ли да продължите?"
 
 	key[]: "mp_warning_company_with_selected_job_sleeping"
@@ -16017,7 +16243,7 @@
 	val[]: "Досатвката ви беше анулирана, тъй като доставяше на компания, която не е активна в тази сесия."
 
 	key[]: "mp_warning_load_job_canceled_special"
-	val[]: "Your job was canceled as spacial jobs are not supported in convoy."
+	val[]: "Вашата поръчка беше отменена, тъй като специалните поръчки не се поддържат в конвой."
 
 	key[]: "mp_warning_load_job_unavailable"
 	val[]: "Избраната от вас доставка вече не е налична, тъй като беше от компания, която не е активна в тази сесия."
@@ -16039,6 +16265,12 @@
 
 	key[]: "mp_error_skills"
 	val[]: "Трябва да придобиете следните умения:"
+
+	key[]: "mp_error_car_courier_onboarding"
+	val[]: "Трябва да изпълните първите си $ONBOARDING$ доставки и да достигнете изисквания рейтинг на куриер ($REQUIRED$), за да отговаряте на условията за тази работа." #+ $ONBOARDING$ is replaced with a number. $REQUIRED$ is replaced with a courier rating. Example: You need to complete your first 5 deliveries and reach the required courier rating (4.6) to be eligible for this job.
+
+	key[]: "mp_error_car_courier_rating"
+	val[]: "Вашият куриерски рейтинг ($CURRENT$) е под минималния изискван ($REQUIRED$) за тази работа."  #+ $CURRENT$ and $REQUIRED$ are replaced with a courier rating. Example: Your courier rating (3.3) is below the minimum required (4.6) for this job.
 
 	key[]: "mp_error_dlc"
 	val[]: "Липсва допълнение, необходимо за изпълнението на тази доставка."
@@ -16221,14 +16453,14 @@
 	key[]: "job_equipment"
 	val[]: "Транспорт за доставката:"
 
-	key[]: "equipment_provided_truck_and_trailer"
-	val[]: "Provided vehicle and trailer"
+	key[]: "equipment_provided_vehicle_and_trailer"
+	val[]: "Предоставени превозно средство и ремарке"
 
-	key[]: "equipment_owned_truck_provided_trailer"
-	val[]: "Owned vehicle"
+	key[]: "equipment_owned_vehicle_provided_trailer"
+	val[]: "Собствено превозно средство"
 
-	key[]: "equipment_owned_truck_and_trailer"
-	val[]: "Owned vehicle and trailer"
+	key[]: "equipment_owned_vehicle_and_trailer"
+	val[]: "Собствено превозно средство и ремарке"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "Намирате се твърде далеч от компанията-възложител. Искате ли да използвате възможността за бързо пътуване?<br><br>Място на пристигане: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>Дължима сума: <color value=@@clr_sel@@>$COST$"
@@ -16309,7 +16541,7 @@
 	val[]: "КОНВОЯТ ЗАВЪРШИ"
 
 	key[]: "convoy_concluded_info"
-	val[]: "Your Convoy session is concluded. Your progress includes your bank state, job history, skills, advancements, acquired vehicles configurations as well as your company driver’s equipment and progress."
+	val[]: "Вашата сесия в конвой приключи. Вашият напредък включва състоянието на банковата ви сметка, историята на поръчките, уменията, постиженията, конфигурациите на придобитите превозни средства, както и оборудването и напредъка на шофьорите във вашата компания."
 
 	key[]: "convoy_concluded_warning"
 	val[]: "Натиснете \"Приеми напредъка\", за продължите напред с постигнатите резултати. Ако решите, може да се върнете към по-ранен етап от играта, като заредите един от автоматичните записи или изберете друг по желание."
@@ -16957,25 +17189,25 @@
 	val[]: "Добави точка"
 
 	key[]: "overlay_add_avoid_pin"
-	val[]: "Avoid area"
+	val[]: "Избягване на район"
 
 	key[]: "overlay_comfirm_pin"
 	val[]: "Потвърди"
 
 	key[]: "overlay_select_pin"
-	val[]: "Move pin"
+	val[]: "Преместване на маркера"
 
 	key[]: "overlay_cancel_pin"
 	val[]: "Отмени"
 
 	key[]: "overlay_delete_pin"
-	val[]: "Remove pin"
+	val[]: "Преместване на маркера"
 
 	key[]: "overlay_delete_last"
-	val[]: "Remove last placed pin"
+	val[]: "Премахване на последно поставения маркер"
 
 	key[]: "overlay_reset_route"
-	val[]: "Reset navigation"
+	val[]: "Възстановете навигацията"
 
 	key[]: "overlay_map_filters"
 	val[]: "Филтри"
@@ -17026,10 +17258,10 @@
 	val[]: "Xbox One/Series"
 
 	key[]: "controller_ps4"
-	val[]: "DUALSHOCK®4 wireless controller"
+	val[]: "Безжичен контролер DUALSHOCK®4"
 
 	key[]: "controller_ps5"
-	val[]: "DualSense® wireless controller"
+	val[]: "Безжичен контролер Dualshock®"
 
 	key[]: "controller_switch_pro"
 	val[]: "Switch Pro"
@@ -17056,7 +17288,7 @@
 	val[]: "Logitech RS50"
 
 	key[]: "controller_logitech_driving_wheel"
-	val[]: "Logitech Driving Wheel"
+	val[]: "Волан Logitech"
 
 	key[]: "controller_thrustmaster_tgt"
 	val[]: "Thrustmaster T-GT"
@@ -17065,28 +17297,28 @@
 	val[]: "Thrustmaster TX"
 
 	key[]: "controller_thrustmaster_ts_xw"
-	val[]: "Thrustmaster TS-XW"
+	val[]: "Волан Thrustmaster TS-XW"
 
 	key[]: "controller_thrustmaster_t80"
-	val[]: "Thrustmaster T80"
+	val[]: "Волан Thrustmaster T80"
 
 	key[]: "controller_thrustmaster_t98"
-	val[]: "Thrustmaster T98"
+	val[]: "Волан Thrustmaster T98"
 
 	key[]: "controller_thrustmaster_t128"
-	val[]: "Thrustmaster T128"
+	val[]: "Волан Thrustmaster T128"
 
 	key[]: "controller_thrustmaster_t150"
-	val[]: "Thrustmaster T150"
+	val[]: "Волан Thrustmaster T150"
 
 	key[]: "controller_thrustmaster_t248"
-	val[]: "Thrustmaster T248"
+	val[]: "Волан Thrustmaster T248"
 
 	key[]: "controller_thrustmaster_t300rs"
-	val[]: "Thrustmaster T300RS"
+	val[]: "Волан Thrustmaster T300RS"
 
 	key[]: "controller_thrustmaster_t598"
-	val[]: "Thrustmaster T598"
+	val[]: "Волан Thrustmaster T598"
 #@}
 
 #+ Radio overlay
@@ -17322,10 +17554,10 @@
 	key[]: "career_progress_stats_discovered_countries_count"
 	val[]: "Посетени щати"
 
-	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots a cargo was delivered from or to and number of all depots.
+	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots cargo was delivered from or to and number of all depots.
 	val[]: "Обслужени складове"
 
-	key[]: "career_progress_stats_companies_used_count" #+ Number of companies a cargo was delivered from or to and number of all companies.
+	key[]: "career_progress_stats_companies_used_count" #+ Number of companies cargo was delivered from or to and number of all companies.
 	val[]: "Обслужени компании"
 
 	key[]: "career_progress_stats_truck_dealer_discovered_count"
@@ -17428,49 +17660,49 @@
 #+ Controller overview and Compatible controllers Options screens.
 #@{
 	key[]: "show_compatible_controllers"
-	val[]: "Compatible Controllers" #+ Button showing compatible controllers screen.
+	val[]: "Съвместими контролери" #+ Button showing compatible controllers screen.
 
 	key[]: "current_controller"
-	val[]: "Current Controller" #+ Title for the current controller row in Options.
+	val[]: "Текущ контролер" #+ Title for the current controller row in Options.
 
 	key[]: "current_controller_t"
-	val[]: "CURRENT CONTROLLER" #+ Title for the current controller row in Options (all uppercase).
+	val[]: "ТЕКУЩ КОНТРОЛЕР" #+ Title for the current controller row in Options (all uppercase).
 
 	key[]: "edit_controller_bindings"
-	val[]: "Edit Bindings" #+ Button showing Controller bindings screen.
+	val[]: "Редактиране на бутоните" #+ Button showing Controller bindings screen.
 
 	key[]: "edit_controller_setup"
-	val[]: "Advanced Setup" #+ Button showing Advanced Setup screen.
+	val[]: "Разширени настройки" #+ Button showing Advanced Setup screen.
 
 	key[]: "compatible_controllers_t"
-	val[]: "COMPATIBLE CONTROLLERS" #+ Compatible controllers screen title.
+	val[]: "СЪВМЕСТИМИ КОНТРОЛЕРИ" #+ Compatible controllers screen title.
 
 	key[]: "compatible_controllers_text"
-	val[]: "List of currently supported controllers and steering wheels." #+ Text explaining Compatible controller screen.
+	val[]: "Списък с поддържаните в момента контролери и волани." #+ Text explaining Compatible controller screen.
 
 	key[]: "compatible_controller_name"
-	val[]: "Controller name" #+ Compatible controller name header.
+	val[]: "Име на контролера" #+ Compatible controller name header.
 
 	key[]: "compatible_controller_type"
-	val[]: "Type" #+ Compatible controller type header.
+	val[]: "Вид" #+ Compatible controller type header.
 
 	key[]: "controller_binding_label"
-	val[]: "Binding" #+ Controller Bindings options screen column header for the currently bound button.
+	val[]: "Назначаване" #+ Controller Bindings options screen column header for the currently bound button.
 #@}
 
 #+ Controller changed, connected and disconnected popups.
 #@{
 	key[]: "hint_controller_changed_gamepad"
-	val[]: "Controller connected" #+ Hint when game controls was switched to a controller.
+	val[]: "Контролерът е свързан" #+ Hint when game controls was switched to a controller.
 
 	key[]: "hint_controller_changed_wheel"
-	val[]: "Steering wheel connected" #+ Hint when game controls was switched to a steering wheel.
+	val[]: "Воланът е свързан" #+ Hint when game controls was switched to a steering wheel.
 
 	key[]: "controller_disconnected_message"
-	val[]: "Controller connection lost!<br>Please reconnect the controller to continue." #+ Popup message when a controller was disconnected.
+	val[]: "Връзката с контролера е изгубена!<br>Моля, свържете контролера отново, за да продължите." #+ Popup message when a controller was disconnected.
 
 	key[]: "controller_connected_message"
-	val[]: "Your controller is now connected." #+ Popup message when a controller was connected.
+	val[]: "Контролерът ви вече е свързан." #+ Popup message when a controller was connected.
 #@}
 
 #+ What's new window
@@ -17536,7 +17768,37 @@
 	val[]: "Система"
 
 	key[]: "desktop_menu_category_leave"
-	val[]: "Leave"
+	val[]: "Напусни"
+#@}
+
+#+ Vehicle mode switch
+#@{
+	key[]: "vehicle_mode"
+	val[]: "Режим"
+
+	key[]: "truck_mode"
+	val[]: "Режим камион"
+
+	key[]: "truck_mode_help"
+	val[]: "Поемане на различни доставки с камион"
+
+	key[]: "bus_mode"
+	val[]: "Режим автобус"
+
+	key[]: "bus_mode_help"
+	val[]: "Изживейте друг режим като шофьор на автобус"
+
+	key[]: "bus_mode_locked_tooltip"
+	val[]: "За да получите достъп до режим автобус, трябва да завършите първата си доставка"
+
+	key[]: "car_mode"
+	val[]: "Режим кола"
+
+	key[]: "car_mode_help"
+	val[]: "Поемане на различни доставки и изследване на света с кола"
+
+	key[]: "car_mode_locked_tooltip"
+	val[]: "За да получите достъп до режим кола, трябва да завършите първата си доставка"
 #@}
 
 #+ Menu upper bar
@@ -17617,7 +17879,7 @@
 	val[]: "Прегледайте, прегледайте и преконфигурирайте наличните ремаркета за покупка."
 
 	key[]: "radio_desc" # - tooltip for explaining what the radio is - feature is active
-	val[]: "Enhance your driving experience with some music."
+	val[]: "Подобрете изживяването си зад волана с малко музика."
 
 	key[]: "link_locked_msg_radio" # - tooltip for when the radio is not yet unlocked
 	val[]: "Радиото е недостъпно."
@@ -17635,13 +17897,13 @@
 #+ Intro Scene. Only translate into officially supported languages.
 #@{
 	key[]: "health_warning"
-	val[]: "Предупреждение за здравето"
+	val[]: "Health warning"
 
 	key[]: "health_warning_description"
-	val[]: "Малък брой потребители може да са податливи на епилептични припадъци или загуба на съзнание при излагане на определени мигащи светлини или светлинни модели. Такива лица може да получат припадък, докато гледат определени изображения или играят видеоигра. Ако вие или някой от вашето семейство някога е имал симптоми, свързани с епилепсия (припадъци или загуба на съзнание), при излагане на мигащи светлини, моля, консултирайте се с медицински специалист и вземете всички необходими предпазни мерки, преди да играете играта.<br offset=20>Ако вие или вашето дете изпитате някой от следните симптоми, докато играете видеоигра: замаяност, нарушено зрение, потрепвания на очите или мускулите, загуба на съзнание, дезориентация, конвулсии или неволеви движения, незабавно прекратете използването на видеоиграта и се консултирайте с медицински специалист."
+	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "Всички имена на марки, търговски марки, регистрирани марки, лога и символи по превозните средства в играта са собственост на съответните им законни притежатели. Използвани са с любезното им разрешение. International® и всички търговски марки на International Truck са търговски марки, лицензирани от INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. Търговските марки и дизайните на VOLVO са регистрирани права на AB Volvo Group или са лицензирани на нея, и се използват съгласно лиценз. Търговските марки и дизайните на MACK са регистрирани права на AB Volvo Group и се използват съгласно лиценз. Western Star е търговска марка на Daimler Trucks North America LLC и се използва по лиценз от SCS Software s.r.o. Freightliner е търговска марка на Daimler Trucks North America LLC и се използва по лиценз от SCS Software s.r.o."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
 #@}
 
 #+ Save manager errors
@@ -17667,134 +17929,1585 @@
 #+ Messages for situations occurring due to management of DLCs.
 #@{
 	key[]: "dlc_acquire_timeout" #+ Message shown during initial sequence, if DLCs licensing takes too long.
-	val[]: "Acquiring DLCs takes longer than expected. It will now continue in the background."
+	val[]: "Зареждането на DLC-тата отнема повече време от очакваното. Процесът ще продължи във фонов режим."
 
 	key[]: "dlc_acquire_timeout_wait_or_continue" #+ Message shown during initial sequence, if DLCs licensing takes too long.
-	val[]: "Acquiring DLCs takes longer than expected. Would you like to keep waiting?<br><br>If you proceed further, the acquiring will continue in the background."
+	val[]: "Зареждането на DLC-тата отнема повече време от очакваното. Искате ли да изчакате още?<br><br>Ако продължите напред, зареждането ще продължи във фонов режим."
 
 	key[]: "dlc_acquired_return_optional" #+ Message shown in game, when a DLC has been added.
-	val[]: "Access to some DLCs has been acquired. Would you like to leave to Title Screen now to get access to the new content?<br><br>Your progress will be saved automatically."
+	val[]: "Получен е достъп до някои DLC-та. Искате ли да се върнете към началния екран сега, за да получите достъп до новото съдържание?<br><br>Напредъкът ви ще бъде запазен автоматично."
 
 	key[]: "dlc_lost_return_forced" #+ Message shown in game, when a DLC has been removed.
-	val[]: "Access to some DLCs has been lost. You will now leave to Title Screen to reflect the changes in the content.<br><br>Your progress will be saved automatically."
+	val[]: "Достъпът до някои DLC-та е изгубен. Сега ще бъдете върнати към началния екран, за да се отразят промените в съдържанието.<br><br>Напредъкът ви ще бъде запазен автоматично."
 #@}
 
 #+ Time skip feature
 #@{
 	key[]: "time_skip_t"
-	val[]: "RESTING"
+	val[]: "ПОЧИВКА"
 
 	key[]: "time_skip_hours"
-	val[]: "Number of hours to skip"
+	val[]: "Брой часове за прескачане"
 
-	
+
 	key[]: "time_skip_current_time"
-	val[]: "Current time"
+	val[]: "Текущо време"
 
 	key[]: "time_skip_wake_up_time"
-	val[]: "Rest ends"
+	val[]: "Край на почивката"
 
 
 	key[]: "time_skip_resting_title"
-	val[]: "Rest State"
+	val[]: "Състояние на почивка"
 
 	key[]: "time_skip_mandatory_break_title"
-	val[]: "Mandatory Break"
+	val[]: "Задължителна почивка"
 
 	key[]: "time_skip_job_delivery_title"
-	val[]: "Delivery Status"
+	val[]: "Статус на доставката"
 
 	key[]: "time_skip_charging_title"
-	val[]: "Battery Charge"
+	val[]: "Заряд на батерията"
 
-	
+
 	key[]: "time_skip_to_next_mandatory_break_ok"
-	val[]: "in $TIME$"
+	val[]: "след $TIME$"
 
 	key[]: "time_skip_to_next_mandatory_break_not_ok"
-	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>in $TIME$</font>"
+	val[]: "<font face=/font/small_bold.font>след $TIME$</font>"
 
 
 	key[]: "time_skip_mandatory_break_complied"
-	val[]: "Complied"
+	val[]: "Спазено"
 
 	key[]: "time_skip_mandatory_break_not_complied"
-	val[]: "Not complied"
+	val[]: "Неспазено"
 
 
 	key[]: "time_skip_delivery_on_time"
-	val[]: "On time"
+	val[]: "Навреме"
 
 	key[]: "time_skip_delivery_late"
-	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>Risk of late delivery</font>"
+	val[]: "<color value=@@clr_red@@>Риск от закъснение на доставката</font>"
 
 
 	key[]: "time_skip_rest_tired"
-	val[]: "Tired"
+	val[]: "Умора"
 
 	key[]: "time_skip_rest_ok"
-	val[]: "Rested"
+	val[]: "Отпочинал"
 
 	key[]: "time_skip_rest_full"
-	val[]: "Fully rested"
+	val[]: "Напълно отпочинал"
 
-	
+
 	key[]: "time_skip_tooltip_mandatory_break_not_met"
-	val[]: "This rest won’t meet the mandatory break requirements. You will have $LEFT_TIME$ left until the next mandatory break."
+	val[]: "Тази почивка няма да изпълни изискванията за задължителна почивка. Ще ви остават още $LEFT_TIME$ до следващата задължителна почивка."
 
 	key[]: "time_skip_tooltip_mandatory_break_complied"
-	val[]: "This rest will meet the mandatory break requirements. The next one will be in <color value=@@clr_sel@@>$DRIVE_TIME$</color> hours."
+	val[]: "Тази почивка ще изпълни изискванията за задължителна почивка. Следващата ще бъде след <color value=@@clr_sel@@>$DRIVE_TIME$ </color>часа."
 
 	key[]: "time_skip_tooltip_mandatory_break_cont"
-	val[]: "For every <color value=@@clr_sel@@>$DRIVE_TIME$</color> hours of driving, you must take a mandatory break for at least <color value=@@clr_sel@@>$BREAK_TIME$</color> hours to avoid getting fined."
-	
+	val[]: "На всеки <color value=@@clr_sel@@>$DRIVE_TIME$ </color>часа шофиране трябва да правите задължителна почивка от поне <color value=@@clr_sel@@>$BREAK_TIME$</color> часа, за да избегнете глоби."
+
 
 	key[]: "time_skip_tooltip_job_on_time"
-	val[]: "After the rest and the estimated drive time to the destination, you will have <color value=@@clr_sel@@>$LEFT_TIME$</color> remaining on the job."
-	
+	val[]: "След почивката и очакваното време за пътуване до дестинацията ще ви остават <color value=@@clr_sel@@>$LEFT_TIME$ </color>за изпълнение на поръчката."
+
 	key[]: "time_skip_tooltip_job_late"
-	val[]: "After the rest and the estimated drive time to the destination, the delivery will be late by <color value=@@clr_red@@>$LEFT_TIME$</color>."
+	val[]: "След почивката и очакваното време за шофиране до дестинацията доставката ще закъснее с <color value=@@clr_red@@>$LEFT_TIME$</color>."
 
 	key[]: "time_skip_max_sleep_reached"
-	val[]: "<color value=@@clr_red@@>You will be fully rested</color>"
+	val[]: "<color value=@@clr_red@@>Ще бъдете напълно отпочинали</color>"
 
-# shown in job detail widget and pause screen	
+# shown in job detail widget and pause screen
 	key[]: "job_eta"
-	val[]: "Estimated Arrival"
+	val[]: "Очаквано време на пристигане"
 
 	key[]: "job_delay"
-	val[]: "Delay"
+	val[]: "Закъснение"
 
 # mandatory break needed window shown when changing vehicle mode
 	key[]: "time_skip_mandatory_break_t"
-	val[]: "MANDATORY REST NEEDED"
+	val[]: "НЕОБХОДИМА Е ЗАДЪЛЖИТЕЛНА ПОЧИВКА"
 
 	key[]: "time_skip_mandatory_break_needed"
-	val[]: "The vehicle hasn’t been parked long enough to complete your mandatory rest.<br><br><color value=@@clr_sel@@>$TIME$ of mandatory break left<br><br><color value=@@clr_txt@@>Do you want to rest?"
+	val[]: "Превозното средство не е било паркирано достатъчно дълго, за да завършите задължителната си почивка.<br><br><color value=@@clr_sel@@>Остават $TIME$ от задължителната почивка<br><br><color value=@@clr_txt@@>Искате ли да почивате?"
 
 # mandatory break notifications
 	key[]: "mandatory_break_soon"
-	val[]: "It’s time to take your mandatory break.<br>You should find a parking spot and rest!"
+	val[]: "Време е да вземете задължителната си почивка.<br>Трябва да намерите място за паркиране и да починете!"
 
 	key[]: "mandatory_break_overdue"
-	val[]: "Exceeded driving time without mandatory break.<br>You should find a parking spot and rest!"
+	val[]: "Превишено време за шофиране без задължителна почивка.<br>Трябва да намерите място за паркиране и да починете!"
 
 	key[]: "offence_mandatory_break"
-	val[]: "Violation of mandatory break."
+	val[]: "Нарушение на задължителната почивка."
 
 # shown in options
 
 	key[]: "mandatory_break_simulation"
-	val[]: "Mandatory Break simulation"
+	val[]: "Симулация на задължителна почивка"
 
 	key[]: "mandatory_break_simulation_op_tooltip"
-	val[]: "When enabled, you must take regular breaks from driving.<br><br>Avoiding mandatory breaks will result in traffic offences."
+	val[]: "Когато е активирано, трябва да правите редовни почивки от шофирането.<br><br>Избягването на задължителните почивки ще доведе до пътни нарушения."
 
 	key[]: "rest_state_simulation"
-	val[]: "Rest State simulation"
-	
+	val[]: "Симулация на състоянието на почивка"
+
 	key[]: "rest_state_simulation_op_tooltip"
-	val[]: "When enabled, you will experience the effects of fatigue over time.<br><br>You will need to rest to recover."
+	val[]: "Когато е активирано, ще изпитвате ефектите на умората с течение на времето.<br><br>Ще трябва да почивате, за да се възстановите."
 #@}
 
+#+ Road trip localization.
+#@{
+	key[]: "poi_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$<color value=@@clr_txt@@> ОТКРИТО" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_msg"
+	val[]: "Натиснете следния клавиш, за да активирате туристическия борд:"
+#@}
+
+
+#+ Road Trip Desktop specifics
+#@{
+	key[]: "desktop_menu_category_car_company"
+	val[]: "Гараж"
+
+#@}
+
+#+ Car job localization.
+#@{
+	key[]: "car_job_type_delivery"
+	val[]: "Куриерска доставка"
+
+	key[]: "car_job_type_driving"
+	val[]: "Шофьор на повикване"
+
+	key[]: "car_quick_job_desc"
+	val[]: "Апочнете работа като професионален шофьор-куриер с предоставено превозно средство. Просто изберете доставката и карайте."
+
+	key[]: "car_dispatch_job_resumed"
+	val[]: "Доставката е в процес на изпълнение."
+
+	key[]: "customer_prio_info"
+	val[]: "Приоритет на клиент"
+
+	key[]: "cargo_type_prio_cargo"
+	val[]: "Товаро-разтоварни дейности"
+
+	key[]: "cargo_type_prio_time"
+	val[]: "Управление на времето"
+
+	key[]: "cargo_type_prio_vehicle"
+	val[]: "Състояние на превозното средство"
+
+	key[]: "cargo_type_prio_none"
+	val[]: "Без приоритет"
+
+	key[]: "cargo_attributes"
+	val[]: "Атрибути"
+
+	key[]: "cargo_type_cstandard"
+	val[]: "Стандартна доставка"
+
+	key[]: "cargo_type_cexpress"
+	val[]: "Строг прозорец за доставка"
+
+	key[]: "cargo_type_rt_highvalue"
+	val[]: "Ценен"
+
+	key[]: "cargo_type_rt_fragile"
+	val[]: "Чупливо"
+
+	key[]: "provided_vehicle"
+	val[]: "Предоставено превозно средство"
+
+	key[]: "cjob_arrived"
+	val[]: "Пристигнахте"
+
+	key[]: "customer_satisfaction_t"
+	val[]: "Удовлетвореност на клиентите"
+
+	key[]: "provisional_reward"
+	val[]: "Предварителна награда"
+
+	key[]: "customer_satisfaction"
+	val[]: "Удовлетвореност на клиентите"
+
+	key[]: "customer_rejected_delivery"
+	val[]: "Отказана доставка"
+
+	key[]: "cjob_rating_0"
+	val[]: "Непрофесионално"
+
+	key[]: "cjob_rating_1"
+	val[]: "Много лошо"
+
+	key[]: "cjob_rating_2"
+	val[]: "Под средното ниво"
+
+	key[]: "cjob_rating_3"
+	val[]: "Задоволително"
+
+	key[]: "cjob_rating_4"
+	val[]: "Добро"
+
+	key[]: "cjob_rating_5"
+	val[]: "Перфектно"
+
+	key[]: "cjob_default_negative_note_time"
+	val[]: "Неочакван час на пристигане"
+
+	key[]: "cjob_default_neutral_note_time"
+	val[]: "Приемлив час на пристигане"
+
+	key[]: "cjob_default_positive_note_time"
+	val[]: "Навреме"
+
+	key[]: "cjob_default_negative_note_cargo"
+	val[]: "Повреден товар"
+
+	key[]: "cjob_default_neutral_note_cargo"
+	val[]: "Задоволителна услуга"
+
+	key[]: "cjob_default_positive_note_cargo"
+	val[]: "Доставка без повреди"
+
+	key[]: "cjob_default_negative_note_cargo_1"
+	val[]: "Невнимателно боравене"
+
+	key[]: "cjob_default_negative_note_vehicle"
+	val[]: "Непрофесионален външен вид"
+
+	key[]: "cjob_default_neutral_note_vehicle"
+	val[]: "Задоволителен външен вид"
+
+	key[]: "cjob_default_positive_note_vehicle"
+	val[]: "Безупречно превозно средство"
+
+	key[]: "no_car_job_found"
+	val[]: "Не са намерени товари, съответстващи на избраните филтри"
+
+	key[]: "hint_open_global_dispatch_market"
+	val[]: "В момента виждате ограничен брой оферти от диспечерския пазар. Можете да видите глобалните оферти, като натиснете бутона по-долу."
+
+	key[]: "view_global_dispatch_market"
+	val[]: "Преглед на глобалния диспечерски пазар"
+
+	key[]: "car_dispatch_job_t"
+	val[]: "Диспечерски оферти за превоз"
+
+	key[]: "car_dispatch_job"
+	val[]: "Пазар на оферти"
+
+	key[]: "car_dispatch_job_desc"
+	val[]: "Работете като професионален шофьор-куриер със собствено превозно средство."
+
+	key[]: "link_locked_msg_dispatch_job"
+	val[]: "За достъп до диспечерския пазар първо трябва да имате зачислен автомобил."
+
+	key[]: "vehicle_transfer"
+	val[]: "Прехвърляне на превозно средство"
+
+	key[]: "car_job_rating"
+	val[]: "Оценка на извършения превоз"
+
+	key[]: "car_courier_rating"
+	val[]: "Оценка на куриера"
+
+	key[]: "car_courier_rating_na"
+	val[]: "Няма данни" #+ Shown at various places if the player has no courier rating yet. Please keep it as short as possible.
+
+	key[]: "car_delivery_streak"
+	val[]: "Поредица от безупречни доставки"
+
+	key[]: "car_benefit_max_dist"
+	val[]: "Максимално разстояние"
+
+	key[]: "car_benefit_reward_bonus"
+	val[]: "Бонус възнаграждение"
+
+	key[]: "car_benefit_cargo_access"
+	val[]: "Достъп до товара"
+
+	key[]: "car_active_benefits"
+	val[]: "Активни предимства"
+
+	key[]: "car_benefits_locked"
+	val[]: "Изпълнете първите си <color value=@@clr_white@@>5 доставки</color>, за да отключите предимства."
+
+	key[]: "car_route_details"
+	val[]: "Подробности за маршрута"
+
+	key[]: "ccargo_business_documents"
+	val[]: "Търговски документи"
+
+	key[]: "ccargo_personal_documents"
+	val[]: "Документи за самоличност"
+
+	key[]: "ccargo_legal_documents"
+	val[]: "Правна документация"
+
+	key[]: "cjob_dealer_allocation"
+	val[]: "Разпределение на автомобили от дилъра"
+
+	key[]: "cjob_premium_allocation"
+	val[]: "Премиум квота за автодилър"
+
+	key[]: "ccargo_job_tools"
+	val[]: "Работни инструменти"
+
+	key[]: "ccargo_soil_samples"
+	val[]: "Проби от земеделска продукция"
+
+	key[]: "ccargo_plant_seedlings"
+	val[]: "Разсад за растения"
+
+	key[]: "ccargo_product_samples"
+	val[]: "Мостри на продукти"
+
+	key[]: "ccargo_return_package"
+	val[]: "Връщане на пратка"
+
+	key[]: "ccargo_machine_parts"
+	val[]: "Резервни части за машини"
+
+	key[]: "ccargo_customs_docs"
+	val[]: "Митническа документация"
+
+	key[]: "ccargo_diplomatic_pouch"
+	val[]: "Дипломатическа поща"
+
+	key[]: "ccargo_missed_connection"
+	val[]: "Пратка с изпусната връзка"
+
+	key[]: "ccargo_redirected_parcel"
+	val[]: "Пренасочена пратка"
+
+	key[]: "ccargo_vehicle_reg_papers"
+	val[]: "Документи за регистрация на Мпс"
+
+	key[]: "ccargo_livestock_auction_docs"
+	val[]: "Документи за търг на животни"
+
+	key[]: "ccargo_replacement_keys"
+	val[]: "Резервни ключове"
+
+	key[]: "ccargo_freight_manifests"
+	val[]: "Товарни манифести"
+
+	key[]: "ccargo_payroll_envelopes"
+	val[]: "Пликове за възнаграждения"
+
+	key[]: "ccargo_export_customs_decl"
+	val[]: "Митнически декларации за износ"
+
+	key[]: "ccargo_rail_waybills"
+	val[]: "Железопътни товарителници"
+
+	key[]: "ccargo_livestock_health_certs"
+	val[]: "Ветеринарномедицински сертификати за животни"
+
+	key[]: "ccargo_dealer_trade_docs"
+	val[]: "Документи за сделки между дилъри"
+
+	key[]: "ccargo_ore_samples"
+	val[]: "Проби от руди и минерали"
+
+	key[]: "ccargo_drill_core_samples"
+	val[]: "Сондажни проби"
+
+	key[]: "ccargo_chemical_samples"
+	val[]: "Химически проби"
+
+	key[]: "ccargo_grid_relays"
+	val[]: "Мрежови релейни компоненти"
+
+	key[]: "ccargo_truck_small_parts"
+	val[]: "Дребни части за камиони"
+
+	key[]: "ccargo_packaging_prototypes"
+	val[]: "Прототипи на опаковки"
+
+	key[]: "ccargo_outboard_parts"
+	val[]: "Части за извънбордови двигатели"
+
+	key[]: "ccargo_boat_reg_papers"
+	val[]: "Регистрационни документи за лодка"
+
+	key[]: "ccargo_fillin_restock"
+	val[]: "Допълващо зареждане"
+
+	key[]: "ccargo_lost_wallet"
+	val[]: "Изгубен портфейл"
+
+	key[]: "ccargo_regatta_trophy"
+	val[]: "Купа от регата"
+
+	key[]: "ccargo_repl_propeller"
+	val[]: "Резервна перка"
+
+	key[]: "ccargo_yacht_brokerage"
+	val[]: "Документи за яхтен брокераж"
+
+	key[]: "ccargo_tractor_diag_module"
+	val[]: "Диагностичен модул за трактор"
+
+	key[]: "ccargo_substation_keys"
+	val[]: "Ключове за достъп до подстанция"
+
+	key[]: "ccargo_flight_crew_docs"
+	val[]: "Документи на летателния екипаж"
+
+	key[]: "ccargo_misrouted_delivery"
+	val[]: "Погрешно насочена доставка от доставчик"
+
+	key[]: "ccargo_transfer_seals"
+	val[]: "Пломби за интермодален трансфер"
+
+	key[]: "ccargo_crew_supplies"
+	val[]: "Провизии и закуски за екипажа"
+
+	key[]: "ccargo_tourist_maps"
+	val[]: "Зареждане с туристически карти"
+
+	key[]: "ccargo_fish_finder"
+	val[]: "Риболовен сонар"
+
+	key[]: "ccargo_unident_shipment"
+	val[]: "Неразпозната пратка"
+
+	key[]: "ccargo_undisc_consignment"
+	val[]: "Неоповестена пратка"
+
+	key[]: "ccargo_confid_delivery"
+	val[]: "Поверителна доставка"
+
+#+ Icon legend specific text
+#@{
+	key[]: "quick_jobs_legend"
+	val[]: "Информация за бързи поръчки" #+ Keep uppercase where possible
+
+	key[]: "dispatch_jobs_legend"
+	val[]: "Информация за диспечерски поръчки" #+ Keep uppercase where possible
+
+	key[]: "car_legend_job_types"
+	val[]: "Видове поръчки"
+
+	key[]: "car_legend_delivery_job_desc"
+	val[]: "Доставка на товари – доставяйте по-малки пратки, документи"
+
+	key[]: "car_legend_driving_job_desc"
+	val[]: "Транспорт на превозни средства – автомобилът, който управлявате, е товарът"
+
+	key[]: "car_legend_cargo_prio_desc"
+	val[]: "Шофирайте безопасно и се грижете за товара си – клиентите ценят неповредените пратки"
+
+	key[]: "car_legend_vehicle_prio_desc"
+	val[]: "Представителният вид е важен – пристигането с повреден автомобил може да разочарова клиента"
+
+	key[]: "car_legend_time_prio_desc"
+	val[]: "Клиентите очакват да пристигнете в уговорения час – нито твърде рано, нито твърде късно"
+
+	key[]: "car_legend_prio_desc"
+	val[]: "Обърнете специално внимание на удовлетвореността на избрания клиент – рейтингът и наградите зависят в голяма степен от това"
+	
+	key[]: "car_legend_modifiers"
+	val[]: "Модификации"
+
+	key[]: "car_legend_standard_desc"
+	val[]: "Стандартен прозорец за доставка"
+
+	key[]: "car_legend_express_desc"
+	val[]: "По-кратък прозорец за доставка с по-голяма награда"
+
+	key[]: "car_legend_valuable_desc"
+	val[]: "По-строги изисквания на клиента към състоянието на превозното средство с по-голяма награда"
+
+	key[]: "car_legend_fragile_desc"
+	val[]: "По-голяма награда за деликатен товар, който се поврежда по-лесно"
+
+	key[]: "car_legend_rating"
+	val[]: "Оценка"
+
+	key[]: "car_legend_job_rating_desc"
+	val[]: "Оценка на клиента за удовлетвореността от вашето представяне"
+
+	key[]: "car_legend_courier_rating_desc"
+	val[]: "Комбинирана оценка от последните 25 поръчки – може да бъде разгледана в „Кариерно развитие“"
+
+	key[]: "car_legend_delivery_streak_desc"
+	val[]: "Брой поредни перфектни оценки за поръчки"
+
+	key[]: "car_legend_benefits"
+	val[]: "Предимства"
+
+	key[]: "car_legend_benefit_max_dist_desc"
+	val[]: "По-високият рейтинг на куриера отключва по-дълги маршрути"
+
+	key[]: "car_legend_benefit_reward_bonus_desc"
+	val[]: "Допълнително заплащане за всяка поръчка – въз основа на вашия рейтинг като куриер и поредицата ви от перфектни доставки"
+
+	key[]: "car_legend_benefit_cargo_access_desc"
+	val[]: "Товарите, които ви се поверяват – се разширяват с вашия рейтинг"
+
+#@}
+
+#@}
+
+#+ Unavailable data
+#@{
+	key[]: "car_job_name_na"
+	val[]: "Няма" # Shown at various places if car job name is unavailable. Please keep it as short as possible.
+#@}
+
+#+ Multiplayer
+#@{
+
+	key[]: "no_car_preview"
+	val[]: "Няма предварителен преглед на автомобила"
+
+	key[]: "mp_car_job_missing_job_data"
+	val[]: "Данните за поръчката не бяха намерени. Възможно е да принадлежат на липсващ мод или DLC."
+
+	key[]: "mp_car_job_wrong_cargo"
+	val[]: "Не можа да бъде намерен товар за поръчката."
+
+	key[]: "mp_car_job_wrong_car"
+	val[]: "Не можа да бъде намерен подходящ автомобил за поръчката."
+
+	key[]: "mp_car_job_must_use_company_car"
+	val[]: "Тази поръчка трябва да бъде изпълнена с предоставения автомобил."
+
+	key[]: "mp_customer_prio_info"
+	val[]: "Приоритет на клиента:"
+
+	key[]: "mp_no_vehicle"
+	val[]: "Няма превозно средство"
+
+	key[]: "mp_job_status_truck"
+	val[]: "Камион"
+
+	key[]: "mp_job_status_car"
+	val[]: "Автомобил"
+
+	key[]: "mp_car_idle"
+	val[]: "Неактивен"
+
+	key[]: "mp_car_on_job"
+	val[]: "Доставката не е налична"
+
+	key[]: "mp_car_on_convoy"
+	val[]: "Налична доставка"
+
+	key[]: "equipment_provided_car"
+	val[]: "Предоставен автомобил"
+
+	key[]: "equipment_owned_car"
+	val[]: "Собствен автомобил"
+#@}
+
+#+ Road trip specific customer notes.
+#@{
+	#+ Documents (Business / Personal)
+	key[]: "cjob_documents_negative_note_cargo"
+	val[]: "Неправилно обработени документи"
+
+	key[]: "cjob_documents_negative_note_cargo_1"
+	val[]: "Скъсан плик"
+
+	key[]: "cjob_documents_negative_note_cargo_2"
+	val[]: "Намачкани документи"
+
+	key[]: "cjob_documents_neutral_note_cargo"
+	val[]: "Леко обработен"
+
+	key[]: "cjob_documents_neutral_note_cargo_1"
+	val[]: "Леко измачкан"
+
+	key[]: "cjob_documents_positive_note_cargo"
+	val[]: "Непокътнати документи"
+
+	key[]: "cjob_documents_positive_note_cargo_1"
+	val[]: "Неповреден плик"
+
+	#+ Legal Documents (valuable)
+	key[]: "cjob_legaldoc_negative_note_cargo"
+	val[]: "Неправилно обработени документи"
+
+	key[]: "cjob_legaldoc_negative_note_cargo_1"
+	val[]: "Нарушена пломба"
+
+	key[]: "cjob_legaldoc_positive_note_cargo"
+	val[]: "Здрава пломба"
+
+	key[]: "cjob_legaldoc_positive_note_cargo_1"
+	val[]: "Обработен поверително"
+
+	#+ Machine Parts
+	key[]: "cjob_parts_negative_note_cargo"
+	val[]: "Тракащо съдържание"
+
+	key[]: "cjob_parts_neutral_note_cargo"
+	val[]: "Външни забележки"
+
+	key[]: "cjob_parts_positive_note_cargo"
+	val[]: "Безупречно състояние"
+
+	#+ Job Site Tools (negative reuses parts/box keys: Rattling Contents / Dented Package / Punctured Parcel)
+	key[]: "cjob_tools_neutral_note_cargo"
+	val[]: "Издраскани инструменти"
+
+	key[]: "cjob_tools_neutral_note_cargo_1"
+	val[]: "Леко износване"
+
+	key[]: "cjob_tools_positive_note_cargo"
+	val[]: "Безупречен комплект инструменти"
+
+	key[]: "cjob_tools_positive_note_cargo_1"
+	val[]: "В перфектно състояние"
+
+	#+ Agricultural Samples (internal id: soil)
+	key[]: "cjob_soil_negative_note_cargo"
+	val[]: "Замърсени проби"
+
+	key[]: "cjob_soil_negative_note_cargo_1"
+	val[]: "Разляти контейнери"
+
+	key[]: "cjob_soil_negative_note_cargo_2"
+	val[]: "Увредени проби"
+
+	key[]: "cjob_soil_negative_note_cargo_3"
+	val[]: "Течащи контейнери"
+
+	key[]: "cjob_soil_neutral_note_cargo"
+	val[]: "Слаб теч"
+
+	key[]: "cjob_soil_neutral_note_cargo_1"
+	val[]: "Леко разливане"
+
+	key[]: "cjob_soil_neutral_note_cargo_2"
+	val[]: "Хлабави капачки"
+
+	key[]: "cjob_soil_positive_note_cargo"
+	val[]: "Надеждно запечатан"
+
+	key[]: "cjob_soil_positive_note_cargo_1"
+	val[]: "Идеално запазен"
+
+	key[]: "cjob_soil_positive_note_cargo_2"
+	val[]: "Непокътнати проби"
+
+	key[]: "cjob_soil_positive_note_cargo_3"
+	val[]: "Безупречни проби"
+
+	key[]: "cjob_soil_positive_note_cargo_4"
+	val[]: "Здрави контейнери"
+
+	#+ Product Samples (neutral also references parts key cjob_parts_neutral_note_cargo = Cosmetic Marks)
+	key[]: "cjob_samples_negative_note_cargo"
+	val[]: "Повредени проби"
+
+	key[]: "cjob_samples_negative_note_cargo_1"
+	val[]: "Разкъсана опаковка"
+
+	key[]: "cjob_samples_neutral_note_cargo"
+	val[]: "Леки дефекти"
+
+	key[]: "cjob_samples_positive_note_cargo"
+	val[]: "Състояние като за шоурум"
+
+	key[]: "cjob_samples_positive_note_cargo_1"
+	val[]: "Безупречна опаковка"
+
+	#+ Return Package (generic box). NOTE: negative keys are shared by machine parts & job tools.
+	key[]: "cjob_box_negative_note_cargo"
+	val[]: "Смачкана опаковка"
+
+	key[]: "cjob_box_negative_note_cargo_1"
+	val[]: "Продупчена пратка"
+
+	key[]: "cjob_box_negative_note_cargo_2"
+	val[]: "Повредена опаковка"
+
+	key[]: "cjob_box_neutral_note_cargo"
+	val[]: "Подбити ъгли"
+
+	key[]: "cjob_box_neutral_note_cargo_1"
+	val[]: "Леки вдлъбнатини"
+
+	key[]: "cjob_box_positive_note_cargo"
+	val[]: "Неповредена пратка"
+
+	key[]: "cjob_box_positive_note_cargo_1"
+	val[]: "Грижливо върнат"
+
+	key[]: "cjob_box_positive_note_cargo_2"
+	val[]: "Обработван с внимание"
+
+	#+ Replacement Keys (neutral also refs parts Cosmetic Marks; positive also refs parts Mint Condition)
+	key[]: "cjob_keys_negative_note_cargo"
+	val[]: "Надраскан ключодържател"
+
+	key[]: "cjob_keys_negative_note_cargo_1"
+	val[]: "Пукнат корпус на ключа"
+
+	key[]: "cjob_keys_negative_note_cargo_2"
+	val[]: "Изкривен ключ"
+
+	key[]: "cjob_keys_negative_note_cargo_3"
+	val[]: "Счупена халка за ключове"
+
+	key[]: "cjob_keys_neutral_note_cargo"
+	val[]: "Леки драскотини"
+
+	key[]: "cjob_keys_positive_note_cargo"
+	val[]: "Фабрично запечатан"
+
+	#+ Plant Seedlings
+	key[]: "cjob_seedlings_negative_note_cargo"
+	val[]: "Повредени корени"
+
+	key[]: "cjob_seedlings_negative_note_cargo_1"
+	val[]: "Счупени кълнове"
+
+	key[]: "cjob_seedlings_negative_note_cargo_2"
+	val[]: "Счупени дръжки"
+
+	key[]: "cjob_seedlings_neutral_note_cargo"
+	val[]: "Няколко опадали листа"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_1"
+	val[]: "Огънати дръжки"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_2"
+	val[]: "Леко завяхване"
+
+	key[]: "cjob_seedlings_positive_note_cargo"
+	val[]: "Готови за засаждане"
+
+	key[]: "cjob_seedlings_positive_note_cargo_1"
+	val[]: "Жизнени растения"
+
+	key[]: "cjob_seedlings_positive_note_cargo_2"
+	val[]: "Здрав разсад"
+
+	key[]: "cjob_seedlings_positive_note_cargo_3"
+	val[]: "Перфектно обгрижен"
+
+	#+ Customs Documents
+	key[]: "cjob_customs_negative_note_cargo"
+	val[]: "Скъсани страници"
+
+	key[]: "cjob_customs_negative_note_cargo_1"
+	val[]: "Размазано мастило"
+
+	key[]: "cjob_customs_neutral_note_cargo"
+	val[]: "Лека прегъвка"
+
+	key[]: "cjob_customs_neutral_note_cargo_1"
+	val[]: "Леки зацапвания"
+
+	key[]: "cjob_customs_positive_note_cargo"
+	val[]: "Чисти документи"
+
+	key[]: "cjob_customs_positive_note_cargo_1"
+	val[]: "Правилно предаден"
+
+	#+ Diplomatic Pouch
+	key[]: "cjob_dippouch_negative_note_cargo"
+	val[]: "Счупена пломба"
+
+	key[]: "cjob_dippouch_negative_note_cargo_1"
+	val[]: "Манипулирана торбичка"
+
+	key[]: "cjob_dippouch_negative_note_cargo_2"
+	val[]: "Компрометирано съдържание"
+
+	key[]: "cjob_dippouch_neutral_note_cargo"
+	val[]: "Леко протриване"
+
+	key[]: "cjob_dippouch_neutral_note_cargo_1"
+	val[]: "Леко разхлабена пломба"
+
+	key[]: "cjob_dippouch_positive_note_cargo"
+	val[]: "Непокътната пломба"
+
+	key[]: "cjob_dippouch_positive_note_cargo_1"
+	val[]: "Примерна дискретност"
+
+	key[]: "cjob_dippouch_positive_note_cargo_2"
+	val[]: "Сигурно доставен"
+
+	#+ Shared Parcel notes (Missed Connection + Redirected Parcel)
+	key[]: "cjob_parcel_negative_note_cargo"
+	val[]: "Лошо третиран"
+
+	key[]: "cjob_parcel_negative_note_cargo_1"
+	val[]: "Нарушение при обработка"
+
+	key[]: "cjob_parcel_neutral_note_cargo"
+	val[]: "Очаквано износване"
+
+	key[]: "cjob_parcel_neutral_note_cargo_1"
+	val[]: "Умерено състояние"
+
+	key[]: "cjob_parcel_neutral_note_cargo_2"
+	val[]: "Транзитни марки"
+
+	#+ Missed Connection Parcel
+	key[]: "cjob_missed_positive_note_cargo"
+	val[]: "Успешно пренасочен"
+
+	#+ Redirected Parcel
+	key[]: "cjob_redirected_positive_note_cargo"
+	val[]: "Безупречно пренасочен"
+
+	#+ Shared Paperwork notes (Vehicle Registration + Livestock Auction Documents)
+	key[]: "cjob_paperwork_negative_note_cargo"
+	val[]: "Повредени записи"
+
+	key[]: "cjob_paperwork_negative_note_cargo_1"
+	val[]: "Липсващи страници"
+
+	key[]: "cjob_paperwork_neutral_note_cargo"
+	val[]: "Леко огъване"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_1"
+	val[]: "Слаби следи"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_2"
+	val[]: "Леко намачкване"
+
+	#+ Vehicle Registration Papers
+	key[]: "cjob_vehreg_negative_note_cargo"
+	val[]: "Огънат сертификат"
+
+	key[]: "cjob_vehreg_negative_note_cargo_1"
+	val[]: "Намачкан регистрационен талон"
+
+	key[]: "cjob_vehreg_positive_note_cargo"
+	val[]: "Безупречни документи"
+
+	key[]: "cjob_vehreg_positive_note_cargo_1"
+	val[]: "Непокътнати документи"
+
+	#+ Livestock Auction Documents
+	key[]: "cjob_auctdoc_negative_note_cargo"
+	val[]: "Повреден сертификат"
+
+	key[]: "cjob_auctdoc_positive_note_cargo"
+	val[]: "Непокътнати досиета"
+
+	key[]: "cjob_auctdoc_positive_note_cargo_1"
+	val[]: "Перфектна документация"
+#@}
+
+#+ Car job localization which doens't require translation.
+#!{
+	key[]: "tt_ico_driving"
+	val[]: "@@car_job_type_driving@@"
+
+	key[]: "tt_ico_delivery"
+	val[]: "@@car_job_type_delivery@@"
+
+	key[]: "tt_ico_cstandard"
+	val[]: "@@cargo_type_cstandard@@"
+
+	key[]: "tt_ico_cexpress"
+	val[]: "@@cargo_type_cexpress@@"
+
+	key[]: "tt_ico_rt_highvalue"
+	val[]: "@@cargo_type_rt_highvalue@@"
+
+	key[]: "tt_ico_rt_fragile"
+	val[]: "@@cargo_type_rt_fragile@@"
+
+	key[]: "car_quick_job_resumed"
+	val[]: "@@quick_job_resumed@@"
+
+	key[]: "car_job_detail_t"
+	val[]: "@@job_detail_word_t@@"
+
+	key[]: "car_quick_job"
+	val[]: "@@job_quick@@"
+
+	key[]: "car_quick_job_t"
+	val[]: "@@quick_job_t@@"
+#!}
+
+#+ Car shop and brand dealer localization.
+#+
+#+ Shows window with all car brands and then another window with specific cars of a given brand to purchase.
+#@{
+	key[]: "car_shop_icon"
+	val[]: "Автосалони" #+ Icon opening the car dealer screen.
+
+	key[]: "car_shop_help"
+	val[]: "Купете автомобили за вашия гараж." #+ Help message associated the dealer map icon.
+
+	key[]: "car_shop_t"
+	val[]: "ПОКУПКА НА АВТОМОБИЛ" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "car_shop_explanation"
+	val[]: "Изберете марката, за да видите офертите за покупка."
+
+	key[]: "car_shop_all_dlc"
+	val[]: "Отворете браузъра за DLC"
+
+	key[]: "car_shop_view_offers"
+	val[]: "Преглед на офертите"
+
+	key[]: "car_shop_view_in_dlc_browser"
+	val[]: "Преглед в браузъра за DLC"
+
+	key[]: "car_shop_coming_soon"
+	val[]: "ОЧАКВАЙТЕ СКОРО" #+ Text shown when a car brand is not yet available in the game. Please keep in uppercase.
+
+	key[]: "car_shop_tooltip_dlc_browser"
+	val[]: "Търсачка на DLC пакети"
+
+	key[]: "car_purchase_t"
+	val[]: "ПОКУПКА НА АВТОМОБИЛ" #+ Title of the screen. Please keep in upper case where possible.
+	
+	key[]: "car_purchase_info_model"
+	val[]: "Модел:"
+
+	key[]: "car_purchase_info_drivetrain"
+	val[]: "Задвижване:"
+
+	key[]: "car_purchase_info_bodywork"
+	val[]: "Каросерия:"
+
+	key[]: "car_purchase_info_engine"
+	val[]: "Двигател:"
+
+	key[]: "car_purchase_table_fuel_tank"
+	val[]: "Резервоар"
+
+	key[]: "car_purchase_table_drivetrain"
+	val[]: "Задвижване"
+
+	key[]: "car_purchase_table_trans"
+	val[]: "Скоростна кутия"
+
+	key[]: "car_purchase_color_configuration"
+	val[]: "Цветова конфигурация" #+ Title above color configuration list.
+
+	key[]: "car_purchase_checkout"
+	val[]: "Финализиране на поръчката" #+ Title above color configuration list.
+
+	key[]: "car_purchase_bank_balance"
+	val[]: "Банков баланс:"
+
+	key[]: "car_purchase_color_fee"
+	val[]: "Такса за цвят по избор:"
+
+	key[]: "car_purchase_confirm"
+	val[]: "Купи"
+
+	key[]: "car_purchase_back"
+	val[]: "Назад"
+
+	key[]: "car_purchase_car_bought_t"
+	val[]: "ПОКУПКА НА АВТОМОБИЛ" #+ Title of car bought message box. Please keep in upper case where possible.
+
+	key[]: "car_purchase_confirm_exit_t"
+	val[]: "ВНИМАНИЕ"
+
+	key[]: "car_purchase_confirm_exit_msg"
+	val[]: "Все още не сте завършили покупката на новия си автомобил. Сигурни ли сте, че искате да напуснете този екран?"
+
+	key[]: "car_purchase_leave"
+	val[]: "Напусни"
+
+	key[]: "car_purchase_stay"
+	val[]: "Оставане"
+
+	key[]: "car_purchase_car_bought"
+	val[]: "Благодарим ви за покупката.<br>$CAR_NAME$ вече е във вашата колекция." #+ Message of car bought message box.
+
+	key[]: "view_in_garage"
+	val[]: "Преглед в гаража" #+ Button that takes player to vehicle garage.
+
+#@}
+
+#+ Car-specific time skip localization.
+#@{
+	key[]: "time_skip_delivery_early"
+	val[]: "Ранна доставка" 
+
+	key[]: "time_skip_tooltip_job_early"
+	val[]: "След почивката и очакваното време за шофиране до дестинацията, доставката ще бъде твърде ранна с <color value=@@clr_sel@@>$LEFT_TIME$</color>."
+#@}
+
+
+#+ Car configurator localization.
+#@{
+	key[]: "bodywork_t"
+	val[]: "КАРОСЕРИЯ"
+
+	key[]: "bodywork"
+	val[]: "Каросерия"
+
+	key[]: "drivetrain_t"
+	val[]: "ЗАДВИЖВАНЕ"
+
+	key[]: "drivetrain"
+	val[]: "Задвижване"
+
+	key[]: "car_brand_t"
+	val[]: "ДИЗАЙН НА ПРЕВОЗНОТО СРЕДСТВО"
+
+	key[]: "car_brand"
+	val[]: "Дизайн на превозното средство"
+
+	key[]: "no_car_found"
+	val[]: "Не са намерени превозни средства, отговарящи на вашите филтри" #+ Text shown when there are no cars found by filters.
+#@}
+
+#+ Car diagnostic localization.
+#@{
+	key[]: "car_service_about"
+	val[]: "Поддръжка и ремонт на автомобила. Добрият шофьор винаги поддържа превозното си средство в отлично състояние." #+ Help message associated with service icon.
+
+	key[]: "car_service_car_t"
+	val[]: "ДОКЛАД ЗА ЩЕТИТЕ ПО ПРЕВОЗНОТО СРЕДСТВО" #+ Header of section displaying status of individual components of the car. Please keep in upper case where possible.
+
+	key[]: "car_diag_about"
+	val[]: "Преглед на информацията за автомобила и текущото му състояние."
+
+	key[]: "cd_info_model"
+	val[]: "Модел:"
+
+	key[]: "cd_info_drivetrain"
+	val[]: "Задвижване:"
+
+	key[]: "cd_info_bodywork"
+	val[]: "Каросерия:"
+
+	key[]: "cd_info_engine"
+	val[]: "Двигател:"
+
+	key[]: "car_damage"
+	val[]: "Щети по автомобила" #+ Price for the car damage
+
+	key[]: "adj_rearview"
+	val[]: "Задно виждане"
+#@}
+
+#+ Car browser localization.
+#@{
+	key[]: "car_browser_t"
+	val[]: "Преглед на автомобили"
+
+	key[]: "car_browser"
+	val[]: "Списък с автомобили"
+
+	key[]: "car_browser_help"
+	val[]: "Експериментирайте с различни конфигурации на автомобила."  #+ Description for the Car Browser icon.
+#@}
+
+#+ Car career localization.
+#@{
+	key[]: "car_career_log_job"
+	val[]: "Доставки"
+
+	key[]: "car_career_log_customer_satisfaction"
+	val[]: "Удовлетвореност на клиентите"
+
+	key[]: "car_career_stats_job_rating"
+	val[]: "Оценка на извършения превоз"
+
+	key[]: "car_career_progress_stats_experience_cars"
+	val[]: "Автомобили"
+
+	key[]: "car_career_progress_stats_owned_car_count"
+	val[]: "Притежавани автомобили"
+
+	key[]: "car_career_progress_stats_used_car_count"
+	val[]: "Използвани модели за доставки"
+
+	key[]: "car_career_progress_stats_most_used_car"
+	val[]: "Най-използван модел"
+
+	key[]: "car_career_progress_stats_max_customer_bonus"
+	val[]: "Най-голям клиентски бонус"
+
+	key[]: "car_career_progress_stats_max_customer_penalty"
+	val[]: "Най-голяма клиентска неустойка"
+
+	key[]: "car_career_progress_stats_customer_positive"
+	val[]: "Позитивни отзиви"
+
+	key[]: "car_career_progress_stats_customer_neutral"
+	val[]: "Неутрални отзиви"
+
+	key[]: "car_career_progress_stats_customer_negative"
+	val[]: "Отрицателни отзиви"
+
+	key[]: "car_career_progress_stats_longest_perfect_streak"
+	val[]: "Най-дълга перфектна серия от доставки"
+
+	key[]: "car_career_progress_stats_most_money_earned"
+	val[]: "Най-много спечелени пари за един ден"
+
+	key[]: "career_progress_stats_explore_atlas"
+	val[]: "Атлас"
+
+	key[]: "career_progress_stats_explore_pois_explored"
+	val[]: "Разгледани интересни места"
+
+	key[]: "career_progress_stats_explore_postcards_completed"
+	val[]: "Завършени пощенски картички"
+
+	key[]: "career_progress_stats_tab_courier_rating_t"
+	val[]: "Оценка на куриера"
+#@}
+
+#+ Job widget.
+#@{
+	key[]: "truck_job_different_mode"
+	val[]: "Режим на камион<br>Доставка в ход"
+	
+	key[]: "car_job_different_mode"
+	val[]: "Режим на автомобил<br>Задача в ход"
+#@}
+
+#+ World map.
+#@{
+	key[]: "no_gps_different_mode"
+	val[]: "Започнете да шофирате, за да активирате навигацията"
+#@}
+
+#+ Quick travel.
+#@{
+	key[]: "select_quick_travel_destination_economy_reset_truck"
+	val[]: "Засечена е промяна в играта. Моля, изберете дестинация за бързо пътуване за вашия камион:" #+ Shown during economy reset quick travel for truck.
+
+	key[]: "select_quick_travel_destination_economy_reset_car"
+	val[]: "Засечена е промяна в играта. Моля, изберете дестинация за бързо пътуване за вашия автомобил:" #+ Shown during economy reset quick travel for car.
+#@}
+
+#+ Mail screen
+#+
+#+ Shows incomming emails from bank and truck dealers.
+#@{
+	key[]: "mail_switch_vehicle_mode_confirmation"
+	val[]: "За да видите тази информация, трябва да превключите към $VEHICLE_MODE$<br><br>Искате ли да продължите?" #+ Shown when clicking on link in message would cause vehicle mode switch.
+#@}
+
+#+ Atlas localization.
+#@{
+	key[]: "tourist_atlas_filter_all"
+	val[]: "Покажи всичко"
+
+	key[]: "tourist_atlas_filter_touristbs"
+	val[]: "Всички туристически информационни центрове"
+
+	key[]: "tourist_atlas_filter_photo_trophies"
+	val[]: "Всички трофеи от снимки"
+
+	key[]: "tourist_atlas_filter_viewpoints"
+	val[]: "Всички панорамни точки"
+
+	key[]: "tourist_atlas_filter_pointsoi"
+	val[]: "Всички забележителности"
+
+	key[]: "mapl_locations"
+	val[]: "Местоположения:"
+
+	key[]: "mapl_photo_sight"
+	val[]: "Фототрофей"
+
+	key[]: "mapl_viewpoint"
+	val[]: "Панорамна гледка"
+
+	key[]: "mapl_point_of_interest"
+	val[]: "Забележителност"
+
+	key[]: "mapl_point_of_interest_completed"
+	val[]: "Забележителност (открита)"
+
+	key[]: "mapl_point_of_interest_discovered"
+	val[]: "Забележителност (открита)"
+
+	key[]: "mapl_tourist_board"
+	val[]: "Туристически табла"
+
+	key[]: "mapl_tourist_board_completed"
+	val[]: "Туристическо табло (неоткрито)"
+
+	key[]: "mapl_tourist_board_discovered"
+	val[]: "Туристическо табло (открито)"
+
+	key[]: "mapl_tourist_board_undiscovered"
+	val[]: "Туристическо табло (неоткрито)"
+
+	key[]: "mapl_location_states"
+	val[]: "Състояния на местоположението:"
+
+	key[]: "mapl_state_explored"
+	val[]: "Открити"
+
+	key[]: "mapl_state_discovered"
+	val[]: "Открито"
+
+	key[]: "mapl_state_undiscovered"
+	val[]: "Неоткрито"
+
+	key[]: "tourist_atlas_summary_hint"
+	val[]: "Изберете елемент от дясната страна, за да видите подробностите за него"
+
+	key[]: "tourist_atlas_postcardsview"
+	val[]: "Галерия с пощенски картички"
+
+	key[]: "tourist_atlas_locations"
+	val[]: "Местоположения:"
+
+	key[]: "tourist_atlas_last_updated_tb"
+	val[]: "Последно обновен туристически борд:"
+
+	key[]: "tourist_atlas_last_updated_loc"
+	val[]: "Последно обновени местоположения:"
+
+	key[]: "tourist_atlas_list_of_all"
+	val[]: "Списък на всички:"
+
+	key[]: "tourist_atlas_overview_t"
+	val[]: "Преглед на атласа"
+
+	key[]: "tourist_atlas_link"
+	val[]: "Атлас"
+
+	key[]: "tourist_atlas_title"
+	val[]: "АТЛАС"
+
+	key[]: "tourist_atlas_help"
+	val[]: "Отворете личен туристически гид и планирайте пътуването си – откривайте, изследвайте и научавайте за интересни места."
+
+	key[]: "tourist_atlas_explored"
+	val[]: "Открити"
+
+	key[]: "tourist_atlas_discovered"
+	val[]: "Открито"
+
+	key[]: "tourist_atlas_undiscovered"
+	val[]: "Неоткрито"
+
+	key[]: "tourist_atlas_touristbs"
+	val[]: "Туристически табла"
+
+	key[]: "tourist_atlas_photo_trophies"
+	val[]: "Фотографски трофеи"
+
+	key[]: "tourist_atlas_viewpoints"
+	val[]: "Панорамни гледки"
+
+	key[]: "tourist_atlas_pointsoi"
+	val[]: "Интересни места"
+
+	key[]: "tourist_atlas_select_tb"
+	val[]: "Изберете туристическо табло, за да научите повече."
+
+	key[]: "attractions_along_the_road"
+	val[]: "Забележителности по пътя"
+
+	key[]: "belongs_to_tb"
+	val[]: "Принадлежи към туристическо табло:"
+
+	key[]: "tourist_atlas_detail_show_location"
+	val[]: "Показване на местоположението"
+
+	key[]: "overlay_focus_map"
+	val[]: "Фокусиране върху картата"
+
+	key[]: "overlay_focus_panel"
+	val[]: "Фокусиране върху панела"
+
+	key[]: "overlay_open_tb"
+	val[]: "Отваряне на туристическо табло"
+
+	key[]: "overlay_open_item"
+	val[]: "Отваряне на обект"
+
+	key[]: "overlay_select_atlas_item"
+	val[]: "Изберете обект"
+
+	key[]: "tourist_atlas_add_navigation"
+	val[]: "Добавяне към навигацията"
+
+	key[]: "tourist_atlas_remove_navigation"
+	val[]: "Премахване от навигацията"
+
+	key[]: "tourist_atlas_reset_navigation"
+	val[]: "Нулиране на навигацията"
+
+	key[]: "tourist_atlas_view_in_gallery"
+	val[]: "Преглед в галерията"
+
+	key[]: "detail_discover_tb"
+	val[]: "Открийте това туристическо табло."
+
+	key[]: "detail_discover_photo_album_item"
+	val[]: "Открийте туристическия борд, за да научите местоположението му."
+
+	key[]: "detail_explore_photo_album_item"
+	val[]: "Explore the location to learn more."
+
+	key[]: "tourist_atlas_nav_oversize_job"
+	val[]: "Навигацията до местоположения от Атласа е деактивирана по време на превоз на извънгабаритен товар."
+
+	key[]: "tourist_atlas_nav_goal_fixed"
+	val[]: "Навигацията до локации на Атласа са деактивирана в момента. Първо завършете текущата си навигационна цел."
+
+	key[]: "tourist_atlas_nav_disabled"
+	val[]: "Навигацията е изключена. Можете да я включите в настройките."
+
+	key[]: "tourist_atlas_nav_full"
+	val[]: "Навигацията достигна максималния брой добавени точки."
+
+	key[]: "tourist_atlas_nav_requires_vehicle"
+	val[]: "Навигацията изисква превозно средство"
+
+	key[]: "no_discovered_tb"
+	val[]: "Няма открито туристическо табло"
+
+	key[]: "postcard_progress"
+	val[]: "Напредък с картичките"
+
+	key[]: "photo_album_touristbs_tab"
+	val[]: "Туристически табла"
+
+	key[]: "photo_album_touristbs_non_visited_tooltip"
+	val[]: "Туристическото табло все още не е завършено"
+
+	key[]: "photo_album_poi_unknown"
+	val[]: "Забележителността не може да бъде прегледана. Уверете се, че сте активирали съответното(ите) DLC."
+
+	key[]: "pin_children"
+	val[]: "Закачи дъщерните елементи"
+
+	key[]: "unpin_children"
+	val[]: "Откачи дъщерните елементи"
+
+	key[]: "pin_item"
+	val[]: "Постави маркер на картата"
+
+	key[]: "unpin_item"
+	val[]: "Премахни маркера от картата"
+
+	key[]: "atlas_welcome_t"
+	val[]: "ДОБРЕ ДОШЛИ В АТЛАС" #+ Message box title. Keep in upper case where possible.
+
+	key[]: "atlas_welcome_text"
+	val[]: "<align hstyle=left><font face=/font/normal_bold.font>Атлас</font> е вашият личен туристически гид – откривайте, изследвайте и научавайте за интересни места по време на вашето пътуване.<br><br>Започнете, като откриете местно $TOURIST_BOARD$, което ще ви насочи към забележителни места в района:<br><br>$POI$<br>$VIEWPOINT$<br>$LANDMARK$<br><br>Като проучите напълно всяко туристическо табло, ще бъдете възнаградени с картичка, която можете да поставите в превозното си средство.</align>"
+#@}
+
+#+ Tourist atlas reward texts.
+#@{
+	key[]: "new_tourist_atlas_rewards_t"
+	val[]: "ОТКЛЮЧЕНИ НОВИ НАГРАДИ" #+ Title of the window displaying list of the new tourist atlas rewards.
+
+	key[]: "new_tourist_atlas_rewards_help"
+	val[]: "Добавени са нови артикули въз основа на напредъка в Пътешествие. Приложимо за кариера: <font face=/font/normal_bold.font>$profile_name$</font>." #+ The help text for new tourist atlas reward items dialog.
+
+	key[]: "tourist_atlas_reward"
+	val[]: "Пътешествие" #+ Text in explorer on tourist atlas reward accessory.
+
+	key[]: "tourist_atlas_reward_locked"
+	val[]: "Достъпно от <color value=@@clr_sel@@>Пътешествие" #+ Text in configurator when tourist atlas accessory is locked.
+#@}
+
+
+#+ Vehicle garage screen.
+#@{
+	key[]: "car_garage_t"
+	val[]: "МОИТЕ АВТОМОБИЛИ"
+
+	key[]: "car_garage_icon"
+	val[]: "Моите автомобили"
+
+	key[]: "car_garage_help"
+	val[]: "Изберете автомобила, който искате да карате."
+
+	key[]: "vehicle_garage_no_vehicles"
+	val[]: "Няма превозни средства в гаража."
+
+	key[]: "vehicle_garage_sell"
+	val[]: "Продай"
+
+	key[]: "vehicle_garage_configure"
+	val[]: "Конфигуриране"
+
+	key[]: "vehicle_garage_use"
+	val[]: "Изп,"
+
+	key[]: "vehicle_garage_drive"
+	val[]: "Шофиране"
+
+	key[]: "vehicle_garage_sell_t"
+	val[]: "ПРОДАЖБА НА ПРЕВОЗНО СРЕДСТВО"
+
+	key[]: "vehicle_garage_sell_message"
+	val[]: "Наистина ли искате да продадете своя $VEHICLE$ за $MONEY$?"
+
+	key[]: "vehicle_garage_sell_message_on_job"
+	val[]: "Не можете да продадете превозното средство, което карате, докато сте на поръчка! Завършете поръчката си и опитайте отново."
+
+	key[]: "vehicle_garage_use_t"
+	val[]: "ИЗПОЛЗВАЙ ПРЕВОЗНО СРЕДСТВО" #+ Message box title. Please keep in upper case where possible.
+
+	key[]: "vehicle_garage_use_message_on_job"
+	val[]: "Не можете да смените превозното си средство, докато сте на поръчка! Завършете доставката си първо."
+
+	key[]: "garage_configure_message_teleport"
+	val[]: "За да конфигурирате превозно средство, което се използва в момента, трябва да посетите сервиз. Искате ли да използвате бързо пътуване до най-близкия?"
+	
+	key[]: "garage_vehicle_name"
+	val[]: "Превозно средство"
+
+	key[]: "garage_power"
+	val[]: "Мощност на двигател"
+
+	key[]: "garage_fuel_tank"
+	val[]: "Резервоар:"
+
+	key[]: "garage_distance"
+	val[]: "Изминато разстояние:"
+
+	key[]: "garage_condition"
+	val[]: "Състояние:"
+
+	key[]: "vehicle_details_tab"
+	val[]: "Подробности за превозното средство"
+
+	key[]: "all_vehicles_tab"
+	val[]: "Всички превозни средства"
+
+	key[]: "garage_statistics"
+	val[]: "Статистика на превозното средство"
+
+	key[]: "garage_value"
+	val[]: "Стойност"
+
+	key[]: "garage_current_value"
+	val[]: "Текуща стойност:"
+
+	key[]: "garage_value_of_new"
+	val[]: "Цена в автосалона:"
+
+	key[]: "garage_info_model"
+	val[]: "Модел:"
+
+	key[]: "garage_info_drivetrain"
+	val[]: "Задвижване:"
+
+	key[]: "garage_info_bodywork"
+	val[]: "Каросерия:"
+
+	key[]: "garage_info_steering"
+	val[]: "Управление:" #+ Steering side. For example "Steering:&nbsp;&nbsp;&nbsp;&nbsp; Left-hand"
+
+	key[]: "garage_info_engine_name"
+	val[]: "Двигател:"
+
+	key[]: "garage_info_transmission"
+	val[]: "Скоростна кутия:" #+ Type of the gearbox. "For example "Gearbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 speed gearbox"
+
+	key[]: "garage_info_tank"
+	val[]: "Резервоар:"
+
+	key[]: "garage_damage"
+	val[]: "Справка за щетите:"
+
+	key[]: "garage_ownership_time"
+	val[]: "Време на притежание:"
+
+	key[]: "garage_configure_t"
+	val[]: "Конфигуриране на превозно средство"
+
+	key[]: "garage_configure_message_on_job"
+	val[]: "Не можете да конфигурирате превозното си средство, докато сте на задача! Първо завършете доставката си."
+
+	key[]: "garage_fuel_consumption"
+	val[]: "Среден разход на гориво:"
+
+	key[]: "link_locked_msg_car_garage"
+	val[]: "За да достъпите @@car_garage_icon@@, трябва да закупите първия си автомобил."
+
+	key[]: "garage_vehicle_name_column"
+	val[]: "Превозно средство"
+
+	key[]: "garage_ownership_time_column"
+	val[]: "Време на притежание"
+
+	key[]: "garage_power_column"
+	val[]: "Мощност на двигател"
+
+	key[]: "garage_avg_fuel_column"
+	val[]: "Среден разход на гориво"
+
+	key[]: "garage_distance_column"
+	val[]: "За да достъпите @@car_garage_icon@@, трябва да закупите първия си автомобил"
+
+	key[]: "garage_condition_column"
+	val[]: "Състояние"
+
+	key[]: "garage_currently_driving_t"
+	val[]: "В МОМЕНТА ШОФИРАТЕ" #+ Keep capitalized
+	
+#@}
+
+#+ On-screen message
+#+
+#+ Hint that appears after taking a car job. It's composed of two parts, separated by a new line. It has no length limit.
+#@{
+
+	key[]: "car_delivery_ready1"
+	val[]: "Доставката е готова за тръгване."
+
+	key[]: "car_delivery_ready2"
+	val[]: "Карайте до дестинацията."
+
+#@}
+
+#+ Adviser Options
+#@{
+	key[]: "adv_hud_tourist_board_line"
+	val[]: "Атлас за пътешествия" #+ Widget name for the tourist board progress.
+
+	key[]: "adv_hud_tourist_board_newly_discovered"
+	val[]: "Само новооткрити"
+
+	key[]: "adv_hud_tourist_board_completed"
+	val[]: "Туристическото табло е завършено"
+
+	key[]: "adv_hud_tourist_board_details"
+	val[]: "Използвайте $KEY$, за да видите подробностите в атласа"
+
+	key[]: "adv_hud_tourist_board_line_op_tooltip"
+	val[]: "Уведомява ви и показва напредък и информация, докато изследвате места в атласа. Уиджетът се появява динамично в зависимост от вашите настройки."
+#@}
+
+#+ Garage & Shop - car descriptions
+#+ 
+#@{
+
+	key[]: "description_ford_bronco_2024"
+	val[]: "Преродена здрава офройд икона, Bronco съчетава ръбестия ретро стил с мощ, готова за трасета, създадена да покори всеки терен."
+
+	key[]: "description_ford_f150_2023"
+	val[]: "Най-продаваният пикап в Америка от десетилетия, F-150 съчетава сериозна теглителна мощ с всекидневен комфорт и надеждна универсалност."
+
+	key[]: "description_ford_mustang_1967"
+	val[]: "Mustang дефинира ерата на „pony car“ автомобилите с елегантни fastback линии, неповторим силует и рев, който и до днес привлича погледите."
+
+	key[]: "description_ford_crown_victoria_2006"
+	val[]: "Просторен работен кон със задно задвижване, Crown Victoria заслужи мястото си като довереният полицейски автомобил и такси на Америка в продължение на години."
+#@}
 

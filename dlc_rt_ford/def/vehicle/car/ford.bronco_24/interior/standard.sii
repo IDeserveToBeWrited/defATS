@@ -1,0 +1,55 @@
+SiiNunit
+{
+	accessory_interior_data	: std.ford.bronco_24.interior
+	{
+	name: "@@interior_standard@@"
+	price: 5500
+	unlock: 0
+	icon: "car/ford_bronco_24/interior/model/standard"
+	part_type: factory
+
+	model: "/vehicle/car/ford_bronco_24/interior/model/standard.pmd"
+	collision: "/vehicle/car/ford_bronco_24/interior/model/standard.pmc"
+	animated_model: "/vehicle/car/ford_bronco_24/interior/anim/anim.pmd"
+	look: default
+	variant: default
+	ext_model: "/vehicle/car/ford_bronco_24/interior/external/standard.pmd"
+	ext_look: default
+	ext_variant: default
+
+	speed_limiter_value: 163
+
+	defaults[]: "/def/vehicle/car/ford.bronco_24/accessory/steering_w/standard.sii"
+	defaults[]: "/def/vehicle/car/ford.bronco_24/accessory/codrv_seat/standard_black.sii"
+
+@include "sound.sui"
+
+@include "sound_effects.sui"
+
+@include "animations.sui"
+
+@include "dashboard_color.sui"
+
+@include "computers.sui"
+
+	parking_line_type: dynamic_pegs
+
+	parking_line_colors[0]: (1.0, 0.0, 0.0)
+	parking_line_colors[1]: (1.0, 1.0, 0.0)
+	parking_line_colors[2]: (0.0, 1.0, 0.0)
+
+	glass_panes[]: .ford.bronco_24.pane.front
+	glass_panes[]: .ford.bronco_24.pane.win_l
+	glass_panes[]: .ford.bronco_24.pane.win_r
+	glass_panes[]: .ford.bronco_24.pane.left
+	glass_panes[]: .ford.bronco_24.pane.right
+	glass_panes[]: .ford.bronco_24.pane.rear_l
+	glass_panes[]: .ford.bronco_24.pane.rear_m
+	glass_panes[]: .ford.bronco_24.pane.rear_r
+
+@include "seat.sui"
+@include "int_shadow.sui"
+	}
+@include "glass.sui"
+@include "sound_effects_units.sui"
+}

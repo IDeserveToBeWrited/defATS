@@ -1,26 +1,26 @@
 SiiNunit
 {
-sign_board_template : _nameless.1.3348.cf30 {
+sign_board_template : _nameless.1.1547.1ef8 {
  board_name: "us ohb dynamic message 1"
  width: &40e9999a
  height: &3ff33333
  model_name: 2k05y
  items: 1
- items[0]: _nameless.3.c266.5f50
+ items[0]: _nameless.1.153c.05f8
  dynamic_attributes: 1
- dynamic_attributes[0]: _nameless.4.9c77.a7f0
+ dynamic_attributes[0]: _nameless.2.956c.fc88
 }
 
-sign_template_text : _nameless.3.c266.5f50 {
+sign_template_text : _nameless.1.153c.05f8 {
  text: "SLOW DOWN AND<br>MOVE OVER FOR<br>STOPPED VEHICLES"
  font_face: "/font/sign/dot_matrix.font"
- font_size: &3f266666
- text_halign: center
+ font_size: &3f3ae148
+ text_halign: left
  text_valign: center
  font_color: 1544959
  font_opacity: 1
- line_spacing: &bdcccccd
- letter_spacing: &3e19999a
+ line_spacing: &be19999a
+ letter_spacing: &3dcccccd
  id: 1874067455
  area_name: ""
  area_idx: nil
@@ -32,11 +32,23 @@ sign_template_text : _nameless.3.c266.5f50 {
  tag: ""
 }
 
-sign_text_list_attribute : _nameless.4.9c77.a7f0 {
- texts: 2
- texts[0]: "SLOW DOWN AND<br>MOVE OVER FOR<br>STOPPED VEHICLES"
- texts[1]: "CLICK IT<br>OR<br>TICKET"
- change_time: 4
+sign_weather_attribute : _nameless.2.956c.fc88 {
+ attribute_type: default
+ temperature_offset: 0
+ nice_intervals: 3
+ nice_intervals[0]: 3
+ nice_intervals[1]: 5
+ nice_intervals[2]: 13
+ nice_values: 5
+ nice_values[0]: "  SLOW DOWN AND<br>  MOVE OVER FOR<br> STOPPED VEHICLES"
+ nice_values[1]: "    FOG HAZARD<br>   REDUCE SPEED<br>   HEADLIGHTS ON"
+ nice_values[2]: "  SLOW DOWN AND<br>  MOVE OVER FOR<br> STOPPED VEHICLES"
+ nice_values[3]: ""
+ nice_values[4]: ""
+ bad_intervals: 1
+ bad_intervals[0]: 10
+ bad_values: 1
+ bad_values[0]: "    WET ROADS<br>    DRIVE TO<br>    CONDITIONS"
  item_id: 1874067455
  attr_name: text
 }

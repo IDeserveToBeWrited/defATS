@@ -3,10 +3,15 @@ ui_desktop_menu_bar_category : .jobs {
 	name: "@@desktop_menu_category_jobs@@"
 	column_count: 2
 	screen_links[]: "jobs.company"
- 	screen_links[]: "jobs.online"
+ 	screen_link_actions[]: "cancel_job"
+	screen_links[]: "jobs.online"
+ 	screen_link_actions[]: "cancel_job"
  	screen_links[]: "jobs.cargo.market"
+ 	screen_link_actions[]: "cancel_job"
  	screen_links[]: "jobs.external.market.online"
+ 	screen_link_actions[]: "cancel_job"
 	screen_links[]: "jobs.quick"
+ 	screen_link_actions[]: "cancel_job"
 }
 
 ui_desktop_menu_bar_category : .maps {
@@ -15,6 +20,7 @@ ui_desktop_menu_bar_category : .maps {
 	column_count: 2
 	screen_links[]: "screen.map"
 	screen_links[]: "screen.quick.travel"
+	screen_links[]: "screen.atlas"
 }
 
 ui_desktop_menu_bar_category : .online {

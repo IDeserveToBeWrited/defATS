@@ -2040,7 +2040,8 @@ sign_model : sign.434
 	dynamic: true
 	road_model: true
 	instanced: true
-	mass: 100
+	drop_sun_shadows: 1
+	mass: &42480000
 }
 
 sign_model : sign.435
@@ -3664,11 +3665,10 @@ sign_model : sign.553
 	dynamic: true
 	mass: 50
 }
+
 sign_model : sign.554
 {
-
-	sign_name: "warehouse_lamp_01"
-
+	sign_name: warehouse_lamp_01
 	model_desc: "/model/props/lamp/warehouse_lamp_01.pmd"
 	model_coll: "/model/props/lamp/warehouse_lamp_01.pmc"
 	look_name: default
@@ -5916,19 +5916,16 @@ sign_model : sign.sd_bd_19
 
 sign_model : sign.sd_bd_20
 {
-
-	sign_name: "us warning side board 01"
-
+	sign_name: "DO NOT USE us warning side board 01"
 	model_desc: "/model/sign/navigation/us_warn_side_board_01.pmd"
 	model_coll: "/model/sign/navigation/us_warn_side_board_01.pmc"
-	look_name: default
+	look_name: Default
+	category: "editable board"
 
 	stand_classes[]: side_med_1
 
-	category: "editable board"
 	dynamic: true
 	editable: true
-
 }
 
 sign_model : sign.sd_bd_21
@@ -11431,24 +11428,23 @@ sign_model : sign.799
 	editable: false
 	mass: 100.0
 }
+
 sign_model : sign.800
 {
-
-	sign_name: "fish_tail_food_finest_logo"
-
+	sign_name: fish_tail_food_finest_logo
 	model_desc: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_logo.pmd"
 	model_coll: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_logo.pmc"
 
-	dynamic: true
+	dynamic: false
 	editable: false
 	mass: 100.0
 }
+
 sign_model : sign.801
 {
-
-	sign_name: "fish_tail_food_finest_totem"
-
+	sign_name: fish_tail_food_finest_totem
 	model_desc: "/model/sign/company_logos/fish_tail/fish_tail_food_finest_totem.pmd"
+	model_coll: "/model/sign/company_logos/fish_tail/logo_fish_tail_totem.pmc"
 
 	dynamic: true
 	editable: false
@@ -23130,7 +23126,7 @@ sign_model : sign.gas_18007
 
 sign_model : sign.tx_2k001
 {
-	sign_name: "tx lamp tower 01"
+	sign_name: "DO NOT USE tx lamp tower 01 (use model.2k1b3 instead)"
 	model_desc: "/model/props/lamp/tx_lamp_tower_01.pmd"
 	model_coll: "/model/props/lamp/tx_lamp_tower_01.pmc"
 	look_name: "default"
@@ -25337,7 +25333,7 @@ sign_model : sign.2700a
 
 sign_model : sign.2700d
 {
-	sign_name: "mt parking lamp"
+	sign_name: "DO NOT USE mt parking lamp (use model.2k1b0 instead)"
 	model_desc: "/model/props/lamp/mt_parking_lamp.pmd"
 	model_coll: "/model/props/lamp/mt_parking_lamp.pmc"
 	look_name: "default"
@@ -33779,14 +33775,13 @@ sign_model : sign.2k0mr
 	model_desc: "/model/sign/nv_ref_post1_white_2.pmd"
 	model_coll: "/model/sign/nv_ref_post1_white_2.pmc"
 	look_name: "default"
-
 	category: ""
 
 	dynamic: true
 	road_model: true
 	instanced: true
 	drop_sun_shadows: 1
-	mass: 100.0
+	mass: &42480000
 }
 
 sign_model : sign.2k0ms
@@ -33795,14 +33790,13 @@ sign_model : sign.2k0ms
 	model_desc: "/model/sign/nv_ref_post1_yellow_2.pmd"
 	model_coll: "/model/sign/nv_ref_post1_yellow_2.pmc"
 	look_name: "default"
-
 	category: ""
 
 	dynamic: true
 	road_model: true
 	instanced: true
 	drop_sun_shadows: 1
-	mass: 100.0
+	mass: &42480000
 }
 
 sign_model : sign.2k0mt
@@ -33811,14 +33805,13 @@ sign_model : sign.2k0mt
 	model_desc: "/model/sign/nv_ref_post1_snow_white_1.pmd"
 	model_coll: "/model/sign/nv_ref_post1_snow_white_1.pmc"
 	look_name: "default"
-
 	category: ""
 
 	dynamic: true
 	road_model: true
 	instanced: true
 	drop_sun_shadows: 1
-	mass: 100.0
+	mass: &42480000
 }
 
 sign_model : sign.2k0mu
@@ -33827,14 +33820,13 @@ sign_model : sign.2k0mu
 	model_desc: "/model/sign/nv_ref_post1_snow_white_2.pmd"
 	model_coll: "/model/sign/nv_ref_post1_snow_white_2.pmc"
 	look_name: "default"
-
 	category: ""
 
 	dynamic: true
 	road_model: true
 	instanced: true
 	drop_sun_shadows: 1
-	mass: 100.0
+	mass: &42480000
 }
 
 sign_model : sign.2k0mv
@@ -33843,14 +33835,13 @@ sign_model : sign.2k0mv
 	model_desc: "/model/sign/nv_ref_post1_snow_white_blue.pmd"
 	model_coll: "/model/sign/nv_ref_post1_snow_white_blue.pmc"
 	look_name: "default"
-
 	category: ""
 
 	dynamic: true
 	road_model: true
 	instanced: true
 	drop_sun_shadows: 1
-	mass: 100.0
+	mass: &42480000
 }
 
 sign_model : sign.2k0mw
@@ -42455,11 +42446,12 @@ sign_model : sign.1s00d
 
 sign_model : sign.2k0yc
 {
-	sign_name: "us side board white 480x210"
-	model_desc: "/model/sign/navigation/us_side_board_white_480x210.pmd"
-	model_coll: "/model/sign/navigation/us_side_board_white_480x210.pmc"
+	sign_name: "us side board 480x210 multicolor (black text)"
+	model_desc: "/model/sign/navigation/us_side_board_480x210_multicolor_black_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_480x210_multicolor_black_text.pmc"
 	look_name: default
-	category: "editable board"
+	variant_name: default
+	category: "editable/blackText"
 
 	stand_classes[]: side_med_1
 
@@ -44727,9 +44719,9 @@ sign_model : sign.2k12d
 
 sign_model : sign.2k12e
 {
-	sign_name: "us stop one way 2 (91cm)"
-	model_desc: "/model/sign/traffic/us_stop_one_way_2_91.pmd"
-	model_coll: "/model/sign/traffic/us_stop_one_way_2_91.pmc"
+	sign_name: "us stop one way do not enter 2 (91cm)"
+	model_desc: "/model/sign/traffic/us_stop_one_way_do_not_enter_2_91.pmd"
+	model_coll: "/model/sign/traffic/us_stop_one_way_do_not_enter_2_91.pmc"
 	look_name: default
 	variant_name: steel
 	category: ""
@@ -44743,9 +44735,9 @@ sign_model : sign.2k12e
 
 sign_model : sign.2k12f
 {
-	sign_name: "us stop one way 2 (122cm)"
-	model_desc: "/model/sign/traffic/us_stop_one_way_2_122.pmd"
-	model_coll: "/model/sign/traffic/us_stop_one_way_2_122.pmc"
+	sign_name: "us stop one way do not enter 2 (122cm)"
+	model_desc: "/model/sign/traffic/us_stop_one_way_do_not_enter_2_122.pmd"
+	model_coll: "/model/sign/traffic/us_stop_one_way_do_not_enter_2_122.pmc"
 	look_name: default
 	variant_name: steel
 	category: ""
@@ -48876,7 +48868,8 @@ sign_model : sign.2k18d
 	dynamic: true
 	road_model: true
 	instanced: true
-	mass: &42c80000
+	drop_sun_shadows: 1
+	mass: &42480000
 }
 
 sign_model : sign.2k18e
@@ -49682,6 +49675,907 @@ sign_model : sign.2k19p
 	editable: true
 	drop_sun_shadows: 1
 	mass: &42c80000
+}
+
+sign_model : sign.2k19q
+{
+	sign_name: "nd welcome sign 450x250"
+	model_desc: "/model/sign/nd_welcome_sign_450x250.pmd"
+	model_coll: "/model/sign/nd_welcome_sign_450x250.pmc"
+	variant_name: default
+	category: nd
+
+	dynamic_lod_desc[]: "/model/sign/nd_welcome_sign_450x250_lod1.pmd"
+	dynamic_lod_dist[]: 30
+
+	dynamic: false
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k19r
+{
+	sign_name: "nd welcome sign 200x100"
+	model_desc: "/model/sign/nd_welcome_sign_200x100.pmd"
+	model_coll: "/model/sign/nd_welcome_sign_200x100.pmc"
+	variant_name: default
+	category: nd
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k19t
+{
+	sign_name: "nv 1fw wide 1hw wide entrance 1arrow 2dir"
+	model_desc: "/model/sign/navigation/nv_1fw_wide_1hw_wide_entrance_1arrow_2dir.pmd"
+	model_coll: "/model/sign/navigation/nv_1fw_wide_1hw_wide_entrance_1arrow_2dir.pmc"
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k19u
+{
+	sign_name: "nv type2 marker"
+	model_desc: "/model/sign/nv_type2_marker.pmd"
+	model_coll: "/model/sign/nv_type2_marker.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.2k19v
+{
+	sign_name: "us led message board 375x190"
+	model_desc: "/model/sign/us_led_board_375x190.pmd"
+	model_coll: "/model/sign/us_led_board_375x190.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic_lod_desc[]: "/model/sign/us_led_board_375x190_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k19w
+{
+	sign_name: "us led message board 375x190 double"
+	model_desc: "/model/sign/us_led_board_375x190_double.pmd"
+	model_coll: "/model/sign/us_led_board_375x190_double.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+}
+
+sign_model : sign.2k19x
+{
+	sign_name: "us side board 240x90 multicolor (black text)"
+	model_desc: "/model/sign/navigation/us_side_board_240x90_multicolor_black_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_240x90_multicolor_black_text.pmc"
+	look_name: default
+	variant_name: white
+	category: "editable/blackText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k19y
+{
+	sign_name: "us side board 660x240 multicolor (white text)"
+	model_desc: "/model/sign/navigation/us_side_board_660x240_multicolor_white_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_660x240_multicolor_white_text.pmc"
+	look_name: default
+	variant_name: green
+	category: "editable/whiteText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k19z
+{
+	sign_name: "us side board 450x360 (x210 brown | x150 blue)"
+	model_desc: "/model/sign/navigation/us_side_board_450x360_x210_brown_x150_blue.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_450x360_x210_brown_x150_blue.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1a0
+{
+	sign_name: "us side board 330x120 multicolor (white text)"
+	model_desc: "/model/sign/navigation/us_side_board_330x120_multicolor_white_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_330x120_multicolor_white_text.pmc"
+	look_name: default
+	variant_name: green
+	category: "editable/whiteText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1a1
+{
+	sign_name: "us side board 420x150 multicolor (black text)"
+	model_desc: "/model/sign/navigation/us_side_board_420x150_multicolor_black_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_420x150_multicolor_black_text.pmc"
+	look_name: default
+	variant_name: white
+	category: "editable/blackText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1a2
+{
+	sign_name: "us forest service boundry 4s matte double"
+	model_desc: "/model/sign/us_forest_service_boundry_4s_matte_double.pmd"
+	model_coll: "/model/sign/us_forest_service_boundry_4s_matte_double.pmc"
+
+	dynamic_lod_desc[]: "/model/sign/us_forest_service_boundry_4s_matte_double_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.2k1a3
+{
+	sign_name: "us forest service boundry 3s matte double"
+	model_desc: "/model/sign/us_forest_service_boundry_3s_matte_double.pmd"
+	model_coll: "/model/sign/us_forest_service_boundry_3s_matte_double.pmc"
+
+	dynamic_lod_desc[]: "/model/sign/us_forest_service_boundry_3s_matte_double_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.2k1a4
+{
+	sign_name: "us forest service admin 3s matte double"
+	model_desc: "/model/sign/us_forest_service_admin_3s_matte_double.pmd"
+	model_coll: "/model/sign/us_forest_service_admin_3s_matte_double.pmc"
+
+	dynamic_lod_desc[]: "/model/sign/us_forest_service_admin_3s_matte_double_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.2k1a5
+{
+	sign_name: "us forest service recreation site 1 3s matte double"
+	model_desc: "/model/sign/us_forest_service_recreation_site_1_3s_matte_double.pmd"
+	model_coll: "/model/sign/us_forest_service_recreation_site_1_3s_matte_double.pmc"
+
+	dynamic_lod_desc[]: "/model/sign/us_forest_service_recreation_site_1_3s_matte_double_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.2k1a6
+{
+	sign_name: "us forest service recreation opt 1 3s matte double"
+	model_desc: "/model/sign/us_forest_service_recreation_opt_1_3s_matte_double.pmd"
+	model_coll: "/model/sign/us_forest_service_recreation_opt_1_3s_matte_double.pmc"
+
+	dynamic_lod_desc[]: "/model/sign/us_forest_service_recreation_opt_1_3s_matte_double_lod1.pmd"
+	dynamic_lod_dist[]: 50
+
+	dynamic: false
+	editable: true
+}
+
+sign_model : sign.2k1a7
+{
+	sign_name: "ne omaha welcome sign"
+	model_desc: "/model/panorama/ne_omaha/ne_omaha_welcome_sign_dynamic.pmd"
+	model_coll: "/model/panorama/ne_omaha/ne_omaha_welcome_sign_dynamic.pmc"
+	look_name: default
+	variant_name: variant01
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1a8
+{
+	sign_name: "us stop one way 2 (122cm)"
+	model_desc: "/model/sign/traffic/us_stop_one_way_2_122.pmd"
+	model_coll: "/model/sign/traffic/us_stop_one_way_2_122.pmc"
+	look_name: default
+	variant_name: round
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+
+	traffic_rule: "traffic_rule.stop"
+}
+
+sign_model : sign.2k1a9
+{
+	sign_name: "us yellow object marker diamond om1-1"
+	model_desc: "/model/sign/us_yellow_object_marker_diamond_om1-1.pmd"
+	model_coll: "/model/sign/us_yellow_object_marker_diamond_om1-1.pmc"
+	look_name: default
+	variant_name: steel
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1aa
+{
+	sign_name: "mn 1hw dir arrow"
+	model_desc: "/model/sign/navigation/mn_1hw_dir_arrow.pmd"
+	model_coll: "/model/sign/navigation/mn_1hw_dir_arrow.pmc"
+	look_name: default
+	variant_name: default
+	category: mn
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1ab
+{
+	sign_name: "nd lamp 01 short"
+	model_desc: "/model/props/lamp/nd_lamp_01_short.pmd"
+	model_coll: "/model/props/lamp/nd_lamp_01_short.pmc"
+	look_name: default
+	variant_name: default
+	category: nd
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.2k1ae
+{
+	sign_name: "nv reflection post snow yellow 1"
+	model_desc: "/model/sign/nv_ref_post1_snow_yellow_1.pmd"
+	model_coll: "/model/sign/nv_ref_post1_snow_yellow_1.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.2k1af
+{
+	sign_name: "nv reflection post snow yellow 1 orange"
+	model_desc: "/model/sign/nv_ref_post1_snow_yellow_1_orange.pmd"
+	model_coll: "/model/sign/nv_ref_post1_snow_yellow_1_orange.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.2k1ag
+{
+	sign_name: "nv reflection post white 3"
+	model_desc: "/model/sign/nv_ref_post1_white_3.pmd"
+	model_coll: "/model/sign/nv_ref_post1_white_3.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.2k1ah
+{
+	sign_name: "nv reflection post yellow 3"
+	model_desc: "/model/sign/nv_ref_post1_yellow_3.pmd"
+	model_coll: "/model/sign/nv_ref_post1_yellow_3.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.2k1ai
+{
+	sign_name: "nv reflection post snow white 3"
+	model_desc: "/model/sign/nv_ref_post1_snow_white_3.pmd"
+	model_coll: "/model/sign/nv_ref_post1_snow_white_3.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.2k1aj
+{
+	sign_name: "nv reflection post snow yellow 3"
+	model_desc: "/model/sign/nv_ref_post1_snow_yellow_3.pmd"
+	model_coll: "/model/sign/nv_ref_post1_snow_yellow_3.pmc"
+	look_name: default
+
+	dynamic: true
+	road_model: true
+	instanced: true
+	drop_sun_shadows: 1
+	mass: &42480000
+}
+
+sign_model : sign.2k1ak
+{
+	sign_name: "warehouse lamp 01 brown"
+	model_desc: "/model/props/lamp/warehouse_lamp_01_brown.pmd"
+	model_coll: "/model/props/lamp/warehouse_lamp_01_brown.pmc"
+	look_name: brown
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.2k1al
+{
+	sign_name: "warehouse lamp 01 brown double"
+	model_desc: "/model/props/lamp/warehouse_lamp_01_brown_double.pmd"
+	model_coll: "/model/props/lamp/warehouse_lamp_01_brown_double.pmc"
+	look_name: brown
+
+	dynamic: false
+	road_model: true
+	instanced: true
+}
+
+sign_model : sign.2k1am
+{
+	sign_name: "us side board white 150x60"
+	model_desc: "/model/sign/navigation/us_side_board_white_150x60.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_white_150x60.pmc"
+	look_name: default
+	variant_name: default
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1an
+{
+	sign_name: "us side board white 150x60 x2"
+	model_desc: "/model/sign/navigation/us_side_board_white_150x60_x2.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_white_150x60_x2.pmc"
+	look_name: default
+	variant_name: default
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1ao
+{
+	sign_name: "us side board white 150x60 x3"
+	model_desc: "/model/sign/navigation/us_side_board_white_150x60_x3.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_white_150x60_x3.pmc"
+	look_name: default
+	variant_name: default
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1ap
+{
+	sign_name: "us side board 290x90 multicolor (white text)"
+	model_desc: "/model/sign/navigation/us_side_board_290x90_multicolor_white_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_290x90_multicolor_white_text.pmc"
+	look_name: default
+	variant_name: green
+	category: "editable/whiteText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1aq
+{
+	sign_name: "us side board 290x135 multicolor (white text)"
+	model_desc: "/model/sign/navigation/us_side_board_290x135_multicolor_white_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_290x135_multicolor_white_text.pmc"
+	look_name: default
+	variant_name: green
+	category: "editable/whiteText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1ar
+{
+	sign_name: "us side board 135x105 multicolor black text"
+	model_desc: "/model/sign/navigation/us_side_board_135x105_multicolor_black_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_135x105_multicolor_black_text.pmc"
+	look_name: default
+	variant_name: white
+	category: "editable/blackText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1as
+{
+	sign_name: "us side board green 600x300 ep"
+	model_desc: "/model/sign/navigation/us_side_board_green_600x300_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_600x300_ep.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1at
+{
+	sign_name: "us side board green 600x360 ep"
+	model_desc: "/model/sign/navigation/us_side_board_green_600x360_ep.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_green_600x360_ep.pmc"
+	look_name: default
+	variant_name: default
+	category: "editable board"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1au
+{
+	sign_name: "us side board 270x210 multicolor (white text)"
+	model_desc: "/model/sign/navigation/us_side_board_270x210_multicolor_white_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_270x210_multicolor_white_text.pmc"
+	look_name: default
+	variant_name: green
+	category: "editable/whiteText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1av
+{
+	sign_name: "us side board 390x240 multicolor (white text)"
+	model_desc: "/model/sign/navigation/us_side_board_390x240_multicolor_white_text.pmd"
+	model_coll: "/model/sign/navigation/us_side_board_390x240_multicolor_white_text.pmc"
+	look_name: default
+	variant_name: green
+	category: "editable/whiteText"
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1aw
+{
+	sign_name: "us slow children at play"
+	model_desc: "/model/sign/traffic/us_slow_children_at_play.pmd"
+	model_coll: "/model/sign/traffic/us_slow_children_at_play.pmc"
+	look_name: default
+	variant_name: steel
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.2k1ax
+{
+	sign_name: "ia overhead stand 01 3-3fw (40m)"
+	model_desc: "/model/sign/navigation/ia_overhead_stand_01_33fw_40m.pmd"
+	model_coll: "/model/sign/navigation/ia_overhead_stand_01_33fw_40m.pmc"
+	look_name: default
+	variant_name: default
+	category: "overhead stand/ia/01"
+
+	dynamic: false
+	editable: true
+	drop_sun_shadows: 1
+	boards: true
+}
+
+sign_model : sign.2k1ay
+{
+	sign_name: "us stellacars nav sign 240x120"
+	model_desc: "/model/sign/navigation/us_stellacars_nav_sign_240x120.pmd"
+	model_coll: "/model/sign/navigation/us_stellacars_nav_sign_240x120.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	editable: true
+	mass: &42c80000
+}
+
+sign_model : sign.2k1az
+{
+	sign_name: "us stellacars nav sign 240x75"
+	model_desc: "/model/sign/navigation/us_stellacars_nav_sign_240x75.pmd"
+	model_coll: "/model/sign/navigation/us_stellacars_nav_sign_240x75.pmc"
+	look_name: default
+	variant_name: default
+
+	dynamic: true
+	editable: true
+	mass: &42c80000
+}
+
+sign_model : sign.2k1b2
+{
+	sign_name: "us no U turn (76x76) mirrored"
+	model_desc: "/model/sign/traffic/us_trsign_no_u_turn_76x76_mirror.pmd"
+	model_coll: "/model/sign/traffic/us_trsign_no_u_turn_76x76_mirror.pmc"
+	variant_name: steel
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_4q001
+{
+	sign_name: "sd motorcycle 01"
+	model_desc: "/model/panorama/sd_wall/sd_motorcycle_01.pmd"
+	model_coll: "/model/panorama/sd_wall/sd_motorcycle_01.pmc"
+
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_01_lod1.pmd"
+	dynamic_lod_dist[]: 30
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_01_lod2.pmd"
+	dynamic_lod_dist[]: 75
+
+	dynamic: true
+	mass: &43480000
+}
+
+sign_model : sign.sd_2k005
+{
+	sign_name: "sd 1hw dir"
+	model_desc: "/model/sign/navigation/sd_1hw_dir.pmd"
+	model_coll: "/model/sign/navigation/sd_1hw_dir.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k006
+{
+	sign_name: "sd 1hw jct"
+	model_desc: "/model/sign/navigation/sd_1hw_jct.pmd"
+	model_coll: "/model/sign/navigation/sd_1hw_jct.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k007
+{
+	sign_name: "sd 1hw arrow"
+	model_desc: "/model/sign/navigation/sd_1hw_arrow.pmd"
+	model_coll: "/model/sign/navigation/sd_1hw_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k008
+{
+	sign_name: "sd 2hw arrow"
+	model_desc: "/model/sign/navigation/sd_2hw_arrow.pmd"
+	model_coll: "/model/sign/navigation/sd_2hw_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k009
+{
+	sign_name: "sd 2hw dir arrow"
+	model_desc: "/model/sign/navigation/sd_2hw_dir_arrow.pmd"
+	model_coll: "/model/sign/navigation/sd_2hw_dir_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k00a
+{
+	sign_name: "sd 1hw dir arrow"
+	model_desc: "/model/sign/navigation/sd_1hw_dir_arrow.pmd"
+	model_coll: "/model/sign/navigation/sd_1hw_dir_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k00c
+{
+	sign_name: "us 1hw sd 1hw dir"
+	model_desc: "/model/sign/navigation/us_1hw_sd_1hw_dir.pmd"
+	model_coll: "/model/sign/navigation/us_1hw_sd_1hw_dir.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k00e
+{
+	sign_name: "us 1hw sd 1hw arrow"
+	model_desc: "/model/sign/navigation/us_1hw_sd_1hw_arrow.pmd"
+	model_coll: "/model/sign/navigation/us_1hw_sd_1hw_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k00f
+{
+	sign_name: "sd 1hw us 1hw arrow"
+	model_desc: "/model/sign/navigation/sd_1hw_us_1hw_arrow.pmd"
+	model_coll: "/model/sign/navigation/sd_1hw_us_1hw_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k00g
+{
+	sign_name: "sd 1fw 1hw dir arrow"
+	model_desc: "/model/sign/navigation/sd_1fw_1hw_dir_arrow.pmd"
+	model_coll: "/model/sign/navigation/sd_1fw_1hw_dir_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k00i
+{
+	sign_name: "sd 1hw wide dir"
+	model_desc: "/model/sign/navigation/sd_1hw_wide_dir.pmd"
+	model_coll: "/model/sign/navigation/sd_1hw_wide_dir.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_2k00k
+{
+	sign_name: "sd 1hw wide dir arrow"
+	model_desc: "/model/sign/navigation/sd_1hw_wide_dir_arrow.pmd"
+	model_coll: "/model/sign/navigation/sd_1hw_wide_dir_arrow.pmc"
+	variant_name: default
+	category: sd
+
+	stand_classes[]: side_med_1
+
+	dynamic: true
+	editable: true
+	drop_sun_shadows: 1
+	mass: &42c80000
+}
+
+sign_model : sign.sd_4q002
+{
+	sign_name: "sd motorcycle 02"
+	model_desc: "/model/panorama/sd_wall/sd_motorcycle_02.pmd"
+	model_coll: "/model/panorama/sd_wall/sd_motorcycle_02.pmc"
+
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_02_lod1.pmd"
+	dynamic_lod_dist[]: 35
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_02_lod2.pmd"
+	dynamic_lod_dist[]: 75
+
+	dynamic: true
+	mass: &43620000
+}
+
+sign_model : sign.sd_4q003
+{
+	sign_name: "sd motorcycle 03"
+	model_desc: "/model/panorama/sd_wall/sd_motorcycle_03.pmd"
+	model_coll: "/model/panorama/sd_wall/sd_motorcycle_03.pmc"
+
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_03_lod1.pmd"
+	dynamic_lod_dist[]: 35
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_03_lod2.pmd"
+	dynamic_lod_dist[]: 75
+
+	dynamic: true
+	mass: &43630000
+}
+
+sign_model : sign.sd_4q004
+{
+	sign_name: "sd motorcycle 04"
+	model_desc: "/model/panorama/sd_wall/sd_motorcycle_04.pmd"
+	model_coll: "/model/panorama/sd_wall/sd_motorcycle_04.pmc"
+
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_04_lod1.pmd"
+	dynamic_lod_dist[]: 35
+	dynamic_lod_desc[]: "/model/panorama/sd_wall/sd_motorcycle_04_lod2.pmd"
+	dynamic_lod_dist[]: 75
+
+	dynamic: true
+	mass: &439e8000
 }
 
 }

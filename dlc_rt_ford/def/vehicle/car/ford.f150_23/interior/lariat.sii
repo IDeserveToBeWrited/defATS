@@ -1,0 +1,54 @@
+SiiNunit
+{
+accessory_interior_data	: lar.ford.f150_23.interior
+{
+	name: "@@interior_lariat@@"
+	price: 5500
+	unlock: 0
+	icon: "car/ford_f150_23/interior/lariat"
+	part_type: factory
+
+	model: "/vehicle/car/ford_f150_23/interior/lariat.pmd"
+	animated_model: "/vehicle/car/ford_f150_23/interior/anim/anim_lariat.pmd"
+	collision: "/vehicle/car/ford_f150_23/interior/lariat.pmc"
+	look: Default
+	variant: Default
+	ext_model: "/vehicle/car/ford_f150_23/interior/external/lariat.pmd"
+	ext_look: default
+	ext_variant: default
+
+	speed_limiter_value: 163
+
+	defaults[]: "/def/vehicle/car/ford.f150_23/accessory/steering_w/standard.sii"
+	defaults[]: "/def/vehicle/car/ford.f150_23/accessory/codrv_seat/lariat_black.sii"
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+@include "animations.sui"
+
+@include "computers.sui"
+
+@include "dashboard_color.sui"
+
+	parking_line_type: dynamic_pegs
+
+	parking_line_colors[0]: (1.0, 0.0, 0.0)
+	parking_line_colors[1]: (1.0, 1.0, 0.0)
+	parking_line_colors[2]: (0.0, 1.0, 0.0)
+
+@include "seat.sui"
+
+@include "int_shadow.sui"
+
+	glass_panes[]: .ford.f150_23.r.pane.back_b
+	glass_panes[]: .ford.f150_23.r.pane.close
+	glass_panes[]: .ford.f150_23.r.pane.close1
+	glass_panes[]: .ford.f150_23.pane.far1
+	glass_panes[]: .ford.f150_23.pane.far2
+	glass_panes[]: .ford.f150_23.pane.front
+}
+@include "glass.sui"
+#@include "glass_sl.sui"
+@include "sound_effects_units.sui"
+}

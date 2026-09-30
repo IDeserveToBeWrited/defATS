@@ -1,0 +1,41 @@
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX South Dacota Highway Patrol XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.dylamic.sport.sd_hp
+{
+	accessories[]: .dylamic.sport.sd_hp.chassis
+	accessories[]: .dylamic.sport.sd_hp.fwheel
+	accessories[]: .dylamic.sport.sd_hp.rwheel
+
+	max_speed: 280
+	vehicle_mass: 1980
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+	tags[]: highway
+	license_plate_type: police_hp
+
+	spawn_ratio: 0
+
+@include "drivers_police.sui"
+	
+}
+
+vehicle_accessory: .dylamic.sport.sd_hp.chassis
+{
+	data_path: "/def/vehicle/ai/dylamic_sport_premium_25/sd_hp.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.sport.sd_hp.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in.sii"
+}
+
+vehicle_wheel_accessory: .dylamic.sport.sd_hp.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in.sii"
+
+}

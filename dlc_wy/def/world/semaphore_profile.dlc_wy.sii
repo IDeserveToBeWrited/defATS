@@ -56,7 +56,7 @@ tr_semaphore_profile : tr_sem_prof.212t111.wyoming
 	model[17]: ""
 	model[18]: "left_column"
 	model[19]: "left_side"
-	
+
 	interval: 19
 	interval[0]: (20.0, 4.0, 44.0, 0.0)		#T jct  ^
 	interval[1]: (36.0, 4.0, 28.0, 0.0)		#straight left <--
@@ -675,16 +675,16 @@ tr_semaphore_profile : tr_sem_prof.212x111_tur4.wyoming
 	interval[5]: (20.0, 4.0, 60.0, 0.0)
 	interval[6]: (20.0, 4.0, 60.0, 0.0)
 	interval[7]: (20.0, 4.0, 60.0, 0.0)
-	interval[8]: (10.0, 4.0, 70.0, 0.0)	
-	interval[9]: (10.0, 4.0, 70.0, 0.0)	
-	interval[10]: (10.0, 4.0, 70.0, 0.0)	
-	interval[11]: (10.0, 4.0, 70.0, 0.0)	
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
 	interval[12]: (20.0, 4.0, 60.0, 0.0)
 	interval[13]: (20.0, 4.0, 60.0, 0.0)
 	interval[14]: (20.0, 4.0, 60.0, 0.0)
 	interval[15]: (20.0, 4.0, 60.0, 0.0)
 	interval[16]: (10.0, 4.0, 70.0, 0.0)
-	interval[17]: (10.0, 4.0, 70.0, 0.0)	
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
 	interval[18]: (10.0, 4.0, 70.0, 0.0)
 	interval[19]: (10.0, 4.0, 70.0, 0.0)
 
@@ -2105,16 +2105,16 @@ tr_semaphore_profile : tr_sem_prof.212x111t4_v2.wyoming
 	interval[5]: (20.0, 4.0, 60.0, 0.0)
 	interval[6]: (20.0, 4.0, 60.0, 0.0)
 	interval[7]: (20.0, 4.0, 60.0, 0.0)
-	interval[8]: (10.0, 4.0, 70.0, 0.0)	
-	interval[9]: (10.0, 4.0, 70.0, 0.0)	
-	interval[10]: (10.0, 4.0, 70.0, 0.0)	
-	interval[11]: (10.0, 4.0, 70.0, 0.0)	
+	interval[8]: (10.0, 4.0, 70.0, 0.0)
+	interval[9]: (10.0, 4.0, 70.0, 0.0)
+	interval[10]: (10.0, 4.0, 70.0, 0.0)
+	interval[11]: (10.0, 4.0, 70.0, 0.0)
 	interval[12]: (20.0, 4.0, 60.0, 0.0)
 	interval[13]: (20.0, 4.0, 60.0, 0.0)
 	interval[14]: (20.0, 4.0, 60.0, 0.0)
 	interval[15]: (20.0, 4.0, 60.0, 0.0)
-	interval[16]: (10.0, 4.0, 70.0, 0.0)	
-	interval[17]: (10.0, 4.0, 70.0, 0.0)	
+	interval[16]: (10.0, 4.0, 70.0, 0.0)
+	interval[17]: (10.0, 4.0, 70.0, 0.0)
 	interval[18]: (10.0, 4.0, 70.0, 0.0)
 	interval[19]: (10.0, 4.0, 70.0, 0.0)
 
@@ -2163,68 +2163,6 @@ tr_semaphore_profile : tr_sem_prof.212x111t4_v2.wyoming
 	model[18]: "left_turn_2"
 	model[19]: "left_short_2"
 	model[20]: ""
-}
-
-tr_semaphore_profile : tr_sem_prof.crossing.wyoming
-{
-
-	name: "road crossing - country"
-
-	interval[]: (50.0, 550.0, 350.0, 20.0)
-
-	cycle[]: 4.0
-
-	type[]: barrier_distance
-	type[]: model_only
-
-	id_map: 12
-	id_map[0]: 0
-	id_map[1]: 0
-	id_map[2]: 0
-	id_map[3]: 0
-	id_map[4]: 0
-	id_map[5]: 0
-	id_map[6]: 0
-	id_map[7]: 0
-	id_map[8]: 0
-	id_map[9]: 0
-	id_map[10]: 0
-	id_map[11]: 0
-
-	model: 12
-	model[0]: ""
-
-	# 1-road x 1-rail
-	model[1]: "crossing_r"
-	model[2]: "crossing_l"
-
-	# 1-road x 2-rail
-	model[3]: "crossing2_r"
-	model[4]: "crossing2_l"
-
-	# 1-road x 2-rail
-	model[5]: "cr1_r_2ln"
-	model[6]: "cr1_l_2ln"
-
-	# 2-road x 2-rail
-	model[7]: "cr2_r_2ln"
-	model[8]: "cr2_l_2ln"
-
-	model[9]: "train_w_l"
-	model[10]: "train_w_r"
-	model[11]: "train_w_s"
-}
-
-tr_semaphore_profile : tr_sem_prof.crossing_o.wyoming
-{
-
-	name: "road crossing - country (offset)"
-
-	inherited: tr_sem_prof.crossing.wyoming
-
-	# Use ID offset to allow combining this profile with others
-	#
-	id_offset: 20
 }
 
 }

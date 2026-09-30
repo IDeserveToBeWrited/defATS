@@ -1,0 +1,51 @@
+SiiNunit
+{
+accessory_truck_data : vehicle.ford.mustang_67
+{
+	info[]: "@@brand_ford@@"
+	info[]: "@@series_ford_mustang_1967@@"
+	info[]: "@@description_ford_mustang_1967@@"
+
+	tags[]: "muscle"
+	tags[]: "veteran"
+
+	driver_animation: "/asset/character/human/driver/$driver_type$/ford_mustang_67_ani.pma"
+
+	behind_camera: camera.behind.car
+	interior_camera: camera.interior.ford.mustang_67
+	interior_camera_oculus: camera.interior.ford.mustang_67.oculus
+	bumper_camera: camera.bumper.car
+	window_camera: camera.window.car
+	cabin_camera: camera.cabin.car
+	wheel_camera: camera.wheel.car
+	top_camera: camera.top.car
+	tv_camera: camera.tv.basic
+	wander_camera: camera.wander
+	debug_camera: camera.debug
+
+	fallback[]: "chassis|rwd.sii"
+	fallback[]: "cabin|fastback.sii"
+	fallback[]: "engine|challenger_289v8.sii"
+	fallback[]: "transmission|m3sp.sii"
+	fallback[]: "interior|deluxe_black.sii"
+	fallback[]: "p_tire|mustang67_f70x14.sii"
+	fallback[]: "p_disc|mustang67_f70x14_steel.sii"
+	fallback[]: "head_light|standard.sii"
+	fallback[]: "paint_job|color5.sii"
+
+	trims[]: .gt
+
+	use_non_wheel_pin_placement_from_model: true
+
+@include "/def/vehicle/car/common_car_data.sui"
+
+}
+
+trim_rule : .gt
+{
+	name: "@@trim_gt@@"
+	accessory[]: "accessory/exhaust/gt.sii"
+	accessory[]: "accessory/grill/gt.sii"
+}
+}
+

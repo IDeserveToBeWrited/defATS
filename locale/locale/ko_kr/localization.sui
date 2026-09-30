@@ -41,6 +41,12 @@
 	key[]: "loading_no_job"
 	val[]: "바람처럼 자유로움"
 
+	key[]: "loading_location_country"
+	val[]: "$COUNTRY$ 어딘가에" #+ Message shown on loading screen when player location is inside specific country.
+
+	key[]: "loading_changing_mode"
+	val[]: "옮기기" #+ Message shown on loading screen when player is switching between vehicle modes.
+
 	key[]: "current_job_title"
 	val[]: "현재 배차"
 
@@ -124,17 +130,17 @@
 
 #+ Truck analysis feature - truck konfigurator and pop-up
 
-	key[]: "truck_analysis_t"
-	val[]: "차량 분석" #+ Header of the widget in truck configurator
+	key[]: "vehicle_analysis_t"
+	val[]: "차량 분석" #+ Header of the widget in vehicle configurator
 
-	key[]: "truck_analysis_popup_t"
+	key[]: "vehicle_analysis_popup_t"
 	val[]: "차량 분석" #+ Header of the pop-up when taking heavy cargo
 
-	key[]: "current_truck_params"
-	val[]: "차량 구성" #+ Header inside the truck analysis widget for truck parameters
+	key[]: "current_vehicle_params"
+	val[]: "차량 구성" #+ Header inside the vehicle analysis widget for vehicle parameters
 
-	key[]: "current_truck_parameters"
-	val[]: "차량 구성" #+ Header inside the truck analysis pop-up for truck parameters
+	key[]: "current_vehicle_parameters"
+	val[]: "차량 구성" #+ Header inside the vehicle analysis pop-up for vehicle parameters
 
 	key[]: "normal_cargo"
 	val[]: "일반 화물" #+ name of the bar for normal cargo suitability
@@ -190,8 +196,8 @@
 	key[]: "truck_analysis_heavy_introduction"
 	val[]: "중량화물을 운송하려고 합니다. 현재 트럭 구성을 검토하여 문제가 없는지 확인하십시오." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
-	key[]: "truck_analysis_info_tooltip"
-	val[]: "예상되는 운송 수단을 감안할 때, 운전기술 및 법적 제한사항을 고려하여 차량을 조정하십시오." #+  General tooltip description of Truck Analysis feature
+	key[]: "vehicle_analysis_info_tooltip"
+	val[]: "예상되는 운송 수단을 감안할 때, 운전기술 및 법적 제한사항을 고려하여 차량을 조정하십시오." #+  General tooltip description of Vehicle Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "경량화물 및 중형화물 운송 업무에 최적화 됨" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -200,10 +206,10 @@
 	val[]: "중량화물 및 특수화물 운송 업무에 최적화 됨" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "좁은 공간에서 차량이 움직일 수 있는 능력" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "좁은 공간에서 차량이 움직일 수 있는 능력" #+  Tooltip description for the Maneuverability bar in Vehicle Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "오르막과 내리막을 더욱 부드럽게 주행하기 위해 최적화된 차량 파워트레인" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "오르막과 내리막을 더욱 부드럽게 주행하기 위해 최적화된 차량 파워트레인" #+  Tooltip description for the Hill Traversal bar in Vehicle Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "평탄하지 않고 거친 표면을 지나갈 수 있는 능력" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -275,7 +281,7 @@
 	key[]: "truck_service"
 	val[]: "서비스" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
-	key[]: "truck_service_about"
+	key[]: "vehicle_service_about"
 	val[]: "차량을 정비 또는 수리합니다. 훌륭한 운전자는 자신의 차량을 항상 최상의 상태로 유지합니다." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
@@ -287,8 +293,8 @@
 	key[]: "truck_service_replace_all"
 	val[]: "모두 교체" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
-	key[]: "truck_service_truck_t"
-	val[]: "차량 대미지 리포트" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	key[]: "vehicle_service_vehicle_t"
+	val[]: "차량 대미지 리포트" #+ Header of section displaying status of individual components of the vehicle. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "트레일러 대미지 리포트" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -296,8 +302,8 @@
 	key[]: "repair"
 	val[]: "확인" #+ Button which confirms selected actions.
 
-	key[]: "truck_damage"
-	val[]: "차량 대미지" #+ Price for the truck damage
+	key[]: "vehicle_damage"
+	val[]: "차량 대미지" #+ Price for the vehicle damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -305,13 +311,13 @@
 #+ Allows to add or remove various accessories.
 #@{
 
-	key[]: "truck_config_t"
+	key[]: "vehicle_config_t"
 	val[]: "차량 구성" #+ Title of the screen. Please keep in upper case where possible.
 
-	key[]: "truck_config"
-	val[]: "차량 구성" #+ Icon allowing player to upgrade the truck.
+	key[]: "vehicle_config"
+	val[]: "차량 구성" #+ Icon allowing player to upgrade the vehicle.
 
-	key[]: "truck_config_about"
+	key[]: "vehicle_config_about"
 	val[]: "아시다시피, 당신은 차량을 튜닝 및 페인트를 칠하여 좀 더 만족할 수 있을겁니다." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
@@ -410,7 +416,7 @@
 	key[]: "truck_diag"
 	val[]: "차량 진단" #+ Icon allowing player to show damage on the truck.
 
-	key[]: "truck_diag_about"
+	key[]: "vehicle_diag_about"
 	val[]: "차량 및 현재 상태에 대한 정보를 볼 수 있습니다."
 
 	key[]: "truck_diag_warning"
@@ -498,8 +504,8 @@
 	key[]: "cart_not_empty"
 	val[]: "주문하신 품목이 아직 장착되어 있습니다.<br><br>정말 모든 수정사항을 취소하시겠습니까?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
-	key[]: "borrowed_truck_refusal"
-	val[]: "고용주들은 어설프게 수리된 당신의 차량을 타고싶진 않을겁니다." #+ Shown if user attempts to upgrade a quick job truck.
+	key[]: "borrowed_vehicle_refusal"
+	val[]: "고용주들은 어설프게 수리된 당신의 차량을 타고싶진 않을겁니다." #+ Shown if user attempts to upgrade a quick job vehicle.
 
 	key[]: "trailer_job_major_change"
 	val[]: "운송 도중 트레일러의 종류, 차체 또는 샤시를 바꿀 수 없습니다! 운송을 끝내고 다시 시도하시기 바랍니다." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -540,6 +546,9 @@
 
 	key[]: "b_grill"
 	val[]: "하부 그릴 가드"
+
+	key[]: "bed_addon"
+	val[]: "침대 애드온"
 
 	key[]: "bullbar"
 	val[]: "불 바"
@@ -602,7 +611,7 @@
 	val[]: "왼쪽 배기관"
 
 	key[]: "exhaust_m"
-	val[]: "뒷 배기관" #+ An open exhaust behind truck's cab. Usully one or two large vertical steel or chromed exhaust tubes.
+	val[]: "뒤쪽 배기관" #+ An open exhaust behind truck's cab. Usully one or two large vertical steel or chromed exhaust tubes.
 
 	key[]: "exhaust_r"
 	val[]: "오른쪽 배기관"
@@ -649,6 +658,9 @@
 	key[]: "f_intk_b_cab"
 	val[]: "전면 마스크 립" #+ Bars of plastic radiator mask (grill) in on the truck's front
 
+	key[]: "f_light"
+	val[]: "전면 라이트"
+
 	key[]: "f_light_chs"
 	val[]: "전조등"
 
@@ -679,8 +691,11 @@
 	key[]: "f_wnd_frame"
 	val[]: "윈드실드 프레임" #+ The plate under truck windshield (where wipers are installed).
 
+	key[]: "fenders"
+	val[]: "펜더" #+ Fenders accessory, word for all fenders on vehicle.
+
 	key[]: "filter"
-	val[]: "에어 필터" #+ Air filter accessoty.
+	val[]: "에어 필터" #+ Air filter accessory.
 
 	key[]: "flag_r"
 	val[]: "오른쪽 창문 깃발" #+ Right window flag
@@ -690,6 +705,9 @@
 
 	key[]: "frntglss_mid"
 	val[]: "윈드실드 센터" #+ Pin that is placed on the bottom of the windshield centre to accomodate various decarative elements
+
+	key[]: "fuelcap"
+	val[]: "연료 캡"
 
 	key[]: "fwheel"
 	val[]: "앞 휠"
@@ -710,7 +728,7 @@
 	val[]: "무드등" #+ Interio background light accessory
 
 	key[]: "l_horn"
-	val[]: "왼쪽 경적"
+	val[]: "좌측 경적"
 
 	key[]: "l_pillow"
 	val[]: "베개 아이템"	#+ Interior accessories placed on pillow place in back of the truck cabin
@@ -726,6 +744,9 @@
 
 	key[]: "nuts"
 	val[]: "너트" #+ Wheel nuts
+
+	key[]: "r_badge"
+	val[]: "후면 배지" #+ Badge or logo on the rear of a vehicle
 
 	key[]: "r_banner"
 	val[]: "후방 배너" #+ Banner on the rear
@@ -749,13 +770,22 @@
 	val[]: "라이트 바"
 
 	key[]: "r_horn"
-	val[]: "오른쪽 경적"
+	val[]: "우측 경적"
 
 	key[]: "r_light"
 	val[]: "후방 라이트" #+ Rear lights accessory
 
+	key[]: "r_logo"
+	val[]: "후면 로고"
+
 	key[]: "r_mudflap"
 	val[]: "후면 흙받이" #+ A couple of rear mudflaps
+
+	key[]: "r_panel"
+	val[]: "패널"
+
+	key[]: "r_turn_light"
+	val[]: "후방 방향지시등"
 
 	key[]: "r_wheel"
 	val[]: "뒷 휠"
@@ -765,6 +795,9 @@
 
 	key[]: "rn_mirror"
 	val[]: "오른쪽 노즈 미러"
+
+	key[]: "roof_addon"
+	val[]: "루프 애드온"
 
 	key[]: "rwheel"
 	val[]: "뒷 휠"
@@ -790,6 +823,9 @@
 	key[]: "s_strip"
 	val[]: "사이드 줄무늬"
 
+	key[]: "s_vent"
+	val[]: "벤트"
+
 	key[]: "set_cuphold"
 	val[]: "컵 홀더 세트" #+ Large Pin for sets of small pins of the cup holder accessories
 
@@ -810,6 +846,9 @@
 
 	key[]: "sideskrt_bar"
 	val[]: "사이드스커트 바"
+
+	key[]: "spare_w"
+	val[]: "스페어 휠"
 
 	key[]: "steering_w"
 	val[]: "스티어링 휠" #+ Steering wheel
@@ -846,6 +885,9 @@
 
 	key[]: "toystand"
 	val[]: "콘솔 아이템" #+ Interior accessories placed on stands or centre console available in the truck
+
+	key[]: "trunk"
+	val[]: "트렁크"
 
 	key[]: "windowtrim"
 	val[]: "윈도우 트림" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
@@ -1045,7 +1087,7 @@
 	val[]: "게임이 수정되었습니다! 게임 수정으로 인한 게임 세이브 호환성 문제를 방지하기 위해, 완료되지 않은 모든 배송이 위약금 없이 취소되었습니다." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "게임이 수정되었습니다!<br><br>게임 수정으로 인한 게임 세이브 호환성 문제를 방지하기 위해, 완료되지 않은 모든 배송이 위약금 없이 취소되었으며 트럭을 안전한 장소에 다시 주차해야 합니다.<br><br>계속하려면 빠른 여행의 목적지를 선택하십시오." #+ Game state reset info message, plus free teleport
+	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "저장 중..." #+ Game save indicator message.
@@ -1073,6 +1115,9 @@
 
 	key[]: "load_game"
 	val[]: "게임 불러오기" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
+
+	key[]: "load_game_failed"
+	val[]: "저장된 게임을 불러오는 데 실패했습니다."
 
 	key[]: "load_game_desc"
 	val[]: "이전에 저장한 게임을 불러옵니다. 현재 진행 상황은 저장되지 않습니다!" #+ Help message associated with load game icon.
@@ -1353,7 +1398,7 @@
 	val[]: "도로 운행 거리" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "화물을 선택하면 경로 정보를 볼 수 있습니다" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "경로 상세 정보를 보려면 제안을 선택하세요" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "불완전" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -1969,6 +2014,9 @@
 	key[]: "sort_by_ownership"
 	val[]: "소유권" #+ Button in sort by droplist. Please keep it as short as possible.
 
+	key[]: "sort_by_price"
+	val[]: "가격" #+ Button in sort by droplist. Please keep it as short as possible.
+
 	key[]: "filter_dlc"
 	val[]: "필터" #+ Combo box with job sorting options."
 
@@ -2044,6 +2092,9 @@
 	key[]: "dlc_category_paint_jobs"
 	val[]: "도색" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
+	key[]: "dlc_category_vehicles"
+	val[]: "차량" #+ Button/tab in DLC browser. Please keep it as short as possible.
+
 	key[]: "dlc_category_all"
 	val[]: "모두" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
@@ -2067,6 +2118,48 @@
 
 	key[]: "dlc_browser_online_wait_message"
 	val[]: "DLC 정보를 받는 중입니다. 잠시만 기다려주십시오."
+
+	key[]: "dlc_browser_open_store"
+	val[]: "인터넷 브라우저를 열고 선택한 웹 페이지로 이동 하시겠습니까?"
+
+	key[]: "dlc_browser_no_valid_data"
+	val[]: "현재 이용 가능한 DLC가 없습니다."
+
+	key[]: "dlc_browser_catalogue_canceled"
+	val[]: "카탈로그 운영이 취소되었습니다." #+ The operation was cancelled by the player, and finished correctly.
+
+	key[]: "dlc_browser_catalogue_unknown_error"
+	val[]: "카탈로그에서 알 수 없는 오류가 발생했습니다." #+ Catalogue unknown error.
+
+	key[]: "dlc_browser_catalogue_not_initialized"
+	val[]: "카탈로그가 초기화되지 않았습니다." #+ Error caused by either module or library not being properly initialized (yet).
+
+	key[]: "dlc_browser_catalogue_incompatible_state"
+	val[]: "현재 차단 작업이 진행 중이어서 작업을 시작할 수 없습니다." #+ Error caused attempting to start an operation when another, blocking is in progress
+
+	key[]: "dlc_browser_catalogue_bad_data"
+	val[]: "제공된 일부 데이터가 잘못되었거나 불완전합니다." #+ Bad data were supplied either by caller or by first party.
+
+	key[]: "dlc_browser_catalogue_product_misssing"
+	val[]: "로컬 카탈로그나 플랫폼 백엔드 카탈로그에 해당 제품이 없는데도 작업을 요청하려고 시도하고 있습니다." #+ Trying to request operation with a product that is either missing from our local caltalogue or the first party back end catalogue.
+
+	key[]: "dlc_browser_catalogue_sending_failed"
+	val[]: "카탈로그 요청이 실패했습니다." #+ The request failed, accompanied error message/ other logs should explain why.
+
+	key[]: "dlc_browser_catalogue_parse_failed"
+	val[]: "받은 응답이 잘못된 형식입니다." #+ The respone received was malformed.
+
+	key[]: "dlc_browser_catalogue_first_party_fail"
+	val[]: "카탈로그에 내부 오류가 발생했습니다." #+ First party api call failed for reason beyond our capabilities to fix.
+
+	key[]: "dlc_browser_catalogue_bad_platform"
+	val[]: "현재 플랫폼에서는 기능을 사용할 수 없습니다." #+ The functionality is not present on current platform.
+
+	key[]: "dlc_browser_catalogue_try_later"
+	val[]: "카탈로그 서비스는 현재 이용할 수 없습니다. 나중에 다시 시도해 주세요." #+ The service is currently unavailable, the caller should try later.
+
+	key[]: "dlc_browser_commerce_module_internal_error"
+	val[]: "카탈로그에 내부 오류가 발생했습니다." #+ Catalogue internal error.
 #@}
 
 #+ Activation screen
@@ -2322,7 +2415,7 @@
 	key[]: "interface_sound_settings_t"
 	val[]: "인터페이스" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
-	key[]: "truck_sound_settings_t"
+	key[]: "vehicle_sound_settings_t"
 	val[]: "차량 사운드" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
@@ -2334,20 +2427,20 @@
 	key[]: "master_volume"
 	val[]: "마스터 볼륨" #+ Slider controlling master volume.
 
-	key[]: "truck_engine_volume"
-	val[]: "차량 엔진 볼륨" #+ Slider controlling volume of the truck engine.
+	key[]: "vehicle_engine_volume"
+	val[]: "차량 엔진 볼륨" #+ Slider controlling volume of the vehicle engine.
 
-	key[]: "truck_exhaust_volume"
-	val[]: "차량 배기 볼륨" #+ Slider controlling volume of the truck exhaust.
+	key[]: "vehicle_exhaust_volume"
+	val[]: "차량 배기 볼륨" #+ Slider controlling volume of the vehicle exhaust.
 
-	key[]: "truck_turbo_volume"
-	val[]: "차량 터보 볼륨" #+ Slider controlling volume of the truck turbo.
+	key[]: "vehicle_turbo_volume"
+	val[]: "차량 터보 볼륨" #+ Slider controlling volume of the vehicle turbo.
 
-	key[]: "truck_effects_volume"
-	val[]: "차량 효과 볼륨" #+ Slider controlling volume of the truck effects.
+	key[]: "vehicle_effects_volume"
+	val[]: "차량 효과 볼륨" #+ Slider controlling volume of the vehicle effects.
 
-	key[]: "truck_noise_volume"
-	val[]: "차량 소음 볼륨" #+ Slider controlling volume of the truck noises.
+	key[]: "vehicle_noise_volume"
+	val[]: "차량 소음 볼륨" #+ Slider controlling volume of the vehicle noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "트레일러 소음 볼륨" #+ Slider controlling volume of the trailer noises.
@@ -2489,19 +2582,19 @@
 	key[]: "master_volume_op_tooltip" # - Audio, Simple
 	val[]: "게임의 전반적인 볼륨을 조정합니다."
 
-	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_engine_volume_op_tooltip" # - Audio, Simple
 	val[]: "차량 엔진의 볼륨을 조정합니다."
 
-	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_exhaust_volume_op_tooltip" # - Audio, Simple
 	val[]: "차량 배기의 볼륨을 조정합니다."
 
-	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_turbo_volume_op_tooltip" # - Audio, Simple
 	val[]: "차량 터보의 볼륨을 조정합니다."
 
-	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_effects_volume_op_tooltip" # - Audio, Simple
 	val[]: "에어 브레이크의 쉿쉿 소리와 같은 기타 차량 음향 효과의 볼륨을 조정합니다."
 
-	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
+	key[]: "vehicle_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "차량 타이어에서 나오는 소음의 크기를 조정합니다."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
@@ -2629,8 +2722,8 @@
 	key[]: "transmission_settings"
 	val[]: "변속기" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
-	key[]: "truck_physics_settings"
-	val[]: "차량 물리" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	key[]: "vehicle_physics_settings"
+	val[]: "차량 물리" #+ Title of 'Vehicle physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "어시스턴트" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2818,8 +2911,8 @@
 	key[]: "hide"
 	val[]: "표시하지 않음" #+ Hide speed limit display on the advisor.
 
-	key[]: "truck_limit"
-	val[]: "현재 차량 제한속도 표시" #+ Show speed limits for trucks on the advisor.
+	key[]: "automatic_limit"
+	val[]: "현재 차량 제한속도 표시" #+ Show speed limits for vehicles on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "자동차 제한속도 표시" #+ Show speed limits for ordinary cars on the advisor.
@@ -2834,7 +2927,7 @@
 	val[]: "지도 정렬 방식" #+ Droplist for selection mode of map alignmet to north.
 
 	key[]: "align_flat"
-	val[]: "평면" #+ Flat map without any alignment or panning.
+	val[]: "플랫" #+ Flat map without any alignment or panning.
 
 	key[]: "align_north_locked"
 	val[]: "북쪽 고정" #+ Map aligned to north intially but then locked, so no further panning.
@@ -2901,7 +2994,7 @@
 #@}
 
 	key[]: "displayed_currency"
-	val[]: "통화 표기" #+ Listbox for currency selection.
+	val[]: "화폐 표기" #+ Listbox for currency selection.
 
 	key[]: "localized_city_country_names"
 	val[]: "현지화된 도시와 주 이름" #+ Checkbox for naming selection.
@@ -2952,7 +3045,7 @@
 	key[]: "brake_intensity"
 	val[]: "브레이크 강도" #+ Slider for player modification of braking force.
 
-	key[]: "truck_stability"
+	key[]: "vehicle_stability"
 	val[]: "차량 안정성" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
@@ -3018,7 +3111,7 @@
 	key[]: "throttle_double_tap"
 	val[]: "스마트 가속 페달 컨트롤" #+ Checkbox for double tap mode of the digital throttle.
 
-	key[]: "truck_speed_limiter"
+	key[]: "vehicle_speed_limiter"
 	val[]: "트럭 속도 제한" #+ Checkbox for enabling of speed limiter.
 
 	key[]: "rain_sensor"
@@ -3135,6 +3228,9 @@
 	key[]: "cam_horizon_lock_factor"
 	val[]: "인테리어 카메라 수평 잠금" #+ Slider for interior camera horizon locking.
 
+	key[]: "cam_fov_speed_factor"
+	val[]: "인테리어 카메라 속도 기반 FOV 변경" #+ Slider for interior camera speed-based FOV changes.
+
 	key[]: "cam_auto_center_delay"
 	val[]: "자동 카메라 센터링 딜레이" #+ Dropdown for camera auto centering delay.
 
@@ -3180,7 +3276,7 @@
 	val[]: "활성화하면 반드시 교통 법규를 준수해야 하며 어길 경우 단속의 대상이 됩니다. 경찰차, 단속 카메라 주변에서는 단속될 확률이 높습니다."
 
 	key[]: "preferred_job_length_op_tooltip" # - Gameplay, Advanced
-	val[]: "제공되는 배차의 평균 주행거리를 조정합니다."
+	val[]: "제공되는 일자리의 평균 길이를 조정합니다.<br><br><color value=@@clr_txt_d@@>트럭 운전 업무에 적용됩니다."
 
 	key[]: "adviser_speed_limit_op_tooltip" # - Gameplay, Advanced
 	val[]: "내비게이션 위젯에 표시할 속도 제한을 선택하십시오."
@@ -3207,7 +3303,7 @@
 	val[]: "지도 정렬 방식을 선택합니다."
 
 	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "(플레이스홀더) 지도를 탐색하는 방법을 선택합니다."
+	val[]: "월드 맵을 탐색하는 방법을 선택하세요:<br>- \"근접 탐색\"은 탐색할 때 더 넓은 영역을 표시합니다.<br>- \"정밀 탐색\"은 플레이어 주변의 영역만 표시합니다."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "내비게이션 표시 방법을 선택합니다."
@@ -3254,7 +3350,7 @@
 	key[]: "brake_intensity_op_tooltip" # - Gameplay, Advanced
 	val[]: "브레이크의 강도를 변경합니다."
 
-	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
+	key[]: "vehicle_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "무게 중심을 낮춰 차량의 안정성을 변경합니다."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
@@ -3278,8 +3374,8 @@
 	key[]: "trailer_cables_mode_op_tooltip" # - Gameplay, Simple
 	val[]: "애니메이션화된 트레일러 케이블의 경우 및 해당 트레일러 케이블을 선택합니다.<br><br><color value=@@clr_txt_d@@>구형 시스템의 경우 다수의 차량에서 케이블을 활성화하면 성능이 떨어질 수 있습니다."
 
-	key[]: "truck_speed_limiter_op_tooltip" # - Gameplay, Simple
-	val[]: "활성화하면 전자식 속도 제한장치를 이용해 트럭의 속도를 105km/h (65mph)로 제한합니다.<br><br><color value=@@clr_txt_d@@>World of Trucks 작업에서는 기본적으로 적용되며 끌 수 없습니다."
+	key[]: "vehicle_speed_limiter_op_tooltip" # - Gameplay, Simple
+	val[]: "차량 모델에 따라 설정된 값으로 차량의 전자식 속도 제한 장치를 활성화합니다.<br><br><color value=@@clr_txt_d@@>World of Trucks 작업에서는 이 기능이 항상 켜져 있습니다."
 
 	key[]: "rain_sensor_op_tooltip" # - Gameplay, Simple
 	val[]: "활성화 후 윈드실드 와이퍼를 첫 번째 위치로 설정하면 와이퍼가 자동으로 켜지고 조건에 따라 속도가 조정됩니다."
@@ -3309,7 +3405,7 @@
 	val[]: "과도한 브레이크 작동으로 인한 실제 공기 손실을 시물레이션합니다.<br><br>이 옵션을 활성화하면 언덕을 내려갈 때나 서행 중 브레이크를 자주 밟을 때에는 공기압에 더욱 신경써야 합니다."
 
 	key[]: "fuel_consumption_simulation_op_tooltip" # - Gameplay, Advanced
-	val[]: "비활성화 시 연료 소비는 주행 스타일이나 도로 상태에 영향을 받지 않습니다.<br><br>활성화 시 연료 소비는 주행 스타일, 화물 무게, 롤링 저항, 지형 프로필 등 여러 요인에 의해 영향을 받습니다. 더 이상 @@skill_mechanical_title@ 스킬의 영향을 받지 않습니다."
+	val[]: "비활성화 시 연료 소비는 주행 스타일이나 도로 상태에 영향을 받지 않습니다.<br><br>활성화 시 연료 소비는 주행 스타일, 화물 무게, 롤링 저항, 지형 프로필 등 여러 요인에 의해 영향을 받습니다. 더 이상 @@skill_mechanical_title@@ 스킬의 영향을 받지 않습니다."
 
 	key[]: "abs_op_tooltip" # - Gameplay, Advanced
 	val[]: "활성화하면 ABS가 휠 잠김을 방지하여 제어력을 유지하고 제동 능력을 향상시킵니다."
@@ -3371,11 +3467,14 @@
 	key[]: "cam_horizon_lock_factor_op_tooltip" # - Gameplay, Advanced
 	val[]: "차량 움직임에 따라 내부 카메라의 롤링 허용량을 변경합니다."
 
+	key[]: "cam_fov_speed_factor_op_tooltip" # - Gameplay, Advanced
+	val[]: "차량 이동 속도에 따라 인테리어 카메라의 FOV가 얼마나 변하는지를 변경합니다."
+
 	key[]: "cam_auto_center_delay_op_tooltip" # - Gameplay, Advanced
 	val[]: "카메라가 자동으로 중앙으로 돌아오기 전 지연 시간을 설정합니다.<br><br>이 기능을 활성화하려면 차량이 무시할 수 없는 속도로 움직여야 합니다. 앞으로 움직일 때는 내부 및 추격 카메라에만 적용되고, 뒤로 움직일 때는 카메라를 기울이는 데만 적용됩니다."
 
 	key[]: "cam_auto_move_speed_op_tooltip" # - Gameplay, Advanced
-	val[]: "카메라 이동 속도를 설정합니다. 자동 카메라 센터링 및 내부 카메라 사전 설정 간 전환에 사용됩니다."
+	val[]: "카메라 이동 속도를 설정합니다. 자동 카메라 센터링 및 인테리어 카메라 사전 설정 간 전환에 사용됩니다."
 
 	key[]: "cam_interior_zoom_mode_op_tooltip" # - Gameplay
 	val[]: "내부 줌 작동 방식을 결정합니다: 버튼을 눌러 일시적으로 줌하거나 한 번 누르면 전환됩니다." #+ Tooltip explaining the zoom mode options.
@@ -3393,7 +3492,7 @@
 	val[]: "활성화하면 도시와 주가 선택한 언어와 해당 지역의 언어로 지도에 표시됩니다."
 
 	key[]: "displayed_currency_op_tooltip" # - Gameplay, Simple
-	val[]: "어떤 화폐단위를 사용할지 선택하십시오."
+	val[]: "어떤 화폐단위를 사용할지 선택하세요."
 
 	key[]: "clock_notation_op_tooltip" # - Gameplay, Simple
 	val[]: "12 시간제 또는 24 시간제 표기 중에서 선택하십시오."
@@ -3571,6 +3670,9 @@
 	key[]: "lost_function_binding"
 	val[]: "잃어버리는 기능 :" #+ Shown when key was rebound to a different function.
 
+	key[]: "unavailable_assignment"
+	val[]: "$INPUT$을(를) 사용할 수 없습니다." #+ Shown when the player presses a key that cannot in input binding.
+
 #!{
 	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
 	val[]: "@@keyboard_ico@@"
@@ -3579,7 +3681,7 @@
 #+ Headers of individual sections
 #@{
 
-	key[]: "truck_controls"
+	key[]: "vehicle_controls"
 	val[]: "차량"
 
 	key[]: "assistant_controls"
@@ -3690,6 +3792,9 @@
 
 	key[]: "o_im_parkingbrake"
 	val[]: "주차 브레이크"
+
+	key[]: "o_im_handbrake"
+	val[]: "핸드 브레이크"
 
 	key[]: "o_im_motorbrake"
 	val[]: "엔진 브레이크"
@@ -3849,6 +3954,9 @@
 
 	key[]: "o_im_infotainment"
 	val[]: "인포테인먼트 디스플레이 모드" #+ Action for cycling between infotainement display pages/modes.
+
+	key[]: "o_im_parking_cameras"
+	val[]: "주차 카메라 모드" #+ Action for toggling parking camera display pages/modes (if available).
 
 	key[]: "o_im_dashboard_map"
 	val[]: "내비게이션 줌 모드" #+ Action for cycling trough zoom levels in all vehicle navigational devices.
@@ -4104,6 +4212,9 @@
 	key[]: "o_im_parkingbrake_op_tooltip"
 	val[]: "주차 브레이크 버튼을 지정합니다."
 
+	key[]: "o_im_handbrake_op_tooltip"
+	val[]: "핸드 브레이크용 버튼을 할당합니다."
+
 	key[]: "o_im_motorbrake_op_tooltip"
 	val[]: "엔진 브레이크 버튼을 지정합니다.<br><br>엔진 브레이크는 버튼을 누르고 있는 동안 작동합니다."
 
@@ -4226,6 +4337,9 @@
 
 	key[]: "o_im_infotainment_op_tooltip"
 	val[]: "인포테인먼트 디스플레이 화면 변경 버튼을 지정합니다."
+
+	key[]: "o_im_parking_cameras_op_tooltip"
+	val[]: "주차 카메라가 필요할 때 화면을 전환하는 버튼을 할당합니다. 버튼은 후진할 때는 영상을 숨기고 전진할 때는 다시 보여줍니다."
 
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "대시보드 내비게이션 또는 인포테인먼트 디스플레이의 지도 화면 배율을 조정하기 위한 버튼을 지정합니다."
@@ -5429,6 +5543,9 @@
 	key[]: "grass_detail"
 	val[]: "잔디 밀도" #+ Combo box selecting density of grass.
 
+	key[]: "tire_smoke"
+	val[]: "타이어 연기" #+ Combo box selecting amount of tire smoke.
+
 	key[]: "shadow_quality"
 	val[]: "그림자 품질"  #+ Combo box selecting quality of shadows.
 
@@ -5545,6 +5662,9 @@
 
 	key[]: "grass_detail_op_tooltip" # - Graphics, Advanced
 	val[]: "도로 가장자리에 보이는 잔디의 밀도를 조정합니다.<br><br><color value=@@clr_txt_d@@>이 설정은 일반적으로 성능에 적당한 영향을 미칩니다."
+
+	key[]: "tire_smoke_op_tooltip" # - Graphics, Advanced
+	val[]: "타이어가 지면과 마찰하면서 발생하는 연기량을 조절합니다.<br><br><color value=@@clr_txt_d@@>실험적 기능으로, 현재는 자동차 주행 시에만 작동합니다.<br>이 설정은 일반적으로 성능에 중간 정도의 영향을 미칩니다."
 
 	key[]: "shadow_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "태양이나 달이 드리우는 그림자의 품질을 조정합니다.<br><br><color value=@@clr_txt_d@@>이 설정은 일반적으로 성능에 적당한 영향을 미칩니다."
@@ -5696,7 +5816,7 @@
 	val[]: "오른쪽 Alt"
 
 	key[]: "i_numlck"
-	val[]: "NumLock"
+	val[]: "Num Lock"
 
 	key[]: "i_home"
 	val[]: "Home"
@@ -6293,6 +6413,9 @@
 	key[]: "cancel_cur_job"
 	val[]: "정말 지금 하던 일을 취소하시겠습니까?<br offset=10> $MONEY$의 위약금을 부담해야 합니다."
 
+	key[]: "cancel_cur_car_job"
+	val[]: "현재 맡은 일을 정말로 취소하시겠습니까?<br offset=10> $MONEY$의 위약금을 지불해야 하며, 완벽한 배달 연속 기록을 잃게 됩니다."
+
 	key[]: "no_cancel_first_job"
 	val[]: "당신은 첫 번째 일거리를 취소할 수 없습니다. 아무도 당신을 존중하지 않을 겁니다."
 
@@ -6450,8 +6573,8 @@
 	key[]: "stop_engine_short"
 	val[]: "엔진을 정지하십시오!"
 
-	key[]: "stop_truck_short"
-	val[]: "차량을 세우십시오!"   #+ Quick message shown when sleep was prevented by truck movement.
+	key[]: "stop_vehicle_short"
+	val[]: "차량을 세우십시오!"   #+ Quick message shown when sleep was prevented by vehicle movement.
 
 	key[]: "stop_engine"
 	val[]: "엔진을 정지하려면 다음 키를 사용하십시오:"
@@ -6467,6 +6590,9 @@
 
 	key[]: "diesel_price"
 	val[]: "경유 가격"
+
+	key[]: "petrol_price"
+	val[]: "휘발유 가격"
 
 	key[]: "total_price"
 	val[]: "총 가격"
@@ -7129,7 +7255,7 @@
 	val[]: "당신의 @@skill_heavy_title@@ 기술은 기업들이 당신을 얼마나 신뢰하는지를 결정합니다."
 
 	key[]: "valuable_desc_initial"
-	val[]: "새로운 <color value=@@clr_skill_desc_highlight@>높은 값</color>배송 <color value=@@clr_skill_desc_highlight@>사용 가능</color>"
+	val[]: "새로운 <color value=@@clr_skill_desc_highlight@@>높은 값</color>배송 <color value=@@clr_skill_desc_highlight@@>사용 가능</color>"
 
 	key[]: "valuable_desc_revenue_bonus"
 	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% 높은 수익</color> 고부가가치 화물"
@@ -7148,10 +7274,10 @@
 	val[]: "당신의 @@skill_jit_title@@ 기술이 빠듯한 마감일에 대한 보상을 결정합니다."
 
 	key[]: "urgent_desc_initial_important"
-	val[]: "새로운 <color value=@@clr_skill_desc_highlight@>중요</color>배송 <color value=@@clr_skill_desc_highlight@>사용 가능</color>"
+	val[]: "새로운 <color value=@@clr_skill_desc_highlight@@>중요</color>배송 <color value=@@clr_skill_desc_highlight@@>사용 가능</color>"
 
 	key[]: "urgent_desc_initial_urgent"
-	val[]: "새로운 <color value=@clr_skill_desc_highlight@>깁급</color> 배송 <color value=@clr_skill_desc_highlight@>사용 가능</color>"
+	val[]: "새로운 <color value=@@clr_skill_desc_highlight@@>깁급</color> 배송 <color value=@@clr_skill_desc_highlight@@>사용 가능</color>"
 
 	key[]: "urgent_desc_revenue_bonus_important"
 	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS_IMPORTANT$% 높은 수익</color> 중요 운송"
@@ -7177,7 +7303,7 @@
 	val[]: "당신의 @@skill_fragile_title@@ 기술이 섬세한 물품을 운반하는 능력을 결정합니다."
 
 	key[]: "fragile_desc_initial"
-	val[]: "새로운 <color value=@clr_skill_desc_highlight@>파손 주의 화물</color> 배송<color value=@clr_skill_desc_highlight@>사용 가능</color>"
+	val[]: "새로운 <color value=@@clr_skill_desc_highlight@@>파손 주의 화물</color> 배송<color value=@@clr_skill_desc_highlight@@>사용 가능</color>"
 
 	key[]: "fragile_desc_revenue_bonus"
 	val[]: "<color value=@@clr_skill_desc_highlight@@>$REVENUE_BONUS$% 높은 수익</color> 파손 주의 화물"
@@ -7642,7 +7768,7 @@
 	val[]: "컴퓨터"
 
 	key[]: "cn_concr_beams"
-	val[]: "콘크리트 빔"
+	val[]: "콘크리트 보"
 
 	key[]: "cn_concrete"
 	val[]: "콘크리트"
@@ -7670,6 +7796,9 @@
 
 	key[]: "cn_drymilk"
 	val[]: "분유"
+
+	key[]: "cn_dry_van"
+	val[]: "드라이 밴"
 
 	key[]: "cn_drywall"
 	val[]: "석고보드"
@@ -7737,6 +7866,9 @@
 	key[]: "cn_frozen_hake"
 	val[]: "냉동 헤이크"
 
+	key[]: "cn_fuel_tank"
+	val[]: "연료 탱크"
+
 	key[]: "cn_fuel_tanks"
 	val[]: "연료 탱크"
 
@@ -7801,7 +7933,7 @@
 	val[]: "등유"
 
 	key[]: "cn_largetubes"
-	val[]: "대형 튜브"
+	val[]: "대형 강관"
 
 	key[]: "cn_lead"
 	val[]: "납"
@@ -7826,6 +7958,9 @@
 
 	key[]: "cn_logs"
 	val[]: "통나무"
+
+	key[]: "cn_low_bed_trailers"
+	val[]: "로우베드 세미트레일러"
 
 	key[]: "cn_lpg"
 	val[]: "LPG"
@@ -7956,6 +8091,9 @@
 	key[]: "cn_red_bricks"
 	val[]: "벽돌"
 
+	key[]: "cn_refrigerated_trailer"
+	val[]: "냉동 트레일러"
+
 	key[]: "cn_rice"
 	val[]: "쌀"
 
@@ -7979,6 +8117,9 @@
 
 	key[]: "cn_scrap_metals"
 	val[]: "고철"
+
+	key[]: "cn_seed_containers"
+	val[]: "씨앗 컨테이너"
 
 	key[]: "cn_silica"
 	val[]: "이산화규소"
@@ -8035,10 +8176,13 @@
 	val[]: "트랙터"
 
 	key[]: "cn_trailers"
-	val[]: "로우베드 세미트레일러"
+	val[]: "트레일러"
 
 	key[]: "cn_train_parts"
 	val[]: "기차 액슬"
+
+	key[]: "cn_truss"
+	val[]: "트러스"
 
 	key[]: "cn_tv"
 	val[]: "텔레비전"
@@ -8405,10 +8549,10 @@
 	val[]: "거대한 부속품"
 
 	key[]: "cn_mystery_cyl"
-	val[]: "하이테크 장치"
+	val[]: "첨단 기기"
 
 	key[]: "cn_ovs_tank"
-	val[]: "대형 저수지 탱크"
+	val[]: "대형 저수조"
 
 	key[]: "cn_pilot_boat"
 	val[]: "서비스 보트"
@@ -8669,6 +8813,15 @@
 	key[]: "bank_money"
 	val[]: "현재 잔고: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
 
+	key[]: "bank_loan_unlock_requirement"
+	val[]: "트럭 모드에서 경력을 발전시켜 대출을 받으세요."
+
+	key[]: "bank_loan_locked_wrong_mode"
+	val[]: "$MODE$에서 경력을 발전시켜 대출을 받으세요."
+
+    key[]: "bank_loan_in_debt"
+	val[]: "당신은 빚이 너무 많아 이 대출을 받을 수 없습니다."
+
 #+ New loan confirmation window
 #@{
 
@@ -8742,6 +8895,9 @@
 
 	key[]: "bank_sell_report_garage"
 	val[]: "$CITY$ 차고의 예상 가격: $MONEY$"
+
+	key[]: "bank_sell_report_car"
+	val[]: "자동차 $NAME$, 추정 가치: $MONEY$" #+ Message used to show information about a car to sell to cover debt. Same style as bank_sell_report_trailer.
 
 #+ Mail screen
 #+
@@ -8848,6 +9004,12 @@
 
 	key[]: "compman_qt_notruck"
 	val[]: "트럭, 버스, 승용차가 없으면 빠른 여행을 할 수 없습니다!"
+
+	key[]: "compman_qt_nocar"
+	val[]: "차량이 없으면 빠른 여행을 할수없습니다!"
+
+	key[]: "compman_qt_nobus"
+	val[]: "코치가 없으면 빠른 여행을 할수없습니다!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "선택한 차고로 빠른 여행을 하시겠습니까?"
@@ -9216,13 +9378,13 @@
 #+ Message box shown when user requests to sell selected truck.
 #@{
 
-	key[]: "truckman_sell_t"
+	key[]: "vehicleman_sell_t"
 	val[]: "차량 매각"  #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_reallysell"
+	key[]: "vehicleman_msg_reallysell"
 	val[]: "정말로 당신의 $TRUCK$을(를) $MONEY$에 매각하시겠습니까?"
 
-	key[]: "truckman_msg_nosell"
+	key[]: "vehicleman_msg_nosell"
 	val[]: "운송 도중 차량을 매각할 수 없습니다! 운송을 끝마친 후 다시 시도하십시오."
 
 	key[]: "truckman_total_restoration_t"
@@ -9254,10 +9416,10 @@
 #+ Message box shown when user requests to become driver of selected truck.
 #@{
 
-	key[]: "truckman_change_t"
+	key[]: "vehicleman_change_t"
 	val[]: "차량 변경" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nochange"
+	key[]: "vehicleman_msg_nochange"
 	val[]: "운송 도중 차량을 교체할 수 없습니다! 먼저 운송을 끝마쳐야 합니다."
 
 	key[]: "truckman_conf_drive"
@@ -9294,7 +9456,7 @@
 	key[]: "truckman_copy_configuration_t"
 	val[]: "구성 복사" #+ Message box title. Please keep in upper case where possible.
 
-	key[]: "truckman_msg_nouse"
+	key[]: "vehicleman_msg_nouse"
 	val[]: "MOD 또는 DLC 제거로 인해 데이터가 누락되어 해당 차량의 구성을 복사할 수 없습니다.<br><br>MOD 또는 DLC를 다시 설치하십시오."
 #@}
 
@@ -9675,6 +9837,9 @@
 	key[]: "td_msg_first_and_busy"
 	val[]: "고객님의 첫 번째 트럭을 저희에게서 구매해주신 것에 대해 감사드립니다!<br><br>고객님의 일이 끝나는 대로 트럭을 사용할 수 있도록 고객님의 본사로 배송해드리겠습니다."
 
+	key[]: "td_first_truck_switch_mode_city"
+	val[]: "저희에게서 첫 번째 트럭을 구매해 주셔서 감사합니다!<br><br><color value=@@clr_sel@@>$CITY$</color>에서 새 트럭으로 변경하시겠습니까?"
+
 	key[]: "td_msg_bought_assigned"
 	val[]: "구매해주셔서 감사합니다. 새로운 트럭을 즐기십시오!<br><br>저희는 고객님의 예전 트럭을 $CITY$에 있는 차고로 옮길 것입니다."
 
@@ -10004,6 +10169,12 @@
 	key[]: "mapl_convoy_member"
 	val[]: "콘보이 구성원"
 
+	key[]: "mapl_company_vehicle"
+	val[]: "차량이 빠른 작업 중"
+
+	key[]: "mapl_my_vehicle"
+	val[]: "다른 차량 위치"
+
 	key[]: "mapl_quarry"
 	val[]: "채석장"
 
@@ -10016,7 +10187,7 @@
 	key[]: "mapl_undiscovered"
 	val[]: "방문하지 않은 지점"
 
-	key[]: "mapl_viewpoint"
+	key[]: "mapl_viewpoint_visited"
 	val[]: "뷰포인트 (방문)"
 
 	key[]: "mapl_viewpoint_unvisited"
@@ -10130,10 +10301,10 @@
 	val[]: "Made with FMOD Studio by Firelight Technologies Pty Ltd."
 
 	key[]: "credits_speedtree"
-	val[]: "이 소프트웨어의 일부는 SpeedTree® 기술 (©2024 유니티 테크놀로지스 SF 제공). 모든 권리 보유."
+	val[]: "Portions of this software utilize SpeedTree® technology (©2024 provided by Unity Technologies SF). All rights reserved."
 
 	key[]: "jpeg_credits"
-	val[]: "이 소프트웨어는 Independent JPEG Group의 작업 중 일부를 기반으로 합니다."
+	val[]: "This software is based in part on the work of the Independent JPEG Group."
 #@}
 
 #+ Truck browser
@@ -10819,7 +10990,7 @@
 	val[]: "위젯 옵션"
 
 	key[]: "current_country_info_t"
-	val[]: "현재 국가 규정"
+	val[]: "현지 규정"
 
 	key[]: "no_job_taken"
 	val[]: "현재 일자리가 없습니다"
@@ -10936,6 +11107,9 @@
 	key[]: "desktop_tut_visit_directive"
 	val[]: "$SCREEN_NAME$을(를) 방문" #+ The $SCREEN_NAME$ text is a placeholder for different screen names in game and should be left intact
 
+	key[]: "desktop_tut_vehicle_mode"
+	val[]: "모드 버튼을 사용하여 다양한 데스크톱 모드와 여러 차량 유형 간에 전환하십시오."
+
 	key[]: "desktop_tut_tour_welcome_t"
 	val[]: "환영합니다"
 
@@ -10962,6 +11136,28 @@
 
 	key[]: "desktop_tut_tour_finish"
 	val[]: "새롭게 업데이트된 홈 화면을 둘러봐주셔서 감사합니다."
+
+
+	key[]: "desktop_vehicle_mode_reenable_hints_t"
+    val[]: "힌트 사용하기"
+
+    key[]: "desktop_vehicle_mode_reenable_hints"
+    val[]: "새 게임 모드에 진입 중이며 현재 상황별 힌트가 비활성화되어 있습니다. 힌트는 게임을 배우는 데 도움이 될 수 있어요. 그것들을 다시 켜겠어요?"
+
+	key[]: "desktop_tut_first_car_job_t"
+	val[]: "로드 트립에 오신 것을 환영합니다"
+
+	key[]: "desktop_tut_first_car_job"
+	val[]: "자동차 모드는 당신의 자동차 운전 경험의 중심입니다. 꿈에 그리던 차를 구매하고, 커리어 기사가 되거나, 관광 가이드가 되어 세상을 탐험하는 자유로운 길을 달려보세요.<br><br>시작하려면, 첫 번째 빠른 작업을 수행하세요."
+
+	key[]: "desktop_tut_atlas"
+	val[]: "아틀라스는 당신의 개인 여행 가이드로서 로드트립을 계획하는 데 도움을 줍니다."
+
+	key[]: "desktop_tut_car_eshop"
+	val[]: "자동차 딜러 - 직접 차량을 구매하세요."
+
+	key[]: "desktop_tut_owned_car_job"
+	val[]: "배송 시장 - 자신의 차량을 이용해 전문 커리어 기사로 고용하세요."
 #@}
 
 
@@ -13399,16 +13595,16 @@
 	key[]: "quick_travel_cond_fix_cables"
 	val[]: "당신의 트럭은 빠른 여행을 할 수 있는 상태가 아닙니다. 트레일러 케이블을 고정하십시오."
 
-	key[]: "quick_travel_cond_repair_truck"
+	key[]: "quick_travel_cond_repair_vehicle"
 	val[]: "당신의 차량은 빠른 여행을 할 수 있는 상태가 아닙니다. 서비스 센터를 방문하거나 긴급출동 서비스를 요청하십시오."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "당신의 트레일러는 빠른 여행을 할 수 있는 상태가 아닙니다. 서비스 센터를 방문하거나 긴급출동 서비스를 요청하십시오."
 
-	key[]: "quick_travel_cond_truck_fuel"
+	key[]: "quick_travel_cond_vehicle_fuel"
 	val[]: "차량이 빠른 여행을 할 수 있는 상태가 아닙니다. 트럭에 연료를 보충하거나 도움을 요청하십시오."
 
-	key[]: "quick_travel_cond_truck_fallen"
+	key[]: "quick_travel_cond_vehicle_fallen"
 	val[]: "당신의 차량은 빠른 여행을 할 수 있는 상태가 아닙니다. 긴급출동 서비스를 요청하십시오."
 
 	key[]: "quick_travel_cond_trailer_fallen"
@@ -13436,7 +13632,7 @@
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "필수 DLC (공식 게임 확장팩) $DEPENDENCY_NAME$이(가) 없습니다. 이 세이브가 올바르게 작동하기 위해서는 이 DLC가 활성화되어야 합니다. 이 세이브를 불러오기 전에 문제를 해결해야 합니다." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "필수 DLC(공식 확장팩)$DEPENDENCY_NAME$이 발견되지 않았습니다. 제대로 진행되려면 이 DLC가 사용 시스템에서 활성시킬 필요가 있습니다. 이 게임을 불러오기 전에 문제를 해결하십시오." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
 	val[]: "선택형 DLC (공식 게임 확장팩) $DEPENDENCY_NAME$이(가) 없습니다. 만약 이 DLC가 누락되지 않았다고 생각한다면 DLC의 상태를 확인하시기 바랍니다.<br><br>이 세이브를 불러올 수 있지만, DLC에서 제공하는 기능 중 일부를 사용하지 못하게 될 수도 있습니다." #+ Information showed when dependency of type optional DLC is missing.
@@ -13457,7 +13653,7 @@
 	val[]: "창작마당 페이지 열기"  #+ Button text. Open Steam Workshop page of the missing Workshop mod.
 
 	key[]: "missing_dependencies_info"
-	val[]: "이 세이브는 현재 누락된 DLC나 MOD에 종속되어 있으며 누락된 목록은 다음과 같습니다. 목록에서 항목을 선택하면 선택한 항목에 대한 추가 정보를 얻을 수 있습니다." #+ The info about the missing dependencies dialog.
+	val[]: "이 저장파일은 현재 찾지 못하는 DLC 혹은 모드에 의존하고 있습니다. 그것들을 아래에 제시했습니다. 목록의 엔트리를 선택하면, 각각 특정 파일에 대한 정보를 얻을 수 있습니다." #+ The info about the missing dependencies dialog.
 
 	key[]: "missing_dependencies_fatal_error"
 	val[]: "이 세이브는 적어도 한 개 이상의 필수 DLC나 MOD에 종속되어 있습니다. 이 세이브를 불러오기 전에 문제를 해결해야 합니다." #+ Info shown if the continue operation is blocked because the save depends on some required dlc (e.g. map or vehicle)
@@ -13524,6 +13720,27 @@
 	val[]: "화물 시장 작업이 진행 중입니다."
 #@}
 
+#+ Job cancellation
+#@{
+	key[]: "drive_active_job_t"
+	val[]: "작업 진행 중"
+
+	key[]: "drive_active_job"
+	val[]: "다른 모드에서 진행 중인 작업이 있습니다.<br offset=10>해당 작업을 취소하거나 $VEHICLE$ @@vehicle_mode@@에서 세부 정보를 확인할 수 있습니다.<br><br><br>$ADDITIONAL_INFO$"
+
+	key[]: "drive_active_job_yes"
+	val[]: "@@abort_job@@"
+
+	key[]: "drive_active_job_no"
+	val[]: "모드 전환"
+
+	key[]: "cancel_cur_job_warning"
+	val[]: "작업을 중도 포기할 경우 $MONEY$의 위약금을 부담해야 합니다."
+
+	key[]: "cancel_cur_car_job_warning"
+	val[]: "해당 작업을 포기하면 $MONEY$의 위약금을 지불해야 하며, 완벽한 배달 연속 기록을 잃게 됩니다."
+#@}
+
 #+ Trailer coupling phases info messages, shown in route advisor during coupling/decoupling.
 #@{
 
@@ -13579,14 +13796,14 @@
 	key[]: "no_accessory_found"
 	val[]: "일치하는 항목을 찾을 수 없습니다" #+ Text shown when there are no accessories found by filters.
 
-	key[]: "no_truck_found"
-	val[]: "일치하는 차량을 찾을 수 없습니다" #+ Text shown when there are no trucks found by filters.
+	key[]: "no_vehicle_found"
+	val[]: "일치하는 차량을 찾을 수 없습니다" #+ Text shown when there are no vehicles found by filters.
 #@}
 
 #+ Strings related to job filtering feature
 #@{
 	key[]: "no_job_found"
-	val[]: "화물 필터나 현재 기술과 일치하는 일거리를 찾을 수 없습니다" #+ Text shown when there are no jobs found by filters.
+	val[]: "필터나 현재 기술과 일치하는 일거리를 찾을 수 없습니다" #+ Text shown when there are no jobs found by filters.
 #@}
 
 #+ Game demo related strings.
@@ -13901,7 +14118,7 @@
 #+ Strings related to Steam inventory feature.
 #@{
 	key[]: "inventory_loading_failed_content"
-	val[]: "스팀 보관함 콘텐츠를 불러오는 도중 오류가 발생했습니다.<br><br>$ERROR$<br><br>콘텐츠를 활성화된 상태로 유지하려면 '계속'을 선택하십시오. 게임이 주기적으로 검색할 것입니다.<br><br>일시적으로 콘텐츠 사용을 중지하여 오류 메시지가 다시 표시되지 않게 할 수도 있습니다. 게임을 다시 실행하면 해당 콘텐츠가 자동으로 다시 활성화됩니다." #+ The error message showed in truck configurator screen when Steam inventory content is not present due to loading error. The $ERROR$ must be keeped untranslated.
+	val[]: "Steam Inventory 콘텐츠를로드하는 중 오류가 발생했습니다.<br><br>$ERROR$<br><br>Select 계속 콘텐츠를 사용하도록 설정합니다. 게임은 주기적으로 게임을 검색합니다.<br><br>오류 메시지가 다시 나타나지 않도록 콘텐츠를 일시적으로 사용 중지 할 수 있습니다. 게임을 실행하면 다음에 자동으로 콘텐츠가 다시 활성화됩니다." #+ The error message showed in truck configurator screen when Steam inventory content is not present due to loading error. The $ERROR$ must be keeped untranslated.
 
 	key[]: "inventory_loading_request_failed_content"
 	val[]: "스팀 보관함 항목을 다운로드 할 수 없습니다." #+ The error message showed in truck configurator screen when game fails to send Steam inventory request.
@@ -14315,6 +14532,9 @@
 	key[]: "garage_upgrade_locked_tooltip"
 	val[]: "이 차고는 모든 업그레이드가 완료된 상태입니다." #+ Tooltip shown when player hovers over upgrade button.
 
+	key[]: "garage_upgrade_locked_vehicle_tooltip"
+	val[]: "소유하신 차량이 차고에 너무 가까이 있기 때문에 차고를 업그레이드할 수 없습니다." #+ Tooltip shown when garage cannot be upgraded due to player's vehicles being too close to upgraded garage.
+
 	key[]: "driverman_stats_trailer"
 	val[]: "현재 트레일러:" #+ Title of the current trailer statistics.
 
@@ -14360,7 +14580,7 @@
 	key[]: "link_locked_msg_trailer_upgrades"
 	val[]: "현재 사용할 수 있는 트레일러 업그레이드가 존재하지 않습니다."
 
-	key[]: "link_locked_msg_truck_diag"
+	key[]: "link_locked_msg_vehicle_diag"
 	val[]: "진단에 접근하려면 먼저 차량을 배치해야 합니다."
 
 	key[]: "link_locked_msg_truck_dealer_map"
@@ -14655,7 +14875,7 @@
 	val[]: "동물"
 
 	key[]: "body_cargo_types_log"
-	val[]: "통나무, 빔 또는 튜브"
+	val[]: "통나무, 보 또는 튜브"
 
 	key[]: "body_cargo_types_lowboy"
 	val[]: "중장비 및 높이가 높은 화물"
@@ -15005,7 +15225,7 @@
 	val[]: "트럭이 회차 중임"
 
 	key[]: "cm_legend_truck_status_undrivable"
-	val[]: "트럭 서비스가 필요합니다"
+	val[]: "트럭 점검 필요"
 
 	key[]: "cm_legend_truck_player"
 	val[]: "플레이어"
@@ -15020,7 +15240,7 @@
 	val[]: "개인 트레일러"
 
 	key[]: "cm_legend_trailer_status_undrivable"
-	val[]: "트레일러 점검이 필요합니다"
+	val[]: "트레일러 점검 필요"
 
 	key[]: "cm_legend_trailer_player"
 	val[]: "플레이어의 트레일러"
@@ -15038,7 +15258,7 @@
 	val[]: "드라이버가 복귀 중임"
 
 	key[]: "cm_legend_driver_status_truck_undrivable"
-	val[]: "트럭 서비스가 필요합니다"
+	val[]: "트럭 점검 필요"
 
 	key[]: "cm_legend_driver_player"
 	val[]: "플레이어"
@@ -15400,7 +15620,7 @@
 	key[]: "mp_job_wrong_cargo"
 	val[]: "이 화물을 운송할 수 있는 트레일러를 가지고 있지 않습니다."
 
-	key[]: "mp_job_missing_truck"
+	key[]: "mp_job_missing_vehicle"
 	val[]: "본인 소유의 차량으로만 배차받을 수 있습니다."
 
 	key[]: "mp_job_missing_trailer"
@@ -15974,14 +16194,20 @@
 	key[]: "mp_view_job"
 	val[]: "살펴본 후 같은 화물 배차받기"
 
+	key[]: "mp_car_quick_job"
+	val[]: "로드 트립 빠른 일거리"
+
+	key[]: "mp_car_dispatch_job"
+	val[]: "로드 트립 배송 시장"
+
 	key[]: "mp_truck_idle"
 	val[]: "대기 중"
 
 	key[]: "mp_truck_on_job"
-	val[]: "운행 중"
+	val[]: "가능한 작업이 없습니다"
 
 	key[]: "mp_truck_on_convoy"
-	val[]: "콘보이 중"
+	val[]: "가능한 작업"
 
 	key[]: "mp_fetching_from_server"
 	val[]: "서버에서 불러오는 중..."
@@ -16004,7 +16230,7 @@
 	key[]: "mp_warning_close_to_conflicted_company_teleport"
 	val[]: "이 세션에 참여하려면 트럭이나 트레일러 근처에 있는 회사를 활성화해야 합니다.<br>문제가 발생하지 않도록 트럭과 트레일러를 회사에서 멀리 떨어진 곳으로 이동시켜야 하며 만약 이동하지 않을 경우 현재 작업이 취소되고 가장 가까운 서비스 센터로 이동하게 됩니다.<br><br>계속하시겠습니까?"
 
-	key[]: "mp_warning_truck_before_quick_job_close_cancel_teleport"
+	key[]: "mp_warning_vehicle_close_cancel_teleport"
 	val[]: "이 세션에 참여하려면 빠른 일거리를 통해 배차받은 트럭이나 트레일러의 소유 회사 주변이 활성화되어야 합니다.<br>트럭으로 돌아가 문제가 발생하지 않도록 빠른 작업을 취소해야 하며 만약 이동하지 않을 경우 가장 가까운 서비스 센터로 이동하게 됩니다.<br><br>계속하시겠습니까?"
 
 	key[]: "mp_warning_company_with_selected_job_sleeping"
@@ -16039,6 +16265,12 @@
 
 	key[]: "mp_error_skills"
 	val[]: "다음 스킬을 습득해야 합니다:"
+
+	key[]: "mp_error_car_courier_onboarding"
+	val[]: "이 작업에 지원하려면 첫 번째 $ONBOARDING$ 배송을 완료하고 필요한 커리어 기사 등급($REQUIRED$)에 도달해야 합니다." #+ $ONBOARDING$ is replaced with a number. $REQUIRED$ is replaced with a courier rating. Example: You need to complete your first 5 deliveries and reach the required courier rating (4.6) to be eligible for this job.
+
+	key[]: "mp_error_car_courier_rating"
+	val[]: "귀하의 커리어 등급($CURRENT$)이 이 작업에 필요한 최소 등급($REQUIRED$)보다 낮습니다."  #+ $CURRENT$ and $REQUIRED$ are replaced with a courier rating. Example: Your courier rating (3.3) is below the minimum required (4.6) for this job.
 
 	key[]: "mp_error_dlc"
 	val[]: "이 운송 작업에 필요한 DLC가 누락되었습니다."
@@ -16221,13 +16453,13 @@
 	key[]: "job_equipment"
 	val[]: "작업 장비:"
 
-	key[]: "equipment_provided_truck_and_trailer"
+	key[]: "equipment_provided_vehicle_and_trailer"
 	val[]: "제공된 차량과 트레일러"
 
-	key[]: "equipment_owned_truck_provided_trailer"
+	key[]: "equipment_owned_vehicle_provided_trailer"
 	val[]: "개인 소유의 차량"
 
-	key[]: "equipment_owned_truck_and_trailer"
+	key[]: "equipment_owned_vehicle_and_trailer"
 	val[]: "개인 소유의 차량과 트레일러"
 
 	key[]: "mp_job_quick_travel_message"
@@ -17322,10 +17554,10 @@
 	key[]: "career_progress_stats_discovered_countries_count"
 	val[]: "방문한 주"
 
-	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots a cargo was delivered from or to and number of all depots.
+	key[]: "career_progress_stats_company_instances_used_count" #+ Number of depots cargo was delivered from or to and number of all depots.
 	val[]: "이용한 창고"
 
-	key[]: "career_progress_stats_companies_used_count" #+ Number of companies a cargo was delivered from or to and number of all companies.
+	key[]: "career_progress_stats_companies_used_count" #+ Number of companies cargo was delivered from or to and number of all companies.
 	val[]: "이용한 물류 업체"
 
 	key[]: "career_progress_stats_truck_dealer_discovered_count"
@@ -17539,6 +17771,36 @@
 	val[]: "떠나기"
 #@}
 
+#+ Vehicle mode switch
+#@{
+	key[]: "vehicle_mode"
+	val[]: "모드"
+
+	key[]: "truck_mode"
+	val[]: "트럭 모드"
+
+	key[]: "truck_mode_help"
+	val[]: "트럭으로 다양한 일을 맡아보세요"
+
+	key[]: "bus_mode"
+	val[]: "코치 모드"
+
+	key[]: "bus_mode_help"
+	val[]: "코치 운전기사로서 다른 운전 방식을 경험해 보세요"
+
+	key[]: "bus_mode_locked_tooltip"
+	val[]: "코치 모드에 접근하려면 첫 번째 작업을 완료해야 합니다"
+
+	key[]: "car_mode"
+	val[]: "자동차 모드"
+
+	key[]: "car_mode_help"
+	val[]: "다양한 직업을 경험하고 자동차로 세계를 탐험하세요"
+
+	key[]: "car_mode_locked_tooltip"
+	val[]: "자동차 모드에 접근하려면 첫 번째 작업을 완료해야 합니다"
+#@}
+
 #+ Menu upper bar
 #@{
 	key[]: "burger_menu_header"
@@ -17635,13 +17897,13 @@
 #+ Intro Scene. Only translate into officially supported languages.
 #@{
 	key[]: "health_warning"
-	val[]: "건강 경고"
+	val[]: "Health warning"
 
 	key[]: "health_warning_description"
-	val[]: "일부 사용자는 반짝거리는 빛 또는 불빛 패턴에 노출되면 간질 발작이나 의식 상실에 취약할 수 있습니다. 이러한 사용자는 특정 이미지를 시청하거나 비디오 게임을 하는 동안 발작을 경험할 수 있습니다. 깜박이는 불빛에 노출되었을 때 (발작 또는 의식 상실)과 관련된 증상이 있는 경우 의료 전문가와 상담하고 게임을 플레이하기 전에 필요한 모든 예방 조치를 취하십시오.<br offset=20>게임을 플레이하는 동안 다음과 같은 증상이 발생하는 경우: 어지러움, 시력, 눈 또는 근육 경련, 의식 상실, 방향 감각 상실, 경련, 비자발적 움직임, 즉시 비디오 게임 사용을 중단하고 의료 전문가와 상담하십시오."
+	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "게임 내 차량의 모든 브랜드 이름, 상표, 등록 마크, 로고 및 기호는 정당한 소유자의 소유물입니다. 친절한 허가를 받아 사용됩니다. International® 및 모든 International Truck 상표는 International Truck Intelligent Property Company, LLC에서 라이선스를 받은 상표입니다. 볼보 상표와 디자인은 AB Volvo Group의 등록 권리 또는 라이선스를 받았으며 라이선스에 따라 사용됩니다. MACK 상표와 디자인은 AB Volvo Group의 등록 권리이며 라이선스에 따라 사용됩니다. Western Star는 Daimler Trucks North America LLC의 상표이며 SCS Software s.r.o. Freightliner는 Daimler Trucks North America LLC의 상표이며 SCS Software s.r.o. 라이선스 하에 사용됩니다."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
 #@}
 
 #+ Save manager errors
@@ -17687,7 +17949,7 @@
 	key[]: "time_skip_hours"
 	val[]: "건너뛸 시간"
 
-	
+
 	key[]: "time_skip_current_time"
 	val[]: "현재 시간"
 
@@ -17707,7 +17969,7 @@
 	key[]: "time_skip_charging_title"
 	val[]: "배터리 충전"
 
-	
+
 	key[]: "time_skip_to_next_mandatory_break_ok"
 	val[]: "$TIME$"
 
@@ -17738,7 +18000,7 @@
 	key[]: "time_skip_rest_full"
 	val[]: "완전한 휴식"
 
-	
+
 	key[]: "time_skip_tooltip_mandatory_break_not_met"
 	val[]: "이 휴식은 의무 휴식 시간 요건을 충족하지 못합니다. 다음 필수 휴식 시간까지 $LEFT_TIME$이 남습니다."
 
@@ -17747,18 +18009,18 @@
 
 	key[]: "time_skip_tooltip_mandatory_break_cont"
 	val[]: "모든 <color value=@@clr_sel@@>$DRIVE_TIME$</color> 시간 운전 마다 벌금을 피하기 위해 최소 <color value=@@clr_sel@@>$BREAK_TIME$</color> 시간 동안 의무적으로 휴식을 취해야 합니다."
-	
+
 
 	key[]: "time_skip_tooltip_job_on_time"
 	val[]: "휴식 시간과 목적지까지의 예상 주행 시간이 지나면 작업 중에 <color value=@@clr_sel@@>$LEFT_TIME$</color>이 남게 됩니다."
-	
+
 	key[]: "time_skip_tooltip_job_late"
 	val[]: "나머지와 목적지까지의 예상 주행 시간이 지나면 배송이 <color value=@@clr_red@@>$LEFT_TIME$</color>만큼 지연됩니다."
 
 	key[]: "time_skip_max_sleep_reached"
-	val[]: "<color value=@clr_red@>당신은 완전히 쉬게 될 것입니다</color>"
+	val[]: "<color value=@@clr_red@@>당신은 완전히 쉬게 될 것입니다</color>"
 
-# shown in job detail widget and pause screen	
+# shown in job detail widget and pause screen
 	key[]: "job_eta"
 	val[]: "예상 도착"
 
@@ -17792,9 +18054,1460 @@
 
 	key[]: "rest_state_simulation"
 	val[]: "휴식 상태 시물레이션"
-	
+
 	key[]: "rest_state_simulation_op_tooltip"
 	val[]: "활성화되면 시간이 지남에 따라 피로의 영향을 경험하게 됩니다.<br><br>회복을 위해 휴식을 취해야 합니다."
 #@}
 
+#+ Road trip localization.
+#@{
+	key[]: "poi_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$ <color value=@@clr_txt@@>발견" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_discovered"
+	val[]: "<color value=@@clr_sel@@>$item_name$" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+
+	key[]: "tourist_board_msg"
+	val[]: "관광 안내판을 활성화하려면 다음 키를 누르세요:"
+#@}
+
+
+#+ Road Trip Desktop specifics
+#@{
+	key[]: "desktop_menu_category_car_company"
+	val[]: "차고"
+
+#@}
+
+#+ Car job localization.
+#@{
+	key[]: "car_job_type_delivery"
+	val[]: "커리어 기사 채용"
+
+	key[]: "car_job_type_driving"
+	val[]: "요구에 따른 드라이버"
+
+	key[]: "car_quick_job_desc"
+	val[]: "제공된 차량을 이용해 전문 커리어 기사로 고용되세요. 그냥 일 하나 골라서 운전하세요."
+
+	key[]: "car_dispatch_job_resumed"
+	val[]: "배차 작업이 진행 중입니다."
+
+	key[]: "customer_prio_info"
+	val[]: "고객 우선"
+
+	key[]: "cargo_type_prio_cargo"
+	val[]: "화물 취급"
+
+	key[]: "cargo_type_prio_time"
+	val[]: "시간 관리"
+
+	key[]: "cargo_type_prio_vehicle"
+	val[]: "차량 상태"
+
+	key[]: "cargo_type_prio_none"
+	val[]: "우선순위 없음"
+
+	key[]: "cargo_attributes"
+	val[]: "특성"
+
+	key[]: "cargo_type_cstandard"
+	val[]: "일반 운송"
+
+	key[]: "cargo_type_cexpress"
+	val[]: "엄격한 납기 기간"
+
+	key[]: "cargo_type_rt_highvalue"
+	val[]: "귀중품"
+
+	key[]: "cargo_type_rt_fragile"
+	val[]: "파손주의"
+
+	key[]: "provided_vehicle"
+	val[]: "제공된 차량"
+
+	key[]: "cjob_arrived"
+	val[]: "도착"
+
+	key[]: "customer_satisfaction_t"
+	val[]: "고객 만족"
+
+	key[]: "provisional_reward"
+	val[]: "잠정 보상"
+
+	key[]: "customer_satisfaction"
+	val[]: "고객 만족"
+
+	key[]: "customer_rejected_delivery"
+	val[]: "배송 거부"
+
+	key[]: "cjob_rating_0"
+	val[]: "비전문적"
+
+	key[]: "cjob_rating_1"
+	val[]: "매우 나쁨"
+
+	key[]: "cjob_rating_2"
+	val[]: "형편없음"
+
+	key[]: "cjob_rating_3"
+	val[]: "만족합니다"
+
+	key[]: "cjob_rating_4"
+	val[]: "굿"
+
+	key[]: "cjob_rating_5"
+	val[]: "완벽"
+
+	key[]: "cjob_default_negative_note_time"
+	val[]: "예상치 못한 도착 시간"
+
+	key[]: "cjob_default_neutral_note_time"
+	val[]: "허용 가능한 도착 시간"
+
+	key[]: "cjob_default_positive_note_time"
+	val[]: "제 때에"
+
+	key[]: "cjob_default_negative_note_cargo"
+	val[]: "깨진 화물"
+
+	key[]: "cjob_default_neutral_note_cargo"
+	val[]: "공정 서비스"
+
+	key[]: "cjob_default_positive_note_cargo"
+	val[]: "손상 없는 배송"
+
+	key[]: "cjob_default_negative_note_cargo_1"
+	val[]: "부주의한 취급"
+
+	key[]: "cjob_default_negative_note_vehicle"
+	val[]: "비전문적인 외모"
+
+	key[]: "cjob_default_neutral_note_vehicle"
+	val[]: "만족스러운 외관"
+
+	key[]: "cjob_default_positive_note_vehicle"
+	val[]: "완벽한 차량"
+
+	key[]: "no_car_job_found"
+	val[]: "선택한 필터에 맞는 일자리를 찾을 수 없습니다"
+
+	key[]: "hint_open_global_dispatch_market"
+	val[]: "현재 제한된 수의 배송 시장을 보고 있습니다 하단 버튼을 클릭하면 전 지역 배송 시장을 볼 수 있습니다."
+
+	key[]: "view_global_dispatch_market"
+	val[]: "글로벌 배송 시장 보기"
+
+	key[]: "car_dispatch_job_t"
+	val[]: "배차 작업 제안"
+
+	key[]: "car_dispatch_job"
+	val[]: "배송 시장"
+
+	key[]: "car_dispatch_job_desc"
+	val[]: "자신의 차량을 이용해 전문 커리어 기사로 취업하세요."
+
+	key[]: "link_locked_msg_dispatch_job"
+	val[]: "배송 시장을 이용하려면 먼저 차량을 배정받아야 합니다."
+
+	key[]: "vehicle_transfer"
+	val[]: "차량 이송"
+
+	key[]: "car_job_rating"
+	val[]: "직무 평가"
+
+	key[]: "car_courier_rating"
+	val[]: "커리어 등급"
+
+	key[]: "car_courier_rating_na"
+	val[]: "N / A" #+ Shown at various places if the player has no courier rating yet. Please keep it as short as possible.
+
+	key[]: "car_delivery_streak"
+	val[]: "완벽한 연속 성공"
+
+	key[]: "car_benefit_max_dist"
+	val[]: "최대 거리"
+
+	key[]: "car_benefit_reward_bonus"
+	val[]: "보상 보너스"
+
+	key[]: "car_benefit_cargo_access"
+	val[]: "화물 접근"
+
+	key[]: "car_active_benefits"
+	val[]: "적극적인 혜택"
+
+	key[]: "car_benefits_locked"
+	val[]: "혜택을 받으려면 첫 번째 <color value=@@clr_white@@>5회 배달</color>을 완료하세요."
+
+	key[]: "car_route_details"
+	val[]: "경로 상세"
+
+	key[]: "ccargo_business_documents"
+	val[]: "비즈니스 문서"
+
+	key[]: "ccargo_personal_documents"
+	val[]: "개인 문서"
+
+	key[]: "ccargo_legal_documents"
+	val[]: "법률 문서"
+
+	key[]: "cjob_dealer_allocation"
+	val[]: "자동차 딜러 배정"
+
+	key[]: "cjob_premium_allocation"
+	val[]: "프리미엄 자동차 딜러 배정"
+
+	key[]: "ccargo_job_tools"
+	val[]: "작업 현장 도구"
+
+	key[]: "ccargo_soil_samples"
+	val[]: "농업 샘플"
+
+	key[]: "ccargo_plant_seedlings"
+	val[]: "식물 묘목"
+
+	key[]: "ccargo_product_samples"
+	val[]: "제품 샘플"
+
+	key[]: "ccargo_return_package"
+	val[]: "반송 패키지"
+
+	key[]: "ccargo_machine_parts"
+	val[]: "예비 기계 부품"
+
+	key[]: "ccargo_customs_docs"
+	val[]: "세관 서류"
+
+	key[]: "ccargo_diplomatic_pouch"
+	val[]: "외교 가방"
+
+	key[]: "ccargo_missed_connection"
+	val[]: "연결 실패된 소포"
+
+	key[]: "ccargo_redirected_parcel"
+	val[]: "배송지 변경된 소포"
+
+	key[]: "ccargo_vehicle_reg_papers"
+	val[]: "차량 등록 서류"
+
+	key[]: "ccargo_livestock_auction_docs"
+	val[]: "가축 경매 서류"
+
+	key[]: "ccargo_replacement_keys"
+	val[]: "교체용 키"
+
+	key[]: "ccargo_freight_manifests"
+	val[]: "화물 명세서"
+
+	key[]: "ccargo_payroll_envelopes"
+	val[]: "급여 봉투"
+
+	key[]: "ccargo_export_customs_decl"
+	val[]: "수출 통관 신고서"
+
+	key[]: "ccargo_rail_waybills"
+	val[]: "철도 운송장"
+
+	key[]: "ccargo_livestock_health_certs"
+	val[]: "가축 건강 증명서"
+
+	key[]: "ccargo_dealer_trade_docs"
+	val[]: "딜러 거래 서류"
+
+	key[]: "ccargo_ore_samples"
+	val[]: "광석 및 광물 샘플"
+
+	key[]: "ccargo_drill_core_samples"
+	val[]: "시추 코어 샘플"
+
+	key[]: "ccargo_chemical_samples"
+	val[]: "화학 시료"
+
+	key[]: "ccargo_grid_relays"
+	val[]: "그리드 릴레이 구성 요소"
+
+	key[]: "ccargo_truck_small_parts"
+	val[]: "트럭 소형 부품"
+
+	key[]: "ccargo_packaging_prototypes"
+	val[]: "포장 프로토타입"
+
+	key[]: "ccargo_outboard_parts"
+	val[]: "선외 엔진 부품"
+
+	key[]: "ccargo_boat_reg_papers"
+	val[]: "보트 등록 서류"
+
+	key[]: "ccargo_fillin_restock"
+	val[]: "재고 보충"
+
+	key[]: "ccargo_lost_wallet"
+	val[]: "분실한 지갑"
+
+	key[]: "ccargo_regatta_trophy"
+	val[]: "요트 경기 트로피"
+
+	key[]: "ccargo_repl_propeller"
+	val[]: "교체용 프로펠러"
+
+	key[]: "ccargo_yacht_brokerage"
+	val[]: "요트 중개 서류"
+
+	key[]: "ccargo_tractor_diag_module"
+	val[]: "트랙터 진단 모듈"
+
+	key[]: "ccargo_substation_keys"
+	val[]: "변전소 액세스 키"
+
+	key[]: "ccargo_flight_crew_docs"
+	val[]: "비행 승무원 문서"
+
+	key[]: "ccargo_misrouted_delivery"
+	val[]: "잘못된 경로의 공급업체 배송"
+
+	key[]: "ccargo_transfer_seals"
+	val[]: "복합운송 이송 밀봉"
+
+	key[]: "ccargo_crew_supplies"
+	val[]: "승무원 용품 및 간식"
+
+	key[]: "ccargo_tourist_maps"
+	val[]: "관광 지도 재보급"
+
+	key[]: "ccargo_fish_finder"
+	val[]: "어군탐지기 장치"
+
+	key[]: "ccargo_unident_shipment"
+	val[]: "미확인 화물"
+
+	key[]: "ccargo_undisc_consignment"
+	val[]: "비공개 위탁품"
+
+	key[]: "ccargo_confid_delivery"
+	val[]: "비밀 배송"
+
+#+ Icon legend specific text
+#@{
+	key[]: "quick_jobs_legend"
+	val[]: "빠른 일거리 정보" #+ Keep uppercase where possible
+
+	key[]: "dispatch_jobs_legend"
+	val[]: "배송 시장 정보" #+ Keep uppercase where possible
+
+	key[]: "car_legend_job_types"
+	val[]: "직업 유형"
+
+	key[]: "car_legend_delivery_job_desc"
+	val[]: "화물 배송 - 소형 소포, 서류 배송"
+
+	key[]: "car_legend_driving_job_desc"
+	val[]: "차량 운송 - 당신이 운전하고 있는 자동차가 화물입니다"
+
+	key[]: "car_legend_cargo_prio_desc"
+	val[]: "안전 운전하시고 화물을 잘 관리해 주세요. 고객은 손상되지 않은 포장을 좋아합니다"
+
+	key[]: "car_legend_vehicle_prio_desc"
+	val[]: "차량의 외관은 중요합니다. 손상된 차량을 타고 도착하면 고객에게 불쾌감을 줄 수 있습니다"
+
+	key[]: "car_legend_time_prio_desc"
+	val[]: "고객은 당신이 약속된 시간에 도착하기를 기대합니다. 너무 일찍 오거나 너무 늦게 오는 것은 안 됩니다"
+
+	key[]: "car_legend_prio_desc"
+	val[]: "선택한 고객 만족도에 각별히 신경 쓰세요. 평점과 보상은 고객 만족도에 크게 좌우됩니다"
+	
+	key[]: "car_legend_modifiers"
+	val[]: "조합키"
+
+	key[]: "car_legend_standard_desc"
+	val[]: "표준 배송 가능 기간"
+
+	key[]: "car_legend_express_desc"
+	val[]: "더 짧은 전달 기간에 더 큰 보상"
+
+	key[]: "car_legend_valuable_desc"
+	val[]: "차량 상태에 대한 고객의 더 엄격한 기대와 더 큰 보상"
+
+	key[]: "car_legend_fragile_desc"
+	val[]: "더 쉽게 손상되는 섬세한 화물에 더 큰 보상"
+
+	key[]: "car_legend_rating"
+	val[]: "평가"
+
+	key[]: "car_legend_job_rating_desc"
+	val[]: "귀하의 성과에 대한 고객 만족도 평가"
+
+	key[]: "car_legend_courier_rating_desc"
+	val[]: "최근 25개의 작업 평가를 합산한 것으로, 커리어 진행도에서 확인할 수 있습니다"
+
+	key[]: "car_legend_delivery_streak_desc"
+	val[]: "연속 완벽한 직무 평가 수"
+
+	key[]: "car_legend_benefits"
+	val[]: "이익"
+
+	key[]: "car_legend_benefit_max_dist_desc"
+	val[]: "더 높은 커리어 등급으로 더 긴 배송 가능합니다"
+
+	key[]: "car_legend_benefit_reward_bonus_desc"
+	val[]: "커리어 등급과 완벽한 연속 배송 기록에 따라 모든 작업에 추가 수당이 지급됩니다"
+
+	key[]: "car_legend_benefit_cargo_access_desc"
+	val[]: "당신에게 맡겨진 화물은 당신의 평점에 따라 늘어납니다"
+
+#@}
+
+#@}
+
+#+ Unavailable data
+#@{
+	key[]: "car_job_name_na"
+	val[]: "N / A" # Shown at various places if car job name is unavailable. Please keep it as short as possible.
+#@}
+
+#+ Multiplayer
+#@{
+
+	key[]: "no_car_preview"
+	val[]: "차량 미리보기 없음"
+
+	key[]: "mp_car_job_missing_job_data"
+	val[]: "해당 작업 데이터를 찾을 수 없습니다. 누락된 모드 또는 DLC에 속해 있을 수 있습니다."
+
+	key[]: "mp_car_job_wrong_cargo"
+	val[]: "해당 작업에 적합한 화물을 찾을 수 없습니다."
+
+	key[]: "mp_car_job_wrong_car"
+	val[]: "업무에 적합한 차량을 찾을 수 없었습니다."
+
+	key[]: "mp_car_job_must_use_company_car"
+	val[]: "이 작업은 제공된 차량으로 수행해야 합니다."
+
+	key[]: "mp_customer_prio_info"
+	val[]: "고객 우선:"
+
+	key[]: "mp_no_vehicle"
+	val[]: "차량 없음"
+
+	key[]: "mp_job_status_truck"
+	val[]: "트럭"
+
+	key[]: "mp_job_status_car"
+	val[]: "자동차"
+
+	key[]: "mp_car_idle"
+	val[]: "대기 중"
+
+	key[]: "mp_car_on_job"
+	val[]: "가능한 작업이 없습니다"
+
+	key[]: "mp_car_on_convoy"
+	val[]: "가능한 작업"
+
+	key[]: "equipment_provided_car"
+	val[]: "제공된 차량"
+
+	key[]: "equipment_owned_car"
+	val[]: "소유한 자동차"
+#@}
+
+#+ Road trip specific customer notes.
+#@{
+	#+ Documents (Business / Personal)
+	key[]: "cjob_documents_negative_note_cargo"
+	val[]: "부적절하게 처리된 문서들"
+
+	key[]: "cjob_documents_negative_note_cargo_1"
+	val[]: "찢어진 봉투"
+
+	key[]: "cjob_documents_negative_note_cargo_2"
+	val[]: "구겨진 종이"
+
+	key[]: "cjob_documents_neutral_note_cargo"
+	val[]: "가벼운 핸들"
+
+	key[]: "cjob_documents_neutral_note_cargo_1"
+	val[]: "약간 구겨짐"
+
+	key[]: "cjob_documents_positive_note_cargo"
+	val[]: "깨끗한 문서"
+
+	key[]: "cjob_documents_positive_note_cargo_1"
+	val[]: "온전한 외피"
+
+	#+ Legal Documents (valuable)
+	key[]: "cjob_legaldoc_negative_note_cargo"
+	val[]: "부적절하게 처리된 문서들"
+
+	key[]: "cjob_legaldoc_negative_note_cargo_1"
+	val[]: "깨진 봉인"
+
+	key[]: "cjob_legaldoc_positive_note_cargo"
+	val[]: "깨지지 않은 봉인"
+
+	key[]: "cjob_legaldoc_positive_note_cargo_1"
+	val[]: "신중하게 처리"
+
+	#+ Machine Parts
+	key[]: "cjob_parts_negative_note_cargo"
+	val[]: "내용물 흔들기"
+
+	key[]: "cjob_parts_neutral_note_cargo"
+	val[]: "미용 표시"
+
+	key[]: "cjob_parts_positive_note_cargo"
+	val[]: "새것과 같은 상태"
+
+	#+ Job Site Tools (negative reuses parts/box keys: Rattling Contents / Dented Package / Punctured Parcel)
+	key[]: "cjob_tools_neutral_note_cargo"
+	val[]: "닳은 도구"
+
+	key[]: "cjob_tools_neutral_note_cargo_1"
+	val[]: "가벼운 착용"
+
+	key[]: "cjob_tools_positive_note_cargo"
+	val[]: "완벽한 도구 모음"
+
+	key[]: "cjob_tools_positive_note_cargo_1"
+	val[]: "위에 있는 형태"
+
+	#+ Agricultural Samples (internal id: soil)
+	key[]: "cjob_soil_negative_note_cargo"
+	val[]: "오염된 샘플"
+
+	key[]: "cjob_soil_negative_note_cargo_1"
+	val[]: "쏟아진 컨테이너"
+
+	key[]: "cjob_soil_negative_note_cargo_2"
+	val[]: "상한 샘플"
+
+	key[]: "cjob_soil_negative_note_cargo_3"
+	val[]: "누수되는 컨테이너"
+
+	key[]: "cjob_soil_neutral_note_cargo"
+	val[]: "희미한 누출"
+
+	key[]: "cjob_soil_neutral_note_cargo_1"
+	val[]: "약간의 유출"
+
+	key[]: "cjob_soil_neutral_note_cargo_2"
+	val[]: "느슨한 뚜껑"
+
+	key[]: "cjob_soil_positive_note_cargo"
+	val[]: "안전하게 밀봉됨"
+
+	key[]: "cjob_soil_positive_note_cargo_1"
+	val[]: "완벽하게 보존됨"
+
+	key[]: "cjob_soil_positive_note_cargo_2"
+	val[]: "손대지 않은 샘플"
+
+	key[]: "cjob_soil_positive_note_cargo_3"
+	val[]: "깨끗한 샘플"
+
+	key[]: "cjob_soil_positive_note_cargo_4"
+	val[]: "쏟아진 컨테이너"
+
+	#+ Product Samples (neutral also references parts key cjob_parts_neutral_note_cargo = Cosmetic Marks)
+	key[]: "cjob_samples_negative_note_cargo"
+	val[]: "손상된 샘플"
+
+	key[]: "cjob_samples_negative_note_cargo_1"
+	val[]: "찢어진 포장"
+
+	key[]: "cjob_samples_neutral_note_cargo"
+	val[]: "경미한 흠집"
+
+	key[]: "cjob_samples_positive_note_cargo"
+	val[]: "전시장 전시 가능 상태"
+
+	key[]: "cjob_samples_positive_note_cargo_1"
+	val[]: "깨끗한 포장"
+
+	#+ Return Package (generic box). NOTE: negative keys are shared by machine parts & job tools.
+	key[]: "cjob_box_negative_note_cargo"
+	val[]: "찌그러진 포장"
+
+	key[]: "cjob_box_negative_note_cargo_1"
+	val[]: "구멍 난 소포"
+
+	key[]: "cjob_box_negative_note_cargo_2"
+	val[]: "손상된 포장"
+
+	key[]: "cjob_box_neutral_note_cargo"
+	val[]: "모서리가 찌그러짐"
+
+	key[]: "cjob_box_neutral_note_cargo_1"
+	val[]: "작은 흠집"
+
+	key[]: "cjob_box_positive_note_cargo"
+	val[]: "손상되지 않은 소포"
+
+	key[]: "cjob_box_positive_note_cargo_1"
+	val[]: "조심스럽게 반환됨"
+
+	key[]: "cjob_box_positive_note_cargo_2"
+	val[]: "조심스럽게 다루어짐"
+
+	#+ Replacement Keys (neutral also refs parts Cosmetic Marks; positive also refs parts Mint Condition)
+	key[]: "cjob_keys_negative_note_cargo"
+	val[]: "흠집 난 열쇠고리"
+
+	key[]: "cjob_keys_negative_note_cargo_1"
+	val[]: "열쇠 케이스가 깨짐"
+
+	key[]: "cjob_keys_negative_note_cargo_2"
+	val[]: "구부러진 열쇠"
+
+	key[]: "cjob_keys_negative_note_cargo_3"
+	val[]: "부러진 열쇠고리"
+
+	key[]: "cjob_keys_neutral_note_cargo"
+	val[]: "가벼운 긁힘"
+
+	key[]: "cjob_keys_positive_note_cargo"
+	val[]: "공장 밀봉"
+
+	#+ Plant Seedlings
+	key[]: "cjob_seedlings_negative_note_cargo"
+	val[]: "손상된 뿌리"
+
+	key[]: "cjob_seedlings_negative_note_cargo_1"
+	val[]: "부러진 새싹"
+
+	key[]: "cjob_seedlings_negative_note_cargo_2"
+	val[]: "부러진 줄기"
+
+	key[]: "cjob_seedlings_neutral_note_cargo"
+	val[]: "잃어버린 잎 몇 장"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_1"
+	val[]: "구부러진 줄기"
+
+	key[]: "cjob_seedlings_neutral_note_cargo_2"
+	val[]: "약간의 시듦"
+
+	key[]: "cjob_seedlings_positive_note_cargo"
+	val[]: "심을 준비 완료"
+
+	key[]: "cjob_seedlings_positive_note_cargo_1"
+	val[]: "잘 자라는 식물"
+
+	key[]: "cjob_seedlings_positive_note_cargo_2"
+	val[]: "건강한 묘목"
+
+	key[]: "cjob_seedlings_positive_note_cargo_3"
+	val[]: "완벽하게 관리됨"
+
+	#+ Customs Documents
+	key[]: "cjob_customs_negative_note_cargo"
+	val[]: "찢어진 페이지"
+
+	key[]: "cjob_customs_negative_note_cargo_1"
+	val[]: "번진 잉크"
+
+	key[]: "cjob_customs_neutral_note_cargo"
+	val[]: "살짝 접힌"
+
+	key[]: "cjob_customs_neutral_note_cargo_1"
+	val[]: "작은 얼룩"
+
+	key[]: "cjob_customs_positive_note_cargo"
+	val[]: "정리된 문서"
+
+	key[]: "cjob_customs_positive_note_cargo_1"
+	val[]: "적절하게 제출됨"
+
+	#+ Diplomatic Pouch
+	key[]: "cjob_dippouch_negative_note_cargo"
+	val[]: "깨진 봉인"
+
+	key[]: "cjob_dippouch_negative_note_cargo_1"
+	val[]: "로드 트립"
+
+	key[]: "cjob_dippouch_negative_note_cargo_2"
+	val[]: "유출된 콘텐츠"
+
+	key[]: "cjob_dippouch_neutral_note_cargo"
+	val[]: "경미한 찰과상"
+
+	key[]: "cjob_dippouch_neutral_note_cargo_1"
+	val[]: "약간 헐거운 밀봉"
+
+	key[]: "cjob_dippouch_positive_note_cargo"
+	val[]: "봉인 해제됨"
+
+	key[]: "cjob_dippouch_positive_note_cargo_1"
+	val[]: "모범적인 재량"
+
+	key[]: "cjob_dippouch_positive_note_cargo_2"
+	val[]: "안전하게 배송"
+
+	#+ Shared Parcel notes (Missed Connection + Redirected Parcel)
+	key[]: "cjob_parcel_negative_note_cargo"
+	val[]: "부적절하게 처리됨"
+
+	key[]: "cjob_parcel_negative_note_cargo_1"
+	val[]: "위반 처리"
+
+	key[]: "cjob_parcel_neutral_note_cargo"
+	val[]: "예상 마모도"
+
+	key[]: "cjob_parcel_neutral_note_cargo_1"
+	val[]: "합리적인 조건"
+
+	key[]: "cjob_parcel_neutral_note_cargo_2"
+	val[]: "운송 표시"
+
+	#+ Missed Connection Parcel
+	key[]: "cjob_missed_positive_note_cargo"
+	val[]: "성공적으로 경로 변경됨"
+
+	#+ Redirected Parcel
+	key[]: "cjob_redirected_positive_note_cargo"
+	val[]: "완벽하게 우회됨"
+
+	#+ Shared Paperwork notes (Vehicle Registration + Livestock Auction Documents)
+	key[]: "cjob_paperwork_negative_note_cargo"
+	val[]: "손상된 레코드"
+
+	key[]: "cjob_paperwork_negative_note_cargo_1"
+	val[]: "페이지 누락"
+
+	key[]: "cjob_paperwork_neutral_note_cargo"
+	val[]: "약한 굽힘"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_1"
+	val[]: "희미한 흔적"
+
+	key[]: "cjob_paperwork_neutral_note_cargo_2"
+	val[]: "약간의 주름"
+
+	#+ Vehicle Registration Papers
+	key[]: "cjob_vehreg_negative_note_cargo"
+	val[]: "벤트 인증서"
+
+	key[]: "cjob_vehreg_negative_note_cargo_1"
+	val[]: "등록 지연"
+
+	key[]: "cjob_vehreg_positive_note_cargo"
+	val[]: "깨끗한 문서"
+
+	key[]: "cjob_vehreg_positive_note_cargo_1"
+	val[]: "훼손되지 않은 서류"
+
+	#+ Livestock Auction Documents
+	key[]: "cjob_auctdoc_negative_note_cargo"
+	val[]: "손상된 증명서"
+
+	key[]: "cjob_auctdoc_positive_note_cargo"
+	val[]: "손상되지 않은 기록"
+
+	key[]: "cjob_auctdoc_positive_note_cargo_1"
+	val[]: "완벽한 서류"
+#@}
+
+#+ Car job localization which doens't require translation.
+#!{
+	key[]: "tt_ico_driving"
+	val[]: "@@car_job_type_driving@@"
+
+	key[]: "tt_ico_delivery"
+	val[]: "@@car_job_type_delivery@@"
+
+	key[]: "tt_ico_cstandard"
+	val[]: "@@cargo_type_cstandard@@"
+
+	key[]: "tt_ico_cexpress"
+	val[]: "@@cargo_type_cexpress@@"
+
+	key[]: "tt_ico_rt_highvalue"
+	val[]: "@@cargo_type_rt_highvalue@@"
+
+	key[]: "tt_ico_rt_fragile"
+	val[]: "@@cargo_type_rt_fragile@@"
+
+	key[]: "car_quick_job_resumed"
+	val[]: "@@quick_job_resumed@@"
+
+	key[]: "car_job_detail_t"
+	val[]: "@@job_detail_word_t@@"
+
+	key[]: "car_quick_job"
+	val[]: "@@job_quick@@"
+
+	key[]: "car_quick_job_t"
+	val[]: "@@quick_job_t@@"
+#!}
+
+#+ Car shop and brand dealer localization.
+#+
+#+ Shows window with all car brands and then another window with specific cars of a given brand to purchase.
+#@{
+	key[]: "car_shop_icon"
+	val[]: "자동차 딜러" #+ Icon opening the car dealer screen.
+
+	key[]: "car_shop_help"
+	val[]: "차량을 구입하여 차고에 추가하세요." #+ Help message associated the dealer map icon.
+
+	key[]: "car_shop_t"
+	val[]: "자동차 구매" #+ Title of the screen. Please keep in upper case where possible.
+
+	key[]: "car_shop_explanation"
+	val[]: "구매 혜택을 보려면 브랜드를 선택하세요."
+
+	key[]: "car_shop_all_dlc"
+	val[]: "DLC 브라우저 열기"
+
+	key[]: "car_shop_view_offers"
+	val[]: "혜택 보기"
+
+	key[]: "car_shop_view_in_dlc_browser"
+	val[]: "DLC 브라우저에서 보기"
+
+	key[]: "car_shop_coming_soon"
+	val[]: "출시 예정" #+ Text shown when a car brand is not yet available in the game. Please keep in uppercase.
+
+	key[]: "car_shop_tooltip_dlc_browser"
+	val[]: "DLC 브라우저"
+
+	key[]: "car_purchase_t"
+	val[]: "자동차 구매" #+ Title of the screen. Please keep in upper case where possible.
+	
+	key[]: "car_purchase_info_model"
+	val[]: "모델:"
+
+	key[]: "car_purchase_info_drivetrain"
+	val[]: "구동계:"
+
+	key[]: "car_purchase_info_bodywork"
+	val[]: "차체:"
+
+	key[]: "car_purchase_info_engine"
+	val[]: "엔진:"
+
+	key[]: "car_purchase_table_fuel_tank"
+	val[]: "연료 탱크"
+
+	key[]: "car_purchase_table_drivetrain"
+	val[]: "구동계"
+
+	key[]: "car_purchase_table_trans"
+	val[]: "기어 박스"
+
+	key[]: "car_purchase_color_configuration"
+	val[]: "색상 구성" #+ Title above color configuration list.
+
+	key[]: "car_purchase_checkout"
+	val[]: "점검" #+ Title above color configuration list.
+
+	key[]: "car_purchase_bank_balance"
+	val[]: "은행 잔고:"
+
+	key[]: "car_purchase_color_fee"
+	val[]: "맞춤 색상 추가 요금:"
+
+	key[]: "car_purchase_confirm"
+	val[]: "구매"
+
+	key[]: "car_purchase_back"
+	val[]: "이전"
+
+	key[]: "car_purchase_car_bought_t"
+	val[]: "자동차 구매" #+ Title of car bought message box. Please keep in upper case where possible.
+
+	key[]: "car_purchase_confirm_exit_t"
+	val[]: "주의"
+
+	key[]: "car_purchase_confirm_exit_msg"
+	val[]: "새 차 구매를 아직 완료하지 않으셨습니다. 이 화면을 나가시겠습니까?"
+
+	key[]: "car_purchase_leave"
+	val[]: "떠나기"
+
+	key[]: "car_purchase_stay"
+	val[]: "머무르다"
+
+	key[]: "car_purchase_car_bought"
+	val[]: "구매해주셔서 감사합니다.<br>$CAR_NAME$ 차량이 이제 컬렉션에 추가되었습니다." #+ Message of car bought message box.
+
+	key[]: "view_in_garage"
+	val[]: "차고에서 보기" #+ Button that takes player to vehicle garage.
+
+#@}
+
+#+ Car-specific time skip localization.
+#@{
+	key[]: "time_skip_delivery_early"
+	val[]: "조기 납품" 
+
+	key[]: "time_skip_tooltip_job_early"
+	val[]: "휴식 시간과 목적지까지의 예상 주행 시간이 지나면 배송이 <color value=@@clr_sel@@>$LEFT_TIME$</color>만큼 일찍 도착할 것입니다."
+#@}
+
+
+#+ Car configurator localization.
+#@{
+	key[]: "bodywork_t"
+	val[]: "차체"
+
+	key[]: "bodywork"
+	val[]: "차체"
+
+	key[]: "drivetrain_t"
+	val[]: "구동계"
+
+	key[]: "drivetrain"
+	val[]: "구동계"
+
+	key[]: "car_brand_t"
+	val[]: "차량 디자인"
+
+	key[]: "car_brand"
+	val[]: "차량 디자인"
+
+	key[]: "no_car_found"
+	val[]: "일치하는 차량을 찾을 수 없습니다" #+ Text shown when there are no cars found by filters.
+#@}
+
+#+ Car diagnostic localization.
+#@{
+	key[]: "car_service_about"
+	val[]: "차량의 유지 및 보수를 합니다. 훌륭한 운전자는 항상 차량의 컨디션을 최상으로 유지합니다." #+ Help message associated with service icon.
+
+	key[]: "car_service_car_t"
+	val[]: "차량 대미지 리포트" #+ Header of section displaying status of individual components of the car. Please keep in upper case where possible.
+
+	key[]: "car_diag_about"
+	val[]: "차량 및 현재 상태에 대한 정보를 볼 수 있습니다."
+
+	key[]: "cd_info_model"
+	val[]: "모델:"
+
+	key[]: "cd_info_drivetrain"
+	val[]: "구동계:"
+
+	key[]: "cd_info_bodywork"
+	val[]: "차체:"
+
+	key[]: "cd_info_engine"
+	val[]: "엔진:"
+
+	key[]: "car_damage"
+	val[]: "차량 손상" #+ Price for the car damage
+
+	key[]: "adj_rearview"
+	val[]: "백미러"
+#@}
+
+#+ Car browser localization.
+#@{
+	key[]: "car_browser_t"
+	val[]: "차량 브라우저"
+
+	key[]: "car_browser"
+	val[]: "자동차 브라우저"
+
+	key[]: "car_browser_help"
+	val[]: "다양한 차량 구성을 실험해 보세요."  #+ Description for the Car Browser icon.
+#@}
+
+#+ Car career localization.
+#@{
+	key[]: "car_career_log_job"
+	val[]: "작업"
+
+	key[]: "car_career_log_customer_satisfaction"
+	val[]: "고객 만족"
+
+	key[]: "car_career_stats_job_rating"
+	val[]: "직무 평가"
+
+	key[]: "car_career_progress_stats_experience_cars"
+	val[]: "자동차"
+
+	key[]: "car_career_progress_stats_owned_car_count"
+	val[]: "소유된 자동차"
+
+	key[]: "car_career_progress_stats_used_car_count"
+	val[]: "직무에 사용되는 모델들"
+
+	key[]: "car_career_progress_stats_most_used_car"
+	val[]: "가장 많이 사용되는 모델"
+
+	key[]: "car_career_progress_stats_max_customer_bonus"
+	val[]: "최대 고객 보너스"
+
+	key[]: "car_career_progress_stats_max_customer_penalty"
+	val[]: "최대 고객 벌금"
+
+	key[]: "car_career_progress_stats_customer_positive"
+	val[]: "긍정적인 리뷰"
+
+	key[]: "car_career_progress_stats_customer_neutral"
+	val[]: "중립적인 리뷰"
+
+	key[]: "car_career_progress_stats_customer_negative"
+	val[]: "부정적인 리뷰"
+
+	key[]: "car_career_progress_stats_longest_perfect_streak"
+	val[]: "완벽한 연속 배달 최장 기록"
+
+	key[]: "car_career_progress_stats_most_money_earned"
+	val[]: "하루에 가장 많이 번 돈"
+
+	key[]: "career_progress_stats_explore_atlas"
+	val[]: "아틀라스"
+
+	key[]: "career_progress_stats_explore_pois_explored"
+	val[]: "방문한 관심 지점"
+
+	key[]: "career_progress_stats_explore_postcards_completed"
+	val[]: "엽서 완성"
+
+	key[]: "career_progress_stats_tab_courier_rating_t"
+	val[]: "커리어 등급"
+#@}
+
+#+ Job widget.
+#@{
+	key[]: "truck_job_different_mode"
+	val[]: "트럭 모드<br>작업 진행 중"
+	
+	key[]: "car_job_different_mode"
+	val[]: "자동차 모드<br>작업 진행 중"
+#@}
+
+#+ World map.
+#@{
+	key[]: "no_gps_different_mode"
+	val[]: "다른 모드로 이미 계획된 여행"
+#@}
+
+#+ Quick travel.
+#@{
+	key[]: "select_quick_travel_destination_economy_reset_truck"
+	val[]: "게임 변경 사항이 감지되었습니다. 트럭의 빠른 이동 목적지를 선택하세요:" #+ Shown during economy reset quick travel for truck.
+
+	key[]: "select_quick_travel_destination_economy_reset_car"
+	val[]: "게임 변경 사항이 감지되었습니다. 자동차의 빠른 이동 목적지를 선택하세요:" #+ Shown during economy reset quick travel for car.
+#@}
+
+#+ Mail screen
+#+
+#+ Shows incomming emails from bank and truck dealers.
+#@{
+	key[]: "mail_switch_vehicle_mode_confirmation"
+	val[]: "이 정보를 보려면 $VEHICLE_MODE$로 전환해야 합니다 <br><br>계속하시겠습니까?" #+ Shown when clicking on link in message would cause vehicle mode switch.
+#@}
+
+#+ Atlas localization.
+#@{
+	key[]: "tourist_atlas_filter_all"
+	val[]: "모두 보기"
+
+	key[]: "tourist_atlas_filter_touristbs"
+	val[]: "모든 관광 안내판"
+
+	key[]: "tourist_atlas_filter_photo_trophies"
+	val[]: "모든 포토 트로피"
+
+	key[]: "tourist_atlas_filter_viewpoints"
+	val[]: "모든 뷰포인트"
+
+	key[]: "tourist_atlas_filter_pointsoi"
+	val[]: "모든 명소"
+
+	key[]: "mapl_locations"
+	val[]: "위치:"
+
+	key[]: "mapl_photo_sight"
+	val[]: "포토 트로피"
+
+	key[]: "mapl_viewpoint"
+	val[]: "뷰포인트"
+
+	key[]: "mapl_point_of_interest"
+	val[]: "관심 지점"
+
+	key[]: "mapl_point_of_interest_completed"
+	val[]: "관심 지점 (탐색됨)"
+
+	key[]: "mapl_point_of_interest_discovered"
+	val[]: "관심 지점 (발견됨)"
+
+	key[]: "mapl_tourist_board"
+	val[]: "관광 안내판"
+
+	key[]: "mapl_tourist_board_completed"
+	val[]: "관광 안내판 (탐색됨)"
+
+	key[]: "mapl_tourist_board_discovered"
+	val[]: "관광 안내판 (발견됨)"
+
+	key[]: "mapl_tourist_board_undiscovered"
+	val[]: "관광 안내판 (미발견)"
+
+	key[]: "mapl_location_states"
+	val[]: "위치 정보:"
+
+	key[]: "mapl_state_explored"
+	val[]: "탐색됨"
+
+	key[]: "mapl_state_discovered"
+	val[]: "발견"
+
+	key[]: "mapl_state_undiscovered"
+	val[]: "미발견"
+
+	key[]: "tourist_atlas_summary_hint"
+	val[]: "오른쪽에서 항목을 선택하여 상세 정보를 확인하세요"
+
+	key[]: "tourist_atlas_postcardsview"
+	val[]: "엽서 갤러리"
+
+	key[]: "tourist_atlas_locations"
+	val[]: "위치:"
+
+	key[]: "tourist_atlas_last_updated_tb"
+	val[]: "관광 안내판 최종 업데이트:"
+
+	key[]: "tourist_atlas_last_updated_loc"
+	val[]: "최근 업데이트된 위치:"
+
+	key[]: "tourist_atlas_list_of_all"
+	val[]: "전체 목록:"
+
+	key[]: "tourist_atlas_overview_t"
+	val[]: "아틀라스 개요"
+
+	key[]: "tourist_atlas_link"
+	val[]: "아틀라스"
+
+	key[]: "tourist_atlas_title"
+	val[]: "아틀라스"
+
+	key[]: "tourist_atlas_help"
+	val[]: "나만의 여행 가이드를 열고 로드 트립을 계획해 보세요. 흥미로운 장소를 발견하고 탐험하며 배워보세요."
+
+	key[]: "tourist_atlas_explored"
+	val[]: "탐색됨"
+
+	key[]: "tourist_atlas_discovered"
+	val[]: "발견"
+
+	key[]: "tourist_atlas_undiscovered"
+	val[]: "미발견"
+
+	key[]: "tourist_atlas_touristbs"
+	val[]: "관광 안내판"
+
+	key[]: "tourist_atlas_photo_trophies"
+	val[]: "포토 트로피"
+
+	key[]: "tourist_atlas_viewpoints"
+	val[]: "뷰포인트"
+
+	key[]: "tourist_atlas_pointsoi"
+	val[]: "관심 지점"
+
+	key[]: "tourist_atlas_select_tb"
+	val[]: "자세한 내용을 알아보려면 관광 안내판을 선택하세요."
+
+	key[]: "attractions_along_the_road"
+	val[]: "도로를 따라 있는 명소들"
+
+	key[]: "belongs_to_tb"
+	val[]: "관광 안내판 소속:"
+
+	key[]: "tourist_atlas_detail_show_location"
+	val[]: "전시 장소"
+
+	key[]: "overlay_focus_map"
+	val[]: "지도에 집중"
+
+	key[]: "overlay_focus_panel"
+	val[]: "패널에 집중"
+
+	key[]: "overlay_open_tb"
+	val[]: "열린 관광 안내판"
+
+	key[]: "overlay_open_item"
+	val[]: "열린 항목"
+
+	key[]: "overlay_select_atlas_item"
+	val[]: "항목 선택"
+
+	key[]: "tourist_atlas_add_navigation"
+	val[]: "내비게이션에 추가"
+
+	key[]: "tourist_atlas_remove_navigation"
+	val[]: "내비게이션에서 제거"
+
+	key[]: "tourist_atlas_reset_navigation"
+	val[]: "내비게이션 리셋"
+
+	key[]: "tourist_atlas_view_in_gallery"
+	val[]: "갤러리에서 보기"
+
+	key[]: "detail_discover_tb"
+	val[]: "더 자세한 정보를 원하시면 해당 관광 안내판을 방문해 보세요."
+
+	key[]: "detail_discover_photo_album_item"
+	val[]: "위치를 알아보려면 관광 안내판을 찾아보세요."
+
+	key[]: "detail_explore_photo_album_item"
+	val[]: "더 자세한 정보를 알아보려면 해당 위치를 탐색해 보세요."
+
+	key[]: "tourist_atlas_nav_oversize_job"
+	val[]: "대형 작업 중에는 아틀라스 위치로의 탐색이 비활성화됩니다."
+
+	key[]: "tourist_atlas_nav_goal_fixed"
+	val[]: "현재 아틀라스 위치로의 탐색 기능이 비활성화되었습니다. 먼저 현재 탐색 목표를 완료하세요."
+
+	key[]: "tourist_atlas_nav_disabled"
+	val[]: "탐색 기능이 비활성화되어 있습니다. 옵션에서 활성화할 수 있습니다."
+
+	key[]: "tourist_atlas_nav_full"
+	val[]: "내비게이션에 추가할 수 있는 핀 수가 최대치에 도달했습니다."
+
+	key[]: "tourist_atlas_nav_requires_vehicle"
+	val[]: "내비게이션에는 차량이 필요합니다"
+
+	key[]: "no_discovered_tb"
+	val[]: "발견되지 않은 관광 안내판"
+
+	key[]: "postcard_progress"
+	val[]: "엽서 제작 과정"
+
+	key[]: "photo_album_touristbs_tab"
+	val[]: "관광 안내판"
+
+	key[]: "photo_album_touristbs_non_visited_tooltip"
+	val[]: "관광 안내판은 아직 완료되지 않았습니다"
+
+	key[]: "photo_album_poi_unknown"
+	val[]: "관심 지점을 볼 수 없습니다. 해당 DLC가 활성화되어 있는지 확인하세요."
+
+	key[]: "pin_children"
+	val[]: "칠드런 핀"
+
+	key[]: "unpin_children"
+	val[]: "칠드런 핀 해제"
+
+	key[]: "pin_item"
+	val[]: "지도에 핀 표시"
+
+	key[]: "unpin_item"
+	val[]: "지도에서 핀 해제"
+
+	key[]: "atlas_welcome_t"
+	val[]: "아틀라스에 오신 것을 환영합니다" #+ Message box title. Keep in upper case where possible.
+
+	key[]: "atlas_welcome_text"
+	val[]: "<align hstyle=left><font face=/font/normal_bold.font>아틀라스</font>는 개인 관광 가이드입니다. 자동차 여행을 하면서 흥미로운 장소를 발견하고 탐험하고 알아보세요.<br><br>지역의 주목할만한 장소로 안내해 줄 현지 $TOURIST_BOARD$를 발견하는 것부터 시작하세요.<br><br>$POI$<br>$VIEWPOINT$<br>$LANDMARK$<br><br>완전히 탐험함으로써 각 관광 위원회마다 차량에 전시할 수 있는 엽서를 받게 됩니다.</align>"
+#@}
+
+#+ Tourist atlas reward texts.
+#@{
+	key[]: "new_tourist_atlas_rewards_t"
+	val[]: "새로운 보상이 잠금 해제되었습니다" #+ Title of the window displaying list of the new tourist atlas rewards.
+
+	key[]: "new_tourist_atlas_rewards_help"
+	val[]: "로드 트립 진행 상황에 따라 새로운 항목이 추가되었습니다. 적용 가능한 직업: <font face=/font/normal_bold.font>$profile_name$</font>." #+ The help text for new tourist atlas reward items dialog.
+
+	key[]: "tourist_atlas_reward"
+	val[]: "로드 트립" #+ Text in explorer on tourist atlas reward accessory.
+
+	key[]: "tourist_atlas_reward_locked"
+	val[]: "<color value=@@clr_sel@@>로드 트립에서 이용 가능합니다" #+ Text in configurator when tourist atlas accessory is locked.
+#@}
+
+
+#+ Vehicle garage screen.
+#@{
+	key[]: "car_garage_t"
+	val[]: "내 자동차"
+
+	key[]: "car_garage_icon"
+	val[]: "내 자동차"
+
+	key[]: "car_garage_help"
+	val[]: "운전하고 싶은 차를 선택하세요."
+
+	key[]: "vehicle_garage_no_vehicles"
+	val[]: "차고에 차량이 없습니다."
+
+	key[]: "vehicle_garage_sell"
+	val[]: "매매"
+
+	key[]: "vehicle_garage_configure"
+	val[]: "설정"
+
+	key[]: "vehicle_garage_use"
+	val[]: "사용"
+
+	key[]: "vehicle_garage_drive"
+	val[]: "드라이브"
+
+	key[]: "vehicle_garage_sell_t"
+	val[]: "차량 매각"
+
+	key[]: "vehicle_garage_sell_message"
+	val[]: "정말로 당신의 $VEHICLE$ 을 $MONEY$ 에 판매할까요?"
+
+	key[]: "vehicle_garage_sell_message_on_job"
+	val[]: "운송 도중 차량을 매각할 수 없습니다! 운송을 끝마친 후 다시 시도하십시오."
+
+	key[]: "vehicle_garage_use_t"
+	val[]: "차량 사용" #+ Message box title. Please keep in upper case where possible.
+
+	key[]: "vehicle_garage_use_message_on_job"
+	val[]: "일하는 도중에 차량을 바꿀수없습니다! 먼저 운송을 완료하시기 바랍니다."
+
+	key[]: "garage_configure_message_teleport"
+	val[]: "현재 사용 중인 차량을 설정하려면 주유소를 방문해야 합니다. 가장 가까운 것으로 빠르게 이동하시겠어요?"
+	
+	key[]: "garage_vehicle_name"
+	val[]: "차량"
+
+	key[]: "garage_power"
+	val[]: "엔진 마력"
+
+	key[]: "garage_fuel_tank"
+	val[]: "연료 탱크:"
+
+	key[]: "garage_distance"
+	val[]: "주행 거리:"
+
+	key[]: "garage_condition"
+	val[]: "상태:"
+
+	key[]: "vehicle_details_tab"
+	val[]: "차량 정보"
+
+	key[]: "all_vehicles_tab"
+	val[]: "모든 차량"
+
+	key[]: "garage_statistics"
+	val[]: "차량 통계"
+
+	key[]: "garage_value"
+	val[]: "값"
+
+	key[]: "garage_current_value"
+	val[]: "현재 값:"
+
+	key[]: "garage_value_of_new"
+	val[]: "쇼룸 가격:"
+
+	key[]: "garage_info_model"
+	val[]: "모델:"
+
+	key[]: "garage_info_drivetrain"
+	val[]: "구동계:"
+
+	key[]: "garage_info_bodywork"
+	val[]: "차체:"
+
+	key[]: "garage_info_steering"
+	val[]: "조향:" #+ Steering side. For example "Steering:&nbsp;&nbsp;&nbsp;&nbsp; Left-hand"
+
+	key[]: "garage_info_engine_name"
+	val[]: "엔진:"
+
+	key[]: "garage_info_transmission"
+	val[]: "기어 박스:" #+ Type of the gearbox. "For example "Gearbox:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 speed gearbox"
+
+	key[]: "garage_info_tank"
+	val[]: "연료 탱크:"
+
+	key[]: "garage_damage"
+	val[]: "손상 보고서:"
+
+	key[]: "garage_ownership_time"
+	val[]: "소유 시간:"
+
+	key[]: "garage_configure_t"
+	val[]: "차량 구성"
+
+	key[]: "garage_configure_message_on_job"
+	val[]: "일하는 도중에 차량을 바꿀수없습니다! 먼저 운송을 완료하시기 바랍니다."
+
+	key[]: "garage_fuel_consumption"
+	val[]: "평균 연료 소비량:"
+
+	key[]: "link_locked_msg_car_garage"
+	val[]: "@@car_garage_icon@@을 이용하려면 먼저 차량을 구매해야 합니다."
+
+	key[]: "garage_vehicle_name_column"
+	val[]: "차량"
+
+	key[]: "garage_ownership_time_column"
+	val[]: "소유 시간"
+
+	key[]: "garage_power_column"
+	val[]: "엔진 마력"
+
+	key[]: "garage_avg_fuel_column"
+	val[]: "평균 연료 사용량"
+
+	key[]: "garage_distance_column"
+	val[]: "주행 거리"
+
+	key[]: "garage_condition_column"
+	val[]: "상태"
+
+	key[]: "garage_currently_driving_t"
+	val[]: "현재 운전 중" #+ Keep capitalized
+	
+#@}
+
+#+ On-screen message
+#+
+#+ Hint that appears after taking a car job. It's composed of two parts, separated by a new line. It has no length limit.
+#@{
+
+	key[]: "car_delivery_ready1"
+	val[]: "배송 준비 완료."
+
+	key[]: "car_delivery_ready2"
+	val[]: "목적지까지 차로 이동하세요."
+
+#@}
+
+#+ Adviser Options
+#@{
+	key[]: "adv_hud_tourist_board_line"
+	val[]: "로드 트립 아틀라스" #+ Widget name for the tourist board progress.
+
+	key[]: "adv_hud_tourist_board_newly_discovered"
+	val[]: "새로 탐색된 것"
+
+	key[]: "adv_hud_tourist_board_completed"
+	val[]: "관광 안내판 완료"
+
+	key[]: "adv_hud_tourist_board_details"
+	val[]: "아틀라스에서 세부 정보를 보려면 $KEY$를 사용하십시오"
+
+	key[]: "adv_hud_tourist_board_line_op_tooltip"
+	val[]: "아틀라스에서 위치를 탐색하는 동안 알림을 보내고 진행 상황과 정보를 표시합니다. 위젯은 설정에 따라 동적으로 나타납니다."
+#@}
+
+#+ Garage & Shop - car descriptions
+#+ 
+#@{
+
+	key[]: "description_ford_bronco_2024"
+	val[]: "오프로드 아이콘으로 새롭게 태어난 브롱코는 각진 레트로 스타일과 어떤 지형도 정복할 수 있도록 설계된 강력한 성능을 결합했습니다."
+
+	key[]: "description_ford_f150_2023"
+	val[]: "수십 년간 미국에서 가장 많이 팔린 트럭인 F-150은 강력한 적재 능력과 일상적인 편안함, 그리고 믿음직한 다용성을 결합했습니다."
+
+	key[]: "description_ford_mustang_1967"
+	val[]: "머스탱은 날렵한 패스트백 라인, 독특한 실루엣, 그리고 오늘날까지도 사람들의 시선을 사로잡는 엔진음으로 포니카 시대를 정의했습니다."
+
+	key[]: "description_ford_crown_victoria_2006"
+	val[]: "넉넉한 실내 공간과 후륜구동 기능을 갖춘 크라운 빅토리아는 수년간 미국에서 신뢰받는 경찰차와 택시로 자리매김했습니다."
+#@}
 

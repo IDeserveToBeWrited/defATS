@@ -1,0 +1,39 @@
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX FEATAN HIGHWAY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+traffic_vehicle : traffic.featan.midclass_25.highway
+{
+	accessories[]: .featan.midclass_25.highway.chassis
+	accessories[]: .featan.midclass_25.highway.fwheel
+	accessories[]: .featan.midclass_25.highway.rwheel
+
+	max_speed: 160
+	vehicle_mass: 2900
+
+	sound_move[]: "/sound/traffic/car_v8_1.soundref"
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_4.soundref"
+
+
+	
+@include "drivers_generic.sui"
+
+}
+
+vehicle_accessory: .featan.midclass_25.highway.chassis
+{
+	data_path: "/def/vehicle/ai/featan_modular_truck_25/chassis_highway.sii"
+}
+
+vehicle_wheel_accessory: .featan.midclass_25.highway.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_20in_o.sii"
+}
+
+vehicle_wheel_accessory: .featan.midclass_25.highway.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_20in_o.sii"
+}
+

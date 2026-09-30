@@ -85,6 +85,105 @@ traffic_spawn_condition: .traffic.f_r_solera_e.spawn.condition
 }
 
 
+
+traffic_vehicle : traffic.larus.rv.22_c
+{
+	accessories[]: .larus.rv.22_c.chassis
+	accessories[]: .larus.rv.22_c.fwheel
+	accessories[]: .larus.rv.22_c.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 1.0
+	variant[]: traffic.larus.rv.22_c.orange
+
+	license_plate_type: car
+
+	tags[]: van
+	tags[]: tourist
+	tags[]: context
+
+	spawn_condition[]:  .larus.rv.22_c.spawn.condition
+
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .larus.rv.22_c.chassis
+{
+	data_path: "/def/vehicle/ai/larus_rv_22/chassis_blue.sii"
+}
+vehicle_wheel_accessory: .larus.rv.22_c.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_lowcab.sii"
+}
+vehicle_wheel_accessory: .larus.rv.22_c.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_lowcab.sii"
+}
+traffic_spawn_condition: .larus.rv.22_c.spawn.condition
+{
+	type: area
+	str_param[]: "tourist"
+	str_param[]: "rest_area"
+}
+
+traffic_vehicle : traffic.larus.rv.22_c.orange
+{
+	accessories[]: .larus.rv.22_c.orange.chassis
+	accessories[]: .larus.rv.22_c.orange.fwheel
+	accessories[]: .larus.rv.22_c.orange.rwheel
+
+	max_speed: 100
+	vehicle_mass: 15000
+	engine_power: 336
+
+	sound_move[]: "/sound/traffic/car_v8_2.soundref"
+	sound_horn[]: "/sound/traffic/car_horn_3.soundref"
+	
+	spawn_ratio: 1.0
+
+	license_plate_type: car
+
+	tags[]: van
+	tags[]: tourist
+	tags[]: context
+
+
+	spawn_condition[]:  .larus.rv.22_c.orange.spawn.condition
+
+@include "drivers_generic.sui"
+}
+
+vehicle_accessory: .larus.rv.22_c.orange.chassis
+{
+	data_path: "/def/vehicle/ai/larus_rv_22/chassis_orange.sii"
+}
+vehicle_wheel_accessory: .larus.rv.22_c.orange.fwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/front_lowcab.sii"
+}
+vehicle_wheel_accessory: .larus.rv.22_c.orange.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/ai_wheel/rear_lowcab.sii"
+}
+traffic_spawn_condition: .larus.rv.22_c.orange.spawn.condition
+{
+	type: area
+	str_param[]: "tourist"
+	str_param[]: "rest_area"
+}
+
+
 traffic_vehicle : traffic.transit_16.context
 {
 	accessories[]: .transit_16.context.chassis

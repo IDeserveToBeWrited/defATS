@@ -14,20 +14,28 @@ hcd::on_job : cond.job_trans.on_quick15
     duration: 15
 }
 
-hcd::on_job : cond.job_fuel0.quick10
-{
-    type: quick
-    value_type: fuel_consumed
-    comparison_type: at_most
-    value: 0
-    duration: 10
-}
-
 hcd::on_job : cond.job_trans.to_quick15
 {
     type: quick
     value_type: none
     duration: 15
+}
+
+hcd::on_job : cond.job.early_time
+{
+    type: any
+    value_type: time_remaining_early
+    comparison_type: at_least
+    value: 1
+}
+
+hcd::on_job : cond.job.n_early_time
+{
+    type: any
+    value_type: time_remaining_early
+    comparison_type: at_least
+    value: 1
+    negate: true
 }
 
 hcd::completed_delivery_count : cond.deliveries.zero
@@ -48,10 +56,23 @@ hcd::completed_delivery_count : cond.deliveries.min3
     comparison_type: at_least
 }
 
+hcd::completed_delivery_count : cond.deliveries.min6
+{
+    count: 6
+    comparison_type: at_least
+}
+
 hcd::vehicle_component : cond.part.engine_off
 {
     component: engine
     negate: true
+}
+
+hcd::vehicle_component : cond.part.engine_off10
+{
+    component: engine
+    negate: true
+    duration: 10
 }
 
 hcd::vehicle_component : cond.part.engine_on
@@ -63,6 +84,13 @@ hcd::vehicle_component : cond.part.elec_off
 {
     component: engine_electricity
     negate: true
+}
+
+hcd::vehicle_component : cond.part.elec_off10
+{
+    component: engine_electricity
+    negate: true
+    duration: 10
 }
 
 hcd::vehicle_component : cond.part.elec_on
@@ -333,6 +361,20 @@ hcd::distance_to : cond.min_dist_10.landmark250
     negate: true
 }
 
+hcd::distance_to : cond.dist.tboard300
+{
+    object: tourist_board
+    value: 300
+}
+
+hcd::distance_to : cond.min_dist_10.tboard350
+{
+    object: tourist_board
+    value: 350
+    duration: 10
+    negate: true
+}
+
 hcd::distance_to : cond.dist.viewpoint200
 {
     object: viewpoint
@@ -535,6 +577,13 @@ hcd::impulse : cond.impulse.activate1
     duration: 1
 }
 
+hcd::impulse : cond.impulse.d_forward
+{
+    mixes[]: dforward
+    mix_thresholds[]: 0.5
+    duration: 1
+}
+
 hcd::transmission : cond.transmission.arcade
 {
     type: arcade
@@ -700,6 +749,19 @@ hcd::cvar_value : cond.fatigue.on
     negate: true
 }
 
+hcd::cvar_value : cond.sm_throttle.on
+{
+    name: g_throttle_double_tap
+    value: 0
+    negate: true
+}
+
+hcd::cvar_value : cond.sm_throttle.off
+{
+    name: g_throttle_double_tap
+    value: 0
+}
+
 hcd::game_paused : cond.paused.was
 {
 }
@@ -707,6 +769,11 @@ hcd::game_paused : cond.paused.was
 hcd::screen_visited : cond.visited.map
 {
     screen_name: screen.map
+}
+
+hcd::screen_visited : cond.visited.atlas
+{
+    screen_name: screen.atlas
 }
 
 hcd::borders_crossed_since_game_start : cond.borders.crossed
@@ -737,6 +804,20 @@ hcd::items_collected : cond.no_items.viewpoint
 hcd::items_collected : cond.has_items.viewpoint
 {
     item_type: viewpoint
+    count: 1
+    comparison_type: at_least
+}
+
+hcd::items_collected : cond.no_items.tour_board
+{
+    item_type: tourist_board
+    count: 0
+    comparison_type: equal
+}
+
+hcd::items_collected : cond.has_items.tour_board
+{
+    item_type: tourist_board
     count: 1
     comparison_type: at_least
 }
@@ -774,6 +855,11 @@ hcd::on_trigger : cond.trigger.gas
     types[]: filling_station
 }
 
+hcd::on_trigger : cond.trigger.job_delivery
+{
+    types[]: job_delivery
+}
+
 hcd::notification_block : cond.notif_block.persistent
 {
     persistent: true
@@ -796,6 +882,41 @@ hcd::on_event : cond.job.done
 hcd::in_convoy : cond.multiplayer.off
 {
     negate: true
+}
+
+hcd::car_job_customer_priority : cond.cust_prio.cargo
+{
+    priority: cargo
+}
+
+hcd::car_job_customer_priority : cond.cust_prio.time
+{
+    priority: time
+}
+
+hcd::car_job_customer_priority : cond.cust_prio.vehicle
+{
+    priority: vehicle
+}
+
+hcd::tourist_board_completion : cond.tb_compl.first
+{
+    completed_count: 1
+}
+
+hcd::tourist_board_completion : cond.tb_compl.before_last
+{
+    completed_count: -2
+}
+
+hcd::tourist_board_completion : cond.tb_compl.last
+{
+    completed_count: -1
+}
+
+hcd::dlc_feature_enabled : cond.feature.atlas
+{
+    feature: atlas
 }
 
 hcd::hint_ref : cond.hint_ref.4Acancel
@@ -903,6 +1024,14 @@ hcd::hint_ref : cond.hint_ref.29An_compl
     complete_count_comp: equal
 }
 
+hcd::hint_ref : cond.hint_ref.45An_coold
+{
+    target_name: hint.car_deliv.45a
+
+    check_cooldown: true
+    target_on_cooldown: false
+}
+
 hcd::condition_and : cond.and.acc_slip_1
 {
     conditions[]: cond.impulse.gas_little
@@ -980,6 +1109,24 @@ hcd::condition_or : cond.can_deliv_or.deliv_done
 {
     conditions[]: cond.cargo.can_deliver
     conditions[]: cond.job.done
+}
+
+hcd::condition_or : cond.deliv_diff.selected
+{
+    conditions[]: cond.deliv_diff.any
+    conditions[]: cond.job.done
+}
+
+hcd::condition_or : cond.moving_or.paused
+{
+    conditions[]: cond.speed.moving
+    conditions[]: cond.paused.was
+}
+
+hcd::condition_or : cond.early_arriv.complete
+{
+    conditions[]: cond.trigger.job_delivery
+    conditions[]: cond.job.n_early_time
 }
 
 hcd::always_true : cond.always.true

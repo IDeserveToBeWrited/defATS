@@ -1,0 +1,52 @@
+SiiNunit
+{
+
+accessory_interior_data : lx_be.ford.victoria_06.interior
+{
+	name: "@@interior_lx_beige@@"
+	price: 1400
+	unlock: 0
+	icon: "car/ford_victoria_06/interior/lx_camel"
+	part_type: factory
+
+	model: "/vehicle/car/ford_victoria_06/interior/lx_int.pmd"
+	collision: "/vehicle/car/ford_victoria_06/interior/lx_int.pmc"
+	animated_model: "/vehicle/car/ford_victoria_06/interior/anim/anim.pmd"
+	look: camel
+	variant: default
+
+	ext_model: "/vehicle/car/ford_victoria_06/interior/external/lx.pmd"
+	ext_look: camel
+	ext_variant: default
+
+	speed_limiter_value: 190
+
+	defaults[]: "/def/vehicle/car/ford.victoria_06/accessory/steering_w/lx_beige.sii"
+	defaults[]: "/def/vehicle/car/ford.victoria_06/accessory/codrv_seat/lx_beige.sii"
+
+@include "sound.sui"
+
+@include "sound_effects.sui"
+
+@include "animations.sui"
+
+@include "dashboard_color.sui"
+
+@include "computers.sui"
+
+@include "seat.sui"
+
+@include "int_shadow.sui"
+
+	glass_panes[]: .ford.victoria_06.pane.front
+	glass_panes[]: .ford.victoria_06.pane.close
+	glass_panes[]: .ford.victoria_06.pane.far
+	glass_panes[]: .ford.victoria_06.pane.far1
+	glass_panes[]: .ford.victoria_06.pane.far2
+}
+
+@include "glass.sui"
+
+@include "sound_effects_units.sui"
+
+}

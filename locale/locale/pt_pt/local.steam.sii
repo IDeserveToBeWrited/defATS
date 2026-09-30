@@ -5,10 +5,10 @@ localization_db : .localization
 #+ Steam Controller UI localization in game
 #@{
 	key[]: "steam_controller"
-	val[]: "Controlador da Steam" #+ Name of Steam Controller input device. It is followed by ID number (e.g. `Steam Controller 000000123456789A`).
+	val[]: "Comando Steam" #+ Name of Steam Controller input device. It is followed by ID number (e.g. `Steam Controller 000000123456789A`).
 
 	key[]: "steam_emulated_controller"
-	val[]: "Emulador do Controlador da Steam" #+ Name of input device which is emulated by Steam Controler API. It is followed by ID number (e.g. `Steam Emulated Controller 000000123456789A`).
+	val[]: "Comando Emulado do Steam" #+ Name of input device which is emulated by Steam Controler API. It is followed by ID number (e.g. `Steam Emulated Controller 000000123456789A`).
 
 # The controller input names currently match the corresponding Steam
 # actions. Note that currently the display name for Steam controllers
@@ -683,7 +683,7 @@ localization_db : .localization
 	val[]: "Regressar"
 
 	key[]: "sctrl_action_steering"
-	val[]: "Direcção"
+	val[]: "Direção"
 
 	key[]: "sctrl_action_aforward"
 	val[]: "Acelerador/Frente"
@@ -779,7 +779,7 @@ localization_db : .localization
 	val[]: "Diminuir Zoom do Mapa"
 
 	key[]: "sctrl_action_j_panscroll"
-	val[]: "Scroll"
+	val[]: "Deslocar / Mover"
 
 	key[]: "sctrl_action_photo_mode"
 	val[]: "Modo Fotografia"
@@ -815,10 +815,10 @@ localization_db : .localization
 	val[]: "Redefinir Configurações do Modo de Fotografia"
 
 	key[]: "sctrl_action_simple_accept"
-	val[]: "Aceitar Botão"
+	val[]: "Botão Aceitar"
 
 	key[]: "sctrl_action_simple_cancel"
-	val[]: "Cancelar Botão"
+	val[]: "Botão Cancelar"
 
 	key[]: "sctrl_action_simple_context1"
 	val[]: "Botão de Contexto 1"
@@ -833,16 +833,16 @@ localization_db : .localization
 	val[]: "Botão de Contexto 4"
 
 	key[]: "sctrl_action_simple_pov1_up"
-	val[]: "Botão para Cima no D-Pad"
+	val[]: "Botão D-pad Cima"
 
 	key[]: "sctrl_action_simple_pov1_right"
-	val[]: "Botão para a Direita no D-Pad"
+	val[]: "Botão D-pad Direita"
 
 	key[]: "sctrl_action_simple_pov1_down"
-	val[]: "Botão para Baixo no D-Pad"
+	val[]: "Botão D-pad Baixo"
 
 	key[]: "sctrl_action_simple_pov1_left"
-	val[]: "Botão para a Esquerda no D-Pad"
+	val[]: "Botão D-pad Esquerda"
 
 	key[]: "sctrl_action_simple_lb"
 	val[]: "Botão do Ombro Esquerdo"
@@ -857,7 +857,7 @@ localization_db : .localization
 	val[]: "Botão do Menu 2"
 
 	key[]: "sctrl_action_simple_share"
-	val[]: "Partilhar Botão"
+	val[]: "Botão Partilhar"
 
 	key[]: "sctrl_action_simple_x"
 	val[]: "Manípulo Esquerdo X"
@@ -914,10 +914,10 @@ localization_db : .localization
 	val[]: "Eixo 4"
 
 	key[]: "sctrl_action_simple_lt"
-	val[]: "Gatilho Esquerdo"
+	val[]: "Trigger Esquerdo"
 
 	key[]: "sctrl_action_simple_rt"
-	val[]: "Gatilho Direito"
+	val[]: "Trigger Direito"
 
 	key[]: "sctrl_action_simple_a1"
 	val[]: "Gatilho 1"
@@ -1331,7 +1331,7 @@ localization_db : .localization
 #+ Supported controller names.
 #@{
 	key[]: "controller_steam"
-	val[]: "Controlador da Steam"
+	val[]: "Comando Steam"
 
 	key[]: "controller_steam_deck"
 	val[]: "Steam Deck"
@@ -1361,7 +1361,7 @@ localization_db : .localization
 #+ Error message shown when the game version distributed over Steam can not communicate with the Steam client.
 
 	key[]: "sys_no_steam"
-	val[]: "American Truck Simulator não consegue aceder ao cliente Steam. Passos sugeridos:\n\n1. Verifica que o cliente Steam está em execução.\n2. Verifica que tens a última versão do cliente Steam.\n3. Verifica que tens a actualização automática activa e que o jogo está actualizado para a última versão."
+	val[]: "O American Truck Simulator não consegue aceder ao cliente Steam. Passos sugeridos:\n\n1. Verifica se o cliente Steam está a ser executado.\n2. Verifica se tens a versão atualizada do cliente Steam.\n3. Verifica se as atualizações automáticas estão ativas e se o jogo está atualizado para a versão mais recente."
 #@}
 
 #+ Message shown when there are DLC packs which are not compatible with the game.
@@ -1409,7 +1409,7 @@ localization_db : .localization
 	val[]: "Atingiste o limite do espaço na Cloud da Steam. Por favor, remove alguns ficheiros para prosseguir.<br><br>Por favor, lê a informação detalhada no painel à direita." #+ Popup when trying load game ignoring warning about steam cloud running out of space.
 
 	key[]: "steam_profile_migration_to_local_warning"
-	val[]: "Ao migrar para o tipo de perfil local, este perfil apenas ficará disponível neste computador a partir de agora, independentemente da conta da Steam. " #+ Popup warning when player unchecks the steam cloud checkbox in the profile edit screen.
+	val[]: "Ao migrares para o tipo de perfil local, este perfil ficará disponível a partir de agora apenas neste computador, independentemente da conta Steam com sessão iniciada. " #+ Popup warning when player unchecks the steam cloud checkbox in the profile edit screen.
 
 	key[]: "migration_failed"
 	val[]: "Falha na migração do perfil. Não houve dados transferidos e o sistema manteve o perfil original intacto. Por favor, tente novamente." #+ shown during profile type switching (e.g., Steam ↔ non-Steam) if moving save files fails

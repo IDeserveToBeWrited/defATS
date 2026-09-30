@@ -1,0 +1,48 @@
+SiiNunit
+{
+accessory_interior_data	: dlx_aq.ford.mustang_67.interior
+{
+	name: "@@interior_deluxe_aqua@@"
+	price: 7900
+	unlock: 0
+	icon: "car/ford_mustang_67/interior/deluxe_aqua"
+	part_type: factory
+
+	model: "/vehicle/car/ford_mustang_67/interior/deluxe.pmd"
+	collision: "/vehicle/car/ford_mustang_67/interior/deluxe.pmc"
+	animated_model: "/vehicle/car/ford_mustang_67/interior/anim/anim.pmd"
+	look: aqua
+	variant: default
+
+	ext_model: "/vehicle/car/ford_mustang_67/interior/external/deluxe_ext.pmd"
+	ext_look: aqua
+	ext_variant: default
+
+	speed_limiter_value: 0
+
+@include "sound.sui"
+@include "sound_effects.sui"
+
+	defaults[]: "/def/vehicle/car/ford.mustang_67/accessory/steering_w/deluxe_aqua.sii"
+	defaults[]: "/def/vehicle/car/ford.mustang_67/accessory/carpet/standard_black.sii"
+	defaults[]: "/def/vehicle/car/ford.mustang_67/accessory/codrv_seat/deluxe_2color_aqua.sii"
+
+@include "animations.sui"
+
+@include "dashboard_color.sui"
+
+#@include "computers.sui"
+
+	glass_panes[]: .ford.mustang_67.r.pane.front
+	glass_panes[]: .ford.mustang_67.r.pane.close
+	glass_panes[]: .ford.mustang_67.r.pane.close1
+	glass_panes[]: .ford.mustang_67.r.pane.far
+	glass_panes[]: .ford.mustang_67.r.pane.far1
+	glass_panes[]: .ford.mustang_67.r.pane.back_b
+
+@include "seat.sui"
+@include "int_shadow.sui"
+}
+@include "glass.sui"
+@include "sound_effects_units.sui"
+}

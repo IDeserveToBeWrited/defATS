@@ -25,8 +25,7 @@ tutorial_hint : hint.engine.b
     start_conditions[]: cond.job_trans.on_quick15
     start_state_transition: true
     start_conditions[]: cond.engine_ele.without
-    start_conditions[]: cond.part.engine_off
-    start_conditions[]: cond.job_fuel0.quick10
+    start_conditions[]: cond.part.engine_off10
 
     cancel_conditions[]: cond.always.false
     cancel_timeout: 20
@@ -81,8 +80,7 @@ tutorial_hint : hint.engine.e
 {
     start_conditions[]: cond.engine_ele.with
     start_conditions[]: cond.part.elec_on
-    start_conditions[]: cond.part.engine_off
-    start_conditions[]: cond.job_fuel0.quick10
+    start_conditions[]: cond.part.engine_off10
     start_conditions[]: cond.notif_block.persistent
 
     cancel_conditions[]: cond.always.false
@@ -136,9 +134,10 @@ tutorial_hint : hint.ignition.a
 # 15B
 tutorial_hint : hint.ignition.b
 {
+    start_conditions[]: cond.job_trans.on_quick15
+    start_state_transition: true
     start_conditions[]: cond.engine_ele.with
-    start_conditions[]: cond.part.elec_off
-    start_conditions[]: cond.job_fuel0.quick10
+    start_conditions[]: cond.part.elec_off10
 
     cancel_conditions[]: cond.always.false
     cancel_timeout: 20
@@ -469,6 +468,93 @@ tutorial_hint : hint.driv_hshift.c
     complete_fadeout_delay: 7
 }
 
+# 40A
+tutorial_hint : hint.car_job.40a
+{
+    start_conditions[]: cond.job.on_any
+    start_conditions[]: cond.deliveries.zero
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 25
+
+    complete_conditions[]: cond.paused.was
+    complete_fadeout_delay: 5
+
+    max_show_count: 1
+
+    for_truck: false
+    for_bus: false
+}
+
+# 41A
+tutorial_hint : hint.tour_board.41a
+{
+    start_conditions[]: cond.feature.atlas
+    start_conditions[]: cond.no_items.tour_board
+    start_conditions[]: cond.dist.tboard300
+
+    cancel_conditions[]: cond.min_dist_10.tboard350
+    cancel_timeout: 90
+
+    complete_conditions[]: cond.has_items.tour_board
+    complete_fadeout_delay: 5
+
+    cancel_cooldown: 5
+
+    max_cancel_count: 2
+    max_complete_count: 1
+
+    for_bus: false
+}
+
+tutorial_hint : hint.tb_first.47a
+{
+    start_conditions[]: cond.feature.atlas
+    start_conditions[]: cond.tb_compl.first
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 20
+
+    complete_conditions[]: cond.visited.atlas
+    complete_fadeout_delay: 5
+
+    max_show_count: 1
+
+    for_bus: false
+}
+
+tutorial_hint : hint.tb_bef_compl.48a
+{
+    start_conditions[]: cond.feature.atlas
+    start_conditions[]: cond.tb_compl.before_last
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 20
+
+    complete_conditions[]: cond.visited.atlas
+    complete_fadeout_delay: 5
+
+    max_show_count: 1
+
+    for_bus: false
+}
+
+tutorial_hint : hint.tb_done.49a
+{
+    start_conditions[]: cond.feature.atlas
+    start_conditions[]: cond.tb_compl.last
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 20
+
+    complete_conditions[]: cond.visited.atlas
+    complete_fadeout_delay: 5
+
+    max_show_count: 1
+
+    for_bus: false
+}
+
 # 6A
 tutorial_hint : hint.depot_deliv.a
 {
@@ -477,7 +563,7 @@ tutorial_hint : hint.depot_deliv.a
 
     cancel_conditions[]: cond.min_dist.delivery100
 
-    complete_conditions[]: cond.deliv_diff.any
+    complete_conditions[]: cond.deliv_diff.selected
     complete_fadeout_delay: 5
 
     max_complete_count: 1
@@ -486,6 +572,60 @@ tutorial_hint : hint.depot_deliv.a
     for_car: false
 
     introductory: true
+}
+
+# 42A
+tutorial_hint : hint.vehicle_prio.42a
+{
+    start_conditions[]: cond.job.on_any
+    start_conditions[]: cond.deliveries.min1
+    start_conditions[]: cond.cust_prio.vehicle
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 25
+
+    complete_conditions[]: cond.moving_or.paused
+
+    max_show_count: 1
+
+    for_truck: false
+    for_bus: false
+}
+
+# 43A
+tutorial_hint : hint.cargo_prio.43a
+{
+    start_conditions[]: cond.job.on_any
+    start_conditions[]: cond.deliveries.min1
+    start_conditions[]: cond.cust_prio.cargo
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 25
+
+    complete_conditions[]: cond.moving_or.paused
+
+    max_show_count: 1
+
+    for_truck: false
+    for_bus: false
+}
+
+# 44A
+tutorial_hint : hint.time_prio.44a
+{
+    start_conditions[]: cond.job.on_any
+    start_conditions[]: cond.deliveries.min1
+    start_conditions[]: cond.cust_prio.time
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 25
+
+    complete_conditions[]: cond.moving_or.paused
+
+    max_show_count: 1
+
+    for_truck: false
+    for_bus: false
 }
 
 # 10A
@@ -566,6 +706,58 @@ tutorial_hint : hint.fin_deliv2.b
 
     for_bus: false
     for_car: false
+}
+
+# 45A
+tutorial_hint : hint.car_deliv.45a
+{
+    start_conditions[]: cond.dist.delivery50
+
+    cancel_conditions[]: cond.min_dist.delivery100
+
+    complete_conditions[]: cond.trigger.job_delivery
+
+    max_complete_count: 1
+
+    complete_cooldown: 10
+
+    for_truck: false
+    for_bus: false
+}
+
+# 52A
+tutorial_hint : hint.car_early.52a
+{
+    start_conditions[]: cond.dist.delivery50
+    start_conditions[]: cond.multiplayer.off
+    start_conditions[]: cond.job.early_time
+    start_conditions[]: cond.hint_ref.45An_coold
+
+    cancel_conditions[]: cond.min_dist.delivery100
+
+    complete_conditions[]: cond.early_arriv.complete
+
+    max_complete_count: 2
+
+    complete_cooldown: 300
+
+    for_truck: false
+    for_bus: false
+}
+
+# 51A
+tutorial_hint : hint.sm_throttle.51a
+{
+    start_conditions[]: cond.sm_throttle.off
+    start_conditions[]: cond.deliveries.min6
+    start_conditions[]: cond.impulse.d_forward
+
+    cancel_conditions[]: cond.always.false
+    cancel_timeout: 25
+
+    complete_conditions[]: cond.sm_throttle.on
+
+    max_show_count: 1
 }
 
 # 3A
