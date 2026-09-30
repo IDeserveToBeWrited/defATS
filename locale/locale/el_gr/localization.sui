@@ -22,6 +22,9 @@
 
 	key[]: "tos_url"
 	val[]: "https://www.worldoftrucks.com/terms"
+
+	key[]: "privacy_readonly_url"
+	val[]: "https://americantrucksimulator.com/privacy_readonly.php"
 #!}
 
 #+ Map names
@@ -111,10 +114,10 @@
 	val[]: "Βαφή" #+ Header of list containing all paint jobs.
 
 	key[]: "brand_t"
-	val[]: "ΣΧΕΔΙΟ ΦΟΡΤΗΓΟΥ"
+	val[]: "VEHICLE DESIGN"
 
 	key[]: "brand"
-	val[]: "Σχέδιο Φορτηγού"
+	val[]: "Vehicle Design"
 
 	key[]: "basket_t"
 	val[]: "ΠΑΡΑΓΓΕΛΙΑ" #+ Content of the basket.
@@ -122,16 +125,16 @@
 #+ Truck analysis feature - truck konfigurator and pop-up
 
 	key[]: "truck_analysis_t"
-	val[]: "ΑΝΑΛΥΣΗ ΦΟΡΤΗΓΟΥ" #+ Header of the widget in truck configurator
+	val[]: "VEHICLE ANALYSIS" #+ Header of the widget in truck configurator
 
 	key[]: "truck_analysis_popup_t"
-	val[]: "ΑΝΑΛΥΣΗ ΦΟΡΤΗΓΟΥ" #+ Header of the pop-up when taking heavy cargo
+	val[]: "VEHICLE ANALYSIS" #+ Header of the pop-up when taking heavy cargo
 
 	key[]: "current_truck_params"
-	val[]: "Διαμόρφωση φορτηγού" #+ Header inside the truck analysis widget for truck parameters
+	val[]: "Vehicle Configuration" #+ Header inside the truck analysis widget for truck parameters
 
 	key[]: "current_truck_parameters"
-	val[]: "Διαμόρφωση φορτηγού" #+ Header inside the truck analysis pop-up for truck parameters
+	val[]: "Vehicle Configuration" #+ Header inside the truck analysis pop-up for truck parameters
 
 	key[]: "normal_cargo"
 	val[]: "Κανονικό Φορτίο" #+ name of the bar for normal cargo suitability
@@ -188,7 +191,7 @@
 	val[]: "Ετοιμάζεσαι να ξεκινήσεις για μία ειδική μεταφορά βαρέος φορτίου. Αναθεώρησε την τρέχουσα διαμόρφωση του φορτηγού σου για να σιγουρευτείς ότι επαρκεί για τη δουλειά." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
 	key[]: "truck_analysis_info_tooltip"
-	val[]: "Δεδομένου του αναμενόμενου τύπου μεταφορών, διαμόρφωσε το φορτηγό σου όσο το δυνατόν καλύτερα, με βάση τον συνδυασμό οικονομίας στην οδήγηση, και των τεχνικών και νομικών περιορισμών." #+  General tooltip description of Truck Analysis feature
+	val[]: "Given your expected typical type of transportation, tune your vehicle to optimize it according to a combination of economy of driving, technical and legal limitations." #+  General tooltip description of Truck Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Βελτιστοποίηση για μεταφορές με ελαφρά και μεσαία βάρη φορτίων" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -197,10 +200,10 @@
 	val[]: "Βελτιστοποίηση για βαριά φορτία και ειδικές μεταφορές" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Ικανότητα να ελιχθεί το φορτηγό σε στενούς χώρους" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Ability of your vehicle to maneuver in tight space areas" #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Βελτιστοποιημένη μετάδοση κίνησης του φορτηγού για ομαλότερη ανάβαση και κατάβαση σε βουνά" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Optimized vehicle's power-train for smoother hill climbing and descent" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Αυξημένη δυνατότητα περάσματος από ανώμαλα και τραχιά εδάφη" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -230,7 +233,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "ΑΝΑΒΑΘΜΙΣΕΙΣ ΦΟΡΤΗΓΟΥ" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "VEHICLE UPGRADES" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "ΑΝΑΒΑΘΜΙΣΕΙΣ ΤΡΕΪΛΕΡ" #+ Title of the screen. Please keep in upper case where possible."
@@ -259,7 +262,7 @@
 
 
 	key[]: "truck_action_t"
-	val[]: "ΕΠΙΣΚΕΥΗ ΦΟΡΤΗΓΟΥ" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
+	val[]: "SERVICE" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
 
 #+ Truck service screen.
 #+
@@ -273,7 +276,7 @@
 	val[]: "Επισκευή" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_service_about"
-	val[]: "Συντήρηση και επισκευές φορτηγών. Ένα καλός οδηγός πάντα διατηρεί τα οχήματα του σε άριστη κατάσταση." #+ Help message associated with service icon.
+	val[]: "Vehicle maintenance and repairs. A great driver always keeps their vehicle in top condition." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
 	val[]: "ΑΝΑΦΟΡΑ ΖΗΜΙΩΝ" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
@@ -285,7 +288,7 @@
 	val[]: "Αντικατάσταση όλων" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
 	key[]: "truck_service_truck_t"
-	val[]: "ΑΝΑΦΟΡΑ ΖΗΜΙΩΝ ΦΟΡΤΗΓΟΥ" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	val[]: "VEHICLE DAMAGE REPORT" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "ΑΝΑΦΟΡΑ ΖΗΜΙΩΝ ΚΑΡΟΤΣΑΣ" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -294,7 +297,7 @@
 	val[]: "Επιβεβαίωση" #+ Button which confirms selected actions.
 
 	key[]: "truck_damage"
-	val[]: "Ζημιά φορτηγού" #+ Price for the truck damage
+	val[]: "Vehicle damage" #+ Price for the truck damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -303,13 +306,13 @@
 #@{
 
 	key[]: "truck_config_t"
-	val[]: "ΔΙΑΜΟΡΦΩΣΗ ΦΟΡΤΗΓΟΥ" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "VEHICLE CONFIGURATOR" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "truck_config"
-	val[]: "Διαμόρφωση Φορτηγού" #+ Icon allowing player to upgrade the truck.
+	val[]: "Vehicle Configurator" #+ Icon allowing player to upgrade the truck.
 
 	key[]: "truck_config_about"
-	val[]: "Ξέρεις, υπάρχει πάντα κάτι που μπορείς να αλλάξεις ή να βάψεις για να σε κάνει να αισθανθείς καλύτερα το φορτηγό σου." #+ Help message associated with upgrade icon.
+	val[]: "You know, there's always something you can tune or paint to make you feel better about your vehicle." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
 	val[]: "Τιμή" #+ Label of line with combined price of all new parts in basket.
@@ -321,7 +324,7 @@
 	val[]: "Επίλεξε την κατηγορία της αναβάθμισης από το μενού παραπάνω." #+ Text shown if user did not select any component category.
 
 	key[]: "select_pin"
-	val[]: "Επίλεξε μία καρφίτσα στο φορτηγό για να δεις τα αξεσουάρ."
+	val[]: "Choose a pin on the vehicle to view applicable accessories."
 
 	key[]: "tc_orig_price"
 	val[]: "Αρχική τιμή:" #+ Followed by the price of the original configuration of the new truck.
@@ -408,7 +411,7 @@
 	val[]: "Διαγνωστικά Οχήματος" #+ Icon allowing player to show damage on the truck.
 
 	key[]: "truck_diag_about"
-	val[]: "Προβολή πληροφοριών σχετικά με το νέο σου φορτηγό και την τρέχουσα κατάστασή του."
+	val[]: "View information about your vehicle and its current condition."
 
 	key[]: "truck_diag_warning"
 	val[]: "Το όχημα σου είναι σε κακή κατάσταση. Επισκεύασε το, το συντομότερο δυνατό"
@@ -496,7 +499,7 @@
 	val[]: "Έχεις τοποθετήσει κάποια αντικείμενα στην παραγγελία σου!<br><br> Μήπως θέλεις να ακυρώσεις όλες τις νέες τροποποιήσεις;" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
 	key[]: "borrowed_truck_refusal"
-	val[]: "Δεν θα άρεσε στον εργοδότη αν πειραματιζόσουν με το φορτηγό του." #+ Shown if user attempts to upgrade a quick job truck.
+	val[]: "Your employer won't like it if you tinker with their vehicle." #+ Shown if user attempts to upgrade a quick job truck.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Δεν μπορείς να αλλάξεις τον τύπο, το αμάξωμα ή το σασί του τρέιλέρ σου ενώ είναι σε δουλειά. Ολοκλήρωσε την παράδοση και ξαναπροσπάθησε." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -931,13 +934,13 @@
 	val[]: "Εμπρός" #+ Tooltip for walk forward.
 
 	key[]: "tooltip_walk_back"
-	val[]: "Πίσω" #+ Tooltip for walk back.
+	val[]: "Back" #+ Tooltip for walk back.
 
 	key[]: "tooltip_walk_left"
-	val[]: "Αριστερά" #+ Tooltip for walk left.
+	val[]: "Left" #+ Tooltip for walk left.
 
 	key[]: "tooltip_walk_right"
-	val[]: "Δεξιά" #+ Tooltip for walk right.
+	val[]: "Right" #+ Tooltip for walk right.
 
 	key[]: "tooltip_walk_crouch"
 	val[]: "Γονάτισε" #+ Tooltip for crouch.
@@ -1011,7 +1014,7 @@
 	val[]: "Αναβάθμιση" #+ Button allowing user to upgrade something.
 
 	key[]: "confirm"
-	val[]: "Επιβεβαίωση" #+ Button which applies the state configured in the screen.
+	val[]: "Confirm" #+ Button which applies the state configured in the screen.
 
 	key[]: "continue"
 	val[]: "Συνέχεια" #+ Button which usually continues to next screen or message in sequence.
@@ -1054,10 +1057,10 @@
 #@{
 
 	key[]: "no_drive_t"
-	val[]: "ΔΕΝ ΥΠΑΡΧΕΙ ΦΟΡΤΗΓΟ" #+ Message box title. Please keep in upper case where possible.
+	val[]: "NO VEHICLE" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "no_drive"
-	val[]: "Δεν μπορείς να μετακινηθείς ελεύθερα στον κόσμο επειδή δεν έχεις ένα φορτηγό για να οδηγήσεις! Θα μπορούσες να αγοράσεις ένα ή να πάρεις κάποιο από τον στόλο σου.<br><br>Θα ήθελες να κάνεις μία γρήγορη δουλειά τώρα;"
+	val[]: "You cannot move freely about the world because you don't have a vehicle to drive! You could purchase one or take one from your fleet.<br><br>Would you like to take a quick job now?"
 #@}
 
 #+ Game load window
@@ -1625,7 +1628,7 @@
 	val[]: "Υπάρχει διαθέσιμη νέα δημοσίευση στο blog!" #+ Fallback news text content in case of fetch errors
 
 	key[]: "no_truck_dlc"
-	val[]: "Δεν βρέθηκαν φορτηγά! Παρακαλώ ξανά ενεργοποιήστε τουλάχιστον ένα DLC με φορτηγά και επανεκκινήστε το παιχνίδι." #+ Text shown when there is no truck available.
+	val[]: "No vehicles found! Please re-enable at least one vehicle DLC and restart the game." #+ Text shown when there is no truck available.
 
 	key[]: "extras"
 	val[]: "Επιπλέον περιεχόμενο"
@@ -1727,7 +1730,7 @@
 	val[]: "Αυτήν την στιγμή η καριέρα σου είναι αποσυνδεδεμένη από την $SHORTCUT1$$FRONTEND_URL$ διαδικτυακή εμπειρία."
 
 	key[]: "connect_to_wotr_login_t"
-	val[]: "Σύνδεση"
+	val[]: "Connect"
 
 	key[]: "connect_to_wotr_skip_t"
 	val[]: "Σύνδεση Αργότερα"
@@ -1768,10 +1771,10 @@
 	val[]: "Επίλεξε από μία πληθώρα φορτηγών για να διαμορφώσεις την αρχική σου εμπειρεία. Οποιαδήποτε επιλογή και αν κάνεις είναι η τέλεια."
 
 	key[]: "random_truck"
-	val[]: "Τυχαίο"
+	val[]: "Random"
 
 	key[]: "confirm_preferred_truck"
-	val[]: "Επιβεβαίωση"
+	val[]: "Confirm"
 #@}
 
 
@@ -2030,19 +2033,19 @@
 	val[]: "Χάρτης" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_cargo"
-	val[]: "Φορτίο" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Cargo" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_trailer"
-	val[]: "Τρέιλερ" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Trailer" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_accessories"
-	val[]: "Αξεσουάρ" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Accessories" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_paint_jobs"
-	val[]: "Βαφές" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Paint jobs" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_all"
-	val[]: "Όλα" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "All" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "no_dlc_found"
 	val[]: "Αδυναμία εύρεσης DLC με τα κριτήρια που δώσατε"
@@ -2054,16 +2057,16 @@
 	val[]: "Αποτελέσματα αναζήτησης σε: " #+ Text shown when searching DLC and only other category screen contain some matches. Followed by list of category screen titles.
 
 	key[]: "dlc_widget_open"
-	val[]: "Άνοιγμα" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
+	val[]: "Open" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_widget_close"
 	val[]: "Αγνόηση" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_browser_online_wait_title"
-	val[]: "ΛΗΨΗ ΔΕΔΟΜΕΝΩΝ" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "DOWNLOADING DATA" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_online_wait_message"
-	val[]: "Λήψη πληροφοριών DLC. Παρακαλώ περιμένετε."
+	val[]: "Downloading DLC information. Please wait."
 #@}
 
 #+ Activation screen
@@ -2216,7 +2219,7 @@
 	val[]: "Χρησιμοποιείς ένα πρόσθετο χειριστήριο; Πληκτρολόγιο, τηλεχειριστήριο, τιμονιέρα ίσως; Σιγουρέψου ότι το ρύθμισες σωστά."
 
 	key[]: "help_bcg_theme"
-	val[]: "Δώσε έμφαση στο φορτηγό σου με προσωποποιημένο φόντο επιφάνειας εργασίας. Διάλεξε αυτό που ταιριάζει σε εσένα!"
+	val[]: "Highlight your vehicle with a personalized desktop background. Pick one that suits your style!"
 
 #@}
 
@@ -2320,7 +2323,7 @@
 	val[]: "ΔΙΕΠΙΦΑΝΕΙΑ" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
 	key[]: "truck_sound_settings_t"
-	val[]: "ΗΧΟΙ ΦΟΡΤΗΓΟΥ" #+ Title of the 'Truck Sounds' section. Please keep in upper case where possible.
+	val[]: "VEHICLE SOUNDS" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
 	val[]: "ΕΣΩΤΕΡΙΚΟΙ ΗΧΟΙ" #+ Title of the 'Interior Sounds' section. Please keep in upper case where possible.
@@ -2332,19 +2335,19 @@
 	val[]: "Κύρια Ένταση" #+ Slider controlling master volume.
 
 	key[]: "truck_engine_volume"
-	val[]: "Ένταση κινητήρα φορτηγού" #+ Slider controlling volume of the truck engine.
+	val[]: "Vehicle engine volume" #+ Slider controlling volume of the truck engine.
 
 	key[]: "truck_exhaust_volume"
-	val[]: "Ένταση εξάτμισης φορτηγού" #+ Slider controlling volume of the truck exhaust.
+	val[]: "Vehicle exhaust volume" #+ Slider controlling volume of the truck exhaust.
 
 	key[]: "truck_turbo_volume"
-	val[]: "Ένταση θορύβου στροβιλοσυμπιεστή" #+ Slider controlling volume of the truck turbo.
+	val[]: "Vehicle turbo volume" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
-	val[]: "Ένταση ηχητικών εφέ φορτηγού" #+ Slider controlling volume of the truck effects.
+	val[]: "Vehicle effects volume" #+ Slider controlling volume of the truck effects.
 
 	key[]: "truck_noise_volume"
-	val[]: "Ένταση θορύβου φορτηγού" #+ Slider controlling volume of the truck noises.
+	val[]: "Vehicle noise volume" #+ Slider controlling volume of the truck noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Ένταση θορύβου τρέιλερ" #+ Slider controlling volume of the trailer noises.
@@ -2404,7 +2407,7 @@
 	val[]: "Προεπισκόπηση φωνής" #+ Label for the button to preview message of the voice navigation pack..
 
 	key[]: "voice_preview"
-	val[]: "Προεπισκόπηση" #+ The button to preview message of the voice navigation pack..
+	val[]: "Preview" #+ The button to preview message of the voice navigation pack..
 
 	key[]: "voice_speed_warning"
 	val[]: "Προειδοποίηση ταχύτητας" #+ Droplist for selection of the speed warning type.
@@ -2487,19 +2490,19 @@
 	val[]: "Ρύθμιση της γενικής έντασης του παιχνιδιού."
 
 	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
-	val[]: "Ρύθμιση της έντασης του κινητήρα του φορτηγού."
+	val[]: "Adjusts volume of the vehicle's engine."
 
 	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
-	val[]: "Ρύθμιση της έντασης της εξάτμισης του φορτηγού."
+	val[]: "Adjusts volume of the vehicle's exhaust."
 
 	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
-	val[]: "Ρύθμιση της έντασης του στροβιλοσυμπιεστή του φορτηγού."
+	val[]: "Adjusts volume of the vehicle's turbo."
 
 	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
-	val[]: "Ρύθμιση της έντασης των άλλων ηχητικών εφέ του φορτηγού, όπως το σφύριγμα των αερόφρενων."
+	val[]: "Adjusts volume of other vehicle sound effects, such as hissing of the air brakes."
 
 	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
-	val[]: "Ρύθμιση της έντασης του ήχου που παράγεται από τα ελαστικά του φορτηγού."
+	val[]: "Adjusts volume of noise coming from the vehicle's tyres."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "Ρύθμιση της έντασης του ήχου που παράγεται από τα ελαστικά του τρέιλερ."
@@ -2514,7 +2517,7 @@
 	val[]: "Ρύθμιση της έντασης του ήχου περιβάλλοντος του παιχνιδιού, όπως οι ήχοι των πόλεων, της φύσης, κλπ."
 
 	key[]: "interior_volume_op_tooltip" # - Audio, Simple
-	val[]: "Ρύθμιση της έντασης του εσωτερικού του φορτηγού."
+	val[]: "Adjusts volume of the vehicle's interior sounds."
 
 	key[]: "radio_volume_op_tooltip" # - Audio, Simple
 	val[]: "Ρύθμιση της έντασης του ραδιοφώνου."
@@ -2568,19 +2571,19 @@
 	val[]: "Προεπισκόπηση του επιλεγμένου ήχου μπιπ του όβερ."
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "Ενεργοποιεί τον βομβητή που ακούγεται όταν κάνεις όπισθεν. Η ένταση ρυθμίζεται από την επιλογή «Ένταση ηχητικών εφέ φορτηγού».<br><br>Όταν είναι ενεργοποιημένος, θα ακούς τους βομβητές και των άλλων παικτών όταν θα βρίσκεσαι σε συνεδρία κονβόι."
+	val[]: "Enables sound of beeper when reversing with your truck. The volume can be adjusted using the \"Vehicle effects\" slider.<br><br>When enabled, you will also hear the back-up beeper of other players when in a convoy session."
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Ενεργοποίηση του ήχου των χαραγμένων γραμμών στα άκρα του οδοστρώματος όταν περνάς από πάνω τους."
 
 	key[]: "noise_window_op_tooltip" # - Audio, Advanced
-	val[]: "Ενεργοποίση επιπλέον ήχου ροής αέρα από τα παράθυρα όταν αυτά είναι ανοιχτά.<br><br><color value=@@clr_txt_d@@>Aπαιτείται η ενεργοποίηση της επιλογή «Θόρυβος ανοιχτών παραθύρων»."
+	val[]: "Enables additional noise of the air flowing through the windows when the vehicle's windows are open.<br><br><color value=@@clr_txt_d@@>Requires \"Noise of the flowing air\" enabled to function."
 
 	key[]: "noise_aero_op_tooltip" # - Audio, Advanced
-	val[]: "Ενεργοποιεί τον ήχο του αέρα εντός της καμπίνας του φορτηγού σου."
+	val[]: "Enables noise of the air flowing around your vehicle's cabin."
 
 	key[]: "reverb_cabin_op_tooltip" # - Audio, Advanced
-	val[]: "Ενεργοποίση εφέ αντήχησης στην καμπίνα του φορτηγού σου."
+	val[]: "Enables reverb effect of your vehicle's cabin."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
 	val[]: "Ενεργοποίση εφέ αντήχησης των ήχων του περιβάλλοντος."
@@ -2627,7 +2630,7 @@
 	val[]: "ΚΙΒΩΤΙΟ ΤΑΧΥΤΗΤΩΝ" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
 	key[]: "truck_physics_settings"
-	val[]: "ΣΥΜΠΕΡΙΦΟΡΑ ΦΟΡΤΗΓΟΥ" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	val[]: "VEHICLE PHYSICS" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "ΒΟΗΘΗΜΑΤΑ" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2804,7 +2807,7 @@
 	val[]: "Μη διαθέσιμη" # Shown at various places if city name is unavailable. Please keep it as short as possible.
 
 	key[]: "country_na"
-	val[]: "Μη διαθέσιμο" # Shown at various places if country name is unavailable. Please keep it as short as possible.
+	val[]: "N / A" # Shown at various places if country name is unavailable. Please keep it as short as possible.
 #@}
 
 #+ Adviser speed limit visualization
@@ -2816,7 +2819,7 @@
 	val[]: "Απόκρυψη" #+ Hide speed limit display on the advisor.
 
 	key[]: "truck_limit"
-	val[]: "Προβολή ορίου φορτηγού" #+ Show speed limits for trucks on the advisor.
+	val[]: "Show limit for current vehicle mode" #+ Show speed limits for trucks on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "Προβολή ορίου αυτοκινήτου" #+ Show speed limits for ordinary cars on the advisor.
@@ -2838,6 +2841,18 @@
 
 	key[]: "align_always_north"
 	val[]: "Πάντα Βόρεια" #+ Map aligned to north always.
+#@}
+
+#+ Proximity exploration mode
+#@{
+	key[]: "map_exploration_mode"
+	val[]: "Map exploration mode" #+ Droplist for selection mode of map exploration mode.
+
+	key[]: "precision_exploration"
+	val[]: "Precision Exploration" #+ Precision Exploration.
+
+	key[]: "proximity_exploration"
+	val[]: "Proximity Exploration" #+ Proximity Exploration.
 #@}
 
 #+ Navigation display mode
@@ -2938,7 +2953,7 @@
 	val[]: "Ένταση φρεναρίσματος" #+ Slider for player modification of braking force.
 
 	key[]: "truck_stability"
-	val[]: "Σταθερότητα φορτηγού" #+ Slider for player modification of truckstability (COG position).
+	val[]: "Vehicle stability" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
 	val[]: "Σταθερότητα τρέιλερ" #+ Slider for player modification of trailer stability (COG position).
@@ -3191,6 +3206,9 @@
 	key[]: "map_alignment_op_tooltip" # - Gameplay, Advanced
 	val[]: "Επίλεξε τον τρόπο ευθυγράμμισης του χάρτη."
 
+	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
+	val[]: "(placeholder) Choose how the Map is explored."
+
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Επιλογή του τρόπου εμφάνισης της πλοήγησης."
 
@@ -3213,7 +3231,7 @@
 	val[]: "Επιλογή εμφάνισης ή όχι πληροφοριών ζώνης ώρας επιπρόσθετα με την τρέχουσα ώρα."
 
 	key[]: "show_cutscenes_op_tooltip" # - Gameplay, Simple
-	val[]: "Ενεργοποιεί τις κομμένες σκηνές του παιχνιδιού που συνήθως εμφανίζονται υστέρα από μεγάλες αγορές ή αναβαθμίσεις."
+	val[]: "Enables in-game cutscenes typically displayed after truck purchases, garage upgrades or during passenger loading."
 
 	key[]: "show_blockers_op_tooltip" # - Gameplay, Simple
 	val[]: "Επιλογή εμφάνισης ή όχι των ημιδιάφανων εμποδίων στους δρόμους στους οποίους δεν υπάρχει πρόσβαση."
@@ -3237,13 +3255,13 @@
 	val[]: "Αλλαγή της έντασης, πόσο απότομα είναι τα φρένα."
 
 	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
-	val[]: "Αλλαγή της σταθερότητας του φορτηγού χαμηλώνοντας το κέντρο βάρους του."
+	val[]: "Changes stability of the vehicle by lowering its centre of gravity."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "Αλλαγή της σταθερότητας του τρέιλερ χαμηλώνοντας το κέντρο βάρους του."
 
 	key[]: "driveshaft_torque_op_tooltip" # - Gameplay, Advanced
-	val[]: "Αλλαγή της ένταση της ροπής που παράγεται από το σύστημα κίνησης.<br><br>Η αύξηση αυτής της ρύθμισης θα αυξήσει στην αίσθηση «στριψίματος» του φορτηγού προς τα δεξιά."
+	val[]: "Changes intensity of the torque generated from the driveline.<br><br>Raising this setting will increase the feeling of the vehicle \"twisting\" to the right."
 
 	key[]: "suspension_stiffness_op_tooltip" # - Gameplay, Advanced
 	val[]: "Αλλαγή της σκληρότητας της ανάρτησης του σασί."
@@ -3279,7 +3297,7 @@
 	val[]: "Όταν είναι ενεργοποιημένο, ο κινητήρας παίρνει μπροστά με το που πατηθεί το γκάζι."
 
 	key[]: "auto_park_brake_op_tooltip" # - Gameplay, Advanced
-	val[]: "Όταν είναι ενεργοποιημένο, το χειρόφρενο του φορτηγού εμπλέκεται αυτόματα (μετά από την χρήση πλοίου, την ρυμούλκηση σε συνεργείο, το γρήγορο ταξίδι, κλπ.)."
+	val[]: "When enabled, the vehicle's parking brake is applied by default (after using a ferry, towing to service, quick travelling, etc.)."
 
 	key[]: "auto_drop_axles_op_tooltip" # - Gameplay, Advanced
 	val[]: "Ενεργοποιείται αυτόματα η κάθοδος των αναρτώμενων αξόνων όταν απαιτείται, αναλόγως με το βάρος του οχήματος."
@@ -3297,10 +3315,10 @@
 	val[]: "Όταν είναι ενεργοποιημένο, το ABS θα αποτρέπει το μπλοκάρισμα των τροχών με αποτέλεσμα καλύτερο έλεγχο κατά την πέδηση."
 
 	key[]: "traction_control_op_tooltip" # - Gameplay, Advanced
-	val[]: "Όταν είναι ενεργοποιημένο, ρο φορτηγό θα εφαρμόζει πέδηση ανά τροχό για την αποφυγή σπινιαρίσματος, υποστροφής ή υπερσοτρφής και την διατήρηση του ελέγχου."
+	val[]: "When enabled, the vehicle will apply per-wheel braking to prevent wheelspin, understeer or oversteer to help maintain control."
 
 	key[]: "auto_diff_lock_op_tooltip" # - Gameplay, Advanced
-	val[]: "Όταν είναι ενεργοποιημένο, το διαφορικό του φορτηγού θα κλειδώνει αν οι τροχοί αρχίσουν να σπινιάρουν για καλύτερη πρόσφυση."
+	val[]: "When enabled, the vehicle will lock the differential if wheels begin to slip to improve traction."
 
 	key[]: "cruise_control_grid_op_tooltip" # - Gameplay, Advanced
 	val[]: "Changes the increment of speed at which cruise control will increase or decrease when the appropriate button is pressed."
@@ -3315,10 +3333,10 @@
 	val[]: "Ενεργοποιεί την πέδηση εκτάκτου ανάγκης εάν το σύστημα αντιληφθεί κίνδυνο σύγκρουσης.<br>Επιλέξτε αν το σύστημα θα αντιδρά μόνο σε οχήματα ή σε όλα τα εμπόδια."
 
 	key[]: "lane_assistant_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "Επιλογή των λειτουργιών υποβοήθησης λωρίδας:<br>- Η λειτουργία «Προειδοποίηση απόκλισης από την λωρίδα» ειδοποιεί ηχητικά όταν πρόκειται να βγεις από την λωρίδα.<br>- Επιπρόσθετα, η λειτουργία «Υποστήριξη διατήρησης λωρίδας» στρίβει αυτόματα το φορτηγό για να το αποτρέψει να βγει από την λωρίδα.<br><br>Και οι δύο λειτουργίες ισχύουν για ταχύτητες άνω των 55 χλμ/ω (~35 μαω).<br>Η Υποβοήθηση Διατήρησης Λωρίδας λαμβάνει υπόψη την χρήση των δεικτών αλλαγής πορείας."
+	val[]: "Selection of lane assistant modes:<br>- The \"Lane departure warning\" mode audibly warns you when you are about to leave the lane.<br>- In addition to the audible warning, the \"Lane keep support\" also automatically steers your vehicle to keep it from leaving the lane.<br><br>Both modes are only active at speeds above 55 km/h (~35 mph).<br>The Lane Assistant also considers your usage of the turn signals before engaging."
 
 	key[]: "blind_spot_op_tooltip" # - Gameplay, Advanced
-	val[]: "Ενεργοποιεί τις λειτουργίες του Αισθητήρα νεκρού σημείου, εφόσον το φορτηγό σου έχει αυτόν τον εξοπλισμό."
+	val[]: "Enables the blind spot sensor functions, if your vehicle is equipped with it."
 
 	key[]: "automatic_headlights_op_tooltip" # - Gameplay, Simple
 	val[]: "Όταν είναι ενεργοποιημένο και τα φώτα είναι στην θέση φώτων στάθμευσης, τα φώτα διασταύρωσης θα ενεργοποιούνται αυτόματα σε καταστάσεις χαμηλού φωτισμού."
@@ -3456,7 +3474,7 @@
 	val[]: "Διεπιφάνεια" #+ Icon opening the gameplay options window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "adviser_settings"
-	val[]: "Εμφάνιση Διεπεφής Χρήστη" #+ Title of adviser setting section. Please keep in upper case where possible.
+	val[]: "HUD" #+ Title of adviser setting section. Please keep in upper case where possible.
 
 	key[]: "navigation_settings"
 	val[]: "ΠΛΟΗΓΗΣΗ" #+ Title of 'Navigation' settings section. Please keep in upper case where possible.
@@ -3553,17 +3571,22 @@
 	key[]: "lost_function_binding"
 	val[]: "Χάθηκε η ανατεθειμένη λειτουργία:" #+ Shown when key was rebound to a different function.
 
+#!{
+	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
+	val[]: "@@keyboard_ico@@"
+#!}
+
 #+ Headers of individual sections
 #@{
 
 	key[]: "truck_controls"
-	val[]: "ΦΟΡΤΗΓΟ"
+	val[]: "ΟΧΗΜΑ"
 
 	key[]: "assistant_controls"
 	val[]: "ΒΟΗΘΗΜΑΤΑ"
 
 	key[]: "transmission_controls"
-	val[]: "ΚΙΒΩΤΙΟ ΤΑΧΥΤΗΤΩΝ"
+	val[]: "TRANSMISSION"
 
 	key[]: "suspension_controls"
 	val[]: "ΑΝΑΡΤΗΣΗ"
@@ -3575,7 +3598,7 @@
 	val[]: "ΒΟΗΘΗΤΙΚΑ ΦΡΕΝΑ"
 
 	key[]: "interior_controls"
-	val[]: "ΕΣΩΤΕΡΙΚΟ"
+	val[]: "INTERIOR"
 
 	key[]: "hud_controls"
 	val[]: "Εμφάνιση Διεπεφής Χρήστη"
@@ -3596,7 +3619,7 @@
 	val[]: "ΓΡΗΓΟΡΕΣ ΕΝΕΡΓΕΙΕΣ"
 
 	key[]: "radio_controls"
-	val[]: "ΡΑΔΙΟΦΩΝΟ"
+	val[]: "AUDIO PLAYER"
 
 	key[]: "convoy_controls"
 	val[]: "ΚΟΝΒΟΪ"
@@ -3801,16 +3824,22 @@
 	val[]: "Αναπαραγωγή Ήχου"
 
 	key[]: "o_im_radio_next"
-	val[]: "Αναπαραγωγή Ήχου Επόμενο Αγαπημένο"
+	val[]: "Audio Player Next"
 
 	key[]: "o_im_radio_prev"
-	val[]: "Αναπαραγωγή Ήχου Προηγούμενο Αγαπημένο"
+	val[]: "Audio Player Previous"
 
 	key[]: "o_im_radio_vol_up"
 	val[]: "Αναπαραγωγή Ήχου Αύξηση Έντασης"
 
 	key[]: "o_im_radio_vol_down"
 	val[]: "Αναπαραγωγή Ήχου Μείωση Έντασης"
+
+	key[]: "o_im_radio_toggle"
+	val[]: "Audio Player Pause / Play"
+
+	key[]: "o_im_radio_favorite"
+	val[]: "Audio Player Add To / Remove From Favorites"
 
 	key[]: "o_im_display"
 	val[]: "Λειτουργία Προβολής Ταμπλό " #+ Action for cycling between dashboard display pages/modes.
@@ -3865,7 +3894,7 @@
 	val[]: "Γρήγορες Πληροφορίες"
 
 	key[]: "o_im_adjuster"
-	val[]: "Προσαρμογή Φορτηγού"
+	val[]: "Vehicle Adjustment"
 
 	key[]: "o_im_services"
 	val[]: "Υπηρεσίες & Προσαρμογές"
@@ -3970,13 +3999,13 @@
 	val[]: "Εμπρός" #+ Walk forward.
 
 	key[]: "o_im_walk_back"
-	val[]: "Πίσω" #+ Walk back.
+	val[]: "Back" #+ Walk back.
 
 	key[]: "o_im_walk_left"
-	val[]: "Αριστερά" #+ Walk left.
+	val[]: "Left" #+ Walk left.
 
 	key[]: "o_im_walk_right"
-	val[]: "Δεξιά" #+ Walk right.
+	val[]: "Right" #+ Walk right.
 
 	key[]: "o_im_walk_crouch"
 	val[]: "Γονάτισε" #+ Activate crouch.
@@ -4103,7 +4132,7 @@
 	val[]: "Αναθέτει κουμπί για την ενεργοποίηση και απενεργοποίηση του αυτόματου επιβραδυντή."
 
 	key[]: "o_im_lift_axle_op_tooltip"
-	val[]: "Αναθέτει κουμπί για την άνοδο/κάθοδο του άξονα, εφόσον το φορτηγό σου έχει αναρτώμενο άξονα."
+	val[]: "Assigns button for lifting/dropping the axle, if your vehicle has liftable axle."
 
 	key[]: "o_im_lift_axle_trailer_op_tooltip"
 	val[]: "Αναθέτει κουμπί για την άνοδο/κάθοδο του άξονα, εφόσον το τρέιλέρ σου έχει αναρτώμενο άξονα."
@@ -4151,13 +4180,13 @@
 	val[]: "Αναθέτει κουμπί για την ενεργοποίηση και απενεργοποίηση των φώτων πορείας."
 
 	key[]: "o_im_beacon_op_tooltip"
-	val[]: "Αναθέτει κουμπί για την ενεργοποίηση και απενεργοποίηση του φάρου, εφόσν το φορτηγό ή το τρέιλερ είναι εξοπλισμένα."
+	val[]: "Assigns button for turning on/off the beacon, if your vehicle or trailer is equipped with it."
 
 	key[]: "o_im_horn_op_tooltip"
 	val[]: "Αναθέτει κουμπί για την κόρνα."
 
 	key[]: "o_im_air_horn_op_tooltip"
-	val[]: "Αναθέτει κουμπί για την αερόκορνα, εφόσν το φορτηγό είναι εξοπλισμένο."
+	val[]: "Assigns button for using the air horn, if your vehicle is equipped with it."
 
 	key[]: "o_im_light_horn_op_tooltip"
 	val[]: "Αναθέτει κουμπί για σινιάλο με τα φώτω πορείας."
@@ -4229,7 +4258,7 @@
 	val[]: "Αναθέτει κουμπί για την εμφάνιση του μενού Υπηρεσίες & Προσαρμογές."
 
 	key[]: "o_im_adviser_cursor_op_tooltip"
-	val[]: "Αναθέτει κουμπί για την εμφάνιση γρήγορων πληροφοριών για την κατάσταση της δουλειάς, ζημιά του φορτηγού και τους τοπικούς κανονισμούς, ενώ βάζει το παιχνίδι σε παύση εκτός κι αν είσαι σε κονβόι."
+	val[]: "Assigns button for showing quick info about the job status, vehicle condition, and local regulations which also pauses the game when not in a convoy."
 
 	key[]: "o_im_adviser_zoom_in_op_tooltip"
 	val[]: "Αναθέτει κουμπί για μεγέθυνση της πλοήγησης."
@@ -4409,16 +4438,22 @@
 	val[]: "Αναθέτει κουμπί για το άνοιγμα της λειτουργίας αναπαραγωγής ήχου."
 
 	key[]: "o_im_radio_next_op_tooltip"
-	val[]: "Αναθέτει κουμπί για αλλαγή στην επόμενη αγαπημένη ζωντανή ραδιοφωνική ροή."
+	val[]: "Assigns button for playing the next item on the audio player's list while driving."
 
 	key[]: "o_im_radio_prev_op_tooltip"
-	val[]: "Αναθέτει κουμπί για αλλαγή στην προηγούμενη αγαπημένη ζωντανή ραδιοφωνική ροή."
+	val[]: "Assigns button for playing the previous item on the audio player's list while driving."
 
 	key[]: "o_im_radio_vol_up_op_tooltip"
-	val[]: "Αναθέτει κουμπί για την αύξηση της έντασης της αναπαραγωγής ήχου."
+	val[]: "Assigns button for increasing the volume of the audio player while driving."
 
 	key[]: "o_im_radio_vol_down_op_tooltip"
-	val[]: "Αναθέτει κουμπί για την μείωση της έντασης της αναπαραγωγής ήχου."
+	val[]: "Assigns button for decreasing the volume of the audio player while driving."
+
+	key[]: "o_im_radio_toggle_op_tooltip"
+	val[]: "Assigns button for pausing and resuming the music while driving."
+
+	key[]: "o_im_radio_favorite_op_tooltip"
+	val[]: "Assigns button for adding or removing radio stations from the favourites while driving."
 
 	key[]: "o_im_nav_map_op_tooltip"
 	val[]: "Αναθέτει κουμπί για το άνοιγμα του χάρτη."
@@ -4805,7 +4840,7 @@
 	val[]: "Έλεγχος Ματιών (δεν ανιχνεύθηκε υλισμικό)" #+ Eye tracking enable checkbox if no eye compatible eye tracking HW is detected
 
 	key[]: "eye_configure"
-	val[]: "Διαμόρφωση" #+ Eye tracking configuration button
+	val[]: "Configure" #+ Eye tracking configuration button
 
 	key[]: "visit_tobii"
 	val[]: "Επισκέψου τη σελίδα της Tobii Gaming" #+ Link to tobii gaming related page
@@ -5231,7 +5266,7 @@
 	val[]: "Τύπος αυτόματης παύσης" #+ Type of the autopause
 
 	key[]: "eye_autopause_mode_never"
-	val[]: "Απενεργοποιημένο" #+ Autopause is disabled
+	val[]: "Disabled" #+ Autopause is disabled
 
 	key[]: "eye_autopause_mode_presence"
 	val[]: "Παρουσία" #+ Autopause if user is not present
@@ -5295,7 +5330,7 @@
 
 	key[]: "brightness"
 	val[]: "Φωτεινότητα / HDR" #+ Button opening brightness or HDR brightness setup.
-	
+
 	key[]: "brightness_setup_button"
 	val[]: "Ρύμθιση" #+ Text on the brightness button itself.
 
@@ -5518,7 +5553,7 @@
 	val[]: "Ενεργοποιεί την δημιουργία σκιών ακόμη και από πολύ μακρινά αντικείμενα.<br><br><color value=@@clr_txt_d@@>Αυτή η ρύθμιση συνήθως έχει μέτρια επίπτωση στις επιδόσεις."
 
 	key[]: "interior_shadow_op_tooltip" # - Graphics, Advanced
-	val[]: "Enables night-time dynamic shadows in the truck interior.<br><br><color value=@@clr_txt_d@@>This setting usually has a moderate impact on performance."
+	val[]: "Enables night-time dynamic shadows in the vehicle interior.<br><br><color value=@@clr_txt_d@@>This setting usually has a moderate impact on performance."
 
 	key[]: "weather_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Ρυθμίζει την ποιότητα των εφέ του καιρού, όπως οι αντανακλάσεις."
@@ -5565,25 +5600,25 @@
 
 	key[]: "brightness_title"
 	val[]: "Ρύθμιση Φωτεινότητας" #+ Label shown at the top of the screen.
-	
+
 	key[]: "brightness_subtitle"
 	val[]: "Ρυθμίζει την φωτεινότητα έτσι ώστε οι λεπτομέρειες να είναι ξεκάθαρες."
 
 	key[]: "open_hdr"
 	val[]: "Βαθμονόμηση HDR"
-	
+
 	key[]: "brightness_confirm"
 	val[]: "Επιβεβαίωση"
-	
+
 	key[]: "brightness_reset"
 	val[]: "Επαναφορά"
-	
+
 #+ Tooltips.
 #@{
 	key[]: "brightness_slider_tooltip"
 	val[]: "Ρύμθιση της φωτεινότητας."
 #@}
-	
+
 #@}
 
 #+ Options/HDR
@@ -5592,16 +5627,16 @@
 #@{
 	key[]: "hdr_title"
 	val[]: "Βαθμονόμηση HDR"
-	
+
 	key[]: "hdr_subtitle"
 	val[]: "Για την βαθμονόμηση του HDR, ρυθμίστε έτσι ώστε το φορτηγό να είναι οριακά ορατό."
-	
+
 	key[]: "hdr_back"
 	val[]: "Πίσω"
-	
+
 	key[]: "hdr_reset"
 	val[]: "Επαναφορά"
-	
+
 	key[]: "hdr_continue"
 	val[]: "Συνέχεια"
 #@}
@@ -5899,16 +5934,16 @@
 #+ Steering wheel button and axis names
 #@{
 	key[]: "axis_steering"
-	val[]: "Τιμόνι" #+ Steering axis of a steering wheel.
+	val[]: "Steering" #+ Steering axis of a steering wheel.
 
 	key[]: "axis_throttle"
-	val[]: "Γκάζι" #+ Throttle pedal axis of a steering wheel.
+	val[]: "Throttle" #+ Throttle pedal axis of a steering wheel.
 
 	key[]: "axis_brake"
 	val[]: "Brake" #+ Brake pedal axis of a steering wheel.
 
 	key[]: "axis_clutch"
-	val[]: "Συμπλέκτης" #+ Clutch pedal axis of a steering wheel.
+	val[]: "Clutch" #+ Clutch pedal axis of a steering wheel.
 
 	key[]: "axis_handbrake"
 	val[]: "Handbrake" #+ Handbrake axis of a steering wheel.
@@ -6043,7 +6078,7 @@
 	val[]: "ΡΑΔΙΟΦΩΝΟ" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "radio"
-	val[]: "Ραδιόφωνο" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Audio Player" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "music_player"
 	val[]: "Πρόγραμμα ήχου" #+ Button for selecting music player.
@@ -6051,8 +6086,20 @@
 	key[]: "radio_stream"
 	val[]: "Ραδιοφωνική μετάδοση" #+ Button for selecting online radio.
 
+	key[]: "game_radio"
+	val[]: "Game radio" #+ Button for selecting game radio (offline radio).
+
 	key[]: "radio_changed"
 	val[]: "Παίζει τώρα <color value=@@clr_sel@@>$NAME$" #+ Notification that playing track/stream have changed.
+
+	key[]: "stream_safe"
+	val[]: "Stream-safe" #+ Text for enabling stream-safe mode (offline game radios that are designed to avoid content claims)
+
+	key[]: "volume_up"
+	val[]: "Volume Up" #+ Controller hint text for increasing volume
+
+	key[]: "volume_down"
+	val[]: "Volume Down" #+ Controller hint text for decreasing volume
 
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
@@ -6069,6 +6116,26 @@
 	key[]: "empty_radio_hint"
 	val[]: "Παρακαλώ, αναφερθείτε στο <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>μέσα στον φάκελο <color value=@@clr_sel@@>Euro Truck Simulator 2 <color value=@@clr_txt@@>που βρίσκεται στα <color value=@@clr_sel@@>Έγγραφα <color value=@@clr_txt@@>για να προσθέσετε τα δικά σας σας τραγούδια και ραδιοφωνικές μεταδόσεις. "
 
+	key[]: "radio_hint_repeat_favorites"
+	val[]: "Switch between cycling all or favourites only.<br><br>\"Cycle favourites only\" is available when there is at least one favourite item on your list."
+
+	key[]: "radio_cycling_all"
+	val[]: "Cycling all" #+ Text shown if currently we are cycling between all tracks
+
+	key[]: "radio_cycling_favorites"
+	val[]: "Cycling only favourites" #+ Text shown if currently we are cycling between only favorite
+
+	key[]: "radio_hint_online_update"
+	val[]: "Clicking this button refreshes your list of radio streams available for listening online."
+
+	key[]: "music_player_hint_shuffle"
+	val[]: "Switch between normal and shuffled song order."
+
+	key[]: "stream_safe_hint_unmodded"
+	val[]: "Radio station designated to avoid content claims."
+
+	key[]: "stream_safe_hint_modded"
+	val[]: "Community-created radio content marked as stream safe. Not reviewed or guaranteed and may still trigger content claims."
 
 	key[]: "radio_update"
 	val[]: "Ενημέρωση από το διαδίκτυο" #+ Button used to update the list of live streams from the web.
@@ -6081,6 +6148,9 @@
 
 	key[]: "music_player_info_title"
 	val[]: "ΠΛΗΡΟΦΟΡΙΕΣ ΠΡ/ΤΟΣ ΗΧΟΥ"
+
+	key[]: "my_music"
+	val[]: "My Music"
 
 #+ Music player columns.
 
@@ -6137,13 +6207,13 @@
 	val[]: "Έσοδα" #+ For example "Job income: E6,526"
 
 	key[]: "wanna_assistance"
-	val[]: "Η Οδική Βοήθεια μπορεί να μεταφέρει εσένα και το φορτηγό σου στην πόλη $CITY$. Θα σου κοστίσει $MONEY$ και το ταξίδι θα πάρει $TIME$.<br offset=30>Συμφωνείς;"
+	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "Η Οδική Βοήθεια μπορεί να μεταφέρει εσένα και το φορτηγό σου στην πόλη $CITY$. Θα σου κοστίσει $MONEY$ και το ταξίδι θα πάρει $TIME$.<br>(Το κόστος θα καλυφθεί από τον εργοδότη σου.)<br offset=30>Συμφωνείς;"
+	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "Η Οδική Βοήθεια μπορεί να μεταφέρει εσένα και το φορτηγό σου στην πόλη $CITY$. Θα σου κοστίσει $MONEY$ και το ταξίδι θα πάρει $TIME$.<br offset=30>Η τρέχουσα δουλειά σου θα ακυρωθεί.<br offset=30>Συμφωνείς;"
+	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Your current job will be cancelled.<br offset=30>Do you agree?"
 
 	key[]: "wanna_recover"
 	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
@@ -6285,7 +6355,7 @@
 	val[]: "Ανακάλυψη αντιπροσώπου φορτηγών $BRAND$!"
 
 	key[]: "service"
-	val[]: "Για να επιδιορθώσεις, να αναβαθμίσεις, ή να βάψεις το φορτηγό ή το τρέιλέρ σου,<br>πάτησε:"
+	val[]: "To repair, upgrade, or paint<br>your vehicle press:"
 
 	key[]: "job_offer"
 	val[]: "Πάτησε το ακόλουθο κουμπί για να δεις την προσφορά εργασίας:"
@@ -6381,7 +6451,7 @@
 	val[]: "Σβήσε τη μηχανή!"
 
 	key[]: "stop_truck_short"
-	val[]: "Σταμάτα το φορτηγό!"   #+ Quick message shown when sleep was prevented by truck movement.
+	val[]: "Stop the vehicle!"   #+ Quick message shown when sleep was prevented by truck movement.
 
 	key[]: "stop_engine"
 	val[]: "Πίεσε το ακόλουθο κουμπί για να σβήσεις τον κινητήρα:"
@@ -6536,7 +6606,7 @@
 	val[]: "Η ανύψωση του άξονα απέτυχε.<br>Το συνδεδεμένο τρέιλερ είναι πολύ βαρύ."
 
 	key[]: "diff_lock_fail"
-	val[]: "Το διαφορικό δεν μπορεί να κλειδώσει. Ελάττωσε την ταχύτητα του φορτηγού και προσπάθησε ξανά."
+	val[]: "Differential(s) cannot be locked. Slow down the vehicle and try again."
 
 	key[]: "diff_lock_hint"
 	val[]: "Εάν δεν μπορείς να κινηθείς, ίσως το κλείδωμα διαφορικού μπορεί να σε βοηθήσει.<br>Πάτα το ακόλουθο κουμπί για να ενεργοποιήσεις:"
@@ -6617,6 +6687,12 @@
 	key[]: "adv_hud_infotainment_op_tooltip"
 	val[]: "Οθόνη πολυμέσων εσωτερικού για πλοήγηση."
 
+	key[]: "adv_hud_radio"
+	val[]: "Audio Player"
+
+	key[]: "adv_hud_radio_op_tooltip"
+	val[]: "On manual change — the widget appears when you take an action, such as switching stations, or adding a station to your favourites.<br><br>On all changes — the widget appears for every update, including manual actions and automatic track transitions."
+
 	key[]: "adv_hud_finances_line"
 	val[]: "Finances" #+ Widget name for the current bank account balance and the last 7 days profit.
 
@@ -6624,7 +6700,13 @@
 	val[]: "Shows the total bank balance and 7-day profit flow, including dynamic earnings and penalties."
 
 	key[]: "adv_hud_damage_line"
-	val[]: "Ζημιά" #+ Widget name for displaying vehicle damage.
+	val[]: "Damage" #+ Widget name for displaying vehicle damage.
+
+	key[]: "adv_hud_job_info"
+	val[]: "Job details" #+ Widget name for displaying job info.
+
+	key[]: "adv_hud_chat"
+	val[]: "Chat" #+ Widget name for displaying the convoy chat.
 
 	key[]: "adv_hud_autopark"
 	val[]: "Αυτόματο Παρκάρισμα"
@@ -6644,6 +6726,11 @@
 	key[]: "adv_hud_visible"
 	val[]: "Ενεργοποιημένο"
 
+	key[]: "adv_hud_radio_interaction"
+	val[]: "On manual change" #+ HUD audio player widget visibility setting for showing the widget only when the user causes a change
+
+	key[]: "adv_hud_radio_change"
+	val[]: "On all changes" #+ HUD audio player widget visibility setting for showing the widget only when there is any change (e.g. next song automatically plays)
 
 	key[]: "hud_mirrors_none"
 	val[]: "Καθόλου"
@@ -7104,7 +7191,7 @@
 #@{
 
 	key[]: "skill_mechanical_title"
-	val[]: "Οικολογική οδήγηση"
+	val[]: "Ecodriving"
 
 	key[]: "skill_mechanical_info"
 	val[]: "Your @@skill_mechanical_title@@ skill reduces your fuel consumption."
@@ -8718,10 +8805,10 @@
 	val[]: "Γραφεία ευρέσεως εργασίας που έχουν ανακαλυφθεί:"
 
 	key[]: "compman_summary_truck_count"
-	val[]: "Φορτηγά που σου ανήκουν:"
+	val[]: "Trucks owned:"
 
 	key[]: "compman_summary_trailer_count"
-	val[]: "Τρέιλερ που σου ανήκουν:"
+	val[]: "Trailers owned:"
 
 	key[]: "compman_no_driver"
 	val[]: "Κανείς εργαζόμενος οδηγός"
@@ -8740,12 +8827,12 @@
 
 	key[]: "compman_graph_tooltip"
 	val[]: "Κέρδη εταιρείας τις τελευταίες 7 συμπληρωμένες ημέρες. Πέρνα το ποντίκι για να δεις τις ακριβείς τιμές ημερήσιων κερδών."
-	
+
 	key[]: "compman_graph_not_available"
 	val[]: "Το γράφημα θα είναι διαθέσιμο μετά το τέλος της πρώτης ημέρας."
 
 	key[]: "compman_op_economy_summary"
-	val[]: "Οικονομική Σύνοψη"
+	val[]: "Economy Summary"
 
 	key[]: "compman_op_company_branding"
 	val[]: "Εταιρική Ταυτότητα"
@@ -8760,7 +8847,7 @@
 	val[]: "Δεν μπορείς να κάνεις γρήγορα ταξίδια την ώρα της δουλείας!"
 
 	key[]: "compman_qt_notruck"
-	val[]: "Δεν μπορείς να κάνεις γρήγορα ταξίδια αφού δεν έχεις φορτηγό!"
+	val[]: "You cannot quick travel since you don't have a truck, coach or car!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "Θέλεις να κάνεις γρήγορο ταξίδι στο επιλεγμένο γκαράζ;"
@@ -9130,13 +9217,13 @@
 #@{
 
 	key[]: "truckman_sell_t"
-	val[]: "ΠΩΛΗΣΗ ΦΟΡΤΗΓΟΥ"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "ΠΩΛΗΣΗ ΟΧΗΜΑΤΟΣ"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_reallysell"
 	val[]: "Επιθυμείς σίγουρα να πουλήσεις το $TRUCK$ σου για $MONEY$;"
 
 	key[]: "truckman_msg_nosell"
-	val[]: "Δεν μπορείς να πουλήσεις το φορτηγό που οδηγείς όταν είσαι σε δουλειά! Ολοκλήρωσε πρώτα την παράδοση σου και ξαναπροσπάθησε."
+	val[]: "You cannot sell the vehicle you're driving while on a job! Finish your job and then try again."
 
 	key[]: "truckman_total_restoration_t"
 	val[]: "ΠΛΗΡΗΣ ΑΝΑΚΑΤΑΣΚΕΥΗ"  #+ Message box title. Please keep in upper case where possible.
@@ -9168,10 +9255,10 @@
 #@{
 
 	key[]: "truckman_change_t"
-	val[]: "ΑΛΛΑΓΗ ΦΟΡΤΗΓΟΥ" #+ Message box title. Please keep in upper case where possible.
+	val[]: "ΑΛΛΑΓΗ ΟΧΗΜΑΤΟΣ" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nochange"
-	val[]: "Δεν μπορείς να αλλάξεις το φορτηγό σου κατά τη διάρκεια δουλειάς! Ολοκλήρωσε την παράδοση πρώτα."
+	val[]: "You cannot change your vehicle while on a job! Finish your job first."
 
 	key[]: "truckman_conf_drive"
 	val[]: "Θέλεις σίγουρα να τοποθετήσεις το φορτηγό $TRUCK_SRC$ στην πόλη $CITY_DST$ και να οδηγήσεις το φορτηγό $TRUCK_DST$;"
@@ -9208,7 +9295,7 @@
 	val[]: "ΑΝΤΙΓΡΑΦΗ ΔΙΑΜΟΡΦΩΣΗΣ" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nouse"
-	val[]: "Αυτό το φορτηγό δεν μπορεί να χρησιμοποιηθεί ως πηγή αντιγραφής διαμόρφωσης εξαιτίας μη διαθέσιμων δεδομένων, τα οποία πιθανότερα δεν είναι διαθέσιμα λόγω αφαίρεσης MOD ή DLC.<br><br>Επανεγκαταστήστε τα MOD/DLC."
+	val[]: "This vehicle cannot be used as copy configuration source due to missing data which is most likely caused by either MOD or DLC removal.<br><br>Reinstall MOD/DLC."
 #@}
 
 # End of: "Truck management screen"
@@ -9237,7 +9324,7 @@
 	val[]: "Ανάθεση οδηγού"
 
 	key[]: "driverman_current_job"
-	val[]: "Τρέχουσα δουλειά"
+	val[]: "Current job"
 
 	key[]: "driverman_no_job"
 	val[]: "Καμία παράδωσε σε εξέλιξη"
@@ -9246,7 +9333,7 @@
 	val[]: "Ανάπτυξη Δεξιοτήτων"
 
 	key[]: "driverman_op_player_skills"
-	val[]: "Δεξιότητες"
+	val[]: "Skills"
 
 	key[]: "driverman_skill_training_t"
 	val[]: "ΑΝΑΠΤΥΞΗ ΔΕΞΙΟΤΗΤΩΝ"
@@ -9262,7 +9349,7 @@
 
 	key[]: "relocate_together"
 	val[]: "Μεταφορά του οδηγού και του ανατεθειμένου φορτηγού μαζί."
-	
+
 	key[]: "skill_in_training"
 	val[]: "<color value=@@clr_green@@>Εκπαίδευση σε ικανότητα:"
 
@@ -10180,7 +10267,7 @@
 	val[]: "M" #+ Mega as factor of 1 million
 
 	key[]: "money_unit_giga"
-	val[]: "Δις"  #+ Money unit for giga (10^9).
+	val[]: "B"  #+ Money unit for giga (10^9).
 
 	key[]: "money_unit_tera"
 	val[]: "T" #+ Money unit for tera (10^12).
@@ -10712,31 +10799,31 @@
 
     key[]: "job_detail_word"
 	val[]: "Λεπτομέρειες Δουλειάς"
-	
+
 	key[]: "job_detail_word_t"
 	val[]: "ΛΕΠΤΟΜΕΡΕΙΕΣ ΔΟΥΛΕΙΑΣ"
 
 	key[]: "mapping_options_word"
 	val[]: "Επιλογές Αντιστοίχισης"
-	
+
 	key[]: "quick_info_word"
 	val[]: "Γρήγορες Πληροφορίες"
 
 	key[]: "quick_info_word_t"
 	val[]: "ΓΡΗΓΟΡΕΣ ΠΛΗΡΟΦΟΡΙΕΣ"
-	
+
 	key[]: "damage_word_t"
 	val[]: "ΖΗΜΙΑ"
 
 	key[]: "widget_options_word"
 	val[]: "Επιλογές Γραφικών Στοιχείων"
-	
+
 	key[]: "current_country_info_t"
 	val[]: "ΤΟΠΙΚΟΙ ΚΑΝΟΝΙΣΜΟΙ"
-	
+
 	key[]: "no_job_taken"
 	val[]: "Δεν έχεις αναλάβει δουλειά"
-	
+
 	key[]: "searching_for_navigation"
 	val[]: "Αναζήτηση πλοήγησης..."
 #@}
@@ -10826,7 +10913,7 @@
 
 	key[]: "intro_garage_5"
 	val[]: "Καλή τύχη!"
-	
+
 
 	key[]: "desktop_tut_t"
 	val[]: "ΞΕΚΛΕΙΔΩΗΚΕ Η ΛΕΙΤΟΥΡΓΙΑ"
@@ -11185,16 +11272,16 @@
 #@{
 
 	key[]: "wiz_gb_simple"
-	val[]: "Η πιο απλή μέθοδος οδήγησης σχεδιάστηκε ειδικά (αλλά όχι μόνο) για τα πλήκτρα του πληκτρολογίου. Πάτησε το ΜΠΡΟΣΤΑ για να οδηγήσεις προς τα εμπρός και πάτησε το ΠΙΣΩ για να φρενάρεις ή να κάνεις όπισεθν. Το κιβώτιο ταχυτήτων θα τα χειριστεί όλα τα άλλα για σένα: εναλλαγή μεταξύ οδήγησης προς τα εμπρός, φρεναρίσματος, ή όπισθεν, αλλαγή ταχυτήτων στις σωστές ταχύτητες κ.ο.κ."
+	val[]: "Press FORWARD to move ahead, and press BACK to brake or reverse. The gearbox automatically manages everything else, handling transitions between driving, braking, and reversing, as well as selecting the appropriate gears."
 
 	key[]: "wiz_gb_automatic"
-	val[]: "Ιδανικό για τιμονιέρα με πετάλια. Χρησιμοποίησε τα κουμπιά για να αλλάζεις μεταξύ οδήγησης προς τα εμπρός, νεκράς (κενής), ή όπισθεν. Μετά πάτησε το γκάζι και άφησε το αυτόματο κιβώτιο να αλλάζει τις ταχύτητες."
+	val[]: "Use the buttons to switch between driving forward, neutral, or reversing. Then press the accelerator and let the automatic transmission handle gear changes."
 
 	key[]: "wiz_gb_sequential"
-	val[]: "Άλλαξε ταχύτητες χειροκίνητα και επίλεξε μεταξύ ταχύτητες κίνησης, νεκρά και όπισθεν. Είναι λίγο δύσκολο για να το τελειοποιήσεις, αλλά μπορείς να καταφέρεις καλύτερη οδηγική απόδοση και να έχεις πλήρη έλεγχο του οχήματος σε διάφορες καταστάσεις."
+	val[]: "Manually shift gears up and down to select each individual gear within the transmission. This configuration provides full control over the vehicle’s gearbox."
 
 	key[]: "wiz_gb_hshifter"
-	val[]: "Επίλεξε άμεσα την επιθυμητή ταχύτητα. Παρόμοιο σε δυσκολία με το σειριακό κιβώτιο, αλλά πιο ρεαλιστικό. Ο πραγματικός επιλογέας τύπου H όπως του G27 ή του G25 συστήνεται. Απαιτεί συμπλέκτη. "
+	val[]: "Select the desired gear directly. This offers the most realistic configuration. A physical H-pattern shifter is recommended and requires clutch input."
 #@}
 
 #+ Shown when feature requires a gamming controller.
@@ -11247,7 +11334,7 @@
 #+ Configuration complete page
 #@{
 	key[]: "wiz_cfg_done"
-	val[]: "Το παιχνίδι είναι τώρα ρυθμισμένο και μπορείς να συνεχίσεις. Μπορείς να αλλάξεις τις ρυθμίσεις αργότερα στην οθόνη χειριστήρια στις ρυθμίσεις."
+	val[]: "The game is now configured and you can continue. You can change the configuration later in Options."
 
 	key[]: "wiz_cfg_steam"
 	val[]: "Μπορείς να ελέγξεις και να διαμορφώσεις την αντιστοίχιση κουμπιών και αξόνων για αυτό το χειριστήριο μέσω του Steam. Οι ρυθμίσεις του χειριστηρίου Steam για το παιχνιδι είναι διαθέσιμες στο Steam > Συλλογή > Euro Truck Simulator 2 > Διαμόρφωση Χειριστηρίου."
@@ -12300,7 +12387,7 @@
 	val[]: "Ανέβασμα στο World of Trucks"
 
 	key[]: "photo_album_action_delete"
-	val[]: "Διαγραφή"
+	val[]: "Delete"
 
 	key[]: "photo_album_overlay_menu"
 	val[]: "Ενεέργειες Φωτογραφίας"
@@ -12324,7 +12411,7 @@
 	val[]: "Το εισαγωγικό της πόλης δεν μπορεί να αναπαραχθεί. Σιγουρέψου ότι έχεις τα αντίστοιχα DLC ενεργοποιημένα."
 
 	key[]: "photo_album_tooltip_dlc_required"
-	val[]: "Απαιτούμενο DLC"
+	val[]: "Required DLC"
 
 	key[]: "photo_album_city_non_visited_tooltip"
 	val[]: "Δεν έχεις ανακαλύψει ακόμη αυτήν την πόλη."
@@ -12336,19 +12423,19 @@
 	val[]: "Δεν έχεις επισκεφθεί ακόμη αυτό το σημείο με θέα."
 
 	key[]: "photo_album_city_dlc_locked"
-	val[]: "μη διαθέσιμο" #+ the actual ingame text is: DLC XY not available.
+	val[]: "not available" #+ the actual ingame text is: DLC XY not available.
 
 	key[]: "photo_album_city_not_visited"
 	val[]: "Δεν έχεις ανακαλύψει ακόμη αυτήν την πόλη"
 
 	key[]: "open_wotr_profile"
-	val[]: "Προβολή στο World of Trucks"
+	val[]: "View on World of Trucks"
 
 	key[]: "photo_album_no_screenshot_warning"
 	val[]: "Your Gallery is empty. Use Photo Mode to capture images."
 
 	key[]: "link_locked_msg_photo_mode"
-	val[]: "Για πρόσβαση στη Λειτουργία Φωτογραφίας πρέπει να έχεις φορτηγό."
+	val[]: "To access the Photo Mode you must have a vehicle assigned first."
 
 	key[]: "photo_album_delete_failed"
 	val[]: "Failed to delete the image due to an unexpected error."
@@ -12378,7 +12465,7 @@
 	val[]: "Γκαλλερύ στιγμιοτύπων"
 
 	key[]: "photo_album_upload_selected_to_wotr"
-	val[]: "Ανέβασμα στην επιλεγμένη θέση"
+	val[]: "Upload to selected slot"
 
 	key[]: "photo_album_wotr_upload_info"
 	val[]: "Μπορείς να ανεβάσεις αυτήν την εικόνα στην Πύλη του World of Trucks,<br>Επίλεξε μια θέση από κάτω πάτησε Ανέβασμα στην επιλεγμένη θέση."
@@ -12450,25 +12537,25 @@
 	val[]: "ΩΡΑ ΗΜΕΡΑΣ ΚΑΙ ΚΑΙΡΟΣ"
 
 	key[]: "photomode_light_adjustment"
-	val[]: "ΡΥΘΜΙΣΗ ΦΩΤΙΣΜΟΥ"
+	val[]: "LIGHT ADJUSTMENT"
 
 	key[]: "photomode_tooltip_light1"
-	val[]: "Φώτα θέσεως"
+	val[]: "Parking lights"
 
 	key[]: "photomode_tooltip_light2"
-	val[]: "Μεσαία σκάλα"
+	val[]: "Low beam"
 
 	key[]: "photomode_tooltip_light3"
-	val[]: "Μεγάλη σκάλα"
+	val[]: "High beam"
 
 	key[]: "photomode_tooltip_light4"
-	val[]: "Φάρος"
+	val[]: "Beacon"
 
 	key[]: "photomode_tooltip_light5"
-	val[]: "Βοηθητικά μπροστά"
+	val[]: "Front auxiliary"
 
 	key[]: "photomode_tooltip_light6"
-	val[]: "Βοηθητικά οροφής"
+	val[]: "Roof auxiliary"
 #@}
 
 #+ Photo Mode overlay helper.
@@ -12501,10 +12588,10 @@
 	val[]: "Προβολή Χειριστηρίων"
 
 	key[]: "photo_mode_help_move"
-	val[]: "Μετακίνηση"
+	val[]: "Move"
 
 	key[]: "photo_mode_help_look"
-	val[]: "Κοίταξε"
+	val[]: "Look"
 
 	key[]: "photo_mode_help_take_picture"
 	val[]: "Λήψη Φωτογραφίας"
@@ -12529,10 +12616,10 @@
 #@{
 
 	key[]: "photo_no_drive_t"
-	val[]: "ΚΑΝΕΝΑ ΦΟΡΤΗΓΟ" #+ Message box title. Please keep in upper case where possible.
+	val[]: "ΚΑΝΕΝΑ ΟΧΗΜΑ" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "photo_no_drive"
-	val[]: "Δεν μπορείς να πάρεις φωτογραφίες από φορτηγό επειδή δεν έχεις ένα! Πρέπει να αγοράσεις ένα ή να πάρεις ένα από το στόλο σου."
+	val[]: "You cannot take pictures of a vehicle because you don't have one! You must purchase one or take one from your fleet."
 #@}
 
 #+ Screenshot manager
@@ -13286,7 +13373,7 @@
 	val[]: "Γρήγορο Ταξίδι"
 
 	key[]: "link_locked_msg_quick_travel"
-	val[]: "Για να έχεις πρόσβαση στο γρήγορο ταξίδι, θα πρέπει πρώτα να αγοράσεις το πρώτο σου φορτηγό."
+	val[]: "To access the Quick Travel you must have a vehicle assigned first."
 
 	key[]: "select_quick_travel_destination"
 	val[]: "Επιλογή προορισμού γρήγορου ταξιδίου"
@@ -13313,16 +13400,16 @@
 	val[]: "Το φορτηγό σου δεν είναι σε κατάσταση για γρήγορο ταξίδι. Φτιάξε τα καλώδια του τρέιλερ."
 
 	key[]: "quick_travel_cond_repair_truck"
-	val[]: "Το φορτηγό σου δεν είναι σε κατάσταση για γρήγορο ταξίδι. Επισκέψου ένα συνεργείο ή κάλεσε την οδική βοήθεια."
+	val[]: "Your vehicle is not in a condition for quick travel. Visit service or call for an assistance."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "Το τρέιλέρ σου δεν είναι σε κατάσταση για γρήγορο ταξίδι. Επισκέψου ένα συνεργείο ή κάλεσε την οδική βοήθεια."
 
 	key[]: "quick_travel_cond_truck_fuel"
-	val[]: "Το φορτηγό σου δεν είναι σε κατάσταση για γρήγορο ταξίδι. Ανεφοδίασε το φορτηγό σου ή κάλεσε βοήθεια."
+	val[]: "Your vehicle is not in a condition for quick travel. Refuel your truck or call for an assistance."
 
 	key[]: "quick_travel_cond_truck_fallen"
-	val[]: "Το φορτηγό σου δεν είναι σε κατάσταση για γρήγορο ταξίδι. Κάλεσε βοήθεια."
+	val[]: "Your vehicle is not in a condition for quick travel. Call for an assistance."
 
 	key[]: "quick_travel_cond_trailer_fallen"
 	val[]: "Το τρέιλερ σου δεν είναι σε κατάσταση για γρήγορο ταξίδι. Κάλεσε βοήθεια."
@@ -13331,7 +13418,7 @@
 	val[]: "Το τρέχον τρέιλέρ σοτ δεν είναι νόμιμο στην πολιτεία προορισμού. Θα αποθηκευτεί στο γκαράζ." #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
 
 	key[]: "quick_travel_illegal_trailer_dismiss_confirm"
-	val[]: "Επιβεβαίωση"
+	val[]: "Confirm"
 
 	key[]: "quick_travel_no_service"
 	val[]: "Η πόλη δεν παρέχει υπηρεσίες"
@@ -13493,7 +13580,7 @@
 	val[]: "Αδυναμία εύρεσης στοιχείων που ταιριάζουν στην αναζήτηση" #+ Text shown when there are no accessories found by filters.
 
 	key[]: "no_truck_found"
-	val[]: "Αδυναμία εύρεσης φορτηγών που ταιριάζουν στην αναζήτηση" #+ Text shown when there are no trucks found by filters.
+	val[]: "Unable to find vehicles matching your filters" #+ Text shown when there are no trucks found by filters.
 #@}
 
 #+ Strings related to job filtering feature
@@ -14154,7 +14241,7 @@
 	val[]: "Πλήρης Ανακατασκευή"
 
 	key[]: "trailerman_status"
-	val[]: "Κατάσταση:" #+ Current trailer status.
+	val[]: "Status:" #+ Current trailer status.
 
 	key[]: "trailer_status_private"
 	val[]: "Ιδιωτικό" #+ Trailer status name - private - only can be used by player.
@@ -14178,16 +14265,16 @@
 	val[]: "Τρέχον φορτίο:" #+ Currently loaded cargo statistic.
 
 	key[]: "trailerman_all_time_stats"
-	val[]: "Συνολικά στατιστικά" #+ All time statistics section title.
+	val[]: "All time statistics" #+ All time statistics section title.
 
 	key[]: "trailerman_stats_dist_on_job"
-	val[]: "Απόσταση σε δουλειά:" #+ Total distance this trailer driven during jobs.
+	val[]: "Distance on job:" #+ Total distance this trailer driven during jobs.
 
 	key[]: "trailerman_stats_cargo_transp"
-	val[]: "Εμπορεύματα που έχουν μεταφερθεί:" #+ Total number of transported cargoes.
+	val[]: "Cargo transported:" #+ Total number of transported cargoes.
 
 	key[]: "trailerman_stats_weight_transp"
-	val[]: "Βάρος που έχει μεταφερθεί:" #+ Total weight transported by the trailer.
+	val[]: "Weight transported:" #+ Total weight transported by the trailer.
 
 	key[]: "trailerman_col_type"
 	val[]: "Τύπος" #+ Title of the trailer type column.
@@ -14274,7 +14361,7 @@
 	val[]: "Δεν υπάρχουν νέες αναβαθμίσεις τρέιλερ διαθέσιμες αυτήν τη στιγμή"
 
 	key[]: "link_locked_msg_truck_diag"
-	val[]: "Για πρόσβαση στα Διαγνωστικά πρέπει να έχεις φορτηγό."
+	val[]: "To access the Diagnostics you must have a vehicle assigned first."
 
 	key[]: "link_locked_msg_truck_dealer_map"
 	val[]: "Δεν έχει ανακαλύψει ακόμα κάποιον αντιπρόσωπο φορτηγών."
@@ -14370,7 +14457,7 @@
 #+ Message box shown when user requests to use total restoration of trailer in trailer manager.
 #@{
 	key[]: "trailerman_total_restoration_t"
-	val[]: "ΠΛΗΡΗΣ ΑΝΑΚΑΤΑΣΚΕΥΗ"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "TOTAL RESTORATION"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_total_restoration_service"
 	val[]: "Επισκέψου ένα συνεργείο άμεσα για να ανακατασκευάσεις το τρέιλερ που χρησιμοποιείς." #+ Message shown when player tries to restore trailer that he is using.
@@ -14379,7 +14466,7 @@
 	val[]: "Το τρέιλερ είναι σε τέλεια κατάσταση." #+ Message shown when player tries to restore trailer in perfect condition.
 
 	key[]: "trailerman_total_restoration"
-	val[]: "Συνολικό κόστος ανακατασκευής:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Το όχημα επαναφέρεται σε άψογη κατάσταση με την πλήρη αφαίρεση και αακατασκευή όλων των φθαρμένων εξαρτημάτων. Αποτελεί μεγαλύτερη πρόκληση από την κατασκευή ενός εξ ολοκλήρου νέου οχήματος." #+ Content of the screen, explaining total restoration.
+	val[]: "Total restoration price:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Return the vehicle to pristine condition by requesting a complete disassembly and restoration of all worn components. It poses a greater challenge than constructing an entirely new vehicle." #+ Content of the screen, explaining total restoration.
 #@}
 
 #+ Trailer detail tooltip.
@@ -14463,7 +14550,7 @@
 #+ Vehicle adjustments related texts
 #@{
 	key[]: "vehicle_adjustments_t"
-	val[]: "ΠΡΟΣΑΡΜΟΓΕΣ ΟΧΗΜΑΤΟΣ"
+	val[]: "VEHICLE ADJUSTMENTS"
 
 	key[]: "adj_mirrors"
 	val[]: "Ρύθμιση καθρεφτών"
@@ -14500,7 +14587,7 @@
 	val[]: "Βυτίο Τροφίμων"
 
 	key[]: "fueltank"
-	val[]: "Βυτιοφόρο"
+	val[]: "Fuel Tank"
 
 	key[]: "gastank"
 	val[]: "Βυτιοφόρο Αερίου"
@@ -14528,7 +14615,7 @@
 	val[]: "Χύμα"
 
 	key[]: "tr_tank"
-	val[]: "Δεξαμενή"
+	val[]: "Tank"
 
 #@}
 
@@ -14556,7 +14643,7 @@
 	val[]: "Υγρά τρόφιμα"
 
 	key[]: "body_cargo_types_fueltank"
-	val[]: "Εύφλεκτα υγρά"
+	val[]: "Flammable liquids"
 
 	key[]: "body_cargo_types_gastank"
 	val[]: "Εύφλεκτρο αέριο, μεταφερόμενο σε υγρή μορφή"
@@ -14972,7 +15059,7 @@
 #+ Trailer browser
 #@{
 	key[]: "select_option_to_preview_cargo_model"
-	val[]: "Κανένα" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
+	val[]: "None" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
 	val[]: "Δεν βρέθηκαν τρέιλερς" #+ Text shown if there are no trailer of given brands found.
@@ -15314,7 +15401,7 @@
 	val[]: "Δεν έχεις συμβατό τρέιλερ για το τρέχον φορτίο."
 
 	key[]: "mp_job_missing_truck"
-	val[]: "Μπορείς να το αναλάβεις μόνο με το δικό σου φορτηγό."
+	val[]: "Can be only taken with your own vehicle."
 
 	key[]: "mp_job_missing_trailer"
 	val[]: "Το τρέχον ανατεθειμένο σου τρέιλερ δεν είναι συμβατό με το φορτίο."
@@ -15663,7 +15750,7 @@
 	val[]: "ΔΙΑΔΙΚΤΥΑΚΗ ΕΜΠΕΙΡΙΑ"
 
 	key[]: "mp_experience"
-	val[]: "Προσοχή, η εμπειρία του παιχνιδιού δύναται να διαφοροποιηθεί κατά το διαδικτυακό παιχνίδι. Επιθυμητή η γονική συναίνεση. Εφαρμόζεται η <nowrap><link url=@@privacy_url@@ color=@@clr_link@@>Πολιτική Προστασίας Δεδομένων Προσωπικού Χαρακτήρα</link>$SHORTCUT1$</nowrap>.<br><br>Κατά την διαδικτυακή παρουσία, να ακολουθείτε τον <nowrap><link url=@@conduct_url@@ color=@@clr_link@@>Κώδικα Δεοντολογίας</link>$SHORTCUT2$</nowrap> και να δείχνετε ευγένεια και σεβασμό στους συναδέλφους οδηγούς ώστε η εμπειρία να είναι η βέλτιστη και ευχάριστη για όλους."
+	val[]: "Please note that the game experience may change during online play. Parental guidance is advised. The <nowrap><link url=@@privacy_url@@ color=@@clr_link@@>Privacy Policy</link>$SHORTCUT1$</nowrap> applies.<br><br>When online, follow the <nowrap><link url=@@conduct_url@@ color=@@clr_link@@>Code of Conduct</link>$SHORTCUT2$</nowrap> and be kind and respectful to your fellow drivers so the experience is pleasant and optimal for everyone."
 
 	key[]: "session_friends"
 	val[]: "Φίλοι"
@@ -16135,13 +16222,13 @@
 	val[]: "Εξοπλισμός δουλειάς:"
 
 	key[]: "equipment_provided_truck_and_trailer"
-	val[]: "Παρέχεται φορτηγό και τρέιλερ"
+	val[]: "Provided vehicle and trailer"
 
 	key[]: "equipment_owned_truck_provided_trailer"
-	val[]: "Ιδιόκτητο φορτηγό"
+	val[]: "Ιδιόκτητο όχημα"
 
 	key[]: "equipment_owned_truck_and_trailer"
-	val[]: "Ιδιόκτητα φορτηγό και τρέιλερ"
+	val[]: "Ιδιόκτητο όχημα και καρότσα"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "Αυτήν την στιγμή είσαι πολύ μακριά από την τοποθεσία της εταιρίας αφετηρίας. Θα ήθελες να κάνεις γρήγορο ταξίδι για να φτάσεις πιο κοντά;<br><br>Προορισμός Γρήγορου Ταξιδιού: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>Κόστος:<color value=@@clr_sel@@>$COST$"
@@ -16222,7 +16309,7 @@
 	val[]: "ΤΟ ΚΟΝΒΟΪ ΟΛΟΚΛΗΡΩΘΗΚΕ"
 
 	key[]: "convoy_concluded_info"
-	val[]: "Η συνεδρία Κονβόι σου ολοκληρώθηκε. Η πρόοδός σου περιλμαβάνει την τραπεζική σου κατάσταση, το ιστορικό δουλειών, τις ικανότητες, τις αποκτηθείσες διαμορφώσεις φορτηγού και τρέιλερ αλλά και την πρόοδο και τον εξοπλισμό των οδηγών της εταιρίας σου."
+	val[]: "Your Convoy session is concluded. Your progress includes your bank state, job history, skills, advancements, acquired vehicles configurations as well as your company driver’s equipment and progress."
 
 	key[]: "convoy_concluded_warning"
 	val[]: "Επίλεξε αποδοχή προόδου για να συνεχίσεις με την συλλεγμένη πρόοδο. Ή μπορείς να κάνεις επαναφορά σε αυτόματη αποθήκευση πριν αυτήν την συνεδρία ή να φορτώσεις οποιαδήποτε άλλη αποθήκευση."
@@ -16888,7 +16975,7 @@
 	val[]: "Remove last placed pin"
 
 	key[]: "overlay_reset_route"
-	val[]: "Επαναφορά πλοήγησης"
+	val[]: "Reset navigation"
 
 	key[]: "overlay_map_filters"
 	val[]: "Φίλτρα"
@@ -17365,7 +17452,7 @@
 	val[]: "Controller name" #+ Compatible controller name header.
 
 	key[]: "compatible_controller_type"
-	val[]: "Τύπος" #+ Compatible controller type header.
+	val[]: "Type" #+ Compatible controller type header.
 
 	key[]: "controller_binding_label"
 	val[]: "Binding" #+ Controller Bindings options screen column header for the currently bound button.
@@ -17449,7 +17536,7 @@
 	val[]: "Σύστημα"
 
 	key[]: "desktop_menu_category_leave"
-	val[]: "Έξοδος"
+	val[]: "Leave"
 #@}
 
 #+ Menu upper bar
@@ -17530,7 +17617,7 @@
 	val[]: "Αναζήτησε, δες και επαναδιαμόρφωσε τα διαθέσιμα τρέιλερ προς αγορά."
 
 	key[]: "radio_desc" # - tooltip for explaining what the radio is - feature is active
-	val[]: "Άκου τον αγαπημένο διαδιξτυακό ραδιοφωνικό σταθμό ή φόρτωσε την δική σου μουσική."
+	val[]: "Enhance your driving experience with some music."
 
 	key[]: "link_locked_msg_radio" # - tooltip for when the radio is not yet unlocked
 	val[]: "Το ραδιόφωνο δεν είναι διαθέσιμο."
@@ -17552,7 +17639,7 @@
 
 	key[]: "health_warning_description"
 	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
-	
+
 	key[]: "trademark"
 	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
 #@}
@@ -17591,3 +17678,123 @@
 	key[]: "dlc_lost_return_forced" #+ Message shown in game, when a DLC has been removed.
 	val[]: "Access to some DLCs has been lost. You will now leave to Title Screen to reflect the changes in the content.<br><br>Your progress will be saved automatically."
 #@}
+
+#+ Time skip feature
+#@{
+	key[]: "time_skip_t"
+	val[]: "RESTING"
+
+	key[]: "time_skip_hours"
+	val[]: "Number of hours to skip"
+
+	
+	key[]: "time_skip_current_time"
+	val[]: "Current time"
+
+	key[]: "time_skip_wake_up_time"
+	val[]: "Rest ends"
+
+
+	key[]: "time_skip_resting_title"
+	val[]: "Rest State"
+
+	key[]: "time_skip_mandatory_break_title"
+	val[]: "Mandatory Break"
+
+	key[]: "time_skip_job_delivery_title"
+	val[]: "Delivery Status"
+
+	key[]: "time_skip_charging_title"
+	val[]: "Battery Charge"
+
+	
+	key[]: "time_skip_to_next_mandatory_break_ok"
+	val[]: "in $TIME$"
+
+	key[]: "time_skip_to_next_mandatory_break_not_ok"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>in $TIME$</font>"
+
+
+	key[]: "time_skip_mandatory_break_complied"
+	val[]: "Complied"
+
+	key[]: "time_skip_mandatory_break_not_complied"
+	val[]: "Not complied"
+
+
+	key[]: "time_skip_delivery_on_time"
+	val[]: "On time"
+
+	key[]: "time_skip_delivery_late"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>Risk of late delivery</font>"
+
+
+	key[]: "time_skip_rest_tired"
+	val[]: "Tired"
+
+	key[]: "time_skip_rest_ok"
+	val[]: "Rested"
+
+	key[]: "time_skip_rest_full"
+	val[]: "Fully rested"
+
+	
+	key[]: "time_skip_tooltip_mandatory_break_not_met"
+	val[]: "This rest won’t meet the mandatory break requirements. You will have $LEFT_TIME$ left until the next mandatory break."
+
+	key[]: "time_skip_tooltip_mandatory_break_complied"
+	val[]: "This rest will meet the mandatory break requirements. The next one will be in <color value=@@clr_sel@@>$DRIVE_TIME$</color> hours."
+
+	key[]: "time_skip_tooltip_mandatory_break_cont"
+	val[]: "For every <color value=@@clr_sel@@>$DRIVE_TIME$</color> hours of driving, you must take a mandatory break for at least <color value=@@clr_sel@@>$BREAK_TIME$</color> hours to avoid getting fined."
+	
+
+	key[]: "time_skip_tooltip_job_on_time"
+	val[]: "After the rest and the estimated drive time to the destination, you will have <color value=@@clr_sel@@>$LEFT_TIME$</color> remaining on the job."
+	
+	key[]: "time_skip_tooltip_job_late"
+	val[]: "After the rest and the estimated drive time to the destination, the delivery will be late by <color value=@@clr_red@@>$LEFT_TIME$</color>."
+
+	key[]: "time_skip_max_sleep_reached"
+	val[]: "<color value=@@clr_red@@>You will be fully rested</color>"
+
+# shown in job detail widget and pause screen	
+	key[]: "job_eta"
+	val[]: "Estimated Arrival"
+
+	key[]: "job_delay"
+	val[]: "Delay"
+
+# mandatory break needed window shown when changing vehicle mode
+	key[]: "time_skip_mandatory_break_t"
+	val[]: "MANDATORY REST NEEDED"
+
+	key[]: "time_skip_mandatory_break_needed"
+	val[]: "The vehicle hasn’t been parked long enough to complete your mandatory rest.<br><br><color value=@@clr_sel@@>$TIME$ of mandatory break left<br><br><color value=@@clr_txt@@>Do you want to rest?"
+
+# mandatory break notifications
+	key[]: "mandatory_break_soon"
+	val[]: "It’s time to take your mandatory break.<br>You should find a parking spot and rest!"
+
+	key[]: "mandatory_break_overdue"
+	val[]: "Exceeded driving time without mandatory break.<br>You should find a parking spot and rest!"
+
+	key[]: "offence_mandatory_break"
+	val[]: "Violation of mandatory break."
+
+# shown in options
+
+	key[]: "mandatory_break_simulation"
+	val[]: "Mandatory Break simulation"
+
+	key[]: "mandatory_break_simulation_op_tooltip"
+	val[]: "When enabled, you must take regular breaks from driving.<br><br>Avoiding mandatory breaks will result in traffic offences."
+
+	key[]: "rest_state_simulation"
+	val[]: "Rest State simulation"
+	
+	key[]: "rest_state_simulation_op_tooltip"
+	val[]: "When enabled, you will experience the effects of fatigue over time.<br><br>You will need to rest to recover."
+#@}
+
+

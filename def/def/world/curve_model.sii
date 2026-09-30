@@ -1798,25 +1798,21 @@ curve_model : curve.92
 	high_tess: 0
 }
 
-
 curve_model : curve.93
 {
 	model_desc: "/model/barrier/wood/us_fence_wooden1_curve.pmd"
 	name: "us_fence_wooden1"
 
-	variation: 1
-	start_part: 1
-	end_part: 1
-	variation[0]: "default | center1 : 1.0"
-	start_part[0]: "start1"
-	end_part[0]: "end1"
+	variation[]: "default | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
 
 	high_tess: 0
 
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/model/barrier/wood/us_fence_wooden1_curve_lod1.pmd"
-	dynamic_lod_dist[0]: 130
+	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden1_curve_lod1.pmd"
+	dynamic_lod_dist[]: 130
+	dynamic_lod_desc[]: "/model/barrier/wood/us_fence_wooden1_curve_lod2.pmd"
+	dynamic_lod_dist[]: 230
 }
 
 curve_model : curve.94
@@ -6156,8 +6152,8 @@ curve_model : curve.co_1t003
 	name: "co ped bridge2"
 
 	variation[]: "default | center1 : 5.0 | center2 : 3.0 | center3 : 3.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
+	start_part[]: "start1 | start3"
+	end_part[]: "end1 | end3"
 	variation[]: "half | center4 : 5.0 | center5 : 3.0 | center6 : 3.0"
 	start_part[]: "start2"
 	end_part[]: "end2"
@@ -6306,79 +6302,69 @@ curve_model : curve.co_25001
 
 	high_tess: 0
 }
+
 curve_model : curve.co_1n001
 {
 	model_desc: "/model/rock/co_rock_sediment_16m_curve.pmd"
 	name: "co rock sediment 16m curve"
 
-	variation: 6
-	start_part: 6
-	end_part: 6
-	variation[0]: "default | center5,center3,center1,center7 : 1.0 | center3,center7,center5,center1 : 1.0 | center7,center1,center3,center5 : 1.0 | center1,center5,center7,center3 : 1.0"
-	start_part[0]: "start1"
-	end_part[0]: "end1"
-	variation[1]: "top | center6,center4,center2,center8 : 1.0 | center4,center8,center6,center2 : 1.0 | center8,center2,center4,center6 : 1.0 | center2,center6,center8,center4 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2"
-	variation[2]: "jagged | center13,center11,center9,center15 : 1.0 | center11,center15,center13,center9 : 1.0 | center15,center9,center13,center11 : 1.0 | center9,center15,center11,center13 : 1.0"
-	start_part[2]: "start1"
-	end_part[2]: "end1"
-	variation[3]: "jagged_top | center14,center12,center10,center16 : 1.0 | center12,center16,center14,center10 : 1.0 | center16,center10,center14,center12 : 1.0 | center10,center16,center12,center14 : 1.0"
-	start_part[3]: "start2"
-	end_part[3]: "end2"
-	variation[4]: "smooth | center19,center22,center17,center24 : 1.0 | center22,center19,center24,center17 : 1.0 | center17,center24,center22,center19 : 1.0"
-	start_part[4]: "start1"
-	end_part[4]: "end1"
-	variation[5]: "smooth_top | center20,center21,center18,center23 : 1.0 | center21,center20,center23,center18 : 1.0 | center18,center23,center21,center20 : 1.0"
-	start_part[5]: "start2"
-	end_part[5]: "end2"
+	variation[]: "default | center5,center3,center1,center7 : 1.0 | center3,center7,center5,center1 : 1.0 | center7,center1,center3,center5 : 1.0 | center1,center5,center7,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "top | center6,center4,center2,center8 : 1.0 | center4,center8,center6,center2 : 1.0 | center8,center2,center4,center6 : 1.0 | center2,center6,center8,center4 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "jagged | center13,center11,center9,center15 : 1.0 | center11,center15,center13,center9 : 1.0 | center15,center9,center13,center11 : 1.0 | center9,center15,center11,center13 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "jagged_top | center14,center12,center10,center16 : 1.0 | center12,center16,center14,center10 : 1.0 | center16,center10,center14,center12 : 1.0 | center10,center16,center12,center14 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "smooth | center19,center22,center17,center24 : 1.0 | center22,center19,center24,center17 : 1.0 | center17,center24,center22,center19 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "smooth_top | center20,center21,center18,center23 : 1.0 | center21,center20,center23,center18 : 1.0 | center18,center23,center21,center20 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
 
 	high_tess: 0
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
-	dynamic_lod_desc[0]: "/model/rock/co_rock_sediment_16m_curve_lod1.pmd"
-	dynamic_lod_dist[0]: 60
-	dynamic_lod_desc[1]: "/model/rock/co_rock_sediment_16m_curve_lod2.pmd"
-	dynamic_lod_dist[1]: 120
+	dynamic_lod_desc[]: "/model/rock/co_rock_sediment_16m_curve_lod2.pmd"
+	dynamic_lod_dist[]: 100
 
 	smooth_surface: true
 }
+
 curve_model : curve.co_1n002
 {
 	model_desc: "/model/rock/co_rock_sediment_32m_curve.pmd"
 	name: "co rock sediment 32m curve"
 
-	variation: 6
-	start_part: 6
-	end_part: 6
-	variation[0]: "default | center5,center3,center1,center7 : 1.0 | center3,center7,center5,center1 : 1.0 | center7,center1,center3,center5 : 1.0 | center1,center5,center7,center3 : 1.0"
-	start_part[0]: "start1"
-	end_part[0]: "end1"
-	variation[1]: "top | center6,center4,center2,center8 : 1.0 | center4,center8,center6,center2 : 1.0 | center8,center2,center4,center6 : 1.0 | center2,center6,center8,center4 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2"
-	variation[2]: "jagged | center13,center11,center9,center15 : 1.0 | center11,center15,center13,center9 : 1.0 | center15,center9,center13,center11 : 1.0 | center9,center15,center11,center13 : 1.0"
-	start_part[2]: "start1"
-	end_part[2]: "end1"
-	variation[3]: "jagged_top | center14,center12,center10,center16 : 1.0 | center12,center16,center14,center10 : 1.0 | center16,center10,center14,center12 : 1.0 | center10,center16,center12,center14 : 1.0"
-	start_part[3]: "start2"
-	end_part[3]: "end2"
-	variation[4]: "smooth | center19,center22,center17,center24 : 1.0 | center22,center19,center24,center17 : 1.0 | center17,center24,center22,center19 : 1.0"
-	start_part[4]: "start1"
-	end_part[4]: "end1"
-	variation[5]: "smooth_top | center20,center21,center18,center23 : 1.0 | center21,center20,center23,center18 : 1.0 | center18,center23,center21,center20 : 1.0"
-	start_part[5]: "start2"
-	end_part[5]: "end2"
+	variation[]: "default | center5,center3,center1,center7 : 1.0 | center3,center7,center5,center1 : 1.0 | center7,center1,center3,center5 : 1.0 | center1,center5,center7,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "top | center6,center4,center2,center8 : 1.0 | center4,center8,center6,center2 : 1.0 | center8,center2,center4,center6 : 1.0 | center2,center6,center8,center4 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "jagged | center13,center11,center9,center15 : 1.0 | center11,center15,center13,center9 : 1.0 | center15,center9,center13,center11 : 1.0 | center9,center15,center11,center13 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "jagged_top | center14,center12,center10,center16 : 1.0 | center12,center16,center14,center10 : 1.0 | center16,center10,center14,center12 : 1.0 | center10,center16,center12,center14 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+	variation[]: "smooth | center19,center22,center17,center24 : 1.0 | center22,center19,center24,center17 : 1.0 | center17,center24,center22,center19 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "smooth_top | center20,center21,center18,center23 : 1.0 | center21,center20,center23,center18 : 1.0 | center18,center23,center21,center20 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
 
 	high_tess: 0
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
-	dynamic_lod_desc[0]: "/model/rock/co_rock_sediment_32m_curve_lod1.pmd"
-	dynamic_lod_dist[0]: 60
-	dynamic_lod_desc[1]: "/model/rock/co_rock_sediment_32m_curve_lod2.pmd"
-	dynamic_lod_dist[1]: 120
+	dynamic_lod_desc[]: "/model/rock/co_rock_sediment_32m_curve_lod1.pmd"
+	dynamic_lod_dist[]: 70
+	dynamic_lod_desc[]: "/model/rock/co_rock_sediment_32m_curve_lod2.pmd"
+	dynamic_lod_dist[]: 120
 
 	smooth_surface: true
 }
@@ -6429,47 +6415,41 @@ curve_model : curve.co_1n004
 
 	smooth_surface: true
 }
+
 curve_model : curve.co_1n005
 {
 	model_desc: "/model/rock/co_rock_rough1b.pmd"
 	name: "co rock rough1b"
 
-	variation: 8
-	start_part: 8
-	end_part: 8
-	variation[0]: "ter_16 | v1cc,v1cd,v1ce,v1cf,v1cg,v1ch,v1ci,v1cj : 1.0"
-	start_part[0]: "v1sa"
-	end_part[0]: "v1ea"
-	variation[1]: "ter_8 | v2ca,v2cb,v2cc,v2cd : 1.0"
-	start_part[1]: "v2sa"
-	end_part[1]: "v2ea"
-	variation[2]: "ter_16_to_8 | v1ca,v2ca,v2cb,v2cc,v2cd,v2ca,v2cb,v2cc,v2cd : 1.0"
-	start_part[2]: "v1sa"
-	end_part[2]: "v2ea"
-	variation[3]: "ter_8_to_16 | v1cb,v1cc,v1cd,v1ce,v1cf,v1cg,v1ch,v1ci,v1cj : 1.0"
-	start_part[3]: "v2sa"
-	end_part[3]: "v1ea"
-	variation[4]: "top_16 | v3cc,v3cd,v3ce,v3cf,v3cg,v3ch,v3ci,v3cj : 1.0"
-	start_part[4]: "v3sa"
-	end_part[4]: "v3ea"
-	variation[5]: "top_8 | v4ca,v4cb,v4cc,v4cd : 1.0"
-	start_part[5]: "v4sa"
-	end_part[5]: "v4ea"
-	variation[6]: "top_16_to_8 | v3ca,v4ca,v4cb,v4cc,v4cd,v4ca,v4cb,v4cc,v4cd : 1.0"
-	start_part[6]: "v3sa"
-	end_part[6]: "v4ea"
-	variation[7]: "top_8_to_16 | v3cb,v3cc,v3cd,v3ce,v3cf,v3cg,v3ch,v3ci,v3cj : 1.0"
-	start_part[7]: "v4sa"
-	end_part[7]: "v3ea"
+	variation[]: "ter_16 | v1cc,v1cd,v1ce,v1cf,v1cg,v1ch,v1ci,v1cj : 1.0"
+	start_part[]: "v1sa"
+	end_part[]: "v1ea"
+	variation[]: "ter_8 | v2ca,v2cb,v2cc,v2cd : 1.0"
+	start_part[]: "v2sa"
+	end_part[]: "v2ea"
+	variation[]: "ter_16_to_8 | v1ca,v2ca,v2cb,v2cc,v2cd,v2ca,v2cb,v2cc,v2cd : 1.0"
+	start_part[]: "v1sa"
+	end_part[]: "v2ea"
+	variation[]: "ter_8_to_16 | v1cb,v1cc,v1cd,v1ce,v1cf,v1cg,v1ch,v1ci,v1cj : 1.0"
+	start_part[]: "v2sa"
+	end_part[]: "v1ea"
+	variation[]: "top_16 | v3cc,v3cd,v3ce,v3cf,v3cg,v3ch,v3ci,v3cj : 1.0"
+	start_part[]: "v3sa"
+	end_part[]: "v3ea"
+	variation[]: "top_8 | v4ca,v4cb,v4cc,v4cd : 1.0"
+	start_part[]: "v4sa"
+	end_part[]: "v4ea"
+	variation[]: "top_16_to_8 | v3ca,v4ca,v4cb,v4cc,v4cd,v4ca,v4cb,v4cc,v4cd : 1.0"
+	start_part[]: "v3sa"
+	end_part[]: "v4ea"
+	variation[]: "top_8_to_16 | v3cb,v3cc,v3cd,v3ce,v3cf,v3cg,v3ch,v3ci,v3cj : 1.0"
+	start_part[]: "v4sa"
+	end_part[]: "v3ea"
 
 	high_tess: 0
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
-	dynamic_lod_desc[0]: "/model/rock/co_rock_rough1b_lod1.pmd"
-	dynamic_lod_dist[0]: 120
-	dynamic_lod_desc[1]: "/model/rock/co_rock_rough1b_lod2.pmd"
-	dynamic_lod_dist[1]: 200
+	dynamic_lod_desc[]: "/model/rock/co_rock_rough1b_lod2.pmd"
+	dynamic_lod_dist[]: 120
 
 	smooth_surface: true
 }
@@ -7197,7 +7177,7 @@ curve_model : curve.wy_1n005
 curve_model : curve._local_1w001
 {
 	model_desc: "/model/vegetation/crops/vineyard2.pmd"
-	name: vineyard2
+	name: "vineyard2"
 
 	variation[]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0"
 	start_part[]: "start1"
@@ -12914,14 +12894,14 @@ curve_model : curve.0i02v
 	model_desc: "/model/barrier/metal/fence_metal3_fabric_curve.pmd"
 	name: "fence metal3 fabric curve"
 
-	variation: 1
-	start_part: 1
-	end_part: 1
-	variation[0]: "default | center1 : 1.0"
-	start_part[0]: "start1"
-	end_part[0]: "end1"
+	variation[]: "default | center1 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
 
 	high_tess: 0
+
+	dynamic_lod_desc[]: "/model/barrier/metal/fence_metal3_fabric_curve_lod1.pmd"
+	dynamic_lod_dist[]: 130
 }
 
 curve_model : curve.0i02w
@@ -17545,18 +17525,22 @@ curve_model : curve.3l037
 	vegetation[]: "veg14 : vegetmodel.emory.oak.big.2 | 5.0 : 7.0 | -15.0 : 15.0 | 0.9 : 1.1 | 0.0 : 360.0"
 }
 
-curve_model : curve.or_12
+curve_model : curve.3l038
 {
+	name: "red elderberry crv"
 
-	name: "or rhododendron curve"
+	variation[]: "1_line | tree_1 : 1.0 | tree_2 : 1.0 | tree_3 : 1.0 | tree_4 : 1.0"
+	variation[]: "2_wide | tree_5 : 1.0 | tree_6 : 1.0 | tree_7 : 1.0 | tree_8 : 1.0"
 
-	variation[]: "1 | veg1 : 1.0 | veg2 : 1.0 | veg3 : 1.0 | veg4 : 1.0"
+	vegetation[]: "tree_1 : vegetmodel.red.elderberry1 | 6.0 : 10.0 | -0.5 : 0.5 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "tree_2 : vegetmodel.red.elderberry2 | 6.0 : 10.0 | -0.5 : 0.5 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "tree_3 : vegetmodel.red.elderberry3 | 6.0 : 10.0 | -0.5 : 0.5 | 0.9 : 1.1 | 0.0 : 360.0"
+	vegetation[]: "tree_4 : vegetmodel.red.elderberry4 | 6.0 : 10.0 | -0.5 : 0.5 | 0.9 : 1.1 | 0.0 : 360.0"
 
-	vegetation[0]: "veg1 : vegetmodel.rhododendron.1_or | 3.5 : 4.5 | -0.1 : 0.1 | 0.8 : 1.1 | 89.0 : 91.0"
-	vegetation[1]: "veg2 : vegetmodel.rhododendron.2_or | 3.5 : 4.5 | -0.1 : 0.1 | 0.8 : 1.1 | 89.0 : 91.0"
-	vegetation[2]: "veg3 : vegetmodel.rhododendron.3_or | 3.5 : 4.5 | -0.1 : 0.1 | 0.8 : 1.1 | 89.0 : 91.0"
-	vegetation[3]: "veg4 : vegetmodel.rhododendron.4_or | 3.5 : 4.5 | -0.1 : 0.1 | 0.8 : 1.1 | 89.0 : 91.0"
-
+	vegetation[]: "tree_5 : vegetmodel.red.elderberry1 | 6.0 : 10.0 | -6.0 : 6.0 | 0.8 : 1.0 | 0.0 : 360.0"
+	vegetation[]: "tree_6 : vegetmodel.red.elderberry2 | 6.0 : 10.0 | -6.0 : 6.0 | 0.8 : 1.0 | 0.0 : 360.0"
+	vegetation[]: "tree_7 : vegetmodel.red.elderberry3 | 6.0 : 10.0 | -6.0 : 6.0 | 0.8 : 1.0 | 0.0 : 360.0"
+	vegetation[]: "tree_8 : vegetmodel.red.elderberry4 | 6.0 : 10.0 | -6.0 : 6.0 | 0.8 : 1.0 | 0.0 : 360.0"
 }
 
 curve_model : curve.ok_0y001
@@ -17564,25 +17548,22 @@ curve_model : curve.ok_0y001
 	model_desc: "/model/barrier/wood/ok_wood_fence.pmd"
 	name: "ok wood fence"
 
-	variation: 3
-	start_part: 3
-	end_part: 3
-	variation[0]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
-	start_part[0]: "start1"
-	end_part[0]: "end1 | left90 | right90"
-	variation[1]: "var2 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
-	start_part[1]: "start2"
-	end_part[1]: "end2 | left290 | right290"
-	variation[2]: "lowpoly | center7 : 1.0 | center8 : 1.0 | center9 : 1.0"
-	start_part[2]: "start3"
-	end_part[2]: "end3 | left390 | right390"
+	variation[]: "var1 | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1 | left90 | right90"
+	variation[]: "var2 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2 | left290 | right290"
+	variation[]: "lowpoly | center7 : 1.0 | center8 : 1.0 | center9 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3 | left390 | right390"
 
 	high_tess: 0
 
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/model/barrier/wood/ok_wood_fence_lod1.pmd"
-	dynamic_lod_dist[0]: 70
+	dynamic_lod_desc[]: "/model/barrier/wood/ok_wood_fence_lod1.pmd"
+	dynamic_lod_dist[]: 70
+	dynamic_lod_desc[]: "/model/barrier/wood/ok_wood_fence_lod2.pmd"
+	dynamic_lod_dist[]: 230
 }
 
 curve_model : curve.ok_0y002
@@ -23960,6 +23941,9 @@ curve_model : curve.la_4j006
 	variation[]: "default1 | center2,center7,center9 : 1.0"
 	start_part[]: "start2"
 	end_part[]: "end2"
+	variation[]: "Floor | center10,center11 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
 
 	dynamic_lod_desc[]: "/model/props/country/la_stairs_wooden_lod1.pmd"
 	dynamic_lod_dist[]: 100
@@ -25122,24 +25106,6 @@ curve_model : curve.sd_2p000
 	dynamic_lod_dist[]: 130
 }
 
-
-curve_model : curve.il_75000
-{
-	model_desc: "/prefab/depots/marina/il_marina_pier.pmd"
-
-	variation[]: "single | center1 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-	variation[]: "double | center2 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end2"
-
-	dynamic_lod_desc[]: "/prefab/depots/marina/il_marina_pier_lod1.pmd"
-	dynamic_lod_dist[]: 60
-	overlay[]: "center1 | ovr1 : 1.0 | ovr3 : 1.0 | ovr4 : 1.0 | ovr7 : 1.0"
-	overlay[]: "center2 | ovr2 : 1.0 | ovr5 : 1.0 | ovr6 : 1.0 | ovr8 : 1.0"
-}
-
 curve_model : curve.sd_79000
 {
 	model_desc: "/model/props/street/sd_tires_pile_plane_curve.pmd"
@@ -25189,16 +25155,15 @@ curve_model : curve.5p000
 	model_desc: "/model/props/road/dirt_gravel_tracks_curve.pmd"
 	name: "dirt gravel tracks curve"
 
-	variation[]: "gap | center1,center2,center3 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-	variation[]: "full | center4,center5,center6,center7 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-	variation[]: "mixed | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0 | center6 : 1.0 | center7 : 1.0"
-	start_part[]: "start1"
-	end_part[]: "end1"
-
+	variation[]: "gap | center1 : 1.0 | center2 : 1.0 | center3 : 1.0 | center4 : 1.0 | center5 : 1.0"
+	start_part[]: "start1 | start4"
+	end_part[]: "end1 | end4"
+	variation[]: "full | center6 : 1.0 | center7 : 1.0 | center8 : 1.0 | center9 : 1.0 | center10 : 1.0"
+	start_part[]: "start2 | start5"
+	end_part[]: "end2 | end5"
+	variation[]: "single | center11 : 1.0 | center12 : 1.0 | center13 : 1.0 | center14 : 1.0 | center15 : 1.0"
+	start_part[]: "start3"
+	end_part[]: "end3"
 }
 
 curve_model : curve.6k000
@@ -25515,15 +25480,15 @@ curve_model : curve.bc_7d000
 {
 	model_desc: "/model/building/administration/bc_admin_modern_structure_set.pmd"
 
-	variation[]: "front | part1, part2 : 0.9 | part3, part4 : 1.0 | part7 : 0.9 | part8 : 0.9 | part9 : 0.9 | part5 : 0.9 | part6 : 0.9"
-	start_part[]: start1
-	end_part[]: left90
+	variation[]: "front | part7 : 0.9 | part8 : 0.9 | part9 : 0.9 | part5 : 0.9 | part6 : 0.9 | part1,part2 : 0.9 | part3,part4 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "left90"
 	variation[]: "back | back1 : 1.0 | back2 : 1.0 | back3 : 1.0"
-	start_part[]: start1
-	end_part[]: left90
-	variation[]: "garage | garage1, garage2 : 0.9 | back1 : 1.0 | back2 : 0.2 | back3 : 0.5"
-	start_part[]: start1
-	end_part[]: left90
+	start_part[]: "start1"
+	end_part[]: "left90"
+	variation[]: "garage | back1 : 1.0 | back2 : 0.2 | back3 : 0.5 | garage1,garage2 : 0.9"
+	start_part[]: "start1"
+	end_part[]: "left90"
 
 	dynamic_lod_desc[]: "/model/building/administration/bc_admin_modern_structure_set_lod1.pmd"
 	dynamic_lod_dist[]: 80
@@ -25627,8 +25592,8 @@ curve_model : curve.sd_79002
 	name: "sd warehouse plane 2 curve"
 
 	variation[]: "default | center1 : 1.0"
-	start_part[]: start1
-	end_part[]: end1
+	start_part[]: "start1"
+	end_part[]: "end1"
 }
 
 }

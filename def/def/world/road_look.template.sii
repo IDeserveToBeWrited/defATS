@@ -579,7 +579,12 @@ road_look : road.us_tmpl11
 }
 road_template_variant : .tmpl_var.road.us_tmpl11.on_ramp
 {
+	model_variants[]: brd_w
 	model_variants[]: brd_y
+	model_variants[]: left_ln
+	model_variants[]: left_y
+	model_variants[]: no_lines
+	model_variants[]: right_ln
 
 	lane_variant: on_ramp
 
@@ -587,7 +592,12 @@ road_template_variant : .tmpl_var.road.us_tmpl11.on_ramp
 }
 road_template_variant : .tmpl_var.road.us_tmpl11.off_ramp
 {
+	model_variants[]: brd_w
 	model_variants[]: brd_y
+	model_variants[]: left_ln
+	model_variants[]: left_y
+	model_variants[]: no_lines
+	model_variants[]: right_ln
 
 	lane_variant: off_ramp
 
@@ -7064,6 +7074,8 @@ road_look : road.nm_tmpl02
 	lanes_right[]: traffic_lane.road.divided
 
 	template_variants_right[]: .tmpl_var.road.nm_tmpl02
+	lane_variants[]: .tmpl_var.road.nm_tmpl02.on_ramp
+	lane_variants[]: .tmpl_var.road.nm_tmpl02.off_ramp
 
 	compatible_edges_right[]: "sh"
 	compatible_edges_right[]: "sh_a"
@@ -7176,7 +7188,6 @@ road_look : road.nm_tmpl02
 	overlay_schemes[]: "grille_crc : 1.0 : _m0|7 : _m1|7 : _m2|7 : _m3|7 : _m4|7"
 	overlay_schemes[]: "stripes : 1.0 : _j0|4 : _j1|4 : _j2|5 : _j3|5"
 }
-
 road_template_variant : .tmpl_var.road.nm_tmpl02
 {
 	variant_names[]: "brd_ful_ful"
@@ -7185,6 +7196,38 @@ road_template_variant : .tmpl_var.road.nm_tmpl02
 
 	lanes_right[]: traffic_lane.road.divided.full_out
 	lanes_right[]: traffic_lane.road.divided.full_in
+}
+road_template_variant : .tmpl_var.road.nm_tmpl02.on_ramp
+{
+	model_variants[]: brd_brk_ful
+	model_variants[]: brd_brk_rmb
+	model_variants[]: brd_dot
+	model_variants[]: brd_ful
+	model_variants[]: brd_ful_brk
+	model_variants[]: brd_ful_ful
+	model_variants[]: brk
+	model_variants[]: no_lines
+
+	lane_variant: on_ramp
+
+	lanes_right[]: traffic_lane.road.freeway.on_ramp
+	lanes_right[]: traffic_lane.road.freeway.on_ramp
+}
+road_template_variant : .tmpl_var.road.nm_tmpl02.off_ramp
+{
+	model_variants[]: brd_brk_ful
+	model_variants[]: brd_brk_rmb
+	model_variants[]: brd_dot
+	model_variants[]: brd_ful
+	model_variants[]: brd_ful_brk
+	model_variants[]: brd_ful_ful
+	model_variants[]: brk
+	model_variants[]: no_lines
+
+	lane_variant: off_ramp
+
+	lanes_right[]: traffic_lane.road.freeway.off_ramp
+	lanes_right[]: traffic_lane.road.freeway.off_ramp
 }
 
 road_look : road.nm_tmpl03
@@ -7656,6 +7699,7 @@ road_look : road.us_tmpl38
 
 	compatible_edges_right[]: "sh"
 	compatible_edges_right[]: "sh_a"
+	compatible_edges_right[]: "sh_3"
 	compatible_edges_right[]: "kb_us"
 	compatible_edges_right[]: "kb_np"
 	compatible_edges_right[]: "kb_redn"
@@ -8173,6 +8217,8 @@ road_look : road.us_tmpl42
 	lanes_right[]: traffic_lane.road.divided
 
 	template_variants_right[]: .tmpl_var.road.us_tmpl42
+	lane_variants[]: .tmpl_var.road.us_tmpl42.on_ramp
+	lane_variants[]: .tmpl_var.road.us_tmpl42.off_ramp
 
 	add_parts_right[]: refl_ow_y
 	add_parts_right[]: coll_ow_y
@@ -8285,7 +8331,6 @@ road_look : road.us_tmpl42
 	overlay_schemes[]: "grille_crc : 1.0 : _m0|7 : _m1|7 : _m2|7 : _m3|7 : _m4|7"
 	overlay_schemes[]: "stripes : 1.0 : _j0|4 : _j1|4 : _j2|5 : _j3|5"
 }
-
 road_template_variant : .tmpl_var.road.us_tmpl42
 {
 	variant_names[]: "brd_ful_wid"
@@ -8293,6 +8338,38 @@ road_template_variant : .tmpl_var.road.us_tmpl42
 
 	lanes_right[]: traffic_lane.road.divided.full_out
 	lanes_right[]: traffic_lane.road.divided.full_in
+}
+road_template_variant : .tmpl_var.road.us_tmpl42.on_ramp
+{
+	model_variants[]: brd
+	model_variants[]: brd_brk_ful
+	model_variants[]: brd_dot_brd
+	model_variants[]: brd_ful_brd
+	model_variants[]: brd_ful_brk
+	model_variants[]: brd_ful_wid
+	model_variants[]: brk
+	model_variants[]: no_lines
+
+	lane_variant: on_ramp
+
+	lanes_right[]: traffic_lane.road.freeway.on_ramp
+	lanes_right[]: traffic_lane.road.freeway.on_ramp
+}
+road_template_variant : .tmpl_var.road.us_tmpl42.off_ramp
+{
+	model_variants[]: brd
+	model_variants[]: brd_brk_ful
+	model_variants[]: brd_dot_brd
+	model_variants[]: brd_ful_brd
+	model_variants[]: brd_ful_brk
+	model_variants[]: brd_ful_wid
+	model_variants[]: brk
+	model_variants[]: no_lines
+
+	lane_variant: off_ramp
+
+	lanes_right[]: traffic_lane.road.freeway.off_ramp
+	lanes_right[]: traffic_lane.road.freeway.off_ramp
 }
 
 road_look : road.us_tmpl42a

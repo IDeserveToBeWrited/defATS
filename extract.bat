@@ -1,7 +1,7 @@
 @echo off
 
 :: Location for extraction
-SET LOCATION=%userprofile%\Documents\defATS
+SET LOCATION=%userprofile%\Documents\defATSstable
 
 :: Create location
 if not exist %LOCATION% MKDIR %LOCATION%
@@ -19,7 +19,7 @@ SET EXTRACTOR="extractor.exe"
 SET ZIP="C:\Program Files\7-Zip\7z.exe"
 
 :: Extract archives
-%EXTRACTOR% -p=/def -S -a -q "C:\Program Files (x86)\Steam\steamapps\common\American Truck Simulator" -d %LOCATION%
+%EXTRACTOR% -p=/def -S -q -a "C:\Program Files (x86)\Steam\steamapps\common\American Truck Simulator" -d %LOCATION%
 %EXTRACTOR% -S -q "C:\Program Files (x86)\Steam\steamapps\common\American Truck Simulator\version.scs" -d %LOCATION% 
 :: Extract locales
 %EXTRACTOR% --deep -S -q "C:\Program Files (x86)\Steam\steamapps\common\American Truck Simulator\locale.scs" -d %LOCATION%

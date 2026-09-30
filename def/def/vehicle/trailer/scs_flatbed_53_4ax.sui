@@ -40,3 +40,70 @@ vehicle_accessory: .scs_flat53_4.body
 {
 	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_53.sii"
 }
+
+########################################################################################################
+
+trailer : trailer.scs_flat53os
+{
+	accessories[]: .scs_flat53os.tchassis
+	accessories[]: .scs_flat53os.rwheel
+	accessories[]: .scs_flat53os.rwheel2
+	accessories[]: .scs_flat53os.rwheel3
+	accessories[]: .scs_flat53os.rwheel4
+	accessories[]: .scs_flat53os.body
+
+  	accessories[]: .scs_flat53os.flag_r_r
+  	accessories[]: .scs_flat53os.flag_r_l
+	accessories[]: .scs_flat53os.os_sign
+
+	oversize: true
+}
+
+vehicle_accessory: .scs_flat53os.tchassis
+{
+    	data_path: "/def/vehicle/trailer/scs_flatbed/flatbed53_4ax.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat53os.rwheel
+{
+	offset: 0
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat53os.rwheel2
+{
+	offset: 2
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat53os.rwheel3
+{
+	offset: 4
+	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .scs_flat53os.rwheel4
+{
+	offset: 6
+	data_path: "/def/vehicle/t_wheel/front.sii"
+}
+
+vehicle_accessory: .scs_flat53os.body
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/body_53_oversize.sii"
+}
+
+vehicle_addon_accessory: .scs_flat53os.os_sign
+{
+	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/r_banner_oversize.sii"
+}
+
+vehicle_addon_accessory: .scs_flat53os.flag_r_r
+{
+    	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/flag_r_r/warning.sii"
+}
+
+vehicle_addon_accessory: .scs_flat53os.flag_r_l
+{
+    	data_path: "/def/vehicle/trailer/scs_flatbed/accessory/flag_r_l/warning.sii"
+}

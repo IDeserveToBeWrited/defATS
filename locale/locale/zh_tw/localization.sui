@@ -4,7 +4,7 @@
 	val[]: "繁體中文"
 
 	key[]: "moded_game"
-	val[]: "遊戲包含MOD，無法提供相關支援 ｡ 若有任何問題或崩潰情況，請嘗試移除已安裝的MOD ｡ "
+	val[]: "遊戲包含未經授權的 MOD，我們無法提供相關支援。如果出現問題或是當機，請嘗試移除已安裝的 MOD！"
 
 # Useful urls. Theoretically can be language specific. Not exported to GetLoc
 #!{
@@ -22,6 +22,9 @@
 
 	key[]: "tos_url"
 	val[]: "https://www.worldoftrucks.com/terms"
+
+	key[]: "privacy_readonly_url"
+	val[]: "https://americantrucksimulator.com/privacy_readonly.php"
 #!}
 
 #+ Map names
@@ -33,7 +36,7 @@
 	val[]: "California" # DONTLOCALIZE
 
 	key[]: "loading"
-	val[]: "載入中..." #+ Text shown on the loading screen.
+	val[]: "正在載入……" #+ Text shown on the loading screen.
 
 	key[]: "loading_no_job"
 	val[]: "自由自在逍遙行"
@@ -81,10 +84,10 @@
 	val[]: "方向盤"
 
 	key[]: "interior_t"
-	val[]: "內裝"
+	val[]: "車內"
 
 	key[]: "interior"
-	val[]: "內裝"
+	val[]: "車內"
 
 	key[]: "accessory_t"
 	val[]: "配件"
@@ -93,10 +96,10 @@
 	val[]: "配件"
 
 	key[]: "in_accessory_t"
-	val[]: "內裝配件"
+	val[]: "車內配件"
 
 	key[]: "in_accessory"
-	val[]: "內裝配件"
+	val[]: "車內配件"
 
 	key[]: "paint_job_t"
 	val[]: "原廠配色" #+ Header of list containing stock colors.
@@ -111,10 +114,10 @@
 	val[]: "塗裝" #+ Header of list containing all paint jobs.
 
 	key[]: "brand_t"
-	val[]: "卡車設計"
+	val[]: "VEHICLE DESIGN"
 
 	key[]: "brand"
-	val[]: "卡車設計"
+	val[]: "Vehicle Design"
 
 	key[]: "basket_t"
 	val[]: "訂單" #+ Content of the basket.
@@ -122,16 +125,16 @@
 #+ Truck analysis feature - truck konfigurator and pop-up
 
 	key[]: "truck_analysis_t"
-	val[]: "卡車分析" #+ Header of the widget in truck configurator
+	val[]: "VEHICLE ANALYSIS" #+ Header of the widget in truck configurator
 
 	key[]: "truck_analysis_popup_t"
-	val[]: "卡車分析" #+ Header of the pop-up when taking heavy cargo
+	val[]: "VEHICLE ANALYSIS" #+ Header of the pop-up when taking heavy cargo
 
 	key[]: "current_truck_params"
-	val[]: "卡車配置" #+ Header inside the truck analysis widget for truck parameters
+	val[]: "Vehicle Configuration" #+ Header inside the truck analysis widget for truck parameters
 
 	key[]: "current_truck_parameters"
-	val[]: "卡車配置" #+ Header inside the truck analysis pop-up for truck parameters
+	val[]: "Vehicle Configuration" #+ Header inside the truck analysis pop-up for truck parameters
 
 	key[]: "normal_cargo"
 	val[]: "普通貨物" #+ name of the bar for normal cargo suitability
@@ -152,10 +155,10 @@
 	val[]: "扭力" #+  truck's engine torque value in Nm / newton-meters
 
 	key[]: "first_gear_ratio"
-	val[]: "最初齒輪比" #+  First Gear Ratio of the gearbox
+	val[]: "一檔齒比" #+  First Gear Ratio of the gearbox
 
 	key[]: "last_gear_ratio"
-	val[]: "最後齒輪比" #+  Last Gear Ratio of the gearbox
+	val[]: "最高齒比" #+  Last Gear Ratio of the gearbox
 
 	key[]: "differential_ratio"
 	val[]: "差速比" #+  Differential Ratio of the gearbox
@@ -170,10 +173,10 @@
 	val[]: "減速器" #+  retarder presense value yes / no
 
 	key[]: "powered_axles"
-	val[]: "動軸數量" #+  amount of powered axles truck has
+	val[]: "動軸" #+  amount of powered axles truck has
 
 	key[]: "liftable_axles"
-	val[]: "舉軸數量" #+  amount of liftable axles truck has
+	val[]: "可升降軸" #+  amount of liftable axles truck has
 
 	key[]: "axles"
 	val[]: "車軸數量" #+  amount of axles truck has
@@ -188,25 +191,25 @@
 	val[]: "你將會進行運送重載貨物的工作，檢查你的目前卡車配置以確保滿足工作需求 ｡ " #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
 	key[]: "truck_analysis_info_tooltip"
-	val[]: "根據你預期的貨物運送類型，調校你的卡車以滿足經濟效益 ､ 技術及法律限制 ｡ " #+  General tooltip description of Truck Analysis feature
+	val[]: "Given your expected typical type of transportation, tune your vehicle to optimize it according to a combination of economy of driving, technical and legal limitations." #+  General tooltip description of Truck Analysis feature
 
 	key[]: "normal_cargo_tooltip"
-	val[]: "適合輕型和中等重量貨物的運輸工作" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
+	val[]: "經過最佳化，適合輕型和中型貨物的運輸工作" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
 
 	key[]: "heavy_cargo_tooltip"
-	val[]: "適合重型貨物和特殊運輸" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
+	val[]: "經過最佳化，適合重型和特殊貨物的運輸工作" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "卡車在狹窄區域內的機動性能" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Ability of your vehicle to maneuver in tight space areas" #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "適合穩定地上下坡的動力系統" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Optimized vehicle's power-train for smoother hill climbing and descent" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
 
 	key[]: "uneven_terrain_tooltip"
-	val[]: "更加能夠越過顛簸不平的路面" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
+	val[]: "能更好地在顛簸不平的路面上行駛" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
 
 	key[]: "analysis_popup_heavy_tooltip"
-	val[]: "此參數對於運送重型貨物非常重要" #+  Tooltip note for the Heavy Cargo bar in job popup
+	val[]: "此參數對於運送重型貨物至關重要" #+  Tooltip note for the Heavy Cargo bar in job popup
 #@}
 
 
@@ -230,7 +233,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "卡車改裝" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "VEHICLE UPGRADES" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "拖車改裝" #+ Title of the screen. Please keep in upper case where possible."
@@ -242,24 +245,24 @@
 	val[]: "拖車改裝" #+ The name of the screen containing trailer upgrades.
 
 	key[]: "new_upgrades_about"
-	val[]: "看看有哪些新的改裝品 ｡ " #+ Help message associated with new upgrades icon.
+	val[]: "看看有哪些新的改裝。" #+ Help message associated with new upgrades icon.
 
 	key[]: "upgrades_new_items"
-	val[]: "有新的物品可供選擇！" #+ Header line of the list of new upgrades.
+	val[]: "新的物品可供選擇！" #+ Header line of the list of new upgrades.
 
 	key[]: "upgrades_gps"
-	val[]: "設定GPS至最近的服務廠" #+ Button which sets GPS target to the nearest shop.
+	val[]: "將 GPS 設定至最近的維修中心" #+ Button which sets GPS target to the nearest shop.
 
 	key[]: "new_upgrades_notice"
-	val[]: "新的改裝品已經上架！" #+ Shown as icon in corner of screen when new upgrades are available.
+	val[]: "新的改裝已經上架！" #+ Shown as icon in corner of screen when new upgrades are available.
 
 	key[]: "change_gps_to_service"
-	val[]: "你的衛星導航設置了另一個目的地 ｡ <br><br>你是否想改變目的地並駕駛到最近的改裝店？"
+	val[]: "您的衛星導航已設定至其他目的地。<br><br>要改變目的地並駛至最近的改裝商店？"
 #@}
 
 
 	key[]: "truck_action_t"
-	val[]: "卡車服務廠" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
+	val[]: "SERVICE" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
 
 #+ Truck service screen.
 #+
@@ -273,7 +276,7 @@
 	val[]: "維修中心" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_service_about"
-	val[]: "卡車保養及維修 ｡ 一個優良的司機會讓他的卡車保持最佳的狀態 ｡ " #+ Help message associated with service icon.
+	val[]: "Vehicle maintenance and repairs. A great driver always keeps their vehicle in top condition." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
 	val[]: "損壞報告" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
@@ -285,16 +288,16 @@
 	val[]: "全部更換" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
 	key[]: "truck_service_truck_t"
-	val[]: "卡車損傷評估報告" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	val[]: "VEHICLE DAMAGE REPORT" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
-	val[]: "拖車損傷評估報告" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
+	val[]: "拖車損壞報告" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
 
 	key[]: "repair"
-	val[]: "確定" #+ Button which confirms selected actions.
+	val[]: "確認" #+ Button which confirms selected actions.
 
 	key[]: "truck_damage"
-	val[]: "卡車損壞程度" #+ Price for the truck damage
+	val[]: "Vehicle damage" #+ Price for the truck damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -303,43 +306,43 @@
 #@{
 
 	key[]: "truck_config_t"
-	val[]: "卡車配置" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "VEHICLE CONFIGURATOR" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "truck_config"
-	val[]: "卡車配置" #+ Icon allowing player to upgrade the truck.
+	val[]: "Vehicle Configurator" #+ Icon allowing player to upgrade the truck.
 
 	key[]: "truck_config_about"
-	val[]: "大家都知道卡車總有一些地方可以調整或者塗裝來讓你覺得卡車變得更棒 ｡ " #+ Help message associated with upgrade icon.
+	val[]: "You know, there's always something you can tune or paint to make you feel better about your vehicle." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
 	val[]: "價格" #+ Label of line with combined price of all new parts in basket.
 
 	key[]: "refund"
-	val[]: "舊件折抵" #+ Label of line with combine price of all parts sold as part of the upgrade.
+	val[]: "退款" #+ Label of line with combine price of all parts sold as part of the upgrade.
 
 	key[]: "select_cat"
-	val[]: "從上面的選單中選擇要改裝的商品 ｡ " #+ Text shown if user did not select any component category.
+	val[]: "從上方的選單中選擇需要改裝的類別。" #+ Text shown if user did not select any component category.
 
 	key[]: "select_pin"
-	val[]: "選擇卡車上的標示點，查看該處可使用的配件 ｡ "
+	val[]: "Choose a pin on the vehicle to view applicable accessories."
 
 	key[]: "tc_orig_price"
 	val[]: "原價：" #+ Followed by the price of the original configuration of the new truck.
 
 	key[]: "tc_extra_price"
-	val[]: "額外價格:" #+ Followed by difference between the new price with all the modifications and the price of the original configuration.
+	val[]: "加價：" #+ Followed by difference between the new price with all the modifications and the price of the original configuration.
 
 	key[]: "tc_new_total"
-	val[]: "新品總計:" #+ Followed by total price of the new truck with all the selected modifications.
+	val[]: "新品總計：" #+ Followed by total price of the new truck with all the selected modifications.
 
 	key[]: "spare_parts"
-	val[]: "退還的零件" #+ Refunded parts title in the shopping cart
+	val[]: "退款部件" #+ Refunded parts title in the shopping cart
 
 	key[]: "refund_t"
-	val[]: "退還" #+ Title of dialog box with missing parts refundation
+	val[]: "退款" #+ Title of dialog box with missing parts refundation
 
 	key[]: "refund_spare_parts_msg"
-	val[]: "檢測到缺少 MOD ｡ 受影響的車輛零件有資格獲得退款 ｡ <br offset=35>你可以點擊“確認訂單”申請退款<br><color value=@@clr_sel@@>或<color value=@@clr_txt@@><br>如果你打算稍後重新安裝丟失的 mod，則無需任何更改即可退出 ｡"
+	val[]: "偵測到缺少 MOD。您可為受影響的車輛部件申請退款。<br offset=35>只需點擊「確認訂單」即可。<br><color value=@@clr_sel@@>或者，<color value=@@clr_txt@@><br>如果計劃稍後重新安裝遺失的 MOD，您可立即退出而無需進行任何變更。"
 
 	key[]: "part_type_aftermarket"
 	val[]: "售後部件"
@@ -348,13 +351,13 @@
 	val[]: "工廠部件"
 
 	key[]: "part_type_licensed"
-	val[]: "許可零件"
+	val[]: "許可部件"
 
 	key[]: "overlay_reset_cam"
-	val[]: "重置視角"
+	val[]: "重設鏡頭"
 
 	key[]: "overlay_lights"
-	val[]: "燈"
+	val[]: "照明"
 
 	key[]: "overlay_fullscreen_activate"
 	val[]: "全螢幕"
@@ -366,22 +369,22 @@
 	val[]: "截圖"
 
 	key[]: "overlay_att_truck"
-	val[]: "連接卡車頭"
+	val[]: "連接卡車"
 
 	key[]: "overlay_det_truck"
-	val[]: "解除卡車頭連接"
+	val[]: "卸下卡車"
 
 	key[]: "overlay_att_trailer"
 	val[]: "連接拖車"
 
 	key[]: "overlay_det_trailer"
-	val[]: "解除拖車連接"
+	val[]: "卸下拖車"
 
 	key[]: "overlay_scroll"
 	val[]: "捲動"
 
 	key[]: "overlay_pick_color_slot"
-	val[]: "切換顏色"
+	val[]: "切換配色"
 
 	key[]: "overlay_select_color"
 	val[]: "調整顏色"
@@ -408,13 +411,13 @@
 	val[]: "車輛診斷" #+ Icon allowing player to show damage on the truck.
 
 	key[]: "truck_diag_about"
-	val[]: "查看你的卡車資訊和目前的狀況 ｡"
+	val[]: "View information about your vehicle and its current condition."
 
 	key[]: "truck_diag_warning"
-	val[]: "你的車輛狀況不佳，請盡快進行維修 ｡"
+	val[]: "您的車輛狀況不佳。請盡快進行維修。"
 
 	key[]: "truck_diag_warning_minor_dmg"
-	val[]: "你可以在最近的保修站修理你的車輛"
+	val[]: "您可以在最近的維修中心修理您的車輛。"
 
 	key[]: "truck_diag_tooltip_integrity_wear"
 	val[]: "保養:" #+ Label of integrity wear in tooltip.
@@ -426,104 +429,104 @@
 	val[]: "平均磨耗:" #+ Label of unfixable wear in tooltip.
 
 	key[]: "truck_diag_tooltip_wear_unfixable_note"
-	val[]: "透過更換零件的方式來修復 ｡" #+ Explanation of unfixable wear in tooltip.
+	val[]: "透過更換部件的方式來修復。" #+ Explanation of unfixable wear in tooltip.
 
 	key[]: "truck_diag_tooltip_wear"
 	val[]: "平均損傷:" #+ Label of damage in tooltip.
 
 	key[]: "truck_diag_tooltip_wear_note"
-	val[]: "透過修理或更換零件的方式來修復 ｡" #+ Explanation of damage in tooltip.
+	val[]: "透過修理或更換部件的方式來修復。" #+ Explanation of damage in tooltip.
 
 	key[]: "truck_diag_recommend_repairs"
 	val[]: "維修建議" #+ Label of button that offers actions (no action, repair or replace) recommended by service.
 
 	key[]: "truck_diag_request_restoration"
-	val[]: "要求全車檢修" #+ Label of button that performs vehicle total restoration.
+	val[]: "要求全面檢修" #+ Label of button that performs vehicle total restoration.
 
 	key[]: "wear_unfixable"
-	val[]: "磨損程度" #+ Accesory unfixable wear column table header.
+	val[]: "磨損" #+ Accesory unfixable wear column table header.
 
 	key[]: "wear"
-	val[]: "損壞程度" #+ Accesory damage column table header.
+	val[]: "損壞" #+ Accesory damage column table header.
 
 	key[]: "truck_diag_action"
-	val[]: "採取措施" #+ Accesory action column table header.
+	val[]: "措施" #+ Accesory action column table header.
 
 	key[]: "truck_diag_cost"
-	val[]: "金額" #+ Accesory action cost column table header.
+	val[]: "費用" #+ Accesory action cost column table header.
 #@}
 
 
 	key[]: "truck_repair_quick"
-	val[]: "你的雇主將會負責任何維修的費用 ｡" #+ Shown in repair screens when the player is driving a quick job truck.
+	val[]: "維修費用會由您的雇主承擔。" #+ Shown in repair screens when the player is driving a quick job truck.
 
 
 	key[]: "your_money"
-	val[]: "你的資金:" #+ Followed by balance on players bank account.
+	val[]: "您的資金：" #+ Followed by balance on players bank account.
 
 	key[]: "coinsurance"
-	val[]: "共同保險:" #+ Followed by to limits of current insurance.
+	val[]: "共同保險：" #+ Followed by to limits of current insurance.
 
 	key[]: "total"
 	val[]: "總計：" #+ Followed by to total price for the currently selected upgrades or repairs.
 
 
 	key[]: "basket"
-	val[]: "查看訂購" #+ Button showing content of basket.
+	val[]: "查看訂單" #+ Button showing content of basket.
 
 	key[]: "checkout"
 	val[]: "確認訂單" #+ Button completing the purchase.
 
 	key[]: "basket_td"
-	val[]: "查看修改" #+ Button showing content of basket.
+	val[]: "檢視變更" #+ Button showing content of basket.
 
 	key[]: "checkout_td"
 	val[]: "確認" #+ Button completing the truck configuration changes.
 
 	key[]: "upgrade_warn"
-	val[]: "安裝此零配件將會導致部分關聯的零配件和塗裝重置為預設配置！"
+	val[]: "安裝此項目有可能會導致部分關聯的部件和配件還原為預設值，並重設塗裝！"
 
 	key[]: "acc_conflict"
-	val[]: "配件 '$NEW_ACC$' 與 '$ACC$' 不相容｡ 若要安裝，你必須把 '$ACC$' 移除 ｡ "
+	val[]: "配件『$NEW_ACC$』與『$ACC$』不相容｡ 如果要安裝，必須先移除『$ACC$』。"
 
 	key[]: "remove_confl"
-	val[]: "配件 '$NEW_ACC$' 與 '$ACC$' 不相容｡ <br>若要安裝，你必須把 '$ACC$' 移除 ｡ <br><br><br>你確定要移除嗎？"
+	val[]: "配件『$NEW_ACC$』與『$ACC$』不相容｡ <br>如果要安裝，必須先移除『$ACC$』。<br><br><br>確定要移除嗎？"
 
 	key[]: "empty_cart"
-	val[]: "取消所有修改？" #+ Shown as message box when basket clearing icon is pressed.
+	val[]: "取消所有新增的改裝？" #+ Shown as message box when basket clearing icon is pressed.
 
 	key[]: "cart_not_empty"
-	val[]: "你已將一些零組件加入訂單！ <br><br>是否取消所有修改？" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
+	val[]: "您已將一些項目加入訂單！<br><br>要取消所有新增的改裝嗎？" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
 	key[]: "borrowed_truck_refusal"
-	val[]: "你的雇主會非常憤怒的，如果你真的想要改裝他們的車的話 ｡" #+ Shown if user attempts to upgrade a quick job truck.
+	val[]: "Your employer won't like it if you tinker with their vehicle." #+ Shown if user attempts to upgrade a quick job truck.
 
 	key[]: "trailer_job_major_change"
-	val[]: "你不能在工作中切換你的拖車種類、車身或底盤 ｡ 請先完成目前的工作後再試 ｡" #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
+	val[]: "您無法在工作中變更拖車種類、車身或底盤。請先將其完成後再試。" #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
 
 	key[]: "trailer_configurator_invalid_country"
 	val[]: "不能在 <color value=@@clr_sel@@>$COUNTRIES$ 以外的州份裝置所選擇的 $ACC$｡" #+ A warning shown when player tries to change trailer chain type or chassis configuration to one that's not valid for configurator state.
 
 	key[]: "trailer_garage_invalid_country"
-	val[]: "目前所選的 $ACC$ 不能在目前的車庫購買 ｡ 拖車必須位於 <color value=@@clr_sel@@>$COUNTRIES$ ｡ " #+ A warning shown when player tries to change trailer chain type or chassis configuration to one that's not valid for state of trailer's garage.
+	val[]: "無法在目前的車庫購買所選$ACC$。拖車需位於<color value=@@clr_sel@@>$COUNTRIES$。" #+ A warning shown when player tries to change trailer chain type or chassis configuration to one that's not valid for state of trailer's garage.
 
 	key[]: "trailer_dealer_invalid_country"
-	val[]: "目前選擇的 $ACC$ 在未擁有位於<color value=@@clr_sel@@>$COUNTRIES$<color value=@@clr_txt@@> 的車庫前無法購買 ｡ " #+ A warning shown when player tries to change trailer chain type or chassis configuration of trailer from dealer to one that's not valid for states of garages he owns.
+	val[]: "由於尚未擁有位於<color value=@@clr_sel@@>$COUNTRIES$的車庫，無法購買目前所選$ACC$。" #+ A warning shown when player tries to change trailer chain type or chassis configuration of trailer from dealer to one that's not valid for states of garages he owns.
 
 
 #+ Vehicle total restoration screen.
 #@{
 	key[]: "total_restoration_t"
-	val[]: "全車檢修" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "全面檢修" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "total_restoration"
-	val[]: "完全修復總額:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>要求完全拆卸和修復所有磨損的零件，使你的車輛恢復原始狀態 ｡ 這比建造一輛全新的車輛提出了更大的挑戰 ｡" #+ Content of the screen, explaining total restoration.
+	val[]: "全面檢修費用：<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>透過完全拆卸並修復所有磨損零件來使車輛恢復至全新狀態。而這比從頭開始打造一輛新車還要更加困難。" #+ Content of the screen, explaining total restoration.
 
 	key[]: "restore"
-	val[]: "確認修復" #+ Label of the button that performs total restoration.
+	val[]: "修復" #+ Label of the button that performs total restoration.
 
 	key[]: "total_restoration_no_need"
-	val[]: "你的車輛處於完美狀態｡" #+ Message shown when player tries to restore vehicle in perfect condition.
+	val[]: "您的車輛狀態極佳。" #+ Message shown when player tries to restore vehicle in perfect condition.
 #@}
 
 #+ Various accessory slots or accessory names.
@@ -536,7 +539,7 @@
 	val[]: "盲點偵測感應器"
 
 	key[]: "b_grill"
-	val[]: "矮型防護欄"
+	val[]: "下護欄"
 
 	key[]: "bullbar"
 	val[]: "防撞桿"
@@ -545,7 +548,7 @@
 	val[]: "保險桿"
 
 	key[]: "c_grill"
-	val[]: "前保險桿" #+ Steeled tubular bars that attached on the front of the cabin, usually above bullbars
+	val[]: "前護欄" #+ Steeled tubular bars that attached on the front of the cabin, usually above bullbars
 
 	key[]: "cab_door"
 	val[]: "車門"
@@ -563,7 +566,7 @@
 	val[]: "座位"
 
 	key[]: "cor_def"
-	val[]: "導流板"
+	val[]: "角導流板"
 
 	key[]: "cover"
 	val[]: "輪轂蓋" #+ Wheel hubcap / hub cover
@@ -581,13 +584,13 @@
 	val[]: "輪圈" #+ Wheel rim
 
 	key[]: "doorhndl"
-	val[]: "車門把手"
+	val[]: "門把"
 
 	key[]: "doorstep"
-	val[]: "車門踏板"
+	val[]: "踏板"
 
 	key[]: "doortrim"
-	val[]: "車門飾條" #+ Small variously shaped, decorative steel or chrome plates placed on truck's doors, around doorhandles
+	val[]: "門飾" #+ Small variously shaped, decorative steel or chrome plates placed on truck's doors, around doorhandles
 
 	key[]: "drv_plate"
 	val[]: "司機名牌"
@@ -602,10 +605,10 @@
 	val[]: "後排氣管" #+ An open exhaust behind truck's cab. Usully one or two large vertical steel or chromed exhaust tubes.
 
 	key[]: "exhaust_r"
-	val[]: "右排氣"
+	val[]: "右排氣管"
 
 	key[]: "f_badge"
-	val[]: "前標誌" #+ Brand badge on front of the truck
+	val[]: "前徽章" #+ Brand badge on front of the truck
 
 	key[]: "f_banner"
 	val[]: "前橫幅"
@@ -614,52 +617,52 @@
 	val[]: "前保險桿" #+ Front bumper
 
 	key[]: "f_cab_trim"
-	val[]: "駕駛室裝飾"
+	val[]: "駕駛室內飾"
 
 	key[]: "f_fender"
-	val[]: "前擋泥板" #+ Fender of the truck above front wheel
+	val[]: "前輪拱" #+ Fender of the truck above front wheel
 
 	key[]: "f_fender_cab"
-	val[]: "前擋泥板" #+ Fender (cabin part-based) of the truck above front wheel
+	val[]: "前輪拱" #+ Fender (cabin part-based) of the truck above front wheel
 
 	key[]: "f_fender_chs"
-	val[]: "前擋泥板底部" #+ Fender (chassis part-based) of the truck above/around front wheel
+	val[]: "前輪拱底部" #+ Fender (chassis part-based) of the truck above/around front wheel
 
 	key[]: "f_grill"
 	val[]: "防撞桿"
 
 	key[]: "f_inlay_cab"
-	val[]: "進氣口" #+ Front grille net located in spaces on the front truck's mask. Serves to cover truck's radiator
+	val[]: "前進氣口" #+ Front grille net located in spaces on the front truck's mask. Serves to cover truck's radiator
 
 	key[]: "f_inlay_chs"
-	val[]: "底部進氣口" #+ Front grille net located in spaces on the front truck's mask (bottom part). Serves to cover truck's radiator
+	val[]: "前進氣口底部" #+ Front grille net located in spaces on the front truck's mask (bottom part). Serves to cover truck's radiator
 
 	key[]: "f_intake_bar"
-	val[]: "前標誌面板" #+ The plate under truck logo/badge on the front of the truck
+	val[]: "前徽章面板" #+ The plate under truck logo/badge on the front of the truck
 
 	key[]: "f_intake_cab"
-	val[]: "前面板" #+ Plastic radiator mask (grill) in on the truck's front
+	val[]: "前臉護罩" #+ Plastic radiator mask (grill) in on the truck's front
 
 	key[]: "f_intake_chs"
-	val[]: "底部面板" #+ Plastic radiator mask (grill) in on the truck's front, bottom part
+	val[]: "前臉護罩底部" #+ Plastic radiator mask (grill) in on the truck's front, bottom part
 
 	key[]: "f_intk_b_cab"
-	val[]: "水箱護罩飾條" #+ Bars of plastic radiator mask (grill) in on the truck's front
+	val[]: "前臉護罩飾條" #+ Bars of plastic radiator mask (grill) in on the truck's front
 
 	key[]: "f_light_chs"
 	val[]: "頭燈"
 
 	key[]: "f_light_mid"
-	val[]: "附加燈光"
+	val[]: "附加燈"
 
 	key[]: "f_light_top"
-	val[]: "車頂燈"
+	val[]: "頂燈"
 
 	key[]: "f_logo"
-	val[]: "廠徽" #+ Brand logo on front of the truck
+	val[]: "前 Logo" #+ Brand logo on front of the truck
 
 	key[]: "f_mirror"
-	val[]: "前照地鏡"
+	val[]: "前視鏡"
 
 	key[]: "f_mudflap"
 	val[]: "前擋泥板" #+ A couple of mudflaps on the front of the trucks bumper
@@ -674,7 +677,7 @@
 	val[]: "前輪"
 
 	key[]: "f_wnd_frame"
-	val[]: "擋風玻璃邊框" #+ The plate under truck windshield (where wipers are installed).
+	val[]: "擋風玻璃框架" #+ The plate under truck windshield (where wipers are installed).
 
 	key[]: "filter"
 	val[]: "空氣濾清器" #+ Air filter accessoty.
@@ -686,7 +689,7 @@
 	val[]: "左車窗旗" #+ Left window flag
 
 	key[]: "frntglss_mid"
-	val[]: "擋風玻璃中央" #+ Pin that is placed on the bottom of the windshield centre to accomodate various decarative elements
+	val[]: "擋風玻璃中柱" #+ Pin that is placed on the bottom of the windshield centre to accomodate various decarative elements
 
 	key[]: "fwheel"
 	val[]: "前輪"
@@ -695,7 +698,7 @@
 	val[]: "頭燈"
 
 	key[]: "hl_guard"
-	val[]: "大燈護罩"
+	val[]: "頭燈護罩"
 
 	key[]: "hub"
 	val[]: "輪轂" #+ Wheel hub
@@ -713,7 +716,7 @@
 	val[]: "枕頭"	#+ Interior accessories placed on pillow place in back of the truck cabin
 
 	key[]: "ln_mirror"
-	val[]: "左側後照鏡"
+	val[]: "左鼻鏡"
 
 	key[]: "m_mudflap"
 	val[]: "中擋泥板"
@@ -731,19 +734,19 @@
 	val[]: "後保險桿" #+ Whole rear bumper
 
 	key[]: "r_chs_cover"
-	val[]: "底盤外殼" #+ Metall protective cover for whole chassis of the truck
+	val[]: "底盤蓋" #+ Metall protective cover for whole chassis of the truck
 
 	key[]: "r_deflector"
-	val[]: "車頂導流板"
+	val[]: "頂導流板"
 
 	key[]: "r_fender"
-	val[]: "後擋泥板" #+ Fender of the truck above rear wheel(s)
+	val[]: "後輪拱" #+ Fender of the truck above rear wheel(s)
 
 	key[]: "r_fendr_top"
-	val[]: "後擋泥板頂蓋" #+ Fender top part of the truck above rear wheel(s)
+	val[]: "後輪拱頂部" #+ Fender top part of the truck above rear wheel(s)
 
 	key[]: "r_grill"
-	val[]: "燈架"
+	val[]: "燈條"
 
 	key[]: "r_horn"
 	val[]: "右喇叭"
@@ -761,13 +764,13 @@
 	val[]: "輪圈" #+ Wheel rim (older part name)
 
 	key[]: "rn_mirror"
-	val[]: "右側後照鏡"
+	val[]: "右鼻鏡"
 
 	key[]: "rwheel"
 	val[]: "後輪"
 
 	key[]: "s_badge"
-	val[]: "側面標誌" #+ Badge or logo on side of the truck
+	val[]: "側面徽章" #+ Badge or logo on side of the truck
 
 	key[]: "s_deflector"
 	val[]: "側導流板"
@@ -776,37 +779,37 @@
 	val[]: "防石擊護欄" #+ Protective grille-like element placed outside infront, at the bottom of the truck's windshield
 
 	key[]: "s_mirror"
-	val[]: "側照地鏡"
+	val[]: "側視鏡"
 
 	key[]: "s_panel"
 	val[]: "側板" #+ Panel on side window
 
 	key[]: "s_reflector"
-	val[]: "反光片"
+	val[]: "側反光板"
 
 	key[]: "s_strip"
-	val[]: "側條紋"
+	val[]: "側飾條"
 
 	key[]: "set_cuphold"
-	val[]: "杯架套裝" #+ Large Pin for sets of small pins of the cup holder accessories
+	val[]: "杯架套組" #+ Large Pin for sets of small pins of the cup holder accessories
 
 	key[]: "set_dashbrd"
-	val[]: "儀錶板套件" #+ Large Pin for sets of small pins of the dashboard accessories
+	val[]: "儀表板套組" #+ Large Pin for sets of small pins of the dashboard accessories
 
 	key[]: "set_glass"
-	val[]: "擋風玻璃套件" #+ Large Pin for sets of small pins of the windshield accessories
+	val[]: "擋風玻璃套組" #+ Large Pin for sets of small pins of the windshield accessories
 
 	key[]: "set_lglass"
-	val[]: "擋風玻璃角落" #+ Large Pin for sets of small pins of the corner of windshield
+	val[]: "擋風玻璃角飾" #+ Large Pin for sets of small pins of the corner of windshield
 
 	key[]: "sidecover"
 	val[]: "側蓋"
 
 	key[]: "sideskirt"
-	val[]: "側裙護板"
+	val[]: "側裙板"
 
 	key[]: "sideskrt_bar"
-	val[]: "側裙護板邊條"
+	val[]: "側裙支架"
 
 	key[]: "steering_w"
 	val[]: "方向盤" #+ Steering wheel
@@ -833,19 +836,19 @@
 	val[]: "地板物品" #+ Interior accessories placed on the floor in the centre of the truck cabin
 
 	key[]: "toyhang"
-	val[]: "吊飾" #+ Interior hanging accesories
+	val[]: "吊飾物品" #+ Interior hanging accesories
 
 	key[]: "toypanel"
-	val[]: "中控台面板" #+ Interior item in/on dashboard panel
+	val[]: "儀表板物品" #+ Interior item in/on dashboard panel
 
 	key[]: "toyseat"
-	val[]: "座位物品" #+ Interior accessories placed in the passenger seat
+	val[]: "座椅物品" #+ Interior accessories placed in the passenger seat
 
 	key[]: "toystand"
-	val[]: "中控台物品" #+ Interior accessories placed on stands or centre console available in the truck
+	val[]: "控制台物品" #+ Interior accessories placed on stands or centre console available in the truck
 
 	key[]: "windowtrim"
-	val[]: "車窗飾條" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
+	val[]: "窗條" #+ Small variously shaped, decorative steel or chrome plates placed around truck's windows
 
 
 	key[]: "paint_cat"
@@ -858,7 +861,7 @@
 	val[]: "氙氣燈"
 
 	key[]: "no_light"
-	val[]: "無燈"
+	val[]: "無照明"
 
 	key[]: "plate_std"
 	val[]: "標準名牌"
@@ -878,13 +881,13 @@
 	val[]: "速" #+ Number of speeds of transmission, has to be short as it needs to fit line "12 speeds, retarder"
 
 	key[]: "ratio_range"
-	val[]: "齒輪比" #+ Range of gear ratios, has to be short as it need to fit line "Ratios 11.32-1.00"
+	val[]: "齒比" #+ Range of gear ratios, has to be short as it need to fit line "Ratios 11.32-1.00"
 
 	key[]: "diff"
-	val[]: "差速比" #+ Shortcut for "differential ratio", has to be short as it needs to fit line "Differential 3.08"
+	val[]: "差速器" #+ Shortcut for "differential ratio", has to be short as it needs to fit line "Differential 3.08"
 
 	key[]: "torque"
-	val[]: "扭力比" #+ Shortcut for "hydrodynamic torque multiplier" or "stall torque ratio", has to be very short as it needs to fit line "Torque 2.42x"
+	val[]: "扭力" #+ Shortcut for "hydrodynamic torque multiplier" or "stall torque ratio", has to be very short as it needs to fit line "Torque 2.42x"
 
 	key[]: "retarder"
 	val[]: "減速器" #+ Identifies presence of retarder on transmission, has to be short as it needs to fit line "12 speeds, retarder"
@@ -895,22 +898,22 @@
 #@{
 
 	key[]: "to_fullscreen"
-	val[]: "全螢幕" #+ Tooltip for icon which hides ui.
+	val[]: "全螢幕預覽" #+ Tooltip for icon which hides ui.
 
 	key[]: "set_lights"
-	val[]: "車燈開關" #+ Tooltip for icon which turns truck lights on and off.
+	val[]: "開啟/關閉照明" #+ Tooltip for icon which turns truck lights on and off.
 
 	key[]: "clear_cart"
-	val[]: "清除訂購" #+ Label of a button which clears content of the basket.
+	val[]: "清除訂單" #+ Label of a button which clears content of the basket.
 
 	key[]: "clear_cart_td"
-	val[]: "重置更改" #+ Label of a button which clears content of the basket.
+	val[]: "重設變更" #+ Label of a button which clears content of the basket.
 
 	key[]: "screenshot"
 	val[]: "拍攝照片" #+ Tooltip for icon which makes screenshots.
 
 	key[]: "switch_walking_cam"
-	val[]: "切換相機模式" #+ Tooltip for icon which turns walking camera mode on and off.
+	val[]: "切換鏡頭模式" #+ Tooltip for icon which turns walking camera mode on and off.
 
 	key[]: "tooltip_walk_look_around"
 	val[]: "查看周圍" #+ Tooltip for control icon: look around (by walking camera).
@@ -931,13 +934,13 @@
 	val[]: "向前走" #+ Tooltip for walk forward.
 
 	key[]: "tooltip_walk_back"
-	val[]: "向後走" #+ Tooltip for walk back.
+	val[]: "Back" #+ Tooltip for walk back.
 
 	key[]: "tooltip_walk_left"
-	val[]: "向左走" #+ Tooltip for walk left.
+	val[]: "Left" #+ Tooltip for walk left.
 
 	key[]: "tooltip_walk_right"
-	val[]: "向右走" #+ Tooltip for walk right.
+	val[]: "Right" #+ Tooltip for walk right.
 
 	key[]: "tooltip_walk_crouch"
 	val[]: "蹲下" #+ Tooltip for crouch.
@@ -960,16 +963,16 @@
 	val[]: "結束遊戲" #+ Title of message box shown before really exiting in the game. Please keep in upper case where possible.
 
 	key[]: "quit_game_help"
-	val[]: "結束遊戲 ｡ 休息一下吧，你隨時都可以回來 ｡ " #+ Help message associated with quit icon.
+	val[]: "結束遊戲。稍微休息一下吧，隨時都可以回來。" #+ Help message associated with quit icon.
 
 	key[]: "quit_game"
 	val[]: "結束" #+ Icon allowing player to quit the game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "wanna_quit"
-	val[]: "你的遊戲進度將會被自動儲存 ｡  <br><br>你確定要離開遊戲嗎？"
+	val[]: "您的進度將被自動儲存。<br><br>確定要結束嗎？"
 
 	key[]: "mp_wanna_quit"
-	val[]: "你仍處於聯運大廳中｡ 大廳即將關閉｡<br><br>你確定要退出嗎？"
+	val[]: "您仍處於聯運會話中。此舉將使會話關閉。<br><br>確定要離開嗎？"
 
 	key[]: "exit_mbox_t"
 	val[]: "退出" #+ Title of message box shown before exiting in the game. Please keep in upper case where possible.
@@ -1011,7 +1014,7 @@
 	val[]: "改裝" #+ Button allowing user to upgrade something.
 
 	key[]: "confirm"
-	val[]: "確認" #+ Button which applies the state configured in the screen.
+	val[]: "Confirm" #+ Button which applies the state configured in the screen.
 
 	key[]: "continue"
 	val[]: "繼續" #+ Button which usually continues to next screen or message in sequence.
@@ -1029,35 +1032,35 @@
 	val[]: "在" #+ Inserted between engine strength and rpm. For example "1,800 Nm at 950-1,400rpm".
 
 	key[]: "ui_list_last_and"
-	val[]: " 和" #+ Used when combining list of values. For example "5 day(s), and 5 hour(s)" or "Prague, and Berlin"
+	val[]: "，和" #+ Used when combining list of values. For example "5 day(s), and 5 hour(s)" or "Prague, and Berlin"
 
 
 	key[]: "load_save_t"
-	val[]: "儲存 或 載入存檔" #+ Title of window providing selection between save and load functionality. Please keep in upper case where possible.
+	val[]: "儲存或載入遊戲" #+ Title of window providing selection between save and load functionality. Please keep in upper case where possible.
 
 	key[]: "load_save"
 	val[]: "儲存 & 載入" #+ Icon allowing player to save and load the game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_reset"
-	val[]: "檢測到遊戲改動！為了避免遊戲改動導致存檔出現相容性問題，任何未完成的工作已被無償取消 ｡" #+ Game state reset info message
+	val[]: "偵測到遊戲改動！為了避免存檔出現相容性問題，所有未完成的運輸工作皆已被取消、且無任何懲罰。" #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "檢測到遊戲改動！<br><br>為了避免遊戲改動導致存檔出現相容性問題，任何未完成的工作已被無償取消 ｡<br><br>請選擇一個快速移動的地點繼續遊戲 ｡" #+ Game state reset info message, plus free teleport
+	val[]: "偵測到遊戲改動！<br><br>為了避免存檔出現相容性問題，所有未完成的運輸工作皆已被取消、且無任何懲罰。<br><br>請選擇一個快速移動目的地以繼續遊戲。" #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
-	val[]: "儲存中..." #+ Game save indicator message.
+	val[]: "正在儲存……" #+ Game save indicator message.
 
 	key[]: "cutscene_quit_info"
-	val[]: "按 $KEY$ 跳過景觀動畫" #+ Shown when any key was pressed during viewpoint cutscene.
+	val[]: "按下 $KEY$ 跳過動畫。" #+ Shown when any key was pressed during viewpoint cutscene.
 
 #+ Message box shown on press of the Drive button when the player does not have any truck.
 #@{
 
 	key[]: "no_drive_t"
-	val[]: "沒有卡車" #+ Message box title. Please keep in upper case where possible.
+	val[]: "NO VEHICLE" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "no_drive"
-	val[]: "因為你沒有屬於自己的卡車，所以你沒有辦法自由移動！你可以購買一輛卡車或是從你的車隊中挑選一輛 ｡ <br><br>你現在想要執行快速工作嗎？"
+	val[]: "You cannot move freely about the world because you don't have a vehicle to drive! You could purchase one or take one from your fleet.<br><br>Would you like to take a quick job now?"
 #@}
 
 #+ Game load window
@@ -1072,16 +1075,16 @@
 	val[]: "載入遊戲" #+ Icon allowing player to load previously saved game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "load_game_desc"
-	val[]: "如果載入先前儲存的遊戲，你目前的進度將會遺失！" #+ Help message associated with load game icon.
+	val[]: "載入先前儲存的遊戲。目前的進度將會遺失！" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
-	val[]: "是否確定要讀取另一格存檔？<br><br>請先儲存遊戲，否則現在的遊戲進度將會遺失 ｡"
+	val[]: "確定要載入其他遊戲嗎？<br><br>如果先前並未儲存，目前的進度將會遺失。"
 
 	key[]: "load_progress_lost_mp"
-	val[]: "您確定要載入另一個遊戲存檔嗎?<br>在多人模式中這樣做可能會導致工作取消或暫停、傳送到最近的為維修站、或選擇的工作無法使用｡ <br><br>除非提早存檔，否則你將失去目前的遊戲進度｡"
+	val[]: "確定要載入其他遊戲嗎？<br>如果在多人遊戲中執行此操作，有可能會導致工作取消或暫停、傳送到最近的維修中心，或是選取的工作無法使用。<br><br>如果先前並未儲存，目前的進度將會遺失。"
 
 	key[]: "load_game_mp_suspended_job"
-	val[]: "存檔已成功載入，但是你正在執行的 World of Trucks 工作已暫停並無法在此工作階段中使用｡"
+	val[]: "已成功載入存檔，但您正在進行的 World of Trucks 工作已暫停、並無法在本次會話中使用。"
 
 	key[]: "autosave"
 	val[]: "- 自動存檔 -" #+ Name used inside slot corresponding to automatically saved game.
@@ -1099,10 +1102,10 @@
 	val[]: "載入" #+ Button triggering load.
 
 	key[]: "incompatible_save_upgrade"
-	val[]: "<color value=@@clr_sel@@>存檔不相容！ <br><color value=@@clr_txt@@> 請嘗試更新遊戲到最新版本 ｡ " #+ Warning shown when save has unknown version.
+	val[]: "<color value=@@clr_sel@@>存檔不相容！<br><color value=@@clr_txt@@>請嘗試將遊戲更新至最新版本。" #+ Warning shown when save has unknown version.
 
 	key[]: "failed_to_acquire_saves"
-	val[]: "無法載入並顯示此角色檔案的所有存檔。" #+ shown on the save/load screen if the save manager fails to return all saves for the selected profile
+	val[]: "無法載入並顯示此個人檔案的所有存檔。" #+ shown on the save/load screen if the save manager fails to return all saves for the selected profile
 
 #+ Notification shown in the side panel when the load slot selection window appears automatically
 #@{
@@ -1110,25 +1113,25 @@
 	val[]: "注意" #+ Panel title. Please keep in upper case where possible.
 
 	key[]: "load_msg_load_error"
-	val[]: "<color value=@@clr_red@@>載入存檔錯誤 ｡ <color value=@@clr_txt@@><br><br>載入存檔失敗 ｡ 你可以嘗試參考以下資訊辨識並解決問題 ｡ 此外，你可以嘗試載入另外一個存檔 ｡ <br><br>下列原因經常導致此問題出現: <br><br>1. 存檔與現在安裝的MOD不相容 ｡ <br><br>2. 存檔包含已遺失或停用的MOD的內容 ｡ <br><br>3. 存檔被缺乏妥善設計的MOD損毀 ｡ <br><br>4. 電腦在存檔過程中或在遊戲中閃退，可能會損壞存檔 ｡ "
+	val[]: "<color value=@@clr_red@@>載入存檔時出現問題。<color value=@@clr_txt@@><br><br>載入存檔失敗。您可以嘗試參考以下資訊排查並修復問題。也可以嘗試載入其他存檔。<br><br>以下為導致此問題出現的常見原因：<br><br>1. 存檔與目前安裝的部分 MOD 不相容。<br><br>2. 存檔包含遺失或停用的 MOD 資訊。<br><br>3. 存檔因品質不佳的 MOD 損毀。<br><br>4. 電腦在存檔過程中或存檔不久後當機，將有可能會損毀存檔。"
 
 	key[]: "load_msg_missing_mod"
-	val[]: "<color value=@@clr_sel@@>偵測到MOD遺失 ｡ <color value=@@clr_txt@@><br><br>最後一次存檔依賴已遺失或停用的MOD ｡ <br><br>如果你沒有進行相關操作，請檢查所有MOD的狀態 ｡ <br><br>或者你可以嘗試繼續載入存檔，不過，取決於MOD的功能，存檔可能會載入失敗或導致其他問題 ｡ <br><br>此外，你可以嘗試載入另一個沒有依賴已遺失的MOD的存檔 ｡ "
+	val[]: "<color value=@@clr_sel@@>偵測到遺失的 MOD。<color value=@@clr_txt@@><br><br>最新的存檔依賴遺失或停用的 MOD。<br><br>如果這超出了您的預期，請檢查各個 MOD 的狀態。<br><br>您也可以嘗試繼續載入存檔。但依照 MOD 的功能，仍有可能會載入失敗或導致其他問題。<br><br>此外，您也可以嘗試載入其他並未依賴遺失 MOD 的存檔。"
 
 	key[]: "load_msg_missing_rem_dlc"
-	val[]: "<color value=@@clr_sel@@>偵測到可選的DLC遺失 ｡ <color value=@@clr_txt@@><br><br>最後一次存檔依賴已遺失的DLC (官方遊戲擴充) ｡ <br><br>如果你沒有進行相關操作，請檢查所有DLC的狀態 ｡ <br><br>或者你可以嘗試繼續載入存檔，不過，可能會失去相關DLC提供的功能 ｡ <br><br>此外，你可以嘗試載入另一個沒有依賴已遺失的DLC的存檔 ｡ "
+	val[]: "<color value=@@clr_sel@@>偵測到遺失的可選 DLC。<color value=@@clr_txt@@><br><br>最新的存檔依賴遺失的 DLC（官方遊戲擴充內容）。<br><br>如果這超出了您的預期，請檢查各個 DLC 的狀態。<br><br>您也可以嘗試繼續載入存檔，但 DLC 提供的功能有可能會遺失。<br><br>此外，您也可以嘗試載入其他並未依賴遺失 DLC 的存檔。"
 
 	key[]: "load_msg_missing_dlc"
-	val[]: "<color value=@@clr_red@@>偵測到DLC遺失 ｡ <color value=@@clr_txt@@><br><br>最後一次存檔依賴已遺失的DLC (官方遊戲擴充) ｡ <br><br>為了能夠讓遊戲順利運行，該DLC必須被啟動 ｡ <br><br>此外，你可以嘗試載入另一個沒有依賴已遺失的DLC的存檔 ｡ "
+	val[]: "<color value=@@clr_red@@>偵測到遺失的 DLC。<color value=@@clr_txt@@><br><br>最新的存檔依賴遺失的 DLC（官方遊戲擴充內容）。<br><br>為了能讓存檔正確執行，必須在此電腦上啟用該 DLC。<br><br>此外，您也可以嘗試載入其他並未依賴遺失 DLC 的存檔。"
 
 	key[]: "load_msg_mod_dlc_dep"
-	val[]: "<color value=@@clr_red@@>MOD依賴未安裝的DLC<color value=@@clr_txt@@><br><br>至少一個MOD依賴未安裝的DLC (官方遊戲擴充) ｡ <br><br>你需要停用這些MOD或安裝相關的DLC ｡ "
+	val[]: "<color value=@@clr_red@@>MOD 依賴 DLC 的內容。<color value=@@clr_txt@@><br><br>至少一個 MOD 依賴目前尚未安裝的 DLC（官方遊戲擴充內容）。<br><br>必須停用相關的 MOD 或安裝其依賴的 DLC。"
 
 	key[]: "load_msg_crash"
-	val[]: "<color value=@@clr_red@@>偵測到遊戲閃退<color value=@@clr_txt@@><br><br>上一次載入存檔時遊戲似乎發生閃退 ｡ <br><br>你可以嘗試參考以下資訊辨識並解決問題 ｡ 此外，你可以嘗試載入另外一個存檔 ｡ <br><br>下列原因經常導致此問題出現: <br><br>1. 一個或多個已安裝的MOD已損壞或不相容於目前遊戲版本 ｡ <br><br>2. 存檔包含已遺失或停用的MOD內容 ｡ <br><br>3. 存檔被缺乏妥善設計的MOD損毀 ｡ <br><br>4. 在某些情況下，硬體或驅動程式故障可能會導致遊戲閃退 ｡"
+	val[]: "<color value=@@clr_red@@>偵測到當機。<color value=@@clr_txt@@><br><br>上次載入存檔時遊戲似乎發生當機。<br><br>您可以嘗試參考以下資訊排查並修復問題。也可以嘗試載入其他存檔。<br><br>以下為導致此問題出現的常見原因：<br><br>1. 一個或多個已安裝的 MOD 損毀，或與目前遊戲版本不相容。<br><br>2. 存檔包含遺失或停用的 MOD 資訊。<br><br>3. 存檔因品質不佳的 MOD 損毀。<br><br>4. 在某些情況下，硬體或驅動程式故障也有可能會導致遊戲當機。"
 
 	key[]: "mods_detected_warning"
-	val[]: "偵測到遊戲MOD ｡ 請注意已損壞 ､ 已淘汰或不相容的遊戲MOD可能導致遊戲不穩定 ｡ 請在MOD管理檢查已啟用的MOD ｡ " #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
+	val[]: "偵測到 MOD。請注意——已損壞、已過時或不相容 MOD 有可能會導致遊戲不穩定。請在 MOD 管理檢查目前啟用的 MOD。" #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
 #@}
 #@}
 
@@ -1144,22 +1147,22 @@
 	val[]: "儲存遊戲" #+ Icon allowing player to save game. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "save_game_desc"
-	val[]: "儲存現在的遊戲進度 ｡ "  #+ Help message associated with save game icon.
+	val[]: "儲存現在的遊戲進度。"  #+ Help message associated with save game icon.
 
 	key[]: "new_save_game"
 	val[]: "- 新存檔 -" #+ Name of save slot which create a new save file.
 
 	key[]: "noname_save_game"
-	val[]: "未命名" #+ Name used instead as the name of the save file if no name was provided by player. For example "Unamed save 1"
+	val[]: "未命名存檔" #+ Name used instead as the name of the save file if no name was provided by player. For example "Unamed save 1"
 
 	key[]: "overwrite_save"
-	val[]: "你確定要覆蓋以前的存檔嗎？"
+	val[]: "確定要覆寫較舊的存檔嗎？"
 
 	key[]: "save_delete"
-	val[]: "你確定要刪除此存檔紀錄嗎？"
+	val[]: "確定要刪除所選存檔嗎？"
 
 	key[]: "save_input_hint"
-	val[]: "- 輸入存檔名稱 -" #+ Text shown in the save name edit box until any content is entered.
+	val[]: "- 輸入新存檔的名稱 -" #+ Text shown in the save name edit box until any content is entered.
 
 	key[]: "save"
 	val[]: "儲存" #+ Button triggering save.
@@ -1209,22 +1212,22 @@
 	val[]: "塗裝商店" #+ Icon allowing player to apply a new paint to the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_paint_about"
-	val[]: "對這個塗裝感到厭煩了嗎？增加一些新的顏色吧！" #+ Help message associated with paint shop icon.
+	val[]: "對單調的塗裝感到厭煩了？那就增加一些新的色彩吧！" #+ Help message associated with paint shop icon.
 
 	key[]: "paintjob_t"
 	val[]: "藍圖" #+ Header of section containing all blueprints of the paintings. Please keep in upper case where possible.
 
 	key[]: "paint_channel"
-	val[]: "塗裝" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
+	val[]: "塗裝欄位" #+ Tooltip shown when mouse hovers over one from color slots available in the selected paint.
 
 	key[]: "tooltip_save_ucolor"
-	val[]: "將顏色另存為預設" #+ Tooltip for a button which stores currently selected color in selected preset slot.
+	val[]: "將色彩儲存為預設" #+ Tooltip for a button which stores currently selected color in selected preset slot.
 
 	key[]: "tooltip_save_preset_ucolor"
-	val[]: "將所有顏色另存為預設" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
+	val[]: "將所有色彩儲存為預設" #+ Tooltip for a button which stores all paintjob colors in selected preset slot.
 
 	key[]: "tooltip_apply_ucolor"
-	val[]: "應用顏色預設" #+ Tooltip for a button which applies color from currently selected preset slot.
+	val[]: "套用色彩預設" #+ Tooltip for a button which applies color from currently selected preset slot.
 #@}
 
 #+ Job Market
@@ -1237,7 +1240,7 @@
 	val[]: "工作市場" #+ Icon allowing player to take a job. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "take_job"
-	val[]: "接受工作" #+ Button which will take the selected job. Shown for quick jobs or when the player is at pickup point of freght market job.
+	val[]: "承接工作" #+ Button which will take the selected job. Shown for quick jobs or when the player is at pickup point of freght market job.
 
 	key[]: "customize_job_offer"
 	val[]: "拖車選擇" #+ Button which will customize the selected freight market job.
@@ -1248,7 +1251,7 @@
 #@{
 
 	key[]: "cargo_waiting1"
-	val[]: "你的拖車已準備好，請駛入拖運區域 ｡ "
+	val[]: "您的拖車已就緒，請前往裝載區域。"
 
 	key[]: "cargo_waiting2"
 	val[]: "前往地圖上綠旗的位置。"
@@ -1265,14 +1268,14 @@
 #+ Hint that appears after job target was selected. It's composed of two parts, separated by a new line. It has no length limit.
 #@{
 	key[]: "cargo_unloading1"
-	val[]: "請駛入卸貨區域 ｡ "
+	val[]: "請前往卸貨區域。"
 
 	key[]: "cargo_unloading2"
-	val[]: "前往地圖上紅旗的位置 ｡ "
+	val[]: "前往地圖上紅旗的位置。"
 #@}
 
 	key[]: "city_discovered"
-	val[]: "發現 $CITY$" #+  Message that appears in the middle of the screen when a new city is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+	val[]: "已發現$CITY$" #+  Message that appears in the middle of the screen when a new city is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
 
 #+ Job entry info.
 #+
@@ -1280,10 +1283,10 @@
 #@{
 
 	key[]: "validity"
-	val[]: "工作有效期限:" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
+	val[]: "工作有效期限：" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
 
 	key[]: "expected_on"
-	val[]: "預期抵達時間:" #+ For example "Expected Sat 12:53 - Sat 19:33"
+	val[]: "預期抵達時間：" #+ For example "Expected Sat 12:53 - Sat 19:33"
 #@}
 
 #+ Quick job selection screen
@@ -1292,13 +1295,13 @@
 #@{
 
 	key[]: "quick_job_t"
-	val[]: "快速工作" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "快速工作機會" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "job_quick"
 	val[]: "快速工作" #+ Icon opening the quick job screen. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "quick_job_desc"
-	val[]: "成為一名被僱用的職業司機 ｡ 無需顧慮，任何東西都會為你提供 ｡ 只需要選擇一個工作並專心地駕駛 ｡ "
+	val[]: "成為專職司機。手續簡便，裝備齊全。只需承接任務，即可上路行駛。"
 #@}
 
 #+ Freight market job selection screen
@@ -1313,19 +1316,19 @@
 	val[]: "貨運市場" #+ Icon opening the freight market screen.
 
 	key[]: "comp_job_desc"
-	val[]: "使用你的卡車來為你的公司賺錢 ｡ 裝載貨櫃並安全快捷地運送到目的地 ｡ "
+	val[]: "使用你的卡車來為自己的公司賺錢。裝載貨物並平安完好地送達。"
 
 	key[]: "select_job_offer"
-	val[]: "設置GPS目的地" #+ Button which will set pickup point for selected job as target in the GPS.
+	val[]: "設為 GPS 目的地" #+ Button which will set pickup point for selected job as target in the GPS.
 
 	key[]: "finish_to_set_gps"
-	val[]: "在你完成現在的任務之前，你無法改變你的目的地！" #+ Show in message box when you try to set gps to new job while you already have a another job active.
+	val[]: "你已承接了一項運輸工作！完成之前，無法變更目的地。" #+ Show in message box when you try to set gps to new job while you already have a another job active.
 
 	key[]: "finish_current_job_first"
-	val[]: "在你完成現在的工作之前，你無法接受新的工作！" #+ Shown in message box when tried to take a job while another one in progress.
+	val[]: "你已承接了一項運輸工作！完成之前，無法承接新的運輸工作。" #+ Shown in message box when tried to take a job while another one in progress.
 
 	key[]: "view_current_job"
-	val[]: "查看目前工作" #+ The text shown on button opening current job screen.
+	val[]: "檢視目前工作" #+ The text shown on button opening current job screen.
 #@}
 
 #+ Route info box.
@@ -1335,10 +1338,10 @@
 #@{
 
 	key[]: "trip_len"
-	val[]: "運輸距離" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
+	val[]: "行程距離" #+ Shown in the route info box in the line indicating length of the route. For example "Trip distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "trip_time"
-	val[]: "運輸時間" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
+	val[]: "行程時間" #+ Shown in the route info box in the line indicating expected duration of the route when driving in a reasonable way. For example "Trip time&nbsp;&nbsp;&nbsp;3 h 30 min"
 
 	key[]: "trip_ferry_len"
 	val[]: "渡輪距離" #+ Shown in the route info box in the line indicating length of the ferry route. For example "Ferry distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
@@ -1350,26 +1353,26 @@
 	val[]: "陸地距離" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "選擇貨物，以查看路線資訊" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "選擇貨物以檢視路線詳情" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "不完整" #+ Shown instead of distance or time on the world map if only partial route was found.
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_len"
-	val[]: "下一個自訂點預估抵達距離" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
+	val[]: "下個檢查點預估距離" #+ Shown in the route info box in the line indicating the distance to the closest checkpoint."
 
 	#+ Char Limit: 25
 	key[]: "checkpoint_time"
-	val[]: "下一個自訂點預估抵達時間" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
+	val[]: "下個檢查點抵達時間" #+ Shown in the route info box in the time of arrival to the closest checkpoint.
 #@}
 
 
 	key[]: "sort_by"
-	val[]: "排序按" #+ Combo box with job sorting options."
+	val[]: "排序方式" #+ Combo box with job sorting options."
 
 	key[]: "calculating_route"
-	val[]: "路線計算中..." #+ Shown temporarily on map screens when navigation route is being calculated
+	val[]: "正在計算路線……" #+ Shown temporarily on map screens when navigation route is being calculated
 
 #+ Job sorting options (Sort by:X)
 #@{
@@ -1393,13 +1396,13 @@
 	val[]: "貨物種類"
 
 	key[]: "price_km"
-	val[]: "價格／距離"
+	val[]: "價格/距離"
 
 	key[]: "cargo_weight"
 	val[]: "貨物重量"
 
 	key[]: "source_company"
-	val[]: "發送方"
+	val[]: "寄件方"
 
 	key[]: "target_company"
 	val[]: "接收方"
@@ -1409,25 +1412,25 @@
 #@{
 
 	key[]: "jobf_hint_1"
-	val[]: "在地圖上選擇一個已經探索的城市來尋找該地點的工作機會"
+	val[]: "在地圖上選擇一個已發現的城市來檢視該處的工作機會"
 
 	key[]: "jobf_hint_2"
-	val[]: "使用排序功能來尋找你偏好的工作"
+	val[]: "使用排序功能，將您偏好的工作機會置頂顯示"
 
 	key[]: "jobf_hint_3"
-	val[]: "選擇一份工作機會"
+	val[]: "選擇一項工作機會"
 
 	key[]: "jobf_hint_4a"
-	val[]: "然後開始駕駛！"
+	val[]: "然後開始行駛！"
 
 	key[]: "jobf_hint_4b"
-	val[]: "把衛星導航系統設定到你可以開始工作的地方"
+	val[]: "將導航設定至可以開始工作的碼頭"
 #@}
 
 #+ Cargo types.
 #@{
 	key[]: "cargo_type_machinery"
-	val[]: "工程機械"
+	val[]: "機器設備"
 
 	key[]: "cargo_type_adr"
 	val[]: "Hazardous"
@@ -1436,7 +1439,7 @@
 	val[]: "冷藏 & 隔熱"
 
 	key[]: "cargo_type_dryvan"
-	val[]: "簾幕 & 乾貨"
+	val[]: "側簾 & 乾貨貨櫃拖車"
 
 	key[]: "cargo_type_container"
 	val[]: "貨櫃板類"
@@ -1448,25 +1451,25 @@
 	val[]: "平板"
 
 	key[]: "cargo_type_lowbed"
-	val[]: "低板類"
+	val[]: "低板"
 
 	key[]: "cargo_type_inloader"
-	val[]: "內裝載類"
+	val[]: "自裝車"
 
 	key[]: "cargo_type_livestock"
 	val[]: "牲畜"
 
 	key[]: "cargo_type_liquid"
-	val[]: "液態"
+	val[]: "液體貨物"
 
 	key[]: "cargo_type_fragile"
-	val[]: "易碎品"
+	val[]: "易碎貨物"
 
 	key[]: "cargo_type_construction"
-	val[]: "工程車"
+	val[]: "工程建材"
 
 	key[]: "cargo_type_bulk"
-	val[]: "散裝類"
+	val[]: "散裝貨物"
 
 	key[]: "cargo_type_oversize"
 	val[]: "特殊運輸"
@@ -1484,10 +1487,10 @@
 	val[]: "標準運輸"
 
 	key[]: "cargo_type_important"
-	val[]: "重要貨運"
+	val[]: "重要運輸"
 
 	key[]: "cargo_type_urgent"
-	val[]: "急件貨運"
+	val[]: "緊急運輸"
 #@}
 
 #@}
@@ -1520,7 +1523,7 @@
 	val[]: "選擇現有的或開始新的角色檔案。"
 
 	key[]: "wanna_remove_profile"
-	val[]: "你確定要刪除這個角色嗎？"
+	val[]: "確定要刪除此個人檔案嗎？"
 
 	key[]: "profile_level"
 	val[]: "等級" #+ Suffixed with number to indicate experience level of the profile. For example "Level 1".
@@ -1541,10 +1544,10 @@
 	val[]: "@@profile_create_t@@" #+ Button which opens new profile creation dialog. No need for translation
 
 	key[]: "profile_status"
-	val[]: "角色檔案狀態" #+ Heading text for Profile info.
+	val[]: "個人檔案狀態" #+ Heading text for Profile info.
 
 	key[]: "manage_profile_mods"
-	val[]: "管理檔案MOD" #+ Button which opens mod manager.
+	val[]: "管理個人檔案的MOD" #+ Button which opens mod manager.
 
 	key[]: "manage_profiles_btn"
 	val[]: "角色檔案管理" #+ Button which opens profile selection screen for managing profiles.
@@ -1568,7 +1571,7 @@
 	val[]: "已擁有的車庫：" #+ How many garages the player owns
 
 	key[]: "owned_garages_value"
-	val[]: "小型: $SMALL$ 大型: $LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
+	val[]: "小型：$SMALL$，大型：$LARGE$" #+ it is used as "Owned Garages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;small: 1, large: 5"
 
 	key[]: "owned_trucks"
 	val[]: "已擁有的卡車：" #+ how many trucks the player owns
@@ -1577,10 +1580,10 @@
 	val[]: "已擁有的拖車：" #+ how many trailers the player owns
 
 	key[]: "online_stat"
-	val[]: "World of Trucks 帳戶："
+	val[]: "World of Trucks 個人檔案："
 
 	key[]: "mods_in_use"
-	val[]: "已使用的模組：" #+ how many mods the player has active
+	val[]: "正在使用的 MOD：" #+ how many mods the player has active
 
 	key[]: "not_conn"
 	val[]: "未連接!"	#+ to the WoTR
@@ -1625,7 +1628,7 @@
 	val[]: "新的部落格文章已上線！" #+ Fallback news text content in case of fetch errors
 
 	key[]: "no_truck_dlc"
-	val[]: "沒有找到任何卡車！請重新啟用至少一個卡車DLC並重啟遊戲 ｡ " #+ Text shown when there is no truck available.
+	val[]: "No vehicles found! Please re-enable at least one vehicle DLC and restart the game." #+ Text shown when there is no truck available.
 
 	key[]: "extras"
 	val[]: "更多"
@@ -1727,7 +1730,7 @@
 	val[]: "你的角檔目前與 $SHORTCUT1$$FRONTEND_URL$ 線上經驗斷開連接。"
 
 	key[]: "connect_to_wotr_login_t"
-	val[]: "連接"
+	val[]: "Connect"
 
 	key[]: "connect_to_wotr_skip_t"
 	val[]: "稍後連接"
@@ -1768,10 +1771,10 @@
 	val[]: "多種卡車任你選擇，打造你的初始體驗。 每款都是完美之選。"
 
 	key[]: "random_truck"
-	val[]: "隨機"
+	val[]: "Random"
 
 	key[]: "confirm_preferred_truck"
-	val[]: "確認"
+	val[]: "Confirm"
 #@}
 
 
@@ -2030,19 +2033,19 @@
 	val[]: "地圖" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_cargo"
-	val[]: "貨物" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Cargo" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_trailer"
-	val[]: "拖車" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Trailer" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_accessories"
-	val[]: "配件" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Accessories" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_paint_jobs"
-	val[]: "塗裝" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Paint jobs" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_all"
-	val[]: "全部" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "All" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "no_dlc_found"
 	val[]: "無法找到符合篩選條件的 DLC"
@@ -2054,16 +2057,16 @@
 	val[]: "搜尋結果: " #+ Text shown when searching DLC and only other category screen contain some matches. Followed by list of category screen titles.
 
 	key[]: "dlc_widget_open"
-	val[]: "進入" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
+	val[]: "Open" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_widget_close"
 	val[]: "停用" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_browser_online_wait_title"
-	val[]: "正在下載資料" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "DOWNLOADING DATA" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_online_wait_message"
-	val[]: "正在下載 DLC 資訊，請稍候｡"
+	val[]: "Downloading DLC information. Please wait."
 #@}
 
 #+ Activation screen
@@ -2216,7 +2219,7 @@
 	val[]: "你正在使用外接的控制器嗎？手把 ､ 搖桿或方向盤？請確認你已經在這裡適當地設定它們 ｡ "
 
 	key[]: "help_bcg_theme"
-	val[]: "使用個性化的桌面背景突顯出你的卡車｡ 選擇一個你喜歡的風格吧!"
+	val[]: "Highlight your vehicle with a personalized desktop background. Pick one that suits your style!"
 
 #@}
 
@@ -2320,7 +2323,7 @@
 	val[]: "介面" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
 	key[]: "truck_sound_settings_t"
-	val[]: "卡車音效" #+ Title of the 'Truck Sounds' section. Please keep in upper case where possible.
+	val[]: "VEHICLE SOUNDS" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
 	val[]: "車內音效" #+ Title of the 'Interior Sounds' section. Please keep in upper case where possible.
@@ -2332,19 +2335,19 @@
 	val[]: "主音量" #+ Slider controlling master volume.
 
 	key[]: "truck_engine_volume"
-	val[]: "卡車引擎音量" #+ Slider controlling volume of the truck engine.
+	val[]: "Vehicle engine volume" #+ Slider controlling volume of the truck engine.
 
 	key[]: "truck_exhaust_volume"
-	val[]: "卡車排氣音量" #+ Slider controlling volume of the truck exhaust.
+	val[]: "Vehicle exhaust volume" #+ Slider controlling volume of the truck exhaust.
 
 	key[]: "truck_turbo_volume"
-	val[]: "卡車渦輪音量" #+ Slider controlling volume of the truck turbo.
+	val[]: "Vehicle turbo volume" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
-	val[]: "卡車效果音音量" #+ Slider controlling volume of the truck effects.
+	val[]: "Vehicle effects volume" #+ Slider controlling volume of the truck effects.
 
 	key[]: "truck_noise_volume"
-	val[]: "卡車噪音音量" #+ Slider controlling volume of the truck noises.
+	val[]: "Vehicle noise volume" #+ Slider controlling volume of the truck noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "拖車噪音音量" #+ Slider controlling volume of the trailer noises.
@@ -2404,7 +2407,7 @@
 	val[]: "語音預覽" #+ Label for the button to preview message of the voice navigation pack..
 
 	key[]: "voice_preview"
-	val[]: "預覽" #+ The button to preview message of the voice navigation pack..
+	val[]: "Preview" #+ The button to preview message of the voice navigation pack..
 
 	key[]: "voice_speed_warning"
 	val[]: "超速警告" #+ Droplist for selection of the speed warning type.
@@ -2487,19 +2490,19 @@
 	val[]: "調整遊戲的整體音量"
 
 	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
-	val[]: "調整卡車引擎的音量"
+	val[]: "Adjusts volume of the vehicle's engine."
 
 	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
-	val[]: "調整卡車排氣的音量"
+	val[]: "Adjusts volume of the vehicle's exhaust."
 
 	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
-	val[]: "調整卡車渦輪的音量"
+	val[]: "Adjusts volume of the vehicle's turbo."
 
 	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
-	val[]: "調整卡車其他音效的音量，例如空氣煞車的嘶嘶聲｡"
+	val[]: "Adjusts volume of other vehicle sound effects, such as hissing of the air brakes."
 
 	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
-	val[]: "調整來自卡車輪胎的噪音音量"
+	val[]: "Adjusts volume of noise coming from the vehicle's tyres."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "調整來自拖車輪胎的噪音音量"
@@ -2514,7 +2517,7 @@
 	val[]: "調整遊戲中其他環境聲音的音量，例如一般城市聲音、自然聲音等｡"
 
 	key[]: "interior_volume_op_tooltip" # - Audio, Simple
-	val[]: "調整卡車內部的音量"
+	val[]: "Adjusts volume of the vehicle's interior sounds."
 
 	key[]: "radio_volume_op_tooltip" # - Audio, Simple
 	val[]: "調整收音機的音量"
@@ -2568,19 +2571,19 @@
 	val[]: "試聽選擇的結束音"
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "啟用倒車時卡車的蜂鳴聲。音量可以使用 \"卡車效果音\" 滑塊進行調整。<br><br>啟用後，在聯運模式中，你還可以聽到其他玩家的倒車蜂鳴聲。"
+	val[]: "Enables sound of beeper when reversing with your truck. The volume can be adjusted using the \"Vehicle effects\" slider.<br><br>When enabled, you will also hear the back-up beeper of other players when in a convoy session."
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "啟用後，當車輛駛過停車振動帶時，可發出隆隆聲｡"
 
 	key[]: "noise_window_op_tooltip" # - Audio, Advanced
-	val[]: "當車窗打開時會產生額外的風噪聲｡<br><br><color value=@@clr_txt_d@@>需要啟用“打開車窗的噪音”功能。"
+	val[]: "Enables additional noise of the air flowing through the windows when the vehicle's windows are open.<br><br><color value=@@clr_txt_d@@>Requires \"Noise of the flowing air\" enabled to function."
 
 	key[]: "noise_aero_op_tooltip" # - Audio, Advanced
-	val[]: "啟用卡車駕駛室周圍的空氣流動而產生的噪音"
+	val[]: "Enables noise of the air flowing around your vehicle's cabin."
 
 	key[]: "reverb_cabin_op_tooltip" # - Audio, Advanced
-	val[]: "啟用卡車駕駛室的殘響效果"
+	val[]: "啟用車輛駕駛室內的殘響效果。"
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
 	val[]: "啟用環境聲音的殘響效果"
@@ -2627,7 +2630,7 @@
 	val[]: "變速箱" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
 	key[]: "truck_physics_settings"
-	val[]: "卡車物理" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	val[]: "VEHICLE PHYSICS" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "行車輔助" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2804,7 +2807,7 @@
 	val[]: "沒有作用" # Shown at various places if city name is unavailable. Please keep it as short as possible.
 
 	key[]: "country_na"
-	val[]: "沒有作用" # Shown at various places if country name is unavailable. Please keep it as short as possible.
+	val[]: "N / A" # Shown at various places if country name is unavailable. Please keep it as short as possible.
 #@}
 
 #+ Adviser speed limit visualization
@@ -2816,7 +2819,7 @@
 	val[]: "隱藏" #+ Hide speed limit display on the advisor.
 
 	key[]: "truck_limit"
-	val[]: "顯示卡車極限" #+ Show speed limits for trucks on the advisor.
+	val[]: "Show limit for current vehicle mode" #+ Show speed limits for trucks on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "顯示車輛速限" #+ Show speed limits for ordinary cars on the advisor.
@@ -2838,6 +2841,18 @@
 
 	key[]: "align_always_north"
 	val[]: "總是北方" #+ Map aligned to north always.
+#@}
+
+#+ Proximity exploration mode
+#@{
+	key[]: "map_exploration_mode"
+	val[]: "Map exploration mode" #+ Droplist for selection mode of map exploration mode.
+
+	key[]: "precision_exploration"
+	val[]: "Precision Exploration" #+ Precision Exploration.
+
+	key[]: "proximity_exploration"
+	val[]: "Proximity Exploration" #+ Proximity Exploration.
 #@}
 
 #+ Navigation display mode
@@ -2938,7 +2953,7 @@
 	val[]: "煞車強度" #+ Slider for player modification of braking force.
 
 	key[]: "truck_stability"
-	val[]: "卡車穩定性" #+ Slider for player modification of truckstability (COG position).
+	val[]: "Vehicle stability" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
 	val[]: "拖車穩定性" #+ Slider for player modification of trailer stability (COG position).
@@ -3191,6 +3206,9 @@
 	key[]: "map_alignment_op_tooltip" # - Gameplay, Advanced
 	val[]: "選擇世界地圖的對齊方式｡"
 
+	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
+	val[]: "(placeholder) Choose how the Map is explored."
+
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "選擇導航的顯示方式"
 
@@ -3213,7 +3231,7 @@
 	val[]: "選擇是否顯示目前時間的額外時區資訊。<br>選擇\"已停用\"遊戲將顯示預設時間。<br>選擇\"僅顯示時間\"則會套用各地區時區，但不顯示時區簡稱。<br>選擇\"詳細時間資訊\"會套用各地區時區及顯示時區簡稱。<br><br>@@aca_goal_tip@@ 時區詳簡對照:<br>BST 英國夏令時間 (UTC+1)<br>CEST 歐洲中部夏令時間 (UTC+2)<br>EET 歐洲東部時間 (UTC+2)<br>EEST 歐洲東部夏令時間 (UTC+3)<br>MSK 莫斯科標準時間 (UTC+3)<br>TRT 土耳其時間 (UTC+3)<br>WEST 歐洲西部夏令時間 (UTC+1)<br><br>MST 北美山區時區 (UTC-7)<br>MDT 北美山區夏令時區 (UTC-6)<br>PDT 太平洋夏令時間 (UTC-7)<br>CDT 北美中部夏令時區 (UTC-5)"
 
 	key[]: "show_cutscenes_op_tooltip" # - Gameplay, Simple
-	val[]: "啟用遊戲中的過場動畫，通常在重大購買或升級後顯示｡"
+	val[]: "Enables in-game cutscenes typically displayed after truck purchases, garage upgrades or during passenger loading."
 
 	key[]: "show_blockers_op_tooltip" # - Gameplay, Simple
 	val[]: "選擇是否在無法通行的道路上顯示半透明攔截標示｡"
@@ -3237,13 +3255,13 @@
 	val[]: "改變煞車強度"
 
 	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
-	val[]: "透過降低重心來改變卡車的穩定性"
+	val[]: "Changes stability of the vehicle by lowering its centre of gravity."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "透過降低重心來改變拖車的穩定性"
 
 	key[]: "driveshaft_torque_op_tooltip" # - Gameplay, Advanced
-	val[]: "改變傳動系統所產生的扭力強度｡<br><br>提高此設定會增加卡車抬起左前輪並向右\"扭曲\"的現象｡"
+	val[]: "Changes intensity of the torque generated from the driveline.<br><br>Raising this setting will increase the feeling of the vehicle \"twisting\" to the right."
 
 	key[]: "suspension_stiffness_op_tooltip" # - Gameplay, Advanced
 	val[]: "改變底盤懸吊的硬度"
@@ -3279,7 +3297,7 @@
 	val[]: "啟用此選項後，只要踩下油門，引擎就會啟動｡"
 
 	key[]: "auto_park_brake_op_tooltip" # - Gameplay, Advanced
-	val[]: "啟用此選項後，卡車的手煞車預設將會套用 (例如搭乘渡輪、拖吊服務、快速移動等之後)｡"
+	val[]: "When enabled, the vehicle's parking brake is applied by default (after using a ferry, towing to service, quick travelling, etc.)."
 
 	key[]: "auto_drop_axles_op_tooltip" # - Gameplay, Advanced
 	val[]: "必要時將根據車輛重量自動舉升車軸"
@@ -3297,10 +3315,10 @@
 	val[]: "啟用後，ABS 將防止車輪鎖死，並維持車輛的控制並提高煞車能力｡"
 
 	key[]: "traction_control_op_tooltip" # - Gameplay, Advanced
-	val[]: "啟用後，卡車將分配每輪的煞車以防止車輪打滑、轉向不足或轉向過度，來輔助維持對車輛的控制｡"
+	val[]: "When enabled, the vehicle will apply per-wheel braking to prevent wheelspin, understeer or oversteer to help maintain control."
 
 	key[]: "auto_diff_lock_op_tooltip" # - Gameplay, Advanced
-	val[]: "啟用後，如果車輪發生打滑的情況將自動開啟差速鎖以提高牽引力｡"
+	val[]: "When enabled, the vehicle will lock the differential if wheels begin to slip to improve traction."
 
 	key[]: "cruise_control_grid_op_tooltip" # - Gameplay, Advanced
 	val[]: "更改按下對應鍵時，巡航定速提升或降低的速度增量｡<br><br>你可以在\"鍵盤 & 按鍵設定->行車輔助->增加巡航定速系統的速度/降低巡航定速系統的速度\"設置一個按鍵，方便在駕駛中直接改變巡航定速的目標速度｡"
@@ -3315,10 +3333,10 @@
 	val[]: "如果系統偵測到即將發生碰撞，則會啟動緊急煞車｡<br>選擇系統是僅對車輛還是所有障礙物做出反應｡<br><br>你可以在\"鍵盤 & 按鍵設定->行車輔助->切換 緊急煞車輔助系統 (AEBS) 模式\"設置一個按鍵，方便在駕駛中直接切換此功能｡"
 
 	key[]: "lane_assistant_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "選擇車道輔助模式:<br>-\"車道偏離警示\"模式會在你即將偏離車道時發出聲音警告｡<br>-除了聲音警告之外，\"車道維持輔助\"還會自動駕駛你的卡車以防止車輛偏離車道｡<br><br>兩種模式僅在速度高於 55 公里/小時(約 35 英里/小時) 才會啟動｡ 車道維持輔助也會在接通前考慮到方向燈的使用情況｡<br><br>你可以在\"鍵盤 & 按鍵設定->行車輔助->切換 車道輔助模式\"設置一個按鍵，方便在駕駛中直接切換此功能｡<br>"
+	val[]: "Selection of lane assistant modes:<br>- The \"Lane departure warning\" mode audibly warns you when you are about to leave the lane.<br>- In addition to the audible warning, the \"Lane keep support\" also automatically steers your vehicle to keep it from leaving the lane.<br><br>Both modes are only active at speeds above 55 km/h (~35 mph).<br>The Lane Assistant also considers your usage of the turn signals before engaging."
 
 	key[]: "blind_spot_op_tooltip" # - Gameplay, Advanced
-	val[]: "如果你的卡車選配了盲點感測器，即可啟用此功能｡"
+	val[]: "Enables the blind spot sensor functions, if your vehicle is equipped with it."
 
 	key[]: "automatic_headlights_op_tooltip" # - Gameplay, Simple
 	val[]: "啟用後，大燈開關調至到第一格時，大燈將在低光源情況下自動開啟｡"
@@ -3553,17 +3571,22 @@
 	key[]: "lost_function_binding"
 	val[]: "失去了功能分配:" #+ Shown when key was rebound to a different function.
 
+#!{
+	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
+	val[]: "@@keyboard_ico@@"
+#!}
+
 #+ Headers of individual sections
 #@{
 
 	key[]: "truck_controls"
-	val[]: "卡車"
+	val[]: "VEHICLE"
 
 	key[]: "assistant_controls"
 	val[]: "行車輔助"
 
 	key[]: "transmission_controls"
-	val[]: "變速箱"
+	val[]: "TRANSMISSION"
 
 	key[]: "suspension_controls"
 	val[]: "懸吊"
@@ -3575,7 +3598,7 @@
 	val[]: "輔助煞車"
 
 	key[]: "interior_controls"
-	val[]: "內裝"
+	val[]: "INTERIOR"
 
 	key[]: "hud_controls"
 	val[]: "HUD"
@@ -3596,7 +3619,7 @@
 	val[]: "快速選項"
 
 	key[]: "radio_controls"
-	val[]: "收音機"
+	val[]: "AUDIO PLAYER"
 
 	key[]: "convoy_controls"
 	val[]: "聯運"
@@ -3801,16 +3824,22 @@
 	val[]: "音樂播放器"
 
 	key[]: "o_im_radio_next"
-	val[]: "音樂播放器下一個最愛"
+	val[]: "Audio Player Next"
 
 	key[]: "o_im_radio_prev"
-	val[]: "音樂播放器上一個最愛"
+	val[]: "Audio Player Previous"
 
 	key[]: "o_im_radio_vol_up"
 	val[]: "增加音樂播放器音量"
 
 	key[]: "o_im_radio_vol_down"
 	val[]: "降低音樂播放器音量"
+
+	key[]: "o_im_radio_toggle"
+	val[]: "Audio Player Pause / Play"
+
+	key[]: "o_im_radio_favorite"
+	val[]: "Audio Player Add To / Remove From Favorites"
 
 	key[]: "o_im_display"
 	val[]: "儀表板顯示模式" #+ Action for cycling between dashboard display pages/modes.
@@ -3865,7 +3894,7 @@
 	val[]: "概況資訊"
 
 	key[]: "o_im_adjuster"
-	val[]: "調整卡車"
+	val[]: "Vehicle Adjustment"
 
 	key[]: "o_im_services"
 	val[]: "服務 & 調整"
@@ -3970,13 +3999,13 @@
 	val[]: "向前走" #+ Walk forward.
 
 	key[]: "o_im_walk_back"
-	val[]: "向後走" #+ Walk back.
+	val[]: "Back" #+ Walk back.
 
 	key[]: "o_im_walk_left"
-	val[]: "向左走" #+ Walk left.
+	val[]: "Left" #+ Walk left.
 
 	key[]: "o_im_walk_right"
-	val[]: "向右走" #+ Walk right.
+	val[]: "Right" #+ Walk right.
 
 	key[]: "o_im_walk_crouch"
 	val[]: "蹲下" #+ Activate crouch.
@@ -4103,7 +4132,7 @@
 	val[]: "分配用於開啟/關閉自動減速器的按鍵｡"
 
 	key[]: "o_im_lift_axle_op_tooltip"
-	val[]: "分配用於升降車軸的按鍵，如果你的卡車配有可升降車軸｡"
+	val[]: "Assigns button for lifting/dropping the axle, if your vehicle has liftable axle."
 
 	key[]: "o_im_lift_axle_trailer_op_tooltip"
 	val[]: "分配用於升降車軸的按鍵，如果你的拖車配有可升降車軸｡"
@@ -4151,13 +4180,13 @@
 	val[]: "分配用於開啟/關閉遠光燈的按鍵｡"
 
 	key[]: "o_im_beacon_op_tooltip"
-	val[]: "分配用於開啟/關閉警示燈(爆閃燈)的按鍵｡ 如果你的卡車或拖車配置了警示燈(爆閃燈)｡"
+	val[]: "Assigns button for turning on/off the beacon, if your vehicle or trailer is equipped with it."
 
 	key[]: "o_im_horn_op_tooltip"
 	val[]: "分配使用電喇叭的按鍵｡"
 
 	key[]: "o_im_air_horn_op_tooltip"
-	val[]: "分配用於氣壓喇叭的按鍵，如果你的卡車配有氣壓喇叭｡"
+	val[]: "Assigns button for using the air horn, if your vehicle is equipped with it."
 
 	key[]: "o_im_light_horn_op_tooltip"
 	val[]: "分配用於閃爍遠光燈的按鍵｡"
@@ -4229,7 +4258,7 @@
 	val[]: "分配於顯示服務 & 調整選單的按鍵｡"
 
 	key[]: "o_im_adviser_cursor_op_tooltip"
-	val[]: "分配按鍵用於顯示工作狀態、卡車狀態與當地法規等概況資訊，在非聯運模式下也會暫停遊戲。"
+	val[]: "Assigns button for showing quick info about the job status, vehicle condition, and local regulations which also pauses the game when not in a convoy."
 
 	key[]: "o_im_adviser_zoom_in_op_tooltip"
 	val[]: "分配用於在導航內放大的按鍵｡"
@@ -4409,16 +4438,22 @@
 	val[]: "分配用於開啟音訊播放器的按鍵｡"
 
 	key[]: "o_im_radio_next_op_tooltip"
-	val[]: "分配用於變更到下一個喜愛電台串流的按鍵｡"
+	val[]: "Assigns button for playing the next item on the audio player's list while driving."
 
 	key[]: "o_im_radio_prev_op_tooltip"
-	val[]: "分配用於變更到上一個喜愛電台串流的按鍵｡"
+	val[]: "Assigns button for playing the previous item on the audio player's list while driving."
 
 	key[]: "o_im_radio_vol_up_op_tooltip"
-	val[]: "分配用於增加音訊播放器音量的按鍵｡"
+	val[]: "Assigns button for increasing the volume of the audio player while driving."
 
 	key[]: "o_im_radio_vol_down_op_tooltip"
-	val[]: "分配用於降低音訊播放器音量的按鍵｡"
+	val[]: "Assigns button for decreasing the volume of the audio player while driving."
+
+	key[]: "o_im_radio_toggle_op_tooltip"
+	val[]: "Assigns button for pausing and resuming the music while driving."
+
+	key[]: "o_im_radio_favorite_op_tooltip"
+	val[]: "Assigns button for adding or removing radio stations from the favourites while driving."
 
 	key[]: "o_im_nav_map_op_tooltip"
 	val[]: "分配用於開啟世界地圖的按鍵｡"
@@ -4805,7 +4840,7 @@
 	val[]: "眼球追蹤 (未偵測到硬體)" #+ Eye tracking enable checkbox if no eye compatible eye tracking HW is detected
 
 	key[]: "eye_configure"
-	val[]: "配置" #+ Eye tracking configuration button
+	val[]: "Configure" #+ Eye tracking configuration button
 
 	key[]: "visit_tobii"
 	val[]: "參閱 Tobii Gaming" #+ Link to tobii gaming related page
@@ -5075,7 +5110,7 @@
 	val[]: "凝視追蹤終點"
 
 	key[]: "eye_head_drive_yaw_scale"
-	val[]: "頭部追蹤偏航靈敏度 (在駕駛室)"
+	val[]: "頭部追蹤垂直靈敏度 (在駕駛室)"
 
 	key[]: "eye_head_drive_pitch_scale"
 	val[]: "頭部追蹤俯仰靈敏度 (在駕駛室)"
@@ -5231,7 +5266,7 @@
 	val[]: "自動暫停模式" #+ Type of the autopause
 
 	key[]: "eye_autopause_mode_never"
-	val[]: "停用" #+ Autopause is disabled
+	val[]: "Disabled" #+ Autopause is disabled
 
 	key[]: "eye_autopause_mode_presence"
 	val[]: "玩家在場" #+ Autopause if user is not present
@@ -5295,7 +5330,7 @@
 
 	key[]: "brightness"
 	val[]: "亮度 / HDR" #+ Button opening brightness or HDR brightness setup.
-	
+
 	key[]: "brightness_setup_button"
 	val[]: "設置" #+ Text on the brightness button itself.
 
@@ -5518,7 +5553,7 @@
 	val[]: "啟用後，即使距離很遠的物體也能渲染陰影。<br><br><color value=@@clr_txt_d@@>此設定會對效能產生中等影響。"
 
 	key[]: "interior_shadow_op_tooltip" # - Graphics, Advanced
-	val[]: "啟用在卡車內部的夜間動態陰影。 <br><br><color value=@@clr_txt_d@@>此設定會對效能產生中等影響。"
+	val[]: "Enables night-time dynamic shadows in the vehicle interior.<br><br><color value=@@clr_txt_d@@>This setting usually has a moderate impact on performance."
 
 	key[]: "weather_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "調整天氣效果的品質，例如反射｡"
@@ -5565,25 +5600,25 @@
 
 	key[]: "brightness_title"
 	val[]: "亮度設置" #+ Label shown at the top of the screen.
-	
+
 	key[]: "brightness_subtitle"
 	val[]: "調整亮度設置，直到影像細節清晰可見｡"
 
 	key[]: "open_hdr"
 	val[]: "HDR 校準"
-	
+
 	key[]: "brightness_confirm"
 	val[]: "套用"
-	
+
 	key[]: "brightness_reset"
 	val[]: "重置"
-	
+
 #+ Tooltips.
 #@{
 	key[]: "brightness_slider_tooltip"
 	val[]: "調整遊戲整體亮度｡"
 #@}
-	
+
 #@}
 
 #+ Options/HDR
@@ -5592,16 +5627,16 @@
 #@{
 	key[]: "hdr_title"
 	val[]: "HDR 校準"
-	
+
 	key[]: "hdr_subtitle"
 	val[]: "為 HDR(高動態範圍) 校準，調整滑塊直到卡車幾乎不可見｡"
-	
+
 	key[]: "hdr_back"
 	val[]: "返回"
-	
+
 	key[]: "hdr_reset"
 	val[]: "重置"
-	
+
 	key[]: "hdr_continue"
 	val[]: "繼續"
 #@}
@@ -5899,16 +5934,16 @@
 #+ Steering wheel button and axis names
 #@{
 	key[]: "axis_steering"
-	val[]: "轉向" #+ Steering axis of a steering wheel.
+	val[]: "Steering" #+ Steering axis of a steering wheel.
 
 	key[]: "axis_throttle"
-	val[]: "油門" #+ Throttle pedal axis of a steering wheel.
+	val[]: "Throttle" #+ Throttle pedal axis of a steering wheel.
 
 	key[]: "axis_brake"
 	val[]: "Brake" #+ Brake pedal axis of a steering wheel.
 
 	key[]: "axis_clutch"
-	val[]: "離合器" #+ Clutch pedal axis of a steering wheel.
+	val[]: "Clutch" #+ Clutch pedal axis of a steering wheel.
 
 	key[]: "axis_handbrake"
 	val[]: "Handbrake" #+ Handbrake axis of a steering wheel.
@@ -6043,7 +6078,7 @@
 	val[]: "收音機" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "radio"
-	val[]: "收音機" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Audio Player" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "music_player"
 	val[]: "音樂播放器" #+ Button for selecting music player.
@@ -6051,8 +6086,20 @@
 	key[]: "radio_stream"
 	val[]: "廣播電台" #+ Button for selecting online radio.
 
+	key[]: "game_radio"
+	val[]: "Game radio" #+ Button for selecting game radio (offline radio).
+
 	key[]: "radio_changed"
 	val[]: "正在播放 <color value=@@clr_sel@@>$NAME$" #+ Notification that playing track/stream have changed.
+
+	key[]: "stream_safe"
+	val[]: "Stream-safe" #+ Text for enabling stream-safe mode (offline game radios that are designed to avoid content claims)
+
+	key[]: "volume_up"
+	val[]: "Volume Up" #+ Controller hint text for increasing volume
+
+	key[]: "volume_down"
+	val[]: "Volume Down" #+ Controller hint text for decreasing volume
 
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
@@ -6069,6 +6116,26 @@
 	key[]: "empty_radio_hint"
 	val[]: "請參考 <color value=@@clr_sel@@>文件<color value=@@clr_txt@@> 裡的 <color value=@@clr_sel@@>Euro Truck Simulator 2<color value=@@clr_txt@@> 資料夾中的 <color value=@@clr_sel@@>readme.rtf<color value=@@clr_txt@@> 檔案中的教學，來新增你自己的音樂及電台 ｡ "
 
+	key[]: "radio_hint_repeat_favorites"
+	val[]: "Switch between cycling all or favourites only.<br><br>\"Cycle favourites only\" is available when there is at least one favourite item on your list."
+
+	key[]: "radio_cycling_all"
+	val[]: "Cycling all" #+ Text shown if currently we are cycling between all tracks
+
+	key[]: "radio_cycling_favorites"
+	val[]: "Cycling only favourites" #+ Text shown if currently we are cycling between only favorite
+
+	key[]: "radio_hint_online_update"
+	val[]: "Clicking this button refreshes your list of radio streams available for listening online."
+
+	key[]: "music_player_hint_shuffle"
+	val[]: "Switch between normal and shuffled song order."
+
+	key[]: "stream_safe_hint_unmodded"
+	val[]: "Radio station designated to avoid content claims."
+
+	key[]: "stream_safe_hint_modded"
+	val[]: "Community-created radio content marked as stream safe. Not reviewed or guaranteed and may still trigger content claims."
 
 	key[]: "radio_update"
 	val[]: "從線上更新" #+ Button used to update the list of live streams from the web.
@@ -6081,6 +6148,9 @@
 
 	key[]: "music_player_info_title"
 	val[]: "音樂播放器資訊"
+
+	key[]: "my_music"
+	val[]: "My Music"
 
 #+ Music player columns.
 
@@ -6137,13 +6207,13 @@
 	val[]: "工作收入" #+ For example "Job income: E6,526"
 
 	key[]: "wanna_assistance"
-	val[]: "救援服務可以把你和你的卡車帶到$CITY$ ｡  將花費$MONEY$ 並耗時$TIME$ ｡ <br offset=30>你同意嗎？"
+	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "救援服務可以把你和你的卡車帶到$CITY$ ｡  將花費$MONEY$ 並耗時$TIME$ ｡ <br>(費用將由你的雇主支付)<br offset=30>你同意嗎？"
+	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br>(The charge will be covered by your employer.)<br offset=30>Do you agree?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "救援服務可以把你和你的卡車帶到$CITY$ ｡  將花費$MONEY$ 並耗時$TIME$ ｡ <br offset=30>你目前的工作將被取消 ｡ <br offset=30>你同意嗎？"
+	val[]: "Assistance Service can take you and your vehicle to $CITY$. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Your current job will be cancelled.<br offset=30>Do you agree?"
 
 	key[]: "wanna_recover"
 	val[]: "救援服務可以將你的卡車帶到最近的道路上。 需要支付 $MONEY$ 並耗時 $TIME$。<br offset=30>你同意嗎？"
@@ -6285,7 +6355,7 @@
 	val[]: "發現 $BRAND$ 卡車銷售中心！"
 
 	key[]: "service"
-	val[]: "按下此按鍵維修、改裝或塗裝<br>你的卡車或拖車:"
+	val[]: "To repair, upgrade, or paint<br>your vehicle press:"
 
 	key[]: "job_offer"
 	val[]: "按下此按鍵查看工作:"
@@ -6381,7 +6451,7 @@
 	val[]: "關閉引擎！"
 
 	key[]: "stop_truck_short"
-	val[]: "停下你的卡車！"   #+ Quick message shown when sleep was prevented by truck movement.
+	val[]: "Stop the vehicle!"   #+ Quick message shown when sleep was prevented by truck movement.
 
 	key[]: "stop_engine"
 	val[]: "使用此按鍵關閉引擎:"
@@ -6536,7 +6606,7 @@
 	val[]: "舉軸失敗 ｡ <br>聯結的拖車過重 ｡ "
 
 	key[]: "diff_lock_fail"
-	val[]: "差速鎖無法鎖定，減慢車速後再嘗試 ｡ "
+	val[]: "Differential(s) cannot be locked. Slow down the vehicle and try again."
 
 	key[]: "diff_lock_hint"
 	val[]: "如果你的卡車無法移動，差速鎖可能可以幫助你 ｡ <br>按下此按鍵啟動:"
@@ -6617,6 +6687,12 @@
 	key[]: "adv_hud_infotainment_op_tooltip"
 	val[]: "資訊娛樂系統顯示於導航。"
 
+	key[]: "adv_hud_radio"
+	val[]: "Audio Player"
+
+	key[]: "adv_hud_radio_op_tooltip"
+	val[]: "On manual change — the widget appears when you take an action, such as switching stations, or adding a station to your favourites.<br><br>On all changes — the widget appears for every update, including manual actions and automatic track transitions."
+
 	key[]: "adv_hud_finances_line"
 	val[]: "財務" #+ Widget name for the current bank account balance and the last 7 days profit.
 
@@ -6624,7 +6700,13 @@
 	val[]: "顯示銀行總餘額和 7 天利潤流，包括動態收益和罰款。"
 
 	key[]: "adv_hud_damage_line"
-	val[]: "損壞程度" #+ Widget name for displaying vehicle damage.
+	val[]: "Damage" #+ Widget name for displaying vehicle damage.
+
+	key[]: "adv_hud_job_info"
+	val[]: "Job details" #+ Widget name for displaying job info.
+
+	key[]: "adv_hud_chat"
+	val[]: "Chat" #+ Widget name for displaying the convoy chat.
 
 	key[]: "adv_hud_autopark"
 	val[]: "自動停車"
@@ -6644,6 +6726,11 @@
 	key[]: "adv_hud_visible"
 	val[]: "已啟用"
 
+	key[]: "adv_hud_radio_interaction"
+	val[]: "On manual change" #+ HUD audio player widget visibility setting for showing the widget only when the user causes a change
+
+	key[]: "adv_hud_radio_change"
+	val[]: "On all changes" #+ HUD audio player widget visibility setting for showing the widget only when there is any change (e.g. next song automatically plays)
 
 	key[]: "hud_mirrors_none"
 	val[]: "無"
@@ -7104,7 +7191,7 @@
 #@{
 
 	key[]: "skill_mechanical_title"
-	val[]: "環保駕駛"
+	val[]: "Ecodriving"
 
 	key[]: "skill_mechanical_info"
 	val[]: "Your @@skill_mechanical_title@@ skill reduces your fuel consumption."
@@ -8718,10 +8805,10 @@
 	val[]: "發現司機仲介所: "
 
 	key[]: "compman_summary_truck_count"
-	val[]: "卡車擁有數:"
+	val[]: "Trucks owned:"
 
 	key[]: "compman_summary_trailer_count"
-	val[]: "拖車擁有數:"
+	val[]: "Trailers owned:"
 
 	key[]: "compman_no_driver"
 	val[]: "未雇用駕駛員"
@@ -8740,12 +8827,12 @@
 
 	key[]: "compman_graph_tooltip"
 	val[]: "公司過去 7 天的利潤。 將滑鼠懸停在每個點上即可查看每日利潤數值。"
-	
+
 	key[]: "compman_graph_not_available"
 	val[]: "圖表將在第一天結束後提供。"
 
 	key[]: "compman_op_economy_summary"
-	val[]: "經濟概況"
+	val[]: "Economy Summary"
 
 	key[]: "compman_op_company_branding"
 	val[]: "公司品牌商標"
@@ -8760,7 +8847,7 @@
 	val[]: "你不能在工作進行中快速移動！"
 
 	key[]: "compman_qt_notruck"
-	val[]: "你不能進行快速移動，因為你現在沒有駕駛任何自己的卡車！"
+	val[]: "You cannot quick travel since you don't have a truck, coach or car!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "你想要快速移動到所選擇的車庫中嗎？"
@@ -9130,13 +9217,13 @@
 #@{
 
 	key[]: "truckman_sell_t"
-	val[]: "出售卡車"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "SELL VEHICLE"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_reallysell"
 	val[]: "你確定要以 $MONEY$ 出售你目前的 $TRUCK$ 嗎？"
 
 	key[]: "truckman_msg_nosell"
-	val[]: "你不能在工作中賣掉你正在駕駛的卡車！請先完成目前的工作後再試 ｡ "
+	val[]: "You cannot sell the vehicle you're driving while on a job! Finish your job and then try again."
 
 	key[]: "truckman_total_restoration_t"
 	val[]: "全車檢修"  #+ Message box title. Please keep in upper case where possible.
@@ -9168,10 +9255,10 @@
 #@{
 
 	key[]: "truckman_change_t"
-	val[]: "切換卡車" #+ Message box title. Please keep in upper case where possible.
+	val[]: "CHANGE VEHICLE" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nochange"
-	val[]: "你不能在工作中切換你的卡車！請先完成目前的工作 ｡"
+	val[]: "You cannot change your vehicle while on a job! Finish your job first."
 
 	key[]: "truckman_conf_drive"
 	val[]: "你確定要指派 $TRUCK_SRC$ 到 $CITY_DST$ 並且駕駛 $TRUCK_DST$？"
@@ -9208,7 +9295,7 @@
 	val[]: "複製配置" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nouse"
-	val[]: "這輛卡車不能作為複製配置的來源，因為它缺少了某些資料。很可能是因為DLC或MOD被移除 ｡ <br><br>請重新安裝 MOD 或 DLC ｡"
+	val[]: "This vehicle cannot be used as copy configuration source due to missing data which is most likely caused by either MOD or DLC removal.<br><br>Reinstall MOD/DLC."
 #@}
 
 # End of: "Truck management screen"
@@ -9237,7 +9324,7 @@
 	val[]: "司機分配"
 
 	key[]: "driverman_current_job"
-	val[]: "目前工作"
+	val[]: "Current job"
 
 	key[]: "driverman_no_job"
 	val[]: "無運輸任務進行中"
@@ -9246,7 +9333,7 @@
 	val[]: "技能訓練"
 
 	key[]: "driverman_op_player_skills"
-	val[]: "技能"
+	val[]: "Skills"
 
 	key[]: "driverman_skill_training_t"
 	val[]: "技能訓練"
@@ -9262,7 +9349,7 @@
 
 	key[]: "relocate_together"
 	val[]: "將司機與其所屬卡車一併調動。"
-	
+
 	key[]: "skill_in_training"
 	val[]: "<color value=@@clr_green@@>正在訓練的技能:"
 
@@ -10712,31 +10799,31 @@
 
     key[]: "job_detail_word"
 	val[]: "工作資訊"
-	
+
 	key[]: "job_detail_word_t"
 	val[]: "工作資訊"
 
 	key[]: "mapping_options_word"
 	val[]: "按鍵設定"
-	
+
 	key[]: "quick_info_word"
 	val[]: "概況資訊"
 
 	key[]: "quick_info_word_t"
 	val[]: "概況資訊"
-	
+
 	key[]: "damage_word_t"
 	val[]: "損壞"
 
 	key[]: "widget_options_word"
 	val[]: "小工具選項"
-	
+
 	key[]: "current_country_info_t"
 	val[]: "當地法規"
-	
+
 	key[]: "no_job_taken"
 	val[]: "目前無承接任何工作"
-	
+
 	key[]: "searching_for_navigation"
 	val[]: "導航搜尋中..."
 #@}
@@ -10826,7 +10913,7 @@
 
 	key[]: "intro_garage_5"
 	val[]: "祝你好運！"
-	
+
 
 	key[]: "desktop_tut_t"
 	val[]: "功能已解鎖"
@@ -11185,16 +11272,16 @@
 #@{
 
 	key[]: "wiz_gb_simple"
-	val[]: "這是為鍵盤設計的（但不局限於鍵盤）最簡單的控制方式，按上箭頭前進，按下箭頭制動和倒車 ｡ 此模式中的自動變速箱將為你打理一切——全自動的檔位控制將不需要煩惱打檔的問題 ｡ "
+	val[]: "Press FORWARD to move ahead, and press BACK to brake or reverse. The gearbox automatically manages everything else, handling transitions between driving, braking, and reversing, as well as selecting the appropriate gears."
 
 	key[]: "wiz_gb_automatic"
-	val[]: "此模式是現實中卡車的自動換擋電子變速箱，你將手動在前進檔 ､ 空檔和倒擋之間進行切換 ｡ 當你打進檔位之後請按照自動檔的方式駕駛，車輛將根據路況自動選擇合適的檔位 ｡ "
+	val[]: "Use the buttons to switch between driving forward, neutral, or reversing. Then press the accelerator and let the automatic transmission handle gear changes."
 
 	key[]: "wiz_gb_sequential"
-	val[]: "手排就是最常見的手動變速箱，你將在每一個檔位之間手動切換 ｡ 此模式難度稍為困難，但你將可以完全控制你的卡車來實現最佳的駕駛性能，同時可以更充分的面對突發狀況 ｡ "
+	val[]: "Manually shift gears up and down to select each individual gear within the transmission. This configuration provides full control over the vehicle’s gearbox."
 
 	key[]: "wiz_gb_hshifter"
-	val[]: "H-shifter 專門為羅技G25 ､ 羅技G27 ､ Thrusmaster TH8RS遊戲控制器設計的操作模式，讓玩家進行完全擬真的變速箱操作 ｡ 此模式將比手排更加有挑戰性，但體驗更真實 ｡ 此模式同時要求配有離合器 ｡ "
+	val[]: "Select the desired gear directly. This offers the most realistic configuration. A physical H-pattern shifter is recommended and requires clutch input."
 #@}
 
 #+ Shown when feature requires a gamming controller.
@@ -11247,7 +11334,7 @@
 #+ Configuration complete page
 #@{
 	key[]: "wiz_cfg_done"
-	val[]: "遊戲設定已生效 ｡ 你可以在控制器設置頁改變這些設定 ｡ "
+	val[]: "The game is now configured and you can continue. You can change the configuration later in Options."
 
 	key[]: "wiz_cfg_steam"
 	val[]: "您可以使用Steam用戶端檢查並配置此控制器的按鈕和軸圖表 ｡  Steam的遊戲手把設置可在 Steam > 收藏庫 > Euro Truck Simulator 2 > 控制器 配置中找到 ｡ "
@@ -12300,7 +12387,7 @@
 	val[]: "上傳至 World of Trucks"
 
 	key[]: "photo_album_action_delete"
-	val[]: "刪除"
+	val[]: "Delete"
 
 	key[]: "photo_album_overlay_menu"
 	val[]: "相片處理"
@@ -12324,7 +12411,7 @@
 	val[]: "無法播放該城市簡介 ｡  請確保你已啟用對應的DLC ｡"
 
 	key[]: "photo_album_tooltip_dlc_required"
-	val[]: "必須的DLC"
+	val[]: "Required DLC"
 
 	key[]: "photo_album_city_non_visited_tooltip"
 	val[]: "你還沒有去過這座城市 ｡"
@@ -12336,19 +12423,19 @@
 	val[]: "你還沒有造訪及觀看過此景觀動畫 ｡"
 
 	key[]: "photo_album_city_dlc_locked"
-	val[]: "不可用" #+ the actual ingame text is: DLC XY not available.
+	val[]: "not available" #+ the actual ingame text is: DLC XY not available.
 
 	key[]: "photo_album_city_not_visited"
 	val[]: "你還沒有造訪過這座城市"
 
 	key[]: "open_wotr_profile"
-	val[]: "在 World of Trucks 上查看"
+	val[]: "View on World of Trucks"
 
 	key[]: "photo_album_no_screenshot_warning"
 	val[]: "Your Gallery is empty. Use Photo Mode to capture images."
 
 	key[]: "link_locked_msg_photo_mode"
-	val[]: "你必須要先為自己分配一輛卡車後才能使用拍照模式 ｡"
+	val[]: "To access the Photo Mode you must have a vehicle assigned first."
 
 	key[]: "photo_album_delete_failed"
 	val[]: "Failed to delete the image due to an unexpected error."
@@ -12378,7 +12465,7 @@
 	val[]: "截圖圖庫"
 
 	key[]: "photo_album_upload_selected_to_wotr"
-	val[]: "上傳至指定展位"
+	val[]: "Upload to selected slot"
 
 	key[]: "photo_album_wotr_upload_info"
 	val[]: "你可以將此圖片上傳至 World of Trucks 的網站 ｡<br>選擇以下的網路展位並點擊上傳 ｡"
@@ -12450,25 +12537,25 @@
 	val[]: "時間和天氣"
 
 	key[]: "photomode_light_adjustment"
-	val[]: "燈光調整"
+	val[]: "LIGHT ADJUSTMENT"
 
 	key[]: "photomode_tooltip_light1"
-	val[]: "駐車燈"
+	val[]: "Parking lights"
 
 	key[]: "photomode_tooltip_light2"
-	val[]: "近光燈"
+	val[]: "Low beam"
 
 	key[]: "photomode_tooltip_light3"
-	val[]: "遠光燈"
+	val[]: "High beam"
 
 	key[]: "photomode_tooltip_light4"
-	val[]: "警示燈"
+	val[]: "Beacon"
 
 	key[]: "photomode_tooltip_light5"
-	val[]: "前輔助燈"
+	val[]: "Front auxiliary"
 
 	key[]: "photomode_tooltip_light6"
-	val[]: "車頂輔助燈"
+	val[]: "Roof auxiliary"
 #@}
 
 #+ Photo Mode overlay helper.
@@ -12501,10 +12588,10 @@
 	val[]: "顯示操作指南"
 
 	key[]: "photo_mode_help_move"
-	val[]: "移動"
+	val[]: "Move"
 
 	key[]: "photo_mode_help_look"
-	val[]: "查看"
+	val[]: "Look"
 
 	key[]: "photo_mode_help_take_picture"
 	val[]: "拍照"
@@ -12529,10 +12616,10 @@
 #@{
 
 	key[]: "photo_no_drive_t"
-	val[]: "沒有卡車" #+ Message box title. Please keep in upper case where possible.
+	val[]: "NO VEHICLE" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "photo_no_drive"
-	val[]: "你現在不能拍攝卡車的照片，因為你一輛卡車也沒有！你必須購買一輛或從車隊裡選擇一輛 ｡ "
+	val[]: "You cannot take pictures of a vehicle because you don't have one! You must purchase one or take one from your fleet."
 #@}
 
 #+ Screenshot manager
@@ -13286,7 +13373,7 @@
 	val[]: "快速移動"
 
 	key[]: "link_locked_msg_quick_travel"
-	val[]: "你需要先購買一輛卡車才能進入快速移動頁面 ｡ "
+	val[]: "To access the Quick Travel you must have a vehicle assigned first."
 
 	key[]: "select_quick_travel_destination"
 	val[]: "選擇快速移動目的地"
@@ -13313,16 +13400,16 @@
 	val[]: "您的卡車不適合快速移動 ｡  修理你的拖車纜線 ｡ "
 
 	key[]: "quick_travel_cond_repair_truck"
-	val[]: "您的卡車不適合快速移動 ｡  請前往服務廠或請求救援服務 ｡"
+	val[]: "Your vehicle is not in a condition for quick travel. Visit service or call for an assistance."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "您的拖車不適合快速移動 ｡  請前往服務廠或請求救援服務 ｡"
 
 	key[]: "quick_travel_cond_truck_fuel"
-	val[]: "您的卡車無法快速旅行 ｡  給你的卡車加油或請求救援服務 ｡ "
+	val[]: "Your vehicle is not in a condition for quick travel. Refuel your truck or call for an assistance."
 
 	key[]: "quick_travel_cond_truck_fallen"
-	val[]: "您的卡車無法快速旅行 ｡  請求救援服務 ｡ "
+	val[]: "Your vehicle is not in a condition for quick travel. Call for an assistance."
 
 	key[]: "quick_travel_cond_trailer_fallen"
 	val[]: "您的拖車無法快速旅行 ｡  請求救援服務 ｡ "
@@ -13331,7 +13418,7 @@
 	val[]: "你目前的拖車在目的地的州份不合法｡ 拖車將被存放在車庫裡｡" #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
 
 	key[]: "quick_travel_illegal_trailer_dismiss_confirm"
-	val[]: "確定"
+	val[]: "Confirm"
 
 	key[]: "quick_travel_no_service"
 	val[]: "此城市沒有任何保修站"
@@ -13493,7 +13580,7 @@
 	val[]: "無法找到相關的物品" #+ Text shown when there are no accessories found by filters.
 
 	key[]: "no_truck_found"
-	val[]: "無法找到相關的卡車" #+ Text shown when there are no trucks found by filters.
+	val[]: "Unable to find vehicles matching your filters" #+ Text shown when there are no trucks found by filters.
 #@}
 
 #+ Strings related to job filtering feature
@@ -14154,7 +14241,7 @@
 	val[]: "全面檢修"
 
 	key[]: "trailerman_status"
-	val[]: "狀態:" #+ Current trailer status.
+	val[]: "Status:" #+ Current trailer status.
 
 	key[]: "trailer_status_private"
 	val[]: "私人" #+ Trailer status name - private - only can be used by player.
@@ -14178,16 +14265,16 @@
 	val[]: "目前貨物:" #+ Currently loaded cargo statistic.
 
 	key[]: "trailerman_all_time_stats"
-	val[]: "累積總計" #+ All time statistics section title.
+	val[]: "All time statistics" #+ All time statistics section title.
 
 	key[]: "trailerman_stats_dist_on_job"
-	val[]: "工作行駛距離:" #+ Total distance this trailer driven during jobs.
+	val[]: "Distance on job:" #+ Total distance this trailer driven during jobs.
 
 	key[]: "trailerman_stats_cargo_transp"
-	val[]: "累積已運送貨物量:" #+ Total number of transported cargoes.
+	val[]: "Cargo transported:" #+ Total number of transported cargoes.
 
 	key[]: "trailerman_stats_weight_transp"
-	val[]: "累積已運送重量:" #+ Total weight transported by the trailer.
+	val[]: "Weight transported:" #+ Total weight transported by the trailer.
 
 	key[]: "trailerman_col_type"
 	val[]: "種類" #+ Title of the trailer type column.
@@ -14274,7 +14361,7 @@
 	val[]: "現在沒有新的拖車改裝可供使用 ｡ "
 
 	key[]: "link_locked_msg_truck_diag"
-	val[]: "你必須要先為自己分配一輛卡車後才能使用診斷服務｡"
+	val[]: "To access the Diagnostics you must have a vehicle assigned first."
 
 	key[]: "link_locked_msg_truck_dealer_map"
 	val[]: "你還沒有發現任何卡車銷售中心 ｡ "
@@ -14370,7 +14457,7 @@
 #+ Message box shown when user requests to use total restoration of trailer in trailer manager.
 #@{
 	key[]: "trailerman_total_restoration_t"
-	val[]: "全車檢修"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "TOTAL RESTORATION"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_total_restoration_service"
 	val[]: "請直接參訪卡車維修中心來修復正在使用的拖車 ｡" #+ Message shown when player tries to restore trailer that he is using.
@@ -14379,7 +14466,7 @@
 	val[]: "這輛拖車處於完美的狀態｡" #+ Message shown when player tries to restore trailer in perfect condition.
 
 	key[]: "trailerman_total_restoration"
-	val[]: "完全修復總額:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>要求完全拆卸和修復所有磨損的零件，使車輛恢復原始狀態 ｡ 這比建造一輛全新的車輛提出了更大的挑戰 ｡" #+ Content of the screen, explaining total restoration.
+	val[]: "Total restoration price:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Return the vehicle to pristine condition by requesting a complete disassembly and restoration of all worn components. It poses a greater challenge than constructing an entirely new vehicle." #+ Content of the screen, explaining total restoration.
 #@}
 
 #+ Trailer detail tooltip.
@@ -14463,7 +14550,7 @@
 #+ Vehicle adjustments related texts
 #@{
 	key[]: "vehicle_adjustments_t"
-	val[]: "車輛調整"
+	val[]: "VEHICLE ADJUSTMENTS"
 
 	key[]: "adj_mirrors"
 	val[]: "調整後視鏡"
@@ -14500,7 +14587,7 @@
 	val[]: "食品槽"
 
 	key[]: "fueltank"
-	val[]: "油罐"
+	val[]: "Fuel Tank"
 
 	key[]: "gastank"
 	val[]: "高壓罐槽體"
@@ -14528,7 +14615,7 @@
 	val[]: "散貨"
 
 	key[]: "tr_tank"
-	val[]: "罐車"
+	val[]: "Tank"
 
 #@}
 
@@ -14556,7 +14643,7 @@
 	val[]: "液體食品加工廠"
 
 	key[]: "body_cargo_types_fueltank"
-	val[]: "易燃液體"
+	val[]: "Flammable liquids"
 
 	key[]: "body_cargo_types_gastank"
 	val[]: "易燃氣體，以液態運輸"
@@ -14972,7 +15059,7 @@
 #+ Trailer browser
 #@{
 	key[]: "select_option_to_preview_cargo_model"
-	val[]: "無" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
+	val[]: "None" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
 	val[]: "找不到拖車" #+ Text shown if there are no trailer of given brands found.
@@ -15314,7 +15401,7 @@
 	val[]: "你沒有一輛適合當前貨物的拖車 ｡ "
 
 	key[]: "mp_job_missing_truck"
-	val[]: "只能使用自己的卡車接受工作 ｡ "
+	val[]: "Can be only taken with your own vehicle."
 
 	key[]: "mp_job_missing_trailer"
 	val[]: "所分配的拖車不相容 ｡ "
@@ -15663,7 +15750,7 @@
 	val[]: "在線體驗"
 
 	key[]: "mp_experience"
-	val[]: "請注意，在線遊戲期間的遊戲體驗可能會發生變化 ｡  建議家長指導 ｡ <nowrap><link url=@@privacy_url@@ color=@@clr_link@@>隱私政策</link>$SHORTCUT1$</nowrap>適用 ｡<br><br>在線遊戲時，請遵守<nowrap><link url=@@conduct_url@@ color=@@clr_link@@>行為準則</link>$SHORTCUT2$</nowrap>並對您的卡車司機同伴保持友善和尊重，讓每個人都可以獲得最佳的遊戲體驗 ｡"
+	val[]: "Please note that the game experience may change during online play. Parental guidance is advised. The <nowrap><link url=@@privacy_url@@ color=@@clr_link@@>Privacy Policy</link>$SHORTCUT1$</nowrap> applies.<br><br>When online, follow the <nowrap><link url=@@conduct_url@@ color=@@clr_link@@>Code of Conduct</link>$SHORTCUT2$</nowrap> and be kind and respectful to your fellow drivers so the experience is pleasant and optimal for everyone."
 
 	key[]: "session_friends"
 	val[]: "朋友"
@@ -16135,13 +16222,13 @@
 	val[]: "工作設備:"
 
 	key[]: "equipment_provided_truck_and_trailer"
-	val[]: "提供的卡車和拖車"
+	val[]: "Provided vehicle and trailer"
 
 	key[]: "equipment_owned_truck_provided_trailer"
-	val[]: "擁有的卡車"
+	val[]: "Owned vehicle"
 
 	key[]: "equipment_owned_truck_and_trailer"
-	val[]: "擁有的卡車和拖車"
+	val[]: "Owned vehicle and trailer"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "您目前離來源公司位置太遠 ｡  您想快速旅行嗎？<br><br>快速前往目的地: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>花費: <color value=@@clr_sel@@>$COST$"
@@ -16222,7 +16309,7 @@
 	val[]: "聯運總結"
 
 	key[]: "convoy_concluded_info"
-	val[]: "您的聯運大廳已結束 ｡  您的進度包括您的銀行狀態、工作經歷、技能、晉升、獲得的卡車和拖車配置以及您公司司機的設備和進度 ｡"
+	val[]: "Your Convoy session is concluded. Your progress includes your bank state, job history, skills, advancements, acquired vehicles configurations as well as your company driver’s equipment and progress."
 
 	key[]: "convoy_concluded_warning"
 	val[]: "選擇接受進度以繼續所有收集的進度 ｡  或者您可以恢復在此大廳之前的自動存檔或載入任何其他存檔 ｡ "
@@ -16888,7 +16975,7 @@
 	val[]: "移除最後一個標記"
 
 	key[]: "overlay_reset_route"
-	val[]: "重置導航"
+	val[]: "Reset navigation"
 
 	key[]: "overlay_map_filters"
 	val[]: "篩選"
@@ -17365,7 +17452,7 @@
 	val[]: "Controller name" #+ Compatible controller name header.
 
 	key[]: "compatible_controller_type"
-	val[]: "控制器種類" #+ Compatible controller type header.
+	val[]: "Type" #+ Compatible controller type header.
 
 	key[]: "controller_binding_label"
 	val[]: "Binding" #+ Controller Bindings options screen column header for the currently bound button.
@@ -17449,7 +17536,7 @@
 	val[]: "系統"
 
 	key[]: "desktop_menu_category_leave"
-	val[]: "離開"
+	val[]: "Leave"
 #@}
 
 #+ Menu upper bar
@@ -17530,7 +17617,7 @@
 	val[]: "瀏覽、檢視和配置要購買的可用拖車 ｡"
 
 	key[]: "radio_desc" # - tooltip for explaining what the radio is - feature is active
-	val[]: "享受你最喜愛的線上廣播電台或載入你自己的音樂 ｡"
+	val[]: "Enhance your driving experience with some music."
 
 	key[]: "link_locked_msg_radio" # - tooltip for when the radio is not yet unlocked
 	val[]: "電台不可用 ｡"
@@ -17548,13 +17635,13 @@
 #+ Intro Scene. Only translate into officially supported languages.
 #@{
 	key[]: "health_warning"
-	val[]: "Health warning"
+	val[]: "健康警告"
 
 	key[]: "health_warning_description"
-	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
-	
+	val[]: "極少數的使用者在接觸到某些閃爍的燈光或光影圖案時，會出現癲癇症狀或失去意識。這類人士在觀看特定影像或遊玩電子遊戲時可能會突然出現癲癇症狀。如果您或親屬曾在接觸閃光時出現與癲癇相關的症狀（發作或失去意識），請在遊玩前先徵詢專業醫護人員意見、並採取所有必要的預防措施。<br offset=20>如果您或小孩出現下列症狀：暈眩、視覺改變、眼睛或肌肉抽搐、失去意識、迷失方向、痙攣或不自主的動作，請立即停止遊戲、並徵詢專業醫護人員意見。"
+
 	key[]: "trademark"
-	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
+	val[]: "遊戲中所有車輛上的品牌名稱、商標、註冊商標、標誌及符號均屬於其各自合法所有者的財產，並經由善意許可使用。 International® 以及所有 International Truck 相關商標，均為 INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC 授權使用的商標。 VOLVO 商標和設計是 AB Volvo Group 所註冊或授權的權利，並根據許可授權使用。 MACK 商標及設計為 AB Volvo Group 的註冊權利，並根據許可授權使用。 Western Star 為 Daimler Trucks North America LLC 的商標，經許可由 SCS Software s.r.o. 使用。 Freightliner 為 Daimler Trucks North America LLC 的商標，經許可由 SCS Software s.r.o. 使用。"
 #@}
 
 #+ Save manager errors
@@ -17591,3 +17678,123 @@
 	key[]: "dlc_lost_return_forced" #+ Message shown in game, when a DLC has been removed.
 	val[]: "Access to some DLCs has been lost. You will now leave to Title Screen to reflect the changes in the content.<br><br>Your progress will be saved automatically."
 #@}
+
+#+ Time skip feature
+#@{
+	key[]: "time_skip_t"
+	val[]: "RESTING"
+
+	key[]: "time_skip_hours"
+	val[]: "Number of hours to skip"
+
+	
+	key[]: "time_skip_current_time"
+	val[]: "Current time"
+
+	key[]: "time_skip_wake_up_time"
+	val[]: "Rest ends"
+
+
+	key[]: "time_skip_resting_title"
+	val[]: "Rest State"
+
+	key[]: "time_skip_mandatory_break_title"
+	val[]: "Mandatory Break"
+
+	key[]: "time_skip_job_delivery_title"
+	val[]: "Delivery Status"
+
+	key[]: "time_skip_charging_title"
+	val[]: "Battery Charge"
+
+	
+	key[]: "time_skip_to_next_mandatory_break_ok"
+	val[]: "in $TIME$"
+
+	key[]: "time_skip_to_next_mandatory_break_not_ok"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>in $TIME$</font>"
+
+
+	key[]: "time_skip_mandatory_break_complied"
+	val[]: "Complied"
+
+	key[]: "time_skip_mandatory_break_not_complied"
+	val[]: "Not complied"
+
+
+	key[]: "time_skip_delivery_on_time"
+	val[]: "On time"
+
+	key[]: "time_skip_delivery_late"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>Risk of late delivery</font>"
+
+
+	key[]: "time_skip_rest_tired"
+	val[]: "Tired"
+
+	key[]: "time_skip_rest_ok"
+	val[]: "Rested"
+
+	key[]: "time_skip_rest_full"
+	val[]: "Fully rested"
+
+	
+	key[]: "time_skip_tooltip_mandatory_break_not_met"
+	val[]: "This rest won’t meet the mandatory break requirements. You will have $LEFT_TIME$ left until the next mandatory break."
+
+	key[]: "time_skip_tooltip_mandatory_break_complied"
+	val[]: "This rest will meet the mandatory break requirements. The next one will be in <color value=@@clr_sel@@>$DRIVE_TIME$</color> hours."
+
+	key[]: "time_skip_tooltip_mandatory_break_cont"
+	val[]: "For every <color value=@@clr_sel@@>$DRIVE_TIME$</color> hours of driving, you must take a mandatory break for at least <color value=@@clr_sel@@>$BREAK_TIME$</color> hours to avoid getting fined."
+	
+
+	key[]: "time_skip_tooltip_job_on_time"
+	val[]: "After the rest and the estimated drive time to the destination, you will have <color value=@@clr_sel@@>$LEFT_TIME$</color> remaining on the job."
+	
+	key[]: "time_skip_tooltip_job_late"
+	val[]: "After the rest and the estimated drive time to the destination, the delivery will be late by <color value=@@clr_red@@>$LEFT_TIME$</color>."
+
+	key[]: "time_skip_max_sleep_reached"
+	val[]: "<color value=@@clr_red@@>You will be fully rested</color>"
+
+# shown in job detail widget and pause screen	
+	key[]: "job_eta"
+	val[]: "Estimated Arrival"
+
+	key[]: "job_delay"
+	val[]: "Delay"
+
+# mandatory break needed window shown when changing vehicle mode
+	key[]: "time_skip_mandatory_break_t"
+	val[]: "MANDATORY REST NEEDED"
+
+	key[]: "time_skip_mandatory_break_needed"
+	val[]: "The vehicle hasn’t been parked long enough to complete your mandatory rest.<br><br><color value=@@clr_sel@@>$TIME$ of mandatory break left<br><br><color value=@@clr_txt@@>Do you want to rest?"
+
+# mandatory break notifications
+	key[]: "mandatory_break_soon"
+	val[]: "It’s time to take your mandatory break.<br>You should find a parking spot and rest!"
+
+	key[]: "mandatory_break_overdue"
+	val[]: "Exceeded driving time without mandatory break.<br>You should find a parking spot and rest!"
+
+	key[]: "offence_mandatory_break"
+	val[]: "Violation of mandatory break."
+
+# shown in options
+
+	key[]: "mandatory_break_simulation"
+	val[]: "Mandatory Break simulation"
+
+	key[]: "mandatory_break_simulation_op_tooltip"
+	val[]: "When enabled, you must take regular breaks from driving.<br><br>Avoiding mandatory breaks will result in traffic offences."
+
+	key[]: "rest_state_simulation"
+	val[]: "Rest State simulation"
+	
+	key[]: "rest_state_simulation_op_tooltip"
+	val[]: "When enabled, you will experience the effects of fatigue over time.<br><br>You will need to rest to recover."
+#@}
+
+

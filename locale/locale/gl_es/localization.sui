@@ -22,6 +22,9 @@
 
 	key[]: "tos_url"
 	val[]: "https://www.worldoftrucks.com/terms"
+
+	key[]: "privacy_readonly_url"
+	val[]: "https://americantrucksimulator.com/privacy_readonly.php"
 #!}
 
 #+ Map names
@@ -111,10 +114,10 @@
 	val[]: "Pintura" #+ Header of list containing all paint jobs.
 
 	key[]: "brand_t"
-	val[]: "DESEÑO DO CAMIÓN"
+	val[]: "DESEÑO DO VEHÍCULO"
 
 	key[]: "brand"
-	val[]: "Deseño do camión"
+	val[]: "Deseño do vehículo"
 
 	key[]: "basket_t"
 	val[]: "PEDIDO" #+ Content of the basket.
@@ -122,16 +125,16 @@
 #+ Truck analysis feature - truck konfigurator and pop-up
 
 	key[]: "truck_analysis_t"
-	val[]: "ANÁLISE DO CAMIÓN" #+ Header of the widget in truck configurator
+	val[]: "ANÁLISE DO VEHÍCULO" #+ Header of the widget in truck configurator
 
 	key[]: "truck_analysis_popup_t"
-	val[]: "ANÁLISE DO CAMIÓN" #+ Header of the pop-up when taking heavy cargo
+	val[]: "ANÁLISE DO VEHÍCULO" #+ Header of the pop-up when taking heavy cargo
 
 	key[]: "current_truck_params"
-	val[]: "Configuración do camión" #+ Header inside the truck analysis widget for truck parameters
+	val[]: "Configuración do vehículo" #+ Header inside the truck analysis widget for truck parameters
 
 	key[]: "current_truck_parameters"
-	val[]: "Configuración do camión" #+ Header inside the truck analysis pop-up for truck parameters
+	val[]: "Configuración do vehículo" #+ Header inside the truck analysis pop-up for truck parameters
 
 	key[]: "normal_cargo"
 	val[]: "Carga normal" #+ name of the bar for normal cargo suitability
@@ -188,7 +191,7 @@
 	val[]: "Estás a punto de realizar un traballo de carga pesada. Revisa a configuración actual do teu camión para asegurar que está preparado para a tarefa." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
 	key[]: "truck_analysis_info_tooltip"
-	val[]: "Tendo en conta o teu transporte esperado, configura o teu camión para optimizalo de acordo a unha combinación de condución económica e limitacións técnicas e legais." #+  General tooltip description of Truck Analysis feature
+	val[]: "Tendo en conta o teu transporte típico esperado, configura o teu vehículo para optimizalo de acordo a unha combinación de condución económica e limitacións técnicas e legais." #+  General tooltip description of Truck Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Optimizado para o transporte de cargas de peso lixeiro e medio" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -197,10 +200,10 @@
 	val[]: "Optimizado para cargas pesadas e transportes especiais" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Habilidade do teu camión de manobrar en zonas con pouco espazo" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Habilidade do teu vehículo de manobrar en zonas con pouco espazo" #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Tren motor do camión optimizado para un mellor ascenso e descenso de pendentes" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Tren motor do vehículo optimizado para un mellor ascenso e descenso de pendentes" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Habilidade mellorada para superar superficies bacheadas e irregulares" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -230,7 +233,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "MELLORAS DE CAMIÓNS" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "MELLORAS DE VEHÍCULOS" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "MELLORAS DO REMOLQUE" #+ Title of the screen. Please keep in upper case where possible."
@@ -259,7 +262,7 @@
 
 
 	key[]: "truck_action_t"
-	val[]: "TALLER DE CAMIÓNS" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
+	val[]: "TALLER" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
 
 #+ Truck service screen.
 #+
@@ -273,7 +276,7 @@
 	val[]: "Taller" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_service_about"
-	val[]: "Mantemento e arranxos do camión. Un bo condutor mantén sempre o seu vehículo en condicións óptimas." #+ Help message associated with service icon.
+	val[]: "Mantemento e arranxos do vehículo. Un bo condutor mantén sempre o seu vehículo en condicións óptimas." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
 	val[]: "INFORME DE DANOS" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
@@ -285,7 +288,7 @@
 	val[]: "Substituír todo" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
 	key[]: "truck_service_truck_t"
-	val[]: "INFORME DE DANOS DO CAMIÓN" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	val[]: "INFORME DE DANOS DO VEHÍCULO" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "INFORME DE DANOS DO REMOLQUE" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -294,7 +297,7 @@
 	val[]: "Confirmar" #+ Button which confirms selected actions.
 
 	key[]: "truck_damage"
-	val[]: "Dano do camión" #+ Price for the truck damage
+	val[]: "Danos do vehículo" #+ Price for the truck damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -303,13 +306,13 @@
 #@{
 
 	key[]: "truck_config_t"
-	val[]: "CONFIGURADOR DE CAMIÓN" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "CONFIGURADOR DE VEHÍCULOS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "truck_config"
-	val[]: "Configurador de camión" #+ Icon allowing player to upgrade the truck.
+	val[]: "Configurador de vehículos" #+ Icon allowing player to upgrade the truck.
 
 	key[]: "truck_config_about"
-	val[]: "Xa sabes, sempre hai algo que podes axustar ou pintar para sentirte mellor co teu camión." #+ Help message associated with upgrade icon.
+	val[]: "Xa sabes, sempre hai algo que podes axustar ou pintar para sentirte mellor co teu vehículo." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
 	val[]: "Prezo" #+ Label of line with combined price of all new parts in basket.
@@ -321,7 +324,7 @@
 	val[]: "Escolle a categoría de mellora dende o menú superior." #+ Text shown if user did not select any component category.
 
 	key[]: "select_pin"
-	val[]: "Escolle unha parte do camión para ollar accesorios compatíbeis."
+	val[]: "Escolle unha parte do vehículo para ollar accesorios compatíbeis."
 
 	key[]: "tc_orig_price"
 	val[]: "Prezo orixinal:" #+ Followed by the price of the original configuration of the new truck.
@@ -408,7 +411,7 @@
 	val[]: "Diagnóstico do vehículo" #+ Icon allowing player to show damage on the truck.
 
 	key[]: "truck_diag_about"
-	val[]: "Ver información do teu camión e o seu estado actual."
+	val[]: "Ver información do teu vehículo e o seu estado actual."
 
 	key[]: "truck_diag_warning"
 	val[]: "O teu vehículo atópase en malas condicións. Arránxao o antes posible."
@@ -496,7 +499,7 @@
 	val[]: "Tes varios artigos no teu pedido!<br><br>Queres cancelar todas as novas modificacións?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
 	key[]: "borrowed_truck_refusal"
-	val[]: "Ao teu empregador non lle vai gustar que xogues co seu camión." #+ Shown if user attempts to upgrade a quick job truck.
+	val[]: "Ao teu empregador non lle vai gustar que xogues co seu vehículo." #+ Shown if user attempts to upgrade a quick job truck.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Non podes mudar o tipo de remolque, o corpo ou o chasis durante un traballo. Remata a túa entrega e téntao de novo." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -931,13 +934,13 @@
 	val[]: "Adiante" #+ Tooltip for walk forward.
 
 	key[]: "tooltip_walk_back"
-	val[]: "Atrás" #+ Tooltip for walk back.
+	val[]: "Back" #+ Tooltip for walk back.
 
 	key[]: "tooltip_walk_left"
-	val[]: "Esquerda" #+ Tooltip for walk left.
+	val[]: "Left" #+ Tooltip for walk left.
 
 	key[]: "tooltip_walk_right"
-	val[]: "Dereita" #+ Tooltip for walk right.
+	val[]: "Right" #+ Tooltip for walk right.
 
 	key[]: "tooltip_walk_crouch"
 	val[]: "Abaixarse" #+ Tooltip for crouch.
@@ -1011,7 +1014,7 @@
 	val[]: "Mellorar" #+ Button allowing user to upgrade something.
 
 	key[]: "confirm"
-	val[]: "Confirmar" #+ Button which applies the state configured in the screen.
+	val[]: "Confirm" #+ Button which applies the state configured in the screen.
 
 	key[]: "continue"
 	val[]: "Continuar" #+ Button which usually continues to next screen or message in sequence.
@@ -1054,10 +1057,10 @@
 #@{
 
 	key[]: "no_drive_t"
-	val[]: "SEN CAMIÓN" #+ Message box title. Please keep in upper case where possible.
+	val[]: "SEN VEHÍCULO" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "no_drive"
-	val[]: "Non podes moverte libremente polo mundo xa que non tes camión para facelo! Podes mercar un ou collelo da túa frota.<br><br>Gustaríache coller unha tarefa rápida agora?"
+	val[]: "Non podes moverte libremente polo mundo xa que non tes vehículo para facelo! Podes mercar un ou collelo da túa frota.<br><br>Gustaríache coller unha tarefa rápida agora?"
 #@}
 
 #+ Game load window
@@ -1517,7 +1520,7 @@
 	val[]: "Saír á pantalla inicial para mudar de perfil ou o modo de xogo." #+ Help message associated with profile selection icon.
 
 	key[]: "profile_sel_desc"
-	val[]: "Elixe unha carreira profesional existente ou comeza unha nova."
+	val[]: "Escolle unha carreira profesional existente ou comeza unha nova."
 
 	key[]: "wanna_remove_profile"
 	val[]: "Seguro que queres eliminar este perfil?"
@@ -1625,7 +1628,7 @@
 	val[]: "Hai dispoñible unha nova entrada no blog!" #+ Fallback news text content in case of fetch errors
 
 	key[]: "no_truck_dlc"
-	val[]: "Non se atoparon camións! Por favor, reactiva ao menos un DLC de camión e reinicia o xogo." #+ Text shown when there is no truck available.
+	val[]: "Non se atoparon vehículos! Por favor, reactiva ao menos un DLC de vehículos e reinicia o xogo." #+ Text shown when there is no truck available.
 
 	key[]: "extras"
 	val[]: "Extras"
@@ -1727,7 +1730,7 @@
 	val[]: "Actualmente a túa carreira está desconectada da experiencia en liña $SHORTCUT1$$FRONTEND_URL$."
 
 	key[]: "connect_to_wotr_login_t"
-	val[]: "Conectar"
+	val[]: "Connect"
 
 	key[]: "connect_to_wotr_skip_t"
 	val[]: "Conectar máis tarde"
@@ -1750,7 +1753,7 @@
 	val[]: "Imaxe corporativa"
 
 	key[]: "profile_company_desc"
-	val[]: "Elixe o nome e o logo que mellor representa a túa empresa."
+	val[]: "Escolle o nome e o logo que mellor representa a túa empresa."
 
 	key[]: "profile_loading_company_logos"
 	val[]: "Cargando"
@@ -1765,13 +1768,13 @@
 	val[]: "Preferencia de camión"
 
 	key[]: "prefered_truck_subtitle"
-	val[]: "Elixe entre unha variedade de camións para definir a túa experiencia inicial. Cada unha das opcións é unha elección perfecta."
+	val[]: "Escolle entre unha variedade de camións para definir a túa experiencia inicial. Cada unha das opcións é unha elección perfecta."
 
 	key[]: "random_truck"
-	val[]: "Aleatorio"
+	val[]: "Random"
 
 	key[]: "confirm_preferred_truck"
-	val[]: "Confirmar"
+	val[]: "Confirm"
 #@}
 
 
@@ -1785,7 +1788,7 @@
 	val[]: "Escolle a túa foto!"
 
 	key[]: "select_design"
-	val[]: "Escolle o teu diseño de camión favorito!"
+	val[]: "Escolle o teu deseño de camión favorito!"
 
 	key[]: "select_logo"
 	val[]: "Escolle un logotipo para a túa compañía!"
@@ -2216,7 +2219,7 @@
 	val[]: "Estás usando un controlador adicional? Mando, joystick, volante quizais? Asegúrate de configuralo correctamente."
 
 	key[]: "help_bcg_theme"
-	val[]: "Resalta o teu camión cun fondo de escritorio personalizado. Elixe un que se adapte ao teu estilo!"
+	val[]: "Resalta o teu vehículo cun fondo de escritorio personalizado. Escolle un que se adapte ao teu estilo!"
 
 #@}
 
@@ -2320,7 +2323,7 @@
 	val[]: "INTERFACE" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
 	key[]: "truck_sound_settings_t"
-	val[]: "SONS DO CAMIÓN" #+ Title of the 'Truck Sounds' section. Please keep in upper case where possible.
+	val[]: "SONS DO VEHÍCULO" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
 	val[]: "SONS INTERIORES" #+ Title of the 'Interior Sounds' section. Please keep in upper case where possible.
@@ -2332,19 +2335,19 @@
 	val[]: "Volume principal" #+ Slider controlling master volume.
 
 	key[]: "truck_engine_volume"
-	val[]: "Volume do motor do camión" #+ Slider controlling volume of the truck engine.
+	val[]: "Volume do motor do vehículo" #+ Slider controlling volume of the truck engine.
 
 	key[]: "truck_exhaust_volume"
-	val[]: "Volume do escape do camión" #+ Slider controlling volume of the truck exhaust.
+	val[]: "Volume do escape do vehículo" #+ Slider controlling volume of the truck exhaust.
 
 	key[]: "truck_turbo_volume"
-	val[]: "Volume do turbo do camión" #+ Slider controlling volume of the truck turbo.
+	val[]: "Volume do turbo do vehículo" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
-	val[]: "Volume dos efectos do camión" #+ Slider controlling volume of the truck effects.
+	val[]: "Volume dos efectos do vehículo" #+ Slider controlling volume of the truck effects.
 
 	key[]: "truck_noise_volume"
-	val[]: "Volume dos ruídos do camión" #+ Slider controlling volume of the truck noises.
+	val[]: "Volume dos ruídos do vehículo" #+ Slider controlling volume of the truck noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Volume dos ruídos do remolque" #+ Slider controlling volume of the trailer noises.
@@ -2404,7 +2407,7 @@
 	val[]: "Mostra da voz" #+ Label for the button to preview message of the voice navigation pack..
 
 	key[]: "voice_preview"
-	val[]: "Previsualizar" #+ The button to preview message of the voice navigation pack..
+	val[]: "Preview" #+ The button to preview message of the voice navigation pack..
 
 	key[]: "voice_speed_warning"
 	val[]: "Aviso de velocidade" #+ Droplist for selection of the speed warning type.
@@ -2437,7 +2440,7 @@
 	val[]: "Ningún" #+ The list item for the "none" Roger beep.
 
 	key[]: "cb_radio_beep_preview"
-	val[]: "Proba de son de fin de retrasmisión" #+ The button to preview cb radio Roger beep.
+	val[]: "Proba de son de fin de retransmisión" #+ The button to preview cb radio Roger beep.
 
 	key[]: "beep_preview"
 	val[]: "Proba de son" #+ The button title to preview cb radio Roger beep.
@@ -2487,19 +2490,19 @@
 	val[]: "Axusta o volume xeral do xogo."
 
 	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
-	val[]: "Axusta o volume do motor do camión."
+	val[]: "Axusta o volume do motor do vehículo."
 
 	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
-	val[]: "Axusta o volume do escape do camión."
+	val[]: "Axusta o volume do escape do vehículo."
 
 	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
-	val[]: "Axusta o volume do turbo do camión."
+	val[]: "Axusta o volume do turbo do vehículo."
 
 	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
-	val[]: "Axusta o volume doutros sons do camión, como o asubío dos freos pneumáticos."
+	val[]: "Axusta o volume doutros sons do vehículo, como o asubío dos freos pneumáticos."
 
 	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
-	val[]: "Axusta o volume do ruído procedente dos pneumáticos do camión."
+	val[]: "Axusta o volume do ruído procedente dos pneumáticos do vehículo."
 
 	key[]: "trailer_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume do ruído procedente dos pneumáticos do remolque."
@@ -2514,7 +2517,7 @@
 	val[]: "Axusta o volume doutros sons ambientais, como sons urbanos, da natureza, etc."
 
 	key[]: "interior_volume_op_tooltip" # - Audio, Simple
-	val[]: "Axusta o volume dos sons do interior do camión."
+	val[]: "Axusta o volume dos sons do interior do vehículo."
 
 	key[]: "radio_volume_op_tooltip" # - Audio, Simple
 	val[]: "Axusta o volume da radio."
@@ -2568,19 +2571,19 @@
 	val[]: "Proba do son de fin de transmisión seleccionado."
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "Activa un sinal acústico ao ir marcha atrás co camión. Pode axustarse o seu volume usando o control de \"efectos do camión\".<br><br>Cando está activado tamén oirás o asubío de marcha atrás doutros xogadores cando esteas nunha sesión de convoi."
+	val[]: "Activa un sinal acústico ao ir marcha atrás co vehículo. Pode axustarse o seu volume usando o control de \"efectos do vehículo\".<br><br>Cando está activado tamén oirás o asubío de marcha atrás doutros xogadores cando esteas nunha sesión de convoi."
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Activa o son das bandas rugosas ao conducir por enriba delas."
 
 	key[]: "noise_window_op_tooltip" # - Audio, Advanced
-	val[]: "Activa ruído adicional do aire fluíndo a través das fiestras do camión cando están abertas.<br><br><color value=@@clr_txt_d@@>Require activar a función de \"Volume do vento\"."
+	val[]: "Activa ruído adicional do aire fluíndo a través das fiestras do vehículo cando están abertas.<br><br><color value=@@clr_txt_d@@>Require activar a función de \"Volume do vento\"."
 
 	key[]: "noise_aero_op_tooltip" # - Audio, Advanced
-	val[]: "Activa o ruído producido polo aire que flúe ao redor da cabina do camión."
+	val[]: "Activa o ruído producido polo aire que flúe ao redor da cabina do teu vehículo."
 
 	key[]: "reverb_cabin_op_tooltip" # - Audio, Advanced
-	val[]: "Activa o efecto de reverberación da cabina do teu camión."
+	val[]: "Activa o efecto de reverberación da cabina do teu vehículo."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
 	val[]: "Activa o efecto de reverberación dos sons ambientais."
@@ -2627,7 +2630,7 @@
 	val[]: "TRANSMISIÓN" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
 	key[]: "truck_physics_settings"
-	val[]: "FÍSICAS DO CAMIÓN" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	val[]: "FÍSICAS DO VEHÍCULO" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "ASISTENTES" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2816,7 +2819,7 @@
 	val[]: "Agochar" #+ Hide speed limit display on the advisor.
 
 	key[]: "truck_limit"
-	val[]: "Amosar límite de camión" #+ Show speed limits for trucks on the advisor.
+	val[]: "Amosar límite para o tipo de vehículo actual" #+ Show speed limits for trucks on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "Amosar límite de coche" #+ Show speed limits for ordinary cars on the advisor.
@@ -2838,6 +2841,18 @@
 
 	key[]: "align_always_north"
 	val[]: "Sempre ó norte" #+ Map aligned to north always.
+#@}
+
+#+ Proximity exploration mode
+#@{
+	key[]: "map_exploration_mode"
+	val[]: "Modo de exploración do mapa" #+ Droplist for selection mode of map exploration mode.
+
+	key[]: "precision_exploration"
+	val[]: "Exploración precisa" #+ Precision Exploration.
+
+	key[]: "proximity_exploration"
+	val[]: "Exploración de proximidade" #+ Proximity Exploration.
 #@}
 
 #+ Navigation display mode
@@ -2938,7 +2953,7 @@
 	val[]: "Intensidade de freado" #+ Slider for player modification of braking force.
 
 	key[]: "truck_stability"
-	val[]: "Estabilidade do camión" #+ Slider for player modification of truckstability (COG position).
+	val[]: "Estabilidade do vehículo" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
 	val[]: "Estabilidade do remolque" #+ Slider for player modification of trailer stability (COG position).
@@ -3191,11 +3206,14 @@
 	key[]: "map_alignment_op_tooltip" # - Gameplay, Advanced
 	val[]: "Selecciona como se aliña o mapa do mundo."
 
+	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
+	val[]: "(placeholder) Choose how the Map is explored."
+
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Selecciona como debe amosarse a navegación."
 
 	key[]: "navigation_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "Cambia como se calcula a navegación:<br>- O modo \"mellor\" escolle a mellor relación entre a lonxitude e o tempo da ruta, tenta evitar cruzamentos con semáforos, etc.<br>- O modo \"máis curto\" elixe sempre a ruta máis curta posible.<br>- O modo \"estradas pequenas\" evita as autoestradas sempre que sexa posible."
+	val[]: "Cambia como se calcula a navegación:<br>- O modo \"mellor\" escolle a mellor relación entre a lonxitude e o tempo da ruta, tenta evitar cruzamentos con semáforos, etc.<br>- O modo \"máis curto\" escolle sempre a ruta máis curta posible.<br>- O modo \"estradas pequenas\" evita as autoestradas sempre que sexa posible."
 
 	key[]: "trailer_parking_difficulty_op_tooltip" # - Gameplay, Advanced
 	val[]: "Cambia a dificultade de aparcamento:<br>- \"Seleccionar sempre\" permite escoller ao chegar ao teu destino.<br>- \"Aparcamento fácil\" non require de manobras marcha atrás.<br>- \"Aparcamento difícil\" normalmente requirirá de manobras marcha atrás máis desafiantes."
@@ -3210,13 +3228,13 @@
 	val[]: "Axusta a probabilidade de inclemencias meteorolóxicas."
 
 	key[]: "time_zones_op_tooltip" # - Gameplay, Simple
-	val[]: "Elixe se se amosa información da zona horaria ademais da hora actual."
+	val[]: "Escolle se se amosa información da zona horaria ademais da hora actual."
 
 	key[]: "show_cutscenes_op_tooltip" # - Gameplay, Simple
-	val[]: "Activa as escenas que se amosan despois da compra dun camión ou ao mellorar un garaxe."
+	val[]: "Activa as escenas que se amosan despois da compra dun camión, ao mellorar un garaxe ou durante o embarque de pasaxeiros."
 
 	key[]: "show_blockers_op_tooltip" # - Gameplay, Simple
-	val[]: "Elixe se se amosan bloqueadores semitranslúcidos nas estradas non accesibles."
+	val[]: "Escolle se se amosan bloqueadores semitranslúcidos nas estradas non accesibles."
 
 	key[]: "mouse_invert_op_tooltip" # - Gameplay, Simple
 	val[]: "Inverte o eixe Y do rato ao controlar a cámara durante o xogo."
@@ -3237,13 +3255,13 @@
 	val[]: "Cambia a intensidade dos freos."
 
 	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
-	val[]: "Cambia a estabilidade do camión baixando o seu centro de gravidade."
+	val[]: "Cambia a estabilidade do vehículo baixando o seu centro de gravidade."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "Cambia a estabilidade do remolque baixando o seu centro de gravidade."
 
 	key[]: "driveshaft_torque_op_tooltip" # - Gameplay, Advanced
-	val[]: "Cambia a intensidade do torque xerado pola transmisión.<br><br>Ao incrementar este valor aumentará a sensación de que o camión se retorce cara á dereita."
+	val[]: "Cambia a intensidade do torque xerado pola transmisión.<br><br>Ao incrementar este valor aumentará a sensación de que o vehículo se retorce cara á dereita."
 
 	key[]: "suspension_stiffness_op_tooltip" # - Gameplay, Advanced
 	val[]: "Cambia a dureza da suspensión do chasis."
@@ -3279,7 +3297,7 @@
 	val[]: "Cando está activado, o motor arrancará nada máis usar o acelerador."
 
 	key[]: "auto_park_brake_op_tooltip" # - Gameplay, Advanced
-	val[]: "Cando está activado, o freo de estacionamento do camión actívase por defecto (despois de usar un transbordador, ser remolcado a un taller, facer unha viaxe rápida, etc.)."
+	val[]: "Cando está activado, o freo de estacionamento do vehículo actívase por defecto (despois de usar un transbordador, ser remolcado a un taller, facer unha viaxe rápida, etc.)."
 
 	key[]: "auto_drop_axles_op_tooltip" # - Gameplay, Advanced
 	val[]: "Baixa automaticamente os eixes elevabeis cando sexa necesario dependendo do peso do vehículo."
@@ -3297,10 +3315,10 @@
 	val[]: "Cando está activado, o ABS evitará o bloqueo das rodas ao frear, para manter o control e mellorar a capacidade de freado."
 
 	key[]: "traction_control_op_tooltip" # - Gameplay, Advanced
-	val[]: "Cando está activado, o camión aplicará unha freada independente en cada roda para evitar a patinaxe, a subviraxe ou a sobreviraxe, co fin de manter o control."
+	val[]: "Cando está activado, o vehículo aplicará unha freada independente en cada roda para evitar a patinaxe, a subviraxe ou a sobreviraxe, co fin de manter o control."
 
 	key[]: "auto_diff_lock_op_tooltip" # - Gameplay, Advanced
-	val[]: "Cando está activado, o camión bloqueará o diferencial automaticamente se as rodas comezan a patinar, para mellorar a tracción."
+	val[]: "Cando está activado, o vehículo bloqueará o diferencial automaticamente se as rodas comezan a patinar, para mellorar a tracción."
 
 	key[]: "cruise_control_grid_op_tooltip" # - Gameplay, Advanced
 	val[]: "Cambia a diferenza de velocidade ao que o control de cruceiro aumentará ou diminuirá cando se preme o botón correspondente."
@@ -3312,13 +3330,13 @@
 	val[]: "Cando está activado, o control de cruceiro controlará automaticamente a velocidade para manter unha distancia de seguridade co vehículo que circula diante."
 
 	key[]: "emergency_brake_op_tooltip" # - Gameplay, Advanced
-	val[]: "Activa o freado de emerxencia se o sistema detecta unha colisión inminente.<br>Elixe se o sistema reacciona só a vehículos ou a todo tipo de obstáculos."
+	val[]: "Activa o freado de emerxencia se o sistema detecta unha colisión inminente.<br>Escolle se o sistema reacciona só a vehículos ou a todo tipo de obstáculos."
 
 	key[]: "lane_assistant_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "Selección dos modos do asistente de carril:<br>- O modo \"aviso de saída de carril\" avísate acusticamente cando estás a piques de saír do carril.<br>- Ademais do aviso acústico, o modo \"asistencia de mantemento de carril\" tamén controla a dirección do teu camión para evitar que saia do carril.<br><br>Ámbolos modos só poden ser activados a velocidades superiores a 55 km/h (~35 mph).<br>O asistente de carril tamén ten en conta o teu uso dos intermitentes antes de activarse."
+	val[]: "Selección dos modos do asistente de carril:<br>- O modo \"aviso de saída de carril\" avísate acusticamente cando estás a piques de saír do carril.<br>- Ademais do aviso acústico, o modo \"asistencia de mantemento de carril\" tamén controla a dirección do teu vehículo para evitar que saia do carril.<br><br>Ámbolos modos só poden ser activados a velocidades superiores a 55 km/h (~35 mph).<br>O asistente de carril tamén ten en conta o teu uso dos intermitentes antes de activarse."
 
 	key[]: "blind_spot_op_tooltip" # - Gameplay, Advanced
-	val[]: "Activa as funcións do sensor de ángulo morto, sempre que o teu camión o equipe."
+	val[]: "Activa as funcións do sensor de ángulo morto, sempre que o teu vehículo o equipe."
 
 	key[]: "automatic_headlights_op_tooltip" # - Gameplay, Simple
 	val[]: "Cando está activado e co selector das luces na primeira posición, os faros prenderanse automaticamente en situacións de pouca luz."
@@ -3553,17 +3571,22 @@
 	key[]: "lost_function_binding"
 	val[]: "Perdeuse a asignación da función:" #+ Shown when key was rebound to a different function.
 
+#!{
+	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
+	val[]: "@@keyboard_ico@@"
+#!}
+
 #+ Headers of individual sections
 #@{
 
 	key[]: "truck_controls"
-	val[]: "CAMIÓN"
+	val[]: "VEHÍCULO"
 
 	key[]: "assistant_controls"
 	val[]: "ASISTENTES"
 
 	key[]: "transmission_controls"
-	val[]: "TRANSMISIÓN"
+	val[]: "TRANSMISSION"
 
 	key[]: "suspension_controls"
 	val[]: "SUSPENSIÓN"
@@ -3596,7 +3619,7 @@
 	val[]: "ACCIÓNS RÁPIDAS"
 
 	key[]: "radio_controls"
-	val[]: "RADIO"
+	val[]: "REPRODUTOR DE SON"
 
 	key[]: "convoy_controls"
 	val[]: "CONVOI"
@@ -3801,16 +3824,22 @@
 	val[]: "Reprodutor de son"
 
 	key[]: "o_im_radio_next"
-	val[]: "Favorito seguinte no reprodutor de son"
+	val[]: "Seguinte do reprodutor de son"
 
 	key[]: "o_im_radio_prev"
-	val[]: "Favorito anterior no reprodutor de son"
+	val[]: "Anterior do reprodutor de son"
 
 	key[]: "o_im_radio_vol_up"
 	val[]: "Subir volume do reprodutor de son"
 
 	key[]: "o_im_radio_vol_down"
 	val[]: "Baixar volume do reprodutor de son"
+
+	key[]: "o_im_radio_toggle"
+	val[]: "Pausa / reproducir no reprodutor de son"
+
+	key[]: "o_im_radio_favorite"
+	val[]: "Engadir / quitar dos favoritos do reprodutor de son"
 
 	key[]: "o_im_display"
 	val[]: "Modo do monitor do cadro de mandos" #+ Action for cycling between dashboard display pages/modes.
@@ -3865,7 +3894,7 @@
 	val[]: "Información rápida"
 
 	key[]: "o_im_adjuster"
-	val[]: "Axustes do camión"
+	val[]: "Axustes do vehículo"
 
 	key[]: "o_im_services"
 	val[]: "Servizos e axustes"
@@ -3970,7 +3999,7 @@
 	val[]: "Adiante" #+ Walk forward.
 
 	key[]: "o_im_walk_back"
-	val[]: "Atrás" #+ Walk back.
+	val[]: "Back" #+ Walk back.
 
 	key[]: "o_im_walk_left"
 	val[]: "Esquerda" #+ Walk left.
@@ -4103,7 +4132,7 @@
 	val[]: "Asigna un botón para activar ou desactivar o retarder automático."
 
 	key[]: "o_im_lift_axle_op_tooltip"
-	val[]: "Asigna un botón para subir ou baixar os eixos, se o teu camión dispón de eixos elevables."
+	val[]: "Asigna un botón para subir ou baixar os eixos, se o teu vehículo dispón de eixos elevables."
 
 	key[]: "o_im_lift_axle_trailer_op_tooltip"
 	val[]: "Asigna un botón para subir ou baixar os eixos, se o teu remolque dispón de eixos elevables."
@@ -4151,13 +4180,13 @@
 	val[]: "Asigna un botón para prender ou apagar as luces de longo alcance."
 
 	key[]: "o_im_beacon_op_tooltip"
-	val[]: "Asigna un botón para prender ou apagar os faros rotativos ou estroboscópicos, se o teu camión ou remolque dispón deles."
+	val[]: "Asigna un botón para prender ou apagar os faros rotativos ou estroboscópicos, se o teu vehículo ou remolque dispón deles."
 
 	key[]: "o_im_horn_op_tooltip"
 	val[]: "Asigna un botón para usar a bucina eléctrica."
 
 	key[]: "o_im_air_horn_op_tooltip"
-	val[]: "Asigna un botón para usar a bucina de aire, se o teu camión dispón dunha."
+	val[]: "Asigna un botón para usar a bucina de aire, se o teu vehículo dispón dunha."
 
 	key[]: "o_im_light_horn_op_tooltip"
 	val[]: "Asigna un botón para facer sinais coas luces de longo alcance a modo de refacho."
@@ -4229,7 +4258,7 @@
 	val[]: "Asigna un botón para acceder ao menú de \"Servizos e axustes\"."
 
 	key[]: "o_im_adviser_cursor_op_tooltip"
-	val[]: "Asigna un botón para amosar información rápida acerca do estado do traballo, a condición do camión e as normativas locais, o que tamén pausa o xogo excepto cando esteas nun convoi."
+	val[]: "Asigna un botón para amosar información rápida acerca do estado do traballo, a condición do vehículo e as normativas locais, o que tamén pausa o xogo excepto cando esteas nun convoi."
 
 	key[]: "o_im_adviser_zoom_in_op_tooltip"
 	val[]: "Asigna un botón para aumentar o zoom da navegación."
@@ -4241,7 +4270,7 @@
 	val[]: "Asigna un botón para acceder ao menú de \"Opcións dos widgets\"."
 
 	key[]: "o_im_adviser_eta_op_tooltip"
-	val[]: "Asigna un botón para cambiar os datos do destino que se amosan na navegación.<br>Podes elixir se o tempo estimado de chegada que se amosa é ata o seguinte punto de control ou ao destino final."
+	val[]: "Asigna un botón para cambiar os datos do destino que se amosan na navegación.<br>Podes escoller se o tempo estimado de chegada que se amosa é ata o seguinte punto de control ou ao destino final."
 
 	key[]: "o_im_assistent_action1_op_tooltip"
 	val[]: "Asigna un botón para a acción correspondente no menú de \"Servizos e axustes\"."
@@ -4409,16 +4438,22 @@
 	val[]: "Asigna un botón para abrir o reprodutor de son."
 
 	key[]: "o_im_radio_next_op_tooltip"
-	val[]: "Asigna un botón para cambiar á seguinte estación de radio favorita."
+	val[]: "Assigns button for playing the next item on the audio player's list while driving."
 
 	key[]: "o_im_radio_prev_op_tooltip"
-	val[]: "Asigna un botón para cambiar á anterior estación de radio favorita."
+	val[]: "Assigns button for playing the previous item on the audio player's list while driving."
 
 	key[]: "o_im_radio_vol_up_op_tooltip"
-	val[]: "Asigna un botón para subir o volume do reprodutor de son."
+	val[]: "Asigna un botón para subir o volume do reprodutor de son mentres conduces."
 
 	key[]: "o_im_radio_vol_down_op_tooltip"
-	val[]: "Asigna un botón para baixar o volume do reprodutor de son."
+	val[]: "Asigna un botón para baixar o volume do reprodutor de son mentres conduces."
+
+	key[]: "o_im_radio_toggle_op_tooltip"
+	val[]: "Asigna un botón para facer pausa ou continuar a reprodución da música mentres conduces."
+
+	key[]: "o_im_radio_favorite_op_tooltip"
+	val[]: "Asigna un botón para engadir ou quitar emisoras de radio dos favoritos mentres conduces."
 
 	key[]: "o_im_nav_map_op_tooltip"
 	val[]: "Asigna un botón para abrir o mapa do mundo."
@@ -4937,7 +4972,7 @@
 	val[]: "Cambia o comportamento da panca de cambios:<br>- Coa opción 'Simple' nunca farás rascar as marchas ao cambiar.<br>- A opción 'Simple + sons de advertencia' tamén che permite cambiar, pero con ruídos se non cambias ben.<br>- A opción 'Avanzado' non che permitirá cambiar de marcha se cambias de forma incorrecta, e só obterás ruídos do rascado dos engrenaxes. Esta opción tamén permite usar a configuración 'divisor rápido do cambio'."
 
 	key[]: "hshift_fast_split_op_tooltip" # - Controls, Advanced
-	val[]: "Elixe como xestiona o xogo o divisor rápido do cambio:<br>- \"Nunca\" require mover a panca a punto morto entre divisións.<br>- \"Presión do embrague\" require pisar momentaneamente o embrague sen mover a panca de cambios.<br>- \"Soltar o acelerador\" require só soltar o acelerador para facer a división sen mover a panca.<br>-\"Embrague ou acelerador\" é unha combinación das dúas últimas."
+	val[]: "Escolle como xestiona o xogo o divisor rápido do cambio:<br>- \"Nunca\" require mover a panca a punto morto entre divisións.<br>- \"Presión do embrague\" require pisar momentaneamente o embrague sen mover a panca de cambios.<br>- \"Soltar o acelerador\" require só soltar o acelerador para facer a división sen mover a panca.<br>-\"Embrague ou acelerador\" é unha combinación das dúas últimas."
 
 	key[]: "hshift_reverse_op_tooltip" # - Controls, Advanced
 	val[]: "Asigna a posición da panca de cambios."
@@ -5231,7 +5266,7 @@
 	val[]: "Modo da pausa automática" #+ Type of the autopause
 
 	key[]: "eye_autopause_mode_never"
-	val[]: "Desactivado" #+ Autopause is disabled
+	val[]: "Disabled" #+ Autopause is disabled
 
 	key[]: "eye_autopause_mode_presence"
 	val[]: "Presenza" #+ Autopause if user is not present
@@ -5295,7 +5330,7 @@
 
 	key[]: "brightness"
 	val[]: "Brillo / HDR" #+ Button opening brightness or HDR brightness setup.
-	
+
 	key[]: "brightness_setup_button"
 	val[]: "Configurar" #+ Text on the brightness button itself.
 
@@ -5518,7 +5553,7 @@
 	val[]: "Activa o renderizado de sombras mesmo de obxectos moi distantes.<br><br><color value=@@clr_txt_d@@>Normalmente, este axuste ten un impacto moderado no rendemento."
 
 	key[]: "interior_shadow_op_tooltip" # - Graphics, Advanced
-	val[]: "Activa as sombras dinámicas nocturnas no interior do camión.<br><br><color value=@@clr_txt_d@@>Normalmente, este axuste ten un impacto moderado no rendemento."
+	val[]: "Activa as sombras dinámicas nocturnas no interior do vehículo.<br><br><color value=@@clr_txt_d@@>Normalmente, este axuste ten un impacto moderado no rendemento."
 
 	key[]: "weather_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Axusta a calidade dos efectos meteorolóxicos, como os reflexos."
@@ -5565,25 +5600,25 @@
 
 	key[]: "brightness_title"
 	val[]: "Configuración do brillo" #+ Label shown at the top of the screen.
-	
+
 	key[]: "brightness_subtitle"
 	val[]: "Axusta o brillo ata que os detalles das imaxes sexan claramente visibles."
 
 	key[]: "open_hdr"
 	val[]: "Calibración do HDR"
-	
+
 	key[]: "brightness_confirm"
 	val[]: "Confirmar"
-	
+
 	key[]: "brightness_reset"
 	val[]: "Restablecer"
-	
+
 #+ Tooltips.
 #@{
 	key[]: "brightness_slider_tooltip"
 	val[]: "Axusta o nivel global de luz do xogo."
 #@}
-	
+
 #@}
 
 #+ Options/HDR
@@ -5592,16 +5627,16 @@
 #@{
 	key[]: "hdr_title"
 	val[]: "Calibración do HDR"
-	
+
 	key[]: "hdr_subtitle"
 	val[]: "Para calibrar o HDR (alto rango dinámico), axusta o deslizador ata que case non se vexa o camión."
-	
+
 	key[]: "hdr_back"
 	val[]: "Volver"
-	
+
 	key[]: "hdr_reset"
 	val[]: "Restablecer"
-	
+
 	key[]: "hdr_continue"
 	val[]: "Continuar"
 #@}
@@ -5899,16 +5934,16 @@
 #+ Steering wheel button and axis names
 #@{
 	key[]: "axis_steering"
-	val[]: "Dirección" #+ Steering axis of a steering wheel.
+	val[]: "Steering" #+ Steering axis of a steering wheel.
 
 	key[]: "axis_throttle"
-	val[]: "Acelerador" #+ Throttle pedal axis of a steering wheel.
+	val[]: "Throttle" #+ Throttle pedal axis of a steering wheel.
 
 	key[]: "axis_brake"
 	val[]: "Brake" #+ Brake pedal axis of a steering wheel.
 
 	key[]: "axis_clutch"
-	val[]: "Embrague" #+ Clutch pedal axis of a steering wheel.
+	val[]: "Clutch" #+ Clutch pedal axis of a steering wheel.
 
 	key[]: "axis_handbrake"
 	val[]: "Handbrake" #+ Handbrake axis of a steering wheel.
@@ -6043,7 +6078,7 @@
 	val[]: "REPRODUTOR DE RADIO" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "radio"
-	val[]: "Radio" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Reprodutor de son" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "music_player"
 	val[]: "Reprodutor de música" #+ Button for selecting music player.
@@ -6051,8 +6086,20 @@
 	key[]: "radio_stream"
 	val[]: "Emisora de radio" #+ Button for selecting online radio.
 
+	key[]: "game_radio"
+	val[]: "Radio do xogo" #+ Button for selecting game radio (offline radio).
+
 	key[]: "radio_changed"
 	val[]: "Reproducindo <color value=@@clr_sel@@>$NAME$" #+ Notification that playing track/stream have changed.
+
+	key[]: "stream_safe"
+	val[]: "Seguro para streaming" #+ Text for enabling stream-safe mode (offline game radios that are designed to avoid content claims)
+
+	key[]: "volume_up"
+	val[]: "Subir volume" #+ Controller hint text for increasing volume
+
+	key[]: "volume_down"
+	val[]: "Baixar volume" #+ Controller hint text for decreasing volume
 
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
@@ -6069,6 +6116,26 @@
 	key[]: "empty_radio_hint"
 	val[]: "Por favor, revisa o <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>na carpeta <color value=@@clr_sel@@>Euro Truck Simulator 2 <color value=@@clr_txt@@>dentro de <color value=@@clr_sel@@>Documentos <color value=@@clr_txt@@>para engadir a túa propia música e emisoras de radio."
 
+	key[]: "radio_hint_repeat_favorites"
+	val[]: "Switch between cycling all or favourites only.<br><br>\"Cycle favourites only\" is available when there is at least one favourite item on your list."
+
+	key[]: "radio_cycling_all"
+	val[]: "Cycling all" #+ Text shown if currently we are cycling between all tracks
+
+	key[]: "radio_cycling_favorites"
+	val[]: "Cycling only favourites" #+ Text shown if currently we are cycling between only favorite
+
+	key[]: "radio_hint_online_update"
+	val[]: "Fai clic neste botón para actualizar a túa lista de radios dispoñibles para escoitar en liña."
+
+	key[]: "music_player_hint_shuffle"
+	val[]: "Cambia a orde de reprodución das cancións entre normal ou aleatoria."
+
+	key[]: "stream_safe_hint_unmodded"
+	val[]: "Emisora de radio designada para evitar reclamacións de contido."
+
+	key[]: "stream_safe_hint_modded"
+	val[]: "Contido de radio creado pola comunidade e marcado como seguro para streaming. Non revisado nin garantido, e aínda pode provocar reclamacións de contido."
 
 	key[]: "radio_update"
 	val[]: "Actualizar dende Internet" #+ Button used to update the list of live streams from the web.
@@ -6081,6 +6148,9 @@
 
 	key[]: "music_player_info_title"
 	val[]: "MUSIC PLAYER INFO"
+
+	key[]: "my_music"
+	val[]: "A miña música"
 
 #+ Music player columns.
 
@@ -6112,10 +6182,10 @@
 	val[]: "Dano" #+ For example "Damage: 0%"
 
 	key[]: "trailer_damage"
-	val[]: "Dano do remolque" #+ For example "Trailer damage: 5%"
+	val[]: "Danos do remolque" #+ For example "Trailer damage: 5%"
 
 	key[]: "cargo_damage"
-	val[]: "Dano da carga" #+ For example "Trailer damage: 5%"
+	val[]: "Danos da carga" #+ For example "Trailer damage: 5%"
 
 	key[]: "time_remain"
 	val[]: "Tempo restante" #+ For example "Time remaining: 8h 21 min"
@@ -6137,13 +6207,13 @@
 	val[]: "Ingresos do traballo" #+ For example "Job income: E6,526"
 
 	key[]: "wanna_assistance"
-	val[]: "O servizo de asistencia pode levarte co teu camión a $CITY$. Costarache $MONEY$ e a viaxe levará $TIME$.<br offset=30>Estás de acordo?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a $CITY$. Custará $MONEY$ e a viaxe levará $TIME$.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "O servizo de asistencia pode levarte co teu camión a $CITY$. Custará $MONEY$ e a viaxe levará $TIME$.<br>(O custo cubrirao o teu empregador).<br offset=30>Estás de acordo?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a $CITY$. Custará $MONEY$ e a viaxe levará $TIME$.<br>(O custo cubrirao o teu empregador).<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "O servizo de asistencia pode levarte co teu camión a $CITY$. Custarache $MONEY$ e a viaxe levará $TIME$.<br offset=30>A túa entrega actual será cancelada.<br offset=30>Estás de acordo?"
+	val[]: "O servizo de asistencia pode levarte co teu vehículo a $CITY$. Custará $MONEY$ e a viaxe levará $TIME$.<br offset=30>O teu traballo actual será cancelado.<br offset=30>Estás de acordo?"
 
 	key[]: "wanna_recover"
 	val[]: "Assistance Service can take you and your truck to the nearest road. It will cost $MONEY$ and the trip will take $TIME$.<br offset=30>Do you agree?"
@@ -6285,7 +6355,7 @@
 	val[]: "Vendedor de camións $BRAND$ descuberto!"
 
 	key[]: "service"
-	val[]: "Para arranxar, mellorar ou pintar<br>o teu camión ou remolque, preme:"
+	val[]: "Para arranxar, mellorar ou pintar<br>o teu vehículo, preme:"
 
 	key[]: "job_offer"
 	val[]: "Preme a seguinte tecla para ver a oferta de traballo:"
@@ -6312,7 +6382,7 @@
 	val[]: "A tenda de camións está pechada.<br offset=20>Horario de apertura:<br>Luns - Sábado $START$ - $END$"
 
 	key[]: "closed_dealer_tooltip"
-	val[]: "Cannot visit truck dealer in closed hours."
+	val[]: "Non podes visitar o concesionario de camións fóra das horas de apertura."
 
 	key[]: "enter_recruit"
 	val[]: "Preme a seguinte tecla para visitar a axencia de contratación:"
@@ -6381,7 +6451,7 @@
 	val[]: "Para o motor!"
 
 	key[]: "stop_truck_short"
-	val[]: "Detén o camión!"   #+ Quick message shown when sleep was prevented by truck movement.
+	val[]: "Detén o vehículo!"   #+ Quick message shown when sleep was prevented by truck movement.
 
 	key[]: "stop_engine"
 	val[]: "Use a seguinte tecla para parar o motor:"
@@ -6536,7 +6606,7 @@
 	val[]: "Fallou a elevación do eixo.<br>O remolque conectado é demasiado pesado."
 
 	key[]: "diff_lock_fail"
-	val[]: "O diferencial non se pode bloquear. Reduce a velocidade e téntao de novo."
+	val[]: "Non se pode bloquear o diferencial. Reduce a velocidade e téntao de novo."
 
 	key[]: "diff_lock_hint"
 	val[]: "Se non te podes mover, quizais o bloqueo do diferencial poderíache axudar.<br>Utiliza a seguinte tecla para activalo:"
@@ -6617,6 +6687,12 @@
 	key[]: "adv_hud_infotainment_op_tooltip"
 	val[]: "Pantalla interior de infoentretemento para a navegación."
 
+	key[]: "adv_hud_radio"
+	val[]: "Reprodutor de son"
+
+	key[]: "adv_hud_radio_op_tooltip"
+	val[]: "On manual change — the widget appears when you take an action, such as switching stations, or adding a station to your favourites.<br><br>On all changes — the widget appears for every update, including manual actions and automatic track transitions."
+
 	key[]: "adv_hud_finances_line"
 	val[]: "Finanzas" #+ Widget name for the current bank account balance and the last 7 days profit.
 
@@ -6625,6 +6701,12 @@
 
 	key[]: "adv_hud_damage_line"
 	val[]: "Danos" #+ Widget name for displaying vehicle damage.
+
+	key[]: "adv_hud_job_info"
+	val[]: "Detalles do traballo" #+ Widget name for displaying job info.
+
+	key[]: "adv_hud_chat"
+	val[]: "Chat" #+ Widget name for displaying the convoy chat.
 
 	key[]: "adv_hud_autopark"
 	val[]: "Autoparking"
@@ -6644,6 +6726,11 @@
 	key[]: "adv_hud_visible"
 	val[]: "Activado"
 
+	key[]: "adv_hud_radio_interaction"
+	val[]: "Ao cambiar manualmente" #+ HUD audio player widget visibility setting for showing the widget only when the user causes a change
+
+	key[]: "adv_hud_radio_change"
+	val[]: "Con todos os cambios" #+ HUD audio player widget visibility setting for showing the widget only when there is any change (e.g. next song automatically plays)
 
 	key[]: "hud_mirrors_none"
 	val[]: "Ningún"
@@ -6707,7 +6794,7 @@
 	val[]: "Dano na transmisión"
 
 	key[]: "adv_hud_lgd_engine"
-	val[]: "Dano no motor"
+	val[]: "Danos no motor"
 
 	key[]: "adv_hud_lgd_hazard"
 	val[]: "Intermitentes de emerxencia"
@@ -7104,7 +7191,7 @@
 #@{
 
 	key[]: "skill_mechanical_title"
-	val[]: "Condución económica"
+	val[]: "Ecodriving"
 
 	key[]: "skill_mechanical_info"
 	val[]: "A túa habilidade de @@skill_mechanical_title@@ reduce o teu consumo de combustible."
@@ -7415,7 +7502,7 @@
 	val[]: "Hazard class"
 
 	key[]: "skill_level"
-	val[]: "Skill rank" #+ Bonus for skill rank with specific cargo. For example "skill rank 5"
+	val[]: "Rango de habilidade" #+ Bonus for skill rank with specific cargo. For example "skill rank 5"
 #@}
 
 
@@ -8718,10 +8805,10 @@
 	val[]: "Axencias de contratación descubertas:"
 
 	key[]: "compman_summary_truck_count"
-	val[]: "Camións en propiedade:"
+	val[]: "Trucks owned:"
 
 	key[]: "compman_summary_trailer_count"
-	val[]: "Remolques en propiedade:"
+	val[]: "Trailers owned:"
 
 	key[]: "compman_no_driver"
 	val[]: "Ningún condutor contratado"
@@ -8740,12 +8827,12 @@
 
 	key[]: "compman_graph_tooltip"
 	val[]: "Beneficios da empresa nos últimos 7 días completados. Pasa o cursor sobre cada punto para ver o valor exacto dos beneficios diarios."
-	
+
 	key[]: "compman_graph_not_available"
 	val[]: "O gráfico estará dispoñible unha vez finalice o primeiro día."
 
 	key[]: "compman_op_economy_summary"
-	val[]: "Resumo económico"
+	val[]: "Economy Summary"
 
 	key[]: "compman_op_company_branding"
 	val[]: "Imaxe corporativa"
@@ -8760,7 +8847,7 @@
 	val[]: "Non podes facer unha viaxe rápida mentres estás traballando!"
 
 	key[]: "compman_qt_notruck"
-	val[]: "Non podes facer unha viaxe rápida porque non tes camión!"
+	val[]: "Non podes facer unha viaxe rápida porque non tes vehículo!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "Queres facer unha viaxe rápida ó garaxe seleccionado?"
@@ -9130,13 +9217,13 @@
 #@{
 
 	key[]: "truckman_sell_t"
-	val[]: "VENDER CAMIÓN"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "VENDER VEHÍCULO"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_reallysell"
 	val[]: "Realmente queres vender o $TRUCK$ por $MONEY$?"
 
 	key[]: "truckman_msg_nosell"
-	val[]: "Non podes vender o camión que estás a conducir durante un traballo! Termina a túa entrega e entón téntao de novo."
+	val[]: "Non podes vender o vehículo que estás a conducir durante un traballo! Termina o teu traballo e entón téntao de novo."
 
 	key[]: "truckman_total_restoration_t"
 	val[]: "RESTAURACIÓN COMPLETA"  #+ Message box title. Please keep in upper case where possible.
@@ -9168,10 +9255,10 @@
 #@{
 
 	key[]: "truckman_change_t"
-	val[]: "CAMBIAR CAMIÓN" #+ Message box title. Please keep in upper case where possible.
+	val[]: "CAMBIAR VEHÍCULO" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nochange"
-	val[]: "Non podes cambiar de camión mentres esteas traballando! Finaliza a túa entrega primeiro."
+	val[]: "Non podes cambiar de vehículo mentres esteas traballando! Finaliza o teu traballo primeiro."
 
 	key[]: "truckman_conf_drive"
 	val[]: "Seguro que queres reasignar o teu $TRUCK_SRC$ a $CITY_DST$ e conducir o $TRUCK_DST$?"
@@ -9208,7 +9295,7 @@
 	val[]: "COPIAR CONFIGURACIÓN" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nouse"
-	val[]: "Non se pode copiar a configuración deste camión por falta de datos, probablemente por mor da eliminación dalgún mod ou DLC.<br><br>Reinstala o(s) mod/DLC."
+	val[]: "Non se pode copiar a configuración deste vehículo por falta de datos, probablemente por mor da eliminación dalgún mod ou DLC.<br><br>Reinstala o(s) mod/DLC."
 #@}
 
 # End of: "Truck management screen"
@@ -9237,7 +9324,7 @@
 	val[]: "Asignación do condutor"
 
 	key[]: "driverman_current_job"
-	val[]: "Traballo actual"
+	val[]: "Current job"
 
 	key[]: "driverman_no_job"
 	val[]: "Ningunha entrega en curso"
@@ -9246,7 +9333,7 @@
 	val[]: "Política de formación"
 
 	key[]: "driverman_op_player_skills"
-	val[]: "Habilidades"
+	val[]: "Skills"
 
 	key[]: "driverman_skill_training_t"
 	val[]: "POLÍTICA DE FORMACIÓN"
@@ -9262,7 +9349,7 @@
 
 	key[]: "relocate_together"
 	val[]: "Trasladar o condutor xunto co seu camión asignado."
-	
+
 	key[]: "skill_in_training"
 	val[]: "<color value=@@clr_green@@>Habilidade en adestramento:"
 
@@ -9882,7 +9969,7 @@
 	val[]: "Engadir novos puntos de control sempre ao final" #+ Text for a checkbox that prevents adding custom navigation pins in the middle of the route. Hidden when not applicable.
 
 	key[]: "append_new_avoid_pins"
-	val[]: "Place avoid pins" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
+	val[]: "Colocar puntos a evitar" #+ Text for a checkbox that starts adding pins in avoid mode. Hidden when not applicable.
 
 
 #+ Texts shown near individual icons on the map legend.
@@ -10180,7 +10267,7 @@
 	val[]: "M" #+ Mega as factor of 1 million
 
 	key[]: "money_unit_giga"
-	val[]: "k M"  #+ Money unit for giga (10^9).
+	val[]: "B"  #+ Money unit for giga (10^9).
 
 	key[]: "money_unit_tera"
 	val[]: "T" #+ Money unit for tera (10^12).
@@ -10712,31 +10799,31 @@
 
     key[]: "job_detail_word"
 	val[]: "Detalles do traballo"
-	
+
 	key[]: "job_detail_word_t"
 	val[]: "DETALLES DO TRABALLO"
 
 	key[]: "mapping_options_word"
 	val[]: "Opcións de asignación"
-	
+
 	key[]: "quick_info_word"
 	val[]: "Información rápida"
 
 	key[]: "quick_info_word_t"
 	val[]: "INFORMACIÓN RÁPIDA"
-	
+
 	key[]: "damage_word_t"
 	val[]: "DANOS"
 
 	key[]: "widget_options_word"
 	val[]: "Opcións dos widgets"
-	
+
 	key[]: "current_country_info_t"
 	val[]: "NORMATIVAS LOCAIS"
-	
+
 	key[]: "no_job_taken"
 	val[]: "No job is currently taken"
-	
+
 	key[]: "searching_for_navigation"
 	val[]: "Procurando sinal GPS..."
 #@}
@@ -10826,7 +10913,7 @@
 
 	key[]: "intro_garage_5"
 	val[]: "Boa sorte!"
-	
+
 
 	key[]: "desktop_tut_t"
 	val[]: "FUNCIÓN DESBLOQUEADA"
@@ -11185,16 +11272,16 @@
 #@{
 
 	key[]: "wiz_gb_simple"
-	val[]: "O método máis sinxelo de condución deseñado de xeito especial (mais non únicamente) para o emprego co teclado. Preme ADIANTE para avanzar e preme ATRÁS para frear ou retroceder. A transmisión fará o resto por ti: mudar entre avanzar, frear ou retroceder, mudar á marcha axeitada e demais."
+	val[]: "Preme AVANZAR para moverte cara adiante e preme ATRÁS para frear ou retroceder. A caixa de cambios controla todo o demais automaticamente, xestionando as transicións entre conducir, frear e marcha atrás, así como seleccionando as marchas adecuadas en cada momento."
 
 	key[]: "wiz_gb_automatic"
-	val[]: "Perfecto para volante e pedais. Usa os botóns para cambiar entre avanzar, sen movemento (neutral) ou retroceder. Preme entón o pedal do acelerador e permite ó automatismo manexar as marchas."
+	val[]: "Usa os botóns para cambiar entre a condución cara adiante, punto morto ou a marcha atrás. Despois preme o acelerador e deixa que a caixa de cambios cambie automaticamente as marchas."
 
 	key[]: "wiz_gb_sequential"
-	val[]: "Sube e baixa marchas de xeito manual para seleccionar entre as marchas de avance, a marcha atrás e neutral. Isto é un pouco difícil de dominar, pero proporcionarache mellor rendemento na condución e terás un control absoluto sobre o vehículo en diversas situacións."
+	val[]: "Sube ou baixa as marchas manualmente para seleccionar unha marcha concreta da transmisión. Esta configuración proporciona un control total da caixa de cambios do vehículo."
 
 	key[]: "wiz_gb_hshifter"
-	val[]: "Selecciona directamente a marcha desexada. É similar en dificultade ó cambio secuencial, pero máis realista. Recoméndase pancas de cambio en H físicas coma as G27 ou G25. Precisa de embrague."
+	val[]: "Selecciona a marcha desexada directamente, o que ofrece a configuración máis realista. Recoméndase unha panca de cambios en H e require o uso do embrague."
 #@}
 
 #+ Shown when feature requires a gamming controller.
@@ -11247,7 +11334,7 @@
 #+ Configuration complete page
 #@{
 	key[]: "wiz_cfg_done"
-	val[]: "O xogo está configurado agora e podes continuar. Podes cambiar a configuración máis tarde na pantalla de Configuración nas Opcións."
+	val[]: "O xogo está configurado agora e podes continuar. Podes cambiar a configuración máis tarde nas Opcións."
 
 	key[]: "wiz_cfg_steam"
 	val[]: "You can check and configure button and axis mapping for this controller using the Steam client. Steam gamepad settings for the game are available in Steam > Library > Euro Truck Simulator 2 > Controller Configuration."
@@ -11295,7 +11382,7 @@
 	val[]: "Usa @@imv_wiz_gearup@@ para moverte cara adiante e @@imv_wiz_geardown@@ para moverte cara atrás se usas o teclado ou botóns dun controlador. Usa @@imv_wiz_drive@@ e @@imv_wiz_reverse@@ para escoller a dirección da marcha se usas unha panca de cambios en H."
 
 	key[]: "wiz_cfg_gb_manual"
-	val[]: "Usa @@imv_wiz_gearup@@ e @@imv_wiz_geardown@@ para elixir a marcha desexada."
+	val[]: "Usa @@imv_wiz_gearup@@ e @@imv_wiz_geardown@@ para escoller a marcha desexada."
 
 	key[]: "wiz_cfg_gb_direct"
 	val[]: "Usa a túa panca de cambios en H con @@ima_wiz_j_clutch@@ para seleccionar a marcha desexada."
@@ -11370,7 +11457,7 @@
 	val[]: "CONFIGURACIÓN DA CAIXA DE CAMBIOS EN H" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "hshifter_gb_setup_desc"
-	val[]: "Aquí podes elixir o esquema principal da panca de cambios en H e probar as súas funcións. Na imaxe podes ver a posición actual da panca así como a marcha seleccionada. Como a transmisión ten máis marchas que posicións da panca, necesitarás usar botóns conmutadores para elixir diferentes grupos de marchas."
+	val[]: "Aquí podes escoller o esquema principal da panca de cambios en H e probar as súas funcións. Na imaxe podes ver a posición actual da panca así como a marcha seleccionada. Como a transmisión ten máis marchas que posicións da panca, necesitarás usar botóns conmutadores para escoller diferentes grupos de marchas."
 
 	key[]: "hshifter_gb_setup_desc2"
 	val[]: "A posición da panca seleccionada actualmente e os grupos activos tamén se indican abaixo, preto do control asociado. Para cambiar un control asignado, pica no botón apropiado e entón move a panca ata a posición desexada e logo volve a neutro."
@@ -12300,7 +12387,7 @@
 	val[]: "Subir a World of Trucks"
 
 	key[]: "photo_album_action_delete"
-	val[]: "Eliminar"
+	val[]: "Delete"
 
 	key[]: "photo_album_overlay_menu"
 	val[]: "Accións de foto"
@@ -12342,13 +12429,13 @@
 	val[]: "Aínda non descubriches esta cidade"
 
 	key[]: "open_wotr_profile"
-	val[]: "Ver no World of Trucks"
+	val[]: "View on World of Trucks"
 
 	key[]: "photo_album_no_screenshot_warning"
 	val[]: "Your Gallery is empty. Use Photo Mode to capture images."
 
 	key[]: "link_locked_msg_photo_mode"
-	val[]: "Para acceder ao modo foto primeiro tes que ter un camión asignado."
+	val[]: "Para acceder ao modo foto primeiro tes que ter un vehículo asignado."
 
 	key[]: "photo_album_delete_failed"
 	val[]: "Failed to delete the image due to an unexpected error."
@@ -12378,7 +12465,7 @@
 	val[]: "Screenshot gallery"
 
 	key[]: "photo_album_upload_selected_to_wotr"
-	val[]: "Subir ao espazo seleccionado"
+	val[]: "Upload to selected slot"
 
 	key[]: "photo_album_wotr_upload_info"
 	val[]: "You can upload this image to the World of Trucks Portal. <br>Select web slot below and press Upload to selected slot."
@@ -12450,25 +12537,25 @@
 	val[]: "HORA E METEOROLOXÍA"
 
 	key[]: "photomode_light_adjustment"
-	val[]: "AXUSTE DAS LUCES"
+	val[]: "LIGHT ADJUSTMENT"
 
 	key[]: "photomode_tooltip_light1"
-	val[]: "Luces de posición"
+	val[]: "Parking lights"
 
 	key[]: "photomode_tooltip_light2"
-	val[]: "Luces de cruzamento"
+	val[]: "Low beam"
 
 	key[]: "photomode_tooltip_light3"
-	val[]: "Luces de longo alcance"
+	val[]: "High beam"
 
 	key[]: "photomode_tooltip_light4"
-	val[]: "Baliza luminosa"
+	val[]: "Beacon"
 
 	key[]: "photomode_tooltip_light5"
-	val[]: "Auxiliares frontais"
+	val[]: "Front auxiliary"
 
 	key[]: "photomode_tooltip_light6"
-	val[]: "Auxiliares do teito"
+	val[]: "Roof auxiliary"
 #@}
 
 #+ Photo Mode overlay helper.
@@ -12501,10 +12588,10 @@
 	val[]: "Amosar controis"
 
 	key[]: "photo_mode_help_move"
-	val[]: "Mover"
+	val[]: "Move"
 
 	key[]: "photo_mode_help_look"
-	val[]: "Mirar"
+	val[]: "Look"
 
 	key[]: "photo_mode_help_take_picture"
 	val[]: "Tomar fotografía"
@@ -12529,10 +12616,10 @@
 #@{
 
 	key[]: "photo_no_drive_t"
-	val[]: "NON TES CAMIÓN" #+ Message box title. Please keep in upper case where possible.
+	val[]: "SEN VEHÍCULO" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "photo_no_drive"
-	val[]: "Non podes tomar fotos do camión porque non tes ningún! Debes mercar un ou escollelo da túa frota."
+	val[]: "Non podes tomar fotos do vehículo porque non tes ningún! Debes mercar un ou escollelo da túa frota."
 #@}
 
 #+ Screenshot manager
@@ -13286,7 +13373,7 @@
 	val[]: "Viaxe rápida"
 
 	key[]: "link_locked_msg_quick_travel"
-	val[]: "Para acceder á viaxe rápida primeiro precisas de adquirir teu primeiro camión."
+	val[]: "Para acceder á viaxe rápida primeiro tes que ter un vehículo asignado."
 
 	key[]: "select_quick_travel_destination"
 	val[]: "Selecciona o destino da viaxe rápida"
@@ -13313,16 +13400,16 @@
 	val[]: "O camión non se atopa en condicións para facer unha viaxe rápida. Revisa o cableado co remolque."
 
 	key[]: "quick_travel_cond_repair_truck"
-	val[]: "O teu camión non se atopa en condicións para facer unha viaxe rápida. Visita un taller ou chama ao servizo de asistencia."
+	val[]: "O teu vehículo non se atopa en condicións para facer unha viaxe rápida. Visita un taller ou chama ao servizo de asistencia."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "O teu remolque non se atopa en condicións para facer unha viaxe rápida. Visita un taller ou chama ao servizo de asistencia."
 
 	key[]: "quick_travel_cond_truck_fuel"
-	val[]: "O camión non se atopa en condicións para facer unha viaxe rápida. Enche de gasolina teu camión ou chama ao servizo de asistencia."
+	val[]: "O vehículo non se atopa en condicións para facer unha viaxe rápida. Enche de combustible o teu vehículo ou chama ao servizo de asistencia."
 
 	key[]: "quick_travel_cond_truck_fallen"
-	val[]: "O camión non se atopa en condicións para facer unha viaxe rápida. Chama ao servizo de asistencia."
+	val[]: "O vehículo non se atopa en condicións para facer unha viaxe rápida. Chama ao servizo de asistencia."
 
 	key[]: "quick_travel_cond_trailer_fallen"
 	val[]: "O remolque non se atopa en condicións para facer unha viaxe rápida. Chama ao servizo de asistencia."
@@ -13331,7 +13418,7 @@
 	val[]: "O teu remolque actual non é legal no estado de destino. Gardarase no garaxe." #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
 
 	key[]: "quick_travel_illegal_trailer_dismiss_confirm"
-	val[]: "Confirmar"
+	val[]: "Confirm"
 
 	key[]: "quick_travel_no_service"
 	val[]: "Cidade sen taller"
@@ -13493,7 +13580,7 @@
 	val[]: "Non se puido encontrar obxectos que coincidan cos teus filtros" #+ Text shown when there are no accessories found by filters.
 
 	key[]: "no_truck_found"
-	val[]: "Non se puido encontrar camións que coincidan cos teus filtros" #+ Text shown when there are no trucks found by filters.
+	val[]: "Non se puido atopar vehículos que coincidan cos teus filtros" #+ Text shown when there are no trucks found by filters.
 #@}
 
 #+ Strings related to job filtering feature
@@ -14154,7 +14241,7 @@
 	val[]: "Restauración completa"
 
 	key[]: "trailerman_status"
-	val[]: "Estado:" #+ Current trailer status.
+	val[]: "Status:" #+ Current trailer status.
 
 	key[]: "trailer_status_private"
 	val[]: "Privado" #+ Trailer status name - private - only can be used by player.
@@ -14178,16 +14265,16 @@
 	val[]: "Carga actual:" #+ Currently loaded cargo statistic.
 
 	key[]: "trailerman_all_time_stats"
-	val[]: "Estadísticas totais" #+ All time statistics section title.
+	val[]: "All time statistics" #+ All time statistics section title.
 
 	key[]: "trailerman_stats_dist_on_job"
-	val[]: "Distancia traballando:" #+ Total distance this trailer driven during jobs.
+	val[]: "Distance on job:" #+ Total distance this trailer driven during jobs.
 
 	key[]: "trailerman_stats_cargo_transp"
-	val[]: "Cargas transportadas:" #+ Total number of transported cargoes.
+	val[]: "Cargo transported:" #+ Total number of transported cargoes.
 
 	key[]: "trailerman_stats_weight_transp"
-	val[]: "Peso transportado:" #+ Total weight transported by the trailer.
+	val[]: "Weight transported:" #+ Total weight transported by the trailer.
 
 	key[]: "trailerman_col_type"
 	val[]: "Tipo" #+ Title of the trailer type column.
@@ -14274,7 +14361,7 @@
 	val[]: "Non hai novas melloras de tráiler dispoñibles neste momento."
 
 	key[]: "link_locked_msg_truck_diag"
-	val[]: "Para acceder ao diagnóstico do vehículo primeiro tes que ter un camión asignado."
+	val[]: "Para acceder ao diagnóstico do vehículo primeiro tes que ter un vehículo asignado."
 
 	key[]: "link_locked_msg_truck_dealer_map"
 	val[]: "Aínda non atopaches ningunha tenda de camións."
@@ -14370,7 +14457,7 @@
 #+ Message box shown when user requests to use total restoration of trailer in trailer manager.
 #@{
 	key[]: "trailerman_total_restoration_t"
-	val[]: "RESTAURACIÓN COMPLETA"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "TOTAL RESTORATION"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_total_restoration_service"
 	val[]: "Por favor, visita un taller para restaurar o remolque que estás usando." #+ Message shown when player tries to restore trailer that he is using.
@@ -14379,7 +14466,7 @@
 	val[]: "O remolque atópase en perfectas condicións." #+ Message shown when player tries to restore trailer in perfect condition.
 
 	key[]: "trailerman_total_restoration"
-	val[]: "Prezo total da restauración:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Devolve o vehículo a unhas condicións perfectas solicitando unha desmontaxe e restauración completa de todos os compoñentes desgastados. Supón un desafío maior que construír un vehículo completamente novo." #+ Content of the screen, explaining total restoration.
+	val[]: "Total restoration price:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Return the vehicle to pristine condition by requesting a complete disassembly and restoration of all worn components. It poses a greater challenge than constructing an entirely new vehicle." #+ Content of the screen, explaining total restoration.
 #@}
 
 #+ Trailer detail tooltip.
@@ -14463,7 +14550,7 @@
 #+ Vehicle adjustments related texts
 #@{
 	key[]: "vehicle_adjustments_t"
-	val[]: "AXUSTES DO VEHÍCULO"
+	val[]: "VEHICLE ADJUSTMENTS"
 
 	key[]: "adj_mirrors"
 	val[]: "Axustar espellos"
@@ -14500,7 +14587,7 @@
 	val[]: "Cisterna alimentaria"
 
 	key[]: "fueltank"
-	val[]: "Cisterna de combustible"
+	val[]: "Fuel Tank"
 
 	key[]: "gastank"
 	val[]: "Cisterna de gas"
@@ -14528,7 +14615,7 @@
 	val[]: "A granel"
 
 	key[]: "tr_tank"
-	val[]: "Cisterna"
+	val[]: "Tank"
 
 #@}
 
@@ -14556,7 +14643,7 @@
 	val[]: "Produtos alimenticios líquidos"
 
 	key[]: "body_cargo_types_fueltank"
-	val[]: "Líquidos inflamables"
+	val[]: "Flammable liquids"
 
 	key[]: "body_cargo_types_gastank"
 	val[]: "Gases inflamables en estado líquido"
@@ -14972,7 +15059,7 @@
 #+ Trailer browser
 #@{
 	key[]: "select_option_to_preview_cargo_model"
-	val[]: "Ningún" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
+	val[]: "None" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
 	val[]: "Non se atoparon remolques" #+ Text shown if there are no trailer of given brands found.
@@ -15314,7 +15401,7 @@
 	val[]: "You do not have a compatible trailer for the current cargo."
 
 	key[]: "mp_job_missing_truck"
-	val[]: "Can be only taken with your own truck."
+	val[]: "Can be only taken with your own vehicle."
 
 	key[]: "mp_job_missing_trailer"
 	val[]: "You don’t have a compatible trailer currently assigned."
@@ -15663,7 +15750,7 @@
 	val[]: "EXPERIENCIA EN LIÑA"
 
 	key[]: "mp_experience"
-	val[]: "Por favor ten en conta que a experiencia do xogo pode cambiar durante o xogo en liña. Recoméndase a orientación dos pais. Aplícase a <nowrap><link url=@@privacy_url@@ color=@@clr_link@@>Política de privacidade</link>$SHORTCUT1$</nowrap>.<br><br>Cando xogues en liña sigue o <nowrap><link url=@@conduct_url@@ color=@@clr_link@@>Código de conduta</link>$SHORTCUT2$</nowrap> e sé amable e respectuoso cos teus compañeiros camioneiros para que a experiencia sexa agradable para todos."
+	val[]: "Por favor ten en conta que a experiencia do xogo pode cambiar durante o xogo en liña. Recoméndase a orientación dos pais. Aplícase a <nowrap><link url=@@privacy_url@@ color=@@clr_link@@>Política de privacidade</link>$SHORTCUT1$</nowrap>.<br><br>Cando xogues en liña sigue o <nowrap><link url=@@conduct_url@@ color=@@clr_link@@>Código de conduta</link>$SHORTCUT2$</nowrap> e sé amable e respectuoso cos teus compañeiros condutores para que a experiencia sexa agradable para todos."
 
 	key[]: "session_friends"
 	val[]: "Amigos"
@@ -16135,13 +16222,13 @@
 	val[]: "Job equipment:"
 
 	key[]: "equipment_provided_truck_and_trailer"
-	val[]: "Camión e remolque subministrados"
+	val[]: "Vehículo e remolque subministrados"
 
 	key[]: "equipment_owned_truck_provided_trailer"
-	val[]: "Camión en posesión"
+	val[]: "Vehículo en propiedade"
 
 	key[]: "equipment_owned_truck_and_trailer"
-	val[]: "Camión e remolque en posesión"
+	val[]: "Vehículo e remolque en propiedade"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "You are currently too far away from the source company location. Do you want to quick travel closer?<br><br>Quick Travel destination: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>Cost: <color value=@@clr_sel@@>$COST$"
@@ -16162,7 +16249,7 @@
 	val[]: "BLOQUEAR XOGADOR"
 
 	key[]: "mp_ban_instruction_message"
-	val[]: "Elixe a duración do bloqueo para <color value=@@clr_sel@@>$PLAYER_NAME$ <color value=@@clr_txt@@>."
+	val[]: "Escolle a duración do bloqueo para <color value=@@clr_sel@@>$PLAYER_NAME$ <color value=@@clr_txt@@>."
 
 	key[]: "mp_unban_instruction_message"
 	val[]: "Nota: para desbloquear xogadores consulta o arquivo banlist.txt na carpeta de American Truck Simulator nos teus Documentos."
@@ -16222,7 +16309,7 @@
 	val[]: "CONVOI FINALIZADO"
 
 	key[]: "convoy_concluded_info"
-	val[]: "Rematou a túa sesión de convoi. O teu progreso inclúe o estado da túa conta bancaria, o historial de traballos, habilidades, avances, configuracións de camión e remolque adquiridas, así como o equipamento e progreso dos condutores da túa empresa."
+	val[]: "Rematou a túa sesión de convoi. O teu progreso inclúe o estado da túa conta bancaria, o historial de traballos, habilidades, avances, configuracións de vehículo adquiridas, así como o equipamento e progreso dos condutores da túa empresa."
 
 	key[]: "convoy_concluded_warning"
 	val[]: "Selecciona \"Aceptar progreso\" para continuar co progreso logrado. Tamén podes cargar a partida gardada automaticamente antes desta sesión ou cargar calquera outro gardado anterior."
@@ -16885,10 +16972,10 @@
 	val[]: "Remove pin"
 
 	key[]: "overlay_delete_last"
-	val[]: "Remove last placed pin"
+	val[]: "Quitar último punto colocado"
 
 	key[]: "overlay_reset_route"
-	val[]: "Restablecer navegación"
+	val[]: "Reset navigation"
 
 	key[]: "overlay_map_filters"
 	val[]: "Filtros"
@@ -17365,7 +17452,7 @@
 	val[]: "Controller name" #+ Compatible controller name header.
 
 	key[]: "compatible_controller_type"
-	val[]: "Tipo" #+ Compatible controller type header.
+	val[]: "Type" #+ Compatible controller type header.
 
 	key[]: "controller_binding_label"
 	val[]: "Binding" #+ Controller Bindings options screen column header for the currently bound button.
@@ -17449,7 +17536,7 @@
 	val[]: "Sistema"
 
 	key[]: "desktop_menu_category_leave"
-	val[]: "Saír"
+	val[]: "Leave"
 #@}
 
 #+ Menu upper bar
@@ -17530,7 +17617,7 @@
 	val[]: "Explora, revisa e reconfigura os remolques dispoñibles para comprar."
 
 	key[]: "radio_desc" # - tooltip for explaining what the radio is - feature is active
-	val[]: "Goza das túas emisoras de radio favoritas ou reproduce a túa lista propia de cancións."
+	val[]: "Mellora a túa experiencia de condución con un pouco de música."
 
 	key[]: "link_locked_msg_radio" # - tooltip for when the radio is not yet unlocked
 	val[]: "A radio non está dispoñible."
@@ -17552,7 +17639,7 @@
 
 	key[]: "health_warning_description"
 	val[]: "Un pequeno porcentaxe de usuarios pode ser susceptible de sufrir ataques epilépticos ou perda de conciencia ao expoñerse a certos lampos intermitentes ou patróns luminosos. Estas persoas poden sufrir un ataque ao presenciar certas imaxes ou executar xogos. Se ti ou algún familiar tivestes algunha vez síntomas relacionados coa epilepsia (ataques ou perda de consciencia), consulta a un profesional médico e toma todas as precaucións necesarias antes de xogar.<br offset=20>Deixa de xogar inmediatamente e consulta a un profesional médico se ti ou algún familiar experimentades algún destes síntomas: Mareos, alteracións da visión, espasmos oculares ou musculares, perda de consciencia, desorientación, movementos involuntarios ou convulsiones."
-	
+
 	key[]: "trademark"
 	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
 #@}
@@ -17591,3 +17678,123 @@
 	key[]: "dlc_lost_return_forced" #+ Message shown in game, when a DLC has been removed.
 	val[]: "Access to some DLCs has been lost. You will now leave to Title Screen to reflect the changes in the content.<br><br>Your progress will be saved automatically."
 #@}
+
+#+ Time skip feature
+#@{
+	key[]: "time_skip_t"
+	val[]: "DESCANSO"
+
+	key[]: "time_skip_hours"
+	val[]: "Número de horas de descanso"
+
+	
+	key[]: "time_skip_current_time"
+	val[]: "Hora actual"
+
+	key[]: "time_skip_wake_up_time"
+	val[]: "Hora tralo descanso"
+
+
+	key[]: "time_skip_resting_title"
+	val[]: "Estado de descanso"
+
+	key[]: "time_skip_mandatory_break_title"
+	val[]: "Descanso obrigatorio"
+
+	key[]: "time_skip_job_delivery_title"
+	val[]: "Estado da entrega"
+
+	key[]: "time_skip_charging_title"
+	val[]: "Carga da batería"
+
+	
+	key[]: "time_skip_to_next_mandatory_break_ok"
+	val[]: "dentro de $TIME$"
+
+	key[]: "time_skip_to_next_mandatory_break_not_ok"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>dentro de $TIME$</font>"
+
+
+	key[]: "time_skip_mandatory_break_complied"
+	val[]: "Cumprido"
+
+	key[]: "time_skip_mandatory_break_not_complied"
+	val[]: "Non cumprido"
+
+
+	key[]: "time_skip_delivery_on_time"
+	val[]: "A tempo"
+
+	key[]: "time_skip_delivery_late"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>Risco de entrega tardía</font>"
+
+
+	key[]: "time_skip_rest_tired"
+	val[]: "Cansado/a"
+
+	key[]: "time_skip_rest_ok"
+	val[]: "Descansado/a"
+
+	key[]: "time_skip_rest_full"
+	val[]: "Completamente descansado/a"
+
+	
+	key[]: "time_skip_tooltip_mandatory_break_not_met"
+	val[]: "Esta parada non cumprirá os requirimentos de descansos obrigatorios. Quedaranche $LEFT_TIME$ ata o seguinte descanso obrigatorio."
+
+	key[]: "time_skip_tooltip_mandatory_break_complied"
+	val[]: "Esta parada cumprirá os requirimentos de descansos obrigatorios. O seguinte será dentro de <color value=@@clr_sel@@>$DRIVE_TIME$</color> horas."
+
+	key[]: "time_skip_tooltip_mandatory_break_cont"
+	val[]: "Por cada <color value=@@clr_sel@@>$DRIVE_TIME$</color> horas de condución, tes que tomar un descanso obrigatorio de polo menos <color value=@@clr_sel@@>$BREAK_TIME$</color> horas para evitar que che poñan unha multa."
+	
+
+	key[]: "time_skip_tooltip_job_on_time"
+	val[]: "Despois do descanso e do tempo de condución estimado ata o destino, sobraranche <color value=@@clr_sel@@>$LEFT_TIME$</color> neste traballo."
+	
+	key[]: "time_skip_tooltip_job_late"
+	val[]: "Despois do descanso e do tempo de condución estimado ata o destino, farás a entrega con <color value=@@clr_red@@>$LEFT_TIME$</color> de atraso."
+
+	key[]: "time_skip_max_sleep_reached"
+	val[]: "<color value=@@clr_red@@>Estarás completamente descansado</color>"
+
+# shown in job detail widget and pause screen	
+	key[]: "job_eta"
+	val[]: "Chegada estimada"
+
+	key[]: "job_delay"
+	val[]: "Atraso"
+
+# mandatory break needed window shown when changing vehicle mode
+	key[]: "time_skip_mandatory_break_t"
+	val[]: "DESCANSO OBRIGATORIO REQUIRIDO"
+
+	key[]: "time_skip_mandatory_break_needed"
+	val[]: "O vehículo non estivo detido o suficiente tempo para completar a túa parada obrigatoria.<br><br>Quedan <color value=@@clr_sel@@>$TIME$ de descanso obrigatorio.<br><br><color value=@@clr_txt@@>Queres descansar?"
+
+# mandatory break notifications
+	key[]: "mandatory_break_soon"
+	val[]: "É tempo de tomar o teu descanso obrigatorio.<br>Deberías atopar un sitio para estacionar e descansar!"
+
+	key[]: "mandatory_break_overdue"
+	val[]: "Excediches o tempo de condución máximo sen descanso obrigatorio.<br>Deberías atopar un sitio para estacionar e descansar!"
+
+	key[]: "offence_mandatory_break"
+	val[]: "Infracción de descanso obrigatorio."
+
+# shown in options
+
+	key[]: "mandatory_break_simulation"
+	val[]: "Simulación de descansos obrigatorios"
+
+	key[]: "mandatory_break_simulation_op_tooltip"
+	val[]: "Cando está activado, terás que deixar de conducir periodicamente para descansar.<br><br>Evitar os descansos obrigatorios terá como consecuencia infraccións de tráfico."
+
+	key[]: "rest_state_simulation"
+	val[]: "Simulación do estado de descanso"
+	
+	key[]: "rest_state_simulation_op_tooltip"
+	val[]: "Cando está activado, sufrirás os efectos da fatiga co tempo.<br><br>Terás que descansar para recuperarte."
+#@}
+
+

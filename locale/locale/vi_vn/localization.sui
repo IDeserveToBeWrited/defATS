@@ -22,6 +22,9 @@
 
 	key[]: "tos_url"
 	val[]: "https://www.worldoftrucks.com/terms"
+
+	key[]: "privacy_readonly_url"
+	val[]: "https://americantrucksimulator.com/privacy_readonly.php"
 #!}
 
 #+ Map names
@@ -111,10 +114,10 @@
 	val[]: "Màu sơn" #+ Header of list containing all paint jobs.
 
 	key[]: "brand_t"
-	val[]: "THIẾT KẾ XE TẢI"
+	val[]: "THIẾT KẾ PHƯƠNG TIỆN"
 
 	key[]: "brand"
-	val[]: "Thiết kế xe tải"
+	val[]: "Thiết kế Phương tiện"
 
 	key[]: "basket_t"
 	val[]: "Đơn Hàng" #+ Content of the basket.
@@ -122,16 +125,16 @@
 #+ Truck analysis feature - truck konfigurator and pop-up
 
 	key[]: "truck_analysis_t"
-	val[]: "PHÂN TÍCH XE TẢI" #+ Header of the widget in truck configurator
+	val[]: "PHÂN TÍCH PHƯƠNG TIỆN" #+ Header of the widget in truck configurator
 
 	key[]: "truck_analysis_popup_t"
-	val[]: "PHÂN TÍCH XE TẢI" #+ Header of the pop-up when taking heavy cargo
+	val[]: "PHÂN TÍCH PHƯƠNG TIỆN" #+ Header of the pop-up when taking heavy cargo
 
 	key[]: "current_truck_params"
-	val[]: "Cấu hình Xe tải" #+ Header inside the truck analysis widget for truck parameters
+	val[]: "Tùy chỉnh Phương tiện" #+ Header inside the truck analysis widget for truck parameters
 
 	key[]: "current_truck_parameters"
-	val[]: "Thiết lập xe tải" #+ Header inside the truck analysis pop-up for truck parameters
+	val[]: "Tùy chỉnh Phương tiện" #+ Header inside the truck analysis pop-up for truck parameters
 
 	key[]: "normal_cargo"
 	val[]: "Hàng hóa thông thường" #+ name of the bar for normal cargo suitability
@@ -188,7 +191,7 @@
 	val[]: "Bạn đang chuẩn bị kéo một kiện hàng rất nặng. Hãy kiểm tra lại xe tải của bạn và đảm bảo rằng nó sẽ đáp ứng được công việc." #+  Description in the truck analysis pop-up window when taking heavy cargo job
 
 	key[]: "truck_analysis_info_tooltip"
-	val[]: "Với loại hình vận chuyển thông thường mà bạn dự kiến, hãy điều chỉnh xe tải của bạn để tối ưu hóa hiệu suất dựa trên sự kết hợp giữa tiết kiệm nhiên liệu, các giới hạn kỹ thuật và pháp lý." #+  General tooltip description of Truck Analysis feature
+	val[]: "Với phương tiện giao thông mà bạn thường sử dụng, hãy điều chỉnh xe để tối ưu hóa hiệu suất dựa trên sự kết hợp giữa tiết kiệm nhiên liệu, các giới hạn kỹ thuật và pháp lý." #+  General tooltip description of Truck Analysis feature
 
 	key[]: "normal_cargo_tooltip"
 	val[]: "Được tối ưu hóa cho các nhiệm vụ vận chuyển hàng hóa hạng nhẹ và trung bình" #+  Tooltip description for the Normal Cargo bar in Truck Analysis
@@ -197,10 +200,10 @@
 	val[]: "Được tối ưu hóa cho vận chuyển hàng nặng và vận tải đặc biệt" #+  Tooltip description for the Heavy Cargo bar in Truck Analysis
 
 	key[]: "maneuverability_tooltip"
-	val[]: "Khả năng xoay xở xe tải bạn trong không gian hẹp" #+  Tooltip description for the Maneuverability bar in Truck Analysis
+	val[]: "Khả năng di chuyển của xe bạn trong không gian hẹp" #+  Tooltip description for the Maneuverability bar in Truck Analysis
 
 	key[]: "hill_climbing_tooltip"
-	val[]: "Hệ thống truyền động của xe tải được tối ưu hóa giúp leo dốc và xuống dốc mượt mà hơn" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
+	val[]: "Hệ thống truyền động của xe được tối ưu hóa giúp leo dốc và xuống dốc mượt mà hơn" #+  Tooltip description for the Hill Traversal bar in Truck Analysis
 
 	key[]: "uneven_terrain_tooltip"
 	val[]: "Khả năng vượt qua các bề mặt gồ ghề và mấp mô được cải thiện" #+  Tooltip description for the Uneven Terrain bar in Truck Analysis
@@ -230,7 +233,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "NÂNG CẤP XE TẢI" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "NÂNG CẤP PHƯƠNG TIỆN" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "NÂNG CẤP RƠ-MOÓC" #+ Title of the screen. Please keep in upper case where possible."
@@ -259,7 +262,7 @@
 
 
 	key[]: "truck_action_t"
-	val[]: "DỊCH VỤ XE TẢI" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
+	val[]: "DỊCH VỤ" #+ Title of window providing selection between various kinds of truck services (repairs, upgrades, paint shop). Please keep in upper case where possible.
 
 #+ Truck service screen.
 #+
@@ -273,7 +276,7 @@
 	val[]: "Dịch vụ" #+ Icon allowing player to repair the truck. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "truck_service_about"
-	val[]: "Bảo dưỡng, và sửa chữa xe tải. Một người lái xe giỏi luôn giữ cho xe của mình trong tình trạng tốt nhất." #+ Help message associated with service icon.
+	val[]: "Bảo dưỡng và sửa chữa xe. Một người lái xe giỏi luôn giữ cho xe của mình trong tình trạng tốt nhất." #+ Help message associated with service icon.
 
 	key[]: "damage_t"
 	val[]: "BÁO CÁO HƯ HẠI" #+ Header of section displaying status of individual components of the vehicle (engine, transmission, ....).  Please keep in upper case where possible. Please keep in upper case where possible.
@@ -285,7 +288,7 @@
 	val[]: "Thay thế toàn bộ" #+ Label of checkbox that sets all vehicle accessories to be replaced.
 
 	key[]: "truck_service_truck_t"
-	val[]: "BÁO CÁO HƯ HẠI XE TẢI" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
+	val[]: "BÁO CÁO HƯ HẠI XE" #+ Header of section displaying status of individual components of the truck. Please keep in upper case where possible.
 
 	key[]: "truck_service_trailer_t"
 	val[]: "BÁO CÁO HƯ HẠI RƠ-MOÓC" #+ Header of section displaying status of individual components of the trailer. Please keep in upper case where possible.
@@ -294,7 +297,7 @@
 	val[]: "Xác nhận" #+ Button which confirms selected actions.
 
 	key[]: "truck_damage"
-	val[]: "Thiệt hại xe" #+ Price for the truck damage
+	val[]: "Hư hại xe" #+ Price for the truck damage
 #@}
 
 #+ Truck upgrade/configuration screen.
@@ -303,13 +306,13 @@
 #@{
 
 	key[]: "truck_config_t"
-	val[]: "ĐIỀU CHỈNH XE TẢI" #+ Title of the screen. Please keep in upper case where possible.
+	val[]: "TÙY CHỈNH PHƯƠNG TIỆN" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "truck_config"
-	val[]: "Điều chỉnh Xe tải" #+ Icon allowing player to upgrade the truck.
+	val[]: "Tùy chỉnh Phương tiện" #+ Icon allowing player to upgrade the truck.
 
 	key[]: "truck_config_about"
-	val[]: "Bạn biết đấy, luôn có thứ gì đó bạn có thể chỉnh sửa hoặc sơn lại để khiến bạn cảm thấy hài lòng hơn về chiếc xe tải của mình." #+ Help message associated with upgrade icon.
+	val[]: "Bạn biết đấy, luôn có những thứ bạn có thể điều chỉnh hoặc sơn lại để khiến bạn cảm thấy hài lòng hơn về chiếc xe của mình." #+ Help message associated with upgrade icon.
 
 	key[]: "price"
 	val[]: "Giá" #+ Label of line with combined price of all new parts in basket.
@@ -321,7 +324,7 @@
 	val[]: "Chọn các hạng mục nâng cấp từ menu phía trên." #+ Text shown if user did not select any component category.
 
 	key[]: "select_pin"
-	val[]: "Chọn một điểm đánh dấu để xem các phụ kiện có thể gắn vào."
+	val[]: "Chọn một điểm đánh dấu trên xe để xem các phụ kiện phù hợp."
 
 	key[]: "tc_orig_price"
 	val[]: "Giá niêm yết:" #+ Followed by the price of the original configuration of the new truck.
@@ -342,13 +345,13 @@
 	val[]: "Đã phát hiện MOD bị thiếu. Các bộ phận xe bị ảnh hưởng đủ điều kiện được hoàn tiền.<br offset=35>Bạn có thể nhấp vào 'Xác nhận đơn hàng' để áp dụng hoàn tiền.<br><color value=@@clr_sel@@>HOẶC<color value=@@clr_txt@@><br>Thoát mà không thực hiện bất kỳ thay đổi nào nếu bạn định cài đặt lại mod bị thiếu sau này."
 
 	key[]: "part_type_aftermarket"
-	val[]: "Phụ tùng hậu mãi"
+	val[]: "Phụ tùng bên thứ ba"
 
 	key[]: "part_type_factory"
 	val[]: "Phụ tùng chính hãng"
 
 	key[]: "part_type_licensed"
-	val[]: "Phụ tùng có bản quyền"
+	val[]: "Phụ tùng bản quyền"
 
 	key[]: "overlay_reset_cam"
 	val[]: "Đặt lại camera"
@@ -408,7 +411,7 @@
 	val[]: "Chẩn đoán xe" #+ Icon allowing player to show damage on the truck.
 
 	key[]: "truck_diag_about"
-	val[]: "Xem thông tin và tình trạng về xe tải của bạn."
+	val[]: "Xem thông tin về xe của bạn và tình trạng hiện tại của xe."
 
 	key[]: "truck_diag_warning"
 	val[]: "Xe của bạn đang trong tình trạng kém. Hãy bảo dưỡng xe càng sớm càng tốt"
@@ -496,7 +499,7 @@
 	val[]: "Bạn đã thêm một số mặt hàng vào đơn hàng của mình!<br><br>Bạn có muốn hủy tất cả các thay đổi mới không?" #+ Shown as message box when the screen is about to be closed and there is still something in the basket.
 
 	key[]: "borrowed_truck_refusal"
-	val[]: "Chủ thuê của bạn sẽ không thích nếu bạn tự ý soi mói xe tải của họ." #+ Shown if user attempts to upgrade a quick job truck.
+	val[]: "Ông chủ của bạn sẽ không thích nếu bạn tự ý sửa chữa xe của họ." #+ Shown if user attempts to upgrade a quick job truck.
 
 	key[]: "trailer_job_major_change"
 	val[]: "Bạn không thể thay đổi loại, thân hoặc khung gầm rơ-moóc khi đang thực hiện công việc. Hãy hoàn thành việc giao hàng rồi thử lại." #+ Shown if user attemps make major change on owned trailer that is currently carrying cargo.
@@ -1054,10 +1057,10 @@
 #@{
 
 	key[]: "no_drive_t"
-	val[]: "KHÔNG CÓ XE" #+ Message box title. Please keep in upper case where possible.
+	val[]: "KHÔNG CÓ PHƯƠNG TIỆN" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "no_drive"
-	val[]: "Bạn không thể tự do đi lại trên thế giới vì không có xe tải để lái! Bạn có thể mua một chiếc hoặc lấy một chiếc từ đội xe của mình.<br><br>Bạn có muốn nhận một công việc nhanh chóng ngay bây giờ không?"
+	val[]: "Bạn không thể tự do đi lại trên thế giới vì không có phương tiện di chuyển! Bạn có thể mua một chiếc hoặc lấy một chiếc từ đội xe của mình.<br><br>Bạn có muốn nhận một công việc nhanh chóng ngay bây giờ không?"
 #@}
 
 #+ Game load window
@@ -1625,7 +1628,7 @@
 	val[]: "Đã có bài viết mới trên blog!" #+ Fallback news text content in case of fetch errors
 
 	key[]: "no_truck_dlc"
-	val[]: "Không tìm thấy xe tải nào! Vui lòng kích hoạt lại ít nhất một DLC xe tải và khởi động lại trò chơi." #+ Text shown when there is no truck available.
+	val[]: "Không tìm thấy phương tiện nào! Vui lòng kích hoạt lại ít nhất một DLC phương tiện và khởi động lại trò chơi." #+ Text shown when there is no truck available.
 
 	key[]: "extras"
 	val[]: "Thêm"
@@ -2030,7 +2033,7 @@
 	val[]: "Bản đồ" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_cargo"
-	val[]: "Kiện hàng" #+ Button/tab in DLC browser. Please keep it as short as possible.
+	val[]: "Hàng hóa" #+ Button/tab in DLC browser. Please keep it as short as possible.
 
 	key[]: "dlc_category_trailer"
 	val[]: "Rơ-moóc" #+ Button/tab in DLC browser. Please keep it as short as possible.
@@ -2063,7 +2066,7 @@
 	val[]: "ĐANG TẢI DỮ LIỆU" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "dlc_browser_online_wait_message"
-	val[]: "Đang tải thông tin DLC. Hãy đợi."
+	val[]: "Đang tải thông tin cập DLC. Vui lòng chờ."
 #@}
 
 #+ Activation screen
@@ -2216,7 +2219,7 @@
 	val[]: "Bạn có đang sử dụng thêm bộ điều khiển nào khác không? Tay cầm chơi game, cần điều khiển, vô lăng chẳng hạn? Hãy đảm bảo bạn thiết lập đúng cách."
 
 	key[]: "help_bcg_theme"
-	val[]: "Hãy làm nổi bật chiếc xe tải của bạn với hình nền máy tính được cá nhân hóa. Chọn một hình nền phù hợp với phong cách của bạn!"
+	val[]: "Hãy làm nổi bật chiếc xe của bạn với hình nền máy tính được cá nhân hóa. Chọn một hình nền phù hợp với phong cách của bạn!"
 
 #@}
 
@@ -2320,7 +2323,7 @@
 	val[]: "ÂM THANH GIAO DIỆN" #+ Title of the 'Interface' section. Please keep in upper case where possible.
 
 	key[]: "truck_sound_settings_t"
-	val[]: "ÂM THANH XE TẢI" #+ Title of the 'Truck Sounds' section. Please keep in upper case where possible.
+	val[]: "ÂM THANH PHƯƠNG TIỆN" #+ Title of the 'Vehicle Sounds' section. Please keep in upper case where possible.
 
 	key[]: "interior_sound_settings_t"
 	val[]: "ÂM THANH BÊN TRONG" #+ Title of the 'Interior Sounds' section. Please keep in upper case where possible.
@@ -2332,19 +2335,19 @@
 	val[]: "Âm thanh tổng" #+ Slider controlling master volume.
 
 	key[]: "truck_engine_volume"
-	val[]: "Âm lượng động cơ xe tải" #+ Slider controlling volume of the truck engine.
+	val[]: "Âm lượng động cơ xe" #+ Slider controlling volume of the truck engine.
 
 	key[]: "truck_exhaust_volume"
-	val[]: "Âm lượng ống khói xe tải" #+ Slider controlling volume of the truck exhaust.
+	val[]: "Âm lượng ống khói xe" #+ Slider controlling volume of the truck exhaust.
 
 	key[]: "truck_turbo_volume"
-	val[]: "Âm lượng tăng áp xe tải" #+ Slider controlling volume of the truck turbo.
+	val[]: "Âm lượng tăng áp xe" #+ Slider controlling volume of the truck turbo.
 
 	key[]: "truck_effects_volume"
-	val[]: "Âm lượng hiệu ứng xe tải" #+ Slider controlling volume of the truck effects.
+	val[]: "Âm lượng hiệu ứng xe" #+ Slider controlling volume of the truck effects.
 
 	key[]: "truck_noise_volume"
-	val[]: "Âm lượng tiếng ồn xe tải" #+ Slider controlling volume of the truck noises.
+	val[]: "Âm lượng tiếng ồn xe" #+ Slider controlling volume of the truck noises.
 
 	key[]: "trailer_noise_volume"
 	val[]: "Âm lượng tiếng ồn rơ-moóc" #+ Slider controlling volume of the trailer noises.
@@ -2404,7 +2407,7 @@
 	val[]: "Nghe thử giọng" #+ Label for the button to preview message of the voice navigation pack..
 
 	key[]: "voice_preview"
-	val[]: "Nghe trước" #+ The button to preview message of the voice navigation pack..
+	val[]: "Xem trước" #+ The button to preview message of the voice navigation pack..
 
 	key[]: "voice_speed_warning"
 	val[]: "Cảnh báo tốc độ" #+ Droplist for selection of the speed warning type.
@@ -2487,16 +2490,16 @@
 	val[]: "Chỉnh âm lượng toàn bộ game."
 
 	key[]: "truck_engine_volume_op_tooltip" # - Audio, Simple
-	val[]: "Chỉnh âm lượng động cơ xe tải."
+	val[]: "Chỉnh âm lượng động cơ xe."
 
 	key[]: "truck_exhaust_volume_op_tooltip" # - Audio, Simple
-	val[]: "Chỉnh âm lượng ống xả xe tải."
+	val[]: "Chỉnh âm lượng ống xả xe."
 
 	key[]: "truck_turbo_volume_op_tooltip" # - Audio, Simple
-	val[]: "Chỉnh âm lượng bộ tăng áp xe tải."
+	val[]: "Chỉnh âm lượng bộ tăng áp xe."
 
 	key[]: "truck_effects_volume_op_tooltip" # - Audio, Simple
-	val[]: "Chỉnh âm lượng cách hiệu ứng liên quan đến xe tải, ví dụ như tiếng xì phanh hơi."
+	val[]: "Chỉnh âm lượng cách hiệu ứng liên quan đến xe, ví dụ như tiếng xì phanh hơi."
 
 	key[]: "truck_noise_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm lượng âm thanh dội lên từ lốp xe."
@@ -2514,7 +2517,7 @@
 	val[]: "Điều chỉnh âm lượng của các âm thanh môi trường khác trong trò chơi, chẳng hạn như âm thanh đô thị chung, âm thanh thiên nhiên, v.v."
 
 	key[]: "interior_volume_op_tooltip" # - Audio, Simple
-	val[]: "Chỉnh âm lượng nội thất xe tải."
+	val[]: "Chỉnh âm lượng nội thất xe."
 
 	key[]: "radio_volume_op_tooltip" # - Audio, Simple
 	val[]: "Chỉnh âm thanh đài radio."
@@ -2568,19 +2571,19 @@
 	val[]: "Xem trước âm báo kết thúc."
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "Cho phép phát âm thanh còi khi lùi xe tải. Âm lượng có thể được điều chỉnh bằng thanh trượt \"Hiệu ứng xe tải\".<br><br>Khi được bật, bạn cũng sẽ nghe thấy tiếng còi lùi của những người chơi khác khi tham gia phiên chơi theo đoàn."
+	val[]: "Cho phép phát âm thanh còi khi lùi xe. Âm lượng có thể được điều chỉnh bằng thanh trượt \"Hiệu ứng xe\".<br><br>Khi được bật, bạn cũng sẽ nghe thấy tiếng còi lùi của những người chơi khác khi tham gia phiên chơi theo đoàn."
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Kích hoạt tiếng gầm khi lái xe ngang qua."
 
 	key[]: "noise_window_op_tooltip" # - Audio, Advanced
-	val[]: "Cho phép tạo thêm âm thanh của luồng không khí đi qua cửa sổ khi cửa sổ xe tải mở.<br><br><color value=@@clr_txt_d@@>Yêu cầu bật chức năng \"Âm thanh của luồng không khí\" để hoạt động."
+	val[]: "Cho phép tạo thêm âm thanh của luồng không khí đi qua cửa sổ khi cửa sổ xe mở.<br><br><color value=@@clr_txt_d@@>Yêu cầu bật chức năng \"Âm thanh của luồng không khí\" để hoạt động."
 
 	key[]: "noise_aero_op_tooltip" # - Audio, Advanced
 	val[]: "Kích hoạt tiếng ồn không khí xuyên qua cabin xe."
 
 	key[]: "reverb_cabin_op_tooltip" # - Audio, Advanced
-	val[]: "Cho phép tạo hiệu ứng âm vang trong cabin xe tải của bạn."
+	val[]: "Cho phép tạo hiệu ứng âm vang trong cabin xe của bạn."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
 	val[]: "Kích hoạt hiệu ứng vọng của môi trường xung quanh."
@@ -2627,7 +2630,7 @@
 	val[]: "HỘP SỐ" #+ Title of 'Transmission' settings section. Please keep in upper case where possible.
 
 	key[]: "truck_physics_settings"
-	val[]: "VẬT LÝ XE TẢI" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
+	val[]: "VẬT LÝ PHƯƠNG TIỆN" #+ Title of 'Truck physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
 	val[]: "TRỢ LÝ" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
@@ -2816,7 +2819,7 @@
 	val[]: "Ẩn" #+ Hide speed limit display on the advisor.
 
 	key[]: "truck_limit"
-	val[]: "Hiển thị giới hạn xe tải" #+ Show speed limits for trucks on the advisor.
+	val[]: "Hiển thị giới hạn cho chế độ xe hiện tại" #+ Show speed limits for trucks on the advisor.
 
 	key[]: "generic_limit"
 	val[]: "Hiện giới hạn xe ô tô" #+ Show speed limits for ordinary cars on the advisor.
@@ -2838,6 +2841,18 @@
 
 	key[]: "align_always_north"
 	val[]: "Luôn hướng Bắc" #+ Map aligned to north always.
+#@}
+
+#+ Proximity exploration mode
+#@{
+	key[]: "map_exploration_mode"
+	val[]: "Chế độ khám phá bản đồ" #+ Droplist for selection mode of map exploration mode.
+
+	key[]: "precision_exploration"
+	val[]: "Khám phá chính xác" #+ Precision Exploration.
+
+	key[]: "proximity_exploration"
+	val[]: "Khám phá theo vùng lân cận" #+ Proximity Exploration.
 #@}
 
 #+ Navigation display mode
@@ -2938,7 +2953,7 @@
 	val[]: "Cường độ phanh" #+ Slider for player modification of braking force.
 
 	key[]: "truck_stability"
-	val[]: "Độ ổn định của xe tải" #+ Slider for player modification of truckstability (COG position).
+	val[]: "Độ ổn định của xe" #+ Slider for player modification of truckstability (COG position).
 
 	key[]: "trailer_stability"
 	val[]: "Độ ổn định của rơ-moóc" #+ Slider for player modification of trailer stability (COG position).
@@ -3191,6 +3206,9 @@
 	key[]: "map_alignment_op_tooltip" # - Gameplay, Advanced
 	val[]: "Chọn cách căn chỉnh bản đồ thế giới."
 
+	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
+	val[]: "(placeholder) Chọn cách khám phá bản đồ."
+
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Chọn cách hiển thị điều hướng."
 
@@ -3213,7 +3231,7 @@
 	val[]: "Chọn có hiển thị thông tin múi giờ bên cạnh thời gian hiện tại hay không."
 
 	key[]: "show_cutscenes_op_tooltip" # - Gameplay, Simple
-	val[]: "Cho phép hiển thị các đoạn phim cắt cảnh trong game, thường được trình chiếu sau khi mua xe tải hoặc nâng cấp gara."
+	val[]: "Cho phép hiển thị các đoạn phim cắt cảnh trong game, thường được trình chiếu sau khi mua xe tải, nâng cấp gara hoặc trong quá trình đón khách."
 
 	key[]: "show_blockers_op_tooltip" # - Gameplay, Simple
 	val[]: "Chọn xem có hiển thị các vật cản bán trong suốt trên những con đường không thể đi qua hay không."
@@ -3237,13 +3255,13 @@
 	val[]: "Điều chỉnh cường độ phanh."
 
 	key[]: "truck_stability_op_tooltip" # - Gameplay, Advanced
-	val[]: "Thay đổi độ ổn định của xe tải bằng cách hạ thấp trọng tâm xe."
+	val[]: "Thay đổi độ ổn định của xe bằng cách hạ thấp trọng tâm."
 
 	key[]: "trailer_stability_op_tooltip" # - Gameplay, Advanced
 	val[]: "Thay đổi độ ổn định của rơ móc bằng cách hạ thấp trọng tâm xe."
 
 	key[]: "driveshaft_torque_op_tooltip" # - Gameplay, Advanced
-	val[]: "Thay đổi cường độ mô-men xoắn được tạo ra từ hệ thống truyền động.<br><br>Tăng cài đặt này sẽ làm tăng cảm giác xe tải \"xoay\" sang phải."
+	val[]: "Thay đổi cường độ mô-men xoắn được tạo ra từ hệ thống truyền động.<br><br>Tăng cài đặt này sẽ làm tăng cảm giác xe \"xoắn\" sang phải."
 
 	key[]: "suspension_stiffness_op_tooltip" # - Gameplay, Advanced
 	val[]: "Thay đổi độ cứng của hệ thống treo khung gầm."
@@ -3279,7 +3297,7 @@
 	val[]: "Khi được kích hoạt, động cơ sẽ khởi động ngay khi nhấn cần ga."
 
 	key[]: "auto_park_brake_op_tooltip" # - Gameplay, Advanced
-	val[]: "Khi được kích hoạt, phanh đỗ xe sẽ được cài mặc định (sau khi đi phà, kéo xe, di chuyển nhanh, v.v.)."
+	val[]: "Khi được kích hoạt, phanh tay của xe sẽ tự động được sử dụng (sau khi sử dụng phà, kéo xe đi bảo dưỡng, di chuyển nhanh, v.v.)."
 
 	key[]: "auto_drop_axles_op_tooltip" # - Gameplay, Advanced
 	val[]: "Tự động triển khai trục nâng khi cần thiết tùy theo trọng tải xe."
@@ -3297,10 +3315,10 @@
 	val[]: "Khi được kích hoạt, ABS sẽ ngăn bó bánh xe nhằm giữ kiểm soát và cải thiện khả năng phanh."
 
 	key[]: "traction_control_op_tooltip" # - Gameplay, Advanced
-	val[]: "Khi được kích hoạt, xe sẽ áp dụng phanh riêng từng bánh nhằm tránh trượt bánh, thừa lái hoặc thiếu lại nhằm giữ kiểm soát."
+	val[]: "Khi được kích hoạt, xe sẽ tự động phanh từng bánh để ngăn ngừa hiện tượng trượt bánh, thiếu lái hoặc thừa lái, giúp duy trì khả năng kiểm soát."
 
 	key[]: "auto_diff_lock_op_tooltip" # - Gameplay, Advanced
-	val[]: "Khi được kích hoạt, xe tải sẽ khóa vi sai nếu bánh xe bắt đầu trượt để cải thiện độ bám đường."
+	val[]: "Khi được kích hoạt, xe sẽ khóa vi sai nếu bánh xe bắt đầu trượt để cải thiện độ bám đường."
 
 	key[]: "cruise_control_grid_op_tooltip" # - Gameplay, Advanced
 	val[]: "Điều chỉnh mức tăng hoặc giảm tốc độ của hệ thống kiểm soát hành trình khi nhấn nút tương ứng."
@@ -3315,10 +3333,10 @@
 	val[]: "Kích hoạt phanh khẩn cấp nếu hệ thống cảm biến thấy sắp có va chạm xảy ra.<br>Chọn để hệ thống chỉ phản hồi với các phương tiện hoặc với tất cả chướng ngại vật."
 
 	key[]: "lane_assistant_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "Lựa chọn các chế độ hỗ trợ làn đường:<br>- Chế độ \"Cảnh báo chệch làn đường\" sẽ phát âm thanh cảnh báo khi bạn sắp đi chệch khỏi làn đường.<br>- Ngoài âm thanh cảnh báo, chế độ \"Hỗ trợ giữ làn đường\" còn tự động đánh lái để giữ xe không đi chệch khỏi làn đường.<br><br>Cả hai chế độ chỉ hoạt động ở tốc độ trên 55 km/h (~35 mph).<br>Hệ thống Hỗ trợ làn đường cũng sẽ xem xét việc bạn có đang sử dụng đèn xi-nhan hay không trước khi can thiệp."
+	val[]: "Lựa chọn các chế độ hỗ trợ giữ làn đường:<br>- Chế độ \"Cảnh báo lệch làn đường\" sẽ cảnh báo bằng âm thanh khi bạn sắp rời khỏi làn đường.<br>- Ngoài cảnh báo bằng âm thanh, chế độ \"Hỗ trợ giữ làn đường\" cũng tự động điều khiển vô lăng để tránh xe bị lệch khỏi làn đường.<br><br>Cả hai chế độ chỉ hoạt động ở tốc độ trên 55 km/h (~35 mph).<br>Hệ thống hỗ trợ giữ làn đường cũng xem xét việc bạn sử dụng đèn báo rẽ trước khi kích hoạt."
 
 	key[]: "blind_spot_op_tooltip" # - Gameplay, Advanced
-	val[]: "Kích hoạt chức năng cảm biến điểm mù, nếu xe tải của bạn được trang bị tính năng này."
+	val[]: "Kích hoạt chức năng cảm biến điểm mù, nếu xe của bạn được trang bị tính năng này."
 
 	key[]: "automatic_headlights_op_tooltip" # - Gameplay, Simple
 	val[]: "Khi được kích hoạt và đèn pha được đặt ở vị trí đầu tiên, đèn pha sẽ tự động bật trong điều kiện ánh sáng yếu."
@@ -3553,11 +3571,16 @@
 	key[]: "lost_function_binding"
 	val[]: "Lệnh vừa mất phím:" #+ Shown when key was rebound to a different function.
 
+#!{
+	key[]: "options_bindings_screen" #+ Options screen name for changing bindings.
+	val[]: "@@keyboard_ico@@"
+#!}
+
 #+ Headers of individual sections
 #@{
 
 	key[]: "truck_controls"
-	val[]: "XE TẢI"
+	val[]: "PHƯƠNG TIỆN"
 
 	key[]: "assistant_controls"
 	val[]: "TRỢ LÝ"
@@ -3596,7 +3619,7 @@
 	val[]: "THAO TÁC NHANH"
 
 	key[]: "radio_controls"
-	val[]: "RADIO"
+	val[]: "TRÌNH PHÁT ÂM THANH"
 
 	key[]: "convoy_controls"
 	val[]: "CONVOY"
@@ -3801,16 +3824,22 @@
 	val[]: "Trình phát nhạc"
 
 	key[]: "o_im_radio_next"
-	val[]: "Bản nhạc tiếp theo"
+	val[]: "Trình phát âm thanh tiếp theo"
 
 	key[]: "o_im_radio_prev"
-	val[]: "Bản nhạc trước"
+	val[]: "Trình phát âm thanh trước đó"
 
 	key[]: "o_im_radio_vol_up"
 	val[]: "Tăng âm lượng trình phát nhạc"
 
 	key[]: "o_im_radio_vol_down"
 	val[]: "Giảm âm lượng trình phát nhạc"
+
+	key[]: "o_im_radio_toggle"
+	val[]: "Tạm dừng/Phát trình phát âm thanh"
+
+	key[]: "o_im_radio_favorite"
+	val[]: "Trình phát âm thanh Thêm vào / Xóa khỏi mục yêu thích"
 
 	key[]: "o_im_display"
 	val[]: "Chế độ màn hình Taplo" #+ Action for cycling between dashboard display pages/modes.
@@ -3865,7 +3894,7 @@
 	val[]: "Thông tin nhanh"
 
 	key[]: "o_im_adjuster"
-	val[]: "Tùy chỉnh xe"
+	val[]: "Điều chỉnh phương tiện"
 
 	key[]: "o_im_services"
 	val[]: "Dịch vụ & Điều chỉnh"
@@ -4103,7 +4132,7 @@
 	val[]: "Gán nút để bật/tắt bộ hãm thủy lực tự động."
 
 	key[]: "o_im_lift_axle_op_tooltip"
-	val[]: "Chỉ định nút để nâng/hạ trục, nếu xe tải của bạn có trục có thể nâng hạ."
+	val[]: "Chỉ định nút để nâng/hạ trục, nếu xe của bạn có trục có thể nâng hạ."
 
 	key[]: "o_im_lift_axle_trailer_op_tooltip"
 	val[]: "Chỉ định nút để nâng/hạ trục, nếu rơ-moóc của bạn có trục nâng hạ được."
@@ -4151,13 +4180,13 @@
 	val[]: "Gán nút để bật/tắt đèn pha chiếu xa."
 
 	key[]: "o_im_beacon_op_tooltip"
-	val[]: "Gán nút để bật/tắt đèn hiệu, nếu xe tải hoặc xe kéo của bạn được trang bị đèn hiệu."
+	val[]: "Gán nút để bật/tắt đèn hiệu, nếu xe hoặc rơ moóc của bạn được trang bị chức năng này."
 
 	key[]: "o_im_horn_op_tooltip"
 	val[]: "Gán nút để sử dụng còi điện."
 
 	key[]: "o_im_air_horn_op_tooltip"
-	val[]: "Gán nút để sử dụng còi hơi, nếu xe tải của bạn được trang bị còi hơi."
+	val[]: "Gán nút để sử dụng còi hơi, nếu xe của bạn được trang bị còi hơi."
 
 	key[]: "o_im_light_horn_op_tooltip"
 	val[]: "Gán nút để nháy đèn pha."
@@ -4229,7 +4258,7 @@
 	val[]: "Gán nút để hiển thị menu Dịch vụ & Điều chỉnh."
 
 	key[]: "o_im_adviser_cursor_op_tooltip"
-	val[]: "Chỉ định nút dùng để hiển thị thông tin nhanh về trạng thái công việc, tình trạng xe tải và các quy định địa phương, đồng thời tạm dừng trò chơi khi không tham gia đoàn xe."
+	val[]: "Nút \"Giao nhiệm vụ\" dùng để hiển thị thông tin nhanh về trạng thái công việc, tình trạng xe và các quy định địa phương, đồng thời tạm dừng trò chơi khi không tham gia đoàn xe."
 
 	key[]: "o_im_adviser_zoom_in_op_tooltip"
 	val[]: "Gán nút để phóng to trong thanh điều hướng."
@@ -4409,16 +4438,22 @@
 	val[]: "Gán nút để mở trình phát âm thanh."
 
 	key[]: "o_im_radio_next_op_tooltip"
-	val[]: "Gán nút để chuyển sang luồng phát thanh yêu thích tiếp theo."
+	val[]: "Gán nút để phát mục tiếp theo trong danh sách phát nhạc khi đang lái xe."
 
 	key[]: "o_im_radio_prev_op_tooltip"
-	val[]: "Gán nút để chuyển sang luồng phát thanh yêu thích trước đó."
+	val[]: "Gán nút để phát mục trước đó trong danh sách phát nhạc khi đang lái xe."
 
 	key[]: "o_im_radio_vol_up_op_tooltip"
-	val[]: "Gán nút để tăng âm lượng của trình phát âm thanh."
+	val[]: "Gán nút để tăng âm lượng trình phát âm thanh khi đang lái xe."
 
 	key[]: "o_im_radio_vol_down_op_tooltip"
-	val[]: "Gán nút để giảm âm lượng của trình phát âm thanh."
+	val[]: "Gán nút để giảm âm lượng trình phát âm thanh khi đang lái xe."
+
+	key[]: "o_im_radio_toggle_op_tooltip"
+	val[]: "Gán nút để tạm dừng và tiếp tục phát nhạc khi đang lái xe."
+
+	key[]: "o_im_radio_favorite_op_tooltip"
+	val[]: "Nút này dùng để thêm hoặc xóa các đài phát thanh khỏi danh sách yêu thích khi đang lái xe."
 
 	key[]: "o_im_nav_map_op_tooltip"
 	val[]: "Gán nút để mở bản đồ thế giới."
@@ -5231,7 +5266,7 @@
 	val[]: "Chế độ tự động tạm dừng" #+ Type of the autopause
 
 	key[]: "eye_autopause_mode_never"
-	val[]: "Bị vô hiệu hóa" #+ Autopause is disabled
+	val[]: "Đã tắt" #+ Autopause is disabled
 
 	key[]: "eye_autopause_mode_presence"
 	val[]: "Hiện diện" #+ Autopause if user is not present
@@ -5295,7 +5330,7 @@
 
 	key[]: "brightness"
 	val[]: "Độ sáng / HDR" #+ Button opening brightness or HDR brightness setup.
-	
+
 	key[]: "brightness_setup_button"
 	val[]: "Thiết đặt" #+ Text on the brightness button itself.
 
@@ -5518,7 +5553,7 @@
 	val[]: "Cho phép hiển thị bóng đổ ngay cả từ các vật thể ở rất xa.<br><br><color value=@@clr_txt_d@@>Thiết lập này thường có tác động vừa phải đến hiệu năng."
 
 	key[]: "interior_shadow_op_tooltip" # - Graphics, Advanced
-	val[]: "Cho phép tạo bóng đổ động vào ban đêm trong nội thất xe tải.<br><br><color value=@@clr_txt_d@@>Thiết lập này thường có tác động vừa phải đến hiệu năng."
+	val[]: "Cho phép tạo bóng đổ động vào ban đêm trong nội thất xe.<br><br><color value=@@clr_txt_d@@>Thiết lập này thường có tác động vừa phải đến hiệu năng."
 
 	key[]: "weather_quality_op_tooltip" # - Graphics, Advanced
 	val[]: "Điều chỉnh chất lượng các hiệu ứng thời tiết, chẳng hạn như phản chiếu."
@@ -5565,25 +5600,25 @@
 
 	key[]: "brightness_title"
 	val[]: "Thiết lập độ sáng" #+ Label shown at the top of the screen.
-	
+
 	key[]: "brightness_subtitle"
 	val[]: "Điều chỉnh độ sáng cho đến khi các chi tiết trong ảnh hiển thị rõ nét."
 
 	key[]: "open_hdr"
 	val[]: "Hiệu chỉnh HDR"
-	
+
 	key[]: "brightness_confirm"
 	val[]: "Xác nhận"
-	
+
 	key[]: "brightness_reset"
 	val[]: "Đặt lại"
-	
+
 #+ Tooltips.
 #@{
 	key[]: "brightness_slider_tooltip"
 	val[]: "Điều chỉnh độ sáng tổng thể của trò chơi."
 #@}
-	
+
 #@}
 
 #+ Options/HDR
@@ -5592,16 +5627,16 @@
 #@{
 	key[]: "hdr_title"
 	val[]: "Hiệu chỉnh HDR"
-	
+
 	key[]: "hdr_subtitle"
 	val[]: "Để hiệu chỉnh HDR (Dải rộng cao), hãy điều chỉnh thanh trượt cho đến khi hình chiếc xe tải vừa đủ mờ để nhìn thấy."
-	
+
 	key[]: "hdr_back"
 	val[]: "Trở lại"
-	
+
 	key[]: "hdr_reset"
 	val[]: "Đặt lại"
-	
+
 	key[]: "hdr_continue"
 	val[]: "Tiếp tục"
 #@}
@@ -6043,7 +6078,7 @@
 	val[]: "MÁY PHÁT RADIO" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "radio"
-	val[]: "Radio" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Trình phát âm thanh" #+ Icon opening the radio window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "music_player"
 	val[]: "Trình phát nhạc" #+ Button for selecting music player.
@@ -6051,8 +6086,20 @@
 	key[]: "radio_stream"
 	val[]: "Radio trực tuyến" #+ Button for selecting online radio.
 
+	key[]: "game_radio"
+	val[]: "Radio game" #+ Button for selecting game radio (offline radio).
+
 	key[]: "radio_changed"
 	val[]: "Đang phát <color value=@@clr_sel@@>$NAME$" #+ Notification that playing track/stream have changed.
+
+	key[]: "stream_safe"
+	val[]: "Stream an toàn" #+ Text for enabling stream-safe mode (offline game radios that are designed to avoid content claims)
+
+	key[]: "volume_up"
+	val[]: "Tăng âm lượng" #+ Controller hint text for increasing volume
+
+	key[]: "volume_down"
+	val[]: "Giảm âm lượng" #+ Controller hint text for decreasing volume
 
 #+ Hint shown if no music files are found. Also shown as tooltip when hovering over music_player button.
 
@@ -6069,6 +6116,26 @@
 	key[]: "empty_radio_hint"
 	val[]: "Vui lòng tham khảo tệp <color value=@@clr_sel@@>readme.rtf <color value=@@clr_txt@@>trong thư mục <color value=@@clr_sel@@>Euro Truck Simulator 2 <color value=@@clr_txt@@>trong thư mục <color value=@@clr_sel@@>Documents <color value=@@clr_txt@@>của bạn để biết cách thêm nhạc và luồng radio của riêng bạn."
 
+	key[]: "radio_hint_repeat_favorites"
+	val[]: "Bạn có thể chuyển đổi giữa việc xem tất cả mục hoặc chỉ các mục yêu thích.<br><br>\"Chỉ xem các mục yêu thích\" khả dụng khi có ít nhất một mục yêu thích trong danh sách của bạn."
+
+	key[]: "radio_cycling_all"
+	val[]: "Lặp tất cả" #+ Text shown if currently we are cycling between all tracks
+
+	key[]: "radio_cycling_favorites"
+	val[]: "Chỉ lặp phần yêu thích" #+ Text shown if currently we are cycling between only favorite
+
+	key[]: "radio_hint_online_update"
+	val[]: "Nhấn vào nút này sẽ làm mới danh sách các kênh phát thanh trực tuyến mà bạn có thể nghe."
+
+	key[]: "music_player_hint_shuffle"
+	val[]: "Chuyển đổi giữa thứ tự bài hát thông thường và thứ tự bài hát ngẫu nhiên."
+
+	key[]: "stream_safe_hint_unmodded"
+	val[]: "Đài phát thanh được chỉ định để tránh các khiếu nại về nội dung."
+
+	key[]: "stream_safe_hint_modded"
+	val[]: "Nội dung phát thanh do cộng đồng tạo ra được đánh dấu là an toàn khi phát trực tuyến. Tuy nhiên, nội dung này chưa được kiểm duyệt hoặc đảm bảo và vẫn có thể dẫn đến khiếu nại về nội dung."
 
 	key[]: "radio_update"
 	val[]: "Cập nhật từ internet" #+ Button used to update the list of live streams from the web.
@@ -6081,6 +6148,9 @@
 
 	key[]: "music_player_info_title"
 	val[]: "THÔNG TIN TRÌNH PHÁT NHẠC"
+
+	key[]: "my_music"
+	val[]: "Nhạc của tôi"
 
 #+ Music player columns.
 
@@ -6137,13 +6207,13 @@
 	val[]: "Thu nhập" #+ For example "Job income: E6,526"
 
 	key[]: "wanna_assistance"
-	val[]: "Dịch vụ hỗ trợ có thể đưa bạn và xe đến $CITY$. Chi phí là $MONEY$ và mất $TIME$.<br offset=30>Bạn có đồng ý?"
+	val[]: "Dịch vụ hỗ trợ có thể đưa bạn và xe của bạn đến $CITY$. Chi phí sẽ là $MONEY$ và chuyến đi sẽ mất $TIME$.<br offset=30>Bạn có đồng ý không?"
 
 	key[]: "wanna_assistance_quick"
-	val[]: "Dịch vụ cứu trợ có thể đưa bạn và xe tải của bạn đến $CITY$. Chi phí sẽ là $MONEY$ và thời gian di chuyển là $TIME$.<br>(Chi phí sẽ do chủ thuê chi trả.)<br offset=30>Bạn có đồng ý không?"
+	val[]: "Dịch vụ hỗ trợ có thể đưa bạn và xe của bạn đến $CITY$. Chi phí sẽ là $MONEY$ và thời gian di chuyển là $TIME$.<br>(Chi phí sẽ do chủ thuê bạn chi trả.)<br offset=30>Bạn có đồng ý không?"
 
 	key[]: "wanna_assistance_online"
-	val[]: "Dịch vụ hỗ trợ có thể đưa bạn và xe đến $CITY$. Chi phí là $MONEY$ và sẽ mất $TIME$.<br offset=30>Chuyến hàng hiện tại của bạn sẽ bị hủy.<br offset=30>Bạn có đồng ý?"
+	val[]: "Dịch vụ hỗ trợ có thể đưa bạn và xe của bạn đến $CITY$. Chi phí sẽ là $MONEY$ và thời gian di chuyển là $TIME$.<br offset=30>Công việc hiện tại của bạn sẽ bị hủy.<br offset=30>Bạn có đồng ý không?"
 
 	key[]: "wanna_recover"
 	val[]: "Dịch vụ cứu hộ sẽ đưa bạn và xe ra đoạn đường gần nhất. Chi phí $MONEY$ và mất khoảng $TIME$.<br offset=30>Bạn có đồng ý không?"
@@ -6285,7 +6355,7 @@
 	val[]: "Đã tìm thấy đại lý xe tải $BRAND$!"
 
 	key[]: "service"
-	val[]: "Để sửa chữa, nâng cấp hoặc sơn lại<br>xe tải hoặc rơ-moóc của bạn, hãy nhấn:"
+	val[]: "Để sửa chữa, nâng cấp, hoặc<br>sơn lại xe của bạn, hãy nhấn:"
 
 	key[]: "job_offer"
 	val[]: "Nhấn phím sau để xem chuyến hàng:"
@@ -6381,7 +6451,7 @@
 	val[]: "Tắt động cơ!"
 
 	key[]: "stop_truck_short"
-	val[]: "Dừng xe tải lại!"   #+ Quick message shown when sleep was prevented by truck movement.
+	val[]: "Dừng xe lại!"   #+ Quick message shown when sleep was prevented by truck movement.
 
 	key[]: "stop_engine"
 	val[]: "Sử dụng phím sau để tắt động cơ:"
@@ -6536,7 +6606,7 @@
 	val[]: "Không thể nâng trục.<br>Rơ-moóc nối vào quá nặng."
 
 	key[]: "diff_lock_fail"
-	val[]: "Không thể khóa vi sai. Hãy giảm tốc độ xe tải và thử lại."
+	val[]: "Không thể khóa vi sai. Hãy giảm tốc độ xe và thử lại."
 
 	key[]: "diff_lock_hint"
 	val[]: "Nếu bạn không thể di chuyển, chế độ khóa vi sai có thể giúp bạn.<br>Ấn nút sau để kích hoạt:"
@@ -6617,6 +6687,12 @@
 	key[]: "adv_hud_infotainment_op_tooltip"
 	val[]: "Màn hình thông tin giải trí trong xe dùng cho hệ thống dẫn đường."
 
+	key[]: "adv_hud_radio"
+	val[]: "Trình phát Âm thanh"
+
+	key[]: "adv_hud_radio_op_tooltip"
+	val[]: "Khi thay đổi thủ công — tiện ích sẽ xuất hiện khi bạn thực hiện một thao tác, chẳng hạn như chuyển đổi kênh hoặc thêm kênh vào mục yêu thích.<br><br>Đối với mọi thay đổi — tiện ích sẽ xuất hiện cho mọi cập nhật, bao gồm cả các thao tác thủ công và chuyển đổi bài hát tự động."
+
 	key[]: "adv_hud_finances_line"
 	val[]: "Tài chính" #+ Widget name for the current bank account balance and the last 7 days profit.
 
@@ -6625,6 +6701,12 @@
 
 	key[]: "adv_hud_damage_line"
 	val[]: "Thiệt hại" #+ Widget name for displaying vehicle damage.
+
+	key[]: "adv_hud_job_info"
+	val[]: "C.tiết c.việc" #+ Widget name for displaying job info.
+
+	key[]: "adv_hud_chat"
+	val[]: "Trò chuyện" #+ Widget name for displaying the convoy chat.
 
 	key[]: "adv_hud_autopark"
 	val[]: "Đỗ xe tự động"
@@ -6644,6 +6726,11 @@
 	key[]: "adv_hud_visible"
 	val[]: "Đã bật"
 
+	key[]: "adv_hud_radio_interaction"
+	val[]: "Khi thay đổi thủ công" #+ HUD audio player widget visibility setting for showing the widget only when the user causes a change
+
+	key[]: "adv_hud_radio_change"
+	val[]: "Về mọi thay đổi" #+ HUD audio player widget visibility setting for showing the widget only when there is any change (e.g. next song automatically plays)
 
 	key[]: "hud_mirrors_none"
 	val[]: "Không"
@@ -6871,7 +6958,7 @@
 #@{
 
 	key[]: "skills"
-	val[]: "Kĩ năng" #+ Icon opening the skills window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Kỹ năng" #+ Icon opening the skills window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "skills_help"
 	val[]: "Hãy dùng điểm thưởng của bạn để tìm việc tốt hơn. Kỹ năng càng cao, công việc bạn kiếm được càng tốt hơn." #+ Help text associated with the Skills icon
@@ -8740,7 +8827,7 @@
 
 	key[]: "compman_graph_tooltip"
 	val[]: "Lợi nhuận của công ty trong 7 ngày gần nhất. Di chuột qua từng điểm để xem giá trị lợi nhuận chính xác hàng ngày."
-	
+
 	key[]: "compman_graph_not_available"
 	val[]: "Biểu đồ sẽ có sẵn sau khi ngày đầu tiên kết thúc."
 
@@ -8760,7 +8847,7 @@
 	val[]: "Bạn không thể chọn chuyển hàng nhanh khi vẫn đang vẫn chuyển hàng hóa khác!"
 
 	key[]: "compman_qt_notruck"
-	val[]: "Bạn không thể nhận chở hàng nhanh khi bạn chưa có xe tải riêng!"
+	val[]: "Bạn không thể nhận chở hàng nhanh khi bạn chưa có xe riêng!"
 
 	key[]: "compman_qt_confirm"
 	val[]: "Bạn có muốn di chuyển nhanh đến ga-ra đã chọn ?"
@@ -9130,13 +9217,13 @@
 #@{
 
 	key[]: "truckman_sell_t"
-	val[]: "BÁN XE"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "BÁN PHƯƠNG TIỆN"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_reallysell"
 	val[]: "Bạn có muốn bán chiếc xe $TRUCK$ với giá <br>$MONEY$?"
 
 	key[]: "truckman_msg_nosell"
-	val[]: "Bạn không thể bán xe trong quá trình vận chuyển, hãy hoàn thành chuyến hàng trước và hãy thử lại."
+	val[]: "Bạn không thể bán chiếc xe đang lái khi đang làm việc! Hãy hoàn thành công việc rồi hãy thử lại."
 
 	key[]: "truckman_total_restoration_t"
 	val[]: "ĐẠI TU TOÀN BỘ"  #+ Message box title. Please keep in upper case where possible.
@@ -9168,10 +9255,10 @@
 #@{
 
 	key[]: "truckman_change_t"
-	val[]: "ĐỔI XE TẢI" #+ Message box title. Please keep in upper case where possible.
+	val[]: "ĐỔI PHƯƠNG TIỆN" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nochange"
-	val[]: "Bạn không thể đổi xe trong quá trình vận chuyển, hãy hoàn thành chuyến hàng trước."
+	val[]: "Bạn không được phép thay đổi phương tiện khi đang làm việc! Hãy hoàn thành công việc trước đã."
 
 	key[]: "truckman_conf_drive"
 	val[]: "Bạn có muốn phân công lại chiếc xe tải $TRUCK_SRC$ đến thành phố $CITY_DST$ và lái chiếc $TRUCK_DST$ không?"
@@ -9208,7 +9295,7 @@
 	val[]: "SAO CHÉP THIẾT LẬP" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "truckman_msg_nouse"
-	val[]: "Xe này không thể dùng để sao chép thiết lập vì thiếu dữ liệu hoặc bị gỡ MOD hay DLC.<br><br>Hãy cài đặt lại MOD/DLC."
+	val[]: "Không thể sử dụng phương tiện này làm nguồn cấu hình sao chép do thiếu dữ liệu, rất có thể là do đã gỡ bỏ MOD hoặc DLC.<br><br>Vui lòng cài đặt lại MOD/DLC."
 #@}
 
 # End of: "Truck management screen"
@@ -9246,7 +9333,7 @@
 	val[]: "Đào tạo Kỹ năng"
 
 	key[]: "driverman_op_player_skills"
-	val[]: "Kĩ năng"
+	val[]: "Kỹ năng"
 
 	key[]: "driverman_skill_training_t"
 	val[]: "ĐÀO TẠO KỸ NĂNG"
@@ -9262,7 +9349,7 @@
 
 	key[]: "relocate_together"
 	val[]: "Di chuyển tài xế và xe tải được chỉ định của họ cùng nhau."
-	
+
 	key[]: "skill_in_training"
 	val[]: "<color value=@@clr_green@@>Kỹ năng đang đào tạo:"
 
@@ -10712,31 +10799,31 @@
 
     key[]: "job_detail_word"
 	val[]: "C.tiết c.việc"
-	
+
 	key[]: "job_detail_word_t"
 	val[]: "CHI TIẾT CÔNG VIỆC"
 
 	key[]: "mapping_options_word"
 	val[]: "Tùy chọn Mapping"
-	
+
 	key[]: "quick_info_word"
 	val[]: "Thông tin nhanh"
 
 	key[]: "quick_info_word_t"
 	val[]: "THÔNG TIN NHANH"
-	
+
 	key[]: "damage_word_t"
 	val[]: "HƯ HẠI"
 
 	key[]: "widget_options_word"
 	val[]: "Tùy chọn Widget"
-	
+
 	key[]: "current_country_info_t"
 	val[]: "QUY ĐỊNH ĐỊA PHƯƠNG"
-	
+
 	key[]: "no_job_taken"
 	val[]: "Hiện không nhận công việc nào"
-	
+
 	key[]: "searching_for_navigation"
 	val[]: "Đang tìm kiếm điều hướng..."
 #@}
@@ -10826,7 +10913,7 @@
 
 	key[]: "intro_garage_5"
 	val[]: "Chúc may mắn!"
-	
+
 
 	key[]: "desktop_tut_t"
 	val[]: "TÍNH NĂNG ĐÃ ĐƯỢC MỞ KHÓA"
@@ -11185,16 +11272,16 @@
 #@{
 
 	key[]: "wiz_gb_simple"
-	val[]: "Phương pháp lái xe đơn giản nhất được thiết kế đặc biệt (nhưng không chỉ) dành cho điều khiển bằng bàn phím. Nhấn nút TIẾN để lái về phía trước và nhấn nút LÙI để phanh hoặc lùi. Hộp số sẽ tự động xử lý mọi thứ còn lại: chuyển đổi giữa lái tiến, phanh hoặc lùi, sang số phù hợp, v.v."
+	val[]: "Nhấn nút TIẾN để di chuyển về phía trước, và nhấn nút LÙI để phanh hoặc lùi xe. Hộp số tự động quản lý mọi thứ khác, xử lý các chuyển đổi giữa chế độ lái, phanh và lùi, cũng như chọn số phù hợp."
 
 	key[]: "wiz_gb_automatic"
-	val[]: "Thích hợp cho vô lăng có bàn đạp. Sử dụng các nút để chuyển đổi giữa chế độ lái tiến, đứng yên (số mo) hoặc lùi. Sau đó nhấn bàn đạp ga và để hộp số tự động điều chỉnh số."
+	val[]: "Sử dụng các nút để chuyển đổi giữa chế độ lái tiến, số mo hoặc lùi. Sau đó nhấn bàn đạp ga và để hộp số tự động điều khiển việc chuyển số."
 
 	key[]: "wiz_gb_sequential"
-	val[]: "Bạn có thể tự chuyển số lên xuống để chọn giữa số tiến, số mo và số lùi. Việc này hơi khó làm quen, nhưng bạn có thể đạt được hiệu suất lái tốt hơn và kiểm soát hoàn toàn xe trong nhiều tình huống khác nhau."
+	val[]: "Người lái có thể tự chuyển số lên xuống để chọn từng cấp số riêng lẻ trong hộp số. Cấu hình này cho phép kiểm soát hoàn toàn hộp số của xe."
 
 	key[]: "wiz_gb_hshifter"
-	val[]: "Chọn trực tiếp số mong muốn. Độ khó tương tự như hộp số tuần tự, nhưng thực tế hơn. Nên sử dụng cần số vật lý kiểu H như G27 hoặc G25. Cần có côn."
+	val[]: "Chọn trực tiếp số mong muốn. Điều này mang lại cấu hình thực tế nhất. Nên sử dụng cần số kiểu chữ H vật lý và cần phải sử dụng côn."
 #@}
 
 #+ Shown when feature requires a gamming controller.
@@ -11247,7 +11334,7 @@
 #+ Configuration complete page
 #@{
 	key[]: "wiz_cfg_done"
-	val[]: "Trò chơi đã cấu hình xong và bạn có thể tiếp tục chơi. Bạn có thể thay đổi cấu hình sau ở mục Thiết Bị Điều Khiển trong phần Tùy Trọn"
+	val[]: "Trò chơi đã được cấu hình xong và bạn có thể tiếp tục. Bạn có thể thay đổi cấu hình sau trong mục Tùy chọn."
 
 	key[]: "wiz_cfg_steam"
 	val[]: "Bạn có thể kiểm tra và thiết lập cài đặt nút và trục cho thiết bị điều khiển này bằng Steam. Thiết lập tay cầm Steam cho trò chơi trong Steam > Library > Euro Truck Simulator 2 > Controller Configuration."
@@ -12348,7 +12435,7 @@
 	val[]: "Thư viện ảnh của bạn trống. Hãy sử dụng Chế độ chụp ảnh để chụp hình."
 
 	key[]: "link_locked_msg_photo_mode"
-	val[]: "Để truy cập Chế độ chụp ảnh, trước tiên bạn phải được chỉ định một chiếc xe tải."
+	val[]: "Để truy cập Chế độ chụp ảnh, trước tiên bạn phải chỉ định một phương tiện."
 
 	key[]: "photo_album_delete_failed"
 	val[]: "Không thể xóa ảnh do lỗi không mong muốn."
@@ -12462,7 +12549,7 @@
 	val[]: "Đèn pha chiếu xa"
 
 	key[]: "photomode_tooltip_light4"
-	val[]: "Đèn cảnh báo"
+	val[]: "Đèn xoay"
 
 	key[]: "photomode_tooltip_light5"
 	val[]: "Phụ trợ phía trước"
@@ -12529,10 +12616,10 @@
 #@{
 
 	key[]: "photo_no_drive_t"
-	val[]: "KHÔNG CÓ XE TẢI" #+ Message box title. Please keep in upper case where possible.
+	val[]: "KHÔNG CÓ PHƯƠNG TIỆN" #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "photo_no_drive"
-	val[]: "Bạn không thể chụp ảnh xe tải vì bạn không có xe! Bạn phải mua một chiếc hoặc lấy một chiếc từ đội xe của mình."
+	val[]: "Bạn không thể chụp ảnh xe vì bạn không có xe! Bạn phải mua một chiếc hoặc lấy một chiếc từ đội xe của mình."
 #@}
 
 #+ Screenshot manager
@@ -13286,7 +13373,7 @@
 	val[]: "Di chuyển nhanh"
 
 	key[]: "link_locked_msg_quick_travel"
-	val[]: "Để truy cập di chuyển nhanh bạn cần mua chiếc xe đầu tiên."
+	val[]: "Để sử dụng tính năng Di chuyển nhanh, trước tiên bạn phải được chỉ định một phương tiện."
 
 	key[]: "select_quick_travel_destination"
 	val[]: "Chọn điểm đến di chuyển nhanh"
@@ -13313,16 +13400,16 @@
 	val[]: "Xe tải của bạn không đủ điều kiện để di chuyển nhanh. Hãy sửa chữa dây cáp rơ-moóc."
 
 	key[]: "quick_travel_cond_repair_truck"
-	val[]: "Xe tải của bạn hiện không đủ điều kiện để di chuyển nhanh. Hãy đến trung tâm dịch vụ hoặc gọi điện để được hỗ trợ."
+	val[]: "Xe của bạn hiện không đủ điều kiện để di chuyển nhanh. Vui lòng đến trung tâm dịch vụ hoặc gọi điện để được hỗ trợ."
 
 	key[]: "quick_travel_cond_repair_trailer"
 	val[]: "Xe moóc của bạn hiện không đủ điều kiện để di chuyển nhanh. Vui lòng đến trung tâm dịch vụ hoặc gọi điện để được hỗ trợ."
 
 	key[]: "quick_travel_cond_truck_fuel"
-	val[]: "Xe của bạn không đủ điều kiện để di chuyển nhanh. Đổ nhiên liệu hoặc gọi hỗ trợ."
+	val[]: "Xe của bạn hiện không đủ điều kiện để di chuyển nhanh. Vui lòng đến trung tâm dịch vụ hoặc gọi điện để được hỗ trợ."
 
 	key[]: "quick_travel_cond_truck_fallen"
-	val[]: "Xe của bạn không đủ điều kiện để di chuyển nhanh. Gọi hỗ trợ."
+	val[]: "Xe của bạn hiện không đủ điều kiện để di chuyển nhanh. Hãy gọi điện để được hỗ trợ."
 
 	key[]: "quick_travel_cond_trailer_fallen"
 	val[]: "Rơ-moóc của bạn không đủ điều kiện để di chuyển nhanh. Hãy gọi điện để được hỗ trợ."
@@ -13493,7 +13580,7 @@
 	val[]: "Không thể tìm ra thứ bạn đang cần" #+ Text shown when there are no accessories found by filters.
 
 	key[]: "no_truck_found"
-	val[]: "Không thể tìm kiếm xe tải phù hợp với tiêu chí của bạn" #+ Text shown when there are no trucks found by filters.
+	val[]: "Không tìm thấy xe phù hợp với bộ lọc của bạn" #+ Text shown when there are no trucks found by filters.
 #@}
 
 #+ Strings related to job filtering feature
@@ -14154,7 +14241,7 @@
 	val[]: "Đại tu toàn bộ"
 
 	key[]: "trailerman_status"
-	val[]: "Trạng thái:" #+ Current trailer status.
+	val[]: "Tr.thái:" #+ Current trailer status.
 
 	key[]: "trailer_status_private"
 	val[]: "Riêng tư" #+ Trailer status name - private - only can be used by player.
@@ -14181,13 +14268,13 @@
 	val[]: "Thống kê toàn thời gian" #+ All time statistics section title.
 
 	key[]: "trailerman_stats_dist_on_job"
-	val[]: "Khoảng cách trong công việc:" #+ Total distance this trailer driven during jobs.
+	val[]: "Khoảng cách chuyến:" #+ Total distance this trailer driven during jobs.
 
 	key[]: "trailerman_stats_cargo_transp"
-	val[]: "Hàng hóa đã vận chuyển:" #+ Total number of transported cargoes.
+	val[]: "Hàng đã chở:" #+ Total number of transported cargoes.
 
 	key[]: "trailerman_stats_weight_transp"
-	val[]: "Khối lượng hàng hóa vận chuyển:" #+ Total weight transported by the trailer.
+	val[]: "Khối lượng đã chở:" #+ Total weight transported by the trailer.
 
 	key[]: "trailerman_col_type"
 	val[]: "Loại" #+ Title of the trailer type column.
@@ -14274,7 +14361,7 @@
 	val[]: "Hiện tại chưa có bản nâng cấp rơ-moóc mới nào."
 
 	key[]: "link_locked_msg_truck_diag"
-	val[]: "Để truy cập vào chức năng Chẩn đoán, trước tiên bạn phải được chỉ định một chiếc xe tải."
+	val[]: "Để truy cập vào chức năng Chẩn đoán, trước tiên bạn phải được chỉ định một phương tiện."
 
 	key[]: "link_locked_msg_truck_dealer_map"
 	val[]: "Bạn vẫn chưa khám phá đại lý xe tải nào."
@@ -14370,7 +14457,7 @@
 #+ Message box shown when user requests to use total restoration of trailer in trailer manager.
 #@{
 	key[]: "trailerman_total_restoration_t"
-	val[]: "ĐẠI TU TOÀN DIỆN"  #+ Message box title. Please keep in upper case where possible.
+	val[]: "PHỤC HỒI TOÀN BỘ"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "trailerman_total_restoration_service"
 	val[]: "Vui lòng đến trực tiếp trạm dịch vụ để sửa chữa rơ-moóc mà bạn đang sử dụng." #+ Message shown when player tries to restore trailer that he is using.
@@ -14379,7 +14466,7 @@
 	val[]: "Rơ-moóc đang trong tình trạng hoàn hảo." #+ Message shown when player tries to restore trailer in perfect condition.
 
 	key[]: "trailerman_total_restoration"
-	val[]: "Chi phí đại tu:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Đưa xe về trạng thái mới gần như xe xuất xưởng bằng cách tháo tung toàn bộ xe và phục hồi các bộ phận đã hao mòn. Bạn nên cân nhắc giữa đại tu và đi mua một chiếc xe mới." #+ Content of the screen, explaining total restoration.
+	val[]: "Tổng giá phục hồi toàn bộ:<br><br><color value=@@clr_sel@@><font face=/font/big.font>$PRICE$</font><br><br><color value=@@clr_txt@@>Khôi phục chiếc xe của bạn về tình trạng hoàn hảo bằng cách yêu cầu tháo rời và phục chế hoàn toàn tất cả các bộ phận bị mòn. Việc này khó khăn hơn nhiều so với việc chế tạo một chiếc xe hoàn toàn mới." #+ Content of the screen, explaining total restoration.
 #@}
 
 #+ Trailer detail tooltip.
@@ -14500,7 +14587,7 @@
 	val[]: "Bồn chứa thực phẩm"
 
 	key[]: "fueltank"
-	val[]: "Bồn Nhiên Liệu"
+	val[]: "Bồn Nhiên liệu"
 
 	key[]: "gastank"
 	val[]: "Bồn khí ga"
@@ -14972,7 +15059,7 @@
 #+ Trailer browser
 #@{
 	key[]: "select_option_to_preview_cargo_model"
-	val[]: "Không xem trước" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
+	val[]: "Không có" #+ The option in cargo model preview selection meaning that no cargo should be previewed.
 
 	key[]: "no_trailers_found"
 	val[]: "Không tìm thấy rơ-moóc nào" #+ Text shown if there are no trailer of given brands found.
@@ -15314,7 +15401,7 @@
 	val[]: "Bạn không có rơ-moóc tương thích cho hàng hóa hiện tại."
 
 	key[]: "mp_job_missing_truck"
-	val[]: "Chỉ có thể được nhận với xe tải của riêng bạn."
+	val[]: "Chỉ có thể thực hiện bằng phương tiện cá nhân."
 
 	key[]: "mp_job_missing_trailer"
 	val[]: "Bạn hiện không có rơ-moóc tương thích."
@@ -16135,13 +16222,13 @@
 	val[]: "Hình thức làm việc:"
 
 	key[]: "equipment_provided_truck_and_trailer"
-	val[]: "Xe tải và rơ móc được cấp sẵn"
+	val[]: "Xei và rơ móc được cấp sẵn"
 
 	key[]: "equipment_owned_truck_provided_trailer"
-	val[]: "Xe tải của bạn"
+	val[]: "Xe của bạn"
 
 	key[]: "equipment_owned_truck_and_trailer"
-	val[]: "Xe tải và rơ-moóc của bạn"
+	val[]: "Xe và rơ-moóc của bạn"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "Hiện tại bạn đang ở quá xa vị trí công ty đang nhận việc. Bạn có muốn di chuyển nhanh đến gần hơn không?<br><br>Điểm đến di chuyển nhanh: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>Chi phí: <color value=@@clr_sel@@>$COST$"
@@ -16222,7 +16309,7 @@
 	val[]: "TỔNG KẾT ĐOÀN XE"
 
 	key[]: "convoy_concluded_info"
-	val[]: "Phiên Đoàn xe của bạn đã kết thúc. Quá trình đánh giá bao gồm tình trạng tài chính, lịch sử công việc, kỹ năng, thăng tiến, cấu hình xe tải và rơ-moóc đã mua cũng như thiết bị và tiến độ của tài xế công ty bạn."
+	val[]: "Phiên Đoàn xe của bạn đã kết thúc. Quá trình đánh giá bao gồm tình trạng tài chính, lịch sử công việc, kỹ năng, thăng tiến, cấu hình xe và rơ-moóc đã mua cũng như thiết bị và tiến độ của tài xế công ty bạn."
 
 	key[]: "convoy_concluded_warning"
 	val[]: "Chọn chấp nhận tiến độ để tiếp tục với tất cả tiến độ thu thập được. Hoặc bạn có thể khôi phục về bản tự động lưu trước phiên này hoặc tải lại bất kỳ bản lưu nào khác."
@@ -16888,7 +16975,7 @@
 	val[]: "Bỏ ghim cuối"
 
 	key[]: "overlay_reset_route"
-	val[]: "Đặt lại điều hướng"
+	val[]: "Reset đ.hướng"
 
 	key[]: "overlay_map_filters"
 	val[]: "Bộ lọc"
@@ -17530,7 +17617,7 @@
 	val[]: "Tìm kiếm, xem xét và cấu hình lại các rơ-moóc có sẵn để mua."
 
 	key[]: "radio_desc" # - tooltip for explaining what the radio is - feature is active
-	val[]: "Thưởng thức đài phát thanh trực tuyến yêu thích của bạn hoặc tải nhạc của riêng bạn lên."
+	val[]: "Hãy nâng tầm trải nghiệm lái xe của bạn với âm nhạc."
 
 	key[]: "link_locked_msg_radio" # - tooltip for when the radio is not yet unlocked
 	val[]: "Đài phát thanh không hoạt động."
@@ -17552,7 +17639,7 @@
 
 	key[]: "health_warning_description"
 	val[]: "Một số ít người dùng có thể dễ bị co giật động kinh hoặc mất ý thức khi tiếp xúc với một số loại ánh sáng nhấp nháy hoặc các kiểu ánh sáng nhất định. Những người này có thể bị co giật khi xem một số hình ảnh hoặc chơi trò chơi điện tử. Nếu bạn hoặc bất kỳ ai trong gia đình bạn đã từng có các triệu chứng liên quan đến động kinh (co giật hoặc mất ý thức) khi tiếp xúc với ánh sáng nhấp nháy, vui lòng tham khảo ý kiến chuyên gia y tế và thực hiện tất cả các biện pháp phòng ngừa cần thiết trước khi chơi trò chơi.<br offset=20>Nếu bạn hoặc con bạn gặp bất kỳ triệu chứng nào sau đây khi chơi bất kỳ trò chơi điện tử nào: chóng mặt, thay đổi thị lực, co giật mắt hoặc cơ, mất ý thức, mất phương hướng, co giật, cử động không tự chủ, hãy ngừng sử dụng trò chơi điện tử ngay lập tức và tham khảo ý kiến chuyên gia y tế."
-	
+
 	key[]: "trademark"
 	val[]: "Tất cả tên thương hiệu, nhãn hiệu, nhãn hiệu đã đăng ký, logo và biểu tượng trên các phương tiện trong trò chơi đều thuộc sở hữu của chủ sở hữu hợp pháp. Được sử dụng với sự cho phép. International® và tất cả các nhãn hiệu International Truck là nhãn hiệu được cấp phép bởi INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. Các nhãn hiệu và thiết kế VOLVO là quyền đã đăng ký hoặc được cấp phép cho AB Volvo Group và được sử dụng theo giấy phép. Các nhãn hiệu và thiết kế MACK là quyền đã đăng ký của AB Volvo Group và được sử dụng theo giấy phép. Western Star là nhãn hiệu của Daimler Trucks North America LLC và được sử dụng theo giấy phép của SCS Software s.r.o. Freightliner là nhãn hiệu của Daimler Trucks North America LLC và được sử dụng theo giấy phép của SCS Software s.r.o."
 #@}
@@ -17591,3 +17678,123 @@
 	key[]: "dlc_lost_return_forced" #+ Message shown in game, when a DLC has been removed.
 	val[]: "Bạn đã mất quyền truy cập vào một số DLC. Bạn sẽ được đưa trở lại Màn hình Tiêu đề để xem các thay đổi về nội dung.<br><br>Tiến trình của bạn sẽ được lưu tự động."
 #@}
+
+#+ Time skip feature
+#@{
+	key[]: "time_skip_t"
+	val[]: "NGHỈ NGƠI"
+
+	key[]: "time_skip_hours"
+	val[]: "Số giờ cần bỏ qua"
+
+	
+	key[]: "time_skip_current_time"
+	val[]: "Thời gian hiện tại"
+
+	key[]: "time_skip_wake_up_time"
+	val[]: "Th.gian dậy"
+
+
+	key[]: "time_skip_resting_title"
+	val[]: "Tr.thái nghỉ ngơi"
+
+	key[]: "time_skip_mandatory_break_title"
+	val[]: "Nghỉ giải lao bắt buộc"
+
+	key[]: "time_skip_job_delivery_title"
+	val[]: "Trạng thái giao hàng"
+
+	key[]: "time_skip_charging_title"
+	val[]: "Sạc pin"
+
+	
+	key[]: "time_skip_to_next_mandatory_break_ok"
+	val[]: "trong $TIME$"
+
+	key[]: "time_skip_to_next_mandatory_break_not_ok"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>trong $TIME$</font>"
+
+
+	key[]: "time_skip_mandatory_break_complied"
+	val[]: "Đã tuân thủ luật nghỉ ngơi"
+
+	key[]: "time_skip_mandatory_break_not_complied"
+	val[]: "Không tuân thủ luật nghỉ ngơi"
+
+
+	key[]: "time_skip_delivery_on_time"
+	val[]: "Th.gian đi"
+
+	key[]: "time_skip_delivery_late"
+	val[]: "<font face=/font/small_bold.font><color value=@@clr_red@@>Nguy cơ giao hàng trễ</font>"
+
+
+	key[]: "time_skip_rest_tired"
+	val[]: "Mệt mỏi"
+
+	key[]: "time_skip_rest_ok"
+	val[]: "Đã nghỉ ngơi"
+
+	key[]: "time_skip_rest_full"
+	val[]: "Đã nghỉ ngơi đầy đủ"
+
+	
+	key[]: "time_skip_tooltip_mandatory_break_not_met"
+	val[]: "Thời gian nghỉ này không đáp ứng yêu cầu nghỉ giải lao bắt buộc. Bạn còn $LEFT_TIME$ thời gian nữa mới đến giờ nghỉ giải lao bắt buộc tiếp theo."
+
+	key[]: "time_skip_tooltip_mandatory_break_complied"
+	val[]: "Lần nghỉ này sẽ đáp ứng yêu cầu về thời gian nghỉ bắt buộc. Lần nghỉ tiếp theo sẽ diễn ra sau <color value=@@clr_sel@@>$DRIVE_TIME$</color> giờ."
+
+	key[]: "time_skip_tooltip_mandatory_break_cont"
+	val[]: "Cứ mỗi <color value=@@clr_sel@@>$DRIVE_TIME$</color> giờ lái xe, bạn phải nghỉ bắt buộc ít nhất <color value=@@clr_sel@@>$BREAK_TIME$</color> giờ để tránh bị phạt."
+	
+
+	key[]: "time_skip_tooltip_job_on_time"
+	val[]: "Sau khi nghỉ ngơi và cộng thêm thời gian lái xe ước tính đến đích, bạn sẽ còn lại <color value=@@clr_sel@@>$LEFT_TIME$</color> thời gian làm việc."
+	
+	key[]: "time_skip_tooltip_job_late"
+	val[]: "Sau khi nghỉ ngơi và tính cả thời gian lái xe ước tính đến điểm đến, việc giao hàng sẽ bị trễ <color value=@@clr_red@@>$LEFT_TIME$</color>."
+
+	key[]: "time_skip_max_sleep_reached"
+	val[]: "<color value=@@clr_red@@>Bạn sẽ được nghỉ ngơi đầy đủ</color>"
+
+# shown in job detail widget and pause screen	
+	key[]: "job_eta"
+	val[]: "Thời gian dự kiến đến"
+
+	key[]: "job_delay"
+	val[]: "Trì hoãn"
+
+# mandatory break needed window shown when changing vehicle mode
+	key[]: "time_skip_mandatory_break_t"
+	val[]: "CẦN NGHỈ NGƠI BẮT BUỘC"
+
+	key[]: "time_skip_mandatory_break_needed"
+	val[]: "Xe của bạn chưa đỗ đủ lâu để hoàn thành thời gian nghỉ bắt buộc.<br><br><color value=@@clr_sel@@>$TIME$ thời gian nghỉ bắt buộc còn lại<br><br><color value=@@clr_txt@@>Bạn có muốn nghỉ ngơi không?"
+
+# mandatory break notifications
+	key[]: "mandatory_break_soon"
+	val[]: "Đã đến lúc bạn cần nghỉ ngơi bắt buộc.<br>Bạn nên tìm chỗ đậu xe và nghỉ ngơi!"
+
+	key[]: "mandatory_break_overdue"
+	val[]: "Đã lái xe quá thời gian quy định mà không nghỉ ngơi bắt buộc.<br>Bạn nên tìm chỗ đỗ xe và nghỉ ngơi!"
+
+	key[]: "offence_mandatory_break"
+	val[]: "Vi phạm giờ nghỉ bắt buộc."
+
+# shown in options
+
+	key[]: "mandatory_break_simulation"
+	val[]: "Mô phỏng giờ nghỉ bắt buộc"
+
+	key[]: "mandatory_break_simulation_op_tooltip"
+	val[]: "Khi được kích hoạt, bạn phải nghỉ giải lao thường xuyên khi lái xe.<br><br>Việc không tuân thủ các quy định về nghỉ giải lao sẽ dẫn đến vi phạm luật giao thông."
+
+	key[]: "rest_state_simulation"
+	val[]: "Mô phỏng trạng thái nghỉ"
+	
+	key[]: "rest_state_simulation_op_tooltip"
+	val[]: "Khi được kích hoạt, bạn sẽ cảm thấy mệt mỏi theo thời gian.<br><br>Bạn cần nghỉ ngơi để hồi phục."
+#@}
+
+

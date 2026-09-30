@@ -12,12 +12,14 @@ SiiNunit
 
 traffic_rule_data : traffic_rule.major_road
 {
-	# name: "[sign] Priority road"
+	name: "Priority road"
 
 	rule: "priority"
 	num_params[]: -1
 	num_params[]: 0
 	num_params[]: 2
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.minor_road
@@ -26,13 +28,17 @@ traffic_rule_data : traffic_rule.minor_road
 	num_params[]: -1
 	num_params[]: 0
 	num_params[]: 1
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.give_way
 {
-	# name: "[sign] Give way"
+	name: "Give way"
 
 	additional_rules[]: traffic_rule.minor_road
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.stop
@@ -40,13 +46,15 @@ traffic_rule_data : traffic_rule.stop
 	# Use this rule for both horizontal (road text) and vertical (traffic signs) 'stop' traffic rules
 	# The actual vehicle stop position is moved toa  nearby intersection or 'traffic_rule.cross_line' (if any)
 
-	# name: "[sign] Stop"
+	name: "Stop"
 
 	rule: "stop"
 	num_params[]: 0.5	# block time after reaching 'stop speed'
 	num_params[]: 0.5	# block while speed is higher than this [m/s]
 
 	additional_rules[]: traffic_rule.minor_road
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.cross_line
@@ -55,7 +63,7 @@ traffic_rule_data : traffic_rule.cross_line
 	# NOTE: This rule does nothing by itself!
 	# It only makes vehicles stop at the line if there is 'traffic_rule.stop' nearby or an intersection ahead
 
-	# name: "Crossroad stop line"
+	name: "Crossroad stop line"
 
 	rule: "property"
 	num_params[]: 7
@@ -65,7 +73,7 @@ traffic_rule_data : traffic_rule.cross_line_s
 {
 	# Combined crossroad line and stop rule
 
-	# name: "Crossroad line + stop rule"
+	name: "Crossroad line + stop rule"
 
 	additional_rules[]: traffic_rule.cross_line
 	additional_rules[]: traffic_rule.stop
@@ -73,15 +81,17 @@ traffic_rule_data : traffic_rule.cross_line_s
 
 traffic_rule_data : traffic_rule.limit_end
 {
-	# name: "[sign] End of speed limit"
+	name: "End of speed limit"
 
 	rule: "speed_limit"
 	num_params[]: 0
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.no_priority
 {
-	# name: "[prefab] Reset priority"
+	name: "[prefab] Reset priority"
 
 	num_params[]: 0
 	num_params[]: 0
@@ -90,104 +100,126 @@ traffic_rule_data : traffic_rule.no_priority
 
 traffic_rule_data : traffic_rule.cross_end
 {
-	# name: "[prefab] Crossroad end (reset priority)"
+	name: "[prefab] Crossroad end (reset priority)"
 
 	additional_rules[]: traffic_rule.no_priority
 }
 
 traffic_rule_data : traffic_rule.limit_15
 {
-	# name: "[speed] Speed limit 15"
+	name: "Speed limit 15"
 
 	rule: "speed_limit"
 	num_params[]: 15
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_20
 {
-	# name: "[speed] Speed limit 20"
+	name: "Speed limit 20"
 
 	rule: "speed_limit"
 	num_params[]: 20
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_25
 {
-	# name: "[speed] Speed limit 25"
+	name: "Speed limit 25"
 
 	rule: "speed_limit"
 	num_params[]: 25
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_30
 {
-	# name: "[speed] Speed limit 30"
+	name: "Speed limit 30"
 
 	rule: "speed_limit"
 	num_params[]: 30
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_35
 {
-	# name: "[speed] Speed limit 35"
+	name: "Speed limit 35"
 
 	rule: "speed_limit"
 	num_params[]: 35
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_40
 {
-	# name: "[speed] Speed limit 40"
+	name: "Speed limit 40"
 
 	rule: "speed_limit"
 	num_params[]: 40
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_45
 {
-	# name: "[speed] Speed limit 45"
+	name: "Speed limit 45"
 
 	rule: "speed_limit"
 	num_params[]: 45
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_50
 {
-	# name: "[speed] Speed limit 50"
+	name: "Speed limit 50"
 
 	rule: "speed_limit"
 	num_params[]: 50
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_55
 {
-	# name: "[speed] Speed limit 55"
+	name: "Speed limit 55"
 
 	rule: "speed_limit"
 	num_params[]: 55
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_55_t
 {
-	# name: "[speed] Speed limit 55 (trucks only)"
+	name: "Speed limit 55 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 55
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_50_t
 {
-	# name: "[speed] Speed limit 50 (trucks only)"
+	name: "Speed limit 50 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 50
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_60_55
 {
-	# name: "[speed] Speed limit 60 (55 for trucks)"
+	name: "Speed limit 60 (55 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 60
@@ -196,28 +228,34 @@ traffic_rule_data : traffic_rule.limit_60_55
 
 
 	additional_rules[]: traffic_rule.limit_55_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_60
 {
-	# name: "[speed] Speed limit 60"
+	name: "Speed limit 60"
 
 	rule: "speed_limit"
 	num_params[]: 60
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_60_t
 {
-	# name: "[speed] Speed limit 60 (trucks only)"
+	name: "Speed limit 60 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 60
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_65_60
 {
-	# name: "[speed] Speed limit 65 (60 for trucks)"
+	name: "Speed limit 65 (60 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 65
@@ -225,11 +263,13 @@ traffic_rule_data : traffic_rule.limit_65_60
 	str_params[]: "truck_all"
 
 	additional_rules[]: traffic_rule.limit_60_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_65_55
 {
-	# name: "[speed] Speed limit 65 (55 for trucks)"
+	name: "Speed limit 65 (55 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 65
@@ -237,28 +277,34 @@ traffic_rule_data : traffic_rule.limit_65_55
 	str_params[]: "truck_all"
 
 	additional_rules[]: traffic_rule.limit_55_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_65
 {
-	# name: "[speed] Speed limit 65"
+	name: "Speed limit 65"
 
 	rule: "speed_limit"
 	num_params[]: 65
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_65_t
 {
-	# name: "[speed] Speed limit 65 (trucks only)"
+	name: "Speed limit 65 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 65
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_70_60
 {
-	# name: "[speed] Speed limit 70 (60 for trucks)"
+	name: "Speed limit 70 (60 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 70
@@ -266,11 +312,13 @@ traffic_rule_data : traffic_rule.limit_70_60
 	str_params[]: "truck_all"
 
 	additional_rules[]: traffic_rule.limit_60_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_70_65
 {
-	# name: "[speed] Speed limit 70 (65 for trucks)"
+	name: "Speed limit 70 (65 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 70
@@ -278,36 +326,44 @@ traffic_rule_data : traffic_rule.limit_70_65
 	str_params[]: "truck_all"
 
 	additional_rules[]: traffic_rule.limit_65_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_70
 {
-	# name: "[speed] Speed limit 70"
+	name: "Speed limit 70"
 
 	rule: "speed_limit"
 	num_params[]: 70
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_70_t
 {
-	# name: "[speed] Speed limit 70 (trucks only)"
+	name: "Speed limit 70 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 70
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_75
 {
-	# name: "[speed] Speed limit 75"
+	name: "Speed limit 75"
 
 	rule: "speed_limit"
 	num_params[]: 75
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_80_70
 {
-	# name: "[speed] Speed limit 80 (70 for trucks)"
+	name: "Speed limit 80 (70 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 80
@@ -315,52 +371,64 @@ traffic_rule_data : traffic_rule.limit_80_70
 	str_params[]: "truck_all"
 
 	additional_rules[]: traffic_rule.limit_70_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_80
 {
-	# name: "[speed] Speed limit 80"
+	name: "Speed limit 80"
 
 	rule: "speed_limit"
 	num_params[]: 80
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_90
 {
-	# name: "[speed] Speed limit 90"
+	name: "Speed limit 90"
 
 	rule: "speed_limit"
 	num_params[]: 90
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_100
 {
-	# name: "[speed] Speed limit 100"
+	name: "Speed limit 100"
 
 	rule: "speed_limit"
 	num_params[]: 100
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_110
 {
-	# name: "[speed] Speed limit 110"
+	name: "Speed limit 110"
 
 	rule: "speed_limit"
 	num_params[]: 110
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_120
 {
-	# name: "[speed] Speed limit 120"
+	name: "Speed limit 120"
 
 	rule: "speed_limit"
 	num_params[]: 120
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.no_trucks
 {
 	# kept for backward compatibility
-	# name: "[special] No trucks (backward compatibility only)"
+	name: "[special] No trucks (backward compatibility only)"
 	rule: "actor_access"
 	num_params[]: 0 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
@@ -380,6 +448,8 @@ traffic_rule_data : traffic_rule.trucks_only
 	str_params[]: "truck_semi"
 	str_params[]: "truck_heavy"
 	str_params[]: "escort_all" # keep escort vehicles allowed to prevent potentially breaking escort vehicle paths
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.truck_lane
@@ -486,7 +556,7 @@ traffic_rule_data : traffic_rule.horn_on
 
 traffic_rule_data : traffic_rule.rail_cross
 {
-	# name: [prefab] Rail crossing
+	name: "[prefab] Rail crossing"
 	rule: "actor_access"
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
@@ -518,6 +588,8 @@ traffic_rule_data : traffic_rule.tram_only
 	name: "[access-exclusive] Trams only"
 
 	additional_rules[]: traffic_rule.rail_tram
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.bus_only
@@ -527,11 +599,13 @@ traffic_rule_data : traffic_rule.bus_only
 	num_params[]: 1 	# 0 - disallow, 1 - allow
 	num_params[]: 1 	# 0 - inclusive, 1 - exclusive
 	str_params[]: "bus"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.no_trailers
 {
-	# name: "[access] No trailers"
+	name: "[access] No trailers"
 	rule: "actor_access"
 	num_params[]: 0 	# 0 - disallow, 1 - allow
 	num_params[]: 0 	# 0 - inclusive, 1 - exclusive
@@ -550,6 +624,8 @@ traffic_rule_data : traffic_rule.car_only
 	str_params[]: "escort_all" # keep escort vehicles allowed to prevent potentially breaking escort vehicle paths
 
 	additional_rules[]: traffic_rule.no_trailers
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.no_trailer
@@ -581,6 +657,8 @@ traffic_rule_data : traffic_rule.village_area
 
 	additional_rules[]: traffic_rule.urban_area
 	additional_rules[]: traffic_rule.s_cust_r
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.city_area
@@ -599,6 +677,8 @@ traffic_rule_data : traffic_rule.city_area
 	additional_rules[]: traffic_rule.s_fire_u
 	additional_rules[]: traffic_rule.s_car_cs_u
 	additional_rules[]: traffic_rule.s_truck_cs_u
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.city_xl_area
@@ -617,11 +697,13 @@ traffic_rule_data : traffic_rule.city_xl_area
 	additional_rules[]: traffic_rule.s_fire_u
 	additional_rules[]: traffic_rule.s_car_c_u
 	additional_rules[]: traffic_rule.s_truck_c_u
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.downtown
 {
-	# name: "[obsolete] Urban-specific vehicles area"
+	name: "[obsolete] Urban-specific vehicles area"
 
 	str_params[]: "Please replace with [access] Custom vehicles area"
 
@@ -630,7 +712,7 @@ traffic_rule_data : traffic_rule.downtown
 
 traffic_rule_data : traffic_rule.allow_slow
 {
-	# name: "[obsolete] Rural-specific vehicles area"
+	name: "[obsolete] Rural-specific vehicles area"
 
 	str_params[]: "Please replace with [access] Custom vehicles area"
 
@@ -644,6 +726,8 @@ traffic_rule_data : traffic_rule.allow_custom
 	num_params[]: 1 # 0 - disallow, 1 - allow
 	num_params[]: 0 # 0 - inclusive, 1 - exclusive
 	str_params[]: "custom_all"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.tourist
@@ -659,6 +743,8 @@ traffic_rule_data : traffic_rule.tourist
 
 	additional_rules[]: traffic_rule.s_trl_t
 	additional_rules[]: traffic_rule.s_bus_h
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.resident
@@ -672,6 +758,8 @@ traffic_rule_data : traffic_rule.resident
 	str_params[]: "bus_all"
 	str_params[]: "fire"
 	str_params[]: "medical"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.commerce_s
@@ -686,6 +774,8 @@ traffic_rule_data : traffic_rule.commerce_s
 	str_params[]: "fire"
 	str_params[]: "medical"
 	str_params[]: "police"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.commerce_l
@@ -698,6 +788,8 @@ traffic_rule_data : traffic_rule.commerce_l
 	str_params[]: "truck_heavy"
 	str_params[]: "truck"
 	str_params[]: "truck_long"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.industry
@@ -713,6 +805,8 @@ traffic_rule_data : traffic_rule.industry
 	str_params[]: "truck_long"
 	str_params[]: "fire"
 	str_params[]: "medical"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.company_area
@@ -741,6 +835,8 @@ traffic_rule_data : traffic_rule.company_area
 	additional_rules[]: traffic_rule.s_truck_d
 	additional_rules[]: traffic_rule.s_car_d
 	additional_rules[]: traffic_rule.s_car_c_d
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.dealer
@@ -751,6 +847,8 @@ traffic_rule_data : traffic_rule.dealer
 	additional_rules[]: traffic_rule.no_pl_limit
 	additional_rules[]: traffic_rule.limit_30
 	additional_rules[]: traffic_rule.no_tow
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.depot_area
@@ -781,6 +879,8 @@ traffic_rule_data : traffic_rule.rest_area
 	additional_rules[]: traffic_rule.private_area
 	additional_rules[]: traffic_rule.limit_25
 	additional_rules[]: traffic_rule.no_tow
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.gas_st
@@ -789,6 +889,8 @@ traffic_rule_data : traffic_rule.gas_st
 
 	additional_rules[]: traffic_rule.private_area
 	additional_rules[]: traffic_rule.rest_area
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.truck_stop
@@ -796,6 +898,8 @@ traffic_rule_data : traffic_rule.truck_stop
 	name: "[context] Truck stop area"
 
 	additional_rules[]: traffic_rule.gas_st
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.weigh_st
@@ -817,6 +921,8 @@ traffic_rule_data : traffic_rule.weigh_st
 	additional_rules[]: traffic_rule.private_area
 #	additional_rules[]: traffic_rule.limit_25
 	additional_rules[]: traffic_rule.no_tow
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.tollgate
@@ -826,6 +932,8 @@ traffic_rule_data : traffic_rule.tollgate
 	additional_rules[]: traffic_rule.excl_nav
 	additional_rules[]: traffic_rule.no_pl_limit
 	additional_rules[]: traffic_rule.no_tow
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.border_cross
@@ -836,6 +944,8 @@ traffic_rule_data : traffic_rule.border_cross
 	additional_rules[]: traffic_rule.limit_25
 	additional_rules[]: traffic_rule.excl_nav
 	additional_rules[]: traffic_rule.no_tow
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.excl_nav
@@ -846,7 +956,7 @@ traffic_rule_data : traffic_rule.excl_nav
 
 traffic_rule_data : traffic_rule.private_area
 {
-	# name: "[various] Private area - area of interest for certain vehicle types"
+	name: "[various] Private area - area of interest for certain vehicle types"
 	rule: "property"
 	num_params[]: 15
 }
@@ -866,14 +976,14 @@ traffic_rule_data : traffic_rule.uneven_road
 
 traffic_rule_data : traffic_rule.lane_join
 {
-	# name: "[prefab] Lane join"
+	name: "[prefab] Lane join"
 	rule: "property"
 	num_params[]: 17
 }
 
 traffic_rule_data : traffic_rule.lane_split
 {
-	# name: "[prefab] Lane split"
+	name: "[prefab] Lane split"
 	rule: "property"
 	num_params[]: 16
 }
@@ -884,6 +994,8 @@ traffic_rule_data : traffic_rule.no_ai_turn
 
 	additional_rules[]: traffic_rule.no_ai_left
 	additional_rules[]: traffic_rule.no_ai_right
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.no_ai_left
@@ -891,6 +1003,8 @@ traffic_rule_data : traffic_rule.no_ai_left
 	name: "[navigation] No AI left"
 	rule: "property"
 	num_params[]: 18
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.no_ai_right
@@ -898,6 +1012,8 @@ traffic_rule_data : traffic_rule.no_ai_right
 	name: "[navigation] No AI right"
 	rule: "property"
 	num_params[]: 20
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.no_ai_str
@@ -905,6 +1021,8 @@ traffic_rule_data : traffic_rule.no_ai_str
 	name: "[navigation] No AI straight"
 	rule: "property"
 	num_params[]: 22
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.low_pb_turn
@@ -913,6 +1031,8 @@ traffic_rule_data : traffic_rule.low_pb_turn
 
 	additional_rules[]: traffic_rule.low_pb_left
 	additional_rules[]: traffic_rule.low_pb_right
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.low_pb_left
@@ -920,6 +1040,8 @@ traffic_rule_data : traffic_rule.low_pb_left
 	name: "[navigation] Low probability AI left"
 	rule: "property"
 	num_params[]: 19
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.low_pb_right
@@ -927,6 +1049,8 @@ traffic_rule_data : traffic_rule.low_pb_right
 	name: "[navigation] Low probability AI right"
 	rule: "property"
 	num_params[]: 21
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.low_pb_str
@@ -934,6 +1058,8 @@ traffic_rule_data : traffic_rule.low_pb_str
 	name: "[navigation] Low probability AI straight"
 	rule: "property"
 	num_params[]: 23
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.custom_only
@@ -943,6 +1069,8 @@ traffic_rule_data : traffic_rule.custom_only
 	num_params[]: 1 # 0 - disallow, 1 - allow
 	num_params[]: 1 # 0 - inclusive, 1 - exclusive
 	str_params[]: "custom_all"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.c_train_only
@@ -952,6 +1080,8 @@ traffic_rule_data : traffic_rule.c_train_only
 	num_params[]: 1 # 0 - disallow, 1 - allow
 	num_params[]: 1 # 0 - inclusive, 1 - exclusive
 	str_params[]: "train_custom"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.train_only
@@ -959,6 +1089,8 @@ traffic_rule_data : traffic_rule.train_only
 	name: "[access-exclusive] Trains only"
 
 	additional_rules[]: traffic_rule.rail_train
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.slow_only
@@ -975,6 +1107,8 @@ traffic_rule_data : traffic_rule.train_stop_v
 
 	rule: "stop"
 	num_params[]: 4.0
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.train_stop_s
@@ -983,6 +1117,8 @@ traffic_rule_data : traffic_rule.train_stop_s
 
 	rule: "stop"
 	num_params[]: 10.0
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.train_stop_l
@@ -991,6 +1127,8 @@ traffic_rule_data : traffic_rule.train_stop_l
 
 	rule: "stop"
 	num_params[]: 60.0
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.train_stop_f
@@ -999,6 +1137,8 @@ traffic_rule_data : traffic_rule.train_stop_f
 
 	rule: "stop"
 	num_params[]: 1000000.0
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.tram_stop
@@ -1011,6 +1151,8 @@ traffic_rule_data : traffic_rule.tram_stop
 	num_params[]: 1		# fixed position
 
 	str_params[]: "tram"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.tram_stop_f
@@ -1023,32 +1165,34 @@ traffic_rule_data : traffic_rule.tram_stop_f
 	num_params[]: 1		# fixed position
 
 	str_params[]: "tram"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.overtake_alw
 {
-	# name: "[prefab] Allow overtaking"
+	name: "[prefab] Allow overtaking"
 	rule: "property"
 	num_params[]: 2
 }
 
 traffic_rule_data : traffic_rule.no_chng_in
 {
-	# name: "[prefab] No lane change in"
+	name: "[prefab] No lane change in"
 	rule: "property"
 	num_params[]: 0
 }
 
 traffic_rule_data : traffic_rule.no_chng_out
 {
-	# name: "[prefab] No lane change out"
+	name: "[prefab] No lane change out"
 	rule: "property"
 	num_params[]: 1
 }
 
 traffic_rule_data : traffic_rule.physics
 {
-	# name: "[prefab] Force physics"
+	name: "[prefab] Force physics"
 	rule: "property"
 	num_params[]: 25
 }
@@ -1070,6 +1214,8 @@ traffic_rule_data : traffic_rule.speed_bump2
 	name: "[various] Speed bump (wheel physics only)"
 
 	additional_rules[]: traffic_rule.physics
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.es_fr_only
@@ -1084,6 +1230,8 @@ traffic_rule_data : traffic_rule.es_fr_only
 
 	additional_rules[]: traffic_rule.private_area
 	additional_rules[]: traffic_rule.excl_nav
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.es_ba_only
@@ -1098,6 +1246,8 @@ traffic_rule_data : traffic_rule.es_ba_only
 
 	additional_rules[]: traffic_rule.private_area
 	additional_rules[]: traffic_rule.excl_nav
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.es_only
@@ -1112,11 +1262,13 @@ traffic_rule_data : traffic_rule.es_only
 
 	additional_rules[]: traffic_rule.private_area
 	additional_rules[]: traffic_rule.excl_nav
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.limit_60_50
 {
-	# name: "[speed] Speed limit 60 (50 for trucks)"
+	name: "Speed limit 60 (50 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 60
@@ -1125,11 +1277,13 @@ traffic_rule_data : traffic_rule.limit_60_50
 
 
 	additional_rules[]: traffic_rule.limit_50_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_60_35
 {
-	# name: "[speed] Speed limit 60 (35 for trucks)"
+	name: "Speed limit 60 (35 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 60
@@ -1138,20 +1292,24 @@ traffic_rule_data : traffic_rule.limit_60_35
 
 
 	additional_rules[]: traffic_rule.limit_35_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_35_t
 {
-	# name: "[speed] Speed limit 35 (trucks only)"
+	name: "Speed limit 35 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 35
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_65_45
 {
-	# name: "[speed] Speed limit 65 (45 for trucks)"
+	name: "Speed limit 65 (45 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 65
@@ -1160,20 +1318,24 @@ traffic_rule_data : traffic_rule.limit_65_45
 
 
 	additional_rules[]: traffic_rule.limit_45_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_45_t
 {
-	# name: "[speed] Speed limit 45 (trucks only)"
+	name: "Speed limit 45 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 45
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_45_25
 {
-	# name: "[speed] Speed limit 45 (25 for trucks)"
+	name: "Speed limit 45 (25 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 45
@@ -1182,11 +1344,13 @@ traffic_rule_data : traffic_rule.limit_45_25
 
 
 	additional_rules[]: traffic_rule.limit_25_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_35_25
 {
-	# name: "[speed] Speed limit 35 (25 for trucks)"
+	name: "Speed limit 35 (25 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 35
@@ -1195,20 +1359,24 @@ traffic_rule_data : traffic_rule.limit_35_25
 
 
 	additional_rules[]: traffic_rule.limit_25_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_25_t
 {
-	# name: "[speed] Speed limit 45 (trucks only)"
+	name: "Speed limit 45 (trucks only)"
 
 	rule: "speed_limit"
 	num_params[]: 25
 	str_params[]: "truck_all"
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.on_ramp
 {
-	# name: "[prefab] On-ramp start"
+	name: "[prefab] On-ramp start"
 
 	rule: "speed_limit"
 	num_params[]: 0
@@ -1236,6 +1404,8 @@ traffic_rule_data : traffic_rule.agri_check_t
 	str_params[]: "truck_heavy"
 	str_params[]: "truck_medium"
 	str_params[]: "truck_long"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.agri_check_o
@@ -1251,27 +1421,33 @@ traffic_rule_data : traffic_rule.agri_check_o
 	str_params[]: "truck_heavy"
 	str_params[]: "truck_medium"
 	str_params[]: "truck_long"
+
+	editor_allow_traffic_areas: true
 }
 
 traffic_rule_data : traffic_rule.limit_10
 {
-	# name: "[speed] Speed limit 10"
+	name: "Speed limit 10"
 
 	rule: "speed_limit"
 	num_params[]: 10
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_5
 {
-	# name: "[speed] Speed limit 5"
+	name: "Speed limit 5"
 
 	rule: "speed_limit"
 	num_params[]: 5
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_50_35
 {
-	# name: "[speed] Speed limit 50 (35 for trucks)"
+	name: "Speed limit 50 (35 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 50
@@ -1280,11 +1456,13 @@ traffic_rule_data : traffic_rule.limit_50_35
 
 
 	additional_rules[]: traffic_rule.limit_35_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_45_35
 {
-	# name: "[speed] Speed limit 45 (35 for trucks)"
+	name: "Speed limit 45 (35 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 45
@@ -1293,11 +1471,13 @@ traffic_rule_data : traffic_rule.limit_45_35
 
 
 	additional_rules[]: traffic_rule.limit_35_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.limit_75_70
 {
-	# name: "[speed] Speed limit 75 (70 for trucks)"
+	name: "Speed limit 75 (70 for trucks)"
 
 	rule: "speed_limit"
 	num_params[]: 75
@@ -1305,6 +1485,8 @@ traffic_rule_data : traffic_rule.limit_75_70
 	str_params[]: "truck_all"
 
 	additional_rules[]: traffic_rule.limit_70_t
+
+	editor_allow_signs: true
 }
 
 traffic_rule_data : traffic_rule.no_tow

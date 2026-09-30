@@ -8184,16 +8184,16 @@ model_def : model.1048
 	dynamic_lod_desc[]: "/model/building/shop/gas_shop_country_01_lod2.pmd"
 	dynamic_lod_dist[]: 200
 }
+
 model_def : model.1049
 {
 	model_desc: "/model/building/shop/truckstop_gp_02.pmd"
 
-	static_lod_name[]: "LOD - 150m"
 	static_lod_path[]: "/model/building/shop/truckstop_gp_02_lod1.pmd"
+	static_lod_name[]: "LOD from 150m"
 
 	dynamic_lod_desc[]: "/model/building/shop/truckstop_gp_02_lod1.pmd"
-	dynamic_lod_dist[]: 100
-
+	dynamic_lod_dist[]: 150
 }
 model_def : model.1076
 {
@@ -9204,14 +9204,6 @@ model_def : model.or_537
 
 }
 
-model_def : model.or_541
-{
-	vegetation_model: vegetmodel.rhododendron.1_or
-}
-model_def : model.or_542
-{
-	vegetation_model: vegetmodel.rhododendron.2_or
-}
 model_def : model.or_544
 {
 	vegetation_model: vegetmodel.rose1_or
@@ -14801,25 +14793,6 @@ model_def : model.ut_310
 	dynamic_lod_desc[]: "/model/rock/ut_rock_blocky_4_lod1.pmd"
 	dynamic_lod_dist[]: 150
 }
-model_def : model.ut_342
-{
-	model_desc: "/model/props/street/ut_rounded_roadblock.pmd"
-	name: "ut rounded roadblock"
-
-	static_lod_path: 2
-	static_lod_name: 2
-	static_lod_path[0]: "/model/props/street/ut_rounded_roadblock_lod1.pmd"
-	static_lod_name[0]: "LOD from 50m"
-	static_lod_path[1]: "/model/props/street/ut_rounded_roadblock_lod2.pmd"
-	static_lod_name[1]: "LOD from 100m"
-
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
-	dynamic_lod_desc[0]: "/model/props/street/ut_rounded_roadblock_lod1.pmd"
-	dynamic_lod_dist[0]: 50
-	dynamic_lod_desc[1]: "/model/props/street/ut_rounded_roadblock_lod2.pmd"
-	dynamic_lod_dist[1]: 100
-}
 model_def : model.ut_409
 {
 	model_desc: "/model/rock/ut_rock_table_sentinelmesa.pmd"
@@ -16107,25 +16080,6 @@ model_def : model.ut_401
 	dynamic_lod_dist[]: 200
 
 }
-model_def : model.ut_402
-{
-	model_desc: "/model/distribution/liquid/ut_heater_treater.pmd"
-
-	static_lod_name[]: "LOD - 75m"
-	static_lod_path[]: "/model/distribution/liquid/ut_heater_treater_lod1.pmd"
-	static_lod_name[]: "LOD - 200m"
-	static_lod_path[]: "/model/distribution/liquid/ut_heater_treater_lod2.pmd"
-
-	dynamic_lod_desc[]: "/model/distribution/liquid/ut_heater_treater_lod1.pmd"
-	dynamic_lod_dist[]: 75
-	dynamic_lod_desc[]: "/model/distribution/liquid/ut_heater_treater_lod2.pmd"
-	dynamic_lod_dist[]: 200
-
-	color_variant[]: "sand | vis_cl : 196,190,174"
-	color_variant[]: "red | vis_cl : 190,133,133"
-	color_variant[]: "blue | vis_cl : 122,155,175"
-	color_variant[]: "grey | vis_cl : 202,202,202"
-}
 model_def : model.ut_403
 {
 	model_desc: "/model/building/shop/ut_shop3.pmd"
@@ -16158,23 +16112,21 @@ model_def : model.ut_406
 {
 	model_desc: "/model/props/lamp/ut_st_george_lamp1.pmd"
 }
+
 model_def : model.ut_407
 {
 	model_desc: "/model/building/logistic/ut_small_hangar1.pmd"
 	name: "ut small hangar1"
 
-	color_variant: 4
-	color_variant[0]: "grey | fac_clr : 223,223,223"
-	color_variant[1]: "red | fac_clr : 234,134,134"
-	color_variant[2]: "blue | fac_clr : 101,155,184"
-	color_variant[3]: "green | fac_clr : 139,179,114"
+	color_variant[]: "grey | *_c1 : 223,223,223"
+	color_variant[]: "red | *_c1 : 234,134,134"
+	color_variant[]: "blue | *_c1 : 101,155,184"
+	color_variant[]: "green | *_c1 : 139,179,114"
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
-	dynamic_lod_desc[0]: "/model/building/logistic/ut_small_hangar1_lod1.pmd"
-	dynamic_lod_dist[0]: 100
-	dynamic_lod_desc[1]: "/model/building/logistic/ut_small_hangar1_lod2.pmd"
-	dynamic_lod_dist[1]: 170
+	dynamic_lod_desc[]: "/model/building/logistic/ut_small_hangar1_lod1.pmd"
+	dynamic_lod_dist[]: 100
+	dynamic_lod_desc[]: "/model/building/logistic/ut_small_hangar1_lod2.pmd"
+	dynamic_lod_dist[]: 170
 }
 model_def : model.ut_412
 {
@@ -17919,19 +17871,15 @@ model_def : model.0601s
 	model_desc: "/model/building/industrial/silo_oil_01.pmd"
 	name: "silo oil 01"
 
-	static_lod_path: 2
-	static_lod_name: 2
-	static_lod_path[0]: "/model/building/industrial/silo_oil_01_lod1.pmd"
-	static_lod_name[0]: "LOD from 120m"
-	static_lod_path[1]: "/model/building/industrial/silo_oil_01_lod2.pmd"
-	static_lod_name[1]: "LOD from 170m"
+	static_lod_path[]: "/model/building/industrial/silo_oil_01_lod1.pmd"
+	static_lod_name[]: "LOD from 120m"
+	static_lod_path[]: "/model/building/industrial/silo_oil_01_lod2.pmd"
+	static_lod_name[]: "LOD from 200m"
 
-	dynamic_lod_desc: 2
-	dynamic_lod_dist: 2
-	dynamic_lod_desc[0]: "/model/building/industrial/silo_oil_01_lod1.pmd"
-	dynamic_lod_dist[0]: 120
-	dynamic_lod_desc[1]: "/model/building/industrial/silo_oil_01_lod2.pmd"
-	dynamic_lod_dist[1]: 170
+	dynamic_lod_desc[]: "/model/building/industrial/silo_oil_01_lod1.pmd"
+	dynamic_lod_dist[]: 120
+	dynamic_lod_desc[]: "/model/building/industrial/silo_oil_01_lod2.pmd"
+	dynamic_lod_dist[]: 200
 }
 
 model_def : model.0601t
@@ -33966,18 +33914,6 @@ model_def : model.mt_2w001
 	dynamic_lod_dist[0]: 100
 }
 
-model_def : model.mt_2700f
-{
-	model_desc: "/model/building/industrial/mt_warehouse_brick_1.pmd"
-	name: "mt warehouse brick 1"
-
-	static_lod_path[]: "/model/building/industrial/mt_warehouse_brick_1_lod1.pmd"
-	static_lod_name[]: "LOD from 100m"
-
-	dynamic_lod_desc[]: "/model/building/industrial/mt_warehouse_brick_1_lod1.pmd"
-	dynamic_lod_dist[]: 100
-}
-
 model_def : model.mt_2700p
 {
 	model_desc: "/model/building/hotel/mt_motel2.pmd"
@@ -35282,30 +35218,6 @@ model_def : model.mt_1g00n
 	dynamic_lod_dist: 1
 	dynamic_lod_desc[0]: "/model/building/industrial/mt_grain_silo_collector_rusty_lod1.pmd"
 	dynamic_lod_dist[0]: 120
-}
-
-model_def : model.mt_2700g
-{
-	model_desc: "/model/building/industrial/mt_warehouse_brick_2.pmd"
-	name: "mt warehouse brick 2"
-
-	static_lod_path[]: "/model/building/industrial/mt_warehouse_brick_2_lod1.pmd"
-	static_lod_name[]: "LOD from 100m"
-
-	dynamic_lod_desc[]: "/model/building/industrial/mt_warehouse_brick_2_lod1.pmd"
-	dynamic_lod_dist[]: 100
-}
-
-model_def : model.mt_2700h
-{
-	model_desc: "/model/building/industrial/mt_warehouse_brick_3.pmd"
-	name: "mt warehouse brick 3"
-
-	static_lod_path[]: "/model/building/industrial/mt_warehouse_brick_3_lod1.pmd"
-	static_lod_name[]: "LOD from 100m"
-
-	dynamic_lod_desc[]: "/model/building/industrial/mt_warehouse_brick_3_lod1.pmd"
-	dynamic_lod_dist[]: 100
 }
 
 model_def : model.mt_2700l
@@ -46517,22 +46429,6 @@ model_def : model.3a02h
 	dynamic_lod_dist[0]: 100
 }
 
-model_def : model.ok_1e004
-{
-	model_desc: "/prefab/depots/gas_chem/ok_gas_chem_tanks_3.pmd"
-	name: "ok gas chem tanks 3"
-
-	static_lod_path: 1
-	static_lod_name: 1
-	static_lod_path[0]: "/prefab/depots/gas_chem/ok_gas_chem_tanks_3_lod1.pmd"
-	static_lod_name[0]: "LOD from 80m"
-
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/prefab/depots/gas_chem/ok_gas_chem_tanks_3_lod1.pmd"
-	dynamic_lod_dist[0]: 80
-}
-
 model_def : model.ok_1k002
 {
 	model_desc: "/prefab/depots/building_technology_factory/ok_air_conditioner_02.pmd"
@@ -46608,22 +46504,6 @@ model_def : model.ok_01003
 
 	dynamic_lod_desc[]: "/model/panorama/ok_clinton/ok_clinton_truckstop_shop_lod1.pmd"
 	dynamic_lod_dist[]: 100
-}
-
-model_def : model.ok_1e003
-{
-	model_desc: "/prefab/depots/gas_chem/ok_gas_chem_tanks_2.pmd"
-	name: "ok gas chem tanks 2"
-
-	static_lod_path: 1
-	static_lod_name: 1
-	static_lod_path[0]: "/prefab/depots/gas_chem/ok_gas_chem_tanks_2_lod1.pmd"
-	static_lod_name[0]: "LOD from 80m"
-
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/prefab/depots/gas_chem/ok_gas_chem_tanks_2_lod1.pmd"
-	dynamic_lod_dist[0]: 80
 }
 
 model_def : model.co_0o004
@@ -64259,22 +64139,6 @@ model_def : model.tx_0r01m
 	dynamic_lod_dist[0]: 100
 }
 
-model_def : model.tx_1d002
-{
-	model_desc: "/model/panorama/tx_waco/tx_waco_silo.pmd"
-	name: "tx waco silo"
-
-	static_lod_path: 1
-	static_lod_name: 1
-	static_lod_path[0]: "/model/panorama/tx_waco/tx_waco_silo_lod1.pmd"
-	static_lod_name[0]: "LOD from 100m"
-
-	dynamic_lod_desc: 1
-	dynamic_lod_dist: 1
-	dynamic_lod_desc[0]: "/model/panorama/tx_waco/tx_waco_silo_lod1.pmd"
-	dynamic_lod_dist[0]: 100
-}
-
 model_def : model.ok_1i000
 {
 	model_desc: "/prefab/depots/river_port/ok_portal_crane.pmd"
@@ -66100,10 +65964,10 @@ model_def : model.ia_2e000
 {
 	model_desc: "/model/building/industrial/ia_salt_dome.pmd"
 
-	static_lod_path[]: "/model/building/industrial/ia_salt_dome.pmd"
+	static_lod_path[]: "/model/building/industrial/ia_salt_dome_lod1.pmd"
 	static_lod_name[]: "LOD from 100m"
 
-	dynamic_lod_desc[]: "/model/building/industrial/ia_salt_dome.pmd"
+	dynamic_lod_desc[]: "/model/building/industrial/ia_salt_dome_lod1.pmd"
 	dynamic_lod_dist[]: 100
 }
 
@@ -73929,4 +73793,35 @@ model_def : model.sd_7e001
 	dynamic_lod_dist[]: 40
 }
 
+model_def : model.la_3d005
+{
+	model_desc: "/model/panorama/la_baton_rouge/la_baton_rouge_old_gate.pmd"
+	name: "la baton rouge old gate"
+
+	static_lod_path[]: "/model/panorama/la_baton_rouge/la_baton_rouge_old_gate_lod1.pmd"
+	static_lod_name[]: "LOD from 60m"
+
+	dynamic_lod_desc[]: "/model/panorama/la_baton_rouge/la_baton_rouge_old_gate_lod1.pmd"
+	dynamic_lod_dist[]: 60
+}
+model_def : model.2d002
+{
+    vegetation_model: vegetmodel.red.elderberry1
+
+}
+model_def : model.2d003
+{
+    vegetation_model: vegetmodel.red.elderberry2
+
+}
+model_def : model.2d004
+{
+    vegetation_model: vegetmodel.red.elderberry3
+
+}
+model_def : model.2d007
+{
+    vegetation_model: vegetmodel.red.elderberry4
+
+}
 }
