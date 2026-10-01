@@ -1087,7 +1087,7 @@
 	val[]: "Alteração no jogo detetada! Para evitar problemas de compatibilidade com a gravação do jogo devido a mudanças no mundo, todas as entregas inacabadas foram canceladas sem qualquer penalização para ti." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "Alteração no jogo detetada!<br><br>Para evitar problemas de compatibilidade com a gravação do jogo, todas as entregas inacabadas foram canceladas sem qualquer penalização para ti. O teu veículo será movido para um local seguro.<br><br>Por favor, seleciona um destino de viagem rápida para continuares." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "A gravar..." #+ Game save indicator message.
@@ -3303,7 +3303,7 @@
 	val[]: "Escolhe como o Mapa Mundo é alinhado."
 
 	key[]: "map_exploration_mode_op_tooltip" # - Gameplay, Advanced
-	val[]: "Escolha o método de exploração do Mapa:<br>- \"Exploração por proximidade\" assinala uma área de maior dimensão como explorada.<br>- \"Exploração por precisão\" revela apenas as áreas imediatamente circundantes ao jogador."
+	val[]: "Escolha o método de exploração do Mapa:<br>- \"Exploração por proximidade\" assinala uma área de maior dimensão como explorada.<br>- \"Exploração de precisão\" revela apenas as áreas imediatamente circundantes ao jogador."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
 	val[]: "Seleccionar como a navegação será mostrada."
@@ -9382,7 +9382,7 @@
 	val[]: "VENDER VEÍCULO"  #+ Message box title. Please keep in upper case where possible.
 
 	key[]: "vehicleman_msg_reallysell"
-	val[]: "De certeza que queres vender o teu $TRUCK$ por $MONEY$?"
+	val[]: "Queres mesmo vender o teu $VEHICLE$ por $MONEY$?"
 
 	key[]: "vehicleman_msg_nosell"
 	val[]: "Não podes vender o veículo que estás a conduzir enquanto estás a realizar um trabalho! Termina o teu trabalho e tenta novamente."
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -14260,7 +14266,7 @@
 	val[]: "Segue a rota até à companhia pretendida."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "A carga está pronta a ser carregada. Procede até à<br>área de carregamento."
+	val[]: "A carga está pronta para ser carregada. Segue para a zona de carregamento."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Dirige-te à bandeira verde que está no teu mapa."
@@ -17903,7 +17909,7 @@
 	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. FORD, Bronco and Mustang are trademark(s) of Ford or its affiliates used under license. Manufactured and distributed by SCS Software s.r.o. under license. The FORD trademark and related trademarks and designs are used with the permission of Ford Motor Company."
 #@}
 
 #+ Save manager errors
@@ -18622,7 +18628,7 @@
 	val[]: "Condição de Exposição"
 
 	key[]: "cjob_samples_positive_note_cargo_1"
-	val[]: "Embalagem Imaculadas"
+	val[]: "Embalagem Imaculada"
 
 	#+ Return Package (generic box). NOTE: negative keys are shared by machine parts & job tools.
 	key[]: "cjob_box_negative_note_cargo"
@@ -18921,12 +18927,6 @@
 
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "Ainda não terminaste a compra do teu carro novo. Tens a certeza de que queres sair deste ecrã?"
-
-	key[]: "car_purchase_leave"
-	val[]: "Sair"
-
-	key[]: "car_purchase_stay"
-	val[]: "Ficar"
 
 	key[]: "car_purchase_car_bought"
 	val[]: "Obrigado pela tua compra.<br>$CAR_NAME$ está agora na tua coleção." #+ Message of car bought message box.

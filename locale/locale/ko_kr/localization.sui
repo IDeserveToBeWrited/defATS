@@ -1087,7 +1087,7 @@
 	val[]: "게임이 수정되었습니다! 게임 수정으로 인한 게임 세이브 호환성 문제를 방지하기 위해, 완료되지 않은 모든 배송이 위약금 없이 취소되었습니다." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "게임이 수정되었습니다!<br><br>게임 저장 데이터 호환성 문제를 방지하기 위해, 완료되지 않은 모든 배송이 페널티 없이 취소되었습니다. 차량은 안전한 장소에 다시 주차해야 합니다.<br><br>계속하려면 빠른 이동 목적지를 선택해 주십시오." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "저장 중..." #+ Game save indicator message.
@@ -2111,7 +2111,7 @@
 	val[]: "열기" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_widget_close"
-	val[]: "해고" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
+	val[]: "닫기" #+ Label for an input icon in DLC widget. Please keep it as short as possible.
 
 	key[]: "dlc_browser_online_wait_title"
 	val[]: "데이터를 받는중" #+ Title of the screen. Please keep in upper case where possible.
@@ -9429,7 +9429,7 @@
 	val[]: "<br>(해당 트럭은 현재 운행 중인 관계로 전환하는데 $TIME$이 소요됩니다)"
 
 	key[]: "truckman_conf_drive_own_trailer"
-	val[]: "(현재 연결된 트레일러가 분리될 것입니다)" #+ Information shown when player wants to use the truck.
+	val[]: "(현재 트레일러가 분리될 것입니다.)" #+ Information shown when player wants to use the truck.
 #@}
 
 #+ Message box shown when user requests to change color/paint job on truck he is driving.
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -13611,7 +13617,7 @@
 	val[]: "당신의 트레일러는 빠른 여행을 할 수 있는 상태가 아닙니다. 긴급출동 서비스를 요청하십시오."
 
 	key[]: "quick_travel_illegal_trailer_dismiss_info"
-	val[]: "현재 트레일러는 대상 지역에서 합법적이지 않습니다. 차고에 보관됩니다." #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
+	val[]: "현재 트레일러는 대상 주에서 합법적이지 않습니다. 차고에 보관됩니다." #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
 
 	key[]: "quick_travel_illegal_trailer_dismiss_confirm"
 	val[]: "확인"
@@ -14260,7 +14266,7 @@
 	val[]: "목적지까지 경로를 따라 이동하십시오."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "화물을 상차할 준비가 되었습니다.<br>상차장으로 이동하십시오."
+	val[]: "화물 상차 준비가 되었습니다. 적재구역으로 이동하십시오."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "지도 내 녹색 깃발을 향해 이동하십시오."
@@ -17903,7 +17909,7 @@
 	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. FORD, Bronco and Mustang are trademark(s) of Ford or its affiliates used under license. Manufactured and distributed by SCS Software s.r.o. under license. The FORD trademark and related trademarks and designs are used with the permission of Ford Motor Company."
 #@}
 
 #+ Save manager errors
@@ -18921,12 +18927,6 @@
 
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "새 차 구매를 아직 완료하지 않으셨습니다. 이 화면을 나가시겠습니까?"
-
-	key[]: "car_purchase_leave"
-	val[]: "떠나기"
-
-	key[]: "car_purchase_stay"
-	val[]: "머무르다"
 
 	key[]: "car_purchase_car_bought"
 	val[]: "구매해주셔서 감사합니다.<br>$CAR_NAME$ 차량이 이제 컬렉션에 추가되었습니다." #+ Message of car bought message box.

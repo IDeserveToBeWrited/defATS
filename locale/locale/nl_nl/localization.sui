@@ -1087,7 +1087,7 @@
 	val[]: "Spel verandering gedetecteerd! Om te voorkomen dat het opslagbestand compatibiliteitsproblemen zou veroorzaken als gevolg van veranderingen in de game wereld, werden onafgewerkte leveringen geannuleerd zonder boete." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "Spelwijziging gedetecteerd!<br><br>Om de compatibiliteit van het spelbestand te waarborgen, zijn alle onvoltooide leveringen zonder boete voor u geannuleerd. Je voertuig staat nu op een veilige plek geparkeerd.<br><br>Selecteer een snelreisbestemming om door te gaan." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Opslaan..." #+ Game save indicator message.
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -14260,7 +14266,7 @@
 	val[]: "Volg de route naar het bedrijf."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "De lading is klaar om ingeladen te worden. Rijd naar de<br>laadplek."
+	val[]: "The cargo is ready to be loaded. Proceed to the loading area."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Rijd naar de groene vlag op de kaart."
@@ -16219,10 +16225,10 @@
 	val[]: "Je huidige trailer is ongeschikt voor deze lading. Verander de trailer of maak gebruik van het aangeleverde materieel."
 
 	key[]: "mp_warning_target_company_sleeping_suspend"
-	val[]: "You are currently delivering to a company that is inactive in this session.<br>If you wish to connect, deliver your job first or it will be suspended and unavailable while in this session.<br><br>Do you wish to continue?"
+	val[]: "Uw lading bevindt zich bij een bedrijf dat in deze sessie inactief is.<br>Als u verbinding wilt maken, laad dan uw lading of uw huidige opdracht wordt opgeschort en is deze in deze sessie niet beschikbaar.<br><br>Wilt u doorgaan?"
 
 	key[]: "mp_warning_target_company_sleeping_cancel"
-	val[]: "You are currently delivering to a company that is inactive in this session.<br>If you wish to connect, deliver your job first or it will be canceled.<br><br>Do you wish to continue?"
+	val[]: "Uw lading bevindt zich bij een bedrijf dat in deze sessie inactief is.<br>Als u verbinding wilt maken, maak dan eerst je levering af of uw huidige opdracht wordt geannuleerd.<br><br>Wilt u doorgaan?"
 
 	key[]: "mp_warning_close_to_conflicted_company_suspend"
 	val[]: "Een bedrijf in de buurt van je vrachtwagen of trailer moet worden geactiveerd om deel te kunnen nemen aan deze sessie.<br>Om problemen te voorkomen, moet je je vrachtwagen en trailer verder weg van het bedrijf zetten, anders wordt je huidige opdracht stopgezet en is deze niet meer beschikbaar in deze sessie en word je geteleporteerd naar de dichtstbijzijnde werkplaats.<br><br>Wil je doorgaan?"
@@ -17903,7 +17909,7 @@
 	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. FORD, Bronco and Mustang are trademark(s) of Ford or its affiliates used under license. Manufactured and distributed by SCS Software s.r.o. under license. The FORD trademark and related trademarks and designs are used with the permission of Ford Motor Company."
 #@}
 
 #+ Save manager errors
@@ -18922,12 +18928,6 @@
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "Je hebt de aankoop van je nieuwe auto nog niet afgerond. Weet je zeker dat je dit scherm wilt verlaten?"
 
-	key[]: "car_purchase_leave"
-	val[]: "Verlaten"
-
-	key[]: "car_purchase_stay"
-	val[]: "Blijven"
-
 	key[]: "car_purchase_car_bought"
 	val[]: "Thank you for your purchase.<br>$CAR_NAME$ is now in your collection." #+ Message of car bought message box.
 
@@ -19081,7 +19081,7 @@
 #+ World map.
 #@{
 	key[]: "no_gps_different_mode"
-	val[]: "Start driving to enable navigation"
+	val[]: "Drive a vehicle in the current mode to change navigation"
 #@}
 
 #+ Quick travel.

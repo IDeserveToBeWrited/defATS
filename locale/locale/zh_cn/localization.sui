@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -14260,7 +14266,7 @@
 	val[]: "按照路线行驶到目标公司。"
 
 	key[]: "cargo_load_waiting1"
-	val[]: "货物已准备好装载。请前往<br>装卸区。"
+	val[]: "货物已准备好装载。请前往装卸区。"
 
 	key[]: "cargo_load_waiting2"
 	val[]: "前往地图上绿旗标示的位置。"
@@ -18920,13 +18926,7 @@
 	val[]: "注意"
 
 	key[]: "car_purchase_confirm_exit_msg"
-	val[]: "你尚未完成新车的购买流程。你确定要离开此界面吗？"
-
-	key[]: "car_purchase_leave"
-	val[]: "离开"
-
-	key[]: "car_purchase_stay"
-	val[]: "留下"
+	val[]: "你尚未完成新车的购买流程。<br><br>你要离开吗？"
 
 	key[]: "car_purchase_car_bought"
 	val[]: "感谢购买。<br>$CAR_NAME$ 现已加入你的收藏。" #+ Message of car bought message box.
@@ -19018,7 +19018,7 @@
 	val[]: "任务"
 
 	key[]: "car_career_log_customer_satisfaction"
-	val[]: "客户满意度"
+	val[]: "满意度"
 
 	key[]: "car_career_stats_job_rating"
 	val[]: "任务评级"
@@ -19320,7 +19320,7 @@
 	val[]: "公路之旅" #+ Text in explorer on tourist atlas reward accessory.
 
 	key[]: "tourist_atlas_reward_locked"
-	val[]: "可在此处获得：<color value=@@clr_sel@@>公路之旅" #+ Text in configurator when tourist atlas accessory is locked.
+	val[]: "可在此处获得：<color value=@@clr_sel@@>@@tourist_atlas_link@@" #+ Text in configurator when tourist atlas accessory is locked.
 #@}
 
 

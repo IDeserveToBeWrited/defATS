@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -14260,7 +14266,7 @@
 	val[]: "Ακολούθησε την διαδρομή προς την επιλεγμένη εταιρία."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "Το εμπόρευμα είναι έτοιμο για φόρτωση. Προχώρησε<br>στην περιοχή φόρτωσης."
+	val[]: "The cargo is ready to be loaded. Proceed to the loading area."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Κατευθύνσου προς την πράσινη σημαία στον χάρτη σου."
@@ -17903,7 +17909,7 @@
 	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. FORD, Bronco and Mustang are trademark(s) of Ford or its affiliates used under license. Manufactured and distributed by SCS Software s.r.o. under license. The FORD trademark and related trademarks and designs are used with the permission of Ford Motor Company."
 #@}
 
 #+ Save manager errors
@@ -18920,13 +18926,7 @@
 	val[]: "ATTENTION"
 
 	key[]: "car_purchase_confirm_exit_msg"
-	val[]: "You have not finished purchase of your new car yet. Are you sure you want to leave this screen?"
-
-	key[]: "car_purchase_leave"
-	val[]: "Leave"
-
-	key[]: "car_purchase_stay"
-	val[]: "Stay"
+	val[]: "You haven't finished purchasing your new car yet. <br><br> Do you want to leave?"
 
 	key[]: "car_purchase_car_bought"
 	val[]: "Thank you for your purchase.<br>$CAR_NAME$ is now in your collection." #+ Message of car bought message box.
@@ -19018,7 +19018,7 @@
 	val[]: "Job"
 
 	key[]: "car_career_log_customer_satisfaction"
-	val[]: "Customer Satisfaction"
+	val[]: "Satisfaction"
 
 	key[]: "car_career_stats_job_rating"
 	val[]: "Job Rating"
@@ -19060,7 +19060,7 @@
 	val[]: "Atlas"
 
 	key[]: "career_progress_stats_explore_pois_explored"
-	val[]: "Points of interests explored"
+	val[]: "Points of interest explored"
 
 	key[]: "career_progress_stats_explore_postcards_completed"
 	val[]: "Postcards completed"
@@ -19081,7 +19081,7 @@
 #+ World map.
 #@{
 	key[]: "no_gps_different_mode"
-	val[]: "Start driving to enable navigation"
+	val[]: "Drive a vehicle in the current mode to change navigation"
 #@}
 
 #+ Quick travel.
@@ -19317,10 +19317,10 @@
 	val[]: "New items have been added based on progress in Road Trip. Applicable for career: <font face=/font/normal_bold.font>$profile_name$</font>." #+ The help text for new tourist atlas reward items dialog.
 
 	key[]: "tourist_atlas_reward"
-	val[]: "Road Trip" #+ Text in explorer on tourist atlas reward accessory.
+	val[]: "@@tourist_atlas_link@@" #+ Text in explorer on tourist atlas reward accessory.
 
 	key[]: "tourist_atlas_reward_locked"
-	val[]: "Available from <color value=@@clr_sel@@>Road Trip" #+ Text in configurator when tourist atlas accessory is locked.
+	val[]: "Available from <color value=@@clr_sel@@>@@tourist_atlas_link@@" #+ Text in configurator when tourist atlas accessory is locked.
 #@}
 
 

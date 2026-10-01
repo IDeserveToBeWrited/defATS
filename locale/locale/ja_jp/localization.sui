@@ -1087,7 +1087,7 @@
 	val[]: "ゲーム内容の変更を検出しました. ゲームワールド内の変更に伴うセーブデータの不具合を防ぐため, 配送中の仕事は中断されました. なお, これによるペナルティは発生しません." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "ゲーム内容の変更を検出しました.<br><br>セーブデータの互換性に関する問題を防ぐため, 配送中の仕事は中断されました. なお, これによるペナルティは発生しません. あなたの車両は安全な場所へ移動されます.<br><br>続けるには, クイックトラベルの目的地を選択してください." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "セーブ中..." #+ Game save indicator message.
@@ -4339,7 +4339,7 @@
 	val[]: "インフォテインメントディスプレイ画面を切り替えるためのボタンを割り当てます."
 
 	key[]: "o_im_parking_cameras_op_tooltip"
-	val[]: "パーキングカメラのディスプレイ画面を切り替えるためのボタンを割り当てます。"
+	val[]: "手動でパーキングカメラの表示を切り替えるためのボタンを割り当てます. このボタンにより, 後退時はカメラ映像を一時的に非表示にし, 前進時は表示することができます. (@@car_mode@@)"
 
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "ダッシュボードまたはインフォテインメントディスプレイ上のナビゲーションのズームレベルを変更するためのボタンを割り当てます."
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -14260,7 +14266,7 @@
 	val[]: "目的の会社までルートに従ってください."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "貨物の積み込み準備ができています.<br>積み込み場所まで進んでください."
+	val[]: "貨物の積み込み準備ができています. 積み込み場所まで進んでください."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "マップに表示された緑の旗へ向かってください."
@@ -18922,12 +18928,6 @@
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "新車の購入手続きはまだ完了していません。本当にこの画面を閉じてよろしいですか？"
 
-	key[]: "car_purchase_leave"
-	val[]: "画面を離れる"
-
-	key[]: "car_purchase_stay"
-	val[]: "留まる"
-
 	key[]: "car_purchase_car_bought"
 	val[]: "ご購入ありがとうございます。<br>$CAR_NAME$がコレクションに追加されました。" #+ Message of car bought message box.
 
@@ -19366,7 +19366,7 @@
 	val[]: "配達中は車両を変更できません！まずは配達を完了させてください。"
 
 	key[]: "garage_configure_message_teleport"
-	val[]: "現在使用中の車両を設定するには、サービスステーションへ行く必要があります。最寄りのサービスステーションへクイックトラベルしますか？"
+	val[]: "現在使用中の車両を設定するには, サービスポイントへ行く必要があります. 最寄りのサービスポイントへクイックトラベルしますか?"
 	
 	key[]: "garage_vehicle_name"
 	val[]: "車両"

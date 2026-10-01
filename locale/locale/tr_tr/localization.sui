@@ -42,10 +42,10 @@
 	val[]: "Yolun götürdüğü yere"
 
 	key[]: "loading_location_country"
-	val[]: "Somewhere in $COUNTRY$" #+ Message shown on loading screen when player location is inside specific country.
+	val[]: "$COUNTRY$ eyaletinde bir yer" #+ Message shown on loading screen when player location is inside specific country.
 
 	key[]: "loading_changing_mode"
-	val[]: "Transferring" #+ Message shown on loading screen when player is switching between vehicle modes.
+	val[]: "Geçiliyor" #+ Message shown on loading screen when player is switching between vehicle modes.
 
 	key[]: "current_job_title"
 	val[]: "Mevcut iş"
@@ -1087,7 +1087,7 @@
 	val[]: "Oyunda değişiklik tespit edildi! Bu değişikliklerin kayıtlı oyunlarınızı etkilememesi için henüz bitirmediğiniz teslimatlar size herhangi bir cezaya sebep olmadan iptal edildi." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "Oyunda değişiklik tespit edildi!<br><br>Bu değişikliklerin kayıtlı oyunlarınızı etkilememesi için henüz bitirmediğiniz teslimatlar size herhangi bir cezaya sebep olmadan iptal edildi. Aracınız emniyetli bir yere çekilecek.<br><br>Devam etmek için lütfen bir hızlı yolculuk istikameti seçin." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Kaydediliyor..." #+ Game save indicator message.
@@ -1398,7 +1398,7 @@
 	val[]: "Kara yolu" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Select offer to see route details" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Güzergâh detaylarını görmek için teklif seçin" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Eksik rota" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -3276,7 +3276,7 @@
 	val[]: "Etkinleştirildiğinde trafik kurallarına uymanız veya trafik cezalarını göze almanız gerekir. Polis araçlarının, radarların ve trafik kameralarının yakınında risk artar."
 
 	key[]: "preferred_job_length_op_tooltip" # - Gameplay, Advanced
-	val[]: "Adjusts the average length of jobs that are offered.<br><br><color value=@@clr_txt_d@@>Applies to jobs in Truck Mode."
+	val[]: "Teklif edilen işlerin ortalama mesafesini ayarlar.<br><br><color value=@@clr_txt_d@@>Çekici Modundaki işler için geçerlidir."
 
 	key[]: "adviser_speed_limit_op_tooltip" # - Gameplay, Advanced
 	val[]: "Navigasyon widgetında hangi hız sınırının gösterileceğini seçin."
@@ -8814,7 +8814,7 @@
 	val[]: "Hesap bakiyesi: $MONEY$" #+ The $MONEY$ is replaced with the real amount of money on the bank account.
 
 	key[]: "bank_loan_unlock_requirement"
-	val[]: "Advance your career to unlock the loan."
+	val[]: "Kredi için kariyerinizde ilerleyin."
 
 	key[]: "bank_loan_locked_wrong_mode"
 	val[]: "Krediyi açmak için $MODE$'da kariyerinizi ilerletin."
@@ -8897,7 +8897,7 @@
 	val[]: "$CITY$ şehrindeki garaj, tahminî değer: $MONEY$"
 
 	key[]: "bank_sell_report_car"
-	val[]: "Car $NAME$, estimated value: $MONEY$" #+ Message used to show information about a car to sell to cover debt. Same style as bank_sell_report_trailer.
+	val[]: "$NAME$, tahminî değer: $MONEY$" #+ Message used to show information about a car to sell to cover debt. Same style as bank_sell_report_trailer.
 
 #+ Mail screen
 #+
@@ -9838,7 +9838,7 @@
 	val[]: "İlk çekicinizi bizden satın aldığınız için teşekkür ederiz.<br><br>Çekicinizi şirket merkezinize teslim edeceğiz ve mevcut işiniz bittikten sonra kullanmaya başlayabileceksiniz."
 
 	key[]: "td_first_truck_switch_mode_city"
-	val[]: "Thank you for buying your first truck from us!<br><br>Do you want to switch to your new truck in <color value=@@clr_sel@@>$CITY$</color>?"
+	val[]: "İlk çekicinizi bizden satın aldığınız için teşekkür ederiz!<br><br>Yeni çekicinize <color value=@@clr_sel@@>$CITY$</color> şehrinde geçmek ister misiniz?"
 
 	key[]: "td_msg_bought_assigned"
 	val[]: "Hayırlı olsun. Güle güle kullanın!<br><br>Eski çekicinizi hemen $CITY$ şehrine götüreceğiz."
@@ -10170,10 +10170,10 @@
 	val[]: "Konvoy üyesi"
 
 	key[]: "mapl_company_vehicle"
-	val[]: "Vehicle on quick job"
+	val[]: "Tek seferlikte işte olan araç"
 
 	key[]: "mapl_my_vehicle"
-	val[]: "Other vehicle location"
+	val[]: "Diğer aracın konumu"
 
 	key[]: "mapl_quarry"
 	val[]: "Taş ocağı"
@@ -10188,7 +10188,7 @@
 	val[]: "Keşfedilmemiş seyir noktası"
 
 	key[]: "mapl_viewpoint_visited"
-	val[]: "Viewpoint (visited)"
+	val[]: "Seyir noktası (uğranılmış)"
 
 	key[]: "mapl_viewpoint_unvisited"
 	val[]: "Seyir noktası (uğranılmamış)"
@@ -11145,19 +11145,19 @@
     val[]: "Yeni bir oyun moduna giriyorsunuz ve bağlamsal ipuçları hâlihazırda kapalı. İpuçları, nasıl oynayacağınızı öğrenmenize yardımcı olabilir. Tekrar açmak ister misiniz?"
 
 	key[]: "desktop_tut_first_car_job_t"
-	val[]: "WELCOME TO ROAD TRIP"
+	val[]: "ROAD TRIP'E HOŞ GELDİNİZ"
 
 	key[]: "desktop_tut_first_car_job"
-	val[]: "Car Mode is the center of your car driving experience - buy your dream ride, become a courier driver, or open a tourist guide and hit the open road to explore the world.<br><br>To start, take your first Quick Job."
+	val[]: "Araba Modu, araba sürüş tecrübenizin merkezindedir. Hayalinizdeki aracı satın alın, kurye şoförü olun veya bir tur rehberi olup dünyayı keşfetmek için yola koyulun.<br><br>Başlamak için ilk tek seferlik işinizi alın."
 
 	key[]: "desktop_tut_atlas"
-	val[]: "Atlas is your personal tourist guide to plan your road trip."
+	val[]: "Atlas, yolculuğunuzu planlamanızı sağlayan kişisel tur rehberinizdir."
 
 	key[]: "desktop_tut_car_eshop"
-	val[]: "Car Dealer - buy your own vehicle."
+	val[]: "Otomobil Bayii - Kendi aracınızı satın alın."
 
 	key[]: "desktop_tut_owned_car_job"
-	val[]: "Dispatch Market - get hired as a professional courier driver using your own vehicle."
+	val[]: "Sevkiyat Pazarı - Kendi aracınız ile profesyonel kurye şoförü olarak çalışın."
 #@}
 
 
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -14260,7 +14266,7 @@
 	val[]: "Hedef şirkete doğru olan güzergâhı takip edin."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "Yük hazır. Yükleme sahasına doğru<br>devam edin."
+	val[]: "Yük hazır. Yükleme sahasına doğru devam edin."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Haritanızdaki yeşil bayrağa doğru gidin."
@@ -16204,10 +16210,10 @@
 	val[]: "Kullanılmıyor"
 
 	key[]: "mp_truck_on_job"
-	val[]: "Job not available"
+	val[]: "İş mevcut değil"
 
 	key[]: "mp_truck_on_convoy"
-	val[]: "Job available"
+	val[]: "İş mevcut"
 
 	key[]: "mp_fetching_from_server"
 	val[]: "Sunucudan alınıyor..."
@@ -17774,31 +17780,31 @@
 #+ Vehicle mode switch
 #@{
 	key[]: "vehicle_mode"
-	val[]: "Mode"
+	val[]: "Mod"
 
 	key[]: "truck_mode"
-	val[]: "Truck Mode"
+	val[]: "Çekici Modu"
 
 	key[]: "truck_mode_help"
-	val[]: "Take on different jobs with a truck"
+	val[]: "Çekiciyle farklı işler üstlenin"
 
 	key[]: "bus_mode"
-	val[]: "Coach Mode"
+	val[]: "Otobüs Modu"
 
 	key[]: "bus_mode_help"
-	val[]: "Experience another mode as a coach driver"
+	val[]: "Otobüs şoförü olarak farklı bir tecrübe yaşayın"
 
 	key[]: "bus_mode_locked_tooltip"
-	val[]: "To access Coach Mode you must finish your first job"
+	val[]: "Otobüs Moduna erişmek için ilk işinizi bitirmeniz gerekir"
 
 	key[]: "car_mode"
-	val[]: "Car Mode"
+	val[]: "Araba Modu"
 
 	key[]: "car_mode_help"
-	val[]: "Take on different jobs and explore the world with a car"
+	val[]: "Arabayla farklı işler üstlenin ve dünyayı keşfedin"
 
 	key[]: "car_mode_locked_tooltip"
-	val[]: "To access Car Mode you must finish your first job"
+	val[]: "Araba Moduna erişmek için ilk işinizi bitirmeniz gerekir"
 #@}
 
 #+ Menu upper bar
@@ -18062,201 +18068,201 @@
 #+ Road trip localization.
 #@{
 	key[]: "poi_discovered"
-	val[]: "<color value=@@clr_sel@@>$item_name$ <color value=@@clr_txt@@>DISCOVERED" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
+	val[]: "<color value=@@clr_sel@@>$item_name$ <color value=@@clr_txt@@>KEŞFEDİLDİ" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
 
 	key[]: "tourist_board_discovered"
 	val[]: "<color value=@@clr_sel@@>$item_name$" #+  Message that appears in the middle of the screen when a item is discovered. Example: "BRUSSEL DISCOVERED". Please, keep in uppercase.
 
 	key[]: "tourist_board_msg"
-	val[]: "Press the following key to activate the Tourist Board:"
+	val[]: "Turist Panosunu açmak için belirtilen düğmeye basın:"
 #@}
 
 
 #+ Road Trip Desktop specifics
 #@{
 	key[]: "desktop_menu_category_car_company"
-	val[]: "Garage"
+	val[]: "Garaj"
 
 #@}
 
 #+ Car job localization.
 #@{
 	key[]: "car_job_type_delivery"
-	val[]: "Courier Job"
+	val[]: "Kurye İşi"
 
 	key[]: "car_job_type_driving"
-	val[]: "Driver on Demand"
+	val[]: "Talep Üzerine Şoförlük"
 
 	key[]: "car_quick_job_desc"
-	val[]: "Get hired as a professional courier driver with a provided vehicle. Just pick a job and drive."
+	val[]: "Size tahsis edilen araçla profesyonel kurye şoförü olarak çalışın. Sadece bir iş seçin ve yola koyulun."
 
 	key[]: "car_dispatch_job_resumed"
-	val[]: "Dispatch Job is in progress."
+	val[]: "Sevkiyat İşi devam etmekte."
 
 	key[]: "customer_prio_info"
-	val[]: "Customer Priority"
+	val[]: "Müşteri Önceliği"
 
 	key[]: "cargo_type_prio_cargo"
-	val[]: "Cargo Handling"
+	val[]: "Yük Taşıma"
 
 	key[]: "cargo_type_prio_time"
-	val[]: "Time Management"
+	val[]: "Zaman Yönetimi"
 
 	key[]: "cargo_type_prio_vehicle"
-	val[]: "Vehicle Condition"
+	val[]: "Araç Durumu"
 
 	key[]: "cargo_type_prio_none"
-	val[]: "Without Priority"
+	val[]: "Önceliksiz"
 
 	key[]: "cargo_attributes"
-	val[]: "Attributes"
+	val[]: "Hususiyetler"
 
 	key[]: "cargo_type_cstandard"
-	val[]: "Standard Delivery"
+	val[]: "Standart Teslimat"
 
 	key[]: "cargo_type_cexpress"
-	val[]: "Strict Delivery Window"
+	val[]: "Sıkı Teslimat Aralığı"
 
 	key[]: "cargo_type_rt_highvalue"
-	val[]: "Valuable"
+	val[]: "Değerli"
 
 	key[]: "cargo_type_rt_fragile"
-	val[]: "Fragile"
+	val[]: "Kırılgan"
 
 	key[]: "provided_vehicle"
-	val[]: "Provided Vehicle"
+	val[]: "Tahsis Edilen Araç"
 
 	key[]: "cjob_arrived"
-	val[]: "Arrived"
+	val[]: "Varış Saati"
 
 	key[]: "customer_satisfaction_t"
-	val[]: "Customer Satisfaction"
+	val[]: "Müşteri Memnuniyeti"
 
 	key[]: "provisional_reward"
-	val[]: "Provisional Reward"
+	val[]: "Geçici Ödül"
 
 	key[]: "customer_satisfaction"
-	val[]: "Customer Satisfaction"
+	val[]: "Müşteri Memnuniyeti"
 
 	key[]: "customer_rejected_delivery"
-	val[]: "Rejected Delivery"
+	val[]: "Teslimat Reddedildi"
 
 	key[]: "cjob_rating_0"
-	val[]: "Unprofessional"
+	val[]: "Profesyonellik dışı"
 
 	key[]: "cjob_rating_1"
-	val[]: "Very poor"
+	val[]: "Çok kötü"
 
 	key[]: "cjob_rating_2"
-	val[]: "Subpar"
+	val[]: "Vasatın altı"
 
 	key[]: "cjob_rating_3"
-	val[]: "Satisfactory"
+	val[]: "Tatminkâr"
 
 	key[]: "cjob_rating_4"
-	val[]: "Good"
+	val[]: "İyi"
 
 	key[]: "cjob_rating_5"
-	val[]: "Perfect"
+	val[]: "Mükemmel"
 
 	key[]: "cjob_default_negative_note_time"
-	val[]: "Unexpected Arrival Time"
+	val[]: "Beklenmedik Varış Saati"
 
 	key[]: "cjob_default_neutral_note_time"
-	val[]: "Acceptable Arrival Time"
+	val[]: "Makbul Varış Saati"
 
 	key[]: "cjob_default_positive_note_time"
-	val[]: "Right on Time"
+	val[]: "Tam Vaktinde"
 
 	key[]: "cjob_default_negative_note_cargo"
-	val[]: "Broken Cargo"
+	val[]: "Kırık Yük"
 
 	key[]: "cjob_default_neutral_note_cargo"
-	val[]: "Fair Service"
+	val[]: "Makul Hizmet"
 
 	key[]: "cjob_default_positive_note_cargo"
-	val[]: "Damage-free Delivery"
+	val[]: "Hasarsız Teslimat"
 
 	key[]: "cjob_default_negative_note_cargo_1"
-	val[]: "Careless Handling"
+	val[]: "Dikkatsiz Taşıma"
 
 	key[]: "cjob_default_negative_note_vehicle"
-	val[]: "Unprofessional Appearance"
+	val[]: "Profesyonellik Dışı Görünüm"
 
 	key[]: "cjob_default_neutral_note_vehicle"
-	val[]: "Satisfactory Appearance"
+	val[]: "Tatminkâr Görünüm"
 
 	key[]: "cjob_default_positive_note_vehicle"
-	val[]: "Pristine Vehicle"
+	val[]: "Tertemiz Araç"
 
 	key[]: "no_car_job_found"
-	val[]: "Unable to find jobs matching selected filters"
+	val[]: "Seçilen filtreler ile eşleşen işler bulunamıyor"
 
 	key[]: "hint_open_global_dispatch_market"
-	val[]: "You are currently seeing a limited number of dispatch market offers. You may see global offers by clicking the button below."
+	val[]: "Hâlihazırda sınırlı sayıda sevkiyat pazarı teklifi görüyorsunuz. Küresel teklifleri aşağıdaki düğmeye basarak görebilirsiniz."
 
 	key[]: "view_global_dispatch_market"
-	val[]: "View Global Dispatch Market"
+	val[]: "Küresel Sevkiyat Pazarını göster"
 
 	key[]: "car_dispatch_job_t"
-	val[]: "DISPATCH JOB OFFERS"
+	val[]: "SEVKİYAT İŞİ TEKLİFLERİ"
 
 	key[]: "car_dispatch_job"
-	val[]: "Dispatch Market"
+	val[]: "Sevkiyat Pazarı"
 
 	key[]: "car_dispatch_job_desc"
-	val[]: "Get hired as a professional courier driver using your own vehicle."
+	val[]: "Kendi aracınız ile profesyonel kurye şoförü olarak çalışın."
 
 	key[]: "link_locked_msg_dispatch_job"
-	val[]: "To access the Dispatch Market you must have a car assigned first."
+	val[]: "Yük Pazarına erişmek için size tahsis edilen bir aracın olması gerekir."
 
 	key[]: "vehicle_transfer"
-	val[]: "Vehicle Transfer"
+	val[]: "Araç Transferi"
 
 	key[]: "car_job_rating"
-	val[]: "Job Rating"
+	val[]: "İş Puanı"
 
 	key[]: "car_courier_rating"
-	val[]: "Courier Rating"
+	val[]: "Kurye Derecesi"
 
 	key[]: "car_courier_rating_na"
 	val[]: "Yok" #+ Shown at various places if the player has no courier rating yet. Please keep it as short as possible.
 
 	key[]: "car_delivery_streak"
-	val[]: "Perfect Delivery Streak"
+	val[]: "Mükemmel Teslimat Serisi"
 
 	key[]: "car_benefit_max_dist"
-	val[]: "Max Distance"
+	val[]: "Azami Mesafe"
 
 	key[]: "car_benefit_reward_bonus"
-	val[]: "Reward Bonus"
+	val[]: "Ödül İkramiyesi"
 
 	key[]: "car_benefit_cargo_access"
-	val[]: "Cargo Access"
+	val[]: "Yük Erişimi"
 
 	key[]: "car_active_benefits"
-	val[]: "Active Benefits"
+	val[]: "Aktif Avantajlar"
 
 	key[]: "car_benefits_locked"
-	val[]: "Complete your first <color value=@@clr_white@@>5 deliveries</color> to unlock benefits."
+	val[]: "Avantajlardan faydalanmak için ilk <color value=@@clr_white@@>5 teslimatınızı</color> tamamlayın."
 
 	key[]: "car_route_details"
 	val[]: "Güzergâh Detayları"
 
 	key[]: "ccargo_business_documents"
-	val[]: "Business Documents"
+	val[]: "İş Evrakı"
 
 	key[]: "ccargo_personal_documents"
-	val[]: "Personal Documents"
+	val[]: "Şahsi Evrak"
 
 	key[]: "ccargo_legal_documents"
-	val[]: "Legal Documents"
+	val[]: "Hukuki Evrak"
 
 	key[]: "cjob_dealer_allocation"
-	val[]: "Car Dealer Allocation"
+	val[]: "Otomobil Bayii Tahsisi"
 
 	key[]: "cjob_premium_allocation"
-	val[]: "Premium Car Dealer Allocation"
+	val[]: "Premium Otomobil Bayii Tahsisi"
 
 	key[]: "ccargo_job_tools"
 	val[]: "Şantiye Araçları"
@@ -18921,12 +18927,6 @@
 
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "Yeni aracınızın satın alımını tamamlamadınız. Bu ekrandan çıkmak istediğinizden emin misiniz?"
-
-	key[]: "car_purchase_leave"
-	val[]: "Ayrıl"
-
-	key[]: "car_purchase_stay"
-	val[]: "Çıkma"
 
 	key[]: "car_purchase_car_bought"
 	val[]: "Satın alımınız için teşekkürler.<br>$CAR_NAME$ artık garajınızda." #+ Message of car bought message box.

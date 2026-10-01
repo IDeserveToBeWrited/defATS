@@ -1087,7 +1087,7 @@
 	val[]: "Đã phát hiện thay đổi trong game! Để tránh các vấn đề tương thích dữ liệu lưu game do thay đổi trong thế giới game, mọi đơn hàng chưa hoàn thành đã bị hủy mà bạn không phải chịu bất kỳ khoản phí nào." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "Đã phát hiện thay đổi trong trò chơi!<br><br>Để tránh các vấn đề về tính tương thích của dữ liệu lưu, tất cả các đơn hàng chưa hoàn thành đã bị hủy mà bạn không phải chịu bất kỳ khoản phạt nào. Xe của bạn sẽ được di chuyển đến một vị trí an toàn.<br><br>Vui lòng chọn điểm đến để di chuyển nhanh và tiếp tục trò chơi." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Đang lưu..." #+ Game save indicator message.
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -14118,22 +14124,22 @@
 #+ Strings related to Steam inventory feature.
 #@{
 	key[]: "inventory_loading_failed_content"
-	val[]: "Có lỗi xảy ra trong quá trình tải vật phẩm từ kho đồ Steam. <br><br>$ERROR$<br><br>Select tiếp tục để tiếp tục kích hoạt nội dung. Game sẽ kiểm tra thời kỳ của nó.<br><br>Bạn có thể tạm thời bỏ kích hoạt nó để thông báo lỗi này không hiện ra nữa. Game sẽ tự động kích hoạt lại nội dung ấy trong lần bật trò chơi tiếp theo." #+ The error message showed in truck configurator screen when Steam inventory content is not present due to loading error. The $ERROR$ must be keeped untranslated.
+	val[]: "Đã xảy ra lỗi khi tải nội dung Kho đồ Steam.<br><br>$ERROR$<br><br>Chọn tiếp tục để giữ nội dung được bật. Trò chơi sẽ định kỳ tìm kiếm nội dung này.<br><br>Bạn có thể tạm thời tắt nội dung để những thông báo lỗi như thế này không xuất hiện lại. Trò chơi sẽ tự động bật lại nội dung vào lần tiếp theo bạn khởi chạy." #+ The error message showed in truck configurator screen when Steam inventory content is not present due to loading error. The $ERROR$ must be keeped untranslated.
 
 	key[]: "inventory_loading_request_failed_content"
-	val[]: "Không thể tải xuống các vật phẩm từ kho đồ Steam" #+ The error message showed in truck configurator screen when game fails to send Steam inventory request.
+	val[]: "Không thể tải xuống các vật phẩm trong Kho đồ Steam." #+ The error message showed in truck configurator screen when game fails to send Steam inventory request.
 
 	key[]: "inventory_wait_t"
-	val[]: "Kho đồ Steam" #+ Title of the inventory wait dialog.
+	val[]: "KHO ĐỒ STEAM" #+ Title of the inventory wait dialog.
 
 	key[]: "inventory_wait_msg"
-	val[]: "Đang tải các vật phẩm từ kho đồ Steam..." #+ Message describing why player has to wait for inventory items to be loaded.
+	val[]: "Đang tải các vật phẩm từ Kho đồ Steam..." #+ Message describing why player has to wait for inventory items to be loaded.
 
 	key[]: "new_inventory_items_t"
-	val[]: "CÁC VẬT PHẨM MỚI TỪ KHO ĐỒ" #+ Title of the window displaying list of the new inventory items.
+	val[]: "VẬT PHẨM MỚI TRONG KHO" #+ Title of the window displaying list of the new inventory items.
 
 	key[]: "new_inventory_items_help"
-	val[]: "Phát hiện vật phẩm từ kho đồ Steam." #+ The help text for new inventory items dialog.
+	val[]: "Đã phát hiện các vật phẩm mới trong Kho đồ Steam." #+ The help text for new inventory items dialog.
 
 	key[]: "vehicle_accessory"
 	val[]: "Phụ kiện xe " #+ Name of the inventory items category.
@@ -14260,7 +14266,7 @@
 	val[]: "Đi theo chỉ dẫn để đến công ty đích"
 
 	key[]: "cargo_load_waiting1"
-	val[]: "Hàng đã sẵn sàng để chuyển lên. Hãy đến <br>khu tải hàng lên."
+	val[]: "Hàng hóa đã sẵn sàng để bốc xếp. Hãy di chuyển đến khu vực bốc xếp."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Tiến đến lá cờ xanh trên bản đồ"
@@ -17903,7 +17909,7 @@
 	val[]: "A small number of users may be susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns. Such individuals may experience a seizure while watching certain images or playing a video game. If you or anyone in your family has ever had symptoms related to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, please consult a medical professional and take all necessary precautions prior to playing the game.<br offset=20>If you or your child experience any of the following symptoms while playing any video game: dizziness, altered vision, eye or muscle twitches, loss of consciousness, disorientation, convulsions, involuntary movements, discontinue use of the video game immediately and consult a medical professional."
 
 	key[]: "trademark"
-	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o."
+	val[]: "All brand names, trademarks, registered marks, logos, and symbols on vehicles in the game are property of their rightful owners. Used with kind permission. International® and all International Truck trademarks are trademarks licensed by INTERNATIONAL TRUCK INTELLECTUAL PROPERTY COMPANY, LLC. The VOLVO trademarks and designs are registered rights of or licensed to the AB Volvo Group and are used pursuant to a license. The MACK trademarks and designs are registered rights of the AB Volvo Group and are used pursuant to a license. Western Star is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. Freightliner is a trademark of Daimler Trucks North America LLC and is used under license to SCS Software s.r.o. FORD, Bronco and Mustang are trademark(s) of Ford or its affiliates used under license. Manufactured and distributed by SCS Software s.r.o. under license. The FORD trademark and related trademarks and designs are used with the permission of Ford Motor Company."
 #@}
 
 #+ Save manager errors
@@ -18921,12 +18927,6 @@
 
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "Bạn chưa hoàn tất việc mua chiếc xe mới của mình. Bạn có chắc chắn muốn rời khỏi màn hình này không?"
-
-	key[]: "car_purchase_leave"
-	val[]: "Rời khỏi"
-
-	key[]: "car_purchase_stay"
-	val[]: "Ở lại"
 
 	key[]: "car_purchase_car_bought"
 	val[]: "Cảm ơn bạn đã mua hàng.<br>$CAR_NAME$ hiện đã có trong bộ sưu tập của bạn." #+ Message of car bought message box.

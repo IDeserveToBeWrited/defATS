@@ -1361,7 +1361,7 @@
 	val[]: "Mercado de fretes" #+ Icon opening the freight market screen.
 
 	key[]: "comp_job_desc"
-	val[]: "Ganhe dinheiro para sua empresa usando o próprio caminhão. Pegue a carga e entregue-a sã e salva."
+	val[]: "Ganhe dinheiro para sua empresa usando o próprio caminhão. Carregue a mercadoria e entregue-a em segurança."
 
 	key[]: "select_job_offer"
 	val[]: "Definir como destino no GPS" #+ Button which will set pickup point for selected job as target in the GPS.
@@ -1673,7 +1673,7 @@
 	val[]: "Uma nova publicação no blogue está disponível online!" #+ Fallback news text content in case of fetch errors
 
 	key[]: "no_truck_dlc"
-	val[]: "Nenhum caminhão encontrado! Habilite ao menos uma DLC de veículo e reinicie o jogo." #+ Text shown when there is no truck available.
+	val[]: "Nenhum caminhão encontrado! Habilite ao menos uma DLC de caminhão e reinicie o jogo." #+ Text shown when there is no truck available.
 
 	key[]: "extras"
 	val[]: "Extras"
@@ -4339,7 +4339,7 @@
 	val[]: "Atribui um botão para alternar entre as telas do infoentretenimento."
 
 	key[]: "o_im_parking_cameras_op_tooltip"
-	val[]: "Atribui um botão para alternar entre as telas da câmera de estacionamento."
+	val[]: "Atribui um botão para alternar a câmera de estacionamento. O botão oculta temporariamente a câmera ao dar marcha à ré e a exibe ao ir para a frente. (@@car_mode@@)"
 
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "Atribui um botão para alterar o nível de zoom da página de navegação no painel do caminhão ou na tela de infoentretenimento."
@@ -6414,7 +6414,7 @@
 	val[]: "Quer mesmo cancelar seu trabalho atual?<br offset=10>Você terá de pagar uma multa no valor de $MONEY$"
 
 	key[]: "cancel_cur_car_job"
-	val[]: "Você realmente deseja cancelar o trabalho atual?<br offset=10>Você terá que pagar uma multa de $MONEY$ e perderá sua sequência de entregas perfeitas."
+	val[]: "Você realmente quer cancelar o trabalho atual?<br offset=10>Você terá de pagar uma multa de $MONEY$ e perderá sua sequência de entregas perfeitas."
 
 	key[]: "no_cancel_first_job"
 	val[]: "Você não pode cancelar seu primeiro trabalho. Ninguém respeitaria você depois disso."
@@ -9890,7 +9890,7 @@
 	val[]: "CONCESSIONÁRIAS DESCOBERTAS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "tdsel_link"
-	val[]: "Concessionárias" #+ Icon opening the map of truck dealers.
+	val[]: "Concessio-<br>nárias" #+ Icon opening the map of truck dealers.
 
 	key[]: "tdsel_help"
 	val[]: "Visite as concessionárias que você já descobriu." #+ Help message associated the dealer map icon.
@@ -10062,7 +10062,7 @@
 	val[]: "AGÊNCIA DE RECRUTAMENTO"  #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "recruit"
-	val[]: "Agência de recrutamento" #+ Icon opening the recruitment agency.
+	val[]: "Agência de recruta-<br>mento" #+ Icon opening the recruitment agency.
 
 	key[]: "recruit_help"
 	val[]: "Está precisando de motoristas? Este é o lugar certo para procurá-los." #+ Help message associated the recruitment agency icon.
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -13377,7 +13383,7 @@
 	val[]: "Mercado externo"
 
 	key[]: "external_market_desc"
-	val[]: "Complete contratos do World Of Trucks usando o seu próprio caminhão. O registo dessas entregas será armazenado no seu perfil do World Of Trucks."
+	val[]: "Complete contratos do World of Trucks usando o seu próprio caminhão. O registo dessas entregas será armazenado no seu perfil do World of Trucks."
 
 	key[]: "external_market_t"
 	val[]: "MERCADO EXTERNO"
@@ -14260,7 +14266,7 @@
 	val[]: "Siga a rota até a empresa de destino."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "A carga está pronta para ser carregada. Siga para a<br> área de carregamento."
+	val[]: "The cargo is ready to be loaded. Proceed to the loading area."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Vá em direção a bandeira verde no seu mapa."
@@ -14533,7 +14539,7 @@
 	val[]: "Esta garagem foi melhorada ao máximo." #+ Tooltip shown when player hovers over upgrade button.
 
 	key[]: "garage_upgrade_locked_vehicle_tooltip"
-	val[]: "Você não pode ampliar sua garagem, pois seu veículo está muito perto dela." #+ Tooltip shown when garage cannot be upgraded due to player's vehicles being too close to upgraded garage.
+	val[]: "Você não pode melhorar sua garagem, pois seu veículo está muito perto dela." #+ Tooltip shown when garage cannot be upgraded due to player's vehicles being too close to upgraded garage.
 
 	key[]: "driverman_stats_trailer"
 	val[]: "Reboque atual:" #+ Title of the current trailer statistics.
@@ -14749,7 +14755,7 @@
 	val[]: "Reboque para a estrada"
 
 	key[]: "call_refuel_service"
-	val[]: "Reabasteci-mento de emergência"
+	val[]: "Reabasteci-<br>mento de emergência"
 
 	key[]: "call_recharge_service"
 	val[]: "Recarga de emergência"
@@ -16195,10 +16201,10 @@
 	val[]: "Visualizar e pegar o mesmo trabalho"
 
 	key[]: "mp_car_quick_job"
-	val[]: "Road Trip - trabalho rápido"
+	val[]: "Road Trip - Trabalho rápido"
 
 	key[]: "mp_car_dispatch_job"
-	val[]: "Road Trip - mercado de transportes"
+	val[]: "Road Trip - Mercado de transportes"
 
 	key[]: "mp_truck_idle"
 	val[]: "Ocioso"
@@ -16231,7 +16237,7 @@
 	val[]: "Será necessário ativar uma empresa perto do seu caminhão ou reboque para que você possa entrar nessa sessão.<br>Para evitar problemas, mova seu caminhão e reboque para mais longe da empresa ou seu trabalho atual será cancelado e você será teletransportado para a oficina mais próxima.<br><br>Você quer continuar?"
 
 	key[]: "mp_warning_vehicle_close_cancel_teleport"
-	val[]: "Uma empresa próxima de onde você deixou seu caminhão ou reboque antes de aceitar o trabalho rápido precisará ser ativada para que seja possível entrar nesta sessão.<br>Para evitar problemas ao retornar para o seu caminhão, o seu trabalho rápido precisará ser cancelado e o seu caminhão teletransportado para a oficina mais próxima.<br><br>Você quer continuar?"
+	val[]: "Para você entrar nesta sessão, uma empresa perto de onde você deixou seu caminhão ou reboque antes de aceitar o trabalho rápido precisará ser ativada.<br>Para evitar problemas ao retornar para o seu veículo, você vai ser teletransportado para a oficina mais próxima.<br><br>Você quer continuar?"
 
 	key[]: "mp_warning_company_with_selected_job_sleeping"
 	val[]: "O trabalho selecionado está sendo entregue de ou para uma empresa inativa nesta sessão e não estará disponível quando você entrar nela.<br><br>Você quer continuar?"
@@ -18922,12 +18928,6 @@
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "Você ainda não terminou de comprar seu novo carro. Deseja mesmo sair desta tela?"
 
-	key[]: "car_purchase_leave"
-	val[]: "Sair"
-
-	key[]: "car_purchase_stay"
-	val[]: "Ficar"
-
 	key[]: "car_purchase_car_bought"
 	val[]: "Agradecemos a sua compra.<br>$CAR_NAME$ já está na sua coleção." #+ Message of car bought message box.
 
@@ -19366,7 +19366,7 @@
 	val[]: "Você não pode trocar de veículo enquanto está em um trabalho! Termine a entrega primeiro."
 
 	key[]: "garage_configure_message_teleport"
-	val[]: "Para configurar um veículo em uso, você precisa ir a um posto de gasolina. Quer fazer uma viagem rápida para chegar posto ao mais próximo?"
+	val[]: "Para configurar o veículo em uso, você precisa ir a uma oficina. Quer fazer uma viagem rápida até a mais próxima?"
 	
 	key[]: "garage_vehicle_name"
 	val[]: "Veículo"

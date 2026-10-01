@@ -167,7 +167,7 @@
 	val[]: "ПЧ высшей передачи" #+  Last Gear Ratio of the gearbox
 
 	key[]: "differential_ratio"
-	val[]: "Передаточное число дифференциала" #+  Differential Ratio of the gearbox
+	val[]: "Передаточное число ГП" #+  Differential Ratio of the gearbox
 
 	key[]: "effective_wheel_base"
 	val[]: "Эффективная колёсная база" #+  truck's wheelbase in meters, m
@@ -1087,7 +1087,7 @@
 	val[]: "Обнаружены изменения в игре! Чтобы избежать возможных проблем совместимости, вызванных этими изменениями, все незавершенные доставки были отменены без каких-либо штрафов для вас." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "Обнаружены изменения в игре!<br><br>Чтобы избежать возможных проблем совместимости, вызванных этими изменениями, все незавершенные доставки будут отменены без каких-либо штрафов для вас. Ваше транспортное средство необходимо переместить в безопасное место.<br><br>Для продолжения, выберите место для быстрого перемещения." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Сохранение..." #+ Game save indicator message.
@@ -1328,7 +1328,7 @@
 #@{
 
 	key[]: "validity"
-	val[]: "Предложение заканчивается через" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
+	val[]: "Актуально ещё" #+ Shown in cargo selector before indication after how long will the offer will cease to be available. For example "Offer expires in 1 h 07 min".
 
 	key[]: "expected_on"
 	val[]: "Ожидается" #+ For example "Expected Sat 12:53 - Sat 19:33"
@@ -4339,7 +4339,7 @@
 	val[]: "Кнопка переключения экранов дисплея мультимедийной системы."
 
 	key[]: "o_im_parking_cameras_op_tooltip"
-	val[]: "Кнопка переключения экранов камеры для парковки. Кнопка временно скрывает изображение камеры при движении задним ходом, и показывает его при движении вперед.\n(@@car_mode@@)"
+	val[]: "Кнопка временного включения и отключения экрана парковочных камер. Нажатие временно скрывает изображение с камер при движении задним ходом и показывает его при движении вперед. (@@car_mode@@)"
 
 	key[]: "o_im_dashboard_map_op_tooltip"
 	val[]: "Кнопка переключения масштаба экрана навигации на приборной панели или дисплее мультимедийной системы."
@@ -4827,7 +4827,7 @@
 #@{
 
 	key[]: "hshifter_setup"
-	val[]: "РУЧНАЯ (С ДЕЛИТЕЛЕМ)" #+ Header of the 'H-Shifter' settings section. Please keep in upper case where possible.
+	val[]: "РУЧНАЯ КПП" #+ Header of the 'H-Shifter' settings section. Please keep in upper case where possible.
 
 
 	key[]: "hshift_layout"
@@ -11105,7 +11105,7 @@
 	val[]: "Начиная с данного момента, вы можете приобретать собственные прицепы, улучшать или перекрашивать их.<br><br>Ваши прицепы могут быть размещены в ваших выбранных гаражах. Также они могут быть использованы вашими водителями для увеличения прибыли. Чтобы управлять вашими прицепами, используйте раздел \"Управление прицепами\"."
 
 	key[]: "desktop_tut_visit_directive"
-	val[]: "Откройте $SCREEN_NAME$" #+ The $SCREEN_NAME$ text is a placeholder for different screen names in game and should be left intact
+	val[]: "Открыть $SCREEN_NAME$" #+ The $SCREEN_NAME$ text is a placeholder for different screen names in game and should be left intact
 
 	key[]: "desktop_tut_vehicle_mode"
 	val[]: "Нажмите кнопку \"Режим\" для переключения между разными типами транспортного средства и режимами рабочего стола."
@@ -11148,7 +11148,7 @@
 	val[]: "ДОБРО ПОЖАЛОВАТЬ В ROAD TRIP"
 
 	key[]: "desktop_tut_first_car_job"
-	val[]: "Режим \"Авто\" - это центр вашего опыта вождения автомобиля. Купите автомобиль своей мечты, станьте водителем-курьером или откройте туристический путеводитель и отправляйтесь исследовать мир.<br><br>Для начала выполните свое первое задание."
+	val[]: "Режим автомобиля — центр вашего опыта вождения автомобиля. Купите автомобиль своей мечты, станьте водителем-курьером или откройте туристический путеводитель и отправляйтесь исследовать мир.<br><br>Для начала, возьмите первый быстрый заказ."
 
 	key[]: "desktop_tut_atlas"
 	val[]: "Атлас - это ваш персональный туристический путеводитель для планирования ваших путешествий."
@@ -13037,6 +13037,12 @@
 	key[]: "rich_presence_special_job"
 	val[]: "Delivering $CARGO$ ($MASS$, $DIMENSIONS$) from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $TRUCK$ (special job)"
 
+	key[]: "rich_presence_car_delivery_job"
+	val[]: "Delivering $CARGO$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$ with $CAR$"
+
+	key[]: "rich_presence_car_driving_job"
+	val[]: "Driving $CAR$ from $SCITY$, $SCOUNTRY$ to $TCITY$, $TCOUNTRY$"
+
 	key[]: "rich_presence_na"
 	val[]: "N/A" #+ Not available string needs to be in English too
 #!}
@@ -13773,7 +13779,7 @@
 	val[]: "Установлена более старая версия игры." #+ The message showed when downgrade of the game to the older version has been detected.
 
 	key[]: "version_change_detected_common"
-	val[]: "<br><br>Новая версия игры может нарушать работу модов, что приводит к аварийному завершению игры или её нестабильности; авторы модов отвечают за поддержку совместимости модов. Убедитесь, что ваши активированные моды совместимы.<br><br>Совет по устранению неполадок: если текущая версия мода несовместима, попробуйте отключить его в Диспетчере модов.<br><br>Версия игры:: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
+	val[]: "<br><br>Новая версия игры может нарушать работу модов, что приводит к аварийному завершению игры или её нестабильности; авторы модов отвечают за поддержку совместимости модов. Убедитесь, что ваши активированные моды совместимы.<br><br>Совет по устранению неполадок: если текущая версия мода несовместима, попробуйте отключить его в Диспетчере модов.<br><br>Версия игры: $GAME_VERSION$" #+ Common message (showed for both downgrade and upgrade) in the version change dialog.
 #@}
 
 #+ Strings related to accessory filtering feature.
@@ -14260,7 +14266,7 @@
 	val[]: "Следуйте по маршруту до компании-получателя."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "Груз готов к погрузке. Проследуйте на<br>место загрузки."
+	val[]: "Груз готов к доставке. Проследуйте в зону погрузки."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Следуйте к зелёному флажку, отмеченному на карте."
@@ -17777,13 +17783,13 @@
 	val[]: "Режим"
 
 	key[]: "truck_mode"
-	val[]: "Грузовой режим"
+	val[]: "Режим грузовика"
 
 	key[]: "truck_mode_help"
 	val[]: "Перевозка грузов на грузовике"
 
 	key[]: "bus_mode"
-	val[]: "Автобусный режим"
+	val[]: "Режим автобуса"
 
 	key[]: "bus_mode_help"
 	val[]: "Попробуйте себя в качестве водителя междугороднего автобуса"
@@ -17792,7 +17798,7 @@
 	val[]: "Чтобы получить доступ к автобусам, закончите свой первый заказ"
 
 	key[]: "car_mode"
-	val[]: "Автомобильный режим"
+	val[]: "Режим автомобиля"
 
 	key[]: "car_mode_help"
 	val[]: "Выполняйте новые задания и исследуйте мир за рулём автомобиля"
@@ -18142,13 +18148,13 @@
 	val[]: "Отказ от доставки"
 
 	key[]: "cjob_rating_0"
-	val[]: "Непрофессионально"
+	val[]: "Ужасно"
 
 	key[]: "cjob_rating_1"
 	val[]: "Плохо"
 
 	key[]: "cjob_rating_2"
-	val[]: "Так себе"
+	val[]: "Неудовлетворительно"
 
 	key[]: "cjob_rating_3"
 	val[]: "Удовлетворительно"
@@ -18253,10 +18259,10 @@
 	val[]: "Юридические документы"
 
 	key[]: "cjob_dealer_allocation"
-	val[]: "Доставка автомобилей"
+	val[]: "Доставка автомобиля"
 
 	key[]: "cjob_premium_allocation"
-	val[]: "Доставка премиальных автомобилей"
+	val[]: "Премиум-доставка автомобиля"
 
 	key[]: "ccargo_job_tools"
 	val[]: "Инструменты"
@@ -18328,7 +18334,7 @@
 	val[]: "Детали реле энергосистемы"
 
 	key[]: "ccargo_truck_small_parts"
-	val[]: "Мелкие грузовые запчасти"
+	val[]: "Небольшие грузовые запчасти"
 
 	key[]: "ccargo_packaging_prototypes"
 	val[]: "Прототипы упаковочных материалов"
@@ -18896,7 +18902,7 @@
 	val[]: "Трансмиссия"
 
 	key[]: "car_purchase_color_configuration"
-	val[]: "Конфигурация окраски" #+ Title above color configuration list.
+	val[]: "Выбор окраски" #+ Title above color configuration list.
 
 	key[]: "car_purchase_checkout"
 	val[]: "Оплата" #+ Title above color configuration list.
@@ -18921,12 +18927,6 @@
 
 	key[]: "car_purchase_confirm_exit_msg"
 	val[]: "Вы не завершили покупку нового автомобиля. Действительно выйти?"
-
-	key[]: "car_purchase_leave"
-	val[]: "Покинуть салон"
-
-	key[]: "car_purchase_stay"
-	val[]: "Остаться"
 
 	key[]: "car_purchase_car_bought"
 	val[]: "Благодарим за покупку.<br>$CAR_NAME$ теперь у вас в гараже." #+ Message of car bought message box.
@@ -19081,7 +19081,7 @@
 #+ World map.
 #@{
 	key[]: "no_gps_different_mode"
-	val[]: "Маршрут построен в другом режиме"
+	val[]: "Начните движение в текущем режиме, чтобы изменить маршрут навигации"
 #@}
 
 #+ Quick travel.
@@ -19167,7 +19167,7 @@
 	val[]: "Галерея открыток"
 
 	key[]: "tourist_atlas_locations"
-	val[]: "Местоположения:"
+	val[]: "Места:"
 
 	key[]: "tourist_atlas_last_updated_tb"
 	val[]: "Последний обновлённый туристический стенд:"
@@ -19218,7 +19218,7 @@
 	val[]: "Достопримечательности по пути"
 
 	key[]: "belongs_to_tb"
-	val[]: "Принадлежит к туристическому стенду:"
+	val[]: "Относится к туристическому стенду:"
 
 	key[]: "tourist_atlas_detail_show_location"
 	val[]: "Показать местоположение"
@@ -19305,7 +19305,7 @@
 	val[]: "ВАС ПРИВЕТСТВУЕТ АТЛАС" #+ Message box title. Keep in upper case where possible.
 
 	key[]: "atlas_welcome_text"
-	val[]: "<align hstyle=left><font face=/font/normal_bold.font>Атлас</font> — ваш личный туристический гид. Он поможет вам найти и изучить интересные локации во время вашего путешествия в режиме Road Trip.<br><br>Для начала, найдите $TOURIST_BOARD$, который проведёт вас по местным локациям:<br><br>$POI$<br>$VIEWPOINT$<br>$LANDMARK$<br><br>За изучение всех локаций туристического стенда, вы будете награждены открыткой, которую можно будет разместить в салоне.</align>"
+	val[]: "<align hstyle=left><font face=/font/normal_bold.font>Атлас</font> — ваш личный туристический гид. Он поможет вам найти и изучить интересные места во время вашего путешествия в режиме Road Trip.<br><br>Для начала, найдите $TOURIST_BOARD$, каждый из которых покажем вам местные локациии:<br><br>$POI$<br>$VIEWPOINT$<br>$LANDMARK$<br><br>За изучение всех локаций туристического стенда, вы будете награждены открыткой, которую можно будет разместить в салоне.</align>"
 #@}
 
 #+ Tourist atlas reward texts.
@@ -19384,10 +19384,10 @@
 	val[]: "Состояние:"
 
 	key[]: "vehicle_details_tab"
-	val[]: "Детали т/с"
+	val[]: "Подробности"
 
 	key[]: "all_vehicles_tab"
-	val[]: "Весь транспорт"
+	val[]: "Список транспорта"
 
 	key[]: "garage_statistics"
 	val[]: "Статистика т/с"
@@ -19502,10 +19502,10 @@
 	val[]: "Перерождение легендарного внедорожника. Bronco сочетает прямоугольный ретро-стиль с мощью, готовой покорять любой ландшафт."
 
 	key[]: "description_ford_f150_2023"
-	val[]: "F-150, десятилетиями занимающий первую строчку продаж в Америке, сочетает серьёзную грузовую мощь с комфортом на каждый день и универсальностью."
+	val[]: "F-150, десятилетиями занимающий первую строчку продаж в Америке, сочетает серьёзные грузовые возможности с комфортом на каждый день и универсальностью."
 
 	key[]: "description_ford_mustang_1967"
-	val[]: "Mustang стал родоначальником эры пони-каров, со своей покатой линией крыши кузова фастбэк — силуэтом, который невозможно спутать с другими, — а так же рёвом, до сих пор заставляющим обернуться."
+	val[]: "Mustang стал родоначальником пони-каров, со своим силуэтом, который невозможно перепутать, а так же рёвом двигателя, до сих пор заставляющим обернуться."
 
 	key[]: "description_ford_crown_victoria_2006"
 	val[]: "Просторная рабочая лошадка с задним приводом, Crown Victoria по праву заслужила своё многолетнее использование в качестве надёжной машины американских полиции и такси."
