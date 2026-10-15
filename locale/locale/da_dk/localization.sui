@@ -239,7 +239,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "KØRETØJS-FORBEDRINGER" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "LASTBILOPGRADERING" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "TRAILER OPGRADERING" #+ Title of the screen. Please keep in upper case where possible."
@@ -1087,7 +1087,7 @@
 	val[]: "En Spilændring er opdaget! For at undgå kompatibilitets-problemer ved gemte spil som følge af ændringer i spillets verden, blev eventuelt nuværende leverancer annulleret uden straf for dig." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Game change detected!<br><br>To prevent issues with game save compatibility, all unfinished deliveries have been cancelled without penalty to you. Your vehicle will be moved to a safe location.<br><br>Please select a quick travel destination to continue." #+ Game state reset info message, plus free teleport
+	val[]: "En Spilændring er opdaget!<br><br> For at undgå kompatibilitets-problemer ved gemte spil, blev eventuelt nuværende leverancer annulleret uden straf for dig. Det er nødvendigt at parkere lastbilen et sikkert sted.<br><br>Vælg venligst et hurtigrejse-mål for at fortsætte." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Gemmer..." #+ Game save indicator message.
@@ -1242,7 +1242,7 @@
 	val[]: "DU HAR IKKE FLERE PENGE" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "ui_game_over_msg"
-	val[]: "Uha,<br><br>Det ser ud til at du ikke har nok penge til at fortsætte din rejse.<br><br>Men bare rolig!<br><br>Du kan genoptage fra det sidste gemte sted, eller du kan starte forfra igen. Prøv at køre mere forsigtigt næste gang."
+	val[]: "Uha.<br><br>Det ser ud til at du ikke har penge nok til at fortsætte din rejse.<br><br>Men bare rolig!<br><br>Du kan genoptage fra det sidste gemte sted, eller du kan starte forfra igen. Prøv at køre mere forsigtigt næste gang."
 #@}
 
 #+ Paint Shop
@@ -1398,7 +1398,7 @@
 	val[]: "Afstand på land" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Vælg tilbud for at se rutedetaljer" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Vælg gods for at se rutedetaljer" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Ufuldstændig" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -2679,7 +2679,7 @@
 	val[]: "Aktiverer rumklangseffekt for køretøjets kabine."
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
-	val[]: "Aktiverer rumklangseffekten for miljølyde."
+	val[]: "Aktiverer rumklangseffekt for miljølyde."
 
 	key[]: "inactive_app_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Når aktiveret vil alle spillyde fortsat blive afspillet, selv når spillet minimeres til baggrunden."
@@ -3087,7 +3087,7 @@
 	val[]: "Spillertrailere og første trafiktrailere" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables for first traffic trailers.
 
 	key[]: "trailer_cables_mode_all"
-	val[]: "Spiller og trafik trailere" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables on traffic trailers.
+	val[]: "Spiller og alle trafiktrailere" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables on traffic trailers.
 #@}
 
 	key[]: "auto_retarder"
@@ -3306,7 +3306,7 @@
 	val[]: "Vælg hvordan kortet udforskes:<br>- \"Nærhedsudforskning\" markerer et større område som udforsket.<br>- \"Præcisionsudforskning\" afslører kun områderne i spillerens umiddelbare nærhed."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
-	val[]: "Vælg hvordan navigationen skal vises."
+	val[]: "Vælg hvordan navigationen skal vises"
 
 	key[]: "navigation_mode_op_tooltip" # - Gameplay, Advanced
 	val[]: "Ændrer, hvordan navigationen rutes:<br>- \"Bedste\" navigationstilstand vælger det mest effektive forhold mellem rutens længde og tid, forsøger at undgå kryds med trafiklys osv.<br>- \"Korteste\" navigationstilstand vælger altid den kortest mulige rute.<br>- Navigationstilstanden \"Små veje\" vælger at undgå motorveje, hvor det er muligt."
@@ -3345,7 +3345,7 @@
 	val[]: "Bringer rattet tilbage til midten, når et tastatur eller en controller bruges.<br><br>Hvis du deaktiverer denne funktion, skal du manuelt styre tilbage til midten efter et sving."
 
 	key[]: "steering_anim_range_op_tooltip" # - Gameplay, Advanced
-	val[]: "Tilpasser rækkevidden af rat-animationen."
+	val[]: "Tilpasser rækkevidden af rat-animationen. "
 
 	key[]: "brake_intensity_op_tooltip" # - Gameplay, Advanced
 	val[]: "Ændrer bremsernes styrke."
@@ -3450,7 +3450,7 @@
 	val[]: "Aktiverer yaw på kabinekameraet baseret på styringsinput."
 
 	key[]: "steer_cam_rotation_factor_op_tooltip" # - Gameplay, Advanced
-	val[]: "Ændrer hvor meget \"Brug ratkamera\"-funktionen reagerer på styringsinput."
+	val[]: "Ændrer hvor meget \"Brug ratkamera\"-funktionen reagerer på styringsinput. "
 
 	key[]: "steer_cam_rotation_reverse_op_tooltip" # - Gameplay, Advanced
 	val[]: "Ændrer hvordan \"Brug ratkamera\"-funktionen opfører sig, når der bakkes."
@@ -7084,7 +7084,7 @@
 #@{
 
 	key[]: "skills"
-	val[]: "Færdighed" #+ Icon opening the skills window. There is limited space allowing for two lines of 7 'W' characters each.
+	val[]: "Færdigheder" #+ Icon opening the skills window. There is limited space allowing for two lines of 7 'W' characters each.
 
 	key[]: "skills_help"
 	val[]: "Brug dine hårdt tjente færdighedspoint til at tiltrække bedre arbejde. Højere færdighed giver bedre jobtilbud." #+ Help text associated with the Skills icon
@@ -8343,7 +8343,7 @@
 	val[]: "Metal-centerstykke"
 
 	key[]: "cn_mobile_crane"
-	val[]: "Mobil kran"
+	val[]: "Mobilkran"
 
 	key[]: "cn_transformer"
 	val[]: "Transformator"
@@ -11593,7 +11593,7 @@
 	val[]: "Visualisering af akser"
 
 	key[]: "wiz_setup_axes_desc"
-	val[]: "Du kan afprøve alle din akser og se det. Brug din kontroller og se hvordan en akse flytter sig. Det viser dig hvor grænserne samt center er på hver akse."
+	val[]: "Du kan afprøve alle din akser og se det. Brug din kontroller og se hvordan en akse flytter sig. Dette viser dig hvor grænserne samt center er på hver akse."
 
 	key[]: "wiz_setup_axes_desc2_title"
 	val[]: "Akse-indstilling"
@@ -13380,7 +13380,7 @@
 	val[]: "Fuldfør en World of Trucks-kontrakt med din egen lastbil. Statistik og fremskridt for disse jobs bliver gemt på din online World of Trucks-profil. Du behøver en lastbil men ikke en trailer. Du skal være online." #+ description of the WOTR Jobs icon on desktop
 
 	key[]: "external_market"
-	val[]: "Transport center"
+	val[]: "Transportcenter"
 
 	key[]: "external_market_desc"
 	val[]: "Fuldfør en World of Trucks-kontrakt med din egen trailer. Statistik og fremskridt for disse jobs bliver gemt på din online World of Trucks-profil. Du behøver en lastbil og en trailer. Du skal være online."
@@ -13422,7 +13422,7 @@
 	val[]: "Begynd levering" #+ Button to begin WOTR job with
 
 	key[]: "abort_job"
-	val[]: "Forlad job" #+ Button to cancel WOTR job with
+	val[]: "Afbryd" #+ Button to cancel WOTR job with
 
 	key[]: "cancel_online_job"
 	val[]: "Ønsker du virkelig at opgive din nuværende kontrakt?" #+ A pop-up warning notification on attempt to Cancel WOTR job
@@ -14266,7 +14266,7 @@
 	val[]: "Følg ruten til det valgte firma."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "The cargo is ready to be loaded. Proceed to the loading area."
+	val[]: "Lasten er nu klar til din trailer.<br>Fortsæt hen til pålæsningsområdet."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Kør hen til det grønne flag, der er markeret på kortet."
@@ -14329,7 +14329,7 @@
 	val[]: "TRAILERMANAGER"
 
 	key[]: "trailerman_help"
-	val[]: "Administrer dine firma trailere, tildel dem til dine chauffører, køb dem, byt dem og meget mere."
+	val[]: "Administrer dine firmatrailere, tildel dem til dine chauffører, køb dem, byt dem og meget mere."
 
 	key[]: "trailerman_summary_hint"
 	val[]: "Vælg en trailer fra højre side for at se flere detaljer"
@@ -16460,13 +16460,13 @@
 	val[]: "Job-udstyr:"
 
 	key[]: "equipment_provided_vehicle_and_trailer"
-	val[]: "Tildelt køretøj og trailer"
+	val[]: "Tildelt lastbil og trailer"
 
 	key[]: "equipment_owned_vehicle_provided_trailer"
-	val[]: "Ejet køretøj"
+	val[]: "Ejet lastbil"
 
 	key[]: "equipment_owned_vehicle_and_trailer"
-	val[]: "Ejet køretøj og trailer"
+	val[]: "Ejet lastbil og trailer"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "Du er lige nu for langt væk fra kilde-firmaets placering. Ønsker du at hurtig-rejse tættere på?<br><br>Hurtig-rejse-destination: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>Pris: <color value=@@clr_sel@@>$COST$"
@@ -17822,7 +17822,7 @@
 	val[]: "Vend tilbage til titelskærmen."
 
 	key[]: "current_country_info"
-	val[]: "Lokale regler" #+ tooltip title
+	val[]: "Forskrifter for nuværende land" #+ tooltip title
 
 	key[]: "road_class_local_road_urban"
 	val[]: "By"

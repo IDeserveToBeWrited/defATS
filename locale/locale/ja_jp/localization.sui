@@ -239,7 +239,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "VEHICLE UPGRADES" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "トラックのアップグレード" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "トレーラーのアップグレード" #+ Title of the screen. Please keep in upper case where possible."
@@ -1087,7 +1087,7 @@
 	val[]: "ゲーム内容の変更を検出しました. ゲームワールド内の変更に伴うセーブデータの不具合を防ぐため, 配送中の仕事は中断されました. なお, これによるペナルティは発生しません." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "ゲーム内容の変更を検出しました.<br><br>セーブデータの互換性に関する問題を防ぐため, 配送中の仕事は中断されました. なお, これによるペナルティは発生しません. あなたの車両は安全な場所へ移動されます.<br><br>続けるには, クイックトラベルの目的地を選択してください." #+ Game state reset info message, plus free teleport
+	val[]: "ゲーム内容の変更を検出しました.<br><br>セーブデータの互換性に関する問題を防ぐため, 配送中の仕事は中断されました. なお, これによるペナルティは発生しません. トラックを安全なところへ駐車する必要があります.<br><br>続けるには, クイックトラベルの目的地を選択してください." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "セーブ中..." #+ Game save indicator message.
@@ -1173,7 +1173,7 @@
 	val[]: "<color value=@@clr_red@@>MOD が DLC の内容を使用しています<color value=@@clr_txt@@><br><br>使用中の MOD に, 現在インストールされていない DLC (公式のゲーム拡張コンテンツ) の情報が含まれているものがあります.<br><br>対象の MOD を無効にするか, 必要な DLC をインストールしてください."
 
 	key[]: "load_msg_crash"
-	val[]: "<color value=@@clr_red@@>クラッシュを検出しました<color value=@@clr_txt@@><br><br>前回のロード中にゲームがクラッシュしていたようです.<br><br>以下の情報を利用して原因の特定や問題の解決を図ると良いでしょう. あるいは, 別のセーブデータをロードしても構いません.<br><br>次のような理由はしばしば問題を引き起こします:<br><br>1. インストールされている MOD の一つかいくつかが壊れている, または現在のゲームバージョンとの互換性がない.<br><br>2. セーブデータに失われたか無効にされた MOD からの情報が含まれている.<br><br>3. セーブデータが不完全な MOD により破壊された.<br><br>4. ハードウェアに起因する, またはドライバの誤作動によりゲームがクラッシュする."
+	val[]: "<color value=@@clr_red@@>クラッシュを検出しました<color value=@@clr_txt@@><br><br>前回のロード中にゲームがクラッシュしたようです.<br><br>以下の情報を参考に原因を特定し, 解決をお試しください. または, 別のセーブデータをロードしてください.<br><br>よくある原因:<br><br>1. インストールされている MOD が破損しているか, 現在のゲームバージョンに対応していない.<br><br>2. セーブデータに必要な MOD が欠けているか, 削除されている.<br><br>3. 不適切な MOD を使用したため, セーブデータが破損した.<br><br>4. まれに, ハードウェアやドライバの不具合により, ゲームがクラッシュすることがあります."
 
 	key[]: "mods_detected_warning"
 	val[]: "ゲーム MOD の使用が検知されました. 破損している MOD や古い MOD, 互換性のない MOD を使用すると, 動作が不安定になる場合があります. MOD マネージャーで現在有効な MOD を確認してください." #+ The warning showed in case game crashed and user has some mods installed - right above the button that opens mod manager.
@@ -1242,7 +1242,7 @@
 	val[]: "資金不足" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "ui_game_over_msg"
-	val[]: "おっと, <br><br>旅を続けるには充分な資金がないようです. <br><br> しかし心配は要りません!<br><br>前回のチェックポイントから再開するか, 最初からやり直すことができます. 次は十分注意してドライブしましょう."
+	val[]: "おっと... <br><br>資金が不足しているため, これ以上走行できないようです. <br><br> ですが, ご安心ください.<br><br>前回のチェックポイントから再開するか, 最初からやり直すことができます. 次は十分注意してドライブしましょう."
 #@}
 
 #+ Paint Shop
@@ -1398,7 +1398,7 @@
 	val[]: "走行距離" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "オファーを選択するとルートの詳細が表示されます" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "貨物を選択するとルートの詳細が表示されます" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "未完了" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -2664,7 +2664,7 @@
 	val[]: "選択したロジャービープ音のプレビューです."
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "車両を後退させるときにビープ音が鳴るようにします. 音量は \"車両のエフェクト\" スライダーで調節できます.<br><br>有効にすると, コンボイセッション中に他のプレイヤーの後退ビープ音も聞こえるようになります."
+	val[]: "トラックを後退させるときにビープ音が鳴るようにします。音量は \"トラックエフェクト\" のスライダーで調節できます。<br><br>有効にすると、コンボイセッション中に他のプレイヤーの後退ビープ音も聞こえるようになります。"
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "ランブルストリップス (振動帯) の上を走行した時に音が鳴るようにします."
@@ -2679,7 +2679,7 @@
 	val[]: "車両のキャビンのリバーブ効果を有効にします。"
 
 	key[]: "reverb_world_op_tooltip" # - Audio, Advanced
-	val[]: "環境音のリバーブ効果を有効にします。"
+	val[]: "環境音のリバーブ効果を有効にします."
 
 	key[]: "inactive_app_sound_op_tooltip" # - Audio, Advanced
 	val[]: "有効にすると, ゲームがバックグラウンドで最小化されていても, すべてのゲームプレイサウンドが再生され続けます."
@@ -2729,7 +2729,7 @@
 	val[]: "アシスタント" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
 
 	key[]: "trailer_settings"
-	val[]: "TRAILER" #+ Title of 'Trailer' settings section. Please keep in upper case where possible.
+	val[]: "トレーラー" #+ Title of 'Trailer' settings section. Please keep in upper case where possible.
 
  	key[]: "camera_settings"
 	val[]: "カメラ" #+ Title of 'Camera' settings section. Please keep in upper case where possible.
@@ -3087,7 +3087,7 @@
 	val[]: "プレイヤー & トラフィックの 1 台目のトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables for first traffic trailers.
 
 	key[]: "trailer_cables_mode_all"
-	val[]: "プレーヤー & トラフィックのすべてのトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables on traffic trailers.
+	val[]: "プレイヤー & トラフィックのすべてのトレーラー" #+ Name of the mode with physical cables between player truck and all connected trailers, including cables on traffic trailers.
 #@}
 
 	key[]: "auto_retarder"
@@ -5170,7 +5170,7 @@
 	val[]: "拡張ビューを有効化" #+ Extended View enable checkbox.
 
 	key[]: "eye_autocenter"
-	val[]: "オートセンターを有効" #+ Headtracking autocentring
+	val[]: "オートセンターを有効化" #+ Headtracking autocentring
 
 	key[]: "eye_head_mode"
 	val[]: "ヘッドトラッキングモード" #+ Mode to use for head tracking (https://help.tobii.com/hc/en-us/articles/115000011125-Customization-in-Tobii-Game-Hub)
@@ -6720,7 +6720,7 @@
 	val[]: "リターダー作動中!"
 
 	key[]: "retarder_on2"
-	val[]: "動作を止めるには次のキーを押す:"
+	val[]: "次のボタンを押して動作を止める:"
 
 	key[]: "low_air_1"
 	val[]: "エア圧が低下しています!"
@@ -11593,7 +11593,7 @@
 	val[]: "軸の視覚化"
 
 	key[]: "wiz_setup_axes_desc"
-	val[]: "選択したすべての軸の機能を視覚的に試すことができます. コントローラーを操作してみてバーの動きを見てください. これは使用する各軸の限界, センタリング, 方向や全体的な動作を教えてくれます."
+	val[]: "選択した各軸の動作を視覚的にテストできます. コントローラーを操作し, バーの動きを確認してください. 各軸の入力限界, センタリング, 入力方向や全体的な挙動を確認できます."
 
 	key[]: "wiz_setup_axes_desc2_title"
 	val[]: "軸の設定"
@@ -11611,7 +11611,7 @@
 	val[]: "軸モード"
 
 	key[]: "wiz_setup_axes_desc4"
-	val[]: "軸モードとは, ゲームがどのように軸を制御するかを決定させます. 軸を反転させると例えばステアリングを右に切ると左へ切れるように向きが逆転します. 軸をセンターにするとジョイスティックのように範囲の中間が初期位置になります. このモー ドは誤って検出された軸を修正する際に有用です."
+	val[]: "軸モードは, 軸入力の処理方法を決定する設定です. 「反転」を選択すると入力方向が逆になり, たとえば右入力で左に曲がるようになります. 「センター」はジョイスティックのように, 可動範囲の中央を基準位置とします. 軸が正しく認識されない場合, このモードを利用して修正してください."
 
 	key[]: "normal"
 	val[]: "ノーマル" #+ Normal orientation of axis. Increasing value of axis in <-1;1> range increases controlled value.
@@ -13614,7 +13614,7 @@
 	val[]: "車両がクイックトラベルできない状態です。牽引を依頼してください。"
 
 	key[]: "quick_travel_cond_trailer_fallen"
-	val[]: "あなたのトレーラーはクイックトラベルできる状態ではありません. 牽引依頼を利用してください."
+	val[]: "トレーラーがクイックトラベルできる状態ではありません. 牽引依頼を利用してください."
 
 	key[]: "quick_travel_illegal_trailer_dismiss_info"
 	val[]: "現在使用中のトレーラーは目的地の州では合法ではありません. ガレージへ格納します." #+ Shown during economy reset quick travel, when illegal trailer cities are enabled.
@@ -13638,7 +13638,7 @@
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "必須の DLC (公式のゲーム拡張) $DEPENDENCY_NAME$ が見つかりません. このセーブが正しく機能するためには, この DLC がお使いのシステムで有効にされている必要があります. このセーブをロードする前に問題を修復してください." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "必須の DLC (公式のゲーム拡張) $DEPENDENCY_NAME$ が見つかりません. このセーブが正しく機能するためには, このコンピューターで同 DLC を有効にする必要があります. この問題を解決しないと, このセーブはロードできません." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
 	val[]: "オプションの DLC (公式のゲーム拡張) $DEPENDENCY_NAME$ が見つかりません. 予期せずこのメッセージが表示された場合は, DLC の状態を確認してください. <br><br>このままセーブをロードすることもできますが, DLC によって提供されているいくつかの機能が利用できない可能性があります." #+ Information showed when dependency of type optional DLC is missing.
@@ -14266,7 +14266,7 @@
 	val[]: "目的の会社までルートに従ってください."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "貨物の積み込み準備ができています. 積み込み場所まで進んでください."
+	val[]: "貨物の積み込み準備ができています.<br>積み込み場所まで進んでください."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "マップに表示された緑の旗へ向かってください."
@@ -14329,7 +14329,7 @@
 	val[]: "トレーラーマネージャー"
 
 	key[]: "trailerman_help"
-	val[]: "会社のトレーラーをマネージメント. 従業員への割り当て, トレーラーの購入, 配置換えなど"
+	val[]: "会社のトレーラーを管理できます. 従業員への割り当て, トレーラーの購入, 配置換えなどが可能です."
 
 	key[]: "trailerman_summary_hint"
 	val[]: "一覧からトレーラーを選択して詳細を表示"
@@ -15621,7 +15621,7 @@
 	val[]: "指定された会社間を結ぶルートがありません." #+ internal error message
 
 	key[]: "mp_job_missing_cargo"
-	val[]: "この仕事の貨物を見つけることができません。両社間で配送する貨物がありません。"
+	val[]: "この仕事の貨物を見つけることができません. 両社間で配送する貨物はありません."
 
 	key[]: "mp_job_wrong_cargo"
 	val[]: "現在の貨物に適したトレーラーを持っていません."
@@ -16084,7 +16084,7 @@
 	val[]: "有効にすると, 非接触エリアではプレイヤーがお互いの姿を見ることができなくなります."
 
 	key[]: "session_enable_service_collision_hint"
-	val[]: "修理工場でのプレーヤー間の当たり判定を有効にする."
+	val[]: "修理工場でのプレイヤー間の当たり判定を有効にします."
 
 	key[]: "session_enable_menu_collision_hint"
 	val[]: "プレイヤーがナビゲーションメニューを操作中でも当たり判定が有効になります."
@@ -16460,16 +16460,16 @@
 	val[]: "仕事の機材:"
 
 	key[]: "equipment_provided_vehicle_and_trailer"
-	val[]: "提供された車両とトレーラー"
+	val[]: "提供されたトラックとトレーラー"
 
 	key[]: "equipment_owned_vehicle_provided_trailer"
-	val[]: "所有する車両"
+	val[]: "所有するトラック"
 
 	key[]: "equipment_owned_vehicle_and_trailer"
-	val[]: "所有する車両とトレーラー"
+	val[]: "所有するトラックとトレーラー"
 
 	key[]: "mp_job_quick_travel_message"
-	val[]: "あなたの現在地は発送元の会社から離れすぎています. クイックトラベルで近くまで移動しますか?<br><br>クイックトラベルの目的地:<color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>費用:<color value=@@clr_sel@@>$COST$"
+	val[]: "あなたの現在地は配送元の会社から離れすぎています. クイックトラベルで近くまで移動しますか?<br><br>クイックトラベルの目的地: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>費用: <color value=@@clr_sel@@>$COST$"
 
 	key[]: "mp_job_quick_travel_no_money_message"
 	val[]: "あなたの現在地は配送元の会社から離れすぎています. また, クイックトラベルで近くまで移動するにはお金が足りません.<br><br>それでもこの仕事を請けますか?"
@@ -17249,7 +17249,7 @@
 	val[]: "アクセサリーを外す"
 
 	key[]: "overlay_camera_crouch"
-	val[]: "屈む"
+	val[]: "しゃがむ"
 #@}
 
 #+ Supported controller names.
@@ -17379,7 +17379,7 @@
 	val[]: "貨物"
 
 	key[]: "cb_company"
-	val[]: "倉庫会社"
+	val[]: "会社"
 
 	key[]: "cb_show_export_company"
 	val[]: "出荷する会社を表示する"
@@ -17588,7 +17588,7 @@
 	val[]: "ドライビング"
 
 	key[]: "career_progress_stats_experience_company"
-	val[]: "企業情報"
+	val[]: "会社"
 
 	key[]: "career_progress_stats_experience_time"
 	val[]: "経過時間"
@@ -17723,7 +17723,7 @@
 	val[]: "変更履歴" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "patch_notes_old_data_warning"
-	val[]: "ゲームサーバーへの接続に失敗しました. 情報が更新されていない可能性があります"
+	val[]: "サーバーへの接続に失敗しました. 情報が更新されていない可能性があります."
 
 	key[]: "patch_notes_download_confirm"
 	val[]: "アップデート情報をダウンロードしますか?<br><br>オプションでニュースを有効にすると, 自動でダウンロードされるようになります."
@@ -17750,7 +17750,7 @@
 	val[]: "キャリア"
 
 	key[]: "desktop_menu_category_company"
-	val[]: "企業情報"
+	val[]: "会社"
 
 	key[]: "desktop_menu_category_social"
 	val[]: "コンボイ"
@@ -17822,7 +17822,7 @@
 	val[]: "タイトル画面に戻ります."
 
 	key[]: "current_country_info"
-	val[]: "現在地の交通規制など" #+ tooltip title
+	val[]: "現在地の交通規制" #+ tooltip title
 
 	key[]: "road_class_local_road_urban"
 	val[]: "市内道路"

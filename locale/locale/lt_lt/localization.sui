@@ -239,7 +239,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "TRANSPORTO TOBULINIMAS" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "SUNKVEŽIMIŲ AKSESUARAI" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "PRIEKABŲ AKSESUARAI" #+ Title of the screen. Please keep in upper case where possible."
@@ -1087,7 +1087,7 @@
 	val[]: "Aptiktas žaidimo pakeitimas! Norint išvengti problemų su išsaugojimų suderinamumu dėl pokyčių žaidimo pasaulyje, visi nepristatyti kroviniai buvo atšaukti be jokių baudų." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Aptiktas žaidimo pakeitimas!<br><br> Norint išvengti problemų su išsaugojimų suderinamumu dėl pokyčių žaidimo pasaulyje, visi nebaigti darbai buvo atšaukti be jokių baudų. Tavo transporto priemonė bus perkelta į saugią vietą.<br><br>Prašau pasirinkti greitos kelionės tikslą." #+ Game state reset info message, plus free teleport
+	val[]: "Aptiktas žaidimo pakeitimas!<br><br> Norint išvengti problemų su išsaugojimų suderinamumu dėl pokyčių žaidimo pasaulyje, visi nepristatyti kroviniai buvo atšaukti be jokių baudų. Reikia saugiai perkelti sunkvežimį.<br><br>Prašau pasirinkti greitos kelionės tikslą." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Išsaugau..." #+ Game save indicator message.
@@ -1398,7 +1398,7 @@
 	val[]: "Atstumas keliu" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Pasirink pasiūlymą ir pamatysi detales" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Pasirinkite krovinį ir pamatysite maršruto duomenis" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Nevisas" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -2664,7 +2664,7 @@
 	val[]: "Pasirinkto pokalbio pabaigos pyptelėjimo perklausa."
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "Įjungia pypsėjimą važiuojant atbulai. Garsą galima pareguliuoti \"Transporto efektų\" juostele.<br><br>Įjungus taip pat girdėsi kitų žaidėjų transporto garsus Konvojaus sesijoje."
+	val[]: "Įjungia pypsėjimą važiuojant atbulai. Garsą galima pareguliuoti \"Sunkvežimo efektų\" juostele.<br><br>Įjungus taip pat girdėsi kitų žaidėjų sunkvežimių garsą Konvojaus sesijoje."
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Įjungia kelio ženklinimo garsą ant jų užvažiavus."
@@ -2726,7 +2726,7 @@
 	val[]: "TRANSPORTO FIZIKA" #+ Title of 'Vehicle physics' settings section. Please keep in upper case where possible.
 
 	key[]: "assistants_settings"
-	val[]: "PAGALBOS" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
+	val[]: "PADĖJĖJAI" #+ Title of 'Assistants' settings section. Please keep in upper case where possible.
 
 	key[]: "trailer_settings"
 	val[]: "PRIEKABA" #+ Title of 'Trailer' settings section. Please keep in upper case where possible.
@@ -3306,7 +3306,7 @@
 	val[]: "Pasirink, kaip atskleidžiamas Pasaulio Žemėlapis:<br>- \"Artumo tyrinėjimas\" pažymi didesnę zoną.<br>- \"Tikslus tyrinėjimas\" atskleidžia zona tik prie žaidėjo."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
-	val[]: "Pasirenkama, kaip rodoma navigacija."
+	val[]: "Pasirenkama, kaip rodoma navigacija"
 
 	key[]: "navigation_mode_op_tooltip" # - Gameplay, Advanced
 	val[]: "Keičia kaip dėliojamas maršrutas navigacijoje.<br>\"Geriausias\" navigacijos režimas parenka našiausią santykį tarp maršruto ilgio ir laiko, stengiasi išvengti šviesoforais reguliuojamų sankryžų ir pan.<br>\"Trumpiausias\" režimas visada parenka trumpiausią įmanomą kelią.<br>\"Maži keliai\" režimas stengiasi išvengti greitkelių."
@@ -3345,7 +3345,7 @@
 	val[]: "Grąžina vairą į vidurį naudojant klaviatūrą arba žaidimų pultelį.<br><br>Tai išjungus žaidėjas pats turės atsukti vairą po posūkio."
 
 	key[]: "steering_anim_range_op_tooltip" # - Gameplay, Advanced
-	val[]: "Reguliuoja vairo animacijos intervalą."
+	val[]: "Reguliuoja vairo animacijos intervalą. "
 
 	key[]: "brake_intensity_op_tooltip" # - Gameplay, Advanced
 	val[]: "Keičia stabdžių intensyvumą."
@@ -3450,7 +3450,7 @@
 	val[]: "Leidžia paversti vidaus kamerą pagal vairo pasukimą."
 
 	key[]: "steer_cam_rotation_factor_op_tooltip" # - Gameplay, Advanced
-	val[]: "Pakeičia, kaip aštriai reaguoja \"vairavimo kameros sukimas\"."
+	val[]: "Pakeičia, kaip aštriai reaguoja \"vairavimo kameros sukimas\". "
 
 	key[]: "steer_cam_rotation_reverse_op_tooltip" # - Gameplay, Advanced
 	val[]: "Keičia \"vairavimo kameros sukimo\" elgesį važiuojant atbulai."
@@ -13638,7 +13638,7 @@
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "Neradau būtino DLC (oficialaus žaidimo išplėtimo) $DEPENDENCY_NAME$. Tam, kad šis išsaugojimas veiktų tinkamai, šis DLC turi būti įjungtas šioje sistemoje, kitaip negalėsi užkrauti šio išsaugojimo." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "Neradau būtino DLC (oficialaus žaidimo išplėtimas) $DEPENDENCY_NAME$. Tam, kad šis išsaugojimas veiktų tinkamai, šis DLC turi būti įjungtas šiame kompiuteryje, kitaip negalėsite užkrauti šio išsaugojimo." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
 	val[]: "Neradau pasirenkamo DLC (oficialaus žaidimo išplėtimas) $DEPENDENCY_NAME$. Jei to nesitikėjote, patikrinkite, ar DLC nepašalintas.<br><br>Kitu atveju galite vis tiek bandyti užkrauti šį išsaugojimą, tačiau gali dingti DLC esančios funkcijos." #+ Information showed when dependency of type optional DLC is missing.
@@ -14266,7 +14266,7 @@
 	val[]: "Sek maršrutu į numatytą kompaniją."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "Krovinys paruoštas krovimui. Važiuokite į krovimo vietą."
+	val[]: "Krovinys paruoštas krovimui.<br>Važiuokite į krovimo vietą."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Važiuokite link žalios vėliavėlės žemėlapyje."
@@ -16460,13 +16460,13 @@
 	val[]: "Užduoties įranga:"
 
 	key[]: "equipment_provided_vehicle_and_trailer"
-	val[]: "Suteiktas transportas ir priekaba"
+	val[]: "Suteikiamas sunkvežimis ir priekaba"
 
 	key[]: "equipment_owned_vehicle_provided_trailer"
-	val[]: "Turimas transportas"
+	val[]: "Savo sunkvežimis"
 
 	key[]: "equipment_owned_vehicle_and_trailer"
-	val[]: "Turimas transportas ir priekaba"
+	val[]: "Savo sunkvežimis ir priekaba"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "Dabar esi per toli nuo kompanijos. Ar nori greitai nukeliauti arčiau?<br><br>Greitos kelionės tikslas: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>Kaina: <color value=@@clr_sel@@>$COST$"
@@ -17723,7 +17723,7 @@
 	val[]: "PAKEITIMŲ ŽURNALAS" #+ Title of the screen. Please keep in upper case where possible.
 
 	key[]: "patch_notes_old_data_warning"
-	val[]: "Susisiekti su žaidimo serveriu nepavyko, informacija gali būti pasenusi."
+	val[]: "Susisiekti su serveriu nepavyko, informacija gali būti pasenusi."
 
 	key[]: "patch_notes_download_confirm"
 	val[]: "Ar nori atsisiųsti informaciją apie atnaujinimą?<br><br>Automatiniam parsiuntimui įjunk naujienas nustatymuose."
@@ -17822,7 +17822,7 @@
 	val[]: "Grįžti į Pradžios ekraną."
 
 	key[]: "current_country_info"
-	val[]: "Vietiniai reikalavimai" #+ tooltip title
+	val[]: "Dabartinės valstybės taisyklės" #+ tooltip title
 
 	key[]: "road_class_local_road_urban"
 	val[]: "Miestas"

@@ -1,0 +1,313 @@
+SiiNunit
+{
+
+
+curve_model : curve.hall_2l001
+{
+	model_desc: "/model/panorama/rest_stop/tx_navarro_county/tx_navarro_county_wall.pmd"
+	name: "navarro county wall"
+
+	variation: 1
+	start_part: 1
+	end_part: 1
+	variation[0]: "var1 | center1,center2,center3 : 1.0 | center4,center5,center6 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+
+	high_tess: 1
+	high_tess[0]: "var1"
+}
+
+curve_model : curve.hal2_1n00c
+{
+	model_desc: "/model/walls/wall_stone_04.pmd"
+	name: "wall stone 04 hall"
+
+	variation[]: "default | center1,center2,center3,center4 : 1.0 | center2,center1,center4,center3 : 1.0 | center1,center3,center2,center4 : 1.0 | center2,center4,center1,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "front | center5,center6,center7,center8 : 1.0 | center6,center5,center8,center7 : 1.0 | center5,center7,center6,center8 : 1.0 | center6,center8,center5,center7 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+
+	dynamic_lod_desc[]: "/model/walls/wall_stone_04_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	smooth_surface: true
+}
+
+curve_model : curve.hall_4301
+{
+	model_desc: "/model/fences/fence_wooden_01_de.pmd"
+	name: "fence wooden 01 hall"
+
+	variation: 1
+	variation[0]: "default | center1 : 0.33 | center2 : 0.33 | center3 : 0.33"
+
+	overlay: 3
+	overlay[0]: "center1 | ovr1 : 0.25 | ovr2 : 0.25 | ovr3 : 0.25 | ovr4 : 0.25"
+	overlay[1]: "center2 | ovr1 : 0.25 | ovr2 : 0.25 | ovr3 : 0.25 | ovr4 : 0.25"
+	overlay[2]: "center3 | ovr1 : 0.25 | ovr2 : 0.25 | ovr3 : 0.25 | ovr4 : 0.25"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/fences/fence_wooden_01_de_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+	drop_sun_shadows: 1
+}
+
+curve_model : curve.hall_1n00c
+{
+	model_desc: "/model/walls/wall_stone_04.pmd"
+	name: "wall stone 04 hall"
+
+	variation[]: "default | center1,center2,center3,center4 : 1.0 | center2,center1,center4,center3 : 1.0 | center1,center3,center2,center4 : 1.0 | center2,center4,center1,center3 : 1.0"
+	start_part[]: "start1"
+	end_part[]: "end1"
+	variation[]: "front | center5,center6,center7,center8 : 1.0 | center6,center5,center8,center7 : 1.0 | center5,center7,center6,center8 : 1.0 | center6,center8,center5,center7 : 1.0"
+	start_part[]: "start2"
+	end_part[]: "end2"
+
+	dynamic_lod_desc[]: "/model/walls/wall_stone_04_lod1.pmd"
+	dynamic_lod_dist[]: 100
+
+	smooth_surface: true
+}
+
+curve_model : curve.hall_4q000
+{
+	model_desc: "/model/landmark/castle/castle_fort_wooden.pmd"
+	name: "hlw castle fort wooden"
+
+	variation[]: "wooden | part1 : 1.0 | part2 : 1.0 | part3 : 1.0"
+	start_part[]: start1
+	end_part[]: end1
+
+	dynamic_lod_desc[]: "/model/landmark/castle/castle_fort_wooden_lod1.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.hall_4q001
+{
+	model_desc: "/model/landmark/castle/castle_fort_stone.pmd"
+	name: "hlw castle fort stone"
+
+	variation[]: "stone | part1 : 1.0 | part2 : 1.0 | part3 : 1.0"
+	start_part[]: start2
+	end_part[]: "end2 | end3 | end4 | end5"
+
+	dynamic_lod_desc[]: "/model/landmark/castle/castle_fort_stone_lod1.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.hall_79000
+{
+	model_desc: "/model/landmark/castle/castle_port_pier.pmd"
+	name: "hlw port pier"
+
+	variation[]: "wide | centre_01 : 1.0 | centre_02 : 1.0 | centre_03 : 1.0 | centre_04 : 1.0"
+	start_part[]: start_01
+	end_part[]: end_01
+
+	dynamic_lod_desc[]: "/model/landmark/castle/castle_port_pier_lod1.pmd"
+	dynamic_lod_dist[]: 80
+}
+curve_model : curve.hall_0b002
+{
+	model_desc: "/model/props/harbour/fishing_drying_rack_01_poc.pmd"
+	name: "fishing drying rack 01 hall"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "var1 | center1 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "var2 | center2 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	overlay: 5
+	overlay[0]: "center1 | ovr1 : 1.0"
+	overlay[1]: "start1 | ovr1 : 1.0"
+	overlay[2]: "center2 | ovr1 : 1.0"
+	overlay[3]: "start2 | ovr1 : 1.0"
+	overlay[4]: "center3 | ovr1 : 1.0"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/props/harbour/fishing_drying_rack_01_poc_lod1.pmd"
+	dynamic_lod_dist[0]: 100
+}
+
+curve_model : curve.hall_6m028
+{
+	model_desc: "/model/props/fireflies_curve.pmd"
+	name: "hlw fireflies curve"
+
+	variation[]: "Dense | part10 : 1.0 | part11 : 1.0 | part12 : 0.3"
+	start_part[]: part3
+	end_part[]: part9
+	variation[]: "Sparse | part10 : 0.1 | part11 : 0.1 | part12 : 1.0 | part13 : 1.0"
+	start_part[]: part8
+	end_part[]: part4
+	variation[]: "Left | part1 : 1.0 | part2 : 1.0"
+	start_part[]: part3
+	end_part[]: part4
+	variation[]: "Right | part6 : 1.0 | part7 : 1.0"
+	start_part[]: part8
+	end_part[]: part9
+
+	dynamic_lod_desc[]: "/model/props/fireflies_curve_lod1.pmd"
+	dynamic_lod_dist[]: 25
+	dynamic_lod_desc[]: "/model/props/fireflies_curve_lod2.pmd"
+	dynamic_lod_dist[]: 60
+}
+
+curve_model : curve.hall_6m038
+{
+	model_desc: "/model/props/cobwebs_curve.pmd"
+	name: "hlw cobwebs curve"
+
+	variation[]: "Wall | part2 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+	variation[]: "Barrier | part3 : 1.0"
+	start_part[]: ""
+	end_part[]: ""
+
+	dynamic_lod_desc[]: "/model/props/cobwebs_curve_lod1.pmd"
+	dynamic_lod_dist[]: 40
+}
+
+curve_model : curve.hall_b_79000
+{
+	model_desc: "/model/landmark/landmark_pt/castle_bridge.pmd"
+	name: "hlw castle bridge"
+
+	variation[]: "default | centre : 1.0"
+	start_part[]: start
+	end_part[]: end
+
+	dynamic_lod_desc[]: "/model/landmark/landmark_pt/castle_bridge_lod1.pmd"
+	dynamic_lod_dist[]: 80
+}
+
+curve_model : curve.hall_1u003
+{
+	name: "hogweed dry hall"
+
+	variation[]: "1 | tree_1 : 1.0 | tree_2 : 1.0 | tree_3 : 1.0 | tree_4 : 1.0"
+
+	vegetation[]: "tree_1 : vegetmodel.hogweed.1.dry_hall | 0.5 : 0.5 | -1.0 : 2.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "tree_2 : vegetmodel.hogweed.2.dry_hall | 0.5 : 0.5 | -2.0 : 2.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "tree_3 : vegetmodel.hogweed.3.dry_hall | 0.5 : 0.5 | -2.0 : 2.0 | 0.8 : 1.2 | 0.0 : 360.0"
+	vegetation[]: "tree_4 : vegetmodel.hogweed.4.dry_hall | 0.5 : 0.5 | -2.0 : 2.0 | 0.8 : 1.2 | 0.0 : 360.0"
+}
+
+curve_model : curve.hall_2k001
+{
+	model_desc: "/model/bridge/ne_railroad_wooden_bridge_curve_railway.pmd"
+	name: "hall railroad wooden bridge curve railway"
+
+	variation: 2
+	start_part: 2
+	end_part: 2
+	variation[0]: "pillars | center1 : 1.0 | center2 : 1.0 | center3 : 1.0"
+	start_part[0]: "start1"
+	end_part[0]: "end1"
+	variation[1]: "no_pillars | center4 : 1.0 | center5 : 1.0 | center6 : 1.0"
+	start_part[1]: "start2"
+	end_part[1]: "end2"
+
+	high_tess: 0
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/bridge/ne_railroad_wooden_bridge_curve_railway_lod1.pmd"
+	dynamic_lod_dist[0]: 60
+}
+
+curve_model : curve.hall_15000
+{
+	model_desc: "/model/props/la_cemetery_tombs_curve_mid.pmd"
+	name: "hall cemetery tombs curve mid"
+
+	variation[]: "small1 | center222,center213,center244,center253,center263,center231,center251,center234,center211,center214,center233,center254,center252,center262,center243,center242,center212,center241,center224,center221,center232,center223,center225,center261,center264 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "small2 | center254,center234,center251,center221,center252,center222,center211,center233,center262,center261,center253,center213,center231,center232,center264,center243,center212,center263,center225,center224,center223,center242,center241,center214,center244 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "small3 | center223,center254,center264,center251,center225,center243,center261,center252,center221,center224,center214,center262,center232,center212,center231,center233,center234,center253,center241,center213,center222,center244,center242,center263,center211 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "medium1 | center323,center314,center334,center352,center312,center373,center374,center333,center363,center341,center354,center351,center313,center371,center324,center342,center372,center321,center332,center343,center362,center361,center331,center353,center311,center364,center322,center344 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "medium2 | center362,center343,center373,center311,center314,center371,center361,center374,center341,center353,center321,center344,center312,center324,center354,center322,center352,center351,center364,center333,center323,center372,center313,center331,center334,center332,center363,center342 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "mixed1 | center322,center351,center333,center362,center233,center214,center311,center332,center354,center213,center254,center221,center222,center253,center372,center342,center243,center223,center331,center242,center371,center211,center263,center343,center324,center374,center353,center241,center312,center234,center212,center264,center373,center323,center361,center225,center231,center262,center261,center313,center252,center232,center251,center352,center334,center244,center314,center224,center363,center341,center344,center321,center364 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "mixed2 | center332,center354,center342,center363,center322,center264,center242,center323,center253,center361,center343,center374,center262,center312,center352,center372,center233,center341,center324,center222,center232,center333,center224,center344,center214,center211,center254,center313,center252,center223,center351,center212,center225,center234,center321,center244,center331,center241,center213,center243,center334,center362,center364,center373,center231,center263,center221,center314,center251,center353,center311,center371,center261 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "tombstones1 | center422,center413,center444,center453,center463,center431,center451,center434,center411,center414,center433,center454,center452,center462,center443,center442,center412,center441,center424,center421,center432,center423,center461,center464 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "tombstones2 | center454,center434,center451,center421,center452,center422,center411,center433,center462,center461,center453,center413,center431,center432,center464,center443,center463,center412,center423,center424,center442,center441,center414,center444 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "tombstones3 | center423,center454,center464,center451,center443,center461,center452,center421,center424,center462,center414,center432,center412,center431,center433,center434,center453,center413,center441,center422,center444,center442,center463,center411 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "graves1 | center507,center509,center502,center506,center503,center508,center515,center505,center513,center504,center511,center512,center514,center501,center510 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "graves2 | center514,center504,center513,center515,center511,center507,center503,center506,center508,center502,center505,center509,center512,center510,center501 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+	variation[]: "graves3 | center501,center512,center508,center510,center505,center503,center514,center509,center502,center515,center506,center511,center504,center507,center513 : 1.0"
+	start_part[]: ins1
+	end_part[]: ine1
+	fixed_inner_start[]: ins1
+	fixed_inner_end[]: ine1
+
+	dynamic_lod_desc[]: "/model/props/la_cemetery_tombs_curve_mid_lod1.pmd"
+	dynamic_lod_dist[]: 200
+
+	high_tess: 0
+
+	fixed_step: &40200000
+}
+}

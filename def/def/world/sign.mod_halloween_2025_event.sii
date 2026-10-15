@@ -1,0 +1,78 @@
+SiiNunit
+{
+# For modders: Please do not modify this file if you want to add a new entry. Create in
+# this directory a new file "<base_name>.<idofyourmod>.sii" where <base_name> is name of
+# base file without the extension (e.g. "city" for "/def/city.sii") and <idofyourmod> is
+# some string which is unlikely to conflict with other mod.
+#
+# Warning: Even if the units are specified in more than one source file, they share the
+# same namespace so suffixes or prefixes should be used to avoid conflicts.
+
+
+sign_model : sign.hall_461
+{
+
+	sign_name: "woodenbox_0 hall"
+
+	model_desc: "/model/props/farm/woodenbox_02.pmd"
+	model_coll: "/model/props/farm/woodenbox_02.pmc"
+	look_name: default
+
+	#category: "farm props"
+	dynamic: true
+	mass: 100
+
+}
+
+sign_model : sign.hall_3
+{
+	model_desc: "/model/props/street/big_hammer.pmd"
+	model_coll: "/model/props/street/big_hammer.pmc"
+	sign_name: "big_hammer"
+
+	dynamic: true
+	mass: 70
+}
+
+sign_model : sign.hall_1g1k
+{
+	sign_name: "vineyard barrel sign"
+	model_desc: "/model/props/street/tx_vineyard_barrel_sign.pmd"
+	model_coll: "/model/props/street/tx_vineyard_barrel_sign.pmc"
+	look_name: "default"
+	category: ""
+
+	instanced: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+sign_model : sign.hall_4q001
+{
+	sign_name: "hlw wooden crate"
+	model_desc: "/model/props/hlw_wooden_boxes_crate.pmd"
+	model_coll: "/model/props/hlw_wooden_boxes_crate.pmc"
+
+	dynamic_lod_desc[]: "/model/props/hlw_wooden_boxes_crate_lod1.pmd"
+	dynamic_lod_dist[]: 50
+}
+
+sign_model : sign.hall_4q002
+{
+	sign_name: "hlw wooden bigbox"
+	model_desc: "/model/props/hlw_wooden_boxes_bigbox.pmd"
+	model_coll: "/model/props/hlw_wooden_boxes_bigbox.pmc"
+	look_name: "default"
+	category: ""
+
+	dynamic_lod_desc: 1
+	dynamic_lod_dist: 1
+	dynamic_lod_desc[0]: "/model/props/hlw_wooden_boxes_bigbox_lod1.pmd"
+	dynamic_lod_dist[0]: 50
+
+	dynamic: true
+	drop_sun_shadows: 1
+	mass: 100.0
+}
+
+}

@@ -239,7 +239,7 @@
 #@{
 
 	key[]: "truck_upgrades_t"
-	val[]: "ULEPSZENIA POJAZDU" #+ Title of the screen. Please keep in upper case where possible."
+	val[]: "ULEPSZENIA CIĘŻARÓWEK" #+ Title of the screen. Please keep in upper case where possible."
 
 	key[]: "trailer_upgrades_t"
 	val[]: "ULEPSZENIA NACZEP" #+ Title of the screen. Please keep in upper case where possible."
@@ -1087,7 +1087,7 @@
 	val[]: "Wykryto zmianę w grze! Aby uniknąć problemów ze zgodnością zapisów stanu gry spowodowanych zmianami w świecie gry, wszelkie niedokończone dostawy zostały anulowane bez kary dla Ciebie." #+ Game state reset info message
 
 	key[]: "save_game_reset_teleport"
-	val[]: "Wykryto zmianę w grze!<br><br>Aby zapobiec problemom ze zgodnością zapisów gry, wszystkie niedokończone dostawy zostały anulowane bez kary dla Ciebie. Twój pojazd zostanie przeniesiony w bezpieczne miejsce.<br><br>Wybierz cel szybkiej podróży, aby kontynuować." #+ Game state reset info message, plus free teleport
+	val[]: "Wykryto zmianę w grze!<br><br>Aby zapobiec problemom ze zgodnością zapisów gry, wszystkie niedokończone dostawy zostały anulowane bez kary dla Ciebie. Wymagane jest bezpieczne ponowne zaparkowanie ciężarówki.<br><br>Wybierz cel szybkiej podróży, aby kontynuować." #+ Game state reset info message, plus free teleport
 
 	key[]: "save_in_progress"
 	val[]: "Zapisywanie..." #+ Game save indicator message.
@@ -1123,7 +1123,7 @@
 	val[]: "Wczytaj poprzednio zapisaną grę. Twoje obecne postępy zostaną utracone!" #+ Help message associated with load game icon.
 
 	key[]: "load_progress_lost"
-	val[]: "Czy na pewno chcesz wczytać inną grę?<br><br> Jeśli"
+	val[]: "Czy na pewno chcesz wczytać inną grę?<br><br> Twój aktualny postęp zostanie utracony, jeśli wcześniej nie zapisałeś gry."
 
 	key[]: "load_progress_lost_mp"
 	val[]: "Czy na pewno chcesz wczytać inny zapis gry?\\?<br>]W przypadku wczytania innego zapisu gry w trybie wieloosobowym może to skutkować anulowaniem lub zawieszeniem zlecenia, teleportacją do najbliższego serwisu lub niedostępnością wybranego zlecenia.<br><br>Twoje bieżące postępy zostaną utracone, chyba że zostały wcześniej zapisane."
@@ -1242,7 +1242,7 @@
 	val[]: "BRAK FUNDUSZY" #+ Title of the message box. Please keep in upper case where possible.
 
 	key[]: "ui_game_over_msg"
-	val[]: "Upsss..., <br><br> Zaszalałeś tak, że nie masz już kasy żeby kontynuować podróż.. <br><br> Nie martw się! Lepsze bankructwo firmy, niż żona prosząca o rozwód i zabierająca ci połowę majątku.<br><br> Dobra, zróbmy tak: Załaduj ostatnio zapisaną grę, albo zacznij grać od nowa a my przyjmiemy, że nic się nie stało. Następnym razem bądź jednak bardziej ostrożny!"
+	val[]: "Ups... <br><br> Zaszalałeś tak, że nie masz już kasy żeby kontynuować podróż. <br><br> Nie martw się! Lepsze bankructwo firmy, niż żona prosząca o rozwód i zabierająca ci połowę majątku.<br><br> Dobra, zróbmy tak: wczytaj ostatnio zapisaną grę, albo zacznij grać od nowa a my przyjmiemy, że nic się nie stało. Następnym razem bądź jednak bardziej ostrożny!"
 #@}
 
 #+ Paint Shop
@@ -1398,7 +1398,7 @@
 	val[]: "Odległość lądowa" #+ Shown in the route info box in the line indicating length of the land route. For example "Land distance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100 km"
 
 	key[]: "no_route"
-	val[]: "Wybierz ofertę, aby przejrzeć szczegóły trasy" #+ Text shown centred in the route info box when no job is selected.
+	val[]: "Wybierz ładunek, aby przejrzeć szczegóły trasy" #+ Text shown centred in the route info box when no job is selected.
 
 	key[]: "incomplete_route"
 	val[]: "Nie ukończono" #+ Shown instead of distance or time on the world map if only partial route was found.
@@ -2664,7 +2664,7 @@
 	val[]: "Podgląd wybranego sygnału dźwiękowego „Roger”."
 
 	key[]: "sound_of_reverse_op_tooltip" # - Audio, Simple
-	val[]: "Włącza sygnał dźwiękowy podczas cofania pojazdem. Głośność można regulować za pomocą suwaka „Efekty pojazdu”.<br><br>Po włączeniu tej opcji usłyszysz również sygnał dźwiękowy innych graczy w sesji konwoju."
+	val[]: "Włącza dźwięk sygnału dźwiękowego podczas cofania pojazdu. Głośność można regulować za pomocą suwaka „Efekty pojazdu”.<br><br>Po włączeniu tej opcji usłyszysz również sygnał dźwiękowy innych graczy w sesji konwoju."
 
 	key[]: "rumble_stripe_sound_op_tooltip" # - Audio, Advanced
 	val[]: "Włącza dźwięk podczas przejeżdżania po pasach rozdzielających kierunki ruchu."
@@ -3306,7 +3306,7 @@
 	val[]: "Wybierz sposób odkrywania Mapy Świata:<br>- „Eksploracja zbliżeniowa” oznacza większy obszar jako odkryty.<br>- „Eksploracja precyzyjna” ujawnia jedynie obszary bezpośrednio wokół gracza."
 
 	key[]: "show_navigation_op_tooltip" # - Gameplay, Advanced
-	val[]: "Wybierz sposób wyświetlania nawigacji."
+	val[]: "Wybiera sposób wyświetlania nawigacji"
 
 	key[]: "navigation_mode_op_tooltip" # - Gameplay, Advanced
 	val[]: "Zmienia sposób wyznaczania tras nawigacji. Tryb nawigacjji:<br>- „Najlepsza” wybiera najbardziej efektywny stosunek długości trasy do czasu jej pokonania, stara się unikać skrzyżowań z sygnalizacją świetlną itp.<br>- „Najkrótsza trasa” zawsze wybiera najkrótszą możliwą trasę.<br>- „Drogi drugorzędne” unika autostrad, gdziekolwiek to możliwe."
@@ -3315,7 +3315,7 @@
 	val[]: "Zmienia poziom trudności parkowania:<br>- „Zawsze wybieraj” pozwala wybrać, kiedy dotrzesz do celu.<br>- „Bezpieczne parkowanie” nie wymaga manewrów cofania.<br>- „Skomplikowane parkowanie” zazwyczaj wymaga trudniejszego manewru cofania."
 
 	key[]: "road_events_op_tooltip" # - Gameplay, Simple
-	val[]: "Dostosowuje prawdopodobieństwo napotkania zagrożeń drogowych w Twojej okolicy, w tym wypadków, uszkodzonych pojazdów, śmieci na drogach itp."
+	val[]: "Dostosowuje prawdopodobieństwo napotkania zdarzeń drogowych w pobliżu, w tym wypadków, unieruchomionych pojazdów, gruzu drogowego itp."
 
 	key[]: "detours_op_tooltip" # - Gameplay, Simple
 	val[]: "Dostosowuje prawdopodobieństwo napotkania objazdu zmieniającego trasę podczas wykonywania zlecenia."
@@ -3441,7 +3441,7 @@
 	val[]: "Po włączeniu tej opcji i włączeniu świateł przy włączonych światłach drogowych pojazd automatycznie przełączy światła drogowe, gdy wykryje nadjeżdżający z naprzeciwka lub znajdujący tuż przed pojazdem."
 
 	key[]: "blinker_auto_off_op_tooltip" # - Gameplay, Simple
-	val[]: "Po włączeniu tej funkcji kierunkowskazy zostaną automatycznie wyłączone po wykonaniu skrętu, gdy kierownica zostanie ponownie ustawiona na środku."
+	val[]: "Po włączeniu tej funkcji kierunkowskazy będą automatycznie wyłączane po wykonaniu skrętu, gdy kierownica zostanie obrócona z powrotem do położenia środkowego."
 
 	key[]: "toy_phys_move_op_tooltip" # - Gameplay, Simple
 	val[]: "Po włączeniu niektóre akcesoria wewnętrzne reagują na fizyczny ruch pojazdu (wiszące dekoracje, figurki itp.)."
@@ -3450,7 +3450,7 @@
 	val[]: "Umożliwia odchylenie kamery wewnętrznej w oparciu o sygnał sterujący."
 
 	key[]: "steer_cam_rotation_factor_op_tooltip" # - Gameplay, Advanced
-	val[]: "Zmienia reakcję funkcji „korekcja kamery w kierunku jazdy” na ruch kierownicą."
+	val[]: "Zmienia stopień reakcji funkcji „korekcja kamery w kierunku jazdy” na ruchy kierownicą."
 
 	key[]: "steer_cam_rotation_reverse_op_tooltip" # - Gameplay, Advanced
 	val[]: "Zmienia zachowanie funkcji „korekcja kamery w kierunku jazdy” podczas cofania."
@@ -3483,7 +3483,7 @@
 	val[]: "Wybiera język wyświetlany w trakcie gry."
 
 	key[]: "region_op_tooltip" # - Gameplay, Simple
-	val[]: "Zmienia wstępne ustawienia waluty i jednostek w oparciu o wybrany region."
+	val[]: "Zmienia ustawienia walut i jednostek w oparciu o wybrany region."
 
 	key[]: "localized_city_country_names_op_tooltip" # - Gameplay, Simple
 	val[]: "Po włączeniu miasta i nazwy stanów będą wyświetlane w wybranym języku."
@@ -4681,10 +4681,10 @@
 	val[]: "Ogólny przyrost" #+ Slider controlling global strength of the force feedback.
 
 	key[]: "force_feedback_centering_high_speed"
-	val[]: "Centrowanie przy wysokiej prędkości" #+ Slider controlling strength of the force feedback centring at high speeds.
+	val[]: "Centrowanie przy dużej prędkości" #+ Slider controlling strength of the force feedback centring at high speeds.
 
 	key[]: "force_feedback_centering_low_speed"
-	val[]: "Centrowanie przy niskiej prędkości" #+ Slider controlling strength of the force feedback centring at low speeds.
+	val[]: "Centrowanie przy małej prędkości" #+ Slider controlling strength of the force feedback centring at low speeds.
 
 	key[]: "force_feedback_internal_friction"
 	val[]: "Tarcie wewnętrzne" #+ Slider controlling strength of the force feedback internal steering system friction force.
@@ -8343,7 +8343,7 @@
 	val[]: "Metalowa krążyna"
 
 	key[]: "cn_mobile_crane"
-	val[]: "Mobilny żuraw"
+	val[]: "Żuraw samochodowy"
 
 	key[]: "cn_transformer"
 	val[]: "Transformator"
@@ -9617,7 +9617,7 @@
 	val[]: "Status:"
 
 	key[]: "driverman_stats_cargo"
-	val[]: "Aktualny ładunek:"
+	val[]: "Obecny ładunek:"
 
 	key[]: "driverman_stats_from"
 	val[]: "Z:"
@@ -11309,7 +11309,7 @@
 #@{
 
 	key[]: "sys_no_graphics"
-	val[]: "Gra Euro Truck Simulator 2 napotkała problem i nie jest w stanie wyświetlić grafiki na Twoim komputerze (nie znaleziono właściwego urządzenia graficznego).\nSugerowane kroki:\n1. Sprawdź, czy komputer i karta graficzna spełniają minimalne wymagania sprzętowe.\n2. Zaktualizuj Microsoft DirectX do najnowszej wersji.\n3. Pobierz i zainstaluj najnowsze sterowniki karty graficznej ze strony internetowej dostawcy - prawdopodobnie Twoje sterowniki graficzne są nieaktualne.\n4. Spróbuj zmienić metodę renderowania z OpenGL na DirectX lub odwrotnie.\n5. Usuń plik konfiguracyjny gry „config.cfg” w folderze „Dokumenty” - „Euro Truck Simulator 2”. Być może uległ uszkodzeniu.\n    Ten plik zostanie automatycznie odtworzony z prawidłowymi wartościami domyślnymi przy następnym uruchomieniu gry."
+	val[]: "Gra Euro Truck Simulator 2 napotkała problem i nie jest w stanie wyświetlić grafiki na twoim komputerze (nie znaleziono właściwego urządzenia graficznego).\nSugerowane kroki:\n1. Sprawdź, czy komputer i karta graficzna spełniają wymagania minimalne.\n2. Zaktualizuj Microsoft DirectX do najnowszej wersji.\n3. Pobierz i zainstaluj najnowsze sterowniki do twojej karty graficznej (powinny być na stronie producenta karty - najprawdopodobniej twoje sterowniki są już nieaktualne).\n4. Spróbuj zmienić metodę renderowania z OpenGL na DirectX lub odwrotnie.\n5. Usuń plik konfiguracyjny gry 'config.cfg' w katalogu 'Moje dokumenty' - 'Euro Truck Simulator 2'. Możliwe, że uległ uszkodzeniu.\nTen plik utworzy się automatycznie przy następnym uruchomieniu gry – będzie już miał właściwe wartości."
 
 	key[]: "sys_no_graphics_simple"
 	val[]: "Gra Euro Truck Simulator 2 ma problem z wyświetlaniem grafiki na Twoim komputerze (nie znaleziono poprawnego urządzenia do obsługi grafiki)."
@@ -11611,7 +11611,7 @@
 	val[]: "Tryby osi"
 
 	key[]: "wiz_setup_axes_desc4"
-	val[]: "Tryb osi określa sposób jej obsługi w grze. Odwrócona oś odwraca podany kierunek, co skutkuje na przykład sterowaniem w lewo zamiast w prawo. Oś wyśrodkowana ma swoją domyślną pozycję w środku swojego zakresu, np. w joysticku. Ten tryb jest przydatny do korygowania osi, która została nieprawidłowo wykryta."
+	val[]: "Ustawienie osi obrotu określa w jaki sposób oś będzie się zachowywała w grze. Odwrócona oś obrotu działa przeciwnie tj. skręcenie w prawo powoduje skręcenie w lewo. Wyśrodkowana oś obrotu jest domyślnie ułożona na środku skali (np. joysticka). Z tego ustawienia warto skorzystać gdy oś obrotu zostanie nieprawidłowo wykryta."
 
 	key[]: "normal"
 	val[]: "Normalne" #+ Normal orientation of axis. Increasing value of axis in <-1;1> range increases controlled value.
@@ -12833,7 +12833,7 @@
 	val[]: "Pozwala Ci przesłać zdjęcie na portal World of Trucks."
 
 	key[]: "screenshotman_desc"
-	val[]: "Użyj trybu fotograficznego lub klawisza @@imv_nrm_screenshot@@ aby zrobić zdjęcie. Możesz je przesłać na portal World of Trucks. <br> Wybierz zrzut ekranu, potem slot poniżej, oraz wciśnij <color value=@@clr_sel@@>Prześlij do wybranego slotu<color value=@@clr_txt@@>." #+ description
+	val[]: "Użyj trybu fotograficznego lub klawisza @@imv_nrm_screenshot@@ aby zrobić zdjęcie. Możesz je przesłać na portal World of Trucks. <br> Wybierz zrzut ekranu, potem miejsce poniżej, a następnie wciśnij <color value=@@clr_sel@@>Prześlij w wybrane miejsce <color value=@@clr_txt@@>." #+ description
 
 	key[]: "screenshotman_slot"
 	val[]: "Sloty galerii zdjęć na World of Trucks." #+ Slots title
@@ -12851,7 +12851,7 @@
 	val[]: "Błąd" #+ Shown in screenshot slot when there is error while retrieving its content.
 
 	key[]: "upload_to_slot"
-	val[]: "Prześlij do wybranego slotu" #+ Upload button
+	val[]: "Prześlij w wybrane miejsce" #+ Upload button
 
 	key[]: "upload_as_profile_screenshot"
 	val[]: "Użyj jako zdjęcie aktualnej ciężarówki" #+ Upload button
@@ -13638,7 +13638,7 @@
 #+ Dependency missing dialog related texts.
 #@{
 	key[]: "missing_required_dlc"
-	val[]: "Brak wymaganego DLC (oficjalne rozszerzenie gry) $DEPENDENCY_NAME$. Aby stan gry działał poprawnie, to DLC musi zostać aktywowane na tym urządzeniu. Musisz naprawić problem, zanim wczytasz ten stan gry." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
+	val[]: "Brak wymaganego DLC (oficjalne rozszerzenie gry) $DEPENDENCY_NAME$. Aby gra mogła działać poprawnie, to DLC musi zostać aktywowane na tym komputerze. Musisz naprawić problem, zanim wczytasz ten stan gry." #+ Information showed when dependency of type required dlc is missing. Player is then unable to continue loading the game.
 
 	key[]: "missing_removable_dlc"
 	val[]: "Brak opcjonalnego DLC (oficjalne rozszerzenie gry) $DEPENDENCY_NAME$. Jeżeli nie spodziewałeś się tego, sprawdź status DLC.<br><br>Mimo to możesz i tak wczytać stan gry, jednak niektóre funkcje dostarczane przez DLC mogą zostać utracone." #+ Information showed when dependency of type optional DLC is missing.
@@ -14266,7 +14266,7 @@
 	val[]: "Jedź zgodnie z trasą do firmy docelowej."
 
 	key[]: "cargo_load_waiting1"
-	val[]: "The cargo is ready to be loaded. Proceed to the loading area."
+	val[]: "Ładunek jest gotów do załadunku. Zmierzaj do<br>strefy załadunku."
 
 	key[]: "cargo_load_waiting2"
 	val[]: "Zmierzaj ku zielonej fladze na mapie."
@@ -15621,7 +15621,7 @@
 	val[]: "Nie można wytyczyć trasy między wybranymi firmami." #+ internal error message
 
 	key[]: "mp_job_missing_cargo"
-	val[]: "Nie udało się znaleźć ładunku dla tego zlecenia. Firmy nie mają żadnego ładunku do przewiezienia między sobą."
+	val[]: "Nie udało się znaleźć ładunku dla zlecenia. Firmy nie mają żadnego ładunku do przewiezienia między nimi."
 
 	key[]: "mp_job_wrong_cargo"
 	val[]: "Nie masz kompatybilnej naczepy dla obecnego ładunku."
@@ -16466,7 +16466,7 @@
 	val[]: "Posiadany pojazd"
 
 	key[]: "equipment_owned_vehicle_and_trailer"
-	val[]: "Posiadany pojazd i naczepa"
+	val[]: "Własny pojazd i naczepa"
 
 	key[]: "mp_job_quick_travel_message"
 	val[]: "Jesteś aktualnie za daleko od firmy początkowej. Chcesz użyć szybkiej podróży i przenieść się bliżej?<br><br>Cel szybkiej podróży: <color value=@@clr_sel@@>$DESTINATION$<br><color value=@@clr_txt@@>Koszt: <color value=@@clr_sel@@>$COST$"
@@ -17234,7 +17234,7 @@
 	val[]: "Idź"
 
 	key[]: "overlay_camera_zoom"
-	val[]: "Powiększanie"
+	val[]: "Przybliżenie"
 
 	key[]: "overlay_camera_switch"
 	val[]: "Przełącz kamerę"
@@ -17822,7 +17822,7 @@
 	val[]: "Powrót do ekranu tytułowego."
 
 	key[]: "current_country_info"
-	val[]: "Lokalne przepisy" #+ tooltip title
+	val[]: "Przepisy lokalne" #+ tooltip title
 
 	key[]: "road_class_local_road_urban"
 	val[]: "Miasto"
